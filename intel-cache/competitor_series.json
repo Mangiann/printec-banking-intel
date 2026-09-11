@@ -1,0 +1,334 @@
+{
+  "generated": "2026-08-31",
+  "source": "SEC EDGAR company facts (us-gaap revenue), annual; values in USD millions · segment revenue + ATM fleet from 10-K (sum-verified)",
+  "meta": {
+    "revenue": {
+      "label": "Total revenue (USD m)",
+      "unit": "USD m"
+    },
+    "atm_segment": {
+      "label": "ATM/self-service segment revenue (USD m)",
+      "unit": "USD m"
+    },
+    "atm_fleet": {
+      "label": "ATMs operated (Euronet)",
+      "unit": "ATMs"
+    }
+  },
+  "series": {
+    "NCR Atleos": {
+      "revenue": [
+        {
+          "year": 2021,
+          "value": 3549.0
+        },
+        {
+          "year": 2022,
+          "value": 4122.0
+        },
+        {
+          "year": 2023,
+          "value": 4186.0
+        },
+        {
+          "year": 2024,
+          "value": 4305.0
+        },
+        {
+          "year": 2025,
+          "value": 4354.0
+        }
+      ],
+      "ticker": "NATL",
+      "atm_segment": [
+        {
+          "year": 2023,
+          "value": 2581.0
+        },
+        {
+          "year": 2024,
+          "value": 2696.0
+        },
+        {
+          "year": 2025,
+          "value": 2881.0
+        }
+      ],
+      "atm_segment_label": "Self-Service Banking",
+      "segments": {
+        "Self-Service Banking": [
+          {
+            "year": 2023,
+            "value": 2581.0
+          },
+          {
+            "year": 2024,
+            "value": 2696.0
+          },
+          {
+            "year": 2025,
+            "value": 2881.0
+          }
+        ],
+        "Network": [
+          {
+            "year": 2023,
+            "value": 1267.0
+          },
+          {
+            "year": 2024,
+            "value": 1285.0
+          },
+          {
+            "year": 2025,
+            "value": 1265.0
+          }
+        ]
+      },
+      "segments_verified": "dominant-ratio"
+    },
+    "Diebold Nixdorf": {
+      "revenue": [
+        {
+          "year": 2018,
+          "value": 4578.6
+        },
+        {
+          "year": 2019,
+          "value": 4408.7
+        },
+        {
+          "year": 2020,
+          "value": 3902.3
+        },
+        {
+          "year": 2021,
+          "value": 3905.2
+        },
+        {
+          "year": 2022,
+          "value": 3460.7
+        },
+        {
+          "year": 2024,
+          "value": 3751.1
+        },
+        {
+          "year": 2025,
+          "value": 3805.7
+        }
+      ],
+      "ticker": "DBD",
+      "atm_segment": [
+        {
+          "year": 2022,
+          "value": 2422.4
+        },
+        {
+          "year": 2024,
+          "value": 2762.8
+        },
+        {
+          "year": 2025,
+          "value": 2797.0
+        }
+      ],
+      "atm_segment_label": "Banking",
+      "segments": {
+        "Banking": [
+          {
+            "year": 2022,
+            "value": 2422.4
+          },
+          {
+            "year": 2024,
+            "value": 2762.8
+          },
+          {
+            "year": 2025,
+            "value": 2797.0
+          }
+        ],
+        "Retail": [
+          {
+            "year": 2022,
+            "value": 1038.3
+          },
+          {
+            "year": 2024,
+            "value": 988.3
+          },
+          {
+            "year": 2025,
+            "value": 1008.7
+          }
+        ]
+      },
+      "segments_verified": "sum-check"
+    },
+    "Euronet": {
+      "revenue": [
+        {
+          "year": 2018,
+          "value": 2536.6
+        },
+        {
+          "year": 2019,
+          "value": 2750.1
+        },
+        {
+          "year": 2020,
+          "value": 2482.7
+        },
+        {
+          "year": 2021,
+          "value": 2995.5
+        },
+        {
+          "year": 2022,
+          "value": 3358.8
+        },
+        {
+          "year": 2023,
+          "value": 3688.0
+        },
+        {
+          "year": 2024,
+          "value": 3989.8
+        },
+        {
+          "year": 2025,
+          "value": 4244.2
+        }
+      ],
+      "ticker": "EEFT",
+      "atm_segment": [
+        {
+          "year": 2023,
+          "value": 1058.3
+        },
+        {
+          "year": 2024,
+          "value": 1161.2
+        },
+        {
+          "year": 2025,
+          "value": 1283.7
+        }
+      ],
+      "atm_segment_label": "EFT Processing",
+      "segments": {
+        "EFT Processing": [
+          {
+            "year": 2023,
+            "value": 1058.3
+          },
+          {
+            "year": 2024,
+            "value": 1161.2
+          },
+          {
+            "year": 2025,
+            "value": 1283.7
+          }
+        ],
+        "epay": [
+          {
+            "year": 2023,
+            "value": 1082.4
+          },
+          {
+            "year": 2024,
+            "value": 1150.5
+          },
+          {
+            "year": 2025,
+            "value": 1187.6
+          }
+        ],
+        "Money Transfer": [
+          {
+            "year": 2023,
+            "value": 1555.2
+          },
+          {
+            "year": 2024,
+            "value": 1686.5
+          },
+          {
+            "year": 2025,
+            "value": 1782.4
+          }
+        ]
+      },
+      "segments_verified": "sum-check",
+      "atm_fleet": [
+        {
+          "year": 2019,
+          "value": 46070
+        },
+        {
+          "year": 2020,
+          "value": 37729
+        },
+        {
+          "year": 2021,
+          "value": 42713
+        },
+        {
+          "year": 2022,
+          "value": 45009
+        },
+        {
+          "year": 2023,
+          "value": 47303
+        },
+        {
+          "year": 2024,
+          "value": 55248
+        },
+        {
+          "year": 2025,
+          "value": 56818
+        }
+      ]
+    },
+    "Brink's": {
+      "revenue": [
+        {
+          "year": 2018,
+          "value": 3488.9
+        },
+        {
+          "year": 2019,
+          "value": 3683.2
+        },
+        {
+          "year": 2020,
+          "value": 3690.9
+        },
+        {
+          "year": 2021,
+          "value": 4200.2
+        },
+        {
+          "year": 2022,
+          "value": 4535.5
+        },
+        {
+          "year": 2023,
+          "value": 4874.6
+        },
+        {
+          "year": 2024,
+          "value": 5011.9
+        },
+        {
+          "year": 2025,
+          "value": 5261.2
+        }
+      ],
+      "ticker": "BCO"
+    }
+  }
+}

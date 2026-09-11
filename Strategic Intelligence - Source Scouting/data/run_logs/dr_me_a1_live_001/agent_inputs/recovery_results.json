@@ -1,0 +1,82 @@
+[
+ {
+  "candidate_id": "dr_me_a1_live_001__c_045",
+  "source_url": "http://www.pretraga.crps.me/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a1_live_001__c_046",
+  "source_url": "http://crps.me/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a1_live_001__c_061",
+  "source_url": "https://opencorporates.com/registers/168",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a1_live_001__c_072",
+  "source_url": "https://data.consilium.europa.eu/doc/document/ST-8755-2026-INIT/en/pdf",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a1_live_001__c_077",
+  "source_url": "https://documents1.worldbank.org/curated/en/571841468186562268/pdf/104768-FSAP-P155095-PUBLIC-Montenegro-FSAP-Update-TN-Financial-Infrastructure.pdf",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a1_live_001__c_079",
+  "source_url": "https://documents1.worldbank.org/curated/en/390531625727784681/pdf/Montenegro-Systematic-Country-Diagnostic-Update.pdf",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a1_live_001__c_086",
+  "source_url": "https://www.fatf-gafi.org/en/countries/global-network/committee-of-experts-on-the-evaluation-of-anti-money-laundering-.html",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a1_live_001__c_112",
+  "source_url": "https://crnogorska-komercijalna-banka-ad-podgorica.talentlyft.com/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ }
+]

@@ -1,0 +1,224 @@
+# Addiko Bank Group - 27/08/2026
+
+**Slug:** addiko-group | **Markets:** Austria (holding), Croatia, Slovenia, Serbia, Bosnia & Herzegovina (two banks), Montenegro | **Status:** complete
+
+## Headline
+
+Addiko was NEVER REACHED in the 30/07/2026 run. It turns out to be the most eventful name on the list. **RBI won the takeover battle against NLB**: its offer at EUR 26.50/share hit 55.55% acceptance, official result published 03/08/2026. RBI keeps Croatia, Slovenia and the Austrian holding, and will **carve out Serbia, both Bosnian banks and Montenegro to Alta Group d.o.o. (Belgrade)** - owner of Alta Banka Serbia and Alta Banka Bitola - with closing targeted 2H27.
+
+Two budgeted programmes fall out of this, both squarely in Printec's lane:
+
+- **EUR 75 million one-off integration cost at RBI across 2027-2028**, with RBI stating that *full operational, technological and organizational integration of the Croatian subsidiary* is the key success factor. Two Croatian ATM fleets merge into one.
+- **A six-bank, four-jurisdiction Western Balkans assembly at Alta**, a first-time buyer at this scale exiting a TSA from Addiko/RBI shared services.
+
+## Footprint reconstructed bottom-up (locators enumerated 27/08/2026)
+
+| Market | Branches | ATM locations | Deposit-capable ATMs |
+|---|---|---|---|
+| Croatia | 35 | 144 | none advertised (inference) |
+| Serbia | 33 | 50 | recyclers in **all** branches (Addiko Express, RSD+EUR in/out) |
+| Slovenia | 20 | 31 | none advertised |
+| BiH - FBiH (Sarajevo) | 28 | 74 | 25 (so 49 cash-out-only) |
+| BiH - RS (Banja Luka) | 28 | ~50 | **5** |
+| Montenegro | 13 | 6 in locator | 12 Zona 24/7, **coin-accepting** |
+| **Total branches** | **157** | | |
+
+Group disclosed **154 branches at 30/06/2026** (flat vs YE25). The 157 locator figure reconciles to within 2% - the first time a country-level fleet count in this dataset has been tied back to a group disclosure.
+
+## Financial context
+
+1H26 result after tax **EUR -23.0m** (1H25: +24.0m), dragged by EUR 33.1-48.8m of CHF-loan provisions (ad-hoc 01/07/2026, guidance **suspended**) and EUR 8.4m takeover advisory costs. Adjusted result EUR 19.1m. CIR 71.7%. CET1 21.3%. Romania expansion **moderated**; Specialization Program initiatives **being reassessed**. Near-term Addiko-led capex is frozen - sell opex propositions to Addiko now, capex to RBI and Alta.
+
+## Signals
+
+### 1. Addiko Bank AG (Group) - Austria/HR/SI/RS/BA/ME
+
+**Signal.** RBI's voluntary public takeover offer reached 55.55% acceptance of Addiko's total share capital (10,831,435 of 19,500,000 shares; 56.16% of shares subject to the offer excl. 212,858 treasury shares), official result published 03/08/2026 under sec.19(2) Austrian Takeover Act. Competing NLB offer did not prevail. Extended acceptance period runs to 03/11/2026; completion subject to regulatory/antitrust approvals with Long Stop Date 14/05/2027; RBI expects approvals in 4Q26.
+
+**Implies (Printec).** Ownership of Addiko changes hands. RBI will integrate the EU subsidiaries (HR, SI, Holding) into RBI Group - that means a vendor/standards re-selection across ATM estate, cash automation, self-service software, monitoring and managed services in Croatia and Slovenia during 4Q26-2027. Printec should engage BOTH the Addiko local teams (incumbent decisions frozen) and RBI group procurement now, before RBI standards are imposed.
+
+- Source: Addiko Group Results Presentation 1H26 (13/08/2026), slides 3-4 - https://www.addiko.com/static/uploads/Addiko-Group-Results-Presentation-1H26-1.pdf (13/08/2026, primary)
+- Likelihood: High - result already official; approvals expected 4Q26, integration activity begins immediately after | Confidence: Medium | Opp size: XL | Win: Medium
+- Follow-up: Track RBI regulatory/antitrust approvals (ECB, HR AZTN, SI AVK, RS/BA/ME regulators) through 4Q26; map RBI Group's existing ATM/self-service vendor standards in HR and SI against Addiko's installed base.
+
+### 2. Addiko Bank AG (Group) - HR/SI/RS/BA/ME
+
+**Signal.** RBI intends a Carve-Out: Addiko's non-EU subsidiaries (Serbia, Bosnia & Herzegovina x2, Montenegro) are to be sold to Alta Group d.o.o. (Serbia), with RBI expecting Carve-Out closing in 2H27. Addiko flags potential IFRS 5 (held-for-sale) accounting implications to be assessed.
+
+**Implies (Printec).** The Western Balkans estate (Serbia, both BiH banks, Montenegro) will be separated from the EU entities and sold to a new owner. A carve-out forces physical and logical separation of core, card, ATM-driving, monitoring and AML/compliance systems from the group platform - classic managed-services and transaction-monitoring/AML replatforming work, plus a likely fresh ATM/self-service vendor decision under the new owner.
+
+- Source: Addiko Group Results Presentation 1H26 (13/08/2026), slide 4 + Note on RBI VTO - https://www.addiko.com/static/uploads/Addiko-Group-Results-Presentation-1H26-1.pdf (13/08/2026, primary)
+- Likelihood: Medium-High - RBI stated intent, but each entity needs local regulatory approval and local merger clearance; closing targeted 2H27 | Confidence: Medium | Opp size: XL | Win: Medium
+- Follow-up: Confirm Alta Group d.o.o. (Serbia) as named buyer from RBI's own offer document; watch NBS, CBBiH/FBA/ABRS and CBCG for acquisition-approval filings. Alta Group is linked to AIK Banka/Agri Europe orbit - check whether the Serbian/BiH/ME entities would be merged into AIK's estate.
+
+### 3. Addiko Bank AG (Group) - HR/SI/RS/BA/ME
+
+**Signal.** Group network at 30/06/2026: 154 branches (YE25: 154 - flat), ~0.9m customers, six subsidiary banks in five CSEE countries (BiH served by two banks), EUR 6.5bn total assets. Asset split 61% EU (SI 22%, HR 35%, Holding/Austria 4%) vs 39% EU-accession (BiH 19%, RS 16%, ME 4%).
+
+**Implies (Printec).** A flat 154-branch network is a stable, addressable installed base - Addiko is NOT closing branches, it is automating inside them (see Serbia recycler signal). Printec's in-branch cash automation, teller-replacement recyclers, queue management and self-service refresh all apply against a network that is not shrinking.
+
+- Source: Addiko Group Half-Year Financial Report 1H26 (13/08/2026), p.29 note + Results Presentation slide 15 - https://www.addiko.com/static/uploads/Addiko-Group-Half-Year-Financial-Report-en-1H26-1.pdf (13/08/2026, primary)
+- Likelihood: High - disclosed figure, unchanged for two consecutive reporting dates | Confidence: Medium | Opp size: L | Win: Medium
+- Follow-up: Reconcile the 154 group figure against per-country locator counts each quarter; obtain per-country branch splits from the FY2026 annual report.
+
+### 4. Addiko Bank a.d. Beograd - Serbia
+
+**Signal.** Addiko Serbia states on its own product page that ALL of its branches are equipped with 'Addiko Express' multifunction ATMs ('Sve nase ekspoziture su opremljene visenamenskim bankomatima'). These are dual-currency recyclers: RSD and EUR cash-in, RSD and EUR cash-out, 24/7, no fee. Limits: max 150 banknotes per transaction; per-transaction cap RSD 500,000 / EUR 2,000; 7-day cap RSD 1,000,000 / EUR 10,000. RSD denominations accepted 500/1,000/2,000/5,000; all current EUR denominations accepted. Business customers can deposit daily takings (pazar) with organisational-unit code and value date at the machine. Addiko's own locator returns 33 branch locations and 50 ATM locations in Serbia (pulled 27/08/2026).
+
+**Implies (Printec).** Serbia is Addiko's most advanced self-service market and a live reference for full-network recycler deployment with FX (dual-currency) cash handling and merchant takings deposit. Two Printec plays: (a) refresh/expand the recycler estate and add coin handling under the new post-carve-out owner; (b) sell the same dual-currency branch-automation model into the far less automated BiH and Montenegro estates.
+
+- Source: Addiko Bank Srbija - Visenamenski bankomati 'Addiko Express' - https://www.addiko.rs/visenamenski-bankomati-addiko-express-fizicka-lica/ (27/08/2026, primary)
+- Likelihood: High - already deployed and documented in the bank's own customer terms | Confidence: Medium | Opp size: L | Win: Medium
+- Follow-up: Identify the incumbent hardware vendor behind 'Addiko Express' (not disclosed on the page); ask whether the fleet is due a refresh cycle and whether coin acceptance is on the roadmap (the Montenegro Zona 24/7 machines already take coins).
+
+### 5. Addiko Bank d.d. Sarajevo - Bosnia & Herzegovina (FBiH)
+
+**Signal.** Addiko Sarajevo's own published ATM list ('Popis bankomata') contains 74 ATM locations, of which only 25 are explicitly flagged 'Uplatno/isplatni bankomat' (deposit-and-withdrawal). That leaves 49 locations - 66% of the FBiH estate - cash-out only. The same page cross-lists 50 ATM locations for sister bank Addiko Bank a.d. Banja Luka, and states Addiko Sarajevo customers pay no fee on the Banja Luka ATM network and vice versa (a de facto shared national Addiko ATM network). Branch locator returns 28 branch locations in FBiH (pulled 27/08/2026).
+
+**Implies (Printec).** Quantified cash-recycling white space: 49 cash-out-only ATMs in FBiH are candidates for deposit/recycler upgrade or replacement. This lands in a market where TIPS-Clone instant payments went live 20/07/2026 and FATF grey-listing (19/06/2026) is pulling AML/monitoring spend forward - i.e. both self-service hardware AND transaction-monitoring budget are in motion at the same institution.
+
+- Source: Addiko Bank d.d. Sarajevo - Popis bankomata - https://addiko-fbih.ba/o-nama/o-banci/podruznice/popis-bankomata/ (27/08/2026, primary)
+- Likelihood: Medium-High - the gap is real and disclosed; timing depends on the carve-out owner | Confidence: Medium | Opp size: L | Win: Medium
+- Follow-up: Re-pull this list next run - a changed deposit-flag count is itself the signal. Cross-check against CBBiH installed-ATM statistics (1,868 at 31/12/2025 per baseline).
+
+### 6. Addiko Bank a.d. Banja Luka - Bosnia & Herzegovina (RS)
+
+**Signal.** Addiko Banja Luka operates only FIVE deposit-capable ATMs across the whole entity - Banja Luka (Aleja Svetog Save 13, branded 'Zona 24/7'), Banja Luka (Ivana Franje Jukica 9), Istocno Sarajevo (Hilandarska 1), Doboj (Kralja Dragutina 13) and Bijeljina (Trg Kralja Petra I Karadjordjevica 1, 'Zona 24/7'). Machines accept KM 10/20/50/100/200 notes, max 300 banknotes per transaction, unsorted, with automatic same-moment crediting and a business 'polog pazara' flow (organisational-unit code + value date). Its own combined BiH ATM list runs to 133 locations; the branch locator returns 28 branch locations (pulled 27/08/2026).
+
+**Implies (Printec).** Only ~10% of the Banja Luka ATM estate (5 of ~50) takes cash in. This is the single largest quantified recycler white space found for Addiko: a 45-machine cash-in gap at one bank, in a market where the 300-note-per-transaction spec shows the bank is already selling merchant cash deposit as a proposition but has almost no capacity to serve it.
+
+- Source: Addiko Bank Banja Luka - Zona 24/7 uplatno-isplatni bankomati - https://www.addiko-rs.ba/uplatno-isplatni-bankomati/ (27/08/2026, primary)
+- Likelihood: Medium-High - clear capability gap; buying decision likely deferred until carve-out ownership resolves in 2H27 | Confidence: Medium | Opp size: L | Win: Medium
+- Follow-up: Confirm the total Banja Luka ATM count directly with the bank (50 per the Sarajevo cross-list vs 133 combined BiH entries on the Banja Luka page - the two pages count differently). Identify the recycler vendor behind 'Zona 24/7'.
+
+### 7. Addiko Bank AD Podgorica - Montenegro
+
+**Signal.** Addiko Montenegro runs 12 deposit-capable ATM locations: seven branded 'Zona 24/7' (Podgorica Bul. Svetog Petra Cetinjskog 37, Budva, Niksic, Herceg Novi, Bijelo Polje, Pljevlja, Bar) plus five inside retail hosts with restricted hours (Podgorica TC Bazar, Mall of Montenegro, BIG Fashion; Kotor TC Kamelija, HDL Radanovici). Critically, the Montenegrin machines accept COINS as well as notes - the customer instructions describe a dedicated perforated coin tray alongside the note feeder - with a limit of 150 banknotes per transaction and a business daily-takings flow. Branch locator returns 13 branches and 6 further ATM locations (pulled 27/08/2026).
+
+**Implies (Printec).** Coin-accepting deposit ATMs are rare in the region and are the exact profile of a cash-recycling/coin-handling deployment. Montenegro is therefore a working in-group reference Printec can use to sell coin-capable cash automation into the much larger BiH and Croatian estates. Five of the twelve sit inside malls with host-dependent opening hours - a managed-services and availability-monitoring angle.
+
+- Source: Addiko Bank Crna Gora - Uplatno-isplatni bankomati Zona 24/7 - https://www.addiko.me/uplatno-isplatni-bankomati-zona-24-7/ (27/08/2026, primary)
+- Likelihood: Medium-High - deployed and documented | Confidence: Medium | Opp size: M | Win: Medium
+- Follow-up: Identify the coin-handling vendor; establish whether the Zona 24/7 lobby concept is being extended (7 sites today) and who provides CIT/first-line maintenance.
+
+### 8. Addiko Bank d.d. (Croatia) - Croatia
+
+**Signal.** Addiko Croatia's own locator returns 35 branch locations and 144 ATM locations (pulled 27/08/2026). No deposit-capable or recycler ATM product page exists on addiko.hr - unlike Serbia (Addiko Express), Montenegro and BiH (Zona 24/7), Addiko Croatia advertises no cash-in ATM capability at all. The Croatian branch network does run a 'Redomat' queue-management system, for which the bank publishes a separate accessibility statement.
+
+**Implies (Printec).** Croatia is Addiko's largest market by assets (35% of group) yet appears to have the LEAST automated cash estate - ~144 ATMs with no advertised deposit function. Croatia also carries a statutory cash-access right effective 01/01/2027 and banks are negotiating a shared national ATM network as the cost-sharing mechanism. Addiko Croatia therefore faces a dated regulatory trigger with an unautomated fleet, under a new owner (RBI). This is the highest-value single opportunity in the group.
+
+- Source: Addiko Bank Hrvatska - Mapa poslovnica i bankomata (locator enumerated per city) - https://www.addiko.hr/gradanstvo/mapa-poslovnica-bankomata/ (27/08/2026, primary)
+- Likelihood: Medium - the 01/01/2027 cash-access obligation is a hard dated trigger, but the RBI integration may centralise the decision at group level | Confidence: Medium | Opp size: XL | Win: Medium | Deadline: 01/01/2027
+- Follow-up: Verify with the bank whether any Croatian ATMs accept deposits (absence of a web page is not proof of absence - log as inference). Track HNB and the Croatian Banking Association on the shared-network negotiation and the 01/01/2027 cash-access right; approach RBI Croatia (Raiffeisenbank Austria d.d.) jointly, since it will own both fleets.
+
+### 9. Addiko Bank d.d. (Slovenia) - Slovenia
+
+**Signal.** Addiko Slovenia's locator returns 20 branch locations and 31 ATM locations across 20 towns (pulled 27/08/2026). The network includes an 'Addiko Bank Express' branch format at BTC Ljubljana and two further mall-format branches (Supernova Ljubljana-Rudnik, Ptuj-Supernova) with extended retail hours. No deposit-ATM product page is published.
+
+**Implies (Printec).** Smallest self-service estate in the group (31 ATMs for 22% of group assets). The 'Express'/mall branch formats are low-staff retail outlets - exactly the format that depends on self-service terminals and assisted-service devices. Slovenia is an EU entity that goes to RBI, so any refresh will be decided inside RBI's Slovenian strategy.
+
+- Source: Addiko Bank Slovenija - Zemljevid poslovalnic in bankomatov (locator enumerated per city) - https://www.addiko.si/zemljevid-poslovalnic-bankomatov/ (27/08/2026, primary)
+- Likelihood: Medium - small absolute fleet; decision folded into RBI integration | Confidence: Medium | Opp size: M | Win: Low
+- Follow-up: Confirm whether the Express/mall formats are cashless or teller-served; check whether RBI intends to retain a separate Slovenian presence (RBI has no large Slovenian retail bank of its own).
+
+### 10. Addiko Bank AG (Group) - HR/SI/RS/BA/ME
+
+**Signal.** Digital scale at 1H26: 379 thousand registered mobile banking users (+16% YoY) and 385 thousand digital users (+15% YoY), against ~0.9m customers - i.e. roughly 42% digital penetration. Mid-term strategy explicitly targets 'E2E digital lending replacing 10-20% of branch business' in both Consumer and SME, plus 'better engaging mobile banking / cash-in & payment solutions driving better share of wallet'.
+
+**Implies (Printec).** The stated intent to move 10-20% of branch business to end-to-end digital lending requires remote identity proofing and digital onboarding/eKYC across five jurisdictions with different ID regimes - Printec's digital onboarding/eKYC stack maps directly. The explicit 'cash-in' wording in the mobile strategy also ties the app roadmap to deposit-capable ATMs.
+
+- Source: Addiko Group Results Presentation 1H26 (13/08/2026), Digital Transformation slide 26 + Addiko Story slide 22 - https://www.addiko.com/static/uploads/Addiko-Group-Results-Presentation-1H26-1.pdf (13/08/2026, primary)
+- Likelihood: Medium-High - stated mid-term strategy, but the presentation also says the Specialization Program's further initiatives are 'being reassessed' because of the takeover | Confidence: Medium | Opp size: L | Win: Medium
+- Follow-up: Establish which eKYC/remote-onboarding vendor Addiko uses today per market; re-test appetite after RBI approvals land in 4Q26.
+
+### 11. Addiko Bank AG (Group) - Slovenia (+ group)
+
+**Signal.** 1H26 report states Addiko is 'improving operational efficiency through automation of credit decision processes, digitalisation of origination for broader SME products and expansion of self-service capabilities in digital channels, including loan initiation through mobile applications'. In Slovenia a new factoring product is being launched with a 'leading digital factoring provider', initially as a controlled pilot before potential scaling. SME gross disbursements EUR 386.8m in 1H26 (1H25: EUR 388.9m, -0.5% YoY).
+
+**Implies (Printec).** Live, funded programme for decision automation and SME self-service origination - the software-and-integration half of Printec's digital onboarding proposition, distinct from hardware. The Slovenian factoring partnership shows Addiko buys third-party platforms rather than building, which is a favourable procurement posture.
+
+- Source: Addiko Group Half-Year Financial Report 1H26 (13/08/2026), SME segment section - https://www.addiko.com/static/uploads/Addiko-Group-Half-Year-Financial-Report-en-1H26-1.pdf (13/08/2026, primary)
+- Likelihood: Medium-High - in-flight per the interim report | Confidence: Medium | Opp size: M | Win: Medium
+- Follow-up: Identify the named digital factoring partner in Slovenia; ask whether the SME self-service origination work is in-house or vendor-led.
+
+### 12. Addiko Bank AG (Group) - Croatia / Slovenia
+
+**Signal.** Ad-hoc MAR disclosure 01/07/2026: Addiko booked a provision of EUR 33.1m-48.8m for new Supreme Court rulings on CHF-denominated loans in Croatia (overpayment calculation methodology diverging from the statutory conversion method) and Slovenia (bank compensation where CHF contracts are declared null and void). Previously disclosed financial guidance was SUSPENDED. 1H26 result after tax came in at EUR -23.0m (1H25: +EUR 24.0m); other result -EUR 48.9m; CHF provisions plus EUR 8.4m takeover advisory costs total EUR 42.1m after tax; adjusted result after tax EUR 19.1m. CET1 21.3% (YE25: 22.4%). Cost/income ratio 71.7% (1H25: 62.8%), or 66.3% excluding takeover advisory costs.
+
+**Implies (Printec).** A reported loss, a suspended guidance and a CIR above 70% mean discretionary capex is under pressure in the near term - expect Addiko itself to defer hardware refresh decisions until ownership and the CHF exposure settle. Sell the opex-shaped propositions now (managed services, monitoring-as-a-service, AML), and pitch capex-shaped hardware to RBI/the carve-out buyer rather than to Addiko's current management.
+
+- Source: Addiko Bank AG ad-hoc release via pressetext, 01/07/2026 (PDF on addiko.com); confirmed in 1H26 report - https://www.addiko.com/static/uploads/20260701-ad-hoc-en-notification-data-1.pdf (01/07/2026, primary)
+- Likelihood: High - booked and disclosed | Confidence: Medium | Opp size: Unscoped | Win: —
+- Follow-up: Watch for the reinstatement of financial guidance; check Croatian Supreme Court follow-on rulings and whether HNB issues sector-wide guidance on the calculation methodology.
+
+### 13. Addiko Bank AG (Group) - Romania
+
+**Signal.** Addiko entered Romania in 2025 via passporting through its Slovenian banking entity (digital-only consumer lending, no branches), added a credit-broker partner channel, but reports conversion rates below plan despite meeting brand-awareness targets. Because of the takeover, the Group has decided to MODERATE further investment in Romania; business development continues 'on a selective basis' pending the future ownership structure. The presentation likewise says launch of further planned Specialization Program initiatives 'is being reassessed'.
+
+**Implies (Printec).** Negative signal to log honestly: a digital-onboarding/eKYC opportunity in Romania that was building has been throttled. Do not forecast Romanian Addiko spend in the 6-12 month window. It also confirms group-wide project freeze risk - any Addiko-led procurement now carries a high chance of deferral to the new owner.
+
+- Source: Addiko Group Half-Year Financial Report 1H26 (13/08/2026), section 2.3.2 Market expansion Romania - https://www.addiko.com/static/uploads/Addiko-Group-Half-Year-Financial-Report-en-1H26-1.pdf (13/08/2026, primary)
+- Likelihood: High - explicit management decision | Confidence: Medium | Opp size: S | Win: Low
+- Follow-up: Revisit after RBI approvals (4Q26) - RBI already has Raiffeisen Bank S.A. in Romania, so the passported Addiko book is more likely to be absorbed than rebuilt.
+
+### 14. Addiko Bank AG (Group) - Serbia
+
+**Signal.** Governance move flagged as an event after the reporting date: Sava Ivanov Dalbokov resigned from the Addiko Bank AG Supervisory Board effective 31/07/2026 and, as of 01/08/2026, transitioned to an EXECUTIVE role at Addiko Bank a.d. Beograd, subject to National Bank of Serbia approval. The vacated Supervisory Board seat will not be filled for the time being.
+
+**Implies (Printec).** A group supervisory-board member moving into the executive of the Serbian bank one day after resigning is consistent with the Serbian entity being prepared for separate ownership under the carve-out. It also names a concrete, senior, newly-installed decision-maker in Belgrade - the single most useful commercial contact point in the group right now for the Serbian/Western Balkans estate.
+
+- Source: Addiko Group Half-Year Financial Report 1H26 (13/08/2026), Supervisory Board / events after the reporting date - https://www.addiko.com/static/uploads/Addiko-Group-Half-Year-Financial-Report-en-1H26-1.pdf (13/08/2026, primary)
+- Likelihood: Medium-High - subject to NBS fit-and-proper approval | Confidence: Medium | Opp size: Unscoped | Win: —
+- Follow-up: Confirm NBS approval of the appointment and the exact remit; use as the entry point for the Serbia/BiH/ME self-service conversation ahead of the 2H27 carve-out.
+
+### 15. Raiffeisen Bank International AG (acquirer of Addiko) - Austria/Croatia/Slovenia
+
+**Signal.** RBI's own Q2-2026 presentation (31/07/2026) sets the deal economics: voluntary public tender offer at EUR 26.50 per Addiko share; minimum acceptance of 55% met as of 29/07/2026; VTO completion expected Q4/2026; three-month additional acceptance period to 03/11/2026; ONE-OFF INTEGRATION COST OF c. EUR 75 MILLION across 2027 and 2028; c. EUR 60m profit accretion in 2028 rising through 2030; CET1 impact c. -50bps initially, c. -15bps after carve-out (35bps benefit from deconsolidating Serbia, BiH and Montenegro RWA). RBI states it 'would become the fourth-largest bank in Croatia and re-enter Slovenia'. Retained entities: Croatia, Slovenia, Austria.
+
+**Implies (Printec).** A named, budgeted EUR 75m integration programme landing in 2027-2028 - this is the single most concrete addressable spend pool attached to Addiko anywhere in the disclosure set. It covers exactly the workstreams Printec sells into a bank merger: ATM/self-service estate consolidation and re-branding, cash-automation standardisation, card and acquiring migration, transaction-monitoring and AML consolidation, HSM/key migration, and multi-year managed services across two merged Croatian fleets.
+
+- Source: RBI Q2 2026 Results Presentation, 31/07/2026, slide 6 'Addiko - Voluntary Public Tender Offer and Carve-out' - https://www.rbinternational.com/content/dam/rbi/ho/investors/events-and-presentation/presentation-and-webcast/conference-call-presentations/2026-07-31%20Q2%20Presentation%20RBI.pdf.coredownload.pdf (31/07/2026, primary)
+- Likelihood: High - budgeted and disclosed by the acquirer; spend window 2027-2028, so pre-sales must run in 4Q26-1H27 | Confidence: Medium | Opp size: XL | Win: Medium | Deadline: 03/11/2026
+- Follow-up: Get into RBI Group procurement and Raiffeisenbank Austria d.d. (Zagreb) integration PMO during 4Q26 while the EUR 75m programme is still being scoped. Establish RBI's incumbent ATM/self-service and monitoring vendors in Croatia to judge displacement vs extension.
+
+### 16. Raiffeisen Bank International AG / Addiko Bank d.d. Zagreb - Croatia
+
+**Signal.** RBI's offer document states its future business policy explicitly: 'The full operational, technological, and organizational integration of the subsidiary in Croatia is a key success factor for rapidly realizing synergies.' It also names Addiko's digital banking capabilities as an attractive strength to be 'selectively leveraged and made available to customers across the entire RBI Group', and expects cost synergies in the overlapping markets - 'primarily in Croatia, but also in Serbia and Bosnia and Herzegovina'.
+
+**Implies (Printec).** A full technological merger of Addiko Croatia into Raiffeisenbank Austria d.d. is now stated acquirer policy, not speculation. Two Croatian ATM fleets and two branch estates get rationalised into one - decommissioning, relocation, re-branding, driving-software unification and a single managed-service contract. Because RBI intends to export Addiko's digital-banking capability group-wide, the eKYC/digital-onboarding stack Addiko uses becomes a group-standard candidate across RBI's 17-market footprint, which multiplies the value of being the vendor behind it.
+
+- Source: RBI voluntary public takeover offer document for Addiko Bank AG (English working translation), Section 6.5 Future Business Policy, 14/05/2026 - https://www.rbinternational.com/content/dam/rbi/ho/investors/news/publications-austrian-takeover-law/2026-05-14-RBI_Addiko_Angebotsunterlage_EN.pdf.coredownload.pdf (14/05/2026, primary)
+- Likelihood: High - stated policy in a binding-equivalent offer document; execution from 2027 | Confidence: Medium | Opp size: XL | Win: Medium
+- Follow-up: Determine which vendors sit behind Addiko's digital onboarding and mobile stack today - whoever they are is positioned for an RBI group-wide rollout. Map the overlap between Addiko Croatia's ~144 ATMs and RBI Croatia's fleet to size the decommission/consolidation work.
+
+### 17. Alta Group d.o.o. / Alta Banka AD Beograd - Serbia / BiH / Montenegro / North Macedonia
+
+**Signal.** The carve-out buyer is confirmed in RBI's offer document: Alta Group d.o.o., Belgrade (Serbian Commercial Register no. 2103524), which signed a transaction agreement with RBI on 08/05/2026 and is a legal entity acting in concert with the bidder. Alta Group is an e-money institution licensed by the National Bank of Serbia and a registered currency-exchange office; it owns 100% of Alta Banka AD Beograd, which in turn owns ALTA BANKA AD Bitola in North Macedonia and ALTA LEASING DOO Beograd. Alta Group already directly holds 1,878,167 Addiko ordinary shares. The four carve-out entities are named precisely: Addiko Bank AD Beograd, Addiko Bank d.d. Sarajevo, Addiko Bank a.d. Banja Luka and Addiko Bank AD Podgorica. RBI's offer also provides for transitional services from Addiko to the carve-out subsidiaries priced at arm's length (OECD transfer-pricing basis), at no less than the fees previously paid.
+
+**Implies (Printec).** A new Western Balkans banking group is being assembled: Alta Banka Serbia + Alta Banka Bitola + four Addiko banks across RS/BiH(x2)/ME. Merging six banks in four jurisdictions is a greenfield-scale platform programme - core/card system consolidation, a unified ATM and cash-automation estate (Addiko brings the Addiko Express recyclers in Serbia and Zona 24/7 in BiH/ME), one AML and transaction-monitoring platform across four regulators, HSM/key consolidation, and a long TSA exit from Addiko/RBI shared services that must be replaced by new vendors. This is the largest Western Balkans integration opportunity currently visible and Alta is a first-time buyer at this scale, i.e. dependent on vendors.
+
+- Source: RBI voluntary public takeover offer document for Addiko Bank AG (English working translation), Sections 2.2.3/6.4, 14/05/2026 - https://www.rbinternational.com/content/dam/rbi/ho/investors/news/publications-austrian-takeover-law/2026-05-14-RBI_Addiko_Angebotsunterlage_EN.pdf.coredownload.pdf (14/05/2026, primary)
+- Likelihood: Medium-High - SPA signed, but subject to local regulatory approval and merger clearance in each of Serbia, FBiH, Republika Srpska and Montenegro; closing targeted 2H27 | Confidence: Medium | Opp size: XL | Win: Medium
+- Follow-up: Open a direct commercial track with Alta Banka AD Beograd now, well ahead of 2H27 closing - they will need a partner for the multi-country integration and the TSA exit. Monitor NBS, FBA (FBiH), ABRS (Republika Srpska), CBCG and the Serbian competition commission for the approval filings.
+
+### 18. Addiko Bank AG (Group) - Austria
+
+**Signal.** RBI has NOT decided whether to run a shareholder squeeze-out under the Austrian Shareholder Exclusion Act (GesAusG), and the offer is expressly NOT a delisting offer under sec.27e of the Austrian Takeover Act - Addiko shares stay listed on the Vienna Stock Exchange Official Market (Standard Market Auction) for now. RBI notes that if free float falls below roughly 390,000 shares (2%) held by fewer than 50 shareholders, Wiener Boerse could itself delist under sec.40(1)(7) Stock Exchange Act.
+
+**Implies (Printec).** Practical intelligence value rather than direct product value: Addiko keeps publishing quarterly and half-year reports on the Vienna exchange for now, so the branch/ATM/digital disclosure stream Printec relies on for this bank remains available through the integration period. If a squeeze-out and delisting follow, that visibility disappears and the locator feeds enumerated in this run become the only public footprint source.
+
+- Source: RBI voluntary public takeover offer document for Addiko Bank AG (English working translation), Sections 6.2/6.3, 14/05/2026 - https://www.rbinternational.com/content/dam/rbi/ho/investors/news/publications-austrian-takeover-law/2026-05-14-RBI_Addiko_Angebotsunterlage_EN.pdf.coredownload.pdf (14/05/2026, primary)
+- Likelihood: Medium - squeeze-out undecided; depends on final acceptance after 03/11/2026 | Confidence: Medium | Opp size: Unscoped | Win: — | Deadline: 03/11/2026
+- Follow-up: Check the final acceptance level published after the extended period closes 03/11/2026; if it clears 90%, expect squeeze-out and loss of public reporting - snapshot all locator counts before that.
+
+## Coverage notes
+
+Primary-source first, three distinct angles: (1) the target's own disclosures - Addiko 1H26 Half-Year Financial Report and 1H26 Results Presentation, both published 13/08/2026, downloaded and text-extracted locally with pdftotext/pdfminer, plus the MAR ad-hoc of 01/07/2026; (2) the ACQUIRER's disclosures, which turned out to carry the hardest numbers - RBI Q2-2026 results presentation of 31/07/2026 and the full RBI takeover offer document of 14/05/2026 (698KB PDF, extracted locally), which named the carve-out buyer, the four carve-out entities, the EUR 75m integration budget and RBI's stated full technological integration of Croatia; (3) bottom-up footprint reconstruction - every city in every Addiko subsidiary's own branch/ATM locator was enumerated through its POST endpoint on 27/08/2026 (HR, SI, RS, ME, BA-FBiH, BA-RS), plus the two BiH banks' published 'Popis bankomata' ATM lists and the Serbian/Montenegrin/BiH deposit-ATM product pages. RECONCILIATION (the baseline noted no country figure had ever been reconciled to a group disclosure): locator-derived branch counts are HR 35 + RS 33 + SI 20 + ME 13 + BA-FBiH 28 + BA-RS 28 = 157, against the group-disclosed 154 branches at 30/06/2026 - a 2% overcount, consistent with a few non-branch outlets in the locators. The reconciliation holds. Deposit-ATM white space quantified: Addiko Sarajevo 74 ATM locations of which 25 deposit-capable (49 cash-out-only); Addiko Banja Luka only 5 deposit-capable; Montenegro 12 deposit-capable (coin-accepting); Serbia recyclers in ALL branches; Croatia and Slovenia advertise none. GENUINE GAPS: no Addiko disclosure gives ATM counts, so all fleet figures here are locator-derived and dated 27/08/2026, not audited. Whether Addiko Croatia has any deposit-capable ATMs could not be positively confirmed - the absence of a product page is an inference and is flagged as such in that signal. No 1H26 webcast transcript was published yet at the time of this run. NLB's own account of its failed competing bid was not reached. No regulator cross-check (HNB, NBS, CBBiH, CBCG) was run against these fleet counts.
+
+## Access issues
+
+WebSearch quota was exhausted (200/200) before this bank's research began, so ZERO web searches were available - every source here was reached by direct URL fetch or by link-walking from addiko.com, addiko.ba and rbinternational.com. No source was silently dropped. Blocked/dead URLs logged: www.addiko-bank.ba and www.addikobank.ba do not resolve (curl exit 6, DNS) - the BiH entities are at addiko-fbih.ba and addiko-rs.ba, found via the addiko.ba landing page. https://www.addiko.me/o-nama/o-addiko-banci/ekspoziture-i-bankomati/ renders with no locator payload; the working Montenegrin locator is https://www.addiko.me/ekspoziture-i-bankomati/. All PDFs were fetched with a desktop Chrome User-Agent and extracted locally with pdftotext/pdfminer rather than through the fetch tool; no 403 was encountered. The Slovenian locator uses different CSS classes (atm-expozitura) from the other five sites and needed separate parsing.
+
+## Operator requests
+
+1) The German-language binding version of the RBI offer document (the English text used here is expressly a non-binding working translation) - worth an operator pull if exact carve-out purchase-price mechanics are needed. 2) The Addiko 1H26 webcast recording/transcript at https://www.webcast-eqs.com/register/addikobank-h1-2026/de - registration-gated, and management Q&A is where any ATM/self-service refresh commentary would surface. 3) NLB's disclosure on the outcome of its competing offer for Addiko (nlb.si investor relations) - not reached this run. Otherwise none - no paywalled PDF blocked this research.

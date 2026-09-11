@@ -1,0 +1,22 @@
+[
+{"candidate_id":"dr_si_a4_live_001__c_298","role":"keep","decision":"approve","priority":"medium","rationale":"Pan-European wallet scheme operator communications; first hard signal of any Flik/Wero/EuroPA rail change."},
+{"candidate_id":"dr_si_a4_live_001__c_299","role":"pointer_once","decision":"approve","priority":"medium","rationale":"Commercial aggregator of SI ASPSPs/TPPs — mine once for bank API portals and fintech leads, verify against BSI/EBA."},
+{"candidate_id":"dr_si_a4_live_001__c_300","role":"pointer_once","decision":"defer","priority":"low","rationale":"Low-credibility consumer blog directory; useful only as a one-off actor/terminology index."},
+{"candidate_id":"dr_si_a4_live_001__c_301","role":"keep","decision":"approve","priority":"high","rationale":"Central-bank annual report and recurring fee/cost comparisons — core A4 payment-system volume and pricing statistics."},
+{"candidate_id":"dr_si_a4_live_001__c_302","role":"keep","decision":"approve","priority":"critical","rationale":"Live ATM-estate monitor with per-bank counts and history; richest machine-observable SI ATM dataset."},
+{"candidate_id":"dr_si_a4_live_001__c_303","role":"fold_into_parent","decision":"approve","priority":"high","rationale":"BSI cash section on the already-monitored bsi.si domain; keep as sub-page under the central-bank parent."},
+{"candidate_id":"dr_si_a4_live_001__c_304","role":"keep","decision":"approve","priority":"critical","rationale":"e-democracy consultation entry for ZDUPS — the live cash-access law with coverage statistics and impact assessments."},
+{"candidate_id":"dr_si_a4_live_001__c_305","role":"keep","decision":"approve","priority":"high","rationale":"Sponsoring ministry newsroom for ZDUPS; distinct publishing stream on gov.si worth its own monitoring."},
+{"candidate_id":"dr_si_a4_live_001__c_306","role":"keep","decision":"approve","priority":"high","rationale":"Principal independent ATM deployer in Slovenia; municipality-ATM and surcharge pages track who fills closure gaps."},
+{"candidate_id":"dr_si_a4_live_001__c_307","role":"keep","decision":"defer","priority":"high","rationale":"Statutory CIT-licence open dataset would give the full operator census; URL failed verification so re-check liveness."},
+{"candidate_id":"dr_si_a4_live_001__c_308","role":"pointer_once","decision":"approve","priority":"medium","rationale":"Regulated-activity definition page — mine once for terminology, competent authority and register pointers."},
+{"candidate_id":"dr_si_a4_live_001__c_309","role":"keep","decision":"approve","priority":"medium","rationale":"Private-security chamber publishing CIT training and position papers; indirect read on cash-logistics sector size."},
+{"candidate_id":"dr_si_a4_live_001__c_310","role":"keep","decision":"approve","priority":"medium","rationale":"Named CIT operator sites covering vault, ATM replenishment and cash processing capability in scope for cash logistics."},
+{"candidate_id":"dr_si_a4_live_001__c_311","role":"keep","decision":"approve","priority":"high","rationale":"Municipal association maintains a running record of ZDUPS and place-level ATM closure complaints."},
+{"candidate_id":"dr_si_a4_live_001__c_312","role":"keep","decision":"approve","priority":"medium","rationale":"Municipal gazettes/budgets disclose per-ATM subsidy costs; valuable but single-municipality, so treat as a sampled stream."},
+{"candidate_id":"dr_si_a4_live_001__c_313","role":"keep","decision":"approve","priority":"high","rationale":"Postal operator is a counted cash-access node under ZDUPS; parallel estate to ATMs with its own service and network data."},
+{"candidate_id":"dr_si_a4_live_001__c_314","role":"keep","decision":"approve","priority":"high","rationale":"Bank ATM/branch locators are primary ground truth; diffing them detects closures at address level before aggregates."},
+{"candidate_id":"dr_si_a4_live_001__c_315","role":"evidence_not_source","decision":"approve","priority":"low","rationale":"Single chamber news item on the ZDUPS consultation — merchant-side evidence, not a recurring statistics stream."},
+{"candidate_id":"dr_si_a4_live_001__c_316","role":"keep","decision":"approve","priority":"high","rationale":"National open-data catalogue filtered to BSI; recurring discovery surface for datasets behind the 5 km coverage tests."},
+{"candidate_id":"dr_si_a4_live_001__c_317","role":"evidence_not_source","decision":"defer","priority":"low","rationale":"One-off student thesis PDF, URL unverified; low credibility, use as background evidence only."}
+]

@@ -1,0 +1,592 @@
+[
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_001",
+  "source_url": "https://slvesnik.com.mk/arhivirani-izdanija.nspx",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_002",
+  "source_url": "https://www.nbrm.mk/soopshtienija20a27786.nspx",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_003",
+  "source_url": "https://www.nbrm.mk/guverner.nspx",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_004",
+  "source_url": "https://www.nbrm.mk/clenovi_na_soviet_na_nbrm-en.nspx",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_005",
+  "source_url": "https://www.nbrm.mk/organizaciona_sema.nspx",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_006",
+  "source_url": "https://www.nbrm.mk/konkursi.nspx",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_009",
+  "source_url": "https://vlada.mk/node/19305?ln=mk",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_010",
+  "source_url": "https://vlada.mk/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_012",
+  "source_url": "https://finance.gov.mk/mk-MK/ministerstvo/finansiski-sistem",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_017",
+  "source_url": "https://www.nbrm.mk/natsionalien_soviet_za_platnitie_sistiemi.nspx",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_022",
+  "source_url": "https://mk.wikipedia.org/wiki/Народна_банка_на_Македонија",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "UnicodeEncodeError"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_030",
+  "source_url": "https://www.slvesnik.com.mk/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_031",
+  "source_url": "https://slvesnik.com.mk/Issues/besplaten-pristap-do-izdanija.nspx",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_032",
+  "source_url": "https://www.nbrm.mk/registar-na-institucii-za-elektronski-pari.nspx",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_033",
+  "source_url": "https://www.nbrm.mk/ns-newsarticle-odluka-za-izdavane-dozvoli-i-soglasnosti-na-platezna-institucija-i-institucija-za-elektronski-pari-i-za-sodrzinata-i-nacinot-na-vodene-na-registrite.nspx",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_034",
+  "source_url": "https://www.nbrm.mk/content/Regulativa/%D0%9E%D0%B4%D0%BB%D1%83%D0%BA%D0%B0_%D0%B7%D0%B0_%D0%B8%D0%B7%D0%B4%D0%B0%D0%B2%D0%B0%D1%9A%D0%B5_%D1%81%D0%BE%D0%B3%D0%BB%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D0%B8_(%D0%BF%D1%80%D0%B5%D1%87%D0%B8%D1%81%D1%82%D0%B5%D0%BD_%D1%82%D0%B5%D0%BA%D1%81%D1%82).pdf",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_035",
+  "source_url": "https://www.nbrm.mk/content/%D0%97%D0%B0%D0%BA%D0%BE%D0%BD%20%D0%B7%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BA%D0%B8%D1%82%D0%B5%20-%20122-21.pdf",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_045",
+  "source_url": "https://mba.mk/w/mk/aktivnosti/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_050",
+  "source_url": "https://masit.org.mk/en/members-en/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_055",
+  "source_url": "https://afd.mk/en/za-nas/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_068",
+  "source_url": "https://finance.gov.mk/mk-MK/ministerstvo/biro-za-javni-nabavki",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_069",
+  "source_url": "https://finance.gov.mk/mk-MK/ministerstvo/trezor",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_073",
+  "source_url": "https://www.nbrm.mk/javni-nabavki.nspx",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_074",
+  "source_url": "https://customs.gov.mk/images/documents/javni-nabavki/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_075",
+  "source_url": "https://vlada.mk/mk-MK/otvorena-vlada/javni-nabavki",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_080",
+  "source_url": "https://north-macedonia.iom.int/procurement",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_082",
+  "source_url": "https://data.gov.mk/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_095",
+  "source_url": "https://interworks.com.mk/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_107",
+  "source_url": "https://www.dnb.com/business-directory/company-profiles.nextsense_doo.1643dc793c4252f31a45137871338bd5.html",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_110",
+  "source_url": "https://www.nbrm.mk/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_118",
+  "source_url": "https://finance.gov.mk/mk-MK/oblasti/seminari-i-obuki",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_127",
+  "source_url": "https://konekt.mk/2026/08/18/ai-tech-summit-filip-avramchev-повторно-ги-носи-глобалните/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "UnicodeEncodeError"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_131",
+  "source_url": "https://www.nbrm.mk/izvieshtai_za_bankarskiot_sistiem_na_riepublika_makiedonija7b8cb632.nspx",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_132",
+  "source_url": "https://www.nbrm.mk/podatotsi_i_pokazatieli_za_bankarskiot_sistiem_na_riepublika_makiedonija.nspx",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_133",
+  "source_url": "https://www.nbrm.mk/ns-newsarticle-soopstenie-3012020.nspx",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_135",
+  "source_url": "https://www.economy.gov.mk/mk-MK/ministerstvo/drzaven-inspektorat-za-trud",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_136",
+  "source_url": "https://www.mtsp.gov.mk/content/pdf/trud_2017/pravilnici/16,11-%D0%B7%D0%B0%D0%BA%D0%BE%D0%BD%D0%98%D0%BD%D1%81%D0%BF%D0%B5%D0%BA%D1%86%D0%B8%D1%98%D0%B0%D0%A2%D1%80%D1%83%D0%B4.pdf",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_137",
+  "source_url": "https://portal.mdt.gov.mk/post-body-files/socijalno-partnerstvo-file-VFlU.pdf",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_144",
+  "source_url": "http://mkopen.org/catalog/%D0%97%D0%B0%D0%B2%D0%BE%D0%B4%20%D0%B7%D0%B0%20%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0/%D0%9F%D0%B0%D0%B7%D0%B0%D1%80%20%D0%BD%D0%B0%20%D1%82%D1%80%D1%83%D0%B4/%D0%9F%D0%BB%D0%B0%D1%82%D0%B8",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_149",
+  "source_url": "https://www.imf.org/en/Countries/MKD",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_151",
+  "source_url": "https://enlargement.ec.europa.eu/north-macedonia-report_en",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_153",
+  "source_url": "https://www.ebrd.com/home/where-we-are/north-macedonia.html",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_156",
+  "source_url": "https://www.spglobal.com/marketintelligence/en/news-insights/latest-news-headlines",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_162",
+  "source_url": "https://www.nbrm.mk/regulativa-2.nspx",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_181",
+  "source_url": "https://sparkasse.mk/Footer/%D0%97%D0%B0_%D0%9D%D0%B0%D1%81/%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%B5%D0%BD_%D0%B8_%D0%9D%D0%B0%D0%B4%D0%B7%D0%BE%D1%80%D0%B5%D0%BD_%D0%BE%D0%B4%D0%B1%D0%BE%D1%80.aspx",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_182",
+  "source_url": "https://www.sparkasse.mk/Footer/%D0%97%D0%B0_%D0%9D%D0%B0%D1%81/%D0%9F%D0%BE%D0%B4%D0%B0%D1%82%D0%BE%D1%86%D0%B8_%D0%B7%D0%B0_%D0%91%D0%B0%D0%BD%D0%BA%D0%B0%D1%82%D0%B0/%D0%A1%D0%BE%D0%B1%D1%80%D0%B0%D0%BD%D0%B8%D0%B5_%D0%BD%D0%B0_%D0%B0%D0%BA%D1%86%D0%B8%D0%BE%D0%BD%D0%B5%D1%80%D0%B8/42_%D0%A1%D0%B5%D0%B4%D0%BD%D0%B8%D1%86%D0%B0.aspx",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_184",
+  "source_url": "https://www.unibank.mk/news/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_203",
+  "source_url": "https://www.nbrm.mk/bankarska_supervizija_i_rieghulativa.nspx",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_207",
+  "source_url": "https://www.nbrm.mk/ns-newsarticle-PS-registar-na-operatori-na-platnite-sistemi-en.nspx",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_208",
+  "source_url": "https://www.nbrm.mk/izdavanje-dozvoli-ps.nspx",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_217",
+  "source_url": "https://www.fakulteti.mk/job",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_220",
+  "source_url": "https://www.nayax.com/news/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_223",
+  "source_url": "https://www.nbrm.mk/content/%D0%97%D0%B0%D0%BA%D0%BE%D0%BD_%D0%B7%D0%B0_%D0%BF%D0%BB%D0%B0%D1%82%D0%B5%D0%B6%D0%BD%D0%B8_%D1%83%D1%81%D0%BB%D1%83%D0%B3%D0%B8_%D0%B8_%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%B8_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B8_%D0%BD%D0%B5%D0%BE%D1%84.%D0%BF%D1%80%D0%B5%D1%87.%D1%82%D0%B5%D0%BA%D1%81%D1%82_267-25.pdf",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_225",
+  "source_url": "https://www.mastercard.com/content/mccom/eu-language-masters/en/for-the-world/about-us/mastercard-in-europe/mastercard-europe-leadership/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_226",
+  "source_url": "https://africa.visa.com/en_MW/about-visa/newsroom/press-releases/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_249",
+  "source_url": "https://www.fakulteti.mk/job/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_274",
+  "source_url": "https://www.datanyze.com/companies/silk-road-bank/426921554",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_302",
+  "source_url": "https://www.silkroadbank.com.mk/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_303",
+  "source_url": "https://www.marketscreener.com/quote/stock/NLB-BANKA-AD-SKOPJE-64310756/company/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ }
+]

@@ -1,0 +1,26 @@
+{
+  "_about": "Registry-driven config for fetch_diavgeia.py — keeps COUNTRY + terms + host OUT of engine logic (EXTRACTION_PLAYBOOK §6.6). Add a country by adding a block here; the fetcher stays country-agnostic.",
+  "opendata_base": "https://diavgeia.gov.gr/luminapi/opendata",
+  "host": "diavgeia.gov.gr",
+  "country": "GR",
+  "filter_param": "subject",
+  "_filter_param_note": "PLAYBOOK §1: proven to filter (gibberish subject= -> total 0; unfiltered -> 3.1M). The q=/query= params are DECORATION.",
+  "terms": [
+    "καταμέτρησης χαρτονομισμάτων",
+    "μηχανήματα καταμέτρησης",
+    "ATM",
+    "τερματικά POS",
+    "αυτόματων ταμειολογιστικών",
+    "ταμειακές μηχανές",
+    "τραπεζικό λογισμικό",
+    "συστήματος πληρωμών",
+    "αυτοεξυπηρέτησης"
+  ],
+  "control_term": "προμήθεια",
+  "_control_term_note": "PLAYBOOK §6.2: a common word that MUST return >0; if it returns 0 the API/param is broken and the sweep aborts instead of reporting a false empty.",
+  "exclude_subject_contains": [
+    "λογιστική τακτοποίηση",
+    "τακτοποίηση προμήθειας τραπέζης"
+  ],
+  "_exclude_note": "Relevance noise dropped BEFORE storing (municipal bank-fee accounting, not tenders). Every drop is announced (PLAYBOOK §6.4)."
+}

@@ -1,0 +1,21 @@
+[
+{"candidate_id":"dr_mk_a2_live_001__c_254","role":"pointer_once","decision":"approve","priority":"low","rationale":"Company-ranking directory useful to size MK integrators once, not a continuous signal feed."},
+{"candidate_id":"dr_mk_a2_live_001__c_255","role":"pointer_once","decision":"approve","priority":"medium","rationale":"Vendor partner locator: mine once to enumerate authorised MK channel partners for HSM/card/identity tech."},
+{"candidate_id":"dr_mk_a2_live_001__c_256","role":"keep","decision":"approve","priority":"medium","rationale":"Payments software vendor with major Skopje entity; corporate site keeps producing product/news signals."},
+{"candidate_id":"dr_mk_a2_live_001__c_257","role":"keep","decision":"approve","priority":"critical","rationale":"Central regulator hub for the licensed non-bank payments layer; verification failure is soft, re-check liveness."},
+{"candidate_id":"dr_mk_a2_live_001__c_258","role":"keep","decision":"approve","priority":"critical","rationale":"Official EMI register — authoritative leading indicator of new payments buyers."},
+{"candidate_id":"dr_mk_a2_live_001__c_259","role":"fold_into_parent","decision":"approve","priority":"medium","rationale":"Licensing-procedure sub-page of nbrm.mk covered by monitoring the PI/EMI hub."},
+{"candidate_id":"dr_mk_a2_live_001__c_260","role":"evidence_not_source","decision":"approve","priority":"low","rationale":"One-off bylaw defining register fields; useful as evidence, not a recurring feed."},
+{"candidate_id":"dr_mk_a2_live_001__c_261","role":"evidence_not_source","decision":"approve","priority":"medium","rationale":"Consolidated statute PDF — a static legal reference underpinning the payments licensing regime."},
+{"candidate_id":"dr_mk_a2_live_001__c_262","role":"keep","decision":"approve","priority":"high","rationale":"Regulator's payment-infrastructure map (MIPS/KIBS/CaSys) naming operators that procure switching and HSM tech."},
+{"candidate_id":"dr_mk_a2_live_001__c_263","role":"fold_into_parent","decision":"approve","priority":"medium","rationale":"CaSys oversight page is a section of nbrm.mk already covered by the infrastructure/hub sources."},
+{"candidate_id":"dr_mk_a2_live_001__c_264","role":"evidence_not_source","decision":"approve","priority":"medium","rationale":"Single CPMI Red Book PDF; strong English baseline on MK clearing/settlement but a one-off artifact."},
+{"candidate_id":"dr_mk_a2_live_001__c_265","role":"keep","decision":"approve","priority":"high","rationale":"Active PSP/gateway in MK; site reveals acquiring value chain and partner banks on an ongoing basis."},
+{"candidate_id":"dr_mk_a2_live_001__c_266","role":"evidence_not_source","decision":"defer","priority":"medium","rationale":"Single article; the pari.com.mk fintech section would be the monitorable parent, so re-scope later."},
+{"candidate_id":"dr_mk_a2_live_001__c_267","role":"evidence_not_source","decision":"approve","priority":"medium","rationale":"One-off news item documenting a second EMI licensee; evidence of a new payments buyer."},
+{"candidate_id":"dr_mk_a2_live_001__c_268","role":"keep","decision":"needs_access","priority":"high","rationale":"Central company register is core for entity resolution but detailed data typically requires registration/fees."},
+{"candidate_id":"dr_mk_a2_live_001__c_269","role":"evidence_not_source","decision":"approve","priority":"low","rationale":"Single policy article dating the e-money bylaws; contextual evidence only."},
+{"candidate_id":"dr_mk_a2_live_001__c_270","role":"evidence_not_source","decision":"approve","priority":"low","rationale":"Static bank product pages disclosing remittance-network agency; useful as one-time mapping evidence."},
+{"candidate_id":"dr_mk_a2_live_001__c_271","role":"keep","decision":"approve","priority":"high","rationale":"Regional business wire that reports processor mandates and contract-shaped events for private payments actors."},
+{"candidate_id":"dr_mk_a2_live_001__c_272","role":"marginal","decision":"defer","priority":"low","rationale":"Commercial advisory summary, low credibility and redundant with NBRSM primary sources."}
+]

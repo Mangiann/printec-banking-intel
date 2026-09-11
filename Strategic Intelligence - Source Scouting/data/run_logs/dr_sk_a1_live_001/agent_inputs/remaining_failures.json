@@ -1,0 +1,242 @@
+[
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_052",
+  "source_url": "https://e.dennikn.sk/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_067",
+  "source_url": "https://www.spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/482565",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_068",
+  "source_url": "https://www.spglobal.com/ratings/en/research/articles/250530-banking-industry-country-risk-assessment-update-may-2025-13497572",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_072",
+  "source_url": "https://www.imf.org/en/Publications/CR/Issues/2025/03/21/Slovak-Republic-2025-Article-IV-Consultation-Press-Release-and-Staff-Report-565434",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_073",
+  "source_url": "https://www.imf.org/en/publications/cr/issues/2025/04/08/slovak-republic-financial-sector-assessment-program-technical-note-on-systemic-risk-565959",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_117",
+  "source_url": "https://euronetworldwide.gcs-web.com/news-releases",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_146",
+  "source_url": "https://www.webdepozit.sk/archivy-a-katalogy-dip/zobrazenie-archivu-www/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_152",
+  "source_url": "https://www.zlataminca.sk/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_160",
+  "source_url": "https://www.mastercard.com/news/europe/cs-cz/tiskove-centrum/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_168",
+  "source_url": "https://sia-news.com/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_169",
+  "source_url": "https://expotobi.com/cfo-forum-slovensko",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_178",
+  "source_url": "https://api.statistics.sk/rpo/v1/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_179",
+  "source_url": "https://indexpodnikatela.sk/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_190",
+  "source_url": "https://nbs.sk/dohlad-nad-financnym-trhom/dohlad/trh-cennych-papierov/emitenti-cennych-papierov-zakladne-informacie/upozornenie-pre-emitentov-cennych-papierov-esef/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_216",
+  "source_url": "https://www.fininfo.sk/fininfo/financne-produkty/investovanie/ochrana-investicii-gfi/ochrana-investicii-gfi.html",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_218",
+  "source_url": "https://www.slsp.sk/sk/o-nas",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_243",
+  "source_url": "https://sita.sk/firmy-institucie/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_244",
+  "source_url": "https://www.posta.sk/sluzby/skpay-platobna-a-e-money-institucia-poskytujuca-platobne-sluzby-na-poste",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_249",
+  "source_url": "https://www.nexigroup.com/en/investors/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_264",
+  "source_url": "https://www.besteron.sk/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_278",
+  "source_url": "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-regulacie-postovych-sluzieb/statna-regulacia/univerzalna-sluzba/sprava-stave-poskytovania-univerzalnej-sluzby-postoveho-platobneho-styku/sprava-stave-poskytovania-us-pps-za-rok-2024.pdf",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_301",
+  "source_url": "https://www.kevin.eu/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_305",
+  "source_url": "https://www.cee-fintechatlas.com/2021/06/07/insights-into-the-slovak-fintech-ecosystem/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_322",
+  "source_url": "https://www.sopk.sk/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ }
+]

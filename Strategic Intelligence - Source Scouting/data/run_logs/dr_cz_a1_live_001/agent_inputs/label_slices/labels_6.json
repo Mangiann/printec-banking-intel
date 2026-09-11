@@ -1,0 +1,338 @@
+[
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_289",
+    "role": "keep",
+    "decision": "approve",
+    "priority": "medium",
+    "rationale": "Free Economia economy desk with open /export-rss; cheapest machine-readable mainstream CZ feed."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_290",
+    "role": "keep",
+    "decision": "approve",
+    "priority": "medium",
+    "rationale": "Mass-reach MAFRA economy desk; high-volume amplifier of bank results and consumer payments changes."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_291",
+    "role": "keep",
+    "decision": "approve",
+    "priority": "low",
+    "rationale": "MAFRA quality daily economy section; analytical commentary on banks, partly redundant with iDNES newsroom."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_292",
+    "role": "keep",
+    "decision": "approve",
+    "priority": "low",
+    "rationale": "Largest-reach portal; useful for consumer-payments issues going mass-market, low analytical depth."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_293",
+    "role": "keep",
+    "decision": "approve",
+    "priority": "medium",
+    "rationale": "Public broadcaster economy desk with RSS; on-record executive/analyst broadcast interviews."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_294",
+    "role": "keep",
+    "decision": "approve",
+    "priority": "high",
+    "rationale": "CTK wire public site with RSS; timestamps the bank-results news cycle upstream of all rewrites."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_295",
+    "role": "keep",
+    "decision": "needs_access",
+    "priority": "medium",
+    "rationale": "Strong investigative economy desk but subscription daily; access must be cleared before collection."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_296",
+    "role": "keep",
+    "decision": "approve",
+    "priority": "high",
+    "rationale": "Fastest CZ outlet on fintech, payments and neobank product/deal news; distinct signal channel."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_297",
+    "role": "keep",
+    "decision": "defer",
+    "priority": "low",
+    "rationale": "Interview/profile value plausible but homepage fetch returned only a tagline; structure and paywall unverified."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_298",
+    "role": "marginal",
+    "decision": "defer",
+    "priority": "low",
+    "rationale": "Openly partisan commentary site, low credibility and largely redundant framing layer."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_299",
+    "role": "keep",
+    "decision": "defer",
+    "priority": "low",
+    "rationale": "Only dense regional reach for branch/ATM closure stories, but 403 on fetch; recheck liveness."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_300",
+    "role": "keep",
+    "decision": "approve",
+    "priority": "low",
+    "rationale": "English-language bridge into CZ business coverage; useful for non-Czech-reading analysts."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_301",
+    "role": "keep",
+    "decision": "defer",
+    "priority": "low",
+    "rationale": "Public broadcaster English service, low volume on banking; 403 this run so structure unverified."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_302",
+    "role": "keep",
+    "decision": "needs_access",
+    "priority": "high",
+    "rationale": "Licensed media-monitoring archive that legally unlocks paywalled/print CZ coverage; commercial contract required."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_303",
+    "role": "keep",
+    "decision": "needs_access",
+    "priority": "medium",
+    "rationale": "Lower-cost CZ monitoring alternative giving one machine-readable stream; TLS failure is soft, access still needs buying."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_304",
+    "role": "marginal",
+    "decision": "defer",
+    "priority": "low",
+    "rationale": "Small right-leaning commentary outlet, guessed economy path 404'd; low incremental value."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_305",
+    "role": "keep",
+    "decision": "approve",
+    "priority": "high",
+    "rationale": "Capital Markets Day archive quantifies multi-year Czech strategy on its own irregular calendar."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_306",
+    "role": "keep",
+    "decision": "approve",
+    "priority": "medium",
+    "rationale": "Debt investor decks carry funding, MREL and covered-bond detail framing Ceska sporitelna issuance."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_307",
+    "role": "keep",
+    "decision": "approve",
+    "priority": "critical",
+    "rationale": "Richest recurring Czech-BU data artefact for CSOB with a stable templatable quarterly URL pattern."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_308",
+    "role": "keep",
+    "decision": "approve",
+    "priority": "high",
+    "rationale": "KBC reports hub with full-year Czech BU figures and ESEF/XBRL machine-readable annual filings."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_309",
+    "role": "keep",
+    "decision": "approve",
+    "priority": "high",
+    "rationale": "SG quarterly hub with Excel financial series from which Komercni banka lines are recoverable."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_310",
+    "role": "evidence_not_source",
+    "decision": "approve",
+    "priority": "high",
+    "rationale": "Single annual URD PDF; deepest CZ subsidiary and country-by-country annex but harvest from the SG hub."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_311",
+    "role": "keep",
+    "decision": "approve",
+    "priority": "high",
+    "rationale": "UniCredit group results hub reporting a Czech Republic and Slovakia CEE unit on a fast comparative cycle."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_312",
+    "role": "pointer_once",
+    "decision": "approve",
+    "priority": "medium",
+    "rationale": "Group-maintained country report index; mine once for durable local entity filing links."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_313",
+    "role": "keep",
+    "decision": "approve",
+    "priority": "high",
+    "rationale": "RBI results hub with Central Europe segment P&L and XLSM structured series covering Raiffeisenbank CZ."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_314",
+    "role": "evidence_not_source",
+    "decision": "approve",
+    "priority": "high",
+    "rationale": "Annual one-country fact sheet PDF; high-value benchmark artefact but a document, harvested via the RBI hub."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_315",
+    "role": "keep",
+    "decision": "approve",
+    "priority": "high",
+    "rationale": "Czech-domain English investor and cover-pool directory carrying volumes and LTVs absent from local pages."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_316",
+    "role": "keep",
+    "decision": "approve",
+    "priority": "high",
+    "rationale": "Only consolidated view of PPF's Czech retail-finance footprint; watch the a.s. redomiciliation for filing continuity."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_317",
+    "role": "evidence_not_source",
+    "decision": "approve",
+    "priority": "medium",
+    "rationale": "Single dated holding annual report PDF on an asset CDN; closest thing to a PPF Czech banking segment disclosure."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_318",
+    "role": "evidence_not_source",
+    "decision": "defer",
+    "priority": "medium",
+    "rationale": "Opaque numeric document-download link, not a browsable repository; needs a stable index before collection."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_319",
+    "role": "keep",
+    "decision": "defer",
+    "priority": "medium",
+    "rationale": "Primary event stream for an unlisted group but fetch failed; recheck liveness before approving."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_320",
+    "role": "evidence_not_source",
+    "decision": "approve",
+    "priority": "low",
+    "rationale": "Single URD PDF; BNP retains only Czech insurance/leasing entities so scope value is thin but legitimate."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_321",
+    "role": "keep",
+    "decision": "approve",
+    "priority": "high",
+    "rationale": "Payments parent of KB SmartPay acquiring and ATM estate; group channel for Czech acquiring volumes."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_322",
+    "role": "keep",
+    "decision": "approve",
+    "priority": "high",
+    "rationale": "Statutory free OAM archive of Erste and RBI regulated filings; survives IR-site redesigns."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_323",
+    "role": "fold_into_parent",
+    "decision": "approve",
+    "priority": "medium",
+    "rationale": "Erste issuer detail page on pse.cz with 26 siblings; covered by monitoring the Prague Stock Exchange itself."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_324",
+    "role": "keep",
+    "decision": "needs_access",
+    "priority": "high",
+    "rationale": "Transcripts carry Czech-specific detail said only on calls, but the aggregators are paywalled/registration-gated."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_325",
+    "role": "keep",
+    "decision": "approve",
+    "priority": "medium",
+    "rationale": "Czech-language relay plus Patria sell-side notes on Erste, KB and Moneta; commentary, not primary disclosure."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_326",
+    "role": "keep",
+    "decision": "defer",
+    "priority": "high",
+    "rationale": "Named in the cell definition and high value, but consistent 403 WAF blocks; recheck in the liveness pass."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_327",
+    "role": "keep",
+    "decision": "approve",
+    "priority": "critical",
+    "rationale": "The CZ banking trade magazine: interviews, technologie, regulace and a systematic executive-moves feed."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_328",
+    "role": "keep",
+    "decision": "approve",
+    "priority": "high",
+    "rationale": "Published-weighting rankings engine plus announcement-granularity product news across CZ banks and payments."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_329",
+    "role": "keep",
+    "decision": "approve",
+    "priority": "medium",
+    "rationale": "Adviser-side read on bank product moves; do not build a collector on the stale /bankovnictvi/ path."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_330",
+    "role": "keep",
+    "decision": "approve",
+    "priority": "high",
+    "rationale": "Dedicated bank-fee watchdog with active analyses and a live rate dashboard; most on-topic fee source."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_331",
+    "role": "keep",
+    "decision": "approve",
+    "priority": "medium",
+    "rationale": "Third comparison portal giving a cross-check layer on fee and product tables plus registry sub-properties."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_332",
+    "role": "pointer_once",
+    "decision": "approve",
+    "priority": "medium",
+    "rationale": "Award archive 2009-2025 plus 700-product catalogue; mine once as a longitudinal product-innovation panel and lead list."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_333",
+    "role": "pointer_once",
+    "decision": "approve",
+    "priority": "medium",
+    "rationale": "24-year award results archive; mine once for competitive standing and category-evolution signal."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_334",
+    "role": "keep",
+    "decision": "approve",
+    "priority": "high",
+    "rationale": "Publisher of the de facto Czech mortgage rate/volume benchmark used to normalise bank-reported mortgage data."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_335",
+    "role": "keep",
+    "decision": "approve",
+    "priority": "low",
+    "rationale": "Commercial comparison portal; value is redundancy against Mesec and Finparada, low independent credibility."
+  },
+  {
+    "candidate_id": "dr_cz_a1_live_001__c_336",
+    "role": "keep",
+    "decision": "approve",
+    "priority": "medium",
+    "rationale": "Advisor-side trade magazine surfacing commission structures and distribution shifts absent from other layers."
+  }
+]

@@ -1,0 +1,22 @@
+[
+{"candidate_id":"dr_cz_a6_live_001__c_309","role":"fold_into_parent","decision":"approve","priority":"medium","rationale":"Canonical URL is an about-us page; monitor the fintechfutures.com news/country feed at parent level instead."},
+{"candidate_id":"dr_cz_a6_live_001__c_310","role":"keep","decision":"approve","priority":"high","rationale":"Standalone CEE business newswire with recurring CZ banking/payments items in English."},
+{"candidate_id":"dr_cz_a6_live_001__c_311","role":"keep","decision":"approve","priority":"high","rationale":"KBC group newsroom is the primary English channel for CSOB (CZ) technology and M&A moves."},
+{"candidate_id":"dr_cz_a6_live_001__c_312","role":"keep","decision":"approve","priority":"high","rationale":"RBI press-release hub carries CZ subsidiary strategy and vendor/platform announcements."},
+{"candidate_id":"dr_cz_a6_live_001__c_313","role":"keep","decision":"approve","priority":"critical","rationale":"Primary wire for vendor CZ win announcements; verification failure is soft, site is public and feed-monitorable."},
+{"candidate_id":"dr_cz_a6_live_001__c_314","role":"keep","decision":"approve","priority":"high","rationale":"Second major wire with a Czech-language release feed; bilingual capture of payments vendor deals."},
+{"candidate_id":"dr_cz_a6_live_001__c_315","role":"keep","decision":"needs_access","priority":"medium","rationale":"Valuable payments trade coverage but largely subscription-gated; human must clear access."},
+{"candidate_id":"dr_cz_a6_live_001__c_316","role":"keep","decision":"approve","priority":"high","rationale":"GlobalData trade titles regularly name CZ vendor wins and CEE payments JVs; free headline layer usable."},
+{"candidate_id":"dr_cz_a6_live_001__c_317","role":"keep","decision":"approve","priority":"critical","rationale":"Core vendor newsroom/case-study library documenting CZ core-banking wins ahead of local media."},
+{"candidate_id":"dr_cz_a6_live_001__c_318","role":"keep","decision":"approve","priority":"high","rationale":"Vendor newsroom of an active CZ lending-platform competitor; standing watchlist source."},
+{"candidate_id":"dr_cz_a6_live_001__c_319","role":"keep","decision":"needs_access","priority":"medium","rationale":"Analyst research and Model Bank write-ups name CZ bank vendors but most content is licence-gated."},
+{"candidate_id":"dr_cz_a6_live_001__c_320","role":"pointer_once","decision":"needs_access","priority":"low","rationale":"Methodology page, not a feed; MQ/Wave placements are paywalled and better captured via press pickup."},
+{"candidate_id":"dr_cz_a6_live_001__c_321","role":"pointer_once","decision":"needs_access","priority":"medium","rationale":"Single commercial company profile; mine once for competitor/deal mapping, full data requires subscription."},
+{"candidate_id":"dr_cz_a6_live_001__c_322","role":"keep","decision":"needs_access","priority":"medium","rationale":"Independent CZ country awards and CEE banking features, but subscription paywall blocks routine collection."},
+{"candidate_id":"dr_cz_a6_live_001__c_323","role":"keep","decision":"approve","priority":"medium","rationale":"Award write-ups expose CZ bank programmes and delivery partners; low credibility but high disclosure value."},
+{"candidate_id":"dr_cz_a6_live_001__c_324","role":"pointer_once","decision":"approve","priority":"medium","rationale":"Annual CZ fintech legal overview; mine once per edition for actor/regulator mapping rather than monitor."},
+{"candidate_id":"dr_cz_a6_live_001__c_325","role":"keep","decision":"approve","priority":"medium","rationale":"High-volume PR aggregator acting as a broad net for CZ payments vendor releases missed elsewhere."},
+{"candidate_id":"dr_cz_a6_live_001__c_326","role":"keep","decision":"approve","priority":"low","rationale":"Local English outlet flagging CZ retail banking and payment product launches; useful low-cost feed."},
+{"candidate_id":"dr_cz_a6_live_001__c_327","role":"keep","decision":"approve","priority":"medium","rationale":"CZ/CEE digital-banking vendor case-study library naming CZ bank customers and front-end stacks."},
+{"candidate_id":"dr_cz_a6_live_001__c_328","role":"keep","decision":"approve","priority":"medium","rationale":"Prague-office deal announcements independently confirm CZ/CEE banking-payments transactions and parties."}
+]

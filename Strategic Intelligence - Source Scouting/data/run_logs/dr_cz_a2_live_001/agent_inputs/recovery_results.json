@@ -1,0 +1,122 @@
+[
+ {
+  "candidate_id": "dr_cz_a2_live_001__c_014",
+  "source_url": "https://ezak.e-tenders.cz/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a2_live_001__c_038",
+  "source_url": "https://szif.gov.cz/cs/seznam-prijemcu-dotaci",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a2_live_001__c_047",
+  "source_url": "https://vyhledavac.nssoud.cz/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a2_live_001__c_084",
+  "source_url": "https://www.cnb.cz/DC3VyberovaRizeni/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a2_live_001__c_099",
+  "source_url": "https://www.systemonline.cz/it-pro-banky-a-financni-organizace/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a2_live_001__c_109",
+  "source_url": "https://www.itbiz.cz/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a2_live_001__c_141",
+  "source_url": "https://www.erstegroup.com/en/about-us/subsidiaries/erste-group-services",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a2_live_001__c_160",
+  "source_url": "https://www.caixabank.com/en/headlines/news/caixabank-and-global-payments-announce-central-and-eastern-european-joint-venture-with-erste-group-bank--1775-c-22573--",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a2_live_001__c_238",
+  "source_url": "https://raiffeisen.ua/en/about/procurement",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a2_live_001__c_299",
+  "source_url": "https://www.apek.cz/seznam-clenu",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a2_live_001__c_302",
+  "source_url": "https://www.cap.cz/radni-clenove",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a2_live_001__c_305",
+  "source_url": "https://smojk.cz/seznam-clenskych-obci",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ }
+]

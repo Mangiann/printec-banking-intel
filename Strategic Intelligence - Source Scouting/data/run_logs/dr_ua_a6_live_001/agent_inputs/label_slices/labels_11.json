@@ -1,0 +1,22 @@
+[
+{"candidate_id":"dr_ua_a6_live_001__c_309","role":"keep","decision":"approve","priority":"critical","rationale":"UAFIC association portal is a durable hub for UA fintech/payments actors, events and member directory."},
+{"candidate_id":"dr_ua_a6_live_001__c_310","role":"fold_into_parent","decision":"approve","priority":"medium","rationale":"Single-edition programme page on fintechua.org; covered by monitoring the parent portal."},
+{"candidate_id":"dr_ua_a6_live_001__c_311","role":"keep","decision":"approve","priority":"high","rationale":"Standalone awards portal whose recurring shortlists name UA fintech/payments vendors and deployments."},
+{"candidate_id":"dr_ua_a6_live_001__c_312","role":"keep","decision":"approve","priority":"high","rationale":"FinAwards nominee lists are a recurring near-census of UA consumer financial brands and digital deployments."},
+{"candidate_id":"dr_ua_a6_live_001__c_313","role":"keep","decision":"approve","priority":"high","rationale":"Most payments-specific UA award; annual shortlists surface acquirers, PSPs and terminal/software vendors."},
+{"candidate_id":"dr_ua_a6_live_001__c_314","role":"keep","decision":"approve","priority":"high","rationale":"Finclub bank-of-the-year ranking plus forum stream give recurring vendor and payments-volume signals."},
+{"candidate_id":"dr_ua_a6_live_001__c_315","role":"keep","decision":"approve","priority":"medium","rationale":"Recurring UA banking-IT forum organiser; agendas and partner blocks name integrators and software vendors."},
+{"candidate_id":"dr_ua_a6_live_001__c_316","role":"keep","decision":"approve","priority":"high","rationale":"AmCham events calendar continuously surfaces international payments vendors and their UA partners."},
+{"candidate_id":"dr_ua_a6_live_001__c_317","role":"keep","decision":"defer","priority":"medium","rationale":"Second UA banking association is in scope but URL verification failed; re-check liveness before approving."},
+{"candidate_id":"dr_ua_a6_live_001__c_318","role":"keep","decision":"approve","priority":"high","rationale":"NBU financial-inclusion forum microsite; regulator-platformed partners signal policy-aligned payments opportunities."},
+{"candidate_id":"dr_ua_a6_live_001__c_319","role":"keep","decision":"approve","priority":"low","rationale":"NBU events host is a discovery root for regulator gatherings, though research-conference content is only weakly commercial."},
+{"candidate_id":"dr_ua_a6_live_001__c_320","role":"keep","decision":"approve","priority":"medium","rationale":"Retail/FMCG expo organiser whose exhibitor and partner tiers catch payment-acceptance and retail-tech vendors."},
+{"candidate_id":"dr_ua_a6_live_001__c_321","role":"keep","decision":"approve","priority":"low","rationale":"Venue calendar catches low-web-presence trade shows including banking equipment and retail tech."},
+{"candidate_id":"dr_ua_a6_live_001__c_322","role":"pointer_once","decision":"approve","priority":"medium","rationale":"Offshore exhibitor directory to mine once for UA self-service/cash-automation vendors and their competitor set."},
+{"candidate_id":"dr_ua_a6_live_001__c_323","role":"keep","decision":"approve","priority":"medium","rationale":"Recurring small UA fintech/payments B2B forum where new entrants first buy visibility."},
+{"candidate_id":"dr_ua_a6_live_001__c_324","role":"keep","decision":"approve","priority":"medium","rationale":"Minfin project subdomain aggregates FinYear agendas and award nominee announcements across UA consumer finance."},
+{"candidate_id":"dr_ua_a6_live_001__c_325","role":"fold_into_parent","decision":"approve","priority":"low","rationale":"Vertical UAFIC conference subdomain; siblings on fintechua.org make parent monitoring sufficient."},
+{"candidate_id":"dr_ua_a6_live_001__c_326","role":"keep","decision":"defer","priority":"low","rationale":"Third-party global event aggregator of unclear credibility and licensing; useful only as a cross-check."},
+{"candidate_id":"dr_ua_a6_live_001__c_327","role":"keep","decision":"approve","priority":"medium","rationale":"Annual fintech/retail-boundary conference matching payment-acceptance and in-store banking vendor positioning."},
+{"candidate_id":"dr_ua_a6_live_001__c_328","role":"pointer_once","decision":"approve","priority":"low","rationale":"Self-published bank award rosters are back-fill evidence to mine once, not a continuous signal producer."}
+]

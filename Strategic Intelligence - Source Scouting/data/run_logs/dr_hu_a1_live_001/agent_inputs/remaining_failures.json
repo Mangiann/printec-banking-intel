@@ -1,0 +1,322 @@
+[
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_008",
+  "source_url": "https://www.mbhbank.com/investor-relations",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_020",
+  "source_url": "https://www.marketscreener.com/news/mbh-bank-flash-report-on-1h-2025-results-and-investor-presentation-ce7d5bd9da88f621",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_021",
+  "source_url": "https://www.kh.hu/csoport/nyilvanossagra-hozando-informaciok",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_022",
+  "source_url": "https://www.kh.hu/csoport/jelzalogbank",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_071",
+  "source_url": "https://www.vg.hu/penz-es-tokepiac",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_092",
+  "source_url": "https://www.kh.hu/csoport/kozlemenyek",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_102",
+  "source_url": "https://nkfih.gov.hu/hivatalrol/online-sajto",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_104",
+  "source_url": "https://www.unicreditbank.hu/hu/rolunk/sajtoszoba.html",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_109",
+  "source_url": "https://www.mbhbank.com/investor/investor-relations/mbh-bonds/ratings",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_112",
+  "source_url": "https://www.spglobal.com/ratings/en/regulatory/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_115",
+  "source_url": "https://ceginformaciosszolgalat.kormany.hu/beszamolo-allomany-ertekesitese",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_116",
+  "source_url": "https://ngmszakmaiteruletek.kormany.hu/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_120",
+  "source_url": "https://kpmg.com/hu/hu/home/tanulmanyok.html",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_125",
+  "source_url": "https://www.spglobal.com/marketintelligence/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_138",
+  "source_url": "https://www.youtube.com/@budapestistockexchange",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_143",
+  "source_url": "https://seekingalpha.com/symbol/OTPBF",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_144",
+  "source_url": "https://www.marketscreener.com/quote/stock/OTP-BANK-NYRT-6497582/news/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_156",
+  "source_url": "https://onlineceginformacio.hu/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_187",
+  "source_url": "https://financialreports.eu/companies/raiffeisen-bank-international-ag/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_190",
+  "source_url": "https://www.kh.hu/csoport/bank/eves-jelentesek",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_196",
+  "source_url": "https://ceginformaciosszolgalat.kormany.hu/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_207",
+  "source_url": "https://njt.hu/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "ConnectionResetError"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_234",
+  "source_url": "https://www.b-payment.com/hu/rolunk/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_271",
+  "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001029199&type=10-K",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_273",
+  "source_url": "https://www.mastercard.com/news/europe/en/newsroom/press-releases/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_274",
+  "source_url": "https://www.mastercard.hu/hu-hu.html",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_280",
+  "source_url": "https://www.six-payment-services.com/hu/home.html",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_281",
+  "source_url": "https://worldline.com/en/home/top-navigation/investors",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_305",
+  "source_url": "https://www.criterion.hu/keszpenzlogisztika/keszpenzlogisztika-szolgaltatasok/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_307",
+  "source_url": "https://www.atmmarketplace.com/companies/showcases/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_320",
+  "source_url": "https://www.hiventures.hu/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_325",
+  "source_url": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/magyar-fejlesztesi-bank-mfb",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ }
+]

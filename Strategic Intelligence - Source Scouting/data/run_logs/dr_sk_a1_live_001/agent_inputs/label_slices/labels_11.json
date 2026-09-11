@@ -1,0 +1,22 @@
+[
+{"candidate_id":"dr_sk_a1_live_001__c_309","role":"pointer_once","decision":"approve","priority":"high","rationale":"Leasing/asset-finance member directory: mine once for the SK non-bank finance actor map."},
+{"candidate_id":"dr_sk_a1_live_001__c_310","role":"keep","decision":"approve","priority":"medium","rationale":"SBA ADR body publishing recurring consumer payment-dispute caseload — standalone monitorable signal."},
+{"candidate_id":"dr_sk_a1_live_001__c_311","role":"marginal","decision":"defer","priority":"low","rationale":"Certification arm; only weak indirect read on distribution, little recurring disclosure."},
+{"candidate_id":"dr_sk_a1_live_001__c_312","role":"pointer_once","decision":"approve","priority":"medium","rationale":"Securities-dealers member list extends actor map to bank investment subsidiaries; mine once."},
+{"candidate_id":"dr_sk_a1_live_001__c_313","role":"keep","decision":"approve","priority":"medium","rationale":"Asset-management association publishes recurring fund-industry statistics for banking-group arms."},
+{"candidate_id":"dr_sk_a1_live_001__c_314","role":"keep","decision":"approve","priority":"medium","rationale":"Consumer-credit association files dated positions on credit regulation — recurring lender-side signal."},
+{"candidate_id":"dr_sk_a1_live_001__c_315","role":"keep","decision":"approve","priority":"medium","rationale":"Intermediary association covering the distribution layer for banking/insurance products."},
+{"candidate_id":"dr_sk_a1_live_001__c_316","role":"keep","decision":"approve","priority":"low","rationale":"Insurance ombudsman arm; in-scope via bancassurance overlap, main SLASPO domain to confirm."},
+{"candidate_id":"dr_sk_a1_live_001__c_317","role":"keep","decision":"approve","priority":"low","rationale":"Pension associations whose members are banking-group subsidiaries; periodic savings-flow statistics."},
+{"candidate_id":"dr_sk_a1_live_001__c_318","role":"pointer_once","decision":"approve","priority":"medium","rationale":"Debt-collection membership list maps NPL servicers counterparty to SK banks; mine once."},
+{"candidate_id":"dr_sk_a1_live_001__c_319","role":"keep","decision":"approve","priority":"medium","rationale":"E-commerce association covering the acquiring/checkout demand side of SK payments; publishes news."},
+{"candidate_id":"dr_sk_a1_live_001__c_320","role":"pointer_once","decision":"approve","priority":"medium","rationale":"ICT member list yields the vendor/integrator layer serving bank and payments infrastructure."},
+{"candidate_id":"dr_sk_a1_live_001__c_321","role":"pointer_once","decision":"approve","priority":"low","rationale":"Bilingual chamber directory and position papers; useful once for EN-language financial-policy leads."},
+{"candidate_id":"dr_sk_a1_live_001__c_322","role":"pointer_once","decision":"defer","priority":"low","rationale":"Broad statutory chamber, weak financial-sector specificity and URL verification failed; recheck later."},
+{"candidate_id":"dr_sk_a1_live_001__c_323","role":"keep","decision":"approve","priority":"high","rationale":"EBF country page gives standardised EN SK banking-sector figures, updated annually."},
+{"candidate_id":"dr_sk_a1_live_001__c_324","role":"evidence_not_source","decision":"approve","priority":"medium","rationale":"Single-entity transparency datacard: quantified SBA lobbying disclosure, useful as evidence not a feed."},
+{"candidate_id":"dr_sk_a1_live_001__c_325","role":"fold_into_parent","decision":"approve","priority":"high","rationale":"Entity page on registeruz.sk; monitor the registry itself, which is authoritative for association financials."},
+{"candidate_id":"dr_sk_a1_live_001__c_326","role":"fold_into_parent","decision":"approve","priority":"medium","rationale":"FinStat entity profile among many siblings; covered by tracking the FinStat aggregator parent."},
+{"candidate_id":"dr_sk_a1_live_001__c_327","role":"keep","decision":"approve","priority":"high","rationale":"Official legislative consultation portal carrying full-text dated association comments on financial law."},
+{"candidate_id":"dr_sk_a1_live_001__c_328","role":"keep","decision":"needs_access","priority":"low","rationale":"Fast SBA change-detection channel but LinkedIn access is login-gated; human must clear access."}
+]

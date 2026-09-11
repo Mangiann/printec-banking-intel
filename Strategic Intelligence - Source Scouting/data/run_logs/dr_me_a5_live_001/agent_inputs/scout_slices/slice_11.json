@@ -1,0 +1,932 @@
+{
+  "candidates": [
+    {
+      "source_name": "Udruženje banaka Crne Gore (UBCG) — Association of Montenegrin Banks, official site",
+      "source_url": "https://www.ubcg.info/",
+      "source_class": "pointer",
+      "primary_language": "sr",
+      "why_relevant": "The single canonical enumeration of licensed banks operating in Montenegro (11 member banks as of 2025-2026) plus the Association's own governance: Assembly, Upravni odbor (Management Board) president, Director. Association presidency turns over roughly annually and is itself a bank-CEO-level leadership signal; the member list is the actor universe that every other A5 cell (jobs, hiring, leadership moves) must be joined against. Site URL is inferred from the acronym and news references and is NOT confirmed — treat as hypothesis and resolve via the news/registry candidates in this slice.",
+      "credibility_score": 0.9,
+      "usefulness_score": 0.95,
+      "confidence_score": 0.45,
+      "priority": "critical",
+      "domain": "ubcg.info",
+      "source_subtype": "industry association website / member directory",
+      "topics": [
+        "jobs",
+        "hiring",
+        "leadership moves",
+        "organization changes",
+        "actor map"
+      ],
+      "access_status": "unverified",
+      "legal_status": "public website",
+      "collection_allowed": true,
+      "suggested_collection_method": "Resolve the true domain first (candidates: ubcg.info, ubcg.me, udruzenjebanaka.me) via news article outlinks and CRPS/NVO registry entry; then periodic HTML crawl of 'Članice'/'Organi' pages, diffing membership and board composition.",
+      "example_urls": [
+        "https://www.ubcg.info/",
+        "https://www.companywall.me/firma/udruzenje-banaka-crne-gore/MMxLzrBC"
+      ],
+      "discovered_via_method": "local-language search on association name + snowball from news coverage",
+      "queries_used": [
+        "Udruženje banaka Crne Gore ubcg.me članice sajt",
+        "Udruženje banaka Crne Gore predsjednik upravnog odbora izabran"
+      ],
+      "local_language_terms_used": [
+        "Udruženje banaka Crne Gore",
+        "UBCG",
+        "banke članice",
+        "Upravni odbor",
+        "Skupština",
+        "izvršni direktor"
+      ],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Privredna komora Crne Gore — Odbor udruženja bankarstva, drugih finansijskih organizacija i osiguranja (Chamber of Economy, Banking/Finance/Insurance Association Board)",
+      "source_url": "https://komora.me/en/cem/udruzenje-bankarstva-i-drugih-finansijskih-organizacija-i-osiguranja",
+      "source_class": "pointer",
+      "primary_language": "sr",
+      "why_relevant": "Publishes the full named roster of the banking/finance/insurance board — one designated senior person per institution, with their employer, plus the board president/deputy and the Chamber secretary contact. Observed roster includes Miloš Miketić (Lovćen banka, president), Boris Čabrilo (Addiko), Dino Redžepagić (CKB), Marko Čelebić (NLB), Mensur Markišić (Ziraat), Milijana Živković (Adriatic Bank), Mladen Rabrenović (Zapad banka), plus regulators (CBCG, Komisija za tržište kapitala, Agencija za nadzor osiguranja) and payments/fintech actors (Monte Credit, Moj kredit, Montenegro Transfers, CKDD). Diffing this page over time surfaces individual moves AND institution entries/exits.",
+      "credibility_score": 0.9,
+      "usefulness_score": 0.95,
+      "confidence_score": 0.85,
+      "priority": "critical",
+      "domain": "komora.me",
+      "source_subtype": "chamber of commerce sectoral board roster",
+      "topics": [
+        "leadership moves",
+        "organization changes",
+        "actor map",
+        "contact persons"
+      ],
+      "access_status": "open",
+      "legal_status": "public website",
+      "collection_allowed": true,
+      "suggested_collection_method": "Scheduled HTML fetch (sr and en variants) of the association page plus /pkcg/ organ pages; parse name–institution–role triples and diff snapshots monthly.",
+      "example_urls": [
+        "https://komora.me/en/cem/udruzenja",
+        "https://komora.me/en/cem/organizacija",
+        "https://komora.me/pkcg/nadzorni-odbor/"
+      ],
+      "discovered_via_method": "local-language search on chamber sectoral board",
+      "queries_used": [
+        "Privredna komora Crne Gore Odbor udruženja banaka i finansijskih institucija članovi"
+      ],
+      "local_language_terms_used": [
+        "Privredna komora Crne Gore",
+        "Odbor udruženja bankarstva i drugih finansijskih organizacija i osiguranja",
+        "sekretar odbora",
+        "članovi odbora"
+      ],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Privredna komora Crne Gore — organi Komore (Skupština, Upravni odbor, Nadzorni odbor, Predsjednik)",
+      "source_url": "https://komora.me/pkcg/nadzorni-odbor/",
+      "source_class": "direct",
+      "primary_language": "sr",
+      "why_relevant": "Chamber-level governance pages name who sits on the Assembly/Management/Supervisory boards and the President — bank and payment-company executives regularly hold these seats, so elections here are directly reportable leadership signals and confirm who currently represents each institution externally.",
+      "credibility_score": 0.9,
+      "usefulness_score": 0.7,
+      "confidence_score": 0.8,
+      "priority": "medium",
+      "domain": "komora.me",
+      "source_subtype": "chamber governance pages",
+      "topics": [
+        "leadership moves",
+        "organization changes"
+      ],
+      "access_status": "open",
+      "legal_status": "public website",
+      "collection_allowed": true,
+      "suggested_collection_method": "HTML diff of the four organ pages quarterly.",
+      "example_urls": [
+        "https://komora.me/en/cem/predsjednik",
+        "https://komora.me/en/cem/organizacija",
+        "https://komora.me/en/cem/kontakt"
+      ],
+      "discovered_via_method": "snowball from chamber association page",
+      "queries_used": [
+        "Privredna komora Crne Gore Odbor udruženja banaka i finansijskih institucija članovi"
+      ],
+      "local_language_terms_used": [
+        "organi Komore",
+        "Nadzorni odbor",
+        "predsjednik Privredne komore"
+      ],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Montenegrin Foreign Investors' Council (MFIC) / Savjet stranih investitora — Banking Committee and Board",
+      "source_url": "https://www.mfic.me/committees/committees",
+      "primary_language": "en",
+      "source_class": "pointer",
+      "why_relevant": "MFIC enumerates the foreign-owned banking/payments actor set and their designated senior representatives. Observed: Banking Committee permanent members Addiko Bank, Erste Bank, Hipotekarna banka, NLB Banka, CKB and Mastercard — a rare explicit link between a card scheme and the local bank set. MFIC presidency is held by a bank CEO (Tamaš Kamaraši, CKB), so board elections here double as leadership-move signals; MFIC annual White Book also names committee chairs.",
+      "credibility_score": 0.85,
+      "usefulness_score": 0.9,
+      "confidence_score": 0.85,
+      "priority": "high",
+      "domain": "mfic.me",
+      "source_subtype": "foreign investor council — committee/member directory",
+      "topics": [
+        "leadership moves",
+        "organization changes",
+        "actor map"
+      ],
+      "access_status": "open",
+      "legal_status": "public website",
+      "collection_allowed": true,
+      "suggested_collection_method": "Crawl /committees, /members, /about (board) and the annual White Book PDF; extract company + person + role; diff annually and after each general assembly.",
+      "example_urls": [
+        "https://mfic.me/",
+        "https://www.mfic.me/committees/committees",
+        "https://me.linkedin.com/company/montenegrin-foreign-investors'-council-mfic-"
+      ],
+      "discovered_via_method": "bilingual search on foreign investors council + snowball to committee page",
+      "queries_used": [
+        "Savjet stranih investitora Crne Gore MFIC Montenegrin Foreign Investors Council board members banks"
+      ],
+      "local_language_terms_used": [
+        "Savjet stranih investitora",
+        "Odbor za bankarstvo"
+      ],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "AmCham Montenegro — Board of Governors",
+      "source_url": "https://amcham.me/en/board",
+      "source_class": "pointer",
+      "primary_language": "en",
+      "why_relevant": "AmCham's Board of Governors is an elected body whose seats are held by named executives with employer attribution (observed: president of the management board of Lovćen banka ad Podgorica; EPAM Systems Montenegro; Sava osiguranje). Elections are annual/biennial and reported — a clean leadership-move feed plus a cross-sector actor map that catches payments-adjacent IT firms banks buy from.",
+      "credibility_score": 0.85,
+      "usefulness_score": 0.8,
+      "confidence_score": 0.85,
+      "priority": "high",
+      "domain": "amcham.me",
+      "source_subtype": "bilateral chamber governance + member directory",
+      "topics": [
+        "leadership moves",
+        "organization changes",
+        "actor map"
+      ],
+      "access_status": "open",
+      "legal_status": "public website",
+      "collection_allowed": true,
+      "suggested_collection_method": "Fetch /en/board and /me/board plus /news for election announcements; member directory may sit behind a members' login — check /users/ before assuming openness.",
+      "example_urls": [
+        "https://www.amcham.me/about-us/board-of-governors/",
+        "https://amcham.me/me/board",
+        "https://amcham.me/en/amcham-team",
+        "http://www.amcham.me/news/"
+      ],
+      "discovered_via_method": "English search on chamber board elections; snowball to sr-language mirror path",
+      "queries_used": [
+        "AmCham Montenegro board of directors elected members"
+      ],
+      "local_language_terms_used": [
+        "Upravni odbor",
+        "izabran predsjednik"
+      ],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "AmCham Montenegro — member area / user registry",
+      "source_url": "https://www.amcham.me/users/",
+      "source_class": "pointer",
+      "primary_language": "en",
+      "why_relevant": "Member-company listing with contact persons; if it is public it enumerates AmCham's banking/payments/IT membership. Appears to be an account-gated area (a /register/ page exists), so likely partially restricted.",
+      "credibility_score": 0.8,
+      "usefulness_score": 0.6,
+      "confidence_score": 0.5,
+      "priority": "medium",
+      "domain": "amcham.me",
+      "source_subtype": "gated member directory",
+      "topics": [
+        "actor map",
+        "contact persons"
+      ],
+      "access_status": "likely gated",
+      "legal_status": "membership area — do not create accounts or authenticate",
+      "collection_allowed": true,
+      "suggested_collection_method": "Collect only what renders without login; if gated, rely on the public board/news pages instead. Do not register an account.",
+      "example_urls": [
+        "http://www.amcham.me/register/"
+      ],
+      "discovered_via_method": "search result inspection",
+      "queries_used": [
+        "AmCham Montenegro board of directors elected members"
+      ],
+      "local_language_terms_used": [],
+      "blocked": true,
+      "blocker_type": "authentication/registration wall (suspected)",
+      "observed_blocker": "A /register/ page exists alongside /users/, indicating the member listing is account-gated; not confirmed by fetch."
+    },
+    {
+      "source_name": "Unija poslodavaca Crne Gore (UPCG) — Montenegrin Employers Federation, Upravni odbor",
+      "source_url": "https://www.poslodavci.org/o-nama/upravni-odbor/",
+      "source_class": "pointer",
+      "primary_language": "sr",
+      "why_relevant": "Employer-side social partner whose Management Board and presidency are elected at a quadrennial assembly (Slobodan Mikavica elected president 2023-04-13; Slaviša Šćekić assembly president). Board seats are held by company executives including financial-sector firms; UPCG is also the counterpart on collective-bargaining and labour/jobs policy — directly on-topic for the jobs/hiring workstream.",
+      "credibility_score": 0.8,
+      "usefulness_score": 0.7,
+      "confidence_score": 0.85,
+      "priority": "medium",
+      "domain": "poslodavci.org",
+      "source_subtype": "employers' federation governance page",
+      "topics": [
+        "jobs",
+        "leadership moves",
+        "organization changes"
+      ],
+      "access_status": "open",
+      "legal_status": "public website",
+      "collection_allowed": true,
+      "suggested_collection_method": "Fetch /o-nama/upravni-odbor/ and /o-nama/predsjednik/ ; diff after each Skupština (approx. every 4 years, plus co-options).",
+      "example_urls": [
+        "https://www.poslodavci.org/o-nama/predsjednik/",
+        "https://www.poslodavci.org/o-nama/",
+        "https://me.linkedin.com/company/unija-poslodavaca-crne-gore"
+      ],
+      "discovered_via_method": "local-language search on employers' union board",
+      "queries_used": [
+        "Unija poslodavaca Crne Gore upravni odbor izabran članovi 2025"
+      ],
+      "local_language_terms_used": [
+        "Unija poslodavaca Crne Gore",
+        "Upravni odbor",
+        "Skupština",
+        "predsjednik"
+      ],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Asocijacija menadžera Crne Gore (AMM) — membership list and Upravni odbor",
+      "source_url": "http://amm.co.me/en/clanstvo/clanovi-amm/",
+      "source_class": "pointer",
+      "primary_language": "sr",
+      "why_relevant": "AMM is a personal-membership executives' association: its member and board listings map named individuals to employers across banking (observed: Damir Ivaštinović / Erste banka, Ana Cmiljanić / Razvojna banka CG, Biljana Vujović / Addiko Bank). AMM also spawns sub-bodies — a CFO Association and a 'digital team' — whose launches are themselves organization-change and hiring signals. Individual-level granularity that institutional sites do not provide.",
+      "credibility_score": 0.75,
+      "usefulness_score": 0.85,
+      "confidence_score": 0.8,
+      "priority": "high",
+      "domain": "amm.co.me",
+      "source_subtype": "professional/managers association member directory",
+      "topics": [
+        "leadership moves",
+        "organization changes",
+        "actor map"
+      ],
+      "access_status": "open (http only — no TLS observed)",
+      "legal_status": "public website",
+      "collection_allowed": true,
+      "suggested_collection_method": "Crawl /clanstvo/clanovi-amm/ and the organs pages in sr and en; diff quarterly; join person→employer pairs into the actor map.",
+      "example_urls": [
+        "http://amm.co.me/en/",
+        "https://me.linkedin.com/company/asocijacija-menad-era-crne-gore"
+      ],
+      "discovered_via_method": "local-language search on managers association board",
+      "queries_used": [
+        "Asocijacija menadžera Crne Gore AMM upravni odbor članovi banke"
+      ],
+      "local_language_terms_used": [
+        "Asocijacija menadžera Crne Gore",
+        "članovi AMM",
+        "Upravni odbor",
+        "CEO Forum"
+      ],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "CFO Asocijacija Crne Gore (Association of Financial Directors) — newly formed AMM offshoot",
+      "source_url": "https://bankar.me/clanci/osnovana-cfo-asocijacija-finansijski-direktori-dobili-zajednicku-profesionalnu-platformu/",
+      "source_class": "pointer",
+      "primary_language": "sr",
+      "why_relevant": "A brand-new body enumerating the CFOs of Montenegrin institutions including banks — the CFO layer is exactly where finance-function hiring and reorganisation shows up first, and the founding board (Ivaštinović/Erste, Cmiljanić/Razvojna banka, Vujović/Addiko) is a ready-made contact map. As a new association it has no stable homepage found yet; track via AMM and trade press.",
+      "credibility_score": 0.7,
+      "usefulness_score": 0.75,
+      "confidence_score": 0.7,
+      "priority": "medium",
+      "domain": "bankar.me",
+      "source_subtype": "professional association (emerging) — covered via trade press",
+      "topics": [
+        "leadership moves",
+        "organization changes",
+        "hiring"
+      ],
+      "access_status": "open",
+      "legal_status": "public news article",
+      "collection_allowed": true,
+      "suggested_collection_method": "Monitor bankar.me and preduzetnica.me tags plus AMM site for a dedicated CFO Association page/domain appearing; then promote to a direct source.",
+      "example_urls": [
+        "https://preduzetnica.me/formirana-asocijacija-finansijskih-direktora-cfo-novo-poglavlje-finansijskog-menadzmenta-u-crnoj-gori/"
+      ],
+      "discovered_via_method": "snowball from AMM search results",
+      "queries_used": [
+        "Asocijacija menadžera Crne Gore AMM upravni odbor članovi banke"
+      ],
+      "local_language_terms_used": [
+        "Asocijacija finansijskih direktora",
+        "CFO asocijacija",
+        "finansijski direktor"
+      ],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "ICT Cortex — Montenegrin IT cluster / association",
+      "source_url": "https://ictcortex.me/",
+      "source_class": "pointer",
+      "primary_language": "sr",
+      "why_relevant": "The main IT-sector association (founded 2021-03-01) and the closest thing Montenegro has to a fintech/tech vendor body. Members observed: Alicorn, Amplitudo, Bild Studio, Codeus, Codingo, Coinis, Data Design, Dev Club, Fleka, Logate, Oykos Development — several of these (Logate, Coinis, Amplitudo) are banking/payments software suppliers, making the member directory a vendor-side actor map. Founding board: Sanja Gardašević (chair, Alicorn), Nenad Novović (Amplitudo), Dejan Petković (Coinis), Branimir Bukilić (Data Design), Miloš Milošević (Fleka), Ivica Tatar (Logate), Filip Anđelić (Oykos). Cluster also publishes sector employment/revenue analyses relevant to the jobs topic. Domain inferred from the brand name — unverified.",
+      "credibility_score": 0.8,
+      "usefulness_score": 0.85,
+      "confidence_score": 0.6,
+      "priority": "high",
+      "domain": "ictcortex.me",
+      "source_subtype": "industry cluster — member directory + board",
+      "topics": [
+        "jobs",
+        "hiring",
+        "leadership moves",
+        "organization changes",
+        "actor map"
+      ],
+      "access_status": "unverified",
+      "legal_status": "public website",
+      "collection_allowed": true,
+      "suggested_collection_method": "Resolve domain via digitalizuj.me outlinks; then crawl members/board pages and any published sector reports; diff membership semi-annually.",
+      "example_urls": [
+        "https://digitalizuj.me/2021/03/udruzene-it-kompanije-pokrecu-talas-promjena-uz-ict-cortex-do-digitalne-crne-gore/",
+        "https://digitalizuj.me/2021/04/ict-cortex-analizirao-rezultate-poslovanja-30-najuspjesnijih-it-kompanija-u-crnoj-gori/"
+      ],
+      "discovered_via_method": "local-language search on IT association + snowball via digital community portal",
+      "queries_used": [
+        "IT asocijacija Crne Gore članovi udruženje fintech Digitalizuj.me Montenegrin IT cluster"
+      ],
+      "local_language_terms_used": [
+        "IT klaster",
+        "asocijacija IT kompanija",
+        "članice klastera",
+        "Upravni odbor"
+      ],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Digitalizuj.Me — Montenegrin digital community portal",
+      "source_url": "https://digitalizuj.me/",
+      "source_class": "indirect",
+      "primary_language": "sr",
+      "why_relevant": "NGO/community portal that reports association formations, cluster board changes, digital-team appointments and fintech events in local language, and reliably links out to the associations themselves — the best snowballing hub found for the tech/fintech association layer. Co-founder Vladimir Vulić.",
+      "credibility_score": 0.65,
+      "usefulness_score": 0.7,
+      "confidence_score": 0.85,
+      "priority": "medium",
+      "domain": "digitalizuj.me",
+      "source_subtype": "community/NGO news portal",
+      "topics": [
+        "organization changes",
+        "leadership moves",
+        "actor map"
+      ],
+      "access_status": "open",
+      "legal_status": "public website",
+      "collection_allowed": true,
+      "suggested_collection_method": "RSS/tag monitoring for cluster, association, and appointment keywords; harvest outbound links to association domains.",
+      "example_urls": [
+        "https://digitalizuj.me/onama/"
+      ],
+      "discovered_via_method": "local-language search",
+      "queries_used": [
+        "IT asocijacija Crne Gore članovi udruženje fintech Digitalizuj.me Montenegrin IT cluster"
+      ],
+      "local_language_terms_used": [
+        "digitalna zajednica",
+        "digitalizacija",
+        "klaster"
+      ],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "CBCG Fintech Hub — Central Bank of Montenegro fintech portal",
+      "source_url": "https://fintechhub.cbcg.me/",
+      "source_class": "pointer",
+      "primary_language": "sr",
+      "why_relevant": "Regulator-run hub that convenes and lists fintech/payment-institution actors and working groups. In the absence of a standalone Montenegrin fintech association, this is the de facto enumeration point for the fintech actor universe and for named working-group participants — a pointer that feeds the payments side of the actor map.",
+      "credibility_score": 0.95,
+      "usefulness_score": 0.75,
+      "confidence_score": 0.8,
+      "priority": "high",
+      "domain": "fintechhub.cbcg.me",
+      "source_subtype": "regulator fintech hub / participant listing",
+      "topics": [
+        "actor map",
+        "organization changes"
+      ],
+      "access_status": "open",
+      "legal_status": "public regulator website",
+      "collection_allowed": true,
+      "suggested_collection_method": "Crawl the hub's participants/news sections; cross-reference names against CBCG's licensed payment institution register.",
+      "example_urls": [],
+      "discovered_via_method": "local-language fintech search",
+      "queries_used": [
+        "IT asocijacija Crne Gore članovi udruženje fintech Digitalizuj.me Montenegrin IT cluster"
+      ],
+      "local_language_terms_used": [
+        "fintech",
+        "Centralna banka Crne Gore",
+        "platne institucije"
+      ],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Nacionalni biro osiguravača Crne Gore (NBOCG) — National Bureau of Insurers, members and assembly",
+      "source_url": "https://www.nbocg.me/",
+      "source_class": "pointer",
+      "primary_language": "sr",
+      "why_relevant": "Mandatory-membership body for all insurers in Montenegro; its Skupština president rotates among insurer CEOs (Matjaž Božić observed as assembly president c.2022). Because 'sector=both' includes bancassurance-linked payments and because NBOCG sits on the Chamber banking board, its member list and assembly elections extend the actor map to the insurance side.",
+      "credibility_score": 0.85,
+      "usefulness_score": 0.6,
+      "confidence_score": 0.8,
+      "priority": "medium",
+      "domain": "nbocg.me",
+      "source_subtype": "statutory industry bureau — member list + governance",
+      "topics": [
+        "leadership moves",
+        "organization changes",
+        "actor map"
+      ],
+      "access_status": "open",
+      "legal_status": "public website",
+      "collection_allowed": true,
+      "suggested_collection_method": "Crawl members and news pages (a staging mirror at nbocg2.webexperts.me exists — prefer the canonical domain); diff annually.",
+      "example_urls": [
+        "https://www.nbocg.me/en/",
+        "https://nbocg2.webexperts.me/",
+        "https://www.cobx.org/organisation/10782/udruzenje-nacionalni-biro-osiguravaca-crne-gore"
+      ],
+      "discovered_via_method": "local-language search on insurers' bureau",
+      "queries_used": [
+        "Nacionalni biro osiguravača Crne Gore članice skupština izabran predsjednik"
+      ],
+      "local_language_terms_used": [
+        "Nacionalni biro osiguravača Crne Gore",
+        "Skupština",
+        "članice",
+        "predsjednik"
+      ],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Registar nevladinih organizacija (eNVO Registar), Ministarstvo javne uprave — NGO/association registry",
+      "source_url": "https://ngo.gov.me/",
+      "source_class": "pointer",
+      "primary_language": "sr",
+      "why_relevant": "Legally-mandated public registry: every association (including UBCG, ICT Cortex, AMM, MFIC, NBOCG, UPCG) must file its ovlašćeno lice za zastupanje (authorised representative) and report any change within 30 days. This makes the registry a lagging-but-authoritative confirmation channel for association leadership changes — and the advanced search enumerates any association matching banking/fintech keywords, i.e. it can discover bodies no news source mentions. 11,292 associations registered.",
+      "credibility_score": 0.95,
+      "usefulness_score": 0.85,
+      "confidence_score": 0.9,
+      "priority": "high",
+      "domain": "ngo.gov.me",
+      "source_subtype": "government registry (statutory filings)",
+      "topics": [
+        "leadership moves",
+        "organization changes",
+        "actor map"
+      ],
+      "access_status": "open",
+      "legal_status": "public register by law (Zakon o nevladinim organizacijama); personal data — handle representative names under legitimate-interest research use",
+      "collection_allowed": true,
+      "suggested_collection_method": "Use /Pretraga/NaprednaPretraga with keyword sweeps (banaka, bankarstvo, finansij, osiguran, fintech, IT, platni) to enumerate bodies; then poll individual entity records for changes to the authorised representative.",
+      "example_urls": [
+        "https://ngo.gov.me/Pretraga/NaprednaPretraga",
+        "https://ngo.gov.me/Udruzenje",
+        "https://ngo.gov.me/UdruzenjePromjena/IndexPromjena"
+      ],
+      "discovered_via_method": "local-language search for the statutory association registry (first-principles: who must publish)",
+      "queries_used": [
+        "registar NVO Crna Gora Ministarstvo javne uprave pretraga udruženja ovlašćeno lice"
+      ],
+      "local_language_terms_used": [
+        "Registar nevladinih organizacija",
+        "udruženje",
+        "ovlašćeno lice za zastupanje",
+        "napredna pretraga",
+        "promjena podataka"
+      ],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Bankar.me — Montenegrin banking trade press (association tag)",
+      "source_url": "https://www.bankar.me/tag/udruzenje-banaka-crne-gore/",
+      "source_class": "indirect",
+      "primary_language": "sr",
+      "why_relevant": "The most consistent reporter of association-level leadership events in this cell: it carried the Darko Radunović, Aleksa Lukić (Erste) and Tamaš Kamaraši (CKB, Sept 2025) UBCG board presidencies, the AMM digital-team launch and the CFO Association founding. Where association websites are stale or unresolvable, this tag feed is the working substitute and the discovery channel for new bodies.",
+      "credibility_score": 0.75,
+      "usefulness_score": 0.9,
+      "confidence_score": 0.9,
+      "priority": "high",
+      "domain": "bankar.me",
+      "source_subtype": "sector trade media, tag/RSS feed",
+      "topics": [
+        "leadership moves",
+        "organization changes",
+        "hiring"
+      ],
+      "access_status": "open",
+      "legal_status": "public website; copyright — store links/metadata, quote sparingly",
+      "collection_allowed": true,
+      "suggested_collection_method": "Poll the tag feed and paginated archive; extract person/role/institution/date triples.",
+      "example_urls": [
+        "https://bankar.me/clanci/darko-radunovic-predsjednik-upravnog-odbora-udruzenja-banaka/",
+        "https://bankar.me/clanci/izvrsni-direktor-erste-banke-aleksa-lukic-izabran-za-predsjednika-upravnog-odbora-udruzenja-banaka/",
+        "https://www.bankar.me/tag/udruzenje-banaka-crne-gore/page/2/"
+      ],
+      "discovered_via_method": "local-language search; recurring across multiple queries",
+      "queries_used": [
+        "Udruženje banaka Crne Gore predsjednik upravnog odbora izabran",
+        "Asocijacija menadžera Crne Gore AMM upravni odbor članovi banke"
+      ],
+      "local_language_terms_used": [
+        "izabran za predsjednika Upravnog odbora",
+        "Udruženje banaka",
+        "izvršni direktor"
+      ],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Investitor.me — business/finance portal, association leadership coverage",
+      "source_url": "https://investitor.me/",
+      "source_class": "indirect",
+      "primary_language": "sr",
+      "why_relevant": "Independently corroborated the same UBCG board-presidency transitions (Lukić 2021, Kamaraši 2025-09-18) with dated articles — a second-source confirmation channel for association leadership signals, reducing single-source risk on this cell.",
+      "credibility_score": 0.75,
+      "usefulness_score": 0.7,
+      "confidence_score": 0.9,
+      "priority": "medium",
+      "domain": "investitor.me",
+      "source_subtype": "business news portal",
+      "topics": [
+        "leadership moves",
+        "organization changes"
+      ],
+      "access_status": "open",
+      "legal_status": "public website; copyright applies",
+      "collection_allowed": true,
+      "suggested_collection_method": "Keyword/RSS monitoring on association names plus 'izabran', 'imenovan', 'Upravni odbor'.",
+      "example_urls": [
+        "https://investitor.me/2025/09/18/tamas-kamarasi-novi-predsjednik-upravnog-odbora-udruzenja-banaka-crne-gore/",
+        "https://investitor.me/2021/11/30/aleksa-lukic-erste-predsjednik-uprave-udruzenja-banaka-crne-gore/"
+      ],
+      "discovered_via_method": "local-language search",
+      "queries_used": [
+        "Udruženje banaka Crne Gore predsjednik upravnog odbora izabran"
+      ],
+      "local_language_terms_used": [
+        "novi predsjednik Upravnog odbora",
+        "Udruženje banaka Crne Gore"
+      ],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Aktuelno.me — UBCG assembly and statute coverage",
+      "source_url": "https://www.aktuelno.me/tag/udruzenje-banaka-crne-gore",
+      "source_class": "indirect",
+      "primary_language": "sr",
+      "why_relevant": "Carried the UBCG Skupština session adopting a new Statute and a 2026-2031 financial framework, and the expansion of UBCG's remit into digitalisation/AI, ESG, AML/CFT and financial inclusion — i.e. organisation-change signals about the association itself, which typically precede new committee/secretariat roles and hiring. Also named director Marija Šuković alongside assembly president Kamaraši.",
+      "credibility_score": 0.65,
+      "usefulness_score": 0.7,
+      "confidence_score": 0.75,
+      "priority": "medium",
+      "domain": "aktuelno.me",
+      "source_subtype": "news portal, topical tag",
+      "topics": [
+        "organization changes",
+        "leadership moves",
+        "hiring"
+      ],
+      "access_status": "open",
+      "legal_status": "public website; copyright applies",
+      "collection_allowed": true,
+      "suggested_collection_method": "Tag-page polling; tag URL is inferred from an observed sibling tag path — verify.",
+      "example_urls": [
+        "https://www.aktuelno.me/clanak/odrzana-sjednica-skupstine-udruzenja-banaka-usvojen-novi-statut-i-odobren-petogodisnji-finansijski-okvir",
+        "https://www.aktuelno.me/clanak/ubcg-stedimo-za-buducnost"
+      ],
+      "discovered_via_method": "local-language search on association website/members",
+      "queries_used": [
+        "Udruženje banaka Crne Gore ubcg.me članice sajt"
+      ],
+      "local_language_terms_used": [
+        "sjednica Skupštine",
+        "novi Statut",
+        "petogodišnji finansijski okvir"
+      ],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "MINA news agency — institutional/association wire",
+      "source_url": "https://new.mina.news/",
+      "source_class": "indirect",
+      "primary_language": "sr",
+      "why_relevant": "National agency wire that carried the UBCG statute/assembly item; agency copy is the earliest and most reliably dated version of association announcements and is syndicated onward, making it a good primary-timestamp source for leadership and organisational changes.",
+      "credibility_score": 0.85,
+      "usefulness_score": 0.65,
+      "confidence_score": 0.8,
+      "priority": "medium",
+      "domain": "mina.news",
+      "source_subtype": "national news agency",
+      "topics": [
+        "organization changes",
+        "leadership moves"
+      ],
+      "access_status": "open (some agency content may be subscription-gated)",
+      "legal_status": "agency copyright — link and metadata only, do not redistribute full text",
+      "collection_allowed": true,
+      "suggested_collection_method": "Keyword monitoring on association names; store URL + headline + date, not full text.",
+      "example_urls": [
+        "https://new.mina.news/article/usvojen-novi-statut-udru%C5%BEenja-banaka-i-odobren-petogodi%C5%A1nji-finansijski-okvir"
+      ],
+      "discovered_via_method": "snowball from association-site search",
+      "queries_used": [
+        "Udruženje banaka Crne Gore ubcg.me članice sajt"
+      ],
+      "local_language_terms_used": [
+        "Udruženje banaka",
+        "Statut"
+      ],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "CompanyWall Montenegro — entity record for Udruženje banaka Crne Gore",
+      "source_url": "https://www.companywall.me/firma/udruzenje-banaka-crne-gore/MMxLzrBC",
+      "source_class": "indirect",
+      "primary_language": "sr",
+      "why_relevant": "Commercial registry aggregator carrying UBCG's registered address (Novaka Miloševa bb, Podgorica), founding date (2003-04-07) and contact details — useful for confirming legal identity, the registered representative, and for resolving the association's true web presence. Same pattern applies to every other association in this cell.",
+      "credibility_score": 0.6,
+      "usefulness_score": 0.6,
+      "confidence_score": 0.8,
+      "priority": "low",
+      "domain": "companywall.me",
+      "source_subtype": "commercial registry aggregator",
+      "topics": [
+        "organization changes",
+        "actor map"
+      ],
+      "access_status": "partially gated (freemium)",
+      "legal_status": "commercial aggregator — check ToS before automated collection",
+      "collection_allowed": true,
+      "suggested_collection_method": "Manual/low-volume lookups only; prefer the primary CRPS registry where available.",
+      "example_urls": [
+        "https://www.firme-cg.com/udruzenje-nacionalni-biro-osiguravaca-crne-gore/",
+        "https://me.ekapija.com/company/116149/nacionalni-biro-osiguravaca-crne-gore"
+      ],
+      "discovered_via_method": "local-language search for association website",
+      "queries_used": [
+        "Udruženje banaka Crne Gore ubcg.me članice sajt",
+        "Nacionalni biro osiguravača Crne Gore članice skupština izabran predsjednik"
+      ],
+      "local_language_terms_used": [
+        "udruženje",
+        "matični broj",
+        "sjedište"
+      ],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "AmChams in Europe — member chamber directory",
+      "source_url": "https://amchamsineurope.com/members/",
+      "source_class": "pointer",
+      "primary_language": "en",
+      "why_relevant": "Umbrella directory that confirms AmCham Montenegro's canonical domain and its leadership contacts, and provides a stable resolution point if the national chamber's site is restructured. Low direct value, useful as a resolver.",
+      "credibility_score": 0.8,
+      "usefulness_score": 0.4,
+      "confidence_score": 0.85,
+      "priority": "low",
+      "domain": "amchamsineurope.com",
+      "source_subtype": "umbrella association directory",
+      "topics": [
+        "actor map"
+      ],
+      "access_status": "open",
+      "legal_status": "public website",
+      "collection_allowed": true,
+      "suggested_collection_method": "One-off fetch to resolve chamber contacts; re-check annually.",
+      "example_urls": [],
+      "discovered_via_method": "English search snowball from AmCham Montenegro",
+      "queries_used": [
+        "AmCham Montenegro board of directors elected members"
+      ],
+      "local_language_terms_used": [],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Facebook / LinkedIn pages of Montenegrin industry bodies (UBCG via bankar.me, MFIC, UPCG, AMM, ICT Cortex)",
+      "source_url": "https://www.facebook.com/MneFIC/",
+      "source_class": "indirect",
+      "primary_language": "sr",
+      "why_relevant": "For several of these bodies the social page is more current than the website — the observation that UBCG convened 'all 11 member banks' with a named director came from a Facebook post, and MFIC/UPCG/AMM LinkedIn pages announce board elections, new committee chairs and staff appointments before any press release. Practical fallback where association sites are stale or unresolvable.",
+      "credibility_score": 0.55,
+      "usefulness_score": 0.7,
+      "confidence_score": 0.8,
+      "priority": "medium",
+      "domain": "facebook.com / linkedin.com",
+      "source_subtype": "official social media channels",
+      "topics": [
+        "leadership moves",
+        "organization changes",
+        "hiring"
+      ],
+      "access_status": "partially gated (login walls, rate limits)",
+      "legal_status": "platform ToS restrict automated scraping — prefer manual review or official APIs",
+      "collection_allowed": true,
+      "suggested_collection_method": "Manual periodic review or official API/RSS bridges only; do not scrape behind a login. Treat platform posts as leads to be confirmed against a primary source.",
+      "example_urls": [
+        "https://www.facebook.com/bankar.me/posts/1449499280527709/",
+        "https://me.linkedin.com/company/montenegrin-foreign-investors'-council-mfic-",
+        "https://me.linkedin.com/company/unija-poslodavaca-crne-gore"
+      ],
+      "discovered_via_method": "recurring across multiple local-language searches",
+      "queries_used": [
+        "Udruženje banaka Crne Gore ubcg.me članice sajt",
+        "Savjet stranih investitora Crne Gore MFIC Montenegrin Foreign Investors Council board members banks"
+      ],
+      "local_language_terms_used": [
+        "banke članice",
+        "direktorica",
+        "Upravni odbor"
+      ],
+      "blocked": true,
+      "blocker_type": "platform login wall / ToS restriction",
+      "observed_blocker": "Facebook and LinkedIn content is frequently gated behind login and their ToS prohibit automated scraping; not confirmed by fetch in this run."
+    }
+  ],
+  "negative_findings": [
+    {
+      "finding_type": "no_canonical_url_resolved",
+      "description": "Despite targeted local-language searching, no search result surfaced the official website of Udruženje banaka Crne Gore. Coverage of UBCG reaches us only second-hand via bankar.me, investitor.me, aktuelno.me, MINA and a registry aggregator. The domain listed in this slice (ubcg.info) is an inference from the acronym, not an observed link.",
+      "result_summary": "UBCG has a strong media footprint but a weak/invisible web presence in search; its registered contact in the aggregator is a legacy t-com.me email, consistent with a small secretariat and a minimal or absent site.",
+      "why_it_matters": "UBCG is the most important pointer in this cell — the authoritative 11-bank member list and the board presidency both live there. Without a resolved domain, membership enumeration must be reconstructed from news, which is slower and lossier.",
+      "severity": "high",
+      "language": "sr",
+      "source_class": "pointer",
+      "topics": [
+        "actor map",
+        "leadership moves"
+      ]
+    },
+    {
+      "finding_type": "no_dedicated_body_found",
+      "description": "Searched in both Serbian/Montenegrin and English for a standalone Montenegrin fintech or payments association ('fintech udruženje', 'asocijacija za platni promet'). None exists as a distinct organisation.",
+      "result_summary": "The fintech convening function is split between the Central Bank's Fintech Hub, the Chamber of Economy's banking/finance board, and the general IT cluster ICT Cortex.",
+      "why_it_matters": "There is no single membership list of payments/fintech firms to snowball from; the payments actor universe must be assembled from the CBCG licensed-institution register plus the Chamber board roster plus ICT Cortex members.",
+      "severity": "medium",
+      "language": "sr",
+      "source_class": "pointer",
+      "topics": [
+        "actor map",
+        "organization changes"
+      ]
+    },
+    {
+      "finding_type": "stale_or_incomplete_roster",
+      "description": "UPCG's Upravni odbor page and NBOCG's governance pages did not yield a current, dated member roster from search snippets; the most recent named UPCG leadership event found is the April 2023 assembly and the most recent NBOCG assembly president reference is c.2022.",
+      "result_summary": "Rosters exist as pages but their currency could not be established without direct fetch.",
+      "why_it_matters": "Treating a stale roster as current would produce false 'no change' signals in the leadership-moves workstream.",
+      "severity": "medium",
+      "language": "sr",
+      "source_class": "pointer",
+      "topics": [
+        "leadership moves"
+      ]
+    },
+    {
+      "finding_type": "gated_directory",
+      "description": "AmCham Montenegro's member listing appears to sit behind an account registration flow (/users/ alongside /register/), and a dev/staging host (dev.amcham.me) also surfaced in results.",
+      "result_summary": "Public board pages are accessible; the full member directory likely is not.",
+      "why_it_matters": "Full membership enumeration for AmCham may be unobtainable without registering an account, which is out of scope; the board page and news feed must substitute.",
+      "severity": "low",
+      "language": "en",
+      "source_class": "pointer",
+      "topics": [
+        "actor map"
+      ]
+    },
+    {
+      "finding_type": "no_local_terms_available",
+      "description": "No Montenegrin-language equivalent term was found in circulation for a 'payments industry association' or 'card scheme member body' — local coverage uses English brand names (Mastercard, Visa) inside Serbian text rather than any local collective noun.",
+      "result_summary": "Local-language search on payments-association terms returns nothing; only English-in-local usage works.",
+      "why_it_matters": "Queries for this sub-topic must mix English brand tokens into Serbian queries; pure local-language querying under-retrieves on the payments side.",
+      "severity": "low",
+      "language": "sr",
+      "source_class": "pointer",
+      "topics": [
+        "actor map"
+      ]
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "gap_type": "unresolved_primary_source",
+      "description": "The canonical UBCG website and its 'Članice' / 'Organi' pages are unresolved.",
+      "recommended_action": "Fetch the bankar.me, investitor.me and MINA UBCG articles and extract outbound links; also query the CRPS/NVO registry entry for the association's declared web/contact data. Test ubcg.info, ubcg.me, ubcg.co.me and udruzenjebanaka.me.",
+      "coverage_dimension": "source resolution",
+      "severity": "high",
+      "source_class": "pointer",
+      "topics": [
+        "actor map",
+        "leadership moves"
+      ],
+      "language": "sr"
+    },
+    {
+      "gap_type": "no_committee_chair_enumeration",
+      "description": "Committee-level chairs (as opposed to top boards) are only partially visible: the Chamber's banking board president/deputy and MFIC's Banking Committee membership are known, but the named chairs of MFIC's other committees and of any UBCG working groups (digitalisation/AI, ESG, AML/CFT — newly created per the 2026 statute) are not.",
+      "recommended_action": "Fetch MFIC's committees page in full and the MFIC annual White Book PDF; monitor for UBCG announcements naming heads of its four new remit areas, which will be fresh senior-role signals.",
+      "coverage_dimension": "role granularity",
+      "severity": "medium",
+      "source_class": "pointer",
+      "topics": [
+        "leadership moves",
+        "organization changes"
+      ],
+      "language": "en"
+    },
+    {
+      "gap_type": "verification_pending",
+      "description": "Three candidate domains in this slice (ubcg.info, ictcortex.me, and the aktuelno.me tag path) are inferred rather than observed as links in search results.",
+      "recommended_action": "Route all three through the deterministic liveness/verification pass before any are promoted to scheduled collection.",
+      "coverage_dimension": "URL confidence",
+      "severity": "medium",
+      "source_class": "pointer",
+      "topics": [
+        "actor map"
+      ],
+      "language": "sr"
+    },
+    {
+      "gap_type": "missing_source_category",
+      "description": "Bilateral and diaspora chambers other than AmCham (e.g. Italian, Turkish, German-affiliated business councils in Montenegro) were not searched, and neither were the Montenegrin Bar/notary or auditor/accountant professional bodies whose committee seats often overlap with bank compliance and finance leadership.",
+      "recommended_action": "Run a follow-up sweep on 'privredna komora' bilateral variants, 'Institut sertifikovanih računovođa Crne Gore', 'Udruženje revizora', and 'Komora ovlašćenih revizora' to close the professional-body layer.",
+      "coverage_dimension": "source category breadth",
+      "severity": "medium",
+      "source_class": "pointer",
+      "topics": [
+        "leadership moves",
+        "actor map"
+      ],
+      "language": "sr"
+    },
+    {
+      "gap_type": "no_membership_history",
+      "description": "No archived snapshots of any of these member directories were located, so historical membership/board turnover cannot currently be reconstructed.",
+      "recommended_action": "Seed the Wayback Machine with all resolved directory URLs and begin storing own snapshots immediately so diffing can start from this run rather than from first observation.",
+      "coverage_dimension": "temporal depth",
+      "severity": "medium",
+      "source_class": "pointer",
+      "topics": [
+        "organization changes",
+        "leadership moves"
+      ],
+      "language": "en"
+    }
+  ],
+  "brief": "Montenegro's banking/payments association layer is small, personalised andmedia-mediated: the authoritative rosters exist (Chamber of Economy's banking/finance/insurance board, MFIC's Banking Committee, AmCham's Board of Governors, ICT Cortex's member list) but the single most important body — Udruženje banaka Crne Gore — has almost no discoverable web presence, so its 11-member roster and its annually-rotating board presidency are reachable mainly through bankar.me, investitor.me, MINA and aktuelno.me. The strongest pointers are therefore komora.me's sectoral board page, which maps one named senior person per bank/payments/regulator institution with contacts, and the state NGO registry at ngo.gov.me, which by law carries every association's authorised representative and must be updated within 30 days of change. No standalone fintech or payments association exists; that convening role is split between the CBCG Fintech Hub, the Chamber board and the general IT cluster. Priority next step is resolving the UBCG domain and beginning snapshot-diffing of the four live rosters, since none of them currently has archived history to diff against."
+}

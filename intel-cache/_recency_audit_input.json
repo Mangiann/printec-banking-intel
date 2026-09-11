@@ -1,0 +1,343 @@
+[
+ {
+  "key": "privatbank-atm-fleet-renewal-800-unit-2026-lot",
+  "theme": "PrivatBank — ATM fleet renewal (800-unit 2026 lot)",
+  "country": "Ukraine",
+  "date": "16/01/2025 → 22/05/2026",
+  "status": "UPDATED",
+  "files": [
+   "findings/01-bank-disclosures/2026-06-24.md",
+   "findings/02-tenders/2026-06-24.md",
+   "findings/05-jobs/2026-06-24.md"
+  ]
+ },
+ {
+  "key": "piraeus-cashflex-printec-owned-850-off-site-atm-fleet",
+  "theme": "Piraeus / Cashflex — Printec-owned ~850 off-site ATM fleet",
+  "country": "Greece",
+  "date": "22/05/2025",
+  "status": "NEW",
+  "files": [
+   "findings/01-bank-disclosures/2026-06-24.md",
+   "findings/02-tenders/2026-06-24.md"
+  ]
+ },
+ {
+  "key": "hungary-act-xviii-mandated-rural-atm-rollout",
+  "theme": "Hungary — Act XVIII mandated rural ATM rollout",
+  "country": "Hungary",
+  "date": "End-2025 → 31.12.2026",
+  "status": "UPDATED",
+  "files": [
+   "findings/04-statistics/2026-06-24.md",
+   "findings/02-tenders/2026-06-24.md",
+   "findings/05-jobs/2026-06-24.md",
+   "findings/01-bank-disclosures/2026-06-24.md"
+  ]
+ },
+ {
+  "key": "cec-bank-full-stack-modernization",
+  "theme": "CEC Bank — full-stack modernization",
+  "country": "Romania",
+  "date": "2025 → 05/06/2026",
+  "status": "UPDATED",
+  "files": [
+   "findings/01-bank-disclosures/2026-06-24.md",
+   "findings/05-jobs/2026-06-24.md",
+   "findings/02-tenders/2026-06-24.md"
+  ]
+ },
+ {
+  "key": "banca-transilvania-it-digital-cards-platform",
+  "theme": "Banca Transilvania — IT/digital + cards platform",
+  "country": "Romania",
+  "date": "30/04/2026 → 24/06/2026",
+  "status": "UPDATED",
+  "files": [
+   "findings/01-bank-disclosures/2026-06-24.md",
+   "findings/05-jobs/2026-06-24.md"
+  ]
+ },
+ {
+  "key": "alpha-bank-retail-branch-transformation",
+  "theme": "Alpha Bank — retail/branch transformation",
+  "country": "Greece",
+  "date": "02/04/2026 → 24/06/2026",
+  "status": "UPDATED",
+  "files": [
+   "findings/01-bank-disclosures/2026-06-24.md",
+   "findings/05-jobs/2026-06-24.md"
+  ]
+ },
+ {
+  "key": "bank-of-cyprus-branch-transformation-acquisitions",
+  "theme": "Bank of Cyprus — branch transformation + acquisitions",
+  "country": "Cyprus",
+  "date": "07/02/2025 → 23/03/2026",
+  "status": "UPDATED",
+  "files": [
+   "findings/01-bank-disclosures/2026-06-24.md",
+   "findings/05-jobs/2026-06-24.md"
+  ]
+ },
+ {
+  "key": "ncr-atleos-brink-s-merger-partner-channel-risk-partner-of-the-year",
+  "theme": "NCR Atleos / Brink's merger — partner-channel risk (+ Partner of the Year)",
+  "country": "All footprint",
+  "date": "26/02/2026 → 30/06/2026",
+  "status": "UPDATED",
+  "files": [
+   "findings/06-vendors/2026-06-25.md",
+   "findings/01-bank-disclosures/2026-06-24.md",
+   "findings/04-statistics/2026-06-24.md"
+  ]
+ },
+ {
+  "key": "greece-offsite-atm-deployment-competitive-lock-up",
+  "theme": "Greece — offsite ATM deployment + competitive lock-up",
+  "country": "Greece",
+  "date": "2025 → Q3 2026",
+  "status": "UPDATED",
+  "files": [
+   "findings/04-statistics/2026-06-24.md",
+   "findings/06-vendors/2026-06-25.md",
+   "findings/01-bank-disclosures/2026-06-24.md",
+   "findings/02-tenders/2026-06-24.md"
+  ]
+ },
+ {
+  "key": "serbia-sepa-instant-payments-wave",
+  "theme": "Serbia — SEPA / instant-payments wave",
+  "country": "Serbia",
+  "date": "Mar–May 2026",
+  "status": "UPDATED",
+  "files": [
+   "findings/03-regulation/2026-06-24.md",
+   "findings/04-statistics/2026-06-24.md",
+   "findings/05-jobs/2026-06-24.md"
+  ]
+ },
+ {
+  "key": "bulgaria-post-euro-changeover-consolidation",
+  "theme": "Bulgaria — post-euro changeover consolidation",
+  "country": "Bulgaria",
+  "date": "Jan–Jun 2026",
+  "status": "UPDATED",
+  "files": [
+   "findings/01-bank-disclosures/2026-06-24.md",
+   "findings/03-regulation/2026-06-24.md",
+   "findings/04-statistics/2026-06-24.md",
+   "findings/06-vendors/2026-06-25.md"
+  ]
+ },
+ {
+  "key": "romania-dual-atm-pos-estate-expansion",
+  "theme": "Romania — dual ATM + POS estate expansion",
+  "country": "Romania",
+  "date": "Sep 2025 → 2026",
+  "status": "UPDATED",
+  "files": [
+   "findings/04-statistics/2026-06-24.md",
+   "findings/01-bank-disclosures/2026-06-24.md",
+   "findings/03-regulation/2026-06-24.md"
+  ]
+ },
+ {
+  "key": "regulatory-compliance-wave-dora-aml-instant-payments",
+  "theme": "Regulatory compliance wave — DORA, AML, instant payments",
+  "country": "EU-11 footprint",
+  "date": "2025 → 2027/2028",
+  "status": "UPDATED",
+  "files": [
+   "findings/03-regulation/2026-06-24.md",
+   "findings/05-jobs/2026-06-24.md"
+  ]
+ },
+ {
+  "key": "otp-group-rising-it-spend-across-subsidiaries",
+  "theme": "OTP Group — rising IT spend across subsidiaries",
+  "country": "HU + 10 markets",
+  "date": "2025 → 2026",
+  "status": "UPDATED",
+  "files": [
+   "findings/01-bank-disclosures/2026-06-24.md",
+   "findings/05-jobs/2026-06-24.md"
+  ]
+ },
+ {
+  "key": "eurobank-phygital-branches-aml-build-out",
+  "theme": "Eurobank — \"phygital\" branches + AML build-out",
+  "country": "Greece / Cyprus",
+  "date": "2026",
+  "status": "UPDATED",
+  "files": [
+   "findings/01-bank-disclosures/2026-06-24.md",
+   "findings/05-jobs/2026-06-24.md",
+   "findings/06-vendors/2026-06-25.md"
+  ]
+ },
+ {
+  "key": "nbg-core-complete-channel-renewal",
+  "theme": "NBG — core complete + channel renewal",
+  "country": "Greece",
+  "date": "27/02/2026 → 08/05/2026",
+  "status": "UPDATED",
+  "files": [
+   "findings/01-bank-disclosures/2026-06-24.md",
+   "findings/05-jobs/2026-06-24.md",
+   "findings/06-vendors/2026-06-25.md"
+  ]
+ },
+ {
+  "key": "albania-pos-acceptance-mandate-deposit-atm-growth",
+  "theme": "Albania — POS acceptance mandate + deposit-ATM growth",
+  "country": "Albania",
+  "date": "Nov 2025 → 31.12.2026",
+  "status": "NEW",
+  "files": [
+   "findings/04-statistics/2026-06-24.md",
+   "findings/01-bank-disclosures/2026-06-24.md",
+   "findings/02-tenders/2026-06-24.md"
+  ]
+ },
+ {
+  "key": "kosovo-pos-whitespace-deposit-atm-upgrade-bpb-printec-incumbent",
+  "theme": "Kosovo — POS whitespace + deposit-ATM upgrade (BPB Printec-incumbent)",
+  "country": "Kosovo",
+  "date": "2024 → 24/06/2026",
+  "status": "NEW",
+  "files": [
+   "findings/04-statistics/2026-06-24.md",
+   "findings/01-bank-disclosures/2026-06-24.md",
+   "findings/02-tenders/2026-06-24.md"
+  ]
+ },
+ {
+  "key": "western-balkans-tips-clone-instant-payments-go-live",
+  "theme": "Western Balkans — TIPS-clone instant payments go-live",
+  "country": "AL/BA/XK/ME/MK",
+  "date": "Jan 2025 → ~Jul 2026",
+  "status": "NEW",
+  "files": [
+   "findings/03-regulation/2026-06-24.md",
+   "findings/04-statistics/2026-06-24.md"
+  ]
+ },
+ {
+  "key": "bosnia-herzegovina-bank-modernization-fatf-grey-list",
+  "theme": "Bosnia & Herzegovina — bank modernization + FATF grey-list",
+  "country": "Bosnia & Herzegovina",
+  "date": "2024 → 19/06/2026",
+  "status": "NEW",
+  "files": [
+   "findings/01-bank-disclosures/2026-06-24.md",
+   "findings/04-statistics/2026-06-24.md",
+   "findings/03-regulation/2026-06-24.md",
+   "findings/05-jobs/2026-06-24.md"
+  ]
+ },
+ {
+  "key": "montenegro-fastest-growing-see-atm-fleet",
+  "theme": "Montenegro — fastest-growing SEE ATM fleet",
+  "country": "Montenegro",
+  "date": "2024 → 09/06/2026",
+  "status": "NEW",
+  "files": [
+   "findings/04-statistics/2026-06-24.md",
+   "findings/01-bank-disclosures/2026-06-24.md",
+   "findings/05-jobs/2026-06-24.md"
+  ]
+ },
+ {
+  "key": "north-macedonia-nbg-stopanska-sepa-pos-refresh",
+  "theme": "North Macedonia — NBG Stopanska + SEPA + POS refresh",
+  "country": "North Macedonia",
+  "date": "FY2024 → 2026",
+  "status": "NEW",
+  "files": [
+   "findings/01-bank-disclosures/2026-06-24.md",
+   "findings/04-statistics/2026-06-24.md",
+   "findings/03-regulation/2026-06-24.md"
+  ]
+ },
+ {
+  "key": "slovakia-ekasa-cashless-mandate-deposit-atm-expansion",
+  "theme": "Slovakia — eKasa cashless mandate + deposit-ATM expansion",
+  "country": "Slovakia",
+  "date": "01/05/2026",
+  "status": "NEW",
+  "files": [
+   "findings/02-tenders/2026-06-24.md",
+   "findings/01-bank-disclosures/2026-06-24.md",
+   "findings/04-statistics/2026-06-24.md"
+  ]
+ },
+ {
+  "key": "nlb-group-addiko-takeover-see-consolidation",
+  "theme": "NLB Group / Addiko takeover — SEE consolidation",
+  "country": "SI/HR/BA/RS/ME",
+  "date": "14/05/2026 → 22/07/2026",
+  "status": "NEW",
+  "files": [
+   "findings/01-bank-disclosures/2026-06-24.md",
+   "findings/05-jobs/2026-06-24.md"
+  ]
+ },
+ {
+  "key": "mellon-group-competitive-escalation-threat",
+  "theme": "Mellon Group — competitive escalation (threat)",
+  "country": "GR, BG, RO, RS, MK",
+  "date": "2024 → 25/06/2026",
+  "status": "UPDATED",
+  "files": [
+   "findings/06-vendors/2026-06-25.md",
+   "findings/01-bank-disclosures/2026-06-24.md"
+  ]
+ },
+ {
+  "key": "euronet-greece-austria-atm-dominance-threat",
+  "theme": "Euronet — Greece + Austria ATM dominance (threat)",
+  "country": "GR, AT",
+  "date": "2026",
+  "status": "UPDATED",
+  "files": [
+   "findings/06-vendors/2026-06-25.md",
+   "findings/04-statistics/2026-06-24.md",
+   "findings/01-bank-disclosures/2026-06-24.md"
+  ]
+ },
+ {
+  "key": "payten-asseco-see-pos-softpos-atm-outsourcing-threat",
+  "theme": "Payten / Asseco SEE — POS/SoftPOS + ATM-outsourcing (threat)",
+  "country": "RO, RS, HR, BG, MK",
+  "date": "2024 → 16/06/2026",
+  "status": "NEW",
+  "files": [
+   "findings/06-vendors/2026-06-25.md",
+   "findings/02-tenders/2026-06-24.md"
+  ]
+ },
+ {
+  "key": "sector-wide-branch-consolidation-continues",
+  "theme": "Sector-wide — branch consolidation continues",
+  "country": "EU footprint",
+  "date": "End-2025",
+  "status": "UPDATED",
+  "files": [
+   "findings/04-statistics/2026-06-24.md",
+   "findings/01-bank-disclosures/2026-06-24.md",
+   "findings/05-jobs/2026-06-24.md"
+  ]
+ },
+ {
+  "key": "eaa-accessibility-atm-kiosk-refresh-driver",
+  "theme": "EAA accessibility — ATM/kiosk refresh driver",
+  "country": "EU footprint",
+  "date": "28/06/2025 → 18/02/2026",
+  "status": "UPDATED",
+  "files": [
+   "findings/03-regulation/2026-06-24.md",
+   "findings/04-statistics/2026-06-24.md"
+  ]
+ }
+]

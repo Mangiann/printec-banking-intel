@@ -1,0 +1,92 @@
+[
+ {
+  "candidate_id": "dr_cz_a4_live_001__c_045",
+  "source_url": "https://ir.euronetworldwide.com/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a4_live_001__c_062",
+  "source_url": "https://www.apek.cz/studie-a-pruzkumy",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.apek.cz/nase-projekty#tab_studie",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_cz_a4_live_001__c_072",
+  "source_url": "https://skippay.cz/platebni-brana",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a4_live_001__c_083",
+  "source_url": "https://www.csas.cz/cs/firmy/ucty-a-platby/platebni-brana-pro-e-shopy",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a4_live_001__c_097",
+  "source_url": "https://www.erstegroup.com/en/research/equity/sectors/financials",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a4_live_001__c_102",
+  "source_url": "https://www.gfk.com/insights/volne-prodejne-studie-shopper-a-retail",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://nielseniq.com/global/en/insights/",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_cz_a4_live_001__c_190",
+  "source_url": "https://portal-statistik.mpo.cz/cz/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a4_live_001__c_222",
+  "source_url": "https://www.mastercard.com/content/dam/mccom/eu/business/Support/merchant-interchange-rates/pdfs/11Czech.pdf",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a4_live_001__c_226",
+  "source_url": "https://www.mastercard.com/content/dam/mccom/shared/business/support/rules-pdfs/mastercard-rules.pdf",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ }
+]

@@ -1,0 +1,168 @@
+{
+  "updated": "2026-07-23T13:03:38+00:00",
+  "documents": [
+    {
+      "file": "Printec Company Presentation_Jan 2026 (2).pptx",
+      "slug": "printec-company-presentation",
+      "type": "pptx",
+      "sha256": "fb0e819eb2230d1302efa2b422ba38bc62f8c3b050028938809245e051ea6c9c",
+      "bytes": 63340218,
+      "processed_utc": "2026-06-23T09:51:33+00:00",
+      "routed": [
+        "_reference"
+      ],
+      "digests": [
+        "knowledge-base/_reference/printec-company-presentation.md"
+      ],
+      "tags": [
+        "printec-products",
+        "internal-reference",
+        "solutions",
+        "vendors",
+        "company-profile",
+        "self-service",
+        "atm",
+        "payments",
+        "compliance",
+        "security"
+      ]
+    },
+    {
+      "file": "Partnerships and competitors.xlsx",
+      "slug": "partnerships-and-competitors",
+      "type": "xlsx",
+      "sha256": "5a1df476a7f5278539eb83d001d511e27af5eee74d97768262c3c03d6dd7d341",
+      "bytes": 12360,
+      "processed_utc": "2026-06-23T09:51:33+00:00",
+      "routed": [
+        "agent-6-vendors",
+        "_reference"
+      ],
+      "digests": [
+        "knowledge-base/by-agent/agent-6-vendors/partnerships-and-competitors.md",
+        "knowledge-base/_reference/partnerships-and-competitors.md"
+      ],
+      "tags": [
+        "competitors",
+        "partners",
+        "internal-reference"
+      ]
+    },
+    {
+      "file": "RBR Reports - Central and Eastern Europe ATM Market and Forecasts to 2028 (NCR Atleos)[34] (1).pdf",
+      "slug": "rbr-cee-atm-2028",
+      "type": "pdf",
+      "sha256": "3466bdf45b5361b1ce025f444737af46218e076cc05852d40813424867c5102b",
+      "bytes": 5529560,
+      "processed_utc": "2026-06-23T09:51:33+00:00",
+      "routed": [
+        "agent-4-statistics",
+        "agent-8-futurist"
+      ],
+      "digests": [
+        "knowledge-base/by-agent/agent-4-statistics/rbr-cee-atm-2028.md",
+        "knowledge-base/by-agent/agent-8-futurist/rbr-cee-atm-2028.md"
+      ],
+      "tags": [
+        "atm-market",
+        "forecast-2028",
+        "rbr",
+        "cee",
+        "market-report"
+      ]
+    },
+    {
+      "file": "RBR Reports - Western Europe ATM Market and Forecasts to 2028 (NCR Atleos) (1).pdf",
+      "slug": "rbr-we-atm-2028",
+      "type": "pdf",
+      "sha256": "c5b4fd9cebc4679ae2bd3e4583444dec195570eaa8b79ab27951c745c2ac00a2",
+      "bytes": 8109724,
+      "processed_utc": "2026-06-23T09:51:33+00:00",
+      "routed": [
+        "agent-8-futurist",
+        "agent-4-statistics"
+      ],
+      "digests": [
+        "knowledge-base/by-agent/agent-8-futurist/rbr-we-atm-2028.md",
+        "knowledge-base/by-agent/agent-4-statistics/rbr-we-atm-2028.md"
+      ],
+      "tags": [
+        "atm-market",
+        "forecast-2028",
+        "rbr",
+        "western-europe",
+        "benchmark",
+        "market-report",
+        "austria",
+        "cash-recycling",
+        "atm-pooling",
+        "iad"
+      ]
+    },
+    {
+      "file": "Partnerships and competitors.xlsx",
+      "slug": "partnerships-and-competitors",
+      "type": "xlsx",
+      "sha256": "586c0526d97c0d31ee77295b9eeaaf3bcb62b95ce099884fe96b2e74f941e485",
+      "bytes": 7822,
+      "processed_utc": "2026-06-28T11:06:52+00:00",
+      "routed": [
+        "agent-6-vendors",
+        "_reference"
+      ],
+      "digests": [
+        "knowledge-base/by-agent/agent-6-vendors/partnerships-and-competitors.md",
+        "knowledge-base/_reference/partnerships-and-competitors.md"
+      ],
+      "tags": [
+        "competitors",
+        "partners",
+        "internal-reference",
+        "regtech",
+        "payments",
+        "compliance",
+        "digital-trust",
+        "namirial",
+        "imtf",
+        "payten",
+        "asseco"
+      ]
+    },
+    {
+      "file": "Greece - Banking & Payments Sources.xlsx",
+      "slug": "greece-banking-payments-sources",
+      "type": "xlsx",
+      "sha256": "cccba8765ba516e2db489dab56e49de09c1153240bacf54fb79e94a4403a3b31",
+      "bytes": 1033645,
+      "processed_utc": "2026-07-23T13:03:38+00:00",
+      "routed": [
+        "agent-1-bank-disclosures",
+        "agent-2-tenders",
+        "agent-3-regulation",
+        "agent-4-statistics",
+        "agent-5-jobs",
+        "agent-6-vendors",
+        "_reference"
+      ],
+      "digests": [
+        "knowledge-base/by-agent/agent-1-bank-disclosures/greece-banking-payments-sources.md",
+        "knowledge-base/by-agent/agent-2-tenders/greece-banking-payments-sources.md",
+        "knowledge-base/by-agent/agent-3-regulation/greece-banking-payments-sources.md",
+        "knowledge-base/by-agent/agent-4-statistics/greece-banking-payments-sources.md",
+        "knowledge-base/by-agent/agent-5-jobs/greece-banking-payments-sources.md",
+        "knowledge-base/by-agent/agent-6-vendors/greece-banking-payments-sources.md",
+        "knowledge-base/_reference/greece-banking-payments-sources.md"
+      ],
+      "tags": [
+        "greece",
+        "banking",
+        "payments",
+        "source-registry",
+        "information-sources",
+        "monitoring",
+        "workstreams",
+        "market-intelligence"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+# Auto-generated: Kosovo / A2 Tenders & Procurement / sector=both.
+country: XK
+country_name: Kosovo
+sector: both
+workstreams: [A2]
+topics: [tenders, procurement, public contracts, award notices]
+languages: [sq, sr, en]
+routine_id: R2
+routine_name: source_discovery_scout
+routine_version: 0.3.0
+prompt_path: routines/source_discovery_scout/routine_prompt.md
+url_verification:
+  enabled: false
+dedupe:
+  enabled: true

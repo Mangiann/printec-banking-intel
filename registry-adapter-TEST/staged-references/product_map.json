@@ -1,0 +1,143 @@
+{
+  "_comment": "Printec BANKING solution taxonomy — the full set of banking-relevant Printec offerings from the Jan-2026 Company Presentation (knowledge-base/_reference/printec-company-presentation.md), excluding pure-retail lines (self-checkout, vending, pharmacy robots, EV-charging, parcel lockers, ESL, robot sorting). Each category maps a demand signal to a sellable Printec offering AND is the search checklist the research agents use (they must hunt demand signals for EVERY category, not just ATM/POS). 'keywords' are matched case-insensitive, word-boundary aware, against bank_theme + signal + implies + follow_up to auto-classify a signal; a signal may map to several categories. A trailing '*' marks a STEM that also matches inflections (e.g. 'recycl*' -> recycling/recycler/recyclers). Plain tokens require full word boundaries (so 'pos' matches POS but not 'deposit'; 'cit' matches CIT but not 'citizens'). Refresh this file each cycle from the latest Printec products deck (Orchestrator duty).",
+  "categories": [
+    {
+      "id": "atm_recycling",
+      "label": "ATM & cash automation / recycling",
+      "printec": "NCR ATMs (dispense / intelligent-deposit / recycling), cash recyclers, teller cash recyclers & smart safes (Sesami/Glory/Consillion), APTRA OptiCash cash management",
+      "keywords": [
+        "atm", "atms", "atm fleet", "atm rollout", "atm in every settlement", "cash recycl*", "recycl*",
+        "cash 360", "cash360", "bancomat", "банкомат", "cash machine", "cash machines", "cash-in", "cash in/out",
+        "deposit-enabled", "deposit atm", "deposit-capable", "intelligent deposit", "cash handling", "cash automation",
+        "cash dispens*", "mfm", "mfms", "mba", "mbas", "teller cash recycler", "tcr", "tcrs", "smart safe", "smart safes",
+        "vertera", "consillion", "sesami", "glory", "coin", "opticash", "aptra", "cash management", "cash forecast*",
+        "cash optimisation", "cash optimization", "cash-cycle", "idn", "self-banking"
+      ]
+    },
+    {
+      "id": "self_service",
+      "label": "Self-service, kiosks & branch transformation",
+      "printec": "Self-service kiosks, bank kiosk (assisted), APS/SmartPay payment terminals, x-core true-self-service software, x-visio digital signage & QMS, branch transformation / phygital fit-out",
+      "keywords": [
+        "self-service", "self service", "kiosk", "kiosks", "bank kiosk", "payment kiosk", "aps", "smartpay", "ttw",
+        "branch transformation", "branch network", "branch redesign", "next-gen branch", "phygital", "branch fit*",
+        "automated service point", "service point", "branch consolidation", "branch closure", "branch closures",
+        "branch cut", "branch cuts", "branch-conversion", "branch conversion", "x-core", "xcore", "x-visio",
+        "qms", "queue management", "digital signage", "videobanking", "video banking", "video-banking",
+        "assisted self-service", "staffless", "tellerless", "advisory branch"
+      ]
+    },
+    {
+      "id": "pos_acquiring",
+      "label": "POS, acquiring & terminal management",
+      "printec": "EFT-POS terminals & PinPads (Verifone/Castles), softPOS, x-pos Android platform, Terminal Management System (TMS), POSight monitoring, payment facilitation / switching (Watch4Pay)",
+      "keywords": [
+        "pos", "point of sale", "acquir*", "softpos", "soft-pos", "tap to pay", "tap-to-phone", "tap on phone",
+        "merchant", "merchants", "card accept*", "terminal estate", "payment terminal", "payment terminals",
+        "терминал", "термінал", "card acquiring", "pos terminal", "pos terminals", "eft-pos", "eftpos", "pinpad",
+        "pin pad", "x-pos", "xpos", "posight", "tms", "terminal management", "payment facilitat*", "switching",
+        "watch4pay", "payment gateway", "verifone", "castles", "ingenico", "soft-pos"
+      ]
+    },
+    {
+      "id": "payments_instant",
+      "label": "Payments modernization (instant / ISO 20022)",
+      "printec": "Instant-payments infrastructure, ISO 20022 alignment, payment-hub integration, Verification of Payee, digital-euro readiness",
+      "keywords": [
+        "instant payment*", "instant-payment*", "instant credit", "sepa", "sct inst", "iso 20022", "iso20022",
+        "ropay", "iris", "ips", "qvik", "blik", "a2a", "real-time payment*", "payments modern*", "rtgs",
+        "instant rails", "digital euro", "vop", "verification of payee", "payment hub", "payment-hub", "tips",
+        "certis", "transfond", "request to pay", "request-to-pay", "europa", "wero", "payment switch"
+      ]
+    },
+    {
+      "id": "digital_onboarding",
+      "label": "Digital identity, onboarding & e-signature",
+      "printec": "Digital identity / eKYC onboarding (video ID, biometrics, liveness), eIDAS e-signature & qualified trust services (Namirial), EUDI-wallet acceptance",
+      "keywords": [
+        "onboarding", "ekyc", "e-kyc", "kyc", "digital identity", "digital onboarding", "remote onboarding",
+        "identity verif*", "customer onboarding", "snappi", "digital-only bank", "digital bank", "e-signature",
+        "esignature", "electronic signature", "eidas", "qes", "qualified signature", "qualified electronic signature",
+        "trust service", "trust services", "qtsp", "eudi", "eudi wallet", "digital wallet", "biometric*", "liveness",
+        "video id", "video identification", "video-id", "namirial", "evrotrust", "consentid", "remote identification"
+      ]
+    },
+    {
+      "id": "fraud_monitoring",
+      "label": "Fraud & transaction monitoring",
+      "printec": "Real-time transaction monitoring & fraud prevention (INETCO Insight, FICO), payment-fraud analytics",
+      "keywords": [
+        "fraud", "transaction monitor*", "financial crime", "aml screening", "sanctions", "anti-money",
+        "monitoring tool", "fraud screening", "fraud monitoring", "inetco", "fico", "transaction analytics",
+        "behavioural analytics", "behavioral analytics", "scam", "app fraud", "real-time analytics", "fraud detection"
+      ]
+    },
+    {
+      "id": "compliance_resilience",
+      "label": "Compliance & operational resilience",
+      "printec": "AML/compliance suite (Siron), DORA/operational-resilience tooling, accessibility (EAA) compliance, reconciliation & data integrity (FIS), chargeback/dispute, document management",
+      "keywords": [
+        "dora", "operational resilience", "ict risk", "third-party risk", "nis2", "cyber", "cybersecurity",
+        "information security", "aml", "amlr", "amla", "amld", "psd3", "psr", "accessib*", "eaa", "regulat*",
+        "complian*", "audit", "resilience", "tlpt", "ctpp", "reconciliation", "data integrity", "dispute management",
+        "chargeback", "sca", "pci dss", "gdpr", "document management", "ecm", "dms", "archiv*", "moneyval", "fatf",
+        "grey list", "grey-list", "edd", "siron"
+      ]
+    },
+    {
+      "id": "physical_security",
+      "label": "Physical ATM security",
+      "printec": "ATM physical security: IBNS banknote neutralisation (Eve/Even), Oberthur ICSD/PADS, vault locks, surge protection (Raycap); CIT-adjacent",
+      "keywords": [
+        "physical security", "physical-security", "anti-skimming", "skimming", "surveillance", "atm security",
+        "banknote", "banknotes", "cash-in-transit", "cash in transit", "cit", "vandalism", "explosive", "explosives",
+        "ibns", "banknote neutralis*", "banknote neutraliz*", "ink-stain*", "ink stain*", "vault lock", "vault locks",
+        "ram raid", "ram-raid", "surge protection", "raycap", "oberthur", "anti-explosive", "gas attack"
+      ]
+    },
+    {
+      "id": "payment_security_hsm",
+      "label": "Payment security & key management (HSM)",
+      "printec": "Payment HSMs (Thales payShield 10K), remote key injection (ERKM/SLKI), PCI-PIN secure key services / Payments Room, card-crypto for issuing & acquiring",
+      "keywords": [
+        "hsm", "hsms", "hardware security module", "payshield", "thales", "key injection", "key-injection",
+        "key management", "pci pin", "pci-pin", "pci pts", "payments room", "erkm", "slki", "remote key",
+        "cryptograph*", "pin block", "tokeni*", "secure key", "p2pe", "key ceremony", "encryption key"
+      ]
+    },
+    {
+      "id": "card_issuing",
+      "label": "Card issuing & management",
+      "printec": "Card issuing / management / personalisation support, issuer-processor crypto & card-platform integration (HSM, tokenisation, scheme migration)",
+      "keywords": [
+        "card issuing", "card issuance", "card management", "card platform", "card-platform", "cards domain",
+        "cards-domain", "card personalis*", "card personaliz*", "issuer processor", "issuer-processor",
+        "card processing", "card production", "card bureau", "card portfolio", "card reissue", "card re-issue",
+        "instant issuance", "card scheme", "scheme migration", "card-management system", "cms"
+      ]
+    },
+    {
+      "id": "managed_services",
+      "label": "Managed services / outsourcing",
+      "printec": "Managed/customer services, ATM-as-a-Service, device telemetry & remote monitoring, field/maintenance services (500+ engineers), cash-management services, BPO",
+      "keywords": [
+        "managed service*", "outsourc*", "atm-as-a-service", "atmaas", "atm as a service", "as-a-service",
+        "remote monitor*", "remote management", "telemetry", "device monitoring", "pooling", "fleet management",
+        "bpo", "back-office", "back office", "maintenance", "servicing", "service contract", "negotiated procedure",
+        "prequalification", "field service", "field services", "professional services", "predictive maintenance",
+        "managed atm", "first-line maintenance", "second-line maintenance"
+      ]
+    },
+    {
+      "id": "core_digital",
+      "label": "Core / digital channels (adjacent)",
+      "printec": "Integration & self-service adjacency around core-banking and digital-channel programmes (FIS core; often precedes channel spend)",
+      "keywords": [
+        "core banking", "core-banking", "temenos", "backbase", "flexcube", "finacle", "isytech", "emach.ai",
+        "digital channel*", "digital transformation", "it investment", "it capex", "it spend", "it platform*",
+        "architect*", "modern*", "data platform", "ai function", "analytics", "transformation program*",
+        "mobile banking", "e-banking", "cloud migration", "open banking", "pisp", "aisp"
+      ]
+    }
+  ]
+}

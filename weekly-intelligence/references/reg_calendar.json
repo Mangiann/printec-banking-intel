@@ -1,0 +1,577 @@
+{
+ "_comment": "Curated regulatory & event calendar for the Account-targeting + Regulatory-timing lens. 'type': deadline (hard date) | window (buying window opens) | event (market-structure event). 'date' ISO. 'products' link the obligation to Printec offerings (ids from references/product_map.json). REFRESHED 2026-08-03 from the re-triaged master-signal-table (129 signals) and A1 2026-07-30 / A2 2026-08-01 / A3 2026-08-02 / A4 2026-07-24 / A6 2026-07-24 findings. Every item whose date had passed at 2026-08-03 was dropped or resolved: the Addiko contest is RESOLVED in RBI's favour (56.16%, 29/07/2026) and retained as a labelled outcome anchor; the Brink's/Atleos shareholder votes are folded into the Q1-2027 close; the Western Balkans go-live is folded into the November-2026 onboarding window; the Bulgarian euro-exchange window, the Slovak terminal-subsidy window, the MiCA backstop, the Croatia Post and Bank of Albania tender lines and the EPC v2.0 consultation close are retired. TWO CORRECTIONS carried forward: (1) AMLA did NOT submit the bulk of its RTS rulebook on 10/07/2026 — the customer-due-diligence RTS is still at consultation-closed past its statutory date, and the anchor is 10/07/2027 when the AML Regulation applies; (2) the accessibility item now leads with 28/06/2030, the transition end for pre-2025 terminals, not 2045. Every 'source' is a clickable markdown link with a full https:// URL plus the agent-file reference. Items are sorted by date. Banks typically commit budget 6-12 months BEFORE a deadline, so the dashboard counts down to each date.",
+ "items": [
+  {
+   "date": "2026-07-29",
+   "title": "RESOLVED — RBI takes Addiko; Serbia, both Bosnian banks and Montenegro carve out to Alta Group",
+   "geography": [
+    "SI",
+    "HR",
+    "BA",
+    "RS",
+    "ME"
+   ],
+   "type": "event",
+   "forces": "**Corrected this cycle: the 'five-market SEE integration' reading was wrong.** RBI's offer succeeded with acceptances for 10,831,435 shares — 56.16% of the shares subject to the offer, equal to 55.55% of total share capital (the two percentages are the same result measured two ways). NLB's rival offer FAILED at 31.22% against a 50%-plus-one condition and will not settle. RBI RETAINS Croatia, Slovenia and Austria and has budgeted about EUR 75m of one-off integration cost across 2027-2028. Serbia, Addiko Sarajevo, Addiko Banja Luka and Addiko Podgorica are CARVED OUT to Alta Group d.o.o. Belgrade, which already owns Alta Banka Beograd and Alta Banka Bitola — so the buying centre splits: Vienna and Zagreb for HR/SI, and a first-time owner in Belgrade for the four Western Balkans banks. ([A1](findings/01-bank-disclosures/2026-08-27.md), [A5](findings/05-jobs/2026-08-31.md), [RBI offer document](https://www.rbinternational.com/content/dam/rbi/ho/investors/news/publications-austrian-takeover-law/2026-05-14-RBI_Addiko_Angebotsunterlage_EN.pdf.coredownload.pdf))",
+   "products": [
+    "managed_services",
+    "atm_recycling",
+    "self_service",
+    "compliance_resilience"
+   ],
+   "url": "https://www.eqs-news.com/news/corporate/rbi-on-the-status-of-acceptances-of-the-voluntary-public-tender-offer-for-all-addiko-shares-after-expiration-of-the-acceptance-period-on-29-july-2026/2b17ddae-a690-4111-a8f0-282e5a322863_en",
+   "source": "[RBI — status of acceptances after expiry of the acceptance period, 29/07/2026](https://www.eqs-news.com/news/corporate/rbi-on-the-status-of-acceptances-of-the-voluntary-public-tender-offer-for-all-addiko-shares-after-expiration-of-the-acceptance-period-on-29-july-2026/2b17ddae-a690-4111-a8f0-282e5a322863_en); A1 findings 2026-07-30"
+  },
+  {
+   "date": "2026-09-10",
+   "title": "Greece: ELTA/Growthfund market consultation closes on a EUR 6m retail & delivery transformation",
+   "geography": [
+    "GR"
+   ],
+   "type": "deadline",
+   "forces": "EESYP/Growthfund issued an amended preliminary market consultation for ELTA's 'Retail & Delivery Transformation Initiative — Integrated Retail Systems & Delivery Control Tower and Track & Trace', budget EUR 6,000,000 excluding VAT and ELTA-financed, with comments due 10/09/2026 through ESIDIS under reference 2026DIAB33462. A market consultation is the stage at which the specification is still movable, which makes this worth more than most open tenders — it is the only moment to shape the requirement before a likely Q4-2026 tender. ([A2](findings/02-tenders/2026-08-27.md))",
+   "url": "https://www.eprocurement.gov.gr/"
+  },
+  {
+   "date": "2026-09-15",
+   "title": "North Macedonia: KIBS Instant / Strela — first two banks expected to initiate",
+   "geography": [
+    "MK"
+   ],
+   "type": "milestone",
+   "forces": "North Macedonia is going instant on TWO rails at once, which forces every bank into two integrations on two calendars. KIBS Instant (Strela) expects its first two initiating banks by 15/09/2026, while the rebuilt MIPS system passed its first ISO 20022 test cycle with the banks in July (confirmed 04/08/2026) and TIPS Clone accession is expected in the November 2026 window. ([A1](findings/01-bank-disclosures/2026-08-27.md), [A4](findings/04-statistics/2026-08-31.md))"
+  },
+  {
+   "date": "2026-09-18",
+   "title": "North Macedonia: NBRSM TIPS-clone connectivity tender closes on its SECOND attempt",
+   "geography": [
+    "MK"
+   ],
+   "type": "deadline",
+   "forces": "The central bank's own connectivity procurement, ESJN 14505/2026, closes 18/09/2026 — a re-run after the first attempt was cancelled for want of any acceptable bid. A procurement that failed once for lack of qualified bidders is an unusually open door. ([A2](findings/02-tenders/2026-08-27.md), [A6](findings/06-vendors/2026-08-31.md))"
+  },
+  {
+   "date": "2026-09-20",
+   "title": "EPC Verification of Payee scheme rulebook v1.1 takes effect (03:30 CET) — DATE UNVERIFIED THIS CYCLE",
+   "geography": [
+    "GR",
+    "CY",
+    "RO",
+    "BG",
+    "HU",
+    "CZ",
+    "SK",
+    "SI",
+    "HR",
+    "RS"
+   ],
+   "type": "deadline",
+   "forces": "**Not verified at primary source this cycle: the European Payments Council site was Cloudflare-blocked to every access route, so none of five EPC scheme dates could be confirmed.** The item is kept because it was verified in an earlier cycle, but it must not be quoted client-facing as a certification deadline until an operator re-reads the rulebook from a browser session. Substance as previously recorded: the EPC published rulebook v1.1 on 16/03/2026 with an effective moment of 20/09/2026 03:30 CET, binding every scheme participant at that instant on routing-and-verification connectivity, name-matching logic, revised response codes and certificate handling. ([A3 findings](findings/03-regulation/2026-08-27.md))",
+   "products": [
+    "fraud_monitoring",
+    "payments_instant"
+   ],
+   "url": "https://www.europeanpaymentscouncil.eu/what-we-do/epc-payment-schemes/verification-payee",
+   "source": "[EPC — Verification of Payee Scheme Rulebook v1.1](https://www.europeanpaymentscouncil.eu/sites/default/files/kb/file/2026-03/EPC218-23%20v1.1%202026%20Verification%20Of%20Payee%20Scheme%20Rulebook_0.pdf); A3 findings 2026-08-02"
+  },
+  {
+   "date": "2026-09-21",
+   "title": "ECB euro banknote redesign: public survey on the ten shortlisted designs closes",
+   "geography": [
+    "CY",
+    "GR",
+    "HR",
+    "SI",
+    "SK",
+    "BG"
+   ],
+   "type": "milestone",
+   "forces": "The ECB published ten shortlisted designs on 23/07/2026 and its public survey closes 21/09/2026, with a design decision expected around the end of the year. Glory told investors that special demand related to the redesign is expected from around 2029, issued in stages over several years — so this is a note-recognition and sensor-upgrade cycle to plan for, not to sell this year. ([A6](findings/06-vendors/2026-08-31.md), [ECB](https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260723~c2d43f9170.en.html))",
+   "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260723~c2d43f9170.en.html"
+  },
+  {
+   "date": "2026-10-22",
+   "title": "UK CMA Phase 1 statutory decision deadline on Brink's / NCR Atleos",
+   "geography": [
+    "BG",
+    "CY",
+    "CZ",
+    "GR",
+    "HR",
+    "HU",
+    "RO",
+    "RS",
+    "SI",
+    "SK",
+    "UA"
+   ],
+   "type": "deadline",
+   "forces": "The Competition and Markets Authority opened its Phase 1 merger inquiry on 26/08/2026 with a statutory decision deadline of 22/10/2026, while both companies pulled expected completion forward to early Q1 2027. This is the date that decides whether Printec's principal ATM supply partner becomes a direct competitor's asset on the fast path or after a Phase 2 reference. ([A6](findings/06-vendors/2026-08-31.md), [CMA case](https://www.gov.uk/cma-cases/the-brinks-company-slash-ncr-atleos-corporation-merger-inquiry))",
+   "url": "https://www.gov.uk/cma-cases/the-brinks-company-slash-ncr-atleos-corporation-merger-inquiry"
+  },
+  {
+   "date": "2026-10-23",
+   "title": "Romania: RBI quiet period begins — the Garanti BBVA integration scope must be shaped before it",
+   "geography": [
+    "RO"
+   ],
+   "type": "deadline",
+   "forces": "RBI's acquisition of Garanti BBVA Romania is guided to close in early October 2026, with data migration and rebranding across 2027 and legal merger in Q4 2027, creating Romania's #3 bank. A one-off integration budget of about EUR 70m is already pre-funded by a EUR 600m eurobond raised on 20/08/2026. Two merged self-service, card and acquiring estates have to be scoped, and the practical window closes when RBI enters its quiet period on 23/10/2026 — the tightest dated commercial window anywhere in the footprint this cycle. ([A1](findings/01-bank-disclosures/2026-08-27.md), [A2](findings/02-tenders/2026-08-27.md), [A5](findings/05-jobs/2026-08-31.md))"
+  },
+  {
+   "date": "2026-10-31",
+   "title": "ECB SSM-2026-0301: end-of-life ICT action plans due to Joint Supervisory Teams",
+   "geography": [
+    "GR",
+    "HR",
+    "SI",
+    "SK",
+    "CY",
+    "BG"
+   ],
+   "type": "deadline",
+   "forces": "The ECB Banking Supervision letter of 07/07/2026 signed by Claudia Buch requires every significant institution to assess the AI-enabled cyber threat landscape without delay and to submit a comprehensive action plan to its Joint Supervisory Team by 31 October 2026, after which the team engages on each plan, monitors progress and the ECB runs a horizontal analysis across all of them. The named structural measures include modernising infrastructure by updating legacy, unsupported or end-of-life technologies, alongside vulnerability and patch management at scale, monitoring and detection and third-party ICT risk management. ATM and self-service estates on unsupported operating systems sit squarely inside that written-down inventory, and the third-party focus favours one accountable managed-service partner over a fragmented vendor set. Plans are drafted August to October 2026 and the delivery money lands in the 2027 IT plan; as relief the annual IT Risk Questionnaire moves from September 2026 to February 2027. In footprint this binds NBG, Piraeus, Alpha, Eurobank, Bank of Cyprus, Hellenic, Erste, RBI, BAWAG, UniCredit Bank Austria, Zagrebacka, PBZ, Erste & Steiermarkische, NLB, NKBM, Slovenska sporitelna, VUB, Tatra, UniCredit Bulbank, DSK and UBB, plus the CEE subsidiaries that inherit group standards.",
+   "products": [
+    "compliance_resilience",
+    "managed_services",
+    "self_service",
+    "atm_recycling"
+   ],
+   "url": "https://www.bankingsupervision.europa.eu/press/letterstobanks/shared/pdf/2026/ssm.2026_letter_on_AI_enabled_cybersecurity_threats.en.pdf",
+   "source": "[ECB — letter to CEOs on AI-enabled cybersecurity threats (SSM-2026-0301)](https://www.bankingsupervision.europa.eu/press/letterstobanks/shared/pdf/2026/ssm.2026_letter_on_AI_enabled_cybersecurity_threats.en.pdf); A3 findings 2026-08-02"
+  },
+  {
+   "date": "2026-11-01",
+   "title": "North Macedonia: electronic forced-collection system must be established and exchanging information",
+   "geography": [
+    "MK"
+   ],
+   "type": "deadline",
+   "forces": "The transitional provisions of the amended Law on Payment Services and Payment Systems (Sluzben vesnik 144/25) require the electronic forced-collection system to be established and exchanging information by 01/11/2026, with mandatory submission of forced-collection orders through it from 01/11/2027. Every NBRNM-licensed bank — Komercijalna, Stopanska (NBG), NLB, Halkbank, ProCredit, Sparkasse, UNIBanka — plus payment and e-money institutions must build the interface, and it is a second, separate integration landing in the same quarter as the Single Register of Accounts. That compression is what pushes banks toward outsourced delivery. No contract value is published anywhere in the evidence, and one deadline in this same law has already slipped once, so treat go-live as directionally firm rather than certain.",
+   "products": [
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "url": "https://www.nbrm.mk/content/%D0%97%D0%B0%D0%BA%D0%BE%D0%BD_%D0%B7%D0%B0_%D0%BF%D0%BB%D0%B0%D1%82%D0%B5%D0%B6%D0%BD%D0%B8_%D1%83%D1%81%D0%BB%D1%83%D0%B3%D0%B8_%D0%B8_%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%B8_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B8_%20%D0%BD%D0%B5%D0%BE%D1%84.%D0%BF%D1%80%D0%B5%D1%87.%D1%82%D0%B5%D0%BA%D1%81%D1%82_144-25.pdf",
+   "source": "[NBRNM — Law on Payment Services and Payment Systems, consolidated text 144/25](https://www.nbrm.mk/content/%D0%97%D0%B0%D0%BA%D0%BE%D0%BD_%D0%B7%D0%B0_%D0%BF%D0%BB%D0%B0%D1%82%D0%B5%D0%B6%D0%BD%D0%B8_%D1%83%D1%81%D0%BB%D1%83%D0%B3%D0%B8_%D0%B8_%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%B8_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B8_%20%D0%BD%D0%B5%D0%BE%D1%84.%D0%BF%D1%80%D0%B5%D1%87.%D1%82%D0%B5%D0%BA%D1%81%D1%82_144-25.pdf); A3 findings 2026-08-02"
+  },
+  {
+   "date": "2026-11-03",
+   "title": "Addiko: additional share-acceptance period closes",
+   "geography": [
+    "HR",
+    "SI",
+    "RS",
+    "BA",
+    "ME"
+   ],
+   "type": "deadline",
+   "forces": "The statutory grace period runs to 03/11/2026 17:00 CET, after which the official post-grace result is published; all remaining closing conditions must be met by 14/05/2027 and carve-out closing is expected in H2 2027. ([A1](findings/01-bank-disclosures/2026-08-27.md), [A5](findings/05-jobs/2026-08-31.md))"
+  },
+  {
+   "date": "2026-11-14",
+   "title": "SWIFT SR2026 structured-address cutover (14-15/11/2026 release weekend)",
+   "geography": [
+    "GR",
+    "CY",
+    "RO",
+    "BG",
+    "HU",
+    "CZ",
+    "SK",
+    "SI",
+    "HR",
+    "RS",
+    "UA",
+    "AL",
+    "BA",
+    "XK",
+    "ME",
+    "MK"
+   ],
+   "type": "deadline",
+   "forces": "From the 2026 standards release, deployed over the 14-15 November 2026 weekend, unstructured postal addresses are removed from cross-border messages: town name and country code must sit in dedicated structured fields for all agents and parties. SWIFT's own readiness material still puts around 65% of payment messages on unstructured addresses. The euro RTGS release deploys the same weekend with testing open 25/09-28/10/2026, and a second wave upgrades the base messages in November 2027 — a separately funded budget cycle recorded identically for the euro RTGS, Romania, Albania and Ukraine. Two named exposures: Hungary's RTGS does not support hybrid postal addresses and has no confirmed timeline, and Bosnia's domestic clearing is contractually pinned to the EPC rulebook, pulling an EU date into a non-EU market. The RTGS core is not Printec's lane; the layer around it is — address and party-data cleansing, sanctions and AML screening retuned for structured fields, payment repair, exception monitoring and managed services. Banks not funded by Q3-2026 buy emergency remediation in September and October.",
+   "products": [
+    "compliance_resilience",
+    "payments_instant",
+    "managed_services"
+   ],
+   "url": "https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed",
+   "source": "[Swift — ISO 20022 milestone for November 2026](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed); A3 findings 2026-08-02"
+  },
+  {
+   "date": "2026-11-15",
+   "title": "EPC retail cut-off for unstructured addresses, 03:30 CET (MOVED from 22/11/2026)",
+   "geography": [
+    "GR",
+    "CY",
+    "RO",
+    "BG",
+    "HU",
+    "CZ",
+    "SK",
+    "SI",
+    "HR",
+    "RS",
+    "BA"
+   ],
+   "type": "deadline",
+   "forces": "EPC guidance fixes the retail counterpart of the SWIFT cutover at 15/11/2026 at 03:30 CET for instant credit transfers, a date moved from the previously communicated 22/11/2026 — a one-week pull-forward that banks and their vendors may still be carrying wrongly in project plans, so it is worth checking every diary. After that moment unstructured data will, in the EPC's own words, lead to rejects. Bosnia is exposed even though it is outside the EU because its domestic clearing is contractually pinned to the EPC rulebook. The work is counterparty master-data remediation, message transformation, repair and exception monitoring, and it must be complete a day before the SWIFT weekend rather than after it. **Caveat added 2026-08-31: the EPC site was Cloudflare-blocked to every route this cycle, so this date is carried from an earlier verification and was not re-confirmed at primary. The SWIFT SR2026 release-weekend date of 14-15/11/2026 IS independently confirmed.** ([A3 findings](findings/03-regulation/2026-08-27.md))",
+   "products": [
+    "payments_instant",
+    "compliance_resilience",
+    "fraud_monitoring"
+   ],
+   "url": "https://www.bis.org/cpmi/pietf/iso20022_2026.pdf",
+   "source": "[BIS/CPMI — Fostering ISO 20022 harmonisation, follow-up report (Feb-2026)](https://www.bis.org/cpmi/pietf/iso20022_2026.pdf); EPC guidance via A3 findings 2026-08-02"
+  },
+  {
+   "date": "2026-11-30",
+   "title": "Slovakia: AMLD6 Act 73/2026 — registration in the FIU's goAML reporting system",
+   "geography": [
+    "SK"
+   ],
+   "type": "deadline",
+   "forces": "Act No. 73/2026 Z. z., amending Act No. 297/2008 and transposing Directive (EU) 2024/1640, took effect 01/06/2026. Every entity already obliged on that date must register in the financial intelligence unit's goAML reporting system by 30/11/2026 (new ones within 30 days); failure is an administrative offence, with Slovak professional commentary citing a EUR 1,000,000 ceiling. Obliged persons may no longer rely on the Register of Legal Entities alone for beneficial ownership and must verify from multiple reliable independent sources, applying to new clients and retrospectively to existing relationships during ongoing monitoring — that turns beneficial-owner verification into a bulk remediation of the existing book, not just an onboarding change. Suspicious-transaction and threshold-reporting interfaces must therefore be built or rebuilt against the FIU schema this half-year, not in FY2027, and the adapter should be configurable because the EU-level reporting-format standard re-cuts the same interface for 10/07/2027. Targets: SLSP, VUB, Tatra, CSOB SK, Postova banka and 365.bank.",
+   "products": [
+    "compliance_resilience",
+    "digital_onboarding",
+    "fraud_monitoring"
+   ],
+   "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2026/73/",
+   "source": "[Slov-Lex — zakon c. 73/2026 Z. z.](https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2026/73/); A3 findings 2026-08-02"
+  },
+  {
+   "date": "2026-11-30",
+   "title": "Western Balkans: second TIPS Clone onboarding window (central banks of Albania, Kosovo and North Macedonia)",
+   "geography": [
+    "AL",
+    "XK",
+    "MK"
+   ],
+   "type": "window",
+   "forces": "Correcting the previous entry: Montenegro (all 11 banks) and Bosnia went live on the Banca d'Italia-run shared TIPS Clone on 20/07/2026, and the November 2026 second window onboards the CENTRAL BANKS of Albania, Kosovo and North Macedonia only — Banca d'Italia says nothing about commercial-bank deadlines, so 'completing regional participation' overstated it and national commercial-bank timetables remain unpublished. Kosovo is the most active: the central bank ran an all-bank standardisation workshop on 27/07/2026 covering technical standards, new file formats, transaction limits, ISO 20022 and e-banking adaptation, and awarded advisory RFP BQK-26-011-211 to Paylume SRL on 22/07/2026 at EUR 295,000 over 10 months, so the bank-side integration and merchant/QR acceptance packages are still ahead. This is the budget window in which payment hubs, 24/7 operations, instant-speed sanctions and fraud screening and HSM capacity get committed.",
+   "products": [
+    "payments_instant",
+    "fraud_monitoring",
+    "payment_security_hsm"
+   ],
+   "url": "https://www.bancaditalia.it/media/notizia/tips-clone-platform-for-instant-payments-in-the-western-balkans-goes-live/",
+   "source": "[Banca d'Italia — TIPS Clone platform goes live](https://www.bancaditalia.it/media/notizia/tips-clone-platform-for-instant-payments-in-the-western-balkans-goes-live/); A3 findings 2026-07-24, A1 findings 2026-07-30, A4 findings 2026-07-24"
+  },
+  {
+   "date": "2026-12-01",
+   "title": "North Macedonia: Single Register of Accounts must be established",
+   "geography": [
+    "MK"
+   ],
+   "type": "deadline",
+   "forces": "The same transitional provisions require the Central Register of RNM to establish the Single Register of Accounts by 01/12/2026 — a national electronic register of denar and FX payment and deposit accounts, linked payment instruments, safe-deposit boxes, account holders, beneficial owners and legal representatives, with the Financial Intelligence Office granted direct unrestricted access. Every licensed bank plus payment and e-money institutions must feed standardised data on a defined interface and keep it current: data extraction, mapping, quality and reconciliation work, dormant-account identification and an FIU enquiry-response workflow. The Central Register's technical specification is what sizes per-bank effort. A3 carries an unresolved internal conflict between 01/12/2026 and 30/09/2026 for this date, so confirm before quoting either.",
+   "products": [
+    "compliance_resilience",
+    "digital_onboarding",
+    "managed_services"
+   ],
+   "url": "https://www.nbrm.mk/content/%D0%97%D0%B0%D0%BA%D0%BE%D0%BD_%D0%B7%D0%B0_%D0%BF%D0%BB%D0%B0%D1%82%D0%B5%D0%B6%D0%BD%D0%B8_%D1%83%D1%81%D0%BB%D1%83%D0%B3%D0%B8_%D0%B8_%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%B8_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B8_%20%D0%BD%D0%B5%D0%BE%D1%84.%D0%BF%D1%80%D0%B5%D1%87.%D1%82%D0%B5%D0%BA%D1%81%D1%82_144-25.pdf",
+   "source": "[NBRNM — Law on Payment Services and Payment Systems, consolidated text 144/25](https://www.nbrm.mk/content/%D0%97%D0%B0%D0%BA%D0%BE%D0%BD_%D0%B7%D0%B0_%D0%BF%D0%BB%D0%B0%D1%82%D0%B5%D0%B6%D0%BD%D0%B8_%D1%83%D1%81%D0%BB%D1%83%D0%B3%D0%B8_%D0%B8_%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%B8_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B8_%20%D0%BD%D0%B5%D0%BE%D1%84.%D0%BF%D1%80%D0%B5%D1%87.%D1%82%D0%B5%D0%BA%D1%81%D1%82_144-25.pdf); A3 findings 2026-08-02"
+  },
+  {
+   "date": "2026-12-24",
+   "title": "EU digital identity wallet: Member State issuance duty (CORRECTS the 06/12/2026 date previously carried)",
+   "geography": [
+    "BG",
+    "HR",
+    "CY",
+    "CZ",
+    "GR",
+    "HU",
+    "RO",
+    "SK",
+    "SI"
+   ],
+   "type": "deadline",
+   "forces": "Article 5a(1) of Regulation 910/2014 as amended by Reg (EU) 2024/1183 requires every Member State to provide at least one wallet within 24 months of the first implementing acts entering into force; those acts entered into force on 24/12/2024, so the hard national deadline is 24/12/2026, not the 06/12/2026 previously carried in this file. The implementing regulation on national relying-party registers applies from the same day and was amended on 15/07/2026 (in force 11/08/2026) to mandate automated issuance of registration certificates, add a Union-harmonised access policy and replace the certificate-policy standards. An April-2026 rollout tracker records seven of the ten EU footprint markets with no public sandbox — BG, HR, CZ, RO and SI, plus CY and HU on unconfirmed upgrade paths — against confirmed upgrades only in Austria, Greece and Slovakia. Those seven markets cannot self-serve, which is the commercial opening; Romania's national wallet is separately due December 2026 on the back of its chip electronic ID.",
+   "products": [
+    "digital_onboarding",
+    "compliance_resilience",
+    "payment_security_hsm"
+   ],
+   "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02014R0910-20241018",
+   "source": "[EUR-Lex — consolidated Reg (EU) No 910/2014, Arts. 5a(1) and 5f(2)](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02014R0910-20241018); A3 findings 2026-08-02"
+  },
+  {
+   "date": "2026-12-31",
+   "title": "Albania: POS acceptance mandate extends to all remaining businesses",
+   "geography": [
+    "AL"
+   ],
+   "type": "deadline",
+   "forces": "The 2026 fiscal package mandates a POS terminal for all taxpayers, with cash limits cut; the first phase for accommodation, transport and public institutions passed on 30/05/2026 and every other business follows by 31/12/2026. The POS estate is already at a record 32,224 terminals, up 28% year on year, and ATM cash-deposit transactions grew 109% by count and 110% by value in 2025 against a fleet of 1,091 ATMs of which 430 are deposit-capable. Mastercard's free-POS wave 2 runs 01/05/2026 to 31/12/2026 or 3,000 terminals through Raiffeisen, Union Bank and BKT, and Raiffeisen's variant is a free softPOS on a supplied smartphone — a live risk to the micro-merchant tail that has to be answered rather than ignored. Anchor the pitch on the market-wide NCR software and maintenance position and attach terminal management, monitoring and recyclers.",
+   "products": [
+    "pos_acquiring",
+    "managed_services",
+    "atm_recycling"
+   ],
+   "url": "https://monitor.al/ulet-kufiri-per-parane-cash-deri-ne-fund-te-vitit-2026-te-gjithe-bizneset-me-terminale-pos/",
+   "source": "[Monitor.al — Bank of Albania / fiscal-package POS mandate](https://monitor.al/ulet-kufiri-per-parane-cash-deri-ne-fund-te-vitit-2026-te-gjithe-bizneset-me-terminale-pos/); A4 findings 2026-07-15, A1 findings 2026-07-14"
+  },
+  {
+   "date": "2026-12-31",
+   "title": "Hungary: Act XVIII Phase 2 — an ATM in every settlement above 500 people",
+   "geography": [
+    "HU"
+   ],
+   "type": "deadline",
+   "forces": "Roughly 631 net-new mandated rural ATMs into settlements of 500 to 1,000 people, on top of the approximately 1,039 delivered in Phase 1, all into low-traffic sites that favour low-cost deployment, recyclers, remote monitoring and outsourced operation. Two MNB rules stack on the same estate: since 01/07/2026 forint may be recirculated through an ATM only if verified by an MNB-listed banknote-validation machine, and decision H-KPL-I-B-5/2026 requires MBH to hold at least 98% annual-average cash-machine availability from 01/08/2026 — certified validators plus hard uptime SLAs. Procurement is private, so pursue the nine obligated banks directly against decree 19/2025's per-bank allocation (OTP 428, MBH 195/316, K&H 117, Erste 104 and so on); named Hungarian operators are NCR Magyarorszag, Diebold Nixdorf Kft and Civil Ertekiogisztika.",
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "self_service"
+   ],
+   "url": "https://bank360.hu/blog/megszuletett-a-lista-melyik-telepulesre-melyik-bank-telepit-atm-et",
+   "source": "[MNB decree 19/2025 — per-bank allocation list (Bank360)](https://bank360.hu/blog/megszuletett-a-lista-melyik-telepulesre-melyik-bank-telepit-atm-et); A1/A2 findings 2026-07-14, A4 findings 2026-07-15"
+  },
+  {
+   "date": "2027-01-01",
+   "title": "Bosnia & Herzegovina: compulsory participation in IPS BiH instant payments",
+   "geography": [
+    "BA"
+   ],
+   "type": "deadline",
+   "forces": "The CBBiH Governing Board decision of 10/07/2026, Odluka o pravilima rada sistema instant placanja, makes participation compulsory: Article 7 obliges any bank that executed 1 million or more cumulative RTGS and giro-clearing transactions between 01/01/2026 and 30/06/2026 to be a participant from 01/01/2027, with a rolling 500,000-transaction trigger catching further banks each following 1 July. Article 13 makes a mobile or electronic payment platform the mandatory initiation channel and caps a single order at BAM 5,000; Article 12 sets a 10-second gross, irrevocable, final settlement ceiling, so fraud and AML screening must complete inside it; Article 5 additionally requires an ESMIG connection, a payment-operations licence, a central-bank reserve account, an IPS settlement account and passed test scenarios. The rail went live on 20/07/2026 with only three banks connected — Intesa Sanpaolo, Raiffeisen and Sparkasse, about a quarter of sector assets — with Nova banka Banja Luka joining 28/07/2026, leaving some 18 to 20 banks to integrate. The EUR 2m EU envelope funds only the central platform and its first year, so bank-side spend is additive.",
+   "products": [
+    "payments_instant",
+    "fraud_monitoring",
+    "payment_security_hsm"
+   ],
+   "url": "https://www.cbbh.ba/data/dokumenti/pdf/1024-6_Odluka_o_pravilima_rada_instant_pla%C4%87anja.pdf",
+   "source": "[CBBiH — Odluka o pravilima rada sistema instant placanja](https://www.cbbh.ba/data/dokumenti/pdf/1024-6_Odluka_o_pravilima_rada_instant_pla%C4%87anja.pdf); A1 findings 2026-07-30, A3 findings 2026-08-02"
+  },
+  {
+   "date": "2027-01-01",
+   "title": "Bulgaria: Verification of Payee and instant-payments obligation for all banks",
+   "geography": [
+    "BG"
+   ],
+   "type": "deadline",
+   "forces": "**The legal basis is no longer contested — resolved this cycle.** The 01/01/2027 date is now traceable to the Official Journal text itself, Regulation 260/2012 Article 16(9) as inserted by Regulation (EU) 2024/886, and recital 11 names ATMs and self-service terminals among the in-scope payment-initiation channels. That turns a legal argument into a DEVICE-ESTATE obligation with four months to run: every Bulgarian bank must be able to run a payee-name check on transfers initiated at its machines, not only in its app. ([A1](findings/01-bank-disclosures/2026-08-27.md), [A3](findings/03-regulation/2026-08-27.md), [EUR-Lex Reg. (EU) 2024/886](https://eur-lex.europa.eu/eli/reg/2024/886/oj))",
+   "products": [
+    "payments_instant",
+    "fraud_monitoring"
+   ],
+   "url": "https://eur-lex.europa.eu/eli/reg/2024/886/oj",
+   "source": "[UBB — Verification of Payee service notice, 15/07/2026](https://www.ubb.bg/news/view/proverka-na-poluchatelya-verification-of-payee); A1 findings 2026-07-30, A3 findings 2026-08-02"
+  },
+  {
+   "date": "2027-01-01",
+   "title": "Croatia: shared national ATM network — interbank obligation bites (NN 105/2025)",
+   "geography": [
+    "HR"
+   ],
+   "type": "deadline",
+   "forces": "The amendments to the payment-account comparability and basic-account law, enacted 23/07/2025 as Narodne novine 105/2025, give consumers two free monthly withdrawals at other banks' ATMs from 01/01/2027 unless the banks build a shared national network first. The banks rejected the government memorandum; HUB commissioned Ernst & Young, which produced three operating models (status 27/04/2026), and the operator is still undecided. The market at stake is 3,816 active ATMs, 106 million withdrawals worth EUR 19.24bn, roughly 1,000 machines already pooled in MBNet and around EUR 380m of bank revenue exposed. The route is bank-association-led rather than public: TED sweeps of Croatian ATM and cash CPV classes return zero commercial-bank notices, so nothing will appear on EOJN and pre-tender positioning with HUB and the Ministry of Finance is the only way in — position managed services and multivendor software before the model is fixed.",
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "self_service"
+   ],
+   "url": "https://narodne-novine.nn.hr/clanci/sluzbeni/2025_07_105_1453.html",
+   "source": "[Narodne novine 105/2025](https://narodne-novine.nn.hr/clanci/sluzbeni/2025_07_105_1453.html); A2 findings 2026-08-01"
+  },
+  {
+   "date": "2027-01-09",
+   "title": "Instant Payments Regulation: RECEIVE obligation + equal charges (non-euro CZ, HU, RO)",
+   "geography": [
+    "CZ",
+    "HU",
+    "RO"
+   ],
+   "type": "deadline",
+   "forces": "Read from the Official Journal, non-euro payment service providers must be able to RECEIVE instant euro credit transfers and charge no more than for standard transfers from 09/01/2027 — but e-money and payment institutions in those states receive only by 09/04/2027, with a further derogation running to 09/06/2028. Article 5d separately requires sanctions screening of users at least once every calendar day, which is a monitoring build in its own right. This is the non-euro date and must not be applied to Bulgaria (see the contested Bulgarian entry). Payment-hub, ISO 20022 and fraud-screening budgets commit in H2-2026.",
+   "products": [
+    "payments_instant",
+    "fraud_monitoring"
+   ],
+   "url": "https://www.ecb.europa.eu/paym/integration/retail/instant_payments/html/instant_payments_regulation.en.html",
+   "source": "[ECB — Instant Payments Regulation](https://www.ecb.europa.eu/paym/integration/retail/instant_payments/html/instant_payments_regulation.en.html); A3 findings 2026-08-02"
+  },
+  {
+   "date": "2027-03-31",
+   "title": "Brink's / NCR Atleos $6.6bn merger expected close (~Q1 2027)",
+   "geography": [
+    "GR",
+    "RO",
+    "CZ",
+    "CY",
+    "HU",
+    "BG",
+    "RS",
+    "AL"
+   ],
+   "type": "event",
+   "forces": "Both shareholder votes passed on 30/06/2026 (99.85% of NCR Atleos votes cast), HSR antitrust clearance is in hand and Indian competition clearance was collected on 22/07/2026, leaving the UK Competition and Markets Authority as the notable outstanding gate before the targeted Q1-2027 close. Printec's key ATM partner then sits inside a cash-in-transit conglomerate that also part-owns KAL — whose Kalignite multivendor software already runs under Asseco Central Europe, Mellon's Greek estate and Ceska sporitelna — and that can bundle hardware, logistics and managed services end-to-end. Vote risk is gone; the live question is post-close channel terms. Counterweight to lead with now: Printec was named Atleos Global Partner of the Year outright on 11/05/2026, not merely the European title previously recorded here.",
+   "products": [
+    "managed_services",
+    "atm_recycling",
+    "self_service"
+   ],
+   "url": "https://www.gov.uk/cma-cases/the-brinks-company-slash-ncr-atleos-corporation-merger-inquiry",
+   "source": "[UK CMA — Brink's / NCR Atleos merger inquiry](https://www.gov.uk/cma-cases/the-brinks-company-slash-ncr-atleos-corporation-merger-inquiry); A6 findings 2026-07-24, A8 findings 2026-07-15"
+  },
+  {
+   "date": "2027-03-31",
+   "title": "Montenegro: instant-payments phase 2 — QR acceptance, aliases and Request-to-Pay",
+   "geography": [
+    "ME"
+   ],
+   "type": "milestone",
+   "forces": "Montenegro put its TIPS Clone rail live at ALL 11 banks simultaneously on 20/07/2026, with a compulsory free Verification of Payee check, ten-second irrevocable settlement and a regulator-imposed 5-cent fee cap on transfers below EUR 200. Phase 2 — QR acceptance, phone-number aliases and Request-to-Pay — is dated to March 2027, which is the merchant-acceptance and channel build behind the rail. ([A1](findings/01-bank-disclosures/2026-08-27.md), [A2](findings/02-tenders/2026-08-27.md), [A4](findings/04-statistics/2026-08-31.md))"
+  },
+  {
+   "date": "2027-07-09",
+   "title": "Instant Payments Regulation: SEND obligation + Verification of Payee (non-euro CZ, HU, RO)",
+   "geography": [
+    "CZ",
+    "HU",
+    "RO"
+   ],
+   "type": "deadline",
+   "forces": "Non-euro payment service providers must be able to SEND instant euro credit transfers from euro accounts and to provide Verification of Payee, completing the instant-rails and name-matching build-out begun for the January 2027 receive date. Mandatory VoP has been live for euro-area PSPs since 09/10/2025, so the vendor patterns are proven and the sale is delivery capacity rather than design.",
+   "products": [
+    "payments_instant",
+    "fraud_monitoring"
+   ],
+   "url": "https://www.ecb.europa.eu/paym/integration/retail/instant_payments/html/instant_payments_regulation.en.html",
+   "source": "[ECB — Instant Payments Regulation](https://www.ecb.europa.eu/paym/integration/retail/instant_payments/html/instant_payments_regulation.en.html); A3 findings 2026-08-02"
+  },
+  {
+   "date": "2027-07-10",
+   "title": "EU AML Regulation applies — the real anchor (CORRECTS the 10/07/2026 'AMLA submits its RTS rulebook' entry)",
+   "geography": [
+    "BG",
+    "HR",
+    "CY",
+    "CZ",
+    "GR",
+    "HU",
+    "RO",
+    "SK",
+    "SI"
+   ],
+   "type": "deadline",
+   "forces": "The previous entry said AMLA submitted the bulk of its RTS rulebook to the Commission on 10/07/2026. It did not: the Article 28(1) customer-due-diligence RTS is still at 'consultation closed', past AMLA's own statutory submission date, on a tracker updated 21/07/2026; the only thing published was the final ITS on supervisory cooperation, on 21/07/2026. The dependable anchor is 10/07/2027, when the AML Regulation applies directly — a single harmonised rulebook for customer due diligence, enhanced due diligence and beneficial ownership across every EU footprint market, a EUR 10,000 cash cap, crypto-asset service providers in scope and wallet/eID remote KYC formally accepted, with the bulk of AMLD6's staggered calendar landing the same day. Onboarding and monitoring stacks must be compliant by then, cash thresholds touch recycler reporting workflows, and national programmes (Slovakia's goAML adapter, Slovenia's MONEYVAL enhanced follow-up, Cyprus's directive re-test) all have to be re-cut against it — sell one combined programme into the FY2027 budget round, not two.",
+   "products": [
+    "compliance_resilience",
+    "fraud_monitoring",
+    "digital_onboarding"
+   ],
+   "url": "https://eur-lex.europa.eu/eli/reg/2024/1624/oj/eng",
+   "source": "[AMLR (Reg. (EU) 2024/1624)](https://eur-lex.europa.eu/eli/reg/2024/1624/oj/eng); A3 findings 2026-08-02"
+  },
+  {
+   "date": "2027-12-24",
+   "title": "EU digital identity wallet: bank acceptance duty for private relying parties",
+   "geography": [
+    "BG",
+    "HR",
+    "CY",
+    "CZ",
+    "GR",
+    "HU",
+    "RO",
+    "SK",
+    "SI"
+   ],
+   "type": "deadline",
+   "forces": "Article 5f(2) obliges private relying parties — expressly including banks, payment institutions and e-money institutions, and excepting only micro and small enterprises — to accept the wallet by 24/12/2027 wherever strong user authentication is already required by law or contract, which the EU authentication regime supplies, and only upon the voluntary request of the user. That makes it a dated, footprint-wide relying-party build inside onboarding and login, plus access and registration certificates and the hardware-security-module key custody behind them; because acceptance is request-driven, the verifier is sized for optional rather than universal traffic, which caps the sizing but not the obligation. North Macedonia has separately transposed eIDAS 2 with its own bank wallet-verifier obligation from 01/06/2027, so the non-EU footprint is not exempt from the pattern.",
+   "products": [
+    "digital_onboarding",
+    "compliance_resilience",
+    "payment_security_hsm"
+   ],
+   "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02014R0910-20241018",
+   "source": "[EUR-Lex — consolidated Reg (EU) No 910/2014, Art. 5f(2)](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02014R0910-20241018); A3 findings 2026-08-02"
+  },
+  {
+   "date": "2028-01-01",
+   "title": "AMLA direct supervision begins + SSM TLPT first three-year cycle deadline (17/01/2028)",
+   "geography": [
+    "BG",
+    "HR",
+    "CY",
+    "CZ",
+    "GR",
+    "HU",
+    "RO",
+    "SK",
+    "SI"
+   ],
+   "type": "deadline",
+   "forces": "Around 40 cross-border groups — Erste, RBI and OTP are candidates — come under direct AMLA supervision, with the selection process running through 2027. In parallel, threat-led penetration testing under the SSM framework closes its first three-year cycle, driving remediation spend on telemetry, monitoring and HSM/PCI work; Austria, Czechia, Romania and Slovakia are the four footprint states that have adopted TIBER-EU.",
+   "products": [
+    "compliance_resilience",
+    "fraud_monitoring",
+    "payment_security_hsm"
+   ],
+   "url": "https://www.amla.europa.eu/amla-takes-next-step-toward-2027-selection-entities-direct-supervision_en",
+   "source": "[AMLA — selection of entities for direct supervision](https://www.amla.europa.eu/amla-takes-next-step-toward-2027-selection-entities-direct-supervision_en); A3 findings 2026-08-02"
+  },
+  {
+   "date": "2028-06-30",
+   "title": "Addiko carve-out banks: transitional services from Addiko expire (12+12 months from closing)",
+   "geography": [
+    "RS",
+    "BA",
+    "ME"
+   ],
+   "type": "deadline",
+   "forces": "The Transitional Services Agreement runs 12 months after carve-out closing with a single 12-month extension option, after which Addiko Serbia, Addiko Sarajevo, Addiko Banja Luka and Addiko Podgorica must source services from Alta Group or from third parties. With closing expected in H2 2027 that puts the replacement window at roughly 2H2028-2H2029 — a date written into the deal documents rather than guessed, and the reason vendor selection starts well before closing. ([A1](findings/01-bank-disclosures/2026-08-27.md), [A5](findings/05-jobs/2026-08-31.md))"
+  },
+  {
+   "date": "2029-12-31",
+   "title": "Digital euro: potential first issuance (target, contingent on the 2026 legislation)",
+   "geography": [
+    "GR",
+    "CY",
+    "SK",
+    "SI",
+    "HR",
+    "BG"
+   ],
+   "type": "event",
+   "forces": "A 12-month PSP pilot runs H2-2027 into 2028 with potential issuance in 2029, distributed through banks and PSPs — which implies ATM and POS acceptance-device work, DESP back-end certification, wallet and onboarding integration and HSM key management. Low confidence and a long fuse, but the acceptance-device specifications are being written now and Cyprus is already inside a pilot, so specification influence is cheap today and expensive later.",
+   "products": [
+    "pos_acquiring",
+    "self_service",
+    "digital_onboarding",
+    "payment_security_hsm"
+   ],
+   "url": "https://www.ecb.europa.eu/euro/digital_euro/progress/html/ecb.deprp202510.en.html",
+   "source": "[ECB — digital euro progress report](https://www.ecb.europa.eu/euro/digital_euro/progress/html/ecb.deprp202510.en.html); A3 findings 2026-07-24"
+  },
+  {
+   "date": "2030-06-28",
+   "title": "European Accessibility Act: transition ENDS for pre-2025 self-service terminals",
+   "geography": [
+    "BG",
+    "HR",
+    "CY",
+    "CZ",
+    "GR",
+    "HU",
+    "RO",
+    "SK",
+    "SI"
+   ],
+   "type": "deadline",
+   "forces": "The operative date is 28/06/2030, not 2045: service providers may keep using self-service terminals lawfully in use before 28/06/2025 only until then, subject to a 20-year economic-life cap, with 28/06/2045 merely the outer backstop for the newest of those machines. Anything placed on the market after 28/06/2025 must comply immediately. There is no presumption of conformity today — EN 301 549 V3.2.1 is not cited in the Official Journal under the EAA, and the first EAA-track version, draft V4.1.0 realigned to WCAG 2.2, was still in ETSI public enquiry at 03/08/2026 — so conformity must be self-declared against the Annex I essential requirements with the supplier's own technical documentation, which makes test-evidenced accessibility a genuine tender differentiator. Enforcement has begun: Austria's market-surveillance authority had 84 proceedings open at 24/06/2026, 22 of the pending ones on banking services, plus 53 self-notifications and a maximum fine of EUR 80,000 (not the EUR 50,000 previously carried); Czechia issued its first breach findings on 15/07/2026; in Hungary the MNB itself supervises ATM accessibility with a ceiling of 5% of net revenue or HUF 500m. Bulgaria and Hungary carry a 28/06/2027 milestone, and Greek political pressure is live after the 14/05/2026 parliamentary referral. The replace-versus-retrofit cycle runs 2027-2030.",
+   "products": [
+    "atm_recycling",
+    "self_service",
+    "compliance_resilience"
+   ],
+   "url": "https://eur-lex.europa.eu/eli/dir/2019/882/oj/eng",
+   "source": "[European Accessibility Act (Dir. (EU) 2019/882)](https://eur-lex.europa.eu/eli/dir/2019/882/oj/eng); A3 findings 2026-08-02"
+  }
+ ]
+}

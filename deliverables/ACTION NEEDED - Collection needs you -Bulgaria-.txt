@@ -1,0 +1,12 @@
+ACTION NEEDED: Collection needs you (Bulgaria)
+==============================================
+When: 2026-07-18T23:27:43Z
+
+The collection run finished. It did NOT stop for these — it collected everything it could and left you this list.
+
+- 62 website(s) our automatic collection could not reach or render (login / CAPTCHA / 'verify you are human' / JavaScript we could not render / gone) — see 'Bulgaria - Websites we could not access.xlsx'.
+- 19 interesting PDF(s) a live source linked to but we could not download — see 'Bulgaria - Interesting PDFs we could not download.xlsx'.
+
+Fix the websites in that workbook and hand it to scripts/apply_manual_url_checks.py. Download the PDFs and add them via scripts/collect_manual.py.
+
+These two workbooks are the live list for this country: each run refreshes its own workstream's rows, keeps the others, and removes anything now solved.

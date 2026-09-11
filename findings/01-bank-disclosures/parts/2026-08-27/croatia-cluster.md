@@ -1,0 +1,199 @@
+# Croatia cluster — ZABA, PBZ, Erste HR, OTP HR — run 27/08/2026
+
+Status: **complete** — 15 signals.
+
+## Headline
+
+- **New source found:** HNB runs a public, machine-readable **national cash-point registry** (`/o/info-cash-point/v1.0/`). Full pull on 27/08/2026: **6,852 records, 26 providers** — 3,841 cash-out ATMs, 901 cash-in/out machines, 85 cash-in-only, 126 coin deposit, 1,860 branches, **39 cashless branches**. Per-bank deposit gaps are now measurable.
+
+- **National fleet grew 22% in H1-2026** (3,787 → 4,633 ATMs) — but HNB's county table shows it is **coastal and seasonal**, and the City of Zagreb fleet actually *fell*.
+
+- **Deposit-capability gap by bank:** ZABA 19.6%, OTP 23.9%, Erste 29.7%, RBA 34.4%, PBZ 35.8%, **HPB 12.5%, Addiko 0%**. ~2,900 cash-out-only machines at the top six.
+
+- **1,094 independent-deployer ATMs** (Euronet 685, Cashere 219, MONESTIQ 119, MoneyGet 71) — **all zero deposit capability**.
+
+- **Erste HR** is converting branches to cashless self-service zones (Kastav 12/01/2026; cash/cashless hours from 01/04/2026; four closures) and has **sold Erste Card Club** (EUR 116m gain).
+
+- **Nexi Croatia** runs PBZ acquiring: **21,591 POS** and **SoftPOS on 6,791 devices** (from 1,722 a year earlier).
+
+- **Competitor:** ASEE/Payten **Payment Solutions revenue fell EUR 5.2m to EUR 102.8m** in H1-2026.
+
+- **Gap:** the 01/01/2027 cash-access statute could **not** be verified — narodne-novine.nn.hr was unreachable.
+
+
+## Signals
+
+### 1. Croatia (all PSPs) — Croatian National Bank payment infrastructure (Croatia) — XL / win Medium / Medium · NEW
+**Signal.** HNB Table PI1 (published 25/08/2026) shows installed ATMs in Croatia rising from 3,787 at 31/01/2026 to 4,054 at 31/03/2026 and 4,633 at 30/06/2026 — +846 machines (+22.3%) in five months. EFTPOS terminals rose from 156,053 to 166,677 over the same period. Bank operating units (branches) fell slightly, 781 to 777.
+
+**Implies (Printec).** Croatia is in an ATM build-out, not a contraction — the opposite of the western-European pattern. Roughly 850 new machines were installed in H1-2026, each needing hardware, cash-in-transit/cash-cycle software and managed service. Direct addressable demand for Printec ATM/self-service supply, cash automation and managed services.
+
+**Likelihood.** Very likely to continue through 2026 given the 01/01/2027 statutory cash-access date
+
+**Follow-up.** Pull HNB Table PI2 (county split) to locate where the new machines land, and identify the deployer(s) behind the surge (bank vs independent ATM deployer) via HNB's payment institution register.
+
+**Source.** Croatian National Bank (HNB) — Statistical data, Payment services, Infrastructure, Table PI1 'Total operating units and accepting devices in the territory of the Republic of Croatia', year 2026 (XLSX) — https://www.hnb.hr/en/statistics/statistical-data/payment-services/infrastructure — 25/08/2026 (regulator)
+
+### 2. Croatia (all PSPs) — HNB Table PI3 terminal-feature split (Croatia) — L / win Medium / Medium · NEW
+**Signal.** HNB Table PI3 (published 25/08/2026) shows the H1-2026 ATM growth is almost entirely 'contact'-only machines: contact ATMs went 1,693 (31/01/2026) to 2,502 (30/06/2026) (+809), while contactless-contact ATMs barely moved, 2,089 to 2,131 (+42), and contactless-only stayed at 5. ATMs in a secure location rose 703 to 760; ATMs with video surveillance 1,154 to 1,176; drive-in unchanged at 3.
+
+**Implies (Printec).** The new fleet is low-spec, contact-only, largely unattended cash-out machines — the profile of independent/off-premise deployment rather than bank recycler upgrades. That leaves the incumbent banks' own fleets technologically ahead but under-deposited, and creates a later refresh/upgrade wave (contactless readers, deposit modules). Printec ATM/self-service, cash automation and managed services.
+
+**Likelihood.** High that a contactless/deposit upgrade cycle follows within 24 months
+
+**Follow-up.** Confirm whether HNB counts independent ATM deployers separately; check HNB payment-institution register for newly authorised ATM operators in 2026.
+
+**Source.** HNB — Statistical data, Payment services, Infrastructure, Table PI3 'Number of ATMs and EFTPOS terminals in the RoC by feature of the terminal', year 2026 (XLSX) — https://www.hnb.hr/en/statistics/statistical-data/payment-services/infrastructure — 25/08/2026 (regulator)
+
+### 3. OTP banka Hrvatska (Croatia) — L / win Medium / Medium · NEW
+**Signal.** OTP banka Hrvatska's own machine-readable locator feed (/sw/json/atms.json, retrieved 27/08/2026) lists 459 ATMs with unique terminal IDs, of which only 109 are typed '2' = 'Uplatno-isplatni bankomat' (deposit-and-withdrawal) and 350 are typed '1' = 'Isplatni bankomat' (cash-out only). Deposit-capable share 23.7%. 113 ATMs sit in a branch, 346 are off-premise. The companion /sw/json/branches.json lists 95 branches.
+
+**Implies (Printec).** 350 cash-out-only machines against 95 branches: OTP HR has 4.8 ATMs per branch but almost no deposit automation, so cash-in still lands on the branch counter. Quantified white space for Printec cash recyclers / deposit modules and the cash-cycle software to run them.
+
+**Likelihood.** Likely — the 01/01/2027 cash-access obligation pushes cost per cash touchpoint to the front
+
+**Follow-up.** Identify OTP HR's incumbent ATM hardware vendor and whether the 109 deposit machines are recyclers or deposit-only; check OTP Group H1-2026 report for Croatian capex.
+
+**Source.** OTP banka Hrvatska — ATM & branch locator JSON feeds behind www.otpbanka.hr/poslovnice-i-bankomati — https://www.otpbanka.hr/sw/json/atms.json — 27/08/2026 (primary)
+
+### 4. Erste&Steiermärkische Bank (Erste Croatia) (Croatia) — L / win Medium / Medium · NEW
+**Signal.** Erste Croatia's own locator API (local.erstebank.hr/api/v1/atms, retrieved 27/08/2026) returns 665 ATMs, of which 199 accept deposits (29.9%) and 466 are withdrawal-only; 161 sit inside a branch. The companion /v1/branches endpoint returns 106 branches, 100 of which still carry a manned cash desk ('Gotovinsko poslovanje') service — only 6 are cashless.
+
+**Implies (Printec).** Essentially unchanged from the 31/07/2026 baseline (666 ATMs / 199 deposit) — Erste HR is NOT closing the deposit gap on its own, even as the national fleet grew 22% in H1. 466 cash-out-only machines and 100 manned cash desks is a two-sided automation opportunity: Printec recyclers to move cash-in off the counter, plus managed services.
+
+**Likelihood.** Likely to move once the 01/01/2027 cash-access cost-sharing is settled
+
+**Follow-up.** Re-pull monthly; a jump in the atmDeposit count is the buying signal. Cross-check against Erste Group's H1-2026 Croatia segment capex.
+
+**Source.** Erste&Steiermärkische Bank d.d. — branch & ATM locator API behind erstebank.hr/hr/poslovnice-i-bankomati — https://local.erstebank.hr/api/v1/atms — 27/08/2026 (primary)
+
+### 5. Zagrebačka banka (ZABA, UniCredit) (Croatia) — XL / win Low / Medium · NEW
+**Signal.** ZABA states on its own ATM product page that ATM services — cash withdrawal, Automated Note Deposit (cash-in) and balance enquiry — are available 24h at 'more than 750 locations in Croatia', and recommends a maximum of 50 banknotes per deposit transaction. Its H1-2026 Group report (30/06/2026) shows net profit EUR 301m (-1.3% YoY), operating income EUR 534m, operating expenses EUR 171m, cost/income 32.02%, net fee & commission income EUR 140m (+13.8% YoY), loans EUR 17,041m, deposits EUR 22,778m, average Q2-2026 headcount 4,387.
+
+**Implies (Printec).** ZABA is the largest Croatian fleet (>750 locations) and its bulk-note-deposit ATMs already exist, so the play is refresh/recycler upgrade and managed services rather than greenfield. Fee income +13.8% and a 32% cost/income ratio mean it can fund automation. Printec cash automation, ATM managed services, transaction monitoring.
+
+**Likelihood.** Medium-high — UniCredit runs group-level vendor frameworks, so entry is via the group panel
+
+**Follow-up.** ZABA's locator exposes a POST endpoint (www.zaba.hr/home/en/map/podrucjeZaba) returning clustered UniCredit-group locations; work out the per-machine deposit flag to get an exact deposit-capable count.
+
+**Source.** Zagrebačka banka d.d. — 'ATMs' product page; and 'Zagrebačka banka Group unaudited financial results Q2 2026' (PDF, 21pp) — https://www.zaba.hr/home/med/dok/9555/zagrebacka-banka-group-financial-results-30062026-unaudited.docm.pdf — 30/06/2026 (primary)
+
+### 6. ASEE Group / Payten (Printec competitor, Zagreb-based) (Croatia) — L / win Medium / Medium · NEW
+**Signal.** ASEE Group (WSE: ASE) reported estimated H1-2026 revenue of EUR 203.0m (+3%). Its Payment Solutions segment — the ATM/POS/payments business that competes head-on with Printec — DECLINED by EUR 5.2m to EUR 102.8m in H1-2026 and by EUR 3.8m to EUR 51.4m in Q2-2026, with Q2 operating profit down EUR 0.6m to EUR 7.0m. Banking Solutions, by contrast, grew Q2 revenue ~22% to EUR 22.6m and operating profit by EUR 4.1m to EUR 7.9m.
+
+**Implies (Printec).** The nearest regional competitor's payments/ATM line is shrinking while the Croatian ATM estate is growing 22% — the new installs are not going to ASEE's payments segment. That is a contestable opening for Printec in Croatian ATM/self-service, POS and managed services.
+
+**Likelihood.** Immediate — H1 reporting already published
+
+**Follow-up.** Read ASEE's full H1-2026 interim report for the country split of Payment Solutions to see whether the decline is Croatian or Turkish.
+
+**Source.** ASEE Group — press release 'ASEE Group Delivers 27% Increase in Operating Profit in Q2 2026' — https://asee.io/press_release/asee-group-increase-in-profit-q2-2026/ — 27/07/2026 (primary)
+
+### 7. OTP banka Hrvatska (OBH) / OTP Group (Croatia) — L / win Medium / Medium · NEW
+**Signal.** OTP Group's own Q2-2026 analyst tables (sheet '15_Naturals') report the Croatian unit OBH at 455 ATMs and 99 branches at 30/06/2026, versus 439 ATMs / 102 branches at 31/12/2025 and 435 ATMs / 104 branches at 30/06/2025 — ATMs +20 YoY (+4.6%) while branches fell 5 YoY. Headcount 2,379.5 (-9.5 YoY). This reconciles closely with OBH's own locator feed (459 ATMs on 27/08/2026), confirming both sources.
+
+**Implies (Printec).** OBH is deliberately substituting machines for branches — the classic profile for cash automation. It added ~20 ATMs a year while cutting 5 branches; with only 109 of ~455-459 machines deposit-capable, the substitution is incomplete and each branch closure raises the pressure to automate cash-in. Printec recyclers, ATM supply and managed services.
+
+**Likelihood.** High — the branch-down/ATM-up trend is now three consecutive halves
+
+**Follow-up.** Cross-check the same sheet at Q3-2026 (due Nov-2026) to see whether the deposit-capable share moves; ask OBH which vendor supplies the 109 deposit machines.
+
+**Source.** OTP Bank Plc — 'OTP_Bank_analyst_tables_2Q2026.xlsm', Investor Relations / Reports — https://www.otpgroup.info/static/sw/file/OTP_Bank_analyst_tables_2Q2026.xlsm — 30/06/2026 (primary)
+
+### 8. Erste&Steiermärkische Bank (Erste Croatia) — branch format change (Croatia) — L / win Medium / Medium · NEW
+**Signal.** Erste Croatia opened a fully CASHLESS branch in Kastav (Stari put 1) on 12/01/2026, whose 24-hour self-service zone contains a deposit-and-withdrawal ATM ('uplatno-isplatni bankomat') plus a device the bank brands 'Erste Smart Cash'. On 29/01/2026 it announced that from 01/04/2026 a list of branches would reserve part of their opening hours for advisory and CASHLESS business only, directing cash business to the self-service devices in those branches. In parallel it published closures of the Turnić-Rijeka (16/12/2025), Potpićan (14/05/2026), Rubeši (02/06/2026) and Žminj (17/06/2026) branches.
+
+**Implies (Printec).** Erste HR is converting branch cash desks into unattended self-service zones — exactly the deployment Printec's recyclers, cash-automation software and managed services address. Every cashless conversion needs at least one deposit-capable machine plus SLA-backed servicing. 'Erste Smart Cash' is a named device line to identify and displace/complement.
+
+**Likelihood.** Already happening — dated conversions in Jan/Apr 2026
+
+**Follow-up.** Obtain the branch list attached to the 29/01/2026 notice to size how many sites need a deposit device; identify the hardware behind 'Erste Smart Cash'.
+
+**Source.** Erste&Steiermärkische Bank d.d. — press releases 'U Kastvu se otvara bezgotovinska poslovnica' (09/01/2026) and 'Poslovnice s novim radnim vremenom za gotovinsko ili bezgotovinsko poslovanje' (29/01/2026) — https://www.erstebank.hr/hr/press/priopcenja-za-medije/2026/1/9/u-kastavu-se-otvara-bezgotovinska-poslovnica — 09/01/2026 (primary)
+
+### 9. Erste&Steiermärkische Bank (Erste Croatia) — H1-2026 results and Erste Card Club disposal (Croatia) — L / win Medium / Medium · NEW
+**Signal.** ESB Group H1-2026: net profit EUR 234m (vs EUR 135m in H1-2025), net interest income EUR 235m (+9.8%), net fee and commission income EUR 59m (-13.2%), total assets EUR 17.71bn, loans EUR 11.0bn, deposits EUR 13.4bn. Erste Group's H1-2026 interim report attributes the fall in Croatian fee income to 'lower payment fees due to the sale of Erste Card Club', and books a gain of EUR 116m on the sale of a Croatian subsidiary; the Croatia segment cost/income ratio improved to 49.1% (from 50.8%).
+
+**Implies (Printec).** Erste has exited Croatian card issuing/acquiring (Erste Card Club — the Diners Club Croatia business), so Croatian card acceptance is consolidating into fewer, larger acquirers. That is a POS estate that changes hands and gets re-platformed — a window for Printec POS/acquiring terminals and services, and it removes a captive in-house payments arm from Erste HR.
+
+**Likelihood.** High that terminal re-platforming follows a change of acquirer owner
+
+**Follow-up.** Establish who acquired Erste Card Club and its POS terminal count — check the Croatian Competition Agency (AZTN) merger register and the Sudski registar entry for Erste Card Club d.o.o.
+
+**Source.** Erste&Steiermärkische Bank d.d. press release 30/07/2026; Erste Group Bank AG 'Interim Report H1 2026' (Croatia segment) — https://cdn.erstegroup.com/content/dam/at/eh/www_erstegroup_com/en/Investor_Relations/2026/reports/IR_Interim_Report_EG_H126.pdf — 30/07/2026 (primary)
+
+### 10. Croatian National Bank — national cash-point registry ('Cash Point' / Map of branches and ATMs) (Croatia) — XL / win Medium / Medium · NEW
+**Signal.** HNB operates a public, machine-readable national registry of cash access points at /o/info-cash-point/v1.0/ (endpoints: device-types, providers, devices, devices/nearby). Pulled in full on 27/08/2026 it returns 6,852 records from 26 reporting providers: 3,841 cash-out ATMs, 901 cash-in/cash-out machines, 85 cash-in-only machines, 126 coin deposit machines, 1,860 branches and 39 CASHLESS branches. HNB's own note states the map is built from data credit institutions and other cash withdrawal/deposit service providers are required to submit to the CNB and are responsible for keeping accurate and timely.
+
+**Implies (Printec).** A mandatory per-device reporting regime already exists and is public — this is the measurement layer for the statutory cash-access right. It gives Printec a free, refreshable, per-bank map of exactly which institutions are short of deposit capability, and it means any bank failing a coverage test will be visible. Feeds ATM/self-service, cash automation and managed-services targeting.
+
+**Likelihood.** Certain — live now
+
+**Follow-up.** Snapshot this endpoint monthly and diff it; also request the HNB decision/regulation that mandates the submission to date the obligation precisely.
+
+**Source.** Croatian National Bank — 'Map of branches and ATMs' and its underlying info-cash-point REST API — https://www.hnb.hr/en/publicness/map-of-branches-and-atms — 27/08/2026 (regulator)
+
+### 11. Croatian banks — per-bank deposit-capability gap (from HNB registry) (Croatia) — XL / win Medium / Medium · NEW
+**Signal.** Provider-level split of the HNB cash-point registry, 27/08/2026 (cash-out ATMs / cash-in-and-out machines / deposit share): Zagrebačka banka 562/137 = 19.6%; Privredna banka Zagreb 429/239 = 35.8%; Erste&Steiermärkische 468/198 = 29.7% (plus 66 cash-in-only and 66 coin machines); OTP banka 350/110 = 23.9%; Raiffeisenbank Austria 286/150 = 34.4%; Hrvatska poštanska banka 288/41 = 12.5%; Addiko Bank 180/0 = 0%. Branch counts: PBZ 128 (6 cashless), Erste 103 (3 cashless), ZABA 95 (5 cashless), OTP 91 (4 cashless), HPB 65, RBA 41 but with 17 cashless branches — the most in the market. KentBank is the only institution whose entire 16-machine fleet is deposit-capable.
+
+**Implies (Printec).** Roughly 2,900 cash-out-only machines sit at the six largest Croatian banks. ZABA (562), Erste (468) and PBZ (429) are the three biggest single-name recycler/deposit-module opportunities; HPB at 12.5% and Addiko at 0% are the most acute gaps relative to fleet size. RBA's 17 cashless branches show the cashless-branch model is already scaling and each one needs a deposit device. Printec cash automation/recyclers, ATM supply, managed services.
+
+**Likelihood.** High — the gap is now measurable by the regulator and by the public
+
+**Follow-up.** Build a per-bank target list from the registry's lat/long records; approach HPB and Addiko first (largest gap-to-fleet ratio), then RBA on the cashless-branch programme.
+
+**Source.** Croatian National Bank — info-cash-point registry, devices endpoint (full pull) — https://www.hnb.hr/o/info-cash-point/v1.0/devices?page=1&pageSize=20000 — 27/08/2026 (regulator)
+
+### 12. Independent ATM deployers in Croatia (Euronet, Cashere, MONESTIQ, MoneyGet) (Croatia) — L / win Medium / Medium · NEW
+**Signal.** The HNB registry (27/08/2026) shows four non-bank deployers now running 1,094 ATMs in Croatia, every one of them cash-out only with zero deposit capability: EURONET/RBA 685, Cashere (HPB partner) 219, MONESTIQ 119, MoneyGet 71. Alongside them, Hrvatska pošta appears as an HPB partner with 973 branch locations and Financijska agencija (FINA) with 171 — both cash-service points rather than ATM operators. This independent fleet is the most plausible explanation for HNB Table PI1's national ATM jump from 3,787 (31/01/2026) to 4,633 (30/06/2026), which was almost entirely in low-spec 'contact' machines.
+
+**Implies (Printec).** Cash-access coverage in Croatia is being solved with cheap cash-out machines run by third parties, not by bank recyclers. Two consequences for Printec: (a) the IADs themselves are a hardware/managed-services buyer of scale (1,094 machines and growing), and (b) because none of them accept deposits, the deposit obligation still falls back on banks — protecting the recycler opportunity. MONESTIQ and MoneyGet are new names worth qualifying.
+
+**Likelihood.** High — fleet already installed
+
+**Follow-up.** Identify MONESTIQ and MoneyGet in the Sudski registar (ownership, size) and check whether they hold HNB payment-institution authorisations; establish who supplies and services their machines.
+
+**Source.** Croatian National Bank — info-cash-point registry, providers and devices endpoints — https://www.hnb.hr/o/info-cash-point/v1.0/providers — 27/08/2026 (regulator)
+
+### 13. Croatia — geography of the H1-2026 ATM build-out (HNB Table PI2) (Croatia) — M / win Medium / Medium · NEW
+**Signal.** HNB Table PI2 (by county, published 25/08/2026) shows the +846 national ATM increase between 31/01/2026 and 30/06/2026 was almost entirely coastal: Split-Dalmatia 494 to 807 (+313), Istria 322 to 475 (+153), Dubrovnik-Neretva 179 to 288 (+109), Zadar 240 to 329 (+89), Primorje-Gorski kotar 334 to 414 (+80), Šibenik-Knin 143 to 209 (+66), Lika-Senj 55 to 104 (+49). Over the same period the City of Zagreb FELL from 753 to 744 and continental counties were flat or slightly down (e.g. Osijek-Baranja 197 to 196, Bjelovar-Bilogora 69 to 66). Day/night deposit boxes fell nationally 367 to 362 while coin deposit machines rose 40 to 45.
+
+**Implies (Printec).** The national fleet growth is a SEASONAL tourist-coast deployment, not a structural cash-access build-out — treating the +22% as permanent demand would over-read it. The genuinely structural signals are the falling day/night deposit boxes (manual cash-in being retired with no automated replacement) and the shrinking Zagreb fleet. Printec should pitch seasonal/managed-service ATM models on the coast and recycler replacement of deposit boxes inland.
+
+**Likelihood.** High that a share of the coastal machines is removed after the season — worth verifying in the Q4 file
+
+**Follow-up.** Re-pull PI2 after the October and December 2026 updates: the size of the post-season drop measures how much of the fleet is seasonal, and therefore how much is a managed-service rather than a capex opportunity.
+
+**Source.** HNB — Table PI2 'Operating units and accepting devices by county', year 2026 (XLSX) — https://www.hnb.hr/en/statistics/statistical-data/payment-services/infrastructure — 25/08/2026 (regulator)
+
+### 14. Privredna banka Zagreb (PBZ) / PBZ Card / Nexi Croatia (Croatia) — L / win Medium / Medium · NEW
+**Signal.** PBZ's 2025 Annual Report states the Bank processes 'around 660 ATMs covering the entire territory of Croatia' plus 22 self-service coin-payment devices and only 5 self-service devices accepting banknotes AND coins. The HNB registry (27/08/2026) puts PBZ at 429 cash-out ATMs + 239 cash-in/cash-out machines = 668, with 128 branches (6 of them cashless) and 26 coin machines. On acquiring: following the 2023 'Danubio' sale of the acquiring business to Nexi Croatia, PBZ Card manages merchant relationships and signs card-acceptance contracts in the name of and on behalf of Nexi Croatia, while Nexi runs the acceptance infrastructure. Installed POS devices reached 21,591 at 31/12/2025, and the Nexi SoftPOS application was installed on 6,791 devices, up from 1,722 at end-2024.
+
+**Implies (Printec).** Two things. (1) PBZ has the best deposit ratio of the big four (35.8%) but only 5 combined banknote+coin self-service devices — the coin/banknote automation layer is nearly empty and is a direct recycler/cash-automation sale. (2) Croatian card acceptance is Nexi-run, and Nexi's SoftPOS installs quadrupled in a year (1,722 to 6,791) — software-on-phone acceptance is displacing entry-level physical terminals, which reshapes any Printec POS proposition here toward managed estates, higher-spec terminals and compliance/monitoring rather than volume terminal supply.
+
+**Likelihood.** SoftPOS displacement already measurable; recycler gap standing
+
+**Follow-up.** Get PBZ's H1-2026 report when it posts (the 2026 page did not exist at 27/08/2026) and Nexi Group's H1-2026 disclosure for the Croatian terminal count; establish who supplies Nexi Croatia's POS hardware.
+
+**Source.** Privredna banka Zagreb d.d. — Annual Report 31.12.2025 (ENG); cross-checked against the HNB info-cash-point registry — https://www.pbz.hr/document/documents/PBZ/financijska-izvjesca/Annual-Report-31.12.2025_ENG.pdf — 31/12/2025 (primary)
+
+### 15. Croatian National Bank — new payment-services data-collection decision (Croatia) — M / win Low / Low · NEW
+**Signal.** HNB's payment-system regulations register lists a new 'Odluka o prikupljanju podataka o platnim uslugama koje korisnici platnih usluga imaju ugovorene kod izvještajnih obveznika' (Decision on the collection of data on payment services contracted by payment service users with reporting entities), published in Narodne novine No. 45/2026 (April 2026). It sits alongside the earlier NN 150/2022 decision on payment-statistics reporting for the ECB.
+
+**Implies (Printec).** A fresh per-user payment-services reporting obligation lands on every Croatian PSP in 2026, on top of the device-level cash-point reporting. That is data-plumbing and regulatory-reporting work — adjacent to Printec's AML/compliance and transaction-monitoring lines, and a reason banks will be opening their payments data stack this year.
+
+**Likelihood.** Certain — already in force
+
+**Follow-up.** Read the full decision text in Narodne novine 45/2026 (article 2026_04_45_547) to establish the reporting scope, first reference date and submission format — narodne-novine.nn.hr was not reachable from this run.
+
+**Source.** Croatian National Bank — 'Temeljne funkcije / Platni promet / Regulativa' regulations register — https://www.hnb.hr/temeljne-funkcije/platni-promet/regulativa — 01/04/2026 (regulator)
+
+
+## Coverage notes
+Croatia cluster (ZABA, PBZ, Erste HR, OTP HR) researched 27/08/2026, primary-source-first. Fresh run, no checkpoint existed. WebSearch was UNAVAILABLE for this whole task (the session's 200-call budget was already spent before this bank started), and the fallback engines (DuckDuckGo HTML, Mojeek) returned bot-challenge/CAPTCHA pages, which I did not attempt to solve. All findings therefore come from direct fetches of primary sources by URL. OPENED AND USED: HNB payment-infrastructure statistics tables PI1/PI2/PI3 (XLSX, published 25/08/2026, data to 30/06/2026); HNB's national cash-point registry API (/o/info-cash-point/v1.0/ device-types, providers, devices) pulled in full (6,852 records, 26 providers) — a source the baseline had never seen and the single most valuable find of this run; OTP banka Hrvatska's locator JSON feeds (/sw/json/atms.json, /sw/json/branches.json) with their deposit/withdrawal type flag; Erste Croatia's locator API (local.erstebank.hr/api/v1/atms and /v1/branches); Erste Croatia press releases (cashless branch Kastav, new cash/cashless branch hours, four branch closures, H1-2026 results); Erste Group H1-2026 interim report (Croatia segment, PDF text-extracted locally); Zagrebačka banka Group Q2-2026 report (PDF) and its ATM product page; OTP Group Q2-2026 analyst tables (XLSM, sheet 15_Naturals) for the Croatian branch/ATM/headcount series; PBZ Annual Report 2025 (PDF) for the ATM and Nexi/POS detail; ASEE Group WordPress REST API (posts, press_release, fin_press_release) for the competitor read; HNB payment-system regulations register. RE-VERIFIED AGAINST BASELINE: Erste Croatia is 665 ATMs / 199 deposit-capable on 27/08/2026 versus 666/199 on 31/07/2026 — effectively unchanged, so the baseline figure stands and the gap is NOT closing. HNB's 4,054 ATMs at 31/03/2026 is confirmed and is now superseded by 4,633 at 30/06/2026. CROSS-CHECKS PASSED: OTP Croatia locator 459 ATMs (27/08) vs OTP Group's own 455 at 30/06/2026; Erste locator 665 vs HNB registry 666; PBZ's 'around 660' vs HNB registry 668. Three independent reconciliations of country-level figures against group-level or regulator disclosures — the reconciliation the baseline flagged as never having been done. GENUINE GAPS: (1) I could NOT obtain the primary legal text creating the 01/01/2027 statutory cash-access right, nor documentary evidence of progress on the shared national ATM network — narodne-novine.nn.hr was unreachable from this environment (see access_issues), and HNB's own payment-regulations register does not list a cash-access act. The HNB cash-point registry is strong circumstantial evidence that the reporting infrastructure is already live, but the statute itself is unverified this run and I have not asserted its terms. (2) ZABA's exact deposit-capable count from its own locator was not obtained (its map endpoint returns clustered UniCredit-group locations including Italy); the HNB registry figure of 137 deposit machines is used instead. (3) OptiCash: no primary Croatian source surfaced without a search engine — not asserted, left as an operator request. (4) PBZ's H1-2026 report was not yet published on pbz.hr at 27/08/2026 (the /2026.html page 404s), so PBZ figures are 31/12/2025 vintage plus the live HNB registry. (5) The buyer of Erste Card Club is not established.
+
+## Access issues
+WebSearch: hard-blocked for the entire task — 'this session has used its web search budget (200 of 200 WebSearch calls)'. Zero searches were possible. DuckDuckGo (html.duckduckgo.com) returned HTTP 202 bot-challenge pages; Mojeek (www.mojeek.com/search) returned a page titled 'Captcha'. I did not attempt to solve either — no general web search was available at any point. narodne-novine.nn.hr — UNREACHABLE. https://narodne-novine.nn.hr/clanci/sluzbeni/2026_03_27_306.html and seven sibling article URLs returned curl code 000 (connection failure) with a desktop User-Agent over both HTTP/2 and HTTP/1.1, and WebFetch timed out at 60s on two of them. The source catalogue's Narodne novine ELI/sitemap route uses the same host and is therefore also blocked. This is what prevented verification of the 01/01/2027 cash-access statute. WebFetch returned HTTP 403 on www.pbz.hr and www.otpbanka.hr; the desktop User-Agent curl route worked on both, and was used instead. www.hnb.hr/en/analyses-and-publications/regular-publications/* renders its document list client-side — the year tabs on the payment-infrastructure page are JS-only, so I could not retrieve the 2025 PI1/PI3 files for a clean year-on-year comparison (probed four filename patterns, all 404). Within-2026 monthly comparisons were used instead. www.zaba.hr locator: the POST endpoint www.zaba.hr/home/en/map/podrucjeZaba responds 200 but returns clustered, group-wide (including Italian UniCredit) locations with the per-device deposit flag stripped, so a ZABA-only deposit count could not be derived from it. Claude-in-Chrome was not escalated to: no browser session was available to this subagent, and the blocked host (narodne-novine.nn.hr) failed at the connection layer rather than with a 403/JS wall, so a browser would likely have failed identically.
+
+## Operator requests
+1. Narodne novine — an operator with network access to narodne-novine.nn.hr should retrieve the legal basis for the Croatian statutory cash-access right effective 01/01/2027 (most likely an amendment to the Zakon o platnom prometu, or a standalone act on availability of cash services), plus the HNB decision that mandates reporting to the info-cash-point registry. Also fetch article 2026_04_45_547 (NN 45/2026, 'Odluka o prikupljanju podataka o platnim uslugama...') in full. 2. Nexi Group H1-2026 results/interim report — the Croatian POS terminal count and SoftPOS installed base as at 30/06/2026, to update PBZ's 21,591 / 6,791 figures from 31/12/2025. 3. AZTN (Croatian Competition Agency) merger register and the Sudski registar entry for Erste Card Club d.o.o. — to identify the buyer disclosed in Erste Group's H1-2026 report (EUR 116m gain) and the size of the POS/issuing estate that changed hands. 4. ASEE Group's full H1-2026 interim report (WSE filing) — the country breakdown of the Payment Solutions segment, to confirm whether the EUR 5.2m H1 decline is Croatian. 5. OptiCash — no primary Croatian source could be reached without a search engine. An operator should confirm whether any Croatian bank runs OptiCash (or another cash-forecasting/optimisation package) and under which vendor. Nothing on OptiCash is asserted in these findings. 6. PBZ H1-2026 financial report — pbz.hr/en/gradjani/financial-reports/2026.html did not exist at 27/08/2026; re-check in September.

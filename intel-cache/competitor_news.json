@@ -1,0 +1,1053 @@
+{
+  "generated": "2026-08-31",
+  "source": "Competitor WordPress REST feeds (.../wp-json/wp/v2/posts), public, no auth",
+  "note": "FLOOR, not ceiling: caches KNOWN machine-readable competitor newsrooms so they are never missed (esp. where the GLOBAL site is JS-only but the COUNTRY sites are WordPress, e.g. Mellon: mellongroup.com is JS with no API, but mellon.rs/.bg/.hr/.ro expose wp-json). Agent 6 must STILL do free newsroom + local-press search on top - new sites, new players, and JS-only globals (mellongroup.com via Chrome) are NOT covered here.",
+  "window_days": 180,
+  "competitors": {
+    "Mellon Group": {
+      "sites": [
+        "https://www.mellon.rs",
+        "https://mellon.bg",
+        "https://mellon.hr",
+        "https://mellon.ro"
+      ],
+      "count": 1,
+      "posts": [
+        {
+          "date": "2026-06-29",
+          "modified": "2026-06-29",
+          "title": "Mellon Bulgaria Joins Postbank in Celebrating 35 Years of Excellence with Bulgaria’s Largest Tennis Gala",
+          "excerpt": "Sofia, Bulgaria, Monday, June 29, 2026 Mellon Bulgaria participated as an official partner in the celebration of Postbank’s 35th anniversary in Bulgaria, supporting the successful delivery of the Postbank Tennis Gala—one of the country’s largest corporate and sporting events, bringing together world-class athletes, senior government representatives, international business leaders, strategic partners, and thousands of guests. […]",
+          "link": "https://www.mellon.bg/mellon-bulgaria-joins-postbank-in-celebrating-35-years-of-excellence-with-bulgarias-largest-tennis-gala/",
+          "country": "BG",
+          "source_site": "https://mellon.bg"
+        }
+      ]
+    },
+    "Asseco SEE / Payten": {
+      "sites": [
+        "https://asee.io"
+      ],
+      "count": 25,
+      "posts": [
+        {
+          "date": "2026-06-30",
+          "modified": "2026-06-30",
+          "title": "EU Cloud Region for Banks: What Actually Stays in Europe in 2026",
+          "excerpt": "",
+          "link": "https://asee.io/blog/eu-cloud-region-bank-data-stays-europe/",
+          "country": "SEE",
+          "source_site": "https://asee.io"
+        },
+        {
+          "date": "2026-06-16",
+          "modified": "2026-06-16",
+          "title": "ASEE Delivers SEPA Compliance for 14 Banks in Serbia",
+          "excerpt": "",
+          "link": "https://asee.io/news/asee-delivers-sepa-compliance-for-14-banks-in-serbia/",
+          "country": "SEE",
+          "source_site": "https://asee.io"
+        },
+        {
+          "date": "2026-06-16",
+          "modified": "2026-06-16",
+          "title": "ASEE Unveils Integrated Fraud Approach at InACT® Event",
+          "excerpt": "",
+          "link": "https://asee.io/news/asee-integrated-fraud-approach-inact-event/",
+          "country": "SEE",
+          "source_site": "https://asee.io"
+        },
+        {
+          "date": "2026-06-16",
+          "modified": "2026-06-16",
+          "title": "Serbia Advances E-Commerce Security with DinaCard 3DS Implementation",
+          "excerpt": "",
+          "link": "https://asee.io/news/serbia-ecommerce-security-dinacard-3ds/",
+          "country": "SEE",
+          "source_site": "https://asee.io"
+        },
+        {
+          "date": "2026-06-16",
+          "modified": "2026-06-16",
+          "title": "Online Onboarding — implemented through the Digital CIF (DCIF) and Digital Origination (DO) products (AikBank).",
+          "excerpt": "",
+          "link": "https://asee.io/news/aikbank-online-onboarding-dcif-digital-origination/",
+          "country": "SEE",
+          "source_site": "https://asee.io"
+        },
+        {
+          "date": "2026-06-16",
+          "modified": "2026-06-16",
+          "title": "ProCredit bank, Serbia x ASEE: Tezauri™ DWH solution and Regulatory Reporting solution",
+          "excerpt": "",
+          "link": "https://asee.io/news/tezauri-dwh-regulatory-reporting/",
+          "country": "SEE",
+          "source_site": "https://asee.io"
+        },
+        {
+          "date": "2026-06-16",
+          "modified": "2026-06-16",
+          "title": "Yettel bank, Serbia x ASEE: Tezauri™ Basel III solution and IFRS 9 solution",
+          "excerpt": "",
+          "link": "https://asee.io/news/tezauri-basel-iii-solution-and-ifrs-9-solution/",
+          "country": "SEE",
+          "source_site": "https://asee.io"
+        },
+        {
+          "date": "2026-06-15",
+          "modified": "2026-06-15",
+          "title": "How ASEE Powers Modern Digital Onboarding",
+          "excerpt": "",
+          "link": "https://asee.io/news/how-asee-powers-modern-digital-onboarding/",
+          "country": "SEE",
+          "source_site": "https://asee.io"
+        },
+        {
+          "date": "2026-05-19",
+          "modified": "2026-05-27",
+          "title": "How to Keep Your Business Inbox Secure",
+          "excerpt": "",
+          "link": "https://asee.io/blog/security-starts-inbox/",
+          "country": "SEE",
+          "source_site": "https://asee.io"
+        },
+        {
+          "date": "2026-04-22",
+          "modified": "2026-05-18",
+          "title": "EU Cloud Sovereignty: Why Businesses Are Moving Away from US Providers",
+          "excerpt": "",
+          "link": "https://asee.io/blog/eu-cloud-sovereignty-businesses-leaving-us-providers/",
+          "country": "SEE",
+          "source_site": "https://asee.io"
+        },
+        {
+          "date": "2026-05-15",
+          "modified": "2026-05-15",
+          "title": "DORA Cloud Provider Requirements for Banks: How EU Managed Cloud Reduces the Evidence Burden",
+          "excerpt": "",
+          "link": "https://asee.io/blog/dora-cloud-provider-requirements-eu-managed-cloud/",
+          "country": "SEE",
+          "source_site": "https://asee.io"
+        },
+        {
+          "date": "2026-04-16",
+          "modified": "2026-04-30",
+          "title": "How Outdated Software Puts Your System at Risk",
+          "excerpt": "",
+          "link": "https://asee.io/blog/outdated-software-security-risk/",
+          "country": "SEE",
+          "source_site": "https://asee.io"
+        },
+        {
+          "date": "2026-04-29",
+          "modified": "2026-04-29",
+          "title": "ASEE Participates in Locked Shields 2026, the World’s Largest Cyber Defence Exercise",
+          "excerpt": "",
+          "link": "https://asee.io/news/asee-locked-shields-2026-cyber-defence-exercise/",
+          "country": "SEE",
+          "source_site": "https://asee.io"
+        },
+        {
+          "date": "2026-04-28",
+          "modified": "2026-04-28",
+          "title": "ASEE NIS2 Roadshow in Croatia: Key Cybersecurity Insights",
+          "excerpt": "",
+          "link": "https://asee.io/blog/asee-nis2-roadshow-croatia-cybersecurity-insights/",
+          "country": "SEE",
+          "source_site": "https://asee.io"
+        },
+        {
+          "date": "2026-04-21",
+          "modified": "2026-04-21",
+          "title": "Certiligent: Automated Certificate Lifecycle Management for a New Era of TLS/SSL Security",
+          "excerpt": "",
+          "link": "https://asee.io/news/certiligent-automated-certificate-lifecycle-management/",
+          "country": "SEE",
+          "source_site": "https://asee.io"
+        },
+        {
+          "date": "2026-03-23",
+          "modified": "2026-04-08",
+          "title": "ASEE Launches a Mobile Banking App Designed for the Next Generation of Users",
+          "excerpt": "",
+          "link": "https://asee.io/news/asee-mobile-banking-app-children-teenagers-romania/",
+          "country": "SEE",
+          "source_site": "https://asee.io"
+        },
+        {
+          "date": "2026-04-07",
+          "modified": "2026-04-07",
+          "title": "SEPA Credit Transfer in Serbia: From Compliance to Transformation",
+          "excerpt": "",
+          "link": "https://asee.io/blog/sepa-credit-transfer-serbia-banking-transformation/",
+          "country": "SEE",
+          "source_site": "https://asee.io"
+        },
+        {
+          "date": "2026-04-02",
+          "modified": "2026-04-02",
+          "title": "How a Financial Institution Improved Its Mobile Banking Experience",
+          "excerpt": "",
+          "link": "https://asee.io/blog/mobile-banking-app-transformation/",
+          "country": "SEE",
+          "source_site": "https://asee.io"
+        },
+        {
+          "date": "2026-03-17",
+          "modified": "2026-04-01",
+          "title": "Money Motion 2026 Recap: Key Insights from Fintech Leaders in Zagreb",
+          "excerpt": "",
+          "link": "https://asee.io/news/money-motion-2026-insights/",
+          "country": "SEE",
+          "source_site": "https://asee.io"
+        },
+        {
+          "date": "2026-03-23",
+          "modified": "2026-03-23",
+          "title": "Dünya Katılım Bank Strengthens Application Security with ASEE InACT®",
+          "excerpt": "",
+          "link": "https://asee.io/news/dunya-katilim-asee-inact-application-fraud-prevention/",
+          "country": "SEE",
+          "source_site": "https://asee.io"
+        },
+        {
+          "date": "2026-03-23",
+          "modified": "2026-03-23",
+          "title": "Secure Payments Across Every Channel: CK Enerji Partners with ASEE & Payten",
+          "excerpt": "",
+          "link": "https://asee.io/news/ck-enerji-asee-payten-secure-payment-ecosystem/",
+          "country": "SEE",
+          "source_site": "https://asee.io"
+        },
+        {
+          "date": "2026-03-23",
+          "modified": "2026-03-23",
+          "title": "Türkiye İş Bankası Implements a Powerful Risk Management Architecture with ASEE InACT®",
+          "excerpt": "",
+          "link": "https://asee.io/news/is-bankasi-risk-management-asee-inact/",
+          "country": "SEE",
+          "source_site": "https://asee.io"
+        },
+        {
+          "date": "2026-03-19",
+          "modified": "2026-03-19",
+          "title": "Data Protection & Privacy: What You Need to Know",
+          "excerpt": "",
+          "link": "https://asee.io/blog/data-protection-privacy-basics/",
+          "country": "SEE",
+          "source_site": "https://asee.io"
+        },
+        {
+          "date": "2026-03-18",
+          "modified": "2026-03-18",
+          "title": "Designing Mobile Banking That Builds Trust: A Behind-the-Scenes Look at a Digital Transformation",
+          "excerpt": "",
+          "link": "https://asee.io/blog/mobile-banking-digital-transformation/",
+          "country": "SEE",
+          "source_site": "https://asee.io"
+        },
+        {
+          "date": "2026-03-10",
+          "modified": "2026-03-10",
+          "title": "Banking in the Age of AI and Instant Payments",
+          "excerpt": "",
+          "link": "https://asee.io/blog/future-banking-ai-instant-payments/",
+          "country": "SEE",
+          "source_site": "https://asee.io"
+        }
+      ]
+    },
+    "Netopia Payments": {
+      "sites": [
+        "https://netopia-payments.com"
+      ],
+      "count": 2,
+      "posts": [
+        {
+          "date": "2026-07-13",
+          "modified": "2026-07-15",
+          "title": "NETOPIA Payments obține licența de instituție de plată BNR: Ce înseamnă acest pas pentru afacerea ta?",
+          "excerpt": "1. Overview Suntem bucuroși să anunțăm că NETOPIA Payments a obținut licența de instituție de plată de la Banca Națională a României. Această autorizare marchează vezi mai mult",
+          "link": "https://netopia-payments.com/netopia-payments-obtine-licenta-de-institutie-de-plata-bnr-ce-inseamna-acest-pas-pentru-afacerea-ta/",
+          "country": "RO",
+          "source_site": "https://netopia-payments.com"
+        },
+        {
+          "date": "2026-06-15",
+          "modified": "2026-07-13",
+          "title": "Raluca Micu devine CEO NETOPIA Payments: o nouă etapă pentru infrastructura digitală a plăților online din România",
+          "excerpt": "Cu peste 15 ani de experiență la intersecția dintre reglementare, fintech și operare de servicii de plată, Raluca Micu preia conducerea NETOPIA Payments într-un moment vezi mai mult",
+          "link": "https://netopia-payments.com/raluca-micu-devine-ceo-netopia-payments-o-noua-etapa-pentru-infrastructura-digitala-a-platilor-online-din-romania/",
+          "country": "RO",
+          "source_site": "https://netopia-payments.com"
+        }
+      ]
+    },
+    "DAAC digital": {
+      "sites": [
+        "https://daacdigital.com"
+      ],
+      "count": 14,
+      "posts": [
+        {
+          "date": "2026-05-05",
+          "modified": "2026-08-13",
+          "title": "Energocom și-a deschis Centrul de Relații cu Clienții cu un sistem electronic de gestionare a cozilor",
+          "excerpt": "",
+          "link": "https://daacdigital.com/energocom-si-a-deschis-centrul-de-relatii-cu-clientii-cu-un-sistem-electronic-de-gestionare-a-cozilor/",
+          "country": "RO",
+          "source_site": "https://daacdigital.com"
+        },
+        {
+          "date": "2026-06-08",
+          "modified": "2026-06-08",
+          "title": "DAAC digital la Moldova Digital Summit 2026: prezență, dialog și poziționare în ecosistemul tech american",
+          "excerpt": "",
+          "link": "https://daacdigital.com/daac-digital-la-moldova-digital-summit-2026-prezenta-dialog-si-pozitionare-in-ecosistemul-tech-american/",
+          "country": "RO",
+          "source_site": "https://daacdigital.com"
+        },
+        {
+          "date": "2026-06-03",
+          "modified": "2026-06-03",
+          "title": "DAAC digital (DAAC System Integrator) anunță obținerea certificării IBM Silver Business Partner",
+          "excerpt": "",
+          "link": "https://daacdigital.com/daac-digital-daac-system-integrator-anunta-obtinerea-certificarii-ibm-silver-business-partner/",
+          "country": "RO",
+          "source_site": "https://daacdigital.com"
+        },
+        {
+          "date": "2026-06-03",
+          "modified": "2026-06-03",
+          "title": "DAAC digital și AmCham Moldova – parteneri strategici la Moldova Digital Summit 2026",
+          "excerpt": "",
+          "link": "https://daacdigital.com/daac-digital-si-amcham-moldova-parteneri-strategici-la-moldova-digital-summit-2026/",
+          "country": "RO",
+          "source_site": "https://daacdigital.com"
+        },
+        {
+          "date": "2026-05-21",
+          "modified": "2026-05-21",
+          "title": "Two Cultures. One Vision.: Rezumat",
+          "excerpt": "",
+          "link": "https://daacdigital.com/two-cultures-one-vision-rezumat/",
+          "country": "RO",
+          "source_site": "https://daacdigital.com"
+        },
+        {
+          "date": "2026-05-13",
+          "modified": "2026-05-13",
+          "title": "Cine apără infrastructura critică a Moldovei când regulamentele nu sunt suficiente?",
+          "excerpt": "",
+          "link": "https://daacdigital.com/cine-apara-infrastructura-critica-a-moldovei-cand-regulamentele-nu-sunt-suficiente/",
+          "country": "RO",
+          "source_site": "https://daacdigital.com"
+        },
+        {
+          "date": "2026-04-29",
+          "modified": "2026-05-13",
+          "title": "Two Cultures. One Vision.",
+          "excerpt": "",
+          "link": "https://daacdigital.com/two-cultures-one-vision/",
+          "country": "RO",
+          "source_site": "https://daacdigital.com"
+        },
+        {
+          "date": "2026-04-24",
+          "modified": "2026-04-24",
+          "title": "Cum se conturează viitorul digital al Moldovei: DAAC digital la MIGF 2026",
+          "excerpt": "",
+          "link": "https://daacdigital.com/cum-se-contureaza-viitorul-digital-al-moldovei-daac-digital-la-migf-2026/",
+          "country": "RO",
+          "source_site": "https://daacdigital.com"
+        },
+        {
+          "date": "2026-04-22",
+          "modified": "2026-04-22",
+          "title": "DAAC digital România finalizează proiect Fortinet la Nuclearelectrica",
+          "excerpt": "",
+          "link": "https://daacdigital.com/daac-digital-romania-finalizeaza-proiect-fortinet-la-nuclearelectrica/",
+          "country": "RO",
+          "source_site": "https://daacdigital.com"
+        },
+        {
+          "date": "2026-04-09",
+          "modified": "2026-04-09",
+          "title": "Amenințările cibernetice pe care nu le poți ignora în 2026",
+          "excerpt": "",
+          "link": "https://daacdigital.com/amenintarile-cibernetice-pe-care-nu-le-poti-ignora-in-2026/",
+          "country": "RO",
+          "source_site": "https://daacdigital.com"
+        },
+        {
+          "date": "2026-04-02",
+          "modified": "2026-04-01",
+          "title": "Piața globală de IT outsourcing în 2026: tendințe, cifre și oportunități",
+          "excerpt": "",
+          "link": "https://daacdigital.com/piata-globala-de-it-outsourcing-in-2026-tendinte-cifre-si-oportunitati/",
+          "country": "RO",
+          "source_site": "https://daacdigital.com"
+        },
+        {
+          "date": "2026-04-01",
+          "modified": "2026-04-01",
+          "title": "PCI, Windows 10 și Mastercard: 3 termene critice de compliance, suport software și migrare tehnologică pentru ATM-uri",
+          "excerpt": "",
+          "link": "https://daacdigital.com/pci-windows-10-si-mastercard-3-termene-critice-de-compliance-suport-software-si-migrare-tehnologica-pentru-atm-uri/",
+          "country": "RO",
+          "source_site": "https://daacdigital.com"
+        },
+        {
+          "date": "2026-03-17",
+          "modified": "2026-03-17",
+          "title": "AI & BIG DATA CONFERENCE 2026: Rezumat",
+          "excerpt": "",
+          "link": "https://daacdigital.com/ai-big-data-conference-2026-rezumat/",
+          "country": "RO",
+          "source_site": "https://daacdigital.com"
+        },
+        {
+          "date": "2026-03-05",
+          "modified": "2026-03-06",
+          "title": "DAAC digital, Partener Gold la AI & BIG DATA CONFERENCE 2026 (6 martie, București)",
+          "excerpt": "",
+          "link": "https://daacdigital.com/daac-digital-partener-gold-la-ai-big-data-conference-2026-6-martie-bucuresti/",
+          "country": "RO",
+          "source_site": "https://daacdigital.com"
+        }
+      ]
+    },
+    "Profile Software": {
+      "sites": [
+        "https://www.profilesw.com"
+      ],
+      "count": 21,
+      "posts": [
+        {
+          "date": "2026-07-16",
+          "modified": "2026-08-12",
+          "title": "Sibos 2026",
+          "excerpt": "",
+          "link": "https://www.profilesw.com/news-events/events/sibos-2026/",
+          "country": "GR",
+          "source_site": "https://www.profilesw.com"
+        },
+        {
+          "date": "2026-07-07",
+          "modified": "2026-07-07",
+          "title": "Profile Launches ProfileOne: The Governed AI Orchestration Platform for Financial Institutions",
+          "excerpt": "London, 7th July 2026 – Profile (ATH: PROF), a global financial technology leader with a presence in more than 50 countries, today announced the…",
+          "link": "https://www.profilesw.com/news-events/press-releases/profileone-governed-agentic-ai-orchestration-financial-institutions/",
+          "country": "GR",
+          "source_site": "https://www.profilesw.com"
+        },
+        {
+          "date": "2026-06-30",
+          "modified": "2026-07-07",
+          "title": "Profile Software enhances its RiskAvert solution to streamline Pillar III disclosures",
+          "excerpt": "Athens, 30 June 2026 – Profile (ATH: PROF), an international technology group, has significantly upgraded its RiskAvert risk management platform by incorporating the new…",
+          "link": "https://www.profilesw.com/news-events/press-releases/profile-software-riskavert-pillar-iii-disclosures/",
+          "country": "GR",
+          "source_site": "https://www.profilesw.com"
+        },
+        {
+          "date": "2026-06-09",
+          "modified": "2026-06-30",
+          "title": "Profile Named in Forrester’s Digital Wealth Management Platforms Landscape, Q2 2026",
+          "excerpt": "Company Achieves Top Scores in Agentic AI, Personalised Client Portals, and Portfolio Analytics Athens, 9 June, 2026 – Profile (ATH: PROF), an international technology group, announced today that has once again been featured in Forrester’s The Digital Wealth Management Platforms Landscape, Q2 2026 report —…",
+          "link": "https://www.profilesw.com/news-events/press-releases/profile-named-in-forresters-digital-wealth-management-platforms-landscape-q2-2026/",
+          "country": "GR",
+          "source_site": "https://www.profilesw.com"
+        },
+        {
+          "date": "2026-06-25",
+          "modified": "2026-06-25",
+          "title": "Announcement of Ex-Dividend Date / Payment of Dividend for the Financial Year 2025",
+          "excerpt": "The Société Anonyme under the name «PROFILE COMMERCIAL AND INDUSTRIAL COMPANY OF INFORMATION TECHNOLOGY SOCIETE ANONYME» and the distinctive title «PROFILE SYSTEMS & SOFTWARE…",
+          "link": "https://www.profilesw.com/news-events/ase-announcements/announcement-ex-dividend-date-payment-dividend-financial-year-2025/",
+          "country": "GR",
+          "source_site": "https://www.profilesw.com"
+        },
+        {
+          "date": "2026-06-25",
+          "modified": "2026-06-25",
+          "title": "Profile Strengthens UK Presence as Contemi Solutions Rebrands to Profile Solutions UK",
+          "excerpt": "Backed by the listed Profile Group: the newly acquired business strengthens the Group’s established presence and solutions in the UK London, 25 June, 2026…",
+          "link": "https://www.profilesw.com/news-events/press-releases/profile-strengthens-uk-presence-as-contemi-solutions-rebrands-to-profile-solutions-uk/",
+          "country": "GR",
+          "source_site": "https://www.profilesw.com"
+        },
+        {
+          "date": "2026-06-23",
+          "modified": "2026-06-23",
+          "title": "Profile Software at FundForum 2026 in Monaco presenting AI Solutions for the Transformation of Investment Management",
+          "excerpt": "Athens, 23 June 2026 – Profile (ATH: PROF), an international technology group, is participating as a sponsor at FundForum 2026, taking place from 22…",
+          "link": "https://www.profilesw.com/news-events/press-releases/profile-software-fundforum-2026-monaco-ai-solutions-transformation-investment-management/",
+          "country": "GR",
+          "source_site": "https://www.profilesw.com"
+        },
+        {
+          "date": "2026-04-08",
+          "modified": "2026-06-18",
+          "title": "Profile Software has been recognised again in the renowned WealthTech100 list",
+          "excerpt": "Athens, 8 April 2026 – Profile (ATH: PROF), an international technology group, announced today its inclusion in the WealthTech100 list for 2026, reinforcing its leading position among the technology providers helping shape…",
+          "link": "https://www.profilesw.com/news-events/press-releases/profile-software-recognised-again-wealthtech100-list/",
+          "country": "GR",
+          "source_site": "https://www.profilesw.com"
+        },
+        {
+          "date": "2026-06-17",
+          "modified": "2026-06-17",
+          "title": "Profile Software demonstrates strong presence at the Caribbean Credit Unions Conference",
+          "excerpt": "Athens, 17 June, 2026 – Profile (ATH: PROF), an international technology group, is participating as a key sponsor at the Caribbean Confederation of Credit Unions (CCCU)…",
+          "link": "https://www.profilesw.com/news-events/press-releases/profile-software-demonstrates-strong-presence-at-caribbean-credit-unions-conference/",
+          "country": "GR",
+          "source_site": "https://www.profilesw.com"
+        },
+        {
+          "date": "2026-06-17",
+          "modified": "2026-06-17",
+          "title": "Profile Software drives next-gen banking transformation at UNCHAIN Fintech Festival 2026",
+          "excerpt": "Athens, 17 June 2026 – Profile (ATHEX: PROF), an international technology group, sponsors UNCHAIN Fintech Festival 2026, taking place on 17–18 June 2026 at…",
+          "link": "https://www.profilesw.com/news-events/press-releases/profile-software-drives-next-gen-banking-transformation-at-unchain-fintech-festival-2026/",
+          "country": "GR",
+          "source_site": "https://www.profilesw.com"
+        },
+        {
+          "date": "2026-06-16",
+          "modified": "2026-06-16",
+          "title": "Profile Software sponsors 7th Occupational Retirement Provision Forum",
+          "excerpt": "Profile, a leading financial solutions provider, is a bronze sponsor of the 7th Occupational Retirement Provision Forum, taking place on 18 June at Divani…",
+          "link": "https://www.profilesw.com/news-events/announcements/profile-software-sponsors-7th-occupational-retirement-provision-forum/",
+          "country": "GR",
+          "source_site": "https://www.profilesw.com"
+        },
+        {
+          "date": "2026-05-12",
+          "modified": "2026-06-09",
+          "title": "UNCHAIN Fintech Festival 2026",
+          "excerpt": "",
+          "link": "https://www.profilesw.com/news-events/events/unchain-fintech-festival-2026/",
+          "country": "GR",
+          "source_site": "https://www.profilesw.com"
+        },
+        {
+          "date": "2026-05-17",
+          "modified": "2026-05-22",
+          "title": "Profile Group: Presentation to the Hellenic Fund and Asset Management Association 2026",
+          "excerpt": "Athens, 17 April 2026: Profile Group today presented its financial results for fiscal year 2025 at the annual event of the Hellenic Fund and…",
+          "link": "https://www.profilesw.com/news-events/press-releases/profile-group-presentation-to-the-hellenic-fund-and-asset-management-association-2026/",
+          "country": "GR",
+          "source_site": "https://www.profilesw.com"
+        },
+        {
+          "date": "2026-05-21",
+          "modified": "2026-05-21",
+          "title": "Saint John’s Cooperative Credit Union selects Core Banking solution by Profile Software",
+          "excerpt": "Athens, 21 May 2026: Profile (ATHEX: PROF), an international technology group, announces that Saint John’s Cooperative Credit Union (SJCCU) has selected Finuevo Core as…",
+          "link": "https://www.profilesw.com/news-events/press-releases/saint_johns_cooperative_credit_unions_selects_core_banking_solution_by_profile_software/",
+          "country": "GR",
+          "source_site": "https://www.profilesw.com"
+        },
+        {
+          "date": "2026-05-12",
+          "modified": "2026-05-12",
+          "title": "Caribbean Confederation of Credit Unions Annual International Convention 2026",
+          "excerpt": "",
+          "link": "https://www.profilesw.com/news-events/events/caribbean-confederation-credit-unions-annual-international-convention-2026/",
+          "country": "GR",
+          "source_site": "https://www.profilesw.com"
+        },
+        {
+          "date": "2026-05-12",
+          "modified": "2026-05-12",
+          "title": "IMpower FundForum 2026",
+          "excerpt": "",
+          "link": "https://www.profilesw.com/news-events/events/impower-fundforum-2026/",
+          "country": "GR",
+          "source_site": "https://www.profilesw.com"
+        },
+        {
+          "date": "2026-05-12",
+          "modified": "2026-05-12",
+          "title": "Amendment of the Financial Calendar of 2026",
+          "excerpt": "In line with the proper, valid and timely investors’ update and according to article 4.1.1 of the Euronext Athens Stock Exchange Regulation, (hereinafter “Regulation”)…",
+          "link": "https://www.profilesw.com/news-events/ase-announcements/amendment-financial-calendar-2026/",
+          "country": "GR",
+          "source_site": "https://www.profilesw.com"
+        },
+        {
+          "date": "2026-04-07",
+          "modified": "2026-04-07",
+          "title": "Profile Software strengthens its UK investment management offering with the acquisition of Contemi Solutions",
+          "excerpt": "Athens – London, 7 April 2026 – Following the completion of the acquisition of 100% of the shares of Contemi Solutions (London) UK Ltd…",
+          "link": "https://www.profilesw.com/news-events/press-releases/profile-software-acquires-contemi-solutions-for-uk-investment-management/",
+          "country": "GR",
+          "source_site": "https://www.profilesw.com"
+        },
+        {
+          "date": "2026-03-31",
+          "modified": "2026-03-31",
+          "title": "Profile Group: Strong EBITDA growth, solid profitability and significant revenue increase in 2025",
+          "excerpt": "Athens, 31 March 2026: Profile Group announces its financial results for 2025, reflecting another year of strong growth, with EBITDA increasing by 27%, revenues…",
+          "link": "https://www.profilesw.com/news-events/press-releases/profile-group-strong-ebitda-growth-profitability-revenue-increase-2025/",
+          "country": "GR",
+          "source_site": "https://www.profilesw.com"
+        },
+        {
+          "date": "2026-03-30",
+          "modified": "2026-03-30",
+          "title": "Financial Calendar of the Year 2026",
+          "excerpt": "In line with the proper, valid and timely Investors information and according to Article 4.1.1 of the Athens Stock Exchange Regulation, (hereinafter “Regulation”) and…",
+          "link": "https://www.profilesw.com/news-events/ase-announcements/financial-calendar-2026/",
+          "country": "GR",
+          "source_site": "https://www.profilesw.com"
+        },
+        {
+          "date": "2026-03-12",
+          "modified": "2026-03-12",
+          "title": "Profile Centevo sponsors Stockholm Fintech Week 2026",
+          "excerpt": "Profile Centevo, a member of Profile Software and a leading Asset and Fund Management software provider in the Nordics, will sponsor and participate in Stockholm Fintech Week 2026, taking place 18–19 March…",
+          "link": "https://www.profilesw.com/news-events/announcements/profile-centevo-sponsors-stockholm-fintech-week-2026/",
+          "country": "GR",
+          "source_site": "https://www.profilesw.com"
+        }
+      ]
+    },
+    "SelfPay (ZebraPay)": {
+      "sites": [
+        "https://selfpay.ro"
+      ],
+      "count": 22,
+      "posts": [
+        {
+          "date": "2026-08-24",
+          "modified": "2026-08-25",
+          "title": "9695 Asistență Rutieră, acum disponibilă în SelfPay Now",
+          "excerpt": "O problemă cu mașina poate apărea oricând, iar atunci când rămâi în pană, ai nevoie în primul rând de o soluție rapidă. SelfPay Now adaugă un nou serviciu în categoria […]",
+          "link": "https://www.selfpay.ro/9695-aistenta-rutiera-acum-disponibila-in-selfpay-now/",
+          "country": "RO",
+          "source_site": "https://selfpay.ro"
+        },
+        {
+          "date": "2026-08-20",
+          "modified": "2026-08-20",
+          "title": "NOU în SelfPay Now: acum poți încheia polița RCA direct de pe telefon",
+          "excerpt": "SelfPay Now continuă să se dezvolte, adăugând noi servicii care simplifică activitățile de zi cu zi. Unul dintre cele mai recente servicii adăugate este posibilitatea de a obține o poliță […]",
+          "link": "https://www.selfpay.ro/polita-rca-online-direct-din-aplicatia-selfpay-now/",
+          "country": "RO",
+          "source_site": "https://selfpay.ro"
+        },
+        {
+          "date": "2026-08-12",
+          "modified": "2026-08-12",
+          "title": "NOU în SelfPay Now: servicii de telefonie mobilă, direct din aplicație",
+          "excerpt": "SelfPay Now continuă să aducă utilizatorilor noi servicii utile pentru activitățile de zi cu zi, disponibile simplu și rapid într-o singură aplicație. Una dintre cele mai recente noutăți este categoria […]",
+          "link": "https://www.selfpay.ro/telefonie-mobila-in-selfpay-now-prepay-si-travel-esim/",
+          "country": "RO",
+          "source_site": "https://selfpay.ro"
+        },
+        {
+          "date": "2026-08-03",
+          "modified": "2026-08-04",
+          "title": "Noi servicii în aplicația SelfPay Now: telefonie mobilă, carduri cadou, gaming, asigurări RCA și alte noi funcționalități și rapoarte noi pentru șoferi",
+          "excerpt": "Aplicația SelfPay Now continuă să se dezvolte și adaugă noi servicii care îți oferă și mai multe soluții, toate într-un singur loc. Începând de acum, utilizatorii au acces la categorii […]",
+          "link": "https://www.selfpay.ro/noi-servicii-in-aplicatia-selfpay-now-telefonie-mobila-esim-rca-si-multe-altele/",
+          "country": "RO",
+          "source_site": "https://selfpay.ro"
+        },
+        {
+          "date": "2026-07-30",
+          "modified": "2026-07-30",
+          "title": "Taxa de pașaport: cum o plătești rapid înainte de vacanța în afara Uniunii Europene",
+          "excerpt": "Vara este sezonul concediilor, iar multe dintre cele mai populare destinații se află în afara Uniunii Europene. Dacă plănuiești o vacanță în Mauritius, Zanzibar, Seychelles, Canada sau în alte țări […]",
+          "link": "https://www.selfpay.ro/taxa-de-pasaport-cum-o-platesti-rapid/",
+          "country": "RO",
+          "source_site": "https://selfpay.ro"
+        },
+        {
+          "date": "2026-07-21",
+          "modified": "2026-07-21",
+          "title": "Ghid pentru festivalurile verii: cum cumperi bilete la festival, rovinietă și vinietă Bulgaria din timp",
+          "excerpt": "Vara înseamnă drumuri, concerte și weekenduri petrecute la cele mai așteptate festivaluri din România sau din străinătate. Indiferent dacă mergi la un festival pe litoral, la munte sau plănuiești o […]",
+          "link": "https://www.selfpay.ro/bilete-la-festival-rovinieta-si-vinieta-bulgaria-ghid-util/",
+          "country": "RO",
+          "source_site": "https://selfpay.ro"
+        },
+        {
+          "date": "2026-05-08",
+          "modified": "2026-07-15",
+          "title": "SelfPay, soluția sigură și rapidă pentru plata facturilor",
+          "excerpt": "Într-o perioadă în care oamenii caută soluții cât mai rapide, accesibile și sigure pentru gestionarea plăților de zi cu zi, SelfPay continuă să ofere acces facil la servicii esențiale, prin […]",
+          "link": "https://www.selfpay.ro/selfpay-solutia-pentru-plata-facturilor/",
+          "country": "RO",
+          "source_site": "https://selfpay.ro"
+        },
+        {
+          "date": "2026-07-13",
+          "modified": "2026-07-13",
+          "title": "Vacanțe de vară în România și Bulgaria: 8 destinații pentru un concediu aproape de casă",
+          "excerpt": "Descoperă unele dintre cele mai interesante vacanțe de vară. Vara este perioada în care cei mai mulți dintre noi încep să caute idei pentru concediu sau pentru escapade. Fie că […]",
+          "link": "https://www.selfpay.ro/vacante-de-vara-destinatii-in-romania-si-bulgaria/",
+          "country": "RO",
+          "source_site": "https://selfpay.ro"
+        },
+        {
+          "date": "2026-06-23",
+          "modified": "2026-07-03",
+          "title": "Robux Roblox: cum îi poți cumpăra rapid de la Stația de Plată SelfPay",
+          "excerpt": "Roblox este una dintre cele mai populare platforme de jocuri online, folosită de milioane de utilizatori din întreaga lume. Fie că este vorba despre jocuri, experiențe interactive sau personalizarea avatarului, […]",
+          "link": "https://www.selfpay.ro/cum-cumperi-robux-roblox-de-la-statiile-de-plata-selfpay/",
+          "country": "RO",
+          "source_site": "https://selfpay.ro"
+        },
+        {
+          "date": "2026-06-18",
+          "modified": "2026-07-03",
+          "title": "SelfPay anunță rambursarea integrală, la scadență, a obligațiunilor PAY26E listate la Bursa de Valori București și își reconfirmă angajamentul față de investitori",
+          "excerpt": "SelfPay S.A. anunță rambursarea integrală și la termen a obligațiunilor PAY26E, emise și listate la Bursa de Valori București (BVB). Compania a achitat integral principalul în valoare de 3 milioane […]",
+          "link": "https://www.selfpay.ro/selfpay-ramburseaza-integral-obligatiunile-pay26e-listate-la-bursa-de-valori-bucuresti/",
+          "country": "RO",
+          "source_site": "https://selfpay.ro"
+        },
+        {
+          "date": "2026-06-01",
+          "modified": "2026-06-16",
+          "title": "Plătește-ți facturile la Stațiile de Plată SelfPay și intră în cursa pentru premii",
+          "excerpt": "Plata facturilor face parte din rutina lunară a fiecăruia dintre noi. Electricitate, gaze, apă, internet sau telefonie – sunt plăți recurente pe care încercăm să le rezolvăm cât mai simplu […]",
+          "link": "https://www.selfpay.ro/castiga-cu-facturile-tale-platesti-facturile-si-intri-in-campania-selfpay/",
+          "country": "RO",
+          "source_site": "https://selfpay.ro"
+        },
+        {
+          "date": "2026-06-05",
+          "modified": "2026-06-05",
+          "title": "SelfPay raporteaza rezultate record pentru anul 2025: profit net de 39,5 milioane lei și aproape 8 miliarde de lei procesați",
+          "excerpt": "SelfPay marchează cel mai bun an din istoria companiei, înregistrând rezultate financiare și operaționale în creștere accelerată și consolidându-și puternic rolul în infrastructura financiară locală. În 2025, compania a continuat […]",
+          "link": "https://www.selfpay.ro/rezultate-financiare-selfpay-2025/",
+          "country": "RO",
+          "source_site": "https://selfpay.ro"
+        },
+        {
+          "date": "2026-05-28",
+          "modified": "2026-05-28",
+          "title": "SelfPay a participat la „Ziua Porților Deschise pentru copii”, organizată de Ministerul Afacerilor Interne, unde Stația de Plată SelfPay a fost prezentată ca soluție pentru achitarea cărților electronice de identitate pentru minori.",
+          "excerpt": "În cadrul evenimentului „Ziua Porților Deschise pentru copii”, desfășurat la sediul Ministerului Afacerilor Interne din Piața Revoluției, vizitatorii, în special familii cu copii, au avut ocazia să descopere și să […]",
+          "link": "https://www.selfpay.ro/selfpay-la-ziua-portilor-deschise-pentru-copii/",
+          "country": "RO",
+          "source_site": "https://selfpay.ro"
+        },
+        {
+          "date": "2026-05-14",
+          "modified": "2026-05-26",
+          "title": "Tot mai mulți români își plătesc taxele și impozitele prin SelfPay. Peste 440 de milioane de lei și 1,6 milioane de tranzacții procesate în primele patru luni ale anului",
+          "excerpt": "Plata taxelor și impozitelor a devenit, în ultimii ani, una dintre cele mai importante categorii de servicii de la SelfPay. Tot mai mulți români aleg soluțiile noastre pentru a evita […]",
+          "link": "https://www.selfpay.ro/taxele-si-impozitele-prin-selfpay-rezultate-record/",
+          "country": "RO",
+          "source_site": "https://selfpay.ro"
+        },
+        {
+          "date": "2026-05-21",
+          "modified": "2026-05-21",
+          "title": "Am lansat Programul de Tranziție Rapidă pentru retaileri",
+          "excerpt": "Tot mai mulți utilizatori aleg soluțiile self-service pentru plățile de zi cu zi, iar nevoia de servicii rapide și accesibile continuă să crească în comunitățile din toată țara. În acest […]",
+          "link": "https://www.selfpay.ro/programul-de-tranzitie-rapida-selfpay-pentru-retaileri/",
+          "country": "RO",
+          "source_site": "https://selfpay.ro"
+        },
+        {
+          "date": "2026-05-04",
+          "modified": "2026-05-04",
+          "title": "Taxe și impozite locale în Brașov: acum le poți plăti din nou la Stațiile de Plată SelfPay",
+          "excerpt": "Locuitorii din Municipiul Brașov au din nou acces la o modalitate simplă și rapidă de a-și achita taxele și impozitele locale. Prin parteneriatul cu Primăria Municipiului Brașov, aceste plăți pot […]",
+          "link": "https://www.selfpay.ro/taxe-si-impozite-brasov-la-statiile-selfpay/",
+          "country": "RO",
+          "source_site": "https://selfpay.ro"
+        },
+        {
+          "date": "2026-04-23",
+          "modified": "2026-04-23",
+          "title": "Top vacanțe de primăvară: unde să pleci și cum să te organizezi simplu",
+          "excerpt": "Primăvara este una dintre cele mai bune perioade pentru a planifica o escapadă. Temperaturile sunt mai plăcute, destinațiile sunt mai puțin aglomerate, iar prețurile sunt, de multe ori, mai accesibile […]",
+          "link": "https://www.selfpay.ro/top-vacante-de-primavara-unde-sa-pleci-si-cum-sa-te-organizezi-simplu/",
+          "country": "RO",
+          "source_site": "https://selfpay.ro"
+        },
+        {
+          "date": "2026-04-08",
+          "modified": "2026-04-08",
+          "title": "NOU în aplicația SelfPay Now: toate cardurile tale de loialitate, într-un singur loc",
+          "excerpt": "Dacă ai mai multe carduri de loialitate în portofel, știi deja cât de greu sunt de organizat. Carduri pentru supermarket, farmacii, benzinării sau alte magazine – toate utile, dar greu […]",
+          "link": "https://www.selfpay.ro/nou-in-selfpay-now-toate-cardurile-de-loialitate-intr-un-singur-loc/",
+          "country": "RO",
+          "source_site": "https://selfpay.ro"
+        },
+        {
+          "date": "2026-03-31",
+          "modified": "2026-03-31",
+          "title": "Cadouri de Paște și pregătiri: idei simple pentru sărbători fără stres",
+          "excerpt": "Paștele este unul dintre acele momente din an în care ne dorim să fim mai aproape de cei dragi. Fie că petreci sărbătorile în familie sau planifici o vizită, perioada […]",
+          "link": "https://www.selfpay.ro/cadouri-de-paste-idei-simple-pregatiri-fara-stres/",
+          "country": "RO",
+          "source_site": "https://selfpay.ro"
+        },
+        {
+          "date": "2026-03-20",
+          "modified": "2026-03-23",
+          "title": "5 activități de primăvară pe care merită să le încerci anul acesta",
+          "excerpt": "Primăvara este momentul ideal pentru a ieși din rutină și pentru a încerca lucruri noi. Zilele devin mai lungi, vremea mai prietenoasă, iar opțiunile de activități sunt tot mai variate, […]",
+          "link": "https://www.selfpay.ro/5-activitati-de-primavara-pe-care-merita-sa-le-incerci-anul-acesta/",
+          "country": "RO",
+          "source_site": "https://selfpay.ro"
+        },
+        {
+          "date": "2026-03-13",
+          "modified": "2026-03-23",
+          "title": "Cum plătești rapid factura Hidroelectrica fără drumuri la ghișee",
+          "excerpt": "Plata facturii la energie este una dintre acele sarcini lunare pe care majoritatea oamenilor preferă să le rezolve rapid și fără complicații. În ultimii ani, tot mai mulți români au […]",
+          "link": "https://www.selfpay.ro/cum-platesti-rapid-factura-hidroelectrica-fara-drumuri-la-ghisee/",
+          "country": "RO",
+          "source_site": "https://selfpay.ro"
+        },
+        {
+          "date": "2026-03-06",
+          "modified": "2026-03-23",
+          "title": "Martie, luna cadourilor pentru femei: idei simple pentru a pregăti surprize cu sens",
+          "excerpt": "Luna martie aduce, în fiecare an, începutul primăverii și o serie de momente dedicate celor dragi. Toată luna martie, dar în special Ziua Internațională a Femeii și Ziua Mamei, sunt […]",
+          "link": "https://www.selfpay.ro/martie-luna-cadourilor-pentru-femei-idei-simple-pentru-a-pregati-surprize-cu-sens/",
+          "country": "RO",
+          "source_site": "https://selfpay.ro"
+        }
+      ]
+    },
+    "EuPlatesc (Eupay)": {
+      "sites": [
+        "https://www.euplatesc.ro"
+      ],
+      "count": 23,
+      "posts": [
+        {
+          "date": "2026-08-27",
+          "modified": "2026-08-31",
+          "title": "CVV2/CVC2: ce rol are validarea codului de securitate la plățile online",
+          "excerpt": "CVV2/CVC2 reprezintă un element suplimentar de verificare utilizat în plățile online cu cardul. Validarea acestui cod contribuie la verificarea datelor utilizate pentru inițierea tranzacției și completează mecanismele moderne de securitate folosite în ecosistemul plăților online. Atunci când un client introduce datele cardului într-un magazin online, procesul de autorizare implică mai multe verificări desfășurate în câteva […]",
+          "link": "https://www.euplatesc.ro/cvv2-cvc2-ce-rol-are-validarea-codului-de-securitate-la-platile-online/",
+          "country": "RO",
+          "source_site": "https://www.euplatesc.ro"
+        },
+        {
+          "date": "2026-08-20",
+          "modified": "2026-08-31",
+          "title": "Cum gestionezi plățile într-un business cu mai multe magazine sau puncte de lucru",
+          "excerpt": "Gestionarea plăților într-un business cu mai multe magazine presupune control unitar asupra tranzacțiilor, încasărilor și rapoartelor, indiferent de canal sau locație. Fie că vorbim despre plăți online sau despre plăți acceptate prin POS în locații fizice, o infrastructură bine organizată poate reduce operațiunile manuale, oferă vizibilitate financiară și permite extinderea companiei fără multiplicarea necontrolată a […]",
+          "link": "https://www.euplatesc.ro/cum-gestionezi-platile-intr-un-business-cu-mai-multe-magazine-sau-puncte-de-lucru/",
+          "country": "RO",
+          "source_site": "https://www.euplatesc.ro"
+        },
+        {
+          "date": "2026-08-13",
+          "modified": "2026-08-31",
+          "title": "Ce este descriptorul de plată și cum poate reduce riscul de contestare a tranzacțiilor",
+          "excerpt": "Descriptorul de plată este textul asociat unei tranzacții, afișat în extrasul de cont sau în aplicația bancară a clientului. Dacă indică un nume ușor de recunoscut, descriptorul poate reduce confuzia și riscul ca o plată legitimă să fie contestată pentru că nu este recunoscută de client. Articolul prezintă modul în care funcționează descriptorul de plată, […]",
+          "link": "https://www.euplatesc.ro/ce-este-descriptorul-de-plata-si-cum-poate-reduce-riscul-de-contestare-a-tranzactiilor/",
+          "country": "RO",
+          "source_site": "https://www.euplatesc.ro"
+        },
+        {
+          "date": "2026-08-06",
+          "modified": "2026-08-31",
+          "title": "Reconcilierea plăților: cum corelezi comenzile, tranzacțiile și încasările",
+          "excerpt": "Reconcilierea plăților înseamnă să verifici că fiecare comandă, tranzacție procesată și sumă decontată poate fi corelată corect. Procesul ajută la identificarea rapidă a diferențelor, reduce riscul erorilor contabile și oferă o imagine clară asupra fluxurilor financiare, astfel încât deciziile comerciale să se bazeze pe date corecte și ușor de urmărit. Articolul abordează provocările generate de […]",
+          "link": "https://www.euplatesc.ro/reconcilierea-platilor-cum-corelezi-comenzile-tranzactiile-si-incasarile/",
+          "country": "RO",
+          "source_site": "https://www.euplatesc.ro"
+        },
+        {
+          "date": "2026-05-22",
+          "modified": "2026-08-07",
+          "title": "Rambursare rapidă: detaliul care poate salva relația cu un client nemulțumit",
+          "excerpt": "Un refund rapid este returnarea banilor către client în cel mai scurt timp posibil după anularea sau returul unei comenzi. Pentru magazinele online, acest detaliu poate reduce frustrarea, poate proteja încrederea și poate transforma o experiență neplăcută într-o relație comercială salvată. În eCommerce, returul nu mai este doar o operațiune administrativă. Este un moment sensibil […]",
+          "link": "https://www.euplatesc.ro/rambursare-rapida-detaliul-care-poate-salva-relatia-cu-un-client-nemultumit/",
+          "country": "RO",
+          "source_site": "https://www.euplatesc.ro"
+        },
+        {
+          "date": "2026-07-16",
+          "modified": "2026-07-31",
+          "title": "Payment orchestration: ce înseamnă și de ce este important pentru magazinele online",
+          "excerpt": "Payment orchestration este un concept tot mai prezent în comerțul online, pe măsură ce magazinele au nevoie să gestioneze mai multe metode de plată, mai multe conexiuni și fluxuri de autorizare, precum și așteptări tot mai ridicate din partea clienților. Pentru un comerciant, plata nu mai este doar ultimul pas din comandă, ci o parte […]",
+          "link": "https://www.euplatesc.ro/payment-orchestration-ce-inseamna-si-de-ce-este-important-pentru-magazinele-online/",
+          "country": "RO",
+          "source_site": "https://www.euplatesc.ro"
+        },
+        {
+          "date": "2026-07-09",
+          "modified": "2026-07-24",
+          "title": "Friendly fraud: cum sunt afectați comercianții și ce măsuri pot reduce riscurile",
+          "excerpt": "Friendly fraud afectează comercianții online prin pierderi financiare, chargeback-uri, costuri operaționale și risc pentru reputație. Fenomenul apare când o plată legitimă este contestată ulterior de client, intenționat sau din confuzie, iar magazinul trebuie să demonstreze că tranzacția a fost corectă. Articolul explică ce înseamnă friendly fraud, de ce a devenit o problemă importantă pentru magazinele […]",
+          "link": "https://www.euplatesc.ro/friendly-fraud-cum-sunt-afectati-comerciantii-si-ce-masuri-pot-reduce-riscurile/",
+          "country": "RO",
+          "source_site": "https://www.euplatesc.ro"
+        },
+        {
+          "date": "2026-07-02",
+          "modified": "2026-07-24",
+          "title": "Plăți naționale vs plăți transfrontaliere: ce provocări apar pentru comercianți",
+          "excerpt": "Pentru comercianți, trecerea de la plăți naționale la plăți transfrontaliere aduce schimbări în moneda tranzacției, costuri, autorizare, metode de plată și experiența la checkout. EuPlătesc poate susține acest proces printr-o infrastructură adaptată administrării unor fluxuri de plată mai complexe. Plăți naționale vs plăți transfrontaliere: care este diferența pentru un comerciant Plățile naționale sunt procesate, de […]",
+          "link": "https://www.euplatesc.ro/plati-nationale-vs-plati-transfrontaliere-ce-provocari-apar-pentru-comercianti/",
+          "country": "RO",
+          "source_site": "https://www.euplatesc.ro"
+        },
+        {
+          "date": "2026-06-25",
+          "modified": "2026-06-25",
+          "title": "Cum pierd magazinele online vânzări în checkout: cauze, semnale și soluții",
+          "excerpt": "Procesul de checkout are un impact direct asupra conversiilor și veniturilor unui magazin online. Chiar dacă utilizatorul a parcurs toate etapele până la coșul de cumpărături, decizia finală de plată poate fi influențată de factori precum claritatea informațiilor, metodele disponibile, viteza procesului sau nivelul de încredere transmis de pagina de plată. Multe dintre pierderile din […]",
+          "link": "https://www.euplatesc.ro/cum-pierd-magazinele-online-vanzari-in-checkout-cauze-semnale-si-solutii/",
+          "country": "RO",
+          "source_site": "https://www.euplatesc.ro"
+        },
+        {
+          "date": "2026-06-19",
+          "modified": "2026-06-22",
+          "title": "Cum pot universitățile să simplifice plata taxelor prin soluții digitale",
+          "excerpt": "Plata taxelor universitare online permite încasarea rapidă și sigură a taxelor de admitere, școlarizare, înmatriculare, conferințe, publicații academice și cursuri, prin metode de plată rapide, sigure și ușor de urmărit. Vara este una dintre cele mai aglomerate perioade pentru universități: sesiuni de licență și disertație, admitere, înmatriculare, depunerea documentelor și numeroase solicitări administrative. În același […]",
+          "link": "https://www.euplatesc.ro/cum-pot-universitatile-sa-simplifice-plata-taxelor-prin-solutii-digitale/",
+          "country": "RO",
+          "source_site": "https://www.euplatesc.ro"
+        },
+        {
+          "date": "2026-06-12",
+          "modified": "2026-06-22",
+          "title": "Metode de plată rapide pentru clienții care cumpără de pe telefon",
+          "excerpt": "Telefonul a devenit unul dintre cele mai importante puncte de contact dintre client și magazinul online. Oamenii compară produse în pauze scurte, adaugă rapid în coș, revin dintr-o reclamă, verifică prețuri din mers și se așteaptă ca plata să fie la fel de simplă ca navigarea. Când procesul de checkout cere prea mulți pași, prea […]",
+          "link": "https://www.euplatesc.ro/metode-de-plata-rapide-pentru-clientii-care-cumpara-de-pe-telefon/",
+          "country": "RO",
+          "source_site": "https://www.euplatesc.ro"
+        },
+        {
+          "date": "2026-06-05",
+          "modified": "2026-06-12",
+          "title": "Ce influențează costul unei tranzacții cu cardul? Tot ce trebuie să știe comercianții",
+          "excerpt": "Pentru comercianți, costul unei tranzacții cu cardul reprezintă comisionul aferent acceptării și procesării plății. Acesta nu este un tarif stabilit exclusiv de procesatorul de plăți, ci rezultatul mai multor componente: comisionul interbancar (interchange), comisioanele percepute de schemele de card (Visa și Mastercard) și costurile asociate serviciilor furnizate de banca acceptatoare și procesatorul de plăți. Costul […]",
+          "link": "https://www.euplatesc.ro/ce-influenteaza-costul-unei-tranzactii-cu-cardul-tot-ce-trebuie-sa-stie-comerciantii/",
+          "country": "RO",
+          "source_site": "https://www.euplatesc.ro"
+        },
+        {
+          "date": "2026-05-29",
+          "modified": "2026-06-09",
+          "title": "Ce se întâmplă la checkout: reduceri, cupoane și opțiuni de plată care pot crește vânzările",
+          "excerpt": "Checkout-ul poate crește vânzările când le oferă cumpărătorilor trei motive să finalizeze comanda: o reducere clară, un cupon valid și o metodă de plată rapidă. Când aceste elemente sunt vizibile și ușor de folosit, decizia de cumpărare devine mai simplă. Checkout-ul decide conversia: cum se comportă cumpărătorii online Checkout-ul este etapa în care cumpărătorul confirmă […]",
+          "link": "https://www.euplatesc.ro/ce-se-intampla-la-checkout-reduceri-cupoane-si-optiuni-de-plata-care-pot-creste-vanzarile/",
+          "country": "RO",
+          "source_site": "https://www.euplatesc.ro"
+        },
+        {
+          "date": "2026-05-14",
+          "modified": "2026-05-29",
+          "title": "Cum funcționează programul de afiliere EuPlătesc și ce avantaje oferă",
+          "excerpt": "Dacă lucrezi cu magazine online, platforme eCommerce, companii software, agenții digitale sau integratori, poți transforma recomandările către comercianți într-o sursă suplimentară de venit. Prin programul de afiliere EuPlătesc, ai posibilitatea să recomanzi comercianți care au nevoie de procesare plăți online și să beneficiezi de un comision pentru activitatea generată. Cu peste 20 de ani de […]",
+          "link": "https://www.euplatesc.ro/cum-functioneaza-programul-de-afiliere-euplatesc-si-ce-avantaje-ofera/",
+          "country": "RO",
+          "source_site": "https://www.euplatesc.ro"
+        },
+        {
+          "date": "2026-04-09",
+          "modified": "2026-05-20",
+          "title": "Ce rol are procesatorul de plăți în performanța unui magazin Shopify",
+          "excerpt": "Procesatorul de plăți influențează direct performanța unui magazin Shopify. Pe lângă produsele competitive, traficul și designul intuitiv, contează experiența de checkout, încrederea clientului, rata de conversie și capacitatea magazinului de a susține creșterea. Pentru comercianții din România, EuPlătesc poate susține evoluția afacerii pe termen lung. Pe Shopify, plata nu este o componentă secundară a infrastructurii […]",
+          "link": "https://www.euplatesc.ro/ce-rol-are-procesatorul-de-plati-in-performanta-unui-magazin-shopify/",
+          "country": "RO",
+          "source_site": "https://www.euplatesc.ro"
+        },
+        {
+          "date": "2026-05-07",
+          "modified": "2026-05-18",
+          "title": "Ce înseamnă un procesator de plăți autorizat și cum influențează siguranța tranzacțiilor",
+          "excerpt": "Un procesator de plăți autorizat este un furnizor care operează servicii de plată într-un cadru reglementat și supravegheat de autoritățile competente. Prin obținerea licenței de instituție de plată din partea Băncii Naționale a României, EuPlătesc marchează tranziția de la un model bazat pe procesare și integrare de plăți către un model complet reglementat. Această evoluție […]",
+          "link": "https://www.euplatesc.ro/ce-inseamna-un-procesator-de-plati-autorizat-si-cum-influenteaza-siguranta-tranzactiilor/",
+          "country": "RO",
+          "source_site": "https://www.euplatesc.ro"
+        },
+        {
+          "date": "2026-04-24",
+          "modified": "2026-04-24",
+          "title": "Plăți fără checkout clasic: când alegi link de plată, QR bLink Pay sau RoPay",
+          "excerpt": "Plățile fără checkout clasic sunt metode de încasare care reduc pașii dintre intenția de cumpărare și confirmarea plății. Pentru afacerile care vând în contexte diferite și vor opțiuni mai flexibile de încasare, EuPlătesc oferă link de plată, QR bLink Pay și RoPay, soluții rapide, sigure și ușor de integrat. Află din acest articol în ce […]",
+          "link": "https://www.euplatesc.ro/plati-fara-checkout-clasic-cand-alegi-link-de-plata-qr-blink-pay-sau-ropay/",
+          "country": "RO",
+          "source_site": "https://www.euplatesc.ro"
+        },
+        {
+          "date": "2026-04-16",
+          "modified": "2026-04-24",
+          "title": "Comerțul prin agenți AI: ce înseamnă pentru plățile online",
+          "excerpt": "Comerțul prin agenți AI sau agentic commerce (aCommerce) descrie situația în care un agent software alimentat de inteligență artificială este delegat să cumpere în numele unei persoane. Agentul AI caută produsul, compară opțiunile, selectează varianta potrivită și, în anumite limite stabilite de utilizator, poate iniția chiar și plata. În articolul de față explicăm ce este, […]",
+          "link": "https://www.euplatesc.ro/comertul-prin-agenti-ai-ce-inseamna-pentru-platile-online/",
+          "country": "RO",
+          "source_site": "https://www.euplatesc.ro"
+        },
+        {
+          "date": "2026-04-02",
+          "modified": "2026-04-10",
+          "title": "Cum pregătești experiența de cumpărare pentru promoțiile de Paște",
+          "excerpt": "De Paște, promoțiile aduc trafic rapid, dar conversia depinde de ușurința cu care clientul ajunge la plata finală. Cu EuPlătesc, magazinele online pot pregăti un checkout mai simplu, mai rapid și mai flexibil, astfel încât campaniile sezoniere să susțină vânzările, nu abandonul în checkout, în zilele de vârf comercial. În continuare, vedem ce diferențiază sezonul […]",
+          "link": "https://www.euplatesc.ro/cum-pregatesti-experienta-de-cumparare-pentru-promotiile-de-paste/",
+          "country": "RO",
+          "source_site": "https://www.euplatesc.ro"
+        },
+        {
+          "date": "2026-03-19",
+          "modified": "2026-04-03",
+          "title": "Ce înseamnă rata de autorizare și de ce este diferită de conversie",
+          "excerpt": "Rata de autorizare este procentul încercărilor de plată aprobate de banca emitentă sau de rețeaua de carduri din totalul tranzacțiilor inițiate. Este un indicator esențial în eCommerce, influențând direct veniturile și experiența de checkout. Prin EuPlătesc, comercianții pot construi un flux de plată modern, sigur și optimizat pentru aprobarea tranzacțiilor. În acest articol explicăm ce […]",
+          "link": "https://www.euplatesc.ro/ce-inseamna-rata-de-autorizare-si-de-ce-este-diferita-de-conversie/",
+          "country": "RO",
+          "source_site": "https://www.euplatesc.ro"
+        },
+        {
+          "date": "2026-03-12",
+          "modified": "2026-04-03",
+          "title": "Plăți online pentru servicii: cum setezi un flux simplu pentru programări și avans",
+          "excerpt": "Când vinzi servicii, plata nu apare întotdeauna la finalul unui coș clasic, ca în comerțul online cu produse. De multe ori, clientul vrea să rezerve o programare, să achite un avans, să confirme un loc sau să plătească ulterior diferența. EuPlătesc susține implementarea unui flux de plată simplu care contribuie la reducerea ezitărilor, scade abandonul […]",
+          "link": "https://www.euplatesc.ro/plati-online-pentru-servicii-cum-setezi-un-flux-simplu-pentru-programari-si-avans/",
+          "country": "RO",
+          "source_site": "https://www.euplatesc.ro"
+        },
+        {
+          "date": "2026-03-05",
+          "modified": "2026-04-03",
+          "title": "Guest checkout vs cont obligatoriu: ce alegi în 2026 și de ce",
+          "excerpt": "În 2026, pentru majoritatea magazinelor online, guest checkout rămâne opțiunea mai bună, pentru că reduce fricțiunea din checkout și lasă utilizatorul să ajungă mai repede la plată. Când acest model este susținut și de metode de plată rapide, familiare și ușor de folosit, crește șansa ca vizitatorul să finalizeze comanda. EuPlătesc poate contribui la un […]",
+          "link": "https://www.euplatesc.ro/guest-checkout-vs-cont-obligatoriu-ce-alegi-in-2026-si-de-ce/",
+          "country": "RO",
+          "source_site": "https://www.euplatesc.ro"
+        },
+        {
+          "date": "2026-03-23",
+          "modified": "2026-04-02",
+          "title": "Experiența de plată în tranzacțiile B2B: cum o îmbunătățești cu EuPlătesc",
+          "excerpt": "În tranzacțiile B2B, experiența de plată este un factor care influențează direct cash-flow-ul, relația cu partenerii și ritmul de creștere. Cu soluțiile EuPlătesc, companiile pot simplifica încasarea, pot reduce fricțiunea din proces și pot face plata mai rapidă și mai ușor de finalizat. Experiența de plată în tranzacțiile B2B înseamnă cât de simplu, rapid și […]",
+          "link": "https://www.euplatesc.ro/experienta-de-plata-in-tranzactiile-b2b-cum-o-imbunatatesti-cu-euplatesc/",
+          "country": "RO",
+          "source_site": "https://www.euplatesc.ro"
+        }
+      ]
+    },
+    "Vpayments": {
+      "sites": [
+        "https://vpayments.com.cy"
+      ],
+      "count": 0,
+      "posts": []
+    },
+    "Force1": {
+      "sites": [
+        "https://force1.ro"
+      ],
+      "count": 0,
+      "posts": []
+    }
+  }
+}

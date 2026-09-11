@@ -1,0 +1,143 @@
+{
+  "week": "2026-07-16",
+  "signals": {
+    "privatbank-atm-fleet-renewal-800-unit-2026-lot": {
+      "confidence": "High",
+      "bank_theme": "PrivatBank — ATM fleet renewal (800-unit 2026 lot)"
+    },
+    "piraeus-cashflex-printec-owned-850-off-site-atm-fleet": {
+      "confidence": "High",
+      "bank_theme": "Piraeus / Cashflex — Printec-owned ~850 off-site ATM fleet"
+    },
+    "hungary-act-xviii-rural-atm-rollout-mnb-validation-uptime-mandate": {
+      "confidence": "High",
+      "bank_theme": "Hungary — Act XVIII rural ATM rollout + MNB validation/uptime mandate"
+    },
+    "cec-bank-full-stack-modernization-digital-agencies": {
+      "confidence": "High",
+      "bank_theme": "CEC Bank — full-stack modernization + digital agencies"
+    },
+    "banca-transilvania-it-digital-cards-platform": {
+      "confidence": "High",
+      "bank_theme": "Banca Transilvania — IT/digital + cards platform"
+    },
+    "alpha-bank-retail-branch-transformation-cyprus-integration": {
+      "confidence": "High",
+      "bank_theme": "Alpha Bank — retail/branch transformation (+ Cyprus integration)"
+    },
+    "bank-of-cyprus-branch-transformation-acquisitions": {
+      "confidence": "High",
+      "bank_theme": "Bank of Cyprus — branch transformation + acquisitions"
+    },
+    "ncr-atleos-brink-s-merger-partner-channel-risk-partner-of-the-year": {
+      "confidence": "High",
+      "bank_theme": "NCR Atleos / Brink's merger — partner-channel risk (+ Partner of the Year)"
+    },
+    "greece-offsite-atm-deployment-competitive-lock-up": {
+      "confidence": "High",
+      "bank_theme": "Greece — offsite ATM deployment + competitive lock-up"
+    },
+    "serbia-sepa-instant-payments-wave": {
+      "confidence": "High",
+      "bank_theme": "Serbia — SEPA / instant-payments wave"
+    },
+    "bulgaria-post-euro-changeover-consolidation": {
+      "confidence": "High",
+      "bank_theme": "Bulgaria — post-euro changeover consolidation"
+    },
+    "romania-dual-atm-pos-estate-expansion": {
+      "confidence": "High",
+      "bank_theme": "Romania — dual ATM + POS estate expansion"
+    },
+    "regulatory-compliance-wave-dora-aml-psr-cra-nis2-instant": {
+      "confidence": "High",
+      "bank_theme": "Regulatory compliance wave — DORA, AML, PSR, CRA/NIS2, instant"
+    },
+    "otp-group-rising-it-spend-across-subsidiaries": {
+      "confidence": "High",
+      "bank_theme": "OTP Group — rising IT spend across subsidiaries"
+    },
+    "eurobank-phygital-branches-aml-build-out": {
+      "confidence": "High",
+      "bank_theme": "Eurobank — \"phygital\" branches + AML build-out"
+    },
+    "nbg-core-complete-channel-renewal": {
+      "confidence": "High",
+      "bank_theme": "NBG — core complete + channel renewal"
+    },
+    "albania-pos-acceptance-mandate-deposit-atm-growth": {
+      "confidence": "High",
+      "bank_theme": "Albania — POS acceptance mandate + deposit-ATM growth"
+    },
+    "kosovo-pos-whitespace-deposit-atm-upgrade-bpb-printec-incumbent": {
+      "confidence": "High",
+      "bank_theme": "Kosovo — POS whitespace + deposit-ATM upgrade (BPB Printec-incumbent)"
+    },
+    "western-balkans-tips-clone-instant-payments-go-live": {
+      "confidence": "High",
+      "bank_theme": "Western Balkans — TIPS-clone instant payments go-live"
+    },
+    "bosnia-herzegovina-bank-modernization-fatf-grey-list": {
+      "confidence": "High",
+      "bank_theme": "Bosnia & Herzegovina — bank modernization + FATF grey-list"
+    },
+    "montenegro-fastest-growing-see-atm-fleet": {
+      "confidence": "High",
+      "bank_theme": "Montenegro — fastest-growing SEE ATM fleet"
+    },
+    "north-macedonia-nbg-stopanska-sepa-deposit-atm-growth": {
+      "confidence": "High",
+      "bank_theme": "North Macedonia — NBG Stopanska + SEPA + deposit-ATM growth"
+    },
+    "slovakia-ekasa-cashless-mandate-deposit-atm-expansion": {
+      "confidence": "High",
+      "bank_theme": "Slovakia — eKasa cashless mandate + deposit-ATM expansion"
+    },
+    "nlb-group-addiko-takeover-see-consolidation": {
+      "confidence": "High",
+      "bank_theme": "NLB Group / Addiko takeover — SEE consolidation"
+    },
+    "greece-opsea-515-4m-national-eid-security-documents-tender": {
+      "confidence": "Medium",
+      "bank_theme": "Greece — OPSEA €515.4m national eID / security-documents tender"
+    },
+    "ecb-digital-euro-atm-terminal-specs-cyprus-pilot": {
+      "confidence": "High",
+      "bank_theme": "ECB digital euro — ATM/terminal specs + Cyprus pilot"
+    },
+    "mellon-group-competitive-escalation-threat": {
+      "confidence": "High",
+      "bank_theme": "Mellon Group — competitive escalation (threat)"
+    },
+    "euronet-greece-croatia-platform-pivot-threat": {
+      "confidence": "High",
+      "bank_theme": "Euronet — Greece + Croatia + platform pivot (threat)"
+    },
+    "payten-asseco-see-pos-softpos-digital-onboarding-threat": {
+      "confidence": "High",
+      "bank_theme": "Payten / Asseco SEE — POS/SoftPOS + digital onboarding (threat)"
+    },
+    "sector-wide-branch-consolidation-continues": {
+      "confidence": "High",
+      "bank_theme": "Sector-wide — branch consolidation continues"
+    },
+    "eaa-accessibility-atm-kiosk-refresh-driver": {
+      "confidence": "Medium",
+      "bank_theme": "EAA accessibility — ATM/kiosk refresh driver"
+    },
+    "crediabank-q1-profit-new-experience-branch-refurbishment": {
+      "confidence": "Medium",
+      "bank_theme": "CrediaBank — Q1 profit + \"New Experience\" branch refurbishment"
+    },
+    "greece-softpos-tap-to-pay-commoditises-card-acceptance": {
+      "confidence": "Medium",
+      "bank_theme": "Greece — softPOS / Tap-to-Pay commoditises card acceptance"
+    }
+  },
+  "movements": {
+    "added": [],
+    "removed": [],
+    "confidence_changed": [],
+    "baseline": true
+  }
+}

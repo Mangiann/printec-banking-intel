@@ -1,0 +1,97 @@
+  atms      ATMs             -> 10 countries, 39 annual points
+  pos       POS terminals    -> 10 countries, 39 annual points
+  branches  Bank branches    -> 10 countries, 100 annual points
+  cash      Cash withdrawals -> 10 countries, 38 annual points
+structural_series.json: 10 countries, 40 series, 216 points -> /Users/mangian/Downloads/BANKING/intel-cache/structural_series.json
+  NCR Atleos       (NATL) -> 5 annual revenue points 2021-2025
+  Diebold Nixdorf  (DBD) -> 7 annual revenue points 2018-2025
+  Euronet          (EEFT) -> 8 annual revenue points 2018-2025
+  Brink's          (BCO) -> 8 annual revenue points 2018-2025
+competitor_series.json: 4 competitors -> /Users/mangian/Downloads/BANKING/intel-cache/competitor_series.json
+  NCR Atleos       FY2023: Self-Service Banking=  2581.0 · ratio=0.62 (intersegment co) -> OK
+  NCR Atleos       FY2024: Self-Service Banking=  2696.0 · ratio=0.63 (intersegment co) -> OK
+  NCR Atleos       FY2025: Self-Service Banking=  2881.0 · ratio=0.66 (intersegment co) -> OK
+  Diebold Nixdorf  FY2020: Banking=  1431.1 · segsum=2483 vs 3902.3 -> REJECT
+  Diebold Nixdorf  FY2021: Banking=  1353.8 · segsum=2548 vs 3905.2 -> REJECT
+  Diebold Nixdorf  FY2022: Banking=  2422.4 · segsum=3461 vs 3460.7 -> OK
+  Diebold Nixdorf  FY2023: Banking=  1157.6 · no total -> REJECT
+  Diebold Nixdorf  FY2024: Banking=  2762.8 · segsum=3751 vs 3751.1 -> OK
+  Diebold Nixdorf  FY2025: Banking=  2797.0 · segsum=3806 vs 3805.7 -> OK
+  Euronet          FY2020: EFT Processing=468726.0 · segsum=2488092 vs 2482.7 -> REJECT
+  Euronet          FY2021: EFT Processing=591138.0 · segsum=3003577 vs 2995.5 -> REJECT
+  Euronet          FY2022: EFT Processing=924208.0 · segsum=3366521 vs 3358.8 -> REJECT
+  Euronet          FY2023: EFT Processing=  1058.3 · segsum=3696 vs 3688.0 -> OK
+  Euronet          FY2024: EFT Processing=  1161.2 · segsum=3998 vs 3989.8 -> OK
+  Euronet          FY2025: EFT Processing=  1283.7 · segsum=4254 vs 4244.2 -> OK
+  Euronet ATM fleet: [(2019, 46070), (2020, 37729), (2021, 42713), (2022, 45009), (2023, 47303), (2024, 55248), (2025, 56818)]
+merged segment revenue + ATM fleet into competitor_series.json
+TED: 195 in-scope notice(s) since 20260616 for 10 countries x 6 CPV families
+ted_notices.json: 195 notices written (2 keyword-relevant) -> /Users/mangian/Downloads/BANKING/intel-cache/ted_notices.json
+  ...incl. 90 with a named winner (82 fresh awards, 8 framework drawdowns/modifications) -> pass FRESH ones to Agent 6
+Prozorro PrivatBank (14360570): 82 ATM/cash tenders (82 awarded)
+Prozorro Oschadbank (00032129): 19 ATM/cash tenders (15 awarded)
+Prozorro footprint sweep: 261 further ATM/cash tenders across UA buyers (237 awarded)
+prozorro_notices.json -> /Users/mangian/Downloads/BANKING/intel-cache/prozorro_notices.json
+  FAIL PrivatBank                   [robota.ua     ] HTTPError: HTTP Error 403: Forbidden
+  FAIL Oschadbank                   [robota.ua     ] HTTPError: HTTP Error 403: Forbidden
+  FAIL PUMB / FUIB                  [robota.ua     ] HTTPError: HTTP Error 403: Forbidden
+  FAIL monobank                     [robota.ua     ] HTTPError: HTTP Error 403: Forbidden
+  FAIL Raiffeisen Bank Ukraine      [robota.ua     ] HTTPError: HTTP Error 403: Forbidden
+  FAIL OTP Bank Ukraine             [robota.ua     ] HTTPError: HTTP Error 403: Forbidden
+  ok  Piraeus Bank                 [Workable      ] total=6 fetched=6
+  ok  Raiffeisen Bank Ukraine      [Workable      ] total=187 fetched=187
+  ok  Banca Transilvania           [hrscapi       ] total=29 fetched=29
+  ok  Alpha Bank                   [SuccessFactors] total=31 fetched=31
+  ok  BCR (Erste)                  [Erste         ] total=25 fetched=25
+  ok  OTP Bank Hungary             [SuccessFactors] total=127 fetched=20
+  ok  Raiffeisen banka             [infostud      ] total=3 fetched=3
+  ok  OTP banka Srbija             [infostud      ] total=12 fetched=12
+  ok  NLB Komercijalna banka       [infostud      ] total=0 fetched=0
+  ok  Banca Intesa Beograd         [infostud      ] total=1 fetched=1
+  ok  AikBank                      [infostud      ] total=0 fetched=0
+  ok  OTP banka Slovenija          [FledgeHR      ] total=16 fetched=16
+  ok  DSK Bank                     [dev.bg        ] total=28 fetched=0
+
+jobs_listings.json: 13 source(s) ok, 6 failed, 330 roles cached -> /Users/mangian/Downloads/BANKING/intel-cache/jobs_listings.json
+  (+6 browser-only sources documented as Operator-requests)
+competitor_news Mellon Group: 3 post(s) since 2026-01-17 across 4 site(s)
+competitor_news Asseco SEE / Payten: 28 post(s) since 2026-01-17 across 1 site(s)
+competitor_news Netopia Payments: 2 post(s) since 2026-01-17 across 1 site(s)
+competitor_news DAAC digital: 16 post(s) since 2026-01-17 across 1 site(s)
+competitor_news Profile Software: 0 post(s) since 2026-01-17 across 1 site(s)
+competitor_news SelfPay (ZebraPay): 21 post(s) since 2026-01-17 across 1 site(s)
+competitor_news EuPlatesc (Eupay): 21 post(s) since 2026-01-17 across 1 site(s)
+competitor_news Vpayments: 0 post(s) since 2026-01-17 across 1 site(s)
+competitor_news Force1: 0 post(s) since 2026-01-17 across 1 site(s)
+competitor_news.json: 91 post(s) across 9 competitor(s) -> /Users/mangian/Downloads/BANKING/intel-cache/competitor_news.json
+recency: 1 signal(s) badged NEW/UPDATED but anchored only on standing facts (>6mo, no near-future trigger) -> flagged stale_new; the dashboard tags them as standing context.
+merged ECB structural series: +38 series, +202 annual points
+merged non-EU structural series: +20 series, +62 annual points
+derived EU country-stats from scripted ECB series: +10 countries (GR, CY, AT, HR, SI, SK, BG, RO, HU, CZ)
+{
+  "week": "2026-07-16",
+  "generated_utc": "2026-07-16T09:30:56Z",
+  "n_signals": 31,
+  "n_new_this_week": 9,
+  "n_stale_new": 1,
+  "n_fresh": 26,
+  "n_standing": 1,
+  "n_high_conf": 29,
+  "n_opportunities": 16,
+  "n_timeseries_points": 362,
+  "n_events": 13,
+  "n_patterns": 8,
+  "n_country_stats": 17,
+  "stats_source_file": "2026-07-15.md",
+  "master_table": "master-signal-table.md"
+}
+merged 39 RBR ATM baseline series from atm_market.json
+forecast.json: 92 projections | predictions ledger: 190 (1 resolved, MAPE=0.4)
+verify: 1551 sources | 1276 reachable, 213 http-error, 62 unreachable | snapshots in /Users/mangian/Downloads/BANKING/intel-cache/snapshots
+warn: 8 outlook(s) not covered by the validator (oids [3, 4, 6, 7, 8, 9, 11, 12]) — those fall back to self-report.
+Wrote /Users/mangian/Downloads/BANKING/intel-cache/dashboard-data.json
+KPIs: {"n_signals": 31, "n_new": 9, "n_high": 29, "n_imminent": 2, "n_countries_active": 16}
+
+Dashboard data built: /Users/mangian/Downloads/BANKING/intel-cache/dashboard-data.json
+Web snapshot refreshed: /Users/mangian/Downloads/BANKING/dashboard-web/data.json
+publish: skipped (--no-publish).

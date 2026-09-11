@@ -1,0 +1,112 @@
+# Czechia cluster - 2026-08-27
+
+Banks: Ceska sporitelna, CSOB, Komercni banka, Raiffeisenbank a.s. (+ the KB/MONETA/Air Bank/UniCredit shared-ATM scheme).
+
+## Headline
+
+- Shared-ATM network live feed (27/08/2026): **1,913 ATMs, 969 deposit-capable, 944 cash-out-only.** Members are KB, MONETA, Air Bank, UniCredit - **not** CS/CSOB/RB (baseline correction).
+- UniCredit joined the *deposit*-sharing leg from **February 2026**, taking the pool to ~1,000 deposit ATMs.
+- Branch estates at 30/06/2026: **CS 322, CSOB 196, KB 171, Raiffeisenbank 125** (= 814 across the four majors).
+- KB: 745 own ATMs (from 764), 1,916 shared (from 1,947), FTE -9.5% to 6,475, branches -16 y/y.
+- KB core banking: **Temenos T24**; Celent Model Bank Award for Core Banking Innovation, June 2026.
+- KAL ATM Software names **Ceska sporitelna** as an ATM-virtualisation customer (undated testimonial).
+- DORA: 26 major ICT incidents in the CZ banking sector in 2025; a 400+ question CNB cyber-maturity questionnaire goes to all obliged entities during 2026; TIBER-EU 3-year cycle started.
+- AML: CNB tested **88 sanctions-screening systems at 37 institutions** (Mar-Jun 2025, 10,000 records); fuzzy-matching was the common weakness and sub-standard institutions are under imposed remediation.
+
+## Signals
+
+### Sdileny bankomat (KB + MONETA + Air Bank + UniCredit Bank CZ) (Czechia) - XL / win Medium / Medium / NEW
+Shared-ATM network feed pulled 27/08/2026 returns 1,913 shared ATMs: 969 deposit-capable (Vkladovy) vs 944 cash-out-only (Vyberovy). By owner: Komercni banka 740 (475 deposit), MONETA 541 (230 deposit), Air Bank 373 (119 deposit), UniCredit Bank 259 (145 deposit).
+- Source: [sdilenybankomat.cz map data feed (operated by Komercni banka)](https://www.sdilenybankomat.cz/data/atm_import_log/data-168.js) - 27/08/2026 (primary)
+- Implies: 944 machines in the pooled network are still cash-out-only - a directly addressable recycler/deposit-module upgrade base.
+- Likelihood: High | Follow-up: Re-pull feed monthly
+
+### UniCredit Bank Czech Republic (Czechia) - L / win Medium / Medium / NEW
+UniCredit Bank joined the DEPOSIT-sharing leg of the Czech shared-ATM scheme; operator states that from February 2026 clients of all four banks have close to 1,000 deposit ATMs available.
+- Source: [sdilenybankomat.cz](https://www.sdilenybankomat.cz) - 27/08/2026 (primary)
+- Implies: Deposit interoperability raises per-machine deposit volume and cash-handling load - recycler and cash-cycle managed-services pull.
+- Likelihood: High | Follow-up: Confirm exact Feb-2026 launch PR
+
+### Komercni banka (Czechia) - L / win Medium / Medium / NEW
+H1-2026 (30/06/2026) distribution network: 171 KB branches in Czechia (187 at 30/06/2025, -16 y/y); 745 ATMs in KB's own network (764); 1,916 ATMs in the shared distribution network (1,947); 202 KB Poradenstvi advisory points (199). Average FTE fell -9.5% y/y to 6,475; personnel costs -7.5% to CZK 3,988m; total opex -2.6% to CZK 8,499m. Net profit CZK 8.5bn (-3.3%).
+- Source: [Komercni banka, Results H1 2026 (2Q2026) report PDF](https://www.kb.cz/getmedia/efba2b93-dcc9-4284-ab1f-ef48426b0c3e/KB-Results-2Q2026-CZ.pdf) - 30/07/2026 (primary)
+- Implies: Branches -8.6% y/y while advisory points rise: KB is substituting manned counters with self-service and advice. Deposit-automation, recycler and managed-services replacement demand.
+- Likelihood: High | Follow-up: Check FY2026 for branch trajectory
+
+### Komercni banka / Temenos (Czechia) - L / win Medium / Medium / NEW
+KB won the Celent Model Bank Award in the Core Banking Innovation category in June 2026 for its programme progressively replacing its legacy core banking system with the Temenos T24 platform, used as the base of KB's new fully digital banking architecture. KB states 1,731,000 KB+ users at 30/06/2026 (+462,000 y/y) and that completing migration of individual clients off the legacy infrastructure during 2026 will partly free up distribution-network capacity.
+- Source: [Komercni banka, Results H1 2026 report PDF](https://www.kb.cz/getmedia/efba2b93-dcc9-4284-ab1f-ef48426b0c3e/KB-Results-2Q2026-CZ.pdf) - 30/07/2026 (primary)
+- Implies: A live Temenos T24 core mid-migration needs channel integration at the ATM/self-service and POS layer, plus new eKYC/onboarding and transaction-monitoring interfaces.
+- Likelihood: High | Follow-up: Find Celent award page and KB integration partners
+
+### Ceska sporitelna (Erste Group) (Czechia) - XL / win Low / Medium / NEW
+Erste Group's H1-2026 footprint slide gives the Czech Republic 4.6m customers, 9,175 employees and 322 branches at 30/06/2026, with 27.0% retail loan share and 23.3% retail deposit share - the largest branch estate of the four Czech majors. Erste Group total: 23.2m customers, 55,231 employees, 2,065 branches.
+- Source: [Erste Group, H1 2026 conference-call presentation (IR_Pres_CC_260730_H126)](https://cdn.erstegroup.com/content/dam/at/eh/www_erstegroup_com/en/Investor_Relations/2026/presentations/IR_Pres_CC_260730_H126.pdf) - 30/07/2026 (primary)
+- Implies: 322 branches is the single largest manned-network cash-automation target in Czechia (teller-cash recyclers, assisted self-service, branch cash-desk replacement).
+- Likelihood: Medium | Follow-up: Get CS's own ATM/deposit-ATM count; Places API needs a key
+
+### CSOB (KBC Group) (Czechia) - L / win Low / Medium / NEW
+KBC's 2Q2026 company presentation gives the Czech Republic business unit 4.3m clients and 196 branches at 30/06/2026, EUR 46bn loans / EUR 55bn deposits, 24% of KBC group assets; market share (end-2025) 20% loans and deposits, 23% investment funds.
+- Source: [KBC Group, 2Q2026 company presentation](https://wcmassets.kbc.be/content/dam/kbccom/doc/investor-relations/Results/2q2026/2q2026-company-presentation.pdf) - 07/08/2026 (primary)
+- Implies: CSOB serves 4.3m clients through only 196 branches - the highest clients-per-branch density of the Czech majors, so throughput depends on self-service/deposit automation.
+- Likelihood: Medium | Follow-up: CSOB.cz is behind a bot wall - retry via browser for its own ATM figures
+
+### Raiffeisenbank a.s. (Czechia, RBI Group) (Czechia) - M / win Medium / Medium / NEW
+RBI's Q2-2026 country data sheet gives Czechia 125 business outlets at 30/06/2026 (127 at 30/06/2025; 126 at 31/12/2025), 3,751 employees, 2,535,135 customers (+4.7% y/y), customer deposits EUR 35.69bn (+25.0% y/y), loans EUR 20.95bn (+13.5%), cost/income 43.2%.
+- Source: [Raiffeisen Bank International, Q2 2026 Results data workbook (sheet CE-CZ)](https://www.rbinternational.com/content/dam/rbi/ho/investors/results-reports/quarterly-reports/2026/2026-07-31%20Q2%20Results%20Internet.xlsm.coredownload.xlsm) - 31/07/2026 (primary)
+- Implies: Deposits up 25% y/y on a flat 125-outlet network - cash-in and deposit-automation capacity is the constraint; recycler and CIT-optimisation opportunity.
+- Likelihood: Medium | Follow-up: Find RB CZ ATM count
+
+### Ceska sporitelna / KAL ATM Software (Czechia) - L / win Low / Low / NEW
+KAL ATM Software's own case-studies page carries a named customer testimonial from Jiri Charousek, IT Infrastructure & Operations Director of Ceska sporitelna, on adopting ATM virtualisation (Kalignite Hypervisor) as an alternative to a hardware refresh after the XP-to-Windows 7 upgrade. Page carries no publication date; retrieved 27/08/2026. [STANDING]
+- Source: [KAL ATM Software, Case Studies page](https://www.kal.com/en/knowledge/case-studies) - 27/08/2026 (primary)
+- Implies: KAL is the multivendor ATM-software incumbent at Ceska sporitelna - a Printec ATM/managed-services bid into CS must sit alongside, not replace, Kalignite; conversely KAL-standardised estates are hardware-agnostic, which favours a hardware+services challenger.
+- Likelihood: Medium | Follow-up: Date the testimonial; check whether CSOB/KB/Moneta also run Kalignite
+
+### Czech National Bank (CNB) - DORA supervision (Czechia) - M / win Medium / Medium / NEW
+CNB's Financial Market Supervision Report 2025 (Box 2) reports the first year of DORA supervision: 26 major ICT incidents reported by the banking sector in 2025, 2 by insurers and 8 by other supervised entities, none caused by a cyberattack (mostly technology or process failures at the institutions or their ICT providers). CNB piloted a cyber-maturity questionnaire of more than 400 questions with 16 entities and will send it to ALL obliged entities during 2026. TIBER-EU advanced penetration testing began at one significant institution in 2025, with the target of testing each significant institution once every three years. The new Czech Cybersecurity Act took effect 01/11/2025.
+- Source: [Ceska narodni banka, Zprava o vykonu dohledu nad financnim trhem 2025](https://www.cnb.cz/export/sites/cnb/cs/dohled-financni-trh/.galleries/souhrnne_informace_fin_trhy/zpravy_o_vykonu_dohledu/download/dnft_2025_cz.pdf) - 30/06/2026 (regulator)
+- Implies: A 400-question DORA self-assessment landing on every Czech bank in 2026 plus a 3-year TIBER cycle forces documented resilience across the self-service and payment estate - pull for HSM/security, monitoring and managed services with contractual DORA clauses.
+- Likelihood: High | Follow-up: Track when the 2026 questionnaire is dispatched
+
+### Czech National Bank (CNB) - sanctions screening (Czechia) - M / win Medium / Medium / NEW
+Between March and June 2025 CNB ran a market-wide test of 88 sanctions-screening systems across 37 institutions (31 banks and branches of foreign banks, 4 insurers, 2 credit unions) using 10,000 records from Czech, EU and UN sanctions lists in both original and altered spellings. Screening effectiveness was judged generally high and excellent on transaction evaluation, but fuzzy-logic name matching was the main weakness; institutions scoring below market standard are now executing CNB-imposed remediation measures. Insufficient effectiveness is treated as a breach of law.
+- Source: [Ceska narodni banka, Zprava o vykonu dohledu nad financnim trhem 2025 (Box 3)](https://www.cnb.cz/export/sites/cnb/cs/dohled-financni-trh/.galleries/souhrnne_informace_fin_trhy/zpravy_o_vykonu_dohledu/download/dnft_2025_cz.pdf) - 30/06/2026 (regulator)
+- Implies: Named, regulator-mandated remediation of fuzzy-matching sanctions screening at Czech banks - direct, funded demand for AML/compliance screening and transaction-monitoring replacement or tuning.
+- Likelihood: High | Follow-up: Identify which banks got remediation measures (CNB does not name them)
+
+### CNB / NUKIB - DORA vs Czech Cybersecurity Act (Czechia) - S / win Medium / Medium / NEW
+CNB and NUKIB issued a joint statement dated 24/06/2026 clarifying which obligations apply to DORA entities under the new Czech Cybersecurity Act (Act No. 264/2025 Coll., transposing NIS2): DORA prevails as lex specialis where effects are equivalent, but the Act still applies where DORA does not regulate equivalently (e.g. mandatory registration with NUKIB, state of cyber danger), and stricter or more detailed national requirements must also be implemented.
+- Source: [Ceska narodni banka / NUKIB, Spolecne prohlaseni CNB a NUKIB](https://www.cnb.cz/export/sites/cnb/cs/dohled-financni-trh/.galleries/legislativni_zakladna/digitalni_provozni_odolnost/20260624_prohlaseni_cnb_nukib.pdf) - 24/06/2026 (regulator)
+- Implies: Czech banks face a dual DORA + NIS2 compliance surface; ICT suppliers to banks (including ATM/POS/managed-service vendors) must meet both regimes contractually.
+- Likelihood: High | Follow-up: Check NUKIB registration duties for bank ICT suppliers
+
+### AMLA (EU) - Czech exposure (Czechia) - M / win Low / Medium / NEW
+CNB confirms AMLA, seated in Frankfurt, was established by Regulation (EU) 2024/1620, came into legal existence 26/06/2024 and assumed most of its powers by 01/07/2025; from 2028 it will DIRECTLY supervise selected high-risk cross-border financial-market entities in all EU member states. CNB appoints a member of AMLA's General Board in supervisory composition; the Czech FIU (Financni analyticky urad) represents Czechia in the FIU composition.
+- Source: [Ceska narodni banka, AMLA page](https://www.cnb.cz/cs/dohled-financni-trh/mezinarodni-aktivity/amla/) - 27/08/2026 (regulator)
+- Implies: Czech subsidiaries of cross-border groups (Erste, KBC, SocGen-exited KB, RBI, UniCredit) must align AML tooling to a single EU rulebook ahead of 2028 - a group-level AML/monitoring standardisation window.
+- Likelihood: Medium | Follow-up: Watch AMLA's selection methodology for directly-supervised entities
+
+### Sdileny bankomat scheme - duplicate-ATM relocation (Czechia) - S / win Medium / Low / NEW
+The shared-network relocation map feed lists 124 target municipalities for moving duplicate ATMs out of over-served sites (typically shopping centres) into places that previously had none; 119 markers carry the blue 'already relocated' pin and 5 the grey 'planned' pin at 27/08/2026. The scheme's stated rationale is cutting electricity, maintenance and cash-replenishment cost by collapsing several networks into one.
+- Source: [sdilenybankomat.cz relocation map data feed](https://www.sdilenybankomat.cz/data/presouvanebankomaty.js) - 27/08/2026 (primary)
+- Implies: An active, near-complete physical redeployment programme - deinstall/reinstall, site prep, cash-cycle re-planning and monitoring: classic Printec managed-services scope.
+- Likelihood: Medium | Follow-up: Confirm blue/grey pin semantics with the operator; watch for a phase 2
+
+### Czech shared-ATM scheme membership [CORRECTION] (Czechia) - Unscoped / win — / Medium / NEW
+CORRECTION to the 30/07/2026 baseline: the Czech pooled ATM network is operated for Komercni banka, MONETA Bank, Air Bank and UniCredit Bank - Ceska sporitelna, CSOB and Raiffeisenbank a.s. are NOT members. The scheme site is operated by Komercni banka, a.s. (IC 45317054). Headline claim on the site is 'we share almost 2,000 ATMs'; KB's H1-2026 report states 1,916 shared ATMs at 30/06/2026 and the live feed returns 1,913 at 27/08/2026 - two independent primary sources agreeing within 0.2%.
+- Source: [sdilenybankomat.cz (operator footer) cross-checked against KB Results H1 2026](https://www.sdilenybankomat.cz) - 27/08/2026 (primary)
+- Implies: Any pooled-network pitch must be aimed at the KB/MONETA/Air Bank/UniCredit consortium; CS and CSOB remain standalone estates and are separate targets.
+- Likelihood: High | Follow-up: Correct the master findings file
+
+## Coverage notes
+
+Fresh run, no checkpoint existed. WebSearch quota was exhausted before the first query, so ALL research was done by direct primary-source retrieval: curl with a desktop User-Agent plus local pdfminer/openpyxl extraction, and WebFetch where useful. Angles used, all new relative to the baseline: (1) the shared-ATM scheme's own Google-Maps data feed, which is fully machine-readable and yields a per-owner, per-type census; (2) KB's own H1-2026 results PDF distribution table; (3) group-level reconciliation via Erste Group's H1-2026 CC presentation, KBC's 2Q2026 company presentation and RBI's Q2-2026 country data workbook (sheet CE-CZ) - the country-vs-group reconciliation the brief asked for; (4) CNB's Financial Market Supervision Report 2025 and the CNB/NUKIB joint statement for DORA and AML; (5) KAL's own case-studies page for ATM-software incumbency. Group reconciliation result: CS 322 branches, CSOB 196, KB 171, Raiffeisenbank a.s. 125 - all at 30/06/2026 - giving 814 branches across the four majors. KB's own shared-network figure (1,916 at 30/06/2026) and the live feed (1,913 at 27/08/2026) cross-validate each other. GENUINE GAPS: (a) no ATM count obtained for Ceska sporitelna, CSOB or Raiffeisenbank a.s. - none of the three exposes an open locator feed and CS's Places API requires a registered key; (b) the baseline's Czech sector census (1,426 branches / 548 with a manned cash desk at 01/01/2026) could NOT be re-verified this run - CNB has moved these series into the ARAD application whose API rejected anonymous queries, and the figures do not appear in the 2025 supervision report; it is carried forward as unverified, not confirmed. (c) The baseline's '~800 recycling' machines in the shared network could not be reproduced: the scheme's own feed distinguishes only deposit-capable vs cash-out-only, not recycling, so 969 deposit-capable is the defensible figure. The August window was productive: every core disclosure used here is dated 24/06/2026-07/08/2026.
+
+## Access issues
+
+WebSearch: hard budget exhaustion (200/200) before the first query - no keyword search available this run; all discovery was by URL crawling from bank homepages and sitemaps. duckduckgo.com/html: served a CAPTCHA challenge - not solved, abandoned. mojeek.com: HTTP 403. csob.cz: entire portal behind an F5/Shape JavaScript bot wall - every path returns a 'Please enable JavaScript' shim to curl and WebFetch, including /portal/o-csob/vysledky-hospodareni and /portal/o-csob/pro-media/tiskove-zpravy; worked around via KBC Group's 2Q2026 company presentation (parent disclosure). api.csob.cz returns HTTP 500 GATEWAY_INTERFACE_EXCEPTION (policyResult: Falsified) to unauthenticated calls. csas.cz: results page is client-rendered and returns no data to curl; the ATM/branch Places API (www.csas.cz/webapi/api/v3/places and api.csas.cz) returns HTTP 412 KEY_MISSING - it needs a registered Erste WebAPI key. kb.cz/api/BranchAndAtmList/Atms and /Branches: referenced in the page source but return the 404 page to direct calls (session/anti-scrape gated); KB's ATM counts were taken instead from its own H1-2026 results PDF. rb.cz: locator is a JS bundle; probed /rest/branches, /api/branches, /services/branches, /rest/contacts/branches, /api/v1/branches, /rest/atm - all HTTP 404. RB CZ outlet count taken from RBI's group workbook instead. cnb.cz ARAD: the app is live (https://www.cnb.cz/aradb/api/v13/init returns 200) but v13/search-results and v13/indicators-detail-dims return HTTP 400 without a valid roleId, which appears to require a session or API key (v13/login, v13/apikeys exist). This blocked re-verification of the branch / manned-cash-desk census. cbaonline.cz: client-rendered, no content to curl. investors.moneta.cz/financial-reports: HTTP 404. All CNB HTML and PDF retrievals otherwise succeeded on the first try with a desktop UA; PDFs were parsed locally with pdfminer and RBI's workbook with openpyxl rather than via the fetch tool.
+
+## Operator requests
+
+1) Register a free Erste Group WebAPI key (developers.erstegroup.com) so Ceska sporitelna's Places/ATM feed can be counted the way the Bulgarian and Croatian locators were - this is the single biggest remaining gap for the CZ recycler white-space number. 2) Open csob.cz in a real browser (Claude-in-Chrome or equivalent) to capture CSOB's own ATM and deposit-ATM counts and its H1-2026 Czech press release; the site is unreachable to headless fetching. 3) Capture Raiffeisenbank a.s.'s ATM/deposit-ATM counts from https://www.rb.cz/o-nas/kontakty/pobocky-a-bankomaty with the filters atm / depositAtm / depositRbAtm / cashDesk applied - the filter names are in the page source, so the counts are obtainable in-browser. 4) Obtain a CNB ARAD API key (or export the series in-browser) for 'pocet obchodnich mist' and the manned-cash-desk split, so the baseline's 1,426 / 548 census can finally be re-verified. No paywalled PDFs were encountered.

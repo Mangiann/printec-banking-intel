@@ -1,0 +1,82 @@
+[
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_012",
+  "source_url": "https://www.cnb.cz/DC3VyberovaRizeni/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_042",
+  "source_url": "https://smlouvy.gov.cz/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_095",
+  "source_url": "https://financnictvi.konference.cz/prednasejici",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_177",
+  "source_url": "https://ibsintelligence.com/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_258",
+  "source_url": "https://www.welcometothejungle.com/en/companies/welcometothejungleczsk/jobs",
+  "outcome": "verified",
+  "http_status": 202,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_272",
+  "source_url": "https://www.linkedin.com/in/janjuchelka/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.linkedin.com/in/janjuchelka",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_279",
+  "source_url": "https://www.linkedin.com/in/frantisek-jungr-a35ab514/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.linkedin.com/in/frantisek-jungr-a35ab514",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_285",
+  "source_url": "https://bsky.app/hashtag/Czech",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ }
+]

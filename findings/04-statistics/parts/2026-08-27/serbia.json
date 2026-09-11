@@ -1,0 +1,61 @@
+{
+ "slug": "serbia",
+ "status": "partial",
+ "remaining": "branch series confirmation, IPS/eKYC/digital-channel signals, leading indicators, other Printec categories (HSM/AML/fraud/softPOS/tenders)",
+ "signals": [
+  {
+   "entity": "NBS / Serbian ATM estate",
+   "country": "Serbia",
+   "signal": "ATM estate REVERSES a two-year plateau: 3,412 ATMs at end-Q2-2026 vs 3,196 at end-Q2-2025 (+6.8% y/y, +216 machines) - the fastest y/y ATM growth since at least 2016. Contrast Q3-2025, which was still -0.4% y/y. Machine-readable series now available (prihvatna_mreza.xlsx, updated 19/08/2026), which resolves last run's raster-image blocker.",
+   "source_name": "NBS Acceptance network quarterly series (prihvatna_mreza.xlsx)",
+   "source_url": "https://www.nbs.rs/export/sites/NBS_site/documents/platni-sistem/statistika/el_novac/prihvatna_mreza.xlsx",
+   "source_date": "19/08/2026",
+   "source_tier": "regulator",
+   "implies": "Serbia is one of the very few CEE/SEE markets ADDING ATMs. A +216-machine net add in 12 months is a live hardware and multivendor-software pipeline for NCR Atleos dispensers/recyclers and Printec x-core (already installed at Raiffeisen Serbia), plus device telemetry/monitoring and managed field services on a growing estate.",
+   "likelihood": "High - the growth is already booked in NBS data; the question is which vendors take the refresh",
+   "confidence": "Medium",
+   "opp_size": "L",
+   "win": "Medium",
+   "followup": "Ask Raiffeisen Serbia (x-core reference) and AikBank (NCR recyclers reference) which banks drove the +216; get NBS to confirm whether deposit/recycling-capable ATMs are separately reported.",
+   "deadline": "",
+   "is_new": true
+  },
+  {
+   "entity": "NBS cash placement/withdrawal statistics",
+   "country": "Serbia",
+   "signal": "Cash DEPOSIT value now far exceeds cash WITHDRAWAL value and is the faster-growing leg. H1-2026: deposits to payment accounts RSD 1,616,776m on 12,264,618 transactions; withdrawals RSD 1,098,758m on 12,329,724 transactions (provisional half-year read). FY2025: deposits RSD 3,288,916m / 25,395,721 txns vs withdrawals RSD 2,353,166m / 26,403,378 txns. Withdrawal COUNT has fallen every year since 2021 (35.68m -> 30.72m -> 29.94m -> 28.66m -> 26.40m) while withdrawal VALUE rose from RSD 1,875,238m (2021) to RSD 2,353,166m (2025): fewer, bigger withdrawals.",
+   "source_name": "NBS Payment transactions of cash placement and withdrawal (gotovina.xlsx)",
+   "source_url": "https://www.nbs.rs/export/sites/NBS_site/documents/platni-sistem/statistika/el_novac/gotovina.xlsx",
+   "source_date": "19/08/2026",
+   "source_tier": "regulator",
+   "implies": "Textbook cash-recycler business case. A recycler (an ATM that re-dispenses notes customers deposited, instead of shipping them to a cash centre) directly attacks the CIT and cash-handling cost of a market where deposit value is 1.4x withdrawal value. Sells NCR intelligent-deposit/recycling ATMs, Glory/Sesami TCRs for branch counters, and NCR APTRA OptiCash cash optimisation (Erste Croatia reference).",
+   "likelihood": "High as an argument; bank-by-bank timing unknown",
+   "confidence": "Low",
+   "opp_size": "XL",
+   "win": "Medium",
+   "followup": "Build a Serbia-specific recycling ROI model off these NBS deposit/withdrawal volumes and take it to the top five banks; deposits leg is the pitch, not withdrawals.",
+   "deadline": "",
+   "is_new": true
+  },
+  {
+   "entity": "NBS Bank Supervision Department",
+   "country": "Serbia",
+   "signal": "[CORRECTS BASELINE] The NBS quarterly 'Banking Sector in Serbia' report and its Statistical Annex - the assumed home of branch counts - were DISCONTINUED: both the Serbian and English NBS listing pages state 'Latest issue - IV Quarter 2019'. There is no NBS quarterly banking-sector PDF after Q4-2019, so branch counts cannot be sourced there for any current period.",
+   "source_name": "NBS - Banks / Reports and analyses (EN and SR listing pages)",
+   "source_url": "https://www.nbs.rs/en/finansijske-institucije/banke/izvestaji-i-analize/index.html",
+   "source_date": "27/08/2026",
+   "source_tier": "regulator",
+   "implies": "Methodological, not commercial: stop chasing a report that no longer exists. Best remaining proxies for Serbian branch/network contraction are NBS figures quoted in press and the World Bank/IMF FAS branches-per-100k series.",
+   "likelihood": "Certain - verified on the live pages",
+   "confidence": "Medium",
+   "opp_size": "Unscoped",
+   "win": "—",
+   "followup": "Ask NBS Bank Supervision directly where post-2019 organisational-unit counts are published; check the annual Financial Stability Report (GISFS) and the NBS Annual Report.",
+   "deadline": "",
+   "is_new": true
+  }
+ ],
+ "coverage_notes": "in progress",
+ "access_issues": "",
+ "operator_requests": ""
+}

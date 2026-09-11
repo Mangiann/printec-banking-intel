@@ -1,0 +1,232 @@
+[
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_091",
+  "source_url": "https://subjekty.nbs.sk/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://subjekty.nbs.sk/sk/",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_148",
+  "source_url": "https://kariera.nbs.sk/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_181",
+  "source_url": "https://data.worldbank.org/indicator/FB.ATM.TOTL.P5?locations=SK",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_235",
+  "source_url": "https://slovak.statistics.sk/wps/portal/ext/Databases/DATAcube_sk/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://slovak.statistics.sk/wps/portal/ext/Databases/DATAcube_sk/!ut/p/z1/jY9ND4IwGIN_0gpDPo4vJozFBZnLBu5CdjJLFD0Yf7-GeBXprcnTNmWejczP4RUv4Rnvc7h-_Nnnk1N9WdcJ4aj7HCQPXWYqidRwNizAXlCbFQooldhBUmtPleYcxJnfkscPEbblVwC_Xj8wvyCktTbKOQiXNpA8EeisBZriC6xd_DfyuFk7Iso3wqsHxQ!!/dz/d5/L2dBISEvZ0FBIS9nQSEh/",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_240",
+  "source_url": "https://slovak.statistics.sk/wps/portal/ext/Databases/Open_data/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://slovak.statistics.sk/wps/portal/ext/Databases/Open_data/!ut/p/z1/jY_BDoIwGIMfaR1TGMcfDGNmMQ6ygbuYncwSRQ_G59cQryK9NfnapiywkYUpvtIlPtN9itePP4X87M1RVhUnwJkS1O0El_s8q3vOhhmoFbWbwgDSqC00ta4rrRAgwcKaPH6IsC6_AITl-oGFGSFrbW-8h_JZAy24wsE5oCm-wNLFfyOPm3Mjkn4DaHTnzA!!/dz/d5/L2dBISEvZ0FBIS9nQSEh/",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_272",
+  "source_url": "https://www.slsp.sk/sk/informacie-o-banke/kontakty/pre-media",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_284",
+  "source_url": "https://www.primabanka.sk/financne-spravy",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_288",
+  "source_url": "https://finstat.sk/31340890/zavierka",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_294",
+  "source_url": "https://www.paytenpos.sk/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_316",
+  "source_url": "https://www.finstat.sk/35854448",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_321",
+  "source_url": "https://subjekty.nbs.sk/sk/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_326",
+  "source_url": "https://subjekty.nbs.sk/api/psd2",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://subjekty.nbs.sk/sk/api/psd2",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_329",
+  "source_url": "https://regver.nbs.sk/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_330",
+  "source_url": "https://regfap.nbs.sk/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_072",
+  "source_url": "https://tender.sme.sk/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.sme.sk/",
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_074",
+  "source_url": "https://finstat.sk/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_078",
+  "source_url": "https://www.globalpayments.sk/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_133",
+  "source_url": "https://index.sme.sk/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.sme.sk/index",
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_134",
+  "source_url": "https://spectator.sme.sk/business",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_276",
+  "source_url": "https://www.tatrabanka.sk/sk/o-banke/financne-ukazovatele/vyrocne-spravy/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_277",
+  "source_url": "https://www.tatrabanka.sk/sk/blog/navody/platba-mobilom/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_315",
+  "source_url": "https://www.finstat.sk/36394238",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_319",
+  "source_url": "https://www.oma.sk/sluzby/bankomat",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ }
+]

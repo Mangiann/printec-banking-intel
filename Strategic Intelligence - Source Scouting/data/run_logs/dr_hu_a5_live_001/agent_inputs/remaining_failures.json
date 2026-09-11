@@ -1,0 +1,352 @@
+[
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_009",
+  "source_url": "https://www.kh.hu/csoport/kozlemenyek",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_010",
+  "source_url": "https://www.kh.hu/csoport/bank/vezetoseg",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_038",
+  "source_url": "https://ceginformaciosszolgalat.kormany.hu/ceginformacio",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_049",
+  "source_url": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/magyar-export-import-bank-eximbank-zrt",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_051",
+  "source_url": "https://magyarkozlony.hu/hivatalos-ertesito",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_052",
+  "source_url": "https://njt.hu/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "ConnectionResetError"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_063",
+  "source_url": "https://www.mnv.hu/rolunk/kozerdeku-adatok",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_065",
+  "source_url": "https://kozszolgallas.ksz.gov.hu/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_071",
+  "source_url": "https://www.4ig.hu/hu/sajtoszoba",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_084",
+  "source_url": "https://www.fintechfutures.com/core-banking-technology/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_117",
+  "source_url": "http://www.bbdsz.hu/bbdsz/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_122",
+  "source_url": "https://www.eurofound.europa.eu/en/surveys-and-data/european-restructuring-monitor",
+  "outcome": "unresolved",
+  "http_status": 429,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 429"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_123",
+  "source_url": "https://www.eurofound.europa.eu/en/publications/all/european-restructuring-monitor-the-database-and-its-methodology",
+  "outcome": "unresolved",
+  "http_status": 429,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 429"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_127",
+  "source_url": "https://www.hrportal.hu/cimkek/letszamleepites.html",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_137",
+  "source_url": "https://ceginformaciosszolgalat.kormany.hu/beszamolo-allomany-ertekesitese",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_138",
+  "source_url": "https://ceginformaciosszolgalat.kormany.hu/cegfigyeles",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_151",
+  "source_url": "https://hoa.hu/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_154",
+  "source_url": "https://www.haon.hu/helyi-gazdasag/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_158",
+  "source_url": "https://regi.szegedvaros.hu/tag/befekteto/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_162",
+  "source_url": "https://net.jogtar.hu/bce-jogszabaly?docid=A23A1201.BCE",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_174",
+  "source_url": "https://www.hrportal.hu/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_195",
+  "source_url": "https://www.hrportal.hu/cimkek/vezetovaltas.html",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_213",
+  "source_url": "https://www.mastercard.hu/hu-hu/ismerj-meg-minket/rolunk.html",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_216",
+  "source_url": "https://www.vg.hu/penz-es-tokepiac",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_234",
+  "source_url": "https://www.reuters.com/world/europe/",
+  "outcome": "unresolved",
+  "http_status": 401,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 401"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_235",
+  "source_url": "https://www.marketscreener.com/quote/stock/OTP-BANK-NYRT-6491747/news/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_237",
+  "source_url": "https://www.mastercard.com/news/europe/en/newsroom/press-releases/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_246",
+  "source_url": "https://ceelegalmatters.com/banking-2026/banking-hungary-2026",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_248",
+  "source_url": "https://simplywall.st/stocks/us/banks/otc-otpg.f/otp-bank-nyrt/management",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_256",
+  "source_url": "https://www.linkedin.com/company/otp-mobil",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_268",
+  "source_url": "https://www.linkedin.com/in/csikosnagykatalin/",
+  "outcome": "unresolved",
+  "http_status": 999,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 999"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_269",
+  "source_url": "https://www.linkedin.com/in/benjamin-b%C3%A9l%C3%A1di-23395b219/",
+  "outcome": "unresolved",
+  "http_status": 999,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 999"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_285",
+  "source_url": "https://hu.jooble.org/%C3%A1ll%C3%A1s-anti+money-laundering/Budapest",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_302",
+  "source_url": "https://www.hrportal.hu/cimkek/fejvadasz.html",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_312",
+  "source_url": "https://ravio.com/salary-benchmarks/hungary",
+  "outcome": "unresolved",
+  "http_status": 429,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 429"
+ }
+]

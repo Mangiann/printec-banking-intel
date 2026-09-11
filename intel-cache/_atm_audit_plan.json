@@ -1,0 +1,2411 @@
+{
+ "catalogs": [
+  {
+   "topic": "ATM installed base & deployment (total installed base, trend & forecast, YoY growth, off-site vs branch / location-type split) — global, CEE & Western Europe regional, and per-country",
+   "tables": [
+    {
+     "name": "World ATM installed base (CEE report Fig 1.2 + WE report Fig 1.2)",
+     "unit": "number of ATMs",
+     "scope": "global",
+     "footprint_countries": [],
+     "years": "2021-2022 (point), no forecast in these two tables",
+     "has_forecast": false,
+     "sample": "World total 3,079,014 (2021) -> 3,022,964 (2022), change -56,050; CEE = 8% of world, WE = 12% of world (CEE p.20; WE p.22)",
+     "pages": "CEE deep p.20 (l.105-109); WE deep p.22 (l.178-179)"
+    },
+    {
+     "name": "CEE regional installed base & YoY growth (Figure 1.3: Number and growth of ATMs, 2018-2022)",
+     "unit": "number of ATMs + absolute & % growth",
+     "scope": "regional (CEE total, 12 primary + others)",
+     "footprint_countries": [
+      "RO",
+      "BG",
+      "HU",
+      "CZ",
+      "SK",
+      "HR",
+      "RS",
+      "UA",
+      "SI",
+      "AL",
+      "BA",
+      "MK",
+      "ME",
+      "XK"
+     ],
+     "years": "2018-2022 (CAGR -1.4%)",
+     "has_forecast": false,
+     "sample": "CEE ATMs 249,846 (2018) -> peak 255,138 (2019) -> 236,507 (2022); 2022 growth -3.5% (-8,699). CEE p.20 l.111-113",
+     "pages": "CEE deep p.20 (l.110-114)"
+    },
+    {
+     "name": "CEE installed base by country, 2021 and 2022 (Figure 1.4)",
+     "unit": "number of ATMs",
+     "scope": "per-country (within CEE regional chapter)",
+     "footprint_countries": [
+      "RO",
+      "BG",
+      "HU",
+      "CZ",
+      "SK",
+      "HR",
+      "RS",
+      "UA"
+     ],
+     "years": "2021 and 2022 (2 points) + change",
+     "has_forecast": false,
+     "sample": "Romania 9,974->10,044 (+70, only CEE primary to grow); Ukraine 18,939->15,591 (-3,348); Bulgaria 5,250->4,994. SI/AL/BA/MK/ME/XK hidden inside 'Others' 30,249->32,183. CEE p.22 l.135-148",
+     "pages": "CEE deep p.22 (l.131-148)"
+    },
+    {
+     "name": "CEE installed base by deployer type (Banks vs IADs), 2021 and 2022 (Figure 1.5)",
+     "unit": "number of ATMs + % share",
+     "scope": "regional (CEE total)",
+     "footprint_countries": [
+      "RO",
+      "BG",
+      "HU",
+      "CZ",
+      "SK",
+      "HR",
+      "RS",
+      "UA"
+     ],
+     "years": "2021 and 2022",
+     "has_forecast": false,
+     "sample": "Banks 227,593->218,668 (92%); IADs 17,613->17,839 (8%). IAD share of installed base: Poland 64%, CZ 17%, HU 16%, HR & SK 12%. CEE p.24 l.163-176",
+     "pages": "CEE deep p.24-25 (l.163-179)"
+    },
+    {
+     "name": "CEE ATMs by location type, 2018-2022 (Figure 1.8: Hall / Lobby / TTW / Off-site / Drive-through)",
+     "unit": "number of ATMs by location + % share",
+     "scope": "regional (CEE total)",
+     "footprint_countries": [
+      "RO",
+      "BG",
+      "HU",
+      "CZ",
+      "SK",
+      "HR",
+      "RS",
+      "UA"
+     ],
+     "years": "2018-2022 (with CAGR per location)",
+     "has_forecast": false,
+     "sample": "2022 split: Off-site 151,697 (64%), Lobby 39,485 (17%), TTW 26,589 (11%), Hall 18,647 (8%), Drive-through 89. Off-site CAGR +0.4%, TTW CAGR -7.9%, Hall -6.2%. CEE p.30 l.260-268",
+     "pages": "CEE deep p.30 (l.258-269)"
+    },
+    {
+     "name": "CEE ATMs by location and country, 2022 (Figure 1.9 - location-type shares per country)",
+     "unit": "% of country estate by location (+ total ATMs)",
+     "scope": "per-country (within CEE regional chapter)",
+     "footprint_countries": [
+      "RO",
+      "BG",
+      "HU",
+      "CZ",
+      "SK",
+      "HR",
+      "RS",
+      "UA"
+     ],
+     "years": "2022 only (single year)",
+     "has_forecast": false,
+     "sample": "Croatia 77.2% off-site (highest); Serbia only 37.1% off-site (49.6% TTW); Romania 50.6% off-site/27.7% TTW; Hungary 20.9% lobby. CEE p.32 l.288-303",
+     "pages": "CEE deep p.32 (l.286-310)"
+    },
+    {
+     "name": "CEE forecast installed base by country, 2023-2028 (Figure 3.2)",
+     "unit": "number of ATMs",
+     "scope": "per-country + regional total (forecast)",
+     "footprint_countries": [
+      "RO",
+      "BG",
+      "HU",
+      "CZ",
+      "SK",
+      "HR",
+      "RS",
+      "UA"
+     ],
+     "years": "2023-2028 (6 forecast years) + CAGR",
+     "has_forecast": true,
+     "sample": "CEE total 232,720 (2023) -> 231,895 (2028), CAGR -0.1%. CZ 5,680->6,000 (+1.1%); HU 4,900->5,100; RS 3,150->3,325 (+1.2%); BG 4,800->4,400 (-1.7%); UA 14,800->14,100. CEE p.45 l.510-525",
+     "pages": "CEE deep p.45 (l.509-525); long-run chart Fig 3.1 p.45 (l.507)"
+    },
+    {
+     "name": "Per-country historical installed base & YoY growth — CEE primary footprint (Figure 4.1: Number and growth of ATMs, 2018-2022)",
+     "unit": "number of ATMs + absolute & % growth",
+     "scope": "per-country",
+     "footprint_countries": [
+      "RO",
+      "BG",
+      "HU",
+      "CZ",
+      "SK",
+      "HR",
+      "RS",
+      "UA"
+     ],
+     "years": "2018-2022 + CAGR (per-country chapters)",
+     "has_forecast": false,
+     "sample": "Romania 10,400(2018)->10,044(2022), CAGR -0.9%; Czech 5,475->5,646 (+0.8%); Slovakia 2,981->3,183 (+1.7%); Ukraine 20,138->15,591 (-6.2%). RO p.264 l.154-159; CZ p.145 l.1740; SK p.357 l.4412; UA p.386 l.4698",
+     "pages": "RO p.264; CZ p.145; SK p.357; UA p.386; HU p.195; RS p.339; BG & HR Fig 4.1 in their chapters"
+    },
+    {
+     "name": "Per-country ATMs by location, 2018-2022 — CEE primary footprint (Figure 4.3: Hall/Lobby/TTW/Off-site/Drive-through)",
+     "unit": "number of ATMs by location (+ % share)",
+     "scope": "per-country",
+     "footprint_countries": [
+      "RO",
+      "BG",
+      "HU",
+      "CZ",
+      "SK",
+      "HR",
+      "RS",
+      "UA"
+     ],
+     "years": "2018-2022 + CAGR",
+     "has_forecast": false,
+     "sample": "Romania 2022: Off-site 5,081 (51%), TTW 3,788 (38%), Lobby 1,046, Hall 129. Czech 2022: Off-site 3,866 (68%), Lobby 885, TTW 794. Serbia 2022: TTW 1,524 (50%), Off-site 1,139 (37%). RO p.266 l.3176-3181; CZ p.146 l.1755-1760; RS p.~338 l.4159-4165; SK p.362 l.4438-4443; UA p.387 l.4720-4725; KZ p.197 l.2357-2362",
+     "pages": "RO p.266; CZ p.146; SK p.362; UA p.387; RS chapter; HU p.197; BG & HR chapters"
+    },
+    {
+     "name": "Per-country forecast installed base, 2023-2028 — CEE primary footprint (Figure 6.1, with ATMs/abs growth/% growth/ATMs per million)",
+     "unit": "number of ATMs + % growth + density",
+     "scope": "per-country (forecast)",
+     "footprint_countries": [
+      "RO",
+      "BG",
+      "HU",
+      "CZ",
+      "SK",
+      "HR",
+      "RS",
+      "UA"
+     ],
+     "years": "2023-2028 + CAGR",
+     "has_forecast": true,
+     "sample": "Czech 5,680->6,000 (+1.1%); Bulgaria 4,800->4,400 (-1.7%); Croatia 4,700->4,450 (-1.1%); Serbia 3,150->3,350 (+1.2%); Slovakia 3,200->3,325 (+0.8%); Ukraine 14,800->14,100 (-1.0%); Romania 10,060->10,200 (+0.2%). BG p.99 l.1174; HR p.126 l.1500; CZ p.153 l.1820; RS p.~344 l.4230; SK p.367 l.4483; UA p.412 l.5056; RO p.271 l.3232",
+     "pages": "BG p.99; HR p.126; CZ p.153; HU p.175; RS chapter p.~344; SK p.367; UA p.412; RO p.271"
+    },
+    {
+     "name": "Secondary-market historical installed base & growth — CEE (Section 3.1 / Figure 3.1: Number and growth of ATMs, 2018-2022)",
+     "unit": "number of ATMs + % growth",
+     "scope": "per-country (secondary-market chapters)",
+     "footprint_countries": [
+      "SI",
+      "AL",
+      "MK",
+      "BA"
+     ],
+     "years": "2018-2022 + CAGR",
+     "has_forecast": false,
+     "sample": "Slovenia 1,580->1,415 (CAGR -2.7%); Albania 691->860 (+5.6%, fastest-growing footprint); North Macedonia 1,040->1,013 (-0.7%); Bosnia 1,584->1,546 (-0.6%). SI p.570 l.6875; AL p.~428 l.5227; MK p.558 l.6730; BA p.~471 l.5739",
+     "pages": "SI p.570; AL p.~428; MK p.558; BA p.~471"
+    },
+    {
+     "name": "Secondary-market ATMs by location (branch-based vs off-site only), 2018-2022 — CEE",
+     "unit": "number of ATMs (Branch-based vs Off-site) + % share",
+     "scope": "per-country (secondary markets, 2-way split only)",
+     "footprint_countries": [
+      "AL",
+      "BA"
+     ],
+     "years": "2018-2022 + CAGR",
+     "has_forecast": false,
+     "sample": "Albania 2022: Off-site 543 (63%), Branch-based 317 (37%); off-site CAGR +14.5%. Bosnia 2022: Branch-based 971 (63%), Off-site 575 (37%). AL p.429 l.5242-5244; BA p.~471 l.5763-5766",
+     "pages": "AL p.429 (l.5239-5245); BA p.~471 (l.5762-5766). NOTE: secondaries use only a 2-way Branch/Off-site split, not the 5-category Hall/Lobby/TTW split"
+    },
+    {
+     "name": "Secondary-market forecast installed base, 2023-2028 — CEE (Section 5.1 / Figure 5.1)",
+     "unit": "number of ATMs + % growth + density",
+     "scope": "per-country (secondary-market forecast)",
+     "footprint_countries": [
+      "SI",
+      "AL",
+      "MK",
+      "BA"
+     ],
+     "years": "2023-2028 + CAGR",
+     "has_forecast": true,
+     "sample": "Albania 900->1,150 (+5.0%, only strongly growing footprint base); Slovenia 1,370->1,300 (-1.0%); Bosnia 1,490->1,370 (-1.7%); North Macedonia rises to ~1,000-1,060 plateau. AL p.433 l.5279; SI p.575 l.6943; BA p.473 l.5773; MK p.561 l.6771",
+     "pages": "AL p.433; SI p.575; BA p.473; MK p.561"
+    },
+    {
+     "name": "Western Europe regional installed base & YoY growth (Figure 1.3: Number and growth of ATMs, 2018-2022)",
+     "unit": "number of ATMs + absolute & % growth",
+     "scope": "regional (WE total)",
+     "footprint_countries": [
+      "GR",
+      "AT",
+      "CY"
+     ],
+     "years": "2018-2022 (CAGR -2.7%)",
+     "has_forecast": false,
+     "sample": "WE ATMs 394,320 (2018) -> 352,770 (2022); 2022 growth -3.6% (-13,346). WE p.23 l.190-192",
+     "pages": "WE deep p.23 (l.189-193)"
+    },
+    {
+     "name": "Western Europe installed base by country, 2021 and 2022 (Figure 1.4)",
+     "unit": "number of ATMs + change",
+     "scope": "per-country (within WE regional chapter)",
+     "footprint_countries": [
+      "GR",
+      "AT"
+     ],
+     "years": "2021 and 2022 (2 points)",
+     "has_forecast": false,
+     "sample": "Greece 7,179->7,261 (+82, one of only two WE markets to grow); Austria 9,165->8,933 (-232). Cyprus not listed (secondary). WE p.25 l.202-220",
+     "pages": "WE deep p.25 (l.199-220)"
+    },
+    {
+     "name": "Western Europe ATMs by location type, 2018-2022 (Figure 1.8: Hall/Lobby/TTW/Off-site/Drive-through)",
+     "unit": "number of ATMs by location + % share",
+     "scope": "regional (WE total)",
+     "footprint_countries": [
+      "GR",
+      "AT"
+     ],
+     "years": "2018-2022 + CAGR",
+     "has_forecast": false,
+     "sample": "2022 split: Off-site 140,393 (40%), TTW 100,651 (29%), Lobby 86,839 (25%), Hall 24,822 (7%), Drive-through 65. Off-site CAGR -0.4% (only flat category); Hall -5.3%. WE p.31 l.315-320",
+     "pages": "WE deep p.31 (l.308-321)"
+    },
+    {
+     "name": "Western Europe ATMs by location and country, 2022 (Figure 1.9)",
+     "unit": "% of country estate by location (+ total ATMs)",
+     "scope": "per-country (within WE regional chapter)",
+     "footprint_countries": [
+      "GR",
+      "AT"
+     ],
+     "years": "2022 only (single year)",
+     "has_forecast": false,
+     "sample": "Greece 66.3% off-site / 28.4% TTW / 4.7% hall (Total 7,261); Austria 52.9% lobby / 30.2% off-site / 16.6% TTW (Total 8,933). Cyprus not in this table. WE p.32 l.325 & l.331",
+     "pages": "WE deep p.32 (l.323-343)"
+    },
+    {
+     "name": "Western Europe forecast installed base by country, 2023-2028 (Figure 3.2)",
+     "unit": "number of ATMs",
+     "scope": "per-country + regional total (forecast)",
+     "footprint_countries": [
+      "GR",
+      "AT"
+     ],
+     "years": "2023-2028 + CAGR",
+     "has_forecast": true,
+     "sample": "WE total 344,581 (2023) -> 316,126 (2028), CAGR -1.7%. Austria 8,975->9,025 (+0.1%, only WE market broadly flat/growing); Greece 7,400->7,250 (-0.4%). WE p.44 l.474 & l.480",
+     "pages": "WE deep p.44 (l.472-492); long-run chart Fig 3.1 p.43 (l.468)"
+    },
+    {
+     "name": "Greece historical installed base & growth (Figure 4.1, 2018-2022) + long-run Fig 7.6 (1995-2028)",
+     "unit": "number of ATMs + % growth",
+     "scope": "per-country",
+     "footprint_countries": [
+      "GR"
+     ],
+     "years": "2018-2022 + CAGR (Fig 4.1); 1995-2028 full series (Fig 7.6)",
+     "has_forecast": true,
+     "sample": "Greece 6,683 (2018) -> peak 7,336 (2019) -> 7,261 (2022), CAGR +2.1%. Long-run Fig 7.6 starts 1,600 (1995). WE p.328 l.3882; p.357 l.4209-4215",
+     "pages": "WE deep p.328 (l.3881-3886); long-run p.357 (l.4208-4215)"
+    },
+    {
+     "name": "Greece ATMs by location, 2018-2022 (Figure 4.3: Hall/Lobby/TTW/Off-site/Drive-through)",
+     "unit": "number of ATMs by location + % share",
+     "scope": "per-country",
+     "footprint_countries": [
+      "GR"
+     ],
+     "years": "2018-2022 + CAGR",
+     "has_forecast": false,
+     "sample": "Greece 2022: Off-site 4,814 (66%, CAGR +5.5%), TTW 2,059 (28%, CAGR -4.7%), Hall 343, Lobby 45. WE p.330 l.3903-3908",
+     "pages": "WE deep p.330 (l.3900-3910)"
+    },
+    {
+     "name": "Greece forecast installed base, 2023-2028 (Figure 7.1)",
+     "unit": "number of ATMs + % growth + density",
+     "scope": "per-country (forecast)",
+     "footprint_countries": [
+      "GR"
+     ],
+     "years": "2023-2028 + CAGR",
+     "has_forecast": true,
+     "sample": "Greece 7,400 (2023) -> 7,250 (2028), CAGR -0.4%; 698 ATMs per million people by 2028. WE p.354 l.4183",
+     "pages": "WE deep p.354 (l.4181-4188)"
+    },
+    {
+     "name": "Austria historical installed base & growth (Figure 4.1, 2018-2022)",
+     "unit": "number of ATMs + % growth",
+     "scope": "per-country",
+     "footprint_countries": [
+      "AT"
+     ],
+     "years": "2018-2022 + CAGR",
+     "has_forecast": false,
+     "sample": "Austria 8,773 (2018) -> peak 9,165 (2021) -> 8,933 (2022), CAGR +0.5%; 2022 growth -2.5% (strongest decline ever). WE p.65 l.800-802",
+     "pages": "WE deep p.65 (l.799-803)"
+    },
+    {
+     "name": "Austria ATMs by location, 2018-2022 (Figure 4.3: Hall/Lobby/TTW/Off-site/Drive-through)",
+     "unit": "number of ATMs by location + % share",
+     "scope": "per-country",
+     "footprint_countries": [
+      "AT"
+     ],
+     "years": "2018-2022 + CAGR",
+     "has_forecast": false,
+     "sample": "Austria 2022: Lobby 4,726 (53%, dominant), Off-site 2,697 (30%, CAGR +5.7%), TTW 1,481 (17%), Hall 8, Drive-through 9. WE p.66 l.820-825",
+     "pages": "WE deep p.66 (l.817-826)"
+    },
+    {
+     "name": "Austria forecast installed base, 2023-2028 (Figure 7.1)",
+     "unit": "number of ATMs + % growth + density",
+     "scope": "per-country (forecast)",
+     "footprint_countries": [
+      "AT"
+     ],
+     "years": "2023-2028 + CAGR",
+     "has_forecast": true,
+     "sample": "Austria 8,975 (2023) -> 9,025 (2028), CAGR +0.1% (only WE market not in decline). WE p.91 l.1081 (also regional Fig 3.2 l.474)",
+     "pages": "WE deep p.91 (l.1078-1089)"
+    },
+    {
+     "name": "Cyprus historical installed base & growth (Figure 3.1, 2018-2022) - secondary WE market",
+     "unit": "number of ATMs + % growth",
+     "scope": "per-country (WE secondary chapter)",
+     "footprint_countries": [
+      "CY"
+     ],
+     "years": "2018-2022 + CAGR; long-run chart 2007-2028 (Fig 5.2)",
+     "has_forecast": true,
+     "sample": "Cyprus 961 (2018) -> 1,047 (2019) -> 963 (2022), 2022 growth -7.7%; CAGR ~0.1%. (Note: Fig 1.1 key-metrics lists 763 ATMs - different scope; deployer/installed-base total is 963.) WE p.809 l.9641",
+     "pages": "WE deep p.809 (l.9638-9645); long-run Fig 5.2 p.813 (l.9691)"
+    },
+    {
+     "name": "Cyprus ATMs by location (branch-based vs off-site only), 2018-2022 - secondary WE market",
+     "unit": "number of ATMs (Branch-based vs Off-site) + % share",
+     "scope": "per-country (2-way split only)",
+     "footprint_countries": [
+      "CY"
+     ],
+     "years": "2018-2022 + CAGR",
+     "has_forecast": false,
+     "sample": "Cyprus 2022: Off-site 524 (54%, overtook branch in 2022, CAGR +6.7%), Branch-based 439 (46%). WE p.810 l.9656-9658",
+     "pages": "WE deep p.810 (l.9655-9659). NOTE: 2-way Branch/Off-site split only, not 5-category"
+    },
+    {
+     "name": "Cyprus forecast installed base, 2023-2028 (Figure 5.1) - secondary WE market",
+     "unit": "number of ATMs + % growth + density",
+     "scope": "per-country (forecast)",
+     "footprint_countries": [
+      "CY"
+     ],
+     "years": "2023-2028 + CAGR",
+     "has_forecast": true,
+     "sample": "Cyprus 950 (2023) -> 900 (2028), CAGR -1.1%; 719 ATMs per million people by 2028. WE p.813 l.9684",
+     "pages": "WE deep p.813 (l.9681-9689)"
+    }
+   ],
+   "recommended_plots": [
+    {
+     "title": "Footprint ATM installed base: 2022 actual vs 2028 forecast (per country)",
+     "chart_type": "grouped/paired horizontal bar (2022 vs 2028F) with % CAGR label",
+     "metrics": [
+      "installed base 2022 (actual)",
+      "installed base 2028 (forecast)",
+      "CAGR 2022-2028"
+     ],
+     "scope": "per-country comparison across the footprint",
+     "why": "The single most C-level-relevant view: which of our markets are growing their ATM base vs shrinking, and by how much, in one screen. Shows Austria (+0.1%), Albania (+5%), Serbia/Czech/Hungary (growing) as expansion territories vs Bulgaria/Bosnia/Slovenia/Ukraine (contracting) for capital allocation and service-contract planning.",
+     "coverage": "15 of 17 countries with both an actual 2022 base and a 2028 forecast (RO,BG,HU,CZ,SK,HR,RS,UA,GR,AT,SI,AL,MK,BA,CY). Only Montenegro (ME) and Kosovo (XK) are missing - they sit inside 'CEE Others' with no per-country series. 2 data points per country (2022, 2028)."
+    },
+    {
+     "title": "Off-site vs branch-based ATM mix by country, 2022",
+     "chart_type": "100% stacked horizontal bar (Off-site vs Branch-based; or 5-segment Hall/Lobby/TTW/Off-site for primary markets)",
+     "metrics": [
+      "off-site %",
+      "TTW %",
+      "lobby %",
+      "hall %",
+      "drive-through %"
+     ],
+     "scope": "per-country comparison (with CEE 64% and WE 40% regional reference lines)",
+     "why": "Deployment strategy and addressable-services signal: high off-site shares (Croatia 77%, Greece 66%) mean IAD/retail-site servicing demand; high branch/TTW shares (Serbia 50% TTW, Austria 53% lobby) mean branch-self-service and recycler opportunities. Directly informs where managed-services and CIT propositions land.",
+     "coverage": "All 15 countries that have any location data: full 5-category Hall/Lobby/TTW/Off-site for the 10 primary markets (RO,BG,HU,CZ,SK,HR,RS,UA,GR,AT); only a 2-way Branch vs Off-site split for the 5 secondary markets (SI*,AL,MK*,BA,CY) - and SI & MK chapters may not carry even the 2-way split. ME & XK absent. Single year (2022)."
+    },
+    {
+     "title": "ATM installed base trend & YoY growth, 2018-2028 (regional overview, CEE vs Western Europe vs World)",
+     "chart_type": "dual-axis combo: lines = installed base (indexed or absolute), bars = YoY % growth; history 2018-2022 + forecast 2023-2028",
+     "metrics": [
+      "CEE total installed base",
+      "WE total installed base",
+      "World total installed base",
+      "YoY % growth"
+     ],
+     "scope": "global/regional overview",
+     "why": "Sets the strategic backdrop in one chart: the whole industry is past peak and contracting (~-2 to -3.6% p.a. through 2022), with CEE forecast nearly flat (-0.1% CAGR to 2028) but Western Europe still falling -1.7% CAGR. Frames every market-level story for the board.",
+     "coverage": "Regional aggregates (CEE & WE) fully covered 2018-2028 (11 years, with a 2023-2028 forecast); World only 2021-2022 (2 points, no forecast in these reports). Footprint countries roll up into the regional lines but cannot be individually broken out on this view."
+    },
+    {
+     "title": "Off-site ATM share over time, footprint primary markets, 2018-2022",
+     "chart_type": "multi-country line (off-site % of installed base by year)",
+     "metrics": [
+      "off-site share %"
+     ],
+     "scope": "per-country comparison (time trend)",
+     "why": "Shows the structural shift away from the branch that drives our addressable site count: off-site is the only location category growing region-wide while branch/TTW/hall shrink. Rising off-site share (Greece 58%->66%, Czech 61%->68%, Cyprus 42%->54%) signals where retail-site and IAD servicing demand is expanding fastest.",
+     "coverage": "10 primary footprint markets with a full 2018-2022 location time series (RO,BG,HU,CZ,SK,HR,RS,UA,GR,AT) plus AL, BA, CY via their 2-way branch/off-site series = up to 13 countries, 5 years each. SI, MK, ME, XK lack a usable off-site time series."
+    }
+   ],
+   "coverage_summary": "This topic is the best-covered in both reports. For the 10 'primary' footprint markets (RO, BG, HU, CZ, SK, HR, RS, UA in the CEE volume; GR, AT in the WE volume) you get a complete, plot-ready stack: total installed base + YoY growth 2018-2022, a 5-category location split (Hall/Lobby/TTW/Off-site/Drive-through) for 2018-2022 and a 2022 cross-country snapshot, a long-run 1995-2028 chart, and an explicit per-country forecast installed base to 2028 with CAGR and density. The 5 'secondary' footprint markets (SI, AL, MK, BA in CEE; CY in WE) each have their own chapter with installed base + growth 2018-2022 and a 2028 forecast, but only a coarser 2-way Branch-based vs Off-site location split (Albania, Bosnia and Cyprus confirmed; Slovenia and North Macedonia may carry only the headline series). Regional CEE and WE totals are fully covered 2018-2028; a World total exists only for 2021-2022. The clear gaps: Montenegro (ME) and Kosovo (XK) have no dedicated chapter in either report and are absorbed into 'CEE Others' with no extractable per-country series, so any 17-country view will top out at 15. A minor consistency caveat: Romania's 2028 forecast prints as 10,150 in the regional table but 10,200 in its country table, and Cyprus shows two different totals (763 in key-metrics vs 963 installed base) due to scope - cite the country-chapter figure."
+  },
+  {
+   "topic": "Cash automation — deposit & recycling (automated note deposit ATMs, cash recyclers, stand-alone deposit terminals/SATs)",
+   "tables": [
+    {
+     "name": "Figure 1.11 (CEE) — ATMs and SATs with automated deposit functionality, 2022 (regional roll-up)",
+     "unit": "count of ATMs / SATs (+ 48% of CEE base note, 39% recyclers note)",
+     "scope": "regional (whole CEE region)",
+     "footprint_countries": [
+      "RO",
+      "BG",
+      "HU",
+      "CZ",
+      "SK",
+      "HR",
+      "RS",
+      "UA"
+     ],
+     "years": "2022 only (single snapshot; no forecast)",
+     "has_forecast": false,
+     "sample": "CEE total automated note deposit = 112,514 ATMs (48% of installed base) + 88,068 SATs; of which cash recycling 92,475 ATMs (39% of base), Russia = 91% of recyclers (CEE deep p.35, lines 357-372)",
+     "pages": "CEE deep p.35 (Fig 1.11), lines 357-372"
+    },
+    {
+     "name": "Figure 1.10 (CEE) — ATM functionality, 2022: 'Automated note deposit' and 'Note recycling' rows (enhanced markets)",
+     "unit": "count of ATMs + % of base",
+     "scope": "regional (CEE enhanced markets)",
+     "footprint_countries": [
+      "RO",
+      "BG",
+      "HU",
+      "CZ",
+      "SK",
+      "HR",
+      "RS",
+      "UA"
+     ],
+     "years": "2022 only",
+     "has_forecast": false,
+     "sample": "Automated note deposit 97,066 ATMs (64% of 151,214 enhanced-market base); Note recycling 83,851 (55%) (CEE deep p.34, lines 328-330)",
+     "pages": "CEE deep p.34 (Fig 1.10), lines 322-331"
+    },
+    {
+     "name": "Figure 1.11 (WE) — ATMs and SATs with automated deposit functionality, 2022 (regional roll-up)",
+     "unit": "count of ATMs / SATs + % of base",
+     "scope": "regional (whole Western Europe)",
+     "footprint_countries": [
+      "GR",
+      "AT"
+     ],
+     "years": "2022 only (no forecast)",
+     "has_forecast": false,
+     "sample": "WE automated note deposit = 153,531 ATMs (43% of base) + 6,752 SATs; recyclers 98,378 ATMs (64% of deposit ATMs); Greece recycler penetration only 3% (WE deep p.35, lines 358-364)",
+     "pages": "WE deep p.35 (Fig 1.11), lines 358-364"
+    },
+    {
+     "name": "Figure 4.4 (Czechia) — ATMs and SATs with automated deposit functionality, 2022",
+     "unit": "count of ATMs / SATs (35% of base note)",
+     "scope": "per-country",
+     "footprint_countries": [
+      "CZ"
+     ],
+     "years": "2022 only (35% deposit penetration up from 33% in 2021 given in text)",
+     "has_forecast": false,
+     "sample": "CZ automated note deposit 1,958 ATMs (35% of base) + 22 SATs; of which recyclers 1,423 (73% of deposit ATMs); KB has 521 deposit ATMs (CEE deep p.148, lines 1767-1772)",
+     "pages": "CEE deep p.148 (Fig 4.4), lines 1766-1772"
+    },
+    {
+     "name": "Figure 4.4 (Slovakia) — ATMs and SATs with automated deposit functionality, 2022",
+     "unit": "count of ATMs / SATs (20% of base note)",
+     "scope": "per-country",
+     "footprint_countries": [
+      "SK"
+     ],
+     "years": "2022 only (20% penetration up from 19% in 2021 in text)",
+     "has_forecast": false,
+     "sample": "SK automated note deposit 647 ATMs (20% of base) + 14 SATs; of which recyclers 512 (79% of deposit ATMs) (CEE deep p.363, lines 4450-4454)",
+     "pages": "CEE deep p.363 (Fig 4.4), lines 4448-4454"
+    },
+    {
+     "name": "Figure 4.4 (Hungary) — ATMs and SATs with automated cash deposit functionality, 2022",
+     "unit": "count of ATMs / SATs (21% of base note)",
+     "scope": "per-country",
+     "footprint_countries": [
+      "HU"
+     ],
+     "years": "2022 only (21%, unchanged from 2021 in text)",
+     "has_forecast": false,
+     "sample": "HU automated note deposit 1,012 ATMs (21% of base), 0 SATs; of which recyclers 316; regionally Hungary's deposit ATMs are 99% recyclers (CEE deep p.171, lines 2067-2074; p.35 line 370)",
+     "pages": "CEE deep p.171 (Fig 4.4), lines 2067-2074"
+    },
+    {
+     "name": "Figure 4.4 (Romania) — ATMs and SATs with automated deposit functionality, 2022",
+     "unit": "count of ATMs / SATs (24% of base note)",
+     "scope": "per-country",
+     "footprint_countries": [
+      "RO"
+     ],
+     "years": "2022 only (24% penetration, +1pp vs 2021 in text)",
+     "has_forecast": false,
+     "sample": "RO automated note deposit total 2,376 ATMs (24% of base) + 1,680 SATs (SATs are cheque-deposit/legacy, being phased out); of which recyclers 1,727 (~73% of deposit ATMs) (CEE deep p.267, lines 3186-3192). NOTE: the ATM count in the digested table is garbled as '2.3% / 1,680'; prose confirms 2,376 ATMs total & 73% recyclers.",
+     "pages": "CEE deep p.267 (Fig 4.4), lines 3185-3192"
+    },
+    {
+     "name": "Figure 4.4 (Bulgaria) — ATMs and SATs with automated deposit functionality, 2022",
+     "unit": "count of ATMs / SATs (13% of base note)",
+     "scope": "per-country",
+     "footprint_countries": [
+      "BG"
+     ],
+     "years": "2022 only (768 ATDs, +2% vs 2021 in text)",
+     "has_forecast": false,
+     "sample": "BG automated note deposit 768 ATMs (13% of base), 0 SATs; of which recyclers just 8 (~1% of base, up from a single recycler in 2021); UniCredit Bulbank largest with 171 deposit ATMs (CEE deep p.95, lines 1130-1135)",
+     "pages": "CEE deep p.95 (Fig 4.4), lines 1128-1135"
+    },
+    {
+     "name": "Figure 4.4 (Croatia) — ATMs and SATs with automated deposit functionality, 2022",
+     "unit": "count of ATMs / SATs (18% of base note)",
+     "scope": "per-country",
+     "footprint_countries": [
+      "HR"
+     ],
+     "years": "2022 only (~20% of bank ATMs accept deposit; 18% of total base)",
+     "has_forecast": false,
+     "sample": "HR automated note deposit 840 ATMs (18% of base) + 63 SATs; of which recyclers 110 (~13% of deposit ATMs); PBZ as high as 40% (CEE deep p.121, lines 1444-1451)",
+     "pages": "CEE deep p.121 (Fig 4.4), lines 1444-1452"
+    },
+    {
+     "name": "Figure 4.4 (Serbia) — ATMs and SATs with automated deposit functionality, 2022",
+     "unit": "count of ATMs / SATs (13% of base note)",
+     "scope": "per-country",
+     "footprint_countries": [
+      "RS"
+     ],
+     "years": "2022 only (13% penetration, up from 8% in 2021 in text)",
+     "has_forecast": false,
+     "sample": "RS automated note deposit 963 ATMs (13% of base) + 88 SATs; of which recyclers 40 (grew from 28 in 2021); deployed by Banca Intesa & AIK banka (CEE deep p.341/342, lines 4181-4188)",
+     "pages": "CEE deep p.341 (Fig 4.4) + p.342 narrative, lines 4181-4188"
+    },
+    {
+     "name": "Figure 4.5 (Ukraine) — ATMs and SATs with automated deposit functionality, 2022",
+     "unit": "count of ATMs / SATs (17% of base note)",
+     "scope": "per-country",
+     "footprint_countries": [
+      "UA"
+     ],
+     "years": "2022 only (17% penetration, in line with 2021 in text)",
+     "has_forecast": false,
+     "sample": "UA automated note deposit 2,596 ATMs (17% of base) + 12,688 SATs (largest SAT estate in footprint; PrivatBank = 98% of SATs); of which recyclers 1,620 (62% of deposit ATMs, +4pp vs 2021) (CEE deep p.390, lines 4776-4786)",
+     "pages": "CEE deep p.390 (Fig 4.5), lines 4775-4786"
+    },
+    {
+     "name": "Figure 4.4 / 4.5 (Greece) — ATM functionality + ATMs and SATs with automated deposit functionality, 2022",
+     "unit": "count of ATMs / SATs + % of 7,261 base",
+     "scope": "per-country",
+     "footprint_countries": [
+      "GR"
+     ],
+     "years": "2022 only (44% penetration, jumped from ~1% in 2021 in text — driven by Euronet share-mix change, not real deployment)",
+     "has_forecast": false,
+     "sample": "GR automated note deposit 3,189 ATMs (44% of 7,261 base) + 2,019 SATs; of which recyclers only 206 (3% of base — among lowest in WE); 11 cheque-deposit ATMs (WE deep p.331-332, lines 3921-3932)",
+     "pages": "WE deep p.331 (Fig 4.4) + p.332 (Fig 4.5), lines 3919-3932"
+    },
+    {
+     "name": "Figure 4.4 / 4.5 (Austria) — ATM functionality + ATMs and SATs with automated deposit functionality, 2022",
+     "unit": "count of ATMs / SATs + % of 8,933 base",
+     "scope": "per-country",
+     "footprint_countries": [
+      "AT"
+     ],
+     "years": "2022 only",
+     "has_forecast": false,
+     "sample": "AT automated note deposit 2,287 ATMs (26% of 8,933 base) + 275 SATs; of which recyclers 2,278 — i.e. essentially ALL deposit ATMs recycle (26% of base, the highest recycler-share in the footprint); KEBA exclusively supplies recyclers (WE deep p.68-69, lines 838, 846-857)",
+     "pages": "WE deep p.68 (Fig 4.4) + p.69 (Fig 4.5), lines 835-857"
+    },
+    {
+     "name": "Per-deployer automated-deposit / recycling rows (selected footprint markets)",
+     "unit": "count of ATMs by named bank",
+     "scope": "per-country (bank-level breakdown inside the deployer-functionality tables)",
+     "footprint_countries": [
+      "GR",
+      "AT",
+      "RS",
+      "RO",
+      "HR"
+     ],
+     "years": "2022 only",
+     "has_forecast": false,
+     "sample": "Greece automated note deposit by bank: Piraeus 666, NBG 795, Eurobank 640, Attica 996; recyclers: Piraeus 164, NBG 21, Eurobank 20 (WE deep p.~338, line 4338). Austria: Raiff 217, Erste 327, Bank Austria 184 — all recyclers (WE deep line 1172)",
+     "pages": "WE deep line 4338 (GR), line 1172 (AT); CEE deep line 4004 (RU only, not footprint)"
+    }
+   ],
+   "recommended_plots": [
+    {
+     "title": "Cash recycling adoption: % of ATM base that recycles notes, by country (end-2022)",
+     "chart_type": "horizontal bar (ranked), single year",
+     "metrics": [
+      "recyclers as % of national ATM installed base"
+     ],
+     "scope": "per-country comparison across the footprint",
+     "why": "This is the single most Printec-relevant slide: it shows where the recycler conversion wave has and has not happened, i.e. the open white-space for selling recycling-capable hardware/CIT-savings projects. Austria 26% and Czechia ~25% are mature; Bulgaria ~1%, Serbia ~0.4%, Greece 3% are wide-open. One bar per country, instantly readable.",
+     "coverage": "10 of 17 countries (AT, CZ, SK, HU, RO, BG, HR, RS, UA, GR); 1 year (2022). Missing: CY, SI, BA, MK, AL, ME, XK have no Section 4.4 deposit figure (summary chapters)."
+    },
+    {
+     "title": "Automated note-deposit penetration vs recycler penetration, by country (end-2022)",
+     "chart_type": "grouped/paired horizontal bar (two series per country)",
+     "metrics": [
+      "automated note deposit ATMs as % of base",
+      "note-recycling ATMs as % of base"
+     ],
+     "scope": "per-country comparison",
+     "why": "Shows the gap between 'accepts deposits' and 'actually recycles' — the upgrade headroom. Greece is the standout (44% accept deposits but only 3% recycle = huge recycler retrofit opportunity); Austria/Czechia have closed the gap (nearly all deposit ATMs recycle). C-level sees at a glance which markets are 'deposit but not recycling yet'.",
+     "coverage": "10 of 17 countries (same set as above); 1 year (2022). 7 countries have no data."
+    },
+    {
+     "title": "Installed base of recyclers and automated-deposit ATMs, absolute counts by country (end-2022)",
+     "chart_type": "stacked horizontal bar (recyclers + non-recycling deposit ATMs) per country",
+     "metrics": [
+      "note-recycling ATM count",
+      "automated note-deposit ATM count (of which recyclers)"
+     ],
+     "scope": "per-country comparison (absolute volumes, not %)",
+     "why": "Penetration % hides market size. Absolute counts size the actual hardware opportunity: Greece 3,189 deposit ATMs / only 206 recyclers, Ukraine 2,596/1,620, Czechia 1,958/1,423, Austria 2,287/2,278. Lets a C-level prioritise the biggest absolute retrofit pools, not just the highest-percentage gaps.",
+     "coverage": "10 of 17 countries; 1 year (2022). 7 countries missing."
+    },
+    {
+     "title": "Stand-alone deposit terminals (SATs) installed base by country (end-2022) — a declining legacy channel",
+     "chart_type": "bar (single year), countries with non-trivial SAT counts",
+     "metrics": [
+      "SAT count per country",
+      "(context) ATM automated-deposit count"
+     ],
+     "scope": "per-country comparison",
+     "why": "SATs are the legacy single-function deposit boxes RBR says are being removed region-wide. The Printec story: where SATs are still large (Ukraine 12,688, Greece 2,019, Romania 1,680, Croatia 63, Serbia 88, Austria 275) there is a migration opportunity from SATs to multifunction recycling ATMs. Frames a replacement-cycle pitch.",
+     "coverage": "8 of 17 countries have SAT counts (UA, GR, RO, AT, RS, HR, CZ 22, SK 14; HU & BG = 0); 1 year (2022). No forecast and 7 footprint countries have no data."
+    }
+   ],
+   "coverage_summary": "Deposit & recycling is the best-covered structural topic for the footprint, but ONLY as a single end-2022 snapshot — there is NO time series and NO 2028 forecast for any deposit/recycling metric (RBR forecasts cover total installed base and shipments, not functionality mix; recycler growth appears only as qualitative narrative). 10 of the 17 footprint countries have a full per-country Figure 4.4/4.5 giving automated note-deposit ATM count, recycler count, and SAT count, each with a % of base: AT, CZ, SK, HU, RO, BG, HR, RS, UA and GR. The other 7 — Cyprus, Slovenia, Bosnia, North Macedonia, Albania, Montenegro and Kosovo — get only abbreviated summary chapters (Sections 1-5, no functionality figure), so they have zero deposit/recycling data. The story is strong and Printec-relevant: recycler penetration ranges from near-saturation (Austria 26% of base, essentially all deposit ATMs recycle; Czechia 73% of deposit ATMs recycle) down to near-greenfield (Bulgaria ~1%, Serbia ~0.4%, Greece 3% despite 44% deposit penetration), clearly mapping where recycler retrofit and SAT-to-recycler migration opportunities sit."
+  },
+  {
+   "topic": "Cash usage & ATM transactions (cash withdrawals: volume, value, per-ATM usage, average withdrawal value, cash-as-share-of-ATM-transactions, withdrawal value as % of GDP) — trend 2018-2022 and forecast to 2028",
+   "tables": [
+    {
+     "name": "CEE regional total — Number of cash withdrawals (Fig 1.13): annual volume + avg per ATM/month",
+     "unit": "million withdrawals; withdrawals per ATM per month",
+     "scope": "regional (CEE 12 primary markets aggregate)",
+     "footprint_countries": [
+      "RO",
+      "BG",
+      "HU",
+      "CZ",
+      "SK",
+      "HR",
+      "RS",
+      "UA"
+     ],
+     "years": "2018-2022 (history)",
+     "has_forecast": false,
+     "sample": "Annual volume fell from 6,150m (2018) to 4,516m (2022), CAGR -7.4%; avg per ATM/month 2,300 (2018) -> 1,795 (2022) (CEE deep p.38)",
+     "pages": "CEE deep p.38 (report Regional Analysis p.20)"
+    },
+    {
+     "name": "CEE — Number of cash withdrawals BY COUNTRY (Fig 1.14): annual volume + avg per ATM/month 2022",
+     "unit": "million withdrawals; withdrawals per ATM per month (2022)",
+     "scope": "per-country (12 CEE primary markets)",
+     "footprint_countries": [
+      "RO",
+      "BG",
+      "HU",
+      "CZ",
+      "SK",
+      "HR",
+      "RS",
+      "UA"
+     ],
+     "years": "2018-2022 (history)",
+     "has_forecast": false,
+     "sample": "Romania 277/294/267/280/295m (CAGR +1.6%), avg 2,456/ATM/mo 2022; Bulgaria 121->136m (+2.9%), avg 2,214; Ukraine 842->514m (-11.6%), avg 2,683 (CEE deep p.39)",
+     "pages": "CEE deep p.39 (Regional Analysis p.21)"
+    },
+    {
+     "name": "CEE regional total — Value of cash withdrawals (Fig 1.15): annual value, avg per-withdrawal value, avg value per ATM",
+     "unit": "USD bn; USD per withdrawal; USD '000 per ATM",
+     "scope": "regional (CEE 12 primary markets aggregate)",
+     "footprint_countries": [
+      "RO",
+      "BG",
+      "HU",
+      "CZ",
+      "SK",
+      "HR",
+      "RS",
+      "UA"
+     ],
+     "years": "2018-2022 (history)",
+     "has_forecast": false,
+     "sample": "Annual value USD 816bn (2018) -> 847bn (2022), CAGR +0.9%; avg withdrawal value USD 133 -> 188 (CAGR +9.0%) (CEE deep p.40)",
+     "pages": "CEE deep p.40 (Regional Analysis p.22)"
+    },
+    {
+     "name": "CEE — Value of cash withdrawals BY COUNTRY (Fig 1.16): total value + avg per-withdrawal + avg per-ATM value",
+     "unit": "USD bn total; USD per withdrawal; USD mn per ATM",
+     "scope": "per-country (12 CEE primary markets)",
+     "footprint_countries": [
+      "RO",
+      "BG",
+      "HU",
+      "CZ",
+      "SK",
+      "HR",
+      "RS",
+      "UA"
+     ],
+     "years": "2018-2022 (history)",
+     "has_forecast": false,
+     "sample": "Slovakia value USD 18->21bn (+5.2%), per-withdrawal USD 265, per-ATM USD 6.7m; Czechia USD 32->33bn, per-withdrawal USD 220; Croatia per-ATM USD 2.6m (lowest) (CEE deep p.41-42)",
+     "pages": "CEE deep p.41-42 (Regional Analysis p.23-24)"
+    },
+    {
+     "name": "CEE — Forecast total number of cash withdrawals by country (Fig 3.8) + regional Fig 3.7 chart",
+     "unit": "million withdrawals (per year)",
+     "scope": "per-country forecast + regional total",
+     "footprint_countries": [
+      "RO",
+      "BG",
+      "HU",
+      "CZ",
+      "SK",
+      "HR",
+      "RS",
+      "UA"
+     ],
+     "years": "2023-2028 forecast (plus 2018-2022 history on Fig 3.7 chart)",
+     "has_forecast": true,
+     "sample": "CEE total 4,338m (2023) -> 3,958m (2028), CAGR -1.8%; Romania 300->315m (+1.0%); Bulgaria 143->158m (+2.0%); Czechia 146->128m (-2.6%) (CEE deep p.49-50)",
+     "pages": "CEE deep p.49-50 (Regional Analysis p.31-32)"
+    },
+    {
+     "name": "CEE — Forecast total value of cash withdrawals by country (Fig 3.10) + avg withdrawal value, regional Fig 3.9 chart",
+     "unit": "USD bn (per year); avg per-ATM/month withdrawals; avg withdrawal value USD",
+     "scope": "per-country forecast + regional total",
+     "footprint_countries": [
+      "RO",
+      "BG",
+      "HU",
+      "CZ",
+      "SK",
+      "HR",
+      "RS",
+      "UA"
+     ],
+     "years": "2023-2028 forecast",
+     "has_forecast": true,
+     "sample": "CEE total value USD 904bn (2023) -> 1,033bn (2028), CAGR +2.7%; Bulgaria USD 29->42bn (+8.0%, fastest); Romania USD 64->82bn (+5.2%); avg CEE withdrawal value USD 188 (2022) -> 261 (2028) (CEE deep p.51-52)",
+     "pages": "CEE deep p.51-52 (Regional Analysis p.33-34)"
+    },
+    {
+     "name": "CEE Annex — Number of ATMs and number of cash withdrawals, 1995-2028 (Fig 4.1)",
+     "unit": "ATM units; cash withdrawals total (million); per ATM per month",
+     "scope": "regional (CEE primary total, full long history + forecast)",
+     "footprint_countries": [
+      "RO",
+      "BG",
+      "HU",
+      "CZ",
+      "SK",
+      "HR",
+      "RS",
+      "UA"
+     ],
+     "years": "1995-2028 (withdrawal data only from 2017); 2028F",
+     "has_forecast": true,
+     "sample": "Withdrawals 6,200m (2017) -> 3,958m (2028); per ATM/month 2,338 (2017) -> 1,721 (2028) (CEE deep p.53)",
+     "pages": "CEE deep p.53 (Regional Analysis p.35)"
+    },
+    {
+     "name": "WE regional total — Number of cash withdrawals (Fig 1.13): annual volume + avg per ATM/month",
+     "unit": "million withdrawals; withdrawals per ATM per month",
+     "scope": "regional (WE primary markets aggregate)",
+     "footprint_countries": [
+      "GR",
+      "AT"
+     ],
+     "years": "2018-2022 (history)",
+     "has_forecast": false,
+     "sample": "Annual volume 12,745m (2018) -> 9,961m (2022), CAGR -6.0%; avg per ATM/month 2,685 -> 2,325 (CEE... WE deep p.37)",
+     "pages": "WE deep p.37 (Regional Analysis p.17)"
+    },
+    {
+     "name": "WE — Number of cash withdrawals BY COUNTRY (Fig 1.14): annual volume + avg per ATM/month 2022",
+     "unit": "million withdrawals; withdrawals per ATM per month (2022)",
+     "scope": "per-country (17 WE primary markets)",
+     "footprint_countries": [
+      "GR",
+      "AT"
+     ],
+     "years": "2018-2022 (history)",
+     "has_forecast": false,
+     "sample": "Greece 274/302/231/237/248m (CAGR -2.5%), avg 2,862/ATM/mo 2022 (3rd highest in WE); Austria 273->182m (-9.6%), avg 1,675 (WE deep p.38)",
+     "pages": "WE deep p.38 (Regional Analysis p.18)"
+    },
+    {
+     "name": "WE — Value of cash withdrawals BY COUNTRY (Fig 1.16): total value + avg per-withdrawal + avg per-ATM value",
+     "unit": "USD bn total; USD per withdrawal; USD mn per ATM",
+     "scope": "per-country (17 WE primary markets)",
+     "footprint_countries": [
+      "GR",
+      "AT"
+     ],
+     "years": "2018-2022 (history)",
+     "has_forecast": false,
+     "sample": "Greece USD 62->58bn (CAGR -1.3%), per-withdrawal USD 235, per-ATM USD 8.1m (2nd highest in WE); Austria USD 54->43bn (-5.4%), per-withdrawal USD 237 (WE deep p.40)",
+     "pages": "WE deep p.40 (Regional Analysis p.20); regional totals/commentary WE deep p.39"
+    },
+    {
+     "name": "WE — Forecast total number of cash withdrawals by country (Fig 3.8) + regional Fig 3.7 chart",
+     "unit": "million withdrawals (per year)",
+     "scope": "per-country forecast + regional total",
+     "footprint_countries": [
+      "GR",
+      "AT"
+     ],
+     "years": "2023-2028 forecast (+2018-2022 history on chart)",
+     "has_forecast": true,
+     "sample": "WE total 9,902m (2023) -> 9,446m (2028), CAGR -1%; Greece 240->227m (-1%); Austria 185->165m (-2%) (WE deep p.49)",
+     "pages": "WE deep p.49 (Regional Analysis p.29); Fig 3.7 chart WE deep p.48"
+    },
+    {
+     "name": "WE — Forecast total value of cash withdrawals by country (Fig 3.10) + avg value Fig 3.9 chart",
+     "unit": "USD bn (per year); avg withdrawal value USD",
+     "scope": "per-country forecast + regional total",
+     "footprint_countries": [
+      "GR",
+      "AT"
+     ],
+     "years": "2023-2028 forecast",
+     "has_forecast": true,
+     "sample": "WE total value USD 1,659bn (2023) -> 2,017bn (2028), CAGR +4.0%; Greece USD 59->64bn (+1.6%); Austria USD 50->52bn (+0.7%); avg WE withdrawal value USD 155 (2022) -> 213 (2028) (WE deep p.51)",
+     "pages": "WE deep p.51 (Regional Analysis p.31); Fig 3.9 chart WE deep p.50"
+    },
+    {
+     "name": "WE Annex — Number of ATMs and number of cash withdrawals, 1995-2028 (Fig 4.1)",
+     "unit": "ATM units; cash withdrawals total (million); per ATM per month",
+     "scope": "regional (WE primary total, long history + forecast)",
+     "footprint_countries": [
+      "GR",
+      "AT"
+     ],
+     "years": "1995-2028 (withdrawal data from 2017); 2028F",
+     "has_forecast": true,
+     "sample": "Withdrawals 12,901m (2017) -> 9,446m (2028); per ATM/month 2,683 (2017) -> 2,491 (2028, rises as base shrinks) (WE deep p.52)",
+     "pages": "WE deep p.52 (Regional Analysis p.32)"
+    },
+    {
+     "name": "Greece per-country — Number of cash withdrawals (Fig 4.7): annual volume + avg per ATM/month + cash share of ATM transactions",
+     "unit": "million withdrawals; per ATM per month; % of ATM transactions",
+     "scope": "per-country (Greece)",
+     "footprint_countries": [
+      "GR"
+     ],
+     "years": "2018-2022 (history)",
+     "has_forecast": false,
+     "sample": "Greece 274/302/231/237/248m (CAGR -2.5%); avg 3,305 (2018) -> 2,862 (2022); cash share of ATM transactions fell to 54% in 2022 (WE deep p.334)",
+     "pages": "WE deep p.334 (Greece p.18)"
+    },
+    {
+     "name": "Greece per-country — Value of cash withdrawals (Fig 4.8): annual value (EUR/USD) + avg withdrawal value + avg per-ATM value + value as % of GDP",
+     "unit": "EUR bn / USD bn; EUR/USD per withdrawal; EUR/USD mn per ATM; % of GDP",
+     "scope": "per-country (Greece)",
+     "footprint_countries": [
+      "GR"
+     ],
+     "years": "2018-2022 (history)",
+     "has_forecast": false,
+     "sample": "Greece value EUR 49->56bn (USD 62->58bn); avg withdrawal EUR 224 (USD 255) 2022; value as % of GDP 28.9% (2018) -> 26.7% (2022) (WE deep p.335)",
+     "pages": "WE deep p.335 (Greece p.19)"
+    },
+    {
+     "name": "Greece per-country — Forecast cash withdrawal number & value (Fig 7.4 & 7.5)",
+     "unit": "million withdrawals; per ATM/month; EUR bn value; EUR per withdrawal",
+     "scope": "per-country forecast (Greece)",
+     "footprint_countries": [
+      "GR"
+     ],
+     "years": "2018-2028 (forecast 2023-2028)",
+     "has_forecast": true,
+     "sample": "Greece withdrawals fall to 227m by 2028 (-1%/yr); avg per ATM/mo 2,862 (2022)->2,600 (2028); value rises to EUR 61bn (USD 64bn); avg withdrawal EUR 224->267 (WE deep p.356)",
+     "pages": "WE deep p.356 (Greece p.36)"
+    },
+    {
+     "name": "Greece per-country Annex — Number of ATMs and cash withdrawals, 1995-2028 (Fig 7.6)",
+     "unit": "ATM units; cash withdrawals total (million); per ATM per month",
+     "scope": "per-country long history + forecast (Greece)",
+     "footprint_countries": [
+      "GR"
+     ],
+     "years": "1995-2028 (withdrawals from 1998); 2028F",
+     "has_forecast": true,
+     "sample": "Greece withdrawals 64m (1998) growing to ~302m peak (2019); per ATM/month 2,182 (1998), 3,068 (2014) (WE deep p.357)",
+     "pages": "WE deep p.357 (Greece p.37)"
+    },
+    {
+     "name": "Austria per-country — Number of cash withdrawals (Fig 4.7): annual volume + avg per ATM + cash share of ATM transactions",
+     "unit": "million withdrawals; thousand per ATM; % of ATM transactions",
+     "scope": "per-country (Austria)",
+     "footprint_countries": [
+      "AT"
+     ],
+     "years": "2018-2022 (history)",
+     "has_forecast": false,
+     "sample": "Austria 273/277/211/182/192m (CAGR -9.6%); cash share of ATM transactions ~87% throughout 2018-2022 (WE deep p.71/Austria)",
+     "pages": "WE deep p.71 (Austria p.14)"
+    },
+    {
+     "name": "Austria per-country — Value of cash withdrawals (Fig 4.8): annual value + avg per-ATM value + value as % of GDP",
+     "unit": "EUR bn / USD bn; EUR/USD '000 per ATM; % of GDP",
+     "scope": "per-country (Austria)",
+     "footprint_countries": [
+      "AT"
+     ],
+     "years": "2018-2022 (history)",
+     "has_forecast": false,
+     "sample": "Austria value EUR 45->41bn (USD 54->43bn); value as % of GDP 11.8% (2018) -> 8.7% (2022) (WE deep p.72)",
+     "pages": "WE deep p.72 (Austria p.15)"
+    },
+    {
+     "name": "Austria per-country — Forecast cash withdrawal number & value (Fig 7.4 & 7.5)",
+     "unit": "million withdrawals; per ATM; EUR bn value; EUR per withdrawal",
+     "scope": "per-country forecast (Austria)",
+     "footprint_countries": [
+      "AT"
+     ],
+     "years": "2018-2028 (forecast 2023-2028)",
+     "has_forecast": true,
+     "sample": "Austria withdrawals ~178m (2023) easing to ~165m (2028, ~-1%/yr); avg withdrawal value rises ~EUR 170 (2018) -> ~EUR 295 (2028) (WE deep p.93)",
+     "pages": "WE deep p.93 (Austria p.36)"
+    },
+    {
+     "name": "Romania per-country — Number & Value of cash withdrawals (Fig 4.5/4.6) incl. cash share, avg value, % of GDP",
+     "unit": "million; per ATM/month; RON bn / USD bn; RON/USD per withdrawal; % of GDP; % cash share",
+     "scope": "per-country (Romania)",
+     "footprint_countries": [
+      "RO"
+     ],
+     "years": "2018-2022 (history); forecast Sec 6.3 to 2028",
+     "has_forecast": true,
+     "sample": "Romania 295m withdrawals 2022 (+5%); cash = 70% of ATM transactions; value RON 198->265bn (USD 51->57bn); avg withdrawal RON 898 (USD 192); value as % GDP 18.8% (2022) (CEE deep p.268-269)",
+     "pages": "CEE deep p.268-269 (Romania p.10-11); forecast Romania Sec 6.3"
+    },
+    {
+     "name": "Bulgaria per-country — Number & Value of cash withdrawals (Fig 4.5/4.6/6.4/6.5) incl. avg value, per-ATM value, % of GDP",
+     "unit": "million; per ATM/month; BGN bn / USD bn; BGN/USD per withdrawal; % of GDP",
+     "scope": "per-country (Bulgaria)",
+     "footprint_countries": [
+      "BG"
+     ],
+     "years": "2018-2022 (history) + 2023-2028 forecast",
+     "has_forecast": true,
+     "sample": "Bulgaria 136m withdrawals 2022 (+9%); avg 2,216/ATM/mo (highest in 5 yrs); value BGN 26->45bn (USD 15->24bn); value as % of GDP 23.2%->27.1%; forecast value BGN 78bn (USD 42bn) by 2028 (CEE deep p.96-97, p.101)",
+     "pages": "CEE deep p.96-97 (Bulgaria p.11-12); forecast p.101 (Bulgaria p.16-17)"
+    },
+    {
+     "name": "Czechia per-country — Number & Value of cash withdrawals (Fig 4.5/4.6/6.4/6.5) incl. cash share, avg value, % of GDP",
+     "unit": "million; per ATM/month; CZK bn / USD bn; CZK/USD per withdrawal; % of GDP; % cash share",
+     "scope": "per-country (Czechia)",
+     "footprint_countries": [
+      "CZ"
+     ],
+     "years": "2018-2022 (history) + 2023-2028 forecast",
+     "has_forecast": true,
+     "sample": "Czechia 148m withdrawals 2022 (+5%); cash share fell 70%->63%; avg 2,187/ATM/mo; value CZK 702->761bn (USD 32->33bn); value % GDP 13.0%->11.2%; forecast 128m withdrawals & 1,787/ATM/mo by 2028 (CEE deep p.149-150, p.155)",
+     "pages": "CEE deep p.149-150 (Czechia p.13-14); forecast p.155 (Czechia p.19)"
+    },
+    {
+     "name": "Hungary per-country — Number & Value of cash withdrawals (Fig 4.5/4.6) incl. cash share, avg value, per-ATM value, % of GDP",
+     "unit": "million; per ATM/month; HUF bn / USD bn; HUF/USD per withdrawal; % of GDP; % cash share",
+     "scope": "per-country (Hungary)",
+     "footprint_countries": [
+      "HU"
+     ],
+     "years": "2018-2022 (history); forecast Sec 6.3 to 2028",
+     "has_forecast": true,
+     "sample": "Hungary 92m withdrawals 2022; cash share 91%->85%; avg 1,586/ATM/mo (lowest-but-one in CEE, 0.6% withdrawal tax); value HUF 7,281->8,827bn (USD 27->24bn); avg withdrawal HUF 95,631 (USD 257); value % GDP 16.6%->14.2% (CEE deep p.172-173)",
+     "pages": "CEE deep p.172-173 (Hungary p.13-14)"
+    },
+    {
+     "name": "Slovakia per-country — Number & Value of cash withdrawals (Fig 4.5/4.6) incl. cash share, avg value, % of GDP",
+     "unit": "million; per ATM/month; EUR bn / USD bn; EUR/USD per withdrawal; % of GDP; % cash share",
+     "scope": "per-country (Slovakia)",
+     "footprint_countries": [
+      "SK"
+     ],
+     "years": "2018-2022 (history); forecast Sec 6.3 to 2028",
+     "has_forecast": true,
+     "sample": "Slovakia 81m withdrawals 2022 (+13% number); cash = 75% of ATM transactions; avg 2,110/ATM/mo; value EUR 15->20bn (USD 18->21bn); avg withdrawal EUR 252 (USD 265); value % GDP 16.4%->18.9% (CEE deep p.364-365)",
+     "pages": "CEE deep p.364-365 (Slovakia p.10-11)"
+    },
+    {
+     "name": "Croatia per-country — Number & Value of cash withdrawals (Fig 4.5/4.6/6.4/6.5) incl. cash share, avg value, % of GDP",
+     "unit": "million; per ATM/month; EUR bn / USD bn; EUR/USD per withdrawal; % of GDP; % cash share",
+     "scope": "per-country (Croatia)",
+     "footprint_countries": [
+      "HR"
+     ],
+     "years": "2018-2022 (history) + 2023-2028 forecast",
+     "has_forecast": true,
+     "sample": "Croatia 98m withdrawals 2022 (-1% CAGR); cash = 76% of ATM transactions; avg 1,685/ATM/mo; value EUR 10->12bn (USD 12->13bn); value % GDP 20.0%->17.8% (CEE deep p.123)",
+     "pages": "CEE deep p.123 (Croatia p.14); forecast p.128 (Croatia p.19)"
+    },
+    {
+     "name": "Serbia per-country — Number & Value of cash withdrawals (Fig 4.5/4.6) incl. avg per-ATM, avg value",
+     "unit": "million; per ATM/month; RSD bn / USD bn; RSD/USD per withdrawal",
+     "scope": "per-country (Serbia)",
+     "footprint_countries": [
+      "RS"
+     ],
+     "years": "2018-2022 (history); forecast Sec 6.3 to 2028",
+     "has_forecast": true,
+     "sample": "Serbia 89/93/75/77/76m withdrawals; avg 2,734/ATM/mo 2022 (2nd highest in CEE); value RSD 1.4tn (USD 13bn) 2022 (+15%); avg withdrawal RSD 13,876 (USD 124) (CEE deep p.342-343)",
+     "pages": "CEE deep p.342-343 (Serbia p.10-11); forecast p.347 (Serbia p.15)"
+    },
+    {
+     "name": "Ukraine per-country — Number & Value of cash withdrawals (Fig 4.7/4.8) incl. cash share, avg value, per-ATM value, % of GDP",
+     "unit": "million; per ATM/month; UAH bn / USD bn; UAH/USD per withdrawal; % of GDP; % cash share",
+     "scope": "per-country (Ukraine)",
+     "footprint_countries": [
+      "UA"
+     ],
+     "years": "2018-2022 (history); forecast in regional Fig 3.8/3.10",
+     "has_forecast": true,
+     "sample": "Ukraine 842->514m withdrawals (war-driven -34% in 2022); cash 80%->77% of ATM transactions; avg 2,483/ATM/mo; value UAH 1,579->2,355bn (USD 58->72bn); avg withdrawal UAH 4,577 (USD 140); value % GDP 44.4%->51.5% (CEE deep p.391-392)",
+     "pages": "CEE deep p.391-392 (Ukraine p.15-16)"
+    },
+    {
+     "name": "Albania (secondary) — Number & Value of cash withdrawals (Fig 3.4/3.5) incl. avg per-ATM, avg value, % of GDP",
+     "unit": "million; per ATM/month; ALL bn / USD bn; ALL/USD per withdrawal; % of GDP",
+     "scope": "per-country (Albania, secondary market — no cash-share, no forecast)",
+     "footprint_countries": [
+      "AL"
+     ],
+     "years": "2018-2022 (history only)",
+     "has_forecast": false,
+     "sample": "Albania 16/16/16/18/20m withdrawals (CAGR +4.5%); avg 1,945/ATM/mo 2022; value ALL 174->280bn (USD 2.5bn); avg withdrawal ALL 14,233 (USD 126); value % GDP 11.9%->13.1% (CEE deep p.430-431)",
+     "pages": "CEE deep p.430-431 (Albania p.6-7)"
+    },
+    {
+     "name": "North Macedonia (secondary) — Number & Value of cash withdrawals (Fig 3.3/3.4) incl. avg per-ATM, avg value, % of GDP",
+     "unit": "million; per ATM/month; MKD bn / USD bn; MKD/USD per withdrawal; % of GDP",
+     "scope": "per-country (North Macedonia, secondary market — no cash-share, no forecast)",
+     "footprint_countries": [
+      "MK"
+     ],
+     "years": "2018-2022 (history only)",
+     "has_forecast": false,
+     "sample": "North Macedonia 28/28/25/28/29m withdrawals (CAGR +1.0%); avg 2,426/ATM/mo 2022; value MKD 144->187bn (USD ~3bn); avg withdrawal MKD 6,434 (USD ~12); value % GDP 21.8%->23.4% (CEE deep p.559-560)",
+     "pages": "CEE deep p.559-560 (North Macedonia p.5-6)"
+    },
+    {
+     "name": "Slovenia (secondary) — cash withdrawal series",
+     "unit": "n/a (limited; secondary-market chapter focuses on banking structure, networks, density, forecast installed base)",
+     "scope": "per-country (Slovenia, secondary — withdrawal time-series not captured in the deep-read window p.563-570; primarily banking/network/density data)",
+     "footprint_countries": [
+      "SI"
+     ],
+     "years": "n/a in captured pages",
+     "has_forecast": false,
+     "sample": "Slovenia chapter present (p.563-570) but cash-withdrawal volume/value table not captured; treat coverage as a GAP pending re-check (CEE deep p.563-570)",
+     "pages": "CEE deep p.563-570 (Slovenia)"
+    }
+   ],
+   "recommended_plots": [
+    {
+     "title": "Footprint cash-withdrawal volume trend & forecast (2018-2028): per-country small multiples",
+     "chart_type": "multi-country line (small multiples, indexed million withdrawals/yr)",
+     "metrics": [
+      "Annual number of cash withdrawals (million)",
+      "2023-2028 forecast"
+     ],
+     "scope": "per-country comparison across the footprint",
+     "why": "Single clearest read on the structural shift away from cash: shows which footprint markets are still growing cash demand (BG, RO, RS, HR) vs declining (HU, CZ, SK, UA, GR, AT) — directly informs where ATM/cash-handling investment pays off.",
+     "coverage": "11 of 17 with full history+forecast (GR, AT, RO, BG, HU, CZ, SK, HR, RS, UA, plus regional aggregates); AL & MK history-only (no forecast); SI/CY/ME/XK/BA missing. ~11 years per series (2018-2028)."
+    },
+    {
+     "title": "Average withdrawal value vs withdrawals per ATM per month (2022 vs 2028F): fewer, bigger withdrawals",
+     "chart_type": "scatter / dual-axis bar (avg withdrawal value USD on one axis, withdrawals per ATM/month on other)",
+     "metrics": [
+      "Average value of a cash withdrawal (USD)",
+      "Withdrawals per ATM per month",
+      "2022 vs 2028 forecast"
+     ],
+     "scope": "per-country comparison",
+     "why": "Captures the universal RBR theme — consumers visit ATMs less often but withdraw larger sums (inflation + cashless shift). Tells a C-level whether per-machine economics hold up: rising value per machine can offset falling transaction counts.",
+     "coverage": "9 footprint countries with both metrics 2022 and a 2028 anchor (GR, AT, RO, BG, HU, CZ, SK, HR, RS); UA value forecast via regional table. AL/MK 2022 only. ~6 missing (SI, CY, ME, XK, BA, plus AL/MK no forecast)."
+    },
+    {
+     "title": "Cash intensity of the economy: cash-withdrawal value as % of GDP (2018-2022)",
+     "chart_type": "multi-country line / slope chart",
+     "metrics": [
+      "Cash withdrawal value as a proportion of GDP (%)"
+     ],
+     "scope": "per-country comparison",
+     "why": "A crisp macro proxy for how cash-reliant each footprint economy still is and how fast it is de-cashing — flags long-run demand risk for ATM/cash businesses (e.g. Ukraine 51.5%, Bulgaria 27.1%, Greece 26.7% vs Czechia 11.2%, Austria 8.7%).",
+     "coverage": "10 footprint countries with the explicit %-of-GDP series (GR, AT, RO, BG, HU, CZ, SK, HR, UA, AL, MK = 11; SK & HR confirmed). History 2018-2022 only (no GDP-ratio forecast). Missing: SI, RS (not captured), CY, ME, XK, BA."
+    },
+    {
+     "title": "Cash withdrawals as a share of all ATM transactions (2018-2022): ATMs diversifying beyond cash",
+     "chart_type": "multi-country line",
+     "metrics": [
+      "Cash withdrawals as a share of ATM transactions (%)"
+     ],
+     "scope": "per-country comparison",
+     "why": "Shows how fast ATMs are pivoting to deposits, bill payment and transfers — central to the recycling/deposit-ATM investment case and to vendor/hardware strategy (e.g. Greece down to 54%, Czechia 63%, Croatia 76%, Austria steady ~87%).",
+     "coverage": "7 footprint countries with the explicit cash-share series (GR, AT, RO, CZ, SK, HR, UA; plus HU). History 2018-2022 only. Missing/not-reported for BG (reports number-growth instead), RS, AL, MK, SI, CY, ME, XK, BA."
+    }
+   ],
+   "coverage_summary": "Coverage is strong for the core footprint: 9 footprint countries (GR, AT in the WE volume; RO, BG, HU, CZ, SK, HR, RS, UA in the CEE volume) have full per-country cash-withdrawal series — annual number and value, withdrawals per ATM per month, average withdrawal value, withdrawal value as % of GDP, and (for most) cash as a share of ATM transactions — covering 2018-2022 with 2023-2028 forecasts (number and value) at both regional and country level. Greece and Bulgaria/Czechia/Croatia even have full 1995-2028 annex time series. Two secondary CEE markets, Albania and North Macedonia, add lighter 2018-2022 history (number, value, avg value, % of GDP) but no forecast and no cash-transaction-share. The clear gaps are six footprint countries with little or no cash-usage data: Cyprus (WE secondary — only ATM count/density/forecast), Montenegro and Kosovo (not covered as standalone chapters), Bosnia & Herzegovina (count/density only), and Slovenia (chapter exists but the withdrawal volume/value table was not captured in the deep-read window). All cross-country comparisons should note that RBR transaction figures are \"primary markets only,\" and most value series carry both local-currency and USD figures (USD trends are distorted by 2022 currency depreciation, so local-currency or %-of-GDP framings are safer for C-level comparison)."
+  },
+  {
+   "topic": "Operators, IADs & manufacturers (ATM deployer landscape, independent ATM deployers, and installed base by manufacturer) — RBR \"ATM Market & Forecasts to 2028\", CEE and Western Europe volumes",
+   "tables": [
+    {
+     "name": "CEE regional ATMs by deployer type (Banks vs IADs) — Figure 1.5",
+     "unit": "ATMs (installed base, units)",
+     "scope": "regional (CEE aggregate, 12 primary markets)",
+     "footprint_countries": [
+      "RO",
+      "BG",
+      "HU",
+      "CZ",
+      "SK",
+      "HR",
+      "RS",
+      "UA"
+     ],
+     "years": "2021 & 2022 (two points; no forecast in this table)",
+     "has_forecast": false,
+     "sample": "CEE IADs 17,613 (2021) -> 17,839 (2022), +226; Banks 218,668 (2022). IAD share rose 7%->8%. (CEE deep p.24, lines 163-169)",
+     "pages": "CEE deep-read p.24 (printed p.6)"
+    },
+    {
+     "name": "Western Europe regional ATMs by deployer type (Banks vs IADs) — Figure 1.5",
+     "unit": "ATMs (installed base, units)",
+     "scope": "regional (Western Europe aggregate)",
+     "footprint_countries": [
+      "GR",
+      "AT",
+      "CY"
+     ],
+     "years": "2021 & 2022 (two points; no forecast)",
+     "has_forecast": false,
+     "sample": "WE IADs 58,771 (2021) -> 63,896 (2022), +5,125 = 18% of WE base; Banks 288,874 (2022). (WE deep p.26, lines 227-230)",
+     "pages": "WE deep-read p.26"
+    },
+    {
+     "name": "IAD-deployed ATMs per country & IAD share of national base (narrative, derived series)",
+     "unit": "ATMs (IAD units) and % share of national installed base",
+     "scope": "per-country",
+     "footprint_countries": [
+      "RO",
+      "BG",
+      "HU",
+      "CZ",
+      "SK",
+      "HR",
+      "RS",
+      "UA",
+      "SI",
+      "GR",
+      "CY",
+      "AT"
+     ],
+     "years": "end-2022 (single point; plus a 2028 directional note for some markets, e.g. Serbia IAD +75% 2022-2028)",
+     "has_forecast": false,
+     "sample": "Of-which-IADs (end-2022, from each country Figure 1.1): CZ 953, HU 762, HR 580, UA 406, RO 515, SK 371, RS 178, SI 90, BG 70; share of national base PL 64%, CZ 17%, HU 16%, HR 12%, SK 12%; WE: CY 391 (51%/55% share via Euronet), AT 1,694, GR 1,404, IADs absent (0) in many markets. (CEE p.25 lines 175-179; CY WE p.803 line 9600; AT WE p.693; GR WE p.327)",
+     "pages": "CEE deep p.24-25, plus each country Figure 1.1 (CZ p.140, HU p.165, HR p.111, SK p.355, RS p.336, UA p.380, SI p.565, RO p.259, BG p.99); WE Figure 1.1 GR p.327, CY p.803, AT p.55"
+    },
+    {
+     "name": "Largest 25 deployers in CEE — Figure 1.7",
+     "unit": "ATMs (installed base, units) + change",
+     "scope": "regional (CEE, top-25 ranked list of banks + IADs)",
+     "footprint_countries": [
+      "RO",
+      "HU",
+      "UA"
+     ],
+     "years": "2021 & 2022 (two points; no forecast)",
+     "has_forecast": false,
+     "sample": "#1 Sberbank (Russia) 44,803 (2022); #3 Euronet (Poland, IAD) 6,979; #4 PrivatBank (Ukraine) 7,965->6,718; #5 Planet Cash (Poland, IAD) 6,609; Euronet was 3rd-largest deployer in all CEE. Top-25 = 57% of CEE base. Among footprint deployers only mBank/Tinkoff etc.; Ukraine's PrivatBank and IADs appear. (CEE deep p.28, lines 210-224)",
+     "pages": "CEE deep-read p.28-30 (Figure 1.7 + narrative)"
+    },
+    {
+     "name": "Largest 25 deployers in Western Europe — Figure 1.7",
+     "unit": "ATMs (installed base, units) + change",
+     "scope": "regional (Western Europe, top-25 ranked list of banks + IADs)",
+     "footprint_countries": [],
+     "years": "2021 & 2022 (two points; no forecast)",
+     "has_forecast": false,
+     "sample": "#1 Cashzone (UK, IAD) 15,379; #3 CaixaBank (Spain) 11,605; #4 Brink's (France, IAD) 9,869 (+7,449); #5 NoteMachine (UK, IAD) 9,104; #24 Euronet (Spain, IAD) 3,500. Top-25 = 46% of WE base. No GR/AT/CY deployer is in WE top-25 (all those countries' deployers sit in 'Others'). (WE deep p.30, lines 269-297)",
+     "pages": "WE deep-read p.30-31 (Figure 1.7 + narrative)"
+    },
+    {
+     "name": "Per-country 'ATMs by deployer' (every bank + IAD, named) — Figure 3.1 (CEE country chapters) / Figure 3.3 (Croatia in-service) / Figure 2.3 (Cyprus) / Figure 1.5 country (WE)",
+     "unit": "ATMs (installed base, units) by named deployer + change",
+     "scope": "per-country (full ranked list of every deployer incl. IADs)",
+     "footprint_countries": [
+      "RO",
+      "BG",
+      "HU",
+      "CZ",
+      "SK",
+      "HR",
+      "RS",
+      "UA",
+      "SI",
+      "GR",
+      "AT",
+      "CY"
+     ],
+     "years": "2021 & 2022 (two points per country; no forecast)",
+     "has_forecast": false,
+     "sample": "Czechia (Fig 3.1): CS 1,450, CSOB 1,022, KB 850, Euronet(IAD) 650, Pharro Praha(IAD) 218, ATM Point(IAD) 60, Travelex(IAD) 25, total 5,646. Croatia (Fig 3.3, in service): Zaba 840, PBZ 750, Erste 703, Euronet(IAD) 321, Auro Domus(IAD) 120, Planet Cash(IAD) 101. (CEE deep CZ p.143 lines 1713-1731; HR p.117 lines 1373-1389)",
+     "pages": "CEE deep-read: CZ p.143, HR p.117, HU p.168, RO ~p.262, SK ~p.357, BG p.91, RS ~p.340, UA ~p.384, SI ~p.569; WE deep: GR, AT, CY ATMs-by-deployer figures"
+    },
+    {
+     "name": "CEE regional manufacturer market shares (installed base) — Figure 2.1",
+     "unit": "ATMs (installed base, units) by manufacturer + % share + CAGR 2018-22",
+     "scope": "regional (CEE aggregate)",
+     "footprint_countries": [
+      "RO",
+      "BG",
+      "HU",
+      "CZ",
+      "SK",
+      "HR",
+      "RS",
+      "UA",
+      "SI"
+     ],
+     "years": "2018-2022 (5 annual points + CAGR; no forecast)",
+     "has_forecast": false,
+     "sample": "end-2022 CEE: Diebold Nixdorf 38% (largest), NCR 36%, Hyosung Innovae 21% (48,714 units, +21.2% CAGR, mostly Russia), plus GRG/OKI/Others. (CEE deep p.43, lines 488-501)",
+     "pages": "CEE deep-read p.43 (Figure 2.1 chart + table)"
+    },
+    {
+     "name": "Per-country manufacturer market shares (installed base by manufacturer) — Figure 5.1 (CEE) / Figure 5.1 (WE)",
+     "unit": "ATMs (installed base, units) by manufacturer + % share + CAGR 2018-22",
+     "scope": "per-country",
+     "footprint_countries": [
+      "RO",
+      "BG",
+      "HU",
+      "CZ",
+      "SK",
+      "HR",
+      "RS",
+      "UA",
+      "SI",
+      "GR",
+      "AT"
+     ],
+     "years": "2018-2022 (5 annual points per country + CAGR; no forecast)",
+     "has_forecast": false,
+     "sample": "Romania 2022: NCR 5,807 (58%), Diebold Nixdorf 3,913 (39%), GRG 193 (2%), KEBA 131 (1%). Austria 2022: Diebold Nixdorf 5,585 (63%), NCR 1,921 (22%), KEBA 1,427 (16%). Greece 2022: NCR 4,009 (55%), Diebold Nixdorf 3,203 (44%), Triton 49 (<1%). (CEE deep RO p.270 lines 3216-3220, AT WE p.73 lines 903-906, GR WE p.336 lines 3966-3969)",
+     "pages": "CEE deep: BG p.98, CZ p.151, HU p.174, HR p.125, RO p.270, RS p.344, SK p.366, UA p.393, SI p.574; WE deep: GR p.336, AT p.73"
+    },
+    {
+     "name": "Manufacturer share — narrative-only footprint markets (no per-vendor unit table)",
+     "unit": "% share of installed base by manufacturer (text only)",
+     "scope": "per-country",
+     "footprint_countries": [
+      "CY"
+     ],
+     "years": "end-2022 (single point)",
+     "has_forecast": false,
+     "sample": "Cyprus: no Figure 5.1 manufacturer table in the secondary-market chapter; only NCR Atleos noted as report sponsor. No vendor split published for CY. (WE deep p.803-816)",
+     "pages": "WE deep-read p.803-816 (Cyprus chapter)"
+    },
+    {
+     "name": "Outsourcing / service & maintenance and ATM-as-a-Service (cash replenishment, FLM, SLM by deployer; AaaS mentions)",
+     "unit": "% of ATMs outsourced / ATMs serviced by provider; AaaS = qualitative",
+     "scope": "per-country (selected markets) + definitional",
+     "footprint_countries": [
+      "AT",
+      "GR"
+     ],
+     "years": "end-2022 (single point); AaaS narrative only",
+     "has_forecast": false,
+     "sample": "Austria: 41% of branch ATMs outsource cash replenishment; IAD Fiserv fully outsources. Greece: G4S refills 39% of ATMs (largest), Brink's 14%, in-house ~one third. ATM-as-a-Service: Finland Forex Bank deploys 7 ATMs under an AaaS agreement with Diebold Nixdorf; CEE methodology defines IAD/AaaS models. (AT WE p.84 line 1000; GR WE p.347 line 4092; WE p.27 line 236)",
+     "pages": "WE deep: AT p.84, GR p.347, FI p.27; CEE methodology p.~12"
+    }
+   ],
+   "recommended_plots": [
+    {
+     "title": "Installed base by manufacturer across our 17 footprint markets, end-2022",
+     "chart_type": "stacked-bar (one bar per country, segments = Diebold Nixdorf / NCR / GRG / KEBA / Hyosung / Triton / OKI / other)",
+     "metrics": [
+      "ATM units by manufacturer per country (end-2022)",
+      "manufacturer % share per country"
+     ],
+     "scope": "per-country comparison",
+     "why": "Shows where the addressable hardware base sits and which vendor incumbents must be displaced or partnered with per market — the single most actionable view for a C-level planning ATM hardware/service deals. Reveals e.g. NCR strongholds (RO 58%, BG 83%, GR 55%, SI 55%) vs Diebold Nixdorf strongholds (AT 63%, HR 67%, RS 69%, UA 83%, SK 59%) and the GRG inroad (HU/SK via Triton, KZ).",
+     "coverage": "11 of 17 footprint countries have full per-vendor unit tables (RO, BG, HU, CZ, SK, HR, RS, UA, SI, GR, AT); CY has no vendor table; AL/BA/MK/ME/XK not separately reported (sit in 'Others'). Year: end-2022 (or any 2018-2022 year)."
+    },
+    {
+     "title": "Manufacturer installed base trend, 2018-2022 (footprint aggregate or per key market)",
+     "chart_type": "multi-line (one line per manufacturer)",
+     "metrics": [
+      "ATM units by manufacturer 2018-2022",
+      "CAGR 2018-22"
+     ],
+     "scope": "regional/per-country overview",
+     "why": "Captures momentum: Diebold Nixdorf and NCR shares broadly eroding while GRG (HU +41.8% CAGR, KZ) and Hyosung (CEE +21.2% CAGR) climb — signals which vendors are gaining and where the refresh cycle is opening. Helps a C-level decide vendor alignment for the next replacement wave.",
+     "coverage": "Same 11 footprint countries with 5-year vendor tables; cleanest as a small-multiples or aggregated view for RO/CZ/HU/HR/SK/RS/UA/SI/GR/AT/BG. 5 annual points (2018-2022). No vendor forecast to 2028 in the data."
+    },
+    {
+     "title": "IAD penetration: IAD-deployed ATMs and IAD share of national base, end-2022",
+     "chart_type": "bar (IAD units) with overlaid line/marker for IAD % share, one country each",
+     "metrics": [
+      "IAD-deployed ATM units (of-which-IADs)",
+      "IAD share % of national installed base"
+     ],
+     "scope": "per-country comparison",
+     "why": "Quantifies the non-bank deployment opportunity and competitive threat per market — where IADs (Euronet, Planet Cash, ATM Point, MoneyGet, Auro Domus, Pharro-Praha) are already large (PL-context, CY 51-55%, CZ 17%, HU 16%, HR/SK 12%) vs untapped (RO, BG, RS, SI single-digit; AL/BA/MK/ME none). Directly informs partner-vs-compete strategy in the as-a-service space.",
+     "coverage": "12-13 of 17 footprint countries have an IAD figure (RO, BG, HU, CZ, SK, HR, RS, UA, SI + GR, AT, CY); IADs are 0/absent in several secondary Balkan markets. Mostly end-2022 single point; a few have a 2028 directional note (e.g. Serbia IAD +75% by 2028)."
+    },
+    {
+     "title": "Largest ATM deployers in our footprint (top banks + IADs by country), end-2022",
+     "chart_type": "horizontal grouped bar (top 5-8 deployers per country) or a regional top-25 ranking bar",
+     "metrics": [
+      "ATM units by named deployer (2022) with 2021 change"
+     ],
+     "scope": "per-country comparison (with optional CEE/WE regional top-25 overlay)",
+     "why": "Identifies the concrete account targets and their fleet sizes/momentum in every market (e.g. CZ: CS 1,450, CSOB 1,022, Euronet 650; HR: Zaba 840, PBZ 750, Erste 703). A C-level uses this to size and prioritise the named-account pipeline and to see consolidation (top-25 = 57% of CEE, 46% of WE).",
+     "coverage": "All 12 reported footprint country chapters carry a full named 'ATMs by deployer' table (RO, BG, HU, CZ, SK, HR, RS, UA, SI, GR, AT, CY); 2021 & 2022 (two points). The 5 smallest Balkan markets (AL, BA, MK, ME, XK) are not separately reported."
+    }
+   ],
+   "coverage_summary": "Coverage of the deployer/IAD/manufacturer topic is strong for 12 of the 17 footprint countries and both regional aggregates. Every reported country chapter gives a full named 'ATMs by deployer' table (banks + IADs, 2021 & 2022) and an of-which-IADs count, and 11 countries (RO, BG, HU, CZ, SK, HR, RS, UA, SI, GR, AT) also publish a 5-year installed-base-by-manufacturer table (2018-2022 + CAGR) plus regional CEE Figure 2.1 and per-country WE Figure 5.1. The main gaps: (1) Cyprus has deployer and IAD data but no manufacturer/vendor split; (2) the five smallest footprint markets — Albania, Bosnia, North Macedonia, Montenegro, Kosovo — are not broken out at all (they fall inside 'Others'), so they have no deployer or vendor figures; and (3) there is no manufacturer forecast to 2028 (vendor data stops at end-2022) and IAD/deployer figures are almost all single-point or 2021/2022 only, with just scattered 2028 directional notes (e.g. Serbia IAD +75%). The richest C-level plots are therefore the end-2022 manufacturer-installed-base comparison (11 countries) and the per-country largest-deployer / IAD-penetration views (12 countries)."
+  },
+  {
+   "topic": "Bank branches & channel shift (branch counts/decline, branch density, branch-to-self-service/off-site shift, branch transformation)",
+   "tables": [
+    {
+     "name": "Bank branches — total count (Key metrics, Fig 1.1, single-year 2022)",
+     "unit": "branches (number)",
+     "scope": "per-country",
+     "footprint_countries": [
+      "GR",
+      "RO",
+      "BG",
+      "HU",
+      "CZ",
+      "SK",
+      "HR",
+      "SI",
+      "AT",
+      "CY",
+      "RS",
+      "UA",
+      "AL",
+      "BA",
+      "MK"
+     ],
+     "years": "2022 (single point in Fig 1.1; a 2021 comparator exists in the per-bank Fig 2.1/1.2 tables)",
+     "has_forecast": false,
+     "sample": "Romania 4,470 branches (2022, CEE p.3060); Greece 1,453 (2022, WE p.3819); Ukraine 5,336 (2022, CEE p.4560); Austria 3,180 (2022, WE p.696)",
+     "pages": "CEE: RO 3060, HU 1961, CZ 1646, SK 4337, HR (line ~1282), BG 995, RS 4053, UA 4560, AL 5182, BA 5647, MK 6685, SI 6797; WE: GR 3819, AT 696, CY 9603"
+    },
+    {
+     "name": "Branches by bank — Figure 2.1/1.2 (per-bank branch network, 2021 vs 2022 + change)",
+     "unit": "branches per bank (number) + YoY change",
+     "scope": "per-country (bank-level)",
+     "footprint_countries": [
+      "GR",
+      "RO",
+      "BG",
+      "HU",
+      "CZ",
+      "SK",
+      "HR",
+      "SI",
+      "AT",
+      "CY",
+      "RS",
+      "UA",
+      "AL",
+      "BA",
+      "MK"
+     ],
+     "years": "2021 & 2022 (two points + change column)",
+     "has_forecast": false,
+     "sample": "Greece: Eurobank 414→389 (-25), NBG 338→328 (-10), total 1,538→1,453 (-85) (p.3832-3842); Austria: Raiffeisen Group 1,338→1,286 (-52) (p.708); Cyprus total 451→399 (-52) (p.9614); Slovenia total 453→430 (-23) (p.6802); Albania total 431→418 (-13) (p.5204)",
+     "pages": "GR 3832-3843; AT 706-725; CY 9613-9614; SI 6804-6810; AL 5189-5205; BA 5655-5673; MK 6694-6707; plus CZ 1666, HU 1971, BG 1006, HR 1305, RS ~4090, UA, SK, RO Fig 2.1 chapters"
+    },
+    {
+     "name": "ATMs per 100 bank branches (branch-to-ATM density, Fig 1.1 / 4.2 / 3.2)",
+     "unit": "ATMs per 100 bank branches",
+     "scope": "per-country (with CEE avg 341 and WE avg 291 benchmarks)",
+     "footprint_countries": [
+      "GR",
+      "RO",
+      "BG",
+      "HU",
+      "CZ",
+      "SK",
+      "HR",
+      "SI",
+      "AT",
+      "CY",
+      "RS",
+      "UA",
+      "AL",
+      "BA",
+      "MK"
+     ],
+     "years": "2022 (single point in Fig 1.1; several chapters give the 2021 value in narrative, e.g. CZ 397→423, SI 315→329)",
+     "has_forecast": false,
+     "sample": "Greece 500 (rank 4 in WE; WE avg 291) (p.3821); Croatia 552 (rank 8 CEE; avg 341) (p.1417); Cyprus 245 (p.9605); Czech Republic 423, up from 397 in 2021 (p.1752)",
+     "pages": "CEE Fig 1.6 table p.184-199 (BG 268, HR 552, CZ 423, HU 317, RS 219, SK 322, UA 292, RO 225); per-country: AL 206 p.5184, BA 232 p.5649, MK 259 p.6687, SI 329 p.6800; WE: GR 500 p.3821, AT 281 p.698, CY 245 p.9605"
+    },
+    {
+     "name": "ATMs per 100 bank branches AND post offices (alt branch-density measure)",
+     "unit": "ATMs per 100 bank branches + post offices",
+     "scope": "per-country (CEE avg 147 / WE avg 176)",
+     "footprint_countries": [
+      "GR",
+      "RO",
+      "BG",
+      "HU",
+      "CZ",
+      "SK",
+      "HR",
+      "SI",
+      "AT",
+      "CY",
+      "RS",
+      "UA",
+      "MK"
+     ],
+     "years": "2022 (single point)",
+     "has_forecast": false,
+     "sample": "Croatia 253 (p.1418); Greece 330 (rank 2 WE; avg 176) (p.3893); Cyprus 197 (p.9651); Slovenia 160 (p.6883)",
+     "pages": "CEE Fig 1.6 table p.184-199 (BG 103, HR 253, CZ 124, HU 114, RS 106, SK 131, UA 102); MK 46 p.6737, SI 160 p.6883; WE: GR 330 p.3893, AT 251 p.808, CY 197 p.9651"
+    },
+    {
+     "name": "Regional bank-branch total & decline (Western Europe aggregate)",
+     "unit": "branches (number) + YoY % decline",
+     "scope": "regional (Western Europe)",
+     "footprint_countries": [
+      "GR",
+      "AT",
+      "CY"
+     ],
+     "years": "2021 & 2022 (2022 total with 2021 comparator); long-term decline narrative",
+     "has_forecast": false,
+     "sample": "Western Europe had 121,420 bank branches at end-2022, a decrease of 5% vs 2021; on average 291 ATMs per 100 branches (up from 289 in 2021 — branches closing faster than ATMs) (p.264)",
+     "pages": "WE p.264; WE Fig 1.1 121,432 p.171"
+    },
+    {
+     "name": "Regional branch-vs-off-site channel split — CEE narrative shares",
+     "unit": "% of regional ATM installed base by location relative to branch",
+     "scope": "regional (CEE)",
+     "footprint_countries": [
+      "GR",
+      "RO",
+      "BG",
+      "HU",
+      "CZ",
+      "SK",
+      "HR",
+      "SI",
+      "RS",
+      "UA"
+     ],
+     "years": "2018 & 2022 (TTW trend 15%→11%); 2022 shares",
+     "has_forecast": false,
+     "sample": "36% of CEE ATMs at bank branches; branch lobbies = 17% of regional base; TTW (through branch wall) fell from 15% (2018) to 11% (2022); branch halls 8% (p.281-284)",
+     "pages": "CEE p.277-284 (branch/off-site trends, Regional Analysis p.13)"
+    },
+    {
+     "name": "ATMs by location and country (Hall / Lobby / TTW / Off-site / Drive-through shares) — CEE Fig 1.9",
+     "unit": "% of each country's ATM estate by location (+ total ATMs)",
+     "scope": "per-country (CEE)",
+     "footprint_countries": [
+      "RO",
+      "BG",
+      "HU",
+      "CZ",
+      "SK",
+      "HR",
+      "RS",
+      "UA"
+     ],
+     "years": "2022 (single year)",
+     "has_forecast": false,
+     "sample": "Croatia off-site 77.2%, TTW 16.4%, lobby 6.5% (total 4,754); Serbia TTW 49.6%, off-site 37.1% (only primary CEE market <50% off-site); Ukraine off-site 70.3% (p.288-307)",
+     "pages": "CEE Fig 1.9 p.288-303"
+    },
+    {
+     "name": "ATMs by location and country (Hall / Lobby / TTW / Off-site / Drive-through shares) — WE Fig 1.9",
+     "unit": "% of each country's ATM estate by location (+ total ATMs)",
+     "scope": "per-country (Western Europe)",
+     "footprint_countries": [
+      "GR",
+      "AT"
+     ],
+     "years": "2022 (single year)",
+     "has_forecast": false,
+     "sample": "Greece off-site 66.3%, TTW 28.4%, hall 4.7%, lobby 0.6% (total 7,261); Austria lobby 52.9%, off-site 30.2%, TTW 16.6% (total 8,933) (p.331, 325)",
+     "pages": "WE Fig 1.9 p.323-343"
+    },
+    {
+     "name": "ATMs by location, 2018-2022 (regional channel-shift time series) — WE Fig 1.8",
+     "unit": "ATM counts & % share by location (Hall/Lobby/TTW/Off-site/Drive-through) + 4-yr CAGR",
+     "scope": "regional (Western Europe)",
+     "footprint_countries": [
+      "GR",
+      "AT",
+      "CY"
+     ],
+     "years": "2018-2022 (5 points, with CAGR)",
+     "has_forecast": false,
+     "sample": "Off-site share rose 36% (2018) → 40% (2022) while branch-based fell; Lobby -4.0% CAGR, TTW -4.0% CAGR, Hall -5.3% CAGR, Off-site -0.4% CAGR (off-site now largest category) (p.308-321)",
+     "pages": "WE Fig 1.8 p.308-321"
+    },
+    {
+     "name": "ATMs by location, 2018-2022 (per-country channel-shift time series) — country Fig 3.3",
+     "unit": "ATM counts (and shares) branch-based vs off-site, 5-year series",
+     "scope": "per-country",
+     "footprint_countries": [
+      "GR",
+      "CY",
+      "SI",
+      "AL",
+      "BA"
+     ],
+     "years": "2018-2022 (5 points, with CAGR)",
+     "has_forecast": false,
+     "sample": "Cyprus: branch-based 557 (2018) → 439 (2022) [58%→46%]; off-site 404 → 524 [42%→54%], off-site CAGR ~+6.7% (p.9655-9657); Slovenia ~72% off-site, little changed 2018-2022 (p.6907)",
+     "pages": "CY Fig 3.3 p.9655-9657; SI Fig 3.3 p.6894-6907; GR Fig 4.3 Locations p.3899; AL Fig 3.3 p.5239-5245; BA locations p.5752-5769"
+    },
+    {
+     "name": "Share of off-site ATMs (branch-shift headline metric, Fig 1.1)",
+     "unit": "% of installed base off-site (away from branch)",
+     "scope": "per-country",
+     "footprint_countries": [
+      "GR",
+      "RO",
+      "RS",
+      "SI"
+     ],
+     "years": "2022 (single point; primary-markets-only ranking)",
+     "has_forecast": false,
+     "sample": "Greece off-site share 66% (rank 5 WE; avg 40%) (p.3823); Romania 51% (p.3064); Slovenia ~72% (p.6907)",
+     "pages": "WE GR p.3823; CEE RO p.3064, RS ~4178, SI 6907"
+    },
+    {
+     "name": "Through-the-wall (TTW) ATM share & branch-closure linkage",
+     "unit": "% of ATMs at branch exterior wall (TTW)",
+     "scope": "per-country + regional",
+     "footprint_countries": [
+      "HU",
+      "RS",
+      "GR",
+      "AT",
+      "HR"
+     ],
+     "years": "2018 & 2022 (trend)",
+     "has_forecast": false,
+     "sample": "Hungary 15% of ATMs TTW; TakarékBank 69% / MKB 51% of fleet TTW (p.2064); Serbia very high TTW (49.6%) as banks favour branch-wall over costly off-site rental (p.299, 307); CEE TTW fell 15%→11% (p.283)",
+     "pages": "CEE p.283, 299, 307, HU 2064; WE p.346 (TTW narrative), AT 832"
+    },
+    {
+     "name": "Forecast bank-branch count (where given in narrative)",
+     "unit": "branches (number)",
+     "scope": "per-country (sparse)",
+     "footprint_countries": [],
+     "years": "to 2028 (forecast) — only for non-footprint markets in this excerpt",
+     "has_forecast": true,
+     "sample": "Denmark branches forecast to fall to 810 by end-2028 (non-footprint, WE p.2085); Belarus branch rationalisation narrative (non-footprint, CEE p.909). No explicit numeric branch forecast captured for the 17 footprint countries — branch decline is described qualitatively in forecast sections",
+     "pages": "WE Denmark p.2085 (illustrative, non-footprint); footprint chapters give ATM forecasts but branch outlook only as text"
+    }
+   ],
+   "recommended_plots": [
+    {
+     "title": "Branch density gap: ATMs per 100 bank branches across the Printec footprint, 2022",
+     "chart_type": "horizontal bar (ranked, with CEE-341 / WE-291 reference lines)",
+     "metrics": [
+      "ATMs per 100 bank branches (2022)"
+     ],
+     "scope": "per-country comparison",
+     "why": "Single clearest read on how far each market has shifted self-service load onto fewer branches; a high ratio (Greece 500, Croatia 552) flags markets where branches are thin and self-service must carry the channel — directly relevant to where Printec ATM/SST demand concentrates.",
+     "coverage": "15 of 17 footprint countries (all except Montenegro & Kosovo, which are tertiary markets with no branch data); 1 year (2022). A 2021 comparator exists in narrative for a few (CZ, SI) but not consistently."
+    },
+    {
+     "title": "The channel shift: branch-based vs off-site ATM mix by country, 2022",
+     "chart_type": "100% stacked horizontal bar (Hall+Lobby+TTW = branch-based vs Off-site)",
+     "metrics": [
+      "Hall %",
+      "Lobby %",
+      "TTW %",
+      "Off-site %"
+     ],
+     "scope": "per-country comparison",
+     "why": "Shows at a glance which markets have already moved ATMs off the branch (Greece 66% off-site, Croatia 77%, Ukraine 70%) versus branch-anchored ones (Serbia 37% off-site / 50% TTW, Austria 53% lobby). Tells a C-level where the branch-to-self-service migration is mature vs still ahead — i.e. where managed-services and off-site deployment growth lies.",
+     "coverage": "10-11 of 17 (RO, BG, HU, CZ, SK, HR, RS, UA from CEE Fig 1.9; GR, AT from WE Fig 1.9; CY, SI, AL, BA from country Fig 3.3). Mostly single-year 2022. No data for ME, XK."
+    },
+    {
+     "title": "Branch network contraction: bank branches 2021 vs 2022 (and % decline)",
+     "chart_type": "paired/dumbbell bar (2021 vs 2022) or sorted bar of % change",
+     "metrics": [
+      "Bank branches 2021",
+      "Bank branches 2022",
+      "YoY % change"
+     ],
+     "scope": "per-country comparison",
+     "why": "Quantifies the structural decline driving the whole self-service thesis — Greece -5% (13th straight year), Cyprus -13%, Slovenia -5%, Czechia -6% (7th year). Demonstrates to the board that physical-branch retreat is broad and persistent, underpinning recurring SST/managed-services demand.",
+     "coverage": "15 of 17 footprint countries have a 2021→2022 branch total from Fig 2.1/1.2 per-bank tables (sum to country total); 2 years. ME & XK absent."
+    },
+    {
+     "title": "Off-site ATM migration over time, branch-shift trajectory (5-year series)",
+     "chart_type": "multi-country line (off-site share %, 2018-2022)",
+     "metrics": [
+      "Off-site ATM share %",
+      "Branch-based ATM count vs off-site ATM count"
+     ],
+     "scope": "per-country comparison (overlay) / regional overview",
+     "why": "Trend evidence the shift is structural not cyclical — Cyprus off-site 42%→54%, WE region 36%→40%, Slovenia steady ~72%. A trajectory chart is more persuasive to executives than a single snapshot and frames the multi-year direction of branch decline.",
+     "coverage": "Honest gap: full 5-yr off-site series only for CY, SI, AL, BA (country Fig 3.3) plus the WE regional aggregate covering GR/AT/CY context; ~4-5 footprint countries with clean series, others only single-year 2022. Best paired with the regional WE Fig 1.8 line as the backdrop."
+    }
+   ],
+   "coverage_summary": "Branch & channel-shift data is strong for 15 of the 17 footprint countries: every CEE primary (RO, BG, HU, CZ, SK, HR, RS, UA) and the CEE secondary markets (AL, BA, MK, SI) carry a 2022 bank-branch count, a per-bank 'Branches by bank' table with a 2021 comparator and change column, and the 'ATMs per 100 bank branches' density measure; the WE volume covers GR, AT and CY (CY as a secondary market) the same way, including Cyprus's full 2018-2022 branch-based-vs-off-site time series. The branch-to-self-service/off-site shift is well documented via the ATMs-by-location figures (Fig 1.9 per-country for 2022; WE Fig 1.8 and several country Fig 3.3 for 2018-2022 trends) plus TTW-decline and 'off-site share' metrics. Key gaps: (1) Montenegro and Kosovo are tertiary markets with NO bank-branch or location data at all (only ATM/population/GDP density) — they cannot appear on any branch plot; (2) branch counts are essentially a 2022 snapshot with a 2021 comparator (no multi-year branch series and no numeric branch forecast to 2028 for the footprint — only ATM installed-base is forecast, with branch decline described qualitatively); and (3) the clean 5-year off-site time series exists for only ~4-5 footprint markets, so trend plots are sparser than snapshot plots."
+  },
+  {
+   "topic": "Density & cross-country benchmarking (ATMs per million people / per 100 bank branches / per 100 branches+post offices / per 1,000 km² / per USD bn GDP, with population & GDP context)",
+   "tables": [
+    {
+     "name": "CEE regional density master table — Figure 1.6 'ATM densities, 2022' (5 density measures for all 12 CEE primary markets + Others + CEE average)",
+     "unit": "ATMs per million people / per 100 bank branches / per 100 branches+post offices / per 1,000 km² / per USD bn GDP",
+     "scope": "regional (single 2022 snapshot, all CEE primary markets in one comparable table)",
+     "footprint_countries": [
+      "BG",
+      "HR",
+      "CZ",
+      "HU",
+      "RO",
+      "RS",
+      "SK",
+      "UA"
+     ],
+     "years": "2022 only (single snapshot; no forecast in this figure)",
+     "has_forecast": false,
+     "sample": "Croatia 1,180 ATMs per million people (rank 1, CEE avg 573); Ukraine 104 ATMs per USD bn GDP (highest in CEE); Czech Rep 19 ATMs per USD bn GDP (lowest). CEE deep-read p.26 (printed p.8).",
+     "pages": "CEE p.26 (printed p.8), narrative p.27"
+    },
+    {
+     "name": "WE regional density master table — Figure 1.6 'ATM densities, 2022' (5 density measures for all 17 WE primary markets + Others + WE average)",
+     "unit": "ATMs per million people / per 100 bank branches / per 100 branches+post offices / per 1,000 km² / per USD bn GDP",
+     "scope": "regional (single 2022 snapshot, all WE primary markets in one comparable table)",
+     "footprint_countries": [
+      "GR",
+      "AT"
+     ],
+     "years": "2022 only (single snapshot; no forecast in this figure)",
+     "has_forecast": false,
+     "sample": "Greece 699 ATMs per million / 499 per 100 branches / 55 per 1,000 km² / 33 per USD bn GDP; Austria 999 per million / 281 per 100 branches / 107 per 1,000 km². WE avg 691 per million. WE deep-read p.28.",
+     "pages": "WE p.28, narrative p.29"
+    },
+    {
+     "name": "CEE per-country Density measures — Figure 4.2/3.2 'Density measures, 2022' (5 measures vs CEE rank vs CEE average) — primary-market chapters",
+     "unit": "ATMs per million people / per 100 bank branches / per 100 branches+post offices / per 1,000 km² / per USD bn GDP",
+     "scope": "per-country (one Fig 4.2 table per country, each with the country value, its CEE rank, and the CEE average)",
+     "footprint_countries": [
+      "BG",
+      "HR",
+      "CZ",
+      "HU",
+      "RO",
+      "RS",
+      "SK",
+      "UA"
+     ],
+     "years": "2022 (value), with narrative also giving the 2021 value for the per-million and per-branch measures; no 2028 forecast of density",
+     "has_forecast": false,
+     "sample": "Croatia per-country p.119: 1,180 per million (rank 1) / 552 per 100 branches / 84 per 1,000 km² / 67 per USD bn GDP. Czech Rep p.146: 538 per million (down from 539 in 2021) / 423 per 100 branches (up from 397). Slovakia p.361: 564 per million (down from 588 in 2021).",
+     "pages": "Bulgaria p.93; Croatia p.119; Czech Rep p.146; Hungary p.169; Romania p.265; Serbia (Fig 4.2 ~p.~); Slovakia p.361; Ukraine (Fig 4.2 in Ukraine chapter)"
+    },
+    {
+     "name": "CEE secondary-market per-country Density measures — Figure 3.2 'Density measures, 2022' (5 measures vs CEE rank vs CEE average)",
+     "unit": "ATMs per million people / per 100 bank branches / per 100 branches+post offices / per 1,000 km² / per USD bn GDP",
+     "scope": "per-country (full 5-metric table in each secondary chapter)",
+     "footprint_countries": [
+      "AL",
+      "BA",
+      "MK",
+      "SI"
+     ],
+     "years": "2022 (value) + prior-year (2021) value quoted in narrative for the per-million measure; no density forecast",
+     "has_forecast": false,
+     "sample": "Slovenia p.570: 668 per million (rank 5, down from 679 in 2021) / 329 per 100 branches / 70 per 1,000 km² / 12 per USD bn GDP. North Macedonia p.558: 484 per million / 259 per 100 branches / 74 per USD bn GDP. Albania p.428: 303 per million (up from 290 in 2021) / 206 per 100 branches. Bosnia p.471: 478 per million / 232 per 100 branches / 61 per USD bn GDP.",
+     "pages": "Albania p.428; Bosnia & Herzegovina p.471; North Macedonia p.558; Slovenia p.570"
+    },
+    {
+     "name": "WE per-country Density measures — Figure 4.2/3.2 'Density measures, 2022' (5 measures vs WE rank vs WE average)",
+     "unit": "ATMs per million people / per 100 bank branches / per 100 branches+post offices / per 1,000 km² / per USD bn GDP",
+     "scope": "per-country (full 5-metric table in each chapter)",
+     "footprint_countries": [
+      "GR",
+      "AT",
+      "CY"
+     ],
+     "years": "2022 (value) + 2021 value in narrative for per-million / per-branch; no density forecast",
+     "has_forecast": false,
+     "sample": "Greece p.329: 699 per million (rank 10) / 500 per 100 branches (up from 467 in 2021) / 330 per branches+post (rank 2) / 33 per USD bn GDP. Cyprus p.810: 769 per million (rank 5, down from 839 in 2021) / 245 per 100 branches / 104 per 1,000 km² / 34 per USD bn GDP. Austria p.65: 999 per million (rank 2 in WE) / 281 per 100 branches / 107 per 1,000 km² / 19 per USD bn GDP.",
+     "pages": "Greece p.329; Cyprus p.810 (Cyprus Fig 3.2 page 8); Austria p.65"
+    },
+    {
+     "name": "CEE tertiary-market table — Figure 1 'ATMs by country (tertiary markets), 2022' (ATMs, population, GDP, area + 3 density measures; NO per-branch metric)",
+     "unit": "ATMs; Population (m); GDP (USD bn); Area (1,000 km²); ATMs per million people; ATMs per USD bn GDP; ATMs per 1,000 km²",
+     "scope": "per-country (compact tertiary-markets table; only 3 of the 5 density measures — per-million, per-USD-bn-GDP, per-1,000-km²; per-100-branches NOT provided)",
+     "footprint_countries": [
+      "ME",
+      "XK"
+     ],
+     "years": "2022 only for density; ATMs-per-million-people forecast 2023-2028 exists only at the tertiary-GROUP aggregate level (not per country)",
+     "has_forecast": false,
+     "sample": "Kosovo: 520 ATMs, pop 1.7m, GDP 9.4 USD bn, area 10.9k km², 313 per million, 56 per USD bn GDP, 48 per 1,000 km². Montenegro: 460 ATMs, pop 0.6m, GDP 6.1 USD bn, 734 per million, 75 per USD bn GDP, 33 per 1,000 km². CEE p.600.",
+     "pages": "CEE p.600 (Central and Eastern Europe: other countries, Figure 1)"
+    },
+    {
+     "name": "Regional vs World benchmark row — Figure 1.1 'Key metrics, 2022' (CEE / WE column + Rank + World column): population, bank branches, ATMs-per-100-branches, ATMs-per-million-people",
+     "unit": "Population (million); bank branches (count); ATMs per 100 bank branches; ATMs per million people; share of off-site ATMs (%); withdrawals per ATM/month",
+     "scope": "global / regional (gives the regional density AND the World average to benchmark against)",
+     "footprint_countries": [],
+     "years": "2022 (with 2021 value for per-million in narrative); also carries CAGR 2022-2028 ATM-count forecast growth (not a density forecast)",
+     "has_forecast": false,
+     "sample": "CEE: 573 ATMs per million people (rank 3) vs World 380; 341 per 100 branches (rank 3) vs World 305; pop 413m; branches 69,266. CEE p.19. WE: 691 per million (rank 2) vs World 380; 291 per 100 branches vs World 305; pop 511m. WE p.21.",
+     "pages": "CEE p.19 (Fig 1.1); WE p.21 (Fig 1.1)"
+    },
+    {
+     "name": "Per-country Key metrics, 2022 — population & GDP context (Figure 1.1 in secondary/WE chapters gives ATMs, population (m), bank branches and the two headline densities)",
+     "unit": "ATMs (count); Population (million); Bank branches (count); ATMs per 100 bank branches; ATMs per million people",
+     "scope": "per-country (population/branch context that underpins the density ratios)",
+     "footprint_countries": [
+      "GR",
+      "AT",
+      "CY",
+      "AL",
+      "BA",
+      "MK",
+      "SI"
+     ],
+     "years": "2022 (single snapshot); installed-base count has a 2028 forecast in Section 5 but the population/density context is 2022 only",
+     "has_forecast": false,
+     "sample": "Albania p.425 Key metrics: ATMs 860, pop 3m, branches 418, 206 per 100 branches, 303 per million. Austria p.~65 Fig 1.1 carries the 999 per-million headline. (CEE primary markets give population in the Fig 1.6 underlying data; tertiary in p.600 table.)",
+     "pages": "Albania p.425; Slovenia p.565; North Macedonia p.555; Bosnia p.~462; Greece p.321; Cyprus p.803; Austria p.65"
+    }
+   ],
+   "recommended_plots": [
+    {
+     "title": "ATM density vs population — 17-country benchmark, 2022 (ATMs per million people)",
+     "chart_type": "horizontal bar (sorted), with CEE-avg 573, WE-avg 691 and World-380 reference lines",
+     "metrics": [
+      "ATMs per million people (2022)"
+     ],
+     "scope": "per-country comparison across all 17 footprint markets vs regional and global averages",
+     "why": "The single clearest 'how saturated / how much white-space' signal for a C-level. Instantly shows Printec's over-served markets (Croatia 1,180, Austria 999, Cyprus 769) vs the growth headroom markets (Kosovo 313, Albania 303, Ukraine 359) against the World average of 380 — i.e. where the cash-access infrastructure is thin and addressable.",
+     "coverage": "All 17 of 17 countries; 1 year (2022). Every footprint country reports this metric (CEE primary/secondary, WE primary/secondary, and the two tertiary markets ME/XK)."
+    },
+    {
+     "title": "ATMs per 100 bank branches — branch-rationalisation pressure, 2022",
+     "chart_type": "horizontal bar (sorted) with CEE-avg 341 / WE-avg 291 / World-305 reference lines",
+     "metrics": [
+      "ATMs per 100 bank branches (2022)"
+     ],
+     "scope": "per-country comparison across 15 footprint markets",
+     "why": "Shows where branches are disappearing fastest relative to ATMs — the structural driver of self-service demand. Greece (500) and Croatia (552) screen as markets where ATMs are already carrying the branch-closure load, signalling recycling/upgrade opportunity; low ratios (Albania 206, Serbia 219) flag markets still branch-heavy with room for off-site/IAD expansion.",
+     "coverage": "15 of 17 countries; 1 year (2022). Missing only Montenegro and Kosovo — the per-100-branches metric is absent from the CEE tertiary-markets table (they report only per-million, per-GDP, per-km²)."
+    },
+    {
+     "title": "Density quadrant: economy size vs population coverage (ATMs per USD bn GDP vs ATMs per million people), 2022",
+     "chart_type": "scatter / bubble (x = ATMs per USD bn GDP, y = ATMs per million people, bubble = installed base or population)",
+     "metrics": [
+      "ATMs per USD bn GDP (2022)",
+      "ATMs per million people (2022)",
+      "population or installed base (bubble size)"
+     ],
+     "scope": "per-country positioning across all 17 footprint markets vs CEE/WE averages",
+     "why": "One slide that segments the portfolio: 'over-equipped relative to a small economy' (Ukraine 104/USD bn, Montenegro 75, North Macedonia 74 — fragile, war/FX-exposed) vs 'rich but under-penetrated' (Czech Rep 19/USD bn, Slovakia 28, Austria 19) where premium recycler upgrades, not net-new units, are the play. Lets the CEO see strategy per cluster at a glance instead of reading 17 chapters.",
+     "coverage": "All 17 of 17 countries; 1 year (2022). Both axes are reported for every footprint market including ME/XK (per-USD-bn-GDP and per-million are in the tertiary table)."
+    },
+    {
+     "title": "Multi-metric density radar / heatmap — footprint vs regional benchmark, 2022",
+     "chart_type": "heatmap (countries x 5 density measures, colour = rank vs regional average) or small-multiple radar",
+     "metrics": [
+      "per million people",
+      "per 100 bank branches",
+      "per 100 branches+post offices",
+      "per 1,000 km²",
+      "per USD bn GDP"
+     ],
+     "scope": "per-country full-profile comparison; regional/global overview via the averages overlaid",
+     "why": "Gives a complete saturation fingerprint per market in one view — e.g. Croatia is top on population AND geographic density but mid on GDP; Slovenia/Slovakia are geographically dense (70/65 per 1,000 km²) but economically light. Useful for prioritising sales/field-service investment and spotting markets that look saturated on one axis but have headroom on another.",
+     "coverage": "15 of 17 on all 5 metrics (CEE primary/secondary + GR/AT/CY); Montenegro and Kosovo cover only 3 of the 5 metrics (no per-branch measures). 1 year (2022)."
+    }
+   ],
+   "coverage_summary": "Density & cross-country benchmarking is the single best-covered topic in these reports for the footprint: a consistent five-measure 'Density measures, 2022' table (ATMs per million people, per 100 bank branches, per 100 branches+post offices, per 1,000 km², per USD bn GDP) exists for 15 of the 17 markets — all 8 CEE primary (BG, HR, CZ, HU, RO, RS, SK, UA), all 4 CEE secondary (AL, BA, MK, SI) and the 3 WE markets (GR, AT, CY) — each given as country value + rank + regional average, and the CEE/WE regional master tables (p.26 / p.28) put every primary market side-by-side. Population, bank-branch and GDP context underpinning the ratios is available throughout, and the global benchmark (World 380 per million, 305 per 100 branches) is carried in the regional Key-metrics tables. The two main gaps: (1) Montenegro and Kosovo appear only in the compact CEE tertiary-markets table (p.600) with just three of the five density measures — no per-100-branches figures; and (2) density is a 2022 snapshot only — there is no per-country density forecast to 2028 (only ATM-count forecasts), so all benchmark plots are single-year except a tertiary-group per-million projection that is not country-specific. Net: a C-level can get full 17-country saturation/white-space benchmarking for 2022, with 15/17 on the full metric set and 17/17 on the two headline ratios (per-million and per-USD-bn-GDP)."
+  },
+  {
+   "topic": "Forecasts to 2028 (forward projections: ATM installed base, ATM shipments new vs replacement, cash-withdrawal number & value, recycling/deposit growth) — per country and regional",
+   "tables": [
+    {
+     "name": "CEE regional Fig 3.2 — Forecast ATM installed base by country, 2023-2028",
+     "unit": "ATMs (units)",
+     "scope": "regional+per-country (CEE 12 primary markets, in one table)",
+     "footprint_countries": [
+      "BG",
+      "HR",
+      "CZ",
+      "HU",
+      "RO",
+      "RS",
+      "SK",
+      "UA"
+     ],
+     "years": "2023-2028 (all forecast) + CAGR 2022-2028",
+     "has_forecast": true,
+     "sample": "Romania 10,060 (2023) -> 10,150 (2028), CAGR +0.2%; Bulgaria 4,800 (2023) -> 4,400 (2028), CAGR -1.7%; CEE total 232,720 -> 231,895",
+     "pages": "CEE deep-read p.45 (line 509-525)"
+    },
+    {
+     "name": "CEE regional Fig 3.4 — Forecast ATM shipments by country, 2023-2028",
+     "unit": "ATMs shipped (units/yr)",
+     "scope": "regional+per-country (CEE 12 primary)",
+     "footprint_countries": [
+      "BG",
+      "HR",
+      "CZ",
+      "HU",
+      "RO",
+      "RS",
+      "SK",
+      "UA"
+     ],
+     "years": "2023-2028 + CAGR",
+     "has_forecast": true,
+     "sample": "Romania 739 (2023) -> 985 (2028), CAGR +5.9%; Ukraine 200 -> 550, CAGR +22.4%; CEE total 16,716 -> 24,875",
+     "pages": "CEE p.47 (line 535-551)"
+    },
+    {
+     "name": "CEE regional Fig 3.5 — Forecast replacements vs new installs as % of shipments (regional split)",
+     "unit": "% of shipments",
+     "scope": "regional (CEE aggregate)",
+     "footprint_countries": [
+      "BG",
+      "HR",
+      "CZ",
+      "HU",
+      "RO",
+      "RS",
+      "SK",
+      "UA"
+     ],
+     "years": "2023-2028",
+     "has_forecast": true,
+     "sample": "Replacements 84% (2023) rising to 91% (2028); new installs 16% -> ~9%",
+     "pages": "CEE p.48 (line 558)"
+    },
+    {
+     "name": "CEE regional Fig 3.6 — Forecast replacements as % of shipments by country, 2023-2028",
+     "unit": "% of shipments that are replacements",
+     "scope": "regional+per-country (CEE 12 primary)",
+     "footprint_countries": [
+      "BG",
+      "HR",
+      "CZ",
+      "HU",
+      "RO",
+      "RS",
+      "SK",
+      "UA"
+     ],
+     "years": "2023-2028 + CAGR",
+     "has_forecast": true,
+     "sample": "Croatia 52% (2023) -> 98% (2028); Romania ~96% flat; Ukraine 90% -> 69% (CAGR -5.2%)",
+     "pages": "CEE p.48 (line 560-576)"
+    },
+    {
+     "name": "CEE regional Fig 3.8 — Forecast total number of cash withdrawals by country, 2023-2028",
+     "unit": "million withdrawals/yr",
+     "scope": "regional+per-country (CEE 12 primary)",
+     "footprint_countries": [
+      "BG",
+      "HR",
+      "CZ",
+      "HU",
+      "RO",
+      "RS",
+      "SK",
+      "UA"
+     ],
+     "years": "2023-2028 + CAGR",
+     "has_forecast": true,
+     "sample": "Romania 300 (2023) -> 315 (2028), CAGR +1.0%; Czech Rep 146 -> 128, CAGR -2.6%; CEE total 4,338 -> 3,958",
+     "pages": "CEE p.50 (line 584-599)"
+    },
+    {
+     "name": "CEE regional Fig 3.10 — Forecast total value of cash withdrawals by country, 2023-2028",
+     "unit": "USD billion/yr",
+     "scope": "regional+per-country (CEE 12 primary)",
+     "footprint_countries": [
+      "BG",
+      "HR",
+      "CZ",
+      "HU",
+      "RO",
+      "RS",
+      "SK",
+      "UA"
+     ],
+     "years": "2023-2028 + CAGR",
+     "has_forecast": true,
+     "sample": "Bulgaria 29 (2023) -> 42 (2028), CAGR +8.0%; Romania 64 -> 82, CAGR +5.2%; CEE total 904 -> 1,033 (USD ~1.0 trillion)",
+     "pages": "CEE p.51 (line 614-628)"
+    },
+    {
+     "name": "CEE regional Fig 3.7 — Number of cash withdrawals 2018-2028 (annual + avg per ATM/month, history+forecast)",
+     "unit": "million withdrawals/yr (bars) + avg per ATM/month (line)",
+     "scope": "regional (CEE aggregate, primary markets only)",
+     "footprint_countries": [
+      "BG",
+      "HR",
+      "CZ",
+      "HU",
+      "RO",
+      "RS",
+      "SK",
+      "UA"
+     ],
+     "years": "2018-2022 actual + 2023-2028 forecast",
+     "has_forecast": true,
+     "sample": "Annual: ~4,500m (2022) declining to ~4,000m (2028); avg/ATM/month ~1,700-1,750 flat",
+     "pages": "CEE p.49 (line 581)"
+    },
+    {
+     "name": "CEE regional Fig 3.9 — Value of cash withdrawals 2018-2028 (annual + avg value, history+forecast)",
+     "unit": "USD billion/yr (bars) + USD avg per withdrawal (line)",
+     "scope": "regional (CEE aggregate)",
+     "footprint_countries": [
+      "BG",
+      "HR",
+      "CZ",
+      "HU",
+      "RO",
+      "RS",
+      "SK",
+      "UA"
+     ],
+     "years": "2018-2022 actual + 2023-2028 forecast",
+     "has_forecast": true,
+     "sample": "Avg value per withdrawal rises from USD 188 (2022) to USD 261 (2028); total to USD 1,033bn",
+     "pages": "CEE p.51-52 (line 612, 637)"
+    },
+    {
+     "name": "CEE regional Fig 3.1 + Annex Fig 4.1 — Number of ATMs 1995-2028 (long-run installed base, history+forecast)",
+     "unit": "ATMs (units) + change + growth% + withdrawals total/per-ATM",
+     "scope": "regional (CEE total)",
+     "footprint_countries": [
+      "BG",
+      "HR",
+      "CZ",
+      "HU",
+      "RO",
+      "RS",
+      "SK",
+      "UA"
+     ],
+     "years": "1995-2028 (forecast tail 2023-2028)",
+     "has_forecast": true,
+     "sample": "CEE base peak 256,106 (2013) -> 236,507 (2022) -> 231,895 (2028); withdrawals 4,516m (2022) -> 3,958m (2028)",
+     "pages": "CEE p.45 & p.53 annex (line 507, 639-675)"
+    },
+    {
+     "name": "WE regional Fig 3.1 — Forecast ATM installed base by country, 2023-2028",
+     "unit": "ATMs (units)",
+     "scope": "regional+per-country (WE 17 primary)",
+     "footprint_countries": [
+      "AT",
+      "GR"
+     ],
+     "years": "2023-2028 + CAGR",
+     "has_forecast": true,
+     "sample": "Greece 7,400 (2023) -> 7,250 (2028), CAGR -0.4%; Austria 8,975 -> 9,025 (CAGR +0.1%, only WE market broadly flat); WE total 344,581 -> 316,126",
+     "pages": "WE deep-read p.44 (line 472-492)"
+    },
+    {
+     "name": "WE regional Fig 3.3/3.4 — Forecast ATM shipments by country, 2023-2028",
+     "unit": "ATMs shipped (units/yr)",
+     "scope": "regional+per-country (WE 17 primary)",
+     "footprint_countries": [
+      "AT",
+      "GR"
+     ],
+     "years": "2023-2028 + CAGR",
+     "has_forecast": true,
+     "sample": "Greece 900 (2023) -> 600 (2028), CAGR -7.8%; Austria 590 -> 600 (CAGR +0.3%); WE total 27,658 -> 26,826",
+     "pages": "WE p.45-46 (line 499, 504-523)"
+    },
+    {
+     "name": "WE regional Fig 3.5 — Forecast replacements vs new installs as % of shipments (regional split)",
+     "unit": "% of shipments",
+     "scope": "regional (WE aggregate)",
+     "footprint_countries": [
+      "AT",
+      "GR"
+     ],
+     "years": "2023-2028",
+     "has_forecast": true,
+     "sample": "Replacements 91% (2023) rising to 96% (2028); new installs 9% -> 4%",
+     "pages": "WE p.46 (line 525-528)"
+    },
+    {
+     "name": "WE regional Fig 3.6 — Forecast replacements as % of shipments by country, 2023-2028",
+     "unit": "% of shipments that are replacements",
+     "scope": "regional+per-country (WE 17 primary)",
+     "footprint_countries": [
+      "AT",
+      "GR"
+     ],
+     "years": "2023-2028 + CAGR",
+     "has_forecast": true,
+     "sample": "Greece 90% (2023) -> 97% (2028); Austria 91% -> 98%; WE average 91% -> 96%",
+     "pages": "WE p.47 (line 533-552)"
+    },
+    {
+     "name": "WE regional Fig 3.8 — Forecast total number of cash withdrawals by country, 2023-2028",
+     "unit": "million withdrawals/yr",
+     "scope": "regional+per-country (WE 17 primary)",
+     "footprint_countries": [
+      "AT",
+      "GR"
+     ],
+     "years": "2023-2028 + CAGR",
+     "has_forecast": true,
+     "sample": "Greece 240 (2023) -> 227 (2028), CAGR -1%; Austria 185 -> 165, CAGR -2%; WE total 9,902 -> 9,446",
+     "pages": "WE p.49 (line 563-581)"
+    },
+    {
+     "name": "WE regional Fig 3.10 — Forecast total value of cash withdrawals by country, 2023-2028",
+     "unit": "USD billion/yr",
+     "scope": "regional+per-country (WE 17 primary)",
+     "footprint_countries": [
+      "AT",
+      "GR"
+     ],
+     "years": "2023-2028 + CAGR",
+     "has_forecast": true,
+     "sample": "Greece 59 (2023) -> 64 (2028), CAGR +1.6%; Austria 50 -> 52 (CAGR +0.7%); WE total 1,659 -> 2,017 (USD 2.0 trillion, +31% vs 2022)",
+     "pages": "WE p.51 (line 601-621)"
+    },
+    {
+     "name": "WE regional Fig 3.7 — Number of cash withdrawals 2018-2028 (annual + avg per ATM, history+forecast)",
+     "unit": "million withdrawals/yr (bars) + avg per ATM/month (line)",
+     "scope": "regional (WE aggregate)",
+     "footprint_countries": [
+      "AT",
+      "GR"
+     ],
+     "years": "2018-2022 actual + 2023-2028 forecast",
+     "has_forecast": true,
+     "sample": "Annual ~9,961m (2022) -> 9,446m (2028); avg/ATM/month rises 2,325 (2022) -> 2,491 (2028) as base shrinks faster",
+     "pages": "WE p.48 & annex p.52 (line 555-557, 660-672)"
+    },
+    {
+     "name": "WE regional Fig 3.9 — Value of cash withdrawals 2018-2028 (annual + avg value, history+forecast)",
+     "unit": "USD billion/yr (bars) + USD avg per withdrawal (line)",
+     "scope": "regional (WE aggregate)",
+     "footprint_countries": [
+      "AT",
+      "GR"
+     ],
+     "years": "2018-2022 actual + 2023-2028 forecast",
+     "has_forecast": true,
+     "sample": "Annual value ~1,540bn (2022) -> ~2,020bn (2028); avg value per withdrawal USD 155 (2022) -> 213 (2028)",
+     "pages": "WE p.50 (line 588-590, 621)"
+    },
+    {
+     "name": "WE regional Annex Fig 4.1 — Number of ATMs 1995-2028 (long-run installed base, history+forecast)",
+     "unit": "ATMs (units) + change + growth% + withdrawals",
+     "scope": "regional (WE total)",
+     "footprint_countries": [
+      "AT",
+      "GR"
+     ],
+     "years": "1995-2028 (forecast 2023-2028)",
+     "has_forecast": true,
+     "sample": "WE base peak 404,232 (2016) -> 352,770 (2022) -> 316,126 (2028), CAGR -1.8%",
+     "pages": "WE p.52 annex (line 623-673)"
+    },
+    {
+     "name": "Per-country Greece Fig 7.1/7.3 — Forecast installed base, shipments (new vs replacement split), density 2023-2028",
+     "unit": "ATMs; shipments split units; ATMs per million people",
+     "scope": "per-country (GR)",
+     "footprint_countries": [
+      "GR"
+     ],
+     "years": "2023-2028 + CAGR",
+     "has_forecast": true,
+     "sample": "GR ATMs 7,400 -> 7,250; shipments 900 -> 600; new installs 91 (2023) -> 20 (2028); density 713 -> 698 per million",
+     "pages": "WE p.354-355 (line 4181-4195)"
+    },
+    {
+     "name": "Per-country Croatia Fig 6.1/6.3/6.4/6.5 — Forecast installed base, shipments (new vs replacement), withdrawal number & value 2023-2028",
+     "unit": "ATMs; shipments split; withdrawals (million); value (EUR bn); density per million",
+     "scope": "per-country (HR)",
+     "footprint_countries": [
+      "HR"
+     ],
+     "years": "2023-2028 + CAGR",
+     "has_forecast": true,
+     "sample": "HR ATMs 4,700 -> 4,450 (CAGR -1.1%); shipments 210 -> 320; new installs 100 (2023) -> 5; replacements 52% -> 98%; density 1,166 -> 1,104/million",
+     "pages": "CEE p.126-129 (line 1499-1524)"
+    },
+    {
+     "name": "Per-country Slovenia Fig 5.1/5.3 — Forecast installed base, shipments (new vs replacement), density 2023-2028",
+     "unit": "ATMs; shipments split units; ATMs per million people",
+     "scope": "per-country (SI, secondary market)",
+     "footprint_countries": [
+      "SI"
+     ],
+     "years": "2023-2028 + CAGR",
+     "has_forecast": true,
+     "sample": "SI ATMs 1,370 (2023) -> 1,300 (2028), CAGR -1.0%; shipments 105 -> 125; new installs 10 -> 5; replacements 90% -> 96%; density 646 -> 613/million",
+     "pages": "CEE p.575-576 (line 6941-6957)"
+    },
+    {
+     "name": "Per-country North Macedonia Fig 5.1/5.3 — Forecast installed base, shipments (new vs replacement), density 2023-2028",
+     "unit": "ATMs; shipments split units; ATMs per million people",
+     "scope": "per-country (MK, secondary)",
+     "footprint_countries": [
+      "MK"
+     ],
+     "years": "2023-2028 + CAGR",
+     "has_forecast": true,
+     "sample": "MK ATMs 1,030 (2023) -> 1,060 (2028), CAGR +0.6% (rare growth); shipments 97 -> 130; new installs 17 -> 0; replacements 82% -> 100%; density 492 -> 506/million",
+     "pages": "CEE p.561-562 (line 6765-6780)"
+    },
+    {
+     "name": "Per-country Bosnia & Herzegovina Fig 4.1/5.3 — Forecast installed base, shipments (all replacements), density 2023-2028",
+     "unit": "ATMs; shipments split units; ATMs per million people",
+     "scope": "per-country (BA, secondary)",
+     "footprint_countries": [
+      "BA"
+     ],
+     "years": "2023-2028 + CAGR",
+     "has_forecast": true,
+     "sample": "BA ATMs 1,490 (2023) -> 1,370 (2028), CAGR -1.7%; shipments 94 -> 170 (all 100% replacements); density 461 -> 424/million",
+     "pages": "CEE p.473-474 (line 5771-5789)"
+    },
+    {
+     "name": "Per-country Albania Fig 5.1/5.3 — Forecast installed base, shipments (new vs replacement), density 2023-2028",
+     "unit": "ATMs; shipments split units; ATMs per million people",
+     "scope": "per-country (AL, secondary)",
+     "footprint_countries": [
+      "AL"
+     ],
+     "years": "2023-2028 + CAGR",
+     "has_forecast": true,
+     "sample": "AL ATMs 900 (2023) -> 1,150 (2028), CAGR +5.0% (fastest-growing footprint base); shipments 90 -> 130; new installs 40-60/yr; replacements 56% -> 69%; density 317 -> 405/million",
+     "pages": "CEE p.433-434 (line 5276-5293)"
+    },
+    {
+     "name": "Per-country Cyprus Fig 5.1 — Forecast installed base + density 2023-2028 (shipments table NOT shown)",
+     "unit": "ATMs; ATMs per million people",
+     "scope": "per-country (CY, WE secondary market)",
+     "footprint_countries": [
+      "CY"
+     ],
+     "years": "2023-2028 + CAGR",
+     "has_forecast": true,
+     "sample": "CY ATMs 950 (2023) -> 900 (2028), CAGR -1.1%; density 759 -> 719/million",
+     "pages": "WE p.813 (line 9679-9691)"
+    },
+    {
+     "name": "Per-country primary-market forecast chapters (Bulgaria, Czechia, Hungary, Romania, Serbia, Slovakia, Ukraine, Austria) — Fig 6.x/7.x installed base, shipments (new vs replacement split), withdrawal number & value",
+     "unit": "ATMs; shipments split; withdrawals (million); value (USD/EUR bn); density",
+     "scope": "per-country (each primary footprint market)",
+     "footprint_countries": [
+      "BG",
+      "CZ",
+      "HU",
+      "RO",
+      "RS",
+      "SK",
+      "UA",
+      "AT"
+     ],
+     "years": "2023-2028 + CAGR",
+     "has_forecast": true,
+     "sample": "Each primary chapter repeats the regional figures with a new-install vs replacement breakdown (e.g. Greece-style Fig 7.3) plus per-country withdrawal number/value forecasts (section 6.3/7.3) — values match the regional aggregate tables above",
+     "pages": "CEE & WE per-country chapters (e.g. structure at CEE line 85, WE line 69; Croatia/Greece worked examples)"
+    },
+    {
+     "name": "Recycling / automated-deposit forward narrative (qualitative forecast, no per-year forecast table)",
+     "unit": "qualitative + 2022 baseline counts/%",
+     "scope": "regional + per-country narrative",
+     "footprint_countries": [
+      "BG",
+      "HR",
+      "CZ",
+      "HU",
+      "RO",
+      "RS",
+      "SK",
+      "UA",
+      "SI",
+      "AT",
+      "GR"
+     ],
+     "years": "2022 baseline; forward commentary to 2028 (no numeric recycler forecast series)",
+     "has_forecast": false,
+     "sample": "CEE 92,475 cash-recyclers = 39% of base in 2022; recyclers 'expected to increase in number' in HR/CEE; WE Denmark/Finland narrative: more recyclers expected over next five years. No country recycler unit-forecast table exists.",
+     "pages": "CEE p.35 (line 357-372), p.127 (line 1511); WE p.165/173 (line 2085, 2352)"
+    }
+   ],
+   "recommended_plots": [
+    {
+     "title": "Footprint ATM installed base: 2022 actual vs 2028 forecast",
+     "chart_type": "grouped/diverging horizontal bar (2022 vs 2028 per country)",
+     "metrics": [
+      "Forecast ATM installed base 2028",
+      "2022 actual installed base",
+      "CAGR 2022-2028"
+     ],
+     "scope": "per-country comparison across the footprint",
+     "why": "The single headline a C-level needs: which of our markets shrink, hold, or grow their ATM estate through 2028. Drives where to defend vs rationalise. Highlights the only growth stories (Albania +5.0%, North Macedonia +0.6%, Austria flat) against the broad CEE/WE contraction.",
+     "coverage": "15 of 17 countries (BG,HR,CZ,HU,RO,RS,SK,UA,SI,MK,BA,AL,AT,GR,CY). Missing ME & XK (Montenegro/Kosovo appear only in 'Others', no standalone forecast). 2 points (2022 vs 2028) or full 2023-2028 trajectory."
+    },
+    {
+     "title": "Forecast ATM shipments to 2028 — replacement vs new-installation mix by country",
+     "chart_type": "stacked bar (replacements vs new installs), one stack per country (period totals 2023-2028)",
+     "metrics": [
+      "Forecast ATM shipments 2023-2028 (total)",
+      "of which replacements",
+      "of which new installations",
+      "replacement % in 2028"
+     ],
+     "scope": "per-country comparison (the addressable hardware demand pool)",
+     "why": "Shipments = the actual sales opportunity for Printec. Splitting replacement (recurring refresh, ~90%+ in most markets) vs new-install (greenfield, concentrated in Albania, North Macedonia early years, Ukraine recovery) tells sales where pure-refresh tenders dominate vs where fleet expansion still happens.",
+     "coverage": "14-15 of 17 (all primary footprint + SI,MK,BA,AL with explicit new-vs-replacement split; CY has installed-base forecast but no shipment table; ME/XK absent). 6 forecast years 2023-2028."
+    },
+    {
+     "title": "Cash demand outlook 2028: withdrawal VALUE growth vs VOLUME decline by country",
+     "chart_type": "scatter / dual-bar (value CAGR vs volume CAGR per country, 2023-2028)",
+     "metrics": [
+      "Forecast cash-withdrawal value CAGR 2023-2028",
+      "Forecast cash-withdrawal number CAGR 2023-2028",
+      "Avg value per withdrawal 2028"
+     ],
+     "scope": "per-country comparison (primary markets)",
+     "why": "Explains the structural story in one view: transaction counts fall almost everywhere while value rises (fewer, larger withdrawals) — so cash is NOT dying, it is consolidating. Bulgaria (+8% value), Romania (+5.2%), Serbia (+5.9%) are the cash-value growth markets; supports recycling/CIT-efficiency investment cases.",
+     "coverage": "10 of 17 footprint primaries (BG,HR,CZ,HU,RO,RS,SK,UA from CEE; AT,GR from WE). Secondary markets SI,MK,BA,AL,CY,ME,XK lack withdrawal-value forecasts. 6 years 2023-2028."
+    },
+    {
+     "title": "CEE vs Western Europe regional ATM base trajectory, 1995-2028",
+     "chart_type": "multi-series line (two regional totals, history + forecast tail)",
+     "metrics": [
+      "CEE total ATM installed base 1995-2028",
+      "WE total ATM installed base 1995-2028"
+     ],
+     "scope": "regional overview",
+     "why": "One slide framing the whole portfolio: both regions peaked (CEE 2013 at 256k, WE 2016 at 404k) and decline to ~232k / ~316k by 2028 — a modest, manageable contraction, not a collapse. Sets strategic context that the market is mature/replacement-driven, not vanishing.",
+     "coverage": "Regional aggregates only (covers all 17 footprint countries implicitly within the two regional totals). Full 1995-2028 with a clearly marked 2023-2028 forecast tail."
+    }
+   ],
+   "coverage_summary": "Coverage of the 'Forecasts to 2028' topic is exceptionally strong. Both RBR reports devote a full Section 3 (regional) plus per-country Section 6/7 (primary) and Section 5 (secondary) to forward projections, all running 2023-2028 with CAGR and a marked forecast tail back to 1995. Every forward metric — installed base, shipments (with new-install vs replacement split), cash-withdrawal number, and cash-withdrawal value — exists at regional aggregate AND per-country level. Of the 17 footprint countries, 15 have a country-level installed-base + shipments forecast (10 primary: BG,HR,CZ,HU,RO,RS,SK,UA,AT,GR, with full withdrawal number/value forecasts; 5 secondary: SI,MK,BA,AL,CY — installed-base forecasts, with shipment splits for all except CY, and no withdrawal-value forecasts). The two genuine gaps are Montenegro (ME) and Kosovo (XK), which appear only inside the CEE 'Others' bucket with no standalone forecast series. The one topical gap across all countries is recycling/deposit: it is covered only as 2022 baseline counts plus qualitative 'expected to grow' narrative — there is NO numeric per-year recycler/deposit forecast table, so any recycling-growth plot must use 2022 actuals plus directional commentary, not a forecast series."
+  }
+ ],
+ "plan": {
+  "coverage_assessment": "Detail in notes.",
+  "atm_section": [
+   {
+    "title": "Base 2022 vs 2028F + regional",
+    "chart_type": "diverging bar+CAGR",
+    "metrics": [
+     "2022",
+     "2028F"
+    ],
+    "scope": "regional+country",
+    "data_source": "RBR 6.1/4.1/3.1",
+    "c_level_value": "growth vs contraction",
+    "footprint_coverage": "15/17"
+   },
+   {
+    "title": "Density 2022 + GDP quadrant",
+    "chart_type": "bar+scatter",
+    "metrics": [
+     "per million",
+     "per GDP"
+    ],
+    "scope": "country",
+    "data_source": "RBR 1.6/4.2",
+    "c_level_value": "saturation vs headroom",
+    "footprint_coverage": "17/17"
+   },
+   {
+    "title": "Recycler/deposit+SAT 2022",
+    "chart_type": "grouped bar",
+    "metrics": [
+     "deposit pct",
+     "recycling pct"
+    ],
+    "scope": "country",
+    "data_source": "RBR 4.4/4.5",
+    "c_level_value": "GR retrofit; BG/RS greenfield",
+    "footprint_coverage": "10/17"
+   },
+   {
+    "title": "Off-site vs branch 2022",
+    "chart_type": "stacked bar",
+    "metrics": [
+     "off-site pct"
+    ],
+    "scope": "country",
+    "data_source": "RBR 4.3/1.9",
+    "c_level_value": "off-site=IAD servicing",
+    "footprint_coverage": "~13/17"
+   },
+   {
+    "title": "Cash demand+vendor/IAD",
+    "chart_type": "line+bar",
+    "metrics": [
+     "withdrawals",
+     "mfr+IAD"
+    ],
+    "scope": "country",
+    "data_source": "RBR 4.5/5.1/1.1",
+    "c_level_value": "NCR vs Diebold Nixdorf",
+    "footprint_coverage": "~7-11/17"
+   }
+  ],
+  "high_level_keep": [
+   "ATMs, branches, POS, cash (ECB/HBA actuals)"
+  ],
+  "high_level_remove": [
+   "All RBR detail moves to ATM section - see notes"
+  ],
+  "notes": "CRITICAL: Greece and Cyprus are ABSENT from intel-cache/rbr_series.json (only 15 CEE + AT; both live in the RBR WE volume, never extracted). GR is the home market - re-extract full GR+CY first or the section omits GR (44pct deposit/3pct recycle). Coverage: base+forecast 15/17, density 17/17, cash 11-13, recycling 10/17 (2022 only), location ~13/17, mfr ~7, IAD ~10; ME,XK density-only, no forecast. Remove from high-level chart: forecast, location, recycling/SAT, shipments, manufacturer, IAD, density ratios, RBR cash detail. QC Cyprus 963, CZ 550, Romania 10150 vs 10200."
+ }
+}

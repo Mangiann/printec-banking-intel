@@ -1,0 +1,142 @@
+[
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_154",
+  "source_url": "https://mbhbank.hu/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.mbhbank.hu:443/",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_167",
+  "source_url": "https://www.erstegroup.com/en/about-us/subsidiaries/erste-group-procurement/general",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_168",
+  "source_url": "https://www.erstebank.hu/hu/ebh-nyito/bankunkrol/vallalati-tarsadalmi-felelossegvallalas/etikus-vallalatiranyitas/fenntarthato-es-etikus-beszallitoi-lanc",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_190",
+  "source_url": "https://service.ariba.com/Sourcing.aw",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_221",
+  "source_url": "https://www.erstegroup.com/en/about-us/subsidiaries/erste-group-procurement",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_222",
+  "source_url": "https://www.erstegroupprocurement.com",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.erstegroup.com/en/about-us/subsidiaries/erste-group-procurement",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_227",
+  "source_url": "https://www.mbhbank.hu/sw/static/file/MBH_Etikai_Kodex_20230501.pdf",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_228",
+  "source_url": "https://www.mbhbank.hu/hirdetmenyek/felugyeleti-dosszie/uzletszabalyzat",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_235",
+  "source_url": "https://www.sap.com/products/business-network/find-suppliers.html",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_236",
+  "source_url": "https://www.nemzeticegtar.hu",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_253",
+  "source_url": "https://www.fintechfutures.com/keyword/hungary",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_277",
+  "source_url": "https://www.nemzeticegtar.hu/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_278",
+  "source_url": "https://www.cib.hu/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_307",
+  "source_url": "https://www.kozadat.hu/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://kozadat.hu/kereso/",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ }
+]

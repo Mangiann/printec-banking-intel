@@ -1,0 +1,553 @@
+#!/usr/bin/env python3
+"""
+build_dashboard.py - Render the Printec weekly intelligence dashboard (single self-contained HTML).
+
+Reads the structured cache produced by ingest.py (data/*.json) plus the curated references
+(references/*.json), computes the four strategic lenses, and emits one interactive HTML file.
+
+All aggregation is arithmetic over values that already exist in the source files. Signal
+"strength" is a transparent confidence/agent/likelihood weighting (see ingest.score_signal),
+NOT a market size or budget. The dashboard never displays a number that isn't traceable to a
+source row.
+
+Usage:
+  python build_dashboard.py --skill <SKILL_folder> --out <output.html> [--week YYYY-MM-DD]
+"""
+import argparse, json, os, datetime
+
+def load(p, d=None):
+    try:
+        return json.load(open(p, encoding="utf-8"))
+    except FileNotFoundError:
+        return d
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--skill", help="Engine folder with references/ (default: this script's parent)")
+    ap.add_argument("--refs", help="Reference JSON folder (default: <skill>/references)")
+    ap.add_argument("--data", help="Cache folder written by ingest.py (default: <skill>/data)")
+    ap.add_argument("--out", required=True)
+    ap.add_argument("--week", default=None)
+    args = ap.parse_args()
+
+    skill = args.skill or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    D = args.data or os.path.join(skill, "data")
+    R = args.refs or os.path.join(skill, "references")
+    signals     = load(os.path.join(D, "signals.json"), [])
+    series      = load(os.path.join(D, "series.json"), {})
+    events      = load(os.path.join(D, "events.json"), [])
+    patterns    = load(os.path.join(D, "patterns.json"), [])
+    cstats      = load(os.path.join(D, "country_stats.json"), [])
+    summary     = load(os.path.join(D, "summary.json"), {})
+    footprint   = load(os.path.join(R, "footprint.json"), {})
+    pmap        = load(os.path.join(R, "product_map.json"), {})
+    competitors = load(os.path.join(R, "competitors.json"), {})
+    regcal      = load(os.path.join(R, "reg_calendar.json"), {})
+
+    week = args.week or summary.get("week") or datetime.date.today().isoformat()
+    run_date = datetime.date.fromisoformat(week)
+
+    code2name = {c["code"]: c["name"] for c in footprint["countries"]}
+    prod_label = {c["id"]: c["label"] for c in pmap["categories"]}
+    prod_printec = {c["id"]: c["printec"] for c in pmap["categories"]}
+    cstat_by_code = {c["code"]: c for c in cstats if c.get("code")}
+
+    # ---------- movements (week over week) ----------
+    prev_path = os.path.join(D, "_prev_signals_min.json")
+    prev = load(prev_path, None)
+    cur_min = {s["key"]: {"confidence": s["confidence"], "bank_theme": s["bank_theme"]} for s in signals}
+    movements = {"added": [], "removed": [], "confidence_changed": [], "baseline": not prev}
+    if prev:
+        for k, v in cur_min.items():
+            if k not in prev:
+                movements["added"].append(v["bank_theme"])
+            elif prev[k]["confidence"] != v["confidence"]:
+                movements["confidence_changed"].append(
+                    {"bank_theme": v["bank_theme"], "from": prev[k]["confidence"], "to": v["confidence"]})
+        for k, v in prev.items():
+            if k not in cur_min:
+                movements["removed"].append(v["bank_theme"])
+    json.dump(cur_min, open(prev_path, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+
+    # ---------- country prioritization (rank by DIRECT in-country opportunity) ----------
+    wide_signals = [s for s in signals if s["footprint_wide"]]
+    countries = []
+    for c in footprint["countries"]:
+        code = c["code"]
+        direct = [s for s in signals if code in s["countries"]]
+        direct_score = sum(s["strength"] for s in direct)
+        prods = {}
+        for s in direct:
+            for p in s["products"]:
+                prods[p] = prods.get(p, 0) + s["strength"]
+        st = cstat_by_code.get(code, {})
+        countries.append({
+            "code": code, "name": c["name"], "region": c["region"], "euro": c["euro"],
+            "score": round(direct_score, 2),
+            "n_signals": len(direct),
+            "n_high": sum(1 for s in direct if s["confidence"] == "High"),
+            "n_new": sum(1 for s in direct if s["is_new_this_week"]),
+            "top_products": sorted(prods, key=prods.get, reverse=True)[:3],
+            "atms": st.get("atms", ""), "branches": st.get("branches", ""),
+            "cash_trend": st.get("cash_trend", ""), "instant": st.get("instant_payments", ""),
+            "implication": st.get("implication", ""),
+            "signal_keys": [s["key"] for s in direct],
+        })
+    countries.sort(key=lambda x: (x["score"], x["n_signals"]), reverse=True)
+
+    # ---------- product prioritization ----------
+    products = []
+    for cat in pmap["categories"]:
+        pid = cat["id"]
+        tagged = [s for s in signals if pid in s["products"]]
+        ccount = {}
+        for s in tagged:
+            for cc in s["countries"]:
+                ccount[cc] = ccount.get(cc, 0) + 1
+        products.append({
+            "id": pid, "label": cat["label"], "printec": cat["printec"],
+            "score": round(sum(s["strength"] for s in tagged), 2), "n_signals": len(tagged),
+            "n_high": sum(1 for s in tagged if s["confidence"] == "High"),
+            "top_countries": sorted(ccount, key=ccount.get, reverse=True)[:5],
+            "signal_keys": [s["key"] for s in tagged],
+        })
+    products.sort(key=lambda x: x["score"], reverse=True)
+
+    # ---------- competitive & partner risk ----------
+    for v in competitors["vendors"]:
+        mentions = []
+        for s in signals:
+            blob = " ".join([s["bank_theme"], s["signal"], s["implies"], s["follow_up"]]).lower()
+            if any(d in blob for d in v["detect"]):
+                mentions.append(s["key"])
+        v["mention_keys"] = mentions
+        v["n_mentions"] = len(mentions)
+    competitors["vendors"].sort(key=lambda v: ({"High":0,"Medium":1,"Low":2}.get(v["threat"],3), -v["n_mentions"]))
+    threat_rank = {"High": 3, "Medium": 2, "Low": 1}
+    active_vendors = [v for v in competitors["vendors"] if v["role"] in ("competitor", "both", "oem")][:8]
+    sig_ctry = {s["key"]: s["countries"] for s in signals}
+    matrix = []
+    for c in footprint["countries"]:
+        row = {"code": c["code"], "name": c["name"], "cells": {}}
+        any_cell = False
+        for v in active_vendors:
+            present = c["code"] in v["countries"]
+            ment = sum(1 for k in v["mention_keys"] if c["code"] in sig_ctry.get(k, []))
+            val = (threat_rank[v["threat"]] if present else 0) + ment
+            row["cells"][v["name"]] = val
+            if val:
+                any_cell = True
+        if any_cell:
+            matrix.append(row)
+
+    # ---------- regulatory timeline ----------
+    deadlines = []
+    for it in regcal["items"]:
+        d = datetime.date.fromisoformat(it["date"])
+        days = (d - run_date).days
+        bucket = "past" if days < 0 else ("imminent" if days <= 60 else ("soon" if days <= 180 else "later"))
+        deadlines.append({**it, "days_until": days, "bucket": bucket,
+                          "geo_names": [code2name.get(x, x) for x in it["geography"]]})
+    deadlines.sort(key=lambda x: x["date"])
+
+    # ---------- top opportunities & account targets ----------
+    ranked = sorted(signals, key=lambda s: s["strength"], reverse=True)
+    top_ops = ranked[:8]
+    NON_ACCOUNT = ("sector", "regulatory", "compliance wave", "branch consolidation", "accessibility")
+    account_targets = [s for s in ranked if not any(n in s["bank_theme"].lower() for n in NON_ACCOUNT)]
+
+    kpis = {
+        "n_signals": len(signals),
+        "n_new": sum(1 for s in signals if s["is_new_this_week"]),
+        "n_high": sum(1 for s in signals if s["confidence"] == "High"),
+        "n_imminent": sum(1 for d in deadlines if d["bucket"] == "imminent"),
+        "n_countries_active": sum(1 for c in countries if c["n_signals"] > 0),
+    }
+
+    DASH = {
+        "week": week, "generated": summary.get("generated_utc", ""),
+        "kpis": kpis, "movements": movements,
+        "signals": signals, "countries": countries, "products": products,
+        "wide_signals": [s["key"] for s in wide_signals],
+        "competitors": competitors["vendors"], "matrix": matrix,
+        "active_vendors": [v["name"] for v in active_vendors],
+        "deadlines": deadlines, "top_ops": [s["key"] for s in top_ops],
+        "account_targets": [s["key"] for s in account_targets],
+        "series": series, "events": events, "patterns": patterns,
+        "prod_label": prod_label, "prod_printec": prod_printec,
+        "code2name": code2name, "summary": summary,
+    }
+
+    htmlout = TEMPLATE.replace("/*__DATA__*/", json.dumps(DASH, ensure_ascii=False))
+    with open(args.out, "w", encoding="utf-8") as f:
+        f.write(htmlout)
+    print("Wrote", args.out, "(", os.path.getsize(args.out), "bytes )")
+    print("KPIs:", json.dumps(kpis))
+
+
+# ============================ HTML TEMPLATE ============================
+TEMPLATE = r"""<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Printec Banking Intelligence Dashboard</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+:root{--bg:#0e1726;--card:#1b2840;--card2:#172136;--ink:#e8eef7;--mut:#93a4be;--line:#27395a;
+--hi:#3ddc97;--med:#ffc857;--lo:#8aa0bf;--acc:#37a0ff;--red:#ff6b6b;--teal:#2dd4bf;}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(180deg,#0b1220,#0e1726);color:var(--ink);font:14px/1.5 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}
+header{padding:18px 26px;border-bottom:1px solid var(--line);background:#0c1422;position:sticky;top:0;z-index:30}
+.h-top{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+h1{font-size:19px;margin:0;letter-spacing:.2px}
+.sub{color:var(--mut);font-size:12.5px}
+.badge{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:2px 10px;font-size:11.5px;color:var(--mut)}
+nav{display:flex;gap:4px;margin-top:12px;flex-wrap:wrap}
+nav button{background:transparent;border:1px solid transparent;color:var(--mut);padding:7px 13px;border-radius:8px;cursor:pointer;font-size:13px}
+nav button:hover{color:var(--ink);background:#13203a}
+nav button.active{background:var(--card);color:var(--ink);border-color:var(--line)}
+main{padding:22px 26px;max-width:1280px;margin:0 auto}
+section{display:none;animation:f .25s ease}section.active{display:block}
+@keyframes f{from{opacity:0;transform:translateY(4px)}to{opacity:1}}
+.grid{display:grid;gap:14px}
+.kpis{grid-template-columns:repeat(5,1fr)}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.kpi .n{font-size:27px;font-weight:700}
+.kpi .l{color:var(--mut);font-size:12px;margin-top:2px}
+.kpi.hi .n{color:var(--hi)}.kpi.new .n{color:var(--acc)}.kpi.warn .n{color:var(--med)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:14px}
+.card h2{font-size:15px;margin:0 0 3px}.card .desc{color:var(--mut);font-size:12.5px;margin-bottom:12px}
+.row{display:grid;gap:14px}.row.two{grid-template-columns:1fr 1fr}.row.s21{grid-template-columns:2fr 1fr}
+.chartbox{position:relative;height:300px}
+.chartbox.tall{height:380px}
+table{width:100%;border-collapse:collapse;font-size:12.7px}
+th,td{text-align:left;padding:8px 9px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase;letter-spacing:.4px}
+tr:hover td{background:#16223c}
+.pill{display:inline-block;padding:1px 8px;border-radius:20px;font-size:11px;border:1px solid var(--line);white-space:nowrap}
+.pill.High{color:var(--hi);border-color:#1f6b4d;background:#10271d}
+.pill.Medium-High{color:#9be7c4;border-color:#2a6b52}
+.pill.Medium{color:var(--med);border-color:#6b5520;background:#241f10}
+.pill.Low{color:var(--lo)}
+.pill.new{color:var(--acc);border-color:#22557f;background:#0f2236}
+.pp{display:inline-block;padding:1px 7px;border-radius:6px;font-size:10.5px;background:#16243f;border:1px solid var(--line);color:#b9c8e2;margin:1px 2px 1px 0}
+.flag{font-size:11px;color:var(--mut)}
+.sig{border:1px solid var(--line);border-radius:10px;padding:11px 13px;margin-bottom:9px;background:var(--card2);cursor:pointer}
+.sig:hover{border-color:#33507f}
+.sig .t{font-weight:600;font-size:13.5px}
+.sig .meta{color:var(--mut);font-size:11.5px;margin-top:2px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.sig .body{display:none;margin-top:9px;border-top:1px dashed var(--line);padding-top:9px;font-size:12.7px}
+.sig.open .body{display:block}
+.sig .k{color:var(--mut);font-size:11px;text-transform:uppercase;letter-spacing:.3px;margin-top:7px}
+.bar{height:7px;background:#0e1a30;border-radius:6px;overflow:hidden;margin-top:5px}
+.bar > i{display:block;height:100%;background:linear-gradient(90deg,var(--acc),var(--teal))}
+.controls{display:flex;gap:9px;flex-wrap:wrap;align-items:center;margin-bottom:13px}
+select,input[type=search]{background:#0e1a30;color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:7px 10px;font-size:12.5px}
+.toggle{display:flex;align-items:center;gap:6px;color:var(--mut);font-size:12.5px;cursor:pointer}
+.matrix td,.matrix th{text-align:center;padding:6px 7px}
+.matrix td:first-child,.matrix th:first-child{text-align:left}
+.cell{display:inline-block;width:26px;height:20px;border-radius:5px;line-height:20px;font-size:11px;color:#0b1220;font-weight:700}
+.tl-item{display:grid;grid-template-columns:120px 1fr;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+.tl-when{font-size:12px}
+.tl-when .d{font-weight:700}.tl-when .c{font-size:11px}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px}
+.imminent .d{color:var(--red)}.soon .d{color:var(--med)}.later .d{color:var(--mut)}.past .d{color:#5b6b86}
+.legend{display:flex;gap:14px;flex-wrap:wrap;color:var(--mut);font-size:11.5px;margin-top:8px}
+.muted{color:var(--mut)}
+.small{font-size:11.5px}
+.tag{font-size:10.5px;color:var(--mut);border:1px solid var(--line);border-radius:5px;padding:1px 6px}
+.note{background:#10203a;border:1px solid #21426b;border-radius:10px;padding:11px 13px;color:#cfe0f6;font-size:12.7px}
+.threat-High{color:var(--red)}.threat-Medium{color:var(--med)}.threat-Low{color:var(--lo)}
+footer{color:var(--mut);font-size:11.5px;padding:20px 26px;border-top:1px solid var(--line);margin-top:20px}
+@media(max-width:900px){.kpis,.row.two,.row.s21{grid-template-columns:1fr}}
+</style></head>
+<body>
+<header>
+  <div class="h-top">
+    <h1>Printec Banking Intelligence</h1>
+    <span class="badge" id="weekBadge"></span>
+    <span class="badge" id="genBadge"></span>
+    <span class="sub">Upgraded Orchestrator &middot; weekly triangulation + strategic dashboard</span>
+  </div>
+  <nav id="nav"></nav>
+</header>
+<main>
+  <section id="overview" class="active"></section>
+  <section id="country"></section>
+  <section id="product"></section>
+  <section id="competition"></section>
+  <section id="accounts"></section>
+  <section id="patterns"></section>
+</main>
+<footer id="foot"></footer>
+
+<script>
+const DASH = /*__DATA__*/;
+const $=s=>document.querySelector(s), el=(t,c,h)=>{const e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e;};
+const sigByKey={}; DASH.signals.forEach(s=>sigByKey[s.key]=s);
+const esc=s=>(s==null?"":String(s)).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+const PCOL={atm_recycling:'#37a0ff',self_service:'#2dd4bf',pos_acquiring:'#b18cff',payments_instant:'#ffc857',
+digital_onboarding:'#3ddc97',fraud_monitoring:'#ff6b6b',compliance_resilience:'#f59e0b',physical_security:'#8aa0bf',
+managed_services:'#22d3ee',core_digital:'#a78bfa'};
+let charts=[];
+
+function prods(s){return (s.products||[]).map(p=>`<span class="pp" style="border-color:${PCOL[p]||'#27395a'}">${esc(DASH.prod_label[p]||p)}</span>`).join("");}
+function srcLinks(s){return (s.sources||[]).map(x=>x.url?`<a href="${esc(x.url)}" target="_blank">${esc(x.text)}</a>`:esc(x.text)).join(" &middot; ");}
+function ctryNames(s){if(s.footprint_wide&&s.countries.length===0)return "Footprint-wide";let n=s.countries.map(c=>DASH.code2name[c]||c);if(s.footprint_wide)n.push("+wide");return n.join(", ")||s.country_raw||"—";}
+
+function sigCard(s){
+  const c=el("div","sig"); c.dataset.key=s.key;
+  c.innerHTML=`<div class="t">${esc(s.bank_theme)} ${s.is_new_this_week?'<span class="pill new">NEW</span>':''}</div>
+   <div class="meta"><span class="pill ${s.confidence}">${esc(s.confidence||'—')}</span>
+   <span>${esc(ctryNames(s))}</span><span class="tag">str ${s.strength}</span>
+   <span class="tag">${(s.agents||[]).join('+')||'—'}</span><span class="muted">${esc(s.date)}</span></div>
+   <div>${prods(s)}</div>
+   <div class="body">
+     <div class="k">Signal</div><div>${esc(s.signal)}</div>
+     <div class="k">What it implies</div><div>${esc(s.implies)}</div>
+     <div class="k">6–12 mo likelihood</div><div>${esc(s.likelihood)}</div>
+     <div class="k">Recommended follow-up</div><div>${esc(s.follow_up)}</div>
+     <div class="k">Sources</div><div class="small">${srcLinks(s)}</div>
+   </div>`;
+  c.onclick=()=>c.classList.toggle("open");
+  return c;
+}
+
+/* ---------- OVERVIEW ---------- */
+function renderOverview(){
+  const s=$("#overview"); s.innerHTML="";
+  const k=DASH.kpis;
+  const kp=el("div","grid kpis");
+  [["n_signals","Active signals",""],["n_new","New this week","new"],["n_high","High-confidence","hi"],
+   ["n_imminent","Deadlines ≤60d","warn"],["n_countries_active","Active markets",""]]
+   .forEach(([key,lab,cls])=>{kp.appendChild(el("div","kpi "+cls,`<div class="n">${k[key]}</div><div class="l">${lab}</div>`));});
+  s.appendChild(kp);
+
+  const mv=DASH.movements; const note=el("div","card");
+  let mvh="";
+  if(mv.baseline){mvh=`<span class="muted">Baseline week — the master signal table was first fully triangulated this run, so every signal is new. Week-over-week movement (added / dropped / confidence changes) populates from next run onward.</span>`;}
+  else{const a=mv.added.length,r=mv.removed.length,c=mv.confidence_changed.length;
+    mvh=`<b>${a}</b> new &middot; <b>${r}</b> dropped &middot; <b>${c}</b> confidence changes since last run.`;
+    if(c)mvh+="<br>"+mv.confidence_changed.map(x=>`${esc(x.bank_theme)}: ${x.from}→${x.to}`).join("; ");
+    if(a)mvh+="<br><span class='muted'>New: "+mv.added.map(esc).join("; ")+"</span>";}
+  note.innerHTML=`<h2>Movements vs. last week</h2><div class="desc">How this week relates to what we already knew.</div><div class="note">${mvh}</div>`;
+  s.appendChild(note);
+
+  const ops=el("div","card");
+  ops.innerHTML=`<h2>Top opportunities this week</h2><div class="desc">Highest-strength signals (confidence × independent-agent confirmation × 6–12-month likelihood). Click any card to expand the evidence and recommended action.</div>`;
+  DASH.top_ops.forEach(key=>ops.appendChild(sigCard(sigByKey[key])));
+  s.appendChild(ops);
+}
+
+/* ---------- COUNTRY ---------- */
+function renderCountry(){
+  const s=$("#country"); s.innerHTML="";
+  const top=el("div","card");
+  top.innerHTML=`<h2>Country prioritization</h2><div class="desc">Opportunity score = sum of in-country signal strengths. Bars colored by momentum (green = has new signals this week). The line chart shows Greece's structural backbone — branches falling while ATMs rise — the pattern every market is echoing. Per-market figures below trace to the statistics agent.</div><div class="row s21"><div class="chartbox tall"><canvas id="cChart"></canvas></div><div class="chartbox tall"><canvas id="grChart"></canvas></div></div><div class="legend"><span>bar = opportunity score</span><span style="color:var(--hi)">green = new signals this week</span></div>`;
+  s.appendChild(top);
+
+  const tw=el("div","card");
+  tw.innerHTML=`<h2>Market detail &amp; structural backdrop</h2><div class="desc">Sorted by opportunity score. ATM / branch / instant-payment columns are the latest statistics-agent figures. Click a market to see its signals and implication.</div>`;
+  const tbl=el("table");
+  tbl.innerHTML=`<thead><tr><th>Market</th><th>Score</th><th>Signals</th><th>High</th><th>New</th><th>Top products</th><th>ATMs</th><th>Branches</th><th>Instant pay</th></tr></thead>`;
+  const tb=el("tbody");
+  const maxScore=Math.max(1,...DASH.countries.map(x=>x.score));
+  DASH.countries.forEach(c=>{
+    if(c.n_signals===0 && !c.atms && !c.branches) return;
+    const tr=el("tr"); tr.style.cursor="pointer";
+    tr.innerHTML=`<td><b>${esc(c.name)}</b> <span class="flag">${c.region}${c.euro?' · €':''}</span></td>
+      <td>${c.score}<div class="bar"><i style="width:${Math.min(100,c.score/maxScore*100)}%"></i></div></td>
+      <td>${c.n_signals}</td><td>${c.n_high?('<span class="pill High">'+c.n_high+'</span>'):'—'}</td>
+      <td>${c.n_new?('<span class="pill new">'+c.n_new+'</span>'):'—'}</td>
+      <td>${c.top_products.map(p=>'<span class="pp" style="border-color:'+(PCOL[p]||'#27395a')+'">'+esc(DASH.prod_label[p]||p)+'</span>').join('')||'—'}</td>
+      <td class="small">${esc(c.atms||'—')}</td><td class="small">${esc(c.branches||'—')}</td><td class="small">${esc(c.instant||'—')}</td>`;
+    const det=el("tr"); det.style.display="none";
+    const td=el("td"); td.colSpan=9;
+    const wrap=el("div"); wrap.style.padding="6px 2px";
+    if(c.implication) wrap.appendChild(el("div","note","<b>Implication:</b> "+esc(c.implication)));
+    c.signal_keys.forEach(k=>wrap.appendChild(sigCard(sigByKey[k])));
+    if(!c.signal_keys.length) wrap.appendChild(el("div","muted small","No bank-specific signals yet — structural/statistics backdrop only."));
+    td.appendChild(wrap); det.appendChild(td);
+    tr.onclick=()=>{det.style.display=det.style.display==="none"?"":"none";};
+    tb.appendChild(tr); tb.appendChild(det);
+  });
+  tbl.appendChild(tb); tw.appendChild(tbl); s.appendChild(tw);
+
+  if(DASH.wide_signals && DASH.wide_signals.length){
+    const fw=el("div","card");
+    fw.innerHTML=`<h2>Footprint-wide themes</h2><div class="desc">Cross-cutting signals that lift demand in <i>every</i> market at once (regulation, sector structure, partner/competitor shifts). Kept out of the country ranking above so single-market opportunities stay comparable — but they shape the backdrop everywhere.</div>`;
+    DASH.wide_signals.map(k=>sigByKey[k]).sort((a,b)=>b.strength-a.strength).forEach(sg=>fw.appendChild(sigCard(sg)));
+    s.appendChild(fw);
+  }
+
+  const ranked=DASH.countries.filter(c=>c.score>0).slice(0,14);
+  mkBar("cChart",ranked.map(c=>c.code),ranked.map(c=>c.score),
+        ranked.map(c=>c.n_new>0?'#3ddc97':'#37a0ff'),"Opportunity score",true,ranked.map(c=>c.name));
+  const gr=DASH.series["Greece"];
+  if(gr){
+    const yrs=(gr.branches||gr.atms||[]).map(p=>p.year);
+    mkLine("grChart","Greece — branches vs ATMs (2014→2024)",yrs,
+      [{label:"Branches",data:(gr.branches||[]).map(p=>p.value),color:'#ff6b6b'},
+       {label:"ATMs",data:(gr.atms||[]).map(p=>p.value),color:'#37a0ff'}]);
+  }
+}
+
+/* ---------- PRODUCT ---------- */
+function renderProduct(){
+  const s=$("#product"); s.innerHTML="";
+  const top=el("div","card");
+  top.innerHTML=`<h2>Product prioritization</h2><div class="desc">Demand by Printec solution = sum of strengths of every signal touching that solution (a signal can count for several). A demand-intensity ranking from current evidence — not a market size.</div><div class="chartbox tall"><canvas id="pChart"></canvas></div>`;
+  s.appendChild(top);
+  const live=DASH.products.filter(p=>p.n_signals>0);
+  live.forEach(p=>{
+    const c=el("div","card");
+    c.innerHTML=`<h2>${esc(p.label)} <span class="tag">score ${p.score}</span> <span class="tag">${p.n_signals} signals · ${p.n_high} High</span></h2>
+      <div class="desc">${esc(p.printec)} &nbsp;&middot;&nbsp; Strongest in: ${p.top_countries.map(cc=>esc(DASH.code2name[cc]||cc)).join(", ")||'—'}</div>`;
+    p.signal_keys.map(k=>sigByKey[k]).sort((a,b)=>b.strength-a.strength).slice(0,5).forEach(sg=>c.appendChild(sigCard(sg)));
+    s.appendChild(c);
+  });
+  mkBar("pChart",live.map(p=>p.label),live.map(p=>p.score),live.map(p=>PCOL[p.id]||'#37a0ff'),"Demand score",true);
+}
+
+/* ---------- COMPETITION ---------- */
+function renderCompetition(){
+  const s=$("#competition"); s.innerHTML="";
+  const note=el("div","card");
+  note.innerHTML=`<h2>Competitive &amp; partner risk</h2><div class="desc">Who is winning bank money in the footprint, and where Printec is being locked out or where service gaps open. Threat = current pressure on Printec's channel.</div>`;
+  const partner=DASH.competitors.find(v=>v.name.indexOf("Atleos")>=0);
+  if(partner) note.innerHTML+=`<div class="note"><b>Partner-channel watch — ${esc(partner.name)}:</b> ${esc(partner.latest)}</div>`;
+  s.appendChild(note);
+
+  const grid=el("div","grid"); grid.style.gridTemplateColumns="1fr 1fr";
+  DASH.competitors.forEach(v=>{
+    const c=el("div","card"); c.style.margin="0";
+    c.innerHTML=`<h2>${esc(v.name)} <span class="tag threat-${v.threat}">${v.threat} threat</span> <span class="tag">${esc(v.role)}</span></h2>
+      <div class="desc">${v.countries.map(cc=>esc(DASH.code2name[cc]||cc)).join(", ")||'footprint-wide'} &middot; ${v.products.map(p=>esc(DASH.prod_label[p]||p)).join(", ")}</div>
+      <div class="small">${esc(v.latest)}</div>
+      ${v.n_mentions?`<div class="small muted" style="margin-top:6px">Linked to ${v.n_mentions} active signal(s)</div>`:''}`;
+    grid.appendChild(c);
+  });
+  const gw=el("div","card"); gw.innerHTML='<h2>Competitor &amp; partner profiles</h2><div class="desc">Sorted by threat level. Refresh each week from the vendors agent.</div>';
+  gw.appendChild(grid); s.appendChild(gw);
+
+  const mw=el("div","card");
+  mw.innerHTML=`<h2>Competitive pressure matrix</h2><div class="desc">Market × competitor. Darker = stronger presence (curated footprint + signal mentions). Helps spot where to defend and where rivals are thin.</div>`;
+  const t=el("table","matrix");
+  t.innerHTML=`<thead><tr><th>Market</th>${DASH.active_vendors.map(v=>`<th>${esc(v.split(' ')[0])}</th>`).join("")}</tr></thead>`;
+  const tb=el("tbody"); const maxv=4;
+  DASH.matrix.forEach(r=>{
+    const tr=el("tr"); let cells=`<td><b>${esc(r.name)}</b></td>`;
+    DASH.active_vendors.forEach(v=>{const val=r.cells[v]||0;
+      const a=val?(0.2+0.8*Math.min(val,maxv)/maxv):0;
+      cells+=`<td>${val?`<span class="cell" style="background:rgba(255,107,107,${a.toFixed(2)})">${val}</span>`:'<span class="muted">·</span>'}</td>`;});
+    tr.innerHTML=cells; tb.appendChild(tr);
+  });
+  t.appendChild(tb); mw.appendChild(t); s.appendChild(mw);
+}
+
+/* ---------- ACCOUNTS + REGULATORY ---------- */
+function renderAccounts(){
+  const s=$("#accounts"); s.innerHTML="";
+  const rc=el("div","card");
+  rc.innerHTML=`<h2>Regulatory &amp; event timeline</h2><div class="desc">Deadlines that FORCE bank spend. Banks typically commit budget 6–12 months before a date, so the countdown is the buying window. Red = within 60 days, amber = within 6 months.</div>`;
+  DASH.deadlines.forEach(d=>{
+    const it=el("div","tl-item "+d.bucket);
+    const cd = d.days_until<0 ? `${-d.days_until}d ago` : `in ${d.days_until}d`;
+    const col=d.bucket==='imminent'?'#ff6b6b':d.bucket==='soon'?'#ffc857':d.bucket==='past'?'#5b6b86':'#8aa0bf';
+    it.innerHTML=`<div class="tl-when ${d.bucket}"><div class="d">${esc(d.date)}</div><div class="c muted">${cd} · ${esc(d.type)}</div></div>
+      <div><span class="dot" style="background:${col}"></span><b>${esc(d.title)}</b>
+      <div class="small muted">${d.geo_names.map(esc).join(", ")}</div>
+      <div class="small" style="margin-top:3px">${esc(d.forces)}</div>
+      <div style="margin-top:4px">${(d.products||[]).map(p=>'<span class="pp" style="border-color:'+(PCOL[p]||'#27395a')+'">'+esc(DASH.prod_label[p]||p)+'</span>').join('')}</div>
+      <div class="small muted" style="margin-top:3px">${esc(d.source||'')}</div></div>`;
+    rc.appendChild(it);
+  });
+  s.appendChild(rc);
+
+  const ac=el("div","card");
+  ac.innerHTML=`<h2>Account targets — who to approach now</h2><div class="desc">Bank-specific signals ranked by strength, each with the why-now and a recommended action. Filter by market, product or confidence; toggle to new-only.</div>`;
+  const ctrl=el("div","controls");
+  const csel=el("select"); csel.innerHTML=`<option value="">All markets</option>`+DASH.countries.filter(c=>c.n_signals).map(c=>`<option value="${c.code}">${esc(c.name)}</option>`).join("");
+  const psel=el("select"); psel.innerHTML=`<option value="">All products</option>`+DASH.products.filter(p=>p.n_signals).map(p=>`<option value="${p.id}">${esc(p.label)}</option>`).join("");
+  const fsel=el("select"); fsel.innerHTML=`<option value="">Any confidence</option><option>High</option><option>Medium-High</option><option>Medium</option>`;
+  const newt=el("label","toggle"); const cb=el("input"); cb.type="checkbox"; newt.appendChild(cb); newt.appendChild(document.createTextNode(" New this week only"));
+  const q=el("input"); q.type="search"; q.placeholder="search bank / theme…";
+  ctrl.append(csel,psel,fsel,newt,q); ac.appendChild(ctrl);
+  const list=el("div"); ac.appendChild(list); s.appendChild(ac);
+  function draw(){
+    list.innerHTML="";
+    let rows=DASH.account_targets.map(k=>sigByKey[k]);
+    if(csel.value) rows=rows.filter(r=>r.countries.includes(csel.value));
+    if(psel.value) rows=rows.filter(r=>r.products.includes(psel.value));
+    if(fsel.value) rows=rows.filter(r=>r.confidence===fsel.value);
+    if(cb.checked) rows=rows.filter(r=>r.is_new_this_week);
+    if(q.value.trim()){const x=q.value.toLowerCase();rows=rows.filter(r=>(r.bank_theme+r.signal+r.implies).toLowerCase().includes(x));}
+    if(!rows.length){list.appendChild(el("div","muted small","No matching signals."));return;}
+    rows.forEach(r=>list.appendChild(sigCard(r)));
+  }
+  [csel,psel,fsel].forEach(e=>e.onchange=draw); cb.onchange=draw; q.oninput=draw; draw();
+}
+
+/* ---------- PATTERNS / HISTORY ---------- */
+function renderPatterns(){
+  const s=$("#patterns"); s.innerHTML="";
+  const pc=el("div","card");
+  pc.innerHTML=`<h2>Structural patterns</h2><div class="desc">The persistent market mechanics each weekly signal should be read against — this is how new data connects to history. Maintained in the history workbook; extend as new patterns emerge.</div>`;
+  const t=el("table"); t.innerHTML=`<thead><tr><th>#</th><th>Pattern</th><th>What it means for Printec</th><th>Conf.</th></tr></thead>`;
+  const tb=el("tbody");
+  DASH.patterns.forEach(p=>{
+    const vals=Object.values(p);
+    tb.appendChild(el("tr",null,`<td>${esc(vals[0])}</td><td><b>${esc(vals[1])}</b><div class="small muted">${esc(vals[2]||'')}</div></td><td class="small">${esc(vals[3]||'')}</td><td><span class="pill ${esc(vals[4])}">${esc(vals[4])}</span></td>`));
+  });
+  t.appendChild(tb); pc.appendChild(t); s.appendChild(pc);
+
+  const ec=el("div","card");
+  ec.innerHTML=`<h2>Milestone timeline (2024 → 2026)</h2><div class="desc">Dated bank/market events from the history workbook — the backbone the weekly signals attach to.</div>`;
+  DASH.events.forEach(e=>{
+    const vals=Object.values(e);
+    const it=el("div","tl-item later");
+    it.innerHTML=`<div class="tl-when"><div class="d">${esc(vals[0])}</div><div class="c muted">${esc(vals[1]||'')}</div></div>
+      <div><b>${esc(vals[2]||'')}</b> — ${esc(vals[3]||'')}<div class="small muted" style="margin-top:2px">${esc(vals[5]||'')}</div></div>`;
+    ec.appendChild(it);
+  });
+  s.appendChild(ec);
+}
+
+/* ---------- charts ---------- */
+function mkBar(id,labels,data,colors,title,horizontal,fullnames){
+  const ctx=document.getElementById(id); if(!ctx)return;
+  charts.push(new Chart(ctx,{type:'bar',data:{labels,datasets:[{label:title,data,backgroundColor:colors,borderRadius:5}]},
+   options:{indexAxis:horizontal?'y':'x',responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{display:false},tooltip:{callbacks:{title:(it)=>fullnames?fullnames[it[0].dataIndex]:it[0].label}}},
+    scales:{x:{ticks:{color:'#93a4be'},grid:{color:'#1c2b48'}},y:{ticks:{color:'#cdd9ec'},grid:{color:'#1c2b48'}}}}}));
+}
+function mkLine(id,title,labels,sets){
+  const ctx=document.getElementById(id); if(!ctx)return;
+  charts.push(new Chart(ctx,{type:'line',data:{labels,datasets:sets.map(x=>({label:x.label,data:x.data,borderColor:x.color,backgroundColor:x.color+'22',tension:.3,fill:false,pointRadius:2}))},
+   options:{responsive:true,maintainAspectRatio:false,plugins:{title:{display:true,text:title,color:'#cdd9ec'},legend:{labels:{color:'#cdd9ec'}}},
+    scales:{x:{ticks:{color:'#93a4be'},grid:{color:'#1c2b48'}},y:{ticks:{color:'#93a4be'},grid:{color:'#1c2b48'}}}}}));
+}
+
+/* ---------- nav ---------- */
+const TABS=[["overview","This week"],["country","Countries"],["product","Products"],["competition","Competition"],["accounts","Accounts & deadlines"],["patterns","Patterns & history"]];
+const RENDER={overview:renderOverview,country:renderCountry,product:renderProduct,competition:renderCompetition,accounts:renderAccounts,patterns:renderPatterns};
+function show(id){
+  document.querySelectorAll("section").forEach(s=>s.classList.toggle("active",s.id===id));
+  document.querySelectorAll("#nav button").forEach(b=>b.classList.toggle("active",b.dataset.id===id));
+  charts.forEach(c=>c.destroy()); charts=[];
+  RENDER[id]();
+}
+function init(){
+  $("#weekBadge").textContent="Week of "+DASH.week;
+  $("#genBadge").textContent="Generated "+(DASH.generated||"").replace("T"," ").replace("Z"," UTC");
+  const nav=$("#nav");
+  TABS.forEach(([id,lab])=>{const b=el("button",null,lab);b.dataset.id=id;b.onclick=()=>show(id);nav.appendChild(b);});
+  $("#foot").innerHTML=`<b>Provenance &amp; method.</b> Built by the Printec weekly-intelligence skill (upgraded Orchestrator) from the research folder: <code>master-signal-table.md</code> (${DASH.signals.length} signals), the history workbook (${DASH.summary.n_timeseries_points||0} time-series points, ${DASH.patterns.length} patterns, ${DASH.events.length} milestones) and the latest statistics findings (${DASH.summary.n_country_stats||0} markets). Confidence: <span class="pill High">High</span> = 2+ independent agents agree; single-agent signals cap at <span class="pill Medium">Medium</span>. "Strength" is a transparent confidence × agent-count × likelihood weighting for ranking only — not a budget or market size. No figure here is invented; every number traces to a dated source in the master table or workbook.`;
+  show("overview");
+}
+init();
+</script>
+</body></html>
+"""
+
+if __name__ == "__main__":
+    main()

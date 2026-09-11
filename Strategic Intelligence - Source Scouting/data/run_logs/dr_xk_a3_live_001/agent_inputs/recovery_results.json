@@ -1,0 +1,152 @@
+[
+ {
+  "candidate_id": "dr_xk_a3_live_001__c_067",
+  "source_url": "https://kallxo.com/tag/banka-qendrore-e-kosoves-bqk/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a3_live_001__c_068",
+  "source_url": "https://kallxo.com/lajm/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a3_live_001__c_206",
+  "source_url": "https://kallxo.com/gjate/analize/projektligji-qe-synon-ti-rregulloje-nenshkrimet-dhe-vulat-digjitale/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a3_live_001__c_223",
+  "source_url": "https://kallxo.com/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a3_live_001__c_226",
+  "source_url": "https://report.fic-ks.org/GOAML/Default.ASPX",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://report.fic-ks.org/Account/LogOn?ReturnUrl=%2fGOAML%2fDefault.ASPX",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_xk_a3_live_001__c_250",
+  "source_url": "https://aplikime.arkep-rks.org/SQ",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a3_live_001__c_257",
+  "source_url": "https://kallxo.com/ligji/cka-rregullon-ligji-per-identifikimin-elektronik-dhe-sherbimet-e-besuara-ne-transaksionet-elektronike/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a3_live_001__c_258",
+  "source_url": "https://kallxo.com/tag/autoriteti-kosovar-i-konkurrences/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a3_live_001__c_269",
+  "source_url": "https://data.consilium.europa.eu/doc/document/ST-8860-2026-INIT/en/pdf",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a3_live_001__c_274",
+  "source_url": "https://westernbalkans-infohub.eu/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.enlargement-infohub.eu/",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_xk_a3_live_001__c_286",
+  "source_url": "https://documents1.worldbank.org/curated/en/099112024081516072/pdf/P5078811617aa60d18cf115f7d22ed1b3e.pdf",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a3_live_001__c_290",
+  "source_url": "https://documents1.worldbank.org/curated/en/561501651087302481/pdf/Kosovo-Systematic-Country-Diagnostic-Update.pdf",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a3_live_001__c_309",
+  "source_url": "https://www.amik.org/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a3_live_001__c_310",
+  "source_url": "https://www.amik.org/Pozicionet-dhe-Komunikatat-per-Media",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a3_live_001__c_319",
+  "source_url": "https://www.coe.int/en/web/corruption/-/strengthening-the-banking-sector-s-capacities-to-tackle-aml/cft-risks-associated-to-emerging-technologies",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ }
+]

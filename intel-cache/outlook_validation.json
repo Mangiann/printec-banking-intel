@@ -1,0 +1,225 @@
+{
+  "week": "2026-08-31",
+  "generated_by": "validate-outlooks workflow (independent traceability audit)",
+  "validated": [
+    {
+      "oid": 0,
+      "verdict": "grounded",
+      "ungrounded": []
+    },
+    {
+      "oid": 1,
+      "verdict": "grounded",
+      "ungrounded": []
+    },
+    {
+      "oid": 2,
+      "verdict": "thin",
+      "ungrounded": [
+        "\"ELTA already runs 117 ATMs and procures ATM security and monitoring separately\" — no ELTA ATM estate figure or separate ATM security/monitoring procurement appears in any of the three cited documents (findings/02-tenders/2026-08-27.md, findings/06-vendors/2026-08-31.md, findings/01-bank-disclosures/2026-08-27.md); the supporting record (ELTA notice 53/25) sits in the uncited findings/02-tenders/2026-08-01.md."
+      ]
+    },
+    {
+      "oid": 6,
+      "verdict": "grounded",
+      "ungrounded": []
+    },
+    {
+      "oid": 7,
+      "verdict": "thin",
+      "ungrounded": [
+        "\"about EUR 7.9m of Bulgarian credit-transfer fraud, roughly 70% of national losses\" — the EUR 7.9m figure traces to findings/02-tenders/2026-08-27.md, but the \"roughly 70% of national losses\" share appears in none of this outlook's four cited files (it is in findings/05-jobs/2026-08-31.md, which this outlook does not cite).",
+        "\"Alongside the payee check, Article 5d imposes screening of users against sanctions lists at least once every calendar day — the least-noticed and most operationally demanding part of the package\" — the daily-screening duty itself is supported, but its placement inside the 1 January 2027 package is contradicted by the cited doc, which states Art.5d \"is NOT listed in Art.16(9) and carried its own single deadline of 09/01/2025 for all PSPs\"."
+      ]
+    },
+    {
+      "oid": 8,
+      "verdict": "grounded",
+      "ungrounded": []
+    },
+    {
+      "oid": 10,
+      "verdict": "grounded",
+      "ungrounded": []
+    },
+    {
+      "oid": 11,
+      "verdict": "grounded",
+      "ungrounded": []
+    },
+    {
+      "oid": 12,
+      "verdict": "thin",
+      "ungrounded": [
+        "\"five county frameworks worth RON 649,228 at Craiova\" — the cited tender doc records five county frameworks (AJFP Dolj/Valcea/Mehedinti/Olt/Gorj) totalling RON 449,628; RON 649,228 is the combined figure only once three further contracts under SCNA1135126 (RON 199,600) are added, so the count and the money figure do not pair as stated."
+      ]
+    },
+    {
+      "oid": 13,
+      "verdict": "thin",
+      "ungrounded": [
+        "\"a 5,700-machine ATM estate\" — no national Hungarian ATM total appears in any cited finding document; the per-bank figures present (MBH 1,285, OTP 1,929/1,844 locator points, Erste 505) do not sum to or evidence 5,700, and the outlook's own note concedes it is not reconciled to a per-bank census",
+        "\"is setting a 2027 budget\" (of MBH's new deputy CEO) — findings/05-jobs/2026-08-31.md records the 01/08/2026 appointment and the AI/process-automation mandate, and describes him as in his 'first 100 days', but says nothing about a 2027 budget round"
+      ]
+    },
+    {
+      "oid": 14,
+      "verdict": "unsupported",
+      "ungrounded": [
+        "\"Decision H-KPL-I-4/2025 of 17/12/2025\" — the decision number appears nowhere in the cited documents (zero hits for 'H-KPL' across all findings files), and no 17/12/2025 MNB decision against K&H is recorded",
+        "\"fined K&H HUF 60,000,000 — the largest cash-area fine in the Hungarian cluster\" — no HUF 60m fine against K&H, and no MNB cash-area fine ranking, appears in the cited docs; findings/01-bank-disclosures/2026-08-27.md states the MNB decision register (hatarozatkereso.mnb.hu) is WAF-blocked and that fines are 'entirely unverified'",
+        "\"re-imposed from 01/03/2026 the duties to add staffed teller positions in named branches\" — no such supervisory duty, and no 01/03/2026 date, is present in findings/03-regulation/2026-08-27.md or the other cited files",
+        "\"extend online appointment booking for cash transactions to every branch that has a teller including the lunchtime and closing windows\" — not found in any cited document",
+        "\"file a monthly waiting-time monitoring report; the per-branch data for March to May 2026 went to the regulator by 15/06/2026 and remains under assessment\" — no waiting-time reporting obligation and no 15/06/2026 K&H filing appears in the cited docs",
+        "\"K&H has already been fined once for missing these same deadlines\" — no prior K&H fine or missed deadline is recorded in any cited document",
+        "\"enforcement has begun\" under the Hungarian cybersecurity regime — findings/03-regulation/2026-08-27.md says the regime is in its enforcement phase but that no SZTFH enforcement decision or fine could be located, so 'enforcement has begun' overstates the cited evidence"
+      ]
+    },
+    {
+      "oid": 15,
+      "verdict": "grounded",
+      "ungrounded": []
+    },
+    {
+      "oid": 20,
+      "verdict": "grounded",
+      "ungrounded": []
+    },
+    {
+      "oid": 21,
+      "verdict": "thin",
+      "ungrounded": [
+        "\"the same bank published a stage-1 qualified list on its sorter contest three days later\" — the cited records date the sorter notice carrying the shortlistedFirms node to 20/08/2026 (five days before the 25/08/2026 recycler qualification close); 28/08/2026 is the sorter electronic auction, not the list publication, so the \"three days later\" sequencing is not supported."
+      ]
+    },
+    {
+      "oid": 22,
+      "verdict": "grounded",
+      "ungrounded": []
+    },
+    {
+      "oid": 23,
+      "verdict": "thin",
+      "ungrounded": [
+        "\"four standing teller pipelines open continuously since 31/01/2025 across roughly 74 locations, plus a Belgrade regional pipeline opened 03/04/2026\" — the cited jobs finding (findings/05-jobs/2026-08-31.md) says only THREE Blagajnik pipelines were created 31/01/2025 (Kragujevac 31 locations, Nis 18, Vojvodina 24 = ~73), and the Belgrade Regional Centre pipeline created 03/04/2026 IS the fourth, not an additional fifth. The driver's \"Four teller-recruitment pipelines have stood open continuously since 31/01/2025\" is directly contradicted by the doc's own confidence note (\"the three regional teller pipelines have stood continuously since 31/01/2025\")."
+      ]
+    },
+    {
+      "oid": 24,
+      "verdict": "thin",
+      "ungrounded": [
+        "\"every Serbian bank participates indirectly through a correspondent parent abroad\" — no support in any of the three cited docs (02-tenders, 04-statistics, 06-vendors). The statistics finding only records that 18 commercial banks plus NBS are SCT-operational; it says nothing about direct vs indirect scheme participation or correspondent parents.",
+        "\"18 of 19 banks went live on credit transfers on 4 and 5 May 2026\" — the cited statistics finding gives a single date (fully operational as of 05/05/2026, 18 domestic commercial banks); the two-day \"4 and 5 May\" go-live is not in the cited docs.",
+        "\"there is still no Serbian date for instant euro payments\" / \"the regulator confirms none exists\" — the cited docs record NBS procuring 'Uključenje u SEPA (TIPS)' with \"TIPS timing depends on scheme onboarding windows\"; that is an absence of a published date, not a regulator confirmation that none exists.",
+        "\"do not sell payment-regulation compliance built on the newest European directive, because Serbia is a full cycle behind\" — no statement about Serbia's position relative to PSD2/PSD3 (or any EU payments directive cycle) appears in the cited docs."
+      ]
+    },
+    {
+      "oid": 25,
+      "verdict": "grounded",
+      "ungrounded": []
+    },
+    {
+      "oid": 52,
+      "verdict": "thin",
+      "ungrounded": [
+        "\"European banking product sales down 13.0% to USD 236.6m on lower European volume\" — the cited vendors doc gives USD 236.6m / -13.0% as Diebold Nixdorf's GLOBAL Banking product net sales (from USD 271.8m), with the 10-Q attributing the fall to 'lower volume in Middle East, Africa and Europe'. No Europe-only product revenue figure appears in the cited documents."
+      ]
+    },
+    {
+      "oid": 53,
+      "verdict": "thin",
+      "ungrounded": [
+        "\"the publisher's site was unreachable to every route this cycle, so this is reported, not verified\" (re EPC153-22 v2.1) — the cited regulation doc states the EPC153-22 v2.1 PDF was 're-fetched and text-extracted 27/08/2026' and cites it as primary ('direct PDF paths on the same host download fine ... retrieved and parsed locally with pdfminer.six'). The Cloudflare 403 applies to europeanpaymentscouncil.eu HTML news/rulebook pages and to the separate VoP-rulebook row, not to this guidance document."
+      ]
+    },
+    {
+      "oid": 54,
+      "verdict": "grounded",
+      "ungrounded": []
+    },
+    {
+      "oid": 55,
+      "verdict": "grounded",
+      "ungrounded": []
+    },
+    {
+      "oid": 100,
+      "verdict": "grounded",
+      "ungrounded": []
+    },
+    {
+      "oid": 101,
+      "verdict": "grounded",
+      "ungrounded": []
+    },
+    {
+      "oid": 102,
+      "verdict": "grounded",
+      "ungrounded": []
+    },
+    {
+      "oid": 103,
+      "verdict": "thin",
+      "ungrounded": [
+        "\"names ATMs as critical infrastructure whose make, model and firmware must be reported within four hours\" — the word \"firmware\" traces nowhere. findings/03-regulation/2026-08-27.md (CBK row) says Annex 1 demands \"hardware manufacturer, software developer and make/model\"; no source mentions firmware. (The driver-level wording \"hardware manufacturer, software developer, make and model\" is correct — only the summary embellishes.)",
+        "\"the two Croatian government lots decided inside a month\" — findings/02-tenders/2026-08-27.md has the two MUP (Ministry of the Interior) lots CLOSING 11/09/2026 and 22/09/2026, with \"awards Q4 2026\". Nothing is decided inside a month; the price + \"Vrijeme odaziva na servisnu intervenciju\" (response-time) criterion on TED 555035-2026 is otherwise correct.",
+        "CITATION GAP (facts verify, citation does not): the entire NCR Atleos / Brink's driver — acquisition, Brink's as a managed-services competitor, CMA Phase 1 opened 26/08/2026, 22/10/2026 statutory decision deadline, close pulled forward to early Q1 2027 — carries NO inline citation and its source, findings/06-vendors/2026-08-31.md, is absent from cite_files. Every element does check out verbatim in that uncited doc, so the facts are real; the traceability to the outlook's own cited set is not. The outlook self-declares this in cite_ungrounded."
+      ]
+    },
+    {
+      "oid": 104,
+      "verdict": "grounded",
+      "ungrounded": []
+    },
+    {
+      "oid": 105,
+      "verdict": "grounded",
+      "ungrounded": []
+    },
+    {
+      "oid": 106,
+      "verdict": "grounded",
+      "ungrounded": []
+    },
+    {
+      "oid": 107,
+      "verdict": "thin",
+      "ungrounded": [
+        "Hungary's central bank has ordered Raiffeisen Bank Hungary to complete internal-audit testing of beneficial-owner identification by 30 September 2026 and to deliver the audit reports plus a register of unresolved ownership structures by 31 October 2026\" — the driver cites findings/03-regulation/2026-08-27.md, which contains no Raiffeisen Hungary AML row. The only readable primary-derived record of the same two decisions (findings/01-bank-disclosures/parts/2026-07-30/hungary-cluster.json) gives DIFFERENT deadlines: H-PM-I-B-8/2026 \"orders remediation by 30/04/2026\" and H-PM-I-B-13/2026 \"orders it by 31/07/2026\". The snapshots of both decision PDFs are corrupted binary and unreadable, and intel-cache/signals.json itself flags \"NO agent refiled the underlying MNB decisions this cycle\".",
+        "with the named weakness sitting in an outsourced alert pre-screening provider\" / \"locating the weakness in an outsourced pre-screening provider\" — no cite_files doc, snapshot or KB entry mentions alert pre-screening or an outsourced provider in connection with the MNB orders; it appears only in the derived master-signal-table.md / signals.json row.",
+        "Montenegro went live with all eleven of its banks at once, with payee-name verification made compulsory\" — not supported by any cite_files doc or snapshot. The corpus's description of the cited CBCG TIPS Clone page (findings/01-bank-disclosures/2026-08-27.md line 273) mentions no VoP; the only corpus support is findings/06-vendors/2026-08-31.md (not a cite_file), which sources it to press reporting of a Law on Payment Transactions \"reported 07/07/2026 while still in parliamentary procedure\", and findings/03-regulation/2026-07-24.md records \"mandatory Verification of Payee per Reg (EU) 2024/886 is NOT independently confirmed for Montenegro\".",
+        "a ten-second credit rule\" (Montenegro) — same gap: absent from the cited CBCG page's snapshot coverage and from every cite_files doc; traceable only to the same press-reported draft law. (The verified ten-second figure in the corpus is Bosnia's Art.12 gross-settlement rule, not a Montenegrin one.)"
+      ]
+    },
+    {
+      "oid": 108,
+      "verdict": "thin",
+      "ungrounded": [
+        "\"Romania's tier-one banks have built chip-based onboarding in-house against the national electronic identity card with no vendor named\" — the cited bank-disclosures doc (findings/01-bank-disclosures/2026-08-27.md) confirms the two underlying facts (Garanti BBVA Romania launched eID-chip/NFC + selfie + liveness in-app onboarding on 14/04/2026; BRD enabled the CEI chip for remote identification in Q2-2026) but explicitly says the vendor is UNKNOWN, not that the build was in-house — and draws the opposite commercial read: \"The absence of a named vendor is an opening - no publicly entrenched incumbent to displace\" and \"who supplied the current eID integration\" is left as an open follow-up. \"In-house\" is an inference the evidence does not carry, and it is the predicate for calling Romania a closed lane. (Garanti BBVA is also not a tier-one bank.)",
+        "\"Kosovo, where one bank had to extend a remote-onboarding and digital-signature tender twice to 29 June 2026 without an award\" — the twice-extended-to-29/06/2026 detail (TEB Sh.A. IFB 270/26, original close 12/06, then 22/06, then 29/06) is only in findings/02-tenders/2026-08-01.md, which is NOT among cite_files; the cited findings/02-tenders/2026-08-27.md carries 270/26 with a 22/06/2026 date and states the opposite on award status — \"All four already awarded but undisclosed\"."
+      ]
+    },
+    {
+      "oid": 109,
+      "verdict": "grounded",
+      "ungrounded": []
+    },
+    {
+      "oid": 110,
+      "verdict": "thin",
+      "ungrounded": [
+        "Hungary/MNB: \"seated a local integrator behind them for three years\" — findings/02-tenders/2026-08-27.md records TED 511411-2026 as \"CLOSED 24/08/2026, AWARD PENDING\" with \"No award notice among MNB's 16 TED notices published 06/07-27/08/2026\"; no integrator has been awarded, and the source only predicts \"an Entrust reseller near-certain\". The \"3 years\" in the source is EM-PREMIUM manufacturer support / a 36-month contract term, not an integrator seating. (The nShield part-number spec itself is grounded.)",
+        "North Macedonia's \"seven main banks face two integrations on two calendars\" — the figure \"seven\" (bank count for North Macedonia) appears in none of the cite_files, nor anywhere in findings/ or knowledge-base/.",
+        "Citation hygiene (fact correct in corpus, absent from cite_files): North Macedonia's clearing-house instant service with \"banks expected to initiate from 15 September 2026\" traces only to findings/05-jobs/2026-08-31.md (\"Two banks are preparing to connect and begin initiating payments by 15/09/2026\"), which oid=110 does not cite.",
+        "Citation hygiene (fact correct in corpus, absent from cite_files): Croatia's \"largest domestically owned bank, which has stated its card ecosystem must change\" traces only to findings/05-jobs/2026-08-31.md (HPB careers text, \"requires implementing changes in our card ecosystem\"), which oid=110 does not cite; the cited tender doc calls HPB \"a state-owned bank\" and carries only the HAC award.",
+        "Minor imprecision: \"Kosovo's card-accepting terminals reached about 30,300\" uses the POS-only count (30,295); the source's total card-accepting terminals figure is 30,981 (686 ATM + 30,295 POS)."
+      ]
+    },
+    {
+      "oid": 111,
+      "verdict": "grounded",
+      "ungrounded": []
+    }
+  ]
+}

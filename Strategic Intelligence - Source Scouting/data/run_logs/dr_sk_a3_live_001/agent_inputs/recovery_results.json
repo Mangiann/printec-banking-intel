@@ -1,0 +1,212 @@
+[
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_038",
+  "source_url": "https://lexapi.sk/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://essential-data.sk/lexdata/",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_039",
+  "source_url": "https://lex.epi.sk/legislativne-procesy/slov-lex",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_052",
+  "source_url": "https://www.anasoft.com/sk/home/referencie/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.anasoft.com/sk/referencie",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_064",
+  "source_url": "https://competition-cases.ec.europa.eu/cases/M.10378",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_108",
+  "source_url": "https://www.taylorwessing.com/en/insights-and-events/insights",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_117",
+  "source_url": "https://ekonomika.pravda.sk/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.pravda.sk/spravy/ekonomika",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_278",
+  "source_url": "https://www.slsp.sk/sk/biznis/platobny-styk/okamzite-platby",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_279",
+  "source_url": "https://subjekty.nbs.sk/sk/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_282",
+  "source_url": "https://registre.nbs.sk/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_283",
+  "source_url": "https://regfap.nbs.sk/index.php",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_284",
+  "source_url": "https://regver.nbs.sk/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_333",
+  "source_url": "https://www.primabanka.sk/vyrocne-spravy",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_339",
+  "source_url": "https://finstat.sk/31340890",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_062",
+  "source_url": "https://www.finstat.sk/35760419",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_114",
+  "source_url": "https://index.sme.sk/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.sme.sk/index",
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_126",
+  "source_url": "https://spectator.sme.sk/business",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_138",
+  "source_url": "https://sk.jooble.org/pr%C3%A1ca-compliance-officer/Bratislava",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_230",
+  "source_url": "https://www.coe.int/en/web/moneyval",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_231",
+  "source_url": "https://www.fatf-gafi.org/en/countries/detail/Slovakia.html",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_315",
+  "source_url": "https://www.finstat.sk/51910497",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_325",
+  "source_url": "https://www.tatrabanka.sk/sk/o-banke/financne-ukazovatele/ostatne-informacie/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ }
+]

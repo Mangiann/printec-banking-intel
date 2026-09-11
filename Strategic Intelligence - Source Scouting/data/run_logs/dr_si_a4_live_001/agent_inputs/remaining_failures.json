@@ -1,0 +1,282 @@
+[
+ {
+  "candidate_id": "dr_si_a4_live_001__c_049",
+  "source_url": "https://www.petrol.eu/za-vlagatelje",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_si_a4_live_001__c_061",
+  "source_url": "https://www.visaeurope.si/placujte-z-visa/posebne-tehnologije/slovenija-placuje-digitalno.html",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_si_a4_live_001__c_074",
+  "source_url": "https://kontron-slovenia.com/solutions/it-solutions/business-applications-solutions/financial-services-solutions/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_si_a4_live_001__c_090",
+  "source_url": "https://www.dnevnik.si/posel",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_si_a4_live_001__c_101",
+  "source_url": "https://racunalniske-novice.com/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_si_a4_live_001__c_117",
+  "source_url": "https://www.argusadvisoryresearch.com/reports/country-reports/europe/slovenia.html",
+  "outcome": "unresolved",
+  "http_status": 522,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 522"
+ },
+ {
+  "candidate_id": "dr_si_a4_live_001__c_126",
+  "source_url": "https://www.mckinsey.com/industries/financial-services/our-insights/global-payments-report",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "TimeoutError"
+ },
+ {
+  "candidate_id": "dr_si_a4_live_001__c_128",
+  "source_url": "https://racunalniske-novice.com/placilne-navade-slovencev-v-luci-negotovih-razmer/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_si_a4_live_001__c_129",
+  "source_url": "https://www.varstvo-konkurence.si/ostali-dokumenti/arhiv-odlocb/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_si_a4_live_001__c_133",
+  "source_url": "https://www.zps.si/index.php/osebne-finance-sp-1406526635/osebni-rauni/10695-primerjajte-bancne-racune-in-pakete",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_si_a4_live_001__c_140",
+  "source_url": "https://www.varuh-rs.si/porocila-in-publikacije/letna-porocila/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_si_a4_live_001__c_142",
+  "source_url": "https://www.a-tvp.si/letna-porocila/letna-porocila-atvp",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_si_a4_live_001__c_154",
+  "source_url": "https://www.zaposlitev.net/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_si_a4_live_001__c_162",
+  "source_url": "https://www.bsi.si/placila-in-infrastruktura/nacionalni-svet-za-placila",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_si_a4_live_001__c_168",
+  "source_url": "https://www.halcom.ba/si/novice-halcom/novice/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_si_a4_live_001__c_194",
+  "source_url": "https://www.bsi.si/financna-stabilnost/nadzor-placil-in-infrastruktur/nadzor-druzb-za-izdajo-elektronskega-denarja/register-druzb-za-izdajo-elektronskega-denarja",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_si_a4_live_001__c_195",
+  "source_url": "https://www.bsi.si/financna-stabilnost/subjekti-nadzora/placilne-institucije-drzav-egp-v-sloveniji",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_si_a4_live_001__c_220",
+  "source_url": "https://www.bsi.si/razpisi/javna-narocila",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_si_a4_live_001__c_228",
+  "source_url": "https://www.nlb.si/nlb/nlb-portal/slo/o-banki/vlagatelji/financna-porocila/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_si_a4_live_001__c_229",
+  "source_url": "https://www.nlb.si/nlb/nlb-portal/eng/investor-relations/financial-reports/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_si_a4_live_001__c_246",
+  "source_url": "https://financialreports.eu/companies/nlb/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_si_a4_live_001__c_262",
+  "source_url": "https://www.flik.si/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_si_a4_live_001__c_268",
+  "source_url": "https://www.bsi.si/placila-in-infrastruktura/placilni-sistemi/poravnava-kartic",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_si_a4_live_001__c_269",
+  "source_url": "https://www.bsi.si/financna-stabilnost/subjekti-nadzora/upravljavci-placilnih-sistemov",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_si_a4_live_001__c_273",
+  "source_url": "https://www.mastercard.si/sl-si/business/overview/support/interchange.html",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_si_a4_live_001__c_279",
+  "source_url": "https://www.bsi.si/placila-in-infrastruktura/nacionalni-svet-za-placila/gradiva/gradiva-sej-nacionalnega-sveta-za-placila",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_si_a4_live_001__c_307",
+  "source_url": "https://podatki.gov.si/dataset/evidenca-imetnikov-licenc-po-zakonu-o-zasebnem-varovanju",
+  "outcome": "unresolved",
+  "http_status": 401,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 401"
+ },
+ {
+  "candidate_id": "dr_si_a4_live_001__c_317",
+  "source_url": "https://www.academia.si/wp-content/uploads/2021/06/DIPLOMA_Novak.pdf",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ }
+]

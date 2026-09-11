@@ -1,0 +1,17 @@
+{
+ "agentNo": 5,
+ "agentLabel": "Early Intent (Jobs + Leadership)",
+ "unitNoun": "market",
+ "tableKind": "signals",
+ "findingsDir": "/Users/mangian/Downloads/BANKING/findings/05-jobs",
+ "runDate": "2026-07-24",
+ "prevSummary": "",
+ "units": [
+  {
+   "slug": "greece",
+   "name": "Greece",
+   "focus": "bank postings for channels/self-service/ATM/payments/AML + senior leadership changes (CDO/CIO/Head of Payments/Channels) | READ intel-cache/jobs_listings.json FIRST (pre-fetched ATS postings incl. Piraeus[Workable]/Alpha[SuccessFactors]); filter to Greek bank/fintech IT/payments/self-service/ATM/channels roles as early-intent signals.",
+   "langs": "Greek"
+  }
+ ]
+}

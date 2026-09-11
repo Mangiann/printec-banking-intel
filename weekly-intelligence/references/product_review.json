@@ -1,0 +1,5065 @@
+{
+ "_note": "Product-line verdicts from the LLM critic (agent-briefs/10-product-critic.md). ingest.py replaces the keyword-matched product list of a signal with the verdict here, lead first, when the key is present. text_hash is the signal text the verdict was made on; when the text changes, product_critic.py batches lists the signal again. Edit by hand only to correct a verdict; keep products to taxonomy ids from product_map.json.",
+ "reviews": {
+  "albania-pos-acceptance-mandate-deposit-atm-growth": {
+   "products": [
+    "pos_acquiring",
+    "payment_security_hsm"
+   ],
+   "primary_product": "pos_acquiring",
+   "why": "A legal terminal mandate drives demand for POS supply, terminal management and key injection, while the ATM figures are only backdrop.",
+   "keyword_products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "payment_security_hsm"
+   ],
+   "text_hash": "48a5dd45d397",
+   "reviewed": "2026-09-07"
+  },
+  "albania-tips-clone-instant-payment-rail-november-2026-go-live": {
+   "products": [
+    "payments_instant",
+    "fraud_monitoring",
+    "payment_security_hsm"
+   ],
+   "primary_product": "payments_instant",
+   "why": "Banks joining a new instant rail need integration, payee verification, real-time fraud screening and HSM capacity by a fixed date.",
+   "keyword_products": [
+    "payments_instant",
+    "digital_onboarding",
+    "fraud_monitoring",
+    "payment_security_hsm"
+   ],
+   "text_hash": "bb346048ecb4",
+   "reviewed": "2026-09-07"
+  },
+  "printec-albania-bank-of-albania-banknote-machine-certification-the-fitness-gate": {
+   "products": [
+    "atm_recycling"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The row is about certifying a fitness-capable recycler so the deposit-ATM estate can move to true note recycling.",
+   "keyword_products": [
+    "atm_recycling",
+    "compliance_resilience",
+    "physical_security"
+   ],
+   "text_hash": "85e3115cba3b",
+   "reviewed": "2026-09-07"
+  },
+  "albania-third-party-atm-partnership-operators-forming-an-independent-deployer-la": {
+   "products": [
+    "atm_recycling",
+    "managed_services"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "Deposit-ATM growth is being built by independent deployers under an outsourced operating model, so both the machines and the ATM-as-a-service layer are in play.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "managed_services"
+   ],
+   "text_hash": "761bc167d5ce",
+   "reviewed": "2026-09-07"
+  },
+  "albania-branch-counter-cash-and-paper-payments-the-teller-automation-case": {
+   "products": [
+    "atm_recycling",
+    "self_service",
+    "digital_onboarding"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "Heavy counter cash calls for teller recyclers and assisted kiosks, and paper transfers call for qualified e-signature.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "payments_instant",
+    "digital_onboarding",
+    "compliance_resilience"
+   ],
+   "text_hash": "4b19b2686080",
+   "reviewed": "2026-09-07"
+  },
+  "otp-bank-albania-fastest-atm-build-in-the-otp-group-plus-a-card-platform-cutover": {
+   "products": [
+    "atm_recycling",
+    "card_issuing",
+    "pos_acquiring"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "A funded ATM roll-out is the main opening, with the card-platform switch creating follow-on terminal and card-side work.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "fraud_monitoring",
+    "card_issuing",
+    "core_digital"
+   ],
+   "text_hash": "68f71e624897",
+   "reviewed": "2026-09-07"
+  },
+  "raiffeisen-bank-albania-self-service-zone-conversion-and-an-open-digital-signatu": {
+   "products": [
+    "self_service",
+    "digital_onboarding",
+    "atm_recycling"
+   ],
+   "primary_product": "self_service",
+   "why": "Branches are being converted to self-service zones with deposit machines, and the bank has named a qualified e-signature gap.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "digital_onboarding",
+    "fraud_monitoring",
+    "compliance_resilience",
+    "managed_services",
+    "core_digital"
+   ],
+   "text_hash": "9bc46a0b4165",
+   "reviewed": "2026-09-07"
+  },
+  "bkt-branch-rebuild-an-eight-year-old-atm-fleet-and-post-office-cash-in": {
+   "products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "An ageing fleet in its replacement window plus a branch rebuild drive ATM and branch-transformation demand, with an idle POS estate as a smaller target; onboarding is already closed.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "digital_onboarding"
+   ],
+   "text_hash": "e74745f8f85a",
+   "reviewed": "2026-09-07"
+  },
+  "credins-bank-funded-pos-and-atm-modernisation-plus-a-2026-loan-origination-build": {
+   "products": [
+    "pos_acquiring",
+    "digital_onboarding",
+    "managed_services"
+   ],
+   "primary_product": "pos_acquiring",
+   "why": "An Android POS migration is under way, the loan-origination build needs identity and signing, and cost pressure points to outsourcing the device estate.",
+   "keyword_products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "payments_instant",
+    "digital_onboarding",
+    "compliance_resilience",
+    "payment_security_hsm",
+    "managed_services",
+    "core_digital"
+   ],
+   "text_hash": "fe59c7fcd11e",
+   "reviewed": "2026-09-07"
+  },
+  "albania-eidas2-electronic-identification-and-digital-identity-wallet-law-adopted": {
+   "products": [
+    "digital_onboarding"
+   ],
+   "primary_product": "digital_onboarding",
+   "why": "The new law is the legal basis for remote onboarding, qualified e-signature and wallet acceptance.",
+   "keyword_products": [
+    "digital_onboarding",
+    "compliance_resilience"
+   ],
+   "text_hash": "caf47852a9e7",
+   "reviewed": "2026-09-07"
+  },
+  "bank-of-albania-banknote-packaging-system-now-closed-inside-a-live-procurement-c": {
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "compliance_resilience"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The central bank is buying cash-centre equipment, multi-year maintenance contracts and document-capture systems, with no ATM tender in sight.",
+   "keyword_products": [
+    "atm_recycling",
+    "compliance_resilience",
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "d9d09ff11e37",
+   "reviewed": "2026-09-07"
+  },
+  "bank-of-albania-non-eu-digital-resilience-mirror-plus-aml-regulation-amendment": {
+   "products": [
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "primary_product": "compliance_resilience",
+   "why": "A DORA-style resilience rule and AML amendment push banks toward compliance tooling, device telemetry and auditable managed services.",
+   "keyword_products": [
+    "atm_recycling",
+    "fraud_monitoring",
+    "compliance_resilience",
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "54d1a33f6f6d",
+   "reviewed": "2026-09-07"
+  },
+  "albania-acquiring-economics-reset-interchange-caps-plus-a-new-payment-systems-la": {
+   "products": [
+    "pos_acquiring",
+    "managed_services"
+   ],
+   "primary_product": "pos_acquiring",
+   "why": "Interchange caps squeeze acquiring margin during a forced terminal roll-out, which favours acceptance-as-a-service and outsourced estate management.",
+   "keyword_products": [
+    "pos_acquiring",
+    "compliance_resilience",
+    "payment_security_hsm",
+    "managed_services"
+   ],
+   "text_hash": "fb647a1747a2",
+   "reviewed": "2026-09-07"
+  },
+  "albania-jet-bank-launch-and-backbase-entrenchment": {
+   "products": [
+    "core_digital",
+    "digital_onboarding",
+    "card_issuing"
+   ],
+   "primary_product": "core_digital",
+   "why": "Backbase holds the digital front end, leaving onboarding, screening and card-issuing pieces open around it.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "digital_onboarding",
+    "fraud_monitoring",
+    "card_issuing",
+    "core_digital"
+   ],
+   "text_hash": "d734c8f4d748",
+   "reviewed": "2026-09-07"
+  },
+  "euronet-atm-as-a-service-campaign-aimed-at-bank-finance-departments": {
+   "products": [
+    "managed_services",
+    "atm_recycling"
+   ],
+   "primary_product": "managed_services",
+   "why": "The campaign argues for outsourcing ATM estates, so the contest is over managed ATM operations and the fleet itself.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "text_hash": "da2935b93d75",
+   "reviewed": "2026-09-07"
+  },
+  "union-financiar-tirane-and-iutepay-the-non-bank-payments-and-e-money-layer": {
+   "products": [
+    "self_service",
+    "atm_recycling",
+    "card_issuing"
+   ],
+   "primary_product": "self_service",
+   "why": "Agent-counter operators are buyers of kiosks and cash recyclers, and their fast card growth is an issuing and personalisation opening.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "digital_onboarding"
+   ],
+   "text_hash": "fe1fde100349",
+   "reviewed": "2026-09-07"
+  },
+  "geldservice-austria-gsa-eur-9-1m-recycler-framework-multi-vendor-cash-software": {
+   "products": [
+    "atm_recycling",
+    "managed_services"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "A large recycler framework decides the cash-automation reference for several countries, with maintenance and telemetry as the fallback layer.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "e83e04949f87",
+   "reviewed": "2026-09-07"
+  },
+  "oesterreichische-nationalbank-oenb-rural-atm-programme-to-120-units": {
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "self_service"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The rural ATM programme opens supply of machines, multivendor software and field service below the framework holder.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "managed_services"
+   ],
+   "text_hash": "afea167e9eca",
+   "reviewed": "2026-09-07"
+  },
+  "austria-nisg-2026-tiber-at-fma-single-supervisor-stack-erste-rbi-group-pull-thro": {
+   "products": [
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "primary_product": "compliance_resilience",
+   "why": "Stacked cyber and resilience deadlines make supplier attestation, telemetry and managed monitoring the buying criteria.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "fraud_monitoring",
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "text_hash": "51c8268e47db",
+   "reviewed": "2026-09-07"
+  },
+  "raiffeisen-bank-international-strategy-reset-under-new-ceo-and-new-group-retail-": {
+   "products": [
+    "self_service",
+    "managed_services"
+   ],
+   "primary_product": "self_service",
+   "why": "A strategy review with digitised end-to-end processes and efficiency goals is where self-service estates and outsourcing get re-tendered.",
+   "keyword_products": [
+    "self_service",
+    "managed_services"
+   ],
+   "text_hash": "b095feae4664",
+   "reviewed": "2026-09-07"
+  },
+  "erste-group-austrian-branch-contraction-against-a-flat-core-it-budget": {
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "self_service"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "Branch closures shift cash to deposit ATMs and self-service zones, and a flat IT budget favours managed services over capital spend.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "digital_onboarding",
+    "managed_services",
+    "core_digital"
+   ],
+   "text_hash": "20f2b318c99c",
+   "reviewed": "2026-09-07"
+  },
+  "muenze-oesterreich-austrian-mint-automated-coin-blank-weighing-line-re-run-and-r": {
+   "products": [
+    "atm_recycling"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "A coin-blank weighing line sits closest to the coin-handling side of the cash-automation line, though the fit is partial.",
+   "keyword_products": [
+    "atm_recycling",
+    "managed_services"
+   ],
+   "text_hash": "74c951c44b0f",
+   "reviewed": "2026-09-07"
+  },
+  "oesterreichische-nationalbank-generic-threat-landscape-report-for-the-austrian-f": {
+   "products": [
+    "compliance_resilience"
+   ],
+   "primary_product": "compliance_resilience",
+   "why": "A sector-wide threat-landscape contract feeds DORA and threat-led testing, so it belongs to operational resilience.",
+   "keyword_products": [
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "text_hash": "569e58a44ab8",
+   "reviewed": "2026-09-07"
+  },
+  "austrian-cash-technology-incumbency-giesecke-devrient-on-banknote-processing-gzt": {
+   "products": [
+    "atm_recycling",
+    "self_service",
+    "managed_services"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "Coin automation and post-office smart safes are open to teller recyclers and branch self-service, with the maintenance layer contested.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "physical_security",
+    "managed_services",
+    "core_digital"
+   ],
+   "text_hash": "6064779f1176",
+   "reviewed": "2026-09-07"
+  },
+  "austrian-competitor-landscape-loomis-pushing-automated-cash-worldline-retreating": {
+   "products": [
+    "atm_recycling",
+    "managed_services"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "Loomis is pushing recyclers and smart safes while Worldline's ATM-management and processing contracts come back to market.",
+   "keyword_products": [
+    "atm_recycling",
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "4f9c783d3d76",
+   "reviewed": "2026-09-07"
+  },
+  "finanzmarktaufsicht-fma-the-regulator-itself-is-a-biddable-buyer-for-analytics-a": {
+   "products": [
+    "compliance_resilience",
+    "fraud_monitoring"
+   ],
+   "primary_product": "compliance_resilience",
+   "why": "The regulator buys crypto-analytics, security-monitoring and AML-adjacent tools through single-bid open tenders.",
+   "keyword_products": [
+    "fraud_monitoring",
+    "compliance_resilience",
+    "managed_services",
+    "core_digital"
+   ],
+   "text_hash": "8836db38e836",
+   "reviewed": "2026-09-07"
+  },
+  "oesterreichische-nationalbank-security-technology-maintenance-bridge-expires-31-": {
+   "products": [
+    "physical_security",
+    "managed_services"
+   ],
+   "primary_product": "physical_security",
+   "why": "The only opening is a re-tender of the central bank's physical-security maintenance contract at the end of 2026.",
+   "keyword_products": [
+    "atm_recycling",
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "ced49ed7c1ec",
+   "reviewed": "2026-09-07"
+  },
+  "erste-bank-oesterreich-and-raiffeisen-bankengruppe-join-epi-wero-comes-to-austri": {
+   "products": [
+    "pos_acquiring",
+    "payments_instant"
+   ],
+   "primary_product": "pos_acquiring",
+   "why": "Bringing Wero to merchants means terminal software, QR acceptance and a second account-to-account authorisation path.",
+   "keyword_products": [
+    "pos_acquiring",
+    "payments_instant",
+    "digital_onboarding",
+    "card_issuing"
+   ],
+   "text_hash": "4160fa622f43",
+   "reviewed": "2026-09-07"
+  },
+  "austria-eudi-wallet-will-miss-end-2026-on-the-responsible-minister-s-own-record": {
+   "products": [
+    "digital_onboarding"
+   ],
+   "primary_product": "digital_onboarding",
+   "why": "The sellable position is a wallet-agnostic identity acceptance layer for banks ahead of the 2027 relying-party dates.",
+   "keyword_products": [
+    "digital_onboarding"
+   ],
+   "text_hash": "e76f319be295",
+   "reviewed": "2026-09-07"
+  },
+  "bosnia-herzegovina-ips-bih-mandatory-participation-rulebook-10-07-2026-deadline-": {
+   "products": [
+    "payments_instant",
+    "fraud_monitoring",
+    "payment_security_hsm"
+   ],
+   "primary_product": "payments_instant",
+   "why": "About sixteen banks need instant-payment connectivity, five-second screening and key management by January 2027.",
+   "keyword_products": [
+    "pos_acquiring",
+    "payments_instant",
+    "digital_onboarding",
+    "fraud_monitoring",
+    "payment_security_hsm",
+    "core_digital"
+   ],
+   "text_hash": "8f2d87680f58",
+   "reviewed": "2026-09-07"
+  },
+  "bosnia-herzegovina-sepa-accession-iso-20022-structured-address-remediation": {
+   "products": [
+    "payments_instant",
+    "compliance_resilience"
+   ],
+   "primary_product": "payments_instant",
+   "why": "A 21-bank ISO 20022 and SEPA migration also drags in sanctions screening and structured-data clean-up.",
+   "keyword_products": [
+    "payments_instant",
+    "fraud_monitoring",
+    "compliance_resilience"
+   ],
+   "text_hash": "5eda4e1ab932",
+   "reviewed": "2026-09-07"
+  },
+  "bosnia-herzegovina-bank-modernization-fatf-grey-list": {
+   "products": [
+    "atm_recycling"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The row measures a running conversion of dispense-only ATMs to cash-accepting machines, bank by bank.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "compliance_resilience",
+    "physical_security",
+    "core_digital"
+   ],
+   "text_hash": "ed49239ad382",
+   "reviewed": "2026-09-07"
+  },
+  "payten-asseco-see-bih-atm-service-incumbency-and-a-disclosed-retreat": {
+   "products": [
+    "atm_recycling",
+    "managed_services"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The attack is on ATM hardware refresh plus multivendor software, telemetry and maintenance contracts held by Payten.",
+   "keyword_products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "payments_instant",
+    "managed_services",
+    "core_digital"
+   ],
+   "text_hash": "b1f8576028c6",
+   "reviewed": "2026-09-07"
+  },
+  "fbih-banking-agency-binding-ict-risk-decision-with-an-annual-external-ict-audit-": {
+   "products": [
+    "compliance_resilience",
+    "payment_security_hsm",
+    "managed_services"
+   ],
+   "primary_product": "compliance_resilience",
+   "why": "The ICT-risk decision maps to key management, resilience tooling and outsourced monitoring with a dated audit hook.",
+   "keyword_products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "compliance_resilience",
+    "payment_security_hsm",
+    "managed_services"
+   ],
+   "text_hash": "065c7fd986e2",
+   "reviewed": "2026-09-07"
+  },
+  "seven-fbih-banks-with-zero-own-pos-estate-greenfield-card-acceptance": {
+   "products": [
+    "pos_acquiring"
+   ],
+   "primary_product": "pos_acquiring",
+   "why": "Seven banks have no acquiring estate at all, so terminals, TMS and softPOS are a fresh build.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "payments_instant",
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "text_hash": "662baf9381bd",
+   "reviewed": "2026-09-07"
+  },
+  "unicredit-bank-d-d-mostar-largest-fbih-acquirer-fresh-funding-two-mandated-audit": {
+   "products": [
+    "pos_acquiring",
+    "atm_recycling",
+    "fraud_monitoring"
+   ],
+   "primary_product": "pos_acquiring",
+   "why": "A funded bank with the largest terminal estate faces a POS refresh, ATM deposit upgrades and AML-driven monitoring.",
+   "keyword_products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "payments_instant",
+    "fraud_monitoring",
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "text_hash": "cdca1b9e6329",
+   "reviewed": "2026-09-07"
+  },
+  "raiffeisen-bank-d-d-bosna-i-hercegovina-largest-atm-fleet-in-the-country-fresh-b": {
+   "products": [
+    "atm_recycling",
+    "self_service"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The country's largest ATM fleet is being held rather than cut, which favours recyclers and in-branch automation.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "payments_instant",
+    "compliance_resilience"
+   ],
+   "text_hash": "bc4330d92adf",
+   "reviewed": "2026-09-07"
+  },
+  "asa-banka-d-d-sarajevo-fresh-capital-new-strategy-period-mandated-ict-audit-proc": {
+   "products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "Fresh capital and a small fleet point to self-service investment, with the processor stake opening acceptance and QR work.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "payments_instant",
+    "compliance_resilience"
+   ],
+   "text_hash": "b9a7a335a93f",
+   "reviewed": "2026-09-07"
+  },
+  "ziraatbank-bh-d-d-sarajevo-building-merchant-acquiring-while-its-security-functi": {
+   "products": [
+    "pos_acquiring",
+    "payment_security_hsm",
+    "atm_recycling"
+   ],
+   "primary_product": "pos_acquiring",
+   "why": "Hiring shows an acquiring build, an unfilled security post suggests bought-in key management, and cash-in ATMs are already live.",
+   "keyword_products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "payments_instant",
+    "compliance_resilience",
+    "payment_security_hsm",
+    "managed_services"
+   ],
+   "text_hash": "b8aa5ead7128",
+   "reviewed": "2026-09-07"
+  },
+  "nlb-banka-d-d-sarajevo-and-nlb-banka-a-d-banja-luka-worst-cost-to-income-in-the-": {
+   "products": [
+    "pos_acquiring",
+    "self_service",
+    "compliance_resilience"
+   ],
+   "primary_product": "pos_acquiring",
+   "why": "The group roadmap names terminals and softPOS, the cost ratio argues for branch automation, and audits set a compliance window.",
+   "keyword_products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "payments_instant",
+    "digital_onboarding",
+    "fraud_monitoring",
+    "compliance_resilience"
+   ],
+   "text_hash": "fb5e9861f474",
+   "reviewed": "2026-09-07"
+  },
+  "unicredit-prime-a-nine-country-branch-refit-that-names-customer-flow-management-": {
+   "products": [
+    "self_service",
+    "atm_recycling"
+   ],
+   "primary_product": "self_service",
+   "why": "A branch refit that specifies queue management and client recognition re-opens the self-service and recycler spec.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service"
+   ],
+   "text_hash": "4564f1dcc3b0",
+   "reviewed": "2026-09-07"
+  },
+  "bih-postal-operators-cash-handling-bought-in-public-and-the-named-local-incumben": {
+   "products": [
+    "atm_recycling",
+    "physical_security"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "Postal operators are buying banknote counters and cash-in-transit bundles, which is counter cash automation with a security partner.",
+   "keyword_products": [
+    "atm_recycling",
+    "physical_security"
+   ],
+   "text_hash": "984426eccce0",
+   "reviewed": "2026-09-07"
+  },
+  "bamcard-d-d-sarajevo-the-domestic-processor-and-an-unresolved-partner-or-compete": {
+   "products": [
+    "payments_instant",
+    "pos_acquiring"
+   ],
+   "primary_product": "payments_instant",
+   "why": "Whether the processor builds the instant-payment gateways decides who owns the instant and QR acceptance pipeline.",
+   "keyword_products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "payments_instant"
+   ],
+   "text_hash": "4c8fbfc19435",
+   "reviewed": "2026-09-07"
+  },
+  "bosnia-herzegovina-no-electronic-identity-or-trust-services-law-remote-onboardin": {
+   "products": [
+    "digital_onboarding",
+    "self_service"
+   ],
+   "primary_product": "digital_onboarding",
+   "why": "Remote identity is legally blocked, so onboarding stays attended and shifts demand to branch and assisted self-service.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "payments_instant",
+    "digital_onboarding",
+    "compliance_resilience"
+   ],
+   "text_hash": "83a9f4236811",
+   "reviewed": "2026-09-07"
+  },
+  "bulgaria-post-euro-changeover-consolidation": {
+   "products": [
+    "atm_recycling",
+    "self_service"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The paid work is ATM and kiosk screen reversion, lev validator retirement and cash-forecast re-baselining.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "compliance_resilience",
+    "physical_security"
+   ],
+   "text_hash": "6886abaefe51",
+   "reviewed": "2026-09-07"
+  },
+  "bulgaria-big-four-atm-estate-deposit-capability-white-space-quantified": {
+   "products": [
+    "atm_recycling"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The row sizes dispense-only ATM sites at the four largest banks as recycler white space.",
+   "keyword_products": [
+    "atm_recycling"
+   ],
+   "text_hash": "d5af8d6fc91b",
+   "reviewed": "2026-09-07"
+  },
+  "bulgaria-verification-of-payee-cliff-at-01-01-2027-legal-basis-contested": {
+   "products": [
+    "payments_instant",
+    "atm_recycling",
+    "fraud_monitoring"
+   ],
+   "primary_product": "payments_instant",
+   "why": "Verification of Payee must now reach ATM and kiosk transfers, with instant-speed screening behind it.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "payments_instant",
+    "fraud_monitoring",
+    "compliance_resilience",
+    "payment_security_hsm"
+   ],
+   "text_hash": "889c7bb437fd",
+   "reviewed": "2026-09-07"
+  },
+  "unicredit-bulbank-bank-named-atm-obsolescence-inside-a-group-renewal-plan-to-202": {
+   "products": [
+    "atm_recycling"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The bank names ATM obsolescence itself and cashless-branch conversions turn into deposit-ATM demand.",
+   "keyword_products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "payments_instant",
+    "compliance_resilience"
+   ],
+   "text_hash": "cfff7c9d7b16",
+   "reviewed": "2026-09-07"
+  },
+  "postbank-eurobank-bulgaria-postbank-next-branch-format-rebuild": {
+   "products": [
+    "self_service",
+    "atm_recycling",
+    "managed_services"
+   ],
+   "primary_product": "self_service",
+   "why": "The bank is expanding a two-model self-service fleet, still has 275 dispense-only ATMs to convert, and is building an IT service desk that could be outsourced.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "card_issuing",
+    "managed_services",
+    "core_digital"
+   ],
+   "text_hash": "3832634aa955",
+   "reviewed": "2026-09-07"
+  },
+  "borica-openway-way4-the-national-switch-layer-under-every-bulgarian-atm-bid": {
+   "products": [
+    "managed_services",
+    "pos_acquiring",
+    "self_service"
+   ],
+   "primary_product": "managed_services",
+   "why": "The switch now covers ATM and POS device management, so bank-side monitoring and field service must be defended and the open public-sector route is the kiosk layer.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "fraud_monitoring",
+    "card_issuing",
+    "managed_services"
+   ],
+   "text_hash": "f7d759f02f67",
+   "reviewed": "2026-09-07"
+  },
+  "dsk-bank-otp-disclosed-it-cost-cycle-card-systems-build-out-and-a-greenfield-kio": {
+   "products": [
+    "self_service",
+    "atm_recycling",
+    "managed_services"
+   ],
+   "primary_product": "self_service",
+   "why": "The clearest gaps are a missing kiosk layer, manual coin deposit and recycler conversion, with the card software closed by BPC.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "fraud_monitoring",
+    "compliance_resilience",
+    "managed_services",
+    "core_digital"
+   ],
+   "text_hash": "354cd8e9e376",
+   "reviewed": "2026-09-07"
+  },
+  "borica-centralised-national-anti-fraud-model-with-sibs-rules-by-end-2026-and-mar": {
+   "products": [
+    "fraud_monitoring",
+    "compliance_resilience"
+   ],
+   "primary_product": "fraud_monitoring",
+   "why": "Every bank must connect to the national fraud model in 2027, which creates bank-side transaction monitoring and AML screening work.",
+   "keyword_products": [
+    "payments_instant",
+    "fraud_monitoring",
+    "compliance_resilience"
+   ],
+   "text_hash": "27b4b53073da",
+   "reviewed": "2026-09-07"
+  },
+  "bulgaria-coin-handling-the-unautomated-tail-of-the-changeover": {
+   "products": [
+    "atm_recycling"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The demand is for coin counting and sorting machines at bank counters, which sits in cash automation.",
+   "keyword_products": [
+    "atm_recycling",
+    "physical_security"
+   ],
+   "text_hash": "a0774816f1c6",
+   "reviewed": "2026-09-07"
+  },
+  "bulgarian-posts-the-counter-service-went-fee-bearing-and-the-cash-logistics-cont": {
+   "products": [
+    "atm_recycling",
+    "self_service"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The offer is off-site ATMs, recyclers and kiosks priced against the cash-collection contract that is about to be re-tendered.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "physical_security"
+   ],
+   "text_hash": "438e449f5a83",
+   "reviewed": "2026-09-07"
+  },
+  "varna-municipality-open-loop-transit-acceptance-tender-closed-with-zero-bidders": {
+   "products": [
+    "pos_acquiring",
+    "payment_security_hsm"
+   ],
+   "primary_product": "pos_acquiring",
+   "why": "The specification calls for unattended POS validators, softPOS and terminal management, with PIN security and remote key injection underneath.",
+   "keyword_products": [
+    "pos_acquiring",
+    "payment_security_hsm",
+    "managed_services"
+   ],
+   "text_hash": "3ec77048ac7b",
+   "reviewed": "2026-09-07"
+  },
+  "bulgarian-national-bank-institutional-it-document-management-and-security-procur": {
+   "products": [
+    "compliance_resilience",
+    "digital_onboarding",
+    "physical_security"
+   ],
+   "primary_product": "compliance_resilience",
+   "why": "The open lots are document management, which sits next to e-signature work, and a restricted security-systems procedure; the sorter layer is closed.",
+   "keyword_products": [
+    "atm_recycling",
+    "digital_onboarding",
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "d383b5b4157e",
+   "reviewed": "2026-09-07"
+  },
+  "procredit-bank-bulgaria-a-euro-fee-income-hole-and-a-bank-staffing-up-to-run-its": {
+   "products": [
+    "managed_services",
+    "atm_recycling"
+   ],
+   "primary_product": "managed_services",
+   "why": "The bank is hiring to run its own ATM estate and suppliers, and its separate cash-in and cash-out devices are a recycler consolidation case.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "digital_onboarding",
+    "compliance_resilience",
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "876febe95dfd",
+   "reviewed": "2026-09-07"
+  },
+  "tbi-bank-private-equity-ownership-a-new-chief-risk-officer-and-a-funded-financia": {
+   "products": [
+    "fraud_monitoring",
+    "compliance_resilience",
+    "digital_onboarding"
+   ],
+   "primary_product": "fraud_monitoring",
+   "why": "A new risk owner and five financial-crime roles point to a transaction-monitoring, AML and onboarding platform decision.",
+   "keyword_products": [
+    "digital_onboarding",
+    "fraud_monitoring",
+    "compliance_resilience",
+    "core_digital"
+   ],
+   "text_hash": "74cd62a88707",
+   "reviewed": "2026-09-07"
+  },
+  "datecspay-a-bulgarian-terminal-maker-becomes-a-full-service-acquirer-issuer-and-": {
+   "products": [
+    "pos_acquiring",
+    "managed_services"
+   ],
+   "primary_product": "pos_acquiring",
+   "why": "A local terminal maker can now bundle devices with acquiring and cash-out, so the answer is terminal management and field service that it does not offer.",
+   "keyword_products": [
+    "self_service",
+    "pos_acquiring",
+    "card_issuing",
+    "managed_services"
+   ],
+   "text_hash": "ed7b53d83d24",
+   "reviewed": "2026-09-07"
+  },
+  "bulgaria-local-identity-trust-service-and-core-banking-vendors-are-closing-the-s": {
+   "products": [
+    "digital_onboarding",
+    "compliance_resilience",
+    "core_digital"
+   ],
+   "primary_product": "digital_onboarding",
+   "why": "A local trust provider is closing the eKYC and signature lane, so onboarding must be bundled with AML screening, while a core-banking channel opens through Sirma.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "digital_onboarding",
+    "fraud_monitoring",
+    "compliance_resilience",
+    "core_digital"
+   ],
+   "text_hash": "de0e21e23ed2",
+   "reviewed": "2026-09-07"
+  },
+  "bulgaria-european-accessibility-act-market-surveillance-now-bites-on-atms-and-pa": {
+   "products": [
+    "compliance_resilience",
+    "atm_recycling",
+    "pos_acquiring"
+   ],
+   "primary_product": "compliance_resilience",
+   "why": "Accessibility compliance now applies to every ATM and payment terminal sold in Bulgaria and can be bundled with the cash-automation refresh.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "compliance_resilience",
+    "physical_security"
+   ],
+   "text_hash": "c68142171e1d",
+   "reviewed": "2026-09-07"
+  },
+  "croatia-national-shared-atm-network-hub-ministry-of-finance-hnb": {
+   "products": [
+    "atm_recycling",
+    "managed_services"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "A pooled national ATM network needs multivendor software, recyclers, monitoring and managed field services.",
+   "keyword_products": [
+    "atm_recycling",
+    "managed_services"
+   ],
+   "text_hash": "5dce5ffb11b9",
+   "reviewed": "2026-09-07"
+  },
+  "croatian-banks-measurable-per-bank-atm-deposit-gap-now-public-from-the-central-b": {
+   "products": [
+    "atm_recycling",
+    "self_service"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The registry maps which banks lack deposit-capable machines, and cashless branch conversion adds self-service demand.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "compliance_resilience",
+    "physical_security"
+   ],
+   "text_hash": "8baf94a2a1fc",
+   "reviewed": "2026-09-07"
+  },
+  "erste-steierm-rkische-bank-erste-croatia-467-withdrawal-only-atms": {
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "self_service"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The bank has 466 withdrawal-only ATMs and is moving cash to unattended self-service zones that need recyclers and a service provider.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "fraud_monitoring",
+    "compliance_resilience",
+    "card_issuing",
+    "managed_services"
+   ],
+   "text_hash": "76e5b1e532a7",
+   "reviewed": "2026-09-07"
+  },
+  "otp-banka-hrvatska-353-withdrawal-only-atms-plus-a-funded-branch-reformatting-pr": {
+   "products": [
+    "atm_recycling",
+    "self_service"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "Branches are being replaced by machines with almost no deposit automation, so recyclers and self-service zones in the new format are the pitch.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring"
+   ],
+   "text_hash": "ed318e7aedc1",
+   "reviewed": "2026-09-07"
+  },
+  "hrvatska-po-tanska-banka-hpb-declared-card-ecosystem-change-programme-a-won-toll": {
+   "products": [
+    "card_issuing",
+    "pos_acquiring",
+    "atm_recycling"
+   ],
+   "primary_product": "card_issuing",
+   "why": "The bank says its card platform must change, must field unattended toll-plaza terminals, and has the weakest deposit-capable ATM share in Croatia.",
+   "keyword_products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "card_issuing",
+    "managed_services"
+   ],
+   "text_hash": "ecfcbaaca0ce",
+   "reviewed": "2026-09-07"
+  },
+  "hrvatska-po-tanska-banka-crypto-asset-authorisation-supervised-by-the-central-ba": {
+   "products": [
+    "payment_security_hsm",
+    "compliance_resilience",
+    "fraud_monitoring"
+   ],
+   "primary_product": "payment_security_hsm",
+   "why": "A crypto notification pack needs key management, AML case handling and crypto-aware transaction monitoring.",
+   "keyword_products": [
+    "fraud_monitoring",
+    "compliance_resilience",
+    "payment_security_hsm",
+    "core_digital"
+   ],
+   "text_hash": "77da9f6dd6ef",
+   "reviewed": "2026-09-07"
+  },
+  "hrvatska-narodna-banka-hnb-cash-automation-procurement-pipeline": {
+   "products": [
+    "atm_recycling",
+    "managed_services"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The lines are banknote-processing and sorting equipment bought as a service contract scored on maintenance coverage.",
+   "keyword_products": [
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "732ccddb351a",
+   "reviewed": "2026-09-07"
+  },
+  "croatia-the-22-h1-2026-atm-build-out-is-coastal-low-specification-and-third-part": {
+   "products": [
+    "atm_recycling",
+    "managed_services"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The growth is seasonal cash-out machines run by independent deployers, which is a managed-service market with a later recycler and upgrade wave.",
+   "keyword_products": [
+    "atm_recycling",
+    "managed_services"
+   ],
+   "text_hash": "7532639c7cf8",
+   "reviewed": "2026-09-07"
+  },
+  "fina-financijska-agencija-a-eur-400-000-coin-counter-tender-that-failed-with-no-": {
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "payment_security_hsm"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The open need is coin and note counting with multi-year maintenance, and the account map records a lost HSM award.",
+   "keyword_products": [
+    "atm_recycling",
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "text_hash": "b31d0deb348f",
+   "reviewed": "2026-09-07"
+  },
+  "ministarstvo-unutarnjih-poslova-ministry-of-the-interior-two-open-identity-docum": {
+   "products": [
+    "digital_onboarding",
+    "managed_services"
+   ],
+   "primary_product": "digital_onboarding",
+   "why": "The tenders are document-verification hardware and a scanner maintenance contract decided on service response time.",
+   "keyword_products": [
+    "digital_onboarding",
+    "managed_services"
+   ],
+   "text_hash": "2d78990edf36",
+   "reviewed": "2026-09-07"
+  },
+  "hp-hrvatska-po-ta-d-d-croatian-post-card-acceptance-held-by-a-bank-a-pending-sec": {
+   "products": [
+    "pos_acquiring",
+    "physical_security",
+    "managed_services"
+   ],
+   "primary_product": "pos_acquiring",
+   "why": "The post office buys softPOS and unattended acceptance through an acquirer, plus security-system and device maintenance contracts.",
+   "keyword_products": [
+    "pos_acquiring",
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "b1fa64a85fd4",
+   "reviewed": "2026-09-07"
+  },
+  "podravska-banka-aikgroup-pending-change-of-control-28-atm-estate-10-349-terminal": {
+   "products": [
+    "atm_recycling",
+    "pos_acquiring"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "A new owner is likely to refresh the 28-machine ATM estate, and the fast-growing partner terminal base is a card-acceptance sale.",
+   "keyword_products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "compliance_resilience"
+   ],
+   "text_hash": "abe638658f48",
+   "reviewed": "2026-09-07"
+  },
+  "croatia-free-basic-services-package-deposit-migration-driver-with-a-coin-carve-o": {
+   "products": [
+    "atm_recycling",
+    "managed_services"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "Free counter deposits push banks toward deposit ATMs, recyclers and coin machines, and the 2027 cross-bank withdrawal rule favours a pooled or outsourced estate.",
+   "keyword_products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "compliance_resilience",
+    "managed_services",
+    "core_digital"
+   ],
+   "text_hash": "61e412f65c48",
+   "reviewed": "2026-09-07"
+  },
+  "croatia-european-accessibility-act-nn-89-2025-the-harshest-fines-in-the-footprin": {
+   "products": [
+    "compliance_resilience",
+    "atm_recycling",
+    "pos_acquiring"
+   ],
+   "primary_product": "compliance_resilience",
+   "why": "This is an accessibility compliance deadline that drives ATM audits and retrofits plus accessible PIN pads.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "compliance_resilience",
+    "physical_security"
+   ],
+   "text_hash": "a6ec3be98e8e",
+   "reviewed": "2026-09-07"
+  },
+  "croatian-local-competitors-mellon-buys-into-the-zagreb-branch-estate-and-identyu": {
+   "products": [
+    "self_service",
+    "atm_recycling",
+    "digital_onboarding"
+   ],
+   "primary_product": "self_service",
+   "why": "Mellon's queue-management foothold threatens branch self-service and teller recycler deals, while Identyum threatens the identity and trust-services line.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "digital_onboarding",
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "text_hash": "fcb3aba86414",
+   "reviewed": "2026-09-07"
+  },
+  "hrvatska-narodna-banka-technical-and-physical-security-estate-closed-to-insig2": {
+   "products": [
+    "physical_security"
+   ],
+   "primary_product": "physical_security",
+   "why": "The central bank's physical and technical security estate is locked to an incumbent, so this only affects the security line.",
+   "keyword_products": [
+    "atm_recycling",
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "c2ff22672913",
+   "reviewed": "2026-09-07"
+  },
+  "eurobank-limited-cyprus-hellenic-bank-merger-156-atm-harmonisation-and-an-april-": {
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "self_service"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "Two ATM fleets must be merged onto one recycler-class generation with one service contract, alongside branch re-imaging.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "fraud_monitoring",
+    "compliance_resilience",
+    "physical_security",
+    "managed_services",
+    "core_digital"
+   ],
+   "text_hash": "7c7def06990b",
+   "reviewed": "2026-09-07"
+  },
+  "bank-of-cyprus-branch-transformation-acquisitions": {
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "self_service"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The opening is real-time cash acceptance upgrades, service and remote monitoring of the installed recyclers and unmanned self-service sites.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "managed_services"
+   ],
+   "text_hash": "f33c1104507e",
+   "reviewed": "2026-09-07"
+  },
+  "alpha-bank-cyprus-ex-astrobank-cutover-whole-portfolio-card-reissue-and-a-branch": {
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "payment_security_hsm"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "Branch mergers and staff exits call for teller cash automation and one service contract, with an ATM key-management refresh from 3DES to AES.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "compliance_resilience",
+    "payment_security_hsm",
+    "card_issuing",
+    "managed_services",
+    "core_digital"
+   ],
+   "text_hash": "67a617cfaaf3",
+   "reviewed": "2026-09-07"
+  },
+  "cyprus-regulator-flagged-atm-rationalisation-plus-75-unit-independent-deployer-w": {
+   "products": [
+    "atm_recycling",
+    "managed_services"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "A shrinking fleet paying out more per machine is a recycler upgrade and availability-based service opportunity.",
+   "keyword_products": [
+    "atm_recycling",
+    "compliance_resilience",
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "7e00cd87e83f",
+   "reviewed": "2026-09-07"
+  },
+  "cyprus-atm-estate-the-outsourcing-threat-brink-s-an-accelerated-ncr-atleos-close": {
+   "products": [
+    "managed_services",
+    "atm_recycling"
+   ],
+   "primary_product": "managed_services",
+   "why": "Rivals are selling whole-estate ATM outsourcing, so the answer is Printec's own per-machine managed offer built around recyclers.",
+   "keyword_products": [
+    "atm_recycling",
+    "compliance_resilience",
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "78008a4b3cb5",
+   "reviewed": "2026-09-07"
+  },
+  "jcc-payment-systems-cypriot-state-e-payments-monopoly-broken-by-vivabank": {
+   "products": [
+    "pos_acquiring",
+    "fraud_monitoring"
+   ],
+   "primary_product": "pos_acquiring",
+   "why": "The state terminal estate is lost, and the opening at JCC is terminal management, softPOS and transaction monitoring.",
+   "keyword_products": [
+    "pos_acquiring",
+    "fraud_monitoring",
+    "core_digital"
+   ],
+   "text_hash": "9ba731660b44",
+   "reviewed": "2026-09-07"
+  },
+  "cyprus-payment-fraud-surge-against-a-hard-verification-of-payee-cut-over": {
+   "products": [
+    "fraud_monitoring",
+    "payments_instant"
+   ],
+   "primary_product": "fraud_monitoring",
+   "why": "Measured push-payment fraud losses create demand for real-time monitoring and Verification-of-Payee tuning on the instant rail.",
+   "keyword_products": [
+    "pos_acquiring",
+    "payments_instant",
+    "fraud_monitoring",
+    "compliance_resilience",
+    "payment_security_hsm",
+    "core_digital"
+   ],
+   "text_hash": "c20ce1f4d278",
+   "reviewed": "2026-09-07"
+  },
+  "department-of-insolvency-integrated-case-management-system-and-infrastructure-as": {
+   "products": [
+    "managed_services",
+    "compliance_resilience"
+   ],
+   "primary_product": "managed_services",
+   "why": "A twelve-year hosted case-management and operation contract is an outsourcing bid with a document-management partner.",
+   "keyword_products": [
+    "managed_services"
+   ],
+   "text_hash": "099f756827ce",
+   "reviewed": "2026-09-07"
+  },
+  "cyprus-a-direct-sales-market-not-a-tender-market-with-the-housing-finance-corpor": {
+   "products": [
+    "atm_recycling",
+    "self_service"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "This is a coverage finding, and the only visible public demand is small cash-handling and bank-adjacent kit.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "payments_instant",
+    "fraud_monitoring",
+    "physical_security"
+   ],
+   "text_hash": "d8297d115bf8",
+   "reviewed": "2026-09-07"
+  },
+  "veridos-cyprus-sovereign-credential-issuance-awarded-at-eur-22-9m-with-citizen-e": {
+   "products": [
+    "digital_onboarding",
+    "self_service"
+   ],
+   "primary_product": "digital_onboarding",
+   "why": "The state credential contract is closed, so the play is bank onboarding against the new credential and enrolment kiosks.",
+   "keyword_products": [
+    "self_service",
+    "digital_onboarding",
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "85ad52885ef7",
+   "reviewed": "2026-09-07"
+  },
+  "cyprus-accessibility-law-a-28-06-2030-replacement-cliff-for-every-atm-and-paymen": {
+   "products": [
+    "compliance_resilience",
+    "atm_recycling",
+    "pos_acquiring"
+   ],
+   "primary_product": "compliance_resilience",
+   "why": "A dated accessibility duty drives estate audits and multivendor software across ATMs and payment terminals.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "compliance_resilience",
+    "physical_security"
+   ],
+   "text_hash": "792e53aaa399",
+   "reviewed": "2026-09-07"
+  },
+  "cyprus-acceptance-market-softpos-erodes-terminal-supply-while-mellon-takes-full-": {
+   "products": [
+    "pos_acquiring",
+    "payment_security_hsm",
+    "self_service"
+   ],
+   "primary_product": "pos_acquiring",
+   "why": "SoftPOS is eroding device supply, so the pitch moves to terminal management, key injection and unattended kiosk use cases.",
+   "keyword_products": [
+    "self_service",
+    "pos_acquiring",
+    "compliance_resilience",
+    "payment_security_hsm",
+    "managed_services"
+   ],
+   "text_hash": "6b8cc1c3231d",
+   "reviewed": "2026-09-07"
+  },
+  "complytek-a-local-regtech-already-inside-bank-of-cyprus-on-governance-expanding-": {
+   "products": [
+    "compliance_resilience",
+    "fraud_monitoring"
+   ],
+   "primary_product": "compliance_resilience",
+   "why": "A local vendor is positioned to expand from governance into AML and transaction monitoring at a reference account.",
+   "keyword_products": [
+    "fraud_monitoring",
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "text_hash": "952c33738396",
+   "reviewed": "2026-09-07"
+  },
+  "czechia-four-bank-shared-deposit-atm-network-kb-moneta-air-bank-unicredit-cz": {
+   "products": [
+    "atm_recycling",
+    "managed_services"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "944 cash-out-only machines are a retrofit and recycler base, with cash forecasting and field service sold alongside.",
+   "keyword_products": [
+    "atm_recycling"
+   ],
+   "text_hash": "5a6060f4ff46",
+   "reviewed": "2026-09-07"
+  },
+  "moneta-money-bank-multicurrency-cash-automation-coin-machine-expansion-2026-prog": {
+   "products": [
+    "atm_recycling"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "Deposit gap, coin machines and note-mix changes are all cash automation hardware and cash-cycle work.",
+   "keyword_products": [
+    "atm_recycling",
+    "physical_security"
+   ],
+   "text_hash": "4e11994d5294",
+   "reviewed": "2026-09-07"
+  },
+  "sob-czechia-kbc-group-international-card-acquiring-platform-build": {
+   "products": [
+    "pos_acquiring",
+    "payment_security_hsm"
+   ],
+   "primary_product": "pos_acquiring",
+   "why": "A new acquiring platform build touches terminals, terminal management and the security modules behind the stack.",
+   "keyword_products": [
+    "pos_acquiring",
+    "compliance_resilience",
+    "card_issuing",
+    "core_digital"
+   ],
+   "text_hash": "86fbc0cbc6d8",
+   "reviewed": "2026-09-07"
+  },
+  "czech-banks-instant-euro-payments-and-verification-of-payee-on-a-fixed-2027-cloc": {
+   "products": [
+    "payments_instant",
+    "fraud_monitoring",
+    "payment_security_hsm"
+   ],
+   "primary_product": "payments_instant",
+   "why": "Every Czech bank must buy euro instant reachability and payee verification by 2027, with real-time screening and HSM capacity behind it.",
+   "keyword_products": [
+    "payments_instant",
+    "fraud_monitoring",
+    "compliance_resilience"
+   ],
+   "text_hash": "91dd583804ff",
+   "reviewed": "2026-09-07"
+  },
+  "czech-banking-sector-regulator-mandated-aml-remediation-and-a-market-wide-financ": {
+   "products": [
+    "compliance_resilience",
+    "fraud_monitoring"
+   ],
+   "primary_product": "compliance_resilience",
+   "why": "Regulator-ordered sanctions-screening fixes and financial-crime hiring point to AML and monitoring platform purchases.",
+   "keyword_products": [
+    "digital_onboarding",
+    "fraud_monitoring",
+    "compliance_resilience"
+   ],
+   "text_hash": "f99356ca8faf",
+   "reviewed": "2026-09-07"
+  },
+  "t-tna-tla-iare-cen-n-stc-biometric-enrolment-kiosks-pre-tender": {
+   "products": [
+    "self_service",
+    "digital_onboarding",
+    "managed_services"
+   ],
+   "primary_product": "self_service",
+   "why": "The tender is for hardened identity-enrolment kiosks supplied and operated as a multi-year service.",
+   "keyword_products": [
+    "self_service",
+    "digital_onboarding",
+    "fraud_monitoring",
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "d2fee4b46524",
+   "reviewed": "2026-09-07"
+  },
+  "oper-tor-ict-city-of-prague-ict-operator-czk-250m-payment-gateway-bidding-now": {
+   "products": [
+    "pos_acquiring"
+   ],
+   "primary_product": "pos_acquiring",
+   "why": "A live payment-gateway and open-loop transit acceptance tender is a card-acceptance and acquiring sale, nothing else.",
+   "keyword_products": [
+    "pos_acquiring",
+    "payment_security_hsm"
+   ],
+   "text_hash": "f7e99772ff78",
+   "reviewed": "2026-09-07"
+  },
+  "czechia-cash-automation-demand-locked-inside-incumbent-frameworks": {
+   "products": [
+    "atm_recycling",
+    "managed_services"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The contested ground is cash-processing machinery and cash-management software, with field service and telemetry as the way in.",
+   "keyword_products": [
+    "atm_recycling",
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "f1196338f020",
+   "reviewed": "2026-09-07"
+  },
+  "esk-po-ta-five-year-payment-gateway-mandate-left-unfilled-and-heading-for-a-re-r": {
+   "products": [
+    "pos_acquiring"
+   ],
+   "primary_product": "pos_acquiring",
+   "why": "A hosted payment gateway with transaction processing is a card-acceptance mandate.",
+   "keyword_products": [
+    "pos_acquiring"
+   ],
+   "text_hash": "b0e3d27f1e43",
+   "reviewed": "2026-09-07"
+  },
+  "esk-spo-itelna-contracting-self-service-estate-behind-a-kal-oki-software-incumbe": {
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "self_service"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The openings named are recycler supply, spares and field service, plus branch cash automation as counters close.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "managed_services",
+    "core_digital"
+   ],
+   "text_hash": "cbd0ecf6ce41",
+   "reviewed": "2026-09-07"
+  },
+  "komer-n-banka-temenos-core-migration-a-diebold-nixdorf-pilot-and-a-digital-board": {
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "core_digital"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "A rival dispenser pilot sold on monitoring and cash forecasting, plus a core migration needing channel re-integration, drive the demand here.",
+   "keyword_products": [
+    "atm_recycling",
+    "compliance_resilience",
+    "managed_services",
+    "core_digital"
+   ],
+   "text_hash": "9eb91a63d2d9",
+   "reviewed": "2026-09-07"
+  },
+  "czechia-eet-2-0-nationwide-fiscal-sales-recording-mandate-from-01-01-2027": {
+   "products": [
+    "pos_acquiring"
+   ],
+   "primary_product": "pos_acquiring",
+   "why": "The money is in terminal software compliance and remote fleet updates sold to acquirers, which is terminal management.",
+   "keyword_products": [
+    "pos_acquiring",
+    "compliance_resilience",
+    "core_digital"
+   ],
+   "text_hash": "727a836389d6",
+   "reviewed": "2026-09-07"
+  },
+  "digit-ln-a-informa-n-agentura-dia-cancelled-eu-digital-identity-wallet-register-": {
+   "products": [
+    "digital_onboarding"
+   ],
+   "primary_product": "digital_onboarding",
+   "why": "An EU digital identity wallet register re-tender and wallet-agnostic acceptance for banks sit squarely in digital identity.",
+   "keyword_products": [
+    "digital_onboarding",
+    "compliance_resilience"
+   ],
+   "text_hash": "19c4efecb0e3",
+   "reviewed": "2026-09-07"
+  },
+  "czech-public-sector-the-state-rents-card-acceptance-rather-than-buying-terminals": {
+   "products": [
+    "pos_acquiring"
+   ],
+   "primary_product": "pos_acquiring",
+   "why": "The whole row is about how card-acceptance terminals reach Czech public buyers through acquirers.",
+   "keyword_products": [
+    "pos_acquiring"
+   ],
+   "text_hash": "f53c91a18176",
+   "reviewed": "2026-09-07"
+  },
+  "czech-public-sector-hardware-security-modules-sefira-and-entrust-hold-the-ground": {
+   "products": [
+    "payment_security_hsm",
+    "digital_onboarding"
+   ],
+   "primary_product": "payment_security_hsm",
+   "why": "Hardware security module refreshes are the payment-security line, and the sealing use case touches qualified trust services.",
+   "keyword_products": [
+    "digital_onboarding",
+    "compliance_resilience",
+    "payment_security_hsm"
+   ],
+   "text_hash": "53ad56864156",
+   "reviewed": "2026-09-07"
+  },
+  "czechia-dora-and-the-new-cybersecurity-act-create-a-dual-compliance-surface-with": {
+   "products": [
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "primary_product": "compliance_resilience",
+   "why": "DORA supervision creates resilience-tooling demand and forces ICT suppliers like Printec to document their managed-service contracts.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "text_hash": "0cb43129f328",
+   "reviewed": "2026-09-07"
+  },
+  "czechia-euro-deferred-no-erm-ii-no-certis-iso-20022-migration-no-digital-koruna": {
+   "products": [
+    "payments_instant",
+    "compliance_resilience"
+   ],
+   "primary_product": "payments_instant",
+   "why": "The row removes euro-changeover and ISO 20022 pitches and redirects Czech demand to instant payments, payee verification, resilience and accessibility.",
+   "keyword_products": [
+    "atm_recycling",
+    "payments_instant",
+    "digital_onboarding",
+    "compliance_resilience"
+   ],
+   "text_hash": "acd62787a0f9",
+   "reviewed": "2026-09-07"
+  },
+  "v-eobecn-zdravotn-poji-ovna-vzp-nationwide-alarm-and-access-control-renewal-bidd": {
+   "products": [
+    "physical_security",
+    "managed_services"
+   ],
+   "primary_product": "physical_security",
+   "why": "A nationwide alarm and access-control refresh with a service tail is a physical-security and field-service job, not self-service.",
+   "keyword_products": [
+    "self_service",
+    "physical_security"
+   ],
+   "text_hash": "27c843d2abca",
+   "reviewed": "2026-09-07"
+  },
+  "piraeus-cashflex-printec-owned-off-site-atm-fleet": {
+   "products": [
+    "atm_recycling",
+    "managed_services"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "An off-site ATM fleet whose margin now rests on uptime, telemetry and replenishment cost is an ATM and managed-services matter.",
+   "keyword_products": [
+    "atm_recycling",
+    "managed_services"
+   ],
+   "text_hash": "b2bd047a2577",
+   "reviewed": "2026-09-07"
+  },
+  "piraeus-bank-h1-2026-channel-programme-and-in-branch-kiosk-rollout": {
+   "products": [
+    "self_service",
+    "digital_onboarding",
+    "atm_recycling"
+   ],
+   "primary_product": "self_service",
+   "why": "The open line is an in-branch kiosk rollout, with a quantified eKYC gap and an ATM replenishment and recycler question behind it.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "digital_onboarding",
+    "compliance_resilience",
+    "core_digital"
+   ],
+   "text_hash": "5724abd2e38c",
+   "reviewed": "2026-09-07"
+  },
+  "alpha-bank-retail-branch-transformation-cyprus-integration": {
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "compliance_resilience"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The next spend cycle moves to ATM refresh, recyclers and availability services, while the undisclosed AML stack is open to compete for.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "digital_onboarding",
+    "fraud_monitoring",
+    "compliance_resilience",
+    "managed_services",
+    "core_digital"
+   ],
+   "text_hash": "bb61a708e3eb",
+   "reviewed": "2026-09-07"
+  },
+  "nbg-core-complete-channel-renewal": {
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "self_service"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The counted white space is deposit-capable and recycler upgrades, multivendor software and cash operations alongside Mellon, plus a payment-machine refresh.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "fraud_monitoring",
+    "managed_services",
+    "core_digital"
+   ],
+   "text_hash": "747539f7b27f",
+   "reviewed": "2026-09-07"
+  },
+  "eurobank-phygital-branches-aml-build-out": {
+   "products": [
+    "core_digital",
+    "compliance_resilience",
+    "atm_recycling"
+   ],
+   "primary_product": "core_digital",
+   "why": "A disclosed core replacement opens the channel-integration window, the AML platform and accessibility retrofit are the warm lines, and a bulk ATM refresh follows.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "fraud_monitoring",
+    "compliance_resilience",
+    "payment_security_hsm",
+    "core_digital"
+   ],
+   "text_hash": "1c524f3e06cb",
+   "reviewed": "2026-09-07"
+  },
+  "crediabank-q1-profit-new-experience-branch-refurbishment": {
+   "products": [
+    "atm_recycling",
+    "self_service",
+    "digital_onboarding"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "Sixteen branch refits led by teller cash recyclers and virtual-teller fit-outs, plus a dated eKYC need for the instant loan, are the demand.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "digital_onboarding",
+    "compliance_resilience",
+    "core_digital"
+   ],
+   "text_hash": "4c0196e5aaf7",
+   "reviewed": "2026-09-07"
+  },
+  "elta-hellenic-post-117-atm-estate-2026-2030-development-plan": {
+   "products": [
+    "self_service",
+    "atm_recycling",
+    "physical_security"
+   ],
+   "primary_product": "self_service",
+   "why": "The retail half of the programme is branch-transformation kit, while closed branches and the 117-ATM estate bring in ATM siting and ATM security.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "compliance_resilience",
+    "physical_security"
+   ],
+   "text_hash": "9e9612d218f1",
+   "reviewed": "2026-09-07"
+  },
+  "boos-s-a-greek-cash-automation-competitor-missing-from-the-roster": {
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "physical_security"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "A rival winning counter cash-automation on an operational lease with field service sets the price level for Printec's cash, service and security lines.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "1ece22b05efe",
+   "reviewed": "2026-09-07"
+  },
+  "greece-offsite-atm-deployment-competitive-lock-up": {
+   "products": [
+    "managed_services",
+    "atm_recycling"
+   ],
+   "primary_product": "managed_services",
+   "why": "The threat is whole-estate ATM outsourcing and a hypervisor pitch that removes the hardware-refresh trigger.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "25045d3cc615",
+   "reviewed": "2026-09-07"
+  },
+  "mellon-technologies-259m-greek-rival-ring-fences-its-services-arm": {
+   "products": [
+    "managed_services",
+    "atm_recycling",
+    "pos_acquiring"
+   ],
+   "primary_product": "managed_services",
+   "why": "Mellon is carving out its services arm and its bundle of recyclers, multivendor software and terminals matches Printec item for item.",
+   "keyword_products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "managed_services"
+   ],
+   "text_hash": "2abaaa10e25e",
+   "reviewed": "2026-09-07"
+  },
+  "odap-30-0m-visitor-digital-services-at-archaeological-sites-award-pending": {
+   "products": [
+    "self_service",
+    "pos_acquiring"
+   ],
+   "primary_product": "self_service",
+   "why": "Ticket-issuing machines and point-of-sale software across 125 sites is a kiosk and card-acceptance subcontract.",
+   "keyword_products": [
+    "self_service",
+    "pos_acquiring"
+   ],
+   "text_hash": "49ddc4190355",
+   "reviewed": "2026-09-07"
+  },
+  "greece-opsea-national-eid-security-documents-tender": {
+   "products": [
+    "card_issuing",
+    "self_service",
+    "payment_security_hsm"
+   ],
+   "primary_product": "card_issuing",
+   "why": "The addressable sub-supply is document personalisation, enrolment kiosks and key management under a prime.",
+   "keyword_products": [
+    "self_service",
+    "payment_security_hsm",
+    "card_issuing",
+    "managed_services"
+   ],
+   "text_hash": "e202e4286ca7",
+   "reviewed": "2026-09-07"
+  },
+  "bank-of-greece-aml-enforcement-transaction-monitoring-inspection-priority": {
+   "products": [
+    "compliance_resilience",
+    "fraud_monitoring"
+   ],
+   "primary_product": "compliance_resilience",
+   "why": "The regulator is pushing AML tooling and transaction-monitoring inspections, which is a compliance suite and monitoring sale.",
+   "keyword_products": [
+    "fraud_monitoring",
+    "compliance_resilience"
+   ],
+   "text_hash": "a1633d11333f",
+   "reviewed": "2026-09-07"
+  },
+  "greece-iris-instant-payments-as-a-mandated-card-alternative": {
+   "products": [
+    "payments_instant",
+    "pos_acquiring",
+    "fraud_monitoring"
+   ],
+   "primary_product": "payments_instant",
+   "why": "The demand is for instant-payment onboarding, QR acceptance and terminal management on the installed fleet, plus fraud monitoring on the new rail.",
+   "keyword_products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "payments_instant",
+    "digital_onboarding",
+    "fraud_monitoring",
+    "managed_services"
+   ],
+   "text_hash": "b0a9beafdc21",
+   "reviewed": "2026-09-07"
+  },
+  "greece-softpos-tap-to-pay-commoditises-card-acceptance": {
+   "products": [
+    "pos_acquiring",
+    "self_service"
+   ],
+   "primary_product": "pos_acquiring",
+   "why": "This is a card-acceptance pricing and terminal-management story, with unattended and self-service named as the segments to defend.",
+   "keyword_products": [
+    "self_service",
+    "pos_acquiring",
+    "compliance_resilience"
+   ],
+   "text_hash": "0855155f9c8b",
+   "reviewed": "2026-09-07"
+  },
+  "optima-bank-cash-in-white-space-against-a-capex-ceiling": {
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "compliance_resilience"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The opening is deposit-capable machines sold as a managed or rental service, with brokerage AML and onboarding as a smaller compliance sale.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "digital_onboarding",
+    "fraud_monitoring",
+    "compliance_resilience",
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "7cd8100e0388",
+   "reviewed": "2026-09-07"
+  },
+  "greece-cash-access-policy-merchant-cash-out-and-the-eu-legal-tender-file": {
+   "products": [
+    "atm_recycling",
+    "pos_acquiring"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "Both policy paths change ATM and recycler demand, and merchant cash-out adds a cash-out terminal product surface.",
+   "keyword_products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "compliance_resilience",
+    "physical_security"
+   ],
+   "text_hash": "79825f3b0a62",
+   "reviewed": "2026-09-07"
+  },
+  "hungary-act-xviii-rural-atm-rollout-mnb-validation-uptime-mandate": {
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "physical_security"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "Nine banks must equip 1,039 unattended rural ATMs with remote monitoring, field service and site security.",
+   "keyword_products": [
+    "atm_recycling",
+    "compliance_resilience",
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "41aadc4e9501",
+   "reviewed": "2026-09-07"
+  },
+  "hungary-act-xiv-of-2026-atm-decommissioning-and-relocation-freeze": {
+   "products": [
+    "atm_recycling",
+    "managed_services"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The no-closure rule turns the whole estate into a replacement pipeline with site surveys and withdrawal telemetry attached.",
+   "keyword_products": [
+    "atm_recycling",
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "text_hash": "d99c8270511e",
+   "reviewed": "2026-09-07"
+  },
+  "mbh-bank-115-location-2026-atm-programme-plus-a-500-unit-replacement-cycle": {
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "core_digital"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The case is a recycler retrofit of 803 deposit-incapable machines, with software consolidation and integration against the Arksys switch.",
+   "keyword_products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "core_digital"
+   ],
+   "text_hash": "03edf507e6c1",
+   "reviewed": "2026-09-07"
+  },
+  "otp-bank-hungary-and-erste-bank-hungary-cash-in-white-space-against-a-shrinking-": {
+   "products": [
+    "atm_recycling",
+    "managed_services"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "About 1,450 cash-out-only machines form a recycler retrofit pool, and the shared rural fleet points to one operator contract.",
+   "keyword_products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "text_hash": "db2be0139a73",
+   "reviewed": "2026-09-07"
+  },
+  "k-h-bank-mnb-ordered-branch-teller-capacity-queue-analytics-and-appointment-book": {
+   "products": [
+    "atm_recycling",
+    "self_service"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The regulator's order drives teller cash recyclers plus queue management, appointment booking and waiting-time analytics.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "compliance_resilience",
+    "core_digital"
+   ],
+   "text_hash": "447242dc087e",
+   "reviewed": "2026-09-07"
+  },
+  "raiffeisen-bank-hungary-twin-mnb-aml-fines-mandating-automated-due-diligence-and": {
+   "products": [
+    "compliance_resilience",
+    "fraud_monitoring"
+   ],
+   "primary_product": "compliance_resilience",
+   "why": "Binding AML orders call for automated risk scoring, beneficial-owner screening and alert pre-screening, a compliance suite sale first.",
+   "keyword_products": [
+    "atm_recycling",
+    "fraud_monitoring",
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "text_hash": "f7458f74bfca",
+   "reviewed": "2026-09-07"
+  },
+  "hungary-cyber-audit-remediation-wave-after-the-30-06-2026-nis2-deadline": {
+   "products": [
+    "compliance_resilience",
+    "managed_services",
+    "atm_recycling"
+   ],
+   "primary_product": "compliance_resilience",
+   "why": "Post-audit remediation lands on resilience tooling, monitored managed services and multivendor ATM software across the device estates.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "text_hash": "6c075104fff3",
+   "reviewed": "2026-09-07"
+  },
+  "magyar-nemzeti-bank-entrust-nshield-hsm-tender-live": {
+   "products": [
+    "payment_security_hsm"
+   ],
+   "primary_product": "payment_security_hsm",
+   "why": "This is a hardware security module tender and the follow-up is payment-HSM and PCI-PIN work at the commercial banks.",
+   "keyword_products": [
+    "digital_onboarding",
+    "payment_security_hsm"
+   ],
+   "text_hash": "f02116bc6a32",
+   "reviewed": "2026-09-07"
+  },
+  "budapest-bkk-open-loop-cemv-transit-programme-and-the-317-unit-ticket-machine-re": {
+   "products": [
+    "pos_acquiring",
+    "self_service",
+    "fraud_monitoring"
+   ],
+   "primary_product": "pos_acquiring",
+   "why": "The addressable layers are terminals and terminal management, the 317 unattended ticket machines, and the fraud monitoring written into scope.",
+   "keyword_products": [
+    "pos_acquiring",
+    "fraud_monitoring",
+    "compliance_resilience",
+    "core_digital"
+   ],
+   "text_hash": "b41dc70e629a",
+   "reviewed": "2026-09-07"
+  },
+  "hungary-state-sector-card-acceptance-consolidating-on-simplepay-otp-mobil": {
+   "products": [
+    "pos_acquiring",
+    "managed_services"
+   ],
+   "primary_product": "pos_acquiring",
+   "why": "The realistic route is supplying terminals, terminal management and field service under the acquirer's frameworks.",
+   "keyword_products": [
+    "pos_acquiring",
+    "payments_instant",
+    "fraud_monitoring",
+    "managed_services"
+   ],
+   "text_hash": "7466f0027138",
+   "reviewed": "2026-09-07"
+  },
+  "orsz-gos-rend-r-f-kapit-nys-g-eu-entry-exit-system-border-kiosk-and-biometric-ca": {
+   "products": [
+    "self_service",
+    "digital_onboarding"
+   ],
+   "primary_product": "self_service",
+   "why": "The order is self-service kiosks and gates with a biometric capture layer on top.",
+   "keyword_products": [
+    "self_service",
+    "digital_onboarding"
+   ],
+   "text_hash": "29b10ffebfd0",
+   "reviewed": "2026-09-07"
+  },
+  "hungary-competitor-and-channel-map-mellon-arrives-euronet-is-already-embedded-ca": {
+   "products": [
+    "managed_services",
+    "atm_recycling"
+   ],
+   "primary_product": "managed_services",
+   "why": "The main point is protecting the service and telemetry wrap around recycler deals before rivals and independent workshops take it.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "6bb74e0901d3",
+   "reviewed": "2026-09-07"
+  },
+  "hungary-2026-27-payments-infrastructure-deadline-stack-the-viber-address-gap-and": {
+   "products": [
+    "payments_instant",
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "primary_product": "payments_instant",
+   "why": "The ISO 20022 address cutover and instant-euro dates drive payment-hub remediation, screening re-tuning and managed support.",
+   "keyword_products": [
+    "self_service",
+    "payments_instant",
+    "fraud_monitoring",
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "text_hash": "5b3d8294c069",
+   "reviewed": "2026-09-07"
+  },
+  "magyar-nemzeti-bank-banknote-processing-estate-held-single-source-by-giesecke-de": {
+   "products": [
+    "managed_services",
+    "atm_recycling"
+   ],
+   "primary_product": "managed_services",
+   "why": "The only opening is the subcontracted field service and maintenance on the central bank's banknote-processing machines.",
+   "keyword_products": [
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "259457a23e42",
+   "reviewed": "2026-09-07"
+  },
+  "kosovo-pos-whitespace-deposit-atm-upgrade-bpb-printec-incumbent": {
+   "products": [
+    "pos_acquiring",
+    "atm_recycling",
+    "payment_security_hsm"
+   ],
+   "primary_product": "pos_acquiring",
+   "why": "A fast-growing terminal fleet needs supply, management and key injection, and 292 dispenser-only ATMs need recyclers.",
+   "keyword_products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "physical_security",
+    "payment_security_hsm"
+   ],
+   "text_hash": "2a22619ed12c",
+   "reviewed": "2026-09-07"
+  },
+  "kosovo-kips-upgrade-and-instant-payment-bank-side-integration-across-all-banks": {
+   "products": [
+    "payments_instant",
+    "fraud_monitoring",
+    "compliance_resilience"
+   ],
+   "primary_product": "payments_instant",
+   "why": "Every bank must connect to the instant rail, which pulls through real-time monitoring and sanctions and AML screening.",
+   "keyword_products": [
+    "pos_acquiring",
+    "payments_instant",
+    "digital_onboarding",
+    "fraud_monitoring",
+    "compliance_resilience"
+   ],
+   "text_hash": "72eb9bf2955c",
+   "reviewed": "2026-09-07"
+  },
+  "nexi-payments-spa-kosovo-central-bank-instant-payment-connectivity-core": {
+   "products": [
+    "payments_instant",
+    "fraud_monitoring"
+   ],
+   "primary_product": "payments_instant",
+   "why": "A competitor holds the instant-payment core, so the response is bank-side instant-payment integration and transaction monitoring.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "payments_instant",
+    "fraud_monitoring",
+    "managed_services"
+   ],
+   "text_hash": "c177600bba99",
+   "reviewed": "2026-09-07"
+  },
+  "banka-qendrore-e-kosov-s-bqk-cash-centre-maintenance-cycle": {
+   "products": [
+    "managed_services",
+    "atm_recycling"
+   ],
+   "primary_product": "managed_services",
+   "why": "The central bank's banknote-processing machine has no maintenance provider, which is a cash-automation service opening.",
+   "keyword_products": [
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "34066700f09d",
+   "reviewed": "2026-09-07"
+  },
+  "banka-qendrore-e-kosov-s-bqk-centralised-it-access-management-project-twice-unfi": {
+   "products": [
+    "compliance_resilience"
+   ],
+   "primary_product": "compliance_resilience",
+   "why": "Privileged access management is internal IT security tied to cyber-risk rules, closest to the resilience and compliance line.",
+   "keyword_products": [
+    "digital_onboarding",
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "text_hash": "016bb1483927",
+   "reviewed": "2026-09-07"
+  },
+  "kosovo-cbk-regulation-on-information-systems-and-cyber-risk-management-kosovo-s-": {
+   "products": [
+    "compliance_resilience",
+    "managed_services",
+    "payment_security_hsm"
+   ],
+   "primary_product": "compliance_resilience",
+   "why": "A binding resilience rulebook with a ring-fenced budget drives demand for compliance tooling, device telemetry and auditable key management.",
+   "keyword_products": [
+    "atm_recycling",
+    "payments_instant",
+    "fraud_monitoring",
+    "compliance_resilience",
+    "payment_security_hsm",
+    "managed_services"
+   ],
+   "text_hash": "ba3fdce7443c",
+   "reviewed": "2026-09-07"
+  },
+  "teb-sh-a-bnp-paribas-teb-group-kosovo-recurring-cash-handling-digital-onboarding": {
+   "products": [
+    "atm_recycling",
+    "digital_onboarding",
+    "managed_services"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "TEB tenders cash-handling machines every year, is trying to buy remote onboarding with e-signature, and outsources its ATM estate.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "digital_onboarding",
+    "compliance_resilience",
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "db25378725a3",
+   "reviewed": "2026-09-07"
+  },
+  "procredit-bank-kosova-29-site-branch-light-estate-and-an-open-numbered-tender-pr": {
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "digital_onboarding"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "A small off-premise ATM estate suits a single hardware-plus-managed-services award, with a separate open slot for local e-identity.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "497bf9635415",
+   "reviewed": "2026-09-07"
+  },
+  "banka-ekonomike-i-bank-kosova-absorption-plus-an-open-cash-equipment-tender-boar": {
+   "products": [
+    "atm_recycling"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The bank's annual July lot is back-office banknote counting, sorting and verification equipment, not a fleet programme.",
+   "keyword_products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "compliance_resilience",
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "3bafa2f46234",
+   "reviewed": "2026-09-07"
+  },
+  "nlb-banka-kosovo-group-mandated-atm-and-cash-deposit-system-upgrade": {
+   "products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "digital_onboarding"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "A group mandate to upgrade ATMs and cash-deposit systems sits beside a funded acquiring expansion with merchant onboarding and softPOS.",
+   "keyword_products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "payments_instant",
+    "digital_onboarding",
+    "core_digital"
+   ],
+   "text_hash": "90bc34ed332a",
+   "reviewed": "2026-09-07"
+  },
+  "kosovo-softpos-tap-to-phone-shift-in-merchant-acceptance": {
+   "products": [
+    "pos_acquiring",
+    "payment_security_hsm",
+    "digital_onboarding"
+   ],
+   "primary_product": "pos_acquiring",
+   "why": "Tap-to-phone shrinks terminal hardware demand but still needs a softPOS platform, terminal management, key injection and merchant onboarding.",
+   "keyword_products": [
+    "pos_acquiring",
+    "payments_instant",
+    "digital_onboarding",
+    "compliance_resilience",
+    "payment_security_hsm"
+   ],
+   "text_hash": "87005db46853",
+   "reviewed": "2026-09-07"
+  },
+  "kosovo-remote-onboarding-and-electronic-identity-national-eid-the-arc-remote-dat": {
+   "products": [
+    "digital_onboarding",
+    "compliance_resilience"
+   ],
+   "primary_product": "digital_onboarding",
+   "why": "National eID plus a remote data-update regulation and a twice-extended bank tender point to remote onboarding with KYC refresh behind it.",
+   "keyword_products": [
+    "digital_onboarding",
+    "compliance_resilience"
+   ],
+   "text_hash": "e3a0347d4a81",
+   "reviewed": "2026-09-07"
+  },
+  "kosovo-law-08-l-304-on-banks-compliance-deadline-with-the-payment-services-law-s": {
+   "products": [
+    "compliance_resilience",
+    "payments_instant",
+    "core_digital"
+   ],
+   "primary_product": "compliance_resilience",
+   "why": "A fixed compliance date on a prudential law drives reporting and AML work, and clears one blocker on the SEPA and instant-payments path.",
+   "keyword_products": [
+    "payments_instant",
+    "fraud_monitoring",
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "text_hash": "370a13b62b27",
+   "reviewed": "2026-09-07"
+  },
+  "kosovo-cash-operations-compliance-spine-the-ecb-tested-machine-gate-and-the-new-": {
+   "products": [
+    "atm_recycling",
+    "compliance_resilience",
+    "self_service"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The rule makes ECB-tested recyclers and cash-in machines a legal precondition and licenses customer-operated self-service deployment.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "compliance_resilience",
+    "physical_security"
+   ],
+   "text_hash": "1621e1f529f4",
+   "reviewed": "2026-09-07"
+  },
+  "banka-p-r-biznes-bpb-north-mitrovica-counter-hour-cut-and-an-outsourced-atm-mana": {
+   "products": [
+    "managed_services",
+    "atm_recycling",
+    "self_service"
+   ],
+   "primary_product": "managed_services",
+   "why": "BPB buys ATM management as one outsourced bundle, and the counter-hour cut opens a cash-in and self-service gap at one site.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "c48b773a3469",
+   "reviewed": "2026-09-07"
+  },
+  "bkt-kosova-cardless-business-cash-deposit-at-atms-and-a-rising-infrastructure-sp": {
+   "products": [
+    "atm_recycling"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "BKT already runs deposit-capable ATMs with a cardless business cash-in flow, so the conversation is about recycling and estate capacity.",
+   "keyword_products": [
+    "atm_recycling",
+    "pos_acquiring"
+   ],
+   "text_hash": "3e486f00c5e7",
+   "reviewed": "2026-09-07"
+  },
+  "raiffeisen-bank-kosovo-185-atms-against-37-branches-the-most-self-service-weight": {
+   "products": [
+    "atm_recycling",
+    "managed_services"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The largest ATM estate in Kosovo is the target for a recycler conversion once the deposit split and the service contract holder are known.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "managed_services"
+   ],
+   "text_hash": "6bec0593e75f",
+   "reviewed": "2026-09-07"
+  },
+  "world-bank-kosovo-financial-sector-development-project-p507881-component-3-catal": {
+   "products": [
+    "payments_instant",
+    "payment_security_hsm",
+    "core_digital"
+   ],
+   "primary_product": "payments_instant",
+   "why": "The World Bank component funds fast-payment infrastructure at eleven institutions, where channel integration and HSM work will surface.",
+   "keyword_products": [
+    "atm_recycling",
+    "compliance_resilience",
+    "payment_security_hsm"
+   ],
+   "text_hash": "a0ec92ff4061",
+   "reviewed": "2026-09-07"
+  },
+  "kosovo-commercial-bank-branch-estate-has-plateaued-turning-a-build-market-into-a": {
+   "products": [
+    "atm_recycling",
+    "self_service",
+    "managed_services"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "A frozen branch estate turns into a refit window for teller cash recyclers, kiosks, deposit ATMs and field services.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "managed_services"
+   ],
+   "text_hash": "459284ee3fe2",
+   "reviewed": "2026-09-07"
+  },
+  "montenegro-fastest-growing-see-atm-fleet": {
+   "products": [
+    "atm_recycling",
+    "managed_services"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "Over 500 withdrawal-only machines against fast-growing deposit demand is a recycler and deposit-retrofit case with managed services to run them.",
+   "keyword_products": [
+    "atm_recycling",
+    "compliance_resilience",
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "1eaf76b7b073",
+   "reviewed": "2026-09-07"
+  },
+  "montenegro-instant-payments-live-at-all-11-banks-verification-of-payee-mandate-i": {
+   "products": [
+    "payments_instant",
+    "fraud_monitoring",
+    "managed_services"
+   ],
+   "primary_product": "payments_instant",
+   "why": "Instant payments at all eleven banks require payee verification, inline fraud screening and 24/7 operations, sold as one package.",
+   "keyword_products": [
+    "self_service",
+    "payments_instant",
+    "fraud_monitoring",
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "text_hash": "4c2dd8d75643",
+   "reviewed": "2026-09-07"
+  },
+  "montenegro-instant-payments-phase-2-qr-acceptance-phone-number-alias-request-to-": {
+   "products": [
+    "payments_instant",
+    "core_digital",
+    "pos_acquiring"
+   ],
+   "primary_product": "payments_instant",
+   "why": "Phase-two instant-payment overlays land on weak bank apps, so the work is digital channels plus QR and softPOS acceptance.",
+   "keyword_products": [
+    "pos_acquiring",
+    "payments_instant",
+    "digital_onboarding",
+    "compliance_resilience"
+   ],
+   "text_hash": "2bcc0ff2afd8",
+   "reviewed": "2026-09-07"
+  },
+  "montenegro-pos-and-card-acceptance-estate-20-y-y-tms-softpos-whitespace": {
+   "products": [
+    "pos_acquiring"
+   ],
+   "primary_product": "pos_acquiring",
+   "why": "Some 4,500 net-new terminals and untapped tap-to-phone at the largest acquirers is a terminal and terminal-management pipeline.",
+   "keyword_products": [
+    "atm_recycling",
+    "pos_acquiring"
+   ],
+   "text_hash": "2b5d4249ed54",
+   "reviewed": "2026-09-07"
+  },
+  "montenegro-branch-and-counter-cash-automation-teller-recyclers-business-cash-dep": {
+   "products": [
+    "atm_recycling",
+    "self_service"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "Business cash still arrives at tellers, so the pitch is teller recyclers, smart safes and lobby business-deposit machines.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "compliance_resilience",
+    "physical_security"
+   ],
+   "text_hash": "cae5161f2fad",
+   "reviewed": "2026-09-07"
+  },
+  "central-bank-of-montenegro-vault-and-cash-operations-equipment-tender-closes-07-": {
+   "products": [
+    "atm_recycling"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The central bank is buying banknote and coin sorting, counting and counterfeit-detection equipment under an open EU tender.",
+   "keyword_products": [
+    "atm_recycling",
+    "physical_security"
+   ],
+   "text_hash": "ad5476af787f",
+   "reviewed": "2026-09-07"
+  },
+  "prva-banka-crne-gore-phase-two-of-the-deposit-atm-rollout": {
+   "products": [
+    "atm_recycling",
+    "managed_services"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "Prva banka has proven deposit ATMs on 17 sites, plans more phases, and has 92 off-premise machines left to convert.",
+   "keyword_products": [
+    "atm_recycling",
+    "managed_services",
+    "core_digital"
+   ],
+   "text_hash": "a7166a8ec383",
+   "reviewed": "2026-09-07"
+  },
+  "ckb-otp-group-counter-cash-out-at-the-branch-and-a-managed-migration-to-deposit-": {
+   "products": [
+    "atm_recycling",
+    "self_service",
+    "managed_services"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "CKB is pushing cash out of branches with only 30 deposit-capable machines, so it needs recyclers, lobby self-service and estate services.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "managed_services"
+   ],
+   "text_hash": "a0ef26fecd4c",
+   "reviewed": "2026-09-07"
+  },
+  "hipotekarna-banka-card-acceptance-department-staffing-up-for-atm-expansion-and-v": {
+   "products": [
+    "atm_recycling",
+    "self_service"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "A newly staffed ATM expansion role over a withdrawal-only fleet points to recycler upsell and more 24/7 self-service zones.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring"
+   ],
+   "text_hash": "ed39d7804868",
+   "reviewed": "2026-09-07"
+  },
+  "nlb-banka-podgorica-124-withdrawal-only-atms-inside-a-funded-group-cash-transiti": {
+   "products": [
+    "atm_recycling"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "124 withdrawal-only ATMs and 11 night safes sit inside a funded group programme to move cash deposits onto machines.",
+   "keyword_products": [
+    "atm_recycling",
+    "pos_acquiring"
+   ],
+   "text_hash": "ea9ddce35d5b",
+   "reviewed": "2026-09-07"
+  },
+  "erste-bank-podgorica-erste-smart-cash-self-service-rollout-and-a-new-data-capabi": {
+   "products": [
+    "atm_recycling",
+    "self_service",
+    "fraud_monitoring"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The row is about a withdrawal-only ATM estate and a branded self-service cash rollout, with the data and AI hire as a softer opening for monitoring analytics.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "fraud_monitoring",
+    "core_digital"
+   ],
+   "text_hash": "479bbe7fe507",
+   "reviewed": "2026-09-07"
+  },
+  "lov-en-banka-78-of-101-published-atm-locations-are-euronet-branded": {
+   "products": [
+    "atm_recycling",
+    "managed_services"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The question is whether the ATM estate has been outsourced to an independent deployer, which is both an ATM hardware and an ATM-as-a-service matter.",
+   "keyword_products": [
+    "atm_recycling",
+    "managed_services"
+   ],
+   "text_hash": "7c800dc2e313",
+   "reviewed": "2026-09-07"
+  },
+  "payten-asseco-see-publicly-disclosed-atm-hardware-retreat-naming-montenegro": {
+   "products": [
+    "atm_recycling",
+    "managed_services"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "A rival's shrinking ATM deliveries open the hardware refresh cycle, while its defended maintenance annuity is the managed-services side of the same contracts.",
+   "keyword_products": [
+    "atm_recycling",
+    "managed_services",
+    "core_digital"
+   ],
+   "text_hash": "60f3b1f29f71",
+   "reviewed": "2026-09-07"
+  },
+  "montenegro-sepa-cost-collapse-iso-20022-rts-x-modernisation": {
+   "products": [
+    "payments_instant",
+    "compliance_resilience"
+   ],
+   "primary_product": "payments_instant",
+   "why": "Running three payment rails including an instant one is an ISO 20022 integration load, with reconciliation as the supporting need.",
+   "keyword_products": [
+    "payments_instant",
+    "compliance_resilience",
+    "core_digital"
+   ],
+   "text_hash": "784761bddf04",
+   "reviewed": "2026-09-07"
+  },
+  "montenegro-crd-vi-crr-iii-and-resolution-alignment-with-eu-accession-negotiation": {
+   "products": [
+    "compliance_resilience",
+    "payment_security_hsm"
+   ],
+   "primary_product": "compliance_resilience",
+   "why": "Importing the EU prudential package drives compliance, reporting and resilience tooling, with key management named as a secondary element.",
+   "keyword_products": [
+    "fraud_monitoring",
+    "compliance_resilience",
+    "payment_security_hsm"
+   ],
+   "text_hash": "280e3567441a",
+   "reviewed": "2026-09-07"
+  },
+  "montenegro-aml-cft-overhaul-in-force-sl-list-cg-59-2026": {
+   "products": [
+    "compliance_resilience",
+    "digital_onboarding",
+    "fraud_monitoring"
+   ],
+   "primary_product": "compliance_resilience",
+   "why": "An AML law rewrite means due-diligence and onboarding rework plus ongoing monitoring, and the cash and instant-payment references are only context.",
+   "keyword_products": [
+    "atm_recycling",
+    "payments_instant",
+    "digital_onboarding",
+    "fraud_monitoring",
+    "compliance_resilience"
+   ],
+   "text_hash": "5b8e56c1c70e",
+   "reviewed": "2026-09-07"
+  },
+  "north-macedonia-instant-payments-arrive-on-two-rails-tips-clone-kibs-instant-mip": {
+   "products": [
+    "payments_instant",
+    "fraud_monitoring",
+    "payment_security_hsm"
+   ],
+   "primary_product": "payments_instant",
+   "why": "Two instant rails create ISO 20022 integration work, and real-time screening and scheme key management follow directly from settling in seconds.",
+   "keyword_products": [
+    "pos_acquiring",
+    "payments_instant",
+    "fraud_monitoring",
+    "payment_security_hsm"
+   ],
+   "text_hash": "50a2ac056a00",
+   "reviewed": "2026-09-07"
+  },
+  "north-macedonia-nbrsm-tips-clone-connectivity-tender-2nd-attempt-closing-18-09-2": {
+   "products": [
+    "payments_instant"
+   ],
+   "primary_product": "payments_instant",
+   "why": "This is timing and competitor intelligence around the national instant-payments connectivity award, and the cash and security buys are incidental.",
+   "keyword_products": [
+    "atm_recycling",
+    "payments_instant",
+    "physical_security"
+   ],
+   "text_hash": "5e539e87a9fc",
+   "reviewed": "2026-09-07"
+  },
+  "north-macedonia-central-bank-s-merchant-acceptance-programme-national-qr-aliases": {
+   "products": [
+    "pos_acquiring",
+    "payments_instant",
+    "payment_security_hsm"
+   ],
+   "primary_product": "pos_acquiring",
+   "why": "The regulator wants cheap merchant acceptance, so softPOS and terminal management lead, with national QR integration and key injection behind them.",
+   "keyword_products": [
+    "pos_acquiring",
+    "payments_instant",
+    "digital_onboarding",
+    "compliance_resilience",
+    "payment_security_hsm"
+   ],
+   "text_hash": "b1e92b29c021",
+   "reviewed": "2026-09-07"
+  },
+  "north-macedonia-nbg-stopanska-sepa-deposit-atm-growth": {
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "self_service"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The market data points to a deposit and recycler upgrade cycle, and Stopanska's supplier-fee complaint is a managed-services opening.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "payments_instant",
+    "compliance_resilience",
+    "physical_security",
+    "managed_services",
+    "core_digital"
+   ],
+   "text_hash": "6757ec6374b9",
+   "reviewed": "2026-09-07"
+  },
+  "north-macedonia-komercijalna-banka-repeatable-branch-transformation-template-plu": {
+   "products": [
+    "self_service",
+    "atm_recycling",
+    "managed_services"
+   ],
+   "primary_product": "self_service",
+   "why": "A repeating branch fit-out with a kiosk and a deposit ATM is branch transformation first, with recyclers and field services as the follow-on.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "compliance_resilience",
+    "managed_services",
+    "core_digital"
+   ],
+   "text_hash": "6ecb1f889b9f",
+   "reviewed": "2026-09-07"
+  },
+  "north-macedonia-nlb-banka-skopje-digital-concept-branches-contact-centre-moderni": {
+   "products": [
+    "atm_recycling",
+    "self_service",
+    "digital_onboarding"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "A funded group-level ATM and cash-deposit upgrade sits inside a branch self-service programme, with digital authentication and onboarding scoped for 2026.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "digital_onboarding",
+    "fraud_monitoring",
+    "compliance_resilience",
+    "core_digital"
+   ],
+   "text_hash": "2105f5e00dee",
+   "reviewed": "2026-09-07"
+  },
+  "north-macedonia-sparkasse-bank-makedonija-runs-82-atms-with-no-deposit-capabilit": {
+   "products": [
+    "atm_recycling"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The whole row is about deposit and recycler upgrades on a mostly withdrawal-only fleet.",
+   "keyword_products": [
+    "atm_recycling"
+   ],
+   "text_hash": "a3c3595d98f7",
+   "reviewed": "2026-09-07"
+  },
+  "north-macedonia-procredit-bank-s-near-branchless-model-runs-on-24-7-self-service": {
+   "products": [
+    "self_service",
+    "atm_recycling",
+    "digital_onboarding"
+   ],
+   "primary_product": "self_service",
+   "why": "Growth here runs through 24/7 self-service zones with an ageing cash sub-fleet, and the eKYC layer is the one bought-in software slot.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "digital_onboarding",
+    "compliance_resilience",
+    "card_issuing",
+    "core_digital"
+   ],
+   "text_hash": "1347821fdf63",
+   "reviewed": "2026-09-07"
+  },
+  "north-macedonia-oneid-national-digital-identity-is-now-the-live-remote-onboardin": {
+   "products": [
+    "digital_onboarding",
+    "compliance_resilience"
+   ],
+   "primary_product": "digital_onboarding",
+   "why": "A national eID with a two-year expiry drives recurring eKYC and re-verification work with an AML audit trail behind it.",
+   "keyword_products": [
+    "self_service",
+    "digital_onboarding",
+    "compliance_resilience"
+   ],
+   "text_hash": "9dc5d0027d95",
+   "reviewed": "2026-09-07"
+  },
+  "north-macedonia-eidas-2-transposed-bank-wallet-verifier-obligation-from-01-06-20": {
+   "products": [
+    "digital_onboarding",
+    "payment_security_hsm",
+    "compliance_resilience"
+   ],
+   "primary_product": "digital_onboarding",
+   "why": "A legal duty to accept EU identity wallets is an onboarding and identity build, with relying-party keys and evidence retention as supporting pieces.",
+   "keyword_products": [
+    "digital_onboarding",
+    "compliance_resilience",
+    "payment_security_hsm",
+    "core_digital"
+   ],
+   "text_hash": "97349e7b421d",
+   "reviewed": "2026-09-07"
+  },
+  "north-macedonia-single-register-of-accounts-electronic-forced-collection-system": {
+   "products": [
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "primary_product": "compliance_resilience",
+   "why": "A central account register is a data-quality, reconciliation and regulatory-reporting integration that banks may prefer to outsource.",
+   "keyword_products": [
+    "digital_onboarding",
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "text_hash": "e783ccb6e488",
+   "reviewed": "2026-09-07"
+  },
+  "north-macedonia-mandatory-app-based-strong-authentication-in-force-with-tokenise": {
+   "products": [
+    "payment_security_hsm",
+    "card_issuing",
+    "fraud_monitoring"
+   ],
+   "primary_product": "payment_security_hsm",
+   "why": "Mandatory app authentication over a tokenised card base drives HSM and key work, token management on the issuing side, and new fraud patterns to monitor.",
+   "keyword_products": [
+    "digital_onboarding",
+    "fraud_monitoring",
+    "compliance_resilience",
+    "payment_security_hsm"
+   ],
+   "text_hash": "57ce4e8012b7",
+   "reviewed": "2026-09-07"
+  },
+  "north-macedonia-payten-holds-halkbank-skopje-s-softpos-acceptance-product": {
+   "products": [
+    "pos_acquiring",
+    "payment_security_hsm",
+    "managed_services"
+   ],
+   "primary_product": "pos_acquiring",
+   "why": "A competitor holds the softPOS slot, so the opening is terminal management, key injection and field service around phone-based acceptance.",
+   "keyword_products": [
+    "pos_acquiring",
+    "digital_onboarding",
+    "payment_security_hsm",
+    "managed_services"
+   ],
+   "text_hash": "2db6e1ded476",
+   "reviewed": "2026-09-07"
+  },
+  "north-macedonia-casys-and-the-macedonian-banking-association-formalise-a-sector-": {
+   "products": [
+    "fraud_monitoring",
+    "card_issuing",
+    "compliance_resilience"
+   ],
+   "primary_product": "fraud_monitoring",
+   "why": "The national card processor is making fraud prevention a sector-wide agenda, which touches Printec's monitoring, AML and card-processing ground.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "payments_instant",
+    "fraud_monitoring",
+    "compliance_resilience",
+    "payment_security_hsm",
+    "card_issuing",
+    "managed_services"
+   ],
+   "text_hash": "20584d111fe5",
+   "reviewed": "2026-09-07"
+  },
+  "north-macedonia-unibanka-squeezed-by-card-scheme-and-licence-fees-with-a-dated-c": {
+   "products": [
+    "card_issuing",
+    "pos_acquiring",
+    "digital_onboarding"
+   ],
+   "primary_product": "card_issuing",
+   "why": "Rising scheme fees open a card economics and on-us routing conversation, and the OneID gap adds an eKYC angle.",
+   "keyword_products": [
+    "pos_acquiring",
+    "digital_onboarding",
+    "card_issuing",
+    "core_digital"
+   ],
+   "text_hash": "4a1c11659b80",
+   "reviewed": "2026-09-07"
+  },
+  "north-macedonia-alta-banka-bitola-stays-small-and-the-addiko-outcome-closes-the-": {
+   "products": [
+    "core_digital"
+   ],
+   "primary_product": "core_digital",
+   "why": "The only live thread is a small parent-led digital-channel upgrade, since the integration thesis has been dropped.",
+   "keyword_products": [
+    "core_digital"
+   ],
+   "text_hash": "5ebf20466deb",
+   "reviewed": "2026-09-07"
+  },
+  "north-macedonia-unfinished-silk-road-to-centralna-kooperativna-banka-brand-migra": {
+   "products": [
+    "card_issuing",
+    "atm_recycling",
+    "digital_onboarding"
+   ],
+   "primary_product": "card_issuing",
+   "why": "A brand migration means card reissuance and ATM rebranding, and the new insurance licence adds onboarding journeys.",
+   "keyword_products": [
+    "atm_recycling",
+    "digital_onboarding"
+   ],
+   "text_hash": "f9b106e32b0e",
+   "reviewed": "2026-09-07"
+  },
+  "romania-draft-law-b409-2026-would-force-a-screen-flow-change-on-every-atm-in-the": {
+   "products": [
+    "atm_recycling",
+    "managed_services"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "A forced ATM screen-flow change across 11,000 machines is multivendor ATM software and managed-service work, not a physical security matter.",
+   "keyword_products": [
+    "atm_recycling",
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "751e276fb25f",
+   "reviewed": "2026-09-07"
+  },
+  "cec-bank-full-stack-modernization-digital-agencies": {
+   "products": [
+    "self_service",
+    "atm_recycling",
+    "managed_services"
+   ],
+   "primary_product": "self_service",
+   "why": "A 350-branch self-service redesign with deposit and recycling machines, which capex cuts push toward an as-a-service deal.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "managed_services",
+    "core_digital"
+   ],
+   "text_hash": "d3e00365ec19",
+   "reviewed": "2026-09-07"
+  },
+  "romania-public-sector-pos-acquiring-pool-banca-transilvania-is-the-channel": {
+   "products": [
+    "pos_acquiring",
+    "payment_security_hsm",
+    "atm_recycling"
+   ],
+   "primary_product": "pos_acquiring",
+   "why": "Public-sector acquiring wins create demand for terminals, TMS and key injection at the winning banks, plus teller recyclers for outsourced treasury desks.",
+   "keyword_products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "payment_security_hsm",
+    "card_issuing",
+    "managed_services"
+   ],
+   "text_hash": "9c4821c7bf07",
+   "reviewed": "2026-09-07"
+  },
+  "romania-municipal-self-service-tax-collection-frameworks-arad-open-until-10-09-2": {
+   "products": [
+    "self_service",
+    "managed_services"
+   ],
+   "primary_product": "self_service",
+   "why": "An open tender for cash-and-card tax-collection kiosks bought as a no-capex service.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "text_hash": "1051ea35c5ef",
+   "reviewed": "2026-09-07"
+  },
+  "banca-na-ional-a-rom-niei-security-hsm-procurement-stream": {
+   "products": [
+    "physical_security",
+    "payment_security_hsm",
+    "managed_services"
+   ],
+   "primary_product": "physical_security",
+   "why": "Regional security-system lots plus a small HSM support contract that points to managed HSM and key services at the commercial banks.",
+   "keyword_products": [
+    "atm_recycling",
+    "physical_security",
+    "payment_security_hsm",
+    "managed_services"
+   ],
+   "text_hash": "d73f5033b8d0",
+   "reviewed": "2026-09-07"
+  },
+  "bcr-erste-fleet-rationalisation-780-unit-off-site-atm-perimeter": {
+   "products": [
+    "managed_services",
+    "atm_recycling",
+    "self_service"
+   ],
+   "primary_product": "managed_services",
+   "why": "Mostly cashless branches make uptime-based services the lead, with 1,100 dispense-only machines as the recycler conversion pool.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "text_hash": "341a057c20a5",
+   "reviewed": "2026-09-07"
+  },
+  "brd-socgen-24-7-cash-zone-saturation-and-acquiring-in-reverse": {
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "pos_acquiring"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "About 946 cash-out-only sites need a deposit upgrade funded as a service, while acceptance needs multi-rail terminal software rather than more terminals.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "payments_instant",
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "7b760266c44b",
+   "reviewed": "2026-09-07"
+  },
+  "unicredit-bank-romania-network-cut-to-200-branches-plus-a-dated-40-unit-prime-re": {
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "self_service"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The largest per-machine deposit gap in Romania, to be leased or rented rather than bought, with cashless branches and Prime zones as the fit-out angle.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "digital_onboarding",
+    "compliance_resilience",
+    "managed_services",
+    "core_digital"
+   ],
+   "text_hash": "5efcbc8210ee",
+   "reviewed": "2026-09-07"
+  },
+  "raiffeisen-romania-garanti-bbva-romania-closing-early-october-2026-and-a-budgete": {
+   "products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "card_issuing"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "A funded 2027 migration re-fascias and re-keys every ATM, merges two acquiring books and TMS stacks, and re-issues two card portfolios.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "digital_onboarding",
+    "compliance_resilience"
+   ],
+   "text_hash": "a00414a0f3d7",
+   "reviewed": "2026-09-07"
+  },
+  "raiffeisen-bank-romania-1-211-device-own-estate-and-the-sole-large-bank-ropay-ac": {
+   "products": [
+    "pos_acquiring",
+    "atm_recycling",
+    "payments_instant"
+   ],
+   "primary_product": "pos_acquiring",
+   "why": "A 45,000-terminal book lacks RoPay QR acceptance, and 617 own machines cannot take deposits.",
+   "keyword_products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "payments_instant",
+    "compliance_resilience"
+   ],
+   "text_hash": "5a1124e2d230",
+   "reviewed": "2026-09-07"
+  },
+  "banca-transilvania-it-digital-cards-platform": {
+   "products": [
+    "atm_recycling",
+    "compliance_resilience",
+    "fraud_monitoring"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "A flat fleet under rising cash volume points to recyclers, and a regulator order opens the access-monitoring and AML back office.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "digital_onboarding",
+    "fraud_monitoring",
+    "compliance_resilience",
+    "card_issuing",
+    "managed_services",
+    "core_digital"
+   ],
+   "text_hash": "292462c2d2d6",
+   "reviewed": "2026-09-07"
+  },
+  "romanian-banking-sector-ron-3-73bn-competition-fines-reset-the-2026-27-capex-cli": {
+   "products": [
+    "managed_services",
+    "compliance_resilience",
+    "fraud_monitoring"
+   ],
+   "primary_product": "managed_services",
+   "why": "Sector-wide fines push buying toward opex and as-a-service structures and raise appetite for compliance and monitoring tools.",
+   "keyword_products": [
+    "fraud_monitoring",
+    "compliance_resilience",
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "8080604d5e53",
+   "reviewed": "2026-09-07"
+  },
+  "romania-dual-atm-pos-estate-expansion": {
+   "products": [
+    "pos_acquiring",
+    "payment_security_hsm",
+    "atm_recycling"
+   ],
+   "primary_product": "pos_acquiring",
+   "why": "A universal acceptance mandate is met mostly by softPOS, so the reachable revenue is terminal management, certification, key injection and HSM capacity.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "payments_instant",
+    "payment_security_hsm",
+    "core_digital"
+   ],
+   "text_hash": "a60c33d060a4",
+   "reviewed": "2026-09-07"
+  },
+  "romania-instant-euro-payments-banks-must-receive-by-09-01-2027-and-send-with-ver": {
+   "products": [
+    "payments_instant",
+    "fraud_monitoring",
+    "compliance_resilience"
+   ],
+   "primary_product": "payments_instant",
+   "why": "Hard 2027 dates for instant euro and Verification of Payee, with screening, monitoring and reporting duties that Montran does not cover.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "payments_instant",
+    "digital_onboarding",
+    "fraud_monitoring",
+    "compliance_resilience",
+    "payment_security_hsm",
+    "managed_services"
+   ],
+   "text_hash": "4ae751a567dc",
+   "reviewed": "2026-09-07"
+  },
+  "euronet-romania-entrenched-independent-off-site-deployer": {
+   "products": [
+    "managed_services",
+    "atm_recycling"
+   ],
+   "primary_product": "managed_services",
+   "why": "Euronet's ATM-as-a-service campaign is countered with owned-estate services, and its cash-out-only fleet leaves deposit and recycling open.",
+   "keyword_products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "physical_security",
+    "card_issuing",
+    "managed_services"
+   ],
+   "text_hash": "fdfa275210a8",
+   "reviewed": "2026-09-07"
+  },
+  "romania-non-bank-self-service-and-agent-networks-are-substituting-for-rural-atms": {
+   "products": [
+    "managed_services",
+    "pos_acquiring",
+    "atm_recycling"
+   ],
+   "primary_product": "managed_services",
+   "why": "Three large non-bank estates need telemetry and field service, terminals must go multi-rail, and the ATM case shifts to urban deposit automation.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "payments_instant",
+    "managed_services"
+   ],
+   "text_hash": "0433bef9fbc8",
+   "reviewed": "2026-09-07"
+  },
+  "romania-domestic-cash-automation-and-kiosk-incumbents-plus-an-unconsolidated-sta": {
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "self_service"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "Local recycler and kiosk incumbents block Glory-led pitches, while a fragmented treasury counting-machine estate invites a national service framework.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "compliance_resilience",
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "3849adfd9737",
+   "reviewed": "2026-09-07"
+  },
+  "romania-chip-electronic-id-becomes-the-onboarding-standard-national-wallet-due-d": {
+   "products": [
+    "digital_onboarding",
+    "self_service",
+    "compliance_resilience"
+   ],
+   "primary_product": "digital_onboarding",
+   "why": "Chip eID and the EUDI wallet reframe onboarding around NFC reading, branch and kiosk chip hardware and a bundled compliance story.",
+   "keyword_products": [
+    "self_service",
+    "digital_onboarding",
+    "compliance_resilience",
+    "payment_security_hsm",
+    "core_digital"
+   ],
+   "text_hash": "58376c855749",
+   "reviewed": "2026-09-07"
+  },
+  "romania-dora-and-aml-supervisory-evidence-is-becoming-the-gate-on-printec-s-own-": {
+   "products": [
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "primary_product": "compliance_resilience",
+   "why": "DORA register and threat-led testing evidence now gates whether banks can keep or buy Printec managed services.",
+   "keyword_products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "text_hash": "859617482363",
+   "reviewed": "2026-09-07"
+  },
+  "aikbank-a-d-beograd-568-atm-fleet-with-457-dispense-only-units-on-rolling-de-sta": {
+   "products": [
+    "atm_recycling",
+    "self_service"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "Four in five machines cannot take deposits, and a standard branch refit specification is copied site by site.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service"
+   ],
+   "text_hash": "22554765cf85",
+   "reviewed": "2026-09-07"
+  },
+  "nlb-komercijalna-banka-group-atm-and-cash-deposit-upgrade-against-102-non-deposi": {
+   "products": [
+    "atm_recycling",
+    "self_service",
+    "managed_services"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "Cash-in and euro-dispense gaps, 77 branches without a 24/7 zone, and a rising maintenance bill a service contract would replace.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "text_hash": "d7f92f2e8ec4",
+   "reviewed": "2026-09-07"
+  },
+  "otp-banka-srbija-self-provisioning-after-the-moneyget-exit-on-a-rolling-branch-r": {
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "self_service"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "Remaining cash-out-only and non-euro units, an ageing recycler refresh and opex-priced services on a public branch-refit tender stream.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "digital_onboarding",
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "text_hash": "af78dbb0d7b7",
+   "reviewed": "2026-09-07"
+  },
+  "raiffeisen-banka-srbija-415-device-estate-named-cash-automation-incumbents-addik": {
+   "products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "Two measured upgrade pools and a contestable merchant-deposit estate, with a new acquiring head hire signalling a terminal budget.",
+   "keyword_products": [
+    "self_service",
+    "pos_acquiring",
+    "core_digital"
+   ],
+   "text_hash": "b92068b99025",
+   "reviewed": "2026-09-07"
+  },
+  "banca-intesa-beograd-payten-atm-outsourcing-re-tender-window-on-a-434-device-est": {
+   "products": [
+    "managed_services",
+    "atm_recycling"
+   ],
+   "primary_product": "managed_services",
+   "why": "A rival ATM-outsourcing deal nears term, and a low multifunction share plus permanent teller hiring supports cash automation.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "digital_onboarding",
+    "fraud_monitoring",
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "text_hash": "e218b544d0dc",
+   "reviewed": "2026-09-07"
+  },
+  "national-bank-of-serbia-unlet-2026-cash-automation-hsm-pipeline": {
+   "products": [
+    "payment_security_hsm",
+    "managed_services",
+    "payments_instant"
+   ],
+   "primary_product": "payment_security_hsm",
+   "why": "The central bank plans open HSM and SEPA/TIPS procurements, and a Glory maintenance tender rewards in-country service capability.",
+   "keyword_products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "payments_instant",
+    "compliance_resilience",
+    "physical_security",
+    "payment_security_hsm",
+    "managed_services"
+   ],
+   "text_hash": "b0b0e896b2ff",
+   "reviewed": "2026-09-07"
+  },
+  "serbia-nbs-remote-identification-rulebook-off-gazette-43-2026-6-and-12-month-ada": {
+   "products": [
+    "digital_onboarding",
+    "compliance_resilience"
+   ],
+   "primary_product": "digital_onboarding",
+   "why": "A dated rulebook forces every Serbian video-identification stack to be rebuilt to a prescribed standard, with a compliance pack for the regulator.",
+   "keyword_products": [
+    "digital_onboarding",
+    "compliance_resilience"
+   ],
+   "text_hash": "8024fb877210",
+   "reviewed": "2026-09-07"
+  },
+  "serbia-crem-electronic-bills-of-exchange-statutory-retail-deadline-30-11-2026": {
+   "products": [
+    "digital_onboarding"
+   ],
+   "primary_product": "digital_onboarding",
+   "why": "A legal deadline makes Serbian banks open qualified electronic-signature and identity flows to retail customers.",
+   "keyword_products": [
+    "digital_onboarding",
+    "compliance_resilience"
+   ],
+   "text_hash": "702d3a8a7817",
+   "reviewed": "2026-09-07"
+  },
+  "banka-po-tanska-tedionica-unawarded-atm-servicing-and-cash-escort-contract-plus-": {
+   "products": [
+    "managed_services",
+    "atm_recycling",
+    "pos_acquiring"
+   ],
+   "primary_product": "managed_services",
+   "why": "The open contract is first-line ATM field servicing, and the same bank also runs a large unattended-terminal estate.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "payments_instant",
+    "digital_onboarding",
+    "physical_security",
+    "managed_services",
+    "core_digital"
+   ],
+   "text_hash": "9fbe031d01f9",
+   "reviewed": "2026-09-07"
+  },
+  "po-ta-srbije-money-counting-machines-re-tender-closed-10-08-2026-in-evaluation": {
+   "products": [
+    "atm_recycling",
+    "self_service"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The tender is for note-counting and authentication machines, and it opens a door to branch self-service at the postal network.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "b9f8bc5fbeee",
+   "reviewed": "2026-09-07"
+  },
+  "procredit-bank-serbia-live-fraud-monitoring-procurement-and-a-cash-at-pos-model-": {
+   "products": [
+    "fraud_monitoring",
+    "pos_acquiring"
+   ],
+   "primary_product": "fraud_monitoring",
+   "why": "The live tender is a fraud-monitoring application, and the bank distributes cash through its merchant terminals instead of ATMs.",
+   "keyword_products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "fraud_monitoring"
+   ],
+   "text_hash": "615125a9498d",
+   "reviewed": "2026-09-07"
+  },
+  "serbia-sepa-instant-payments-wave": {
+   "products": [
+    "payments_instant",
+    "fraud_monitoring",
+    "compliance_resilience"
+   ],
+   "primary_product": "payments_instant",
+   "why": "The buyable work is direct SEPA participation and ISO 20022 migration, plus retuned monitoring and screening on richer data.",
+   "keyword_products": [
+    "atm_recycling",
+    "payments_instant",
+    "fraud_monitoring",
+    "compliance_resilience",
+    "core_digital"
+   ],
+   "text_hash": "940f4f1fffc3",
+   "reviewed": "2026-09-07"
+  },
+  "serbia-cash-in-not-cash-out-is-where-the-atm-channel-is-growing": {
+   "products": [
+    "atm_recycling",
+    "self_service"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "Deposit growth far ahead of withdrawals is the market case for recycling machines and branch self-service.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "compliance_resilience",
+    "physical_security"
+   ],
+   "text_hash": "74832975eec3",
+   "reviewed": "2026-09-07"
+  },
+  "serbia-the-incumbent-competitor-set-is-now-named-payten-asee-mellon-and-moneyget": {
+   "products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "managed_services"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The rival map covers ATM hardware and outsourcing, POS estates and independent terminal networks.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "fraud_monitoring",
+    "compliance_resilience",
+    "payment_security_hsm",
+    "managed_services",
+    "core_digital"
+   ],
+   "text_hash": "9083dec19c29",
+   "reviewed": "2026-09-07"
+  },
+  "serbia-public-sector-cash-automation-and-kiosks-are-held-by-named-local-incumben": {
+   "products": [
+    "atm_recycling",
+    "self_service"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "Named local firms hold central-bank cash sorting and municipal kiosk work, which sets the entry strategy for those lines.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "693c1e16aa40",
+   "reviewed": "2026-09-07"
+  },
+  "slovakia-ekasa-cashless-mandate-deposit-atm-expansion": {
+   "products": [
+    "pos_acquiring",
+    "managed_services"
+   ],
+   "primary_product": "pos_acquiring",
+   "why": "The cashless-acceptance mandate drives SoftPOS and terminal management, plus a recurring service around eKasa renewals.",
+   "keyword_products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "text_hash": "40425ea47f41",
+   "reviewed": "2026-09-07"
+  },
+  "finan-n-riadite-stvo-sr-safe-the-replacement-national-revenue-recording-platform": {
+   "products": [
+    "pos_acquiring",
+    "compliance_resilience"
+   ],
+   "primary_product": "pos_acquiring",
+   "why": "A new national fiscalisation platform will force re-integration and re-certification of every certified cash-register stack.",
+   "keyword_products": [
+    "compliance_resilience"
+   ],
+   "text_hash": "7f7446e0422f",
+   "reviewed": "2026-09-07"
+  },
+  "slovensk-po-ta-self-service-kiosks-eur-1-75m-security-managed-services": {
+   "products": [
+    "managed_services",
+    "self_service"
+   ],
+   "primary_product": "managed_services",
+   "why": "The openings are a support contract awarded on price, a field-maintenance re-tender and an unconverted kiosk pilot.",
+   "keyword_products": [
+    "self_service",
+    "managed_services"
+   ],
+   "text_hash": "427e5c90f04a",
+   "reviewed": "2026-09-07"
+  },
+  "n-rodn-banka-slovenska-core-banking-pre-rfp-ageing-cash-estate": {
+   "products": [
+    "atm_recycling",
+    "physical_security",
+    "core_digital"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The central bank will rebuy banknote processing and fit out a backup site with vaults and security, while core banking stays pre-RFP.",
+   "keyword_products": [
+    "atm_recycling",
+    "compliance_resilience",
+    "physical_security",
+    "payment_security_hsm",
+    "core_digital"
+   ],
+   "text_hash": "b0e7150b2e6e",
+   "reviewed": "2026-09-07"
+  },
+  "n-rodn-banka-slovenska-integration-platform-tender-notice-expected-14-09-2026": {
+   "products": [
+    "payments_instant",
+    "core_digital"
+   ],
+   "primary_product": "payments_instant",
+   "why": "A central-bank integration and messaging backbone underpins instant payments and ISO 20022 work.",
+   "keyword_products": [
+    "payments_instant",
+    "core_digital"
+   ],
+   "text_hash": "488127abec5e",
+   "reviewed": "2026-09-07"
+  },
+  "n-rodn-banka-slovenska-central-identity-platform-and-the-named-integrator-map": {
+   "products": [
+    "core_digital",
+    "digital_onboarding"
+   ],
+   "primary_product": "core_digital",
+   "why": "The identity-system winner becomes the partner route for any identity or e-signature work at the central bank.",
+   "keyword_products": [
+    "compliance_resilience",
+    "core_digital"
+   ],
+   "text_hash": "1b5ee0a4422f",
+   "reviewed": "2026-09-07"
+  },
+  "slovakia-commercial-bank-deposit-atm-and-recycler-build-out": {
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "self_service"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "Closed cash desks have to be replaced by recyclers and deposit machines, sold with a managed cash service.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "8a9a7668cd2f",
+   "reviewed": "2026-09-07"
+  },
+  "sob-slovakia-365-bank-po-tov-banka-600-machine-shared-atm-network-heading-into-a": {
+   "products": [
+    "atm_recycling",
+    "self_service"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "Two ATM fleets must be merged onto one platform with recyclers and cross-bank deposit capability.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring"
+   ],
+   "text_hash": "7f0b60b094a2",
+   "reviewed": "2026-09-07"
+  },
+  "slovakia-cross-bank-deposit-atm-interoperability-still-at-the-analysis-stage-wit": {
+   "products": [
+    "atm_recycling",
+    "compliance_resilience"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "A shared-deposit scheme needs recyclers plus cross-bank switching, reconciliation and dispute handling.",
+   "keyword_products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "compliance_resilience"
+   ],
+   "text_hash": "4560e7dea7b3",
+   "reviewed": "2026-09-07"
+  },
+  "penta-bank-formerly-privatbanka-greenfield-platform-build-with-an-entirely-new-c": {
+   "products": [
+    "digital_onboarding",
+    "compliance_resilience",
+    "fraud_monitoring"
+   ],
+   "primary_product": "digital_onboarding",
+   "why": "A greenfield bank is still choosing its onboarding, AML and fraud-monitoring stack under new leadership.",
+   "keyword_products": [
+    "pos_acquiring",
+    "digital_onboarding",
+    "fraud_monitoring",
+    "compliance_resilience",
+    "payment_security_hsm"
+   ],
+   "text_hash": "87ac766033ba",
+   "reviewed": "2026-09-07"
+  },
+  "asseco-central-europe-kal-kalignite-the-multivendor-layer-under-three-separate-p": {
+   "products": [
+    "self_service",
+    "atm_recycling"
+   ],
+   "primary_product": "self_service",
+   "why": "A multivendor ATM software rival is extending fleet life and delaying the recycling refresh cycle.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "text_hash": "8c288d8693c4",
+   "reviewed": "2026-09-07"
+  },
+  "slovakia-diebold-nixdorf-loomis-and-protectus-are-building-the-local-cash-and-fi": {
+   "products": [
+    "managed_services",
+    "atm_recycling"
+   ],
+   "primary_product": "managed_services",
+   "why": "Rivals are building local ATM field-service and recycler-as-a-service capacity that any bid must match.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "47d286cd580f",
+   "reviewed": "2026-09-07"
+  },
+  "sonet-slovakia-asee-payten-quietly-accumulating-slovak-public-sector-pos-framewo": {
+   "products": [
+    "pos_acquiring",
+    "managed_services"
+   ],
+   "primary_product": "pos_acquiring",
+   "why": "A rival is locking up public-sector card acceptance on pay-per-transaction terminal frameworks.",
+   "keyword_products": [
+    "pos_acquiring",
+    "managed_services"
+   ],
+   "text_hash": "27497ddda3ec",
+   "reviewed": "2026-09-07"
+  },
+  "slovakia-amld6-act-73-2026-reporting-system-registration-by-30-11-2026-and-indep": {
+   "products": [
+    "compliance_resilience",
+    "digital_onboarding"
+   ],
+   "primary_product": "compliance_resilience",
+   "why": "An AML registration deadline and beneficial-owner remediation drive compliance and KYC spending.",
+   "keyword_products": [
+    "digital_onboarding",
+    "fraud_monitoring",
+    "compliance_resilience"
+   ],
+   "text_hash": "a6c237b4742f",
+   "reviewed": "2026-09-07"
+  },
+  "slovakia-the-eu-supervisory-deadline-stack-landing-on-slovak-banks-in-the-next-t": {
+   "products": [
+    "compliance_resilience",
+    "self_service",
+    "digital_onboarding"
+   ],
+   "primary_product": "compliance_resilience",
+   "why": "Supervisory deadlines make end-of-life self-service estates a remediation item, alongside DORA registers and wallet acceptance.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "digital_onboarding",
+    "compliance_resilience",
+    "payment_security_hsm",
+    "core_digital"
+   ],
+   "text_hash": "0bbe1ce91aa8",
+   "reviewed": "2026-09-07"
+  },
+  "slovakia-nbs-led-fraud-and-crypto-supervision-as-the-transaction-monitoring-open": {
+   "products": [
+    "fraud_monitoring",
+    "compliance_resilience"
+   ],
+   "primary_product": "fraud_monitoring",
+   "why": "Regulator fraud statistics and a planned data-sharing platform point at real-time transaction monitoring, with a compliance angle from the crypto regime.",
+   "keyword_products": [
+    "fraud_monitoring",
+    "compliance_resilience",
+    "core_digital"
+   ],
+   "text_hash": "1d1a15398c61",
+   "reviewed": "2026-09-07"
+  },
+  "banka-slovenije-6-year-banknote-sorter-maintenance": {
+   "products": [
+    "atm_recycling",
+    "managed_services"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The sorter maintenance is lost, so the remaining play is cash-centre equipment and the multivendor service argument for future tenders.",
+   "keyword_products": [
+    "atm_recycling",
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "5dc58d158245",
+   "reviewed": "2026-09-07"
+  },
+  "banka-slovenije-and-sid-banka-the-only-two-slovenian-bank-buyers-that-tender-pub": {
+   "products": [
+    "physical_security",
+    "compliance_resilience",
+    "fraud_monitoring"
+   ],
+   "primary_product": "physical_security",
+   "why": "The live central-bank lot is access control, while SID banka is a repeat buyer of security monitoring, document management and likely AML and fraud tooling.",
+   "keyword_products": [
+    "payments_instant",
+    "digital_onboarding",
+    "fraud_monitoring",
+    "compliance_resilience",
+    "physical_security",
+    "managed_services",
+    "core_digital"
+   ],
+   "text_hash": "c57a5224bbcf",
+   "reviewed": "2026-09-07"
+  },
+  "po-ta-slovenije-printec-incumbent-parcel-lockers-payment-kiosk": {
+   "products": [
+    "self_service",
+    "atm_recycling",
+    "managed_services"
+   ],
+   "primary_product": "self_service",
+   "why": "The account is about lockers and accessible kiosks with a maintenance tail, plus a new counter cash-automation opening from the cash-access bill.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "compliance_resilience",
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "0f84396827aa",
+   "reviewed": "2026-09-07"
+  },
+  "slovenia-draft-cash-access-act-sets-a-statutory-atm-density-floor": {
+   "products": [
+    "atm_recycling",
+    "managed_services"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "A density floor would drive rural ATM and recycler purchases backed by telemetry and field services.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "text_hash": "f8679771fc31",
+   "reviewed": "2026-09-07"
+  },
+  "nlb-d-d-atm-accessibility-retrofit-to-2030-under-the-slovenian-accessibility-act": {
+   "products": [
+    "atm_recycling",
+    "compliance_resilience",
+    "self_service"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "It is an ATM fleet accessibility programme, and the amended act makes accessibility compliance a hard bid requirement for all self-service kit.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "compliance_resilience",
+    "physical_security"
+   ],
+   "text_hash": "19694ac2d39c",
+   "reviewed": "2026-09-07"
+  },
+  "bankart-the-bank-owned-processor-gating-every-slovenian-atm-and-pos-win": {
+   "products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "payments_instant"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "Bankart certifies every ATM and POS device in Slovenia and also sells instant-payment infrastructure that Printec could co-bid.",
+   "keyword_products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "payments_instant",
+    "fraud_monitoring",
+    "physical_security",
+    "card_issuing",
+    "managed_services",
+    "core_digital"
+   ],
+   "text_hash": "843b16ddb142",
+   "reviewed": "2026-09-07"
+  },
+  "nlb-d-d-cash-light-branch-format-and-cash-deposit-system-rollout-in-slovenia": {
+   "products": [
+    "atm_recycling",
+    "self_service",
+    "managed_services"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "Each cash-light branch is a recycler and cash-deposit order, and the margin squeeze points to an ATM outsourcing tender.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "managed_services"
+   ],
+   "text_hash": "8367b1b1d698",
+   "reviewed": "2026-09-07"
+  },
+  "nlb-d-d-merchant-acquiring-pos-estate-modernisation-and-the-digital-euro-pilot": {
+   "products": [
+    "pos_acquiring",
+    "digital_onboarding",
+    "payments_instant"
+   ],
+   "primary_product": "pos_acquiring",
+   "why": "NLB is building POS-to-cash-register integration and softPOS, orders terminals via digital ID, and is the digital-euro pilot bank.",
+   "keyword_products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "payments_instant",
+    "digital_onboarding",
+    "core_digital"
+   ],
+   "text_hash": "1d983b44e6a6",
+   "reviewed": "2026-09-07"
+  },
+  "otp-banka-slovenija-post-merger-estate-consolidation-and-an-active-atm-skimming-": {
+   "products": [
+    "physical_security",
+    "atm_recycling",
+    "fraud_monitoring"
+   ],
+   "primary_product": "physical_security",
+   "why": "A live skimming wave calls for anti-skimming hardware and card-fraud monitoring, and the merged fleet is due a recycler upgrade.",
+   "keyword_products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "fraud_monitoring",
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "c8ec7ea043ea",
+   "reviewed": "2026-09-07"
+  },
+  "mellon-technologies-plants-a-slovenian-legal-entity-the-market-moves-from-safe-t": {
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "pos_acquiring"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "Mellon's standard bundle attacks Printec's ATM, multivendor software, field-service and POS business in Slovenia.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "managed_services"
+   ],
+   "text_hash": "37f7c2575080",
+   "reviewed": "2026-09-07"
+  },
+  "slovenia-digital-identity-key-management-and-secure-document-procurement-all-thr": {
+   "products": [
+    "payment_security_hsm",
+    "digital_onboarding",
+    "card_issuing"
+   ],
+   "primary_product": "payment_security_hsm",
+   "why": "The buys are HSMs, biometric enrolment and e-signing systems, with CETIS as a partner for card and identity personalisation.",
+   "keyword_products": [
+    "digital_onboarding",
+    "payment_security_hsm",
+    "card_issuing",
+    "managed_services",
+    "core_digital"
+   ],
+   "text_hash": "ff444922f6bc",
+   "reviewed": "2026-09-07"
+  },
+  "slovenia-the-cash-in-transit-and-cash-service-field-all-channel-partners-rather-": {
+   "products": [
+    "atm_recycling",
+    "physical_security"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "Cash-in-transit firms are a channel for placing counters, recyclers and banknote-neutralisation cases.",
+   "keyword_products": [
+    "atm_recycling",
+    "physical_security"
+   ],
+   "text_hash": "c5337e9c7e47",
+   "reviewed": "2026-09-07"
+  },
+  "slovenia-commercial-banks-sit-outside-public-procurement-so-the-pipeline-is-invi": {
+   "products": [
+    "atm_recycling",
+    "self_service"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The row explains why the Slovenian ATM and self-service pipeline never appears in tenders and must be sold direct.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "physical_security"
+   ],
+   "text_hash": "24f38c52d022",
+   "reviewed": "2026-09-07"
+  },
+  "slovenia-moneyval-enhanced-follow-up-meets-nlb-s-ai-at-scale-aml": {
+   "products": [
+    "compliance_resilience",
+    "fraud_monitoring",
+    "digital_onboarding"
+   ],
+   "primary_product": "compliance_resilience",
+   "why": "MONEYVAL and AMLA pressure drives AML data, transaction monitoring and eKYC remediation spend.",
+   "keyword_products": [
+    "digital_onboarding",
+    "fraud_monitoring",
+    "compliance_resilience"
+   ],
+   "text_hash": "c643d888cec7",
+   "reviewed": "2026-09-07"
+  },
+  "privatbank-1-000-unit-recycler-renewal-live-tender-pb-2026-03-17-3068329": {
+   "products": [
+    "atm_recycling",
+    "managed_services"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "It is a large recycler hardware tender with a managed-service renewal on the existing NCR fleet due in 2027.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "physical_security"
+   ],
+   "text_hash": "d3a324674470",
+   "reviewed": "2026-09-07"
+  },
+  "privatbank-banknote-sorter-contest-running-without-printec-pb-2026-08-20-3072069": {
+   "products": [
+    "atm_recycling"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "It is a banknote-sorter cash-automation contract where the issue is supplier qualification.",
+   "keyword_products": [
+    "atm_recycling",
+    "physical_security"
+   ],
+   "text_hash": "eed594300655",
+   "reviewed": "2026-09-07"
+  },
+  "privatbank-android-pos-estate-plus-an-unassigned-terminal-management-and-field-s": {
+   "products": [
+    "pos_acquiring",
+    "managed_services",
+    "payment_security_hsm"
+   ],
+   "primary_product": "pos_acquiring",
+   "why": "The open needs are multivendor terminal management, POS field service and remote key injection with PCI-PIN attestation.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "compliance_resilience",
+    "payment_security_hsm",
+    "managed_services"
+   ],
+   "text_hash": "269cb8e9f1aa",
+   "reviewed": "2026-09-07"
+  },
+  "privatbank-thales-payshield-hsm-refresh-running-entirely-outside-printec": {
+   "products": [
+    "payment_security_hsm"
+   ],
+   "primary_product": "payment_security_hsm",
+   "why": "Every item is a payShield HSM purchase or the migration and key-management service around it.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "payment_security_hsm"
+   ],
+   "text_hash": "c3c92b537333",
+   "reviewed": "2026-09-07"
+  },
+  "privatbank-diebold-nixdorf-recycler-maintenance-twice-failed-re-run-invited": {
+   "products": [
+    "managed_services",
+    "atm_recycling"
+   ],
+   "primary_product": "managed_services",
+   "why": "It is an unfilled multivendor recycler maintenance need that would give Printec a first service reference.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "text_hash": "c1c7915ccc4e",
+   "reviewed": "2026-09-07"
+  },
+  "privatbank-fragmented-regional-atm-logistics-consolidatable-before-the-dec-2026-": {
+   "products": [
+    "managed_services",
+    "atm_recycling",
+    "physical_security"
+   ],
+   "primary_product": "managed_services",
+   "why": "The opportunity is a national ATM install and relocation field service, plus a safe and vault maintenance framework.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "managed_services"
+   ],
+   "text_hash": "9de14c56c5b4",
+   "reviewed": "2026-09-07"
+  },
+  "sense-bank-live-hsm-support-atm-cassette-repair-tenders": {
+   "products": [
+    "managed_services",
+    "pos_acquiring",
+    "physical_security"
+   ],
+   "primary_product": "managed_services",
+   "why": "The live lots are self-service terminal servicing, POS post-warranty service and a failed safe-lock maintenance lot.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "physical_security",
+    "payment_security_hsm",
+    "managed_services"
+   ],
+   "text_hash": "0da5fd1d42fc",
+   "reviewed": "2026-09-07"
+  },
+  "ukrgasbank-81-atm-competitive-loss-printec-software-incumbency": {
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "compliance_resilience"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "A local firm holds ATM upgrade and service work, and the bank's new PCI DSS responsibility matrix is the angle to win it.",
+   "keyword_products": [
+    "atm_recycling",
+    "compliance_resilience",
+    "managed_services",
+    "core_digital"
+   ],
+   "text_hash": "24d6615f832b",
+   "reviewed": "2026-09-07"
+  },
+  "oschadbank-competitive-cash-automation-entry-point": {
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "self_service"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "A large branch estate with manual teller volume suits teller cash recyclers sold inside a managed-service wrapper.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "compliance_resilience",
+    "physical_security"
+   ],
+   "text_hash": "6c436aca3b41",
+   "reviewed": "2026-09-07"
+  },
+  "ukrposhta-pos-estate-cit-outsourcing-printec-already-qualified": {
+   "products": [
+    "pos_acquiring",
+    "self_service",
+    "managed_services"
+   ],
+   "primary_product": "pos_acquiring",
+   "why": "The winnable next step is the POS estate-management renewal plus counter automation and branch transformation, all bought as a service.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "physical_security",
+    "card_issuing",
+    "managed_services",
+    "core_digital"
+   ],
+   "text_hash": "c59341b0802c",
+   "reviewed": "2026-09-07"
+  },
+  "nbu-uah-2-000-banknote-fleet-reconfiguration-38-700-devices-aug-dec-2026": {
+   "products": [
+    "atm_recycling",
+    "self_service",
+    "managed_services"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "A new banknote forces firmware and cassette work on every ATM, recycler and payment kiosk, delivered as a field-services race.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "compliance_resilience",
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "b147f5bc4947",
+   "reviewed": "2026-09-07"
+  },
+  "nbu-resolution-no-67-mandatory-one-time-password-identity-capture-at-self-servic": {
+   "products": [
+    "self_service",
+    "fraud_monitoring"
+   ],
+   "primary_product": "self_service",
+   "why": "Every cash-in kiosk needs a new screen flow rolled out remotely, and the password-sharing duty adds a standing monitoring requirement.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service"
+   ],
+   "text_hash": "15f34953ea09",
+   "reviewed": "2026-09-07"
+  },
+  "nbu-resolution-no-81-customer-verification-methods-widened-for-financial-inclusi": {
+   "products": [
+    "digital_onboarding",
+    "self_service"
+   ],
+   "primary_product": "digital_onboarding",
+   "why": "Agent-assisted verification with recorded consent is a video-KYC and e-signature sale, delivered on tablets and kiosks at agent points.",
+   "keyword_products": [
+    "self_service",
+    "digital_onboarding",
+    "compliance_resilience"
+   ],
+   "text_hash": "fe446b098026",
+   "reviewed": "2026-09-07"
+  },
+  "nbu-aml-enforcement-biting-at-named-banks-plus-a-published-2026-inspection-calen": {
+   "products": [
+    "compliance_resilience",
+    "fraud_monitoring",
+    "managed_services"
+   ],
+   "primary_product": "compliance_resilience",
+   "why": "Named AML fines and an inspection calendar drive compliance-suite and transaction-monitoring spend, and the draft rule lets monitoring be outsourced.",
+   "keyword_products": [
+    "pos_acquiring",
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "text_hash": "cd74bd386f2a",
+   "reviewed": "2026-09-07"
+  },
+  "nbu-resolution-no-85-treksep-payment-tracking-duties-one-hour-sla-already-live": {
+   "products": [
+    "payments_instant",
+    "core_digital"
+   ],
+   "primary_product": "payments_instant",
+   "why": "The duty is end-to-end payment-status tracking on the ISO 20022 rail first, then showing that status in digital channels.",
+   "keyword_products": [
+    "payments_instant",
+    "compliance_resilience"
+   ],
+   "text_hash": "dc003a83164e",
+   "reviewed": "2026-09-07"
+  },
+  "nbu-resolutions-no-70-72-and-73-third-party-risk-management-now-binding-on-banks": {
+   "products": [
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "primary_product": "compliance_resilience",
+   "why": "Third-party risk rules create demand for resilience evidence and for telemetry and SLA-backed managed services, and Printec's own contracts fall in scope.",
+   "keyword_products": [
+    "atm_recycling",
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "text_hash": "c7202aca76c6",
+   "reviewed": "2026-09-07"
+  },
+  "ukraine-open-banking-aspsp-platform-layer-already-delivered-by-a-named-incumbent": {
+   "products": [
+    "payment_security_hsm",
+    "fraud_monitoring",
+    "core_digital"
+   ],
+   "primary_product": "payment_security_hsm",
+   "why": "The platform is already sold, so what remains is HSM and key management behind it, API fraud analytics, and the mid-tier banks not yet live.",
+   "keyword_products": [
+    "atm_recycling",
+    "fraud_monitoring",
+    "compliance_resilience",
+    "payment_security_hsm",
+    "core_digital"
+   ],
+   "text_hash": "f22ba62e0162",
+   "reviewed": "2026-09-07"
+  },
+  "ukraine-flat-atm-fleet-against-96-cashless-and-continuing-branch-contraction": {
+   "products": [
+    "atm_recycling",
+    "self_service",
+    "managed_services"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "Rising cash on a low-deposit ATM estate points to recyclers and cash forecasting, while fast kiosk growth pulls in kiosk hardware and services.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "compliance_resilience",
+    "physical_security",
+    "payment_security_hsm",
+    "managed_services"
+   ],
+   "text_hash": "85f47d246552",
+   "reviewed": "2026-09-07"
+  },
+  "ukraine-domestic-full-stack-self-service-rivals-now-hold-software-hardware-and-s": {
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "self_service"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "Domestic rivals now match Printec's ATM software, telemetry, field service and self-service hardware in one stack.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "digital_onboarding",
+    "fraud_monitoring",
+    "compliance_resilience",
+    "physical_security",
+    "payment_security_hsm",
+    "managed_services"
+   ],
+   "text_hash": "8e280025034b",
+   "reviewed": "2026-09-07"
+  },
+  "ncr-atleos-brink-s-merger-partner-channel-risk-partner-of-the-year": {
+   "products": [
+    "atm_recycling",
+    "self_service"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The merger puts Printec's NCR hardware supply and the x-core software layer under a competitor's ownership.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "compliance_resilience"
+   ],
+   "text_hash": "b64aab6344fd",
+   "reviewed": "2026-09-07"
+  },
+  "brink-s-atm-as-a-service-and-the-bank-consortium-outsourcing-model": {
+   "products": [
+    "managed_services",
+    "atm_recycling"
+   ],
+   "primary_product": "managed_services",
+   "why": "Full ATM outsourcing to a consortium replaces separate ATM, software and service purchases, so the defence is a co-sourced managed offer.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "a6d41a4058c3",
+   "reviewed": "2026-09-07"
+  },
+  "mellon-group-competitive-escalation-threat": {
+   "products": [
+    "atm_recycling",
+    "self_service",
+    "managed_services"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "Mellon is building local entities to sell its Hyosung ATM, KAL software and field-service package in four more Printec countries.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "managed_services"
+   ],
+   "text_hash": "15b47484ec41",
+   "reviewed": "2026-09-07"
+  },
+  "payten-asseco-see-pos-softpos-digital-onboarding-threat": {
+   "products": [
+    "atm_recycling",
+    "pos_acquiring"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "Payten's shrinking ATM and POS deliveries open a window to attack its hardware refresh accounts in six countries.",
+   "keyword_products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "digital_onboarding",
+    "core_digital"
+   ],
+   "text_hash": "35b86195be8d",
+   "reviewed": "2026-09-07"
+  },
+  "euronet-greece-croatia-platform-pivot-threat": {
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "pos_acquiring"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The contest is over bank ATM estates and ATM-as-a-Service, with Euronet now bundling acquiring and terminal management into the same bid.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "physical_security",
+    "card_issuing",
+    "managed_services"
+   ],
+   "text_hash": "8523c6df5531",
+   "reviewed": "2026-09-07"
+  },
+  "diebold-nixdorf-european-banking-hardware-decline-but-a-hard-push-on-recyclers-a": {
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "self_service"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "A stalled DN hardware cycle invites NCR displacement, while its teller-recycler and bundled service push hits Printec's counter and managed-service lines.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "managed_services"
+   ],
+   "text_hash": "7ce74dace958",
+   "reviewed": "2026-09-07"
+  },
+  "glory-emea-becomes-its-biggest-region-and-the-euro-banknote-redesign-becomes-a-d": {
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "self_service"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "A stronger Glory affects recycler distribution terms, the euro redesign brings recognition-upgrade service work, and Acrelec makes Glory a kiosk rival.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "physical_security"
+   ],
+   "text_hash": "4fc045fe4244",
+   "reviewed": "2026-09-07"
+  },
+  "worldline-financial-services-keeps-shrinking-and-outsourced-bank-estates-come-ba": {
+   "products": [
+    "managed_services",
+    "atm_recycling",
+    "fraud_monitoring"
+   ],
+   "primary_product": "managed_services",
+   "why": "Terminated Worldline ATM-management contracts bring estates back to market for managed services, ATM software and cash forecasting, with monitoring as the migration answer.",
+   "keyword_products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "payments_instant",
+    "fraud_monitoring",
+    "card_issuing",
+    "managed_services"
+   ],
+   "text_hash": "c8f0126687ed",
+   "reviewed": "2026-09-07"
+  },
+  "windows-11-and-end-of-life-atm-software-kal-s-hypervisor-pitch-against-the-ecb-s": {
+   "products": [
+    "atm_recycling",
+    "compliance_resilience"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The end-of-life mandate funds ATM refresh, and KAL's hypervisor competes for that money against a recycling hardware upgrade.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "compliance_resilience",
+    "core_digital"
+   ],
+   "text_hash": "5785e8767a70",
+   "reviewed": "2026-09-07"
+  },
+  "loomis-automated-solutions-converts-cash-in-transit-relationships-into-recycler-": {
+   "products": [
+    "atm_recycling"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "Loomis is turning cash-logistics relationships into recycler and smart-safe contracts that compete with Printec's teller cash recyclers.",
+   "keyword_products": [
+    "atm_recycling",
+    "physical_security"
+   ],
+   "text_hash": "5175373daba7",
+   "reviewed": "2026-09-07"
+  },
+  "giesecke-devrient-group-incl-veridos-the-central-bank-cash-tier-and-sovereign-id": {
+   "products": [
+    "digital_onboarding",
+    "atm_recycling",
+    "managed_services"
+   ],
+   "primary_product": "digital_onboarding",
+   "why": "The bank-side opening is enrolment kiosks and identity checks for the new Cypriot credential, plus multivendor service for commercial-bank cash centres.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "digital_onboarding",
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "caea891648f7",
+   "reviewed": "2026-09-07"
+  },
+  "auro-domus-baseline-correction-on-croatia-s-independent-atm-deployer": {
+   "products": [
+    "atm_recycling",
+    "managed_services"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "An independent deployer with 400-plus ATM locations is a prospect for dispense ATMs, monitoring and field service.",
+   "keyword_products": [
+    "atm_recycling",
+    "managed_services"
+   ],
+   "text_hash": "49293e4aea73",
+   "reviewed": "2026-09-07"
+  },
+  "ecb-ssm-2026-0301-end-of-life-ict-action-plans-due-to-supervisory-teams-by-31-10": {
+   "products": [
+    "compliance_resilience",
+    "atm_recycling",
+    "managed_services"
+   ],
+   "primary_product": "compliance_resilience",
+   "why": "A dated supervisory plan funds replacement of end-of-life ATM software, asset-inventory telemetry and a review of service-level agreements.",
+   "keyword_products": [
+    "compliance_resilience",
+    "atm_recycling",
+    "self_service",
+    "managed_services",
+    "core_digital"
+   ],
+   "text_hash": "456875a4c50f",
+   "reviewed": "2026-09-07"
+  },
+  "ecb-post-quantum-cryptography-pre-announced-second-letter-to-banks": {
+   "products": [
+    "payment_security_hsm",
+    "compliance_resilience"
+   ],
+   "primary_product": "payment_security_hsm",
+   "why": "A coming supervisory letter would turn HSM and key-management refresh into a remediation item, so a crypto-agility audit comes first.",
+   "keyword_products": [
+    "atm_recycling",
+    "compliance_resilience",
+    "payment_security_hsm"
+   ],
+   "text_hash": "729e0b4377b4",
+   "reviewed": "2026-09-07"
+  },
+  "dora-register-of-information-and-subcontracting-evidence-supplier-side-renewal-e": {
+   "products": [
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "primary_product": "compliance_resilience",
+   "why": "Banks need register-grade supplier data under DORA, and the exposure sits on Printec's managed-service and outsourcing contracts.",
+   "keyword_products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "text_hash": "1b09e5270da5",
+   "reviewed": "2026-09-07"
+  },
+  "dora-threat-led-penetration-testing-group-level-red-team-scope-reaching-the-atm-": {
+   "products": [
+    "compliance_resilience",
+    "managed_services",
+    "pos_acquiring"
+   ],
+   "primary_product": "compliance_resilience",
+   "why": "Red-team tests under DORA pull Printec-run ATM, terminal-management and monitoring estates into scope, and the remediation is a resilience sale.",
+   "keyword_products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "compliance_resilience"
+   ],
+   "text_hash": "1ea2b28888a7",
+   "reviewed": "2026-09-07"
+  },
+  "aml-amlr-and-amld6-compliance-wave-with-the-binding-detail-rules-overdue": {
+   "products": [
+    "compliance_resilience",
+    "fraud_monitoring",
+    "digital_onboarding"
+   ],
+   "primary_product": "compliance_resilience",
+   "why": "The AML package drives spend on a configurable compliance suite, transaction monitoring and customer-due-diligence onboarding.",
+   "keyword_products": [
+    "digital_onboarding",
+    "fraud_monitoring",
+    "compliance_resilience"
+   ],
+   "text_hash": "888eca3977a8",
+   "reviewed": "2026-09-07"
+  },
+  "amla-direct-supervision-the-2027-selection-pipeline-for-cross-border-groups": {
+   "products": [
+    "compliance_resilience"
+   ],
+   "primary_product": "compliance_resilience",
+   "why": "The demand is for group-level AML data consistency and lineage across subsidiaries, which is compliance tooling.",
+   "keyword_products": [
+    "compliance_resilience"
+   ],
+   "text_hash": "d427a5c8b21d",
+   "reviewed": "2026-09-07"
+  },
+  "iso-20022-structured-data-cutover-swift-sr2026-nov-2026-and-the-second-wave-nov-": {
+   "products": [
+    "payments_instant",
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "primary_product": "payments_instant",
+   "why": "The work is payment-message readiness, sanctions screening retuned to structured fields, and field services to run the cutover.",
+   "keyword_products": [
+    "payments_instant",
+    "fraud_monitoring",
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "text_hash": "ac23e4b63644",
+   "reviewed": "2026-09-07"
+  },
+  "eidas-2-eu-digital-identity-wallet-issuance-24-12-2026-bank-acceptance-duty-a-ye": {
+   "products": [
+    "digital_onboarding",
+    "payment_security_hsm"
+   ],
+   "primary_product": "digital_onboarding",
+   "why": "Wallet acceptance is a build inside onboarding and login, with certificates and key custody behind it.",
+   "keyword_products": [
+    "digital_onboarding",
+    "compliance_resilience",
+    "payment_security_hsm",
+    "core_digital"
+   ],
+   "text_hash": "3f3af6b39562",
+   "reviewed": "2026-09-07"
+  },
+  "ecb-digital-euro-atm-and-terminal-specifications-pilot-and-rollout-strategy": {
+   "products": [
+    "pos_acquiring",
+    "atm_recycling",
+    "payments_instant"
+   ],
+   "primary_product": "pos_acquiring",
+   "why": "The live sale is terminal firmware and remote update for pilot banks, with ATM readiness and Verification of Payee as later pieces.",
+   "keyword_products": [
+    "atm_recycling",
+    "payments_instant"
+   ],
+   "text_hash": "1b2ebb676879",
+   "reviewed": "2026-09-07"
+  },
+  "eu-cash-legal-tender-regulation-a-possible-cash-access-point-density-obligation": {
+   "products": [
+    "atm_recycling",
+    "managed_services"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "A cash-access density rule would mean more ATMs and recyclers plus cash-cycle and telemetry services to run them.",
+   "keyword_products": [
+    "atm_recycling",
+    "payments_instant",
+    "compliance_resilience",
+    "physical_security",
+    "managed_services"
+   ],
+   "text_hash": "6946ac10d285",
+   "reviewed": "2026-09-07"
+  },
+  "ecb-euro-banknote-redesign-a-note-recognition-and-sensor-refresh-cycle-from-arou": {
+   "products": [
+    "atm_recycling",
+    "managed_services"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "A new note series forces recognition and sensor upgrades on cash-handling machines, delivered as recurring field service.",
+   "keyword_products": [
+    "atm_recycling",
+    "compliance_resilience",
+    "physical_security"
+   ],
+   "text_hash": "3136c23fb2db",
+   "reviewed": "2026-09-07"
+  },
+  "psd3-and-the-payment-services-regulation-package-slipped-all-compliance-clocks-r": {
+   "products": [
+    "atm_recycling",
+    "payments_instant",
+    "fraud_monitoring"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The package eventually buys ATM fee-display changes, wider Verification of Payee and impersonation-fraud tooling, on a re-based timetable.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "payments_instant",
+    "fraud_monitoring",
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "text_hash": "4943d0d1d8af",
+   "reviewed": "2026-09-07"
+  },
+  "instant-payments-regulation-and-verification-of-payee-the-non-euro-and-bulgarian": {
+   "products": [
+    "payments_instant",
+    "compliance_resilience"
+   ],
+   "primary_product": "payments_instant",
+   "why": "Four markets must buy instant-payment handling and name matching, plus daily sanctions re-screening.",
+   "keyword_products": [
+    "payments_instant",
+    "fraud_monitoring",
+    "compliance_resilience"
+   ],
+   "text_hash": "2c816529a23a",
+   "reviewed": "2026-09-07"
+  },
+  "eaa-accessibility-atm-kiosk-refresh-driver": {
+   "products": [
+    "atm_recycling",
+    "self_service",
+    "compliance_resilience"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "Accessibility rules drive replace-or-retrofit decisions on ATMs and self-service terminals, backed by conformity evidence.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "compliance_resilience",
+    "physical_security"
+   ],
+   "text_hash": "10b8bf53f9a3",
+   "reviewed": "2026-09-07"
+  },
+  "cyber-resilience-act-product-side-obligations-on-the-machines-printec-sells": {
+   "products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "compliance_resilience"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "The rules land on the ATMs and terminals Printec distributes and act as a fleet-refresh trigger with a compliance obligation on Printec itself.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "pos_acquiring",
+    "compliance_resilience",
+    "payment_security_hsm"
+   ],
+   "text_hash": "6f56bf282bc3",
+   "reviewed": "2026-09-07"
+  },
+  "enisa-certification-scheme-for-managed-security-services-a-qualification-test-fo": {
+   "products": [
+    "managed_services",
+    "fraud_monitoring"
+   ],
+   "primary_product": "managed_services",
+   "why": "The certification will become a tender requirement for Printec's monitoring, telemetry and transaction-monitoring services.",
+   "keyword_products": [
+    "atm_recycling",
+    "fraud_monitoring",
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "text_hash": "e8ca83deaa66",
+   "reviewed": "2026-09-07"
+  },
+  "mica-transitional-period-closed-and-a-review-that-reopens-the-rules": {
+   "products": [
+    "digital_onboarding",
+    "compliance_resilience",
+    "fraud_monitoring"
+   ],
+   "primary_product": "digital_onboarding",
+   "why": "Client-book migration means identity-verification volume now, with AML monitoring and screening through the wind-down.",
+   "keyword_products": [
+    "digital_onboarding",
+    "fraud_monitoring",
+    "compliance_resilience"
+   ],
+   "text_hash": "df78be8d1b0d",
+   "reviewed": "2026-09-07"
+  },
+  "ai-act-as-amended-by-the-digital-omnibus-the-high-risk-wall-moves-to-december-20": {
+   "products": [
+    "compliance_resilience",
+    "digital_onboarding",
+    "fraud_monitoring"
+   ],
+   "primary_product": "compliance_resilience",
+   "why": "The corrected dates affect Printec's AML analytics, biometric onboarding and transaction-monitoring components.",
+   "keyword_products": [
+    "digital_onboarding",
+    "fraud_monitoring",
+    "compliance_resilience",
+    "core_digital"
+   ],
+   "text_hash": "24c4fdf953e5",
+   "reviewed": "2026-09-07"
+  },
+  "sector-wide-branch-consolidation-continues": {
+   "products": [
+    "atm_recycling",
+    "self_service",
+    "managed_services"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "Closed branches push cash into deposit ATMs, recyclers and self-service zones that need managed services.",
+   "keyword_products": [
+    "atm_recycling",
+    "self_service",
+    "managed_services"
+   ],
+   "text_hash": "7f758b628df0",
+   "reviewed": "2026-09-07"
+  },
+  "raiffeisen-bank-international-addiko-croatian-and-slovenian-integration-on-a-eur": {
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "pos_acquiring"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "A funded merger will consolidate two ATM fleets onto one software and service contract and migrate card acquiring.",
+   "keyword_products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "fraud_monitoring",
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "text_hash": "dfe14ba93693",
+   "reviewed": "2026-09-07"
+  },
+  "addiko-carve-out-to-alta-group-a-six-bank-western-balkans-group-under-a-first-ti": {
+   "products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "compliance_resilience"
+   ],
+   "primary_product": "atm_recycling",
+   "why": "A six-bank platform build needs one cash-automation estate, card acceptance for the banks and the retail chain, and one AML platform.",
+   "keyword_products": [
+    "atm_recycling",
+    "pos_acquiring",
+    "compliance_resilience"
+   ],
+   "text_hash": "4d12f4b288ea",
+   "reviewed": "2026-09-07"
+  }
+ }
+}

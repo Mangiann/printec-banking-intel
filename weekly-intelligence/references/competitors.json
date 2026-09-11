@@ -1,0 +1,4869 @@
+{
+ "_comment": "Curated competitor/partner watchlist for the Competitive & Partner Risk lens. 'role': partner | competitor | both | oem | software. 'threat': High|Medium|Low = current pressure on Printec's channel (INDEPENDENT of size — a tiny local rival can be High on a specific deal). 'tier': global | regional | local-peer = size/reach class. PRINTEC IS ~€15M EBITDA, so 'local-peer' players (a few €m to low tens of €m, footprint-local) ARE real competition — never omit them, especially in POS/acquiring (the most fragmented segment). Cover the WHOLE size range, not just the giants. 'detect' = lowercased name variants matched in signal text. Update 'latest' + 'threat' + 'tier' each week from Agent 6 findings. Do NOT invent; every 'latest' should trace to a vendor finding (find small/private players via tender winners + local-language press).",
+ "vendors": [
+  {
+   "name": "NCR Atleos",
+   "role": "both",
+   "threat": "High",
+   "detect": [
+    "ncr atleos",
+    "atleos",
+    "cashzone"
+   ],
+   "countries": [
+    "GR"
+   ],
+   "products": [
+    "atm_recycling",
+    "managed_services"
+   ],
+   "latest": "The UK CMA (the UK competition regulator) opened a Phase 1 merger review of the Brink's takeover on 26/08/2026. Its legal deadline to decide is 22/10/2026. CEO Tim Oliver now expects the deal to close in early Q1 2027, which is earlier than before.\n\nBecause the deal is pending, Atleos held no Q2 earnings call and gave no outlook. A full-text scan of its release found no mention of Europe or EMEA. The only public European figure left is USD 352m EMEA revenue, up 2.9%.\n\nIts ATM-as-a-Service revenue grew 24% to USD 77m. Its count of independently managed ATMs stayed flat at 77,000. This means it is turning bank-owned ATM fleets into service contracts rather than installing more machines.",
+   "tier": "global",
+   "last_updated": "2026-08-31"
+  },
+  {
+   "name": "Brink's",
+   "role": "competitor",
+   "threat": "High",
+   "detect": [
+    "brink's",
+    "brinks",
+    "brink's hellas"
+   ],
+   "countries": [
+    "GR",
+    "RO",
+    "CZ",
+    "CY"
+   ],
+   "products": [
+    "managed_services",
+    "physical_security",
+    "atm_recycling"
+   ],
+   "latest": "Q2 2026 results (5 August) showed group revenue of USD 1,392m, up 7%. ATM managed services and retail cash-as-a-service grew 14% organically. That is the fourteenth quarter in a row of mid-teens growth.\n\nThe shift is furthest advanced in Europe. Revenue rose only from USD 358m to USD 377m. Adjusted EBITDA rose from USD 59m to USD 71m, and margin from 16.6% to 18.7%. The reason is that Brink's is replacing low-margin cash-in-transit (moving cash by van) with high-margin ATM outsourcing. It disclosed a full ATM outsourcing deal with an unnamed European bank consortium, starting in H2.\n\nThe UK CMA opened its Phase 1 review of the NCR Atleos takeover on 26/08/2026, with a decision deadline of 22/10/2026. Completion was brought forward to early Q1 2027.",
+   "tier": "global",
+   "last_updated": "2026-08-31"
+  },
+  {
+   "name": "Mellon Group",
+   "role": "competitor",
+   "threat": "High",
+   "detect": [
+    "mellon"
+   ],
+   "countries": [
+    "GR",
+    "BG",
+    "RO",
+    "RS"
+   ],
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "pos_acquiring"
+   ],
+   "latest": "Audited 2025 group accounts were filed on 07/07/2026. They show revenue of EUR 258.8m (+17%), gross profit of EUR 36.0m and EBITDA of EUR 14.1m (+39%). Net profit was EUR 6.8m (+73%), with 9,606 staff. That is roughly Printec's EBITDA on about ten times the revenue, so Mellon can absorb a thin-margin bid that Printec cannot.\n\nThe same filing also records four ownership moves, which matter more than the financial figures. Mellon bought Camelot Sistemi in Croatia outright. It founded wholly owned companies in Ljubljana and Budapest. On 24/06/2026 it completed the buy-out of the remaining 45% of Mellon Cyprus.\n\nSlovenia, Hungary, Croatia and Cyprus should therefore move from safe to contested. There is still no confirmed Romanian ATM win, and its Bulgarian incumbency is unproven.",
+   "tier": "regional",
+   "last_updated": "2026-08-31"
+  },
+  {
+   "name": "Euronet",
+   "role": "competitor",
+   "threat": "High",
+   "detect": [
+    "euronet"
+   ],
+   "countries": [
+    "GR"
+   ],
+   "products": [
+    "atm_recycling",
+    "managed_services"
+   ],
+   "latest": "As at 31/08/2026, the takeover of CrediaBank's Greek merchant-acquiring business and management of its 141 ATMs had still not closed. It was absent from the Q2 filing, and there has been no relevant filing since 30/07. There is also no notification on the Hellenic Competition Commission register, against a stated Q3 target. That makes 30/09 a hard decision point.\n\nTwo earlier readings are corrected. The ATM operating-income squeeze is a non-cash accounting effect of the CoreCard acquisition, and gross margin actually improved to 49.4%. The estate is essentially flat at 57,071 active machines, so growth now comes from acquiring, card issuing and software rather than from taking over bank fleets.\n\nNo new European ATM-outsourcing mandate was named on the 30/07 call. Euronet is running a sustained cost-of-ownership campaign for ATM-as-a-Service aimed at bank finance directors, and the third instalment was published 03/08/2026.",
+   "tier": "global",
+   "last_updated": "2026-08-31"
+  },
+  {
+   "name": "Worldline / Cardlink",
+   "role": "competitor",
+   "threat": "Medium",
+   "detect": [
+    "worldline",
+    "cardlink"
+   ],
+   "countries": [
+    "GR"
+   ],
+   "products": [
+    "pos_acquiring"
+   ],
+   "latest": "H1 results (30/07/2026): the bank-facing Financial Services division fell 7.1% organically to EUR 363m, with margin down about three points to 18.5%. The CFO put EUR 60m of contract terminations on the full year, half of it already booked by end-June. The CEO said the division will not return to growth before H2 2027.\n\nTwo corrections are needed. The disposal programme is finished, and all seven sold businesses sit outside Printec's 17 countries, so the claim that Worldline is leaving the region is wrong. Worldline has also not exited bank digital banking or ATM management.\n\nIt is cutting 4-5% of Western European headcount each year to 2030, while positioning itself as digital-euro infrastructure. It was among the 36 PSPs the ECB selected for its pilot on 14/07/2026, taking part through PAYONE in Germany and Austria.",
+   "tier": "global",
+   "last_updated": "2026-08-31"
+  },
+  {
+   "name": "Diebold Nixdorf",
+   "role": "oem",
+   "threat": "Medium",
+   "detect": [
+    "diebold",
+    "diebold nixdorf",
+    "dn recycl"
+   ],
+   "countries": [
+    "UA"
+   ],
+   "products": [
+    "atm_recycling",
+    "managed_services"
+   ],
+   "latest": "Q2 filings (29/07/2026): banking net sales fell 6.1% to USD 638.1m, and banking product sales fell 13.0% to USD 236.6m. The filing blames the fall mainly on lower volumes in the Middle East, Africa and Europe. That is the clearest public evidence that its European hardware refresh has softened.\n\nThe company is not retreating. It shipped a record number of teller cash recyclers, and its banking backlog is growing. The CEO cited a fleet win of about 1,100 units at a new UK customer, bundled with a long-term service agreement. That is a hardware-plus-service displacement move it will run at NCR-installed banks.\n\nThe only named win inside the footprint was a 1,600-unit POS order with a Romanian retailer. With ~USD 60m of buybacks and no acquisitions all year, it will compete on price and service.",
+   "tier": "global",
+   "last_updated": "2026-08-31"
+  },
+  {
+   "name": "Glory",
+   "role": "oem",
+   "threat": "Low",
+   "detect": [
+    "glory"
+   ],
+   "countries": [],
+   "products": [
+    "atm_recycling"
+   ],
+   "latest": "Q1 results (07/08/2026): EMEA revenue was JPY 27.3bn, up 27.1%, and for the first time it was more than half of all overseas revenue. Overseas operating profit more than doubled, with margin rising from 5.0% to 8.7%. Management called that step-up structural on 17/08.\n\nThe cash-automation arm behind the recycler line Printec resells grew from JPY 10.0bn to JPY 13.3bn. Its kiosk business Acrelec grew about 29%, which makes Glory a self-service kiosk rival in Europe as well as a supplier.\n\nGlory told investors that special demand from the euro banknote redesign is expected from around 2029. The ECB's survey on ten shortlisted designs closes 21/09/2026. As a counterweight, European teller-recycler sales to banks stayed weak, and Glory names no CEE or SEE customer anywhere.",
+   "tier": "global",
+   "last_updated": "2026-08-31"
+  },
+  {
+   "name": "Hyosung",
+   "role": "oem",
+   "threat": "Medium",
+   "detect": [
+    "hyosung"
+   ],
+   "countries": [
+    "GR",
+    "BG",
+    "RO",
+    "RS"
+   ],
+   "products": [
+    "atm_recycling"
+   ],
+   "latest": "Hyosung has no direct sales presence in Europe. It is tracked via Mellon, which is its proxy in the footprint. It is the hardware behind Mellon's NBG 700 Series 8 and KAL ATM-outsourcing pitch; note that KAL is now part-owned by Brink's. Mellon Romania has promoted adding Hyosung TNS and KAL to its RO portfolio since 2023, with no named RO bank win yet.",
+   "tier": "global"
+  },
+  {
+   "name": "Payten / Asseco SEE",
+   "role": "competitor",
+   "threat": "Medium",
+   "detect": [
+    "payten",
+    "asseco"
+   ],
+   "countries": [
+    "RO",
+    "RS",
+    "HR",
+    "BG",
+    "MK"
+   ],
+   "products": [
+    "pos_acquiring",
+    "atm_recycling",
+    "managed_services"
+   ],
+   "latest": "H1 management report (31/07/2026): Payment Solutions, the line that overlaps Printec most directly, fell to EUR 102.8m. That is down EUR 5.2m, or 5%, with Q2 down 7%. The ATM line fell EUR 3.4m on lower equipment deliveries in Serbia, Croatia, Bosnia and Montenegro, and Romania was also negative. The terminal line fell EUR 1.9m on lower Slovenian and Croatian deliveries.\n\nThis is reshaping rather than collapse. Group operating profit rose 27% in the quarter. The terminal line's operating result improved on growing Serbian recurring revenue. Contracted margin is rising while contracted revenue is flat to down.\n\nThis is a company taking fewer, better-priced deals, so it is unlikely to buy a tender cheaply. It bought out minority owners in Bosnia (EUR 8.5m), Slovenia and Serbia. It still has no operating entity in Greece, Cyprus, Austria or Hungary.",
+   "tier": "regional",
+   "last_updated": "2026-08-31"
+  },
+  {
+   "name": "Ingenico",
+   "role": "oem",
+   "threat": "Medium",
+   "detect": [
+    "ingenico"
+   ],
+   "countries": [
+    "GR",
+    "BG",
+    "RO",
+    "RS"
+   ],
+   "products": [
+    "pos_acquiring"
+   ],
+   "latest": "Ingenico supplies the POS hardware behind Mellon's exclusive SEE channel. This puts competitive pressure on Printec's POS estate.",
+   "tier": "global"
+  },
+  {
+   "name": "Nexi",
+   "role": "competitor",
+   "threat": "Medium",
+   "detect": [
+    "nexi",
+    "nexi payments"
+   ],
+   "countries": [
+    "XK"
+   ],
+   "products": [
+    "payments_instant",
+    "pos_acquiring"
+   ],
+   "latest": "The Central Bank of Kosovo awarded Nexi Payments SpA the TIPS Clone connectivity contract at EUR 685,000. This covers 120 days of delivery plus five years of maintenance, funded by the World Bank. The award was notified on 03/06/2026 and published on 12/08/2026.\n\nOnly two bids came in. SWIFT bid 56% lower at EUR 301,138, but was ruled non-responsive because it did not submit the required bidding forms. Nexi therefore won a two-bidder contest by default, at more than twice the rival price.\n\nNexi is now inside the payments core of a central bank in Printec's footprint, and has a standing relationship with the Kosovar central bank. It also has a path to sell overlay services, which are add-on services built on the payment rail, to every commercial bank in the country. Printec cannot bid for the settlement core, but the bank-side build-out is still open.",
+   "tier": "global",
+   "last_updated": "2026-08-31"
+  },
+  {
+   "name": "Temenos",
+   "role": "software",
+   "threat": "Low",
+   "detect": [
+    "temenos"
+   ],
+   "countries": [
+    "RO"
+   ],
+   "products": [
+    "core_digital"
+   ],
+   "latest": "Temenos is a core-banking software vendor. CEC Bank (RO) chose it to replace its retail and corporate core system. This creates a follow-on opportunity for integration and self-service work around the new core.",
+   "tier": "global"
+  },
+  {
+   "name": "Namirial",
+   "role": "partner",
+   "threat": "Low",
+   "detect": [
+    "namirial"
+   ],
+   "countries": [],
+   "products": [
+    "digital_onboarding"
+   ],
+   "latest": "Namirial is Printec's digital-identity partner. It is owned by Bain Capital and has merged with Signaturit. In May 2026 it announced full eIDAS 2.0 compliance, among the first in Europe.\n\nIt holds QTSP (qualified trust service provider) certificates in IT/ES/FR. It also offers automated EUDI Wallet onboarding (PID via OID4VP), ahead of the 24 Dec 2026 wallet deadline.\n\nThis strengthens Printec's joint onboarding pitch. The certificates cover IT/ES/FR only, so SEE/CEE localisation may still be needed.",
+   "tier": "regional"
+  },
+  {
+   "name": "Viva.com (Viva Wallet)",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "regional",
+   "detect": [
+    "viva payment services",
+    "viva payments",
+    "viva wallet",
+    "viva.com",
+    "viva.com (viva payment services)",
+    "viva.com (viva wallet)",
+    "viva.com greece",
+    "vivabank"
+   ],
+   "countries": [
+    "GR",
+    "RO",
+    "SK",
+    "SI"
+   ],
+   "products": [
+    "core_digital",
+    "managed_services",
+    "payments_instant",
+    "pos_acquiring"
+   ],
+   "latest": "Viva.com launched in 5 new EU markets in May 2026, including Slovakia and Slovenia, taking it to 29 markets. FY2025 revenue rose 26% to EUR258.6m, with adjusted EBITDA positive. It offers Tap to Pay on iPhone (SoftPOS) and IRIS acceptance in Greece.\n\nThe ownership dispute with JPMorgan has moved past the 'strategic review' stage. The UK case was dropped, and a ~EUR917m claim continues in Greece.\n\nViva.com is an aggressive, well-funded rival in acquiring and software, and it is now present in two more footprint countries.",
+   "sources": [
+    {
+     "title": "Viva.com Rolls Out Tap to Pay on iPhone in Greece",
+     "url": "https://www.viva.com/en-gr/blog/viva.com-rolls-out-tap-to-pay-on-iphone-to-seven-more-countries"
+    },
+    {
+     "title": "Viva Wallet Group - Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Viva_Wallet_Group"
+    },
+    {
+     "title": "IRIS Payments for Businesses - Viva.com",
+     "url": "https://www.viva.com/en-gr/iris-commerce"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Everypay / epay (Euronet Greece)",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "local-peer",
+   "detect": [
+    "epay",
+    "epay greece",
+    "epay worldwide",
+    "everypay",
+    "everypay / epay (euronet greece)",
+    "everypay sa"
+   ],
+   "countries": [
+    "GR"
+   ],
+   "products": [
+    "core_digital",
+    "payments_instant",
+    "pos_acquiring"
+   ],
+   "latest": "Everypay has been a Skroutz subsidiary since 2022 and is licensed as an EMI/PSP. It offers SoftPOS, which removes the need for physical terminals. It partners with Ingenico for omnichannel acceptance, in store and online. epay is a separate Euronet brand.",
+   "sources": [
+    {
+     "title": "About Everypay",
+     "url": "https://www.everypay.gr/en/company/about"
+    },
+    {
+     "title": "How EveryPay and Ingenico Are Powering Omnichannel Payments in Greece (Ingenico)",
+     "url": "https://ingenico.com/en/newsroom/blogs/how-everypay-and-ingenico-are-powering-omnichannel-payments-greece"
+    },
+    {
+     "title": "Softone | epay Greece",
+     "url": "https://epayworldwide.gr/en/softone/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "NBG Pay",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "regional",
+   "detect": [
+    "evo payments greece",
+    "national bank of greece / global payments",
+    "nbg pay",
+    "nbg pay sa"
+   ],
+   "countries": [
+    "GR"
+   ],
+   "products": [
+    "payments_instant",
+    "pos_acquiring",
+    "self_service"
+   ],
+   "latest": "NBG Pay, part of Global Payments, now offers its 'tom' soft-POS free to micro-merchants. This runs through the state 'Digital Transactions - Phase B' voucher, a 2-yr EUR75 EPSILONNET subscription that is 100% subsidised for Category-1. The app turns an Android phone into an NFC terminal with e-invoicing.\n\nState-subsidised soft-POS undercuts the economics of hardware POS. Earlier, NBG Pay ran All-in-One/Digital Cash Register acquiring with EPSILON NET on PAX terminals for the Dec 1 2025 IRIS mandate.",
+   "sources": [
+    {
+     "title": "NBG Pay - Greece's Leading Payment Provider",
+     "url": "https://nbgpay.globalpayments.com/en-gr/about"
+    },
+    {
+     "title": "EVO Payments Acquires Majority Interest in NBG Merchant Acquiring Business",
+     "url": "https://evopayments.co.uk/evo-payments-national-bank-greece/"
+    },
+    {
+     "title": "Launch of All in One & Digital Cash Register solutions by NBG Pay, NBG and EPSILON NET",
+     "url": "https://nbgpay.globalpayments.com/en-gr/about/launch-of-all-in-one-and-digital-cash-register-solutions-by-nbg-pay"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "EPSILON NET Group",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "regional",
+   "detect": [
+    "epsilon all in one",
+    "epsilon net",
+    "epsilon net group",
+    "epsilon pay",
+    "epsilon smart"
+   ],
+   "countries": [
+    "GR"
+   ],
+   "products": [
+    "core_digital",
+    "payments_instant",
+    "pos_acquiring"
+   ],
+   "latest": "EPSILON NET Group's EPSILON ALL in ONE solution is IAPR-certified. It links the digital cash register, invoicing and ERP with the POS. It launched All-in-One/Digital Cash Register acquiring with NBG Pay on PAX terminals in 2024-2025.",
+   "sources": [
+    {
+     "title": "EPSILON NET: Certification by Greek IAPR of EPSILON ALL in ONE & POS interconnection",
+     "url": "https://ir.epsilonnet.gr/en/2024/03/epsilon-net-certification-by-greek-iapr-of-the-solutions-quot-epsilon-all-in-one-quot-amp-presentation-of-the-solution-for-the-interconnection-of-digital-cash-register-invoicing-software-and-erp-with/"
+    },
+    {
+     "title": "Launch of All in One & Digital Cash solutions by NBG Pay, NBG and EPSILON NET",
+     "url": "https://ir.epsilonnet.gr/en/2024/04/launch-of-the-all-in-one-amp-digital-cash-solutions-by-nbg-pay-the-national-bank-of-greece-and-epsilon-net-group/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "SOFTONE Group",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "regional",
+   "detect": [
+    "entersoft-softone",
+    "soft1",
+    "softone",
+    "softone group",
+    "softone technologies"
+   ],
+   "countries": [
+    "GR"
+   ],
+   "products": [
+    "core_digital",
+    "payments_instant",
+    "pos_acquiring"
+   ],
+   "latest": "In April 2024 SOFTONE Group announced a strategic agreement with Euronet. The agreement provides integrated merchant acquiring across SOFTONE's enterprise customer base. It uses an All-in-One device that combines cash register, printer and POS.",
+   "sources": [
+    {
+     "title": "Euronet and SOFTONE Group Announce Agreement for Integrated Merchant Acquiring in Greece",
+     "url": "https://www.fintechfutures.com/press-releases/euronet-and-softone-group-announce-agreement-to-provide-integrated-merchant-acquiring-services-in-greece"
+    },
+    {
+     "title": "SOFTONE Group and Euronet announce strategic agreement on e-payment solutions",
+     "url": "https://www.soft1.eu/blog/?p=19062"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "DIAS Interbanking Systems (IRIS)",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "dias",
+    "dias interbanking systems (iris)",
+    "dias s.a.",
+    "iris",
+    "iris instant payments",
+    "iris p2p/p2b"
+   ],
+   "countries": [
+    "GR"
+   ],
+   "products": [
+    "payments_instant"
+   ],
+   "latest": "IRIS has been mandatory since 1 Dec 2025. Since the mandate, more than 4.25m citizens use IRIS P2P, with more than EUR300m/day cited. P2P/P2B limits rose to EUR1,000/txn (EUR5,000/mo) from 15 Jan 2026.\n\nCross-border IRIS via EuroPA/EPI is expected mid-2026, starting with P2P and then POS and e-commerce. Account-to-account (A2A) instant payments continue to take volume from card rails, at 122.1m txns in 2025, up 72.8% year on year.",
+   "sources": [
+    {
+     "title": "Greece Makes IRIS Payments Mandatory for All Businesses - GreekReporter",
+     "url": "https://greekreporter.com/2025/12/02/greece-iris-payments-mandatory-all-businesses/"
+    },
+    {
+     "title": "DIAS - About us",
+     "url": "https://www.dias.com.gr/en/about-us/"
+    },
+    {
+     "title": "IRIS Instant Payments: A New Era for Greek Businesses - Lighthouse",
+     "url": "https://www.lighthouse.gr/blog/trending-topics/iris-instant-payments-a-new-era-for-greek-businesses/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Profile Software",
+   "role": "software",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "acumen",
+    "fms.next",
+    "profile software",
+    "profile systems and software",
+    "profilesw"
+   ],
+   "countries": [
+    "GR"
+   ],
+   "products": [
+    "compliance_resilience",
+    "core_digital"
+   ],
+   "latest": "Profile Software is moving its banking suite to cloud-native Finuevo (Finuevo Suite, Finuevo Core and Finuevo Digital). It is offering the suite as SaaS, meaning software as a service, together with AWS.",
+   "sources": [
+    {
+     "title": "Profile Software - The Wealth Mosaic",
+     "url": "https://www.thewealthmosaic.com/vendors/profile-software/"
+    },
+    {
+     "title": "Core Banking Solution - Profile Software",
+     "url": "https://www.profilesw.com/solutions/core-banking/"
+    },
+    {
+     "title": "Profile Systems and Software - Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Profile_Systems_and_Software"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Uni Systems (Quest Group)",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "regional",
+   "detect": [
+    "bmaster",
+    "quest group",
+    "uni systems",
+    "uni systems (quest group)",
+    "unisystems"
+   ],
+   "countries": [
+    "AL",
+    "BG",
+    "CY",
+    "GR",
+    "HR",
+    "MK",
+    "RO",
+    "RS",
+    "SI"
+   ],
+   "products": [
+    "compliance_resilience",
+    "core_digital",
+    "managed_services"
+   ],
+   "latest": "Its Finastra partnership delivers treasury, payments and risk software (Fusion) across SEE (GR, CY, RO, BG, AL, MK, RS, HR, SI).\n\nOne point to watch is Finastra's agreement of 19/06/2026 to sell its global core-banking 'Universal Banking' (Essence) division to the private-equity firm Pollen Street Capital. The division is to run as a standalone business.\n\nTrack whether Uni Systems keeps SEE Essence reseller rights. Also track how the roadmap uncertainty opens core-refresh attach windows for Printec self-service, x-core and Namirial.",
+   "sources": [
+    {
+     "title": "Banking & Finance | Uni Systems",
+     "url": "https://www.unisystems.com/industries/banking-finance"
+    },
+    {
+     "title": "Greece's Uni Systems, UK's Finastra partner to deliver banking solutions in SEE - SeeNews",
+     "url": "https://seenews.com/news/greeces-uni-systems-uks-finastra-partner-to-deliver-banking-solutions-services-in-see-745347"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "QUALCO Group",
+   "role": "competitor",
+   "threat": "Low",
+   "tier": "regional",
+   "detect": [
+    "qualco",
+    "qualco group",
+    "qualco sa",
+    "qualco technology"
+   ],
+   "countries": [
+    "GR"
+   ],
+   "products": [
+    "compliance_resilience",
+    "core_digital",
+    "fraud_monitoring"
+   ],
+   "latest": "QUALCO Group is now public, listed on ATHEX in Dec 2025. FY2025 revenue rose 17% to EUR216m, with adjusted EBITDA of EUR43m.\n\nIt is acquisitive. It bought out d.d. Synergy and acquired Cenobe (cybersecurity). It took 49% of ODS, a Piraeus Bank joint venture, and launched Qualco Intelligent Finance (QIF, DEI 25%).\n\nIt is a stronger AI-first banking-software competitor and partner, with existing bank tie-ups. It runs analytics-driven credit-management and collections PaaS, meaning platform as a service, across 30+ countries.",
+   "sources": [
+    {
+     "title": "Technology & Innovation - QUALCO Group",
+     "url": "https://qualco.group/solution/technology-innovation/"
+    },
+    {
+     "title": "QUALCO - CB Insights company profile",
+     "url": "https://www.cbinsights.com/company/qualco"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "ADACOM Cyber Security",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "regional",
+   "detect": [
+    "adacom",
+    "adacom cyber security",
+    "adacom sa",
+    "adacom trust services"
+   ],
+   "countries": [
+    "CY",
+    "GR"
+   ],
+   "products": [
+    "compliance_resilience",
+    "digital_onboarding"
+   ],
+   "latest": "ADACOM Cyber Security offers eIDAS remote identity verification, which is automated video onboarding, and remote QSCD-based qualified e-signatures across EMEA. It resells the Ascertia portfolio for EU qualified-signature projects.",
+   "sources": [
+    {
+     "title": "Qualified Trust Services - ADACOM",
+     "url": "https://www.adacom.com/"
+    },
+    {
+     "title": "Greece | Digital Trust - Ascertia (ADACOM partner)",
+     "url": "https://www.ascertia.com/countries/greece/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "INFORM Lykos (AUSTRIACARD Holdings)",
+   "role": "competitor",
+   "threat": "Low",
+   "tier": "regional",
+   "detect": [
+    "austriacard",
+    "inform lykos",
+    "inform lykos (austriacard holdings)",
+    "inform lykos hellas",
+    "inform p. lykos"
+   ],
+   "countries": [
+    "GR",
+    "RO"
+   ],
+   "products": [
+    "compliance_resilience",
+    "managed_services"
+   ],
+   "latest": "INFORM Lykos operates within AUSTRIACARD Holdings, which has six European production sites and eight personalisation centres, plus operations in the US and South America. INFORM Lykos Romania acquired Star Storage's business activity. This expanded its secure-document and BPO operations, where BPO means outsourced business process.",
+   "sources": [
+    {
+     "title": "Inform Lykos was assigned by Citibank to manage Diners Club Cards - ATHEX",
+     "url": "https://www.athexgroup.gr/en/more-options/announcements/inform-lykos-was-assigned-citibank-manage-diners-club-cards"
+    },
+    {
+     "title": "INFORM LYKOS (HELLAS) S.A. - certified card personalization (Intergraf)",
+     "url": "https://www.intergrafconference.com/index.php/list-of-certified-companies/item/1094-inform-lykos-hellas-s-a-personalization"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "JCC Payment Systems Ltd",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "local-peer",
+   "detect": [
+    "jcc",
+    "jcc gateway",
+    "jcc payment systems ltd",
+    "jcc softpos",
+    "jccsmart"
+   ],
+   "countries": [
+    "CY"
+   ],
+   "products": [
+    "atm_recycling",
+    "compliance_resilience",
+    "fraud_monitoring",
+    "managed_services",
+    "pos_acquiring",
+    "self_service"
+   ],
+   "latest": "JCC Payment Systems Ltd launched a JCC SoftPoS tap-to-phone app for Android for Cypriot merchants. It is powered by Ingenico SoftPOS, and the company earlier integrated Phos' software-only POS. This extends its dominance into the soft-POS and Tap-to-Pay segment.",
+   "sources": [
+    {
+     "title": "JCC Payment Systems | ECBS profile",
+     "url": "https://www.ecbs.org/banks/cyprus/jcc-payment-systems/view-details.html"
+    },
+    {
+     "title": "Ingenico SoftPOS Powers JCC's Digital Payments Expansion in Cyprus",
+     "url": "https://ingenico.com/en/newsroom/blogs/ingenico-softpos-powers-jccs-digital-payments-expansion-cyprus"
+    },
+    {
+     "title": "JCC Payment Systems Integrates Phos' SoftPoS Into New App for Cypriot Retail Merchants - The Fintech Times",
+     "url": "https://thefintechtimes.com/jcc-payment-systems-integrates-phos-softpos-into-new-app-for-cypriot-retail-merchants/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Vpayments (G.A.P. Vassilopoulos Group)",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "gap vassilopoulos payments",
+    "vpayments",
+    "vpayments (g.a.p. vassilopoulos group)"
+   ],
+   "countries": [
+    "CY"
+   ],
+   "products": [
+    "payments_instant",
+    "pos_acquiring"
+   ],
+   "latest": "Vpayments sells a full omni-channel merchant suite, covering payment terminals, card acceptance, and online and mobile payments. It is G.A.P. Vassilopoulos' acquiring arm in Cyprus, partnered with Worldline.",
+   "sources": [
+    {
+     "title": "Vpayments - Home",
+     "url": "https://vpayments.com.cy/"
+    },
+    {
+     "title": "Fintech & Payment Solutions for Businesses in Cyprus",
+     "url": "https://cyprusinfo.ai/blog/business-investment/fintech-payment-solutions-for-businesses-in-cyprus"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Pale Blue (Paid app)",
+   "role": "competitor",
+   "threat": "Low",
+   "tier": "local-peer",
+   "detect": [
+    "paid app",
+    "pale blue (paid app)",
+    "pale blue ltd"
+   ],
+   "countries": [
+    "CY"
+   ],
+   "products": [
+    "pos_acquiring"
+   ],
+   "latest": "Pale Blue officially launched the device-agnostic 'Paid' softPOS app in Cyprus in May 2026. It uses a pay-as-you-go model with no subscription. It also uses a Stripe partnership for compliance and KYC, meaning customer identity checks.",
+   "sources": [
+    {
+     "title": "Cyprus fintech targets SMEs with device-agnostic payment app - Cyprus Mail",
+     "url": "https://cyprus-mail.com/2026/05/12/cyprus-fintech-targets-smes-with-device-agnostic-payment-app"
+    },
+    {
+     "title": "Cyprus fintech Pale Blue launches Paid softPOS app - Cyprus Inform",
+     "url": "https://www.kiprinform.com/en/cyprus_news/cyprus-fintech-pale-blue-launches-paid-softpos-app-to-support-cashless-payments-for-small-businesses/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Link4Pay",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "link4pay",
+    "link4pay ltd"
+   ],
+   "countries": [
+    "CY",
+    "GR"
+   ],
+   "products": [
+    "fraud_monitoring",
+    "payments_instant",
+    "pos_acquiring",
+    "self_service"
+   ],
+   "latest": "Link4Pay offers softPOS across Cyprus and Greece. It also offers unattended POS, PayByLink and a fraud-prevention system. It is cited as a leading player in the Cyprus POS terminals market.",
+   "sources": [
+    {
+     "title": "Link4pay SoftPOS available for Cyprus and Greece",
+     "url": "https://link4pay.com/news/link4pay-softpos-available-for-cyprus-and-greece-2/"
+    },
+    {
+     "title": "Cyprus POS Terminals Market Share - Mordor Intelligence",
+     "url": "https://www.mordorintelligence.com/industry-reports/cyprus-pos-terminals-market/market-share"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Pay Expert",
+   "role": "competitor",
+   "threat": "Low",
+   "tier": "local-peer",
+   "detect": [
+    "pay expert",
+    "pay expert cyprus",
+    "pay-expert",
+    "payexpert cyprus"
+   ],
+   "countries": [
+    "CY"
+   ],
+   "products": [
+    "pos_acquiring"
+   ],
+   "latest": "Pay Expert sells aggressive low-fee, no-rent POS terminals to Cyprus SMEs. It offers fast merchant-account onboarding and automatic WiFi/4G failover, which means switching to a backup connection.",
+   "sources": [
+    {
+     "title": "Credit Card Terminal Cyprus | POS System Terminals - Pay Expert",
+     "url": "https://payexpertcyprus.com/credit-card-terminals/"
+    },
+    {
+     "title": "Cyprus POS Terminals Market Share - Mordor Intelligence",
+     "url": "https://www.mordorintelligence.com/industry-reports/cyprus-pos-terminals-market/market-share"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "payabl.",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "payabl",
+    "payabl.",
+    "payabl. cy limited",
+    "powercash21 (former)"
+   ],
+   "countries": [
+    "CY"
+   ],
+   "products": [
+    "compliance_resilience",
+    "payments_instant",
+    "pos_acquiring"
+   ],
+   "latest": "payabl. secured a Central Bank of Cyprus EMI licence in Jan 2024. This lets it passport merchant acquiring, POS and payment-account services across the EEA. It later added a UK EMI licence.",
+   "sources": [
+    {
+     "title": "payabl. secures EMI license by the CBC - Cyprus Mail",
+     "url": "https://cyprus-mail.com/2024/01/26/payabl-secures-emi-license-in-boost-to-european-market-expansion/"
+    },
+    {
+     "title": "Cyprus' Payabl gets UK EMI license - FX News Group",
+     "url": "https://fxnewsgroup.com/forex-news/payments/cyprus-payabl-gets-uk-emi-license/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "NewCytech Business Solutions (Logicom Group)",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "logicom newcytech",
+    "newcytech",
+    "newcytech business solutions (logicom group)",
+    "newcytech business solutions ltd"
+   ],
+   "countries": [
+    "CY"
+   ],
+   "products": [
+    "compliance_resilience",
+    "core_digital",
+    "managed_services"
+   ],
+   "latest": "NewCytech Business Solutions presents itself as Cyprus' leading systems integrator for banking and finance. It bundles infrastructure, information security and cloud as turnkey solutions for local financial institutions.",
+   "sources": [
+    {
+     "title": "Logicom NewCytech - System Integration Solutions",
+     "url": "https://newcytech.logicom.net/"
+    },
+    {
+     "title": "Newcytech Business Solutions Limited - CITEA member profile",
+     "url": "https://citea.cy/en/members/newcytech-business-solutions-limited/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "PayPoint Romania",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "paypoint"
+   ],
+   "countries": [
+    "RO"
+   ],
+   "products": [
+    "pos_acquiring",
+    "self_service",
+    "managed_services"
+   ],
+   "latest": "With Mastercard, PayPoint launched cash withdrawal at its assisted point-of-sale terminals in December 2025. Withdrawals are capped at RON 500 per transaction. The service is live at over 14,000 partner locations and is targeted to reach 26,000 during 2026. It is explicitly aimed at rural communities where the nearest ATM is tens of kilometres away.\n\nThis is the cheapest substitute yet for a rural cash machine, and it weakens the business case for dispensing ATMs at Romanian banks. However, a ~35,000-terminal estate is also one of the largest managed-services targets in the country. The right first approach is to treat PayPoint as a customer for telemetry, monitoring and field service, not as a rival.",
+   "sources": [
+    {
+     "title": "PayPoint ajunge la 35.000 de POS-uri in Romania (ZF Comunicate)",
+     "url": "https://zfcomunicate.ro/paypoint-ajunge-la-35-000-de-pos-uri-in-romania-extinzand-reteaua-nationala-cu-35-fata-de-anul-anterior/"
+    },
+    {
+     "title": "PayPoint vizeaza 50.000 de POS-uri (Financiarul)",
+     "url": "https://financiarul.ro/companii/ce-se-intampla-pe-piata-platilor-din-romania-paypoint-vizeaza-50-000-de-terminale-pos/"
+    }
+   ],
+   "origin": "backfill-2026-06-15",
+   "last_updated": "2026-08-31"
+  },
+  {
+   "name": "SelfPay (ZebraPay)",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "local-peer",
+   "detect": [
+    "selfpay",
+    "selfpay (zebrapay)",
+    "selfpay now",
+    "zebrapay",
+    "zebrapay sa"
+   ],
+   "countries": [
+    "RO"
+   ],
+   "products": [
+    "managed_services",
+    "payments_instant",
+    "self_service"
+   ],
+   "latest": "SelfPay is funding a scale-up to ~19,000 payment stations by end-2026. This covers RO plus 4 export markets: Italy, Spain, France and Ireland. Funding comes from a EUR3m bond listed on the BVB (AeRO) at 5.5% p.a., plus Banca Transilvania facilities.\n\nIts SelfPay Now super-app is nearing 1M users and 200+ services, including cash deposits to cards. It competes with Printec in the RO self-service, kiosk and terminal estate, and it is funded and executing through 2026.",
+   "sources": [
+    {
+     "title": "SelfPay extinde portofoliul de servicii digitale self-service (ZF Comunicate)",
+     "url": "https://zfcomunicate.ro/selfpay-extinde-portofoliul-de-servicii-digitale-si-accelereaza-dezvoltarea-infrastructurii-de-plati-self-service-in-romania/"
+    },
+    {
+     "title": "ZebraPay, liderul local al pietei de automate de plati (ZF)",
+     "url": "https://www.zf.ro/burse-fonduri-mutuale/zebrapay-liderul-local-al-pietei-de-automate-de-plati-a-semnat-un-21122681"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "CIT One",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "local-peer",
+   "detect": [
+    "cit one",
+    "cit-one"
+   ],
+   "countries": [
+    "RO"
+   ],
+   "products": [
+    "managed_services",
+    "physical_security",
+    "self_service"
+   ],
+   "latest": "CIT One is the largest Romanian cash-in-transit (CIT) firm. It has 12 cash-processing centres and manages 5,000+ ATMs with 33,000+ monthly replenishments, meaning refills. It serves 19,000+ clients across banking, retail and pharmacy. It sells a 'Cash 24/7' bank cash-management service.",
+   "sources": [
+    {
+     "title": "CIT One - Valuables Transportation / ATM management",
+     "url": "https://www.cit-one.ro/en/services/valuables-transportation/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Force1",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "force 1",
+    "force1"
+   ],
+   "countries": [
+    "RO"
+   ],
+   "products": [
+    "managed_services",
+    "physical_security"
+   ],
+   "latest": "Force1 runs 11 cash-processing and storage centres, with 65 armoured vehicles and ~140 specialists nationwide. Its 'Force Cash' app gives real-time monitoring and credits the account automatically when cash is received. It serves banks including Banca Transilvania.",
+   "sources": [
+    {
+     "title": "Force1 - Transport de valori / cash processing",
+     "url": "https://force1.ro/en/transport-de-valori/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Power Dynamic Technology",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "local-peer",
+   "detect": [
+    "power dynamic",
+    "power dynamic technology"
+   ],
+   "countries": [
+    "RO"
+   ],
+   "products": [
+    "fraud_monitoring",
+    "managed_services",
+    "physical_security",
+    "self_service"
+   ],
+   "latest": "Power Dynamic Technology is a 100% Romanian firm with more than 20 years in the market. It sells multi-level ATM protection, covering anti-skimming, anti-black-box and video surveillance and monitoring. It also provides ATM and vault integration and lifecycle services for the banking, logistics and security sectors.",
+   "sources": [
+    {
+     "title": "Power Dynamic - Securitate ATM",
+     "url": "https://www.power-dynamic.ro/Securitate-ATM"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "DAAC digital (DAAC Systems Integrator Romania)",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "regional",
+   "detect": [
+    "daac",
+    "daac digital",
+    "daac digital (daac systems integrator romania)",
+    "daac systems integrator"
+   ],
+   "countries": [
+    "RO"
+   ],
+   "products": [
+    "managed_services",
+    "physical_security",
+    "self_service"
+   ],
+   "latest": "DAAC digital is a Moldova-rooted Diebold Nixdorf partner, and its engineers are also NCR-trained. It services 1,000+ ATMs including the DN Series, mostly in Moldova, with recent NFC upgrades. It has a registered Bucharest entity, DAAC Systems Integrator Romania, that extends its ATM-deployment and field-service reach into Romania.",
+   "sources": [
+    {
+     "title": "DAAC Systems Integrator Romania (DAAC digital)",
+     "url": "https://daacdigital.com/en/about-us/daac-systems-integrator-romania/"
+    },
+    {
+     "title": "DAAC digital - ATM & Self-Service",
+     "url": "https://daacdigital.com/en/directions/atm-self-service/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Netopia Payments (mobilPay)",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "local-peer",
+   "detect": [
+    "mobilpay",
+    "netopia",
+    "netopia mobilpay",
+    "netopia payments (mobilpay)",
+    "netopia systems",
+    "plationline"
+   ],
+   "countries": [
+    "RO"
+   ],
+   "products": [
+    "payments_instant",
+    "pos_acquiring"
+   ],
+   "latest": "Netopia Payments sold its Web2SMS SMS-messaging division to Norway's LINK Mobility for ~EUR4-4.5m, completed 1 Jun 2026. The stated reason was to concentrate resources on payments services. This sharpens its focus and frees capital for acquiring and wallet.\n\nEarlier it launched NFC phone payments through mobilPay Wallet, which has 350,000+ active users. It is Romania's most-used e-payment processor, with ~20,000 merchants.",
+   "sources": [
+    {
+     "title": "NETOPIA lanseaza solutia de plata cu telefonul prin NFC la comercianti (NoCash)",
+     "url": "https://nocash.ro/netopia-lanseaza-solutia-de-plata-cu-telefonul-prin-nfc-la-comercianti-bancile-pot-beneficia-de-expunere-imediata-la-peste-350-000-de-utilizatori-activi-ai-mobilpay-wallet-in-romania/"
+    },
+    {
+     "title": "NETOPIA Payments (official site)",
+     "url": "https://www.netopia-payments.com/en/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "EuPlatesc (Eupay)",
+   "role": "competitor",
+   "threat": "Low",
+   "tier": "local-peer",
+   "detect": [
+    "eupay",
+    "euplatesc",
+    "euplatesc (eupay)",
+    "euplatesc.ro"
+   ],
+   "countries": [
+    "RO"
+   ],
+   "products": [
+    "payments_instant",
+    "pos_acquiring"
+   ],
+   "latest": "EuPlatesc offers a Romania-focused payment gateway. Its features include Link2Pay, dynamic pricing, and SMS, instalment and recurring payments, plus packages for tourism, corporate and universities. It competes head-to-head with Netopia for domestic SME acceptance.",
+   "sources": [
+    {
+     "title": "Cele mai importante procesatoare de plati online din Romania (4us Consulting)",
+     "url": "https://www.4usconsulting.ro/cele-mai-importante-procesatoare-de-plati-online-din-romania/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "PayU Romania",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "regional",
+   "detect": [
+    "payu",
+    "payu romania"
+   ],
+   "countries": [
+    "RO"
+   ],
+   "products": [
+    "fraud_monitoring",
+    "payments_instant",
+    "pos_acquiring"
+   ],
+   "latest": "PayU Romania runs local acquiring and gateway services for Romanian merchants, with fast onboarding and built-in fraud tools. It is positioned as a primary domestic processor alongside Netopia and EuPlatesc.",
+   "sources": [
+    {
+     "title": "PayU Romania (official)",
+     "url": "https://romania.payu.com/en/"
+    },
+    {
+     "title": "Cele mai importante procesatoare de plati online din Romania (4us Consulting)",
+     "url": "https://www.4usconsulting.ro/cele-mai-importante-procesatoare-de-plati-online-din-romania/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Smart Fintech (SmartPay)",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "smart fintech",
+    "smart fintech (smartpay)",
+    "smartpay"
+   ],
+   "countries": [
+    "RO"
+   ],
+   "products": [
+    "payments_instant",
+    "pos_acquiring"
+   ],
+   "latest": "Smart Fintech is the first Romanian fintech licensed by BNR as a PISP, meaning a payment initiation service provider, under PSD2. It offers SmartPay account-to-account (A2A) payment initiation as an alternative to card payments. It also offers this as an embedded 'payment accelerator' for ERP, e-invoicing and payroll. This fits the RoPay instant-payments wave.",
+   "sources": [
+    {
+     "title": "Smart Fintech devine primul furnizor tert de plati prin open banking din Romania (start-up.ro)",
+     "url": "https://start-up.ro/smart-fintech-devine-primul-furnizor-tert-de-plati-prin-open-banking-din-romania/"
+    },
+    {
+     "title": "Smart Fintech (official)",
+     "url": "https://www.smartfintech.eu/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "BORICA AD",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "regional",
+   "detect": [
+    "bcard",
+    "borica",
+    "borica ad",
+    "borica-bankservice"
+   ],
+   "countries": [
+    "BG"
+   ],
+   "products": [
+    "compliance_resilience",
+    "core_digital",
+    "digital_onboarding",
+    "fraud_monitoring",
+    "managed_services",
+    "payments_instant",
+    "pos_acquiring",
+    "self_service"
+   ],
+   "latest": "BORICA AD is the national switch and the dominant BG payments infrastructure. Its 'bPOS by BORICA' white-label SoftPOS, built on Phos and Ingenico technology, is live at BG's largest banks. Postbank was first, and UniCredit Bulbank is confirmed.\n\nVendor-stated scale is up to ~6,800 terminals, 8,500 users and 6,000+ merchants, while an older BORICA figure cited ~1,500. Onboarding time has been cut from 3-4 months to ~1-1.5.\n\nBank-owned SoftPOS delivered through the national switch erodes the physical-POS base. BORICA has also scaled IBM Safer Payments fraud prevention, and it led BG's 2026 euro-payments cutover with OpenWay.",
+   "sources": [
+    {
+     "title": "Home | BORICA AD",
+     "url": "https://www.borica.bg/en"
+    },
+    {
+     "title": "Bulgaria's national switch BORICA scales fraud prevention with IBM Safer Payments",
+     "url": "https://www.ibm.com/new/product-blog/bulgarias-national-switch-borica-scales-next-generation-fraud-prevention-with-ibm-safer-payments-and-ibs"
+    },
+    {
+     "title": "B-Trust | BORICA AD",
+     "url": "https://www.borica.bg/en/products-and-services/b-trust"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "myPOS",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "regional",
+   "detect": [
+    "mypos",
+    "mypos limited branch bulgaria",
+    "mypos world"
+   ],
+   "countries": [
+    "BG"
+   ],
+   "products": [
+    "payments_instant",
+    "pos_acquiring"
+   ],
+   "latest": "Advent International completed its takeover of myPOS in 2024 for ~$500M. In 2024 the platform processed over EUR12bn in card payments, up 30% year on year. It serves 200k+ SMEs across 35+ European countries. Its range has widened to SoftPOS and unattended terminals.",
+   "sources": [
+    {
+     "title": "myPOS World – growing, profitable and debt free",
+     "url": "https://businessofpayments.com/2024/12/12/mypos-world-growing-profitable-and-debt-free/"
+    },
+    {
+     "title": "Bulgarian regulator approved the sale of myPos",
+     "url": "https://www.economic.bg/en/a/view/the-bulgarian-market-competition-regulator-approved-the-sale-of-my-pos"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Paynetics AD",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "local-peer",
+   "detect": [
+    "paynetics",
+    "paynetics ad",
+    "paynetics uk"
+   ],
+   "countries": [
+    "BG"
+   ],
+   "products": [
+    "digital_onboarding",
+    "fraud_monitoring",
+    "payments_instant",
+    "pos_acquiring"
+   ],
+   "latest": "Paynetics AD sells an Embedded Finance Suite, a white-label financial super-app and wholesale acquiring for PSPs and ISOs. Its partners include Trading 212, DNA Payments and Weavr. Its founders are also behind phos, which was acquired by Ingenico.",
+   "sources": [
+    {
+     "title": "Paynetics: licensed provider of end-to-end payment services",
+     "url": "https://www.paynetics.digital/"
+    },
+    {
+     "title": "Acquirers of Bcard payment cards",
+     "url": "https://www.bcard.bg/en/about/partners/aktseptirashti-institutsii"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Evrotrust",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "local-peer",
+   "detect": [
+    "evrotrust",
+    "evrotrust qtsp",
+    "evrotrust technologies"
+   ],
+   "countries": [
+    "BG"
+   ],
+   "products": [
+    "compliance_resilience",
+    "digital_onboarding"
+   ],
+   "latest": "Evrotrust raised ~EUR6.6M (~$7.5M) in Nov 2025. The money will roll out the Bulgarian EUDI Wallet and fund expansion across Western and Central Europe. It runs an eIDAS-notified national eID scheme with 1.8M+ users, ahead of the eIDAS 2.0 end-2026 wallet deadline.",
+   "sources": [
+    {
+     "title": "UniCredit Bulbank Transforms Its Onboarding With Evrotrust",
+     "url": "https://evrotrust.com/blog/unicredit-bulbank-leverages-evrotrust-to-transform-the-onboarding-experience-for-mobile-banking-users"
+    },
+    {
+     "title": "Evrotrust Raises EUR6.6M to Roll Out the EUDI Wallet in Bulgaria",
+     "url": "https://therecursive.com/evrotrust-raises-e6-6m-to-roll-out-the-european-digital-identity-wallet-in-bulgaria/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Datecs Ltd / Datecs Payment Technology EAD",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "datecs",
+    "datecs ltd / datecs payment technology ead",
+    "datecs payment technology"
+   ],
+   "countries": [
+    "BG"
+   ],
+   "products": [
+    "pos_acquiring"
+   ],
+   "latest": "Its BlueMax-L300/L300C Android POS payment terminals gained nexo retailer protocol certification. Datecs Payment Technology EAD is listed among Bulgaria's Bcard acquiring institutions.",
+   "sources": [
+    {
+     "title": "About | DATECS LTD",
+     "url": "https://www.datecs.bg/en/about"
+    },
+    {
+     "title": "Acquirers of Bcard payment cards",
+     "url": "https://www.bcard.bg/en/about/partners/aktseptirashti-institutsii"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Transcard Financial Services EAD",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "tfs",
+    "trans.cash",
+    "transcard",
+    "transcard financial services ead"
+   ],
+   "countries": [
+    "BG"
+   ],
+   "products": [
+    "payments_instant",
+    "pos_acquiring"
+   ],
+   "latest": "Transcard Financial Services EAD runs domestic and international Mastercard credit and debit programmes. These include trans.cash, which offers no-fee Bulgarian ATM withdrawals. It is listed as a Bcard acquirer.",
+   "sources": [
+    {
+     "title": "Transcard Financial Services - Corporate Profile",
+     "url": "https://www.transcard.bg/en/transcard-financial-services/"
+    },
+    {
+     "title": "Acquirers of Bcard payment cards",
+     "url": "https://www.bcard.bg/en/about/partners/aktseptirashti-institutsii"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "SOT 161",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "signalno-ohranitelna tehnika",
+    "sot 161",
+    "sot 161 eood"
+   ],
+   "countries": [
+    "BG"
+   ],
+   "products": [
+    "managed_services",
+    "physical_security"
+   ],
+   "latest": "SOT 161 runs 25 GPS-tracked armoured vehicles and a national operations centre. It provides ATM servicing and cash processing for several Bulgarian banks across Sofia, Plovdiv, Varna and Burgas.",
+   "sources": [
+    {
+     "title": "Cash in Transit | SOT 161",
+     "url": "https://www.sot.bg/en/?project=cash_in_transit"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "TSST",
+   "role": "competitor",
+   "threat": "Low",
+   "tier": "local-peer",
+   "detect": [
+    "tsst",
+    "tsst banking equipment"
+   ],
+   "countries": [
+    "BG"
+   ],
+   "products": [
+    "atm_recycling",
+    "managed_services"
+   ],
+   "latest": "TSST provides nationwide warranty and post-warranty service, subscription maintenance, and software and calibration updates for banknote and coin processing machines. It works from a Sofia service centre.",
+   "sources": [
+    {
+     "title": "Service - TSST | Banking Equipment",
+     "url": "https://tsst.bg/%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D0%B7/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Sirma (Sirma Group)",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "sirma (sirma group)",
+    "sirma business consulting",
+    "sirma group holding"
+   ],
+   "countries": [
+    "BG"
+   ],
+   "products": [
+    "compliance_resilience",
+    "core_digital",
+    "managed_services"
+   ],
+   "latest": "Sirma completed a 2020-2022 Oracle FLEXCUBE v12.3 core-banking transformation for Municipal Bank Bulgaria. The project included card management, payments, open banking and RepXpress regulatory reporting. It continues FLEXCUBE and Temenos implementation, integration and compliance projects for banks.",
+   "sources": [
+    {
+     "title": "Municipal Bank Bulgaria Core Banking Transformation | Sirma",
+     "url": "https://sirma.com/stories/sirma-transforms-municipal-bank-bulgaria-with-oracle-flexcube-and-integrated-banking-ecosystem.html"
+    },
+    {
+     "title": "Core Banking Systems Implementation - Sirma",
+     "url": "https://sirma.com/services/business-and-it-consulting-in-finance/core-banking-systems-implementation.html"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "EasyPay",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "easypay",
+    "easypay ad",
+    "easypay albania",
+    "easypay group",
+    "easypay sh.p.k.",
+    "epay.bg (affiliated)",
+    "тов ізіпей"
+   ],
+   "countries": [
+    "AL",
+    "BG",
+    "UA"
+   ],
+   "products": [
+    "core_digital",
+    "managed_services",
+    "payments_instant",
+    "pos_acquiring",
+    "self_service"
+   ],
+   "latest": "EasyPay sh.p.k. became the Bank of Albania's first licensed open-banking entity. It received its licence in Nov 2024, made its first open-banking transaction in March 2025, and went live in April 2025. EasyPay Ukraine remains the #1 self-service kiosk network, with 18,000-25,000+ terminals, per Forbes Ukraine.",
+   "sources": [
+    {
+     "title": "The Bulgarian electronic payment - EasyPay (ePay.bg)",
+     "url": "https://www.epay.bg/v3main/front?p=about&lang=en"
+    },
+    {
+     "title": "EasyPay via Nuvei: Extensive Cash Payment Network in Bulgaria",
+     "url": "https://www.nuvei.com/apm/easypay"
+    },
+    {
+     "title": "EasyPay - the leading fintech group and payment service in Ukraine",
+     "url": "https://easypay.ua/en/about-easypay"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "AllSecure (Allsecure d.o.o. Beograd)",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "allsecure",
+    "allsecure (allsecure d.o.o. beograd)",
+    "allsecure beograd",
+    "allsecure doo",
+    "allsecure online payments",
+    "allsecure payment gateway"
+   ],
+   "countries": [
+    "ME",
+    "RS"
+   ],
+   "products": [
+    "payments_instant",
+    "pos_acquiring"
+   ],
+   "latest": "AllSecure presents itself as a 'global solution for internet payments', connected to 300+ banks and payment methods. Its named preferred-partner banks in Serbia and the region include UniCredit Bank Serbia, Banca Intesa Beograd and AIK Banka (allsecure.rs/o-nama, 2025).",
+   "sources": [
+    {
+     "title": "Kompletno rešenje za internet plaćanja | AllSecure (o nama)",
+     "url": "https://www.allsecure.rs/o-nama/"
+    },
+    {
+     "title": "Acquiring in Serbian – history, reality, solutions (askme.rs)",
+     "url": "https://www.askme.rs/en/post/acquiring-in-serbian-history-reality-solutions"
+    },
+    {
+     "title": "Global Payment Connections - AllSecure",
+     "url": "https://www.allsecure.eu/services/coverage/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "IBA Group (tapXphone / SoftPOS)",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "regional",
+   "detect": [
+    "iba group (softpos by iba group / tapxphone)",
+    "iba group (tapxphone / softpos)",
+    "iba group it",
+    "raipos engine",
+    "rpc softpos",
+    "softpos by iba group",
+    "tapxphone"
+   ],
+   "countries": [
+    "AL",
+    "BG",
+    "GR",
+    "HR",
+    "RO",
+    "RS",
+    "SK",
+    "UA",
+    "XK"
+   ],
+   "products": [
+    "managed_services",
+    "payments_instant",
+    "pos_acquiring",
+    "self_service"
+   ],
+   "latest": "tapXphone SoftPOS was recertified for PCI CPoC and achieved PCI MPoC compliance, covering the MPoC App and Isolated SDK. It is the 6th worldwide for MPoC A&M and about the 20th globally for CPoC.\n\nIt is live in 5+ Printec footprint countries (BG, GR, HR, RO, RS, SK + EE/LV/LT/MD) via 25+ acquirers, including PrivatBank, monobank, PUMB and Raiffeisen Ukraine. Bank and acquirer white-label SoftPOS is displacing entry-level terminal hardware among the many small merchants in the SME long tail.",
+   "sources": [
+    {
+     "title": "RaiPOS keeps growing in 2025: millions of transactions and tens of thousands of terminals (tapXphone)",
+     "url": "https://tapxphone.com/news/raipos-keeps-growing-in-2025-millions-of-transactions-and-tens-of-thousands-of-terminals/"
+    },
+    {
+     "title": "IBA Group Launches TapXphone in Serbia and Bulgaria (IBA Group)",
+     "url": "https://ibagroupit.com/news/iba-group-launches-tapxphone-in-serbia-and-bulgaria/"
+    },
+    {
+     "title": "TapXphone is Now Offered by PrivatBank in Ukraine - tapXphone",
+     "url": "https://tapxphone.com/news/tapxphone-is-now-offered-by-privatbank-in-ukraine/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Comtrade System Integration / Hermes SoftLab",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "local-peer",
+   "detect": [
+    "comtrade",
+    "comtrade digital services",
+    "comtrade integration",
+    "comtrade slovenia",
+    "comtrade system integration / comtrade integration (beograd)",
+    "comtrade system integration / hermes softlab",
+    "comtrade system integration d.o.o. beograd",
+    "hermes softlab",
+    "hermes softlab ljubljana"
+   ],
+   "countries": [
+    "BA",
+    "HR",
+    "RS",
+    "SI"
+   ],
+   "products": [
+    "core_digital",
+    "digital_onboarding",
+    "managed_services",
+    "self_service"
+   ],
+   "latest": "Comtrade is described as one of the largest system integrators in the Adriatic region. Its Slovenian banking clients include NLB Group, SID Bank and Triglav. Its Hermes SoftLab unit supplies modular retail e-banking linked to banks' core systems. Comtrade Digital Services has built chat and QR banking platforms.",
+   "sources": [
+    {
+     "title": "Comtrade rešenja za finansijske institucije pomažu automatizaciji procesa (eKapija)",
+     "url": "https://www.ekapija.com/news/2259075/banke-u-srbiji-razvijaju-nove-digitalne-kanale-i-usluge-comtrade-resenja-za"
+    },
+    {
+     "title": "Video identifikacija – bitne odluke za efikasan proces (Comtrade Integration)",
+     "url": "https://comtradeintegration.com/sr/webinar/video-identifikacija-bitne-odluke-za-efikasan-proces/"
+    },
+    {
+     "title": "New implementation of HERMES SoftLab's e-banking - Comtrade",
+     "url": "https://www.comtrade.com/news/new-implementation-of-hermes-softlabs-e-banking-in-croatia/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Saga d.o.o. Beograd (Noventiq)",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "noventiq serbia",
+    "saga",
+    "saga d.o.o. beograd (noventiq)",
+    "saga new frontier group"
+   ],
+   "countries": [
+    "BA",
+    "ME",
+    "MK",
+    "RS"
+   ],
+   "products": [
+    "core_digital",
+    "digital_onboarding",
+    "managed_services"
+   ],
+   "latest": "Saga d.o.o. Beograd reported 2024 revenue of RSD 4.83bn, with net profit of RSD 149M. Noventiq holds the majority stake. It is described as Serbia's leading system integrator since 2005 (eKapija company profile).",
+   "sources": [
+    {
+     "title": "Saga d.o.o. Beograd – eKapija Katalog firmi",
+     "url": "https://www.ekapija.com/company/85394/saga-doo-beograd"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "G4S Serbia (G4S Secure Solutions d.o.o.)",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "regional",
+   "detect": [
+    "allied universal (g4s)",
+    "g4s",
+    "g4s secure solutions beograd",
+    "g4s serbia (g4s secure solutions d.o.o.)"
+   ],
+   "countries": [
+    "RS"
+   ],
+   "products": [
+    "managed_services",
+    "physical_security",
+    "self_service"
+   ],
+   "latest": "G4S Serbia promotes cash-in-transit, cash-processing and ATM cash-solutions services in Serbia. It has a 24-hour cash-in-transit monitoring centre and dedicated insurance cover, which it describes as unique in the market (g4s.com/en-rs).",
+   "sources": [
+    {
+     "title": "Cash in Transit | G4S Serbia",
+     "url": "https://www.g4s.com/en-rs/what-we-do/people-services/cash-in-transit"
+    },
+    {
+     "title": "Cash Solutions | G4S Serbia",
+     "url": "https://www.g4s.com/en-rs/what-we-do/cash-solutions"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Halcom a.d. Beograd",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "regional",
+   "detect": [
+    "halcom",
+    "halcom a.d. beograd",
+    "halcom ca",
+    "halcom one"
+   ],
+   "countries": [
+    "BA",
+    "RS",
+    "SI"
+   ],
+   "products": [
+    "compliance_resilience",
+    "digital_onboarding"
+   ],
+   "latest": "Halcom a.d. Beograd sells Halcom One, a cloud platform for qualified certificates and e-identity. It automates client onboarding and enables e-banking and m-banking without hardware readers, aimed at banks and insurers. Its ONE FOR ALL qualified certificate works with ~17 Serbian banks. It is used by 50+ commercial banks across 5 European markets (halcom.com / one.halcom.rs, 2025).",
+   "sources": [
+    {
+     "title": "Halcom One (cloud e-identity / e-signature for banks)",
+     "url": "https://one.halcom.rs/"
+    },
+    {
+     "title": "Elektronski potpis | Halcom.com (RS)",
+     "url": "https://support.halcom.com/rs/faqs/elektronski-potpis/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Etranet Grupa",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "local-peer",
+   "detect": [
+    "etranet",
+    "etranet grupa",
+    "etranet grupa d.o.o."
+   ],
+   "countries": [
+    "HR"
+   ],
+   "products": [
+    "managed_services",
+    "pos_acquiring",
+    "self_service"
+   ],
+   "latest": "Etranet Grupa states that it is one of the largest POS/EFTPOS maintenance providers in Croatia. It maintains 22,000-25,000+ devices, with regional service centres across Croatia including the islands. It is a partner of Ingenico France and an authorised distributor of Ingenico, Nexgo and Sunmi (etranet.hr, 2026). Its revenue is ~USD 3M, with under 50 employees.",
+   "sources": [
+    {
+     "title": "Etranet - O nama (About us)",
+     "url": "https://etranet.hr/o-nama/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "FINA Gotovinski Servisi",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "local-peer",
+   "detect": [
+    "fina cash services",
+    "fina gotovinski servisi",
+    "fina gotovinski servisi d.o.o.",
+    "fina gs"
+   ],
+   "countries": [
+    "HR"
+   ],
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "physical_security",
+    "self_service"
+   ],
+   "latest": "FINA Gotovinski Servisi reports 790 employees, 12 branches, ~3 billion cash units processed each year and 100% territorial coverage. Its service lines are cash operations, valuables distribution, technical security, facility management and banking-equipment sales. It is ISO 9001/27001/45001/14001 certified. Its clients include Erste, PBZ and Raiffeisenbank (finags.hr, 2026).",
+   "sources": [
+    {
+     "title": "FINA Gotovinski Servisi - homepage",
+     "url": "https://www.finags.hr/"
+    },
+    {
+     "title": "FINA GS - Prijevoz vrijednosnih posiljki / distribucija novca",
+     "url": "https://www.finags.hr/gotovinski-servisi-pregled/distribucija-novca"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Eurokod Pisacic",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "eurokod",
+    "eurokod pisacic",
+    "eurokod pisacic d.o.o."
+   ],
+   "countries": [
+    "HR"
+   ],
+   "products": [
+    "atm_recycling",
+    "physical_security",
+    "self_service"
+   ],
+   "latest": "Eurokod Pisacic lists a cash-recycling and self-service automation range aimed at financial institutions and retail. It covers ARCA CM18, CDS-9, Paypod Compact, RCS-800, Lincsafe smart safes, coin deposit and withdrawal, and day-night safes. It also provides service, support and design (eurokod.hr, 2026).",
+   "sources": [
+    {
+     "title": "Eurokod - Automatizacija i samoposluzni uredaji",
+     "url": "https://eurokod.hr/obrada-novca/automatizacija-i-samoposluzni-uredaji/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Identyum",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "identyum",
+    "identyum d.o.o.",
+    "identyum identify"
+   ],
+   "countries": [
+    "HR"
+   ],
+   "products": [
+    "compliance_resilience",
+    "digital_onboarding"
+   ],
+   "latest": "Identyum's Identify product offers remote identity verification via API or web, with biometrics and liveness checks. It serves financial services, insurance, telecom, e-commerce and the public sector. It supports AdES/QES e-signature and references ETSI EN 119 461. It is positioned on eIDAS, PSD2, AML and GDPR compliance (identyum.com, 2026).",
+   "sources": [
+    {
+     "title": "Identyum - Verifikacija identiteta (Identify)",
+     "url": "https://identyum.com/hr/verifikacija-identiteta/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Aircash",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "regional",
+   "detect": [
+    "aircash",
+    "aircash d.o.o.",
+    "aircash wallet"
+   ],
+   "countries": [
+    "AL",
+    "BA",
+    "HR",
+    "ME",
+    "RS"
+   ],
+   "products": [
+    "core_digital",
+    "payments_instant",
+    "pos_acquiring"
+   ],
+   "latest": "Its about-page reports 1.5M+ active users, 16+ countries, 10+ currencies, 500+ integrated services and 250k+ retail locations, plus Apple Pay and Google Pay. It passed 1M users in 2024, partnered with Nuvei, and expanded across the Balkans (RS/ME/AL/BA) in 2024. Annual revenue is ~EUR 20M+ (aircash.eu / EMIS / SeeNews, 2024-2025).",
+   "sources": [
+    {
+     "title": "Aircash - About us",
+     "url": "https://aircash.eu/about-us/"
+    },
+    {
+     "title": "Aircash d.o.o. (Croatia) - EMI company profile",
+     "url": "https://thebanks.eu/emis/aircash-355001"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "CorvusPay",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "corvus info",
+    "corvus pay",
+    "corvus pay mk",
+    "corvuspay",
+    "corvuspay (corvus info)",
+    "corvuspay internet payment gateway"
+   ],
+   "countries": [
+    "HR",
+    "MK"
+   ],
+   "products": [
+    "core_digital",
+    "payments_instant",
+    "pos_acquiring"
+   ],
+   "latest": "CorvusPay is the first Croatian FinTech licensed by the Croatian National Bank for PSD2 payment-initiation services. It has been PCI DSS Level 1 certified without a break since 2012. It has ~50 staff in Zagreb and Skopje, and serves hundreds of merchants in Croatia and the region (corvuspay.com / openfintech.io, verified 2026).",
+   "sources": [
+    {
+     "title": "CorvusPay: All Payment Options",
+     "url": "https://www.corvuspay.com/en/"
+    },
+    {
+     "title": "CorvusPay - Web and Mobile Payment Integration",
+     "url": "https://www.corvuspay.com/en/integrators/"
+    },
+    {
+     "title": "CorvusPay: Secure Platform for All Payments - Company",
+     "url": "https://www.corvuspay.com/en/company/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "King ICT",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "regional",
+   "detect": [
+    "king ict",
+    "king ict d.o.o."
+   ],
+   "countries": [
+    "BA",
+    "HR",
+    "MK",
+    "RS",
+    "XK"
+   ],
+   "products": [
+    "core_digital",
+    "managed_services",
+    "physical_security"
+   ],
+   "latest": "King ICT had estimated unconsolidated revenue of ~EUR140M for 2024, with EUR175M+ estimated for 2025, and 400-800+ employees. It has offices in Zagreb, Sarajevo, Belgrade, Skopje, Pristina and Brussels. Its banking references include infrastructure modernisation for Hrvatska postanska banka and Podravska banka (king-ict.com / SeeNews, verified 2026).",
+   "sources": [
+    {
+     "title": "Najbolja godina za King ICT, postao novi domaci milijarder - poduzetnistvo.org",
+     "url": "https://www.poduzetnistvo.org/news/najbolja-godina-za-king-ict-postao-novi-domaci-milijarder"
+    },
+    {
+     "title": "KING ICT - HUJAK member profile",
+     "url": "https://hujak.hr/clan-king-ict/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Combis",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "regional",
+   "detect": [
+    "combis",
+    "combis (hrvatski telekom group)",
+    "combis d.o.o."
+   ],
+   "countries": [
+    "BA",
+    "HR",
+    "RS"
+   ],
+   "products": [
+    "compliance_resilience",
+    "core_digital",
+    "managed_services"
+   ],
+   "latest": "A Netokracija case study describes Combis taking over and modernising Croatia banka's IT infrastructure, completed in July 2022. The work covered VMware, Oracle and Palo Alto systems, under a 5-year OPEX contract with ~30 specialists.",
+   "sources": [
+    {
+     "title": "Kako sigurno prepustiti upravljanje IT infrastrukturom - Combis / Croatia banka case study (Netokracija)",
+     "url": "https://www.netokracija.com/combis-croatia-banka-case-study-203620"
+    },
+    {
+     "title": "Combis - Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Combis"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Banksoft",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "banksoft",
+    "banksoft d.o.o.",
+    "banksoft zagreb"
+   ],
+   "countries": [
+    "HR"
+   ],
+   "products": [
+    "core_digital",
+    "fraud_monitoring",
+    "pos_acquiring"
+   ],
+   "latest": "Banksoft's banking-services page lists Digital CoreBank (SaaS/cloud), card management and payments, and mobile and internet banking. It also lists an ISO/IEC 27001:2022 certificate. It has 20+ financial-institution references across Croatia and the region (banksoft.eu, fetched 2026).",
+   "sources": [
+    {
+     "title": "Banksoft - Usluge / Banking services",
+     "url": "https://banksoft.eu/banking-services"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Bankart d.o.o.",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "local-peer",
+   "detect": [
+    "bankart",
+    "bankart d.o.o.",
+    "bankart ljubljana"
+   ],
+   "countries": [
+    "SI"
+   ],
+   "products": [
+    "atm_recycling",
+    "fraud_monitoring",
+    "managed_services",
+    "payments_instant",
+    "pos_acquiring",
+    "self_service"
+   ],
+   "latest": "Bankart calls itself 'the leading Slovenian company in the field of processing of modern payment instruments'. It operates across six countries. It provides ATM network management, POS solutions, card lifecycle management, SEPA and instant payments, an e-commerce gateway and fraud prevention. It runs the national Flik instant-payment and Flik Pay service for the Slovenian banks.",
+   "sources": [
+    {
+     "title": "Bankart - Payment Systems and Services",
+     "url": "https://www.bankart.si/en/payment-systems-and-services/"
+    },
+    {
+     "title": "Bankart Ljubljana - Processing of modern payment instruments (NLB Group)",
+     "url": "https://www.nlbgroup.com/int-en/about-nlb-group/nlb-group-markets/bankart"
+    },
+    {
+     "title": "Flik Pay - Bankart",
+     "url": "https://www.bankart.si/en/flik-pay/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Lab4Pay d.o.o.",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "elly pos",
+    "elly soft pos",
+    "lab4pay",
+    "lab4pay d.o.o."
+   ],
+   "countries": [
+    "HR",
+    "SI"
+   ],
+   "products": [
+    "managed_services",
+    "payments_instant",
+    "pos_acquiring"
+   ],
+   "latest": "Elly POS, built by Lab4Pay with Eligma and BTC, was the first Android all-in-one terminal in Slovenia. It accepts Visa, Mastercard, Maestro and Diners, plus mBills, VALU, Apple Pay, Google Pay and crypto. BTC City marked the 1000th Elly POS terminal installed. Lab4Pay/Elly is live in several European markets (SI, CH, BE, FR, HR, LU).",
+   "sources": [
+    {
+     "title": "Elly POS: the first payment terminal in Slovenia enabling six payment methods (BTC)",
+     "url": "https://www.btc.si/en/news/2021/03/elly-pos-the-first-payment-terminal-in-slovenia-that-enables-as-many-as-six-payment-methods/"
+    },
+    {
+     "title": "BTC City marks deployment of the 1000th Elly POS terminal",
+     "url": "https://www.btc.si/en/news/2022/05/btc-city-marks-the-deployment-of-the-1000th-elly-pos-terminal-for-digital-payments-in-slovenia/"
+    },
+    {
+     "title": "Elly Soft POS - Google Play",
+     "url": "https://play.google.com/store/apps/details?id=si.lab4pay.pos.android"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Halcom d.d.",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "halcom",
+    "halcom ca",
+    "halcom d.d.",
+    "halcom multipay",
+    "halcom one"
+   ],
+   "countries": [
+    "BA",
+    "RS",
+    "SI"
+   ],
+   "products": [
+    "compliance_resilience",
+    "core_digital",
+    "digital_onboarding",
+    "payments_instant"
+   ],
+   "latest": "Halcom promotes 30 years of digital-banking history. It runs Halcom CA as a Slovenian and EU Qualified Trust Service Provider, so its qualified e-signatures are accepted under eIDAS. It offers Halcom MultiPay for companies and mobile QR-code payments. Halcom One has been integrated with eID Easy across Slovenia, Serbia and Bosnia.",
+   "sources": [
+    {
+     "title": "Who we are - Halcom",
+     "url": "https://www.halcom.com/sr_en/about-us-2/who-we-are/"
+    },
+    {
+     "title": "Halcom MultiPay (Comprehensive, Easy, Efficient)",
+     "url": "https://multipay.halcom.si/en/"
+    },
+    {
+     "title": "Halcom One integrated with eID Easy across Slovenia, Serbia and Bosnia",
+     "url": "https://www.eideasy.com/blog/halcom-one-now-integrated-with-eid-easy-powering-users-and-businesses-across-slovenia-serbia-and-bosnia-and-herzegovina"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Rekono d.o.o.",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "rekono",
+    "rekono account",
+    "rekono d.o.o.",
+    "rekono oneid"
+   ],
+   "countries": [
+    "SI"
+   ],
+   "products": [
+    "compliance_resilience",
+    "core_digital",
+    "digital_onboarding"
+   ],
+   "latest": "Rekono is an eIDAS-aligned Qualified Trust Service Provider offering electronic identity, strong authentication and e-signature. It says it is trusted by the largest Slovenian banks and used by 500,000+ users. It is connected to the national SI-PASS for banks, insurers, energy companies and municipalities.",
+   "sources": [
+    {
+     "title": "Rekono - General information",
+     "url": "https://www.rekono.si/en/general-information/"
+    },
+    {
+     "title": "Rekono - Online banking services",
+     "url": "https://www.rekono.si/en/online-banking-services/"
+    },
+    {
+     "title": "Rekono - Trust Services for Business",
+     "url": "https://www.rekono.si/en/trust-services-for-business/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "G4S d.o.o. (G4S Slovenija)",
+   "role": "competitor",
+   "threat": "Low",
+   "tier": "local-peer",
+   "detect": [
+    "g4s",
+    "g4s cash solutions",
+    "g4s d.o.o. (g4s slovenija)",
+    "g4s slovenija"
+   ],
+   "countries": [
+    "SI"
+   ],
+   "products": [
+    "managed_services",
+    "physical_security"
+   ],
+   "latest": "G4S Slovenija is described as one of the leading physical and technical security companies in Slovenia, operating since 1990. It holds a licence to transport and secure cash and other valuable shipments. The global G4S Cash Solutions range covers ATM installation, maintenance, replenishment and cash management.",
+   "sources": [
+    {
+     "title": "Storitve - G4S Slovenija",
+     "url": "https://www.g4s.com/sl-si/storitve"
+    },
+    {
+     "title": "Cash Solutions / Cash Management - G4S",
+     "url": "https://www.g4s.com/what-we-do/cash-solutions/cash-management"
+    },
+    {
+     "title": "G4S d.o.o. - Bizi company profile",
+     "url": "https://www.bizi.si/G4S-D-O-O/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "mBills d.o.o.",
+   "role": "competitor",
+   "threat": "Low",
+   "tier": "local-peer",
+   "detect": [
+    "mbills",
+    "mbills d.o.o."
+   ],
+   "countries": [
+    "SI"
+   ],
+   "products": [
+    "payments_instant",
+    "pos_acquiring"
+   ],
+   "latest": "mBills is licensed by the Bank of Slovenia to issue e-money and provide payment services. It holds EU passport licences for e-money, payment initiation (PIS) and account information (AIS). It supports in-store POS payments at over 2,500 Slovenian locations, including all Petrol and OMV stations.",
+   "sources": [
+    {
+     "title": "About mBills - mBills mobile wallet",
+     "url": "https://www.mbills.si/about-mbills/"
+    },
+    {
+     "title": "MBILLS d.o.o. - LinkedIn",
+     "url": "https://www.linkedin.com/company/mbills-e-money-and-payment-services-ltd."
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "SKPAY, a.s.",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "first data slovakia (predchodca)",
+    "mojapos",
+    "skpay",
+    "skpay karta",
+    "skpay, a.s."
+   ],
+   "countries": [
+    "CZ",
+    "GR",
+    "HR",
+    "HU",
+    "RO",
+    "SI",
+    "SK"
+   ],
+   "products": [
+    "payments_instant",
+    "pos_acquiring",
+    "self_service"
+   ],
+   "latest": "SKPAY presents itself as an established SK payment and e-money institution. It backs 28,000+ POS terminals in Slovakia and seven other European countries through technology partners. It has a SoftPOS app that accepts cards and mobile wallets (Google Pay, Apple Pay, Samsung Pay).",
+   "sources": [
+    {
+     "title": "O spoločnosti SKPAY, a.s.",
+     "url": "https://skpay.sk/o-nas"
+    },
+    {
+     "title": "SKPAY Akceptácia kariet (MojaPOS / SoftPOS)",
+     "url": "https://mojapos.skpay.sk/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Besteron / Pay Solutions, a.s.",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "besteron",
+    "besteron / pay solutions, a.s.",
+    "pay solutions",
+    "solitea / seyfor group",
+    "tapeon (merged in)"
+   ],
+   "countries": [
+    "CZ",
+    "SI",
+    "SK"
+   ],
+   "products": [
+    "pos_acquiring",
+    "self_service"
+   ],
+   "latest": "Solitea, now Seyfor, took a majority stake in Pay Solutions (Besteron) in March 2022 and merged in POS-terminal operator Tapeon. The group offers an NBS-regulated gateway and POS terminals. It also offers dedicated payment modules for self-service kiosks and parking machines.",
+   "sources": [
+    {
+     "title": "Solitea sa stáva väčšinovým vlastníkom slovenskej platobnej brány Besteron — Seyfor",
+     "url": "https://www.seyfor.com/sk-sk/solitea-sa-stava-vacsinovym-vlastnikom-slovenskej-platobnej-brany-besteron"
+    },
+    {
+     "title": "Platobný terminál pre samoobslužné kiosky — Besteron",
+     "url": "https://besteron.com/sk/kiosk/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Softec, s.r.o.",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "local-peer",
+   "detect": [
+    "nfinity (platform)",
+    "softec",
+    "softec, s.r.o."
+   ],
+   "countries": [
+    "SK"
+   ],
+   "products": [
+    "core_digital",
+    "digital_onboarding",
+    "managed_services"
+   ],
+   "latest": "Softec built ČSOB's fully digital remote onboarding on its NFINITY platform. It uses facial biometry, ID OCR and liveness checks against Slovak state registries. It is the same Innovatrics-partnered solution it first delivered for Tatra banka in 2017. It also runs branch and omnichannel client-service systems for SK banks.",
+   "sources": [
+    {
+     "title": "Vzdialené overenie identity a digitálny onboarding klienta — Softec",
+     "url": "https://www.softec.sk/projekty/vzdialene-overenie-identity-a-digitalny-onboarding-klienta"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "CRIF — Slovak Credit Bureau, s.r.o.",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "regional",
+   "detect": [
+    "crif sk",
+    "crif slovakia",
+    "crif — slovak credit bureau, s.r.o.",
+    "slovak credit bureau"
+   ],
+   "countries": [
+    "SK"
+   ],
+   "products": [
+    "compliance_resilience",
+    "digital_onboarding",
+    "fraud_monitoring"
+   ],
+   "latest": "CRIF Slovakia sells a combined identification, AML and anti-fraud platform. It includes video identification, real-time KYC reports and AML-list matching. It also includes geographic and reputation risk checks, and a fraud analyser for digital lending and onboarding journeys.",
+   "sources": [
+    {
+     "title": "Služby v oblasti identifikácie, AML a boja proti podvodom — CRIF Slovak Credit Bureau",
+     "url": "https://www.crif.sk/sluzby/platformy/sluzby-v-oblasti-identifikacie-aml-a-boja-proti-podvodom/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Loomis Slovakia, s.r.o.",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "global",
+   "detect": [
+    "loomis (ex-ponsec)",
+    "loomis sk",
+    "loomis slovakia, s.r.o."
+   ],
+   "countries": [
+    "SK"
+   ],
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "physical_security"
+   ],
+   "latest": "Loomis Slovakia offers end-to-end ATM outsourcing. This covers delivery, installation and placement, cash-optimised replenishment, and SLA L1/L2 maintenance and monitoring. It also offers cash-in-transit and cash processing across all of Slovakia. It is backed by a global fleet of 130,000+ ATMs at 2,000+ banks in 23 countries.",
+   "sources": [
+    {
+     "title": "ATM — Správa bankomatov — Loomis (sk.loomis.com)",
+     "url": "https://sk.loomis.com/sk-sk/products/atm-solutions"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Soitron, s.r.o. (incl. Millennium)",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "regional",
+   "detect": [
+    "millennium (subsidiary)",
+    "soitron",
+    "soitron group",
+    "soitron, s.r.o. (incl. millennium)"
+   ],
+   "countries": [
+    "SK"
+   ],
+   "products": [
+    "core_digital",
+    "managed_services"
+   ],
+   "latest": "Soitron, which bought financial-software firm Millennium in 2017, serves Tatra banka and Slovenská sporiteľňa. Millennium's credit-sales, CRM and portal solutions are used by VÚB and SLSP.",
+   "sources": [
+    {
+     "title": "Softvérová spoločnosť Millennium sa stala súčasťou SOITRON Group",
+     "url": "https://www.soitron.sk/softverova-spolocnost-millennium-sa-stala-sucastou-soitron-group/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Gratex International, a.s.",
+   "role": "competitor",
+   "threat": "Low",
+   "tier": "local-peer",
+   "detect": [
+    "gratex",
+    "gratex international, a.s.",
+    "gratex iq"
+   ],
+   "countries": [
+    "SK"
+   ],
+   "products": [
+    "core_digital",
+    "managed_services"
+   ],
+   "latest": "Gratex International promotes 30 years of software experience in banking, finance and the public sector. Its Gratex IQ practice links up separate information systems with data analytics, business intelligence and machine learning.",
+   "sources": [
+    {
+     "title": "Gratex IQ — gratexiq.com",
+     "url": "https://www.gratexiq.com/"
+    },
+    {
+     "title": "Gratex International, a.s. — LinkedIn",
+     "url": "https://sk.linkedin.com/company/gratex-international"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Dotykačka / Dotypay Slovensko",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "regional",
+   "detect": [
+    "dotykacka",
+    "dotykačka / dotypay slovensko",
+    "dotypay",
+    "dotypos"
+   ],
+   "countries": [
+    "SK"
+   ],
+   "products": [
+    "pos_acquiring",
+    "self_service"
+   ],
+   "latest": "Softpay, Dotykačka and Nexi Central Europe have partnered to roll out tap-to-phone SoftPOS across Czechia and Slovakia. Dotykačka is the local merchant-facing distributor, turning Android devices into contactless terminals.",
+   "sources": [
+    {
+     "title": "Softpay and Dotykacka collaborate to introduce tap-to-phone in Czechia and Slovakia, Nexi as acquirer",
+     "url": "https://softpay.io/softpay-and-dotykacka-collaborate-to-introduce-tap-to-phone-payment-solution-in-czech-republic-and-slovakia-utilizing-nexi-as-acquirer/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Novopayment, s.r.o.",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "novopayment",
+    "novopayment, s.r.o.",
+    "novopayment.sk"
+   ],
+   "countries": [
+    "SK"
+   ],
+   "products": [
+    "pos_acquiring",
+    "self_service"
+   ],
+   "latest": "Novopayment offers SK merchants PAX A920Pro/A80 terminals with no rental cost, and fees from 0.49%. It also offers a SoftPOS app, online payments and self-service payment solutions. It acts as a local card-acceptance reseller or ISO working with acquiring providers, reported as Worldline in Slovakia, rather than as a direct acquirer.",
+   "sources": [
+    {
+     "title": "POS Terminal — Novopayment",
+     "url": "https://novopayment.sk/sk/pos-terminal/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "FiskalPRO (A3 Soft s.r.o.)",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "a3 soft",
+    "fiskalpro",
+    "fiskalpro (a3 soft s.r.o.)"
+   ],
+   "countries": [
+    "SK"
+   ],
+   "products": [
+    "pos_acquiring",
+    "self_service"
+   ],
+   "latest": "FiskalPRO is a brand of A3 Soft, founded in 2004 in Púchov. It sells combined eKasa fiscal cash register and payment-terminal devices, with dual-SIM connectivity and a transaction portal. It also has a self-service kiosk and pickup-box line.",
+   "sources": [
+    {
+     "title": "Platobný terminál — komplexné mobilné riešenie — FiskalPRO",
+     "url": "https://fiskalpro.sk/ekasa-produkty/platobny-terminal/"
+    },
+    {
+     "title": "Samoobslužný kiosk a výdajné boxy — FiskalPRO",
+     "url": "https://fiskalpro.sk/kiosky/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Comgate",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "local-peer",
+   "detect": [
+    "comgate",
+    "comgate a.s.",
+    "comgate payments",
+    "comgate payments as"
+   ],
+   "countries": [
+    "CZ",
+    "HU",
+    "RO",
+    "SK"
+   ],
+   "products": [
+    "payments_instant",
+    "pos_acquiring"
+   ],
+   "latest": "As of January 2026 Comgate serves 21,000+ merchants processing more than CZK 53bn a year. It works under a single CNB European Payment Institution licence across CZ, SK, PL, HU and RO. It is PCI DSS Level 1 certified and has ~80 staff.",
+   "sources": [
+    {
+     "title": "Comgate - Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Comgate"
+    },
+    {
+     "title": "Comgate in-store payments (terminals)",
+     "url": "https://www.comgate.eu/in-store-payments"
+    },
+    {
+     "title": "Comgate payment gateway and terminals",
+     "url": "https://www.comgate.eu/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Monet+",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "local-peer",
+   "detect": [
+    "monet plus",
+    "monet+",
+    "monet+, a.s."
+   ],
+   "countries": [
+    "CZ"
+   ],
+   "products": [
+    "core_digital",
+    "digital_onboarding",
+    "pos_acquiring"
+   ],
+   "latest": "Monet+ reports that it now earns ~1/3 of revenue abroad, compared with purely CZ/SK business a few years ago. Its software handles ~50% of all Czech card payments, or about 1.5bn a year. It provides authentication for Kooperativa and payment processing for MOL fuel stations.",
+   "sources": [
+    {
+     "title": "Na moravske vsi vyrostl pulmiliardovy byznys, bezi pres nej polovina plateb kartou - Aktualne.cz",
+     "url": "https://zpravy.aktualne.cz/ekonomika/monet/r~255407a2825511efbf960cc47ab5f122/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Trask Solutions",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "local-peer",
+   "detect": [
+    "thetrask",
+    "trask",
+    "trask solutions",
+    "trask solutions a.s."
+   ],
+   "countries": [
+    "CZ"
+   ],
+   "products": [
+    "core_digital",
+    "digital_onboarding",
+    "managed_services"
+   ],
+   "latest": "Trask Solutions presents itself as an A-to-Z Bank iD integrator. It uses its own products Trask ZenID (eKYC) and Trask uSign (e-signature), plus the Data-In Open Banking connector. These support onboarding, loan origination and multibanking. Revenue has exceeded CZK 1bn for several years in a row.",
+   "sources": [
+    {
+     "title": "Financial Services | Trask",
+     "url": "https://www.thetrask.com/en/financial-services"
+    },
+    {
+     "title": "TRASK SOLUTIONS a.s. - ITPOINT.CZ",
+     "url": "https://www.itpoint.cz/trask-solutions/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Bankovni identita (Bank iD)",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "local-peer",
+   "detect": [
+    "bank id",
+    "bankid.cz",
+    "bankovni identita (bank id)",
+    "bankovni identita a.s.",
+    "czech bankid"
+   ],
+   "countries": [
+    "CZ"
+   ],
+   "products": [
+    "compliance_resilience",
+    "digital_onboarding"
+   ],
+   "latest": "By August 2025 Bank iD reached ~5 million users. It is owned by a consortium of 9 banks. It provides free login, identity verification, KYC-data transfer and qualified e-signature by reusing online-banking credentials. It is live at state services and 500+ private companies.",
+   "sources": [
+    {
+     "title": "Digitalni overeni zakazniku | BankiD.cz",
+     "url": "https://bankid.cz/firmy/"
+    },
+    {
+     "title": "Bank iD = vase digitalni obcanka",
+     "url": "https://bankid.cz/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "BANIT",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "banit",
+    "banit (csob)",
+    "banit s.r.o."
+   ],
+   "countries": [
+    "CZ"
+   ],
+   "products": [
+    "managed_services",
+    "pos_acquiring",
+    "self_service"
+   ],
+   "latest": "BANIT offers ATM rental and operations, POS terminal deployment and service, card terminals at Czech Post locations, and self-service payment kiosks. It pitches ATM-infrastructure outsourcing, covering installation, monitoring and service, to merchants and the CSOB group.",
+   "sources": [
+    {
+     "title": "BANIT - terminaly, bankomaty, platebni karty (CSOB)",
+     "url": "https://banit.csob.cz/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Innovatrics",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "regional",
+   "detect": [
+    "digital onboarding toolkit",
+    "innovatrics",
+    "innovatrics dot"
+   ],
+   "countries": [
+    "CZ",
+    "SK"
+   ],
+   "products": [
+    "digital_onboarding",
+    "fraud_monitoring"
+   ],
+   "latest": "Air Bank automated remote identity verification using Innovatrics DOT, with a selfie and ID upload in the My Air app. Tatra banka and CSOB are also confirmed as DOT users for remote identity verification across Central Europe.",
+   "sources": [
+    {
+     "title": "Air Bank Automates Identity Verification with Innovatrics DOT",
+     "url": "https://www.innovatrics.com/news/air-bank-automates-identity-verification-process-with-digital-onboarding-toolkit-from-innovatrics/"
+    },
+    {
+     "title": "Czech Neo-bank Adopts Innovatrics' Biometric Onboarding Solution",
+     "url": "https://findbiometrics.com/czech-neo-bank-adopts-innovatrics-biometric-onboarding-solution-510042/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Resistant AI",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "resistant ai",
+    "resistant documents",
+    "resistant transactions",
+    "resistant.ai"
+   ],
+   "countries": [
+    "CZ"
+   ],
+   "products": [
+    "compliance_resilience",
+    "fraud_monitoring"
+   ],
+   "latest": "On October 13, 2025 Resistant AI raised $25M, or ~EUR 21m, in a Series B led by DTCP, with Experian, GV and Notion Capital. The money will expand document-fraud detection, transaction monitoring and threat intelligence. It has 100+ staff across Prague, London and New York. Its annual recurring revenue (ARR) is up ~10x since the Series A.",
+   "sources": [
+    {
+     "title": "Resistant AI raises $25M - Vestbee",
+     "url": "https://www.vestbee.com/insights/articles/resistant-ai-raises-25-m"
+    },
+    {
+     "title": "Resistant AI, out of Czechia, tackles fincrime - EU-Startups",
+     "url": "https://www.eu-startups.com/2025/10/resistant-ai-out-of-czechia-tackles-fincrime-and-fraud-prevention-with-new-e21-million/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "UNICODE SYSTEMS",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "cardmanager",
+    "euroshop",
+    "unicode systems",
+    "unicode systems s.r.o."
+   ],
+   "countries": [
+    "CZ",
+    "HU",
+    "RO",
+    "SI",
+    "SK"
+   ],
+   "products": [
+    "pos_acquiring",
+    "self_service"
+   ],
+   "latest": "The company site confirms ~4,000 filling stations running its systems across 11 countries. It offers EuroShop3 POS/BOS plus OPT CardManager unattended terminals, with 1,200+ freestanding installs since 2008. It operates across CZ, SK, Austria, Slovenia, Romania, Hungary and Poland.",
+   "sources": [
+    {
+     "title": "O nas - UNICODE SYSTEMS",
+     "url": "https://www.unicodesys.cz/o-nas/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Profinit",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "profinit",
+    "profinit eu",
+    "profinit s.r.o."
+   ],
+   "countries": [
+    "CZ"
+   ],
+   "products": [
+    "core_digital",
+    "managed_services"
+   ],
+   "latest": "Profinit is one of the larger Czech software providers serving banking and finance, which accounts for more than 60% of its revenue. It has worked with Komercni banka continuously since 2005 on business intelligence and data warehousing (BI/DWH) and on internet and mobile banking development. It won a Gartner BI Award EMEA for the KB solution.",
+   "sources": [
+    {
+     "title": "We are a Prague-based Leading Software Company - Profinit",
+     "url": "https://profinit.eu/company-profile/"
+    },
+    {
+     "title": "Case studies & Use cases | Profinit",
+     "url": "https://profinit.eu/en/case-studies/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Dotykacka / Dotypay",
+   "role": "competitor",
+   "threat": "Low",
+   "tier": "local-peer",
+   "detect": [
+    "dotykacka",
+    "dotykacka / dotypay",
+    "dotykacka cr s.r.o.",
+    "dotypay"
+   ],
+   "countries": [
+    "CZ",
+    "SK"
+   ],
+   "products": [
+    "pos_acquiring",
+    "self_service"
+   ],
+   "latest": "Dotykacka / Dotypay is a cash-register-led POS group (Dotykacka/Dotypos). Its Dotypay device bundles a touchscreen POS app with a built-in payment terminal. In CZ/SK it also offers tap-to-phone (SoftPOS) through a Softpay partnership, with Nexi Central Europe as acquirer.",
+   "sources": [
+    {
+     "title": "Platebni terminal Dotypay na 6 mesicu zdarma! | Dotykacka",
+     "url": "https://dotykacka.cz/platebni-terminal-dotypay"
+    },
+    {
+     "title": "Platebni terminal s pokladnim systemem - Dotypay",
+     "url": "https://dotypay.com/platebni-terminal-s-pokladnim-systemem/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "B-Payment Zrt. (Borgun)",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "regional",
+   "detect": [
+    "b-payment",
+    "b-payment zrt. (borgun)",
+    "borgun hungary",
+    "teya"
+   ],
+   "countries": [
+    "HU"
+   ],
+   "products": [
+    "managed_services",
+    "payments_instant",
+    "pos_acquiring"
+   ],
+   "latest": "B-Payment Zrt. now operates as Teya/Salt Hungary, the Hungarian acquiring and ISO arm of the pan-European Teya group. The group was formerly SaltPay/Borgun and rebranded in 2023. It serves ~10,000 HU merchants at ~6M transactions a month, with card-present, online and B-Online merchant-portal acceptance.",
+   "sources": [
+    {
+     "title": "B-Payment - Rolunk (About us)",
+     "url": "https://b-payment.com/hu/rolunk/"
+    },
+    {
+     "title": "Hungarian PSP comparison listing B-Payment/Borgun",
+     "url": "https://bankkartyas-fizetes.hu/szolgaltatok"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Novopayment Kft.",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "local-peer",
+   "detect": [
+    "novopay",
+    "novopayment hungary",
+    "novopayment kft."
+   ],
+   "countries": [
+    "HU"
+   ],
+   "products": [
+    "payments_instant",
+    "pos_acquiring",
+    "self_service"
+   ],
+   "latest": "Novopayment Kft. sells bank-independent POS, SoftPOS smartphone acceptance, and self-service and unattended payment terminals for hospitality, parking and fuel. It offers settlement within 24h and SZEP-card acceptance.",
+   "sources": [
+    {
+     "title": "Novopayment - Bankfuggetlen POS terminal (SoftPOS, self-service)",
+     "url": "https://novopayment.hu/hu/bankfuggetlen-pos-terminal/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "OTP Mobil Kft. (SimplePay)",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "regional",
+   "detect": [
+    "otp mobil",
+    "otp mobil kft. (simplepay)",
+    "qvik via simplepay",
+    "simplepay"
+   ],
+   "countries": [
+    "HU"
+   ],
+   "products": [
+    "core_digital",
+    "payments_instant",
+    "pos_acquiring"
+   ],
+   "latest": "OTP Mobil Kft. is OTP Group's payments arm. It provides ~80% of Hungary's online card acceptance via SimplePay, which has 30,000+ webshops, and it offers SoftPOS phone acceptance. It is the pioneer rollout partner for MNB/GIRO qvik instant account-to-account (A2A) payments, live since Sept 2024 across QR, deeplink and NFC. qvik for physical POS is in progress.",
+   "sources": [
+    {
+     "title": "SimplePay: qvik launch, OTP Mobil pioneer role",
+     "url": "https://simplepay.hu/2024/07/30/itt-a-qvik-az-otp-mobil-uttoro-szerepet-vallal-az-uj-azonnali-fizetesi-megoldasok-bevezeteseben/"
+    },
+    {
+     "title": "SimplePay - qvik product page",
+     "url": "https://simplepay.hu/qvik/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Barion Payment Zrt.",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "regional",
+   "detect": [
+    "barion",
+    "barion + psc cee",
+    "barion payment zrt."
+   ],
+   "countries": [
+    "HU"
+   ],
+   "products": [
+    "core_digital",
+    "payments_instant",
+    "pos_acquiring",
+    "self_service"
+   ],
+   "latest": "Barion Payment Zrt. acquired PSC CEE in October 2025 to add in-store acceptance to its online base. Together, Barion and PSC serve 20,000+ merchants across Central and Eastern Europe.",
+   "sources": [
+    {
+     "title": "Barion Payment Zrt. company profile and PSC CEE acquisition (Oct 2025)",
+     "url": "https://thebanks.eu/emis/barion-payment-355005"
+    },
+    {
+     "title": "Hungarian PSP comparison listing Barion",
+     "url": "https://bankkartyas-fizetes.hu/szolgaltatok"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "TRANSGATE Network Kft.",
+   "role": "competitor",
+   "threat": "Low",
+   "tier": "local-peer",
+   "detect": [
+    "transgate",
+    "transgate network kft."
+   ],
+   "countries": [
+    "HU"
+   ],
+   "products": [
+    "payments_instant",
+    "pos_acquiring"
+   ],
+   "latest": "TRANSGATE Network Kft. runs a Hungarian PSP comparison and onboarding portal (bankkartyas-fizetes.hu). The portal channels SME merchants to card-acceptance and POS providers.",
+   "sources": [
+    {
+     "title": "TRANSGATE PSP comparison/onboarding site",
+     "url": "https://bankkartyas-fizetes.hu/szolgaltatok"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "ID&Trust Kft. (GoodID)",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "local-peer",
+   "detect": [
+    "goodid",
+    "id and trust",
+    "id&trust",
+    "id&trust kft. (goodid)"
+   ],
+   "countries": [
+    "HU"
+   ],
+   "products": [
+    "compliance_resilience",
+    "core_digital",
+    "digital_onboarding"
+   ],
+   "latest": "ID&Trust Kft. promotes GoodID for bank and PSP digital customer identification. It uses an NFC scan of the e-ID chip and non-real-time eKYC. It is already used by fintechs such as Revolut, and it is targeting bank adoption.",
+   "sources": [
+    {
+     "title": "GoodID digital customer identification (ID&Trust, MD Tamas Szabo)",
+     "url": "https://goodid.net/hu/digitalis-ugyfel-azonositas/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "SEON Technologies",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "regional",
+   "detect": [
+    "seon",
+    "seon fraud fighters",
+    "seon technologies"
+   ],
+   "countries": [
+    "HU"
+   ],
+   "products": [
+    "compliance_resilience",
+    "fraud_monitoring"
+   ],
+   "latest": "SEON Technologies closed a ~USD 80M Series C in Sept 2025, led by Sixth Street Growth, taking total funding to ~USD 187M. The money will scale its AI fraud and AML compliance 'command center'. It serves 5,000+ organisations including Revolut, Wise and HYPE.",
+   "sources": [
+    {
+     "title": "Hungarian fraud fintech SEON record Series B",
+     "url": "https://itkey.media/hungarian-fraud-fighting-fintech-seon-nabs-a-record-breaking-series-b/"
+    },
+    {
+     "title": "SEON transaction monitoring / AML platform",
+     "url": "https://seon.io/resources/transaction-monitoring-in-banking/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Criterion Keszpenzlogisztikai Kft.",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "local-peer",
+   "detect": [
+    "criterion",
+    "criterion csoport",
+    "criterion keszpenzlogisztikai kft.",
+    "g4s hungary successor"
+   ],
+   "countries": [
+    "HU"
+   ],
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "physical_security"
+   ],
+   "latest": "Criterion Keszpenzlogisztikai Kft. is the market leader in Hungarian cash logistics, and has been the G4S successor since 2018. It offers end-to-end ATM operation plus cash-in-transit and cash processing. Revenue grew from HUF 17bn in 2022 to HUF 21.6bn (~EUR 55M) in 2024.",
+   "sources": [
+    {
+     "title": "Criterion cash-logistics & ATM operation services",
+     "url": "https://www.criterion.hu/keszpenzlogisztika/keszpenzlogisztika-szolgaltatasok/"
+    },
+    {
+     "title": "Criterion company profile (G4S successor, market leader)",
+     "url": "https://www.cvonline.hu/en/company/criterion-keszpenzlogisztikai-kft"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "MPT Security Zrt. / Civil Erteklogisztika Zrt.",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "local-peer",
+   "detect": [
+    "civil csoport",
+    "civil erteklogisztika",
+    "mpt security",
+    "mpt security zrt. / civil erteklogisztika zrt."
+   ],
+   "countries": [
+    "HU"
+   ],
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "physical_security"
+   ],
+   "latest": "The company was rebranded in Feb 2023 as Civil Erteklogisztika Zrt. (CIVIL group). It is the successor to MPT Security / JNT Security. It is MNB-licensed for nationwide cash processing and cash transport, including ATM replenishment (refilling).",
+   "sources": [
+    {
+     "title": "MPT Security / Civil Erteklogisztika profile (K-Monitor)",
+     "url": "https://adatbazis.k-monitor.hu/adatbazis/cimkek/mpt-security-zrt"
+    },
+    {
+     "title": "MPT Security about page",
+     "url": "https://mptsecurity.hu/about"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "TrezEx Hungaria Zrt.",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "brink's hungary successor",
+    "trezex",
+    "trezex hungaria zrt."
+   ],
+   "countries": [
+    "HU"
+   ],
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "physical_security"
+   ],
+   "latest": "TrezEx Hungaria Zrt. has been the successor to Brink's Hungary since 2013. It has five branches and provides nationwide cash-in-transit (CIT) services, including ATM filling and emptying and night-safe services. It has 101-500 employees.",
+   "sources": [
+    {
+     "title": "TrezEx - why TrezEx / services",
+     "url": "http://trezex.hu/miert-a-trezex/"
+    },
+    {
+     "title": "TrezEx company profile (Brink's successor, smallest of three CIT firms)",
+     "url": "https://www.cbinsights.com/company/trezex"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Digitalis Banki Rendszerek Kft. (DBR)",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "local-peer",
+   "detect": [
+    "dbr",
+    "digitalis banki rendszerek",
+    "digitalis banki rendszerek kft. (dbr)",
+    "minibank automata"
+   ],
+   "countries": [
+    "HU"
+   ],
+   "products": [
+    "core_digital",
+    "fraud_monitoring",
+    "pos_acquiring",
+    "self_service"
+   ],
+   "latest": "Digitalis Banki Rendszerek Kft. (DBR) is an active Hungarian banking-IT supplier. It provides VISA/Mastercard card authorisation and switching, which means routing card transactions, as well as Minibank self-service terminals and CheckSign fraud prevention. Its references include OTP, Raiffeisen, CIB, Citi Hungary, MBH and BNP Paribas.",
+   "sources": [
+    {
+     "title": "DBR Kft - banking IT products and bank references",
+     "url": "https://dbr.hu/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Dorsum Zrt.",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "regional",
+   "detect": [
+    "dorsum",
+    "dorsum investment software",
+    "dorsum zrt."
+   ],
+   "countries": [
+    "HU"
+   ],
+   "products": [
+    "core_digital",
+    "digital_onboarding"
+   ],
+   "latest": "Dorsum Zrt. has rolled out its Wealth Management Platform in five CEE countries for Raiffeisen International subsidiaries. It has ~250 staff and 80+ bank and wealth clients across the region (OTP, Erste, Citi, KBC, Intesa, BNP).",
+   "sources": [
+    {
+     "title": "Dorsum about us (CEE wealthtech, 250 staff, 80+ clients)",
+     "url": "https://www.dorsum.eu/about-us/"
+    },
+    {
+     "title": "Dorsum Wealth Management Platform for Raiffeisen CEE",
+     "url": "https://www.dorsum.eu/press-releases/dorsum-implements-wealth-management-platform-for-raiffeisen-bank-subsidiaries-in-five-cee-countries/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Integra Informatikai Zrt.",
+   "role": "competitor",
+   "threat": "Low",
+   "tier": "local-peer",
+   "detect": [
+    "integra",
+    "integra informatika",
+    "integra informatikai zrt.",
+    "integra zrt"
+   ],
+   "countries": [
+    "HU"
+   ],
+   "products": [
+    "core_digital",
+    "managed_services"
+   ],
+   "latest": "Integra Informatikai Zrt. is a long-standing Hungarian banking-software firm and integrator. It builds and supports custom systems for domestic banks, including ATM and account-management software. It is a small company, with net revenue of ~175.5M HUF in 2024.",
+   "sources": [
+    {
+     "title": "Integra Zrt - eBanking / banking software",
+     "url": "https://www.integra.hu/pr/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "KEBA AG (Banking Automation)",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "regional",
+   "detect": [
+    "keba",
+    "keba ag (banking automation)",
+    "keba banking & logistics",
+    "keplus",
+    "ketop"
+   ],
+   "countries": [
+    "CZ",
+    "RO"
+   ],
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "physical_security",
+    "self_service"
+   ],
+   "latest": "KEBA AG is the exclusive self-service supplier to Raiffeisen Austria (>400 banks). It has 100+ evo recyclers installed at Erste/Sparkasse; these are ATMs that re-use deposited notes. Subsidiaries in Romania, Czech Republic, Italy and Germany extend its reach into Printec's CEE/SEE footprint.",
+   "sources": [
+    {
+     "title": "Raiffeisen Austria: KEBA to become exclusive supplier for account service terminals and cash recyclers",
+     "url": "https://www.keba.com/en/banking-automation/news/current-issues/KEBA_Raiffeisen-exclusive-supplier"
+    },
+    {
+     "title": "Cash recycler references: KEBA cash recycling ATMs",
+     "url": "https://www.keba.com/en/banking-automation/why-keba/references/"
+    },
+    {
+     "title": "ERSTE Bank self-service branch with KePlus FT10",
+     "url": "https://www.keba.com/en/news/banking-automation/comfortable-cash-deposits"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "hobex AG",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "local-peer",
+   "detect": [
+    "hobex",
+    "hobex ag",
+    "hobex payment systems",
+    "hobex posit",
+    "hobex service it"
+   ],
+   "countries": [
+    "SI"
+   ],
+   "products": [
+    "managed_services",
+    "payments_instant",
+    "pos_acquiring"
+   ],
+   "latest": "hobex AG serves >38,500 POS merchants with >60,000 terminals, plus e-commerce, across AT/DE/IT/SI. It has launched Tap to Pay on iPhone through its POSit soft-POS app, which lets a phone be used as a card terminal.",
+   "sources": [
+    {
+     "title": "hobex Payment Systems - We are Payment",
+     "url": "https://www.hobex.at/en/"
+    },
+    {
+     "title": "RVS-Tochter hobex stärkt Basis für die Zukunft (Raiffeisen press)",
+     "url": "https://www.raiffeisen.at/rvs/de/meine-bank/presse/pressemeldungen/2026/rvs-tochter-hobex--oesterreichs-fuehrender-oesterreichischer-pay.html"
+    },
+    {
+     "title": "Hobex – Wikipedia",
+     "url": "https://de.wikipedia.org/wiki/Hobex"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Ukrainian Processing Center (UPC)",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "local-peer",
+   "detect": [
+    "ukrainian processing center (upc)",
+    "upc",
+    "прат упц",
+    "український процесінговий центр"
+   ],
+   "countries": [
+    "UA"
+   ],
+   "products": [
+    "core_digital",
+    "fraud_monitoring",
+    "managed_services",
+    "pos_acquiring",
+    "self_service"
+   ],
+   "latest": "In 2025 UPC processed 13.5M cards and provided acquiring for ~85,800 POS terminals; acquiring means card acceptance for merchants. It runs the unified ATMosphere ATM network. Based on 2024 results, the National Bank of Ukraine named it a significant technology operator of payment services. It has started work as an Open Banking provider and launched the OneLinkUA central router.",
+   "sources": [
+    {
+     "title": "Ukrainian Processing Center - Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ukrainian_Processing_Center"
+    },
+    {
+     "title": "Ukrainian Processing Center Deploys NCR's Authentic Software - NCR Atleos",
+     "url": "https://www.ncratleos.com/news/ukrainian-processing-center-deploys-ncrs-authentic-software-in-response-to-changing-payment-requirements"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "UkrCard (UKRKART)",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "local-peer",
+   "detect": [
+    "ukrainian payment space / ukrainskyi platizhnyi prostir",
+    "ukrcard (ukrkart)",
+    "ukrcard processing center",
+    "укркарт"
+   ],
+   "countries": [
+    "UA"
+   ],
+   "products": [
+    "core_digital",
+    "managed_services",
+    "pos_acquiring",
+    "self_service"
+   ],
+   "latest": "UkrCard is an independent processing centre that works within Ukraine's PROSTIR national payment system. It still offers banks card processing, POS/ATM acquiring, settlement and clearing, and integration APIs (UAPI). Its site is active with a 2026 copyright.",
+   "sources": [
+    {
+     "title": "UKRKART official site - for banks",
+     "url": "https://www.ukrcard.com.ua/12-dlya-bankiv"
+    },
+    {
+     "title": "УкрКарт - Wikipedia (UA)",
+     "url": "https://uk.wikipedia.org/wiki/%D0%A3%D0%BA%D1%80%D0%9A%D0%B0%D1%80%D1%82"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "ProCard",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "procard",
+    "procard processing center",
+    "прокард"
+   ],
+   "countries": [
+    "UA"
+   ],
+   "products": [
+    "core_digital",
+    "managed_services",
+    "pos_acquiring",
+    "self_service"
+   ],
+   "latest": "ProCard is an active processing centre. It provides card issuing and acquiring/terminal processing for Ukrainian banks and fintechs. It is a registered Visa/Mastercard/UnionPay third-party processor.",
+   "sources": [
+    {
+     "title": "Why Procard? - Procard Processing Center",
+     "url": "https://procard.ua/index.php?option=com_content&view=article&layout=blog&id=32&catid=8&Itemid=101&lang=en"
+    },
+    {
+     "title": "About Concord bank",
+     "url": "https://concordbank.com.ua/en/page/about"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "amofintech",
+   "role": "competitor",
+   "threat": "Low",
+   "tier": "local-peer",
+   "detect": [
+    "amo fintech",
+    "amofintech",
+    "амо фінтех"
+   ],
+   "countries": [
+    "UA"
+   ],
+   "products": [
+    "core_digital",
+    "fraud_monitoring",
+    "pos_acquiring"
+   ],
+   "latest": "amofintech is an NBU-registered technology operator of payment services (since 2024) and a Visa-certified processing centre. From Kyiv it offers card issuing and processing, technical support and fraud monitoring. There is no verified Tietoevry Banking partnership; that partnership belongs to UPC.",
+   "sources": [
+    {
+     "title": "Процесінг від українських розробників - Minfin",
+     "url": "https://specials.minfin.com.ua/en/procesinh-vid-ukrayinskyx-rozrobnykiv"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "monobank (Universal Bank)",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "mono pos",
+    "monobank (universal bank)",
+    "monobank ukraine",
+    "universal bank"
+   ],
+   "countries": [
+    "UA"
+   ],
+   "products": [
+    "core_digital",
+    "payments_instant",
+    "pos_acquiring",
+    "self_service"
+   ],
+   "latest": "monobank is rolling out its own network of physical payment terminals for card top-ups, with ~1,200+ live and growing. At the same time it is scaling mono POS acquiring and Tap to Pay. It has ~9M+ clients under Universal Bank's licence.",
+   "sources": [
+    {
+     "title": "monobank launches its own network of payment terminals - liga.net",
+     "url": "https://finance.liga.net/en/bank/novosti/monobank-started-to-deploy-its-own-network-of-payment-terminals"
+    },
+    {
+     "title": "monobank's payment terminals now available - The Paypers",
+     "url": "https://thepaypers.com/payments/news/monobank-rolls-out-network-of-payment-terminals"
+    },
+    {
+     "title": "Mobile POS from mono",
+     "url": "https://monobank.ua/en/terminal"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "PayForce",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "local-peer",
+   "detect": [
+    "payforce",
+    "payforce fintech",
+    "пейфорс"
+   ],
+   "countries": [
+    "UA"
+   ],
+   "products": [
+    "compliance_resilience",
+    "core_digital",
+    "digital_onboarding",
+    "fraud_monitoring"
+   ],
+   "latest": "PayForce is a remote identification and onboarding platform (Diia/BankID, Liveness Detection, FaceMatch) used by several Ukrainian banks. It has extended Remote-ID to individual entrepreneurs, alongside a multi-module online-banking platform.",
+   "sources": [
+    {
+     "title": "Remote ID module and a single interface for servicing individuals - Why PayForce? (AIN)",
+     "url": "https://special.ain.ua/en/cycle-of-online-banking-development/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "BS/2 (Penki Kontinentai Group)",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "regional",
+   "detect": [
+    "atmeye.iq",
+    "bs/2",
+    "bs/2 (penki kontinentai group)",
+    "cash management.iq",
+    "penkiu kontinentu bankines technologijos"
+   ],
+   "countries": [
+    "UA"
+   ],
+   "products": [
+    "atm_recycling",
+    "fraud_monitoring",
+    "managed_services",
+    "physical_security",
+    "self_service"
+   ],
+   "latest": "BS/2 supplies and services Diebold Nixdorf self-service hardware, and sells ATMeye.iQ and Cash Management.iQ software. It supports 80,000+ self-service devices and 250,000+ software installs in 80+ countries.",
+   "sources": [
+    {
+     "title": "BS/2 - Banking and retail technology company",
+     "url": "https://bs2.lt/"
+    },
+    {
+     "title": "About BS/2",
+     "url": "https://bs2.lt/about/"
+    },
+    {
+     "title": "ATM Monitoring and Management System - ATMeye.iQ",
+     "url": "https://atmeye.com/atm-monitoring/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "ISSP (Information Systems Security Partners)",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "d8 stronghold",
+    "issp",
+    "issp (information systems security partners)",
+    "issp antifraud"
+   ],
+   "countries": [
+    "UA"
+   ],
+   "products": [
+    "compliance_resilience",
+    "fraud_monitoring"
+   ],
+   "latest": "ISSP sells D8 Stronghold, a real-time behavioural anti-fraud tool, and OpenText ArcSight-based transaction monitoring to banks. It claims 90%+ detection, with scoring in under 20ms.",
+   "sources": [
+    {
+     "title": "Антифрод - ISSP",
+     "url": "https://ua.issp.com/antifraud"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "CIT Security",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "cash in transit",
+    "cit security",
+    "tov cit security",
+    "сіт сек'юриті"
+   ],
+   "countries": [
+    "UA"
+   ],
+   "products": [
+    "managed_services",
+    "physical_security"
+   ],
+   "latest": "CIT Security holds NBU encashment License #1 (Dec 2016); encashment means cash collection. It also received approval for cash processing and storage in 2019. It runs 112 armoured vehicles in 11 Ukrainian cities, serving bank cash collection.",
+   "sources": [
+    {
+     "title": "Про компанію - Cash in Transit (CIT)",
+     "url": "https://cit.net.ua/about/"
+    },
+    {
+     "title": "Інкасація банків - Cash in Transit (CIT)",
+     "url": "https://cit.net.ua/services/inkasacziya-bankiv/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Symmetric Group (OpenPay)",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "local-peer",
+   "detect": [
+    "openpay",
+    "openpay albania",
+    "symmetric group (openpay)",
+    "symmetric group sh.p.k."
+   ],
+   "countries": [
+    "AL"
+   ],
+   "products": [
+    "core_digital",
+    "payments_instant",
+    "pos_acquiring"
+   ],
+   "latest": "OpenPay, a spin-off of Symmetric Group, runs a QR-code and merchant mobile payment platform that meets PSD2/Open Banking rules. It is live with Raiffeisen Bank Albania and has expanded into Kosovo. It is promoted as the first country-wide scheme for consumers to pay by QR code at the till.",
+   "sources": [
+    {
+     "title": "OpenPay: Changing the Albanian Payment Landscape - Swiss Entrepreneurship Program",
+     "url": "https://swissep.org/our-impact/success-stories/openly-changing-the-albanian-payment-landscape"
+    },
+    {
+     "title": "OpenPay Albania (official site)",
+     "url": "https://openpay.al/site/sq/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Rubicon (Pago)",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "pago",
+    "pago.al",
+    "rubicon (pago)",
+    "rubicon sh.a."
+   ],
+   "countries": [
+    "AL"
+   ],
+   "products": [
+    "core_digital",
+    "payments_instant",
+    "pos_acquiring"
+   ],
+   "latest": "Pago is run by Rubicon Sh.a. and licensed by the Bank of Albania as an Electronic Money Institution. It offers instant QR-code payments across a network of partner merchants. It also offers free account-to-account transfers and bill payment.",
+   "sources": [
+    {
+     "title": "Albania's Fintech and Wider Digital Landscape in 2026 - The Fintech Times",
+     "url": "https://thefintechtimes.com/albanias-fintech-and-wider-digital-landscape-in-2026/"
+    },
+    {
+     "title": "Help - Pago",
+     "url": "https://pago.al/en/help/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Paysera Albania",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "paysera",
+    "paysera albania",
+    "paysera albania sh.p.k."
+   ],
+   "countries": [
+    "AL"
+   ],
+   "products": [
+    "core_digital",
+    "payments_instant",
+    "pos_acquiring"
+   ],
+   "latest": "Paysera Albania holds an EMI (e-money) licence from the Bank of Albania, granted in 2021. It offers IBAN accounts, payment cards, acquiring, a payment gateway for online shops and 1-EUR SEPA business transfers. It was named 'Fintech of the Year' in Albania.",
+   "sources": [
+    {
+     "title": "PAYSERA ALBANIA SH.P.K. - Company Profile (thebanks.eu)",
+     "url": "https://thebanks.eu/emis/paysera-albania-355512"
+    },
+    {
+     "title": "Paysera Albania issued electronic money institution licence",
+     "url": "https://www.paysera.com/v2/en/blog/paysera-albania-emi"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "IuteCredit Albania (Velox Pay / MyIute)",
+   "role": "competitor",
+   "threat": "Low",
+   "tier": "local-peer",
+   "detect": [
+    "iute",
+    "iutecredit",
+    "iutecredit albania (velox pay / myiute)",
+    "myiute",
+    "velox pay sh.p.k."
+   ],
+   "countries": [
+    "AL"
+   ],
+   "products": [
+    "core_digital",
+    "payments_instant",
+    "pos_acquiring"
+   ],
+   "latest": "IuteCredit's Albanian subsidiary Velox Pay has received an e-money licence from the Bank of Albania. The MyIute app now supports IBAN transfers, real-time person-to-person (P2P) payments, ATM cash withdrawal, and QR and proximity payments in stores and online.",
+   "sources": [
+    {
+     "title": "IuteCredit expands service offering receiving e-money license in Albania - Iute Group",
+     "url": "https://iute.com/iutecredit-expands-service-offering-receiving-e-money-license-in-albania/"
+    },
+    {
+     "title": "iute Albania (official site)",
+     "url": "https://iute.al/en/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "InfoSoft Systems",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "infosoft group",
+    "infosoft systems",
+    "infosoft systems sh.p.k"
+   ],
+   "countries": [
+    "AL",
+    "MK",
+    "XK"
+   ],
+   "products": [
+    "core_digital",
+    "managed_services",
+    "self_service"
+   ],
+   "latest": "InfoSoft Systems remains one of Albania's largest IT system integrators, with 180+ staff and branches in Pristina and North Macedonia. It delivers end-to-end solution design, large-scale IT implementation and after-sales managed support for enterprise and financial-sector clients.",
+   "sources": [
+    {
+     "title": "About InfoSoft Systems",
+     "url": "https://infosoftsystems.al/about/"
+    },
+    {
+     "title": "InfoSoft Systems Sh.p.k. - AmCham Albania member profile",
+     "url": "https://amcham.com.al/member/infosoft-systems-sh-p-k/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "IBA Group / RPC (RaiPOS - tapXphone)",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "regional",
+   "detect": [
+    "iba group",
+    "iba group / rpc (raipos - tapxphone)",
+    "raiffeisen processing center",
+    "raipos",
+    "rpc",
+    "tapxphone"
+   ],
+   "countries": [
+    "AL",
+    "HR",
+    "HU",
+    "RO",
+    "RS",
+    "SK",
+    "UA",
+    "XK"
+   ],
+   "products": [
+    "payments_instant",
+    "pos_acquiring"
+   ],
+   "latest": "IBA Group and RPC launched RaiPOS, based on tapXphone, in Albania on 26 Dec 2023 for Raiffeisen Bank Albania. It lets micro-enterprises, retailers, delivery firms and street vendors take contactless card payments on a smartphone instead of a separate POS terminal.",
+   "sources": [
+    {
+     "title": "IBA Group and RPC Launch tapXphone in Albania - IBA Group",
+     "url": "https://ibagroupit.com/news/iba-group-and-rpc-launch-tapxphone-in-albania/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Posta Shqiptare",
+   "role": "competitor",
+   "threat": "Low",
+   "tier": "local-peer",
+   "detect": [
+    "albanian post",
+    "posta shqiptare",
+    "posta shqiptare sh.a."
+   ],
+   "countries": [
+    "AL"
+   ],
+   "products": [
+    "managed_services",
+    "payments_instant"
+   ],
+   "latest": "Posta Shqiptare is fully state-owned and has 500+ post offices. The Bank of Albania has authorised it as an e-money institution since July 2020. It offers e-money issuing, money remittance, utility-bill payments, pension distribution and bank cash-in/cash-out. It has the widest territorial coverage of any licensed financial institution in Albania.",
+   "sources": [
+    {
+     "title": "POSTA SHQIPTARE SH.A. - Company Profile (thebanks.eu)",
+     "url": "https://thebanks.eu/emis/posta-shqiptare-355510"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "BAMCARD",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "local-peer",
+   "detect": [
+    "bamcard",
+    "bamcard d.d. sarajevo",
+    "bh mreza bankomata",
+    "card guard",
+    "kviko"
+   ],
+   "countries": [
+    "BA"
+   ],
+   "products": [
+    "core_digital",
+    "fraud_monitoring",
+    "managed_services",
+    "payments_instant",
+    "pos_acquiring",
+    "self_service"
+   ],
+   "latest": "BAMCARD promotes itself as the only third-party processing and card-personalisation centre in BiH, with 20+ years in the market. It offers banks ATM management with real-time monitoring, fraud monitoring, 3D Secure and tokenisation. It also runs KVIKO, a cardless-withdrawal and instant mobile-payment service, and the Card Guard card-security app (bamcard.ba/banks, bamcard.ba/cardguard).",
+   "sources": [
+    {
+     "title": "Banks - Bamcard",
+     "url": "https://bamcard.ba/banks/"
+    },
+    {
+     "title": "Card Guard - Bamcard",
+     "url": "https://bamcard.ba/cardguard/"
+    },
+    {
+     "title": "Bamcard - home (portfolio: processing, instant payments/white label, POS, 3D Secure, payment gateway, tokenization)",
+     "url": "https://bamcard.ba/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Halcom",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "regional",
+   "detect": [
+    "hal e-bank",
+    "halcom",
+    "halcom ca",
+    "halcom d.d.",
+    "halcom one"
+   ],
+   "countries": [
+    "BA",
+    "RS",
+    "SI"
+   ],
+   "products": [
+    "compliance_resilience",
+    "core_digital",
+    "digital_onboarding"
+   ],
+   "latest": "Halcom sells Halcom One, a cloud service for qualified certificates and remote signing for banks (one.halcom.ba). It also sells Hal E-Bank for domestic and international payments. ASA Banka BiH publishes a Hal E-Bank domestic-payments user manual dated 2025, which shows live deployments at BiH banks.",
+   "sources": [
+    {
+     "title": "Halcom One (cloud qualified e-signature / e-identity for banks)",
+     "url": "https://one.halcom.ba/"
+    },
+    {
+     "title": "Halcom - elektronski potpis i BiH (registered with BiH supervision/accreditation office)",
+     "url": "https://ikfbih.ba/wp-content/uploads/2021/03/HALCOM_Elektronski-potpis-i-BIH279.pdf"
+    },
+    {
+     "title": "Hal E-Bank prirucnik (ASA Banka BiH, 2025)",
+     "url": "https://www.asabanka.ba/wp-content/uploads/2025/07/Hal-E-Bank-prirucnik-za-upotrebu-platni-promet-u-zemlji.pdf"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Securitas BH",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "securitas bh",
+    "securitas bh d.o.o. sarajevo",
+    "securitas bosna i hercegovina"
+   ],
+   "countries": [
+    "BA"
+   ],
+   "products": [
+    "managed_services",
+    "physical_security"
+   ],
+   "latest": "Securitas BH describes itself as the largest private security agency in BiH, with ~1,700 staff and 16 offices. It offers cash and valuables transport, technical protection and an alert-operations centre to financial-institution clients, including RBBH and EKI (securitas.ba).",
+   "sources": [
+    {
+     "title": "Securitas u BiH (services, scale, bank clients)",
+     "url": "https://www.securitas.ba/o-nama/securitas-u-bih/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "SOKO BH",
+   "role": "competitor",
+   "threat": "Low",
+   "tier": "local-peer",
+   "detect": [
+    "soko bh",
+    "soko bh d.o.o.",
+    "soko bh tuzla"
+   ],
+   "countries": [
+    "BA"
+   ],
+   "products": [
+    "managed_services",
+    "physical_security"
+   ],
+   "latest": "SOKO BH is confirmed via sokobh.ba/services. It is licensed to escort and secure valuable shipments in armoured vehicles, and runs 24/7 central technical-security monitoring. Its head office is in Tuzla (Bukinje) and it operates across BiH. It has 29+ years of experience and partner ties in Germany and Croatia.",
+   "sources": [
+    {
+     "title": "Services - Sokobh.ba",
+     "url": "https://sokobh.ba/services/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Quipu (Prishtina Card Personalisation & Processing Centre)",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "regional",
+   "detect": [
+    "procredit quipu",
+    "qpc",
+    "quipu (prishtina card personalisation & processing centre)",
+    "quipu gmbh",
+    "quipu prishtina",
+    "quipu processing centre"
+   ],
+   "countries": [
+    "XK"
+   ],
+   "products": [
+    "core_digital",
+    "managed_services",
+    "payments_instant",
+    "self_service"
+   ],
+   "latest": "Quipu is confirmed via the quipu.de Prishtina office page and The Payments Association. It was the first processing and personalisation centre in Kosovo to issue contactless cards. It services ~1,200 ATMs and ~6,000 POS terminals. ProCredit Holding owns 100%.",
+   "sources": [
+    {
+     "title": "Prishtina Office - Quipu",
+     "url": "https://www.quipu.de/offices/prishtina-office/"
+    },
+    {
+     "title": "Quipu becomes first processing and personalisation centre in Kosovo to issue contactless cards - The Payments Association",
+     "url": "https://thepaymentsassociation.org/article/quipu-becomes-first-processing-and-personalisation-centre-in-kosovo-to-issue-contactless-cards/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "TEB SHA (TEB Kosovo)",
+   "role": "competitor",
+   "threat": "Low",
+   "tier": "local-peer",
+   "detect": [
+    "teb bank kosovo",
+    "teb kosova",
+    "teb sh.a.",
+    "teb sha (teb kosovo)"
+   ],
+   "countries": [
+    "XK"
+   ],
+   "products": [
+    "pos_acquiring"
+   ],
+   "latest": "TEB SHA is confirmed via teb-kos.com card pages. It still promotes 'the largest network of merchants with POS terminals in Kosovo'. It runs the Starcard/Premium Starcard acquiring programme across its POS estate, with 0% instalments and loyalty rewards.",
+   "sources": [
+    {
+     "title": "Cards - TEB SHA",
+     "url": "https://teb-kos.com/en/card/"
+    },
+    {
+     "title": "TEB SHA - Home",
+     "url": "https://teb-kos.com/en/home/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "tapXphone (IBA Group) / RaiPOS",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "regional",
+   "detect": [
+    "iba group",
+    "raiffeisen softpos kosovo",
+    "raipos",
+    "tapxphone",
+    "tapxphone (iba group) / raipos"
+   ],
+   "countries": [
+    "BG",
+    "HR",
+    "RO",
+    "RS",
+    "SK",
+    "UA",
+    "XK"
+   ],
+   "products": [
+    "payments_instant",
+    "pos_acquiring"
+   ],
+   "latest": "This is confirmed via tapXphone.com and ibagroupit.com. RaiPOS (tapXphone) is live in Kosovo through Raiffeisen Bank Kosovo, the 7th tapXphone rollout in the RBI Group. Partner RPC reports >1M RaiPOS transactions in 2023 and 10,000+ terminals across 6 countries.",
+   "sources": [
+    {
+     "title": "TapXphone Introduced in Kosovo",
+     "url": "https://tapxphone.com/news/introducing-tapxphone-a-cutting-edge-payment-solution-in-kosovo/"
+    },
+    {
+     "title": "Kosovo's Payment Rails - Transfi (RaiPOS / tapXphone)",
+     "url": "https://www.transfi.com/blog/kosovos-payment-rails-how-they-work---bank-transfers-card-systems-mobile-wallet-adoption"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Paysera Kosova",
+   "role": "competitor",
+   "threat": "Low",
+   "tier": "regional",
+   "detect": [
+    "paysera",
+    "paysera kosova",
+    "paysera kosovo",
+    "paysera lt (kosovo branch)"
+   ],
+   "countries": [
+    "XK"
+   ],
+   "products": [
+    "digital_onboarding",
+    "payments_instant",
+    "pos_acquiring"
+   ],
+   "latest": "Paysera Kosova is confirmed as the first EMI (e-money institution) licensed by the CBK in Kosovo, in 2020. It offers cards, a free or cheap app with EU transfers, an online payment gateway and mobile wallets (Google/Samsung Pay). Customers can sign up remotely in the app.",
+   "sources": [
+    {
+     "title": "Payment processing in Kosovo - Paysera (Bank Link, bank list)",
+     "url": "https://www.paysera.com/v2/en/checkout/kosovo"
+    },
+    {
+     "title": "Paysera electronic payment network has arrived to Kosovo - 15min.lt",
+     "url": "https://www.15min.lt/en/article/tribune/paysera-electronic-payment-network-has-arrived-to-kosovo-transfer-prices-will-reduce-there-will-be-no-crediting-fees-1240-1340158"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Security Code (Security Code Sh.p.k.)",
+   "role": "competitor",
+   "threat": "Low",
+   "tier": "local-peer",
+   "detect": [
+    "security code (security code sh.p.k.)",
+    "security code kosovo",
+    "security code sh.p.k.",
+    "securitycode-ks"
+   ],
+   "countries": [
+    "XK"
+   ],
+   "products": [
+    "managed_services",
+    "physical_security"
+   ],
+   "latest": "Security Code is confirmed via securitycode-ks.com and seccode.org. Its Premium package combines secure transport of money and documents with 24/7 physical guarding, alarm and electronic monitoring, and CCTV and remote surveillance across Kosovo. The company was founded in 2008.",
+   "sources": [
+    {
+     "title": "Security Code - Homepage",
+     "url": "https://securitycode-ks.com"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Posta e Kosovës (Post of Kosovo)",
+   "role": "competitor",
+   "threat": "Low",
+   "tier": "local-peer",
+   "detect": [
+    "kosovo post",
+    "post of kosovo",
+    "posta e kosoves jsc",
+    "posta e kosovës (post of kosovo)"
+   ],
+   "countries": [
+    "XK"
+   ],
+   "products": [
+    "managed_services",
+    "payments_instant"
+   ],
+   "latest": "Posta e Kosovës is confirmed via postakosoves.com. It is a CBK-licensed non-banking financial institution. Through its post-office network it provides nationwide cash and bill-payment services. These include Treasury/UNIREF budget collections, Kos-Giro group payments, and utility, tuition and insurance payments.",
+   "sources": [
+    {
+     "title": "Payment services - Posta e Kosovës",
+     "url": "https://postakosoves.com/en/payment-services/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Infosoft Systems Kosovo",
+   "role": "competitor",
+   "threat": "Low",
+   "tier": "local-peer",
+   "detect": [
+    "infosoft systems",
+    "infosoft systems kosovo",
+    "infosoft systems sh.p.k.",
+    "infosoftsystems-ks"
+   ],
+   "countries": [
+    "XK"
+   ],
+   "products": [
+    "compliance_resilience",
+    "core_digital",
+    "managed_services"
+   ],
+   "latest": "Infosoft Systems Kosovo presents itself as a Kosovo ICT system integrator. It offers system integration, enterprise networking, cybersecurity and SLA managed services to the banking and financial sector, among others (infosoftsystems-ks.com).",
+   "sources": [
+    {
+     "title": "Home - Infosoft Systems Kosovo",
+     "url": "https://infosoftsystems-ks.com/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Fleka / Presto",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "fleka / presto",
+    "fleka doo",
+    "presto",
+    "presto payments",
+    "prestolink"
+   ],
+   "countries": [
+    "ME"
+   ],
+   "products": [
+    "core_digital",
+    "digital_onboarding",
+    "payments_instant"
+   ],
+   "latest": "ICT Cortex profiled Fleka / Presto in 2026 as the leading fintech in Montenegro. Presto offers multibanking plus QR and request-to-pay for businesses, a person-to-person (P2P) mobile app, and PrestoLink for ticket, donation and membership payments. All of these are built on PSD2 APIs. It is described as the first payment institution of its type in Montenegro.",
+   "sources": [
+    {
+     "title": "How Fintech is Transforming Banking in Montenegro - ICT Cortex",
+     "url": "https://ictcortex.me/en/how-fintech-is-transforming-banking-in-montenegro/"
+    },
+    {
+     "title": "Fleka - Crafting digital products",
+     "url": "https://www.fleka.me/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Logate",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "cx360",
+    "logate",
+    "logate doo",
+    "logate montenegro"
+   ],
+   "countries": [
+    "ME"
+   ],
+   "products": [
+    "core_digital",
+    "digital_onboarding",
+    "managed_services",
+    "payments_instant"
+   ],
+   "latest": "Company materials and regional tech press (2026) confirm banking clients including CKB, NLB and Erste. Logate has an Open Banking/PSD2 product line built around banks' core systems, and the CX360 banking CRM launched in 2016. It is seen as one of the few Montenegrin firms that ship their own products.",
+   "sources": [
+    {
+     "title": "About Us | Logate",
+     "url": "https://logate.com/about-us/"
+    },
+    {
+     "title": "Logate founders share the progress of Montenegro's tech ecosystem - The Recursive",
+     "url": "https://therecursive.com/logate-it-veterans-on-montenegro-tech-ecosystem-state/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Monri WSPay",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "regional",
+   "detect": [
+    "monri payments",
+    "monri wspay",
+    "monri wspay montenegro",
+    "wspay",
+    "wspay.me"
+   ],
+   "countries": [
+    "HR",
+    "ME",
+    "RS"
+   ],
+   "products": [
+    "payments_instant",
+    "pos_acquiring"
+   ],
+   "latest": "Monri WSPay's Montenegro site (2026) offers card acceptance in a 3DS2 environment, which is the current card-security standard. It also offers virtual-POS link payments, tokenisation and PayPal. Merchants sign up through a CKB Podgorica account and a gateway agreement, with an annual fee of about EUR 380 plus VAT.",
+   "sources": [
+    {
+     "title": "Monri WSPay - Web Secure Payment Gateway (Montenegro)",
+     "url": "https://www.wspay.me/"
+    },
+    {
+     "title": "Monri WSPay | wspay.me product page",
+     "url": "https://www.wspay.me/product/299/monri-wspay"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Gold Security",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "gold security",
+    "gold security crna gora",
+    "gold security doo",
+    "gold security niksic"
+   ],
+   "countries": [
+    "ME"
+   ],
+   "products": [
+    "managed_services",
+    "physical_security"
+   ],
+   "latest": "Gold Security's website (2026) lists money transport, ATM servicing and escorted transport of valuables, with licensed staff and special vehicles. It names financial-institution clients including Universal Capital Banka Podgorica.",
+   "sources": [
+    {
+     "title": "Gold Security (goldsecurity.me)",
+     "url": "https://www.goldsecurity.me/"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "G4S Secure Solutions (Crna Gora)",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "regional",
+   "detect": [
+    "g4s montenegro",
+    "g4s secure solutions",
+    "g4s secure solutions (crna gora)",
+    "g4s security services crna gora"
+   ],
+   "countries": [
+    "ME",
+    "RS"
+   ],
+   "products": [
+    "managed_services",
+    "physical_security"
+   ],
+   "latest": "Reference material (2026) confirms that G4S runs cash transport and ATM cash handling to banking and retail standards in the region. It has a fleet of 100+ armoured vehicles and a dedicated subsidiary, G4S Security Services Crna Gora.",
+   "sources": [
+    {
+     "title": "G4S Secure Solutions d.o.o. - Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/G4S_Secure_Solutions_d.o.o."
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Respect Security",
+   "role": "competitor",
+   "threat": "Low",
+   "tier": "local-peer",
+   "detect": [
+    "respect security",
+    "respect security crna gora",
+    "respect security doo",
+    "respect security podgorica"
+   ],
+   "countries": [
+    "ME"
+   ],
+   "products": [
+    "managed_services",
+    "physical_security"
+   ],
+   "latest": "Respect Security's site (2026) advertises a dedicated 'transportation of money and valuables' service. It also offers full physical and technical protection for clients in Montenegro.",
+   "sources": [
+    {
+     "title": "Transportation of money and valuables - Respect Security",
+     "url": "https://respectsecurity.me/transportation-of-money-and-valuables/?lang=en"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "CaSys (International Card System AD Skopje)",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "local-peer",
+   "detect": [
+    "casys (international card system ad skopje)",
+    "casys international",
+    "ics skopje",
+    "international card system"
+   ],
+   "countries": [
+    "MK"
+   ],
+   "products": [
+    "core_digital",
+    "fraud_monitoring",
+    "managed_services",
+    "payments_instant",
+    "pos_acquiring",
+    "self_service"
+   ],
+   "latest": "CaSys operates as a Visa/Mastercard-certified Member Service Provider and Third Party Processor (ISO 9001/20000-1/27001, PCI DSS). It runs domestic ATM/POS switching for MK banks, which means routing transactions. It became the local Diners Club transaction processor and launched a Pay-By-Link service.",
+   "sources": [
+    {
+     "title": "Services | CaSys International",
+     "url": "https://casys.com.mk/services/"
+    },
+    {
+     "title": "CaSys becomes Diners Club card transaction processor in N. Macedonia | SeeNews",
+     "url": "https://seenews.com/news/casys-becomes-diners-club-card-transaction-processor-in-n-macedonia-1204001"
+    },
+    {
+     "title": "International Card System AD - CaSys (NBRM)",
+     "url": "https://www.nbrm.mk/ns-newsarticle-international_card_system_ad_casys.nspx"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "KIBS / KIBSTrust (Clearing House KIBS AD Skopje)",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "clearing inter-bank systems",
+    "kibs",
+    "kibs / kibstrust (clearing house kibs ad skopje)",
+    "kibstrust",
+    "klirinska kuka kibs"
+   ],
+   "countries": [
+    "MK"
+   ],
+   "products": [
+    "compliance_resilience",
+    "digital_onboarding",
+    "payments_instant"
+   ],
+   "latest": "KIBS received an NBRM licence on 17 Sep 2025 as payment-system operator for instant denar credit transfers. This completes the central KIBS Instant platform. It continues to issue qualified trust services and the OneID e-ID under KIBSTrust.",
+   "sources": [
+    {
+     "title": "KIBS receives license to operate instant payments - Sloboden Pecat",
+     "url": "https://www.slobodenpecat.mk/en/kibs-dobi-licenca-za-rabota-so-instant-plakjanja/"
+    },
+    {
+     "title": "Clearing House KIBS AD Skopje",
+     "url": "https://www.kibs.mk/en/index.html"
+    },
+    {
+     "title": "About us | KIBSTrust",
+     "url": "https://www.kibstrust.mk/en-GB/Home/About"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Nextsense",
+   "role": "competitor",
+   "threat": "High",
+   "tier": "local-peer",
+   "detect": [
+    "nextsense",
+    "nextsense d.o.o.",
+    "nextsense doo",
+    "nextsense skopje"
+   ],
+   "countries": [
+    "MK"
+   ],
+   "products": [
+    "compliance_resilience",
+    "core_digital",
+    "digital_onboarding"
+   ],
+   "latest": "OneID powers online account opening, internet-banking activation and debit-card issuing at Komercijalna Banka AD Skopje. Nextsense sells its eIDAS-certified e-ID and QSCD remote signing (NS SAM) to finance and government across SEE.",
+   "sources": [
+    {
+     "title": "OneID - the first Macedonian electronic identity (Nextsense)",
+     "url": "https://www.nextsense.com/ns-newsarticle-oneid---the-first-macedonian-electronic-identity.nspx"
+    },
+    {
+     "title": "NEXTSENSE D.O.O. Company Profile | Dun & Bradstreet",
+     "url": "https://www.dnb.com/business-directory/company-profiles.nextsense_doo.1643dc793c4252f31a45137871338bd5.html"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "NIKOB Obezbeduvanje",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "nikob",
+    "nikob obezbeduvanje",
+    "nikob obezbeduvanje dooel",
+    "nikob security"
+   ],
+   "countries": [
+    "MK"
+   ],
+   "products": [
+    "managed_services",
+    "physical_security"
+   ],
+   "latest": "NIKOB Obezbeduvanje is ranked #1 among MK security firms by revenue (~671M MKD). It has a dedicated cash-and-valuables transport unit serving banks, with ~60 staff, ~24 armoured vehicles and GPS, X-ray and EAS equipment. It continues to dominate the local guarding and cash-in-transit (CIT) market.",
+   "sources": [
+    {
+     "title": "Nikob gi zgazi konkurentite... analiza na top pette agencii za obezbeduvanje - Faktor.mk",
+     "url": "https://faktor.mk/nikob-gi-zgazi-konkurentite-so-operativni-kapaciteti-tehnologija-i-kadar-analiza-na-top-pette-agencii-za-obezbeduvanje"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Perpetuumobile Security",
+   "role": "competitor",
+   "threat": "Low",
+   "tier": "local-peer",
+   "detect": [
+    "perpetuum mobile security",
+    "perpetuumobile security",
+    "perpetuumobile security dool"
+   ],
+   "countries": [
+    "MK"
+   ],
+   "products": [
+    "managed_services",
+    "physical_security"
+   ],
+   "latest": "Perpetuumobile Security is listed among MK's top-5 security agencies, with revenue of ~206M MKD. It offers money-transport services with suitable armoured vehicles and GPS equipment.",
+   "sources": [
+    {
+     "title": "Nikob gi zgazi konkurentite... analiza na top pette agencii za obezbeduvanje - Faktor.mk",
+     "url": "https://faktor.mk/nikob-gi-zgazi-konkurentite-so-operativni-kapaciteti-tehnologija-i-kadar-analiza-na-top-pette-agencii-za-obezbeduvanje"
+    }
+   ],
+   "origin": "backfill-2026-06-15"
+  },
+  {
+   "name": "Albacon Systems",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "albacon",
+    "albacon systems",
+    "albacon systems a.s.",
+    "albacon systems, a.s."
+   ],
+   "countries": [
+    "CZ",
+    "SK"
+   ],
+   "products": [
+    "atm_recycling",
+    "managed_services"
+   ],
+   "latest": "Albacon Systems is the exclusive GLORY representative and distributor for Czechia and Slovakia. It also sells OKI recycling ATMs, RIBAO coin counters and sorters, VAMA banknote and coin vacuum packers, Tellermate and Francotyp-Postalia. The vendor states 1,000+ Glory CASHINFINITY installs and 600+ ATMs deployed, plus reach into Poland (Biedronka, Dino).\n\nIt is the standing coin-wrapping supplier to Czech Post under a 2023 framework. TED 305254-2026 is a Q1-2026 drawdown from that framework, not a fresh 2026 win. The drawdown is worth ~768,572 CZK, the framework ceiling is 13m CZK, and the original selection was on 26/09/2023.\n\nPrintec is thin in CZ/SK. There, Albacon is both a peer in the Glory ecosystem and a direct local rival for bank and retail recycler and coin-processing deals. CNB cash-recycling rules drive retail demand (e.g. Akomi CASHINFINITY).",
+   "sources": [
+    {
+     "title": "Albacon - Partners (exclusive Glory CZ/SK distributor)",
+     "url": "https://www.albacon.eu/en/partners/"
+    },
+    {
+     "title": "TED 305254-2026 - Ceska posta coin-wrapping machines (supplier Albacon Systems a.s.)",
+     "url": "https://ted.europa.eu/en/notice/305254-2026/pdf"
+    },
+    {
+     "title": "Albacon - cash automation in practice (Akomi, Glory CASHINFINITY CI-10)",
+     "url": "https://www.albacon.eu/en/cash-automation-in-practice-akomi/"
+    }
+   ],
+   "origin": "agent6-2026-06-25"
+  },
+  {
+   "name": "Topwise (Fujian Landi)",
+   "role": "oem",
+   "threat": "Medium",
+   "tier": "global",
+   "detect": [
+    "topwise",
+    "topwise t2n",
+    "fujian landi",
+    "landi"
+   ],
+   "countries": [
+    "UA"
+   ],
+   "products": [
+    "pos_acquiring"
+   ],
+   "latest": "Topwise (Fujian Landi) is a low-cost Chinese Android POS maker, with the T2N model. It appears to be the de facto terminal standard at PrivatBank, Ukraine's largest bank, per UA tender-aggregator records (dzo.com.ua 25023084). PrivatBank is moving from button terminals to Android POS.\n\nA separate PrivatBank Prozorro Android-POS award (UA-2026-06-11-013572-a) could not be resolved to a winner, because the source was JS-blocked. Its reported value of ~$2.18m is unconfirmed, since the aggregator value was far smaller.\n\nCheap Android makers put displacement pressure on Printec's Verifone/Castles POS hardware and terminal management (TMS) in UA.",
+   "sources": [
+    {
+     "title": "Derzhzakupivli.online (dzo.com.ua) - PrivatBank Android POS Topwise T2N",
+     "url": "https://www.dzo.com.ua/tenders/25023084"
+    },
+    {
+     "title": "Prozorro - PrivatBank Android POS award (winner unresolved)",
+     "url": "https://prozorro.gov.ua/tender/UA-2026-06-11-013572-a"
+    }
+   ],
+   "origin": "agent6-2026-06-25"
+  },
+  {
+   "name": "Paylume SRL",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "paylume"
+   ],
+   "countries": [
+    "XK",
+    "ME",
+    "BA"
+   ],
+   "products": [
+    "payments_instant",
+    "compliance_resilience"
+   ],
+   "latest": "Paylume SRL was the sole bidder for, and the winner of, the Central Bank of Kosovo's technical-support contract for the TIPS Clone fast-payment infrastructure and overlay services. The value is EUR 295,000 over 10 months, awarded 22/07/2026 (A2, 2026-08-01).",
+   "origin": "agent7-2026-08-03",
+   "sources": [
+    {
+     "title": "BQK contract award notice",
+     "url": "https://bqk-kos.org/wp-content/uploads/2026/07/Contract_Award_Notice_CQS.pdf"
+    }
+   ]
+  },
+  {
+   "name": "Vivex Group",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "vivex",
+    "livix"
+   ],
+   "countries": [
+    "RS",
+    "BA",
+    "HR"
+   ],
+   "products": [
+    "atm_recycling",
+    "physical_security"
+   ],
+   "latest": "Vivex Group is named on Raiffeisen Serbia's own branch locator as the supplier of 14 Livix unattended deposit units. The vendor says it also operates in Banja Luka and Zagreb, so it is a regional rival rather than only a Serbian one (A1, 2026-07-30).",
+   "origin": "agent7-2026-08-03",
+   "sources": [
+    {
+     "title": "Raiffeisen banka Srbija locator",
+     "url": "https://www.raiffeisenbank.rs/sr/stanovnistvo/lokacije/"
+    }
+   ]
+  },
+  {
+   "name": "Masterwork Automodules",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "regional",
+   "detect": [
+    "masterwork",
+    "automodules",
+    "kuan"
+   ],
+   "countries": [
+    "RS"
+   ],
+   "products": [
+    "atm_recycling"
+   ],
+   "latest": "Masterwork Automodules holds 84 unattended cash-deposit placements at 82 Raiffeisen Serbia locations, found on the bank's own locator. It is the previously unnamed incumbent in Serbian merchant cash deposit (A1, 2026-07-30).",
+   "origin": "agent7-2026-08-03",
+   "sources": [
+    {
+     "title": "Raiffeisen banka Srbija locator",
+     "url": "https://www.raiffeisenbank.rs/sr/stanovnistvo/lokacije/"
+    }
+   ]
+  },
+  {
+   "name": "TOV ATM sistems",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "atm sistems",
+    "atm sistems",
+    "44372551"
+   ],
+   "countries": [
+    "UA"
+   ],
+   "products": [
+    "atm_recycling"
+   ],
+   "latest": "TOV ATM sistems won Ukrgasbank's purchase of 81 ATMs at UAH 49,720,800 on 16/04/2026. It bid the same figure in two rounds in a row, while Printec raised its price by UAH 4.1m. Printec's complaint, which alleged Russian-linked equipment, was rejected (A1, 2026-07-30).",
+   "origin": "agent7-2026-08-03",
+   "sources": [
+    {
+     "title": "Clarity Project UA-2026-03-20-010151-a",
+     "url": "https://clarity-project.info/tender/UA-2026-03-20-010151-a"
+    }
+   ]
+  },
+  {
+   "name": "SalesServiceSolutions",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "local-peer",
+   "detect": [
+    "salesservicesolutions",
+    "39906179"
+   ],
+   "countries": [
+    "UA"
+   ],
+   "products": [
+    "managed_services",
+    "atm_recycling"
+   ],
+   "latest": "SalesServiceSolutions holds Ukrgasbank's Hyosung ATM maintenance to 31/05/2027 and its Wincor maintenance to 30/06/2027. It also holds a 20-ATM NFC retrofit. Most of these were awarded outside the e-procurement system at zero saving (A1, 2026-07-30).",
+   "origin": "agent7-2026-08-03",
+   "sources": [
+    {
+     "title": "Clarity Project",
+     "url": "https://clarity-project.info/"
+    }
+   ]
+  },
+  {
+   "name": "Backbase",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "global",
+   "detect": [
+    "backbase"
+   ],
+   "countries": [
+    "AL"
+   ],
+   "products": [
+    "core_digital",
+    "digital_onboarding"
+   ],
+   "latest": "Backbase supplies the digital front end, meaning the customer-facing apps, at Albania's two most aggressive digital plays. Jet Bank, the country's first digital-only bank, went live in June 2026. Tirana Bank selected Backbase on 27/03/2025, in what it calls its largest ever technology investment (A1, 2026-07-30).",
+   "origin": "agent7-2026-08-03",
+   "sources": [
+    {
+     "title": "Backbase — Jet Bank launch",
+     "url": "https://www.backbase.com/press/jet-bank-launches-as-albanias-first-digital-only-bank-built-on-backbases-ai-native-banking-os"
+    }
+   ]
+  },
+  {
+   "name": "Asseco Central Europe",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "regional",
+   "detect": [
+    "asseco central europe",
+    "asseco ce"
+   ],
+   "countries": [
+    "SK",
+    "CZ"
+   ],
+   "products": [
+    "atm_recycling",
+    "self_service",
+    "managed_services"
+   ],
+   "latest": "Asseco Central Europe's multivendor ATM application is built on KAL's Kalignite platform. It names Slovenska sporitelna and DanubePay as references. Its banking reference list runs to twelve institutions and includes Diebold Nixdorf itself as a client (A1, 2026-07-30).",
+   "origin": "agent7-2026-08-03",
+   "sources": [
+    {
+     "title": "Asseco CE — ATM Multivendor Software",
+     "url": "https://ce.asseco.com/riesenia/bankovnictvo/karty/atm-multivendor-software-860/"
+    }
+   ]
+  },
+  {
+   "name": "Aqubix / Infocredit Group",
+   "role": "competitor",
+   "threat": "Medium",
+   "tier": "regional",
+   "detect": [
+    "aqubix",
+    "infocredit",
+    "kyc portal"
+   ],
+   "countries": [
+    "CY"
+   ],
+   "products": [
+    "digital_onboarding",
+    "compliance_resilience"
+   ],
+   "latest": "Aqubix / Infocredit Group is a joint venture that runs the Central Bank of Cyprus's shared digital-onboarding and client-lifecycle platform. It serves Bank of Cyprus, Hellenic, Alpha Cyprus, AstroBank, Cyprus Development Bank and Eurobank Cyprus. It is the entrenched shared eKYC core in Cyprus; eKYC means the electronic customer identity check (A6, 2026-07-24).",
+   "origin": "agent7-2026-08-03",
+   "sources": [
+    {
+     "title": "Finextra",
+     "url": "https://www.finextra.com/pressarticle/98872/central-bank-of-cyprus-awards-digital-onboarding-tender"
+    }
+   ]
+  },
+  {
+   "name": "Giesecke+Devrient Currency Technology",
+   "role": "competitor",
+   "threat": "High",
+   "detect": [
+    "giesecke",
+    "devrient",
+    "g+d",
+    "gzt geldz"
+   ],
+   "countries": [
+    "SI",
+    "HR",
+    "BG",
+    "CZ",
+    "UA",
+    "HU",
+    "CY"
+   ],
+   "products": [
+    "atm_recycling",
+    "physical_security",
+    "managed_services"
+   ],
+   "last_updated": "2026-08-31",
+   "latest": "Giesecke+Devrient Currency Technology holds the high-speed central-bank banknote-sorter tier that Printec's product line does not reach. It turned that position into a hard win this cycle.\n\nBanka Slovenije awarded its six-year sorter-maintenance contract to Giesecke+Devrient Currency Technology GmbH on 21/08/2026. The value is EUR 1,890,000 excl. VAT, on a single bid, and the contract runs to 31/08/2032.\n\nThe tender mechanics matter here. An identical first attempt was cancelled on 03/07/2026 after the same sole bidder quoted exactly the same price. The re-tender then accepted it, at +96% on the previous six-year contract of EUR 963,000.\n\nThe company is also active at the Croatian, Bulgarian and Ukrainian central banks in banknote authentication and sorting. It is the single source for the Hungarian MNB banknote-processing estate."
+  },
+  {
+   "name": "Veridos",
+   "role": "competitor",
+   "threat": "Medium",
+   "detect": [
+    "veridos"
+   ],
+   "countries": [
+    "CY",
+    "GR"
+   ],
+   "products": [
+    "digital_onboarding",
+    "card_issuing"
+   ],
+   "last_updated": "2026-08-31",
+   "latest": "Veridos, the Giesecke+Devrient identity joint venture, won Cyprus' end-to-end electronic travel-document contract at EUR 22,900,450, against a EUR 34,550,000 estimate. It won on lowest price from four tenders, and the award was published on 29/07/2026.\n\nThis makes Veridos the incumbent for sovereign credentials, meaning state-issued identity documents, in a footprint market. It is a direct rival wherever national identity issuing touches Printec's digital-onboarding and card-issuing lines."
+  },
+  {
+   "name": "BOOS S.A.",
+   "role": "competitor",
+   "threat": "Medium",
+   "detect": [
+    "boos s.a.",
+    "boos "
+   ],
+   "countries": [
+    "GR"
+   ],
+   "products": [
+    "atm_recycling",
+    "physical_security",
+    "managed_services"
+   ],
+   "last_updated": "2026-08-31",
+   "latest": "BOOS S.A. is an Athens firm that does bank-branch fit-out, physical security and cash management. It was not on the competitor list at all until this cycle. It won the largest Greek counter-cash-automation contract of the year.\n\nOn 19/05/2026 Hellenic Post awarded it a five-year operational lease of 300 banknote counting and quality-sorting machines. The price is EUR 19.25 per machine per month, or EUR 346,500 in total, with an unexercised option for 200 more. It won with Double Power machines rather than Glory, so this was a loss on price and lease model, not a channel change.\n\nBOOS also holds the service contract on Hellenic Post's legacy counting fleet. That affects Printec's cash-automation and field-services lines at the same time. It also gives BOOS a live public-sector reference to bid against Printec at Greek banks."
+  },
+  {
+   "name": "OpenWay",
+   "role": "competitor",
+   "threat": "Medium",
+   "detect": [
+    "openway",
+    "way4"
+   ],
+   "countries": [
+    "BG"
+   ],
+   "products": [
+    "pos_acquiring",
+    "card_issuing",
+    "managed_services"
+   ],
+   "last_updated": "2026-08-31",
+   "latest": "On 23/07/2026 BORICA and its card-platform vendor OpenWay stated on the record that ATM and point-of-sale device management runs on OpenWay's Way4 platform. This is part of Bulgaria's national card infrastructure. That infrastructure processed over 930,000 transactions worth close to EUR 42m in the first 48 hours of euro adoption.\n\nPrintec's device-management line is therefore now publicly described as a national utility function in Bulgaria. OpenWay is a structural competitor that was missing from the tracked vendor list entirely."
+  },
+  {
+   "name": "Datecs Payment Technology",
+   "role": "competitor",
+   "threat": "Medium",
+   "detect": [
+    "datecs",
+    "datecspay"
+   ],
+   "countries": [
+    "BG",
+    "RO"
+   ],
+   "products": [
+    "pos_acquiring",
+    "card_issuing"
+   ],
+   "last_updated": "2026-08-31",
+   "latest": "On 27/08/2026 the Bulgarian National Bank's Governing Council extended Datecs Payment Technology's payment-institution licence. The licence now also covers cash withdrawal from a payment account, execution of card transactions and credit transfers, and the issuing of payment instruments.\n\nDatecs was already a licensed acquirer with an EU passport and a Bucharest agent. What is genuinely new is the issuing permission and, more importantly, the cash-withdrawal permission. That permission underpins cashback at merchant terminals and independent cash-out deployment.\n\nA Bulgarian terminal maker that owns the device, the acquiring rail and now the cash-out permission can bundle services in a way a terminal reseller cannot match on price."
+  },
+  {
+   "name": "SelfPay",
+   "role": "competitor",
+   "threat": "Medium",
+   "detect": [
+    "selfpay",
+    "zebrapay"
+   ],
+   "countries": [
+    "RO"
+   ],
+   "products": [
+    "self_service",
+    "pos_acquiring",
+    "managed_services"
+   ],
+   "last_updated": "2026-08-31",
+   "latest": "SelfPay, formerly ZebraPay, confirmed in May 2026 that it runs more than 13,000 active self-service payment stations. These are spread across more than 3,000 Romanian localities. It opened 277 new locations in the first half of that month alone. It is heading for roughly 19,000 stations by end-2026, funded by bonds and bank loans. It now also offers local shops an optional card terminal as part of the package.\n\nThis cuts into Printec's kiosk and small-merchant terminal opportunity. However, a 13,000-station estate is also one of the largest managed-services targets in Romania."
+  }
+ ]
+}

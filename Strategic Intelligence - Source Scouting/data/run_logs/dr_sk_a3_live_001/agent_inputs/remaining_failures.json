@@ -1,0 +1,232 @@
+[
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_033",
+  "source_url": "https://www.fininfo.sk/fininfo/legislativa/bankovnictvo/bankovnictvo.html",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_037",
+  "source_url": "https://lrv.rokovania.sk/rokovania-legislativnej-rady-vlady-sr/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_046",
+  "source_url": "https://www.zakonypreludi.sk/zz/2001-483",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_081",
+  "source_url": "https://metais.vicepremier.gov.sk/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_106",
+  "source_url": "https://ceelegalmatters.com/slovakia",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_109",
+  "source_url": "https://www.cliffordchance.com/insights/resources/blogs-and-briefings.html",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_118",
+  "source_url": "https://dennikn.sk/minuta/rubrika/432/ekonomika",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_125",
+  "source_url": "https://euractiv.sk/section/ekonomika-a-euro/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_130",
+  "source_url": "https://www.epi.sk/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_144",
+  "source_url": "https://nbs.sk/o-narodnej-banke/bankova-rada-nbs/guverner-narodnej-banky-slovenska/rozhovory-a-prezentacie/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_149",
+  "source_url": "https://asocfin.sk/category/conferences-and-events/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_150",
+  "source_url": "https://www.zlataminca.sk/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_173",
+  "source_url": "https://www.epi.sk/vestnik-nbs/2023-c25-o7",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_192",
+  "source_url": "https://www.zakonypreludi.sk/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_202",
+  "source_url": "https://www.bankingsupervision.europa.eu/institutionandourrole/whatwedo/list-supervised-entities.en.html",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_217",
+  "source_url": "https://www.minv.sk/swift_data/source/policia/fsj_biro/usmernenia/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_251",
+  "source_url": "https://www.fininfo.sk/fininfo/financny-spotrebitel/ochrana-financneho-spotrebitela/ochrana-financneho-spotrebitela.html",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_253",
+  "source_url": "https://www.economy.gov.sk/podnikatelske-prostredie/jednotna-metodika/prebiehajuce-konzultacie-a-predbezne-informacie",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_260",
+  "source_url": "https://nbs.sk/platby/platobne-systemy/target-services/t2-t2s-konsolidacia/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_268",
+  "source_url": "https://www.europeanpaymentscouncil.eu/what-we-do/other-schemes/verification-payee/epc-verification-payee-scheme-and-epc-directory-service",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_274",
+  "source_url": "https://www.mastercard.us/en-us/business/overview/support/rules.html",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_326",
+  "source_url": "https://www.tatrabanka.sk/sk/o-banke/dokumenty-na-stiahnutie/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_sk_a3_live_001__c_336",
+  "source_url": "https://www.slsp.sk/content/dam/sk/slsp/www_slsp_sk/documents/zverejnenia/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ }
+]

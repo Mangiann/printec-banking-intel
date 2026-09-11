@@ -1,0 +1,217 @@
+# Agent 2 - TED (EU-wide) - run 01/08/2026
+
+Status: **complete**. 24 signals. 185 Tier-0 cache rows triaged (86 winner-bearing); 24 TED notice PDFs verified locally via pdfminer.six; 7 independent TED Search API v3 sweeps (ATM/coin CPVs EU-wide, Poland, 6 central-bank buyer sweeps, 6-language title keyword sweeps).
+
+## Headlines
+
+- **Geldservice Austria: EUR 9.1m cash + coin RECYCLER framework** (TED 305531-2026) - biggest find of the run, delivery covers AT + Slovenia + CEE border belt, still in evaluation.
+- **FINA Croatia coin counters CANCELLED** (TED 435583-2026) - corrects the prior file, which carried it as open. Sole bid inadmissible. Clean EUR 400k re-tender opening.
+- **Banka Slovenije BPS M7 sorter maintenance to 2032**, deadline 17/08/2026 - a 6-year cash-automation service annuity, repeatedly re-issued.
+- **G+D took a no-competition direct award at BNB Bulgaria** (EUR 181,000 euro-banknote M-sensors) - same pattern as HNB Croatia.
+- **OeNB security-technology maintenance bridged 3 months** - full re-tender imminent.
+
+## Signals
+
+### 1. Geldservice Austria (GSA) — OeNB/banks cash-logistics JV — Austria (delivery also Slovenia, Bavaria, and within 100km of AT border in CZ/SK/HU/IT/CH)
+
+- **Signal:** TED 305531-2026 (05/05/2026): GSA opened a negotiated procedure with prior call for 'Kombinierte Ein- und Auszahlungsgeraete' (combined deposit-and-dispense machines = cash recyclers), CPV 30123200 Automatic cash dispensers. Estimated value EUR 9,100,000 excl. VAT over 5 years under an open-ended framework. Two-stage, min. 3 candidates invited; requests-to-participate deadline 08/06/2026, invitations to tender dispatched ~25/06/2026, contract start 02/11/2026. Award criteria are weighted in points: Banknote recycling 100, Coin recycling 74, Coin depositor & coin hopper 32, General 33, Sustainability 6, Price 245. Documents at gv.vergabeportal.at/Detail/244277. No award notice published as of 01/08/2026 — still in evaluation. Contact routed through Print and Mint Services GmbH (OeBS, the OeNB banknote printer).
+- **Source:** TED (Tenders Electronic Daily), EU Official Journal supplement — https://ted.europa.eu/en/notice/305531-2026/pdf (05/05/2026, primary)
+- **Implies:** Largest cash-automation opportunity found on TED this run and directly on Printec's core: banknote AND coin recyclers plus coin deposit/hopper units, with maintenance bundled into the same framework. The stated delivery footprint explicitly includes Slovenia and the CEE border belt (CZ/SK/HU), i.e. it doubles as a regional reference. Printec ATM/self-service + cash automation/recyclers + managed services all map to it.
+- **Likelihood:** Award expected within 6-12 months given a 02/11/2026 contract start; if Printec did not file a request to participate by 08/06/2026 it is shut out of this round, but the framework is open-ended so the drawdown and any parallel/sequential lots stay live | **Size:** XL | **Win:** Low | **Confidence:** Medium | **New:** True
+- **Follow-up:** Confirm on gv.vergabeportal.at/Detail/244277 whether Printec/partner is among the invited candidates; if not, target the maintenance and the 2nd-source position, and watch for the contract-award notice under buyer 'GELDSERVICE AUSTRIA' on TED
+
+### 2. FINA (Financial Agency, Croatia — state financial services agency) — Croatia
+
+- **Signal:** TED 435583-2026 (25/06/2026) closes FINA's coin-counter tender 'Brojaci kovanica' (CPV 30123620, est. EUR 400,000 excl. VAT, ref 2.2.1/2026/V/I2, originally published as TED 273370-2026 on 22/04/2026 with a 22/05/2026 deadline) with the result: 'No winner was chosen and the competition is closed', reason 'All tenders, requests to participate or projects were withdrawn or found inadmissible'. Only ONE tender was received and it was a micro/small/medium enterprise.
+- **Source:** TED (Tenders Electronic Daily), EU Official Journal supplement — https://ted.europa.eu/en/notice/435583-2026/pdf (25/06/2026, primary)
+- **Implies:** This corrects the previous run's record, which carried the FINA coin-counter tender as OPEN. A cancelled single-bid procedure for EUR 400,000 of coin-counting machines is a clean re-tender opening for Printec cash automation in Croatia, and the fact that the sole bid was inadmissible signals the spec/qualification bar excluded the local field.
+- **Likelihood:** High that FINA re-publishes within 6-12 months — the need is unmet and the original notice is from April 2026 | **Size:** M | **Win:** Medium | **Confidence:** Medium | **New:** True
+- **Follow-up:** Monitor eojn.hr and TED under buyer FINA (reg. 85821130368, nabava@fina.hr, contact Marina Dolcic) for the re-issued 'Brojaci kovanica'; pre-engage on the technical spec before republication
+
+### 3. FINA (Financial Agency, Croatia) — Croatia
+
+- **Signal:** TED 528363-2026 (30/07/2026): FINA awarded 'Servisiranje i odrzavanje blagajnicke opreme' (servicing and maintenance of teller/cashier equipment), CPV 50310000, to EUROKOD PISACIC d.o.o. for EUR 479,819.40 excl. VAT against an estimate of EUR 480,000. Contract concluded 23/07/2026. Only ONE tender received. Second award criterion was the number of service centres the bidder operates.
+- **Source:** TED (Tenders Electronic Daily), EU Official Journal supplement — https://ted.europa.eu/en/notice/528363-2026/pdf (30/07/2026, primary)
+- **Implies:** A competitor win against Printec in Croatian cash-handling field service: EUROKOD PISACIC is now the named incumbent for FINA's teller-equipment estate for the contract term. The single-bid outcome and the 'number of service centres' criterion show the barrier is nationwide field-service coverage — precisely Printec's managed-services strength.
+- **Likelihood:** Contract now locked; next contestable window is at renewal | **Size:** M | **Win:** Low | **Confidence:** Medium | **New:** True
+- **Follow-up:** Log EUROKOD PISACIC d.o.o. as a Croatian cash-equipment service competitor for Agent 6; obtain contract term from FINA to time the re-bid
+
+### 4. Banka Slovenije (central bank of Slovenia) — Slovenia
+
+- **Signal:** TED 495378-2026 (17/07/2026, ref JN-76928): OPEN tender for preventive and corrective maintenance of the BPS M7 MEvo-12SBN banknote sorting system AND the backup BPS M7 MEvo-10LSBN system, both including Nota Tracc and LVM modules, running from contract start to 31/08/2032 (6 years). CPV 50000000. Deadline for tenders 17/08/2026. Award criteria: M1 price excl. VAT, M2 quality of the service organisation performing the maintenance. This is at least the fourth publication of this requirement in 2026 (earlier TED 287173-2026 27/04, 314660-2026 07/05, 356935-2026 26/05 with an 11/06/2026 deadline, 411630-2026 16/06).
+- **Source:** TED (Tenders Electronic Daily), EU Official Journal supplement — https://ted.europa.eu/en/notice/495378-2026/pdf (17/07/2026, primary)
+- **Implies:** A six-year cash-automation service annuity on Giesecke+Devrient BPS M7 hardware at a euro-area central bank. Directly matches Printec cash automation + managed services. The repeated re-issue pattern indicates the buyer has struggled to get an acceptable bid, which widens the door for a credible non-OEM service organisation.
+- **Likelihood:** Closes 17/08/2026; award likely Q4 2026 | **Size:** L | **Win:** Medium | **Confidence:** Medium | **New:** True | **Deadline:** 17/08/2026
+- **Follow-up:** Bid or partner-bid before 17/08/2026; the M2 criterion rewards the depth of the service organisation, so lead with Printec's regional G+D-platform field-service bench
+
+### 5. Bulgarian National Bank (BNB / Balgarska narodna banka) — Bulgaria
+
+- **Signal:** TED 436046-2026 (25/06/2026): BNB awarded, by NEGOTIATED PROCEDURE WITHOUT PRIOR CALL FOR COMPETITION (i.e. no competition), the supply and installation of modules and M-sensors for EURO banknote processing to Giesecke+Devrient Currency Technology GmbH for EUR 181,000 excl. VAT (estimate EUR 184,500). CPV 35125100 Sensors. Contract concluded 22/06/2026. One tender.
+- **Source:** TED (Tenders Electronic Daily), EU Official Journal supplement — https://ted.europa.eu/en/notice/436046-2026/pdf (25/06/2026, primary)
+- **Implies:** G+D is locking in central-bank banknote-processing sensor/module upgrades across the region by sole-source justification — the same pattern the previous run recorded at HNB Croatia (level-3 banknote-authentication sensors). Bulgaria's euro changeover is driving the upgrade cycle. For Printec this is a closed-door OEM channel, but it flags where the euro-adoption cash-processing spend is landing and where G+D-platform SERVICE contracts will follow.
+- **Likelihood:** Further euro-changeover banknote-processing awards at BNB over 6-12 months; hardware likely sole-sourced to G+D, service potentially contestable | **Size:** S | **Win:** Low | **Confidence:** Medium | **New:** True
+- **Follow-up:** Track BNB notices under CPV 3512xxxx/30123xxx for the follow-on maintenance packages; feed the G+D regional sole-source pattern to Agent 6
+
+### 6. Banca Nationala a Romaniei (BNR, central bank of Romania) — Romania
+
+- **Signal:** TED 477323-2026 (10/07/2026): BNR awarded 24-month maintenance and support for its SAN (storage area network) estate — main site, continuity site and a secondary site 300 km from Bucharest — to SMART CONTROL S.R.L. (CIF 15362947) for RON 919,540 excl. VAT against an estimate of RON 928,189. Contract 71/P/2026 concluded 30/06/2026. Only ONE tender received; award weighting 90% price / 10% similar experience.
+- **Source:** TED (Tenders Electronic Daily), EU Official Journal supplement — https://ted.europa.eu/en/notice/477323-2026/pdf (10/07/2026, primary)
+- **Implies:** Shows BNR outsourcing critical infrastructure maintenance on single-bid procedures at sub-EUR 200k annual value — an IT-outsourcing/managed-services adjacency Printec Romania could contest, and a useful read on the pricing and experience bar at the Romanian central bank.
+- **Likelihood:** Next contestable window at the 24-month renewal (mid-2028); nearer-term openings are BNR's other IT and security lots | **Size:** S | **Win:** Low | **Confidence:** Medium | **New:** True
+- **Follow-up:** Register with BNR Directia Achizitii / SEAP for BNR IT and security lots; SMART CONTROL S.R.L. logged as BNR infrastructure incumbent
+
+### 7. Banca Nationala a Romaniei (BNR) — Romania
+
+- **Signal:** TED 499473-2026 (20/07/2026): OPEN tender 'Furnizare si montaj sisteme de securitate Sedii BNR' — supply and installation of surveillance, detection and alarm systems at BNR premises. CPV 35120000. Total estimate RON 3,438,026.83 excl. VAT split across lots of RON 1,298,721.80 / 1,022,265.65 / 1,117,039.38. Deadline for tenders 06/08/2026.
+- **Source:** TED (Tenders Electronic Daily), EU Official Journal supplement — https://ted.europa.eu/en/notice/499473-2026/pdf (20/07/2026, primary)
+- **Implies:** Physical-security build-out inside a central bank's cash-handling premises — maps to Printec's security/HSM-adjacent physical protection and managed-services line, and is a door-opener into BNR ahead of any cash-processing procurement.
+- **Likelihood:** Closes 06/08/2026; award expected Q4 2026 | **Size:** M | **Win:** Low | **Confidence:** Medium | **New:** True | **Deadline:** 06/08/2026
+- **Follow-up:** Only ~5 days to close — assess whether a Romanian partner bid is feasible; otherwise position for the maintenance follow-on
+
+### 8. Bulgarian National Bank (BNB) — Bulgaria
+
+- **Signal:** TED 303058-2026 (04/05/2026): RESTRICTED procedure for supply and maintenance of security systems at BNB sites, 3 lots, total estimate EUR 262,600 excl. VAT — Lot 1 access-control system renewal components EUR 156,000; Lot 2 video-surveillance renewal components EUR 82,500; Lot 3 metal-detector archways and handheld metal detectors EUR 24,100. CPV 35120000. No award notice on TED as of 01/08/2026.
+- **Source:** TED (Tenders Electronic Daily), EU Official Journal supplement — https://ted.europa.eu/en/notice/303058-2026/pdf (04/05/2026, primary)
+- **Implies:** Access control and surveillance refresh inside the Bulgarian central bank's cash-handling sites — a Printec security/managed-services fit and a relationship entry point during Bulgaria's euro changeover, when BNB cash-processing capex is elevated.
+- **Likelihood:** Award likely within 3-6 months; restricted procedure means pre-qualification was required | **Size:** S | **Win:** Low | **Confidence:** Medium | **New:** True
+- **Follow-up:** Watch for the contract-award notice under BNB CPV 35120000; check whether the restricted shortlist is still open for future rounds
+
+### 9. Hrvatska narodna banka (HNB, central bank of Croatia) — Croatia
+
+- **Signal:** TED 457421-2026 (03/07/2026): HNB awarded 'Odrzavanje i unapredenje IBM strojne i programske podrske' (maintenance and enhancement of IBM hardware and software support), CPV 50312000, to COMBIS d.o.o. for EUR 628,825.69 excl. VAT against an estimate of EUR 630,000. Contract concluded 01/07/2026. Only ONE tender received; the notice cites the complexity of the buyer's system, communications and security estate as justification.
+- **Source:** TED (Tenders Electronic Daily), EU Official Journal supplement — https://ted.europa.eu/en/notice/457421-2026/pdf (03/07/2026, primary)
+- **Implies:** COMBIS d.o.o. (a Hrvatski Telekom/A1-orbit systems integrator) is the entrenched IT-outsourcing incumbent at the Croatian central bank, winning uncontested at ~99.8% of the estimate. Any Printec managed-services push into HNB has to go around or through COMBIS; the same firm also appeared on the Croatian Tax Administration IT-maintenance framework (TED 463782-2026).
+- **Likelihood:** Locked for the contract term; contest at renewal | **Size:** M | **Win:** Low | **Confidence:** Medium | **New:** True
+- **Follow-up:** Log COMBIS d.o.o. as HNB and Croatian public-sector IT incumbent for Agent 6; pursue HNB via the cash-processing lines (V-34 banknote-processing system, V-53, M-2) rather than IT
+
+### 10. FINA (Financial Agency, Croatia) — Croatia
+
+- **Signal:** TED 495216-2026 (17/07/2026): FINA awarded 'Usluge odrzavanja skenerske i mikrografske opreme te softvera' (maintenance of scanner and micrographic equipment and software), CPV 50310000, in 3 lots totalling EUR 259,226 excl. VAT (scanner equipment EUR 84,636; micrographic equipment EUR 69,720; software EUR 104,870) against an estimate of EUR 260,000. Winner SCAN d.o.o. (Digital Media d.o.o. also named as an organisation on the notice). Contract concluded 08/07/2026. One tender.
+- **Source:** TED (Tenders Electronic Daily), EU Official Journal supplement — https://ted.europa.eu/en/notice/495216-2026/pdf (17/07/2026, primary)
+- **Implies:** Second FINA back-office equipment service award in July 2026 (with 528363-2026) — FINA is systematically re-letting its device-maintenance estate on single-bid procedures. Confirms an addressable Croatian document/device managed-services pipeline adjacent to Printec's digital onboarding and managed-services lines.
+- **Likelihood:** Estate re-let now complete for this cycle; next window at renewal | **Size:** S | **Win:** Low | **Confidence:** Medium | **New:** True
+- **Follow-up:** Map FINA's full maintenance calendar from eojn.hr plan documents to time the next Printec approach
+
+### 11. Ceska posta, s.p. (Czech Post) — Czechia
+
+- **Signal:** TED 524698-2026 (29/07/2026): call-off under Czech Post's framework for coin-wrapping machines and consumables ('Ruliakovacky mincí', CPV 30123630). Framework ceiling CZK 13,000,000; the amount drawn down in THIS notice is CZK 296,406; framework contract concluded 30/06/2026; supplier Albacon Systems, a.s.; original winner decision dated 26/09/2023. One tender. A prior identical drawdown notice is TED 305254-2026 (05/05/2026).
+- **Source:** TED (Tenders Electronic Daily), EU Official Journal supplement — https://ted.europa.eu/en/notice/524698-2026/pdf (29/07/2026, primary)
+- **Implies:** Albacon Systems a.s. holds the Czech Post coin-wrapping framework — an existing competitor position in Czech cash automation, NOT a fresh award. The CZK 13m ceiling with recurring small drawdowns shows Czech Post buys coin equipment continuously off framework, so the contestable event is the framework re-tender, not the call-offs.
+- **Likelihood:** Framework dates from 2023; a re-tender is plausible within 12-24 months | **Size:** S | **Win:** Low | **Confidence:** Medium | **New:** True
+- **Follow-up:** Establish the Czech Post coin-wrapping framework end date via NEN/profil zadavatele; log Albacon Systems a.s. as a Czech cash-equipment competitor
+
+### 12. Ceska posta, s.p. (Czech Post) — Czechia
+
+- **Signal:** Two Czech Post cash-logistics consumable procurements: TED 455052-2026 (02/07/2026) OPEN 'Dodavky bezpecnostnich obalu' (security packaging), CPV 35121400, estimate CZK 20,000,000, lowest price, deadline 04/08/2026; and TED 523812-2026 (29/07/2026) award/drawdown for 'Dodavky bezpecnostnich sacku' (security bags), CPV 35121400, framework ceiling CZK 30,000,000, drawdown CZK 1,222,804.35 for the period 01/04/2026-…, winner QWEST CZ, s.r.o., concluded 30/06/2026, 2 tenders.
+- **Source:** TED (Tenders Electronic Daily), EU Official Journal supplement — https://ted.europa.eu/en/notice/455052-2026/pdf (02/07/2026, primary)
+- **Implies:** Czech Post is running a continuous, sizeable cash-in-transit consumables programme (tamper-evident bags/packaging). Peripheral to Printec's product set but a strong indicator that Czech Post's branch cash operation is being actively re-equipped — the same buyer that runs the coin-wrapping framework and is a candidate for branch cash-recycling automation.
+- **Likelihood:** Security-packaging tender closes 04/08/2026; Czech Post cash-operation modernisation likely to produce equipment tenders over 6-12 months | **Size:** S | **Win:** — | **Confidence:** Medium | **New:** True | **Deadline:** 04/08/2026
+- **Follow-up:** Set a standing TED watch on buyer 'Ceska posta, s.p.' for CPV 30123xxx and 5031xxxx to catch any branch cash-recycler or self-service tender
+
+### 13. Oesterreichische Nationalbank (OeNB, central bank of Austria) — Austria
+
+- **Signal:** TED 157688-2026 (06/03/2026): OeNB awarded a 3-MONTH CONTRACT EXTENSION of Parts II and III (maintenance of security technology) to PKE Electronics GmbH for EUR 357,589.26 excl. VAT, concluded 03/03/2026. CPV 50610000 Repair and maintenance services of security equipment. The notice states the existing services contract had a 7-year term that began on 01/09/2019 — i.e. it expired 31/08/2026 and has been bridged.
+- **Source:** TED (Tenders Electronic Daily), EU Official Journal supplement — https://ted.europa.eu/en/notice/157688-2026/pdf (06/03/2026, primary)
+- **Implies:** A stop-gap extension of a 7-year central-bank security-technology maintenance contract means the full re-tender is imminent. OeNB security-technology maintenance is a recurring multi-year managed-services annuity in Printec's security/managed-services lane, at a buyer where Printec has no current position.
+- **Likelihood:** Re-tender expected within 6-12 months (bridge runs out around Q4 2026) | **Size:** M | **Win:** Low | **Confidence:** Medium | **New:** True
+- **Follow-up:** Set a TED alert on buyer 'Oesterreichische Nationalbank' CPV 50610000/35120000; PKE Electronics GmbH is the incumbent to displace
+
+### 14. Narodna banka Slovenska (NBS, central bank of Slovakia) — Slovakia
+
+- **Signal:** TED 505733-2026 (22/07/2026, ref NBS1-000-123-548): OPEN tender 'Rozsirenie podnikovej LAN pre ACCESS a SERVER siete' — expansion of the corporate LAN for access and server networks, CPV 32410000, estimated EUR 650,000 excl. VAT, deadline for tenders 24/08/2026. NBS's other 2026 TED activity is coin minting (211624-2026, 388886-2026), SAN switches (399541-2026), DDoS protection (287459-2026, 356651-2026) and perimeter firewall replacement (390080-2026, prior information notice).
+- **Source:** TED (Tenders Electronic Daily), EU Official Journal supplement — https://ted.europa.eu/en/notice/505733-2026/pdf (22/07/2026, primary)
+- **Implies:** Confirms the previous run's NBS LAN lead with the exact value (EUR 650,000) and deadline. Together with the SAN-switch and firewall lines it shows NBS running a full infrastructure refresh — an IT-outsourcing/managed-services window, though the 2026 plan items Printec actually wants (0003 desktop banknote counters/sorters, 0131/0132 coin counting/packaging, 0236 HSM maintenance) have NOT appeared on TED, so they are being run below EU threshold or are still unpublished.
+- **Likelihood:** LAN closes 24/08/2026; the cash-equipment plan items remain unpublished as of 01/08/2026 | **Size:** M | **Win:** Low | **Confidence:** Medium | **New:** True | **Deadline:** 24/08/2026
+- **Follow-up:** Chase NBS plan items 0003 / 0131 / 0132 / 0236 on the Slovak UVO/EVO portal rather than TED — sub-threshold values would keep them off TED entirely
+
+### 15. Ministry of Citizen Protection (Ypourgeio Prostasias tou Politi), Greece — Greece
+
+- **Signal:** TED 524245-2026 (29/07/2026) is a further change notice for the portable thermal-imaging camera procurement, CPV 35125300 + 71356300, estimated EUR 2,920,687 excl. VAT across 3 lots (Lot 1 short-range, 74 pieces, EUR 543,900; plus medium- and long-range lots). CONFIRMED new deadline for receipt of tenders: 26/08/2026 12:00 EEST, opening the same day at 15:00. Supersedes 483191-2026 (13/07, deadline 03/08/2026), 477653-2026 and 475593-2026 (both deadline 22/07/2026). Submission via ESIDIS/eprocurement.gov.gr, Greek language, award on price alone, 6-month delivery, 12-month tender validity, EU co-funded, GPA-covered.
+- **Source:** TED (Tenders Electronic Daily), EU Official Journal supplement — https://ted.europa.eu/en/notice/524245-2026/pdf (29/07/2026, primary)
+- **Implies:** Resolves the open question carried from the last published findings file: the deadline did move to 26/08/2026. Not a core Printec product (thermal cameras), but it is the largest Greek security-equipment procurement currently open and the repeated deadline slippage suggests a thin bidder field — relevant to Printec's security/systems-integration positioning with Greek public-order buyers.
+- **Likelihood:** Closes 26/08/2026; further extension possible given three prior slips | **Size:** L | **Win:** Low | **Confidence:** Medium | **New:** True | **Deadline:** 26/08/2026
+- **Follow-up:** No further action beyond status tracking unless Printec fronts a systems-integration consortium
+
+### 16. Ministry of Digital Governance (Ypourgeio Psifiakis Diakyvernisis), Greece — Greece
+
+- **Signal:** TED 448525-2026 (30/06/2026): OPEN tender for maintenance and support services for central computing infrastructure (G-Cloud), CPV 50312100 Maintenance and repair of mainframe computers, estimated EUR 700,000 excl. VAT. CONFIRMED deadline for receipt of tenders 03/08/2026 17:00 EEST — i.e. closing in 2 days. Award on most economically advantageous tender; underlying authorisation doc no. 25826 EX 2025 of 08/08/2025.
+- **Source:** TED (Tenders Electronic Daily), EU Official Journal supplement — https://ted.europa.eu/en/notice/448525-2026/pdf (30/06/2026, primary)
+- **Implies:** Status confirmation of a still-open item carried from the last published file: still OPEN, not yet awarded or cancelled. Greek central government IT-outsourcing at EUR 700k — Printec managed-services adjacency, but the 03/08/2026 close leaves no bid runway this cycle.
+- **Likelihood:** Closes 03/08/2026; award notice expected Q4 2026 | **Size:** M | **Win:** Low | **Confidence:** Medium | **New:** True | **Deadline:** 03/08/2026
+- **Follow-up:** Track the contract-award notice to identify the winner (likely a Greek SI) for the competitor map
+
+### 17. Ministry of Culture (Ypourgeio Politismou), Greece — Greece
+
+- **Signal:** TED 476392-2026 (10/07/2026): OPEN tender for IT services in 6 lots, total estimate EUR 299,193.55 excl. VAT (individual lots include EUR 60,000, EUR 41,451.61, EUR 17,741.94). CPVs 72222300, 50312300, 50324100, 72611000, 64227000. Lots cover data-centre server and network management, maintenance/support/upgrade of an application system, central monitoring system configuration, data-centre HVAC maintenance, AV technical support, and a 10G fibre interconnect for the DID data centre. CONFIRMED deadline 10/08/2026 15:00 EEST — still OPEN, lowest price.
+- **Source:** TED (Tenders Electronic Daily), EU Official Journal supplement — https://ted.europa.eu/en/notice/476392-2026/pdf (10/07/2026, primary)
+- **Implies:** Status confirmation of the third still-open item carried from the last published file. Small-ticket Greek public IT-outsourcing; lot 1 (server/network management) and lot 3 (central monitoring) are the only Printec-adjacent slices, and the lowest-price criterion favours local incumbents.
+- **Likelihood:** Closes 10/08/2026 | **Size:** S | **Win:** Low | **Confidence:** Medium | **New:** True | **Deadline:** 10/08/2026
+- **Follow-up:** Status only; capture the winners for the Greek SI competitor map
+
+### 18. Orszagos Rendor-fokapitanysag (Hungarian National Police HQ), via Digitalis Kormanyzati Ugynokseg — Hungary
+
+- **Signal:** TED 470980-2026 (08/07/2026) and re-publication 497245-2026 (17/07/2026): OPEN tender 'ABC kapu, kioszk es biometrikus felvetelezo pont' (ABC gate, kiosk and biometric enrolment point), CPV 35125110 Biometric sensors. Lot 1 EES-compatible facial-image capture device (outdoor version); Lot 2 EES-capable SELF-SERVICE data-capture system. Deadline moved from 21/07/2026 to 28/07/2026. No estimated value published in the notice.
+- **Source:** TED (Tenders Electronic Daily), EU Official Journal supplement — https://ted.europa.eu/en/notice/497245-2026/pdf (17/07/2026, primary)
+- **Implies:** Self-service enrolment kiosks with biometric face capture for the EU Entry/Exit System — the closest public-sector analogue to Printec's digital onboarding/eKYC and self-service kiosk stack. A win here would be a reference for bank branch self-service onboarding kiosks in Hungary, a market where Printec has no ATM incumbency to defend.
+- **Likelihood:** Closed 28/07/2026; award expected within 3-6 months | **Size:** Unscoped | **Win:** Low | **Confidence:** Medium | **New:** True
+- **Follow-up:** Track the award to identify the Hungarian biometric-kiosk integrator; DKU-brokered procurements recur, so map the DKU framework route for future self-service kiosk lots
+
+### 19. HEP d.d. / HEP-Proizvodnja d.o.o. (Croatian national power utility) — Croatia
+
+- **Signal:** TED 531953-2026 (31/07/2026): OPEN tender 'Rezervni dijelovi i odrzavanje sustava tehnicke zastite' (spare parts and maintenance of technical-protection systems), CPV 35120000, 4 lots totalling EUR 1,373,460 excl. VAT — HE Sjever EUR 177,595; HE Zapad EUR 425,040; HE Jug EUR 295,075; TERMO EUR 475,750. Deadline for tenders 03/09/2026 09:00.
+- **Source:** TED (Tenders Electronic Daily), EU Official Journal supplement — https://ted.europa.eu/en/notice/531953-2026/pdf (31/07/2026, primary)
+- **Implies:** Confirms and puts exact figures on the unpublished lead from the crashed 31/07 run. Multi-site technical-protection (CCTV/intruder/access) maintenance at EUR 1.37m over 4 lots — Printec security + managed-services fit, and the lot split lets a bidder take one region rather than the whole estate.
+- **Likelihood:** Closes 03/09/2026 — a genuine 5-week bid runway | **Size:** M | **Win:** Medium | **Confidence:** Medium | **New:** True | **Deadline:** 03/09/2026
+- **Follow-up:** Assess a single-lot bid (HE Sjever at EUR 177,595 is the lowest-risk entry) via a Croatian technical-protection partner
+
+### 20. Statni tiskarna cenin, s.p. (Czech State Printing Works of Securities) — Czechia
+
+- **Signal:** TED 515641-2026 (27/07/2026): OPEN tender 'Obmena aktivnich prvku LAN' — complete replacement of LAN active components, CPV 32422000, estimated CZK 30,000,000 excl. VAT (~EUR 1.2m), deadline for tenders 31/08/2026 09:00, lowest price.
+- **Source:** TED (Tenders Electronic Daily), EU Official Journal supplement — https://ted.europa.eu/en/notice/515641-2026/pdf (27/07/2026, primary)
+- **Implies:** The Czech state security printer (banknotes, ID documents, tax stamps) is refreshing its entire network. High-assurance-environment infrastructure work is a credential Printec's security/managed-services arm can use, and STC is a buyer adjacent to the cash cycle that has not appeared in prior findings.
+- **Likelihood:** Closes 31/08/2026 | **Size:** M | **Win:** Low | **Confidence:** Medium | **New:** True | **Deadline:** 31/08/2026
+- **Follow-up:** New buyer for the watchlist — set a TED alert on 'STATNI TISKARNA CENIN' for security, ID and cash-cycle CPVs
+
+### 21. Ministerstvo vnitra (Czech Ministry of the Interior) — Czechia
+
+- **Signal:** TED 489903-2026 (15/07/2026): award of a framework for 'Poskytovani elektronickeho bankovnictvi prostrednictvim zapujcenych platebnich terminalu' — provision of electronic banking via LOANED PAYMENT (POS) TERMINALS, CPV 66110000 Banking services. Winner Ceska sporitelna, a.s.; Global Payments s.r.o. also named as an organisation on the notice. Value CZK 811,511.64; contract concluded 30/06/2026; 3 tenders received; award criterion is the lowest percentage commission per transaction.
+- **Source:** TED (Tenders Electronic Daily), EU Official Journal supplement — https://ted.europa.eu/en/notice/489903-2026/pdf (15/07/2026, primary)
+- **Implies:** A public-sector card-acceptance award structured exactly as Printec's POS/acquiring proposition — terminals provided free by the acquirer and monetised on merchant-service commission. Ceska sporitelna won it with Global Payments as the acquiring/processing partner, confirming the bank+processor pairing that Printec must either join or displace to sell POS estate into Czech public bodies.
+- **Likelihood:** Contract now running; comparable municipal and ministry card-acceptance tenders recur continuously across CZ/RO/PL | **Size:** S | **Win:** Low | **Confidence:** Medium | **New:** True
+- **Follow-up:** Log the Ceska sporitelna / Global Payments s.r.o. pairing for Agent 6; scan for the equivalent Romanian and Polish 'servicii bancare de acceptare plati' / 'bankowa obsluga' awards where Printec could supply the terminal estate
+
+### 22. Astynomia Kyprou (Cyprus Police) — Cyprus
+
+- **Signal:** TED 469749-2026 (08/07/2026): VEAT / voluntary ex-ante transparency notice — direct award by NEGOTIATED PROCEDURE WITHOUT PRIOR CALL FOR COMPETITION, ref D.O 41/2026, for application maintenance services for the central police system, CPV 50312610. Awarded to NetU Consultants Ltd for EUR 1,696,327. Award criterion recorded as lowest price.
+- **Source:** TED (Tenders Electronic Daily), EU Official Journal supplement — https://ted.europa.eu/en/notice/469749-2026/pdf (08/07/2026, primary)
+- **Implies:** A EUR 1.7m Cypriot public IT-outsourcing contract handed to the incumbent with no competition — the single largest Cyprus notice in the scan window. Confirms that in Cyprus the addressable route is incumbency and framework position, not open competition; relevant to how Printec should structure any Cyprus managed-services approach.
+- **Likelihood:** Locked; contestable only if the VEAT is challenged or at expiry | **Size:** M | **Win:** Low | **Confidence:** Medium | **New:** True
+- **Follow-up:** Log NetU Consultants Ltd as the Cyprus Police IT incumbent; check the Cyprus eProcurement portal for the contract end date
+
+### 23. Geldservice Austria (GSA) — supplier base — Austria
+
+- **Signal:** GSA's TED award history establishes its current cash-processing supplier set: TED 856282-2025 (23/12/2025) 'System BPS M Segment Upgrade' awarded to Giesecke+Devrient Currency Technology GmbH (CPV 48100000); TED 793615-2025 (01/12/2025) coin-roll packers for coin-roll production awarded to GZT - Geldzahltechnik Gesellschaft m.b.H. (CPV 30123630); TED 208117-2025 (01/04/2025) a VEAT direct award for maintenance of coin equipment (CPV 50310000); orfix International GmbH holds the banderole/roll-paper consumables (263538-2025, 382411-2025, 559095-2025); Wiener Stadtische holds cash-transport insurance (818770-2025).
+- **Source:** TED (Tenders Electronic Daily), EU Official Journal supplement — https://ted.europa.eu/en/notice/856282-2025/pdf (23/12/2025, primary)
+- **Implies:** Maps the competitive field Printec would enter at GSA: G+D owns the banknote-processing platform and its software upgrades, GZT owns coin packaging, and coin-equipment maintenance has been going out by direct award. The EUR 9.1m recycler tender (305531-2026) is the one line GSA has put to genuine competition — which is where a challenger has a real chance.
+- **Likelihood:** Supplier set stable; the recycler framework is the live variable | **Size:** Unscoped | **Win:** — | **Confidence:** Medium | **New:** True
+- **Follow-up:** Feed the GSA supplier map to Agent 6 as the Austrian cash-cycle competitor picture; note G+D appears as central-bank incumbent in AT, SI, HR and BG within this run alone
+
+### 24. Bulgarian National Bank (BNB) — Bulgaria
+
+- **Signal:** TED 484925-2026 (14/07/2026): OPEN tender for supply and implementation of an electronic document management information system (software, licences, installation, configuration, roll-out, staff training and warranty technical/software support), CPV 48000000, estimated EUR 773,150 excl. VAT, internal ref 588322, deadline for tenders 13/08/2026.
+- **Source:** TED (Tenders Electronic Daily), EU Official Journal supplement — https://ted.europa.eu/en/notice/484925-2026/pdf (14/07/2026, primary)
+- **Implies:** Not a cash or payments system, but a EUR 773k software-plus-implementation-plus-support award at a central bank — the shape of engagement (licence + integration + multi-year support) that Printec's digital onboarding and compliance software business sells. Useful as a live read on BNB's software procurement bar during the euro changeover.
+- **Likelihood:** Closes 13/08/2026 | **Size:** S | **Win:** — | **Confidence:** Medium | **New:** True | **Deadline:** 13/08/2026
+- **Follow-up:** Low priority; track the winner to see which integrators BNB accepts for core software delivery
+
+## Coverage notes
+
+Fresh run (no checkpoint existed for 2026-08-01; the 2026-07-31 ted-eu.json part held status=partial with an EMPTY signals array, so nothing was carried forward). Method: (1) read the Tier-0 cache /Users/mangian/Downloads/BANKING/intel-cache/ted_notices.json (generated 01/08/2026; 185 in-scope notices published 02/07-31/07/2026; CPV 30123000/30144400/30142000/35120000/50310000/50312000; countries GRC ROU BGR HRV SVN CZE SVK HUN CYP AUT) and triaged ALL 185 rows, including every one of the 86 winner-bearing rows; (2) verified 24 notices by GET-fetching https://ted.europa.eu/en/notice/<id>/pdf with a desktop User-Agent and extracting text locally with pdfminer.six (system pdftotext is absent on this host) - all 24 fetches succeeded, zero blocks; (3) ran independent TED Search API v3 POST queries to cover gaps the cache CPV/country set could not: CPV 30123200 (automatic cash dispensers), 30123600/610/620/630 (coin handling) EU-wide back to 01/04/2026; Poland (absent from the cache) across the full cash/security/banking CPV set; and buyer-name sweeps on the footprint central banks (Narodna banka Slovenska 32 notices, Banka Slovenije 31, Bulgarian National Bank 35, Magyar Nemzeti Bank 35, Oesterreichische Nationalbank 17, Ceska narodni banka 161, plus Geldservice Austria 12) back to 01/01/2026; (4) title/full-text keyword sweeps in six languages (bankomat, cash recycler, samoposluzni, onkiszolgalo, ATM automat, recycler). CARRIED-ITEM STATUS: Greece thermal cameras CONFIRMED still open, deadline moved to 26/08/2026 (TED 524245-2026); Greece G-Cloud Lot 5 EUR 700,000 CONFIRMED still open, deadline 03/08/2026 (448525-2026); Greece Ministry of Culture 6-lot IT EUR 299,193.55 CONFIRMED still open, deadline 10/08/2026 (476392-2026); Croatia FINA coin counters CORRECTED from open to CANCELLED with no winner (435583-2026); Croatia HEP technical-protection maintenance CONFIRMED open with exact figures EUR 1,373,460 / 4 lots / deadline 03/09/2026; Slovenia Banka Slovenije banknote-sorter maintenance CONFIRMED open, deadline 17/08/2026, and the scope pinned down (BPS M7 MEvo-12SBN + 10LSBN backup, to 31/08/2032); Slovakia NBS LAN CONFIRMED open, EUR 650,000, deadline 24/08/2026. GENUINE GAPS: (a) the biggest single opportunity found, Geldservice Austria's EUR 9.1m recycler framework, is a two-stage negotiated procedure whose candidate shortlist is not public on TED - it sits behind gv.vergabeportal.at/Detail/244277, which was not opened this run; (b) NBS Slovakia 2026 plan items 0003 (banknote counters/sorters), 0131/0132 (coin counting/packaging) and 0236 (HSM maintenance) do NOT appear on TED at all, so they are either below EU threshold or still unpublished - they must be chased on the Slovak UVO/EVO portal, not here; (c) commercial banks in every footprint country are private entities outside the EU procurement directives and therefore structurally invisible on TED - that absence is a finding, not a coverage failure; (d) the Tier-0 cache omits Poland, which this run swept separately and found to be almost entirely municipal credit/leasing notices with no cash-automation content; (e) Ukraine, Serbia, Bosnia, N. Macedonia, Albania, Kosovo, Montenegro and Moldova are non-EU and by definition absent from TED - they belong to the other portal agents.
+
+## Access issues
+
+None on TED. All 24 notice PDFs at https://ted.europa.eu/en/notice/<id>/pdf returned 200 to a plain GET with a desktop Chrome User-Agent and extracted cleanly with pdfminer.six. The TED Search API v3 (POST https://api.ted.europa.eu/v3/notices/search, public, no auth) accepted every query issued, including buyer-name and title full-text expressions. Note for future runs: the API returns notice titles in a rotating UI language (Hungarian in this run) regardless of the requested scope - the notice-number and PDF are the reliable artefacts, not the returned title string. gv.vergabeportal.at (the Austrian portal holding the GSA tender documents) was NOT opened this run; Claude-in-Chrome is not connected, so no browser escalation was attempted.
+
+## Operator requests
+
+1) Austrian procurement portal gv.vergabeportal.at/Detail/244277 - the Geldservice Austria EUR 9.1m 'Kombinierte Ein- und Auszahlungsgeraete' (cash/coin recycler) tender documents and, critically, the list of candidates invited to the second stage. Registration is likely required, so an operator should retrieve the Ausschreibungsunterlage G26146096 and any Teilnehmerliste. This is the single highest-value item in this run's findings. 2) Slovak UVO/EVO portal - NBS 2026 procurement plan items 0003, 0131, 0132 and 0236, which are absent from TED and probably sub-threshold. 3) FINA Croatia (nabava@fina.hr, contact Marina Dolcic) - the re-issue timetable for the cancelled 'Brojaci kovanica' coin-counter tender, ref 2.2.1/2026/V/I2.

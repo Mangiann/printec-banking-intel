@@ -1,0 +1,185 @@
+# Austria — ausschreibungen.usp.gv.at (OeNB, GSA, Münze Österreich, OeBS, Österreichische Post/bank99)
+
+Run date 27/08/2026 — status: complete. 16 signals.
+
+## Headline
+
+- **TOP WATCH ITEM RESOLVED:** the GSA **EUR 9.1m recycler framework** (TED 305531-2026, ref G26146096) is **NOT yet awarded**. No contract-award notice exists on TED; GSA's newest notice of any kind is 23/06/2026. Stated contract start 02/11/2026, unlimited term, delivery into **Austria, Slovenia, Bavaria and neighbours within 100 km**.
+- **New OeNB award 26/08/2026:** rural-ATM framework call-off to **PSA Payment Services Austria**, EUR 382,001.48, 60 months, single bid.
+- **Münze Österreich coin-blank weighing line EXTENDED** 01/09 → **14/09/2026** (suitability criteria simplified); the first attempt was **cancelled with no winner** despite 4 offers.
+- **Diebold Nixdorf is inside GSA** on voucher-processing software — an incumbency risk for the recycler framework.
+- **GZT Geldzähltechnik (FN 98239w)** is the Austrian cash-automation incumbent: GSA coin machinery *and* Österreichische Post's automatic cash safes.
+
+## Signals
+
+### 1. Geldservice Austria (GSA) (Austria) — XL | Medium | new=True
+
+**Signal.** TOP WATCH ITEM RESOLVED AS 'STILL NOT AWARDED'. GSA EUR 9,100,000 excl. VAT recycler framework 'Kombinierte Ein- und Auszahlungsgeraete fuer effiziente und nachhaltige Bargeld- und Gutscheinlogistik' (recycler = an ATM that re-dispenses the notes customers deposit) = TED notice 305531-2026, OJ S 86/2026, published 05/05/2026, internal ref G26146096, CPV 30123200 Geldausgabeautomaten. Negotiated procedure with prior call for competition; participation-request deadline was 08/06/2026 11:00, invitations to tender due 25/06/2026, contract start stated as 02/11/2026, term 999 months (i.e. unlimited; the EUR 9.1m is a 5-year estimate for devices AND maintenance). Minimum 3 candidates to phase 2. Award criteria in points: price 245, Banknotenrecycling 100, Muenzrecycling 74, Allgemeines 33, Muenzeinzahler & Muenzhopper 32, Nachhaltigkeit 6. Places of performance: Austria, SLOVENIA, Bavaria (DE), plus CH/FL/CZ/SK/HU/IT within 100km road distance of the Austrian border. Buyer contact runs through OeBS (alexander.riedmueller@oebs.co.at, Print and Mint Services GmbH). NO CONTRACT-AWARD NOTICE EXISTS as of 27/08/2026: a full TED buyer-name sweep of GELDSERVICE AUSTRIA returns 24 notices, the newest being this 05/05/2026 cn-standard, with no can-standard against it; USP eProcurement likewise shows no GSA award notice after 23/06/2026. Verdict: still in negotiation/evaluation, award unpublished, no winner named.
+
+**Implies.** The single largest recycler opportunity in the DACH/Adria overlap is still live and unclaimed. Direct fit for Printec NCR Atleos recycling ATMs, Glory/Sesami TCRs, coin recycling and x-core multivendor software; the Slovenia+neighbours delivery scope means a Printec regional win here lands inside Printec's own footprint. The voucher (Gutschein) leg of the scope is where Diebold Nixdorf already sits at GSA.
+
+- Source: TED (EU Official Journal) — https://ted.europa.eu/en/notice/305531-2026/xml (05/05/2026, primary)
+- Likelihood: award publication likely Q4 2026 given the 02/11/2026 stated contract start | Confidence: Medium | Deadline: —
+- Follow-up: Monitor TED weekly for a can-standard against procedure id 0555e5ee-de59-43ca-9041-e1e4ff90bce9; if Printec was not among the min-3 invited candidates, prepare for the maintenance/expansion drawdowns and approach GSA via OeBS contact
+
+### 2. Oesterreichische Nationalbank (OeNB) / PSA Payment Services Austria GmbH (Austria) — M | Low | new=True
+
+**Signal.** NEW AWARD 26/08/2026: fresh call-off (Abruf) from the OeNB framework agreement for the installation and operation of minimum 60 / maximum 120 cash-dispensing ATMs (Geldausgabeautomaten), i.e. the Austrian rural-ATM programme. WINNER: PSA Payment Services Austria GmbH, Stammzahl 9110017812648. Value EUR 382,001.48; term 60 months; 1 offer received; winner is not an SME; CPV 66600000; OeNB file 2024-4107; negotiated procedure with prior notice; above EU threshold. This is a NEW drawdown, separate from and larger than the EUR 372,457.40 call-off in the 01/08/2026 baseline. The USP record shows this framework generating repeated call-offs: 03/06/2025, 16/06/2025, 08/07/2025, 29/07/2025, 05/08/2025, 09/09/2025, 17/10/2025, 31/12/2025, 12/01/2026, 05/03/2026, 13/04/2026, 29/04/2026, 13/05/2026, 22/06/2026 and now 26/08/2026 (parent framework award = TED 511414-2025, 05/08/2025).
+
+**Implies.** Austria's central bank keeps expanding a rural ATM estate through a single-bidder framework held by PSA. Printec cannot bid the framework (closed) but the estate itself is NCR-Atleos-addressable hardware, telemetry/monitoring and field-service work; approach is via PSA as OEM/service subcontractor, not via a tender.
+
+- Source: USP eProcurement (ausschreibungen.usp.gv.at) — https://ausschreibungen.usp.gv.at/at.gv.bmdw.eproc-p/public/tender-detail?object=a2c49245-23b2-46e1-acc7-c5a78913a090-9f280e64-19e5-4aad-b535-1d48aeb56f6c (26/08/2026, primary)
+- Likelihood: further call-offs near-certain within 6 months (cadence ~6 weeks) | Confidence: Medium | Deadline: —
+- Follow-up: Open a partner conversation with PSA Payment Services Austria on ATM hardware supply, x-core multivendor software and field maintenance for the rural GAA estate
+
+### 3. Oesterreichische Nationalbank (OeNB) (Austria) — Unscoped | Low | new=True
+
+**Signal.** OPEN TENDER, deadline 28/09/2026 11:00 CEST: 'Generic Threat Landscape Report for the Austrian Financial Sector' — OeNB is selecting a firm to draft Generic Threat Landscape (GTL) reports for the whole Austrian financial sector. Open procedure, service contract, 60-month term, CPV 79417000 (security consultancy) + 72316000 (data analysis), OeNB file 2025-1581, TED 587224-2026 published 26/08/2026, notice dispatched 24/08/2026. Docs and e-submission via https://gv.vergabeportal.at/Detail/253902. NO ESTIMATED VALUE IS PUBLISHED — this is a disclosure gap, not evidence of a small deal (a 60-month sector-wide mandate is material).
+
+**Implies.** A central-bank-sponsored sector threat-intelligence baseline is the analytical layer that TIBER-EU testing and DORA operational-resilience obligations feed off. Adjacent to Printec's fraud & transaction-monitoring (INETCO) and compliance/resilience lines, though the deliverable itself is consultancy rather than product — best played as a partner/subcontract or as a door-opener into OeNB's resilience agenda.
+
+- Source: USP eProcurement / TED 587224-2026 — https://ausschreibungen.usp.gv.at/at.gv.bmdw.eproc-p/public/tender-detail?object=a2c49245-23b2-46e1-acc7-c5a78913a090-8168cbe5-2022-4d0e-9df1-db68be29252f (26/08/2026, primary)
+- Likelihood: award expected Q4 2026 | Confidence: Medium | Deadline: 28/09/2026
+- Follow-up: Decide by mid-September whether to bid with a threat-intel partner; either way use the resulting GTL reports as the anchor for DORA-resilience pitches to Austrian and CEE banks
+
+### 4. Muenze Oesterreich AG (Austrian Mint) (Austria) — M | Medium | new=True
+
+**Signal.** CARRIED ITEM STATUS = EXTENDED, NOT CLOSED. 'Automatisierte Wiegeanlage fuer Muenzrohlinge (Ronden) - 2. Versuch' (automated weighing line for coin blanks, 2nd attempt), supply AND maintenance. The baseline recorded a 01/09/2026 deadline; a change notice (TED 588745-2026, published 26/08/2026, dispatched 25/08/2026) EXTENDED the participation deadline to 14/09/2026 10:00 CEST, reason given: 'Fristverlaengerung fuer die Teilnahmeantraege aufgrund einer vereinfachung in den Eignungskriterien' (deadline extended because the suitability criteria were simplified). Estimated value EUR 280,000 excl. VAT, CPV 42000000, negotiated procedure with prior call for competition, delivery Vienna AT130, e-submission via https://gv.vergabeportal.at/Detail/252147, contact einkauf@muenzeoesterreich.at. CONTEXT ON THE 1st ATTEMPT: TED 18441-2026 (12/01/2026, internal ref G15145873) records the first procedure CLOSED WITH NO WINNER — 'Es wurde kein Wettbewerbsgewinner ermittelt', reason 'Entscheidung des Beschaffers aufgrund geaenderter Anforderungen' (buyer decision due to changed requirements), despite 4 offers received against a EUR 250,000 excl. VAT estimate. The re-run estimate is EUR 30,000 higher.
+
+**Implies.** A cancelled-then-relaxed procurement with a widened budget is a buyer that could not get what it wanted from the incumbent field — the most winnable posture on this portal. Coin-blank weighing is coin-handling automation adjacent to Printec's Glory/Sesami coin counting and sorting line, though it is industrial mint machinery rather than branch cash automation, so fit is partial.
+
+- Source: TED 588745-2026 / TED 18441-2026 / USP eProcurement — https://ted.europa.eu/en/notice/588745-2026/xml (26/08/2026, primary)
+- Likelihood: participation requests close 14/09/2026; award H1 2027 | Confidence: Medium | Deadline: 14/09/2026
+- Follow-up: Assess with Glory/Sesami whether a coin-blank weighing line is in scope; if yes, file a participation request before 14/09/2026 10:00
+
+### 5. Geldservice Austria (GSA) / EFESO Consulting Austria GmbH (Austria) — Unscoped | Medium | new=True
+
+**Signal.** STRATEGIC PRECURSOR SIGNAL — AWARD. GSA directly awarded (Direktvergabe) a 'Beratungsprojekt - umfassende Analyse und Optimierung der operativen Prozesse und Kostenstrukturen, inkl. Erstellung eines Standortkonzeptes' (consulting project: comprehensive analysis and optimisation of operational processes and cost structures, INCLUDING production of a SITE/LOCATION CONCEPT). WINNER: EFESO Consulting Austria GmbH, Stammzahl 9110016522395. Value EUR 137,000; contract concluded 20/04/2026; term 3 months; 4 offers received; CPV 79410000; below EU threshold; GSA file 20042026.
+
+**Implies.** A 3-month cash-centre network and cost-structure review that reported around July 2026, immediately followed by the EUR 9.1m recycler framework staying open into Q4 — the two are almost certainly the same programme. A cash-centre footprint redesign is the moment to sell recyclers, TCRs, cash optimisation (NCR APTRA OptiCash) and outsourced cash logistics rather than boxes alone.
+
+- Source: USP eProcurement — https://ausschreibungen.usp.gv.at/at.gv.bmdw.eproc-p/public/tender-detail?object=a2c49245-23b2-46e1-acc7-c5a78913a090-7fffaea4-18d8-4572-9853-faef13e60925 (20/04/2026, primary)
+- Likelihood: follow-on implementation procurement plausible within 6-12 months | Confidence: Medium | Deadline: —
+- Follow-up: Request the Standortkonzept outcome from GSA; pitch OptiCash cash optimisation plus recycler-led branch/cash-centre redesign against the EFESO findings
+
+### 6. Geldservice Austria (GSA) / Diebold Nixdorf GmbH Banking Division (Austria) — S | Low | new=True
+
+**Signal.** COMPETITOR WIN AT THE TARGET BUYER. GSA directly awarded (Direktvergabe) 'Applikationssoftware und Gutscheinverarbeitung, keine Wartung' (application software and voucher processing, no maintenance) to DIEBOLD NIXDORF GmbH BANKING DIVISION, Stammzahl 9110015980561. Value EUR 89,373.00; contract concluded 11/12/2025; 2 offers received; CPV 48100000; below EU threshold; GSA file 11122025. Note the same GSA file number also produced the Giesecke+Devrient BPS M award on the same date. Separately, on 10/12/2025 GSA awarded 'Softwareentwicklung Multi Vendor Bargeld und Gutschein Software Plattform, inkl. 4 Jahre Wartung' (development of a MULTI-VENDOR cash and voucher software platform incl. 4 years' maintenance) to Data Engineering Gesellschaft fuer Betriebsinformatik, Softwareentwicklung und -vertrieb m.b.H., Stammzahl 9110015416480, EUR 109,200.00, Direktvergabe, 2 offers, CPV 48100000, GSA file 10122025.
+
+**Implies.** Diebold Nixdorf is already inside GSA on the voucher-processing software that the EUR 9.1m recycler framework explicitly names in its title ('Bargeld- und Gutscheinlogistik') — a material incumbency risk for that framework. But GSA has simultaneously commissioned an explicitly MULTI-VENDOR cash/voucher platform from a third party, which is exactly the anti-lock-in posture Printec's x-core multivendor ATM software is sold on. That platform is the integration point any recycler bid must satisfy.
+
+- Source: USP eProcurement — https://ausschreibungen.usp.gv.at/at.gv.bmdw.eproc-p/public/tender-detail?object=a2c49245-23b2-46e1-acc7-c5a78913a090-361c010f-a9b8-472e-a62c-b5479726a5d3 (11/12/2025, primary)
+- Likelihood: platform live and shaping the recycler award now | Confidence: Medium | Deadline: —
+- Follow-up: Establish x-core / recycler compatibility with the Data Engineering multi-vendor platform before the recycler award lands; flag DN incumbency to Agent 6
+
+### 7. Geldservice Austria (GSA) / Giesecke+Devrient Currency Technology GmbH (Austria) — M | Low | new=True
+
+**Signal.** COMPETITOR WIN. GSA awarded 'System BPS M Segment Upgrade inkl. geringfuegiger Hardware-Ergaenzung fuer 6 Stk. Maschinen von Giesecke+Devrient GmbH' (BPS M banknote-processing system segment upgrade plus minor hardware addition for 6 machines) to GIESECKE+DEVRIENT CURRENCY TECHNOLOGY GmbH, Stammzahl DE229960356 / HRB 148256. Value EUR 615,135.40; contract concluded 11/12/2025; negotiated procedure WITHOUT prior notice (i.e. sole-source); 1 offer; no SME; CPV 48100000; above EU threshold; GSA file 11122025. Also published as TED 856282-2025 (23/12/2025).
+
+**Implies.** G+D holds GSA's high-speed banknote-processing estate (6 BPS M machines) sole-source. Printec should not chase the sorters; the opening is the recycler/front-end layer and multivendor software, not the cash-centre sorting core.
+
+- Source: USP eProcurement / TED 856282-2025 — https://ausschreibungen.usp.gv.at/at.gv.bmdw.eproc-p/public/tender-detail?object=a2c49245-23b2-46e1-acc7-c5a78913a090-83b6fa0a-e182-405e-8e2d-b12839a06bbf (11/12/2025, primary)
+- Likelihood: G+D lock-in on sorters persists | Confidence: Medium | Deadline: —
+- Follow-up: Record G+D as the entrenched GSA and OeNB banknote-processing incumbent for Agent 6 competitor mapping
+
+### 8. Oesterreichische Nationalbank (OeNB) / Giesecke+Devrient Currency Technology GmbH (Austria) — M | Low | new=False
+
+**Signal.** COMPETITOR WIN. OeNB awarded 'Modernisierung der Banknotenbearbeitungsmaschine' (modernisation of the banknote-processing machine) to GIESECKE+DEVRIENT CURRENCY TECHNOLOGY GmbH, Stammzahl HRB 148256. Value EUR 237,900.00; contract concluded 03/11/2025; negotiated procedure WITHOUT prior notice; 1 offer; no SME; CPV 42900000; above EU threshold; OeNB file 2025-3303. Also TED 730966-2025 (05/11/2025).
+
+**Implies.** [STANDING - dated 2025] Confirms G+D holds both Austrian central-cash operators (OeNB and GSA) on banknote processing, sole-sourced. Same pattern Printec already meets at Banka Slovenije. Treat Austrian banknote-sorting as closed and compete on recycling/self-service instead.
+
+- Source: USP eProcurement / TED 730966-2025 — https://ausschreibungen.usp.gv.at/at.gv.bmdw.eproc-p/public/tender-detail?object=a2c49245-23b2-46e1-acc7-c5a78913a090-3b841d4c-24fe-4661-9be2-1e5f35f4ccc8 (03/11/2025, primary)
+- Likelihood: no re-tender visible | Confidence: Medium | Deadline: —
+- Follow-up: Feed to Agent 6 alongside the Banka Slovenije G+D incumbency for a regional G+D account map
+
+### 9. Geldservice Austria (GSA) / GZT - Geldzaehltechnik Gesellschaft m.b.H. (Austria) — M | Low | new=True
+
+**Signal.** COMPETITOR WIN — LOCAL CASH-AUTOMATION SPECIALIST. GSA awarded 'Muenzrollenverpacker fuer die Fertigung von Muenzrollen' (coin-roll packing machine for coin-roll production) to GZT - GELDZAEHLTECHNIK GESELLSCHAFT M.B.H., Stammzahl FN 98239w. Value EUR 661,057.35; contract concluded 17/11/2025; negotiated procedure with prior notice; 1 offer received; winner is an SME; CPV 30123630 (Muenzrollmaschinen); above EU threshold; GSA file G26145789. Also TED 793615-2025 (01/12/2025).
+
+**Implies.** GZT is the Austrian coin- and cash-handling equipment incumbent and a direct Printec-class competitor in this market — it holds BOTH GSA coin machinery and Oesterreichische Post's automatic cash safes. A single-bid EUR 661k award shows no effective competition on Austrian coin automation, which is a gap Printec's Glory/Sesami coin counting and sorting range could contest.
+
+- Source: USP eProcurement / TED 793615-2025 — https://ausschreibungen.usp.gv.at/at.gv.bmdw.eproc-p/public/tender-detail?object=a2c49245-23b2-46e1-acc7-c5a78913a090-9bcd6336-eda4-4d69-b426-05e42e129780 (17/11/2025, primary)
+- Likelihood: GZT remains default supplier absent a challenger | Confidence: Medium | Deadline: —
+- Follow-up: Agent 6: profile GZT (FN 98239w) as the Austrian cash-automation incumbent; assess whether a Glory/Sesami-backed Printec entry can force competition at GSA and Post
+
+### 10. Oesterreichische Post AG (parent of bank99) / GZT - Geldzaehltechnik Gesellschaft m.b.H. (Austria) — M | Medium | new=True
+
+**Signal.** TWO COMPETITOR CALL-OFFS AT THE POST/bank99 BRANCH NETWORK. Oesterreichische Post AG (Stammzahl FN180219d) published two award notices, both described as 'Abruf aus RV: Automatische Kassentresore klein und gross' (call-off from the framework for automatic cash safes/tills, small and large; the parent framework was concluded 04/08/2015). WINNER of both: GZT - GELDZAEHLTECHNIK GESELLSCHAFT M.B.H., FN 98239w. (a) Post file 5100905314, published 21/11/2025, titled 'Ueberholung kleiner 5 Mio. Banknoten' (overhaul, under 5 million banknotes), supply contract, restricted procedure with prior notice, CPV 30191000, EUR 128,486.26, 4 offers, below EU threshold. (b) Post file 5100926616, published 19/02/2026, titled 'AKT AST-7016 Fullservice 2026', SERVICE contract, negotiated procedure with prior notice, CPV 50000000 (repair and maintenance), EUR 270,923.05, 4 offers, below EU threshold. NOTE the notices' titles and their common framework description differ; both are reproduced exactly as published.
+
+**Implies.** Oesterreichische Post/bank99 runs automated cash-safe (teller cash recycling/deposit) hardware across its counter network on an 11-year-old 2015 framework, with a recurring ~EUR 270k/year full-service maintenance stream to GZT. An 11-year-old framework is overdue for replacement, and a post-office counter estate is precisely the branch-transformation, TCR and self-service kiosk target Printec sells into (compare Printec S.I. d.o.o. at Posta Slovenije).
+
+- Source: USP eProcurement — https://ausschreibungen.usp.gv.at/at.gv.bmdw.eproc-p/public/tender-detail?object=39e2a593-d508-4f64-8a04-8d6dbf730f9d-5100926616 (19/02/2026, primary)
+- Likelihood: framework replacement plausible but not yet announced; annual full-service call-offs continue | Confidence: Medium | Deadline: —
+- Follow-up: Approach Oesterreichische Post / bank99 procurement pre-tender on replacing the 2015 automatic-cash-safe framework with Glory/Sesami TCRs plus x-visio self-service; watch USP for a new RV notice
+
+### 11. Geldservice Austria (GSA) / Plast-farb Sp. z o.o. Sp. k (Austria) — S | Low | new=True
+
+**Signal.** AWARD. Call-off from the GSA framework for the supply of security bags for cash and valuables transport (Sicherheitstaschen fuer den Geld- und Werttransport), under TED file 2021/S 108-284136, ANKOE document ID 114943-00. WINNER: PLAST-FARB SP. Z O.O. SP. K (Poland), registration KRS 0000451573. Value EUR 103,449.71; contract concluded 09/06/2026; published 23/06/2026; negotiated procedure with prior notice; 2 offers, both SMEs; CPV 18930000 / 35121400 / 18937000; above EU threshold. This is the most recent GSA notice of any kind on USP as of 27/08/2026.
+
+**Implies.** Cash-in-transit consumables — adjacent to Printec's CIT adjacency and IBNS (intelligent banknote neutralisation) line but not a core fit. Its real value here is as the timestamp proving no GSA recycler award has been published since.
+
+- Source: USP eProcurement — https://ausschreibungen.usp.gv.at/at.gv.bmdw.eproc-p/public/tender-detail?object=a2c49245-23b2-46e1-acc7-c5a78913a090-52d4c814-fae0-4e20-88d7-8630eeaf78d9 (09/06/2026, primary)
+- Likelihood: recurring call-offs roughly quarterly | Confidence: Medium | Deadline: —
+- Follow-up: No action beyond using it as the GSA publication-recency marker
+
+### 12. Oesterreichische Nationalbank (OeNB) / PKE Electronics GmbH (Austria) — M | Low | new=True
+
+**Signal.** AWARD — PHYSICAL SECURITY. Contract modification notice TED 157688-2026 (06/03/2026): 'Vertragsverlaengerung Teil II und III - Wartung Sicherheitstechnik / Wartung Sicherheitstueren und Schleusen' (3-month contract extension, parts II and III: maintenance of security technology / maintenance of security doors and airlocks), OeNB internal ref IGImmo/006-5, modifying the earlier award TED 338405-2019. WINNER: PKE ELECTRONICS GMBH, offer ref TKWONB-NKV238, LOT-8870, value EUR 357,589.26, contract concluded 03/03/2026, no subcontracting. Justification recorded: only the incumbent can perform the work because it developed the entire security-management software and all communication interfaces between subsystems, the customer-specific integrations were built for OeNB operations, and the modification stays under the 50% contract-value ceiling of section 365(3)(5) BVergG 2018.
+
+**Implies.** OeNB's physical security estate (security doors, airlocks, security management system) is locked to PKE Electronics by software ownership, and OeNB has now had to buy a 3-month bridge — which means the underlying maintenance contract is at a re-procurement decision point. Adjacent to Printec's physical ATM security / IBNS line, but the software lock-in makes a displacement bid hard; the re-tender, if it comes, is the only entry point.
+
+- Source: TED 157688-2026 — https://ted.europa.eu/en/notice/157688-2026/xml (03/03/2026, primary)
+- Likelihood: a full re-tender of OeNB security-technology maintenance is plausible within 12 months given the bridging extension | Confidence: Medium | Deadline: —
+- Follow-up: Watch USP and TED for an OeNB Wartung Sicherheitstechnik open procedure; log PKE Electronics for Agent 6
+
+### 13. Oesterreichische Nationalbank (OeNB) / Brink's Global Services Deutschland GmbH; Colt Technology Services GmbH; AT&T Global Network Services (Austria) — Unscoped | — | new=True
+
+**Signal.** TWO FURTHER OeNB WINNERS captured for competitor mapping, values not published in the search index and not retrieved this run (stated as a gap, not as zero): (a) TED 785575-2025, published 26/11/2025, 'Luftverkehr - Wertetransporte' (air transport of valuables) awarded to BRINK'S GLOBAL SERVICES DEUTSCHLAND GMBH — cash-in-transit adjacency, Brink's is the CIT incumbent for OeNB cross-border valuables movement. (b) TED 869270-2025, published 31/12/2025, 'Fernsprech- und Datenuebertragungsdienste - SWIFT-Anbindungen - Alliance Connect Gold' awarded jointly to COLT TECHNOLOGY SERVICES GMBH and AT&T GLOBAL NETWORK SERVICES — resilient dual-carrier SWIFT connectivity for the central bank.
+
+**Implies.** [STANDING - dated 2025] The SWIFT Alliance Connect Gold award is the payments-modernisation datapoint on this portal: OeNB is buying resilient dual-carrier SWIFT links, consistent with RTGS/instant-payments and DORA resilience obligations. Neither award is a Printec product fit, but Brink's confirms the CIT competitive set around GSA and OeNB.
+
+- Source: TED (EU Official Journal) — https://ted.europa.eu/en/notice/869270-2025/xml (31/12/2025, primary)
+- Likelihood: both are multi-year contracts, no near-term re-tender | Confidence: Medium | Deadline: —
+- Follow-up: Retrieve the two contract values from the TED XML if Agent 6 needs them; otherwise record the winner names only
+
+### 14. Geldservice Austria (GSA) / ImageWare Austria GmbH (Austria) — S | Low | new=True
+
+**Signal.** SMALL AWARD, recorded per the never-drop-a-winner rule. GSA directly awarded '2 Stueck Gutschein-Scanner Scamax 311cd color duplex, inkl. Urhebergebuehr, mit DpuScan Professional, inkl. Frachtkosten und Installationspauschale' (2 voucher scanners incl. copyright fee, DpuScan Professional software, freight and flat-rate installation) to IMAGEWARE AUSTRIA GMBH, Stammzahl 9110016611419. Value EUR 59,132.36; contract concluded 19/11/2025; Direktvergabe; 2 offers; SME winner; CPV 30210000; below EU threshold; GSA file 19112025.
+
+**Implies.** Third piece of GSA's voucher-processing build-out (with Diebold Nixdorf's application software and Data Engineering's multi-vendor platform), confirming Gutschein handling is a real GSA workstream and not just wording in the recycler tender title. Document-capture adjacency to Printec's document-management line.
+
+- Source: USP eProcurement — https://ausschreibungen.usp.gv.at/at.gv.bmdw.eproc-p/public/tender-detail?object=a2c49245-23b2-46e1-acc7-c5a78913a090-9af68573-bf3f-49be-9709-012974fcf723 (19/11/2025, primary)
+- Likelihood: no repeat expected | Confidence: Medium | Deadline: —
+- Follow-up: None beyond logging ImageWare Austria for Agent 6
+
+### 15. Oesterreichische Banknoten- und Sicherheitsdruck GmbH (OeBS) (Austria) — Unscoped | — | new=True
+
+**Signal.** OPEN, deadline 05/10/2026: OeBS is establishing a DYNAMIC PURCHASING SYSTEM (a permanently open supplier list the buyer runs mini-competitions inside, admitting new suppliers at any time during its life) for packaging materials, split into three separate notices by category — Kategorie 1: Holzwaren (wood products), TED 582655-2026; Kategorie 2: Papier- und Kartonwaren (paper and cardboard), TED 582804-2026; Kategorie 3: Kunststoffwaren (plastics), TED 581813-2026. All three published 24/08/2026 on TED and 23/08/2026 on USP. No estimated value is published for any category. OeBS's 2026 award record is otherwise banknote-printing machinery and materials only: Koenig & Bauer Banknote Solutions SA (printing-press interface update, TED 437958-2026, 25/06/2026), BEMA Werkzeugmaschinen (cylindrical grinding machine, TED 382869-2026, 04/06/2026), PARVIS systems and services s.p.s. (automatic sheet counting and tracking, TED 22392-2026, 13/01/2026), CCL Secure (polymer substrate for banknote production, TED 753285-2025), and two ink awards where the winner is withheld on statutory confidentiality grounds under section 61(4) BVergG 2018.
+
+**Implies.** OeBS is a banknote printer, not a cash-handling buyer — its live pipeline is print consumables and press machinery with no Printec-addressable content. Its relevance to Printec is indirect: OeBS staff run GSA's procurement contact point, so OeBS is the route into the GSA recycler framework rather than a customer in its own right.
+
+- Source: TED / USP eProcurement — https://ted.europa.eu/en/notice/582804-2026/xml (24/08/2026, primary)
+- Likelihood: DPS stays open for years; no Printec-relevant lots expected | Confidence: Medium | Deadline: 05/10/2026
+- Follow-up: No bid. Use the OeBS/GSA shared procurement contact as the relationship route to GSA
+
+### 16. Finanzmarktaufsicht (FMA) — Austrian Financial Market Authority (Austria) — S | Low | new=True
+
+**Signal.** REGULATOR PROCUREMENT PATTERN, no cash-equipment content. FMA's USP record for the last 12 months is entirely IT and security services bought as small direct awards: 'Analysetool Kryptowaehrung' (cryptocurrency analytics tool, 12/03/2026, ref KD_2294753) — the only AML/financial-crime-adjacent item; CO-Managed 24x7 Security Operations Centre (26/11/2025, KD_2237643); Splunk SIEM subscription renewal (18/06/2026); Palo Alto IPS maintenance; web-application firewall renewal; Microsoft Azure and M365 Copilot; a low-code platform (14/10/2025); BPM consultancy; plus one open tender, 'FMA-Standort - Management- und Unterstuetzungsleistungen' (site management and support services), published 21/08/2026 with deadline 02/10/2026. NO VALUES are published for the KD_-series direct awards on the public record.
+
+**Implies.** The crypto-analytics purchase is the only toehold for Printec's AML/KYC line (IMTF Siron, FICO) at the Austrian regulator, and it was a below-threshold direct award, so there is no biddable process. Records the regulator's buying style: small, fast, direct, IT-only — supervisory-technology sales here go through relationships, not tenders.
+
+- Source: USP eProcurement — https://ausschreibungen.usp.gv.at/at.gv.bmdw.eproc-p/public/tenderlist (12/03/2026, primary)
+- Likelihood: continued small direct awards; no open AML tender expected | Confidence: Medium | Deadline: —
+- Follow-up: Track FMA direct awards quarterly for any RegTech/AML analytics item large enough to force a competitive procedure
+
+## Coverage notes
+
+Portal: ausschreibungen.usp.gv.at (Austrian Unternehmensserviceportal eProcurement, 170,267 notices indexed). ACCESS METHOD THAT WORKED: the tenderlist UI renders client-side, but GET /at.gv.bmdw.eproc-p/public/api/tenderlist?draw=1&start=0&length=N&orderColumn=2&orderDir=desc&q=<term> returns clean JSON rows of [title, buyer, publishDate, deadline, objectId, isNoticeFlag, null, null]. The detail page — which the task brief did not have — is /at.gv.bmdw.eproc-p/public/tender-detail?object=<objectId> (or notice-detail when the row's 6th field is true); the route was recovered from the inline row-render template in the tenderlist HTML. Detail pages carry buyer Stammzahl, WINNER name + registration number, contract value, conclusion date, procedure type, CPV and offer counts — everything Agent 6 needs. Verified every USP row against TED where an EU-threshold procedure existed. SEARCH ANGLES USED (German and English, 20+ distinct terms): Geldautomat, Geldausgabeautomat, Bankomat, Ein- und Auszahlung, Auszahlungsgeraet, Kombinierte, Recycling, Bargeld, Banknoten, Banknotenbearbeitung, Muenze, Muenzzaehlmaschine, Sortier, Selbstbedienung, Sicherheitstaschen, Werttransport, Wertgestionierung, Geldservice, Tresor, Videoueberwachung, Signatur, eIDAS, Zahlungsverkehr, Zahlungsterminal, Kartenzahlung, Kartenpersonalisierung, Instant Payments, ISO 20022, Hardware Security, bank99, Post, Finanzmarktaufsicht. Cross-checked with four TED buyer-name sweeps (GELDSERVICE AUSTRIA all 24 notices; Oesterreichische Nationalbank 2025 H2 + all of 2026; Oesterreichische Banknoten- und Sicherheitsdruck since 06/2025; Muenze Oesterreich 76 notices since 06/2025; Oesterreichische Post AG since 11/2025). TOP WATCH ITEM RESOLVED: the GSA EUR 9.1m recycler framework (TED 305531-2026, ref G26146096) has NOT been awarded — no can-standard exists against it on TED, and GSA's newest USP notice of any kind is 23/06/2026. Reported as still-in-evaluation, no winner, per rule 1 (no invented winner). SECOND CARRIED ITEM RESOLVED: Muenze Oesterreich's coin-blank weighing line was EXTENDED from 01/09/2026 to 14/09/2026, not closed; its first attempt was cancelled with no winner. PRODUCT SWEEP — categories this portal showed NOTHING for this run, after explicit searches: (3) POS/acquiring/terminal management/softPOS (Zahlungsterminal 8 hits, none financial; Kartenzahlung 0 hits); (4) payments modernization — only indirectly, via the OeNB SWIFT Alliance Connect Gold award; nothing on instant payments, ISO 20022, RTGS or digital euro (0 hits each); (5) digital identity/onboarding/e-signature — eIDAS 3 hits, newest 2022; (6) fraud & transaction monitoring — nothing beyond the OeNB Generic Threat Landscape consultancy; (9) payment security & HSM/key management — Hardware Security 7 hits, none financial, no Austrian equivalent of the MNB HSM tender; (10) card issuing & personalisation — 0 hits; (12) core & digital channels — nothing. Categories that DID produce signals: (1) ATM & cash automation/recycling (GSA recycler framework, OeNB rural-ATM call-offs, GZT coin machinery); (2) self-service/branch transformation (Oesterreichische Post automatic cash safes); (7) compliance & operational resilience (OeNB GTL report, FMA crypto analytics); (8) physical ATM security (OeNB/PKE); (11) managed services/field maintenance (Post AKT full-service, PKE maintenance). Structural note carried forward and NOT restated as new: Austria has no shared-ATM-network legislation comparable to Croatia's 01/01/2027 scheme or Hungary's Act XVIII allocation; the Austrian rural-ATM build-out is delivered contractually by OeNB through the PSA framework, which is why it appears as repeated call-offs rather than as new tenders. Genuine gaps: commercial Austrian banks (Erste, Raiffeisen, BAWAG, UniCredit Bank Austria, bank99 itself) are private entities and do not publish on USP at all — their ATM/POS procurement is invisible on this portal by design, which is a finding about the portal's coverage rather than an absence of demand; the nearest public proxies are GSA (jointly owned by the Austrian banks and OeNB) and Oesterreichische Post. Contract values for the two OeNB awards to Brink's and to Colt/AT&T were not pulled from the TED XML this run and are reported as unretrieved, not as zero.
+
+## Access issues
+
+gv.vergabeportal.at (ANKOE) — the e-submission platform behind both the GSA recycler framework (Detail/244277) and the Muenze weighing line (Detail/252147) — is an AngularJS single-page app that returns only a 3,966-byte shell to curl even with a desktop Chrome User-Agent, and it fronts its content with hCaptcha (js.hcaptcha.com loaded on every page). Per the playbook I did NOT attempt to solve or bypass the CAPTCHA. Fallback route used and successful: the same procedures are published in full on TED (the primary EU notice), so I read the German TED HTML at https://ted.europa.eu/de/notice/<id>/html for 305531-2026, 588745-2026, 18441-2026 and 157688-2026, and used the TED Search API v3 (POST https://api.ted.europa.eu/v3/notices/search) for buyer-name sweeps. Nothing was dropped. USP itself served everything over plain curl with a desktop Chrome User-Agent — no 403s, no rate limiting. One self-inflicted issue: my first HTML-to-text filter stripped page content along with <script> blocks and silently produced empty output for five detail pages; corrected with a sed-based extractor between id="content" and id="footer" and all five were re-fetched successfully. Data-quality caveat logged rather than smoothed over: the two Oesterreichische Post notices carry titles ('Ueberholung kleiner 5 Mio. Banknoten', 'AKT AST-7016 Fullservice 2026') that do not match their own body description ('Abruf aus RV: Automatische Kassentresore klein und gross', framework dated 04/08/2015). Both are reported verbatim; the 2015 date is the parent framework's conclusion date as published, not the call-off date.
+
+## Operator requests
+
+None strictly required — no paywall or login blocked this run. Two OPTIONAL operator actions if higher confidence is wanted: (1) The GSA recycler tender documents (Ausschreibungsunterlage G26146096) sit behind gv.vergabeportal.at/Detail/244277, which requires an ANKOE account and passes an hCaptcha; an operator with ANKOE credentials could download them to confirm unit volumes and the exact recycler specification ahead of the award. Same for the Muenze weighing line at gv.vergabeportal.at/Detail/252147 and the OeNB GTL tender at gv.vergabeportal.at/Detail/253902 (deadline 28/09/2026, so time-critical if a bid is contemplated). (2) A direct enquiry to the GSA/OeBS procurement contact named on TED 305531-2026 (alexander.riedmueller@oebs.co.at, Print and Mint Services GmbH) would establish whether the recycler framework is still in negotiation or awaiting standstill expiry — that is a commercial call for the deal team, not a research action.

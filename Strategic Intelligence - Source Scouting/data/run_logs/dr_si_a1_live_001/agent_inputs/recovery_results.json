@@ -1,0 +1,202 @@
+[
+ {
+  "candidate_id": "dr_si_a1_live_001__c_004",
+  "source_url": "https://www.bsi.si/sl/nadzor-bancnega-sistema/nadzorniska-razkritja-in-seznami",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a1_live_001__c_006",
+  "source_url": "https://www.bsi.si/sl/nadzor-bancnega-sistema/register-subjektov-nadzora",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a1_live_001__c_010",
+  "source_url": "https://www.bsi.si/sl/statistika",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a1_live_001__c_013",
+  "source_url": "https://www.bsi.si/sl/nadzor-bancnega-sistema/financni-omejevalni-ukrepi",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a1_live_001__c_016",
+  "source_url": "https://www.oam.si",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a1_live_001__c_034",
+  "source_url": "https://seonet.ljse.si/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a1_live_001__c_035",
+  "source_url": "https://seonet.ljse.si/default_en.aspx",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a1_live_001__c_040",
+  "source_url": "https://www.oam.si/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a1_live_001__c_049",
+  "source_url": "https://www.bloomberg.com/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.bloomberg.com/europe",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_si_a1_live_001__c_054",
+  "source_url": "https://seonet.ljse.si/default_en.aspx?language=en",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a1_live_001__c_061",
+  "source_url": "https://thefintechtimes.com/slovenia-europes-quietest-fintech-market-might-be-a-major-force/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a1_live_001__c_102",
+  "source_url": "https://www.intesasanpaolobank.si/en/prebivalstvo/nasa-skupina/zaposlujemo.html",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a1_live_001__c_123",
+  "source_url": "https://www.finextra.com/newsarticle/47848/ebaday-2026-full-speaker-lineup-of-100-leading-payments-experts-revealed",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a1_live_001__c_207",
+  "source_url": "https://www.intesasanpaolobank.si/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a1_live_001__c_214",
+  "source_url": "https://www.sparkasse.si/sl/novice",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a1_live_001__c_241",
+  "source_url": "https://www.intesasanpaolobank.si/en/prebivalstvo/mobilna-placila/flik.html",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a1_live_001__c_283",
+  "source_url": "https://ejn.gov.si/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a1_live_001__c_011",
+  "source_url": "https://www.bsi.si/sl/stanje-v-bancnem-sistemu",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a1_live_001__c_050",
+  "source_url": "https://www.reuters.com/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a1_live_001__c_057",
+  "source_url": "https://www.finextra.com/channel/payments",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ }
+]

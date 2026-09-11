@@ -1,0 +1,296 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://printec.group/schemas/strategic-intelligence-banking-payments/negative_finding.schema.json",
+  "title": "NegativeFinding",
+  "description": "A NegativeFinding is first-class SOURCING-LAYER system memory. It records something the scout (or a connector) searched, tested, expected, followed, or attempted but did NOT successfully turn into a usable SourceCandidate or an approved Source. Its purpose is to stop the same failed searches, dead ends, inaccessible paths, weak terms, and missing source classes from being forgotten or repeated, and to feed coverage auditing. It is NOT Evidence, a Claim, a Signal, a BankNeed, or an Opportunity, and must never carry downstream intelligence content. IMPORTANT: this sourcing-layer object does NOT record 'nothing changed on a monitored source' - that is acquisition-layer change detection (architecture section 11) and lives in the acquisition layer's own records, never here. An LLM must never be used to decide that nothing changed.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "finding_id",
+    "discovery_run_id",
+    "created_at",
+    "updated_at",
+    "finding_status",
+    "finding_type",
+    "country",
+    "sector",
+    "workstream",
+    "source_class",
+    "topics",
+    "language",
+    "description",
+    "searched_or_tested",
+    "result",
+    "why_it_matters",
+    "severity",
+    "confidence_score",
+    "follow_up"
+  ],
+  "properties": {
+    "finding_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Stable unique identifier for this negative finding."
+    },
+    "discovery_run_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Identifier of the run that produced this finding; links to data/run_logs."
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the finding was created (RFC 3339 / ISO 8601 date-time)."
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the finding was last updated (RFC 3339 / ISO 8601 date-time)."
+    },
+    "finding_status": {
+      "type": "string",
+      "enum": ["open", "reviewed", "resolved", "superseded", "invalid"],
+      "description": "Lifecycle status of the finding. When 'superseded', follow_up.superseded_by_finding_id must be set (enforced below)."
+    },
+    "finding_type": {
+      "type": "string",
+      "enum": [
+        "failed_search",
+        "searched_no_result",
+        "source_not_found",
+        "blocked_source",
+        "inaccessible_source",
+        "dead_link",
+        "missing_source_class",
+        "local_language_blind_spot",
+        "unexpanded_pointer_source",
+        "weak_or_ambiguous_keyword",
+        "out_of_scope_source",
+        "duplicate_or_superseded_source",
+        "legal_or_policy_block",
+        "low_quality_source",
+        "no_relevant_results"
+      ],
+      "description": "Type of negative finding. Definitions to keep classification consistent: failed_search = the search attempt failed technically (error, timeout); searched_no_result = the search ran but returned zero results; no_relevant_results = the search returned results but none were relevant; source_not_found = an expected source could not be located; blocked_source = access was technically blocked (robots, bot-block, geo); inaccessible_source = source appears useful but could not be accessed; dead_link = a known URL is broken; missing_source_class = an expected source class has no candidates; local_language_blind_spot = a local-language coverage gap; unexpanded_pointer_source = a pointer source was found but not expanded; weak_or_ambiguous_keyword = a term was too noisy to use safely; out_of_scope_source = a source was found but is out of scope; duplicate_or_superseded_source = a source duplicates or is superseded by another; legal_or_policy_block = access/collection blocked for legal or policy reasons; low_quality_source = a source was found but not useful enough to candidate/register."
+    },
+    "country": {
+      "type": "string",
+      "pattern": "^[A-Z]{2}$",
+      "description": "ISO 3166-1 alpha-2 country code, e.g. 'GR'."
+    },
+    "sector": {
+      "type": "string",
+      "enum": ["banking", "payments", "both"],
+      "description": "Which side of Printec's market this finding concerns."
+    },
+    "workstream": {
+      "type": "string",
+      "enum": ["A1", "A2", "A3", "A4", "A5", "A6", "A8", "A9"],
+      "description": "Workstream code per architecture section 16 (A7 is intentionally not defined)."
+    },
+    "source_class": {
+      "type": "string",
+      "enum": ["direct", "indirect", "pointer", "unknown", "not_applicable"],
+      "description": "Source class dimension of the finding. SourceCandidate uses only direct/indirect/pointer; NegativeFinding additionally allows 'unknown' (class could not be determined) and 'not_applicable' (the finding is not tied to a specific source class, e.g. a failed or unmapped search)."
+    },
+    "source_subtype": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Optional finer classification within source_class, aligned with SourceCandidate.source_subtype (e.g. 'procurement_portal', 'job_board', 'central_bank', 'bank_register', 'conference_agenda'). Lets the Coverage Auditor aggregate undercoverage by source type, not just source_class. Optional; omit when not applicable."
+    },
+    "topics": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 },
+      "description": "Non-empty list of topics the finding concerns. Plural for consistency with SourceCandidate.topics and to support multi-topic findings."
+    },
+    "language": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9-]*$",
+      "description": "The SEARCH/COVERAGE language dimension of the finding (not a source's primary language) as a BCP-47-like tag where possible, e.g. 'el', 'en', or the literal 'unknown'. The pattern is a lenient shape check, not full BCP-47 validation."
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "description": "What was attempted, expected, or observed."
+    },
+    "searched_or_tested": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "What the scout/connector actually searched or tested to produce this finding.",
+      "required": [
+        "method",
+        "queries_used",
+        "urls_checked",
+        "pointer_source_candidate_ids",
+        "pointer_source_urls",
+        "local_language_terms_used",
+        "entities_tested",
+        "searched_at",
+        "no_local_terms_known"
+      ],
+      "properties": {
+        "method": {
+          "type": "string",
+          "enum": [
+            "keyword_search",
+            "local_language_search",
+            "pointer_expansion",
+            "snowball",
+            "url_verification",
+            "access_probe",
+            "registry_check",
+            "manual_review",
+            "deterministic_check",
+            "connector_fetch",
+            "llm_reasoning",
+            "other"
+          ],
+          "description": "How the search/test was performed. This is a CLOSED enum by design (a controlled vocabulary so allowed methods stay stable and coverage can aggregate by method); it deliberately refines SourceCandidate.discovered_via.method, which is open-vocabulary - note the sibling's illustrative 'manual' maps to 'manual_review' here. 'llm_reasoning' is a permitted method for reasoning-based findings (e.g. judging a term too noisy), but an LLM must never be used to decide that nothing changed - that is acquisition-layer change detection, not a sourcing finding."
+        },
+        "queries_used": { "type": "array", "items": { "type": "string" }, "description": "Search queries used. May be empty." },
+        "urls_checked": { "type": "array", "items": { "type": "string", "format": "uri" }, "description": "URLs checked. May be empty." },
+        "pointer_source_candidate_ids": { "type": "array", "items": { "type": "string" }, "description": "candidate_ids of pointer sources involved. May be empty." },
+        "pointer_source_urls": { "type": "array", "items": { "type": "string", "format": "uri" }, "description": "URLs of pointer sources involved. May be empty." },
+        "local_language_terms_used": { "type": "array", "items": { "type": "string" }, "description": "Local-language terms/acronyms/aliases used. May be empty." },
+        "entities_tested": { "type": "array", "items": { "type": "string" }, "description": "Entities (banks, regulators, vendors, etc.) tested. May be empty." },
+        "searched_at": { "type": "string", "format": "date-time", "description": "When the search/test was performed (RFC 3339 / ISO 8601 date-time)." },
+        "no_local_terms_known": { "type": "boolean", "default": false, "description": "True when no local-language terms were known at all. Used to make the local_language_blind_spot rule enforceable: if false, local_language_terms_used must be non-empty for a local_language_blind_spot finding." }
+      }
+    },
+    "result": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "What concretely happened as a result of the search/test.",
+      "required": [
+        "result_summary",
+        "result_count",
+        "candidate_ids_created",
+        "source_ids_matched",
+        "access_review_task_ids_created",
+        "error_messages",
+        "artifact_paths"
+      ],
+      "properties": {
+        "result_summary": { "type": "string", "minLength": 1, "description": "Concrete summary of what happened (the outcome)." },
+        "result_count": { "type": "integer", "minimum": 0, "description": "Number of results/items returned (0 or more)." },
+        "candidate_ids_created": { "type": "array", "items": { "type": "string" }, "description": "SourceCandidate candidate_ids created during this attempt, if any. May be empty." },
+        "source_ids_matched": { "type": "array", "items": { "type": "string" }, "description": "Source Registry source_ids matched, if any. May be empty." },
+        "access_review_task_ids_created": { "type": "array", "items": { "type": "string" }, "description": "AccessReviewTask task_ids created, if any. May be empty." },
+        "error_messages": { "type": "array", "items": { "type": "string" }, "description": "Error messages captured. May be empty." },
+        "artifact_paths": { "type": "array", "items": { "type": "string" }, "description": "Paths to captured artifacts; screenshots allowed. May be empty." }
+      }
+    },
+    "why_it_matters": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Why the finding matters for coverage, auditability, or avoiding repeated failure."
+    },
+    "severity": {
+      "type": "string",
+      "enum": ["low", "medium", "high", "critical"],
+      "description": "Importance of the gap/failure itself (NOT task triage priority)."
+    },
+    "confidence_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Confidence that the search/test was correctly performed and the negative result is real, 0..1."
+    },
+    "follow_up": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Follow-up state and recommendations. Null-valued fields are expected before follow-up is assigned/resolved.",
+      "required": [
+        "follow_up_required",
+        "recommended_action",
+        "assigned_to",
+        "due_at",
+        "follow_up_notes",
+        "linked_coverage_gap_ids",
+        "superseded_by_finding_id"
+      ],
+      "properties": {
+        "follow_up_required": { "type": "boolean", "description": "Whether follow-up is required." },
+        "recommended_action": {
+          "type": "string",
+          "enum": [
+            "retry_later",
+            "expand_local_language_terms",
+            "ask_human_expert",
+            "review_access_manually",
+            "check_alternative_source_class",
+            "expand_pointer_source",
+            "mark_source_class_gap",
+            "update_playbook",
+            "update_blocked_domains",
+            "no_action",
+            "other"
+          ],
+          "description": "Recommended next action. Use follow_up_notes to explain 'other'."
+        },
+        "assigned_to": { "type": ["string", "null"], "description": "Person or queue responsible for follow-up; null if unassigned. Named 'assigned_to' for consistency with AccessReviewTask." },
+        "due_at": { "type": ["string", "null"], "format": "date-time", "description": "When follow-up is due (RFC 3339 / ISO 8601 date-time); null if none." },
+        "follow_up_notes": { "type": ["string", "null"], "description": "Free-text follow-up notes; null if none." },
+        "linked_coverage_gap_ids": { "type": "array", "items": { "type": "string" }, "description": "CoverageGap gap_ids linked to this finding. May be empty." },
+        "superseded_by_finding_id": { "type": ["string", "null"], "description": "finding_id that supersedes this one; must be a non-empty string when finding_status is 'superseded' (enforced below), null otherwise." }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true,
+      "description": "Optional free-form extension bag. This is the ONLY place additional properties are allowed."
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "required": ["finding_type"],
+        "properties": { "finding_type": { "const": "unexpanded_pointer_source" } }
+      },
+      "then": {
+        "properties": {
+          "searched_or_tested": {
+            "anyOf": [
+              { "properties": { "pointer_source_candidate_ids": { "minItems": 1 } } },
+              { "properties": { "pointer_source_urls": { "minItems": 1 } } }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": ["finding_type", "searched_or_tested"],
+        "properties": {
+          "finding_type": { "const": "local_language_blind_spot" },
+          "searched_or_tested": {
+            "required": ["no_local_terms_known"],
+            "properties": { "no_local_terms_known": { "const": false } }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "searched_or_tested": {
+            "properties": { "local_language_terms_used": { "minItems": 1 } }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": ["finding_status"],
+        "properties": { "finding_status": { "const": "superseded" } }
+      },
+      "then": {
+        "properties": {
+          "follow_up": {
+            "required": ["superseded_by_finding_id"],
+            "properties": { "superseded_by_finding_id": { "type": "string", "minLength": 1 } }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+[
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_005",
+  "source_url": "https://www.mbhbank.hu/sajtoszoba",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_006",
+  "source_url": "https://www.mbhbank.hu/befektetoi/befektetoknek/tarsasagiranyitas/vezerigazgato-es-helyettesei",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_007",
+  "source_url": "https://www.mbhbank.hu/sw/static/file/MBH_Bank_Organigram_vh_teruletek_honlapra_230501.pdf",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_008",
+  "source_url": "https://www.mbhjelzalogbank.hu/befektetoknek/kozzetetelek",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_015",
+  "source_url": "https://www.cib.hu/en/Maganszemelyek/rolunk/sajtoszoba.html",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_043",
+  "source_url": "https://www.nemzeticegtar.hu/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_044",
+  "source_url": "https://ceginfo.hu/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_047",
+  "source_url": "https://www.mbhbank.hu/felugyeleti-hatarozatok",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_064",
+  "source_url": "https://kozadat.hu/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://kozadat.hu/kereso/",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_066",
+  "source_url": "https://kormany.hu/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_131",
+  "source_url": "https://www.mbhbank.hu/lakossagi/kozzetetelek",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_141",
+  "source_url": "https://www.mbhbank.hu/befektetoi/befektetoknek/mkb-bankrol/penzugyi-jelentesek/penzugyi-kimutatasok",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_144",
+  "source_url": "https://www.mbhbefektetesibank.hu/sw/static/file/Granit_Bank_20250414.pdf",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_171",
+  "source_url": "https://www.citibank.com/icg/sa/emea/hungary/about-us/shared-service-center.html",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_190",
+  "source_url": "https://webshop.opten.hu/barion-payment-zrt-e10483925.html",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_204",
+  "source_url": "https://webshop.opten.hu/global-payments-europe-sro-magyarorszagi-fioktelepe-e10493020.html",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_210",
+  "source_url": "https://ir.euronetworldwide.com/press-releases",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_233",
+  "source_url": "https://www.bloomberg.com/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.bloomberg.com/europe",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_239",
+  "source_url": "https://www.citi.com/icg/sa/emea/hungary/english/newsroom/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_277",
+  "source_url": "https://www.mbhbank.hu/karrier",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a5_live_001__c_284",
+  "source_url": "https://hu.indeed.com/q-otp-bank-nyrt-l-budapest-%C3%A1ll%C3%A1sok.html",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ }
+]

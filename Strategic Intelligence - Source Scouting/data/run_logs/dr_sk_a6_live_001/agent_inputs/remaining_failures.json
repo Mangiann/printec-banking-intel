@@ -1,0 +1,262 @@
+[
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_021",
+  "source_url": "https://obstaravanie.seas.sk/obstaravanie",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_031",
+  "source_url": "https://zmluvy.egov.sk/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_044",
+  "source_url": "https://www.zrsr.sk/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_067",
+  "source_url": "https://amcham.sk/members/directory-of-members",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_084",
+  "source_url": "https://www.itapa.sk/o-cene-itapa",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_086",
+  "source_url": "https://www.zlataminca.sk/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_095",
+  "source_url": "https://www.konferencie.sk/d-34321/it-vo-financnictve-konferencia-bratislava",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_106",
+  "source_url": "https://e.dennikn.sk/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_110",
+  "source_url": "https://www.itnews.sk/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_144",
+  "source_url": "https://www.recruiteri.sk/sk/servery-s-pracovnymi-ponukami",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_151",
+  "source_url": "https://spolocnost.lidl.sk/informacie-pre-media/tlacove-spravy",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_153",
+  "source_url": "https://dpb.sk/sk/spravy",
+  "outcome": "unresolved",
+  "http_status": 500,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 500"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_156",
+  "source_url": "https://www.posta.sk/sluzby/skpay-platobna-a-e-money-institucia-poskytujuca-platobne-sluzby-na-poste",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_164",
+  "source_url": "https://www.emtest.sk/",
+  "outcome": "unresolved",
+  "http_status": 500,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 500"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_170",
+  "source_url": "https://www.itms2014.sk/eurofondy",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_174",
+  "source_url": "https://opentender.eu/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_185",
+  "source_url": "https://euractiv.sk/section/digitalizacia/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_206",
+  "source_url": "https://www.nbs.sk/sk/platobne-systemy/oversight",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_213",
+  "source_url": "https://www.posam.sk/referencia/tatra-banka-profesionalny-outsourcing/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_236",
+  "source_url": "https://www.allianz.sk/sk_SK/sukromne-osoby/ine-stranky/tlacove-centrum/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_251",
+  "source_url": "https://sk.kompass.com/c/diebold-nixdorf-s-r-o/sk004807/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_274",
+  "source_url": "https://www.dnb.com/business-directory/company-profiles.fiserv_slovakia_sro.8df5caa3344650b8f1606ffe69cb11ce.html",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_290",
+  "source_url": "https://e.dennikn.sk/286398/ktore-firmy-zarobili-na-informatizacii-najviac-a-ako-im-rastu-trzby/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_321",
+  "source_url": "https://www.crunchbase.com/hub/slovakia-startups",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_323",
+  "source_url": "https://innovationmapslovakia.sk/en/accelerator",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_330",
+  "source_url": "https://www.cee-fintechatlas.com/2021/06/07/insights-into-the-slovak-fintech-ecosystem/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ }
+]

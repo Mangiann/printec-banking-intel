@@ -1,0 +1,72 @@
+[
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_027",
+  "source_url": "https://www.crm.com.mk/CRMPublicPortalApi/api/files/113a064f-89ee-4f1b-b711-feac8d3e36af?ln=1",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_040",
+  "source_url": "https://opencorporates.com/registers/146",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_085",
+  "source_url": "https://www.netcetera.com/careers.html",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_221",
+  "source_url": "https://iute.com/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_227",
+  "source_url": "https://navigate.visa.com/cemea/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://corporate.visa.com/en/sites/visa-perspectives.html",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_290",
+  "source_url": "https://www.sparkasse.at/steiermaerkische/presse/presseaussendungen",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_mk_a5_live_001__c_293",
+  "source_url": "https://www.halkbank.com.tr/tr/yatirimci-iliskileri/finansal-bilgiler/takvim/ozel-durum-aciklamalari",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ }
+]

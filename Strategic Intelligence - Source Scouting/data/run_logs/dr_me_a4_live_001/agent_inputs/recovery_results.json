@@ -1,0 +1,62 @@
+[
+ {
+  "candidate_id": "dr_me_a4_live_001__c_038",
+  "source_url": "https://data.imf.org/-/media/iData/External-Storage/Documents/6283296788924FC692761C4DE4A71BA7/en/FAS-2024-Highlights-Report.pdf",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a4_live_001__c_176",
+  "source_url": "https://www.imf.org/en/-/media/files/publications/cr/2025/english/1mneea2025002-source-pdf.pdf",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a4_live_001__c_181",
+  "source_url": "https://datacatalog.worldbank.org/search/dataset/0067036/global-payment-systems-survey",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a4_live_001__c_214",
+  "source_url": "https://www.hipotekarnabanka.com/poslovnice-i-bankomati/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://hipotekarnabanka.com/filijale-i-bankomati/",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_me_a4_live_001__c_239",
+  "source_url": "http://www.pretraga.crps.me/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a4_live_001__c_258",
+  "source_url": "https://airmontenegro.com/en/payment-conditions/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ }
+]

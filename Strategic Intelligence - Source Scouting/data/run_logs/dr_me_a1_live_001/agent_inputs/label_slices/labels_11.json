@@ -1,0 +1,19 @@
+[
+{"candidate_id":"dr_me_a1_live_001__c_309","role":"keep","decision":"approve","priority":"high","rationale":"Glasnik PDF series is the de facto record of PKCG banking-board sessions; durable recurring publication stream."},
+{"candidate_id":"dr_me_a1_live_001__c_310","role":"fold_into_parent","decision":"approve","priority":"medium","rationale":"Chamber publications archive is a section of komora.me already covered by monitoring the Glasnik/announcements crawl."},
+{"candidate_id":"dr_me_a1_live_001__c_311","role":"keep","decision":"approve","priority":"medium","rationale":"Running PKCG press feed surfaces fintech round tables and board positions earliest; standalone feed worth monitoring."},
+{"candidate_id":"dr_me_a1_live_001__c_312","role":"keep","decision":"needs_access","priority":"critical","rationale":"White Book is the densest published bank-lobbying text but the site is bot-defended (403); human must clear access."},
+{"candidate_id":"dr_me_a1_live_001__c_313","role":"pointer_once","decision":"needs_access","priority":"high","rationale":"Banking Committee page is a one-off directory of foreign-owned banks; same 403 access block as parent domain."},
+{"candidate_id":"dr_me_a1_live_001__c_314","role":"pointer_once","decision":"approve","priority":"high","rationale":"Mine once for the payments-vendor population (Payten, POS4, Coinis); a member list, not a signal stream."},
+{"candidate_id":"dr_me_a1_live_001__c_315","role":"keep","decision":"approve","priority":"medium","rationale":"Recurring cluster sector analyses and IT company rankings give rare quantitative vendor-base data."},
+{"candidate_id":"dr_me_a1_live_001__c_316","role":"pointer_once","decision":"defer","priority":"low","rationale":"Second, older IT cluster; complementary member directory but URL unverified and value likely redundant to ICT Cortex."},
+{"candidate_id":"dr_me_a1_live_001__c_317","role":"keep","decision":"approve","priority":"medium","rationale":"Employers' federation publishes position papers on the regulatory burden shaping banks and payment firms; live and public."},
+{"candidate_id":"dr_me_a1_live_001__c_318","role":"keep","decision":"approve","priority":"medium","rationale":"AmCham advocacy committees and position papers plus a member directory covering financial institutions; live site."},
+{"candidate_id":"dr_me_a1_live_001__c_319","role":"pointer_once","decision":"approve","priority":"low","rationale":"Insurers' bureau member list and motor-insurance statistics; mine once, limited banking/payments signal flow."},
+{"candidate_id":"dr_me_a1_live_001__c_320","role":"pointer_once","decision":"approve","priority":"medium","rationale":"Accountant/auditor registers identify the audit firms signing ME bank annual reports; one-off mining into A1 disclosure work."},
+{"candidate_id":"dr_me_a1_live_001__c_321","role":"marginal","decision":"defer","priority":"low","rationale":"Internal auditors' institute gives only a soft actor map; weak, indirect value for A1 disclosures."},
+{"candidate_id":"dr_me_a1_live_001__c_322","role":"evidence_not_source","decision":"defer","priority":"low","rationale":"Single bankar.me article recording the CFO association's founding; evidence only until the body has its own site."},
+{"candidate_id":"dr_me_a1_live_001__c_323","role":"pointer_once","decision":"approve","priority":"medium","rationale":"NGO registry entries verify association legal identity and surface further sector bodies; mine once by keyword."},
+{"candidate_id":"dr_me_a1_live_001__c_324","role":"marginal","decision":"defer","priority":"low","rationale":"Third-party org record for MBA with no live own domain; low credibility, re-check later for a revived site."},
+{"candidate_id":"dr_me_a1_live_001__c_325","role":"keep","decision":"defer","priority":"medium","rationale":"MINA tag archive would give a chronological UBCG record, but legal status is unclear and URL unverified."}
+]

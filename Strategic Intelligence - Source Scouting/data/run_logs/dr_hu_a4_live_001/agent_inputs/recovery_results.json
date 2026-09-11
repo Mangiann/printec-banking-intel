@@ -1,0 +1,152 @@
+[
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_088",
+  "source_url": "https://www.nemzeticegtar.hu/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_095",
+  "source_url": "https://kormany.hu/hirek/minden-magyar-faluban-lesz-atm-a-150-ezres-ingyenes-keszpenzfelvetel-lehetoseget-pedig-minden-banknak-biztositania-kell",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_115",
+  "source_url": "https://eur-lex.europa.eu/eli/reg/2015/751/oj/eng",
+  "outcome": "verified",
+  "http_status": 202,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_123",
+  "source_url": "https://adt.arcanum.com/en/collection/MagyarKozlony/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_148",
+  "source_url": "https://adt.arcanum.com/en/collection/MagyarStatisztikaiEvkonyv/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_149",
+  "source_url": "https://hungaricana.hu/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.hungaricana.hu/en/",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_153",
+  "source_url": "https://kozadat.hu/kereso/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_179",
+  "source_url": "https://kormany.hu/hirek/zsebunkben-a-penztargep-ingyenesen-letoltheto-a-nav-epenztargep-es-nav-enyugta-alkalmazasa",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_222",
+  "source_url": "https://ir.euronetworldwide.com/financial-information/quarterly-results",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_230",
+  "source_url": "https://www.mbhbank.hu/digitalis-szolgaltatasok/pos-elfogadas",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_242",
+  "source_url": "https://www.mbhbank.hu/befektetoknek",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.mbhbank.hu/befektetoi/befektetoknek",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_243",
+  "source_url": "https://www.mbhbank.hu/sajtoszoba",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_250",
+  "source_url": "https://www.cib.hu/en/Maganszemelyek/rolunk/kikvagyunk/jenetesek.html",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_256",
+  "source_url": "https://webshop.opten.hu/kh-bank-zrt-e10478308.html",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_258",
+  "source_url": "https://www.mbhbefektetesibank.hu",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ }
+]

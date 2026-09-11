@@ -1,0 +1,39 @@
+{
+  "_comment": "Qualitative cells for the 9 EU footprint countries' rows in the dashboard per-country card. The NUMBERS (ATMs/branches/cash + YoY) are derived automatically by ingest.py from the scripted ECB series (structural_series.json); only these slow-changing text cells (instant-payment scheme status + Printec implication) live here so they survive without being hand-typed into the findings file each month. Update only when a scheme status or strategic read materially changes. Keyed by ISO-2 country code. Last reviewed 2026-06-24 (Agent 4).",
+  "GR": {
+    "instant_payments": "IRIS 122.1m txns 2025 (+72.8% y/y); business acceptance mandatory since 2025-12-01",
+    "implication": "ATM count surging (deployers/Euronet IADs) while branches fall → off-site self-service + managed services; instant-payments boom → fraud/transaction monitoring (INETCO, FICO). Reconcile ATM jump vs HBA network data."
+  },
+  "CY": {
+    "instant_payments": "SEPA SCT Inst (euro area)",
+    "implication": "Flat branches, cash falling fast → cash-recycler/TCR demand at incumbents (Bank of Cyprus Glory TCR reference)."
+  },
+  "HR": {
+    "instant_payments": "SEPA SCT Inst (euro area since 2023)",
+    "implication": "ECB ATM count noisy for HR — reconcile vs HNB card PDF. Branch + POS growth → acquiring (Nexi), recyclers (Erste HR OptiCash reference)."
+  },
+  "SI": {
+    "instant_payments": "SEPA SCT Inst (euro area); Flik instant",
+    "implication": "Stable ATMs, contracting branches → branch-substitution self-service + recyclers via Bankart (POS/TMS)."
+  },
+  "SK": {
+    "instant_payments": "SEPA SCT Inst (euro area)",
+    "implication": "Deposit-ATM expansion + branch decline → recyclers/ATM 2.0 coin; strong POS growth → acquiring; OptiCash/APTRA references."
+  },
+  "BG": {
+    "instant_payments": "Euro changeover 01/01/2026 → euro-area instant (SEPA SCT Inst)",
+    "implication": "Post-euro ATM/CDM replacement cycle + steepest EU branch contraction → self-service backfill, recyclers; surging POS → acquiring."
+  },
+  "RO": {
+    "instant_payments": "RoPay 2.0 instant scheme live (Sep 2025); QR at POS",
+    "implication": "POS estate exploding (BNR national figures run ahead of ECB) → terminals/acquiring/TMS; cash resilient + branch decline → recyclers + self-service."
+  },
+  "HU": {
+    "instant_payments": "AFR instant payment system since 2020 (mandatory)",
+    "implication": "Rare ATM growth from the 'ATM in every settlement' mandate (Act XVIII) → rural ATM managed-services/recycling economics; sharp branch cuts → self-service."
+  },
+  "CZ": {
+    "instant_payments": "CERTIS instant (CZK); SEPA SCT Inst for euro",
+    "implication": "Gentle ATM decline + steepest footprint cash-withdrawal fall → cash-optimisation (OptiCash) + shared deposit-ATM network → recyclers; KAL incumbency (Česká spořitelna)."
+  }
+}

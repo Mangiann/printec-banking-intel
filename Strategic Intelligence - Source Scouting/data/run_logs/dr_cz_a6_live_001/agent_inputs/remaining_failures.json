@@ -1,0 +1,322 @@
+[
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_002",
+  "source_url": "https://www.vestnikverejnychzakazek.cz/SearchForm/Search",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_008",
+  "source_url": "https://www.gemin.cz/profil/ceska-narodni-banka",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_036",
+  "source_url": "https://opentender.eu/cz/search/tender",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_057",
+  "source_url": "https://www.sec.gov/edgar/search/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_058",
+  "source_url": "https://vestnikverejnychzakazek.cz/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_073",
+  "source_url": "http://www.aspps.eu/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_078",
+  "source_url": "https://www.komora.cz/o-nas/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_079",
+  "source_url": "http://www.czechict.cz/?lang=en",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_082",
+  "source_url": "http://www.apfcr.cz/cs/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_098",
+  "source_url": "https://www.mastercard.com/news/europe/cs-cz/tiskove-centrum/tiskove-zpravy/cs-cz/2025/unor-2025/spolecnost-mastercard-ocenila-inovace-a-udrzitelnost-v-ceskem-platebnim-sektoru-nejvice-cen-si-odnesly-csob-air-bank-a-raiffeisenbank/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_120",
+  "source_url": "https://www.apiportal.cz/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_127",
+  "source_url": "https://developer.rb.cz/psd2",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_135",
+  "source_url": "https://www.openbankingtracker.com/providers/country/cz",
+  "outcome": "unresolved",
+  "http_status": 429,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 429"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_141",
+  "source_url": "https://www.alza.cz/alza-zahajila-spolupraci-s-globalni-platebni-platformou-adyen",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_142",
+  "source_url": "https://www.alza.cz/strucny-prehled-moznosti-zaplaceni-art112.htm",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_187",
+  "source_url": "https://www.kb.cz/cs/o-bance/pro-investory/vysledky-hospodareni",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_192",
+  "source_url": "https://www.airbank.cz/o-air-bank/vyrocni-zpravy/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_193",
+  "source_url": "https://www.unicreditbank.cz/cs/o-bance/vyrocni-zpravy.html",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_197",
+  "source_url": "https://www.creditas.cz/o-nas/pro-media",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_201",
+  "source_url": "https://www.businesswire.com/news/home/20210111005018/en/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_206",
+  "source_url": "https://ir.euronetworldwide.com/news-releases",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_220",
+  "source_url": "https://ibsintelligence.com/ibsi-news/czech-republics-komercni-banka-selects-temenos-transact/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_221",
+  "source_url": "https://www.wearetrask.com/en/en/case-studies",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_223",
+  "source_url": "https://jobs.adastra.cz/pripadove-studie/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_250",
+  "source_url": "https://www.mastercard.com/cz/cs/news-and-trends/press.html",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_251",
+  "source_url": "https://www.visa.cz/o-spolecnosti-visa/novinky.html",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_289",
+  "source_url": "https://computerworld.cz/pripadove-studie",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_303",
+  "source_url": "https://www.fintechfutures.com/bankingtech/czech-bank-sob-selects-ncino-for-commercial-lending-tech",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_307",
+  "source_url": "https://ibsintelligence.com/tag/czech-republic/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_313",
+  "source_url": "https://www.globenewswire.com/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "TimeoutError"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_314",
+  "source_url": "https://www.businesswire.com/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_318",
+  "source_url": "https://www.ncino.com/news",
+  "outcome": "unresolved",
+  "http_status": 429,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 429"
+ }
+]

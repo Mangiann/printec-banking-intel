@@ -1,0 +1,189 @@
+#!/usr/bin/env python3
+"""
+publish.py - Publish the week's dashboard data to the live Vercel dashboard.
+
+POSTs <root>/intel-cache/dashboard-data.json to <DASHBOARD_URL>/api/upload with the shared
+secret. The Vercel function stores it in Blob; the live site picks it up with no redeploy.
+
+Publishing is OPTIONAL: if the URL/secret aren't configured this exits 0 with a note, so a
+weekly run never fails just because the live site isn't set up yet.
+
+Config (env vars, or --url/--secret flags):
+  PRINTEC_DASHBOARD_URL   e.g. https://printec-banking-dashboard.vercel.app
+  PRINTEC_UPLOAD_SECRET   the same value set as UPLOAD_SECRET in the Vercel project
+
+Usage:
+  python publish.py --root "<research folder>"
+"""
+import argparse, os, sys, json, glob, re, urllib.request, urllib.error
+
+# ---- evidence upload (source documents + link-rot snapshots) ----
+# Best-effort, runs after the data publish. Findings are tiny; snapshots total ~36MB so they are
+# content-addressed and de-duplicated against what the store already holds, then sent in size-bounded
+# batches (the serverless body limit is a few MB). A failure here never fails the run.
+EV_MAX_BATCH = 2 * 1024 * 1024   # raw bytes/batch; the serverless handler caps the body at 8 MB, so 2 MB
+                                 # raw (a few MB once JSON-escaped) is comfortably within it.
+EV_TIMEOUT_FACTOR = 4            # evidence batches are bigger than the data POST
+# The deployed /api/upload-evidence accepts ONLY single-level findings paths (findings/NN-topic/<file>.md)
+# and crashes the whole batch on a non-matching path (it throws synchronously inside files.map(), which
+# escapes Promise.allSettled -> HTTP 500). So only send findings that match the server's pattern; nested
+# working files (parts/, research/, *_files/) are excluded here. Mirrors FIND_RE in upload-evidence.js.
+_FIND_RE = re.compile(r"^findings/\d\d-[a-z0-9-]+/[A-Za-z0-9._-]+\.md$")
+
+def _ev_request(url, secret, method="GET", body=None, timeout=60):
+    headers = {"x-upload-secret": secret}
+    if body is not None:
+        headers["content-type"] = "application/json"
+    req = urllib.request.Request(url, data=body, method=method, headers=headers)
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        return r.status, r.read().decode("utf-8", "replace")
+
+def _stored_snapshot_ids(base_url, secret, timeout):
+    """Ask the store which snapshots it already has, so we only send the deltas.
+    Returns a set of ids, or None if the evidence endpoint isn't deployed (404/405) → caller skips."""
+    try:
+        _, txt = _ev_request(base_url.rstrip("/") + "/api/upload-evidence?index=snapshots",
+                             secret, "GET", None, timeout)
+        return set(json.loads(txt).get("snapshots", []))
+    except urllib.error.HTTPError as e:
+        if e.code in (404, 405):
+            return None   # endpoint not deployed yet — don't bother sending evidence
+        print("publish-evidence: snapshot index unavailable (HTTP %s) — will send all." % e.code)
+        return set()
+    except Exception as e:
+        print("publish-evidence: snapshot index unavailable (%s) — will send all." % e)
+        return set()
+
+def _collect_evidence(root, have_snaps):
+    files = []
+    for fp in sorted(glob.glob(os.path.join(root, "findings", "**", "*.md"), recursive=True)):
+        rel = os.path.relpath(fp, root).replace(os.sep, "/")
+        if not _FIND_RE.match(rel):
+            continue   # skip nested working files (parts/, research/, *_files/) the server rejects
+        try:
+            with open(fp, encoding="utf-8") as f:
+                files.append({"kind": "finding", "path": rel, "content": f.read()})
+        except Exception:
+            pass
+    for sp in sorted(glob.glob(os.path.join(root, "intel-cache", "snapshots", "*.txt"))):
+        sid = os.path.splitext(os.path.basename(sp))[0]
+        if sid in have_snaps:
+            continue
+        try:
+            with open(sp, encoding="utf-8", errors="replace") as f:
+                files.append({"kind": "snapshot", "id": sid, "content": f.read()})
+        except Exception:
+            pass
+    return files
+
+def _ev_batches(files, max_bytes):
+    batch, size = [], 0
+    for f in files:
+        fsize = len(f["content"].encode("utf-8")) + 200      # + framing overhead
+        if batch and size + fsize > max_bytes:
+            yield batch; batch, size = [], 0
+        batch.append(f); size += fsize
+    if batch:
+        yield batch
+
+def publish_evidence(base_url, secret, root, week, timeout, dry_run=False):
+    if not root or not os.path.isdir(root):
+        print("publish-evidence: skipped — no --root to locate findings/ and intel-cache/snapshots/.")
+        return
+    have = set()
+    if not dry_run:
+        have = _stored_snapshot_ids(base_url, secret, timeout)
+        if have is None:
+            print("publish-evidence: skipped — the live app has no /api/upload-evidence endpoint yet "
+                  "(redeploy dashboard-web to enable source-document + snapshot publishing).")
+            return
+    files = _collect_evidence(root, have)
+    if not files:
+        print("publish-evidence: nothing to upload (documents + snapshots already current).")
+        return
+    n_find = sum(1 for f in files if f["kind"] == "finding")
+    n_snap = sum(1 for f in files if f["kind"] == "snapshot")
+    batches = list(_ev_batches(files, EV_MAX_BATCH))
+    total_mb = sum(len(f["content"].encode("utf-8")) for f in files) / (1024 * 1024)
+    print("publish-evidence: %d document(s) + %d new snapshot(s) (~%.1f MB) in %d batch(es)%s."
+          % (n_find, n_snap, total_mb, len(batches), " [DRY RUN]" if dry_run else ""))
+    if dry_run:
+        for i, b in enumerate(batches, 1):
+            mb = sum(len(f["content"].encode("utf-8")) for f in b) / (1024 * 1024)
+            print("  batch %d: %d file(s), ~%.2f MB" % (i, len(b), mb))
+        return
+    endpoint = base_url.rstrip("/") + "/api/upload-evidence"
+    written = failed = 0
+    for i, b in enumerate(batches, 1):
+        body = json.dumps({"week": week, "files": b}).encode("utf-8")
+        try:
+            _, txt = _ev_request(endpoint, secret, "POST", body, timeout * EV_TIMEOUT_FACTOR)
+            res = json.loads(txt)
+            written += res.get("written", 0); failed += res.get("failed", 0)
+            if res.get("errors"):
+                print("  batch %d issues: %s" % (i, "; ".join(res["errors"][:3])))
+        except Exception as e:
+            failed += len(b)
+            print("  batch %d FAILED (%s) — continuing." % (i, e))
+    print("publish-evidence: done — %d written, %d failed." % (written, failed))
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--root", help="research folder (to find intel-cache/dashboard-data.json)")
+    ap.add_argument("--data-json", help="explicit path to dashboard-data.json (overrides --root)")
+    ap.add_argument("--url", default=os.environ.get("PRINTEC_DASHBOARD_URL"))
+    ap.add_argument("--secret", default=os.environ.get("PRINTEC_UPLOAD_SECRET"))
+    ap.add_argument("--timeout", type=int, default=30)
+    ap.add_argument("--no-evidence", action="store_true",
+                    help="skip uploading source documents + link-rot snapshots")
+    ap.add_argument("--evidence-dry-run", action="store_true",
+                    help="report what evidence would be sent (batches/size) without posting")
+    args = ap.parse_args()
+
+    if not args.url or not args.secret:
+        print("publish: skipped — set PRINTEC_DASHBOARD_URL and PRINTEC_UPLOAD_SECRET "
+              "(or pass --url/--secret) to push to the live dashboard.")
+        return 0
+
+    path = args.data_json or (os.path.join(args.root, "intel-cache", "dashboard-data.json")
+                              if args.root else None)
+    if not path or not os.path.exists(path):
+        print("publish: ERROR — dashboard-data.json not found at:", path)
+        return 1
+
+    with open(path, "rb") as f:
+        body = f.read()
+    week = None
+    try:
+        week = json.loads(body.decode("utf-8")).get("week")
+    except Exception:
+        pass
+
+    endpoint = args.url.rstrip("/") + "/api/upload"
+    req = urllib.request.Request(endpoint, data=body, method="POST",
+        headers={"content-type": "application/json", "x-upload-secret": args.secret})
+    try:
+        with urllib.request.urlopen(req, timeout=args.timeout) as r:
+            print("publish: OK", r.status, "->", endpoint)
+            print(r.read().decode("utf-8", "replace"))
+    except urllib.error.HTTPError as e:
+        print("publish: HTTP", e.code, "->", endpoint)
+        print(e.read().decode("utf-8", "replace"))
+        return 1
+    except Exception as e:
+        print("publish: ERROR —", e)
+        return 1
+
+    # ---- evidence (source documents + link-rot snapshots) — best-effort, never fails the run ----
+    if args.no_evidence:
+        print("publish-evidence: skipped (--no-evidence).")
+    else:
+        root = args.root or (os.path.dirname(os.path.dirname(os.path.abspath(path))) if path else None)
+        try:
+            publish_evidence(args.url, args.secret, root, week, args.timeout, args.evidence_dry_run)
+        except Exception as e:
+            print("publish-evidence: ERROR —", e, "(data publish still succeeded).")
+    return 0
+
+if __name__ == "__main__":
+    sys.exit(main())

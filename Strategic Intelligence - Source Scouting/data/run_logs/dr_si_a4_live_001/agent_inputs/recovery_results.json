@@ -1,0 +1,132 @@
+[
+ {
+  "candidate_id": "dr_si_a4_live_001__c_003",
+  "source_url": "https://www.bsi.si/sl/statistika",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a4_live_001__c_004",
+  "source_url": "https://www.bsi.si/sl/statistika/financne-institucije-in-trgi",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a4_live_001__c_048",
+  "source_url": "https://seonet.ljse.si/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a4_live_001__c_148",
+  "source_url": "https://www.intesasanpaolobank.si/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a4_live_001__c_208",
+  "source_url": "https://ejn.gov.si/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a4_live_001__c_237",
+  "source_url": "https://www.intesasanpaolobank.si/document/publications/ISPSLOVENIA/2025/letno-porocilo-2024/ISPB_LETNO_porocilo_2024_digital.pdf",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a4_live_001__c_277",
+  "source_url": "https://www.intesasanpaolobank.si/en/prebivalstvo/placilne-kartice/kartica-activa-mastercard.html",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a4_live_001__c_280",
+  "source_url": "https://www.kansascityfed.org/documents/11145/CreditDebitCardInterchangeFeesVariousCountries_August2025Update.pdf",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a4_live_001__c_285",
+  "source_url": "https://www.sparkasse.si/sl/odprto-bancnistvo-api-psd2",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a4_live_001__c_019",
+  "source_url": "https://www.bsi.si/sl/placilni-sistemi/digitalni-evro",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a4_live_001__c_070",
+  "source_url": "https://www.fintechfutures.com/core-banking-technology/bankart-and-nets-to-deliver-new-payments-infrastructure-to-slovenian-banking-sector",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a4_live_001__c_085",
+  "source_url": "https://www.finance.si/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a4_live_001__c_299",
+  "source_url": "https://www.openbankingtracker.com/country/slovenia",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ }
+]

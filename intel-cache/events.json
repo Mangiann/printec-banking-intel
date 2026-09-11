@@ -1,0 +1,145 @@
+[
+  {
+    "Date": "2024 (approved)",
+    "Country": "Ukraine",
+    "Bank": "Oschadbank",
+    "Event": "2024–2028 strategy: efficiency, branch modernization (~600 new-format branches), IT/digital channels, resilience",
+    "Category": "Strategy / branch transformation",
+    "Implication for Printec": "Multi-year branch refit + self-service demand at state-owned bank (public procurement)",
+    "Source": "Oschadbank corporate site",
+    "URL": "https://www.oschadbank.ua/en/about",
+    "Confidence": "Low"
+  },
+  {
+    "Date": "2024-10",
+    "Country": "Cyprus",
+    "Bank": "Hellenic Bank (Eurobank)",
+    "Event": "Launched automated service points (ATM-only outlets) in Nicosia, Limassol, Larnaca, Paphos",
+    "Category": "Self-service / branch transformation",
+    "Implication for Printec": "Branchless self-service format = ATM/kiosk hardware + servicing demand",
+    "Source": "Cyprus Mail",
+    "URL": "https://cyprus-mail.com/2024/10/22/hellenic-bank-launches-new-automated-service-points",
+    "Confidence": "Medium"
+  },
+  {
+    "Date": "2025 (full year)",
+    "Country": "Ukraine",
+    "Bank": "PrivatBank",
+    "Event": "Purchased 1,200 ATMs (~UAH 1bn)",
+    "Category": "ATM fleet renewal",
+    "Implication for Printec": "Active fleet replacement cycle; vendor selection precedent for 2026 batch",
+    "Source": "Open4Business",
+    "URL": "https://open4business.com.ua/en/privatbank-plans-to-purchase-another-800-atms-in-2026/",
+    "Confidence": "Medium"
+  },
+  {
+    "Date": "2025-10",
+    "Country": "Greece",
+    "Bank": "Piraeus (Snappi)",
+    "Event": "Snappi digital-only bank launched; 100k customers by Q1 2026",
+    "Category": "Digital bank launch",
+    "Implication for Printec": "eKYC/onboarding tech validated at scale in Greece; branchless model pressures branch economics",
+    "Source": "Piraeus Q1 2026 results (Investing.com)",
+    "URL": "https://www.investing.com/news/company-news/piraeus-bank-q1-2026-slides-stellar-fee-growth-drives-profitability-93CH-4649228",
+    "Confidence": "Medium"
+  },
+  {
+    "Date": "2026-01-01",
+    "Country": "Bulgaria",
+    "Bank": "All banks",
+    "Event": "Euro adoption: all ATMs dispense euro-only from day 1; dual circulation in January",
+    "Category": "Payments / cash infrastructure",
+    "Implication for Printec": "Every ATM/recycler reconfigured; post-conversion fleet optimization decisions due H2 2026",
+    "Source": "ECB / Sofia Globe",
+    "URL": "https://www.ecb.europa.eu/euro/changeover/bulgaria/html/index.en.html",
+    "Confidence": "Medium"
+  },
+  {
+    "Date": "2026-Q1 (expected completion)",
+    "Country": "Greece",
+    "Bank": "NBG",
+    "Event": "Core banking system upgrade completion",
+    "Category": "Core modernization",
+    "Implication for Printec": "Channel/self-service integration wave typically follows core go-live within 6–12 months",
+    "Source": "NBG Q1 2026 presentation (Seeking Alpha)",
+    "URL": "https://seekingalpha.com/article/4901244-national-bank-of-greece-s-a-2026-q1-results-earnings-call-presentation",
+    "Confidence": "Medium"
+  },
+  {
+    "Date": "2026-02-26",
+    "Country": "Greece",
+    "Bank": "Eurobank",
+    "Event": "FY2025 report details 'Eurobank 2030' transformation; next-gen branches with Cash 360 recyclers",
+    "Category": "Branch transformation / cash automation",
+    "Implication for Printec": "Ongoing rollout of cash-automation-centric branch format",
+    "Source": "Eurobank FY2025 annual report",
+    "URL": "https://www.eurobank.gr/-/media/eurobank/omilos/enimerosi-ependuton/enimerosi-metoxon-eurobank/oikonomika-apotelesmata/2026/fy-2025/en-annual-report-eurobank-2025.pdf",
+    "Confidence": "Medium"
+  },
+  {
+    "Date": "2026-04-02",
+    "Country": "Greece",
+    "Bank": "Alpha Bank",
+    "Event": "Retail transformation announced: investment in branch network, 5 directorates/25 regions, contactless ATMs; €47m voluntary separation in Q1",
+    "Category": "Branch transformation / ATM upgrade",
+    "Implication for Printec": "Direct window: ATM upgrade/replacement + branch refit currently being scoped/funded",
+    "Source": "Cyprus Mail / Alpha Q1 2026 results",
+    "URL": "https://cyprus-mail.com/2026/04/02/alpha-bank-rolls-out-retail-banking-transformation-plan",
+    "Confidence": "Medium"
+  },
+  {
+    "Date": "2026-Q2 (planned)",
+    "Country": "Serbia",
+    "Bank": "Erste Bank Serbia",
+    "Event": "George digital platform rollout to all customers",
+    "Category": "Digital migration",
+    "Implication for Printec": "Transaction migration off branches → self-service/cash-automation relevance rises",
+    "Source": "Magazin Biznis / Erste Q1 2026",
+    "URL": "https://magazinbiznis.rs/erste-bank-application-george-to-become-available-in-serbia-in-the-second-quarter-of-2026/",
+    "Confidence": "Medium"
+  },
+  {
+    "Date": "2026 (planned)",
+    "Country": "Ukraine",
+    "Bank": "PrivatBank",
+    "Event": "Plan to purchase ~800 more ATMs",
+    "Category": "ATM fleet renewal",
+    "Implication for Printec": "Biddable procurement (state-owned, Prozorro); follow lot publication",
+    "Source": "Open4Business",
+    "URL": "https://open4business.com.ua/en/privatbank-plans-to-purchase-another-800-atms-in-2026/",
+    "Confidence": "Medium"
+  },
+  {
+    "Date": "2026-05",
+    "Country": "Cyprus",
+    "Bank": "Bank of Cyprus",
+    "Event": "Bolt-on M&A: 26% of Wealthyhood; €150m loans + €500m deposits from Cyprus Development Bank",
+    "Category": "M&A / integration",
+    "Implication for Printec": "Customer migration/onboarding integration work in next 6–12 months",
+    "Source": "Investing.com Q1 2026 slides",
+    "URL": "https://www.investing.com/news/company-news/bank-of-cyprus-q1-2026-slides-profit-rises-3-as-npe-ratio-hits-11-93CH-4675468",
+    "Confidence": "Medium"
+  },
+  {
+    "Date": "2026-05-26",
+    "Country": "Romania",
+    "Bank": "Banca Transilvania",
+    "Event": "2026 investment plan ~RON 1,017m, mainly IT/digital (+20.6% YoY)",
+    "Category": "IT/digital spend",
+    "Implication for Printec": "Romania's largest bank expanding tech budget — payments, onboarding, self-service candidates",
+    "Source": "BT Q1 2026 presentation",
+    "URL": "https://www.bancatransilvania.ro/files/app/media/Investor-Relations/Financial-Results/2026/1st-Quarter/Presentation.pdf",
+    "Confidence": "Medium"
+  },
+  {
+    "Date": "2026-06-30",
+    "Country": "Bulgaria",
+    "Bank": "All banks",
+    "Event": "End of free lev→euro exchange at commercial banks (BNB continues indefinitely)",
+    "Category": "Cash infrastructure",
+    "Implication for Printec": "Conversion workload drops → H2 2026 fleet rationalization & managed-services conversations",
+    "Source": "ECB changeover page",
+    "URL": "https://www.ecb.europa.eu/euro/changeover/bulgaria/html/index.en.html",
+    "Confidence": "Medium"
+  }
+]

@@ -1,0 +1,601 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://printec.group/schemas/strategic-intelligence-banking-payments/source_candidate.schema.json",
+  "title": "SourceCandidate",
+  "description": "A SourceCandidate is the primary output of the Source Discovery Scout (routines/source_discovery_scout, the routine the architecture calls 'R2 Source Discovery Scout'). It represents a POTENTIAL intelligence source worth review, dedupe, rejection, merge, retirement, or promotion into the Source Registry. It is the first node in the intelligence lifecycle: SourceCandidate -> Source Registry -> Raw Document -> Parsed Document -> Evidence -> Claim -> Signal -> BankNeed -> Opportunity -> Wiki/Graph/Retrieval/Dashboard. A SourceCandidate is NOT Evidence, a Claim, a Signal, a BankNeed, or an Opportunity, and must never carry downstream intelligence content. In particular, discovery_basis.sample_evidence_snippets are ONLY short justification snippets for why the source is worth tracking; they are not Evidence objects. lifecycle_status is the AUTHORITATIVE ROLLUP state, computed deterministically from dedupe.dedupe_status, review.review_status, and promotion.promotion_status; it must not be hand-edited into a state inconsistent with those sub-statuses (JSON Schema cannot fully enforce this cross-field rule).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "candidate_id",
+    "discovery_run_id",
+    "created_at",
+    "updated_at",
+    "lifecycle_status",
+    "source_name",
+    "source_url",
+    "canonical_url",
+    "domain",
+    "country",
+    "sector",
+    "workstream",
+    "source_class",
+    "source_subtype",
+    "primary_language",
+    "topics",
+    "access_status",
+    "legal_status",
+    "collection_allowed",
+    "suggested_collection_method",
+    "credibility_score",
+    "usefulness_score",
+    "confidence_score",
+    "priority",
+    "discovery_basis",
+    "discovered_via",
+    "dedupe",
+    "review",
+    "promotion",
+    "url_verification"
+  ],
+  "properties": {
+    "candidate_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Stable unique identifier for this candidate."
+    },
+    "discovery_run_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Identifier of the discovery run that produced this candidate; links to data/run_logs."
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the candidate record was created (RFC 3339 / ISO 8601 date-time)."
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the candidate record was last updated (RFC 3339 / ISO 8601 date-time)."
+    },
+    "lifecycle_status": {
+      "type": "string",
+      "enum": [
+        "discovered",
+        "deduped",
+        "needs_review",
+        "approved",
+        "rejected",
+        "merged",
+        "retired"
+      ],
+      "description": "AUTHORITATIVE ROLLUP state for the candidate, computed deterministically from dedupe.dedupe_status, review.review_status, and promotion.promotion_status. It must not be hand-edited independently of those sub-statuses. The value 'discovered' deliberately replaces the older architecture term 'new' (a sourcing-layer naming decision)."
+    },
+    "source_name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Human-readable name of the source."
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Primary URL where the source was found."
+    },
+    "canonical_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Normalized/canonical URL used for deduplication (see the dedupe object)."
+    },
+    "domain": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Registrable domain or host of the source, e.g. 'bankofgreece.gr'."
+    },
+    "country": {
+      "type": "string",
+      "pattern": "^[A-Z]{2}$",
+      "description": "ISO 3166-1 alpha-2 country code, e.g. 'GR'. Use country_name for the display name."
+    },
+    "sector": {
+      "type": "string",
+      "enum": [
+        "banking",
+        "payments",
+        "both"
+      ],
+      "description": "Which side of Printec's market the source primarily serves."
+    },
+    "workstream": {
+      "type": "string",
+      "enum": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "A6",
+        "A8",
+        "A9"
+      ],
+      "description": "Workstream code per architecture section 16 (A7 is intentionally not defined)."
+    },
+    "source_class": {
+      "type": "string",
+      "enum": [
+        "direct",
+        "indirect",
+        "pointer"
+      ],
+      "description": "direct = produced by the actor itself or by mandatory disclosure; indirect = reveals activity as a side effect; pointer = tells us where more sources live."
+    },
+    "source_subtype": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Open-vocabulary finer classification within source_class, e.g. 'procurement_portal', 'central_bank', 'vendor_case_study', 'bank_register'."
+    },
+    "primary_language": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9-]*$",
+      "description": "Primary language of the source as a BCP-47 tag where possible, e.g. 'el', 'en', 'sr-Latn'. The pattern is a lenient shape check, not full BCP-47 validation."
+    },
+    "topics": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "description": "Non-empty list of topics the source covers."
+    },
+    "access_status": {
+      "type": "string",
+      "enum": [
+        "public",
+        "blocked",
+        "requires_free_account",
+        "requires_paid_subscription",
+        "requires_manual_download",
+        "requires_credentials",
+        "requires_legal_review",
+        "forbidden_do_not_collect",
+        "unknown"
+      ],
+      "description": "Access boundary per sourcing_layer_scope.md section 7. 'Inaccessible does not mean useless' - record the status; do not silently discard."
+    },
+    "legal_status": {
+      "type": "string",
+      "enum": [
+        "allowed",
+        "unclear",
+        "restricted",
+        "forbidden",
+        "requires_review"
+      ],
+      "description": "Legal disposition for collecting from this source."
+    },
+    "collection_allowed": {
+      "type": "boolean",
+      "description": "Whether automated collection is currently permitted. MUST be false when access_status is 'forbidden_do_not_collect' or legal_status is 'forbidden' (enforced by the conditional rules below)."
+    },
+    "suggested_collection_method": {
+      "type": "string",
+      "enum": [
+        "api",
+        "rss_feed",
+        "static_html",
+        "pdf_download",
+        "dynamic_browser",
+        "search_result_ingestion",
+        "manual_upload",
+        "transcript_ingestion",
+        "none",
+        "unknown"
+      ],
+      "description": "Suggested acquisition method, roughly in the architecture's preferred collection order."
+    },
+    "credibility_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Estimated trustworthiness/reliability of the source, 0..1."
+    },
+    "usefulness_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Estimated value of the source to its workstream, 0..1."
+    },
+    "confidence_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Confidence in this candidate assessment overall, 0..1."
+    },
+    "priority": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ],
+      "description": "Triage priority for review and potential promotion."
+    },
+    "discovery_basis": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Why this source is a candidate. Justification only - it must not carry downstream intelligence content.",
+      "required": [
+        "why_relevant",
+        "observed_source_behavior",
+        "expected_information_value",
+        "known_limitations",
+        "example_urls",
+        "sample_evidence_snippets"
+      ],
+      "properties": {
+        "why_relevant": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The reason_to_track: why this source is worth monitoring. Required to be non-empty (architecture section 19)."
+        },
+        "observed_source_behavior": {
+          "type": "string",
+          "description": "What the source appears to publish and how it behaves (cadence, format, coverage)."
+        },
+        "expected_information_value": {
+          "type": "string",
+          "description": "What useful information we expect to obtain from it."
+        },
+        "known_limitations": {
+          "type": "string",
+          "description": "Known gaps, noise, access issues, or caveats."
+        },
+        "example_urls": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "uri"
+          },
+          "description": "Example URLs illustrating the source. May be empty."
+        },
+        "sample_evidence_snippets": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Short snippets justifying candidacy ONLY. These are NOT Evidence objects in the downstream intelligence model and must never be treated as Evidence, Claims, or Signals."
+        }
+      }
+    },
+    "discovered_via": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "How the candidate was discovered.",
+      "required": [
+        "method",
+        "queries_used",
+        "pointer_source_candidate_ids",
+        "pointer_source_urls",
+        "local_language_terms_used",
+        "discovered_at"
+      ],
+      "properties": {
+        "method": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Discovery method, e.g. 'keyword_search', 'pointer_expansion', 'snowball', 'manual'."
+        },
+        "queries_used": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Search queries that surfaced this candidate. May be empty."
+        },
+        "pointer_source_candidate_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "candidate_ids of pointer sources that led here. May be empty."
+        },
+        "pointer_source_urls": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "uri"
+          },
+          "description": "URLs of pointer sources that led here. May be empty."
+        },
+        "local_language_terms_used": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Local-language terms/acronyms/aliases used to find this candidate. May be empty."
+        },
+        "discovered_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When the candidate was discovered (RFC 3339 / ISO 8601 date-time)."
+        }
+      }
+    },
+    "dedupe": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Deduplication state. Feeds the lifecycle_status rollup.",
+      "required": [
+        "dedupe_status",
+        "possible_duplicate_candidate_ids",
+        "possible_duplicate_source_ids",
+        "canonicalization_notes"
+      ],
+      "properties": {
+        "dedupe_status": {
+          "type": "string",
+          "enum": [
+            "not_checked",
+            "unique",
+            "possible_duplicate",
+            "duplicate",
+            "merged"
+          ]
+        },
+        "possible_duplicate_candidate_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Other candidate_ids this may duplicate. May be empty."
+        },
+        "possible_duplicate_source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Source Registry source_ids this may duplicate. May be empty."
+        },
+        "canonicalization_notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Notes on the URL/name canonicalization used for dedupe; null if none."
+        }
+      }
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Human review state. Feeds the lifecycle_status rollup. Null-valued fields are expected before review occurs.",
+      "required": [
+        "review_status",
+        "reviewer",
+        "reviewed_at",
+        "review_notes",
+        "rejection_reason",
+        "human_review_required"
+      ],
+      "properties": {
+        "review_status": {
+          "type": "string",
+          "enum": [
+            "not_reviewed",
+            "needs_review",
+            "approved",
+            "rejected",
+            "merged",
+            "retired"
+          ]
+        },
+        "reviewer": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Identifier of the human reviewer; null until reviewed."
+        },
+        "reviewed_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time",
+          "description": "When reviewed (RFC 3339 / ISO 8601 date-time); null until reviewed."
+        },
+        "review_notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Free-text reviewer notes; null if none."
+        },
+        "rejection_reason": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Reason for rejection; expected when review_status is 'rejected', null otherwise."
+        },
+        "human_review_required": {
+          "type": "boolean",
+          "description": "True when this candidate needs human review (uncertain, high-value, inaccessible, legally sensitive, authenticated, or manually downloadable)."
+        }
+      }
+    },
+    "promotion": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Promotion-to-Source-Registry state. Feeds the lifecycle_status rollup. Null-valued fields are expected before promotion.",
+      "required": [
+        "promotion_status",
+        "promoted_source_id",
+        "promoted_at",
+        "promotion_notes"
+      ],
+      "properties": {
+        "promotion_status": {
+          "type": "string",
+          "enum": [
+            "not_promoted",
+            "promoted",
+            "rejected",
+            "merged",
+            "retired"
+          ]
+        },
+        "promoted_source_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "source_id in the Source Registry once promoted; null until promoted."
+        },
+        "promoted_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time",
+          "description": "When promoted (RFC 3339 / ISO 8601 date-time); null until promoted."
+        },
+        "promotion_notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Free-text promotion notes; null if none."
+        }
+      }
+    },
+    "url_verification": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "RUNNER-OWNED deterministic URL-verification state. Set by deterministic verification code, NEVER by Claude/LLM reasoning. The scout initializes it as { status: 'not_checked', all other fields null }; only deterministic code may set status to 'verified' or 'failed'. The promotion workflow's activation gate requires status = 'verified' before a promoted Source may become active.",
+      "required": ["status", "verified_at", "http_status", "final_url", "error_message", "checked_by"],
+      "properties": {
+        "status": { "type": "string", "enum": ["not_checked", "verified", "failed"], "description": "Verification outcome. New scout-created candidates start at 'not_checked'. Only deterministic verification code may set 'verified' or 'failed' - Claude must never set 'verified'." },
+        "verified_at": { "type": ["string", "null"], "format": "date-time", "description": "When the URL was verified (RFC 3339 / ISO 8601 date-time); non-null required when status = 'verified' (enforced below); null otherwise." },
+        "http_status": { "type": ["integer", "null"], "description": "HTTP status code observed by the verifier; null if not applicable." },
+        "final_url": { "type": ["string", "null"], "format": "uri", "description": "Final URL after redirects; should be non-null when status = 'verified' and available; null otherwise." },
+        "error_message": { "type": ["string", "null"], "description": "Verification error; non-null required when status = 'failed' (enforced below); null otherwise." },
+        "checked_by": { "type": ["string", "null"], "description": "Identifier of the deterministic verifier; non-null required when status = 'verified' (enforced below); null otherwise." }
+      }
+    },
+    "region": {
+      "type": "string",
+      "description": "Optional sub-national region or area."
+    },
+    "country_name": {
+      "type": "string",
+      "description": "Optional display name of the country, e.g. 'Greece'."
+    },
+    "source_owner": {
+      "type": "string",
+      "description": "Optional organization or entity that owns/operates the source."
+    },
+    "source_publisher_type": {
+      "type": "string",
+      "description": "Optional publisher type, e.g. 'regulator', 'bank', 'vendor', 'media', 'association'."
+    },
+    "related_entities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Optional names of related banks, payment actors, regulators, vendors, etc."
+    },
+    "refresh_hint": {
+      "type": "string",
+      "description": "Optional heuristic hint about how often the source updates."
+    },
+    "expected_update_pattern": {
+      "type": "string",
+      "description": "Optional expected update cadence/pattern in prose."
+    },
+    "bias_profile": {
+      "type": "string",
+      "description": "Optional known bias or perspective of the source."
+    },
+    "access_review_task_id": {
+      "type": "string",
+      "description": "Optional identifier of the AccessReviewTask created when human access help is needed (data/access_review_tasks)."
+    },
+    "coverage_notes": {
+      "type": "string",
+      "description": "Optional notes on what this source does and does not cover."
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Optional free-form tags."
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true,
+      "description": "Free-form extension bag. This is the ONLY place additional properties are allowed."
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "required": [
+          "access_status"
+        ],
+        "properties": {
+          "access_status": {
+            "const": "forbidden_do_not_collect"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "collection_allowed": {
+            "const": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "legal_status"
+        ],
+        "properties": {
+          "legal_status": {
+            "const": "forbidden"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "collection_allowed": {
+            "const": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": ["url_verification"],
+        "properties": { "url_verification": { "required": ["status"], "properties": { "status": { "const": "verified" } } } }
+      },
+      "then": {
+        "properties": { "url_verification": { "required": ["verified_at", "checked_by"], "properties": { "verified_at": { "type": "string" }, "checked_by": { "type": "string", "minLength": 1 } } } }
+      }
+    },
+    {
+      "if": {
+        "required": ["url_verification"],
+        "properties": { "url_verification": { "required": ["status"], "properties": { "status": { "const": "failed" } } } }
+      },
+      "then": {
+        "properties": { "url_verification": { "required": ["error_message"], "properties": { "error_message": { "type": "string", "minLength": 1 } } } }
+      }
+    }
+  ]
+}

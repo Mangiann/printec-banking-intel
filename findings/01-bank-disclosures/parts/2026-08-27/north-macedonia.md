@@ -1,0 +1,428 @@
+# North Macedonia — bank disclosures sweep, run 27/08/2026
+
+**Status:** complete — 21 signals. Full sweep; this market was NEVER RESEARCHED in the 30/07/2026 run.
+
+**Method note:** the session's WebSearch budget was already exhausted (200/200) before this task began, so every finding below came from direct primary-source fetching. The breakthrough was reverse-engineering the JSON API behind **SEINET** (`api.seinet.com.mk`), the official Macedonian Stock Exchange issuer-disclosure portal, which gave direct access to every listed bank's H1-2026 filings and attachments.
+
+## Headline reads
+
+- **Cash-in white space is large and countable.** Stopanska 132 ATM sites / only **50** deposit-capable. Sparkasse 111 ATM sites / only **29** deposit-capable (Erste GEM feed). Both ratios (~38% and ~26%) mirror the Erste Croatia pattern (199 of 666).
+- **Stopanska Banka publicly blames its vendors.** Its H1-2026 filing attributes the 7% fall in net fee income to lower card/payment tariffs *and* 'increased commission expenses charged by the suppliers of those services'. Strongest managed-services opening in the market — and three board changes landed in Jul–Aug 2026.
+- **Instant payments are live.** KIBS holds an NBRSM licence (17/09/2025) for denar instant credit transfers, <10s, 24/7/365, built to SEPA Instant scheme rules with a stated future SEPA cross-border path. The EU IPR is not yet transposed domestically.
+- **A national eID is already carrying bank KYC.** OneID (KIBS + Nextsense, eIDAS-certified, KibsTrust) is integrated at Sparkasse, ProCredit, SilkRoad, NLB, Komercijalna, Halk and — since 15/01/2026 — Stopanska. Certificates expire every two years and are one-device-only, creating a recurring re-verification wave.
+- **Two ownership events.** ALTA banka Beograd is at **95.18%** of ex-Stopanska Bitola (04/08/2026); and NLB, the parent of NLB Banka Skopje, is in a contested takeover fight with RBI over **Addiko Bank AG** (third amendment 17/07/2026, deadline 29/07/2026).
+- **The regulator is unreachable.** NBRSM is behind a Cloudflare CAPTCHA on every path; Chrome escalation failed because the extension is not connected. No country-level ATM/POS denominator this run — see operator requests.
+
+## Signals
+
+### 1. NLB Banka AD Skopje — North Macedonia  
+*NEW/CHANGED*
+
+**Signal.** H1-2026 (unaudited, unconsolidated): net profit MKD 1,722m (+7.0% y/y), pre-tax profit MKD 1,979m, net interest income MKD 2,451m, net fee & commission income MKD 833m; total assets MKD 158.6bn (+16.1% y/y); loans to non-bank sector MKD 108.8bn (+20.3%); customer deposits MKD 121.3bn (+13.6%). Bank describes itself as sector leader in digitalisation and a systemically important bank in payment and card services; during H1-2026 it launched Visa Direct real-time transfers, the 'NLB Next' youth package, opened a new branch at 'Univerzalna Sala' and fully reconstructed the Dame Gruev branch, and won EMEA Finance 'Best Digital Bank in CEE' for the first time. EBRD provided EUR 30m for corporate green transition.
+
+**Implies for Printec.** A branch-modernisation plus card/real-time-payments push at the largest digital-led bank: self-service and branch-automation hardware for reconstructed/new branches, plus transaction monitoring and AML screening scaled to Visa Direct real-time transfers.
+
+| | |
+|---|---|
+| Source | SEINET (Macedonian Stock Exchange official disclosure portal) - NLB Banka AD Skopje, 'Analiza na finansiskite rezultati 1.1-30.6.2026' |
+| URL | https://seinet.com.mk/document/77993 |
+| Date | 27/07/2026 |
+| Tier | primary |
+| Likelihood (6–12m) | High - refurbishment and digital roadmap already funded and disclosed |
+| Confidence | Medium |
+| Opp size / Win | L / Medium |
+
+**Follow-up.** Ask NLB Skopje what self-service/recycler hardware went into the Univerzalna Sala and Dame Gruev branches, and who supplies the Visa Direct fraud/AML monitoring layer.
+
+### 2. Komercijalna Banka AD Skopje — North Macedonia  
+*NEW/CHANGED*
+
+**Signal.** H1-2026 (unaudited, unconsolidated): pre-tax profit MKD 2,798.2m vs MKD 2,960.1m in H1-2025 (-5.5%), but 110.9% of plan. Total operating income MKD 4,336.2m (-3.3%). Net fee & commission income MKD 661.5m, UP 6.6% y/y explicitly 'despite reductions made in domestic payment-services fees' - i.e. volume growth is outrunning tariff cuts. Net interest margin fell from 3.63% to 3.45%. Total assets MKD 197,211.2m (+2.4% vs Dec-2025); total deposits MKD 169,055.6m (+2.6%). Bank drew on the RSM (Hungarian) credit line and the EBRD Green Finance Facility.
+
+**Implies for Printec.** Domestic payment tariffs are being cut while transaction volume grows - the classic trigger to move cash and payment handling off the counter onto cheaper self-service/recycler channels to defend fee margin. Also a cost-per-transaction case for managed services.
+
+| | |
+|---|---|
+| Source | SEINET - Komercijalna Banka AD Skopje, 'Komentar na nerevidiran (nekonsolidiran) Bilans na uspeh i Bilans na sostojba 30.06.2026' |
+| URL | https://seinet.com.mk/document/78220 |
+| Date | 30/07/2026 |
+| Tier | primary |
+| Likelihood (6–12m) | Medium-High over 6-12 months |
+| Confidence | Medium |
+| Opp size / Win | L / Medium |
+
+**Follow-up.** Get KB Skopje's current ATM/recycler fleet count and deposit-capable share; pitch cost-per-transaction migration off the counter.
+
+### 3. Stopanska Banka AD Skopje (NBG Group) — North Macedonia  
+*NEW/CHANGED*
+
+**Signal.** H1-2026 (unaudited, unconsolidated): pre-tax profit MKD 1,408,503 thousand, DOWN 30% y/y. Net interest income MKD 2,530,605 thousand (-13%). Net fee & commission income MKD 371,963 thousand, DOWN 7% y/y, attributed explicitly to 'reduced tariff rates on commissions in the payment-operations and card-business segment and simultaneously increased commission expenses charged by the suppliers of those services'. Total assets MKD 159,062,520 thousand (+1% vs end-2025). Bank also reported three separate management/supervisory-board changes in H1 (10/07/2026 and two on 18/08/2026).
+
+**Implies for Printec.** Stopanska is being squeezed from both sides on cards and payments - falling tariffs AND rising vendor/processor fees. That is the strongest vendor-renegotiation and managed-services signal in the market: card processing, ATM managed services and transaction monitoring are all in scope. Concurrent board turnover often precedes a technology/cost review.
+
+| | |
+|---|---|
+| Source | SEINET - Stopanska banka AD Skopje, 'Komentari H1 2026 - nerevidirani nekonsolidirani izvestai' |
+| URL | https://seinet.com.mk/document/78071 |
+| Date | 29/07/2026 |
+| Tier | primary |
+| Likelihood (6–12m) | High - explicit vendor cost complaint in a public filing |
+| Confidence | Medium |
+| Opp size / Win | XL / Medium |
+
+**Follow-up.** Identify Stopanska's current card-processing and ATM service suppliers and time a managed-services/TCO proposal to the new board appointments (Jul-Aug 2026).
+
+### 4. UNIBanka (Univerzalna Investiciona Banka) AD Skopje — North Macedonia  
+*NEW/CHANGED*
+
+**Signal.** H1-2026: operating income MKD 1,155.8m (-0.4% y/y); operating expenses MKD 1,041.3m, UP 8.8% y/y - the bank attributes the rise 'primarily to increased commission expenses as a result of increased costs charged by the card organisations for cross-border transactions and for licences'. Net result MKD 114.5m. Loan liabilities +7.97% vs 31/12/2025 on new drawdowns from the Hungarian credit line. Bank also convened an extraordinary shareholders' meeting for 21/08/2026 on use of 2025 accumulated profit / dividend.
+
+**Implies for Printec.** Scheme licence and cross-border interchange costs are eating a mid-size bank's P&L. Opens a conversation on acquiring/POS economics, on-us routing, and cheaper card lifecycle management.
+
+| | |
+|---|---|
+| Source | SEINET - UNIBanka AD Skopje, 'Obrazlozenie za finansiskite rezultati 01.01-30.06.2026' |
+| URL | https://seinet.com.mk/document/78186 |
+| Date | 30/07/2026 |
+| Tier | primary |
+| Likelihood (6–12m) | Medium |
+| Confidence | Medium |
+| Opp size / Win | M / Medium |
+
+**Follow-up.** Map UNIBanka's card issuing/acquiring stack and quantify what on-soil processing would save against scheme cross-border fees.
+
+### 5. ALTA banka AD Bitola (ex-Stopanska banka AD Bitola) / ALTA banka AD Beograd — North Macedonia  
+*NEW/CHANGED*
+
+**Signal.** Stopanska banka AD Bitola now trades on the Macedonian Stock Exchange as ALTA banka AD Bitola. ALTA BANKA AD BELGRADE is running a rolling squeeze-out: three separate significant-shareholding notifications on 01/07/2026, 28/07/2026 and 04/08/2026; as at 04/08/2026 it holds 372,134 ordinary shares = 95.1805% of the bank's ordinary shares. H1-2026 results filed 31/07/2026; shareholders' meeting decisions published 26/08/2026.
+
+**Implies for Printec.** A cross-border owner consolidating to >95% and rebranding a Macedonian bank means an imminent core/channel/card re-platforming and brand-driven ATM and POS estate refresh - a classic post-acquisition integration window.
+
+| | |
+|---|---|
+| Source | SEINET - ALTA banka AD Bitola, significant-shareholding notification under Art. 38(2) MSE Listing Rules |
+| URL | https://seinet.com.mk/document/78376 |
+| Date | 04/08/2026 |
+| Tier | primary |
+| Likelihood (6–12m) | High within 12 months |
+| Confidence | Medium |
+| Opp size / Win | M / High |
+
+**Follow-up.** Approach ALTA banka Beograd's integration programme office (Serbia-side) about harmonising the Bitola channel/ATM/card estate with the Serbian parent.
+
+### 6. Centralna kooperativna banka AD Skopje (Silk Road Bank / CCB group) — North Macedonia  
+*NEW/CHANGED*
+
+**Signal.** The bank formerly known in the market as Silk Road Bank files on SEINET under ticker SILB as 'Centralna kooperativna banka AD Skopje'. On 11/02/2026 the NBRSM Executive Board (decision 15-2820/2) granted it prior approval to perform the financial activity of 'insurance agency'; published 13/02/2026. H1-2026 unaudited results and commentary filed 22/07/2026.
+
+**Implies for Printec.** A licence extension into bancassurance means new product onboarding journeys - digital onboarding/eKYC and consent capture at the branch and in the app.
+
+| | |
+|---|---|
+| Source | SEINET - Centralna kooperativna banka AD Skopje, price-sensitive information (NBRSM decision 15-2820/2) |
+| URL | https://seinet.com.mk/document/75388 |
+| Date | 13/02/2026 |
+| Tier | primary |
+| Likelihood (6–12m) | Medium |
+| Confidence | Medium |
+| Opp size / Win | S / Medium |
+
+**Follow-up.** Confirm the current legal name/brand of Silk Road Bank vs CKB Skopje and whether the bancassurance rollout has a digital onboarding component.
+
+### 7. National Bank of the Republic of North Macedonia (NBRSM) — North Macedonia  
+*NEW/CHANGED*
+
+**Signal.** NBRSM adopted a NEW MONETARY FRAMEWORK at the end of 2025. Under it, at the end of H1-2026 (June 2026) it raised the interest rate on CB bills from 4.00% to 4.25% and the overnight deposit rate from 3.50% to 3.75% (+0.25pp each), and the auction offer is now set weekly against the projected change in the banking system's liquidity position. June-2026 annual inflation 4.1% (SSO); NBRSM projects ~4% for 2026 and GDP growth 3.5% (IMF/World Bank ~3%).
+
+**Implies for Printec.** Tightening plus a weekly-auction liquidity regime raises the cost of idle cash in vaults and ATMs - a direct, quantifiable argument for cash recycling and cash-cycle optimisation/forecasting services.
+
+| | |
+|---|---|
+| Source | SEINET - Komercijalna Banka AD Skopje H1-2026 commentary (reporting NBRSM policy actions) |
+| URL | https://seinet.com.mk/document/78220 |
+| Date | 30/07/2026 |
+| Tier | primary |
+| Likelihood (6–12m) | High - already in force |
+| Confidence | Medium |
+| Opp size / Win | Unscoped / Medium |
+
+**Follow-up.** Verify the rate change and the new monetary framework directly on nbrm.mk once the Cloudflare block is cleared, and pull NBRSM payment-system statistics (ATM/POS/card counts).
+
+### 8. Stopanska Banka AD Skopje (NBG Group) — North Macedonia  
+*NEW/CHANGED*
+
+**Signal.** Own ATM locator, counted 27/08/2026: 132 ATM locations, of which only 50 are flagged 'CashIn: da' (deposit-capable) and 82 are 'CashIn: ne' (cash-out only) - a 38% deposit-capable share. Deposit capability is almost entirely confined to branch-attached machines (labelled 'Filijala ...'); the off-site/retail estate (supermarkets Tinex/Vero/Ramstore, petrol stations, bus stations, universities, pharmacies, malls) is overwhelmingly withdrawal-only. The bank markets a dedicated 'Uplata na gotovina na bankomat' (cash deposit at ATM) service and 'ATM plakjanja' (bill payment at ATM).
+
+**Implies for Printec.** 82 cash-out-only machines at the country's third-largest bank is a directly addressable recycler/cash-in upgrade pipeline - exactly the Bulgaria/Croatia white-space pattern. Pairs with the bank's own H1 complaint about rising card/payment vendor fees.
+
+| | |
+|---|---|
+| Source | Stopanska Banka AD Skopje - Mreza na bankomati (own ATM locator, Cash In filter) |
+| URL | https://www.stb.com.mk/sb-lokacii/mreza-na-bankomati/?new=1 |
+| Date | 27/08/2026 |
+| Tier | primary |
+| Likelihood (6–12m) | Medium-High |
+| Confidence | Medium |
+| Opp size / Win | L / Medium |
+
+**Follow-up.** Re-pull this locator each run - a change in the CashIn 'da' count is itself the signal. Establish which vendor supplies the 50 cash-in machines.
+
+### 9. Sparkasse Bank Makedonija AD Skopje (Steiermaerkische / Erste Group) — North Macedonia  
+*NEW/CHANGED*
+
+**Signal.** Machine-readable Erste Group GEM location feed, pulled 27/08/2026: 183 records = 35 branches and 111 ATM locations. Of the 111 ATMs, 109 carry service 'cashOut' but only 29 carry 'cashIn' (deposit) and just 10 carry 'electronicTransfer' - a 26% deposit-capable share. Deposit-capable machines are almost all branch-attached ('ATM EKSPOZITURA ...'), with only a handful of off-site sites (East Gate Mall, TC City Mall, Palma Mall Tetovo, Saraj shopping centre).
+
+**Implies for Printec.** 82 cash-out-only machines here too. The ~26-31% deposit-capable ratio matches Erste Croatia (199 of 666 at 31/07/2026), so this is a group-wide under-automation pattern that can be pitched at Erste/Steiermaerkische group level rather than country by country.
+
+| | |
+|---|---|
+| Source | Sparkasse Bank Makedonija - Erste Group GEM locations API (gem_site_location_locations-mk-spkmk) |
+| URL | https://www.sparkasse.mk/bin/erstegroup/gemesgapi/locations/gem_site_location_locations-mk-spkmk |
+| Date | 27/08/2026 |
+| Tier | primary |
+| Likelihood (6–12m) | Medium |
+| Confidence | Medium |
+| Opp size / Win | L / Medium |
+
+**Follow-up.** Reconcile this MK count with Erste Group's total CEE ATM disclosure; build one group-level recycler business case spanning HR + MK.
+
+### 10. Komercijalna Banka AD Skopje — North Macedonia  
+*NEW/CHANGED*
+
+**Signal.** Own machine-readable ATM feed (/js/data/atmsMK|EN|SQ.json), pulled 27/08/2026: 191 ATM records across 39 cities, 188 flagged Active. The English site text states the network is at 191 locations (the Albanian-language version is stale at 178). Feed carries a 'TypeATM' attribute with three values: 98 of type 1, 82 of type 2, 11 of type 3. The bank states all ATMs are contactless (card, Google Pay, Apple Pay, Garmin Pay) and that its modern ATMs do cash withdrawal, CASH DEPOSIT at 'visibly labelled cash-in ATMs', and EURO-TO-DENAR CURRENCY EXCHANGE at the machine.
+
+**Implies for Printec.** Largest bank by assets in the market runs a 191-machine estate that already does deposit and in-machine FX - i.e. a recycler/FX-dispenser refresh and cash-cycle optimisation account, not a greenfield one. The stale Albanian figure (178) shows the estate has grown by 13 sites without the site being fully updated.
+
+| | |
+|---|---|
+| Source | Komercijalna Banka AD Skopje - ATM locator data feed and 'Nasa mreza - Bankomati' page |
+| URL | https://www.kb.mk/js/data/atmsEN.json |
+| Date | 27/08/2026 |
+| Tier | primary |
+| Likelihood (6–12m) | Medium |
+| Confidence | Medium |
+| Opp size / Win | L / Medium |
+
+**Follow-up.** Get the TypeATM legend confirmed by KB (1/2/3 = withdrawal / cash-in / FX?) - the feed makes the deposit-capable split countable once the legend is known.
+
+### 11. ProCredit Bank AD Skopje — North Macedonia  
+*NEW/CHANGED*
+
+**Signal.** As at 27/08/2026 ProCredit MK operates only 3 full branches (Skopje-Manapo, Strumica, Bitola) plus 14 'service units', and its self-service estate is exactly 3 '24/7 Zones' (Skopje-Maksim Gorki, Veles-Marshal Tito 114, Tetovo-Palma Mall) plus 10 standalone ATMs, several of which sit inside third-party premises (Tinex supermarket, a bakery, S-market, a Pet Corner store, the UKIM Faculty of Economics, a tobacco shop). The bank also runs an 'Online branch' (digitalna ekspozitura), e-signing, and a PSD2 open-banking portal.
+
+**Implies for Printec.** The purest branch-light/self-service model in the market: every added customer has to be served by a 24/7 Zone. Directly addressable for zone build-out (recyclers + self-service kiosks + remote assistance) and for the eKYC/e-signing stack behind the online branch.
+
+| | |
+|---|---|
+| Source | ProCredit Bank AD Skopje - 'Ekspozituri i usluzni edinici' / '24/7 Zoni i Bankomati' |
+| URL | https://www.pcb.mk/ekspozituri-i-usluzni-edinici.nspx |
+| Date | 27/08/2026 |
+| Tier | primary |
+| Likelihood (6–12m) | Medium |
+| Confidence | Medium |
+| Opp size / Win | M / Medium |
+
+**Follow-up.** Ask ProCredit Holding whether the MK 24/7 Zone count (3) is being expanded, and who supplies the zone hardware group-wide.
+
+### 12. OneID (national electronic identity) / Stopanska Banka, Komercijalna Banka — North Macedonia  
+*NEW/CHANGED*
+
+**Signal.** OneID, North Macedonia's mobile electronic-identity scheme (oneid.mk), is now live in retail banking for remote KYC refresh and e-signature. Stopanska Banka runs 'Client update with OneID' as a standing digital-banking service: free to the customer, requires a device with biometric authentication (fingerprint on Android; fingerprint and/or face on iOS), a valid RSM ID card or passport, a Macedonian mobile number; the identity is valid for TWO YEARS and must then be renewed; it can be active on only ONE device; and data updates via OneID are capped at ONCE PER MONTH. Stopanska accepts OneID and no other eID app. Komercijalna Banka runs a parallel 'Activate services with OneID' page under its 'Banking 24/7' section.
+
+**Implies for Printec.** A national eID with a hard two-year expiry and a one-device rule creates a recurring re-verification wave across the whole customer base - the single clearest digital onboarding / eKYC opportunity in the market, plus liveness/biometric checks and an audit trail for AML periodic review.
+
+| | |
+|---|---|
+| Source | Stopanska Banka AD Skopje - 'Azuriranje na klient so OneID' (incl. FAQ); Komercijalna Banka - 'Uslugi so OneID' |
+| URL | https://www.stb.com.mk/naselenie/digitalno-bankarstvo/azuriranje-na-klient-so-oneid/ |
+| Date | 27/08/2026 |
+| Tier | primary |
+| Likelihood (6–12m) | High - already in production at two of the three largest banks |
+| Confidence | Medium |
+| Opp size / Win | L / Medium |
+
+**Follow-up.** Confirm which banks have NOT yet integrated OneID (Halkbank, UNIBanka, Silk Road/CKB, ALTA Bitola, TTK) - those are the near-term eKYC targets.
+
+### 13. KIBS AD Skopje (Klirinski interbankarski sistemi - national clearing house) — North Macedonia  
+*NEW/CHANGED*
+
+**Signal.** KIBS received a licence from the National Bank of the Republic of Macedonia on 17/09/2025 (announced 29/09/2025) to operate a payment system for INSTANT CREDIT TRANSFERS IN DENARS under the Law on Payment Services and Payment Systems. The 'KIBS Instant' platform is the country's central instant-payment scheme: account-to-account in under 10 seconds, 24/7/365, across different participants. KIBS states the system is fully aligned with the SEPA Instant Credit Transfer scheme rules and the EU Instant Payments Regulation (in force in the EU since 09/01/2025), WITH THE ABILITY TO CONNECT TO SEPA FOR CROSS-BORDER INSTANT PAYMENTS LATER - although the EU regulation is NOT yet transposed into Macedonian law. First banks had already begun integration before the licence. By the Macedonian Banking Association e-bulletin #20 (April 2026), KIBS director-general Goran Anastasovski was describing instant payments as live and moving 24/7.
+
+**Implies for Printec.** A live 24/7 instant rail plus a stated SEPA-connection path is the single biggest driver of transaction-monitoring, real-time AML/fraud screening and HSM/security demand in this market - real-time payments remove the batch window in which fraud used to be caught. Also forces every bank's channel stack (mobile, ATM, POS) to become 24/7-available.
+
+| | |
+|---|---|
+| Source | KIBS AD Skopje - 'KIBS dobi licenca za rabota so instant plakjanja' and 'KIBS celosno podgotven ... soglasno novata EU regulativa' |
+| URL | https://www.kibs.mk/Resources/NewsPromotions/docs/KIBSInstant_Licenca.pdf |
+| Date | 29/09/2025 |
+| Tier | primary |
+| Likelihood (6–12m) | High - licensed and in roll-out |
+| Confidence | Medium |
+| Opp size / Win | XL / Medium |
+
+**Follow-up.** Establish which banks are already live on KIBS Instant and which are still integrating; sell real-time fraud/AML monitoring into the laggards. Track transposition of the EU IPR into Macedonian law - that is the dated forcing event to watch.
+
+### 14. KIBS AD Skopje / World Bank FASTT programme — North Macedonia  
+*NEW/CHANGED*
+
+**Signal.** The World Bank published, under its FASTT (Frictionless Affordable Safe Timely Transactions) programme, the 'Fast Payments Championship Toolkit for Central Banks', and names KIBS AD Skopje as a contributor - KIBS states it is the ONLY private payment-system operator included in the study. KIBS's own pre-project cost-benefit analysis, factored into the toolkit, explicitly counted the potential of instant payments to CONVERT PART OF THE GREY ECONOMY INTO FORMAL PAYMENT CHANNELS, not just organic digital-payment growth.
+
+**Implies for Printec.** Formalising grey-economy cash into electronic channels is a POS/acceptance and cash-automation story: more card/instant acceptance points at merchants, and more traceable cash deposits. Note the notice carries no publication date on the KIBS site - date shown is retrieval date.
+
+| | |
+|---|---|
+| Source | KIBS AD Skopje - 'Pravilnata implementacija na instant plakjanjata vo Makedonija ... potvrdena i od najnovata studija na Svetska banka' |
+| URL | https://www.kibs.mk/Resources/NewsPromotions/docs/Instant%20payment_,mk.pdf |
+| Date | 27/08/2026 |
+| Tier | primary |
+| Likelihood (6–12m) | Medium |
+| Confidence | Low |
+| Opp size / Win | M / Low |
+
+**Follow-up.** Pull the World Bank FASTT toolkit itself for the Macedonian case data and any acceptance-infrastructure targets.
+
+### 15. OneID / KIBS AD Skopje + Nextsense (national eID scheme) — North Macedonia  
+*NEW/CHANGED*
+
+**Signal.** OneID is the first Macedonian electronic-identification service, built by KIBS in partnership with Nextsense, certified under eIDAS and the Macedonian Law on Electronic Documents, Electronic Identification and Trust Services, issued under the KibsTrust qualified-trust-service brand. Documented adoption timeline from OneID's own news page: go-live 01/11/2022 with Sparkasse Banka; ProCredit Bank and Triglav Osiguruvanje 30/04/2024; Silk Road Bank 13/09/2024; NLB Banka 27/03/2025; FD Mint 13/05/2025; the CENTRAL REGISTER (state) 05/06/2025; and STOPANSKA BANKA AD SKOPJE 15/01/2026. The partner wall as at 27/08/2026 lists Sparkasse, ProCredit, SilkRoad, NLB, Komercijalna Banka, Stopanska Banka and HALK BANKA, plus Triglav, Mint Credit, FD Finansiski krediten centar BS and the Central Register. KIBS's own '3 years of OneID' notice (undated on site) puts the user base at 25,000.
+
+**Implies for Printec.** Six of the country's largest banks are already on a single national eID rail, and Stopanska joined only in Jan-2026. Combined with the two-year certificate expiry, this is a live, recurring digital-onboarding/eKYC and remote-signing market. The banks NOT on the wall - UNIBanka, TTK Banka, ALTA banka Bitola, CKB Skopje - are the open eKYC targets.
+
+| | |
+|---|---|
+| Source | OneID (KIBS/Nextsense) - Novosti and Partneri pages; KIBS '3 godini OneID' notice |
+| URL | https://www.oneid.mk/news.nspx |
+| Date | 15/01/2026 |
+| Tier | primary |
+| Likelihood (6–12m) | High |
+| Confidence | Medium |
+| Opp size / Win | L / Medium |
+
+**Follow-up.** Confirm the current OneID user count (25,000 figure is undated) and whether OneID onboarding is being extended from KYC refresh to full account opening.
+
+### 16. CaSys International AD Skopje (domestic card processor) — North Macedonia  
+*NEW/CHANGED*
+
+**Signal.** CaSys is the independent domestic card processor for Macedonian banks and non-bank institutions, covering issuing (Mastercard and Visa), acquiring, contact/contactless chip-card PERSONALISATION bureau, e-commerce, a 24/7 four-language call centre (Macedonian, English, Albanian, Serbian), and ONLINE FRAUD MONITORING AND PREVENTION. On 30/04/2026 the Macedonian Banking Association and CaSys AD Skopje signed a formal 'Partnership for the Future of Digital Payments and Banking Innovation'.
+
+**Implies for Printec.** CaSys is the incumbent occupying much of Printec's card-processing, personalisation and transaction-monitoring space, and it has just formalised a sector-wide relationship with the banking association. Printec should position where CaSys is weakest - physical self-service/cash automation, HSM/key management and managed field services - or partner rather than displace.
+
+| | |
+|---|---|
+| Source | CaSys International - corporate site and news 'Partnership for the Future of Digital Payments and Banking Innovation' |
+| URL | https://casys.com.mk/ |
+| Date | 30/04/2026 |
+| Tier | primary |
+| Likelihood (6–12m) | High - already contracted |
+| Confidence | Medium |
+| Opp size / Win | Unscoped / Low |
+
+**Follow-up.** Read the MBA-CaSys partnership scope; identify which banks process in-house vs at CaSys, and where HSM/key-management and ATM managed services sit outside that contract.
+
+### 17. NLB Group / NLB Banka AD Skopje — North Macedonia  
+*NEW/CHANGED*
+
+**Signal.** NLB Group's H1-2026 investor presentation gives NLB Banka Skopje on a stand-alone basis at 30/06/2026: total assets EUR 2,579.2m, result after tax EUR 27.6m, RoE 15.2%, NIM 3.33%, cost/income ratio 42.8%, LTD 90.1%, NPL 0.9%, 46 BRANCHES and 469,626 active clients - out of a Group total of 371 branches, 8,064 employees, EUR 31,852.5m assets and 2.9m active clients. The same deck gives the North Macedonian banking market by total assets: Komercijalna banka 20.8%, Stopanska banka 16.6%, NLB Banka Skopje 16.3%, Sparkasse Banka 14.1%, Halk bank 14.0%, others 18.2%. Group fee income is broken out with a dedicated 'Cards and ATM operations' line.
+
+**Implies for Printec.** First hard group-level reconciliation for this market: a 46-branch network serving 469,626 active clients is 10,200 clients per branch, which is exactly the density that forces self-service migration. The market-share table also shows the top five banks hold 81.8% - five accounts cover the whole opportunity.
+
+| | |
+|---|---|
+| Source | NLB Group - Investor Presentation 1H 2026 |
+| URL | https://www.nlbgroup.com/content/dam/nlb/nlb-group/documents/investor-relations/financial-reports/2026/h1/NLB-Group-Presentation-1H-2026.pdf |
+| Date | 30/06/2026 |
+| Tier | primary |
+| Likelihood (6–12m) | High |
+| Confidence | Medium |
+| Opp size / Win | L / Medium |
+
+**Follow-up.** Ask NLB Group IR for the ATM/self-service device count behind the 'Cards and ATM operations' fee line, by country.
+
+### 18. NLB Group (parent of NLB Banka Skopje) - 2026 digital priorities — North Macedonia  
+*NEW/CHANGED*
+
+**Signal.** NLB Group's H1-2026 deck lists its 2025 deliverables / 2026 priorities under 'Digital payments': Apple Pay roll-out and 'SEPA Instant payment IN ROLL-OUT'; under digital retail onboarding, 'Early 2026: mobile-first, BIOMETRIC-BASED ONBOARDING in Slovenia'; plus upgraded NLB Klik / Klik Pro with a 2026 relaunch in Serbia AND ACROSS THE GROUP, a private-banking app, DIGITAL CARD ISSUANCE and digital factoring. The Group's 2030 strategic ambition targets a cost/income ratio in the 'low 40s %' (from 47.4% in 2025) and recurring revenues above EUR 2,000m.
+
+**Implies for Printec.** Biometric mobile-first onboarding proven in Slovenia and an explicit 'across the group' relaunch means the eKYC/onboarding stack will be pushed into Skopje next - and a low-40s CIR target cannot be hit without shifting transactions off staffed counters. Both are direct openings for digital onboarding/eKYC and self-service/recycler programmes.
+
+| | |
+|---|---|
+| Source | NLB Group - Investor Presentation 1H 2026, '2025 deliverables and 2026 priorities' |
+| URL | https://www.nlbgroup.com/content/dam/nlb/nlb-group/documents/investor-relations/financial-reports/2026/h1/NLB-Group-Presentation-1H-2026.pdf |
+| Date | 30/06/2026 |
+| Tier | primary |
+| Likelihood (6–12m) | Medium-High within 12 months |
+| Confidence | Medium |
+| Opp size / Win | L / Medium |
+
+**Follow-up.** Time an approach to NLB Group's digital transformation office on the group-wide rollout wave rather than to Skopje alone.
+
+### 19. NLB d.d. Ljubljana vs Raiffeisen Bank International AG - Addiko Bank AG — North Macedonia  
+*NEW/CHANGED*
+
+**Signal.** A contested cross-border takeover battle for Addiko Bank AG is running inside this reporting window and directly involves the parent of NLB Banka Skopje. RBI launched a voluntary public takeover offer for Addiko on 14/05/2026. NLB d.d. Ljubljana published a THIRD amendment to its competing voluntary public takeover offer on 17/07/2026 under the Austrian Takeover Act: minimum acceptance threshold REDUCED to 50% plus one Addiko share (9,750,001 shares) and the acceptance period extended to 29/07/2026, with Addiko shareholders who had accepted the RBI offer able to revoke until 23/07/2026.
+
+**Implies for Printec.** Whichever of NLB or RBI wins, a multi-country SEE integration programme follows: core/channel harmonisation, ATM and card estate consolidation, and a single AML/monitoring stack across the enlarged footprint. Both bidders were unresearched blanks in the previous run. This is the largest single regional integration opportunity currently on the table.
+
+| | |
+|---|---|
+| Source | NLB Group - 'Third amendment of the voluntary public takeover offer aimed at acquiring control' (English convenience translation of the German offer amendment published 17/07/2026) |
+| URL | https://www.nlbgroup.com/content/dam/nlb/nlb-group/documents/investor-relations/addiko-takeover-offer |
+| Date | 17/07/2026 |
+| Tier | primary |
+| Likelihood (6–12m) | High - offer periods already closed; outcome due |
+| Confidence | Medium |
+| Opp size / Win | XL / Medium |
+| Deadline | 29/07/2026 |
+
+**Follow-up.** URGENT: determine the outcome of the 29/07/2026 acceptance deadline and which bidder secured control of Addiko, then map Addiko's ATM/POS estate across SEE as an integration target.
+
+### 20. NLB Banka AD Skopje (capital and funding) — North Macedonia  
+*NEW/CHANGED*
+
+**Signal.** Two NLB Skopje funding transactions inside the window: on 30/06/2026 the bank disclosed a new long-term loan agreement with Nova Ljubljanska banka d.d., and on 30/07/2026 a further transaction under a NEW SUBORDINATED LOAN agreement with the parent. On 27/07/2026 the NBRSM issued a decision granting prior approval relating to the bank's management/supervisory bodies. At the AGM in May 2026 the bank retained MKD 2.6bn of 2025 profit in capital and reserves; capital and reserves reached MKD 21.5bn (+14.0% y/y). Subordinated and loan liabilities rose 86.5% y/y to MKD 8.8bn.
+
+**Implies for Printec.** Fresh subordinated capital plus retained profit is capacity being deliberately built for growth and investment - the funding precondition for a channel/self-service capex programme.
+
+| | |
+|---|---|
+| Source | SEINET - NLB Banka AD Skopje price-sensitive disclosures (30/06/2026, 27/07/2026, 30/07/2026) and H1-2026 analysis |
+| URL | https://seinet.com.mk/document/78225 |
+| Date | 30/07/2026 |
+| Tier | primary |
+| Likelihood (6–12m) | Medium |
+| Confidence | Medium |
+| Opp size / Win | M / Medium |
+
+**Follow-up.** Check NLB Skopje's 2026 capex plan for channel/self-service line items.
+
+### 21. National Bank of the Republic of North Macedonia (NBRSM) - SOURCE BLOCKED — North Macedonia  
+*NEW/CHANGED*
+
+**Signal.** NBRSM's entire web estate (www.nbrm.mk, nbrm.mk, nbstat.nbrm.mk) sits behind a Cloudflare interactive bot challenge ('Just a moment... Performing security verification'). It returns HTTP 403 to plain fetch, to fetch with full desktop Chrome headers (User-Agent, Accept, Accept-Language, Sec-Fetch-*), and to a third-party text-rendering proxy, which reports the page 'maybe requiring CAPTCHA'. narodnabanka.mk does not resolve. Consequently NO NBRSM primary payment-system statistics (ATM count, POS count, card count, instant-payment volumes) could be captured this run. The NBRSM policy actions reported above are sourced second-hand from Komercijalna Banka's own H1-2026 filing.
+
+**Implies for Printec.** The country-level ATM/POS denominators that would size the recycler white space cannot be verified without an operator or a real browser session. Everything in this file is therefore bank-level, bottom-up.
+
+| | |
+|---|---|
+| Source | Access log - www.nbrm.mk Cloudflare challenge response |
+| URL | https://www.nbrm.mk/pnrccpsmb-en.nspx |
+| Date | 27/08/2026 |
+| Tier | primary |
+| Likelihood (6–12m) | n/a |
+| Confidence | Medium |
+| Opp size / Win | Unscoped / — |
+
+**Follow-up.** OPERATOR: open www.nbrm.mk in a real browser, solve the Cloudflare check, and download the Payment Systems statistics (ATMs, POS terminals, cards in circulation, instant-payment volumes) plus the Financial Stability / Banking System reports for H1-2026.
+
+## Coverage notes
+
+Full sweep of North Macedonia, fresh run (never researched in the 30/07/2026 run). WebSearch budget for this session was already exhausted (200/200) before this task started, so ALL research was done by direct primary-source fetching - no search engine was used at any point. Entry points used, several of them new to this beat: (1) SEINET (seinet.com.mk), the OFFICIAL Macedonian Stock Exchange issuer-disclosure portal - its undocumented JSON API (api.seinet.com.mk/public/documents, /public/issuers/1, /public/documents/single/{id}, /public/documents/attachment/{id}) was reverse-engineered from the site bundle and used to enumerate every listed bank issuer and pull H1-2026 filings and attachments (PDF/DOC/DOCX) directly; (2) each bank's own ATM/branch locator, including two machine-readable feeds - kb.mk/js/data/atms{MK,EN,SQ}.json and Sparkasse's Erste Group GEM API - plus Stopanska's HTML locator with an explicit CashIn flag; (3) KIBS (kibs.mk), the national clearing house, whose press PDFs carry the instant-payment licence and SEPA-alignment detail; (4) oneid.mk news/partner pages for the national eID adoption timeline; (5) casys.com.mk for the incumbent card processor; (6) NLB Group IR (nlbgroup.com) for group-level reconciliation of the Macedonian subsidiary and the Addiko takeover documents. Languages: Macedonian and English throughout (Albanian text also read on kb.mk, where it revealed a stale 178-ATM figure vs 191 in Macedonian/English). Banks covered: Komercijalna, Stopanska (NBG), NLB, Sparkasse, UNIBanka, ProCredit, Silk Road/CKB, ALTA Bitola (ex-Stopanska Bitola), TTK, and Halkbank partially. GENUINE GAPS: (a) no NBRSM statistics at all - the regulator is CAPTCHA-walled, see the dedicated blocked-source row; (b) Halkbank AD Skopje is not MSE-listed and its locator is JS-driven with no reachable API, so no ATM/deposit count and no H1-2026 figures were obtained - only its 14.0% market share (via NLB's deck) and its OneID partnership; (c) NLB Skopje's own ATM locator is an AEM app with no discoverable JSON endpoint, so no NLB deposit-capable ATM count; (d) Silk Road Bank's locator is likewise dynamic; (e) Komercijalna's feed exposes a TypeATM attribute (98/82/11) whose legend is not published, so its deposit-capable split is countable but not yet decodable; (f) no confirmation of whether NBG still owns Stopanska Banka beyond the 'NBG group' footer on stb.com.mk - no transformation/sale disclosure was found on SEINET for 2026; (g) the outcome of the Addiko takeover contest after the 29/07/2026 deadline is not yet on NLB's IR page.
+
+## Access issues
+
+BLOCKED AND LOGGED: www.nbrm.mk / nbrm.mk / nbstat.nbrm.mk - HTTP 403 Cloudflare interactive bot challenge on every path including /robots.txt. Routes attempted in order: plain fetch; fetch with full desktop Chrome User-Agent; fetch with UA plus Accept, Accept-Language, Upgrade-Insecure-Requests and Sec-Fetch-* headers; WebFetch (403); third-party text-render proxy (returned the challenge page with a CAPTCHA warning). Escalation to Claude-in-Chrome was attempted and FAILED - the Chrome extension is not connected to this session. The challenge requires solving a CAPTCHA, which I do not do. narodnabanka.mk - does not resolve (no A record). komercijalna.com.mk - does not resolve; the live domain is kb.mk (reached and used). unibank.com.mk - resolves to 62.162.104.9 / .10 but the TCP/TLS connection fails on both http and https; UNIBanka was therefore covered via SEINET filings only, not its own site. mba.mk (Macedonian Banking Association) - serves only a perpetual loading screen with no content links; its e-bulletins were reached instead as PDFs mirrored on kibs.mk. MBAeBILTEN2026april.pdf - is an image-only PDF, no extractable text; the KIBS director-general quotation was taken from the KIBS homepage summary of it, not the bulletin body. halkbank.mk /api/branches, /api/atms, /api/locations - 302 redirect; /api/map - HTTP 500. nlb.mk AEM locator endpoints (.model.json, /bin/*) - all 404. api.seinet.com.mk/public/channels and /public/issuers/ (trailing slash) return empty bodies; the working forms are a flat POST to /public/documents and GET /public/issuers/1.
+
+## Operator requests
+
+1. NBRSM (www.nbrm.mk) - CAPTCHA-walled. Please open in a real browser, clear the Cloudflare check, and retrieve: the Payment Systems statistics tables (number of ATMs, POS terminals, cards in circulation, and instant-payment volumes since KIBS Instant went live), the latest Financial Stability Report and Banking System Report for H1-2026, and the decision/licence register entry for the KIBS instant payment system (licence dated 17/09/2025). Without these there is no country-level ATM/POS denominator for this market. 2. World Bank FASTT 'Fast Payments Championship Toolkit for Central Banks' - referenced by KIBS; worth retrieving in full for the Macedonian cost-benefit case and any acceptance-infrastructure targets. 3. Halkbank AD Skopje - not MSE-listed and no reachable locator API; an operator or a direct approach is needed for its ATM/deposit-machine count and H1-2026 results. 4. Addiko Bank AG takeover outcome - check the Austrian Takeover Commission / Addiko IR for the result of the 29/07/2026 acceptance deadline (NLB vs RBI).

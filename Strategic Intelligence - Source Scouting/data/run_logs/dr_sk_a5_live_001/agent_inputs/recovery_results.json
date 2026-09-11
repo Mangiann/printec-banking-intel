@@ -1,0 +1,262 @@
+[
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_001",
+  "source_url": "https://subjekty.nbs.sk/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://subjekty.nbs.sk/sk/",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_025",
+  "source_url": "https://registre.nbs.sk/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_127",
+  "source_url": "https://www.erstedigital.com/sk/home",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_163",
+  "source_url": "https://spectator.sme.sk/business",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_175",
+  "source_url": "https://www.slsp.sk/sk/informacie-o-banke/o-banke/vedenie-banky",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_188",
+  "source_url": "https://www.primabanka.sk/manazment-banky",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_189",
+  "source_url": "https://www.primabanka.sk/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_213",
+  "source_url": "https://xi.jtglobalfinance.com/en/annual-reports",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_221",
+  "source_url": "https://subjekty.nbs.sk/sk/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_222",
+  "source_url": "https://subjekty.nbs.sk/api/psd2",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://subjekty.nbs.sk/sk/api/psd2",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_232",
+  "source_url": "https://www.globalpayments.sk/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_265",
+  "source_url": "https://kariera.nbs.sk/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_308",
+  "source_url": "https://www.manpower.sk/magazin",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.manpower.sk/sk/blog?page=1",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_035",
+  "source_url": "https://finstat.sk/monitoring-firiem",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_065",
+  "source_url": "https://www.finstat.sk/51910497",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_125",
+  "source_url": "https://finstat.sk/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_162",
+  "source_url": "https://korzar.sme.sk/kosice",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_180",
+  "source_url": "https://www.tatrabanka.sk/sk/blog/tlacove-spravy/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_181",
+  "source_url": "https://www.tatrabanka.sk/en/about-bank/people/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_182",
+  "source_url": "https://www.tatrabanka.sk/sk/o-banke/financne-ukazovatele/vyrocne-spravy/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_196",
+  "source_url": "https://tlacovespravy.sme.sk/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_246",
+  "source_url": "https://praca.sme.sk/praca/compliance-specialista/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.sme.sk/",
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_269",
+  "source_url": "https://jobs.globalpayments.com/jobs",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_272",
+  "source_url": "https://sk.jooble.org/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_315",
+  "source_url": "https://www.sme.sk/index/c/rebricky-executive-search-firiem",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_327",
+  "source_url": "https://www.sme.sk/index",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ }
+]

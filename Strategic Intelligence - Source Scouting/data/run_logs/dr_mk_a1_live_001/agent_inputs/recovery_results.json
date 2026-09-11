@@ -1,0 +1,72 @@
+[
+ {
+  "candidate_id": "dr_mk_a1_live_001__c_198",
+  "source_url": "https://seonet.ljse.si/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_mk_a1_live_001__c_200",
+  "source_url": "https://www.halkbank.com.tr/en/investor-relations.html",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.halkbank.com.tr/en/investor-relations",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_mk_a1_live_001__c_201",
+  "source_url": "https://www.halkbank.com.tr/en/investor-relations/disclosures/disclosure-of-material-events",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_mk_a1_live_001__c_255",
+  "source_url": "https://iute.com/news/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_mk_a1_live_001__c_271",
+  "source_url": "https://visa.gcs-web.com/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_mk_a1_live_001__c_273",
+  "source_url": "https://www.netcetera.com/references/Halkbank.html",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_mk_a1_live_001__c_303",
+  "source_url": "https://slobodenpristap.mk/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ }
+]

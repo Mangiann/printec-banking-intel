@@ -1,0 +1,308 @@
+# Agent 6 — Long tail & NEW competitors: Serbia + Western Balkans
+
+**Run date:** 31/08/2026  **Slug:** `tail-serbia-wbalkans`  **Status:** complete  **Signals:** 20
+
+Beat: Serbia, Albania, Bosnia & Herzegovina, Kosovo, Montenegro, North Macedonia. Global names with their own units (NCR Atleos, Diebold, Glory, Worldline, Euronet, Mellon, Payten/Asseco, Brink's, Hyosung/KAL) and the Printec partners Namirial/IMTF are excluded.
+
+## Headline
+
+- **Newly discovered vendor:** **Provision** (provisionpay.com, Turkey) sits behind Hipotekarna banka Montenegro's **MojPOS** softPOS, and also sells card management, EMV and ATM software. Not in the 164-name roster.
+- **Nexi is now inside Kosovo's payment core** — EUR 685,000 TIPS Clone connectivity at the BQK for 5 years, won against SWIFT by default after SWIFT was ruled non-responsive. Roster covers Nexi only for GR/HR/CZ.
+- **Albania is the growth market on this beat:** a legal POS mandate pushed active terminals to **38,662** (+38.2% YoY) and ATM cash deposits up **125%** YoY with only ~40% of ATMs deposit-capable.
+- **Montenegro's TIPS Clone + mandatory Verification of Payee** gives eleven banks the same dated fraud/monitoring requirement — the cleanest repeatable product sale on the beat, repeating in Albania and Kosovo from November 2026.
+- **North Macedonia TIPS Clone connectivity closes 18/09/2026** — a live near-term deadline.
+- Ten previously untracked local firms named and converted from Agent 2's award sweep.
+
+## Signals
+
+### 1. Provision (provisionpay.com, Turkey) — softPOS / card-management / EMV / ATM software vendor — Montenegro
+
+- **Source:** [Hipotekarna banka MojPOS product page (WordPress REST API, date/modified fields), Google Play listing com.provisionpay.softpos.hipotekarna, and provisionpay.com About Us — all fetched 31/08/2026](https://hipotekarnabanka.com/digitalna-banka/mojpos/) · 29/04/2026 · *primary*
+- **New/changed:** True · **Confidence:** Medium · **Opp size:** S · **Win:** Medium
+
+**Signal.** [local-peer — NEWLY DISCOVERED REGIONAL ENTRANT, NOT IN THE 164-NAME ROSTER] Hipotekarna banka a.d. Podgorica's merchant acceptance product 'MojPOS' — a softPOS app, meaning software that turns an ordinary Android phone into a contactless card terminal with no separate POS hardware — is built by the Turkish payment-software house Provision. The link is established from the Google Play package id com.provisionpay.softpos.hipotekarna, which maps directly onto provisionpay.com. Provision's own About Us page states it has been in card-based payment software since 2005, is a MasterCard Solution Vendor and VISA Technology Partner, and sells across Digital Payments, Card Management, EMV and ATM; its homepage headline is 'SoftPOS with PIN makes payments digital'. The bank's MojPOS page was first published 04/08/2023 and last modified 29/04/2026; it waives the monthly fee for the first six months and requires Android 11+ with NFC. NOTE ON RECENCY: this is a DISCOVERY of an existing position rather than a brand-new award — the newest verifiable timestamp is the 29/04/2026 page modification, so it is not presented as new news.
+
+**Implies for Printec.** A Turkish payment-software vendor already holds a Montenegrin bank's merchant-acceptance front end, and its declared portfolio also spans card management, EMV and ATM software — the same ground as Printec's POS terminals and acquiring line (Verifone/Castles) and its terminal-management offer. Printec should log Provision as a live bidder in Montenegro and, when working Hipotekarna or its peers, argue the case softPOS cannot answer on its own: cash deposit and recycling at the branch and ATM, physical terminal estates for high-volume merchants, and one TMS that manages phone-based and physical acceptance together instead of leaving the bank running two disconnected fleets.
+
+**Likelihood.** Already live in Montenegro; further Western Balkans bank wins by Provision plausible within 6-12 months  
+**Follow-up.** Profile Provision in the Turkish trade register, establish whether the Hipotekarna engagement is softPOS-only or extends to card management and ATM software, and fingerprint other Montenegrin/Serbian/Kosovar bank softPOS apps by package id for the same vendor.
+
+---
+
+### 2. NEXI Payments SPA (Italy) — Kosovo
+
+- **Source:** [BQK Contract Award Notice (PDF, fetched and pdfminer-extracted 31/08/2026)](https://bqk-kos.org/wp-content/uploads/2026/08/Contract_Award_Notice_TIPS-Clone-Connectivity-Services.pdf) · 12/08/2026 · *regulator*
+- **New/changed:** True · **Confidence:** Medium · **Opp size:** M · **Win:** Medium
+
+**Signal.** [global — MATERIALLY CHANGED POSITION: the roster tracks Nexi only for GR/HR/CZ; this puts it inside Kosovo's central-bank payment core] Verified by fetching and text-extracting the award PDF directly. The Central Bank of the Republic of Kosovo (BQK) awarded BQK-26-014-211 'TIPS Clone Connectivity Services' to NEXI Payments SPA at a final contract price of EUR 685,000.00, duration 120 days plus 5 years maintenance, under World Bank Financial Sector Development Project P507659/P507881, RFB method. Award notified 03/06/2026; award notice published 12/08/2026. Only two bids were received: S.W.I.F.T. SC at EUR 301,138.00 and Nexi at EUR 685,000.00 — SWIFT, despite bidding 56% lower, was declared non-responsive because the Section IV bidding forms were not completed, which made evaluation impossible, so Nexi won a two-horse race by default at more than twice the rival price. TIPS Clone is a national instant-payments settlement platform cloned from the ECB's TARGET Instant Payment Settlement service, letting money move between banks in seconds, 24/7.
+
+**Implies for Printec.** Nexi now owns the connectivity layer of Kosovo's instant-payments core for five years, which buys it a standing BQK relationship and a natural path to sell overlay services outward to every Kosovar commercial bank. Printec cannot bid the settlement core — it is gated to a TIPS-authorised network service provider — but the bank-side build-out is wide open and is where Printec's money is: every Kosovo bank must now expose instant payments through its channels, which pulls through ATM and kiosk software change (x-core), transaction monitoring (INETCO) for a rail that is irrevocable and always on, and fraud/AML screening. Printec should engage Kosovo banks now, ahead of Nexi extending from the central-bank core outward.
+
+**Likelihood.** Contract signed; bank-side integration work lands over the next 6-18 months  
+**Follow-up.** Track BQK overlay-service procurements (Paylume SRL already holds the EUR 295,000 Fast Payment Infrastructure support contract) and identify which Kosovo banks are buying channel-side instant-payment integration.
+
+---
+
+### 3. Albanian POS-acquiring market — every acquirer and terminal supplier in Albania (Bank of Albania data) — Albania
+
+- **Source:** [Banka e Shqipërisë statistics, reported in full by Monitor.al (fetched via WordPress REST API 31/08/2026)](https://monitor.al/detyrimi-ligjor-dhe-kerkesa-ne-rritje-per-pagesa-me-karte-pos-et-u-rriten-38-ne-mesin-e-ketij-viti/) · 31/08/2026 · *press*
+- **New/changed:** True · **Confidence:** Medium · **Opp size:** L · **Win:** Medium
+
+**Signal.** [market trigger that reprices the whole Albanian competitive set] Bank of Albania figures published today show the number of ACTIVE POS terminals in Albania reached 38,662 at mid-2026 — up 23.7% since the start of this year and up 38.2% year on year, and roughly tripled since 2020. The driver is a legal mandate, not organic demand: the Law on Tax Procedures, amended by the Albanian Parliament at end-2025, obliges businesses (with some exemptions) to hold a POS terminal for electronic payments within 2026, and for the accommodation and transport sectors and public enterprises that obligation took effect at the end of MAY 2026 — which is exactly what the mid-year jump reflects. It sits inside a national objective to shift the economy to cashless by 2030. Card payments at POS reached 16 million in H1 2026, up 28% year on year, worth ALL 58.3bn, up 21%; card payments at POS have now stably overtaken cash withdrawals at ATMs, with roughly 56 of every 100 card operations being a POS payment.
+
+**Implies for Printec.** Albania is the fastest-expanding terminal market on Printec's Western Balkans beat and the expansion is legally compelled, so it will continue through 2026 regardless of merchant appetite. Roughly 10,700 terminals were added in twelve months and only about 28% of active enterprises are covered, so the runway is large. This is a direct, dated opening for Printec's POS terminal line (Verifone/Castles) and for terminal management (TMS) — banks adding thousands of terminals in months need estate management, remote key injection and monitoring far more than they need another box. Printec already has OTP Albania and Raiffeisen Albania as footprint references; the pitch is to be the estate partner as their acquiring books scale, before a low-cost softPOS vendor takes the long tail of small merchants.
+
+**Likelihood.** Mandate coverage continues to bite through the rest of 2026 and into 2027  
+**Follow-up.** Obtain the Bank of Albania payments statistical release behind these figures, and establish which acquirers took the ~10,700 net new terminals and on whose hardware.
+
+---
+
+### 4. Albanian ATM cash-automation market, including the non-bank tourist-ATM partnership operators (independent ATM deployer layer) — Albania
+
+- **Source:** [Banka e Shqipërisë statistics, reported by Monitor.al (WordPress REST API full text, fetched 31/08/2026)](https://monitor.al/depozitimet-e-parave-ne-atm-u-rriten-me-125-ne-tremujorin-e-pare-te-vitit/) · 29/07/2026 · *press*
+- **New/changed:** True · **Confidence:** Medium · **Opp size:** L · **Win:** Medium
+
+**Signal.** [market trigger — the deposit-automation curve Printec's NCR line is built for] Bank of Albania statistics show automated CASH DEPOSITS at ATMs in Albania reached 676,000 in Q1 2026, up 125% year on year, worth ALL 33.4bn, up 146%. For full-year 2025 there were nearly 2.2 million ATM cash deposits, up 109%, worth ALL 104.8bn, up ~110%. The installed base is following: ATMs capable of accepting cash deposits rose to 454 at end-March 2026 from 430 at end-2025 and 408 a year earlier — about 40% of the country's ATMs. The total active ATM estate was 1,147 at end-March 2026, up 8% year on year. Monitor.al adds a structural point that matters competitively: the recent ATM growth has been driven especially by machines placed in tourist areas, and these are typically NOT operated directly by the banks but run under a partnership business model with third-party businesses — i.e. an independent-ATM-deployer (IAD) layer is forming in Albania alongside the bank estates.
+
+**Implies for Printec.** Deposit volumes more than doubling while only 40% of the estate can take deposits is the single clearest hardware-replacement case on this beat, and it maps exactly onto Printec's NCR intelligent-deposit and recycling ATMs plus NCR APTRA OptiCash for cash optimisation — when deposits surge, cash forecasting and branch cash cycles become the bank's real cost problem. The IAD point is the competitive warning: if third-party operators, not banks, own the fastest-growing slice of the Albanian estate, Printec should sell to those operators directly (hardware plus managed field service and telemetry) rather than only through OTP and Raiffeisen Albania, or it will lose the growth segment to whoever is already servicing them.
+
+**Likelihood.** Deposit-capable ATM replacement and expansion continues over the next 6-18 months  
+**Follow-up.** Name the third-party businesses operating Albania's tourist-area ATMs and identify which OEM's deposit modules the 454 deposit-capable machines use — that tells Printec whether this is an NCR upgrade path or a competitor displacement.
+
+---
+
+### 5. Union Financiar Tiranë and IutePay (Albanian payment / e-money institutions) — Albania
+
+- **Source:** [Banka e Shqipërisë supervision data, reported by Monitor.al (WordPress REST API full text)](https://monitor.al/fitimi-i-institucioneve-financiare-te-pagesave-pesoi-renie-vitin-e-kaluar/) · 13/08/2026 · *press*
+- **New/changed:** True · **Confidence:** Medium · **Opp size:** M · **Win:** Medium
+
+**Signal.** [local-peer — Union Financiar Tiranë is NOT in the roster; IuteCredit Albania is, under the Velox Pay / MyIute entry] The Bank of Albania's sector review, reported 13/08/2026, states that at end-2025 Albania had 15 licensed payment operators — 10 licensed as electronic-money institutions and 5 for payment and money-transfer services — and that while the sector's net profit FELL 36.6% to ALL 1.05bn (about EUR 10.9m) on lower fee income and higher operating costs, total assets rose 5.3% to ALL 16bn and e-money payment volume rose 9.6% to ALL 95.3bn, with the main expansion effect coming specifically from UNION FINANCIAR TIRANË and IUTEPAY. The central bank's own assessment is that the fintech model in Albania is still at an early stage and that operator revenue still comes mainly from commissions on services provided physically at agent counters. Union Financiar Tiranë's own recent standing moves: it launched the UPay card [STANDING — dated 16/06/2025] and executed its first Open Banking transactions [STANDING — dated 24/03/2025].
+
+**Implies for Printec.** Albania's non-bank payments layer is consolidating around two expanding operators, and the central bank says their revenue is still overwhelmingly earned at PHYSICAL AGENT COUNTERS. That is a self-service and cash-automation opportunity, not just a payments one: an agent-counter business scaling on physical footfall is the classic buyer for Printec's bank kiosks, cash recyclers and cash-deposit self-service, and for digital onboarding/eKYC to move counter customers to remote enrolment. Printec should approach Union Financiar Tiranë directly as a non-bank buyer, and treat both firms as rivals for merchant acceptance at the same time.
+
+**Likelihood.** Continued expansion of both operators through 2026-2027  
+**Follow-up.** Pull the Bank of Albania register of licensed payment and e-money institutions to name all 15, and profile Union Financiar Tiranë's agent-counter network size — that is the addressable kiosk/recycler estate.
+
+---
+
+### 6. INOVA TECH DOO BEOGRAD (PIB 110441595) + ELEKTRO ENERGY DOO BEOGRAD (PIB 105198179) — Serbia
+
+- **Source:** [Portal javnih nabavki (UJN) award notice 2026/С Ф03-0036247 (via Agent 2's 27/08/2026 sweep), cross-checked this run against the Inova Tech company website product catalogue](https://jnportal.ujn.gov.rs/tender-eo/372149) · 03/07/2026 · *primary*
+- **New/changed:** True · **Confidence:** Medium · **Opp size:** S · **Win:** Low
+
+**Signal.** [local-peer — DIRECT SELF-SERVICE KIOSK COMPETITOR; NEITHER FIRM IS IN THE ROSTER] The Velika Plana self-service-kiosk award now has named winners: a joint bid by Inova Tech doo Beograd and Elektro Energy doo Beograd took 'Postavljanje samouslužnih kioska za plaćanje administrativnih taksi i informisanje građana' (installation of self-service kiosks for paying administrative fees and informing citizens), ref 5/2026, tender id 372149, contract 031-109/2026, RSD 17,973,000 excl. VAT (approx. EUR 153,000) against an RSD 18,005,000 estimate, signed 15/06/2026 on a SINGLE bid; award notice 2026/С Ф03-0036247 published 03/07/2026. Inova Tech's own website (checked directly this run) confirms it is not a general contractor but an IoT and electronics manufacturer with a dedicated 'Payment machines' product line — the standalone payment station PM-S and a fiscalised 'IT-POS' — plus parking terminals, and installed ticketing/payment references at Ušće Shopping Center, Beo Shopping Center, Iulius Mall and the Lajkovac public pools.
+
+**Implies for Printec.** This is a domestic Serbian manufacturer that designs, builds and installs unattended payment kiosks — head-on with Printec's self-service and bank-kiosk line, at a price point Printec will not match on a EUR 153k municipal job. The real risk is the reference, not the contract: a Serbian public buyer has now validated a local kiosk maker, and a municipal fee-payment kiosk is the same box a bank buys for branch self-service. Printec should decide deliberately whether to contest Serbian public kiosk work on price at all, and defend the bank segment on what Inova Tech demonstrably does not offer — cash-accepting and cash-recycling kiosks, EMV-certified card acceptance, device telemetry and monitored managed field service.
+
+**Likelihood.** Further Serbian municipal kiosk awards to this pairing likely within 6-12 months  
+**Follow-up.** Establish whether Inova Tech's kiosks accept cash or only cards, whether they are EMV-certified, and whether either firm has approached a Serbian bank; keep a watch on UJN for further kiosk notices.
+
+---
+
+### 7. VIP SISTEM (Serbian payment institution), sponsored into the rail by OTP banka Srbija a.d. Novi Sad — Serbia
+
+- **Source:** [National Bank of Serbia notice, reported in full by biznis.rs (WordPress REST API, fetched 31/08/2026)](https://biznis.rs/novac/jos-jedna-platna-institucija-u-ips-sistemu-narodne-banke-srbije/) · 05/06/2026 · *press*
+- **New/changed:** True · **Confidence:** Medium · **Opp size:** S · **Win:** Medium
+
+**Signal.** [local-peer — NEW SERBIAN PAYMENT INSTITUTION, NOT IN THE ROSTER] The National Bank of Serbia announced that the payment institution VIP SISTEM joined the NBS instant-payments system (IPS NBS) on 05/06/2026 as an INDIRECT participant — a party with mediated access — reaching the rail through OTP banka Srbija a.d. Novi Sad as its direct participant and sponsor bank, so it can now settle instant payments for its own clients. NBS scale context published alongside: 11.6 million IPS transactions in May 2026, an average 375,907 payments a day, average execution time one second, RSD 145bn of monthly turnover.
+
+**Implies for Printec.** Serbia's non-bank payment-institution layer keeps widening and each new IPS participant is both a potential merchant-acceptance rival to Printec's POS and acquiring line and a potential channel. The sponsor-bank pattern is the more useful intelligence: OTP banka Srbija is now the on-ramp for third-party payment institutions, which makes OTP the account to work for terminal-management and transaction-monitoring pull-through as further institutions join behind it — the sponsor bank carries the settlement and monitoring obligation for everyone it sponsors.
+
+**Likelihood.** More payment institutions joining IPS NBS over the next 6-12 months  
+**Follow-up.** Identify VIP SISTEM's legal entity and licence scope in the NBS register of payment institutions and establish whether it acquires merchants or only initiates payments.
+
+---
+
+### 8. Serbian card-acceptance and ATM market (National Bank of Serbia Q2 2026 data) — the addressable base for every acquirer and deployer — Serbia
+
+- **Source:** [National Bank of Serbia payment statistics, reported in full by biznis.rs; structural portal finding from the UJN notices database and contract register](https://biznis.rs/novac/placanja-karticom-u-srbiji-beleze-dvocifrene-stope-rasta/) · 26/08/2026 · *press*
+- **New/changed:** True · **Confidence:** Medium · **Opp size:** L · **Win:** Medium
+
+**Signal.** [market sizing, and the structural reason Serbia cannot be worked through tender portals] NBS reported on 26/08/2026 that at end-Q2 2026 Serbia had 195,000 POS solutions for cashless payment at merchants, up 10.1% year on year, and 3,412 ATMs, up 6.8% year on year, with 13.7 million payment cards issued to 7.1 million users (+706,000 cards, +5.5% YoY). Card purchases on the Serbian acceptance network hit 237.9 million in Q2 2026, up 19.3% year on year, of which 220.9 million were on domestically issued cards and 17.0 million on foreign-issued cards; total purchases have more than doubled (+105%) in five years from 116 million in Q2 2022. STRUCTURAL NOTE confirmed by Agent 2's UJN sweep this run: the Serbian public-procurement portal contains essentially NO ATM procurement at all — the title term 'банкомат'/'bankomat' returns zero notices and the entire contract register holds exactly one ATM-related contract, an ATM RELOCATION haulage job — because Serbian commercial banks are private and sit outside the Public Procurement Act.
+
+**Implies for Printec.** Serbia's ATM estate is still GROWING at 6.8% a year against a European trend of shrinking estates, and the acceptance network is adding roughly 18,000 POS a year — so both of Printec's core hardware lines have a live, expanding Serbian base, anchored on its existing Raiffeisen Serbia x-core and AikBank NCR recycler references. But there is no tender to bid: every one of those decisions is made privately inside a commercial bank. The operational conclusion for Printec is that Serbia must be resourced as a direct named-account sales beat with local-press and relationship monitoring, not as a procurement-portal beat, and that competitor moves here will only ever surface through vendor announcements and press.
+
+**Likelihood.** Growth trend continues through 2026-2027  
+**Follow-up.** Pull the underlying NBS quarterly payment-statistics release for the ATM breakdown by function (withdrawal vs deposit vs recycling), which NBS publishes but the press summary omits.
+
+---
+
+### 9. exceet Card Schweiz AG (Urdorf, Switzerland; CHE-105.948.852) — Serbia
+
+- **Source:** [Portal javnih nabavki (UJN) award notice 2026/С Ф03-0042560 (Agent 2 sweep, re-fetched 27/08/2026)](https://jnportal.ujn.gov.rs/tender-eo/353928) · 29/07/2026 · *primary*
+- **New/changed:** True · **Confidence:** Medium · **Opp size:** S · **Win:** Low
+
+**Signal.** [regional — NOT IN THE ROSTER] The National Bank of Serbia's Institute for Manufacturing Banknotes and Coins (ZIN) awarded JN 188/2026 'Rezervni delovi i servisne usluge za potrebe održavanja opreme DataCard' (spare parts and service to maintain DataCard card-personalisation equipment), tender id 353928, to exceet Card Schweiz AG. Contract 'ЗИН - З. бр. 75/7/26', value RSD 15,000,000 excl. VAT (equal to the estimate), 12-month term, signed 23/07/2026, with only ONE bid received. Award notice 2026/С Ф03-0042560 published 29/07/2026; call 2026/С Ф02-0009963 of 24/03/2026. Important scoping detail: the contracting unit is ZIN, the banknote-and-coin plant, so the DataCard personalisation estate sits in the secure-document/ID production line rather than in a payment-card issuing department.
+
+**Implies for Printec.** A Swiss card-personalisation specialist now holds a 12-month service lock on the Serbian central bank's DataCard estate on an uncontested single bid — evidence that OEM-locked personalisation and secure-document maintenance in Serbia renews to the incumbent unchallenged. For Printec the direct read is on its card issuing and personalisation line: this specific estate is secure-document, not payment-card, so it is a poor fit, but the pattern is the lesson — annual sole-bid renewals at NBS are winnable only by being pre-positioned before the call publishes, and the call here published 24/03/2026 for a July signature. Diarise the next NBS ZIN personalisation call for Q1 2027.
+
+**Likelihood.** Twelve-month contract; next call expected around Q1 2027  
+**Follow-up.** Confirm whether exceet also serves any Serbian COMMERCIAL bank's payment-card personalisation, which would put it against Mellon Serbia's centralised card-personalisation service.
+
+---
+
+### 10. MASTER TEAM DOO (PIB 100093505), Serbia — banknote counting, sorting and packing systems — Serbia
+
+- **Source:** [Portal javnih nabavki (UJN) contract register and NBS tender id 193315 (Agent 2 sweep, re-verified 27/08/2026)](https://jnportal.ujn.gov.rs/tender-eo/193315) · 07/10/2025 · *primary*
+- **New/changed:** True · **Confidence:** Medium · **Opp size:** M · **Win:** Low
+
+**Signal.** [local-peer — NOT IN THE ROSTER, AND MATERIALLY BIGGER THAN IT LOOKS] The UJN contract register records Master Team DOO as the National Bank of Serbia's supplier of 'Mašine za kontrolno brojanje papirnih novčanica' (machines for control counting of paper banknotes) under contract ЗИН-З.бр. 452/7/25 at RSD 768,000 excl. VAT, fully paid [STANDING — dated 07/10/2025], with an identical prior NBS contract ЗИН-З.бр.213/14/24 at RSD 1,048,000 excl. VAT [STANDING — dated 12/12/2024]. Those small values are misleading: the same register shows that as the joint bidder group 'Master Team Olimp-ex' the firm holds NBS tender id 193315 for 'Automatski sistemi za sortiranje i pakovanje novčanica i uređaja za obeležavanje paketa' (AUTOMATIC BANKNOTE SORTING AND PACKING SYSTEMS plus package-marking devices) under two contracts both dated 05/02/2024 — contract 3405 at RSD 206,546,000 excl. VAT and contract 3394 at RSD 7,072,000 excl. VAT, a combined RSD 213,618,000 excl. VAT (roughly EUR 1.8m) [STANDING — dated 05/02/2024]. No fresh 2026 trigger was found; this is filed as competitor context, not as news.
+
+**Implies for Printec.** Master Team is bank-grade in Serbian cash automation, not a counter-machine dealer — it has delivered a multi-million-euro automatic banknote sorting and packing installation to the central bank. That makes it the incumbent to displace in any Serbian cash-centre work and a credible rival bidder wherever Printec takes Glory or Sesami cash-recycling and cash-processing equipment into a Serbian bank or cash centre. Printec should establish which OEM Master Team represents before bidding against it, because that determines whether the fight is on price or on platform.
+
+**Likelihood.** Standing incumbency; next NBS cash-automation cycle unknown  
+**Follow-up.** Identify which banknote-processing OEM Master Team and the Olimp-ex partnership represent, and whether either has commercial-bank customers in Serbia.
+
+---
+
+### 11. Info-Kod Rešenja d.o.o. (PIB 106780962) and Payten d.o.o. (PIB 110428879) — terminal supply at the National Bank of Serbia — Serbia
+
+- **Source:** [Portal javnih nabavki (UJN) contract register, CPV 32442000 sweep (Agent 2, re-counted 27/08/2026)](https://jnportal.ujn.gov.rs/) · 30/04/2026 · *primary*
+- **New/changed:** True · **Confidence:** Medium · **Opp size:** S · **Win:** Low
+
+**Signal.** [local-peer / regional — Info-Kod Rešenja is NOT in the roster; Payten is] The UJN contract register shows CPV 32442000 (terminal equipment) produces only six contracts in the entire register. In 2026 exactly one falls: NBS 'nabavka POS terminala', 30/04/2026, RSD 150,000, winner Payten d.o.o., contract Г.бр. 3385. The register also carries a much larger NBS terminal contract that earlier sweeps missed: 'Mobilni terminali' (mobile terminals), winner INFO-KOD REŠENJA d.o.o., RSD 4,080,000, contract no. 17032 [STANDING — dated 25/11/2025] — twenty-seven times the Payten value.
+
+**Implies for Printec.** Payten — a named direct Printec competitor — is inside the National Bank of Serbia on terminal supply, but the larger mobile-terminal contract went to a Serbian firm nobody was tracking. For Printec's POS terminal and TMS line this says the Serbian public terminal market, small as it is, is already carved up by local integrators and by Payten, and that Printec has no visible position at NBS. The realistic play is not the central bank's own small terminal spend but ensuring Printec is on NBS's supplier radar before the next cycle, since NBS references carry weight with the Serbian commercial banks that never tender.
+
+**Likelihood.** Low-value but recurring annual terminal cycles at NBS  
+**Follow-up.** Profile Info-Kod Rešenja d.o.o. — what 'mobile terminals' meant in that contract (payment terminals vs handheld data terminals) and which brands it represents.
+
+---
+
+### 12. 'Panamic ICT' LLC (Prishtina) — Kosovo
+
+- **Source:** [BQK notice of contract award (PDF)](https://bqk-kos.org/wp-content/uploads/2026/08/DPK_NjoftimDhenieKontrate_Furnizim_Metarial_shpenzues_BQK26054121.pdf) · 04/08/2026 · *regulator*
+- **New/changed:** True · **Confidence:** Medium · **Opp size:** S · **Win:** Medium
+
+**Signal.** [local-peer — NOT IN THE ROSTER] The Central Bank of the Republic of Kosovo awarded open supply procedure 'Furnizim me material shpenzues për procesim të keshit' (supply of consumable material for cash processing), procurement no. BQK 26 054 121, to 'Panamic ICT' LLC of Prishtina at the offer price of EUR 25,017.50, with two tenderers in total and the award criterion 'responsive tender with the lowest price'. Award notice dated 04/08/2026 under Article 39 of the BQK Procurement Rule.
+
+**Implies for Printec.** Small in value, first-class in position: Panamic ICT is now the Kosovo central bank's cash-processing consumables supplier, which means it already holds the cash-centre relationship, the delivery clearance and — critically — visibility of which banknote-processing platform BQK actually runs, since consumables are machine-specific. That is exactly the intelligence Printec needs before bidding any BQK cash-automation work, and Panamic is the obvious incumbent to beat on the cancelled cash-machine maintenance re-tender BQK 26 057 221.
+
+**Likelihood.** Incumbent position live now; BQK cash-machine maintenance re-tender expected within 6-12 months  
+**Follow-up.** Profile Panamic ICT LLC in the Kosovo Business Registration Agency (ARBK) — registration number, ownership, and which cash-machine brands it represents.
+
+---
+
+### 13. SALON BANKARSKE OPREME D.O.O. (JIB 4200270450001, Novo Sarajevo) — Bosnia & Herzegovina
+
+- **Source:** [BiH Public Procurement Portal (ejn.gov.ba) contract award notice PDF](https://docs.ejn.gov.ba/Award/999b6b7d-51e3-43cb-94dc-1c6f3678d537.pdf) · 01/07/2026 · *primary*
+- **New/changed:** True · **Confidence:** Medium · **Opp size:** S · **Win:** Medium
+
+**Signal.** [local-peer — NOT IN THE ROSTER] JP BH Pošta d.o.o. Sarajevo awarded 'Nabavka mašina za brojanje papirnog novca' (purchase of banknote counting machines), 13 units, JRJN/CPV 30132200-5, open procedure with e-auction on lowest price, to SALON BANKARSKE OPREME D.O.O. Final contract value BAM 50,310.00 excl. VAT, contract concluded 19/06/2026, award notice 238-1-1-74-5-156/26 sent for publication 01/07/2026 against contract notice 238-1-1-74-3-96/26 of 08/04/2026. Two bids were received but only one was acceptable, so the lowest and highest acceptable bids are both BAM 50,310.00. One-year contract, delivery to the Main Postal Centre in Sarajevo. Not EU-funded; no appeals lodged.
+
+**Implies for Printec.** Salon Bankarske Opreme — the name literally means 'banking equipment showroom' — is the Bosnian banking-equipment distributor to beat in cash counting, and BH Post is a live cash-automation buyer that took thirteen counters in a single order. For Printec that is a two-sided read: a named local rival to displace or partner with for Glory/Sesami cash equipment in Bosnia, and a qualified buyer whose next step up from counters is deposit and recycling. A postal operator running a Main Postal Centre with that many counting machines is a genuine candidate for a teller cash recycler (TCR) business case.
+
+**Likelihood.** One-year contract; BH Post cash-automation follow-on plausible within 12 months  
+**Follow-up.** Establish which OEM Salon Bankarske Opreme distributes and whether it holds contracts with Bosnian commercial banks, not just public buyers.
+
+---
+
+### 14. SEC ONE D.O.O. (JIB 4227417480004, Sarajevo) + Agencija za zaštitu ljudi i imovine DELTA SECURITY D.O.O. (JIB 4227233910006, Čitluk) — Bosnia & Herzegovina
+
+- **Source:** [BiH Public Procurement Portal (ejn.gov.ba) contract award notice PDF](https://docs.ejn.gov.ba/Award/1a6b34c6-492b-478b-b609-4fce1f0fc57c.pdf) · 19/08/2026 · *primary*
+- **New/changed:** True · **Confidence:** Medium · **Opp size:** S · **Win:** Low
+
+**Signal.** [local-peer — NEITHER IN THE ROSTER] Hrvatska pošta d.o.o. Mostar awarded a framework agreement (a standing contract drawn down without re-tendering) for physical and technical protection of money and valuables in transit and transport, guarding of premises, and monitoring and alarm connection of branches to the security agency's alarm-receiving centre — JRJN/CPV 79710000-4, open procedure, lowest price, e-auction used. Winner: a two-member consortium of SEC ONE D.O.O. and Delta Security D.O.O. Final framework value BAM 697,000.00 excl. VAT against a BAM 700,000.00 estimate (99.6% of the ceiling), term 20/07/2026 to 20/08/2028, concluded 20/07/2026. Only ONE bid was received and it was the single acceptable bid. Award notice 286-1-2-186-5-132/26 published 19/08/2026.
+
+**Implies for Printec.** This names the Bosnian cash-in-transit (CIT — the armoured movement of cash between branches, ATMs and cash centres) and alarm-monitoring incumbent for a major postal-financial network, locked to August 2028 at 99.6% of the ceiling on a single bid. CIT is adjacent to, not identical with, Printec's business, but it matters twice over: the CIT provider usually also holds first-line ATM cash replenishment, which is the hinge between Printec's managed/field services and physical ATM security lines; and a sole-bid framework at ceiling price signals a thin Bosnian supplier market where a credible second bidder has room. Printec should map whether SEC ONE also touches ATM replenishment for Hrvatska pošta Mostar.
+
+**Likelihood.** Framework locked to 20/08/2028; adjacent ATM-service scope may come separately  
+**Follow-up.** Determine whether the framework includes ATM cash replenishment and first-line ATM intervention, or guarding and transit only.
+
+---
+
+### 15. LATIS DOO BEOGRAD (PIB 103748438) and TAURUNUM OBEZBEĐENJE DOO (PIB 109012058) + TAURUNUM OBEZBEĐENJE PLUS DOO (PIB 111864396) — Serbia
+
+- **Source:** [Portal javnih nabavki (UJN) award notices 2026/С Ф03-0033453 and 2026/С Ф03-0047103 (Agent 2 sweep, re-fetched 27/08/2026)](https://jnportal.ujn.gov.rs/tender-eo/360127) · 21/08/2026 · *primary*
+- **New/changed:** True · **Confidence:** Medium · **Opp size:** S · **Win:** Low
+
+**Signal.** [local-peer — NONE OF THE THREE IS IN THE ROSTER] Two National Bank of Serbia physical-security incumbencies were resolved this cycle. (1) NBS JN 345/2026 'Održavanje teških sigurnosnih i trezorskih vrata na objektima NBS' (maintenance of heavy security and vault doors), tender id 360127, CPV 50600000, scope narrowed on the notice to the NBS NOVI SAD BRANCH: winner LATIS DOO BEOGRAD, contract no. 4610, RSD 500,000 excl. VAT, 24-month term, signed 17/06/2026, 2 bids; award notice 2026/С Ф03-0033453 published 18/06/2026. (2) NBS JN 336/2025 'Usluge fizičko-tehničke zaštite i zaštite od požara' (physical and technical security and fire protection), tender id 331531, CPV 79710000: awarded jointly to TWO operators at the same Zemun address, Taurunum Obezbeđenje DOO and Taurunum Obezbeđenje Plus DOO — contract no. 6598, RSD 55,000,000 excl. VAT (equal to the estimate), 36-month term, signed 20/08/2026, 2 bids, both SMEs; award notice 2026/С Ф03-0047103 published 21/08/2026. That procedure ran EIGHT months from the 22/12/2025 bid deadline to signature because a request for protection of rights (notice 2026/С Ф27-0000191, 03/03/2026) suspended it.
+
+**Implies for Printec.** These name the incumbents holding physical security across the National Bank of Serbia estate, including the Novi Sad cash centre — the same physical-security ground as Printec's physical ATM security line, and the firms Printec would sit alongside or against on any NBS site work. The three-year RSD 55m Taurunum award is the material one and is now closed until 2029. The transferable lesson is the eight-month suspension: NBS security procedures attract rights-protection challenges, so a bidder must budget for a contested timeline rather than a clean award.
+
+**Likelihood.** Taurunum locked 36 months to 2029; Latis 24 months to mid-2028  
+**Follow-up.** Check whether Taurunum or Latis service ATM safes and ATM physical security for Serbian COMMERCIAL banks, which is where Printec's physical-security line actually sells.
+
+---
+
+### 16. BUSLOGIC BUS SYSTEM DOO POŽAREVAC (PIB 114633193) — Serbia
+
+- **Source:** [Portal javnih nabavki (UJN) award notice 2026/С Ф06-0011464](https://jnportal.ujn.gov.rs/tender-eo/380886) · 13/08/2026 · *primary*
+- **New/changed:** True · **Confidence:** Medium · **Opp size:** S · **Win:** Low
+
+**Signal.** [local-peer — NOT IN THE ROSTER] JGSP 'Novi Sad', the Novi Sad city public transport operator and a sector contracting authority, awarded 'Beskontaktne plastične kartice (personalizovane kartice, elektronski novčanici i NSmart službene legitimacije)' (contactless plastic cards — personalised cards, electronic wallets and NSmart official ID cards), ref 58/26, tender id 380886, CPV 22450000 (printed matter with anti-counterfeiting protection), to Buslogic Bus System doo Požarevac. Contract no. 5945, RSD 5,900,000 excl. VAT against an RSD 6,000,000 estimate, 12 months, signed 12/08/2026, ONE bid. Award notice 2026/С Ф06-0011464 published 13/08/2026.
+
+**Implies for Printec.** A named Serbian supplier of contactless card supply and personalisation, carrying both an electronic-wallet and a credentialed ID-card component — Printec's card issuing and personalisation line. At roughly EUR 50k on a single bid the contract itself is small and low-margin, so the value to Printec is as a transit-account entry point rather than a card contract: Novi Sad transit is running a closed-loop e-wallet, and closed-loop transit schemes across the region are steadily opening to open-loop bank card acceptance, which is where Printec's POS/acceptance and terminal-management assets belong. Watch for JGSP moving to open-loop.
+
+**Likelihood.** 12-month card contract; open-loop transit conversion is the real 12-18 month opportunity  
+**Follow-up.** Establish whether JGSP Novi Sad or Belgrade transit has any open-loop (bank card) acceptance programme in preparation, and who would supply the validators.
+
+---
+
+### 17. Vivex Group d.o.o. Beograd (PIB 100828591) — Serbia
+
+- **Source:** [Portal javnih nabavki (UJN) award notice 2026/С Ф03-0039294 and contract register entries for tender ids 376444 and 310730](https://jnportal.ujn.gov.rs/tender-eo/376444) · 15/07/2026 · *primary*
+- **New/changed:** True · **Confidence:** Medium · **Opp size:** S · **Win:** Medium
+
+**Signal.** [local-peer — IN THE ROSTER for RS/BA/HR, but with a MATERIALLY EXPANDED position now visible] The Ministry of Finance Treasury Administration awarded open procedure OP 71/2026 'Popravka kasa i trezora' (repair of safes and vaults), tender id 376444, CPV 50000000, to Vivex Group d.o.o. Beograd: contract 405-169-9/26-001-009, RSD 4,000,000 excl. VAT (equal to the estimate), signed 10/07/2026, effective 16/07/2026, one-year term, ONLY ONE bid. Award notice 2026/С Ф03-0039294 published 15/07/2026. Re-verification this cycle shows the same firm ALSO holds the Treasury's cash-automation HARDWARE: 'Multifunkcionalne mašine za brojanje i sortiranje novca - trezorske' (multifunction vault money counting and sorting machines), ref OP 55/2025, tender id 310730, CPV 30132200, contract 404-00-374-8/25-001-009, RSD 8,300,000 excl. VAT [STANDING — dated 2025].
+
+**Implies for Printec.** Vivex is no longer just a safes-and-vaults firm in Printec's roster — it holds BOTH the physical vault estate and the counting-and-sorting hardware at the Serbian Treasury, which is exactly the combined physical-security plus cash-automation bundle Printec sells. It is therefore a genuine bundled rival in Serbian public cash handling rather than an adjacency, and the roster entry should be upgraded from a security supplier to a cash-automation competitor. Both Treasury contracts went on single bids, which says nobody is contesting this buyer.
+
+**Likelihood.** Safes contract runs one year from July 2026; hardware cycle likely re-tenders 2026-2027  
+**Follow-up.** Identify which counting/sorting OEM Vivex supplies to the Treasury and whether it sells to Serbian commercial banks.
+
+---
+
+### 18. Central Bank of Montenegro (CBCG) TIPS Clone go-live and the EU Verification-of-Payee mandate — the Montenegrin fraud/RegTech opening — Montenegro
+
+- **Source:** [Central Bank of Montenegro statement and the draft Law on Payment Transactions, reported in full by biznis.rs (sourced from eKapija)](https://biznis.rs/vesti/region/crna-gora-uvodi-instant-placanja-novac-na-racunu-za-nekoliko-sekundi/) · 07/07/2026 · *press*
+- **New/changed:** True · **Confidence:** Medium · **Opp size:** M · **Win:** Medium
+
+**Signal.** [market/regulatory trigger creating a dated vendor requirement] The Central Bank of Montenegro and the banking sector completed the key infrastructural, technical and operational work for the national TIPS Clone instant-payments system with go-live planned for 20 JULY 2026, conditional on Parliament passing amendments to the Law on Payment Transactions then in procedure. The amendments oblige every bank and payment service provider offering standard credit transfers to also offer instant execution across all electronic channels already in use, with funds made available to the payee within TEN SECONDS of receipt of the order, and require the payer's bank to return the funds without delay if it does not receive confirmation within that window. Critically for vendors, and in line with EU Regulation (EU) 2024/886, the law introduces MANDATORY VERIFICATION OF PAYEE (VoP) — the bank must check, before confirming the order, that the payee's name matches the IBAN entered. Montenegro joined SEPA the previous year. Regional context from the same reporting cycle: Montenegro was the first in the region to implement TIPS Clone across all 11 banks in its market; Albania and Kosovo target November 2026.
+
+**Implies for Printec.** Every one of Montenegro's eleven banks now has a hard, legally compelled requirement to run real-time payee-name matching and to settle irrevocably within ten seconds — and the ten-second window makes after-the-fact fraud review useless, so screening must move inline. That is a direct, dated opening for Printec's transaction-monitoring (INETCO) and AML/fraud lines (FICO, and IMTF Siron where the partner relationship allows), plus digital onboarding/eKYC to keep name-matching data clean at source. Montenegro is a small market where eleven simultaneous buyers face the same deadline, which is the best possible shape for a repeatable product sale. Printec should package a VoP-plus-inline-monitoring offer for Montenegro now and reuse it for Albania and Kosovo, which hit the same requirement in November 2026.
+
+**Likelihood.** Go-live set for 20/07/2026; bank-side VoP and monitoring build-out over the next 6-12 months, repeating in AL and XK from November 2026  
+**Follow-up.** Confirm the Montenegrin law actually passed and TIPS Clone went live on 20/07/2026, and identify which vendor supplied the VoP matching engine to the first Montenegrin banks — that vendor becomes the regional incumbent for Albania and Kosovo.
+
+---
+
+### 19. North Macedonia TIPS Clone connectivity procurement — the S.W.I.F.T. / Nexi gated competitive set — North Macedonia
+
+- **Source:** [ESJN (e-nabavki.gov.mk) NBRM notice register, captured in Agent 2's tender sweep of 27/08/2026](https://www.e-nabavki.gov.mk/PublicAccess/home.aspx#/dossie/14505/2026) · 18/09/2026 · *primary*
+- **New/changed:** True · **Confidence:** Medium · **Opp size:** M · **Win:** Low · **Deadline: 18/09/2026**
+
+**Signal.** [LIVE PROCUREMENT WITH A NEAR-TERM DEADLINE] The National Bank of the Republic of North Macedonia has a TIPS Clone connectivity notice on the ESJN public-procurement register, notice 14505/2026, OPEN until 18/09/2026. This is a SECOND ATTEMPT: an identical procurement, notice 09887/2026 published 04/06/2026 with opening 06/07/2026, produced no award. As with the Kosovo and Montenegro equivalents, the connectivity layer is restricted to a TIPS-authorised network service provider — in practice S.W.I.F.T. or Nexi — or a party formally authorised by one, which is why the field is thin enough for a first attempt to fail outright. The comparable Kosovo procurement resolved to Nexi at EUR 685,000 after SWIFT was ruled non-responsive.
+
+**Implies for Printec.** North Macedonia is the third and last footprint instant-payments core still unawarded, and it closes in under three weeks. Printec cannot bid the connectivity layer — the TIPS network-service-provider gate excludes it — so the value of this deadline is timing intelligence, not a bid: whoever wins on 18/09/2026 becomes the vendor sitting next to NBRM and the Macedonian banks for the following five years, exactly as Nexi now does in Kosovo. Printec should be in front of Komercijalna banka, Stopanska banka and NLB Banka with its channel-side instant-payments story — ATM/kiosk software change, inline transaction monitoring and fraud screening — before that award lands and the winner starts selling overlays.
+
+**Likelihood.** Award expected within weeks of the 18/09/2026 closing, assuming this second attempt draws a compliant bid  
+**Follow-up.** Check the ESJN dossier after 18/09/2026 for the outcome and whether a third attempt is needed; note that e-nabavki.gov.mk is an Angular single-page app with no discoverable public API, so this needs a browser-based fetch.
+
+---
+
+### 20. CaSys AD Skopje (International Card System) and the Macedonian Banking Association — North Macedonia
+
+- **Source:** [CaSys AD Skopje company newsroom (WordPress REST API full text, fetched 31/08/2026)](https://casys.com.mk/partnership-for-the-future-of-digital-payments-and-banking-innovation/) · 20/05/2026 · *primary*
+- **New/changed:** True · **Confidence:** Medium · **Opp size:** M · **Win:** Low
+
+**Signal.** [regional/local-peer — CaSys IS in the roster for MK, but this is a materially changed market position] [STANDING — dated 30/04/2026, published 20/05/2026, and therefore just outside the three-month freshness window, but it establishes a FORWARD programme] On 30 April 2026 the Macedonian Banking Association and CaSys AD Skopje signed a Memorandum of Cooperation. Per CaSys's own announcement the memorandum frames cooperation on advancing PAYMENT INFRASTRUCTURE, developing digital payments and e-commerce, strengthening CYBERSECURITY AND SECURE PAYMENT SOLUTIONS, PREVENTING FRAUD, and encouraging digitalisation and innovation in the banking sector, plus joint work on the regulatory and strategic framework and joint participation in legislative and regulatory initiatives. The two sides commit to regular meetings, educational events and expert meetings to implement the agreed activities. Signed by Filomena Pljakovska Asprovska, CEO of CaSys, and Maja Stevkova Shterieva, President of the Macedonian Banking Association.
+
+**Implies for Printec.** CaSys, the national card processor, has just made the entire Macedonian banking association its structural channel — and the memorandum explicitly names fraud prevention and secure payment solutions, which is Printec's AML/fraud and transaction-monitoring territory rather than CaSys's traditional processing ground. Combined with the TIPS Clone connectivity procurement closing on 18/09/2026, this means the Macedonian banks will be presented with a collective, association-endorsed fraud and payments agenda with CaSys standing next to it. Printec should not approach North Macedonia bank-by-bank on fraud alone; it needs a position with the Banking Association itself, or a differentiated inline transaction-monitoring pitch (INETCO) that CaSys's processing-side view cannot match.
+
+**Likelihood.** Joint activity programme runs through 2026-2027  
+**Follow-up.** Track which concrete workstreams the CaSys / Banking Association memorandum produces, especially any joint fraud-prevention or tokenisation initiative, and whether CaSys is bringing a third-party fraud engine or building its own.
+
+---
+
+## Coverage notes
+
+FRESH RUN (no prior checkpoint existed for 2026-08-31). Beat: long-tail and NEW competitors across Serbia, Albania, Bosnia & Herzegovina, Kosovo, Montenegro and North Macedonia, deliberately excluding the global names that have their own units (NCR Atleos, Diebold, Glory, Worldline, Euronet, Mellon, Payten/Asseco, Brink's, Hyosung/KAL) and excluding the Printec partners Namirial and IMTF. WHAT WAS SEARCHED: the 164-name roster at weekly-intelligence/references/competitors.json was read in full FIRST and every player below was checked against it before is_new was set. Agent 2's 2026-08-27 tender file was read on disk and its named winners converted into competitor signals rather than re-derived. Original discovery this run came from (a) Google Play package-id fingerprinting of Western Balkans bank softPOS apps, which surfaced Provision (provisionpay.com) behind Hipotekarna banka Montenegro's MojPOS and confirmed Payten behind Banca Intesa Serbia's Soft POS (com.payten.supercase, already tracked); (b) WordPress REST API sweeps of local-language press and vendor newsrooms in Serbian, Albanian, Macedonian, Bosnian and Montenegrin — biznis.rs, sdk.mk, monitor.al, casys.com.mk, bamcard.ba, monri.com, saga.rs, combis.hr, king-ict, logate.com, allsecure.rs, provisionpay.com; (c) direct PDF fetch and pdfminer extraction of the BQK award notices; (d) the Inova Tech company website to establish that the Velika Plana kiosk winner is a genuine kiosk manufacturer, not a general contractor. TIER-0 FLOOR: intel-cache/competitor_news.json covers nine already-tracked vendors and no OEM and no newly-discovered player, so this beat was worked independently of it. GENUINE GAPS: (1) NO independent-ATM-deployer or ATM-servicing competitor could be named in Serbia — Agent 2's structural finding explains why (the UJN register contains essentially zero ATM procurement because Serbian commercial banks are private and exempt from the Public Procurement Act), so Serbian bank vendor choices are only reachable through press and direct relationships, and no Serbian bank vendor announcement surfaced in the delta window. (2) Bosnia's commercial-bank vendor layer is likewise invisible; only public buyers (BH Pošta, Hrvatska pošta Mostar, CBBH) produced named winners. (3) No Kosovo or Albanian ATM-service or CIT competitor could be named. (4) ABV SISTEM DOO (Trebinje), which won the CBBH money-museum fit-out at BAM 294,450, was deliberately NOT filed as a competitor signal — it is a furniture and exhibition fit-out contractor, not a vendor that bids anything Printec bids. (5) No signal is filed for Banca Intesa Beograd or Banka Poštanska štedionica despite their JKP Parking servis acquiring wins, because the playbook forbids filing banks and buyers as competitors, even though the brief flags bank in-house acquiring as in scope; the acquiring-competition point is instead carried inside the Serbian market-sizing signal. NUMBERS DISCIPLINE: no per-country ATM or POS unit count is attributed to any vendor anywhere in this file. All market-level counts (38,662 Albanian POS, 1,147 and 454 Albanian ATMs, 195,000 Serbian POS, 3,412 Serbian ATMs) are central-bank statistics for the whole national market, attributed as such, and are never presented as any vendor's installed base.
+
+## Access issues
+
+BLOCKING, LOGGED, NOT SILENTLY DROPPED: (1) WebSearch was unavailable for almost this entire run — the session's 200-query budget was exhausted after four queries, so every subsequent source was reached by direct URL fetch (WebFetch and curl with a desktop User-Agent) rather than by search. This is the single largest constraint on this run's coverage and is the likely reason no Serbian or Bosnian commercial-bank vendor announcement was surfaced. (2) bqk-kos.org has changed since Agent 2's sweep and now serves a Cloudflare interstitial (HTTP 403, 'Just a moment...') on ALL HTML paths including /prokurimi/ and /wp-json/wp/v2/posts, even with a desktop User-Agent — but wp-content PDF URLs still serve directly and unauthenticated, which is the working route and is how both BQK award notices in this file were obtained and text-extracted with pdfminer. (3) www.nbrm.mk is fully Cloudflare-blocked (403 on the homepage, /ns-newsarticle-soopstenija.nspx and /rss/news.aspx) with a desktop User-Agent; no primary NBRM source could be opened this run. (4) www.e-nabavki.gov.mk is an AngularJS single-page app; its dossier route returns only the shell to curl, /api/Dossie/GetDossiePublicInfo 404s, and the dossieSearch.js controller does not exist at the guessed path, so no public API could be discovered without a browser network log — the NBRM 14505/2026 notice is therefore carried on Agent 2's 27/08/2026 capture rather than re-opened this run. (5) ekapija.com returns HTTP 403 to WebFetch (the Pošta Srbije / Poštanska štedionica 2,000-POS-terminal contract article could not be opened, so no supplier for that contract is claimed here). (6) nova.rs, klix.ba, koha.net, telegrafi.com, vijesti.me, kallxo.com, kosovapress.com and ekonomia.al exposed no usable WordPress REST API (403, 404, Cloudflare or non-WordPress platforms — telegrafi.com runs on RebelMouse), so Kosovar, Bosnian and Montenegrin press could not be swept systematically; monitor.al, biznis.rs and sdk.mk were the three that did serve an API and carried this run's local-language yield. (7) Google Play returns a JavaScript shell to WebFetch; the app name and package id were recovered by curl with a desktop User-Agent and regex, but the 'Updated on' date and developer name could not be extracted, and apkcombo 404'd — hence the Provision signal is dated on the bank's own page-modified timestamp instead. (8) provisionpay.com has no /references/ or /solutions/ page (both 404) and its wp/v2/client route 404s, so Provision's customer list could not be enumerated; its blog carries nothing later than 2019.
+
+## Operator requests
+
+1) Escalate to Claude-in-Chrome (or any real browser) for THREE sources this run could not open: www.nbrm.mk (Cloudflare, needed for North Macedonia central-bank primary sources), www.e-nabavki.gov.mk dossier 14505/2026 (Angular SPA, needed to confirm the 18/09/2026 TIPS Clone connectivity outcome and any bidder list), and bqk-kos.org HTML pages (Cloudflare — the PDF route works, but the procurement index page is needed to find NEW notice PDFs whose filenames are not already known). 2) Raise CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION or run this unit earlier in the session — with four searches available, Serbian and Bosnian commercial-bank vendor announcements, which exist only in press, are effectively unreachable. 3) Fetch the ekapija.com article on the Pošta Srbije / Banka Poštanska štedionica contract for more than 2,000 POS terminals across all Serbian post offices (403 to this agent) — it is the largest Serbian POS deployment visible anywhere in open sources and the terminal supplier is not named in any source reached this run. No paywalled PDFs are outstanding.

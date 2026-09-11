@@ -1,0 +1,3587 @@
+{
+  "generated": "2026-08-31",
+  "source": "fetch_jobs.py - Tier-0 job-board/ATS listing cache (PLUMBING: makes blocked listings reachable; agents still explore LinkedIn/leadership press/local boards freely)",
+  "note": "Counts/roles are point-in-time snapshots from public postings (title/location/date/url only - NO applicant data per Printec policy). Cross-check titles against the bank's own page when citing. 'partial' sources report the true total but a sampled role list.",
+  "scripted_sources_ok": 17,
+  "scripted_sources_failed": 2,
+  "total_roles_cached": 562,
+  "browser_only": [
+    {
+      "bank": "DSK Bank / UniCredit Bulbank",
+      "board": "jobs.bg",
+      "country": "BG",
+      "reason": "DataDome + Cloudflare challenge returns HTTP 403 to every bare request; no JSON/RSS/sitemap. (DSK is covered via dev.bg instead.)",
+      "url": "https://www.jobs.bg/en/company/unicreditbulbank/jobs"
+    },
+    {
+      "bank": "NBG",
+      "board": "SuccessFactors / nbg.gr",
+      "country": "GR",
+      "reason": "the nbg.gr careers list hydrates job rows via JavaScript (a bare GET returns only nav links + Outlook-safelink 'View job' wrappers); apply links go to career2.successfactors.eu company=national05.",
+      "url": "https://www.nbg.gr/en/group/human-resources/career-opportunities/jobs-nbg"
+    },
+    {
+      "bank": "Tatra / Slovenska sporitelna / VUB / CSOB SK",
+      "board": "profesia.sk",
+      "country": "SK",
+      "reason": "profesia.sk now renders the offer list client-side (a bare GET returns only login/region-filter links, no enumerable offers). A JSON search endpoint may exist - future work.",
+      "url": "https://www.profesia.sk/praca/?company_id=565"
+    },
+    {
+      "bank": "Bank of Cyprus",
+      "board": "SuccessFactors CSB",
+      "country": "CY",
+      "reason": "career55.sapsf.eu/career?company=bankofcypr is a JS Career-Site-Builder shell; no public JSON/RSS feed.",
+      "url": "https://career55.sapsf.eu/career?company=bankofcypr"
+    },
+    {
+      "bank": "NLB",
+      "board": "Cornerstone (csod)",
+      "country": "SI",
+      "reason": "nlb.csod.com search needs a JWT bearer token extracted from the rendered page (POST /services/x/career-site).",
+      "url": "https://nlb.csod.com"
+    },
+    {
+      "bank": "Eurobank",
+      "board": "SuccessFactors CSB",
+      "country": "GR",
+      "reason": "careers.eurobank.gr renders jobs via JavaScript (bare GET returns 0).",
+      "url": "https://careers.eurobank.gr/go/All-Jobs/827502/"
+    }
+  ],
+  "sources": [
+    {
+      "bank": "PrivatBank",
+      "country": "UA",
+      "board": "robota.ua",
+      "kind": "robota",
+      "ok": false,
+      "total": null,
+      "fetched": 0,
+      "roles": [],
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "bank": "Oschadbank",
+      "country": "UA",
+      "board": "robota.ua",
+      "kind": "robota",
+      "ok": true,
+      "total": 646,
+      "fetched": 60,
+      "roles": [
+        {
+          "title": "Менеджер по роботі з клієнтами (БЕЗ ДОСВІДУ РОБОТИ) метро Поштова площа",
+          "location": "",
+          "date": "2026-08-30T10:01:00.643",
+          "url": "https://robota.ua/company234100/vacancy11318237"
+        },
+        {
+          "title": "Менеджер по роботі з клієнтами (БЕЗ ДОСВІДУ РОБОТИ), метро Чернігівська",
+          "location": "",
+          "date": "2026-08-30T10:01:00.643",
+          "url": "https://robota.ua/company234100/vacancy11318241"
+        },
+        {
+          "title": "Касир відділення банку (БЕЗ ДОСВІДУ РОБОТИ) метро Вокзальна",
+          "location": "",
+          "date": "2026-08-30T10:01:00.643",
+          "url": "https://robota.ua/company234100/vacancy11318245"
+        },
+        {
+          "title": "Касир відділення банку (БЕЗ ДОСВІДУ РОБОТИ) Березняки",
+          "location": "",
+          "date": "2026-08-30T10:01:00.643",
+          "url": "https://robota.ua/company234100/vacancy11318247"
+        },
+        {
+          "title": "Junior IT Support Specialist (Service Desk)",
+          "location": "",
+          "date": "2026-08-29T00:01:00.333",
+          "url": "https://robota.ua/company234100/vacancy11231181"
+        },
+        {
+          "title": "Менеджер по роботі з клієнтами у відділення банку",
+          "location": "",
+          "date": "2026-08-31T16:34:45.153",
+          "url": "https://robota.ua/company234100/vacancy11324484"
+        },
+        {
+          "title": "Касир відділення Банку",
+          "location": "",
+          "date": "2026-08-31T16:30:28.46",
+          "url": "https://robota.ua/company234100/vacancy11324472"
+        },
+        {
+          "title": "Підмінний касир у відділення банку",
+          "location": "",
+          "date": "2026-08-31T16:29:14.85",
+          "url": "https://robota.ua/company234100/vacancy11324468"
+        },
+        {
+          "title": "Адміністратор (хол менеджер) відділення банку",
+          "location": "",
+          "date": "2026-08-31T16:13:51.647",
+          "url": "https://robota.ua/company234100/vacancy11289782"
+        },
+        {
+          "title": "Менеджер із зарплатних проектів",
+          "location": "",
+          "date": "2026-08-31T16:11:53.85",
+          "url": "https://robota.ua/company234100/vacancy11260592"
+        },
+        {
+          "title": "Менеджер по роботі з клієнтами відділення банку",
+          "location": "",
+          "date": "2026-08-31T16:11:49.46",
+          "url": "https://robota.ua/company234100/vacancy11260588"
+        },
+        {
+          "title": "менеджер із зарплатних проектів та еквайрінгу",
+          "location": "",
+          "date": "2026-08-31T16:11:45.243",
+          "url": "https://robota.ua/company234100/vacancy11260587"
+        },
+        {
+          "title": "Керівник з ММСБ",
+          "location": "",
+          "date": "2026-08-31T15:33:17.843",
+          "url": "https://robota.ua/company234100/vacancy11324339"
+        },
+        {
+          "title": "Керівник з ММСБ",
+          "location": "",
+          "date": "2026-08-31T15:32:25.873",
+          "url": "https://robota.ua/company234100/vacancy11324337"
+        },
+        {
+          "title": "Менеджер з преміум-обслуговування (Priority)",
+          "location": "",
+          "date": "2026-08-31T15:09:34.94",
+          "url": "https://robota.ua/company234100/vacancy11324275"
+        },
+        {
+          "title": "Касир у відділення банку (Олександрівський р-н міста)",
+          "location": "",
+          "date": "2026-08-31T14:58:31.17",
+          "url": "https://robota.ua/company234100/vacancy10751294"
+        },
+        {
+          "title": "Касир у відділення банку (комунарівський р-н міста, космос)",
+          "location": "",
+          "date": "2026-08-31T14:58:01.413",
+          "url": "https://robota.ua/company234100/vacancy10919433"
+        },
+        {
+          "title": "Менеджер по роботі з клієнтами (Центр, вул Базарна)",
+          "location": "",
+          "date": "2026-08-31T14:26:52.9",
+          "url": "https://robota.ua/company234100/vacancy11324115"
+        },
+        {
+          "title": "Менеджер по роботі з клієнтами (Центр, вул Преображенська)",
+          "location": "",
+          "date": "2026-08-31T14:26:06.353",
+          "url": "https://robota.ua/company234100/vacancy11324111"
+        },
+        {
+          "title": "Керуючий відділення банку",
+          "location": "",
+          "date": "2026-08-31T14:03:21.313",
+          "url": "https://robota.ua/company234100/vacancy10070375"
+        },
+        {
+          "title": "Головний юрисконсульт відділу претензійно-позовної роботи",
+          "location": "",
+          "date": "2026-08-31T13:55:13.913",
+          "url": "https://robota.ua/company234100/vacancy9796972"
+        },
+        {
+          "title": "Заступник начальника відділу організації валютного нагляду управління валютного нагляду",
+          "location": "",
+          "date": "2026-08-31T13:52:50.737",
+          "url": "https://robota.ua/company234100/vacancy11266522"
+        },
+        {
+          "title": "Головний економіст з документування кредитних операцій",
+          "location": "",
+          "date": "2026-08-31T13:52:35.397",
+          "url": "https://robota.ua/company234100/vacancy11295009"
+        },
+        {
+          "title": "Адміністратор відділення банку",
+          "location": "",
+          "date": "2026-08-31T11:32:54.74",
+          "url": "https://robota.ua/company234100/vacancy11323756"
+        },
+        {
+          "title": "Менеджер з продажу банківських продуктів (проспект Перемоги 75А)",
+          "location": "",
+          "date": "2026-08-31T10:41:43.453",
+          "url": "https://robota.ua/company234100/vacancy11323658"
+        },
+        {
+          "title": "Менеджер по роботі з клієнтами відділення банку (метро Нивки)",
+          "location": "",
+          "date": "2026-08-31T10:34:10.793",
+          "url": "https://robota.ua/company234100/vacancy11289858"
+        },
+        {
+          "title": "Менеджер по роботі з клієнтами відділення банку (Південна Борщагівка) БЕЗ ДОСВІДУ",
+          "location": "",
+          "date": "2026-08-31T10:34:05.37",
+          "url": "https://robota.ua/company234100/vacancy11291058"
+        },
+        {
+          "title": "Касир у відділення банку (Солом'янська площа) БЕЗ ДОСВІДУ",
+          "location": "",
+          "date": "2026-08-31T10:33:59.173",
+          "url": "https://robota.ua/company234100/vacancy11291205"
+        },
+        {
+          "title": "Касир у відділення банку (р-н Оболонський)",
+          "location": "",
+          "date": "2026-08-31T10:33:54.163",
+          "url": "https://robota.ua/company234100/vacancy11203118"
+        },
+        {
+          "title": "Менеджер по роботі з клієнтами (ОБОЛОНЬ)",
+          "location": "",
+          "date": "2026-08-31T10:33:45.62",
+          "url": "https://robota.ua/company234100/vacancy11241391"
+        },
+        {
+          "title": "Начальник відділу малого та середнього бізнесу відділення банку (Оболонський р-н)",
+          "location": "",
+          "date": "2026-08-31T10:33:39.647",
+          "url": "https://robota.ua/company234100/vacancy11241415"
+        },
+        {
+          "title": "QA Automation Engineer",
+          "location": "",
+          "date": "2026-08-31T09:33:21.577",
+          "url": "https://robota.ua/company234100/vacancy11323537"
+        },
+        {
+          "title": "Головний економіст відділу податкового обліку та звітності регіональних управлінь",
+          "location": "",
+          "date": "2026-08-31T05:01:00.603",
+          "url": "https://robota.ua/company234100/vacancy11300646"
+        },
+        {
+          "title": "Менеджер по роботі з клієнтами відділення банку (Південна Борщагівка) БЕЗ ДОСВІДУ",
+          "location": "",
+          "date": "2026-08-31T04:01:00.85",
+          "url": "https://robota.ua/company234100/vacancy11300494"
+        },
+        {
+          "title": "Менеджера по роботі з клієнтами мікро мало та середнього бізнесу",
+          "location": "",
+          "date": "2026-08-31T04:01:00.85",
+          "url": "https://robota.ua/company234100/vacancy11308510"
+        },
+        {
+          "title": "Менеджера по роботі з клієнтами мікро мало та середнього бізнесу",
+          "location": "",
+          "date": "2026-08-31T04:01:00.85",
+          "url": "https://robota.ua/company234100/vacancy11308511"
+        },
+        {
+          "title": "Менеджер по роботі з клієнтами (метро Житомирська)",
+          "location": "",
+          "date": "2026-08-31T04:01:00.85",
+          "url": "https://robota.ua/company234100/vacancy11308563"
+        },
+        {
+          "title": "Підмінний касир відділення банку (без досвіду, навчаємо)",
+          "location": "",
+          "date": "2026-08-31T04:01:00.85",
+          "url": "https://robota.ua/company234100/vacancy11206846"
+        },
+        {
+          "title": "Касиру відділення банку (без досвіду, навчаємо)",
+          "location": "",
+          "date": "2026-08-31T04:01:00.85",
+          "url": "https://robota.ua/company234100/vacancy11215206"
+        },
+        {
+          "title": "Касир каси перерахунку (Борщагівка)",
+          "location": "",
+          "date": "2026-08-31T04:01:00.85",
+          "url": "https://robota.ua/company234100/vacancy11027374"
+        },
+        {
+          "title": "Старший контролер касир у відділенні банку",
+          "location": "",
+          "date": "2026-08-31T04:01:00.85",
+          "url": "https://robota.ua/company234100/vacancy11028580"
+        },
+        {
+          "title": "Менеджер по роботі з клієнтами мікро-, малого та середнього бізнесу відділення банку",
+          "location": "",
+          "date": "2026-08-31T04:01:00.85",
+          "url": "https://robota.ua/company234100/vacancy11037179"
+        },
+        {
+          "title": "Касир банку, без досвіду роботи (навчаємо)",
+          "location": "",
+          "date": "2026-08-31T04:01:00.85",
+          "url": "https://robota.ua/company234100/vacancy11065043"
+        },
+        {
+          "title": "Менеджер по роботі з фізичними особами",
+          "location": "",
+          "date": "2026-08-31T04:01:00.85",
+          "url": "https://robota.ua/company234100/vacancy11127108"
+        },
+        {
+          "title": "Старший контролер касир у відділенні банку (підмінний)",
+          "location": "",
+          "date": "2026-08-31T04:01:00.85",
+          "url": "https://robota.ua/company234100/vacancy11167666"
+        },
+        {
+          "title": "Менеджер по роботі з клієнтами в банк, без досвіду роботи",
+          "location": "",
+          "date": "2026-08-31T04:01:00.85",
+          "url": "https://robota.ua/company234100/vacancy11183113"
+        },
+        {
+          "title": "Менеджера по роботі з клієнтами банку",
+          "location": "",
+          "date": "2026-08-31T04:01:00.85",
+          "url": "https://robota.ua/company234100/vacancy11316221"
+        },
+        {
+          "title": "Адміністратор відділення банку (БЕЗ ДОСВІДУ РОБОТИ) метро Дорогожичі",
+          "location": "",
+          "date": "2026-08-31T04:01:00.85",
+          "url": "https://robota.ua/company234100/vacancy11316251"
+        },
+        {
+          "title": "Персональний менеджер у відділення банку",
+          "location": "",
+          "date": "2026-08-31T03:01:00.213",
+          "url": "https://robota.ua/company234100/vacancy11101078"
+        },
+        {
+          "title": "Інкасатор/ка - водій категорія В,С. БРОНЮЄМО !",
+          "location": "",
+          "date": "2026-08-31T03:01:00.213",
+          "url": "https://robota.ua/company234100/vacancy10967001"
+        },
+        {
+          "title": "Менеджер по роботі з клієнтами",
+          "location": "",
+          "date": "2026-08-31T03:01:00.213",
+          "url": "https://robota.ua/company234100/vacancy11241513"
+        },
+        {
+          "title": "Касир у відділення банку (Троєщина)",
+          "location": "",
+          "date": "2026-08-31T03:01:00.213",
+          "url": "https://robota.ua/company234100/vacancy11238841"
+        },
+        {
+          "title": "Менеджер з обслуговування клієнтів у банк (БЕЗ ДОСВІДУ)",
+          "location": "",
+          "date": "2026-08-31T03:01:00.213",
+          "url": "https://robota.ua/company234100/vacancy11241394"
+        },
+        {
+          "title": "Менеджер по роботі з клієнтами (Троєщина)",
+          "location": "",
+          "date": "2026-08-31T03:01:00.213",
+          "url": "https://robota.ua/company234100/vacancy11251294"
+        },
+        {
+          "title": "Менеджер по роботі з юридичними клієнтами (в районі Севастопольської площі)",
+          "location": "",
+          "date": "2026-08-31T03:01:00.213",
+          "url": "https://robota.ua/company234100/vacancy11271915"
+        },
+        {
+          "title": "Касир відділення банку",
+          "location": "",
+          "date": "2026-08-31T03:01:00.213",
+          "url": "https://robota.ua/company234100/vacancy11300052"
+        },
+        {
+          "title": "Менеджер з продажу банківських продуктів (вул. Кооперативна 1)",
+          "location": "",
+          "date": "2026-08-31T03:01:00.213",
+          "url": "https://robota.ua/company234100/vacancy11300147"
+        },
+        {
+          "title": "Адміністратор (хол менеджер) відділення банку (вул. Кооперативна 1)",
+          "location": "",
+          "date": "2026-08-31T03:01:00.213",
+          "url": "https://robota.ua/company234100/vacancy11300151"
+        },
+        {
+          "title": "касир банку",
+          "location": "",
+          "date": "2026-08-31T02:01:00.54",
+          "url": "https://robota.ua/company234100/vacancy11307838"
+        },
+        {
+          "title": "Персональний менеджер у відділення банку",
+          "location": "",
+          "date": "2026-08-31T02:01:00.54",
+          "url": "https://robota.ua/company234100/vacancy11272844"
+        }
+      ],
+      "error": null
+    },
+    {
+      "bank": "PUMB / FUIB",
+      "country": "UA",
+      "board": "robota.ua",
+      "kind": "robota",
+      "ok": true,
+      "total": 180,
+      "fetched": 60,
+      "roles": [
+        {
+          "title": "Фахівець відділення банку",
+          "location": "",
+          "date": "2026-08-31T04:01:00.85",
+          "url": "https://robota.ua/company1020/vacancy11227963"
+        },
+        {
+          "title": "Провідний фахівець з операційного супроводу корпоративних клієнтів (клієнти Large)",
+          "location": "",
+          "date": "2026-08-31T04:01:00.85",
+          "url": "https://robota.ua/company1020/vacancy11314142"
+        },
+        {
+          "title": "Сервіс-дизайнер",
+          "location": "",
+          "date": "2026-08-29T11:01:00.343",
+          "url": "https://robota.ua/company1020/vacancy11280459"
+        },
+        {
+          "title": "Relationship manager",
+          "location": "",
+          "date": "2026-08-29T11:01:00.343",
+          "url": "https://robota.ua/company1020/vacancy10975724"
+        },
+        {
+          "title": "Регіональний менеджер з продажу лізингу",
+          "location": "",
+          "date": "2026-08-31T16:50:06.673",
+          "url": "https://robota.ua/company1020/vacancy11321947"
+        },
+        {
+          "title": "Старший касир на відділення банку",
+          "location": "",
+          "date": "2026-08-31T16:50:01.33",
+          "url": "https://robota.ua/company1020/vacancy10926361"
+        },
+        {
+          "title": "Заступник керуючого відділенням з контрольно-операційної діяльності",
+          "location": "",
+          "date": "2026-08-31T16:49:59.847",
+          "url": "https://robota.ua/company1020/vacancy10926607"
+        },
+        {
+          "title": "Касир каси перерахунку у Петропавлівську Борщагівку",
+          "location": "",
+          "date": "2026-08-31T16:49:58.157",
+          "url": "https://robota.ua/company1020/vacancy10926357"
+        },
+        {
+          "title": "Фахівець відділення банку",
+          "location": "",
+          "date": "2026-08-31T04:01:00.85",
+          "url": "https://robota.ua/company1020/vacancy10928344"
+        },
+        {
+          "title": "Фахівець із залучення та обслуговування малого бізнесу",
+          "location": "",
+          "date": "2026-08-31T04:01:00.85",
+          "url": "https://robota.ua/company1020/vacancy10962333"
+        },
+        {
+          "title": "Фінансовий аналітик",
+          "location": "",
+          "date": "2026-08-31T04:01:00.85",
+          "url": "https://robota.ua/company1020/vacancy11225240"
+        },
+        {
+          "title": "Фахівець з обслуговування фізичних осіб (р-он Піски)",
+          "location": "",
+          "date": "2026-08-31T04:01:00.85",
+          "url": "https://robota.ua/company1020/vacancy11291910"
+        },
+        {
+          "title": "Керівник проєктів управління цінністю преміальних клієнтів",
+          "location": "",
+          "date": "2026-08-31T04:01:00.85",
+          "url": "https://robota.ua/company1020/vacancy11291922"
+        },
+        {
+          "title": "Керуючий відділенням банку (Чечелівський р-он)",
+          "location": "",
+          "date": "2026-08-31T04:01:00.85",
+          "url": "https://robota.ua/company1020/vacancy8483995"
+        },
+        {
+          "title": "Головний фахівець з кредитування юридичних клієнтів",
+          "location": "",
+          "date": "2026-08-31T04:01:00.85",
+          "url": "https://robota.ua/company1020/vacancy9685019"
+        },
+        {
+          "title": "Оператор call-центру (вхідна лінія)",
+          "location": "",
+          "date": "2026-08-31T04:01:00.85",
+          "url": "https://robota.ua/company1020/vacancy10093313"
+        },
+        {
+          "title": "Провідний фахівець із залучення юридичних осіб (Шевченківський р-он)",
+          "location": "",
+          "date": "2026-08-31T04:01:00.85",
+          "url": "https://robota.ua/company1020/vacancy10283415"
+        },
+        {
+          "title": "Менеджер по роботі з фізичними особами",
+          "location": "",
+          "date": "2026-08-31T04:01:00.85",
+          "url": "https://robota.ua/company1020/vacancy10463310"
+        },
+        {
+          "title": "Менеджер по роботі з ключовими клієнтами (сервіс \"Сплачуй частинами\")",
+          "location": "",
+          "date": "2026-08-31T04:01:00.85",
+          "url": "https://robota.ua/company1020/vacancy10554900"
+        },
+        {
+          "title": "Менеджер проєктів корпоративного бізнесу (м.Київ)",
+          "location": "",
+          "date": "2026-08-31T04:01:00.85",
+          "url": "https://robota.ua/company1020/vacancy10559314"
+        },
+        {
+          "title": "Старший касир банку",
+          "location": "",
+          "date": "2026-08-31T04:01:00.85",
+          "url": "https://robota.ua/company1020/vacancy10816655"
+        },
+        {
+          "title": "Головний фахівець з обслуговування ВКК",
+          "location": "",
+          "date": "2026-08-31T03:01:00.213",
+          "url": "https://robota.ua/company1020/vacancy10596880"
+        },
+        {
+          "title": "Заступник керуючого відділенням з контрольно-операційної діяльності (Троєщина)",
+          "location": "",
+          "date": "2026-08-31T03:01:00.213",
+          "url": "https://robota.ua/company1020/vacancy11252679"
+        },
+        {
+          "title": "Менеджер з обслуговування заможних клієнтів у відділенні банку (Печерськ)",
+          "location": "",
+          "date": "2026-08-31T03:01:00.213",
+          "url": "https://robota.ua/company1020/vacancy10926620"
+        },
+        {
+          "title": "Фахівець з обслуговування фізичних осіб у відділенні банку",
+          "location": "",
+          "date": "2026-08-31T03:01:00.213",
+          "url": "https://robota.ua/company1020/vacancy11016031"
+        },
+        {
+          "title": "Головний фахівець кореспондентських відносин",
+          "location": "",
+          "date": "2026-08-31T03:01:00.213",
+          "url": "https://robota.ua/company1020/vacancy11094486"
+        },
+        {
+          "title": "Ротаційний (підмінний) касир на відділення банку (з відрядженнями)",
+          "location": "",
+          "date": "2026-08-31T03:01:00.213",
+          "url": "https://robota.ua/company1020/vacancy11291748"
+        },
+        {
+          "title": "Фахівець відділу телемаркетингу малого бізнесу",
+          "location": "",
+          "date": "2026-08-31T03:01:00.213",
+          "url": "https://robota.ua/company1020/vacancy11291751"
+        },
+        {
+          "title": "Менеджер проектів департаменту загальнобанківських ризиків",
+          "location": "",
+          "date": "2026-08-31T03:01:00.213",
+          "url": "https://robota.ua/company1020/vacancy11308186"
+        },
+        {
+          "title": "Комплаєнс менеджер МПС",
+          "location": "",
+          "date": "2026-08-31T02:01:00.54",
+          "url": "https://robota.ua/company1020/vacancy11029569"
+        },
+        {
+          "title": "Business analyst",
+          "location": "",
+          "date": "2026-08-31T02:01:00.54",
+          "url": "https://robota.ua/company1020/vacancy11005170"
+        },
+        {
+          "title": "Кредитний експерт",
+          "location": "",
+          "date": "2026-08-31T02:01:00.54",
+          "url": "https://robota.ua/company1020/vacancy8572800"
+        },
+        {
+          "title": "Кредитний експерт",
+          "location": "",
+          "date": "2026-08-31T02:01:00.54",
+          "url": "https://robota.ua/company1020/vacancy9930630"
+        },
+        {
+          "title": "Кредитний експерт",
+          "location": "",
+          "date": "2026-08-31T01:01:00.817",
+          "url": "https://robota.ua/company1020/vacancy9303941"
+        },
+        {
+          "title": "Фахівець зі стягнення заборгованості (Soft Collection), віддалено",
+          "location": "",
+          "date": "2026-08-31T01:01:00.817",
+          "url": "https://robota.ua/company1020/vacancy10142960"
+        },
+        {
+          "title": "Middle Business Analyst (ЦК АБС)",
+          "location": "",
+          "date": "2026-08-31T00:01:00.227",
+          "url": "https://robota.ua/company1020/vacancy11256630"
+        },
+        {
+          "title": "Провідний фахівець відділу контролінгу операційних ризиків",
+          "location": "",
+          "date": "2026-08-31T00:01:00.227",
+          "url": "https://robota.ua/company1020/vacancy11263936"
+        },
+        {
+          "title": "Територіальний керівник з розвитку партнерської мережі",
+          "location": "",
+          "date": "2026-08-30T00:01:00.91",
+          "url": "https://robota.ua/company1020/vacancy10566879"
+        },
+        {
+          "title": "Касир відділення банку",
+          "location": "",
+          "date": "2026-08-30T00:01:00.91",
+          "url": "https://robota.ua/company1020/vacancy8972745"
+        },
+        {
+          "title": "Верифікатор",
+          "location": "",
+          "date": "2026-08-29T00:01:00.333",
+          "url": "https://robota.ua/company1020/vacancy10741858"
+        },
+        {
+          "title": "Головний фахівець відділу оцінки заставного майна",
+          "location": "",
+          "date": "2026-08-29T00:01:00.333",
+          "url": "https://robota.ua/company1020/vacancy11178569"
+        },
+        {
+          "title": "Інженер підтримки сервісів",
+          "location": "",
+          "date": "2026-08-29T00:01:00.333",
+          "url": "https://robota.ua/company1020/vacancy11187913"
+        },
+        {
+          "title": "Middle Data Science Центру моніторингу транзакцій",
+          "location": "",
+          "date": "2026-08-28T04:01:00.247",
+          "url": "https://robota.ua/company1020/vacancy10927041"
+        },
+        {
+          "title": "Data analyst",
+          "location": "",
+          "date": "2026-08-28T04:01:00.247",
+          "url": "https://robota.ua/company1020/vacancy10979332"
+        },
+        {
+          "title": "Головний фахівець відділу фінансового моніторингу операцій корпоративних або роздрібних клієнтів",
+          "location": "",
+          "date": "2026-08-28T04:01:00.247",
+          "url": "https://robota.ua/company1020/vacancy11260633"
+        },
+        {
+          "title": "Антіфрод аалітик центру моніторингу транзакції",
+          "location": "",
+          "date": "2026-08-28T04:01:00.247",
+          "url": "https://robota.ua/company1020/vacancy10766470"
+        },
+        {
+          "title": "Керівник проектів напрямку операційних ризиків (СУР)",
+          "location": "",
+          "date": "2026-08-28T04:01:00.247",
+          "url": "https://robota.ua/company1020/vacancy10882569"
+        },
+        {
+          "title": "Інженер відділу експлуатації банку",
+          "location": "",
+          "date": "2026-08-28T04:01:00.247",
+          "url": "https://robota.ua/company1020/vacancy10490508"
+        },
+        {
+          "title": "Business Analyst",
+          "location": "",
+          "date": "2026-08-28T04:01:00.247",
+          "url": "https://robota.ua/company1020/vacancy10167182"
+        },
+        {
+          "title": "Касир відділення банку",
+          "location": "",
+          "date": "2026-08-28T04:01:00.247",
+          "url": "https://robota.ua/company1020/vacancy9286069"
+        },
+        {
+          "title": "Кредитний аналітик відділу кредитного аналізу корпоративних клієнтів",
+          "location": "",
+          "date": "2026-08-28T04:01:00.247",
+          "url": "https://robota.ua/company1020/vacancy9611759"
+        },
+        {
+          "title": "Фахівець з обслуговування фізичних осіб (Дніпровський р-н)",
+          "location": "",
+          "date": "2026-08-28T04:01:00.247",
+          "url": "https://robota.ua/company1020/vacancy11298342"
+        },
+        {
+          "title": "Керівник відділу моніторингу транзакцій",
+          "location": "",
+          "date": "2026-08-28T04:01:00.247",
+          "url": "https://robota.ua/company1020/vacancy11306189"
+        },
+        {
+          "title": "Головний фахівець відділу забезпечення",
+          "location": "",
+          "date": "2026-08-28T03:01:00.577",
+          "url": "https://robota.ua/company1020/vacancy11314390"
+        },
+        {
+          "title": "System Analyst",
+          "location": "",
+          "date": "2026-08-28T03:01:00.577",
+          "url": "https://robota.ua/company1020/vacancy10282695"
+        },
+        {
+          "title": "Менеджер бек-офісу",
+          "location": "",
+          "date": "2026-08-28T03:01:00.577",
+          "url": "https://robota.ua/company1020/vacancy10923918"
+        },
+        {
+          "title": "Middle Mobile QA Manual",
+          "location": "",
+          "date": "2026-08-28T03:01:00.577",
+          "url": "https://robota.ua/company1020/vacancy11096049"
+        },
+        {
+          "title": "Методолог",
+          "location": "",
+          "date": "2026-08-28T02:01:00.823",
+          "url": "https://robota.ua/company1020/vacancy10369850"
+        },
+        {
+          "title": "Оператор Call-centre (вихідна лінія)",
+          "location": "",
+          "date": "2026-08-28T02:01:00.823",
+          "url": "https://robota.ua/company1020/vacancy10390256"
+        },
+        {
+          "title": "Територіальний керівник з розвитку партнерської мережі",
+          "location": "",
+          "date": "2026-08-28T02:01:00.823",
+          "url": "https://robota.ua/company1020/vacancy10447984"
+        }
+      ],
+      "error": null
+    },
+    {
+      "bank": "monobank",
+      "country": "UA",
+      "board": "robota.ua",
+      "kind": "robota",
+      "ok": true,
+      "total": 44,
+      "fetched": 44,
+      "roles": [
+        {
+          "title": "Старший касир-операціоніст (ст.м.Оболонь)",
+          "location": "",
+          "date": "2026-08-30T17:01:00.813",
+          "url": "https://robota.ua/company127046/vacancy10459165"
+        },
+        {
+          "title": "Старший касир-операціоніст (ст. м. Контрактова площа)",
+          "location": "",
+          "date": "2026-08-30T17:01:00.813",
+          "url": "https://robota.ua/company127046/vacancy11249903"
+        },
+        {
+          "title": "Адміністратор відділення банку (ст. м. Либідська)",
+          "location": "",
+          "date": "2026-08-30T17:01:00.813",
+          "url": "https://robota.ua/company127046/vacancy11251376"
+        },
+        {
+          "title": "Асистент Голови Правління банку",
+          "location": "",
+          "date": "2026-08-29T00:01:00.333",
+          "url": "https://robota.ua/company127046/vacancy11182571"
+        },
+        {
+          "title": "Адміністратор відділення банку",
+          "location": "",
+          "date": "2026-08-31T17:17:48.923",
+          "url": "https://robota.ua/company127046/vacancy11324595"
+        },
+        {
+          "title": "Головний фахівець Відділу обліку та контролю операцій в терміналах банку",
+          "location": "",
+          "date": "2026-08-31T17:01:01.503",
+          "url": "https://robota.ua/company127046/vacancy11245995"
+        },
+        {
+          "title": "Головний фахівець відділу моніторингу транзакцій (фінансовий моніторинг)",
+          "location": "",
+          "date": "2026-08-31T14:01:00.82",
+          "url": "https://robota.ua/company127046/vacancy11291830"
+        },
+        {
+          "title": "Заступник директора департаменту продуктів та координації продажів корпоративного бізнесу",
+          "location": "",
+          "date": "2026-08-31T12:30:57.06",
+          "url": "https://robota.ua/company127046/vacancy11202130"
+        },
+        {
+          "title": "Адміністратор відділення банку (Оболонь)",
+          "location": "",
+          "date": "2026-08-31T10:52:01.823",
+          "url": "https://robota.ua/company127046/vacancy11245032"
+        },
+        {
+          "title": "Головний фахівець по роботі з міжнародними платіжними системами (файли звітності 97Х, А0Х, 4GX)",
+          "location": "",
+          "date": "2026-08-31T10:01:00.897",
+          "url": "https://robota.ua/company127046/vacancy10885637"
+        },
+        {
+          "title": "Начальник відділу (Управління ринкових, операційних ризиків та звітності)",
+          "location": "",
+          "date": "2026-08-31T09:01:00.833",
+          "url": "https://robota.ua/company127046/vacancy11082477"
+        },
+        {
+          "title": "Головний фахівець (Управління ринкових, операційних ризиків та звітності)",
+          "location": "",
+          "date": "2026-08-31T09:01:00.833",
+          "url": "https://robota.ua/company127046/vacancy11085543"
+        },
+        {
+          "title": "Адміністратор відділення банку",
+          "location": "",
+          "date": "2026-08-31T09:01:00.833",
+          "url": "https://robota.ua/company127046/vacancy11095721"
+        },
+        {
+          "title": "Старший касир-операціоніст (ст. м. Либідська)",
+          "location": "",
+          "date": "2026-08-31T09:01:00.833",
+          "url": "https://robota.ua/company127046/vacancy11208653"
+        },
+        {
+          "title": "Головний Юрисконсульт правового супроводження корпоративних питань",
+          "location": "",
+          "date": "2026-08-31T09:01:00.833",
+          "url": "https://robota.ua/company127046/vacancy11210364"
+        },
+        {
+          "title": "Провідний фахівець з обслуговування бізнес-клієнтів (червона гілка метро)",
+          "location": "",
+          "date": "2026-08-31T08:56:03.94",
+          "url": "https://robota.ua/company127046/vacancy11202848"
+        },
+        {
+          "title": "Middle Data Analyst (Reporting, SQL, Power BI)",
+          "location": "",
+          "date": "2026-08-31T00:01:00.227",
+          "url": "https://robota.ua/company127046/vacancy11170014"
+        },
+        {
+          "title": "HR Business Partner",
+          "location": "",
+          "date": "2026-08-30T17:01:00.813",
+          "url": "https://robota.ua/company127046/vacancy11254349"
+        },
+        {
+          "title": "Начальник відділу (ICAAP, ILAAP)",
+          "location": "",
+          "date": "2026-08-30T15:01:00.23",
+          "url": "https://robota.ua/company127046/vacancy11164170"
+        },
+        {
+          "title": "Головний фахівець операційних ризиків та звітності",
+          "location": "",
+          "date": "2026-08-30T15:01:00.23",
+          "url": "https://robota.ua/company127046/vacancy11319001"
+        },
+        {
+          "title": "Головний фахівець з моніторингу системи внутрішнього контролю",
+          "location": "",
+          "date": "2026-08-30T15:01:00.23",
+          "url": "https://robota.ua/company127046/vacancy11319011"
+        },
+        {
+          "title": "Junior+/Middle Project manager",
+          "location": "",
+          "date": "2026-08-30T10:01:00.643",
+          "url": "https://robota.ua/company127046/vacancy11282617"
+        },
+        {
+          "title": "Головний фахівець відділу з контролю за імпортними та неторговельними операціями клієнтів",
+          "location": "",
+          "date": "2026-08-30T10:01:00.643",
+          "url": "https://robota.ua/company127046/vacancy11200550"
+        },
+        {
+          "title": "Економіст Відділу бюджетування",
+          "location": "",
+          "date": "2026-08-30T09:01:00.643",
+          "url": "https://robota.ua/company127046/vacancy11187958"
+        },
+        {
+          "title": "Compliance Specialist (CRS/FATCA)",
+          "location": "",
+          "date": "2026-08-30T09:01:00.643",
+          "url": "https://robota.ua/company127046/vacancy11115437"
+        },
+        {
+          "title": "Фахівець з супроводження еквайрингових операцій",
+          "location": "",
+          "date": "2026-08-30T08:01:00.6",
+          "url": "https://robota.ua/company127046/vacancy10995243"
+        },
+        {
+          "title": "Старший касир-операціоніст (підмінний по місту Київ)",
+          "location": "",
+          "date": "2026-08-30T08:01:00.6",
+          "url": "https://robota.ua/company127046/vacancy11215140"
+        },
+        {
+          "title": "Головний економіст відділу фінансового аналізу",
+          "location": "",
+          "date": "2026-08-30T00:01:00.91",
+          "url": "https://robota.ua/company127046/vacancy11233233"
+        },
+        {
+          "title": "SQL Developer",
+          "location": "",
+          "date": "2026-08-29T20:01:00.6",
+          "url": "https://robota.ua/company127046/vacancy11056888"
+        },
+        {
+          "title": "Провідний фахівець з обслуговування бізнес-клієнтів",
+          "location": "",
+          "date": "2026-08-29T15:01:00.577",
+          "url": "https://robota.ua/company127046/vacancy11295205"
+        },
+        {
+          "title": "T-SQL Developer",
+          "location": "",
+          "date": "2026-08-29T15:01:00.577",
+          "url": "https://robota.ua/company127046/vacancy11295262"
+        },
+        {
+          "title": "Керівник напряму з підтримки продажів продуктів (зовнішній кадровий резерв)",
+          "location": "",
+          "date": "2026-08-29T14:01:00.57",
+          "url": "https://robota.ua/company127046/vacancy11275629"
+        },
+        {
+          "title": "Фахівець з фінансової аналітики та звітності",
+          "location": "",
+          "date": "2026-08-29T14:01:00.57",
+          "url": "https://robota.ua/company127046/vacancy11275669"
+        },
+        {
+          "title": "Адміністратор відділення банку (ст. м. Либідська)",
+          "location": "",
+          "date": "2026-08-29T11:38:53.61",
+          "url": "https://robota.ua/company127046/vacancy11244978"
+        },
+        {
+          "title": "Провідний фахівець з обслуговування бізнес-клієнтів (ст. м. Університет)",
+          "location": "",
+          "date": "2026-08-29T09:01:00.473",
+          "url": "https://robota.ua/company127046/vacancy11268083"
+        },
+        {
+          "title": "HR Аналітик",
+          "location": "",
+          "date": "2026-08-29T09:01:00.473",
+          "url": "https://robota.ua/company127046/vacancy11268820"
+        },
+        {
+          "title": "Аналітик Управління фінансового аналізу",
+          "location": "",
+          "date": "2026-08-29T09:01:00.473",
+          "url": "https://robota.ua/company127046/vacancy11170836"
+        },
+        {
+          "title": "Керівник напрямку супроводження кредитних продуктів",
+          "location": "",
+          "date": "2026-08-28T15:27:25.987",
+          "url": "https://robota.ua/company127046/vacancy11322349"
+        },
+        {
+          "title": "HR Governance Manager",
+          "location": "",
+          "date": "2026-08-28T15:01:00.55",
+          "url": "https://robota.ua/company127046/vacancy11260290"
+        },
+        {
+          "title": "Головний фахівець з супроводження партнерських програм",
+          "location": "",
+          "date": "2026-08-28T14:01:00.637",
+          "url": "https://robota.ua/company127046/vacancy10427749"
+        },
+        {
+          "title": "Адміністратор відділення банку (ст.м. Університет)",
+          "location": "",
+          "date": "2026-08-28T11:37:13.58",
+          "url": "https://robota.ua/company127046/vacancy11281234"
+        },
+        {
+          "title": "Адміністратор IT-систем",
+          "location": "",
+          "date": "2026-08-28T10:35:38.293",
+          "url": "https://robota.ua/company127046/vacancy11245151"
+        },
+        {
+          "title": "Старший касир-операціоніст (ст. м. Берестейська)",
+          "location": "",
+          "date": "2026-08-28T08:01:00.823",
+          "url": "https://robota.ua/company127046/vacancy10949422"
+        },
+        {
+          "title": "Провідний фахівець з обслуговування бізнес-клієнтів (ст. м Харківська)",
+          "location": "",
+          "date": "2026-08-28T08:01:00.823",
+          "url": "https://robota.ua/company127046/vacancy11292548"
+        }
+      ],
+      "error": null
+    },
+    {
+      "bank": "Raiffeisen Bank Ukraine",
+      "country": "UA",
+      "board": "robota.ua",
+      "kind": "robota",
+      "ok": true,
+      "total": 212,
+      "fetched": 60,
+      "roles": [
+        {
+          "title": "Касир відділення банку (підмінний)",
+          "location": "",
+          "date": "2026-08-29T09:01:00.473",
+          "url": "https://robota.ua/company1037/vacancy11229600"
+        },
+        {
+          "title": "Менеджер з залучення корпоративних клієнтів (зарплатні проєкти)",
+          "location": "",
+          "date": "2026-08-31T19:29:30.753",
+          "url": "https://robota.ua/company1037/vacancy11324726"
+        },
+        {
+          "title": "Менеджер з обслуговування приватних клієнтів",
+          "location": "",
+          "date": "2026-08-31T19:23:21.307",
+          "url": "https://robota.ua/company1037/vacancy11324722"
+        },
+        {
+          "title": "Менеджер - касир відділення банку",
+          "location": "",
+          "date": "2026-08-31T19:15:00.63",
+          "url": "https://robota.ua/company1037/vacancy11324716"
+        },
+        {
+          "title": "Менеджер з оптимізації процесів",
+          "location": "",
+          "date": "2026-08-31T18:29:15.27",
+          "url": "https://robota.ua/company1037/vacancy11324694"
+        },
+        {
+          "title": "Менеджер з внутрішніх комунікацій",
+          "location": "",
+          "date": "2026-08-31T17:54:08.61",
+          "url": "https://robota.ua/company1037/vacancy11324648"
+        },
+        {
+          "title": "HR Onboarding Manager",
+          "location": "",
+          "date": "2026-08-31T15:48:30.9",
+          "url": "https://robota.ua/company1037/vacancy11324379"
+        },
+        {
+          "title": "Менеджер - касир відділення банку (ст. м. Позняки)",
+          "location": "",
+          "date": "2026-08-31T14:24:49.21",
+          "url": "https://robota.ua/company1037/vacancy11324105"
+        },
+        {
+          "title": "Інкасатор",
+          "location": "",
+          "date": "2026-08-31T12:54:58.97",
+          "url": "https://robota.ua/company1037/vacancy11047887"
+        },
+        {
+          "title": "Data Analyst",
+          "location": "",
+          "date": "2026-08-31T12:46:36.867",
+          "url": "https://robota.ua/company1037/vacancy11323918"
+        },
+        {
+          "title": "Супервізор відділення банку (ст. м. Позняки)",
+          "location": "",
+          "date": "2026-08-31T11:37:35.717",
+          "url": "https://robota.ua/company1037/vacancy11323763"
+        },
+        {
+          "title": "Представник банку у проєкт \"Картка АТБ від Райфу\"",
+          "location": "",
+          "date": "2026-08-31T05:01:00.603",
+          "url": "https://robota.ua/company1037/vacancy11300607"
+        },
+        {
+          "title": "Керівник відділення",
+          "location": "",
+          "date": "2026-08-31T05:01:00.603",
+          "url": "https://robota.ua/company1037/vacancy11308777"
+        },
+        {
+          "title": "Менеджер з обслуговування клієнтів бізнес банкінгу",
+          "location": "",
+          "date": "2026-08-31T05:01:00.603",
+          "url": "https://robota.ua/company1037/vacancy11308783"
+        },
+        {
+          "title": "Начальник Відділу обслуговування приватних клієнтів",
+          "location": "",
+          "date": "2026-08-31T05:01:00.603",
+          "url": "https://robota.ua/company1037/vacancy11308805"
+        },
+        {
+          "title": "Customer Experience Specialist",
+          "location": "",
+          "date": "2026-08-31T04:01:00.85",
+          "url": "https://robota.ua/company1037/vacancy10803043"
+        },
+        {
+          "title": "Менеджер - касир відділення банку (Приморський район)",
+          "location": "",
+          "date": "2026-08-31T04:01:00.85",
+          "url": "https://robota.ua/company1037/vacancy11292091"
+        },
+        {
+          "title": "Менеджер з обслуговування приватних клієнтів (Приморський район)",
+          "location": "",
+          "date": "2026-08-31T04:01:00.85",
+          "url": "https://robota.ua/company1037/vacancy11292110"
+        },
+        {
+          "title": "Менеджер - касир відділення банку (ст. м. Олімпійська)",
+          "location": "",
+          "date": "2026-08-31T03:01:00.213",
+          "url": "https://robota.ua/company1037/vacancy11188402"
+        },
+        {
+          "title": "Представник банку у проєкт \"Картка АТБ від Райфу\"",
+          "location": "",
+          "date": "2026-08-31T02:01:00.54",
+          "url": "https://robota.ua/company1037/vacancy10598253"
+        },
+        {
+          "title": "Менеджер з обслуговування клієнтів Преміум сегмента (Солом'янський район)",
+          "location": "",
+          "date": "2026-08-31T02:01:00.54",
+          "url": "https://robota.ua/company1037/vacancy11028726"
+        },
+        {
+          "title": "Менеджер - касир відділення банку (вул. Рональда Рейгана)",
+          "location": "",
+          "date": "2026-08-31T02:01:00.54",
+          "url": "https://robota.ua/company1037/vacancy11307934"
+        },
+        {
+          "title": "Представник банку у проєкт \"Картка АТБ від Райфу\"",
+          "location": "",
+          "date": "2026-08-31T02:01:00.54",
+          "url": "https://robota.ua/company1037/vacancy11299658"
+        },
+        {
+          "title": "Представник банку у проєкт \"Картка АТБ від Райфу\"",
+          "location": "",
+          "date": "2026-08-31T02:01:00.54",
+          "url": "https://robota.ua/company1037/vacancy11299659"
+        },
+        {
+          "title": "Представник банку у проєкт \"Картка АТБ від Райфу\"",
+          "location": "",
+          "date": "2026-08-31T02:01:00.54",
+          "url": "https://robota.ua/company1037/vacancy11299661"
+        },
+        {
+          "title": "Менеджер - касир відділення банку",
+          "location": "",
+          "date": "2026-08-31T01:01:00.817",
+          "url": "https://robota.ua/company1037/vacancy11299588"
+        },
+        {
+          "title": "Водій-інкасатор",
+          "location": "",
+          "date": "2026-08-31T01:01:00.817",
+          "url": "https://robota.ua/company1037/vacancy9319078"
+        },
+        {
+          "title": "Представник банку у проєкт \"Картка АТБ від Райфу\"",
+          "location": "",
+          "date": "2026-08-31T01:01:00.817",
+          "url": "https://robota.ua/company1037/vacancy9946000"
+        },
+        {
+          "title": "Представник банку у проєкт \"Картка АТБ від Райфу\"",
+          "location": "",
+          "date": "2026-08-31T01:01:00.817",
+          "url": "https://robota.ua/company1037/vacancy10165697"
+        },
+        {
+          "title": "Представник банку у проєкт \"Картка АТБ від Райфу\"",
+          "location": "",
+          "date": "2026-08-31T01:01:00.817",
+          "url": "https://robota.ua/company1037/vacancy10513230"
+        },
+        {
+          "title": "Представник банку у проєкт \"Картка АТБ від Райфу\"",
+          "location": "",
+          "date": "2026-08-31T01:01:00.817",
+          "url": "https://robota.ua/company1037/vacancy10539789"
+        },
+        {
+          "title": "Представник банку у проєкт \"Картка АТБ від Райфу\"",
+          "location": "",
+          "date": "2026-08-31T01:01:00.817",
+          "url": "https://robota.ua/company1037/vacancy11184532"
+        },
+        {
+          "title": "Водій - інкасатор",
+          "location": "",
+          "date": "2026-08-31T01:01:00.817",
+          "url": "https://robota.ua/company1037/vacancy11205301"
+        },
+        {
+          "title": "Інкасатор - водій",
+          "location": "",
+          "date": "2026-08-31T01:01:00.817",
+          "url": "https://robota.ua/company1037/vacancy11216117"
+        },
+        {
+          "title": "Водій-інкасатор",
+          "location": "",
+          "date": "2026-08-31T01:01:00.817",
+          "url": "https://robota.ua/company1037/vacancy11222157"
+        },
+        {
+          "title": "Менеджер з аудиту",
+          "location": "",
+          "date": "2026-08-31T00:31:37.323",
+          "url": "https://robota.ua/company1037/vacancy11209038"
+        },
+        {
+          "title": "Менеджер кредитного контролю",
+          "location": "",
+          "date": "2026-08-31T00:31:36.87",
+          "url": "https://robota.ua/company1037/vacancy11208966"
+        },
+        {
+          "title": "Спеціаліст з контролю якості прибирання",
+          "location": "",
+          "date": "2026-08-31T00:01:00.227",
+          "url": "https://robota.ua/company1037/vacancy11200852"
+        },
+        {
+          "title": "Фахівець архіву",
+          "location": "",
+          "date": "2026-08-31T00:01:00.227",
+          "url": "https://robota.ua/company1037/vacancy11200914"
+        },
+        {
+          "title": "Фахівець з адміністративно-господарської діяльності",
+          "location": "",
+          "date": "2026-08-31T00:01:00.227",
+          "url": "https://robota.ua/company1037/vacancy11200936"
+        },
+        {
+          "title": "Супервізор відділення банку (ст. м. Контрактова площа)",
+          "location": "",
+          "date": "2026-08-31T00:01:00.227",
+          "url": "https://robota.ua/company1037/vacancy11201162"
+        },
+        {
+          "title": "Оператор вхідної лінії контактного центру банку",
+          "location": "",
+          "date": "2026-08-31T00:01:00.227",
+          "url": "https://robota.ua/company1037/vacancy11256683"
+        },
+        {
+          "title": "Оператор вхідної лінії контактного центру банку",
+          "location": "",
+          "date": "2026-08-31T00:01:00.227",
+          "url": "https://robota.ua/company1037/vacancy11256685"
+        },
+        {
+          "title": "Оператор вхідної лінії контактного центру банку",
+          "location": "",
+          "date": "2026-08-31T00:01:00.227",
+          "url": "https://robota.ua/company1037/vacancy11256688"
+        },
+        {
+          "title": "Оператор вхідної лінії контактного центру банку",
+          "location": "",
+          "date": "2026-08-31T00:01:00.227",
+          "url": "https://robota.ua/company1037/vacancy11256689"
+        },
+        {
+          "title": "Оператор вхідної лінії контактного центру банку",
+          "location": "",
+          "date": "2026-08-31T00:01:00.227",
+          "url": "https://robota.ua/company1037/vacancy11256692"
+        },
+        {
+          "title": "Оператор вхідної лінії контактного центру банку",
+          "location": "",
+          "date": "2026-08-31T00:01:00.227",
+          "url": "https://robota.ua/company1037/vacancy11256693"
+        },
+        {
+          "title": "Представник банку у проєкт \"Картка АТБ від Райфу\"",
+          "location": "",
+          "date": "2026-08-31T00:01:00.227",
+          "url": "https://robota.ua/company1037/vacancy11257046"
+        },
+        {
+          "title": "Представник банку у проєкт \"Картка АТБ від Райфу\"",
+          "location": "",
+          "date": "2026-08-31T00:01:00.227",
+          "url": "https://robota.ua/company1037/vacancy11257049"
+        },
+        {
+          "title": "Представник банку у проєкт \"Картка АТБ від Райфу\"",
+          "location": "",
+          "date": "2026-08-31T00:01:00.227",
+          "url": "https://robota.ua/company1037/vacancy11257055"
+        },
+        {
+          "title": "Менеджер з обслуговування клієнтів бізнес банкінгу(ст.м. Позняки)",
+          "location": "",
+          "date": "2026-08-31T00:01:00.227",
+          "url": "https://robota.ua/company1037/vacancy11265123"
+        },
+        {
+          "title": "Керівник відділення (ст.м. Контрактова площа)",
+          "location": "",
+          "date": "2026-08-31T00:01:00.227",
+          "url": "https://robota.ua/company1037/vacancy11265209"
+        },
+        {
+          "title": "Менеджер з обслуговування клієнтів бізнес банкінгу(ст.м. Контрактова площа)",
+          "location": "",
+          "date": "2026-08-31T00:01:00.227",
+          "url": "https://robota.ua/company1037/vacancy11265217"
+        },
+        {
+          "title": "Менеджер - касир відділення банку (ст. м. Контрактова площа)",
+          "location": "",
+          "date": "2026-08-31T00:01:00.227",
+          "url": "https://robota.ua/company1037/vacancy10995859"
+        },
+        {
+          "title": "Інкасатор - водій",
+          "location": "",
+          "date": "2026-08-31T00:01:00.227",
+          "url": "https://robota.ua/company1037/vacancy11037980"
+        },
+        {
+          "title": "Інкасатор - водій",
+          "location": "",
+          "date": "2026-08-31T00:01:00.227",
+          "url": "https://robota.ua/company1037/vacancy11182932"
+        },
+        {
+          "title": "Менеджер з обслуговування клієнтів Преміум сегмента (Протасів Яр)",
+          "location": "",
+          "date": "2026-08-30T00:32:15.52",
+          "url": "https://robota.ua/company1037/vacancy11168003"
+        },
+        {
+          "title": "Менеджер по роботі з ключовими клієнтами Бізнес Банкінгу",
+          "location": "",
+          "date": "2026-08-30T00:32:12.12",
+          "url": "https://robota.ua/company1037/vacancy11167914"
+        },
+        {
+          "title": "Інкасатор - водій (Солом'янський р-н)",
+          "location": "",
+          "date": "2026-08-30T00:28:59.927",
+          "url": "https://robota.ua/company1037/vacancy10621334"
+        },
+        {
+          "title": "Інкасатор ( Солом'янський р-н)",
+          "location": "",
+          "date": "2026-08-30T00:28:59.76",
+          "url": "https://robota.ua/company1037/vacancy10621306"
+        }
+      ],
+      "error": null
+    },
+    {
+      "bank": "OTP Bank Ukraine",
+      "country": "UA",
+      "board": "robota.ua",
+      "kind": "robota",
+      "ok": true,
+      "total": 139,
+      "fetched": 60,
+      "roles": [
+        {
+          "title": "Начальник відділу продажів (бул. Вацлава Гавела)",
+          "location": "",
+          "date": "2026-08-31T05:01:00.603",
+          "url": "https://robota.ua/company1042/vacancy10554880"
+        },
+        {
+          "title": "Експерт з обслуговування фізичних осіб (різні райони)",
+          "location": "",
+          "date": "2026-08-31T05:01:00.603",
+          "url": "https://robota.ua/company1042/vacancy10645722"
+        },
+        {
+          "title": "Керуючий відділенням Банку",
+          "location": "",
+          "date": "2026-08-31T02:01:00.54",
+          "url": "https://robota.ua/company1042/vacancy10600829"
+        },
+        {
+          "title": "Менеджер з продажів",
+          "location": "",
+          "date": "2026-08-30T13:01:00.553",
+          "url": "https://robota.ua/company1042/vacancy11316664"
+        },
+        {
+          "title": "Експерт з В2В продажів",
+          "location": "",
+          "date": "2026-08-29T11:01:00.343",
+          "url": "https://robota.ua/company1042/vacancy11273460"
+        },
+        {
+          "title": "Експерт з обслуговування юридичних осіб ( м. Палац \"Україна\")",
+          "location": "",
+          "date": "2026-08-29T10:01:00.54",
+          "url": "https://robota.ua/company1042/vacancy10645776"
+        },
+        {
+          "title": "Касир в Банк",
+          "location": "",
+          "date": "2026-08-29T09:01:00.473",
+          "url": "https://robota.ua/company1042/vacancy10600816"
+        },
+        {
+          "title": "Менеджер з продажу банківських продуктів (м. Олімпійська)",
+          "location": "",
+          "date": "2026-08-29T09:01:00.473",
+          "url": "https://robota.ua/company1042/vacancy10600822"
+        },
+        {
+          "title": "Менеджер з продажу банківських продуктів (різні райони Києва)",
+          "location": "",
+          "date": "2026-08-29T09:01:00.473",
+          "url": "https://robota.ua/company1042/vacancy10272576"
+        },
+        {
+          "title": "Молодший фахівець з продажів (без досвіду)",
+          "location": "",
+          "date": "2026-08-29T09:01:00.473",
+          "url": "https://robota.ua/company1042/vacancy11220931"
+        },
+        {
+          "title": "Менеджер з кредитування легкових автомобілів",
+          "location": "",
+          "date": "2026-08-31T18:28:21.72",
+          "url": "https://robota.ua/company1042/vacancy11323814"
+        },
+        {
+          "title": "Керівник відділення банку",
+          "location": "",
+          "date": "2026-08-31T18:27:06.933",
+          "url": "https://robota.ua/company1042/vacancy11287967"
+        },
+        {
+          "title": "Начальник відділу обслуговування клієнтів",
+          "location": "",
+          "date": "2026-08-31T17:49:32.46",
+          "url": "https://robota.ua/company1042/vacancy11185888"
+        },
+        {
+          "title": "Менеджер по роботі з VIP клієнтами (фізичні особи)",
+          "location": "",
+          "date": "2026-08-31T17:48:55.627",
+          "url": "https://robota.ua/company1042/vacancy11229292"
+        },
+        {
+          "title": "Менеджер по роботі з клієнтами (ст. м. Дорогожичі)",
+          "location": "",
+          "date": "2026-08-31T17:48:42.253",
+          "url": "https://robota.ua/company1042/vacancy11261210"
+        },
+        {
+          "title": "Менеджер з продажу банківських продуктів (ст. м. Майдан Незалежності)",
+          "location": "",
+          "date": "2026-08-31T17:48:17.077",
+          "url": "https://robota.ua/company1042/vacancy11234618"
+        },
+        {
+          "title": "Менеджер по роботі з VIP клієнтами (ст. м. Печерська)",
+          "location": "",
+          "date": "2026-08-31T17:48:07.027",
+          "url": "https://robota.ua/company1042/vacancy11234914"
+        },
+        {
+          "title": "Менеджер з обслуговування юридичних осіб (старт кар'єри)",
+          "location": "",
+          "date": "2026-08-31T17:47:39.713",
+          "url": "https://robota.ua/company1042/vacancy11167775"
+        },
+        {
+          "title": "Менеджер з продажу банківських продуктів (м. Політехнічний інститу)",
+          "location": "",
+          "date": "2026-08-31T17:47:33.623",
+          "url": "https://robota.ua/company1042/vacancy10554883"
+        },
+        {
+          "title": "Адміністратор відділення банку (м. Майдан Незалежності)",
+          "location": "",
+          "date": "2026-08-31T17:47:16.6",
+          "url": "https://robota.ua/company1042/vacancy11167864"
+        },
+        {
+          "title": "Менеджер з обслуговування клієнтів",
+          "location": "",
+          "date": "2026-08-31T17:46:36.503",
+          "url": "https://robota.ua/company1042/vacancy11245204"
+        },
+        {
+          "title": "Менеджер з обслуговування клієнтів",
+          "location": "",
+          "date": "2026-08-31T17:46:00.627",
+          "url": "https://robota.ua/company1042/vacancy11038239"
+        },
+        {
+          "title": "Менеджер по роботі з корпоративними клієнтами",
+          "location": "",
+          "date": "2026-08-31T17:45:41.12",
+          "url": "https://robota.ua/company1042/vacancy11234391"
+        },
+        {
+          "title": "Менеджер з продажів",
+          "location": "",
+          "date": "2026-08-31T17:45:23.32",
+          "url": "https://robota.ua/company1042/vacancy11324636"
+        },
+        {
+          "title": "Менеджер по роботі з преміум клієнтами",
+          "location": "",
+          "date": "2026-08-31T17:42:55.147",
+          "url": "https://robota.ua/company1042/vacancy11234489"
+        },
+        {
+          "title": "Касир відділення банку",
+          "location": "",
+          "date": "2026-08-31T17:41:58.03",
+          "url": "https://robota.ua/company1042/vacancy11324632"
+        },
+        {
+          "title": "Оператор контакт-центру (корпоративні клієнти)",
+          "location": "",
+          "date": "2026-08-31T17:40:08.26",
+          "url": "https://robota.ua/company1042/vacancy11249072"
+        },
+        {
+          "title": "Менеджер з продажів",
+          "location": "",
+          "date": "2026-08-31T17:32:17.287",
+          "url": "https://robota.ua/company1042/vacancy11324621"
+        },
+        {
+          "title": "Менеджер з продажів банківських продуктів (фіз.особи БАНК)",
+          "location": "",
+          "date": "2026-08-31T17:20:19.61",
+          "url": "https://robota.ua/company1042/vacancy11209257"
+        },
+        {
+          "title": "Sales Manager у сфері енергетичного фінансування",
+          "location": "",
+          "date": "2026-08-31T17:19:47.43",
+          "url": "https://robota.ua/company1042/vacancy11245188"
+        },
+        {
+          "title": "Менеджер корпоративних продажів",
+          "location": "",
+          "date": "2026-08-31T17:19:14.677",
+          "url": "https://robota.ua/company1042/vacancy11273252"
+        },
+        {
+          "title": "Менеджер по роботі з юридичними особами",
+          "location": "",
+          "date": "2026-08-31T17:18:13.777",
+          "url": "https://robota.ua/company1042/vacancy11324598"
+        },
+        {
+          "title": "Експерт Сектору супроводження фінансування обігового капіталу та торговельних операцій",
+          "location": "",
+          "date": "2026-08-31T16:17:35.873",
+          "url": "https://robota.ua/company1042/vacancy11324442"
+        },
+        {
+          "title": "Business Analyst/System Analyst",
+          "location": "",
+          "date": "2026-08-31T10:57:36.783",
+          "url": "https://robota.ua/company1042/vacancy11323536"
+        },
+        {
+          "title": "Молодший аудитор",
+          "location": "",
+          "date": "2026-08-31T04:01:00.85",
+          "url": "https://robota.ua/company1042/vacancy11254447"
+        },
+        {
+          "title": "Оператор інформаційного центру (продажі банківських продуктів)",
+          "location": "",
+          "date": "2026-08-31T03:01:00.213",
+          "url": "https://robota.ua/company1042/vacancy11235529"
+        },
+        {
+          "title": "Middle Data Analyst",
+          "location": "",
+          "date": "2026-08-31T03:01:00.213",
+          "url": "https://robota.ua/company1042/vacancy11307920"
+        },
+        {
+          "title": "Начальник відділу обслуговування клієнтів",
+          "location": "",
+          "date": "2026-08-31T02:01:00.54",
+          "url": "https://robota.ua/company1042/vacancy11291497"
+        },
+        {
+          "title": "Експерт з вивчення клієнтів/належна перевірка клієнтів юридичних осіб (Вся Україна)",
+          "location": "",
+          "date": "2026-08-31T02:01:00.54",
+          "url": "https://robota.ua/company1042/vacancy11235308"
+        },
+        {
+          "title": "Фахівець з навчання персоналу відділень",
+          "location": "",
+          "date": "2026-08-31T02:01:00.54",
+          "url": "https://robota.ua/company1042/vacancy11228036"
+        },
+        {
+          "title": "Старший експерт супроводження кредитних проектів",
+          "location": "",
+          "date": "2026-08-31T01:01:00.817",
+          "url": "https://robota.ua/company1042/vacancy10893394"
+        },
+        {
+          "title": "Експерт з продажу продуктів роздрібного бізнесу",
+          "location": "",
+          "date": "2026-08-31T01:01:00.817",
+          "url": "https://robota.ua/company1042/vacancy9387681"
+        },
+        {
+          "title": "Експерт з обслуговування юридичних осіб",
+          "location": "",
+          "date": "2026-08-31T01:01:00.817",
+          "url": "https://robota.ua/company1042/vacancy9753335"
+        },
+        {
+          "title": "Провідний експерт обслуговування клієнтів",
+          "location": "",
+          "date": "2026-08-31T01:01:00.817",
+          "url": "https://robota.ua/company1042/vacancy11275722"
+        },
+        {
+          "title": "Заступник керуючого відділенням",
+          "location": "",
+          "date": "2026-08-31T01:01:00.817",
+          "url": "https://robota.ua/company1042/vacancy11263312"
+        },
+        {
+          "title": "Менеджер з розвитку кредитування (м. Вознесенськ)",
+          "location": "",
+          "date": "2026-08-31T01:01:00.817",
+          "url": "https://robota.ua/company1042/vacancy11299600"
+        },
+        {
+          "title": "Менеджер з продажу легкових автомобілів (Автобазар)",
+          "location": "",
+          "date": "2026-08-31T01:01:00.817",
+          "url": "https://robota.ua/company1042/vacancy11299602"
+        },
+        {
+          "title": "Менеджер з кредитування легкових автомобілів",
+          "location": "",
+          "date": "2026-08-31T01:01:00.817",
+          "url": "https://robota.ua/company1042/vacancy11299604"
+        },
+        {
+          "title": "Менеджер з кредитування легкових автомобілів",
+          "location": "",
+          "date": "2026-08-31T01:01:00.817",
+          "url": "https://robota.ua/company1042/vacancy11299606"
+        },
+        {
+          "title": "Менеджер з кредитування легкових автомобілів",
+          "location": "",
+          "date": "2026-08-31T01:01:00.817",
+          "url": "https://robota.ua/company1042/vacancy11291215"
+        },
+        {
+          "title": "Менеджер з кредитування легкових автомобілів",
+          "location": "",
+          "date": "2026-08-31T01:01:00.817",
+          "url": "https://robota.ua/company1042/vacancy11307517"
+        },
+        {
+          "title": "Junior PL/SQL Developer",
+          "location": "",
+          "date": "2026-08-31T00:01:00.227",
+          "url": "https://robota.ua/company1042/vacancy11315578"
+        },
+        {
+          "title": "Керівник проектів з розробки та підтримки продуктів клієнт-банку корпоративного бізнесу",
+          "location": "",
+          "date": "2026-08-31T00:01:00.227",
+          "url": "https://robota.ua/company1042/vacancy11257001"
+        },
+        {
+          "title": "Керівник проектів з розвитку валютних операцій",
+          "location": "",
+          "date": "2026-08-31T00:01:00.227",
+          "url": "https://robota.ua/company1042/vacancy11257027"
+        },
+        {
+          "title": "Експерт з фінансування корпоративних клієнтів",
+          "location": "",
+          "date": "2026-08-31T00:01:00.227",
+          "url": "https://robota.ua/company1042/vacancy10669158"
+        },
+        {
+          "title": "Business Analyst (Marketing Automation)",
+          "location": "",
+          "date": "2026-08-31T00:01:00.227",
+          "url": "https://robota.ua/company1042/vacancy11143763"
+        },
+        {
+          "title": "Юрист (КУА ОТП Капітал)",
+          "location": "",
+          "date": "2026-08-30T00:01:00.91",
+          "url": "https://robota.ua/company1042/vacancy11278845"
+        },
+        {
+          "title": "Digital-маркетолог",
+          "location": "",
+          "date": "2026-08-28T14:40:52.647",
+          "url": "https://robota.ua/company1042/vacancy11195342"
+        },
+        {
+          "title": "Аудитор процесів Головного офісу",
+          "location": "",
+          "date": "2026-08-28T14:40:29.307",
+          "url": "https://robota.ua/company1042/vacancy11208884"
+        },
+        {
+          "title": "Аудитор регіональної мережі",
+          "location": "",
+          "date": "2026-08-28T14:40:23.46",
+          "url": "https://robota.ua/company1042/vacancy11208834"
+        }
+      ],
+      "error": null
+    },
+    {
+      "bank": "Piraeus Bank",
+      "country": "GR",
+      "board": "Workable",
+      "kind": "workable",
+      "ok": true,
+      "total": 5,
+      "fetched": 5,
+      "roles": [
+        {
+          "title": "Cyber Security Architect",
+          "location": "Athens",
+          "dept": "GROUP TECHNOLOGY, SUPP, OPERAT",
+          "url": "https://apply.workable.com/j/F94795C54C"
+        },
+        {
+          "title": "Cyber Threat & Vulnerability Analyst",
+          "location": "Athens",
+          "dept": "GROUP TECHNOLOGY, SUPP, OPERAT",
+          "url": "https://apply.workable.com/j/3ACD7359E9"
+        },
+        {
+          "title": "Express your Interest for Employment",
+          "location": "Greece",
+          "dept": "",
+          "url": "https://apply.workable.com/j/B9ABF52CDB"
+        },
+        {
+          "title": "Internship",
+          "location": "Greece",
+          "dept": "",
+          "url": "https://apply.workable.com/j/A518C4D216"
+        },
+        {
+          "title": "Management Trainee Program",
+          "location": "Greece",
+          "dept": "",
+          "url": "https://apply.workable.com/j/21547DEB16"
+        }
+      ],
+      "error": null
+    },
+    {
+      "bank": "Raiffeisen Bank Ukraine",
+      "country": "UA",
+      "board": "Workable",
+      "kind": "workable",
+      "ok": true,
+      "total": 170,
+      "fetched": 170,
+      "roles": [
+        {
+          "title": "Agile Coach/Scrum Master",
+          "location": "Kyiv",
+          "dept": "Інформаційні технології",
+          "url": "https://apply.workable.com/j/7ABA8A8A9D"
+        },
+        {
+          "title": "Analyst",
+          "location": "Kyiv",
+          "dept": "Інформаційні технології",
+          "url": "https://apply.workable.com/j/B6019DBE7E"
+        },
+        {
+          "title": "CRM/Сustomer growth manager",
+          "location": "Kyiv",
+          "dept": "Роздрібний бізнес",
+          "url": "https://apply.workable.com/j/C6CFA7391A"
+        },
+        {
+          "title": "Customer Experience Specialist",
+          "location": "Kyiv",
+          "dept": "Роздрібний бізнес",
+          "url": "https://apply.workable.com/j/97768A7E48"
+        },
+        {
+          "title": "Data Analyst",
+          "location": "Kyiv",
+          "dept": "Роздрібний бізнес",
+          "url": "https://apply.workable.com/j/5E39F749BC"
+        },
+        {
+          "title": "DevSecOps",
+          "location": "Kyiv",
+          "dept": "Інформаційні технології",
+          "url": "https://apply.workable.com/j/1F41093743"
+        },
+        {
+          "title": "Head of Trade Finance & Factoring",
+          "location": "Kyiv",
+          "dept": "Корпоративниий бізнес та ринки капіталу",
+          "url": "https://apply.workable.com/j/6734924AB5"
+        },
+        {
+          "title": "HR Onboarding Manager",
+          "location": "Kyiv",
+          "dept": "Виконавчий менеджмент (PR, HR, аудит, юристи)",
+          "url": "https://apply.workable.com/j/AA7F5CB650"
+        },
+        {
+          "title": "IT Delivery Director",
+          "location": "Kyiv",
+          "dept": "Інформаційні технології",
+          "url": "https://apply.workable.com/j/CBB9E22519"
+        },
+        {
+          "title": "IT Finance Manager",
+          "location": "Kyiv",
+          "dept": "Інформаційні технології",
+          "url": "https://apply.workable.com/j/98B7F17E07"
+        },
+        {
+          "title": "IT Security Risk Manager",
+          "location": "Kyiv",
+          "dept": "Інформаційні технології",
+          "url": "https://apply.workable.com/j/6172955711"
+        },
+        {
+          "title": "Jira Administrator",
+          "location": "Kyiv",
+          "dept": "Інформаційні технології",
+          "url": "https://apply.workable.com/j/4E4018F41B"
+        },
+        {
+          "title": "Jira Tech Lead",
+          "location": "Kyiv",
+          "dept": "Інформаційні технології",
+          "url": "https://apply.workable.com/j/7718A5EBD4"
+        },
+        {
+          "title": "Junior Business Analyst",
+          "location": "Odesa",
+          "dept": "Інформаційні технології",
+          "url": "https://apply.workable.com/j/C128D8CF58"
+        },
+        {
+          "title": "Junior Business Analyst",
+          "location": "Kyiv",
+          "dept": "Інформаційні технології",
+          "url": "https://apply.workable.com/j/C128D8CF58"
+        },
+        {
+          "title": "Junior IT Governance Coordinator",
+          "location": "Kyiv",
+          "dept": "Інформаційні технології",
+          "url": "https://apply.workable.com/j/A19FB64E23"
+        },
+        {
+          "title": "Junior IT Process Manager",
+          "location": "Kyiv",
+          "dept": "Інформаційні технології",
+          "url": "https://apply.workable.com/j/EA421B2107"
+        },
+        {
+          "title": "L1 Support Engineer",
+          "location": "Ukraine",
+          "dept": "Інформаційні технології",
+          "url": "https://apply.workable.com/j/9A27D3BC56"
+        },
+        {
+          "title": "Middle System Analyst",
+          "location": "Kyiv",
+          "dept": "Інформаційні технології",
+          "url": "https://apply.workable.com/j/81A86A22B2"
+        },
+        {
+          "title": "Middle System Analyst",
+          "location": "Kyiv",
+          "dept": "Інформаційні технології",
+          "url": "https://apply.workable.com/j/45AEEB17D6"
+        },
+        {
+          "title": "Oracle Database Administrator",
+          "location": "Kyiv",
+          "dept": "Інформаційні технології",
+          "url": "https://apply.workable.com/j/FCBD4308C2"
+        },
+        {
+          "title": "PPC Specialist",
+          "location": "Kyiv",
+          "dept": "Роздрібний бізнес",
+          "url": "https://apply.workable.com/j/A319AE52C4"
+        },
+        {
+          "title": "Product Manager for Digital SME Lending",
+          "location": "Ukrainka",
+          "dept": "Роздрібний бізнес",
+          "url": "https://apply.workable.com/j/67BE94F43F"
+        },
+        {
+          "title": "Senior Conversational AI Designer",
+          "location": "Kyiv",
+          "dept": "Роздрібний бізнес",
+          "url": "https://apply.workable.com/j/75706739D9"
+        },
+        {
+          "title": "Senior Golang Developer",
+          "location": "Kyiv",
+          "dept": "Інформаційні технології",
+          "url": "https://apply.workable.com/j/B1453DC168"
+        },
+        {
+          "title": "Senior Product Owner (MyRaif Platform Team)",
+          "location": "Kyiv",
+          "dept": "Роздрібний бізнес",
+          "url": "https://apply.workable.com/j/D6BC04D3D8"
+        },
+        {
+          "title": "Senior/Middle Data Engineer",
+          "location": "Kyiv",
+          "dept": "Інформаційні технології",
+          "url": "https://apply.workable.com/j/E4093ACF48"
+        },
+        {
+          "title": "System Analyst",
+          "location": "Kyiv",
+          "dept": "Інформаційні технології",
+          "url": "https://apply.workable.com/j/256ECA5BF9"
+        },
+        {
+          "title": "System Analyst",
+          "location": "Ukraine",
+          "dept": "Інформаційні технології",
+          "url": "https://apply.workable.com/j/D72742BE8C"
+        },
+        {
+          "title": "Veteran Officer",
+          "location": "Kyiv",
+          "dept": "Виконавчий менеджмент (PR, HR, аудит, юристи)",
+          "url": "https://apply.workable.com/j/5C10EB1819"
+        },
+        {
+          "title": "Асистент Заступника Голови Правління банку",
+          "location": "Kyiv",
+          "dept": "Виконавчий менеджмент (PR, HR, аудит, юристи)",
+          "url": "https://apply.workable.com/j/0830F9C8BC"
+        },
+        {
+          "title": "Експерт з аудиту",
+          "location": "Kyiv",
+          "dept": "Виконавчий менеджмент (PR, HR, аудит, юристи)",
+          "url": "https://apply.workable.com/j/D981308864"
+        },
+        {
+          "title": "Касир",
+          "location": "L'viv",
+          "dept": "Операційна підтримка та інкасація",
+          "url": "https://apply.workable.com/j/748EE57F9B"
+        },
+        {
+          "title": "Касир",
+          "location": "Odesa",
+          "dept": "Операційна підтримка та інкасація",
+          "url": "https://apply.workable.com/j/9A0DCD05BA"
+        },
+        {
+          "title": "Касир відділення банку",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/173D5C9FC9"
+        },
+        {
+          "title": "Керівник Відділення",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/6DF07EF1BF"
+        },
+        {
+          "title": "Керівник відділення",
+          "location": "Slavutych",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/8741245F01"
+        },
+        {
+          "title": "Керівник відділення",
+          "location": "Boryslav",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/D8E6061987"
+        },
+        {
+          "title": "Керівник відділення (Дніпровська набережна)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/6E817F29EA"
+        },
+        {
+          "title": "Керівник відділення (ст.м. Контрактова площа)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/E06D04FA31"
+        },
+        {
+          "title": "Керівник відділення (ст.м. Палац \"Україна\")",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/BE7B584392"
+        },
+        {
+          "title": "Керівник з питань виявлення та розслідування фінансових злочинів",
+          "location": "Kyiv",
+          "dept": "Комплаєнс, ризик менеджмент та проблемні кредити",
+          "url": "https://apply.workable.com/j/C613F9EDE6"
+        },
+        {
+          "title": "Менеджер - касир відділення банку",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/926C86F38A"
+        },
+        {
+          "title": "Менеджер - касир відділення банку",
+          "location": "Vynohradiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/6231950911"
+        },
+        {
+          "title": "Менеджер - касир відділення банку",
+          "location": "Pidvolochysk",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/F5962D458A"
+        },
+        {
+          "title": "Менеджер - касир відділення банку",
+          "location": "Slobozhanske",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/1B9A01456B"
+        },
+        {
+          "title": "Менеджер - касир відділення банку",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/9F79D851AA"
+        },
+        {
+          "title": "Менеджер - касир відділення банку",
+          "location": "Bereznehuvate",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/BABE790D58"
+        },
+        {
+          "title": "Менеджер - касир відділення банку",
+          "location": "Voznesens'k",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/3A054ADE60"
+        },
+        {
+          "title": "Менеджер - касир відділення банку",
+          "location": "Shostka",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/FC4F0989BF"
+        },
+        {
+          "title": "Менеджер - касир відділення банку",
+          "location": "Shpola",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/4CDFAAAA26"
+        },
+        {
+          "title": "Менеджер - касир відділення банку",
+          "location": "Poltava",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/8EA3DF5A36"
+        },
+        {
+          "title": "Менеджер - касир відділення банку (вул. Рональда Рейгана)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/ED3D26CD52"
+        },
+        {
+          "title": "Менеджер - касир відділення банку (Приморський район)",
+          "location": "Odesa",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/FFF49F64C5"
+        },
+        {
+          "title": "Менеджер - касир відділення банку (Приморський район)",
+          "location": "Odesa",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/2BDE9BA579"
+        },
+        {
+          "title": "Менеджер - касир відділення банку (Севастопольська Площа)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/CFF49A2766"
+        },
+        {
+          "title": "Менеджер - касир відділення банку (ст м. Хрещатик)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/D0024285A8"
+        },
+        {
+          "title": "Менеджер - касир відділення банку (ст. м. Житомирська)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/BB0960C9EF"
+        },
+        {
+          "title": "Менеджер - касир відділення банку (ст. м. Контрактова площа)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/E54D846720"
+        },
+        {
+          "title": "Менеджер - касир відділення банку (ст. м. Оболонь)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/295959DF26"
+        },
+        {
+          "title": "Менеджер - касир відділення банку (ст. м. Олімпійська)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/6DFAD3A140"
+        },
+        {
+          "title": "Менеджер - касир відділення банку (ст. м. Позняки)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/B11F4F0A82"
+        },
+        {
+          "title": "Менеджер - касир відділення банку (ст. м. Університет)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/A7987B5EF5"
+        },
+        {
+          "title": "Менеджер з Аудиту",
+          "location": "Kyiv",
+          "dept": "Виконавчий менеджмент (PR, HR, аудит, юристи)",
+          "url": "https://apply.workable.com/j/4B9FD3DE7A"
+        },
+        {
+          "title": "Менеджер з безпеки",
+          "location": "Kyiv",
+          "dept": "Виконавчий менеджмент (PR, HR, аудит, юристи)",
+          "url": "https://apply.workable.com/j/4B123EC0E8"
+        },
+        {
+          "title": "Менеджер з внутрішніх комунікацій",
+          "location": "Kyiv",
+          "dept": "Виконавчий менеджмент (PR, HR, аудит, юристи)",
+          "url": "https://apply.workable.com/j/825A48115C"
+        },
+        {
+          "title": "Менеджер з залучення клієнтів бізнес банкінгу",
+          "location": "Khmelnytskyi",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/D8872BA41E"
+        },
+        {
+          "title": "Менеджер з залучення корпоративних клієнтів (зарплатні проєкти)",
+          "location": "Kharkiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/3D07A47616"
+        },
+        {
+          "title": "Менеджер з залучення корпоративних клієнтів (зарплатні проєкти)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/C4B1A5455D"
+        },
+        {
+          "title": "Менеджер з залучення корпоративних клієнтів (зарплатні проєкти)",
+          "location": "Kropyvnytskyi",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/92A4D2ADBE"
+        },
+        {
+          "title": "Менеджер з залучення корпоративних клієнтів (зарплатні проєкти)",
+          "location": "Dnipro",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/5F36509398"
+        },
+        {
+          "title": "Менеджер з обслуговування клієнтів бізнес банкінгу",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/5FBD40D926"
+        },
+        {
+          "title": "Менеджер з обслуговування клієнтів бізнес банкінгу",
+          "location": "Mukachevo",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/663AD8E37B"
+        },
+        {
+          "title": "Менеджер з обслуговування клієнтів бізнес банкінгу",
+          "location": "Vinnytsia",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/08DCE04716"
+        },
+        {
+          "title": "Менеджер з обслуговування клієнтів бізнес банкінгу",
+          "location": "Vyshhorod",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/83070F8921"
+        },
+        {
+          "title": "Менеджер з обслуговування клієнтів бізнес банкінгу",
+          "location": "Boryslav",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/99FF2E2DC0"
+        },
+        {
+          "title": "Менеджер з обслуговування клієнтів бізнес банкінгу (Дніпровська набережна)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/4EB1300645"
+        },
+        {
+          "title": "Менеджер з обслуговування клієнтів бізнес банкінгу (Приморський район)",
+          "location": "Odesa",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/A88A8069D9"
+        },
+        {
+          "title": "Менеджер з обслуговування клієнтів бізнес банкінгу (Приморський район)",
+          "location": "Odesa",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/ABCA249CB9"
+        },
+        {
+          "title": "Менеджер з обслуговування клієнтів бізнес банкінгу (ст. м. Бориспільська)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/F148054FA2"
+        },
+        {
+          "title": "Менеджер з обслуговування клієнтів бізнес банкінгу (ст. м. Житомирська)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/82CD2D35C4"
+        },
+        {
+          "title": "Менеджер з обслуговування клієнтів бізнес банкінгу (ст. м. Мінська)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/EC0334DE0C"
+        },
+        {
+          "title": "Менеджер з обслуговування клієнтів бізнес банкінгу (ст. м. Нивки)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/6E0AC908A9"
+        },
+        {
+          "title": "Менеджер з обслуговування клієнтів бізнес банкінгу (ст. м. Оболонь)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/B1AC5A6A60"
+        },
+        {
+          "title": "Менеджер з обслуговування клієнтів бізнес банкінгу (ст. м. Університет)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/72F26BB5A4"
+        },
+        {
+          "title": "Менеджер з обслуговування клієнтів бізнес банкінгу (ст. м. Університет)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/6875CA8CBF"
+        },
+        {
+          "title": "Менеджер з обслуговування клієнтів бізнес банкінгу(ст.м. Контрактова площа)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/DB67AC5692"
+        },
+        {
+          "title": "Менеджер з обслуговування клієнтів бізнес банкінгу(ст.м. Мінська)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/B96455590B"
+        },
+        {
+          "title": "Менеджер з обслуговування клієнтів бізнес банкінгу(ст.м. Олімпійська)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/EF2655BE3B"
+        },
+        {
+          "title": "Менеджер з обслуговування клієнтів бізнес банкінгу(ст.м. Шулявська)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/A171C4C255"
+        },
+        {
+          "title": "Менеджер з обслуговування клієнтів бізнес банкінгу(ст.м.Контрактова площа)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/FE2EF56AE9"
+        },
+        {
+          "title": "Менеджер з обслуговування клієнтів Преміум сегмента (ст.м. Печерська)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/1609267D74"
+        },
+        {
+          "title": "Менеджер з Обслуговування Клієнтів Преміум Сегмента | Гібридний Формат Роботи",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/BF3689A7B8"
+        },
+        {
+          "title": "Менеджер з обслуговування клієнтів Преміум сегмента(Протасів Яр) | Гібрид",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/9C8CB9318C"
+        },
+        {
+          "title": "Менеджер з обслуговування клієнтів Преміум сегмента(Солом'янський район)|Гібрид",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/47C2F11F32"
+        },
+        {
+          "title": "Менеджер з обслуговування клієнтів Преміум сегмента(ст.м. Контрактова площа)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/8B9ADB2242"
+        },
+        {
+          "title": "Менеджер з обслуговування клієнтів Преміум сегмента(ст.м. Мінська)|Гібрид",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/E8224A34B4"
+        },
+        {
+          "title": "Менеджер з обслуговування клієнтів Преміум сегмента(ст.м.Печерська)|Гібрид",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/48D42A4455"
+        },
+        {
+          "title": "Менеджер з обслуговування клієнтів Преміум сегмента(ст.м.Хрещатик)|Гібрид",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/F4B78A2403"
+        },
+        {
+          "title": "Менеджер з обслуговування приватних клієнтів",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/671ED09082"
+        },
+        {
+          "title": "Менеджер з обслуговування приватних клієнтів",
+          "location": "Odesa",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/5ABBB7656F"
+        },
+        {
+          "title": "Менеджер з обслуговування приватних клієнтів",
+          "location": "Mukachevo",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/FEB3E0E41B"
+        },
+        {
+          "title": "Менеджер з обслуговування приватних клієнтів",
+          "location": "Ivano-Frankivsk",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/3A5B26C0A8"
+        },
+        {
+          "title": "Менеджер з обслуговування приватних клієнтів",
+          "location": "Khmelnytskyi",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/18C57E7EDA"
+        },
+        {
+          "title": "Менеджер з обслуговування приватних клієнтів",
+          "location": "Poltava",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/2CB0B8B384"
+        },
+        {
+          "title": "Менеджер з обслуговування приватних клієнтів (Бориспіль)",
+          "location": "Boryspil'",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/053F61CBC1"
+        },
+        {
+          "title": "Менеджер з обслуговування приватних клієнтів (ж/м Тополя-1)",
+          "location": "Dnipro",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/CA7EE8F0C5"
+        },
+        {
+          "title": "Менеджер з обслуговування приватних клієнтів (Приморський район)",
+          "location": "Odesa",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/D359A5BF48"
+        },
+        {
+          "title": "Менеджер з обслуговування приватних клієнтів (ст м. Лук'янівська)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/66A36C73BF"
+        },
+        {
+          "title": "Менеджер з обслуговування приватних клієнтів (ст м. Хрещатик)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/F7237BDA82"
+        },
+        {
+          "title": "Менеджер з обслуговування приватних клієнтів (ст. м. Бориспільська)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/F579F43503"
+        },
+        {
+          "title": "Менеджер з обслуговування приватних клієнтів (ст. м. Мінська)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/E6C69E0F6C"
+        },
+        {
+          "title": "Менеджер з обслуговування приватних клієнтів (ст. м. Оболонь)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/A10BAFC4B9"
+        },
+        {
+          "title": "Менеджер з обслуговування приватних клієнтів (ст. м. Олімпійська)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/2563A720E5"
+        },
+        {
+          "title": "Менеджер з обслуговування приватних клієнтів (ст. м. Печерська)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/F45B4F79B6"
+        },
+        {
+          "title": "Менеджер з обслуговування приватних клієнтів (ст.м. Контрактова площа)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/7D371E31A6"
+        },
+        {
+          "title": "Менеджер з обслуговування приватних клієнтів (Троєщина)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/49A779B7EF"
+        },
+        {
+          "title": "Менеджер з обслуговування приватних клієнтів(ст.м. Позняки)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/828398C48E"
+        },
+        {
+          "title": "Менеджер з оптимізації процесів",
+          "location": "Kyiv",
+          "dept": "Роздрібний бізнес",
+          "url": "https://apply.workable.com/j/C90B64C81E"
+        },
+        {
+          "title": "Менеджер з підтримки продажів Бізнес Банкінгу",
+          "location": "Kropyvnytskyi",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/37A5A869CC"
+        },
+        {
+          "title": "Менеджер контактного центру (вихідна лінія Івано-Франківськ)",
+          "location": "Ivano-Frankivsk",
+          "dept": "Роздрібний бізнес",
+          "url": "https://apply.workable.com/j/0439F947CE"
+        },
+        {
+          "title": "Менеджер по роботі з ключовими клієнтами Бізнес Банкінгу",
+          "location": "Poltava",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/72DCC6E698"
+        },
+        {
+          "title": "Менеджер по роботі з ключовими клієнтами Бізнес Банкінгу",
+          "location": "Chernihiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/816B5AA166"
+        },
+        {
+          "title": "Менеджер по роботі з ключовими клієнтами Бізнес Банкінгу",
+          "location": "Khmelnytskyi",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/4D813C0A25"
+        },
+        {
+          "title": "Менеджер по роботі з ключовими клієнтами Бізнес Банкінгу",
+          "location": "Odesa",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/6A39FE9278"
+        },
+        {
+          "title": "Менеджер по роботі з ключовими клієнтами Бізнес Банкінгу",
+          "location": "Rivne",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/164B20FD97"
+        },
+        {
+          "title": "Начальник Відділу обслуговування приватних клієнтів",
+          "location": "Kyiv",
+          "dept": "Роздрібний бізнес",
+          "url": "https://apply.workable.com/j/AAD435E3E4"
+        },
+        {
+          "title": "Оператор вихідної лінії контактного центру банку",
+          "location": "Ivano-Frankivsk",
+          "dept": "Роздрібний бізнес",
+          "url": "https://apply.workable.com/j/60FF34408F"
+        },
+        {
+          "title": "Оператор вихідної лінії контактного центру банку",
+          "location": "Cherkasy",
+          "dept": "Роздрібний бізнес",
+          "url": "https://apply.workable.com/j/60FF34408F"
+        },
+        {
+          "title": "Оператор вихідної лінії контактного центру банку",
+          "location": "Ukraine",
+          "dept": "Роздрібний бізнес",
+          "url": "https://apply.workable.com/j/60FF34408F"
+        },
+        {
+          "title": "Оператор вихідної лінії контактного центру банку",
+          "location": "Ukraine",
+          "dept": "Роздрібний бізнес",
+          "url": "https://apply.workable.com/j/60FF34408F"
+        },
+        {
+          "title": "Оператор вихідної лінії контактного центру банку",
+          "location": "Kryvyi Rih",
+          "dept": "Роздрібний бізнес",
+          "url": "https://apply.workable.com/j/60FF34408F"
+        },
+        {
+          "title": "Оператор вхідної лінії контактного центру банку (дистанційно)",
+          "location": "Ukraine",
+          "dept": "Роздрібний бізнес",
+          "url": "https://apply.workable.com/j/961E7D1955"
+        },
+        {
+          "title": "Оператор вхідної лінії контактного центру банку (дистанційно)",
+          "location": "Zhytomyr",
+          "dept": "Роздрібний бізнес",
+          "url": "https://apply.workable.com/j/961E7D1955"
+        },
+        {
+          "title": "Оператор вхідної лінії контактного центру банку (дистанційно)",
+          "location": "Ternopil",
+          "dept": "Роздрібний бізнес",
+          "url": "https://apply.workable.com/j/961E7D1955"
+        },
+        {
+          "title": "Оператор вхідної лінії контактного центру банку (дистанційно)",
+          "location": "Lviv",
+          "dept": "Роздрібний бізнес",
+          "url": "https://apply.workable.com/j/961E7D1955"
+        },
+        {
+          "title": "Оператор вхідної лінії контактного центру банку (дистанційно)",
+          "location": "Vinnytsia",
+          "dept": "Роздрібний бізнес",
+          "url": "https://apply.workable.com/j/961E7D1955"
+        },
+        {
+          "title": "Оператор контактного центру банку",
+          "location": "Ukraine",
+          "dept": "Роздрібний бізнес",
+          "url": "https://apply.workable.com/j/4A54DD476F"
+        },
+        {
+          "title": "Практика в Райфі",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/F52329BE00"
+        },
+        {
+          "title": "Представник банку у проєкт \"Картка АТБ від Райфу\"",
+          "location": "Ukraine",
+          "dept": "Роздрібний бізнес",
+          "url": "https://apply.workable.com/j/537C7EEE74"
+        },
+        {
+          "title": "Представник банку у проєкт \"Картка АТБ від Райфу\"",
+          "location": "Kyiv",
+          "dept": "Роздрібний бізнес",
+          "url": "https://apply.workable.com/j/62C341FE61"
+        },
+        {
+          "title": "Провідний менеджер з продажів корпоративного бізнесу",
+          "location": "Ivano-Frankivsk",
+          "dept": "Корпоративниий бізнес та ринки капіталу",
+          "url": "https://apply.workable.com/j/976B35CFAE"
+        },
+        {
+          "title": "Спеціаліст з обслуговування клієнтів у Чаті",
+          "location": "Zhytomyr",
+          "dept": "Роздрібний бізнес",
+          "url": "https://apply.workable.com/j/952673FD6B"
+        },
+        {
+          "title": "Стажер в HR Administration",
+          "location": "Kyiv",
+          "dept": "Виконавчий менеджмент (PR, HR, аудит, юристи)",
+          "url": "https://apply.workable.com/j/8DBB1E7DCB"
+        },
+        {
+          "title": "Стажер в рекрутинг",
+          "location": "Kyiv",
+          "dept": "Виконавчий менеджмент (PR, HR, аудит, юристи)",
+          "url": "https://apply.workable.com/j/2A7F17461F"
+        },
+        {
+          "title": "Стажування в Райфі",
+          "location": "Kyiv",
+          "dept": "Фінанси",
+          "url": "https://apply.workable.com/j/5CD1B74B2D"
+        },
+        {
+          "title": "Старший касир ( каса перерахунку)",
+          "location": "Khmelnytskyi",
+          "dept": "Операційна підтримка та інкасація",
+          "url": "https://apply.workable.com/j/D573A2581B"
+        },
+        {
+          "title": "Старший касир (каса перерахунку)",
+          "location": "Kharkiv",
+          "dept": "Операційна підтримка та інкасація",
+          "url": "https://apply.workable.com/j/134D09AF4D"
+        },
+        {
+          "title": "Старший менеджер з методології та контролю процесів",
+          "location": "Kyiv",
+          "dept": "Операційна підтримка та інкасація",
+          "url": "https://apply.workable.com/j/4458B47E97"
+        },
+        {
+          "title": "Старший інкасатор",
+          "location": "Kyiv",
+          "dept": "Операційна підтримка та інкасація",
+          "url": "https://apply.workable.com/j/780A0755F8"
+        },
+        {
+          "title": "Старший інкасатор-водій",
+          "location": "Kyiv",
+          "dept": "Операційна підтримка та інкасація",
+          "url": "https://apply.workable.com/j/D01C22E046"
+        },
+        {
+          "title": "Супервізор відділення банку",
+          "location": "Voznesens'k",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/A3F38249EC"
+        },
+        {
+          "title": "Супервізор відділення банку (ст. м. Контрактова площа)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/B95EF03525"
+        },
+        {
+          "title": "Супервізор відділення банку (ст. м. Оболонь)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/060DDE2FEC"
+        },
+        {
+          "title": "Супервізор відділення банку (ст. м. Позняки)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/3A474AEF3D"
+        },
+        {
+          "title": "Супервізор відділення банку (ст. м. Хрещатик)",
+          "location": "Kyiv",
+          "dept": "Відділення",
+          "url": "https://apply.workable.com/j/524BCF8238"
+        },
+        {
+          "title": "Черговий інкасатор",
+          "location": "Lutsk",
+          "dept": "Операційна підтримка та інкасація",
+          "url": "https://apply.workable.com/j/6728DD9D4F"
+        },
+        {
+          "title": "Черговий інкасатор",
+          "location": "Khmelnytskyi",
+          "dept": "Операційна підтримка та інкасація",
+          "url": "https://apply.workable.com/j/00E03B4073"
+        },
+        {
+          "title": "Юрист",
+          "location": "Kyiv",
+          "dept": "Виконавчий менеджмент (PR, HR, аудит, юристи)",
+          "url": "https://apply.workable.com/j/E40AA28D85"
+        },
+        {
+          "title": "Інкасатор",
+          "location": "Poltava",
+          "dept": "Операційна підтримка та інкасація",
+          "url": "https://apply.workable.com/j/B1FB46241D"
+        },
+        {
+          "title": "Інкасатор",
+          "location": "Kyiv",
+          "dept": "Операційна підтримка та інкасація",
+          "url": "https://apply.workable.com/j/B60126DBD4"
+        },
+        {
+          "title": "Інкасатор",
+          "location": "Kyiv",
+          "dept": "Операційна підтримка та інкасація",
+          "url": "https://apply.workable.com/j/BF5EAD4D9B"
+        },
+        {
+          "title": "Інкасатор - водій",
+          "location": "Kyiv",
+          "dept": "Операційна підтримка та інкасація",
+          "url": "https://apply.workable.com/j/A53D16A986"
+        },
+        {
+          "title": "Інкасатор - водій",
+          "location": "Khmelnytskyi",
+          "dept": "Операційна підтримка та інкасація",
+          "url": "https://apply.workable.com/j/27AAF99F6A"
+        },
+        {
+          "title": "Інкасатор - водій",
+          "location": "Chernivtsi",
+          "dept": "Операційна підтримка та інкасація",
+          "url": "https://apply.workable.com/j/8C8C380FD8"
+        },
+        {
+          "title": "Інкасатор-водій",
+          "location": "Odesa",
+          "dept": "Операційна підтримка та інкасація",
+          "url": "https://apply.workable.com/j/958C2DC036"
+        },
+        {
+          "title": "Інкасатор-водій",
+          "location": "Lviv",
+          "dept": "Операційна підтримка та інкасація",
+          "url": "https://apply.workable.com/j/FBE7FE8D67"
+        },
+        {
+          "title": "Інкасатор-водій",
+          "location": "Lutsk",
+          "dept": "Операційна підтримка та інкасація",
+          "url": "https://apply.workable.com/j/24F44E9166"
+        },
+        {
+          "title": "Інкасатор-водій",
+          "location": "Kyiv",
+          "dept": "Операційна підтримка та інкасація",
+          "url": "https://apply.workable.com/j/7005B7325B"
+        },
+        {
+          "title": "Інкасатор-водій",
+          "location": "Mykolaiv",
+          "dept": "Операційна підтримка та інкасація",
+          "url": "https://apply.workable.com/j/457A72B292"
+        }
+      ],
+      "error": null
+    },
+    {
+      "bank": "Banca Transilvania",
+      "country": "RO",
+      "board": "hrscapi",
+      "kind": "bt",
+      "ok": true,
+      "total": 20,
+      "fetched": 20,
+      "roles": [
+        {
+          "title": "OFIȚER BANCAR COLECTARE DEBITE",
+          "location": "CLUJ-NAPOCA",
+          "dept": "Contact center",
+          "seniority": "Junior",
+          "url": "https://cariere.bancatransilvania.ro/jobs/ofi-er-bancar-colectare-debite-4"
+        },
+        {
+          "title": "ANALIST RISC RISC DE PIATA SI LICHIDITATE",
+          "location": "BUCURESTI",
+          "dept": "Risc",
+          "seniority": "Hidden",
+          "url": "https://cariere.bancatransilvania.ro/jobs/analist-risc-risc-de-piata-si-lichiditate-4"
+        },
+        {
+          "title": "SPECIALIST DATA ENGINEER/BI",
+          "location": "BUCURESTI, CLUJ-NAPOCA",
+          "dept": "Altele",
+          "seniority": "Senior",
+          "url": "https://cariere.bancatransilvania.ro/jobs/specialist-data-engineer-bi-2"
+        },
+        {
+          "title": "SPECIALIST SERVICII CLIENTI MIGRATOR",
+          "location": "CLUJ-NAPOCA",
+          "dept": "Front office/retail",
+          "seniority": "Hidden",
+          "url": "https://cariere.bancatransilvania.ro/jobs/specialist-servicii-clienti-migrator-28"
+        },
+        {
+          "title": "MANAGER RELATII CLIENTI PERSOANE FIZICE",
+          "location": "BUCURESTI, TARGU BUJOR, GALATI, ARAD, FAGARAS",
+          "dept": "Front office/retail",
+          "seniority": "Junior, Standard",
+          "url": "https://cariere.bancatransilvania.ro/jobs/manager-relatii-clienti-persoane-fizice-29"
+        },
+        {
+          "title": "Security Operations Center Engineer",
+          "location": "BUCURESTI",
+          "dept": "IT",
+          "seniority": "Senior",
+          "url": "https://cariere.bancatransilvania.ro/jobs/security-operations-center-engineer-2"
+        },
+        {
+          "title": "Analist risc risk analytics",
+          "location": "BUCURESTI",
+          "dept": "Risc",
+          "seniority": "Senior, Standard",
+          "url": "https://cariere.bancatransilvania.ro/jobs/analist-risk-risk-analytics-2"
+        },
+        {
+          "title": "Manager Relații Clienți Mall",
+          "location": "RAMNICU VALCEA",
+          "dept": "Front office/retail",
+          "seniority": "Hidden",
+          "url": "https://cariere.bancatransilvania.ro/jobs/manager-rela-ii-clien-i-mall-6"
+        },
+        {
+          "title": "SPECIALIST DATA ENGINEER",
+          "location": "BUCURESTI",
+          "dept": "Financiar/raportări",
+          "seniority": "Hidden",
+          "url": "https://cariere.bancatransilvania.ro/jobs/specialist-data-engineer-2"
+        },
+        {
+          "title": "Manager relatii clienti conventii",
+          "location": "BACAU",
+          "dept": "Front office/retail",
+          "seniority": "Hidden",
+          "url": "https://cariere.bancatransilvania.ro/jobs/manager-relatii-clienti-conventii-2"
+        },
+        {
+          "title": "Specialist marketing companii",
+          "location": "CLUJ-NAPOCA",
+          "dept": "Marketing și comunicare",
+          "seniority": "Senior, Standard",
+          "url": "https://cariere.bancatransilvania.ro/jobs/specialist-marketing-companii-2"
+        },
+        {
+          "title": "Sef agentie",
+          "location": "HATEG, BORSA",
+          "dept": "Front office/retail",
+          "seniority": "Senior",
+          "url": "https://cariere.bancatransilvania.ro/jobs/sef-agentie-13"
+        },
+        {
+          "title": "SPECIALIST SERVICII CLIENTI",
+          "location": "TARGU BUJOR, BUCURESTI, GALATI",
+          "dept": "Front office/retail",
+          "seniority": "Junior",
+          "url": "https://cariere.bancatransilvania.ro/jobs/specialist-servicii-clienti-54"
+        },
+        {
+          "title": "ANALIST RISC ICAAP SI RWA",
+          "location": "CLUJ-NAPOCA, BUCURESTI",
+          "dept": "Risc",
+          "seniority": "Hidden",
+          "url": "https://cariere.bancatransilvania.ro/jobs/analist-risc-icaap-si-rwa-3"
+        },
+        {
+          "title": "ANALIST RISC MANAGEMENTUL CAPITALULUI, REDRESARE SI REZOLUTIE",
+          "location": "BUCURESTI, CLUJ-NAPOCA",
+          "dept": "Risc",
+          "seniority": "Senior",
+          "url": "https://cariere.bancatransilvania.ro/jobs/analist-risc-managementul-capitalului-redresare-si-rezolutie-3"
+        },
+        {
+          "title": "MANAGER RELATII CLIENTI DpM",
+          "location": "BUCURESTI",
+          "dept": "Corporate",
+          "seniority": "Senior, Standard",
+          "url": "https://cariere.bancatransilvania.ro/jobs/manager-relatii-clienti-dpm-3"
+        },
+        {
+          "title": "RESPONSABIL RELATII CLIENTI",
+          "location": "BUCURESTI",
+          "dept": "Contact center",
+          "seniority": "Junior",
+          "url": "https://cariere.bancatransilvania.ro/jobs/responsabil-relatii-clienti-5"
+        },
+        {
+          "title": "MANAGER RELATII CLIENTI PERSOANE FIZICE MIGRATOR",
+          "location": "BUCURESTI",
+          "dept": "Front office/retail",
+          "seniority": "Junior",
+          "url": "https://cariere.bancatransilvania.ro/jobs/manager-relatii-clienti-persoane-fizice-migrator-8"
+        },
+        {
+          "title": "Manager Relatii Clienti Persoane Fizice - Bucuresti Nord",
+          "location": "BUCURESTI",
+          "dept": "Front office/retail",
+          "seniority": "Hidden",
+          "url": "https://cariere.bancatransilvania.ro/jobs/manager-relatii-clienti-persoane-fizice-bucuresti-nord-3"
+        },
+        {
+          "title": "RESPONSABIL RELATII CLIENTI",
+          "location": "CLUJ-NAPOCA, TARGU MURES",
+          "dept": "Contact center",
+          "seniority": "Junior",
+          "url": "https://cariere.bancatransilvania.ro/jobs/responsabil-relatii-clienti-4"
+        }
+      ],
+      "error": null
+    },
+    {
+      "bank": "Alpha Bank",
+      "country": "GR",
+      "board": "SuccessFactors",
+      "kind": "sf",
+      "ok": true,
+      "total": 47,
+      "fetched": 47,
+      "roles": [
+        {
+          "title": "FinOps Senior Specialist",
+          "url": "https://careers.alpha.gr/job/%CE%A0%CE%95%CE%99%CE%A1%CE%91%CE%99%CE%91%CE%A3-FinOps-Senior-Specialist/1366079855/",
+          "id": "1366079855"
+        },
+        {
+          "title": "Operational Resilience Control Associate",
+          "url": "https://careers.alpha.gr/job/%CE%91%CE%98%CE%97%CE%9D%CE%91-Operational-Resilience-Control-Associate/1366094055/",
+          "id": "1366094055"
+        },
+        {
+          "title": "Customer Service Officer - CSO (Center)-Athens",
+          "url": "https://careers.alpha.gr/job/%CE%9C%CE%91%CE%A1%CE%9F%CE%A5%CE%A3%CE%99-Customer-Service-Officer-CSO-%28Center%29-Athens/1366058355/",
+          "id": "1366058355"
+        },
+        {
+          "title": "CS Performance Monitoring and Business Development Specialist | Data Analytics and Reporting",
+          "url": "https://careers.alpha.gr/job/%CE%A7%CE%9F%CE%9B%CE%91%CE%A1%CE%93%CE%9F%CE%A3-CS-Performance-Monitoring-and-Business-Development-Specialist-Data-Analytics-and-Reporting/1359362455/",
+          "id": "1359362455"
+        },
+        {
+          "title": "Technical Services Associate",
+          "url": "https://careers.alpha.gr/job/%CE%91%CE%98%CE%97%CE%9D%CE%91-Technical-Services-Associate/1362687355/",
+          "id": "1362687355"
+        },
+        {
+          "title": "Individual Value Proposition Senior Specialist (Household)",
+          "url": "https://careers.alpha.gr/job/%CE%91%CE%98%CE%97%CE%9D%CE%91-Individual%C2%A0Value-Proposition-Senior-Specialist-%28Household%29/1362672755/",
+          "id": "1362672755"
+        },
+        {
+          "title": "SB Value Proposition Senior Specialist",
+          "url": "https://careers.alpha.gr/job/%CE%91%CE%98%CE%97%CE%9D%CE%91-SB%C2%A0Value-Proposition-Senior-Specialist/1362673755/",
+          "id": "1362673755"
+        },
+        {
+          "title": "Technical Maturity Specialist (Alpha Real Estate Services)",
+          "url": "https://careers.alpha.gr/job/%CE%91%CE%98%CE%97%CE%9D%CE%91-Technical-Maturity-Specialist-%28Alpha-Real-Estate-Services%29/1346380155/",
+          "id": "1346380155"
+        },
+        {
+          "title": "Affluent Value Proposition Senior Specialist",
+          "url": "https://careers.alpha.gr/job/%CE%91%CE%98%CE%97%CE%9D%CE%91-Affluent-Value-Proposition-Senior-Specialist/1362671755/",
+          "id": "1362671755"
+        },
+        {
+          "title": "Individual Value Proposition Senior Specialist (Youth)",
+          "url": "https://careers.alpha.gr/job/%CE%91%CE%98%CE%97%CE%9D%CE%91-Individual%C2%A0Value-Proposition-Senior-Specialist-%28Youth%29/1362673155/",
+          "id": "1362673155"
+        },
+        {
+          "title": "Technology Strategic Planning Senior Specialist",
+          "url": "https://careers.alpha.gr/job/%CE%A0%CE%95%CE%99%CE%A1%CE%91%CE%99%CE%91%CE%A3-Technology-Strategic-Planning-Senior-Specialist/1365907155/",
+          "id": "1365907155"
+        },
+        {
+          "title": "Non-Financial Risks Control Associate",
+          "url": "https://careers.alpha.gr/job/%CE%91%CE%98%CE%97%CE%9D%CE%91-Non-Financial-Risks-Control-Associate/1365889555/",
+          "id": "1365889555"
+        },
+        {
+          "title": "Senior Project Manager",
+          "url": "https://careers.alpha.gr/job/Senior-Project-Manager/1362358755/",
+          "id": "1362358755"
+        },
+        {
+          "title": "Group Financial Reporting Associate",
+          "url": "https://careers.alpha.gr/job/%CE%91%CE%98%CE%97%CE%9D%CE%91-Group-Financial-Reporting-Associate/1362203655/",
+          "id": "1362203655"
+        },
+        {
+          "title": "Bank Secrecy Officer",
+          "url": "https://careers.alpha.gr/job/%CE%91%CE%98%CE%97%CE%9D%CE%91-Bank-Secrecy-Officer/1365661755/",
+          "id": "1365661755"
+        },
+        {
+          "title": "Accounting Associate",
+          "url": "https://careers.alpha.gr/job/%CE%91%CE%98%CE%97%CE%9D%CE%91-Accounting-Associate/1365607255/",
+          "id": "1365607255"
+        },
+        {
+          "title": "Project Manager",
+          "url": "https://careers.alpha.gr/job/%CE%A7%CE%9F%CE%9B%CE%91%CE%A1%CE%93%CE%9F%CE%A3-Project-Manager/1365553755/",
+          "id": "1365553755"
+        },
+        {
+          "title": "Asset Liability Specialist",
+          "url": "https://careers.alpha.gr/job/%CE%91%CE%98%CE%97%CE%9D%CE%91-Asset-Liability-Specialist/1351167255/",
+          "id": "1351167255"
+        },
+        {
+          "title": "Contract and Performance Management Specialist",
+          "url": "https://careers.alpha.gr/job/%CE%91%CE%98%CE%97%CE%9D%CE%91-Contract-and-Performance-Management-Specialist/1360713055/",
+          "id": "1360713055"
+        },
+        {
+          "title": "IT Account Manager",
+          "url": "https://careers.alpha.gr/job/%CE%A0%CE%95%CE%99%CE%A1%CE%91%CE%99%CE%91%CE%A3-IT-Account-Manager/1361943455/",
+          "id": "1361943455"
+        },
+        {
+          "title": "Facility Management Associate (Alpha Real Estate Services)",
+          "url": "https://careers.alpha.gr/job/%CE%91%CE%98%CE%97%CE%9D%CE%91-Facility-Management-Associate-%28Alpha-Real-Estate-Services%29/1346379255/",
+          "id": "1346379255"
+        },
+        {
+          "title": "Trade Receivables Administration Associate",
+          "url": "https://careers.alpha.gr/job/%CE%91%CE%98%CE%97%CE%9D%CE%91-Trade-Receivables-Administration-Associate/1342215655/",
+          "id": "1342215655"
+        },
+        {
+          "title": "Treasury Sales Senior Specialist",
+          "url": "https://careers.alpha.gr/job/%CE%91%CE%98%CE%97%CE%9D%CE%91-Treasury-Sales-Senior-Specialist/1361635855/",
+          "id": "1361635855"
+        },
+        {
+          "title": "Products & Operations Senior Specialist",
+          "url": "https://careers.alpha.gr/job/%CE%91%CE%98%CE%97%CE%9D%CE%91-Products-&amp;-Operations-Senior-Specialist/1347708355/",
+          "id": "1347708355"
+        },
+        {
+          "title": "Business Continuity Senior Specialist",
+          "url": "https://careers.alpha.gr/job/%CE%A0%CE%95%CE%99%CE%A1%CE%91%CE%99%CE%91%CE%A3-Business-Continuity-Senior-Specialist/1360630255/",
+          "id": "1360630255"
+        },
+        {
+          "title": "Software Architect",
+          "url": "https://careers.alpha.gr/job/%CE%A0%CE%95%CE%99%CE%A1%CE%91%CE%99%CE%91%CE%A3-Software-Architect/1329746455/",
+          "id": "1329746455"
+        },
+        {
+          "title": "Contact Center Telesales Team Leader",
+          "url": "https://careers.alpha.gr/job/%CE%A7%CE%9F%CE%9B%CE%91%CE%A1%CE%93%CE%9F%CE%A3-Contact-Center-Telesales-Team-Leader/1360628955/",
+          "id": "1360628955"
+        },
+        {
+          "title": "Functional Analysis Specialist",
+          "url": "https://careers.alpha.gr/job/%CE%A0%CE%95%CE%99%CE%A1%CE%91%CE%99%CE%91%CE%A3-Functional-Analysis-Specialist/1150142955/",
+          "id": "1150142955"
+        },
+        {
+          "title": "Software Engineer",
+          "url": "https://careers.alpha.gr/job/%CE%A0%CE%95%CE%99%CE%A1%CE%91%CE%99%CE%91%CE%A3-Software-Engineer/1364488055/",
+          "id": "1364488055"
+        },
+        {
+          "title": "CX Business Partner",
+          "url": "https://careers.alpha.gr/job/%CE%A0%CE%95%CE%99%CE%A1%CE%91%CE%99%CE%91%CE%A3-CX-Business-Partner/1363667855/",
+          "id": "1363667855"
+        },
+        {
+          "title": "Customer Service Officer - Branch Network",
+          "url": "https://careers.alpha.gr/job/%CE%91%CE%98%CE%97%CE%9D%CE%91-Customer-Service-Officer-Branch-Network/1164845155/",
+          "id": "1164845155"
+        },
+        {
+          "title": "AI Engineer",
+          "url": "https://careers.alpha.gr/job/%CE%A0%CE%95%CE%99%CE%A1%CE%91%CE%99%CE%91%CE%A3-AI-Engineer/1363365855/",
+          "id": "1363365855"
+        },
+        {
+          "title": "Wholesale Banking - Alpha Talent Acceleration Program",
+          "url": "https://careers.alpha.gr/job/%CE%91%CE%98%CE%97%CE%9D%CE%91-Wholesale-Banking-Alpha-Talent-Acceleration-Program/1162218655/",
+          "id": "1162218655"
+        },
+        {
+          "title": "Capital Instruments and Securitisations Specialist",
+          "url": "https://careers.alpha.gr/job/%CE%91%CE%98%CE%97%CE%9D%CE%91-Capital-Instruments-and-Securitisations-Specialist/1331095855/",
+          "id": "1331095855"
+        },
+        {
+          "title": "RCOE Reporting Integration Specialist",
+          "url": "https://careers.alpha.gr/job/%CE%91%CE%98%CE%97%CE%9D%CE%91-RCOE-Reporting-Integration-Specialist/1343787755/",
+          "id": "1343787755"
+        },
+        {
+          "title": "SBLs Credit Specialist",
+          "url": "https://careers.alpha.gr/job/%CE%91%CE%98%CE%97%CE%9D%CE%91-SBLs%C2%A0Credit-Specialist/1363113855/",
+          "id": "1363113855"
+        },
+        {
+          "title": "Business Center Relationship Manager",
+          "url": "https://careers.alpha.gr/job/%CE%A7%CE%91%CE%9B%CE%91%CE%9D%CE%94%CE%A1%CE%99-Business-Center-Relationship-Manager/1355597055/",
+          "id": "1355597055"
+        },
+        {
+          "title": "Data Governance Project Manager",
+          "url": "https://careers.alpha.gr/job/%CE%A7%CE%9F%CE%9B%CE%91%CE%A1%CE%93%CE%9F%CE%A3-Data-Governance-Project-Manager/1345502255/",
+          "id": "1345502255"
+        },
+        {
+          "title": "Wholesale Trade & Food Enterprises Relationship Manager",
+          "url": "https://careers.alpha.gr/job/%CE%91%CE%98%CE%97%CE%9D%CE%91-Wholesale-Trade-&amp;-Food-Enterprises-Relationship-Manager/1359714955/",
+          "id": "1359714955"
+        },
+        {
+          "title": "Real Estate Investments Senior Specialist",
+          "url": "https://careers.alpha.gr/job/%CE%91%CE%98%CE%97%CE%9D%CE%91-Real-Estate-Investments-Senior-Specialist/1362995155/",
+          "id": "1362995155"
+        },
+        {
+          "title": "Quantitative Credit Risk Specialist",
+          "url": "https://careers.alpha.gr/job/%CE%91%CE%98%CE%97%CE%9D%CE%91-Quantitative-Credit-Risk-Specialist/1363084055/",
+          "id": "1363084055"
+        },
+        {
+          "title": "Regulatory Own Funds Specialist",
+          "url": "https://careers.alpha.gr/job/%CE%91%CE%98%CE%97%CE%9D%CE%91-Regulatory-Own-Funds-Specialist/1359475155/",
+          "id": "1359475155"
+        },
+        {
+          "title": "Business Development Associate (on behalf of ABC Factors S.A.)",
+          "url": "https://careers.alpha.gr/job/%CE%91%CE%98%CE%97%CE%9D%CE%91-Business-Development-Associate-%28on-behalf-of-ABC-Factors-S_A_%29/1359505655/",
+          "id": "1359505655"
+        },
+        {
+          "title": "SB Segment Sales Senior Specialist",
+          "url": "https://careers.alpha.gr/job/%CE%91%CE%98%CE%97%CE%9D%CE%91-SB-Segment-Sales-Senior-Specialist/1362803555/",
+          "id": "1362803555"
+        },
+        {
+          "title": "Technology Strategic Planning and Governance Manager",
+          "url": "https://careers.alpha.gr/job/%CE%A0%CE%95%CE%99%CE%A1%CE%91%CE%99%CE%91%CE%A3-Technology-Strategic-Planning-and-Governance-Manager/1362836255/",
+          "id": "1362836255"
+        },
+        {
+          "title": "Financing Programmes Specialist",
+          "url": "https://careers.alpha.gr/job/%CE%91%CE%98%CE%97%CE%9D%CE%91-Financing-Programmes-Specialist/1362803155/",
+          "id": "1362803155"
+        },
+        {
+          "title": "FinOps Specialist",
+          "url": "https://careers.alpha.gr/job/%CE%A0%CE%95%CE%99%CE%A1%CE%91%CE%99%CE%91%CE%A3-FinOps-Specialist/1330615355/",
+          "id": "1330615355"
+        }
+      ],
+      "error": null
+    },
+    {
+      "bank": "BCR (Erste)",
+      "country": "RO",
+      "board": "Erste",
+      "kind": "sf",
+      "ok": true,
+      "total": 18,
+      "fetched": 18,
+      "roles": [
+        {
+          "title": "Partener Clienti Retail_Sucursala Unirea",
+          "url": "https://erstegroup-careers.com/bcr/job/Bucuresti-Partener-Clienti-Retail_Sucursala-Unirea/1431834533/",
+          "id": "1431834533"
+        },
+        {
+          "title": "Partener Clienti Retail",
+          "url": "https://erstegroup-careers.com/bcr/job/Bihor-Partener-Clienti-Retail/1431837533/",
+          "id": "1431837533"
+        },
+        {
+          "title": "Relationship Manager (Energy and Utilities)",
+          "url": "https://erstegroup-careers.com/bcr/job/Bucuresti-Relationship-Manager-%28Energy-and-Utilities%29/1409188533/",
+          "id": "1409188533"
+        },
+        {
+          "title": "Senior Corporate Relationship Manager (Bihor)",
+          "url": "https://erstegroup-careers.com/bcr/job/Bihor-Senior-Corporate-Relationship-Manager-%28Bihor%29/1430074933/",
+          "id": "1430074933"
+        },
+        {
+          "title": "Director Zonal Retail",
+          "url": "https://erstegroup-careers.com/bcr/job/Constanta-Director-Zonal-Retail/1428822633/",
+          "id": "1428822633"
+        },
+        {
+          "title": "Loan Capital Market Expert (Syndication Unit)",
+          "url": "https://erstegroup-careers.com/bcr/job/Bucuresti-Loan-Capital-Market-Expert-%28Syndication-Unit%29/1407428033/",
+          "id": "1407428033"
+        },
+        {
+          "title": "Senior Specialized Financing Manage",
+          "url": "https://erstegroup-careers.com/bcr/job/Bucuresti-Senior-Specialized-Financing-Manage/1405841433/",
+          "id": "1405841433"
+        },
+        {
+          "title": "Senior Corporate Relationship Manager (Satu Mare)",
+          "url": "https://erstegroup-careers.com/bcr/job/Satu-Mare-Senior-Corporate-Relationship-Manager-%28Satu-Mare%29/1427938433/",
+          "id": "1427938433"
+        },
+        {
+          "title": "Specialist Trezorerie",
+          "url": "https://erstegroup-careers.com/bcr/job/Bucuresti-Specialist-Trezorerie/1393351933/",
+          "id": "1393351933"
+        },
+        {
+          "title": "Corporate Relationship Manager",
+          "url": "https://erstegroup-careers.com/bcr/job/Cluj-Corporate-Relationship-Manager/1405441233/",
+          "id": "1405441233"
+        },
+        {
+          "title": "Corporate Relationship Manager (Sibiu)",
+          "url": "https://erstegroup-careers.com/bcr/job/Sibiu-Corporate-Relationship-Manager-%28Sibiu%29/1415120433/",
+          "id": "1415120433"
+        },
+        {
+          "title": "Risk Manager",
+          "url": "https://erstegroup-careers.com/bcr/job/Bucuresti-Risk-Manager/1425558833/",
+          "id": "1425558833"
+        },
+        {
+          "title": "Manager Segment PFA Senior",
+          "url": "https://erstegroup-careers.com/bcr/job/Bucuresti-Manager-Segment-PFA-Senior/1425315933/",
+          "id": "1425315933"
+        },
+        {
+          "title": "Senior Corporate Relationship Manager",
+          "url": "https://erstegroup-careers.com/bcr/job/Brasov-Senior-Corporate-Relationship-Manager/1413745333/",
+          "id": "1413745333"
+        },
+        {
+          "title": "Senior Corporate Relationship Manager (Prahova)",
+          "url": "https://erstegroup-careers.com/bcr/job/Prahova-Senior-Corporate-Relationship-Manager-%28Prahova%29/1424310833/",
+          "id": "1424310833"
+        },
+        {
+          "title": "Partener Clienti Retail - Zona Mosilor",
+          "url": "https://erstegroup-careers.com/bcr/job/Bucuresti-Partener-Clienti-Retail-Zona-Mosilor/1424000333/",
+          "id": "1424000333"
+        },
+        {
+          "title": "Portfolio Manager",
+          "url": "https://erstegroup-careers.com/bcr/job/Bucuresti-Portfolio-Manager/1423447433/",
+          "id": "1423447433"
+        },
+        {
+          "title": "Manager Relatii Clienti Micro - Zona Mosilor",
+          "url": "https://erstegroup-careers.com/bcr/job/Bucuresti-Manager-Relatii-Clienti-Micro-Zona-Mosilor/1408639933/",
+          "id": "1408639933"
+        }
+      ],
+      "error": null
+    },
+    {
+      "bank": "OTP Bank Hungary",
+      "country": "HU",
+      "board": "SuccessFactors",
+      "kind": "sf",
+      "ok": false,
+      "total": null,
+      "fetched": 0,
+      "roles": [],
+      "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>",
+      "note": "first page only (rest loads via AJAX) - 'total' is the true count, 'roles' is a sample"
+    },
+    {
+      "bank": "Raiffeisen banka",
+      "country": "RS",
+      "board": "infostud",
+      "kind": "infostud",
+      "ok": true,
+      "total": 10,
+      "fetched": 10,
+      "roles": [
+        {
+          "title": "Rukovodilac Odeljenja Za Upravljanje Akceptantskom Mrezom I Mobilnim Placanjima Head Of Acquiring And Mobile Payment Department",
+          "url": "https://poslovi.infostud.com/posao/rukovodilac-odeljenja-za-upravljanje-akceptantskom-mrezom-i-mobilnim-placanjima-head-of-acquiring-and-mobile-payment-department/raiffeisen-banka-ad/752608?esource=search&amp;emedium=1&amp;trigger_type=first_group&amp;trigger_page_no=1&amp;trigger_list_position=1&amp;trigger_source=search_page&amp;trigger_medium=search_result&amp;item_index=0&amp;elist=1",
+          "deadline": "15.09.2026"
+        },
+        {
+          "title": "Saradnik Za Pracenje Ukupnih Prihoda",
+          "url": "https://poslovi.infostud.com/posao/saradnik-za-pracenje-ukupnih-prihoda/raiffeisen-banka-ad/751502?esource=search&amp;emedium=1&amp;trigger_type=first_group&amp;trigger_page_no=1&amp;trigger_list_position=2&amp;trigger_source=search_page&amp;trigger_medium=search_result&amp;item_index=1&amp;elist=1",
+          "deadline": "09.09.2026"
+        },
+        {
+          "title": "Arhitekta Project Manager",
+          "url": "https://poslovi.infostud.com/posao/arhitekta-project-manager/raiffeisen-banka-ad/752375?esource=search&amp;emedium=1&amp;trigger_type=first_group&amp;trigger_page_no=1&amp;trigger_list_position=3&amp;trigger_source=search_page&amp;trigger_medium=search_result&amp;item_index=2&amp;elist=1",
+          "deadline": "12.09.2026"
+        },
+        {
+          "title": "Saradnik Za Upravljanje Kreditnim Rizikom U Poslovima Sa Malim Preduzecima",
+          "url": "https://poslovi.infostud.com/posao/saradnik-za-upravljanje-kreditnim-rizikom-u-poslovima-sa-malim-preduzecima/raiffeisen-banka-ad/752107?esource=search&amp;emedium=1&amp;trigger_type=first_group&amp;trigger_page_no=1&amp;trigger_list_position=4&amp;trigger_source=search_page&amp;trigger_medium=search_result&amp;item_index=3&amp;elist=1",
+          "deadline": "11.09.2026"
+        },
+        {
+          "title": "Blagajnik Ca",
+          "url": "https://poslovi.infostud.com/posao/blagajnik-ca/raiffeisen-banka-ad/752104?esource=search&amp;emedium=1&amp;trigger_type=first_group&amp;trigger_page_no=1&amp;trigger_list_position=5&amp;trigger_source=search_page&amp;trigger_medium=search_result&amp;item_index=4&amp;elist=1",
+          "deadline": "11.09.2026"
+        },
+        {
+          "title": "Credit Risk Data Scientist",
+          "url": "https://poslovi.infostud.com/posao/credit-risk-data-scientist/raiffeisen-banka-ad/751993?esource=search&amp;emedium=1&amp;trigger_type=first_group&amp;trigger_page_no=1&amp;trigger_list_position=6&amp;trigger_source=search_page&amp;trigger_medium=search_result&amp;item_index=5&amp;elist=1",
+          "deadline": "11.09.2026"
+        },
+        {
+          "title": "Saradnik Za Administraciju Kredita Za Stanovnistvo",
+          "url": "https://poslovi.infostud.com/posao/saradnik-za-administraciju-kredita-za-stanovnistvo/raiffeisen-banka-ad/751963?esource=search&amp;emedium=1&amp;trigger_type=first_group&amp;trigger_page_no=1&amp;trigger_list_position=7&amp;trigger_source=search_page&amp;trigger_medium=search_result&amp;item_index=6&amp;elist=1",
+          "deadline": "10.09.2026"
+        },
+        {
+          "title": "Posrednik Za Kreditiranje U Maloprodaji",
+          "url": "https://poslovi.infostud.com/posao/posrednik-za-kreditiranje-u-maloprodaji/raiffeisen-banka-ad/751553?esource=search&amp;emedium=1&amp;trigger_type=first_group&amp;trigger_page_no=1&amp;trigger_list_position=8&amp;trigger_source=search_page&amp;trigger_medium=search_result&amp;item_index=7&amp;elist=1",
+          "deadline": "09.09.2026"
+        },
+        {
+          "title": "Savetnik Ca Za Rad Sa Stanovnistvom",
+          "url": "https://poslovi.infostud.com/posao/savetnik-ca-za-rad-sa-stanovnistvom/raiffeisen-banka-ad/751512?esource=search&amp;emedium=1&amp;trigger_type=first_group&amp;trigger_page_no=1&amp;trigger_list_position=9&amp;trigger_source=search_page&amp;trigger_medium=search_result&amp;item_index=8&amp;elist=1",
+          "deadline": "09.09.2026"
+        },
+        {
+          "title": "Data Engineer",
+          "url": "https://poslovi.infostud.com/posao/data-engineer/raiffeisen-banka-ad/750998?esource=search&amp;emedium=1&amp;trigger_type=first_group&amp;trigger_page_no=1&amp;trigger_list_position=12&amp;trigger_source=search_page&amp;trigger_medium=search_result&amp;item_index=11&amp;elist=1",
+          "deadline": "05.09.2026"
+        }
+      ],
+      "error": null
+    },
+    {
+      "bank": "OTP banka Srbija",
+      "country": "RS",
+      "board": "infostud",
+      "kind": "infostud",
+      "ok": true,
+      "total": 3,
+      "fetched": 3,
+      "roles": [
+        {
+          "title": "Saradnik Za Administraciju Kredita Za Stanovnistvo",
+          "url": "https://poslovi.infostud.com/posao/saradnik-za-administraciju-kredita-za-stanovnistvo/raiffeisen-banka-ad/751963?esource=search&amp;emedium=1&amp;trigger_type=first_group&amp;trigger_page_no=1&amp;trigger_list_position=1&amp;trigger_source=search_page&amp;trigger_medium=search_result&amp;item_index=0&amp;elist=1",
+          "deadline": "10.09.2026"
+        },
+        {
+          "title": "Analiticar Kupaca Fakturista",
+          "url": "https://poslovi.infostud.com/posao/analiticar-kupaca-fakturista/monicom-agrar-doo/752688?esource=search&amp;emedium=1&amp;trigger_type=first_group&amp;trigger_page_no=1&amp;trigger_list_position=4&amp;trigger_source=search_page&amp;trigger_medium=search_result&amp;item_index=3&amp;elist=1",
+          "deadline": "15.09.2026"
+        },
+        {
+          "title": "Administrator U Ugostiteljstvu",
+          "url": "https://poslovi.infostud.com/posao/administrator-u-ugostiteljstvu/kod-deda-stavre-pecenjara/750761?esource=search&amp;emedium=1&amp;trigger_type=first_group&amp;trigger_page_no=1&amp;trigger_list_position=6&amp;trigger_source=search_page&amp;trigger_medium=search_result&amp;item_index=5&amp;elist=1",
+          "deadline": "04.09.2026"
+        }
+      ],
+      "error": null
+    },
+    {
+      "bank": "NLB Komercijalna banka",
+      "country": "RS",
+      "board": "infostud",
+      "kind": "infostud",
+      "ok": true,
+      "total": 0,
+      "fetched": 0,
+      "roles": [],
+      "error": null
+    },
+    {
+      "bank": "Banca Intesa Beograd",
+      "country": "RS",
+      "board": "infostud",
+      "kind": "infostud",
+      "ok": true,
+      "total": 0,
+      "fetched": 0,
+      "roles": [],
+      "error": null
+    },
+    {
+      "bank": "AikBank",
+      "country": "RS",
+      "board": "infostud",
+      "kind": "infostud",
+      "ok": true,
+      "total": 0,
+      "fetched": 0,
+      "roles": [],
+      "error": null
+    },
+    {
+      "bank": "OTP banka Slovenija",
+      "country": "SI",
+      "board": "FledgeHR",
+      "kind": "fledge",
+      "ok": true,
+      "total": 5,
+      "fetched": 5,
+      "roles": [
+        {
+          "title": null,
+          "id": "4190",
+          "url": "https://otpbanka.fledgehr.com/jobs/4190"
+        },
+        {
+          "title": null,
+          "id": "4256",
+          "url": "https://otpbanka.fledgehr.com/jobs/4256"
+        },
+        {
+          "title": null,
+          "id": "4258",
+          "url": "https://otpbanka.fledgehr.com/jobs/4258"
+        },
+        {
+          "title": null,
+          "id": "4274",
+          "url": "https://otpbanka.fledgehr.com/jobs/4274"
+        },
+        {
+          "title": null,
+          "id": "4267",
+          "url": "https://otpbanka.fledgehr.com/jobs/4267"
+        }
+      ],
+      "error": null
+    },
+    {
+      "bank": "DSK Bank",
+      "country": "BG",
+      "board": "dev.bg",
+      "kind": "devbg",
+      "ok": true,
+      "total": 36,
+      "fetched": 0,
+      "roles": [],
+      "error": null,
+      "note": "role titles are JS-rendered on dev.bg; 'total' is the reliable server-side count - open the page or dev.bg/company/dsk-bank for titles"
+    }
+  ]
+}

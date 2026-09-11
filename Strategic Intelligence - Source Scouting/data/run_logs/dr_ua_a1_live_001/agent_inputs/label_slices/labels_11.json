@@ -1,0 +1,23 @@
+[
+{"candidate_id":"dr_ua_a1_live_001__c_298","role":"keep","decision":"approve","priority":"critical","rationale":"IFC disclosure portal is a standing, searchable register of bank-level Ukrainian transactions with pre-approval SII publication."},
+{"candidate_id":"dr_ua_a1_live_001__c_299","role":"keep","decision":"approve","priority":"critical","rationale":"EBRD PSD search is the canonical filterable register of EBRD financial-institution projects in Ukraine."},
+{"candidate_id":"dr_ua_a1_live_001__c_300","role":"keep","decision":"approve","priority":"high","rationale":"EBRD newsroom is a continuously producing feed naming Ukrainian bank counterparties and volumes."},
+{"candidate_id":"dr_ua_a1_live_001__c_301","role":"keep","decision":"approve","priority":"critical","rationale":"IMF Ukraine country page yields recurring staff reports with systematic banking soundness data; failed verification is soft only."},
+{"candidate_id":"dr_ua_a1_live_001__c_302","role":"keep","decision":"approve","priority":"medium","rationale":"IMF eLibrary is a standalone structured database giving parse-friendly versions of the same Ukraine reports."},
+{"candidate_id":"dr_ua_a1_live_001__c_303","role":"evidence_not_source","decision":"approve","priority":"medium","rationale":"Single dated MEFP PDF on bank.gov.ua — valuable local-language evidence, not a recurring feed."},
+{"candidate_id":"dr_ua_a1_live_001__c_304","role":"keep","decision":"defer","priority":"high","rationale":"MoF per-IFI portfolio pages are an authoritative Ukrainian-side roster but URL check failed; re-verify liveness."},
+{"candidate_id":"dr_ua_a1_live_001__c_305","role":"keep","decision":"approve","priority":"high","rationale":"World Bank projects portal is a queryable operation register covering Ukraine financial-sector DPLs."},
+{"candidate_id":"dr_ua_a1_live_001__c_306","role":"keep","decision":"approve","priority":"high","rationale":"Documents & Reports is a standalone full-text archive of WB Ukraine banking and payments analytics."},
+{"candidate_id":"dr_ua_a1_live_001__c_307","role":"fold_into_parent","decision":"approve","priority":"low","rationale":"Static brief page under worldbank.org already covered by the projects/documents parents; useful context only."},
+{"candidate_id":"dr_ua_a1_live_001__c_308","role":"keep","decision":"approve","priority":"high","rationale":"MIGA Ukraine response hub keeps issuing guarantee briefs naming banks, amounts and covered risks; no sibling coverage."},
+{"candidate_id":"dr_ua_a1_live_001__c_309","role":"keep","decision":"approve","priority":"high","rationale":"EIB press/project register continuously discloses EU4Business guarantee deals with named Ukrainian banks."},
+{"candidate_id":"dr_ua_a1_live_001__c_310","role":"keep","decision":"approve","priority":"medium","rationale":"DFC press release feed carries statutorily pre-disclosed Ukrainian financial-sector commitments."},
+{"candidate_id":"dr_ua_a1_live_001__c_311","role":"keep","decision":"approve","priority":"high","rationale":"Early Warning System is a live aggregator preserving revised/retired IFI disclosures in uniform structure."},
+{"candidate_id":"dr_ua_a1_live_001__c_312","role":"keep","decision":"approve","priority":"high","rationale":"Donor Coordination Platform publishes recurring compendia mapping IFI/DFI instruments available to Ukrainian banks."},
+{"candidate_id":"dr_ua_a1_live_001__c_313","role":"pointer_once","decision":"defer","priority":"low","rationale":"OpenAid register is a lead-mining crosswalk of project names; reachability unknown (http, failed check)."},
+{"candidate_id":"dr_ua_a1_live_001__c_314","role":"fold_into_parent","decision":"approve","priority":"medium","rationale":"MDA fund page is an ebrd.com section covered by PSD and news monitoring; annual reports still useful evidence."},
+{"candidate_id":"dr_ua_a1_live_001__c_315","role":"keep","decision":"approve","priority":"high","rationale":"Standalone programme site listing participating Ukrainian partner banks and Ukrainian-language terms; distinct domain."},
+{"candidate_id":"dr_ua_a1_live_001__c_316","role":"fold_into_parent","decision":"approve","priority":"low","rationale":"IFC Ukraine country page is a section of ifc.org already monitored via the disclosure portal."},
+{"candidate_id":"dr_ua_a1_live_001__c_317","role":"fold_into_parent","decision":"approve","priority":"medium","rationale":"Deep sub-page of Ukreximbank's site; monitor the bank's IR/disclosure parent rather than this one page."},
+{"candidate_id":"dr_ua_a1_live_001__c_318","role":"keep","decision":"defer","priority":"low","rationale":"kmu.gov.ua homepage is a broad government press feed with low signal density for banking/payments; revisit with filtered path."}
+]

@@ -1,0 +1,40 @@
+==============================================================================
+COVERAGE MAP   (clearance: internal)
+==============================================================================
+2772 facts from 1084 documents across 1450 entities; 1263 facts undated
+
+BY PLACE:
+  GR          1455 facts   706 docs   335 actors   newest: 2028
+  US           239 facts   113 docs   112 actors   newest: 2027-03
+  EU           162 facts   116 docs    39 actors   newest: 2027-10-11
+  GLOBAL       159 facts    87 docs    48 actors   newest: 2026-07-17
+  GB           132 facts    68 docs    76 actors   newest: 2027-10-25
+  FR            93 facts    38 docs    17 actors   newest: 2027-01
+  IT            60 facts    45 docs    18 actors   newest: 2027
+  UNSPECIFIED    50 facts    29 docs    25 actors   newest: 2026-07-17
+  CY            40 facts    23 docs    24 actors   newest: 2026-07-15
+  NL            31 facts    23 docs    15 actors   newest: 2026-07-16
+  DE            28 facts    20 docs    19 actors   newest: 2026-07-17
+  CN            28 facts    16 docs     7 actors   newest: 2026-03-19
+
+READING: 1084 documents read, 0 yielded no fact (documents we READ that produced nothing — read, not missing)
+SIGNALS FILTERED OUT: {'stale/completed past event (older than horizon)': 48}
+
+THIN — market actors we know of but know little about (<= 3 facts): 353
+  Bank of Valletta                               bank (1 facts)
+  Boston Firefighters Credit Union               bank (1 facts)
+  Texas Bank                                     bank (1 facts)
+  Rillet                                         fintech (1 facts)
+  Compliance.ai                                  fintech (1 facts)
+  Iron                                           fintech (1 facts)
+  First Hawaiian                                 bank (1 facts)
+  TriCo                                          bank (1 facts)
+  Axos                                           bank (1 facts)
+  First Bank                                     bank (1 facts)
+  Carolina Bank & Trust                          bank (1 facts)
+  Texas Capital                                  bank (1 facts)
+  Truist                                         bank (1 facts)
+  Quintet Private Bank                           bank (1 facts)
+  Spuerkeess                                     bank (1 facts)
+
+NOTE: a gap here means we have NOT COLLECTED it — never read it as 'nothing is happening'.

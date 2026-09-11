@@ -1,0 +1,29 @@
+{
+ "agentNo": 6,
+ "agentLabel": "Vendors & Competitors",
+ "unitNoun": "competitor",
+ "tableKind": "signals",
+ "findingsDir": "/Users/mangian/Downloads/BANKING/findings/06-vendors",
+ "runDate": "2026-07-24",
+ "prevSummary": "",
+ "units": [
+  {
+   "slug": "euronet",
+   "name": "Euronet / epay",
+   "focus": "IAD estate growth (Greece Piraeus/CrediaBank), ATM outsourcing, acquiring",
+   "langs": "English+local"
+  },
+  {
+   "slug": "mellon",
+   "name": "Mellon Group",
+   "focus": "DIRECT competitor — NBG 700-ATM win (Hyosung/KAL), footprint ATM-services deals | READ intel-cache/competitor_news.json FIRST (pre-fetched Mellon newsroom posts).",
+   "langs": "Greek+local"
+  },
+  {
+   "slug": "tail-greece-cyprus",
+   "name": "Long tail & NEW competitors — Greece + Cyprus",
+   "focus": "LONG-TAIL COMPETITORS + NEW-competitor DISCOVERY in Greece + Cyprus. Do NOT re-research the global names (NCR Atleos, Diebold, Glory, Worldline, Euronet, Mellon, Payten/Asseco, Brink's, Hyosung/KAL — they have their own units). Sweep LOCAL-LANGUAGE press, app stores (soft-POS), bank vendor/case-study pages and THIS WEEK's tender winners for the long tail across every Printec line: POS/acquiring/soft-POS (PSPs, ISOs, bank in-house acquiring), ATM-service & independent ATM operators, CIT/cash-logistics, RegTech/onboarding/AML/fraud (EXCLUDE Printec partners Namirial & IMTF), self-service/kiosk, SIs/core-banking. For EACH player tag tier (global|regional|local-peer) in the signal and set is_new=true if it is NOT already in references/competitors.json. Err toward surfacing small/local players — threat is independent of size. MUST NOT return empty. | cross-check intel-cache/competitor_news.json + ted_notices winners for new/long-tail competitors.",
+   "langs": "Greek"
+  }
+ ]
+}

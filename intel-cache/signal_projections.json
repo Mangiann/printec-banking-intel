@@ -1,0 +1,103 @@
+{
+ "week": "2026-09-07",
+ "written_by": "analyst pass (manual, first tranche) — to be taken over by the orchestrator",
+ "note": "The signals projection line. Signals carry no numeric field, so this line CANNOT be computed: each entry is a reasoned projection, written the same way the weekly outlooks are. Every entry states which figures are cited anchors and which are judgement, and lists the signal keys it rests on; project_lines.py drops any entry with no cite_signals. A row absent from this file gets no signals line, and the dashboard says so.",
+ "projections": [
+  {
+   "country": "Albania",
+   "metric": "POS terminals",
+   "confidence": "High",
+   "direction": "growth, decelerating sharply",
+   "mechanism": "Two growth drivers end on the same date. The Law on Tax Procedures, as amended at end-2025, requires accommodation businesses, transport firms and public enterprises to have a terminal from end-May 2026. Every other business must have one by 31/12/2026. The POSi programme offers a free terminal and 0% commission for twelve months. That offer runs until 31/12/2026, or until the terminals run out. The terminal estate, meaning the installed base of machines, is therefore being built by a legal requirement plus a subsidy, and both end at the same time.",
+   "anchors": [
+    "Bank of Albania terminal series: 38,662 terminals at end-Q2-2026 (38,615 EFTPOS card terminals and 47 cash-advance terminals), up from 31,263 at end-2025 and 24,481 at end-2024. That is roughly 10,700 terminals added in twelve months",
+    "The legal deadline is 31/12/2026. The POSi free-terminal and 0%-commission offer is valid to 31/12/2026",
+    "Five confirmed POSi acquirers, meaning banks that process card payments: Raiffeisen, Union Bank, BKT, Credins, OTP Albania"
+   ],
+   "judgement": "Most of the businesses required to take a terminal will have done so by end-2026. From 2027 the estate grows only through the remaining sign-ups and replacement machines, not through legal pressure. Growth therefore slows rather than continuing at the same pace. The 2027 and 2028 values are the analyst's estimates, not a cited figure.",
+   "projection": [
+    {
+     "year": 2027,
+     "value": 42000
+    },
+    {
+     "year": 2028,
+     "value": 43700
+    }
+   ],
+   "cite_signals": [
+    "albania-pos-acceptance-mandate-deposit-atm-growth",
+    "albania-acquiring-economics-reset-interchange-caps-plus-a-new-payment-systems-la"
+   ],
+   "contrast": "The statistical line is fitted to the period of forced installation and keeps growing at +26.3%/yr beyond it. It reaches 51,223 by 2028, about 17% above this reading."
+  },
+  {
+   "country": "Croatia",
+   "metric": "ATMs",
+   "confidence": "Medium",
+   "direction": "reversal — the decline has already stopped",
+   "mechanism": "The central bank's infrastructure tables contradict the fitted decline. The growth is seasonal and made up of basic machines, so not all of it will last. Separately, from 01/01/2027 banks must offer free withdrawals and free deposits. That requires deposit capability on ATM fleets that mostly lack it. The machine count is therefore likely to hold up rather than shrink.",
+   "anchors": [
+    "Croatian National Bank infrastructure tables published 25/08/2026: installed ATMs rose from 3,787 at 31/01/2026 to 4,633 at 30/06/2026. That is +846 machines, or +22.3%, in five months",
+    "Seven coastal counties added +859 machines, more than the whole national increase. The City of Zagreb fell from 753 to 744, and every continental (inland) county was flat or down",
+    "Almost all the growth is in contact-only machines, up 809 to 2,502. The number of contactless-capable machines barely moved",
+    "HNB cash-access registry downloaded 27/08/2026: 6,852 records, with 3,841 cash-out-only (withdrawal-only) machines against 901 cash-in-and-out machines. Zagrebačka banka has 562 cash-out-only machines against 137 that can take deposits (19.6%)"
+   ],
+   "judgement": "Third-party operators install contact-only machines along the coast before the summer season, and some are removed afterwards. Contact-only means the card must be inserted, with no tap option. The year-end 2026 fleet is set above the January level, but well below the June peak. It is then held roughly flat by the obligations that start on 01/01/2027. The three values are the analyst's estimates.",
+   "projection": [
+    {
+     "year": 2026,
+     "value": 4100
+    },
+    {
+     "year": 2027,
+     "value": 4150
+    },
+    {
+     "year": 2028,
+     "value": 4180
+    }
+   ],
+   "cite_signals": [
+    "croatia-the-22-h1-2026-atm-build-out-is-coastal-low-specification-and-third-part",
+    "croatian-banks-measurable-per-bank-atm-deposit-gap-now-public-from-the-central-b",
+    "croatia-national-shared-atm-network-hub-ministry-of-finance-hnb"
+   ],
+   "contrast": "The statistical line is fitted on ECB annual data ending 2025. It projects a continued -3.0%/yr fall to 3,432 by 2028. The central bank's own 2026 tables have already contradicted that fall. This is the clearest case in the build where the fitted line is out of date rather than wrong."
+  },
+  {
+   "country": "Greece",
+   "metric": "ATMs",
+   "confidence": "Medium",
+   "direction": "modest growth, capped",
+   "mechanism": "Independent deployers installed many off-site ATMs, meaning machines outside bank branches, and that caused the jump in the data. This growth is now limited by a legal cap on the fees third-party ATMs can charge. An ageing public-sector ATM estate adds a known extra amount. Growth continues, but at a much lower rate than the structural pattern reports.",
+   "anchors": [
+    "ECB series: 6,167 ATMs at end-2024, the last audited annual figure",
+    "The Cashflex public ATM locator API, pulled 27/08/2026, returns exactly 480 sites. The master row carries about 850 former Piraeus off-site ATMs",
+    "Greek law caps the withdrawal fees on third-party ATMs, which reduces the profits of independent deployers",
+    "ELTA (Hellenic Post) has a 117-ATM estate that sits inside a 2026-2030 development plan"
+   ],
+   "judgement": "Independent deployers keep adding machines, but at a much slower rate under the fee cap. The ELTA estate is a known but small addition. The three values are the analyst's estimates. Only the 2024 base and the counts above come from cited sources.",
+   "projection": [
+    {
+     "year": 2025,
+     "value": 6230
+    },
+    {
+     "year": 2026,
+     "value": 6300
+    },
+    {
+     "year": 2027,
+     "value": 6350
+    }
+   ],
+   "cite_signals": [
+    "piraeus-cashflex-printec-owned-off-site-atm-fleet",
+    "greece-offsite-atm-deployment-competitive-lock-up",
+    "elta-hellenic-post-117-atm-estate-2026-2030-development-plan"
+   ],
+   "contrast": "This lands close to the statistical line (+88 terminals/yr) and far below the patterns line. The patterns line carries the observed +15.3% growth and reaches 7,947 by 2027. This reading and the statistical line agree, while the patterns line does not, which makes this reading more reliable."
+  }
+ ]
+}

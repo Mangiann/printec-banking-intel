@@ -1,0 +1,256 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://printec.group/schemas/strategic-intelligence-banking-payments/source_registry.schema.json",
+  "title": "Source",
+  "description": "A Source is an authoritative Source Registry record: an approved, monitored or monitorable intelligence source. It is the promotion target for approved SourceCandidate records (SourceCandidate.promotion.promoted_source_id points to this record's source_id, and provenance.promoted_from_candidate_ids points back). A Source is NOT a SourceCandidate, and it is NOT a Raw Document, Parsed Document, Evidence, Claim, Signal, BankNeed, Opportunity, Wiki, Graph, Retrieval, or Dashboard. It defines collection method, refresh cadence, expected update pattern, access/legal status, and collection_allowed, and it STORES monitoring state (last_checked_at, next_check_at, last_successful_ingestion_at, failure_count) - but it must NOT perform acquisition and must NOT decide that nothing changed. Collection/check EXECUTION belongs to future acquisition connectors: monitoring_state is connector/scheduler-owned and deterministic; the promotion workflow only initializes it; LLMs must never update it. The registry contains no change-detection state (no content hash, no last_change_at, no 'unchanged' flag) - that lives in acquisition logs/documents.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "source_id",
+    "provenance",
+    "created_at",
+    "updated_at",
+    "name",
+    "url_or_endpoint",
+    "canonical_url",
+    "domain",
+    "source_class",
+    "source_subtype",
+    "country",
+    "global_scope",
+    "sector",
+    "workstreams",
+    "topics",
+    "primary_language",
+    "credibility_score",
+    "usefulness_score",
+    "priority",
+    "reason_to_track",
+    "collection_method",
+    "refresh_cadence",
+    "collection_allowed",
+    "access_status",
+    "legal_status",
+    "redistribution_allowed",
+    "monitoring_state",
+    "review_status",
+    "active_status",
+    "record_owner"
+  ],
+  "properties": {
+    "source_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Stable unique identifier for this Source Registry record (promotion target; SourceCandidate.promotion.promoted_source_id points here)."
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "How this record originated. Referential integrity of candidate<->source links is the promotion workflow's responsibility, not schema-enforceable.",
+      "required": [
+        "origin",
+        "promoted_from_candidate_ids",
+        "promoted_by",
+        "promoted_at",
+        "origin_discovery_run_id"
+      ],
+      "properties": {
+        "origin": {
+          "type": "string",
+          "enum": ["promoted_from_candidate", "manual_seed", "imported"],
+          "description": "How the record entered the registry. 'promoted_from_candidate' = via the controlled promotion workflow (requires promoted_from_candidate_ids, enforced below); 'manual_seed' = seed-registry entry (architecture section 10 one-off/manual exception); 'imported' = bulk import."
+        },
+        "promoted_from_candidate_ids": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "candidate_ids of the SourceCandidate(s) that promoted/merged into this source. Non-empty when origin is 'promoted_from_candidate' (enforced below). An array to support candidate merges (SourceCandidate.promotion.promotion_status 'merged')."
+        },
+        "promoted_by": { "type": ["string", "null"], "description": "Who ran the promotion; null for non-promoted origins." },
+        "promoted_at": { "type": ["string", "null"], "format": "date-time", "description": "When promoted (RFC 3339 / ISO 8601 date-time); null for non-promoted origins." },
+        "origin_discovery_run_id": { "type": ["string", "null"], "description": "discovery_run_id that originally surfaced this source; null if not applicable." }
+      }
+    },
+    "created_at": { "type": "string", "format": "date-time", "description": "When the registry record was created (RFC 3339 / ISO 8601 date-time)." },
+    "updated_at": { "type": "string", "format": "date-time", "description": "When the registry record was last updated (RFC 3339 / ISO 8601 date-time)." },
+    "name": { "type": "string", "minLength": 1, "description": "Human-readable name of the source." },
+    "url_or_endpoint": { "type": "string", "format": "uri", "description": "Primary URL or API endpoint of the source." },
+    "canonical_url": { "type": "string", "format": "uri", "description": "Normalized/canonical URL used for deduplication." },
+    "domain": { "type": "string", "minLength": 1, "description": "Registrable domain or host, e.g. 'bankofgreece.gr'." },
+    "source_class": {
+      "type": "string",
+      "enum": ["direct", "indirect", "pointer"],
+      "description": "Source class. Strict 3-value set (matching SourceCandidate) - a registered source has a known class; the extended 'unknown'/'not_applicable' values used by NegativeFinding/CoverageGap do not apply here."
+    },
+    "source_subtype": { "type": "string", "minLength": 1, "description": "Finer classification within source_class, aligned with SourceCandidate.source_subtype (e.g. 'procurement_portal', 'central_bank', 'bank_register')." },
+    "country": {
+      "type": "string",
+      "pattern": "^[A-Z]{2}$",
+      "description": "ISO 3166-1 alpha-2 country code (e.g. 'GR'). Use the sentinel 'ZZ' when global_scope is true (a global/multi-country source not tied to one country). Kept required for indexing."
+    },
+    "country_name": { "type": "string", "description": "Optional display name of the country, e.g. 'Greece'." },
+    "region": { "type": "string", "description": "Optional sub-national region or area." },
+    "global_scope": { "type": "boolean", "description": "True when the source is global/multi-country and not tied to a single country. When true, country should be the sentinel 'ZZ'." },
+    "sector": { "type": "string", "enum": ["banking", "payments", "both"], "description": "Which side of Printec's market the source serves." },
+    "workstreams": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "enum": ["A1", "A2", "A3", "A4", "A5", "A6", "A8", "A9"] },
+      "description": "Workstream codes this source serves (architecture section 16; A7 intentionally not defined). PLURAL by deliberate divergence from SourceCandidate.workstream (single): a monitored source is long-lived and routinely serves multiple workstreams."
+    },
+    "topics": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 },
+      "description": "Non-empty list of topics the source covers."
+    },
+    "primary_language": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9-]*$",
+      "description": "The source's primary language as a BCP-47-like tag where possible, e.g. 'el', 'en'. Lenient shape check, not full BCP-47 validation."
+    },
+    "related_entities": { "type": "array", "items": { "type": "string" }, "description": "Optional related banks, payment actors, regulators, vendors, etc." },
+    "source_publisher_type": { "type": "string", "description": "Optional publisher type, e.g. 'regulator', 'bank', 'vendor', 'media', 'association'. Carries byte-for-byte from SourceCandidate.source_publisher_type." },
+    "source_owner": { "type": "string", "description": "Optional EXTERNAL entity that operates/publishes the source (not the internal steward - see record_owner)." },
+    "bias_profile": { "type": "string", "description": "Optional known bias or perspective of the source." },
+    "credibility_score": { "type": "number", "minimum": 0, "maximum": 1, "description": "Estimated trustworthiness/reliability of the source, 0..1." },
+    "usefulness_score": { "type": "number", "minimum": 0, "maximum": 1, "description": "Estimated value of the source to its workstreams, 0..1 (carried from SourceCandidate). Note: SourceCandidate.confidence_score is intentionally NOT carried - it is candidate-assessment only." },
+    "priority": { "type": "string", "enum": ["low", "medium", "high", "critical"], "description": "Monitoring priority." },
+    "reason_to_track": { "type": "string", "minLength": 1, "description": "Why this source is monitored (typically carried from SourceCandidate.discovery_basis.why_relevant)." },
+    "coverage_notes": { "type": "string", "description": "Optional notes on what this source does and does not cover." },
+    "tags": { "type": "array", "items": { "type": "string" }, "description": "Optional free-form tags." },
+    "collection_method": {
+      "type": "string",
+      "enum": [
+        "api",
+        "rss_feed",
+        "sitemap",
+        "static_html",
+        "pdf_download",
+        "dynamic_browser",
+        "search_result_ingestion",
+        "manual_upload",
+        "transcript_ingestion",
+        "none",
+        "unknown"
+      ],
+      "description": "Chosen acquisition method (architecture section 11 preferred order). This is the ACQUISITION CONTRACT connectors dispatch on, so it includes 'sitemap' - a deliberate (temporary) divergence from SourceCandidate.suggested_collection_method, which should gain 'sitemap' later. The registry only DEFINES the method; connectors execute it."
+    },
+    "refresh_cadence": {
+      "type": "string",
+      "enum": ["realtime", "hourly", "daily", "weekly", "biweekly", "monthly", "quarterly", "semiannual", "annual", "on_demand", "none"],
+      "description": "How often the source should be checked. The scheduler derives monitoring_state.next_check_at deterministically from this + last_checked_at; the registry does not compute it live."
+    },
+    "expected_update_pattern": { "type": "string", "description": "Optional prose describing the source's real-world update pattern (e.g. 'tender notices weekday mornings')." },
+    "collection_allowed": {
+      "type": "boolean",
+      "description": "Whether automated collection is currently permitted. MUST be false when access_status is 'forbidden_do_not_collect', legal_status is 'forbidden', review_status is 'rejected'/'suspended'/'superseded', or active_status is 'retired'/'disabled'; and MUST be true when active_status is 'active' (all enforced below). Note: intermediate access_status values (e.g. requires_paid_subscription) describe access DIFFICULTY, not prohibition, and do NOT force collection_allowed - the resolved permission is a human/workflow decision."
+    },
+    "cost_budget": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Optional cost budget for paid access. Null values where unknown.",
+      "required": ["currency", "amount", "period", "notes"],
+      "properties": {
+        "currency": { "type": ["string", "null"], "description": "ISO currency code or null." },
+        "amount": { "type": ["number", "null"], "description": "Budget amount or null." },
+        "period": { "type": ["string", "null"], "description": "Budget period, e.g. 'per_month', 'per_year', 'one_time', or null." },
+        "notes": { "type": ["string", "null"], "description": "Free-text cost notes or null." }
+      }
+    },
+    "access_status": {
+      "type": "string",
+      "enum": [
+        "public",
+        "blocked",
+        "requires_free_account",
+        "requires_paid_subscription",
+        "requires_manual_download",
+        "requires_credentials",
+        "requires_legal_review",
+        "forbidden_do_not_collect",
+        "unknown"
+      ],
+      "description": "Access boundary per sourcing_layer_scope.md section 7 (identical to SourceCandidate.access_status)."
+    },
+    "legal_status": {
+      "type": "string",
+      "enum": ["allowed", "unclear", "restricted", "forbidden", "requires_review"],
+      "description": "Legal disposition for collecting from this source (identical to SourceCandidate.legal_status)."
+    },
+    "retention_policy": { "type": ["string", "null"], "description": "Retention policy for collected artifacts. Nullable free-text for now; not enum-constrained until the legal/retention policy is formalized." },
+    "redistribution_allowed": { "type": "boolean", "description": "Whether collected content may be redistributed. Default conservatively to false when unknown." },
+    "collection_notes": { "type": "string", "description": "Optional operational notes about collecting from this source." },
+    "access_review_task_id": { "type": "string", "description": "Optional AccessReviewTask task_id if access/legal help was needed." },
+    "monitoring_state": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "CONNECTOR/SCHEDULER-OWNED monitoring state. The promotion workflow INITIALIZES these (failure_count 0, timestamps null); future deterministic acquisition connectors UPDATE them. LLMs and sourcing routines must NOT update them. Contains NO change-detection state (no content hash, no last_change_at, no 'unchanged' flag) - change detection lives in acquisition logs/documents, never here. A non-collectable source may still carry next_check_at for a scheduled access/legal re-review (not collection).",
+      "required": ["last_checked_at", "next_check_at", "last_successful_ingestion_at", "failure_count"],
+      "properties": {
+        "last_checked_at": { "type": ["string", "null"], "format": "date-time", "description": "When the source was last checked by a connector; null until first checked." },
+        "next_check_at": { "type": ["string", "null"], "format": "date-time", "description": "When the source is next scheduled to be checked (for collection when collection_allowed, or for access/legal re-review otherwise); null if unscheduled." },
+        "last_successful_ingestion_at": { "type": ["string", "null"], "format": "date-time", "description": "When a connector last successfully ingested from this source; null until first success." },
+        "failure_count": { "type": "integer", "minimum": 0, "description": "Consecutive/accumulated collection failure count; initialized to 0 at promotion, updated by connectors." }
+      }
+    },
+    "review_status": {
+      "type": "string",
+      "enum": ["approved", "needs_rereview", "under_review", "suspended", "rejected", "superseded"],
+      "description": "Governance review state of the registry record. This enum is intentionally different from SourceCandidate.review.review_status: it tracks registry-record governance, not candidate-lifecycle review. Records enter as 'approved' (only approved candidates promote in). The stop-states 'rejected'/'suspended'/'superseded' force the source out of active collection (active_status not 'active' and collection_allowed false, enforced below)."
+    },
+    "active_status": {
+      "type": "string",
+      "enum": ["active", "paused", "retired", "disabled"],
+      "description": "Monitoring activity state. 'active' requires collection_allowed=true; 'retired'/'disabled' force collection_allowed=false (a true kill-switch); 'paused' is a temporary hold and does NOT force the permission either way. All enforced below. Initialized to 'active' at promotion when collection_allowed, else 'paused'."
+    },
+    "reviewer": { "type": ["string", "null"], "description": "Optional identifier of the last human reviewer; null if none." },
+    "reviewed_at": { "type": ["string", "null"], "format": "date-time", "description": "Optional last review time (RFC 3339 / ISO 8601 date-time); null if none." },
+    "record_owner": { "type": "string", "minLength": 1, "description": "INTERNAL Printec/system owner accountable for reviewing and maintaining this registry record (distinct from source_owner, the external operator). REQUIRED and non-empty: every registry record must have an accountable internal owner. The promotion workflow supplies it via mandatory human assignment (Q4); a Source can never exist without one." },
+    "metadata": { "type": "object", "additionalProperties": true, "description": "Optional free-form extension bag. This is the ONLY place additional properties are allowed." }
+  },
+  "allOf": [
+    {
+      "if": { "required": ["access_status"], "properties": { "access_status": { "const": "forbidden_do_not_collect" } } },
+      "then": { "properties": { "collection_allowed": { "const": false } } }
+    },
+    {
+      "if": { "required": ["legal_status"], "properties": { "legal_status": { "const": "forbidden" } } },
+      "then": { "properties": { "collection_allowed": { "const": false } } }
+    },
+    {
+      "if": { "required": ["active_status"], "properties": { "active_status": { "const": "active" } } },
+      "then": { "properties": { "collection_allowed": { "const": true } } }
+    },
+    {
+      "if": {
+        "required": ["provenance"],
+        "properties": { "provenance": { "required": ["origin"], "properties": { "origin": { "const": "promoted_from_candidate" } } } }
+      },
+      "then": {
+        "properties": { "provenance": { "properties": { "promoted_from_candidate_ids": { "minItems": 1 } } } }
+      }
+    },
+    {
+      "if": {
+        "required": ["review_status"],
+        "properties": { "review_status": { "enum": ["rejected", "suspended", "superseded"] } }
+      },
+      "then": {
+        "properties": {
+          "active_status": { "not": { "const": "active" } },
+          "collection_allowed": { "const": false }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": ["active_status"],
+        "properties": { "active_status": { "enum": ["retired", "disabled"] } }
+      },
+      "then": {
+        "properties": { "collection_allowed": { "const": false } }
+      }
+    }
+  ]
+}

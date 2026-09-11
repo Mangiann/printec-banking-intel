@@ -1,0 +1,312 @@
+[
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_059",
+  "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_067",
+  "source_url": "https://www.globalpayments.cz/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_145",
+  "source_url": "https://www.mastercard.cz/cs-cz/o-nas/tiskove-centrum.html",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_159",
+  "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=EEFT&type=10-K",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_207",
+  "source_url": "https://www.temenos.com/success-story/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_211",
+  "source_url": "https://www.dieboldnixdorf.com/en-us/banking/insights/case-studies-banking",
+  "outcome": "unresolved",
+  "http_status": 500,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 500"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_215",
+  "source_url": "https://www.fisglobal.com/about-us/media-room",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "TimeoutError"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_226",
+  "source_url": "https://www.finextra.com/channel/retail-banking",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_239",
+  "source_url": "http://data.bankovnikarty.cz/secure/private.htm",
+  "outcome": "unresolved",
+  "http_status": 401,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 401"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_264",
+  "source_url": "https://www.anopress.cz/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_265",
+  "source_url": "https://www.monitora.cz/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_280",
+  "source_url": "https://www.mastercard.com/news/europe/cs-cz/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_303",
+  "source_url": "https://monitora.cz/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_319",
+  "source_url": "https://www.ppf.eu/en/press-release",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_366",
+  "source_url": "https://www.zive.cz/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_380",
+  "source_url": "https://www.spglobal.com/ratings/en/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_391",
+  "source_url": "https://www.reuters.com/",
+  "outcome": "unresolved",
+  "http_status": 401,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 401"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_401",
+  "source_url": "https://www.marketscreener.com/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_402",
+  "source_url": "https://ceelegalmatters.com/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_403",
+  "source_url": "https://www.fintechfutures.com/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_420",
+  "source_url": "https://www.ceb.cz/kdo-jsme/povinne-zverejnovani-informace/pravidelne-ctvrtletni-informace2/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_422",
+  "source_url": "http://www.bankcomm.com/BankCommSite/shtml/Prague/en/2601132/2601168/list_1.shtml",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_426",
+  "source_url": "https://www.modrapyramida.cz/dokumenty",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_431",
+  "source_url": "https://www.penezniustav.cz",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_444",
+  "source_url": "http://ftp.pse.cz/Issuers.dta/",
+  "outcome": "unresolved",
+  "http_status": 401,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 401"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_445",
+  "source_url": "http://ftp.pse.cz/Vestnik.doc/",
+  "outcome": "unresolved",
+  "http_status": 401,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 401"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_485",
+  "source_url": "https://dataor.justice.cz/api/3/action/package_show",
+  "outcome": "unresolved",
+  "http_status": 400,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 400"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_533",
+  "source_url": "https://www.kbps.cz/o-kb-ps/zpravy-o-hospodareni-kb-ps/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_541",
+  "source_url": "https://www.amundi.cz/produkty/Local-Content/Footer/Povinne-uverejnovane-informace/Povinne-uverejnovane-informace-Amundi-v-Ceske-republice/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_567",
+  "source_url": "https://sfpi.cz/vyrocni-zpravy/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_571",
+  "source_url": "https://www.nku.cz/cz/kontrola/kontrolni-zavery/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ }
+]

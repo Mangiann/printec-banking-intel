@@ -1,0 +1,342 @@
+[
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_053",
+  "source_url": "https://danubecapital.hu/blog/pos-terminalok-szama-magyarorszagon/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_060",
+  "source_url": "https://www2.deloitte.com/hu/hu/pages/deloittedigital/articles/az-online-ertekesitest-fejlesztik-a-digitalizacioban-elen-jaro-b.html",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_065",
+  "source_url": "https://ekerkutatas.hu/fooldal/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_066",
+  "source_url": "https://nrc.hu/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_072",
+  "source_url": "https://uni-bge.hu/hu/tudomanyoselet",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_073",
+  "source_url": "https://nje.hu/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_074",
+  "source_url": "https://www.mckinsey.com/hu",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "TimeoutError"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_079",
+  "source_url": "https://www.mastercard.hu/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_081",
+  "source_url": "https://www.penzugyiszemle.hu/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_085",
+  "source_url": "https://njt.hu/jogszabaly/2025-5-20-2C",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "ConnectionResetError"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_090",
+  "source_url": "https://www.criterion.hu/keszpenzlogisztika/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_103",
+  "source_url": "https://njt.hu/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "ConnectionResetError"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_104",
+  "source_url": "https://njt.hu/jogszabaly/2012-116-00-00.6",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "ConnectionResetError"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_118",
+  "source_url": "https://adozona.hu/jogtar/75216_2012_CXVI_torveny_penzugyi_tranzakcios/198104",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_127",
+  "source_url": "https://www.mnb.hu/penzforgalom/fizetesi-rendszer-forum",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_131",
+  "source_url": "https://hu.jooble.org/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_135",
+  "source_url": "https://hiventures.hu/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_156",
+  "source_url": "https://data.ecb.europa.eu/data/data-categories/payment-statistics/payment-services-large-value-payment-systems-and-retail-payment-systems/payment-card-functions",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_163",
+  "source_url": "https://www.ksh.hu/stadat_files/bel/hu/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_215",
+  "source_url": "https://v2.pmkik.hu/felmeresek-kutatasok/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_220",
+  "source_url": "https://newsroom.mastercard.com/eu/hu/press-releases/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_221",
+  "source_url": "https://www.mastercard.com/hu/hu/%C3%BCzleti/ipar%C3%A1gi-szegmens/p%C3%A9nz%C3%BCgyi-int%C3%A9zm%C3%A9nyek/digitalis-fizetesi-index.html",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_246",
+  "source_url": "https://www.kh.hu/csoport/bank/eves-jelentesek",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_252",
+  "source_url": "https://www.bet.hu/oldalak/ceginformaciok",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_270",
+  "source_url": "https://opentender.eu/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_271",
+  "source_url": "https://adatbazis.k-monitor.hu/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_276",
+  "source_url": "https://njt.hu/jogszabaly/2025-19-20-2C",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "ConnectionResetError"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_281",
+  "source_url": "https://investor.aciworldwide.com/news-releases",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_286",
+  "source_url": "https://www.dieboldnixdorf.com/en-us/banking/insights/case-studies-banking/",
+  "outcome": "unresolved",
+  "http_status": 500,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 500"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_289",
+  "source_url": "https://www.g4s.hu/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_297",
+  "source_url": "https://www.mastercard.com/news/eu/hu-hu/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_306",
+  "source_url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Digital_economy_and_society_statistics_-_households_and_individuals/hu",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_309",
+  "source_url": "https://data.imf.org/en/datasets/IMF.STA:FAS",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a4_live_001__c_310",
+  "source_url": "https://fred.stlouisfed.org/series/HUNFCAANUM",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "TimeoutError"
+ }
+]

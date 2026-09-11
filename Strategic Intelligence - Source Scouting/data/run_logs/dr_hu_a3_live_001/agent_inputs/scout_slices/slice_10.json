@@ -1,0 +1,885 @@
+{
+  "candidates": [
+    {
+      "source_name": "Tietoevry Banking — Press Releases / Newsroom",
+      "source_url": "https://www.tietoevry.com/en/newsroom/all-news-and-releases/press-releases/",
+      "source_class": "indirect",
+      "primary_language": "en",
+      "why_relevant": "Nordic card/payments vendor that publicly announced completing OTP Bank Hungary's card acquiring software replacement, explicitly citing card-scheme and EU/national regulatory compliance as drivers. Vendor newsroom is the only public trace of a privately-owned Hungarian bank's payments procurement.",
+      "credibility_score": 0.85,
+      "usefulness_score": 0.8,
+      "confidence_score": 0.9,
+      "priority": "high",
+      "domain": "tietoevry.com",
+      "source_subtype": "vendor_press_release_newsroom",
+      "topics": [
+        "regulation",
+        "supervision",
+        "deadlines",
+        "cards",
+        "acquiring",
+        "payments"
+      ],
+      "access_status": "open_web",
+      "legal_status": "public_corporate_communication",
+      "collection_allowed": true,
+      "suggested_collection_method": "Periodic crawl of newsroom index filtered for 'Hungary', 'OTP', 'MBH', 'Erste'; RSS if exposed; store full press-release text + date.",
+      "example_urls": [
+        "https://www.tietoevry.com/en/newsroom/all-news-and-releases/press-releases/2023/01/otp-bank-hungary-completes-card-acquiring-software-replacement-with-tietoevry-banking/"
+      ],
+      "discovered_via_method": "English keyword search on vendor+Hungarian bank+compliance",
+      "queries_used": [
+        "vendor case study Hungarian bank compliance implementation payments OTP"
+      ],
+      "local_language_terms_used": [],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Google Cloud Customers — OTP Bank case study",
+      "source_url": "https://cloud.google.com/customers/otpbank",
+      "source_class": "indirect",
+      "primary_language": "en",
+      "why_relevant": "Hyperscaler customer-reference page in which OTP Bank names MNB (Magyar Nemzeti Bank) requirements as a main driver for adopting Apigee API gateway — a textbook indirect trace of a compliance-driven buying decision at a private bank.",
+      "credibility_score": 0.8,
+      "usefulness_score": 0.85,
+      "confidence_score": 0.9,
+      "priority": "high",
+      "domain": "cloud.google.com",
+      "source_subtype": "vendor_customer_reference_page",
+      "topics": [
+        "regulation",
+        "supervision",
+        "cloud",
+        "API",
+        "open banking"
+      ],
+      "access_status": "open_web",
+      "legal_status": "public_corporate_communication",
+      "collection_allowed": true,
+      "suggested_collection_method": "Crawl cloud.google.com/customers with country/industry filter = Hungary/financial services; snapshot page text; diff on re-crawl.",
+      "example_urls": [
+        "https://cloud.google.com/customers/otpbank"
+      ],
+      "discovered_via_method": "English keyword search",
+      "queries_used": [
+        "vendor case study Hungarian bank compliance implementation payments OTP"
+      ],
+      "local_language_terms_used": [],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Thought Machine — Press Releases / Newsroom",
+      "source_url": "https://www.thoughtmachine.net/newsroom",
+      "source_class": "indirect",
+      "primary_language": "en",
+      "why_relevant": "Announced Magyar Bankholding (now MBH Bank) selecting Vault Core for a digital-first bank — the single largest core-banking purchasing decision in Hungary of recent years, publicly visible only because the vendor announced it.",
+      "credibility_score": 0.85,
+      "usefulness_score": 0.85,
+      "confidence_score": 0.9,
+      "priority": "high",
+      "domain": "thoughtmachine.net",
+      "source_subtype": "vendor_press_release_newsroom",
+      "topics": [
+        "core banking",
+        "regulation",
+        "deadlines"
+      ],
+      "access_status": "open_web",
+      "legal_status": "public_corporate_communication",
+      "collection_allowed": true,
+      "suggested_collection_method": "Crawl /newsroom and /press-releases; keyword filter Hungary/Magyar/MBH; capture date + named bank + named driver.",
+      "example_urls": [
+        "https://www.thoughtmachine.net/press-releases/magyar-bankholding-selects-thought-machine-to-launch-a-digital-first-bank"
+      ],
+      "discovered_via_method": "English keyword search then vendor newsroom snowball",
+      "queries_used": [
+        "Thought Machine MBH Bank Vault Core press release Hungary core banking migration"
+      ],
+      "local_language_terms_used": [],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Dorsum — News / case studies (Hungarian wealth & securities software vendor)",
+      "source_url": "https://www.dorsum.eu/news/",
+      "source_class": "indirect",
+      "primary_language": "en",
+      "why_relevant": "Hungarian-headquartered banking software vendor publishing detailed accounts of its joint IT implementation and migration project with Magyar Bankholding/MBH — names the bank, the systems and the migration timetable.",
+      "credibility_score": 0.75,
+      "usefulness_score": 0.8,
+      "confidence_score": 0.85,
+      "priority": "high",
+      "domain": "dorsum.eu",
+      "source_subtype": "vendor_case_study_blog",
+      "topics": [
+        "securities services",
+        "core systems",
+        "migration",
+        "regulation"
+      ],
+      "access_status": "open_web",
+      "legal_status": "public_corporate_communication",
+      "collection_allowed": true,
+      "suggested_collection_method": "Crawl news archive (both dorsum.eu EN and HU pages); extract client names and project scope.",
+      "example_urls": [
+        "https://www.dorsum.eu/2022/06/28/portfolio-interview-on-the-joint-it-implementation-and-migration-project-of-magyar-bankholding-and-dorsum/"
+      ],
+      "discovered_via_method": "Hungarian-actor search then vendor site snowball",
+      "queries_used": [
+        "4iG Dorsum Cardnet Hungarian banking IT integrator ügyfélreferenciák bank"
+      ],
+      "local_language_terms_used": [
+        "ügyfélreferenciák"
+      ],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "MINDSPIRE — Banki és biztosítói transzformációs szolgáltatások (blog + service pages)",
+      "source_url": "https://mindspire.hu/banki-transzformacios-szolgaltatasok/",
+      "source_class": "indirect",
+      "primary_language": "hu",
+      "why_relevant": "Hungarian banking-transformation consultancy that publishes Hungarian-language blog posts on core-banking selection, naming platforms (Flexcube, T24, Murex, CAMS) and describing real domestic selection failures. Reveals which core systems are actually shortlisted by Hungarian banks and what compliance constraints shape the RFP.",
+      "credibility_score": 0.65,
+      "usefulness_score": 0.8,
+      "confidence_score": 0.85,
+      "priority": "high",
+      "domain": "mindspire.hu",
+      "source_subtype": "systems_integrator_blog_case_material",
+      "topics": [
+        "core banking",
+        "vendor selection",
+        "regulation",
+        "compliance drivers"
+      ],
+      "access_status": "open_web",
+      "legal_status": "public_corporate_communication",
+      "collection_allowed": true,
+      "suggested_collection_method": "Crawl /blog-hu/banki-transzformacios-blog/ regularly; Hungarian-language NER for bank and platform names.",
+      "example_urls": [
+        "https://mindspire.hu/blog-hu/banki-transzformacios-blog/dobozos-core-banki-rendszerek-kivalasztasanak-fobb-kerdesei/",
+        "https://mindspire.hu/banki-transzformacios-szolgaltatasok/core-banki-rendszerekhez-kapcsolodo-szolgaltatasok/"
+      ],
+      "discovered_via_method": "Hungarian-language search (mandatory local-language pass)",
+      "queries_used": [
+        "\"magyar bank\" referencia esettanulmány banki informatikai rendszer bevezetés partner",
+        "szállító referencia magyar bank rendszerbevezetés megfelelés sajtóközlemény"
+      ],
+      "local_language_terms_used": [
+        "referencia",
+        "esettanulmány",
+        "rendszerbevezetés",
+        "core banki rendszer",
+        "banki transzformáció"
+      ],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Integra Zrt. — PR / referenciák (Hungarian banking software house)",
+      "source_url": "https://www.integra.hu/pr/",
+      "source_class": "indirect",
+      "primary_language": "hu",
+      "why_relevant": "Long-established Hungarian vendor of software for domestic banks, brokerages and Hungarian branches of foreign banks; its PR/reference page is one of the few Hungarian-language listings of named bank clients and delivered modules.",
+      "credibility_score": 0.6,
+      "usefulness_score": 0.7,
+      "confidence_score": 0.8,
+      "priority": "medium",
+      "domain": "integra.hu",
+      "source_subtype": "vendor_reference_page",
+      "topics": [
+        "core banking",
+        "eBanking",
+        "regulatory reporting"
+      ],
+      "access_status": "open_web",
+      "legal_status": "public_corporate_communication",
+      "collection_allowed": true,
+      "suggested_collection_method": "Periodic HTML snapshot of PR/reference pages; diff to detect new named clients.",
+      "example_urls": [
+        "https://www.integra.hu/pr/"
+      ],
+      "discovered_via_method": "Hungarian-language search",
+      "queries_used": [
+        "\"magyar bank\" referencia esettanulmány banki informatikai rendszer bevezetés partner"
+      ],
+      "local_language_terms_used": [
+        "referencia",
+        "banki informatikai rendszer"
+      ],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "4iG Nyrt. — corporate site / news (Hungary's leading systems integrator)",
+      "source_url": "https://www.4ig.hu/home",
+      "source_class": "indirect",
+      "primary_language": "hu",
+      "why_relevant": "Largest Hungarian SI, explicitly advertising 'full support of banking data reporting' (banki adatszolgáltatás) among its services. As a listed company it also files regulatory announcements that occasionally reveal financial-sector contract wins not otherwise public.",
+      "credibility_score": 0.75,
+      "usefulness_score": 0.7,
+      "confidence_score": 0.8,
+      "priority": "medium",
+      "domain": "4ig.hu",
+      "source_subtype": "systems_integrator_news_and_issuer_announcements",
+      "topics": [
+        "regulatory reporting",
+        "supervision",
+        "IT outsourcing"
+      ],
+      "access_status": "open_web",
+      "legal_status": "public_corporate_communication",
+      "collection_allowed": true,
+      "suggested_collection_method": "Crawl 4iG hírek + BÉT/company announcements page; keyword filter bank/pénzügyi/adatszolgáltatás.",
+      "example_urls": [
+        "https://www.4ig.hu/home"
+      ],
+      "discovered_via_method": "Hungarian actor-map search",
+      "queries_used": [
+        "4iG Dorsum Cardnet Hungarian banking IT integrator ügyfélreferenciák bank"
+      ],
+      "local_language_terms_used": [
+        "ügyfélreferenciák",
+        "banki adatszolgáltatás"
+      ],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Portfolio Financial IT / Banking Technology conference — programme, speakers and sponsor pages",
+      "source_url": "https://www.portfolio.hu/rendezvenyek/it",
+      "source_class": "pointer",
+      "primary_language": "hu",
+      "why_relevant": "The single best pointer source for the Hungarian bank-IT supplier landscape: annual conference whose 'támogatók' (sponsors) and 'előadók' (speakers) pages enumerate essentially every vendor selling into Hungarian banks, and whose agendas name the regulatory topics (DORA, AFR/qvik, PSD3) driving spend.",
+      "credibility_score": 0.8,
+      "usefulness_score": 0.9,
+      "confidence_score": 0.9,
+      "priority": "critical",
+      "domain": "portfolio.hu",
+      "source_subtype": "conference_sponsor_speaker_directory",
+      "topics": [
+        "regulation",
+        "consultations",
+        "deadlines",
+        "vendor landscape"
+      ],
+      "access_status": "open_web",
+      "legal_status": "public_event_material",
+      "collection_allowed": true,
+      "suggested_collection_method": "Annually crawl each event's /tamogatok, /eloadok and /program pages; build vendor↔bank↔topic edge list; archive old editions for time series.",
+      "example_urls": [
+        "https://www.portfolio.hu/rendezvenyek/konferencia-it/portfolio-financial-it-2025/1809/tamogatok",
+        "https://www.portfolio.hu/rendezvenyek/konferencia-it/portfolio-banking-technology-2025/1831/eloadok",
+        "https://www.portfolio.hu/rendezvenyek/konferencia-it/portfolio-financial-it-2025/1809/program"
+      ],
+      "discovered_via_method": "Hungarian-language search for conference sponsors",
+      "queries_used": [
+        "Portfolio Financial IT konferencia szponzorok banki szállítók 2025 Budapest"
+      ],
+      "local_language_terms_used": [
+        "konferencia",
+        "szponzorok",
+        "támogatók",
+        "előadók",
+        "banki szállítók"
+      ],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "ITBUSINESS.hu — Hungarian IT trade press, finance vertical",
+      "source_url": "https://itbusiness.hu/",
+      "source_class": "pointer",
+      "primary_language": "hu",
+      "why_relevant": "Hungarian IT trade magazine that runs vendor-sourced articles on banking IT projects (data warehouse, cloud core banking, DORA readiness) and its own 'Finance & Technology' event. Frequently the first Hungarian-language publication of a vendor-bank engagement, and explicitly links projects to regulation (e.g. DORA article).",
+      "credibility_score": 0.65,
+      "usefulness_score": 0.8,
+      "confidence_score": 0.85,
+      "priority": "high",
+      "domain": "itbusiness.hu",
+      "source_subtype": "trade_press",
+      "topics": [
+        "regulation",
+        "deadlines",
+        "DORA",
+        "core banking",
+        "IT security"
+      ],
+      "access_status": "open_web",
+      "legal_status": "press_content_copyright_applies",
+      "collection_allowed": true,
+      "suggested_collection_method": "RSS/section crawl of finance & ICT-market categories; store metadata + short extracts only (copyright); index vendor and bank mentions.",
+      "example_urls": [
+        "https://itbusiness.hu/technology/aktualis-lapszam/strategy/dora_szabalyok/",
+        "https://itbusiness.hu/technology/aktualis-lapszam/ict-market/bank-a-felhobol/",
+        "https://itbusiness.hu/event/esemenyek_rovat/finance-2024/"
+      ],
+      "discovered_via_method": "Hungarian-language trade-press search",
+      "queries_used": [
+        "ITBusiness Bitport banki IT projekt bevezetés hír magyar bank szállító",
+        "DORA felkészülés magyar bank tanácsadó szolgáltató bejelentés PSD2 nyílt bankolás bevezetés"
+      ],
+      "local_language_terms_used": [
+        "banki IT projekt",
+        "bevezetés",
+        "szállító",
+        "felkészülés"
+      ],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "FinTechZone.hu — Hungarian fintech news portal",
+      "source_url": "https://fintechzone.hu/",
+      "source_class": "pointer",
+      "primary_language": "hu",
+      "why_relevant": "Publishes vendor-supplied backgrounders on Hungarian bank launches (e.g. the technology stack behind neobank Trive Bank) and maintains a PSD2 / fintech-regulation category linking rule changes to implementation projects. Good bridge between regulation topics and supplier identities.",
+      "credibility_score": 0.6,
+      "usefulness_score": 0.75,
+      "confidence_score": 0.85,
+      "priority": "high",
+      "domain": "fintechzone.hu",
+      "source_subtype": "trade_press_fintech",
+      "topics": [
+        "regulation",
+        "PSD2",
+        "consultations",
+        "vendor landscape"
+      ],
+      "access_status": "open_web",
+      "legal_status": "press_content_copyright_applies",
+      "collection_allowed": true,
+      "suggested_collection_method": "Category-level crawl (PSD2 / szabályozás / bankok); extract named vendors and banks; metadata + short extract storage.",
+      "example_urls": [
+        "https://fintechzone.hu/eloszor-osztottak-meg-reszleteket-a-hazai-neobank-a-trive-bank-gyors-indulasanak-hattererol/",
+        "https://fintechzone.hu/kategoria/fintech-szabalyozas/psd2-szabalyozas-penzforgalmi-iranyelv/"
+      ],
+      "discovered_via_method": "Hungarian-language search snowball",
+      "queries_used": [
+        "ITBusiness Bitport banki IT projekt bevezetés hír magyar bank szállító"
+      ],
+      "local_language_terms_used": [
+        "hazai neobank",
+        "szabályozás",
+        "pénzforgalmi irányelv"
+      ],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Magyar Bankszövetség — Sajtóközlemények (Hungarian Banking Association press releases)",
+      "source_url": "https://www.bankszovetseg.hu/sajtokozlemenyek.cshtml?lang=hun",
+      "source_class": "pointer",
+      "primary_language": "hu",
+      "why_relevant": "Industry association whose press releases and position papers reveal which regulatory deadlines the private banks are collectively preparing for, and occasionally which shared/sector-level technical projects (AFR, qvik, data reporting) are being procured. A pointer into the demand side that the banks themselves do not publish.",
+      "credibility_score": 0.85,
+      "usefulness_score": 0.7,
+      "confidence_score": 0.85,
+      "priority": "medium",
+      "domain": "bankszovetseg.hu",
+      "source_subtype": "industry_association_press",
+      "topics": [
+        "regulation",
+        "consultations",
+        "deadlines",
+        "supervision"
+      ],
+      "access_status": "open_web",
+      "legal_status": "public_association_communication",
+      "collection_allowed": true,
+      "suggested_collection_method": "Scheduled crawl of sajtóközlemények listing (hun + eng variants); capture PDFs.",
+      "example_urls": [
+        "https://www.bankszovetseg.hu/sajtokozlemenyek.cshtml?lang=hun"
+      ],
+      "discovered_via_method": "Hungarian-language search",
+      "queries_used": [
+        "szállító referencia magyar bank rendszerbevezetés megfelelés sajtóközlemény"
+      ],
+      "local_language_terms_used": [
+        "sajtóközlemény",
+        "megfelelés"
+      ],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "MNB recommendations on IT systems, outsourcing and cloud (1/2025, 2/2025, 8/2020, 7/2017)",
+      "source_url": "https://www.mnb.hu/felugyelet/szabalyozas/informatikai-felugyelet",
+      "source_class": "direct",
+      "primary_language": "hu",
+      "why_relevant": "Not a vendor source, but the compliance driver the vendor announcements cite. The recommendations impose supplier-facing obligations (source-code escrow, documentation, cloud accountability) that shape every Hungarian bank RFP — essential to decode why a given vendor win happened and when the next one is due.",
+      "credibility_score": 0.98,
+      "usefulness_score": 0.85,
+      "confidence_score": 0.95,
+      "priority": "critical",
+      "domain": "mnb.hu",
+      "source_subtype": "regulator_recommendation_pdf",
+      "topics": [
+        "regulation",
+        "supervision",
+        "deadlines",
+        "outsourcing",
+        "cloud"
+      ],
+      "access_status": "open_web",
+      "legal_status": "public_official_document",
+      "collection_allowed": true,
+      "suggested_collection_method": "Crawl the informatikai felügyelet hub and its PDF links; version-track recommendation numbers; parse effective dates as deadline signals.",
+      "example_urls": [
+        "https://www.mnb.hu/letoltes/1-2025-info-ajanlas.pdf",
+        "https://www.mnb.hu/letoltes/2-2025-felho-ajanlas.pdf",
+        "https://www.mnb.hu/letoltes/8-2020-informatikai-rendsz-vedelmerol.pdf",
+        "https://www.mnb.hu/letoltes/7-2017-informatikai-rendsz-ved.pdf"
+      ],
+      "discovered_via_method": "Hungarian-language search (surfaced as the compliance driver behind vendor references)",
+      "queries_used": [
+        "szállító referencia magyar bank rendszerbevezetés megfelelés sajtóközlemény",
+        "\"magyar bank\" referencia esettanulmány banki informatikai rendszer bevezetés partner"
+      ],
+      "local_language_terms_used": [
+        "ajánlás",
+        "informatikai felügyelet",
+        "megfelelés",
+        "kiszervezés",
+        "felhő"
+      ],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "MNB press releases (EN) — enforcement and supervisory actions naming banks",
+      "source_url": "https://www.mnb.hu/en/pressroom/press-releases/press-releases-2025",
+      "source_class": "direct",
+      "primary_language": "en",
+      "why_relevant": "MNB fines against OTP and MBH for AML/CTF shortcomings are the strongest public predictor of imminent compliance-driven procurement (transaction monitoring, screening, KYC). Pair with vendor newsrooms to time the buying cycle.",
+      "credibility_score": 0.98,
+      "usefulness_score": 0.85,
+      "confidence_score": 0.9,
+      "priority": "high",
+      "domain": "mnb.hu",
+      "source_subtype": "regulator_press_release",
+      "topics": [
+        "supervision",
+        "regulation",
+        "AML",
+        "enforcement"
+      ],
+      "access_status": "open_web",
+      "legal_status": "public_official_document",
+      "collection_allowed": true,
+      "suggested_collection_method": "Crawl yearly press-release index in both HU and EN; extract institution name, deficiency type, fine, remediation deadline.",
+      "example_urls": [
+        "https://www.mnb.hu/en/pressroom/press-releases/press-releases-2025",
+        "https://www.mnb.hu/en/supervision/regulation/anti-money-laundering"
+      ],
+      "discovered_via_method": "English search on AML vendor angle, landed on regulator",
+      "queries_used": [
+        "AML KYC vendor press release Hungarian bank MNB regulation SAS Napier NetGuardians implementation"
+      ],
+      "local_language_terms_used": [],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Vixio Regulatory Intelligence — payments news blog (Hungary coverage)",
+      "source_url": "https://www.vixio.com/blog/",
+      "source_class": "indirect",
+      "primary_language": "en",
+      "why_relevant": "Commercial regulatory-intelligence vendor whose free blog summarises Hungarian regulator actions (e.g. MNB AML fines on key banks). Useful English-language early-warning layer over MNB output; the paid product is itself an aggregator worth mapping.",
+      "credibility_score": 0.7,
+      "usefulness_score": 0.6,
+      "confidence_score": 0.85,
+      "priority": "medium",
+      "domain": "vixio.com",
+      "source_subtype": "commercial_regintel_aggregator_blog",
+      "topics": [
+        "regulation",
+        "supervision",
+        "AML",
+        "payments"
+      ],
+      "access_status": "open_web_freemium",
+      "legal_status": "press_content_copyright_applies_paywalled_core",
+      "collection_allowed": true,
+      "suggested_collection_method": "Blog RSS with Hungary keyword filter; treat as lead generator, verify against MNB primary source.",
+      "example_urls": [
+        "https://www.vixio.com/blog/latest-payments-news-hungarian-regulator-fines-key-banks-over-aml-compliance-failure-and-more"
+      ],
+      "discovered_via_method": "English keyword search",
+      "queries_used": [
+        "vendor case study Hungarian bank compliance implementation payments OTP"
+      ],
+      "local_language_terms_used": [],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "CMS Law-Now — Hungary financial regulatory e-alerts",
+      "source_url": "https://cms-lawnow.com/en/ealerts",
+      "source_class": "indirect",
+      "primary_language": "en",
+      "why_relevant": "Law-firm alerts on new MNB obligations (e.g. additional AML duties for crypto-asset service providers) name the rule, the deadline and the affected institution type — the compliance trigger that later shows up as a vendor case study.",
+      "credibility_score": 0.85,
+      "usefulness_score": 0.7,
+      "confidence_score": 0.85,
+      "priority": "medium",
+      "domain": "cms-lawnow.com",
+      "source_subtype": "law_firm_alert",
+      "topics": [
+        "regulation",
+        "supervision",
+        "deadlines",
+        "AML"
+      ],
+      "access_status": "open_web",
+      "legal_status": "press_content_copyright_applies",
+      "collection_allowed": true,
+      "suggested_collection_method": "Filter e-alert feed by jurisdiction=Hungary and topic=banking/finance; store metadata + link.",
+      "example_urls": [
+        "https://cms-lawnow.com/en/ealerts/2025/07/hungarian-national-bank-issues-additional-aml-obligations-to-crypto-asset-service-providers"
+      ],
+      "discovered_via_method": "English keyword search",
+      "queries_used": [
+        "AML KYC vendor press release Hungarian bank MNB regulation SAS Napier NetGuardians implementation"
+      ],
+      "local_language_terms_used": [],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Kyndryl — Customer stories directory",
+      "source_url": "https://www.kyndryl.com/us/en/customer-stories",
+      "source_class": "indirect",
+      "primary_language": "en",
+      "why_relevant": "Global infrastructure-services vendor with a searchable customer-story directory; the class of source (managed-services provider reference pages) is exactly where Hungarian bank infrastructure/outsourcing engagements surface, given MNB outsourcing rules require documented provider arrangements. Hungary-specific entry not yet confirmed.",
+      "credibility_score": 0.7,
+      "usefulness_score": 0.5,
+      "confidence_score": 0.6,
+      "priority": "low",
+      "domain": "kyndryl.com",
+      "source_subtype": "vendor_customer_reference_directory",
+      "topics": [
+        "outsourcing",
+        "supervision",
+        "IT operations"
+      ],
+      "access_status": "open_web",
+      "legal_status": "public_corporate_communication",
+      "collection_allowed": true,
+      "suggested_collection_method": "Filter directory by industry=banking and region=Europe; recheck quarterly for Hungarian entries.",
+      "example_urls": [
+        "https://www.kyndryl.com/us/en/customer-stories"
+      ],
+      "discovered_via_method": "English search for hyperscaler/IT-services customer stories",
+      "queries_used": [
+        "Microsoft Azure OR IBM customer story Hungarian bank OTP Erste K&H compliance regulatory"
+      ],
+      "local_language_terms_used": [],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "GIRO Zrt. — operator of AFR/GIROInstant and qvik infrastructure",
+      "source_url": "https://www.giro.hu/",
+      "source_class": "direct",
+      "primary_language": "hu",
+      "why_relevant": "MNB-owned clearing house running the instant payment rails every Hungarian bank must connect to. Its notices, technical specifications and participant/partner information are the mandatory-compliance hook that forces bank-side vendor spend on AFR/qvik integration (AFR 2.0 next).",
+      "credibility_score": 0.9,
+      "usefulness_score": 0.8,
+      "confidence_score": 0.75,
+      "priority": "high",
+      "domain": "giro.hu",
+      "source_subtype": "market_infrastructure_operator",
+      "topics": [
+        "payments",
+        "regulation",
+        "deadlines",
+        "instant payments"
+      ],
+      "access_status": "open_web",
+      "legal_status": "public_official_communication",
+      "collection_allowed": true,
+      "suggested_collection_method": "Crawl news/documents sections; track specification versions and participant lists as procurement-deadline signals.",
+      "example_urls": [
+        "https://www.giro.hu/"
+      ],
+      "discovered_via_method": "Hungarian-language AFR search, snowballed from Wikipedia/NAV/bank pages naming GIRO as operator",
+      "queries_used": [
+        "azonnali fizetési rendszer AFR bevezetés bank szállító referencia Hungarian IT vendor"
+      ],
+      "local_language_terms_used": [
+        "azonnali fizetési rendszer",
+        "AFR",
+        "GIROInstant",
+        "elszámolás"
+      ],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Bank-side AFR/qvik customer notices (e.g. Oberbank Hungary AFR ügyféltájékoztató, MBH Duna Bank)",
+      "source_url": "https://www.oberbank.hu/documents/416244/3006264/ipkhu_afr_ugyfeltajekoztato_v2.pdf",
+      "source_class": "indirect",
+      "primary_language": "hu",
+      "why_relevant": "Smaller Hungarian banks publish detailed Hungarian-language AFR/qvik customer notices and T&C changes that reveal implementation timing, scope and sometimes the processing partner — an indirect read on the bank's technical dependencies where no procurement notice exists.",
+      "credibility_score": 0.75,
+      "usefulness_score": 0.6,
+      "confidence_score": 0.8,
+      "priority": "medium",
+      "domain": "oberbank.hu",
+      "source_subtype": "bank_customer_notice_pdf",
+      "topics": [
+        "payments",
+        "deadlines",
+        "instant payments",
+        "regulation"
+      ],
+      "access_status": "open_web",
+      "legal_status": "public_corporate_communication",
+      "collection_allowed": true,
+      "suggested_collection_method": "Enumerate HU bank 'hirdetmény'/'ügyféltájékoztató' document areas; PDF diffing to detect service and partner changes.",
+      "example_urls": [
+        "https://www.oberbank.hu/documents/416244/3006264/ipkhu_afr_ugyfeltajekoztato_v2.pdf",
+        "https://www.mbhdunabank.hu/hu/hasznos-informaciok/mindennapi-bankugyek/azonnali-fizetesi-rendszer"
+      ],
+      "discovered_via_method": "Hungarian-language AFR search",
+      "queries_used": [
+        "azonnali fizetési rendszer AFR bevezetés bank szállító referencia Hungarian IT vendor"
+      ],
+      "local_language_terms_used": [
+        "ügyféltájékoztató",
+        "hirdetmény",
+        "azonnali fizetési rendszer",
+        "másodlagos számlaazonosító"
+      ],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "ABT Hungária — client news (OTP Bank qvik services)",
+      "source_url": "https://abt.hu/en/news/otp-bank-qvik-services/",
+      "source_class": "indirect",
+      "primary_language": "hu",
+      "why_relevant": "Advisory/service firm publishing news items tied to OTP's qvik rollout — an example of the professional-services layer that names bank projects. Illustrates the wider class of Hungarian advisory firms whose news sections leak bank implementation detail.",
+      "credibility_score": 0.55,
+      "usefulness_score": 0.5,
+      "confidence_score": 0.7,
+      "priority": "low",
+      "domain": "abt.hu",
+      "source_subtype": "advisory_firm_news",
+      "topics": [
+        "payments",
+        "instant payments",
+        "qvik"
+      ],
+      "access_status": "open_web",
+      "legal_status": "public_corporate_communication",
+      "collection_allowed": true,
+      "suggested_collection_method": "Low-frequency crawl of news section; keyword filter bank names.",
+      "example_urls": [
+        "https://abt.hu/en/news/otp-bank-qvik-services/"
+      ],
+      "discovered_via_method": "English/HU mixed search on qvik vendor angle",
+      "queries_used": [
+        "\"Hungary\" bank press release vendor selected \"instant payment\" OR \"qvik\" implementation partner 2025"
+      ],
+      "local_language_terms_used": [
+        "qvik"
+      ],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Trademagazin / Daily News Hungary / XpatLoop — qvik and merchant-payments rollout coverage",
+      "source_url": "https://trademagazin.hu/",
+      "source_class": "indirect",
+      "primary_language": "hu",
+      "why_relevant": "Retail/trade and general press covering qvik go-lives at named merchants and banks, occasionally naming the developer/technology provider behind the rollout — a merchant-side indirect route into acquiring-side supplier identities.",
+      "credibility_score": 0.55,
+      "usefulness_score": 0.55,
+      "confidence_score": 0.75,
+      "priority": "low",
+      "domain": "trademagazin.hu",
+      "source_subtype": "trade_press_retail",
+      "topics": [
+        "payments",
+        "instant payments",
+        "merchant acceptance"
+      ],
+      "access_status": "open_web",
+      "legal_status": "press_content_copyright_applies",
+      "collection_allowed": true,
+      "suggested_collection_method": "Keyword alerts on 'qvik', 'azonnali fizetés', 'mobilfizetés'; metadata + short extract.",
+      "example_urls": [
+        "https://trademagazin.hu/en/mar-elerheto-a-hazai-fejlesztesu-qvik-mobilfizetesi-megoldas-a-magyar-uzletlanc-egyes-prima-uzleteiben/",
+        "https://xpatloop.com/channels/2025/01/cba-launches-qvik-instant-payment-solution-at-few-shops-in-hungary.html"
+      ],
+      "discovered_via_method": "Mixed-language qvik search",
+      "queries_used": [
+        "\"Hungary\" bank press release vendor selected \"instant payment\" OR \"qvik\" implementation partner 2025"
+      ],
+      "local_language_terms_used": [
+        "mobilfizetési megoldás",
+        "hazai fejlesztésű",
+        "qvik"
+      ],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    }
+  ],
+  "negative_findings": [
+    {
+      "finding_type": "no_results_for_targeted_query",
+      "description": "Searches for Temenos, Backbase and Finastra press releases naming MBH Bank, Gránit Bank or K&H Hungary returned no vendor announcement of a Hungarian implementation; only generic vendor-comparison content and Wikipedia entries.",
+      "result_summary": "No confirmed Temenos/Backbase/Finastra Hungarian bank reference found in this pass. MBH's core selection surfaced instead as Thought Machine.",
+      "why_it_matters": "Prevents false attribution of Hungarian core-banking share to the best-known global vendors; the actual public trail points elsewhere.",
+      "severity": "medium",
+      "language": "en",
+      "source_class": "indirect",
+      "topics": [
+        "core banking",
+        "vendor landscape"
+      ]
+    },
+    {
+      "finding_type": "no_results_for_targeted_query",
+      "description": "No AML/KYC vendor press release (SAS, Napier, NetGuardians and similar) naming a Hungarian bank implementation was found, despite MNB having fined OTP and MBH for AML/CTF failures.",
+      "result_summary": "Only generic AML-vendor listicles and regulator/law-firm content; no supplier-side reference for HU AML remediation.",
+      "why_it_matters": "The strongest compliance-driven buying signal in Hungary (AML enforcement) currently has no visible supplier-side trace — a real blind spot for the indirect route, not merely a search failure.",
+      "severity": "high",
+      "language": "en",
+      "source_class": "indirect",
+      "topics": [
+        "AML",
+        "supervision",
+        "regulation"
+      ]
+    },
+    {
+      "finding_type": "no_results_for_targeted_query",
+      "description": "Microsoft and IBM customer-story searches produced no Hungarian bank case study naming a regulatory driver; only general banking-guide content.",
+      "result_summary": "Hyperscaler reference coverage for HU banks confirmed only for Google Cloud/OTP in this pass.",
+      "why_it_matters": "Suggests hyperscaler reference pages must be crawled directly on their own site search rather than via general web search.",
+      "severity": "medium",
+      "language": "en",
+      "source_class": "indirect",
+      "topics": [
+        "cloud",
+        "outsourcing"
+      ]
+    },
+    {
+      "finding_type": "local_language_term_gap",
+      "description": "No stable Hungarian-language term set was found for 'partner directory' / 'customer reference list' as used by vendors selling to banks; Hungarian vendors mix 'referencia', 'ügyfeleink', 'esettanulmány', 'PR' and sometimes have no such page at all.",
+      "result_summary": "Hungarian vendor sites are inconsistent in labelling reference material, making generic HU queries low-yield.",
+      "why_it_matters": "Collection must be actor-driven (enumerate vendors first, then crawl each site) rather than query-driven.",
+      "severity": "medium",
+      "language": "hu",
+      "source_class": "indirect",
+      "topics": [
+        "vendor landscape"
+      ]
+    },
+    {
+      "finding_type": "unverified_page_content",
+      "description": "The Portfolio Financial IT 2025 sponsors page (/tamogatok) was surfaced by search but its sponsor list content was not retrieved in this pass; the page's existence is confirmed by the search result only.",
+      "result_summary": "Sponsor roster not yet extracted — treat as unverified, not absent.",
+      "why_it_matters": "This is the highest-value pointer in the cell; extraction should be prioritised in the collection phase.",
+      "severity": "medium",
+      "language": "hu",
+      "source_class": "pointer",
+      "topics": [
+        "vendor landscape"
+      ]
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "gap_type": "actor_coverage",
+      "description": "Card/ATM/self-service and cash-handling suppliers to Hungarian banks (e.g. Euronet, Diebold Nixdorf, NCR/NCR Atleos, Printec-type integrators, Cardnet) were not systematically searched for Hungarian bank references in this pass.",
+      "recommended_action": "Run a dedicated pass over ATM/self-service vendor newsrooms and Hungarian-language 'bankjegykiadó automata', 'önkiszolgáló bankfiók', 'ATM üzemeltetés' queries.",
+      "coverage_dimension": "sub-sector",
+      "severity": "high",
+      "source_class": "indirect",
+      "topics": [
+        "cards",
+        "ATM",
+        "cash"
+      ],
+      "language": "hu"
+    },
+    {
+      "gap_type": "source_type_coverage",
+      "description": "Formal partner directories (Microsoft Partner Center, AWS/Google partner finders, Temenos/Oracle partner locators, IVSZ Hungarian ICT association member list) were not enumerated.",
+      "recommended_action": "Enumerate partner-directory endpoints and filter by country=Hungary + financial services competency; IVSZ member list as the Hungarian-language anchor.",
+      "coverage_dimension": "source type",
+      "severity": "high",
+      "source_class": "pointer",
+      "topics": [
+        "vendor landscape"
+      ],
+      "language": "en"
+    },
+    {
+      "gap_type": "actor_coverage",
+      "description": "Foreign-owned Hungarian subsidiaries (Erste, Raiffeisen, UniCredit, K&H/KBC, CIB/Intesa) were not covered on the group-level vendor-announcement axis, where the parent group's supplier press releases may name the Hungarian unit.",
+      "recommended_action": "Search vendor newsrooms for parent-group names plus 'Hungary'/'Hungarian subsidiary'; also crawl group procurement/supplier portals.",
+      "coverage_dimension": "actor",
+      "severity": "medium",
+      "source_class": "indirect",
+      "topics": [
+        "procurement",
+        "vendor landscape"
+      ],
+      "language": "en"
+    },
+    {
+      "gap_type": "language_coverage",
+      "description": "Hungarian-language searching was performed on all main themes, but no Hungarian-language query was run against vendor newsroom domains directly (site-scoped HU queries).",
+      "recommended_action": "Run site-scoped Hungarian queries against identified vendor and integrator domains (4ig.hu, dorsum.eu, integra.hu, mindspire.hu, cardnet.hu) using 'referencia', 'esettanulmány', 'bevezetés', 'sajtóközlemény'.",
+      "coverage_dimension": "language",
+      "severity": "medium",
+      "source_class": "indirect",
+      "topics": [
+        "vendor landscape"
+      ],
+      "language": "hu"
+    },
+    {
+      "gap_type": "temporal_coverage",
+      "description": "Archived/older vendor reference pages and delisted case studies were not sought; vendors routinely remove references when contracts end.",
+      "recommended_action": "Plan a Wayback Machine sweep of identified vendor reference and partner pages to recover removed Hungarian bank references and build a time series.",
+      "coverage_dimension": "time",
+      "severity": "medium",
+      "source_class": "indirect",
+      "topics": [
+        "vendor landscape",
+        "procurement"
+      ],
+      "language": "en"
+    }
+  ],
+  "brief": "Hungary's systemic banks are private and publish nothing about procurement, so the usable public trail runs entirely through the supply side: global vendor newsrooms (Tietoevry on OTP card acquiring, Thought Machine on Magyar Bankholding/MBH core banking), hyperscaler customer-reference pages (Google Cloud's OTP story, which names MNB requirements outright), and Hungarian integrators and consultancies (Dorsum, MINDSPIRE, Integra, 4iG) whose Hungarian-language blogs and reference pages name banks, platforms and compliance constraints. The richest pointer layer is domestic: Portfolio's Financial IT / Banking Technology conference sponsor and speaker pages effectively enumerate the whole bank-IT supplier market, with ITBUSINESS and FinTechZone providing Hungarian-language project news that ties spend to specific rules (DORA, PSD2/PSD3, AFR/qvik). These indirect traces are only interpretable against the regulatory driver set — MNB's IT, outsourcing and cloud recommendations, MNB enforcement press releases, and GIRO's instant-payment specifications — so the two layers should be collected in tandem. Main confirmed blind spots: no supplier-side visibility at all on AML/KYC remediation despite active MNB fines, and no coverage yet of ATM/self-service suppliers or formal partner directories."
+}

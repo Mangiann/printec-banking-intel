@@ -1,0 +1,15 @@
+# Auto-generated: Hungary / A4 Market Statistics / sector=both.
+country: HU
+country_name: Hungary
+sector: both
+workstreams: [A4]
+topics: [market statistics, payment statistics, card statistics, cash usage, ATM POS data]
+languages: [hu, en]
+routine_id: R2
+routine_name: source_discovery_scout
+routine_version: 0.3.0
+prompt_path: routines/source_discovery_scout/routine_prompt.md
+url_verification:
+  enabled: false
+dedupe:
+  enabled: true

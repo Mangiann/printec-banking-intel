@@ -1,0 +1,8 @@
+# Source scouting — the ONLY two third-party packages this machine needs.
+#
+# The wider Strategic Intelligence system depends on more (playwright, pypdf, pymupdf, numpy...). Those
+# belong to the stages that DOWNLOAD and READ documents, which this machine deliberately does not run.
+# Scouting finds and catalogues sources; it never fetches a document, so it needs neither a browser tier
+# nor a PDF reader. Versions are the ones the system is proven on.
+jsonschema==4.26.0
+openpyxl==3.1.5

@@ -1,0 +1,47 @@
+{
+ "agentNo": 1,
+ "agentLabel": "Bank Disclosures",
+ "unitNoun": "bank",
+ "tableKind": "signals",
+ "findingsDir": "/Users/mangian/Downloads/BANKING/findings/01-bank-disclosures",
+ "runDate": "2026-07-30",
+ "prevSummary": "",
+ "units": [
+  {
+   "slug": "nbg-gr",
+   "name": "National Bank of Greece",
+   "focus": "Cosmos/Finacle core go-live, capex split, ATM/branch fleet, self-service, vendors",
+   "langs": "Greek"
+  },
+  {
+   "slug": "piraeus-gr",
+   "name": "Piraeus Financial Holdings",
+   "focus": "CMD AI programme, ATM/branch fleet, Snappi, Cashflex off-site ATMs",
+   "langs": "Greek"
+  },
+  {
+   "slug": "eurobank-gr",
+   "name": "Eurobank Holdings (+ Postbank BG, Eurobank Cyprus)",
+   "focus": "phygital branches, Cash 360 recyclers, AI Factory, FY plan",
+   "langs": "Greek"
+  },
+  {
+   "slug": "alpha-gr",
+   "name": "Alpha Bank (Greece)",
+   "focus": "retail transformation, contactless ATMs, VSS, Siron AML partner",
+   "langs": "Greek"
+  },
+  {
+   "slug": "optima-gr",
+   "name": "Optima Bank",
+   "focus": "lean digital-first model, ATM fleet, capex",
+   "langs": "Greek"
+  },
+  {
+   "slug": "crediabank-gr",
+   "name": "CrediaBank (ex-Attica)",
+   "focus": "rebranding, HSBC Malta, Euronet ATM/acquiring transfer, branch concept",
+   "langs": "Greek"
+  }
+ ]
+}

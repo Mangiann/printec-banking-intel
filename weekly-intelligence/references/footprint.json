@@ -1,0 +1,199 @@
+{
+  "_comment": "Printec Group 16-country footprint. region: GR=Greece/Cyprus, CEE=Central/Eastern EU, SEE=South-East Europe/W.Balkans, UA=Ukraine. euro=eurozone member. Used by the dashboard to group and rank markets.",
+  "countries": [
+    {
+      "code": "GR",
+      "name": "Greece",
+      "region": "GR",
+      "euro": true,
+      "regulator": "Bank of Greece",
+      "lang": "el"
+    },
+    {
+      "code": "CY",
+      "name": "Cyprus",
+      "region": "GR",
+      "euro": true,
+      "regulator": "Central Bank of Cyprus",
+      "lang": "el"
+    },
+    {
+      "code": "RO",
+      "name": "Romania",
+      "region": "CEE",
+      "euro": false,
+      "regulator": "BNR",
+      "lang": "ro"
+    },
+    {
+      "code": "BG",
+      "name": "Bulgaria",
+      "region": "CEE",
+      "euro": true,
+      "regulator": "BNB",
+      "lang": "bg"
+    },
+    {
+      "code": "HU",
+      "name": "Hungary",
+      "region": "CEE",
+      "euro": false,
+      "regulator": "MNB",
+      "lang": "hu"
+    },
+    {
+      "code": "CZ",
+      "name": "Czech Republic",
+      "region": "CEE",
+      "euro": false,
+      "regulator": "CNB",
+      "lang": "cs"
+    },
+    {
+      "code": "SK",
+      "name": "Slovakia",
+      "region": "CEE",
+      "euro": true,
+      "regulator": "NBS (SK)",
+      "lang": "sk"
+    },
+    {
+      "code": "SI",
+      "name": "Slovenia",
+      "region": "CEE",
+      "euro": true,
+      "regulator": "Banka Slovenije",
+      "lang": "sl"
+    },
+    {
+      "code": "HR",
+      "name": "Croatia",
+      "region": "CEE",
+      "euro": true,
+      "regulator": "HNB",
+      "lang": "hr"
+    },
+    {
+      "code": "RS",
+      "name": "Serbia",
+      "region": "SEE",
+      "euro": false,
+      "regulator": "NBS",
+      "lang": "sr"
+    },
+    {
+      "code": "AL",
+      "name": "Albania",
+      "region": "SEE",
+      "euro": false,
+      "regulator": "Bank of Albania",
+      "lang": "sq"
+    },
+    {
+      "code": "BA",
+      "name": "Bosnia & Herzegovina",
+      "region": "SEE",
+      "euro": false,
+      "regulator": "CBBH",
+      "lang": "bs"
+    },
+    {
+      "code": "XK",
+      "name": "Kosovo",
+      "region": "SEE",
+      "euro": false,
+      "regulator": "CBK",
+      "lang": "sq"
+    },
+    {
+      "code": "ME",
+      "name": "Montenegro",
+      "region": "SEE",
+      "euro": false,
+      "regulator": "CBCG",
+      "lang": "sr"
+    },
+    {
+      "code": "MK",
+      "name": "North Macedonia",
+      "region": "SEE",
+      "euro": false,
+      "regulator": "NBRNM",
+      "lang": "mk"
+    },
+    {
+      "code": "UA",
+      "name": "Ukraine",
+      "region": "UA",
+      "euro": false,
+      "regulator": "NBU",
+      "lang": "uk"
+    }
+  ],
+  "aliases": {
+    "BG": [
+      "Bulgaria"
+    ],
+    "RO": [
+      "Romania"
+    ],
+    "RS": [
+      "Serbia"
+    ],
+    "GR": [
+      "Greece"
+    ],
+    "CY": [
+      "Cyprus"
+    ],
+    "HU": [
+      "Hungary"
+    ],
+    "CZ": [
+      "Czechia",
+      "Czech Republic"
+    ],
+    "SK": [
+      "Slovakia"
+    ],
+    "SI": [
+      "Slovenia"
+    ],
+    "HR": [
+      "Croatia"
+    ],
+    "AL": [
+      "Albania"
+    ],
+    "BA": [
+      "Bosnia",
+      "BiH",
+      "Bosnia & Herzegovina"
+    ],
+    "XK": [
+      "Kosovo"
+    ],
+    "ME": [
+      "Montenegro"
+    ],
+    "MK": [
+      "North Macedonia",
+      "Macedonia"
+    ],
+    "UA": [
+      "Ukraine"
+    ]
+  },
+  "footprint_wide_markers": [
+    "all footprint",
+    "footprint-wide",
+    "footprint wide",
+    "eu footprint",
+    "eu-11",
+    "eu-11 footprint",
+    "all markets",
+    "group",
+    "cee",
+    "see"
+  ]
+}

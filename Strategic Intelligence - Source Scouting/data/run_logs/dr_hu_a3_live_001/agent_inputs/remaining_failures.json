@@ -1,0 +1,322 @@
+[
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_014",
+  "source_url": "https://zoldpenzugyek.mnb.hu/felugyeleti-eszkozok/zold-vezetoi-korlevelek",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_044",
+  "source_url": "https://mhk.hu/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_049",
+  "source_url": "https://www.dorsum.eu/news/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_082",
+  "source_url": "https://hu.jooble.org/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_085",
+  "source_url": "https://www.hrportal.hu/hr/allasoldalak-20250907.html",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_086",
+  "source_url": "https://www.felvi.hu/diploman_tul/allaskereses/hasznos_oldalak/allasportalok",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_124",
+  "source_url": "https://www.lexology.com/library/detail.aspx?g=f6bf151d-ae4a-4f95-b987-a1d1a9fc37a8",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_146",
+  "source_url": "https://njt.hu",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "ConnectionResetError"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_150",
+  "source_url": "https://adozona.hu/altalanos/gvh_Gazdasagi_es_Versenyhivatal_versenyfelu_M4QQEX",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_153",
+  "source_url": "https://otthonapenzugyekben.hu/penzugyi-navigator-tanacsado-irodahalozat/panaszkezelas/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_155",
+  "source_url": "https://www.mnb.hu/kiadvanyok/archivum",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_161",
+  "source_url": "https://njt.hu/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "ConnectionResetError"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_166",
+  "source_url": "https://kpmg.com/hu/hu/home/tanulmanyok.html",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_167",
+  "source_url": "https://www.lexology.com/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_168",
+  "source_url": "https://ceelegalmatters.com/hungary",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_176",
+  "source_url": "https://cdn.kormany.hu/uploads/document/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_182",
+  "source_url": "https://technical-regulation-information-system.ec.europa.eu/en/search/notification",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_186",
+  "source_url": "mailto:kozigazgatasiegyeztetes@ngm.gov.hu",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_218",
+  "source_url": "https://www.mastercard.hu/hu-hu/gyakran-ismetelt-kerdesek.html",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_228",
+  "source_url": "https://alk.mnb.hu/bal_menu/hatarozatok/hatarozatok_keresese",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_235",
+  "source_url": "https://ceginformaciosszolgalat.kormany.hu/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_250",
+  "source_url": "https://www.kh.hu/kondicio/maganszemely/hirdetmeny",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_251",
+  "source_url": "https://www.kh.hu/kondicio/maganszemelyek/archiv-hirdetmeny",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_254",
+  "source_url": "https://gate.erstebank.hu/ebh_internet_hird_frontend/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_290",
+  "source_url": "https://www.retivarszegipartners.hu/en/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_293",
+  "source_url": "https://www.schoenherr.eu/content",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_296",
+  "source_url": "https://www.oppenheimlegal.com/hu/expertise/practices/bankjog-es-finanszirozas",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_298",
+  "source_url": "https://www.dlapiper.com/en/insights",
+  "outcome": "unresolved",
+  "http_status": 429,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 429"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_302",
+  "source_url": "https://ceelegalmatters.com/index.php/hungary",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_311",
+  "source_url": "https://opentender.eu/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_319",
+  "source_url": "https://nisz.hu/kozbeszerzes/kozbeszerzesi-informaciok",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_322",
+  "source_url": "https://atlatszo.hu/kozpenz/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ }
+]

@@ -1,0 +1,19 @@
+[
+{"candidate_id":"dr_ua_a3_live_001__c_309","role":"keep","decision":"approve","priority":"critical","rationale":"Versioned master public-offer portal; diffable record of when NBU-driven rule changes hit customers."},
+{"candidate_id":"dr_ua_a3_live_001__c_310","role":"keep","decision":"approve","priority":"high","rationale":"State bank's recurring customer-notice feed with explicit effective dates for DKBO/tariff amendments."},
+{"candidate_id":"dr_ua_a3_live_001__c_311","role":"evidence_not_source","decision":"approve","priority":"medium","rationale":"A single dated DKBO PDF — useful dated evidence, but the news feed (c_310) is the monitorable parent."},
+{"candidate_id":"dr_ua_a3_live_001__c_312","role":"keep","decision":"approve","priority":"high","rationale":"Operational-status page naming the exact NBU resolutions behind restrictions; durable standalone page."},
+{"candidate_id":"dr_ua_a3_live_001__c_313","role":"evidence_not_source","decision":"approve","priority":"medium","rationale":"One-off ogoloshennya PDF; high-density dates but an artifact, monitor the bank's notices index instead."},
+{"candidate_id":"dr_ua_a3_live_001__c_314","role":"keep","decision":"approve","priority":"critical","rationale":"Structured stream of formal 'Povidomlennya pro zminy' notices with effective dates; prime A3 implementation signal."},
+{"candidate_id":"dr_ua_a3_live_001__c_315","role":"evidence_not_source","decision":"approve","priority":"low","rationale":"Single approved-by-order terms PDF; evidence for approval-vs-effective lag, not a producing source."},
+{"candidate_id":"dr_ua_a3_live_001__c_316","role":"evidence_not_source","decision":"approve","priority":"medium","rationale":"Individual news post; the UKRSIBBANK news index is the standalone source to monitor."},
+{"candidate_id":"dr_ua_a3_live_001__c_317","role":"evidence_not_source","decision":"approve","priority":"medium","rationale":"Single rules PDF with serialised order reference; valuable dated evidence rather than a feed."},
+{"candidate_id":"dr_ua_a3_live_001__c_318","role":"keep","decision":"approve","priority":"critical","rationale":"monobank's dated public-offer versions make amendment cadence directly measurable; fastest implementer benchmark."},
+{"candidate_id":"dr_ua_a3_live_001__c_319","role":"keep","decision":"approve","priority":"high","rationale":"Licensed entity behind monobank publishes the formal tariff-change notices the app never surfaces."},
+{"candidate_id":"dr_ua_a3_live_001__c_320","role":"keep","decision":"defer","priority":"high","rationale":"Dedicated public-offer amendment feed, best-structured bank-side stream; url_verification failed so re-check liveness."},
+{"candidate_id":"dr_ua_a3_live_001__c_321","role":"evidence_not_source","decision":"approve","priority":"medium","rationale":"Single state-bank unilateral-amendment act PDF; good state-vs-private comparison evidence, not a feed."},
+{"candidate_id":"dr_ua_a3_live_001__c_322","role":"keep","decision":"approve","priority":"high","rationale":"Cross-bank news aggregator that often surfaces terms/tariff changes before the banks' own listings."},
+{"candidate_id":"dr_ua_a3_live_001__c_323","role":"keep","decision":"approve","priority":"medium","rationale":"Parent-group disclosures explain Ukrainian supervisory/FX pressure in English; durable IR publication hub."},
+{"candidate_id":"dr_ua_a3_live_001__c_324","role":"marginal","decision":"defer","priority":"low","rationale":"EN mirror plus social channels; largely redundant with the main notice feed and access status unknown."},
+{"candidate_id":"dr_ua_a3_live_001__c_325","role":"keep","decision":"approve","priority":"high","rationale":"Regulator news search is the join key linking bank notices to the specific NBU act and its deadline."}
+]

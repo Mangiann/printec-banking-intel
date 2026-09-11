@@ -1,0 +1,282 @@
+[
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_027",
+  "source_url": "https://crz.gov.sk/115093-sk/slovenska-posta-a-s/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_039",
+  "source_url": "https://www.orsr.sk/search_subjekt.asp",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_116",
+  "source_url": "https://www.finextra.com/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_122",
+  "source_url": "https://www.sme.sk/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_160",
+  "source_url": "https://uzitocna.pravda.sk/spotrebitel/clanok/765628-pri-nakupe-v-tychto-predajniach-si-vyberiete-aj-hotovost-kolko-naraz/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.pravda.sk/uzitocna/spotrebitel/clanok/765628-pri-nakupe-v-tychto-predajniach-si-vyberiete-aj-hotovost-kolko-naraz",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_188",
+  "source_url": "https://subjekty.nbs.sk/api/psd2",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://subjekty.nbs.sk/sk/api/psd2",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_189",
+  "source_url": "https://subjekty.nbs.sk/sk/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_205",
+  "source_url": "https://registre.nbs.sk/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_220",
+  "source_url": "https://www.primabanka.sk/vyrocne-spravy",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_224",
+  "source_url": "https://ceri.nbs.sk/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_234",
+  "source_url": "https://www.primabanka.sk/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_240",
+  "source_url": "https://tlacovespravy.sme.sk/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_277",
+  "source_url": "https://www.anasoft.com/sk/home/referencie/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.anasoft.com/sk/referencie",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_318",
+  "source_url": "https://subjekty.nbs.sk/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://subjekty.nbs.sk/sk/",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_328",
+  "source_url": "https://www.finstat.sk/51910497",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_038",
+  "source_url": "https://www.finstat.sk/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_081",
+  "source_url": "https://www.finstat.sk/31801412",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_117",
+  "source_url": "https://www.fintechfutures.com/us/region/slovakia/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.fintechfutures.com/about-us",
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_129",
+  "source_url": "https://praca.sme.sk/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.sme.sk/",
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_140",
+  "source_url": "https://sk.jooble.org/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_226",
+  "source_url": "https://www.tatrabanka.sk/sk/blog/tlacove-spravy/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_227",
+  "source_url": "https://www.tatrabanka.sk/en/about-bank/innovation/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_255",
+  "source_url": "https://ce.asseco.com/press/zpravy/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://ce.asseco.com/404/",
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_267",
+  "source_url": "https://www.gartner.com/reviews/market/digital-banking-platforms/compare/backbase-vs-temenos",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_271",
+  "source_url": "https://www.finstat.sk/35947705/obchodny_register",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_310",
+  "source_url": "https://finstat.sk/50010301",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_319",
+  "source_url": "https://www.revolut.com/sk-SK/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a6_live_001__c_325",
+  "source_url": "https://www.crowdberry.eu/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.crowdberry.eu/en",
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ }
+]

@@ -1,0 +1,29 @@
+{
+ "agentNo": 2,
+ "agentLabel": "Tenders & Procurement",
+ "unitNoun": "procurement portal",
+ "tableKind": "tenders",
+ "findingsDir": "/Users/mangian/Downloads/BANKING/findings/02-tenders",
+ "runDate": "2026-07-24",
+ "prevSummary": "",
+ "units": [
+  {
+   "slug": "ted-eu",
+   "name": "TED (EU-wide)",
+   "focus": "ATM, cash automation, self-service, POS, security, IT-outsourcing notices across all EU footprint countries; capture buyer + value + deadline + winner | READ intel-cache/ted_notices.json FIRST (pre-fetched TED notices: id, buyer, country, CPV, deadline, winner, EN PDF); filter to Greece (GRC).",
+   "langs": "English + filings language"
+  },
+  {
+   "slug": "greece-diavgeia-kimdis",
+   "name": "Greece — Diavgeia / KIMDIS / ESIDIS",
+   "focus": "Greek bank & public ATM/self-service/POS tenders and awards | READ intel-cache/greek_tenders_diavgeia.json FIRST (276 pre-fetched ΚΗΜΔΗΣ/Diavgeia decisions via OpenData subject= sweep, no auth/no Chrome); triage for GENUINE ATM/cash-automation/POS/self-service procurements, DROP municipal bank-fee-accounting ('λογιστική τακτοποίηση') noise; open each kept row's doc_url to confirm. Do NOT change CPV scope (F5 unresolved).",
+   "langs": "Greek"
+  },
+  {
+   "slug": "bank-owned-pages",
+   "name": "Bank-owned procurement pages",
+   "focus": "banks that run their own RFP portals (PrivatBank, CEC, others) + recent awards revealing winners",
+   "langs": "local"
+  }
+ ]
+}

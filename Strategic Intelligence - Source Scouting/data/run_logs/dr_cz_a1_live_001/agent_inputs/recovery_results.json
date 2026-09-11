@@ -1,0 +1,272 @@
+[
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_097",
+  "source_url": "https://skippay.cz/pro-novinare",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_106",
+  "source_url": "https://www.apek.cz/novinky-apek",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_114",
+  "source_url": "https://www.param.com.tr/basin",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://param.com.tr/",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_115",
+  "source_url": "https://skippay.cz/tiskove-zpravy",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_117",
+  "source_url": "https://skippay.cz/dokumenty",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_130",
+  "source_url": "https://www.apek.cz/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_132",
+  "source_url": "https://www.ipfin.co.uk/en/investors.html",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_133",
+  "source_url": "https://www.csob.cz/portal/csob/vztahy-s-investory",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_158",
+  "source_url": "https://ir.euronetworldwide.com/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_163",
+  "source_url": "https://investors.brinks.com/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_216",
+  "source_url": "https://www.investor.fisglobal.com",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_217",
+  "source_url": "https://newsroom.fiserv.com/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://investors.fiserv.com/news-events/news-releases",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_224",
+  "source_url": "https://efts.sec.gov/LATEST/search-index?q=%22Czech%22&forms=8-K",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_247",
+  "source_url": "https://www.apek.cz/seznam-clenu",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_249",
+  "source_url": "https://www.apek.cz/pro-novinare",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_256",
+  "source_url": "https://www.cap.cz/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_259",
+  "source_url": "https://protext.ctk.cz/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://protext.ctk.cz/shptz/",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_273",
+  "source_url": "https://www.csob.cz/portal/csob/pro-media",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_390",
+  "source_url": "https://www.finextra.com/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_392",
+  "source_url": "https://www.bloomberg.com/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.bloomberg.com/europe",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_425",
+  "source_url": "https://www.csobstavebni.cz/informace-dle-vyhlasky-cnb",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_427",
+  "source_url": "https://www.artesa.cz/o-nas/profil/verejne-informace/povinne-uverejnovane-informace/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_454",
+  "source_url": "https://www.cdcp.cz/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_512",
+  "source_url": "https://www.hypotecnibanka.cz/o-bance/pro-media/tiskove-zpravy/emise-hzl/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.csobhypotecni.cz/o-bance/pro-media/tiskove-zpravy/emise-hzl/",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_528",
+  "source_url": "https://www.csobstavebni.cz/vyrocni-zpravy",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_536",
+  "source_url": "https://www.nn.cz/spolecnost-nn/o-spolecnosti/nase-spolecnosti/nn-penzijni-spolecnost/zpravy-hospodareni/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a1_live_001__c_540",
+  "source_url": "https://www.csobam.cz/portal/asset-management/informace-pro-investory/informacni-povinnost-spravce-fondu",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ }
+]

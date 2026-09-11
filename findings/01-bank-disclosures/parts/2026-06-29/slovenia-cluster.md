@@ -1,0 +1,18 @@
+# Slovenia cluster — findings 2026-06-29
+
+Banks: NLB, OTP banka d.d. (Slovenia), Banka Intesa Sanpaolo (Koper), Bankart d.o.o. (processor)
+
+## Working signals (in progress)
+
+- **NLB Group Strategy 2030** (announced 09/05/2024): "50-2-1" — double balance sheet to ~EUR 50bn, EUR 2bn revenue, EUR 1bn profit by 2030. EUR 170-200m technology investment for digital-first model; target >80% of new retail business fully digital/self-service 24/7. Digital penetration retail SI 58.2% H1 2025, digital sales 33.6%. Source: nlbgroup.com press 09/05/2024 + International Banker. → Printec: digital onboarding/eKYC, self-service ATM/recyclers, managed services.
+- **OTP banka Slovenia** — post-merger (NKBM+SKB legal merger 22/08/2024, IT migration done 02/09/2024). Largest SI bank, ~EUR 15bn assets, >900 banking points, ~400 ATMs in Slovenia. ATMs support cash deposit (polog), mixed fleet types ("not all ATMs support all services"). UPN bill-pay at ATMs discontinued 30/09/2025. → Printec: ATM fleet consolidation/standardisation post-merger, recyclers, OptiCash, managed services.
+- **Bankart d.o.o.** (NLB Group associate, processor) — manages SI POS terminal network + ATM/POS acquiring processing; >45m tx/month. Bankart + Nets delivering new central instant-payments infrastructure (SCT inst via Nets RealTime24/7). → Printec: POS/TMS, acquiring, transaction monitoring.
+- **Banka Intesa Sanpaolo (Koper)** — 2022-2025 business plan, migration to new digital banking solution; ATMs > branches. AR2024 published.
+
+## CONFIRMED primary findings
+
+- **Bankart AR2024**: manages 1,814 ATMs at 15 banks across SI/MK/BA/XK/ME (81.73% SI ATM mkt share); vendor mix NCR + Wincor Nixdorf + Diebold + Diebold Nixdorf. 55,000 POS terminals processed (71% SI POS share). ~3m cards, 46% card-processing share. Provides full ATM/POS lifecycle: inclusion of new ATMs, replacements, key/encryption distribution, 24h contact centre, POS install/maintenance. Flik scheme 690,000 users. **Replacing its authorisation system (the ATM/POS transaction-authorisation core) — staggered migration, completion END OF 2026; phase 1 (infra + new auth system + parallel run) done.** Owned by NLB 46.03%, OTP 43.06%, Intesa 7.25%, UniCredit SI 2.24%, Deželna 1.42%. Source: bankart.si AR 31/12/2024.
+- **Bankart + Nets**: Nets RealTime24/7 instant-payments platform for SI sector (SCT Inst); BIPS system. Source: CPI / FintechFutures / Finextra (press, 403 on fetch).
+- **Intesa SI AR2024**: EUR 3.1m invested in IT+premises 2024 (79% IT). 2024-25 plan EXPLICITLY names "prenovo in celovito posodabljanje bankomatske mreze" (ATM-network renewal + comprehensive modernization), instant-payments infra upgrades, backend payment-processing/EU payment-system integration, automatic-controls + early-warning optimization, AI fraud-prevention. Already rolled out contactless ATMs + deposit/withdrawal ATMs + instant payments. HQ Koper. Source: intesasanpaolobank.si AR2024 PDF (parsed locally).
+- **OTP banka SI**: post-merger ~EUR 15bn assets, largest SI bank, >900 banking points, ~400 ATMs SI, mixed fleet (deposit-capable, "not all support all services"). UPN at ATMs discontinued 30/09/2025. Printec was vendor of first Self Serv 27 ATM in Slovenia (for legacy SKB). Source: otpbanka.si + Printec FB.
+- **NLB Strategy 2030** (09/05/2024): 50-2-1; EUR 170-200m tech; >80% new retail digital/self-service; digital penetration 58.2% H1 2025. NLB KB Serbia = first SI-group bank to fully replace ATM network with latest-gen multifunctional machines (group blueprint). Printec incumbent: full contactless ATM-network transformation for NLB d.d. (w/ Mastercard, 3-month project). Source: nlbgroup.com + Intl Banker + Printec case study.

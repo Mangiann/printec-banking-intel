@@ -1,0 +1,15 @@
+# Auto-generated: Kosovo / A1 Disclosures / sector=both.
+country: XK
+country_name: Kosovo
+sector: both
+workstreams: [A1]
+topics: [disclosures, annual reports, investor relations, press releases, earnings]
+languages: [sq, sr, en]
+routine_id: R2
+routine_name: source_discovery_scout
+routine_version: 0.3.0
+prompt_path: routines/source_discovery_scout/routine_prompt.md
+url_verification:
+  enabled: false
+dedupe:
+  enabled: true

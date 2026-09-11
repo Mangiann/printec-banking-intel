@@ -1,0 +1,627 @@
+[
+  {
+    "scope": "Identity becomes recurring platform infrastructure, not one-off onboarding",
+    "country": "Footprint-wide (CEE/SEE)",
+    "horizon": "2-5 years (2027-2031)",
+    "direction": "strong growth",
+    "projected": "Identity verification compounds from USD 14.34bn (2025) toward USD 29-34bn by 2030 at ~15-17% CAGR, as EUDI wallets turn verification into recurring, cryptographically-anchored infrastructure rather than a one-off onboarding cost ([MarketsandMarkets](https://www.marketsandmarkets.com/PressReleases/identity-verification.asp)).",
+    "confidence": "High",
+    "rationale": "The trigger is legislated, not discretionary: every Member State must provide an EUDI wallet by 6 Dec 2026, and from 6 Dec 2027 relying parties legally or contractually obliged to use strong user authentication must accept the wallet for identification and SCA ([European Commission](https://digital-strategy.ec.europa.eu/en/policies/eudi-regulation); [Baker McKenzie](https://www.bakermckenzie.com/en/insight/publications/2026/03/european-union-eudi-wallet-harmonizes-identification-and-age-gating)). This converts identity from a one-off check into recurring acceptance infrastructure as reusable/portable KYC cuts onboarding cost and friction while GenAI-driven deepfake fraud breaks legacy eKYC ([Deloitte](https://www.deloitte.com/us/en/insights/industry/financial-services/deepfake-banking-fraud-risk-on-the-rise.html)). The defensible CEE/SEE play is operating the eIDAS-2 Art. 5b intermediary acceptance hub — one registration serving the long tail of obligated-but-unequipped relying parties that have no identity team — rather than building another horizontal eKYC tool. The honest hedge is selling readiness, since the 80% wallet-uptake target may slip toward ~2032 ([ABI Research](https://www.abiresearch.com/market-research/insight/7783456-the-european-commissions-goal-of-eudi-wall)).",
+    "drivers": [
+      "EUDI issuance by 6 Dec 2026 and mandatory acceptance/SCA from 6 Dec 2027 force verification into every regulated relying party ([European Commission](https://digital-strategy.ec.europa.eu/en/policies/eudi-regulation))",
+      "eIDAS-2 Art. 5f extends the acceptance duty to relying parties under a legal or contractual obligation to use strong user authentication, widening the buyer base beyond the named sectors ([Baker McKenzie](https://www.bakermckenzie.com/en/insight/publications/2026/03/european-union-eudi-wallet-harmonizes-identification-and-age-gating))",
+      "Identity-verification market compounds ~15-17% CAGR from USD 14.34bn (2025) toward USD 29-34bn by 2030 on legislated rather than discretionary demand ([MarketsandMarkets](https://www.marketsandmarkets.com/PressReleases/identity-verification.asp))",
+      "Reusable/portable KYC lets a credential verified once be re-accepted across institutions through a single eID/wallet hub, cutting onboarding cost and friction ([Signicat](https://www.signicat.com/products/identity-proofing/eid-hub))",
+      "Deepfake/GenAI fraud (Deloitte: ~USD 40bn US losses by 2027, from USD 12.3bn in 2023, ~32% CAGR) breaks legacy eKYC, forcing cryptographically-anchored verification ([Deloitte](https://www.deloitte.com/us/en/insights/industry/financial-services/deepfake-banking-fraud-risk-on-the-rise.html))"
+    ],
+    "source_reports": [
+      {
+        "label": "European Commission — European Digital Identity (EUDI) Regulation",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-regulation"
+      },
+      {
+        "label": "MarketsandMarkets — Identity Verification Market worth $29.32bn by 2030 (from $14.34bn in 2025, 15.4% CAGR)",
+        "url": "https://www.marketsandmarkets.com/PressReleases/identity-verification.asp"
+      },
+      {
+        "label": "Grand View Research — Identity Verification Market Size to reach $33.93bn by 2030 (16.7% CAGR)",
+        "url": "https://www.grandviewresearch.com/industry-analysis/identity-verification-market-report"
+      },
+      {
+        "label": "Baker McKenzie — EUDI Wallet Harmonizes Identification and Age-Gating",
+        "url": "https://www.bakermckenzie.com/en/insight/publications/2026/03/european-union-eudi-wallet-harmonizes-identification-and-age-gating"
+      },
+      {
+        "label": "ABI Research — EUDI wallet 80% target will not be met by 2030 (likely ~2032)",
+        "url": "https://www.abiresearch.com/market-research/insight/7783456-the-european-commissions-goal-of-eudi-wall"
+      },
+      {
+        "label": "Deloitte — Deepfake banking and AI fraud risk on the rise",
+        "url": "https://www.deloitte.com/us/en/insights/industry/financial-services/deepfake-banking-fraud-risk-on-the-rise.html"
+      }
+    ],
+    "chart": {
+      "title": "Global identity-verification market size, USD bn (analyst range to 2030)",
+      "type": "bar",
+      "labels": [
+        "2025",
+        "2030 (MarketsandMarkets)",
+        "2030 (Grand View)"
+      ],
+      "series": [
+        {
+          "label": "Market size (USD bn)",
+          "data": [
+            14.34,
+            29.32,
+            33.93
+          ]
+        }
+      ],
+      "horizontal": false
+    }
+  },
+  {
+    "scope": "Real-time payments become a sold data layer, not a rail",
+    "country": "Footprint-wide (CEE/SEE focus)",
+    "horizon": "2-5 years (2027-2031)",
+    "direction": "strong growth",
+    "projected": "Instant is now the legislated default rail: SEPA instant credit transfers already hit 23% of euro-area credit transfers by number in H1 2025, up from 15% a year earlier ([ECB](https://www.ecb.europa.eu/press/stats/paysec/html/ecb.pis2025h1~36edd636c8.en.html)), and value migrates up the stack from clearing to Verification-of-Payee and ISO 20022 structured-data products. The durable revenue is selling reconciliation, cash-flow forecasting and liquidity analytics off the rail, not the one-off migration.",
+    "confidence": "High",
+    "rationale": "Instant is becoming the default euro rail: SEPA instant credit transfers rose to 23% of euro-area credit transfers by number in H1 2025 from 15% in H1 2024 ([ECB](https://www.ecb.europa.eu/press/stats/paysec/html/ecb.pis2025h1~36edd636c8.en.html)), and the Instant Payments Regulation binds non-euro CEE/SEE PSPs to offer SCT Inst and Verification-of-Payee by 9 July 2027, creating a dated procurement window for inline VoP ([PwC Legal](https://legal.pwc.de/en/news/articles/verification-of-payee-requirements-vop-under-the-eus-instant-payments-regulation-ipr)). With legacy SWIFT MT for cross-border FI-to-FI payments retired on 22 November 2025, ISO 20022 structured data becomes the basis for sold products — reconciliation, cash-flow forecasting and liquidity analytics ([Swift](https://www.swift.com/standards/iso-20022/iso-20022-faqs/implementation)). The defensible position is integrating those data services into under-served CEE/SEE PSPs as their integrator, not the migration itself.",
+    "drivers": [
+      "SEPA instant credit transfers reached 23% of euro-area credit transfers by number in H1 2025, up from 15% a year earlier, as instant becomes the default rail ([ECB](https://www.ecb.europa.eu/press/stats/paysec/html/ecb.pis2025h1~36edd636c8.en.html))",
+      "Non-euro CEE/SEE PSPs (e.g. BG, RO, PL, CZ, HU) are bound to offer SCT Inst and Verification-of-Payee by 9 July 2027, creating a dated procurement window for inline VoP ([PwC Legal](https://legal.pwc.de/en/news/articles/verification-of-payee-requirements-vop-under-the-eus-instant-payments-regulation-ipr))",
+      "The amended Settlement Finality Directive grants payment and e-money institutions direct TARGET2/TIPS access from October 2025, widening the non-bank buyer base on the same rail ([ECB](https://www.ecb.europa.eu/press/intro/news/html/ecb.mipnews20240719.en.html))",
+      "Legacy SWIFT MT for cross-border FI-to-FI payments was retired on 22 November 2025, turning ISO 20022 structured data into sold products: reconciliation, cash-flow forecasting and liquidity analytics ([Swift](https://www.swift.com/standards/iso-20022/iso-20022-faqs/implementation))",
+      "Instant payments are projected to reach ~22% of global non-cash transaction volumes by 2028, compressing card-acquiring economics and pushing value up-stack ([Capgemini](https://www.capgemini.com/news/press-releases/account-to-account-payments-and-instant-payments-set-to-spark-new-wave-of-innovation/))"
+    ],
+    "source_reports": [
+      {
+        "label": "ECB — Payments statistics: first half of 2025 (instant share 23% of credit transfers)",
+        "url": "https://www.ecb.europa.eu/press/stats/paysec/html/ecb.pis2025h1~36edd636c8.en.html"
+      },
+      {
+        "label": "ECB — Payments statistics: first half of 2024 (instant share 15%)",
+        "url": "https://www.ecb.europa.eu/press/stats/paysec/html/ecb.pis2024h1~5263055ced.en.html"
+      },
+      {
+        "label": "PwC Legal — Verification of Payee under the IPR (9 July 2027 non-euro deadline)",
+        "url": "https://legal.pwc.de/en/news/articles/verification-of-payee-requirements-vop-under-the-eus-instant-payments-regulation-ipr"
+      },
+      {
+        "label": "ECB — Eurosystem policy on non-bank PSP access to T2/TIPS",
+        "url": "https://www.ecb.europa.eu/press/intro/news/html/ecb.mipnews20240719.en.html"
+      },
+      {
+        "label": "Swift — ISO 20022 implementation (MT cross-border coexistence ended 22 Nov 2025)",
+        "url": "https://www.swift.com/standards/iso-20022/iso-20022-faqs/implementation"
+      },
+      {
+        "label": "Capgemini — World Payments Report 2025 press release (instant ~22% of non-cash volumes globally by 2028)",
+        "url": "https://www.capgemini.com/news/press-releases/account-to-account-payments-and-instant-payments-set-to-spark-new-wave-of-innovation/"
+      }
+    ],
+    "chart": {
+      "title": "Instant payments as a share of euro-area credit transfers (by number)",
+      "type": "bar",
+      "labels": [
+        "H1 2024",
+        "H1 2025"
+      ],
+      "series": [
+        {
+          "label": "SCT Inst share of credit transfers (%)",
+          "data": [
+            15,
+            23
+          ]
+        }
+      ],
+      "horizontal": false
+    }
+  },
+  {
+    "scope": "Financial crime goes real-time, AI-driven and data-shared",
+    "country": "Footprint-wide (EU + CEE/SEE)",
+    "horizon": "2-5 years (2027-2031)",
+    "direction": "strong growth",
+    "projected": "The fraud-detection and financial-crime layer is one of banking's fastest-compounding pools: the fraud-detection and prevention market roughly doubles from USD 32.0bn (2025) to USD 65.68bn by 2030 at a 15.5% CAGR ([MarketsandMarkets](https://www.marketsandmarkets.com/PressReleases/fraud-detection-prevention.asp)), with AML software on a parallel USD 4.13bn→9.38bn (2030) curve. This is a projection on legislated and loss-driven clocks, not discretionary budgets.",
+    "confidence": "High",
+    "rationale": "Growth here is locked to legislation and losses rather than discretionary IT budgets. The EU AML Regulation applies directly from 10 Jul 2027, with AMLA selecting and then directly supervising ~40 high-risk institutions from 1 Jan 2028 ([European Commission](https://finance.ec.europa.eu/financial-crime/anti-money-laundering-and-countering-financing-terrorism-eu-level_en)), while instant-by-default payments kill overnight batch screening and force periodic KYC into perpetual KYC and inline real-time fraud orchestration. GenAI-enabled deepfake fraud — Deloitte projects ~USD 40bn of US losses by 2027, up from USD 12.3bn in 2023 (~32% CAGR) — is breaking legacy eKYC and pulling spend forward ([Deloitte](https://www.deloitte.com/us/en/insights/industry/financial-services/deepfake-banking-fraud-risk-on-the-rise.html)). For Printec the durable opening is not another horizontal screening tool but the AMLR Article 75 data-sharing slot ([AMLR Art. 75](https://amlr.eu/article-75-exchange-of-information-in-the-framework-of-partnerships-for-information-sharing/)): operating a privacy-by-design, federated cross-bank financial-crime utility for governance-laggard CEE/SEE banks as the neutral integrator — the role TMNL's centralised model failed to fill.",
+    "drivers": [
+      "AMLR applies directly from 10 Jul 2027 and AMLA directly supervises ~40 institutions from 1 Jan 2028, converting AML/CFT from a directive patchwork into a dated, board-level spend line ([European Commission](https://finance.ec.europa.eu/financial-crime/anti-money-laundering-and-countering-financing-terrorism-eu-level_en))",
+      "Instant-by-default payments — already 23% of euro-area credit transfers in H1 2025 vs ~15% a year earlier, with non-euro CEE PSPs bound by 9 Jul 2027 — make overnight review impossible, forcing perpetual KYC and inline real-time fraud orchestration ([ECB](https://www.ecb.europa.eu/press/stats/paysec/html/index.en.html))",
+      "GenAI deepfake fraud breaks legacy eKYC: Deloitte projects US losses rising to ~USD 40bn by 2027 from USD 12.3bn in 2023 (~32% CAGR) ([Deloitte](https://www.deloitte.com/us/en/insights/industry/financial-services/deepfake-banking-fraud-risk-on-the-rise.html))",
+      "Fraud-detection market USD 32.0bn (2025) → 65.68bn by 2030 at 15.5% CAGR; AML software USD 4.13bn → 9.38bn (2030) at 17.8% CAGR, the fastest near-term ROI for buyers ([MarketsandMarkets](https://www.marketsandmarkets.com/PressReleases/fraud-detection-prevention.asp))",
+      "AMLR Article 75 opens an EU-wide legal basis for bank-to-bank information-sharing partnerships from 10 Jul 2027 — a neutral, privacy-by-design utility slot for CEE/SEE consortia after TMNL's centralised pooling model was wound down as no longer viable under the new framework ([AMLR Art. 75](https://amlr.eu/article-75-exchange-of-information-in-the-framework-of-partnerships-for-information-sharing/))"
+    ],
+    "source_reports": [
+      {
+        "label": "MarketsandMarkets — Fraud Detection & Prevention Market worth $65.68bn by 2030 (15.5% CAGR)",
+        "url": "https://www.marketsandmarkets.com/PressReleases/fraud-detection-prevention.asp"
+      },
+      {
+        "label": "MarketsandMarkets — Anti-money Laundering (AML) Market worth $9.38bn by 2030 (17.8% CAGR)",
+        "url": "https://www.marketsandmarkets.com/PressReleases/anti-money-laundering-solutions.asp"
+      },
+      {
+        "label": "Deloitte — Generative AI to magnify deepfake and other banking fraud ($12.3bn 2023 → $40bn 2027)",
+        "url": "https://www.deloitte.com/us/en/insights/industry/financial-services/deepfake-banking-fraud-risk-on-the-rise.html"
+      },
+      {
+        "label": "European Commission — Anti-money laundering and CFT at EU level (AMLR / AMLA)",
+        "url": "https://finance.ec.europa.eu/financial-crime/anti-money-laundering-and-countering-financing-terrorism-eu-level_en"
+      },
+      {
+        "label": "AMLR Article 75 — Exchange of information in partnerships for information sharing",
+        "url": "https://amlr.eu/article-75-exchange-of-information-in-the-framework-of-partnerships-for-information-sharing/"
+      }
+    ],
+    "chart": {
+      "title": "Fraud-detection & AML software market, USD bn (2025 → 2030)",
+      "type": "bar",
+      "labels": [
+        "Fraud detection 2025",
+        "Fraud detection 2030",
+        "AML software 2025",
+        "AML software 2030"
+      ],
+      "series": [
+        {
+          "label": "Market size (USD bn)",
+          "data": [
+            32,
+            65.68,
+            4.13,
+            9.38
+          ]
+        }
+      ],
+      "horizontal": false
+    }
+  },
+  {
+    "scope": "AI in banking shifts from copilot to governed operator",
+    "country": "Footprint-wide (CEE/SEE focus)",
+    "horizon": "2-5 years (2027-2031)",
+    "direction": "strong growth",
+    "projected": "Banking AI software compounds at ~31.8% (2024-2030) to ~USD 143.56bn by 2030, and agentic AI moves from copilot to operator across fraud, service and ops — but the durable, defensible revenue migrates from the agents themselves to the EU AI Act assurance layer for high-risk credit scoring ([Grand View Research](https://www.grandviewresearch.com/press-release/global-artificial-intelligence-banking-market)).",
+    "confidence": "Medium",
+    "rationale": "The spend trajectory is near-certain in direction — AI in banking runs from ~USD 27.36bn (2024) to ~USD 143.56bn by 2030 at a 31.8% CAGR ([Grand View Research](https://www.grandviewresearch.com/press-release/global-artificial-intelligence-banking-market)), and Gartner sees agentic AI embedded in ~33% of enterprise applications by 2028 versus under 1% in 2024 ([Gartner](https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027)). But the autonomy story is over-hyped: Gartner expects over 40% of agentic projects to be cancelled by end-2027 on rising cost, unclear ROI and weak controls, so the confident money is the conformity scaffolding the AI Act mandates for high-risk credit scoring under Annex III — Annex VI internal-control conformity, Article 12 logging with six-month retention, Article 14 human oversight and a quality-management system, with high-risk obligations now deferred to 2 Dec 2027 ([artificialintelligenceact.eu](https://artificialintelligenceact.eu/annex/3/)). For Printec the edge is not another horizontal governance platform — that arena is already crowding toward a ~USD 1.4bn market by 2030 ([Gartner](https://www.gartner.com/en/newsroom/press-releases/2026-02-17-gartner-global-ai-regulations-fuel-billion-dollar-market-for-ai-governance-platforms)) — but operationalising continuous self-attestation inside governance-laggard CEE/SEE lenders' existing decisioning stacks as their integrator.",
+    "drivers": [
+      "AI in banking compounds 31.8% (2024-2030) from ~USD 27.36bn (2024) to ~USD 143.56bn by 2030, while financial-sector AI spend more broadly rises ~USD 35bn (2023) to ~USD 97bn (2027) at ~30%/yr ([Grand View Research](https://www.grandviewresearch.com/press-release/global-artificial-intelligence-banking-market); [Statista/Citi](https://www.statista.com/statistics/1457711/banking-sector-estimated-gen-ai-spending-forecast/))",
+      "Agentic AI moves from copilot to operator — embedded in ~33% of enterprise applications by 2028, up from under 1% in 2024 ([Gartner](https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027))",
+      "Hype correction: over 40% of agentic AI projects cancelled by end-2027 on rising cost, unclear ROI and weak controls — value shifts to governed, ROI-led use cases ([Gartner](https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027))",
+      "EU AI Act classes credit-scoring AI as high-risk (Annex III), forcing continuous self-attestation — Annex VI conformity, Art. 12 logging, Art. 14 oversight, QMS — on a dated 2 Dec 2027 clock after the Digital Omnibus deferral ([artificialintelligenceact.eu](https://artificialintelligenceact.eu/annex/3/))",
+      "A dedicated AI-governance market emerges (Gartner's inaugural Magic Quadrant, 2026) growing ~67.5% CAGR from ~USD 65m (2024) to ~USD 1.4bn by 2030 — crowded at the platform layer, open at the CEE/SEE integration layer ([Gartner](https://www.gartner.com/en/newsroom/press-releases/2026-02-17-gartner-global-ai-regulations-fuel-billion-dollar-market-for-ai-governance-platforms))"
+    ],
+    "source_reports": [
+      {
+        "label": "Grand View Research — Artificial Intelligence in Banking Market to reach $143.56Bn by 2030 (31.8% CAGR, 2024-2030)",
+        "url": "https://www.grandviewresearch.com/press-release/global-artificial-intelligence-banking-market"
+      },
+      {
+        "label": "Gartner — Over 40% of Agentic AI Projects Will Be Canceled by End of 2027 (and 33% of enterprise apps agentic by 2028, <1% in 2024)",
+        "url": "https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027"
+      },
+      {
+        "label": "Gartner — Global AI Regulations Fuel Billion-Dollar Market for AI Governance Platforms ($65m 2024 to >$1.4bn 2030, 67.5% CAGR)",
+        "url": "https://www.gartner.com/en/newsroom/press-releases/2026-02-17-gartner-global-ai-regulations-fuel-billion-dollar-market-for-ai-governance-platforms"
+      },
+      {
+        "label": "EU AI Act — Annex III: High-Risk AI Systems (credit scoring), with Annex VI / Art. 12 / Art. 14 obligations; high-risk deferred to 2 Dec 2027",
+        "url": "https://artificialintelligenceact.eu/annex/3/"
+      },
+      {
+        "label": "Statista / Citi — Banking-sector AI spending forecast (~$35bn 2023 to ~$97bn 2027)",
+        "url": "https://www.statista.com/statistics/1457711/banking-sector-estimated-gen-ai-spending-forecast/"
+      }
+    ],
+    "chart": {
+      "title": "AI in banking market, USD bn (Grand View Research, 31.8% CAGR 2024-2030)",
+      "type": "line",
+      "labels": [
+        "2023",
+        "2024",
+        "2030"
+      ],
+      "series": [
+        {
+          "label": "AI in banking market (USD bn)",
+          "data": [
+            19.87,
+            27.36,
+            143.56
+          ]
+        }
+      ],
+      "horizontal": false
+    }
+  },
+  {
+    "scope": "Operational resilience becomes a standing, recurring market",
+    "country": "Footprint-wide (CEE/SEE focus)",
+    "horizon": "2-5 years (2027-2031)",
+    "direction": "strong growth",
+    "projected": "DORA shifts from a 2025 go-live deadline into a permanent, recurring operational-resilience spend line — third-party-risk management, threat-led penetration testing every three years, and the new critical-ICT-third-party-provider (CTPP) oversight regime under which the ESAs designated their [first 19 CTPPs on 18 Nov 2025](https://www.eiopa.europa.eu/european-supervisory-authorities-designate-critical-ict-third-party-providers-under-digital-2025-11-18_en). The wrapping RegTech/SupTech market grows from [~USD 20.7bn (2025) to ~USD 44.1bn by 2030, ~16% CAGR](https://www.mordorintelligence.com/industry-reports/global-regtech-industry) (projection), with resilience as a managed annuity rather than a one-off project.",
+    "confidence": "High",
+    "rationale": "DORA is no longer a deadline but a maturity-phase compliance regime: it has applied since [17 Jan 2025 with fines up to 2% of total annual worldwide turnover](https://vendorica.com/dora/penalties/), and 2026 is widely treated as the shift to active, standing supervision. The recurring obligations are structural — significant entities must run [threat-led penetration testing at least every three years](https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/operational-resilience/joint-regulatory-technical-standards-specifying-elements-related-threat-led-penetration-tests) and continuously manage third- and fourth-party ICT risk, while the ESAs run direct oversight of the [19 designated CTPPs](https://www.morganlewis.com/blogs/sourcingatmorganlewis/2025/11/dora-eu-regulators-announce-list-of-critical-ict-third-party-providers) (AWS, Microsoft, Google, Oracle, SAP, Deutsche Telekom and others). With institutions budgeting [EUR 5-15m on DORA programmes](https://www.fintechfutures.com/regulations-compliance/dora-and-beyond-what-do-new-compliance-standards-mean-for-banking-and-finance-) and the wider RegTech pool compounding ~16% to ~USD 44bn by 2030, this is a recurring-revenue domain. For Printec the durable position is the embedded CISO/CRO partner running resilience-testing, TPRM and pooled-TLPT cost-sharing for under-served CEE/SEE institutions that lack in-house programmes — accountability stays client-side, so the sell is managed delivery, not transfer of liability.",
+    "drivers": [
+      "CTPP oversight regime is now live and recurring: the ESAs designated their [first 19 critical ICT third-party providers on 18 Nov 2025](https://www.eiopa.europa.eu/european-supervisory-authorities-designate-critical-ict-third-party-providers-under-digital-2025-11-18_en), to be reviewed periodically, with each CTPP under direct ESA oversight — a permanent supervisory layer, not a one-off list.",
+      "Threat-led resilience testing is a standing cycle: significant entities must run [TLPT at least every three years](https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/operational-resilience/joint-regulatory-technical-standards-specifying-elements-related-threat-led-penetration-tests), with an estimated [~100-120 significant banks plus insurers, MIs and PSPs in the first 2025-2028 cycle and pooled TLPT cutting per-entity cost to ~40-50%](https://www.regulation-dora.eu/tlpt).",
+      "Enforcement teeth and maturity-phase budgets: DORA carries [fines up to 2% of total annual worldwide turnover](https://vendorica.com/dora/penalties/) and institutions are spending [EUR 5-15m each on DORA programmes](https://www.fintechfutures.com/regulations-compliance/dora-and-beyond-what-do-new-compliance-standards-mean-for-banking-and-finance-), converting compliance into a board-level recurring cost line.",
+      "RegTech/SupTech is the wrapping market and it compounds: [~USD 20.7bn (2025) to ~USD 44.1bn by 2030, ~16.4% CAGR](https://www.mordorintelligence.com/industry-reports/global-regtech-industry) (projection), shifting from rules-based engines to AI-enabled, continuously-monitored platforms.",
+      "Managed-services pull in laggard markets: with [~200+ designated entities competing for fewer than 40 qualified red-team providers in the first cycle](https://www.regulation-dora.eu/tlpt), entities that cannot staff resilience in-house turn to managed delivery — the structural opening for an integrator across under-served CEE/SEE institutions."
+    ],
+    "source_reports": [
+      {
+        "label": "EIOPA/ESAs — first designation of critical ICT third-party providers under DORA (18 Nov 2025)",
+        "url": "https://www.eiopa.europa.eu/european-supervisory-authorities-designate-critical-ict-third-party-providers-under-digital-2025-11-18_en"
+      },
+      {
+        "label": "Morgan Lewis — DORA: EU regulators announce list of 19 critical ICT third-party providers",
+        "url": "https://www.morganlewis.com/blogs/sourcingatmorganlewis/2025/11/dora-eu-regulators-announce-list-of-critical-ict-third-party-providers"
+      },
+      {
+        "label": "Mordor Intelligence — RegTech market report (USD 20.67bn 2025 → 44.11bn 2030, 16.37% CAGR)",
+        "url": "https://www.mordorintelligence.com/industry-reports/global-regtech-industry"
+      },
+      {
+        "label": "EBA — Joint RTS on threat-led penetration testing (TLPT) under DORA",
+        "url": "https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/operational-resilience/joint-regulatory-technical-standards-specifying-elements-related-threat-led-penetration-tests"
+      },
+      {
+        "label": "Vendorica — DORA penalties and enforcement (fines up to 2% of total annual worldwide turnover)",
+        "url": "https://vendorica.com/dora/penalties/"
+      },
+      {
+        "label": "regulation-dora.eu — DORA TLPT requirements (first 2025-2028 cycle scope; pooled-TLPT cost-sharing)",
+        "url": "https://www.regulation-dora.eu/tlpt"
+      }
+    ],
+    "chart": {
+      "title": "Global RegTech market — DORA-anchored trajectory (USD bn, projection)",
+      "type": "line",
+      "labels": [
+        "2025",
+        "2030"
+      ],
+      "series": [
+        {
+          "label": "RegTech market size (USD bn)",
+          "data": [
+            20.67,
+            44.11
+          ]
+        }
+      ],
+      "horizontal": false
+    }
+  },
+  {
+    "scope": "Post-quantum crypto forces a fleet-wide HSM and key refresh",
+    "country": "Footprint-wide",
+    "horizon": "2-5 years (2027-2031)",
+    "direction": "growth",
+    "projected": "Two hard clocks — NIST's draft deprecating RSA/ECC after 2030 and the EU's coordinated roadmap asking high-risk systems onto post-quantum cryptography by end-2030, with national strategies and cryptographic inventories underway by end-2026 — turn migration into a dated, budgeted programme; the hardware-security-module market grows from ~USD 1.66bn (2025) to ~USD 3.28bn (2030), ~14.5% CAGR ([MarketsandMarkets](https://www.prnewswire.com/news-releases/hardware-security-modules-market-worth-3-28-billion-by-2030---exclusive-report-by-marketsandmarkets-302386944.html)). The near-term billable wedge is CBOM discovery; the back-loaded one is the crypto-agile HSM/key refresh.",
+    "confidence": "Medium",
+    "rationale": "The demand is regulation-anchored, not discretionary: the EU's NIS Cooperation Group roadmap (adopted June 2025) asks member states to publish national PQC strategies and begin cryptographic inventories and pilots by end-2026 and to complete migration of high-risk use cases by end-2030 ([EU PQC Roadmap](https://digital-strategy.ec.europa.eu/en/library/coordinated-implementation-roadmap-transition-post-quantum-cryptography)), where analysts read the high-risk tier as covering finance alongside utilities, telecom and government ([PostQuantum.com](https://postquantum.com/quantum-policy/eu-pqc-roadmap/)), while NIST's draft IR 8547 deprecates RSA/ECC after 2030 and disallows them after 2035 ([NIST IR 8547](https://csrc.nist.gov/pubs/ir/8547/ipd)). Most banks still cannot say where cryptography runs in their estate, so the near-term motion is the cryptographic bill-of-materials (CBOM) discovery exercise, ahead of a 3-5 year crypto-agile HSM and key-lifecycle refresh that is the most hardware-intensive part ([MarketsandMarkets](https://www.prnewswire.com/news-releases/hardware-security-modules-market-worth-3-28-billion-by-2030---exclusive-report-by-marketsandmarkets-302386944.html)). Confidence is Medium because timing can telescope — the refresh is back-loaded toward 2030 and the wider remediation runs to 2035, and IR 8547 remains an initial public draft — but direction is firm. For Printec the edge is owning the CBOM-to-refresh motion for CEE/SEE security-architecture teams that have not started, a horizontal practice that also reaches eID, telecom and utilities clients.",
+    "drivers": [
+      "Dated EU roadmap: national PQC strategies and cryptographic inventories underway by end-2026, high-risk use cases migrated to PQC by end-2030 ([EU PQC Roadmap](https://digital-strategy.ec.europa.eu/en/library/coordinated-implementation-roadmap-transition-post-quantum-cryptography))",
+      "NIST's draft IR 8547 deprecates RSA/ECC after 2030, disallows them after 2035 — forcing crypto-agile re-architecture of new and legacy systems ([NIST IR 8547](https://csrc.nist.gov/pubs/ir/8547/ipd))",
+      "HSM market roughly doubles, ~USD 1.66bn (2025) to ~USD 3.28bn (2030), ~14.5% CAGR, with payment processing a core application ([MarketsandMarkets](https://www.prnewswire.com/news-releases/hardware-security-modules-market-worth-3-28-billion-by-2030---exclusive-report-by-marketsandmarkets-302386944.html))",
+      "CBOM discovery is the near-term wedge — most banks lack a cryptographic inventory and the roadmap now requires one ([Utimaco](https://utimaco.com/news/blog-posts/eus-roadmap-post-quantum-cryptography))",
+      "Horizontal reach: the same discovery-and-refresh motion serves finance, eID/government, telecom and utilities, the high-risk sectors the roadmap targets, sustaining demand into the 2030s ([PostQuantum.com](https://postquantum.com/quantum-policy/eu-pqc-roadmap/))"
+    ],
+    "source_reports": [
+      {
+        "label": "MarketsandMarkets — HSM market worth USD 3.28bn by 2030 (PR Newswire)",
+        "url": "https://www.prnewswire.com/news-releases/hardware-security-modules-market-worth-3-28-billion-by-2030---exclusive-report-by-marketsandmarkets-302386944.html"
+      },
+      {
+        "label": "EU NIS Cooperation Group — Coordinated Implementation Roadmap for the Transition to PQC",
+        "url": "https://digital-strategy.ec.europa.eu/en/library/coordinated-implementation-roadmap-transition-post-quantum-cryptography"
+      },
+      {
+        "label": "NIST IR 8547 — Transition to Post-Quantum Cryptography Standards (initial public draft)",
+        "url": "https://csrc.nist.gov/pubs/ir/8547/ipd"
+      },
+      {
+        "label": "Utimaco — The EU's Roadmap for Post-Quantum Cryptography",
+        "url": "https://utimaco.com/news/blog-posts/eus-roadmap-post-quantum-cryptography"
+      },
+      {
+        "label": "PostQuantum.com — EU Commission Roadmap Targets 2030 for PQC Transition",
+        "url": "https://postquantum.com/quantum-policy/eu-pqc-roadmap/"
+      }
+    ],
+    "chart": {
+      "title": "Hardware Security Module market, USD bn (MarketsandMarkets)",
+      "type": "bar",
+      "labels": [
+        "2025",
+        "2030"
+      ],
+      "series": [
+        {
+          "label": "HSM market (USD bn)",
+          "data": [
+            1.66,
+            3.28
+          ]
+        }
+      ],
+      "horizontal": false
+    }
+  },
+  {
+    "scope": "Tokenization and stablecoins go from fringe to bankable",
+    "country": "Footprint-wide",
+    "horizon": "2-4 years (2027-2030)",
+    "direction": "growth",
+    "projected": "Regulated digital-asset rails move from fringe to bankable: tokenized real-world assets are projected at roughly USD 2T (McKinsey base case, range USD 1-4T, excluding stablecoins/CBDCs) up to ~USD 16T (BCG/ADDX) by 2030, while the whole regulated euro-stablecoin base is still only ~EUR 450m today ([Ledger Insights / McKinsey](https://www.ledgerinsights.com/mckinsey-estimates-tokenization-will-be-less-than-2-trillion-by-2030/)). These are analyst projections that diverge ~8x by scope and method, so the reliable signal is direction and the arrival of regulated infrastructure, not the absolute size.",
+    "confidence": "Medium",
+    "rationale": "verified",
+    "drivers": [
+      "MiCA fully in force (stablecoin rules from 30 Jun 2024, full CASP regime from 30 Dec 2024), with the euro-stablecoin market having more than doubled in the year after rollout to ~USD 680m by Dec 2025 and EURC holding ~41% share ([CoinDesk](https://www.coindesk.com/business/2025/12/06/hold-euro-stablecoin-market-cap-doubles-in-year-after-mica-decta-says))",
+      "Bank-consortium issuance becomes real: Qivalis MiCAR euro stablecoin targets an H2 2026 launch, ~37 banks across 15 countries, DNB-supervised on Fireblocks rails ([CaixaBank](https://www.caixabank.com/en/headlines/news/qivalis-joint-venture-of-a-european-banking-consortium-to-launch-euro-stablecoin-in-the-second-half-of-2026))",
+      "ECB Pontes bridge planned to go live Q3 2026, settling tokenized assets in central-bank money via T2, with the longer-term Appia track from early 2028 ([ECB](https://www.ecb.europa.eu/paym/target/pontes/html/index.en.html))",
+      "Tokenized real-world assets projected to scale toward ~USD 2T (McKinsey base, USD 1-4T range) up to ~USD 16T (BCG/ADDX) by 2030 ([Ledger Insights / McKinsey](https://www.ledgerinsights.com/mckinsey-estimates-tokenization-will-be-less-than-2-trillion-by-2030/))",
+      "Custody, key-management and on-chain monitoring pulled into regulated banking as euro stablecoins grow, opening an integrator role for CEE/SEE banks joining these rails ([ECB Macroprudential Bulletin](https://www.ecb.europa.eu/press/financial-stability-publications/macroprudential-bulletin/html/ecb.mpbu202604_05.en.html))"
+    ],
+    "source_reports": [
+      {
+        "label": "Ledger Insights — McKinsey: tokenization under USD 2T by 2030 (base case, range USD 1-4T)",
+        "url": "https://www.ledgerinsights.com/mckinsey-estimates-tokenization-will-be-less-than-2-trillion-by-2030/"
+      },
+      {
+        "label": "Ledger Insights — BCG/ADDX: asset tokenization to reach ~USD 16T by 2030",
+        "url": "https://www.ledgerinsights.com/bcg-addx-estimate-asset-tokenization-to-reach-16-trillion-by-2030/"
+      },
+      {
+        "label": "CaixaBank — Qivalis euro stablecoin to launch H2 2026 (~37 banks, 15 countries, DNB, Fireblocks)",
+        "url": "https://www.caixabank.com/en/headlines/news/qivalis-joint-venture-of-a-european-banking-consortium-to-launch-euro-stablecoin-in-the-second-half-of-2026"
+      },
+      {
+        "label": "ECB — Pontes (DLT central-bank-money settlement, Q3 2026; Appia from early 2028)",
+        "url": "https://www.ecb.europa.eu/paym/target/pontes/html/index.en.html"
+      },
+      {
+        "label": "ECB Macroprudential Bulletin (Apr 2026) — Euro stablecoins and sovereign bond markets (~EUR 450m market cap)",
+        "url": "https://www.ecb.europa.eu/press/financial-stability-publications/macroprudential-bulletin/html/ecb.mpbu202604_05.en.html"
+      },
+      {
+        "label": "ESMA — Markets in Crypto-Assets Regulation (MiCA) timeline",
+        "url": "https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica"
+      }
+    ],
+    "chart": {
+      "title": "Tokenized real-world assets by 2030 — analyst projections (USD trillion)",
+      "type": "bar",
+      "labels": [
+        "McKinsey base case",
+        "BCG/ADDX"
+      ],
+      "series": [
+        {
+          "label": "Projected tokenized assets by 2030 (USD T)",
+          "data": [
+            2,
+            16
+          ]
+        }
+      ],
+      "horizontal": false
+    }
+  },
+  {
+    "scope": "Non-bank buyers and open finance redraw payments distribution",
+    "country": "Footprint-wide",
+    "horizon": "2-5 years (2027-2031)",
+    "direction": "strong growth",
+    "projected": "Europe's embedded-finance revenue pool is set to climb from ~EUR 20-30bn (2023, ~3% of banking revenues) toward EUR 100bn+ by 2030, B2B-dominated and reaching 10-15% of banking revenue pools, as PSD3/PSR and FIDA legitimise a new licensed non-bank buyer class ([McKinsey](https://www.mckinsey.com/industries/financial-services/our-insights/embedded-finance-how-banks-and-customer-platforms-are-converging)). Treat the level as an indicative projection; the direction is high-conviction.",
+    "confidence": "Medium",
+    "rationale": "Distribution of regulated financial services is moving outside the traditional bank list: McKinsey sizes Europe's embedded-finance pool at EUR 20-30bn in 2023 (~3% of banking revenues) rising past EUR 100bn by 2030 at 10-15% of banking revenue pools, B2B-dominated, with the embedded channel climbing from 5-6% of retail/SME lending revenues in 2023 to 20-25% by 2030 ([McKinsey](https://www.mckinsey.com/industries/financial-services/our-insights/embedded-finance-how-banks-and-customer-platforms-are-converging)). A hard regulatory clock makes this addressable: PSD3/PSR (applying ~late 2027) merges the PI and EMI regimes into a single payment-institution licence with a ~24-month re-authorisation window for existing PIs/EMIs, while FIDA phases open-finance data access from Q4 2027 ([Norton Rose Fulbright](https://www.nortonrosefulbright.com/en/knowledge/publications/cedd39c6/psd3-and-psr-from-provisional-agreement-to-2026-readiness); [The Paypers](https://thepaypers.com/regulations/explainers/explainer-understanding-fida-proposal-and-europes-open-finance-agenda)). The buyer base is broadening: the EBA's June-2025 No-Action Letter (transition ending 2 Mar 2026) and its 12-Feb-2026 Opinion pull MiCA CASPs handling EMT transfers into PSD2/PSD3 payment-services authorisation ([EBA](https://www.eba.europa.eu/publications-and-media/press-releases/eba-advises-national-authorities-actions-take-end-transition-period-under-its-no-action-letter)). The level varies ~2x by analyst scope, so confidence is Medium on magnitude though High on direction. For Printec the opening is the integration and managed-service layer - onboarding/KYC, AML, key management, issuing - sold to a dated cohort of EMIs, BNPL brands, retailers and MiCA CASPs across CEE/SEE that it has never invoiced and that have no in-house compliance team.",
+    "drivers": [
+      "Revenue pool scales from EUR 20-30bn (2023) toward EUR 100bn+ by 2030, B2B-dominated and 10-15% of banking revenue pools ([McKinsey](https://www.mckinsey.com/industries/financial-services/our-insights/embedded-finance-how-banks-and-customer-platforms-are-converging))",
+      "Embedded channel climbs from 5-6% of retail/SME lending revenues (2023) to 20-25% by 2030, with B2B financing the fastest-growing slice ([McKinsey](https://www.mckinsey.com/industries/financial-services/our-insights/embedded-finance-how-banks-and-customer-platforms-are-converging))",
+      "PSD3/PSR (~late 2027) merges the PI/EMI regimes into one payment-institution licence with a ~24-month re-authorisation window, forcing a fixed cohort to re-platform ([Norton Rose Fulbright](https://www.nortonrosefulbright.com/en/knowledge/publications/cedd39c6/psd3-and-psr-from-provisional-agreement-to-2026-readiness))",
+      "FIDA phases open-finance data access from Q4 2027 through Q3 2029, opening account/credit/insurance/pension data to authorised third parties ([The Paypers](https://thepaypers.com/regulations/explainers/explainer-understanding-fida-proposal-and-europes-open-finance-agenda))",
+      "EBA's June-2025 No-Action Letter (transition ending 2 Mar 2026) and 12-Feb-2026 Opinion pull MiCA CASPs handling EMT transfers into PSD2/PSD3 authorisation, widening the dated re-platform cohort ([EBA](https://www.eba.europa.eu/publications-and-media/press-releases/eba-advises-national-authorities-actions-take-end-transition-period-under-its-no-action-letter))",
+      "Structural shift toward non-bank distribution: IDC projects ~74% of consumer payments handled by non-traditional providers by 2030 globally, up from 60% in 2020 ([The Payments Association / IDC](https://thepaymentsassociation.org/article/by-2030-74-of-consumer-payments-will-be-handled-by-non-traditional-financial-service-providers/))"
+    ],
+    "source_reports": [
+      {
+        "label": "McKinsey - Embedded finance in Europe: how banks and customer platforms are converging",
+        "url": "https://www.mckinsey.com/industries/financial-services/our-insights/embedded-finance-how-banks-and-customer-platforms-are-converging"
+      },
+      {
+        "label": "Norton Rose Fulbright - PSD3 and PSR: from provisional agreement to 2026 readiness (PI/EMI merger, 24-month re-authorisation)",
+        "url": "https://www.nortonrosefulbright.com/en/knowledge/publications/cedd39c6/psd3-and-psr-from-provisional-agreement-to-2026-readiness"
+      },
+      {
+        "label": "The Paypers - Explainer: understanding the FIDA proposal and Europe's open-finance agenda (Q4 2027-2029 phasing)",
+        "url": "https://thepaypers.com/regulations/explainers/explainer-understanding-fida-proposal-and-europes-open-finance-agenda"
+      },
+      {
+        "label": "EBA - No-Action Letter / Opinion on PSD2-MiCA interplay for CASPs (transition ends 2 Mar 2026; Opinion 12 Feb 2026)",
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-advises-national-authorities-actions-take-end-transition-period-under-its-no-action-letter"
+      },
+      {
+        "label": "Morrison Foerster - PSD3 and the PSR: key developments, timeline and action points (EMI re-authorisation, late-2027 horizon)",
+        "url": "https://www.mofo.com/resources/insights/260430-psd3-and-the-payment-services-regulation-key-developments"
+      },
+      {
+        "label": "The Payments Association / IDC - By 2030, 74% of consumer payments handled by non-traditional providers",
+        "url": "https://thepaymentsassociation.org/article/by-2030-74-of-consumer-payments-will-be-handled-by-non-traditional-financial-service-providers/"
+      }
+    ]
+  },
+  {
+    "scope": "Core modernization is a decade-long coexistence programme, not rip-and-replace",
+    "country": "Footprint-wide (CEE/SEE catch-up)",
+    "horizon": "2-5 years (2027-2031)",
+    "direction": "growth",
+    "projected": "The core-banking market grows from ~USD 17.2bn (2025) to ~USD 29bn by 2031 (~9.1% CAGR), but the value is in the migration itself: the dedicated modernization market compounds ~24% to ~USD 16.8bn by 2035 and services outgrow licences (~12% CAGR), as banks run a modern core beside legacy rather than rip-and-replace ([Mordor Intelligence](https://www.mordorintelligence.com/industry-reports/core-banking-market)).",
+    "confidence": "Medium",
+    "rationale": "Modernization is now a phased coexistence programme: IDC projects ~40% of banks running a modern core beside legacy by 2026, rising to 70-80% by 2028, building competency on the modern platform while the legacy book migrates over years ([IDC via LegacyLeap](https://www.legacyleap.ai/blog/core-banking-modernization/)). Cloud-native SaaS cores (Thought Machine, Mambu, Tuum) win greenfield and neobank launches while incumbents like Temenos and Oracle keep the tier-1 replacement cycle, so competitive value shifts from the licence to the coexistence integration the SaaS vendors do not own — services revenue rising ~12.1% CAGR vs solutions still 63% of 2025 spend ([Mordor Intelligence](https://www.mordorintelligence.com/industry-reports/core-banking-market)). With on-prem still ~70% of the 2025 base and fintech/non-bank buyers the fastest cohort (~14.8% CAGR), the durable, recurring share for an integrator is owning the migration plumbing for under-served CEE/SEE lenders that lack in-house transformation teams. Magnitude is Medium-confidence: absolute sizings diverge ~2-3x by scope and the deep modernization-market CAGR is a projection.",
+    "drivers": [
+      "Sidecar coexistence becomes the default: ~40% of banks run a modern core beside legacy by 2026, 70-80% by 2028 — the lowest-risk path that avoids a big-bang cutover ([IDC via LegacyLeap](https://www.legacyleap.ai/blog/core-banking-modernization/))",
+      "Services outgrow licences: services revenue rises ~12.1% CAGR (2026-2031) while solutions still hold ~63% of 2025 spend — the integrator captures the recurring plumbing ([Mordor Intelligence](https://www.mordorintelligence.com/industry-reports/core-banking-market))",
+      "Dedicated modernization spend compounds ~24.4% CAGR from ~USD 1.9bn (2025) to ~USD 16.8bn by 2035, led by incremental (phased) modernization at ~49% share ([market.us](https://market.us/report/core-banking-modernization-market/))",
+      "Cloud-native SaaS cores win greenfield while incumbents keep tier-1 replacement; the cloud segment grows ~16.7% CAGR and fintech/non-bank buyers expand ~14.8% CAGR ([Mordor Intelligence](https://www.mordorintelligence.com/industry-reports/core-banking-market))",
+      "CEE/SEE lenders run on aged on-prem cores (~70% of the 2025 base is on-prem) with thin transformation teams — the steepest catch-up curve in Printec's footprint ([Mordor Intelligence](https://www.mordorintelligence.com/industry-reports/core-banking-market))"
+    ],
+    "chart": {
+      "title": "Core-banking market size (USD bn, Mordor Intelligence)",
+      "type": "line",
+      "labels": [
+        "2025",
+        "2026",
+        "2031"
+      ],
+      "series": [
+        {
+          "label": "Core-banking market (Mordor)",
+          "data": [
+            17.19,
+            18.76,
+            29.01
+          ]
+        }
+      ],
+      "horizontal": false
+    },
+    "source_reports": [
+      {
+        "label": "Mordor Intelligence — Core Banking Market (2025-2031)",
+        "url": "https://www.mordorintelligence.com/industry-reports/core-banking-market"
+      },
+      {
+        "label": "market.us — Core Banking Modernization Market (2025-2035)",
+        "url": "https://market.us/report/core-banking-modernization-market/"
+      },
+      {
+        "label": "LegacyLeap — Core Banking Modernization (IDC sidecar 40% / 70-80% projection)",
+        "url": "https://www.legacyleap.ai/blog/core-banking-modernization/"
+      }
+    ]
+  },
+  {
+    "scope": "SoftPOS surges off a small base as acquiring consolidates",
+    "country": "Footprint-wide (Greece/Romania acquiring focus)",
+    "horizon": "2-5 years (2027-2031)",
+    "direction": "strong growth",
+    "projected": "Phone-based acceptance grows very fast off a small base — global SoftPOS transaction value rising roughly 22x from ~$23.9bn (2025) toward ~$540bn by 2030 ([Juniper Research](https://www.juniperresearch.com/press/soft-pos-transactions-to-accelerate-by-2150/)) — but it adds to, rather than replaces, the hardware estate, leaving a hybrid acceptance footprint on consolidating acquirer rails that lifts demand for vendor-agnostic terminal management and monitoring.",
+    "confidence": "Medium",
+    "rationale": "Independent houses converge on fast SoftPOS growth from a tiny base: Juniper sees transaction value up ~2,150% to ~$540bn by 2030 ([Juniper Research](https://www.juniperresearch.com/press/soft-pos-transactions-to-accelerate-by-2150/)), while Grand View models the SoftPOS software market at a 23.1% CAGR to ~$1.24bn by 2030 ([Grand View Research](https://www.grandviewresearch.com/industry-analysis/softpos-market-report)). The direction is high-confidence, but the absolute dollar levels are off a small base and depend on merchant-enablement pace, so the magnitude is medium confidence. In the core footprint, Greece tripled Tap-to-Phone volume in 2025 with all four majors live ([OnOff.gr](https://www.onoff.gr/blog/en/news/a-new-era-in-payments-tap-to-phone-arrives-for-small/)) and Romania's acceptance gap is still wide ([Romania Insider](https://www.romania-insider.com/romanias-digital-payments-growth-outpacing-merchant-infrastructure)), while acquiring consolidates around two pan-European champions ([Flagship Advisory Partners](https://flagshipadvisorypartners.com/insights/comparing-worldline-ingenico-and-nexi-nets-groups-european-retail-payments-market-leaders/)), pushing value up-stack toward managed terminal services.",
+    "drivers": [
+      "Explosive transaction-value growth off a tiny base: global SoftPOS value rising ~$23.9bn (2025) to ~$540bn by 2030, +2,150% ([Juniper Research](https://www.juniperresearch.com/press/soft-pos-transactions-to-accelerate-by-2150/))",
+      "Greece tipping point: Tap-to-Phone transactions tripled in 2025 and all four majors (National, Eurobank, Alpha, Piraeus) now offer it, with 200,000+ active users expected by end-2026; POS market ~10.4% CAGR 2025-30 ([OnOff.gr](https://www.onoff.gr/blog/en/news/a-new-era-in-payments-tap-to-phone-arrives-for-small/); [Mordor Intelligence](https://www.mordorintelligence.com/industry-reports/greece-pos-terminals-market))",
+      "Romania acceptance gap: ~25,000 SoftPOS points by late-2024 (Visa) against ~260,000 terminals for ~521,000 SMEs, merchant enablement lagging demand; POS ~11.7% CAGR ([Romania Insider](https://www.romania-insider.com/romanias-digital-payments-growth-outpacing-merchant-infrastructure); [Mordor Intelligence](https://www.mordorintelligence.com/industry-reports/romania-pos-terminals-market))",
+      "Acquiring consolidates into two pan-European champions — Worldline-Ingenico and Nexi-Nets — concentrating processing and squeezing standalone terminal economics ([Flagship Advisory Partners](https://flagshipadvisorypartners.com/insights/comparing-worldline-ingenico-and-nexi-nets-groups-european-retail-payments-market-leaders/))",
+      "Instant/A2A payments reach ~22% of non-cash volume by 2028 and offset 15-25% of future card-transaction growth, compressing acquiring fees and pushing value up-stack to terminal management and orchestration ([Capgemini via FutureCFO](https://futurecfo.net/instant-payments-to-account-for-22-of-non-cash-transactions-by-2028-report-predicts/))"
+    ],
+    "source_reports": [
+      {
+        "label": "Juniper Research — Soft POS Transactions to Accelerate by 2,150% in Value by 2030",
+        "url": "https://www.juniperresearch.com/press/soft-pos-transactions-to-accelerate-by-2150/"
+      },
+      {
+        "label": "Grand View Research — SoftPOS Market Size & Growth Report to 2030",
+        "url": "https://www.grandviewresearch.com/industry-analysis/softpos-market-report"
+      },
+      {
+        "label": "Flagship Advisory Partners — Comparing Worldline/Ingenico and Nexi/Nets, European acquiring leaders",
+        "url": "https://flagshipadvisorypartners.com/insights/comparing-worldline-ingenico-and-nexi-nets-groups-european-retail-payments-market-leaders/"
+      },
+      {
+        "label": "Romania Insider — Digital payments growth outpacing merchant infrastructure",
+        "url": "https://www.romania-insider.com/romanias-digital-payments-growth-outpacing-merchant-infrastructure"
+      },
+      {
+        "label": "Mordor Intelligence — Greece POS Terminals Market",
+        "url": "https://www.mordorintelligence.com/industry-reports/greece-pos-terminals-market"
+      }
+    ],
+    "chart": {
+      "title": "Global SoftPOS transaction value, 2025 vs 2030 (USD bn) — Juniper Research",
+      "type": "bar",
+      "labels": [
+        "2025",
+        "2030 (projected)"
+      ],
+      "series": [
+        {
+          "label": "SoftPOS transaction value (USD bn)",
+          "data": [
+            23.9,
+            540
+          ]
+        }
+      ],
+      "horizontal": false
+    }
+  },
+  {
+    "scope": "Cash/self-service: a managed-services annuity, not the growth spine",
+    "country": "Footprint-wide (CEE/SEE, lagging the West-EU curve)",
+    "horizon": "2-5 years (2027-2031)",
+    "direction": "mixed",
+    "projected": "Through 2027-2031 the physical cash estate is the smallest, slowest-moving line of the story: the global ATM base eases ~-2%/yr from ~2.9m (2024) toward a ~4% cumulative drop by 2030, while value migrates off the box into recurring revenue — recyclers/intelligent-deposit (the only growth pocket, set to exceed half of shipments and a ~1.2m base by 2029 [Datos Insights](https://datos-insights.com/press-release/recycling-atms-defy-market-downturn-with-continued-growth/)) and ATM-as-a-Service/managed services growing roughly 3x the device market ([Precedence Research](https://www.precedenceresearch.com/atm-managed-services-market)). Treat as the legacy base to optimise, never the lead.",
+    "confidence": "High",
+    "rationale": "Direction is well-corroborated by multiple independent analysts and vendors: the global ATM installed base fell ~2% in 2024 to ~2.9m — its seventh straight annual decline since 2018 — and Datos Insights forecasts a ~4% cumulative drop by the end of the decade, even as recyclers defy the downturn, rising almost 20% to exceed 1.2m by 2029 ([Datos Insights](https://datos-insights.com/press-release/advanced-terminals-and-emerging-markets-reshape-global-atm-landscape/)). The economic centre of gravity is the recurring layer: ATM managed services roughly double from ~USD 9.1bn (2025) to ~USD 21bn by 2035 at ~8.8% CAGR — far outpacing units — and supplier power is concentrating as Brink's moves to acquire NCR Atleos for ~USD 6.6bn (close ~Q1 2027) to build a recurring ATMaaS platform ([Brink's](https://investor.ncratleos.com/news-events/press-releases/detail/174/brinks-to-acquire-ncr-atleos-for-6-6-billion-creating-leading-financial-technology-infrastructure-company)). For Printec the durable position is operating recyclers, pooling/IAD utilities and managed-services annuities across CEE/SEE markets that lag the West-EU decline curve by several years — a defensible base to optimise, while the growth spine sits in identity, real-time payments data, fraud/AML and resilience.",
+    "drivers": [
+      "Dispense-only erosion: global ATM base ~2.9m (2024), down ~2%/yr toward a ~4% cumulative decline by 2030 as cash use declines ([Datos Insights](https://datos-insights.com/press-release/advanced-terminals-and-emerging-markets-reshape-global-atm-landscape/)).",
+      "Recyclers/intelligent-deposit are the only growth pocket: installed base set to rise almost 20% to exceed 1.2m by 2029 and over half of new shipments, with vendors shipping ~900k devices over five years ([Datos Insights](https://datos-insights.com/press-release/recycling-atms-defy-market-downturn-with-continued-growth/)).",
+      "ATM-as-a-Service / managed services grow ~3x the device market — ~USD 9.1bn (2025) to ~USD 21bn by 2035 at ~8.8% CAGR ([Precedence Research](https://www.precedenceresearch.com/atm-managed-services-market)).",
+      "Supplier consolidation into recurring ATMaaS: Brink's to acquire NCR Atleos (~USD 6.6bn, close ~Q1 2027), concentrating channel and pricing power ([Brink's](https://investors.brinks.com/news-releases/news-release-details/brinks-acquire-ncr-atleos-66-billion-creating-leading-financial)).",
+      "Branch contraction plus shared ATM-pooling utilities push routine transactions onto assisted self-service — the West-EU model is the forward order book for CEE/SEE ([Datos Insights](https://datos-insights.com/blog/atm-industry-trends-a-z-guide-global-market-evolution/))."
+    ],
+    "source_reports": [
+      {
+        "label": "Datos Insights — Advanced Terminals and Emerging Markets Reshape Global ATM Landscape (base ~2.9m, -2% in 2024, ~4% cumulative decline by 2030)",
+        "url": "https://datos-insights.com/press-release/advanced-terminals-and-emerging-markets-reshape-global-atm-landscape/"
+      },
+      {
+        "label": "Datos Insights — Recycling ATMs Defy Market Downturn with Continued Growth (recyclers ~+20% to >1.2m by 2029, ~900k shipments over five years)",
+        "url": "https://datos-insights.com/press-release/recycling-atms-defy-market-downturn-with-continued-growth/"
+      },
+      {
+        "label": "Precedence Research — ATM Managed Services Market (USD 9.13bn 2025 to USD 21.26bn 2035, 8.82% CAGR)",
+        "url": "https://www.precedenceresearch.com/atm-managed-services-market"
+      },
+      {
+        "label": "NCR Atleos / Brink's — Brink's to Acquire NCR Atleos for $6.6 Billion (close ~Q1 2027)",
+        "url": "https://investor.ncratleos.com/news-events/press-releases/detail/174/brinks-to-acquire-ncr-atleos-for-6-6-billion-creating-leading-financial-technology-infrastructure-company"
+      }
+    ],
+    "chart": {
+      "title": "ATM-as-a-Service / managed services market (USD bn), 2025-2035 — ~3x the device market",
+      "type": "line",
+      "labels": [
+        "2025",
+        "2027",
+        "2029",
+        "2031",
+        "2033",
+        "2035"
+      ],
+      "series": [
+        {
+          "label": "ATM managed services market (USD bn)",
+          "data": [
+            9.1,
+            10.8,
+            12.8,
+            15.2,
+            18,
+            21.3
+          ]
+        }
+      ],
+      "horizontal": false
+    }
+  }
+]

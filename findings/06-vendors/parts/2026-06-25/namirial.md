@@ -1,0 +1,15 @@
+# Namirial — COMPETITOR (digital onboarding / eKYC / e-signature / eIDAS QTSP)
+
+Run: 2026-06-25 (classification-correction re-run). NEW vendor — no prior Namirial findings file existed; all rows below are is_new=true vs the (empty) baseline. Confidence capped at Medium (single-agent).
+
+Namirial = RIVAL to Printec's digital onboarding / eKYC / digital-identity line (NOT a Printec partner — prior roster mis-listed). Italian-founded (2000), Bain Capital-controlled QTSP. Plain English: a QTSP ("Qualified Trust Service Provider") is an eIDAS-licensed vendor allowed to issue legally-binding qualified e-signatures (QES) and certify remote identity — exactly the eKYC/onboarding capability Printec sells to banks.
+
+## Key signals
+1. **Bain Capital + Signaturit merger → €260m combined 2025 revenue, ~1,300-1,400 staff, ~240-250k customers, 25 offices, 90+ countries, 1,000 partners.** Bain agreed to acquire control of Namirial from Ambienta (Mar-2025); Namirial entered exclusive talks to absorb PSG's Signaturit (01/07/2025); integration culminates end-2026. Combined group leads IT/ES/FR/DE DTM. (baincapital.com, signaturit.com, eleconomista.es 24/02/2026.) Scale dwarfs Printec's identity line — a well-funded pan-EU consolidator now pushing into SEE/CEE.
+2. **eIDAS 2 certification LEAD across IT/ES/FR (22/05/2026).** First-movers on full eIDAS 2.0 compliance: ETSI TS 119 461 v2.1.1 cert for "Namirial Onboarding" (achieved Nov-2025), PVID/ANSSI remote-ID cert in France, Art.29-bis rQSCD conformity, and an automated EUDI-Wallet / Namirial-Wallet flow using OID4VP for PID presentation. (namirial.com 22/05/2026; biometricupdate.com 25/05/2026.) This is the exact eIDAS-2/EUDI-wallet productisation Printec must match to defend onboarding deals.
+3. **New AI onboarding platform (16/04/2026); GA Q3-2026.** Bundles KYC + QES + qualified archiving; deploy in 4-8 weeks (vs 6-12 mo), up to 75% lower integration cost vs multi-vendor; "agentic AI" / MCP-native. CEO Max Pellegrini: agent-to-agent trade thesis. (namirial.com, signaturit.com.) The 4-8wk / -75% pitch directly undercuts integrator-led onboarding builds.
+4. **Active SEE/CEE bank go-to-market.** Showcased digital onboarding + EUDI wallet + AML at TECHNOBANK 2025, Belgrade (09-10/04/2025, "leading SEE banking conference," 500+ attendees), with Namirial Romania MD Adrian Dinculescu + Stefan Weninger taking bank meetings. Namirial has a Romanian subsidiary; Dinculescu spoke at Digital Banking Scorecard 2026 (Bucharest 02/04/2026) alongside ING, Raiffeisen, BCR, CEC Bank, ASEE. (namirial.com events; futurebanking.ro; wall-street.ro.) Direct competitor presence in Printec's core markets.
+5. **Bank reference: Advanzia Bank (DE/AT/IT, 2.8m card customers)** — Namirial Onboarding cut credit-card onboarding from 13 days to minutes. (namirial.com success story.) Proof of bank-grade onboarding wins (DACH, not yet SEE-named).
+
+## Access notes
+None blocked — all primary/press sources fetched cleanly. No Namirial entries in intel-cache/competitor_news.json (new vendor).

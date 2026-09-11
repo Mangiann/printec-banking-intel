@@ -1,0 +1,102 @@
+{
+  "week": "2026-07-15",
+  "generated_by": "validate-outlooks workflow (independent traceability audit — futures)",
+  "futures": [
+    {
+      "oid": 0,
+      "validated": true,
+      "verdict": "thin",
+      "ungrounded": [
+        "Driver 4: \"Hopae committed EUR 5m to Europe pursuing Art. 5b registered-intermediary + QTSP status\" — the EUR 5m commitment figure appears nowhere in the cited finding (findings/08-futurist/2026-07-15.md row 10 says only that Hopae 'pursues Art. 5b intermediary/QTSP status'), nor in any verify.py snapshot or the knowledge base; the cited Biometric Update Signicat/Inverid article was not captured as a snapshot. Secondary vendor detail — the Art. 5b/QTSP pursuit itself does trace."
+      ]
+    },
+    {
+      "oid": 1,
+      "validated": true,
+      "verdict": "thin",
+      "ungrounded": [
+        "\"SEPA instant ... 23% of euro-area credit transfers by number in H1 2025, up from 15% a year earlier\" — the 23% traces cleanly to the cited ECB snapshot, but the \"15% a year earlier\" (H1 2024) comparator appears in NO local evidence: the cited ECB H1-2025 release snapshot contains no prior-year instant-share figure, and the only other ECB payments-statistics snapshot held locally (H2 2024) gives 16%, not 15%. No H1 2024 print exists in the snapshots, findings or knowledge base. Also drives the chart's \"H1 2024 = 15\" bar.",
+        "Attribution note (fact traces, source does not): \"~22% of global non-cash transaction volumes by 2028\" is cited to the Capgemini press release, whose snapshot carries only the '15-25% of future card transaction volume growth' stat and never mentions 2028 or 22%. The figure is recoverable only from a secondary snapshot (futurecfo.net reporting the Capgemini WPR), so the claim is supported but mis-cited."
+      ]
+    },
+    {
+      "oid": 2,
+      "validated": true,
+      "verdict": "grounded",
+      "ungrounded": []
+    },
+    {
+      "oid": 3,
+      "validated": true,
+      "verdict": "thin",
+      "ungrounded": [
+        "\"13 vendors in the first Gartner MQ\" (rationale) — the cited finding (findings/08-futurist/2026-07-15.md) names only 3 Leaders (IBM/ServiceNow/Truyo) plus 3 Visionaries and one excluded vendor in its corrections note; no total of 13 appears there, in any snapshot (none of oid=3's cited URLs are snapshotted), or in the knowledge base. It survives only in intel-cache/_underlying_v2.json, a prior-run artifact whose MQ vendor list the finding explicitly corrects.",
+        "Minor: the attributed reasons for the Gartner cancellation stat — \">40% of agentic AI projects cancelled by end-2027 on rising cost, unclear ROI and weak controls\" — are not in the cited finding, which carries only the >40%/end-2027 headline; the Gartner press release itself is not snapshotted."
+      ]
+    },
+    {
+      "oid": 4,
+      "validated": true,
+      "verdict": "thin",
+      "ungrounded": [
+        "Driver 3: CTPPs are 'under Joint Examination Team oversight, with binding recommendations expected during 2026'. The JET oversight framework and the 18 Nov 2025 designation of 19 CTPPs are well sourced (EBA PR snapshot cf587d823ab5e6bc, digital-operational-resilience-act.com snapshot b33806fd495bb5ad), but nothing in the cited finding, any snapshot or the knowledge base states that recommendations are expected during 2026 — and the string 'binding recommendation' appears nowhere in the evidence base. The EBA DORA page (snapshot 7933f85f00772b88) says only that the Lead Overseer 'may ... issue recommendations to CTPPs'; under DORA those recommendations are explicitly non-binding (competent authorities follow up; CTPPs may explain non-compliance), so both the 'binding' characterisation and the 2026 timing are unsupported.",
+        "Rationale: 'institutions budgeting EUR 5-15m on DORA programmes'. This money figure appears only as a bare assertion in the cited finding (findings/08-futurist/2026-07-15.md, theme 5: 'under-resourced institutions carrying €5–15m programmes') with no source attached, and no snapshot or knowledge-base document corroborates it (targeted greps for '5–15m', 'EUR 5 million', DORA-programme-cost patterns across intel-cache/snapshots/ and knowledge-base/ return nothing). It is the one figure in this card that breaches the finding's own stated rule that 'every figure carries a public citation'."
+      ]
+    },
+    {
+      "oid": 5,
+      "validated": true,
+      "verdict": "grounded",
+      "ungrounded": []
+    },
+    {
+      "oid": 6,
+      "validated": true,
+      "verdict": "thin",
+      "ungrounded": [
+        "\"Fireblocks rails\" (driver 3, listed as part of the Qivalis setup) — the word Fireblocks does not appear in the cited finding findings/08-futurist/2026-07-15.md, nor anywhere in the pinned Qivalis press-release snapshot (intel-cache/snapshots/2a2a6a1f6f382c41.txt), nor in the knowledge base. The project's own regulation finding (findings/03-regulation/2026-07-15.md) explicitly lists 'Fireblocks as technology partner' among 'unconfirmed extras' still to be 'verified against a Qivalis primary source' — so the futurist states as fact something the project record flags as unverified.",
+        "\"with the enhanced 24/7 Appia track from 2028\" (rationale and driver 4) — no cited source carries either the 2028 date or the '24/7/enhanced' characterisation for Appia. The cited finding says only 'Lagarde unveiled Pontes+Appia 15 Jun'; a scan of all 41 snapshots containing 'Appia' found no instance tying Appia to 2028, '24/7' or 'round-the-clock' (the ECB speech snapshot 0ec143227a8286ef.txt describes Appia only as 'an initiative to build an integrated European market for digital assets', roadmap published 11 Mar 2026). The Pontes Q3-2026 go-live half of the same sentence does trace (ECB speech snapshot: 'Pontes ... will be launched in the third quarter of 2026')."
+      ]
+    },
+    {
+      "oid": 7,
+      "validated": true,
+      "verdict": "thin",
+      "ungrounded": [
+        "Rationale: 'the embedded channel climbing from 5-6% of retail/SME lending revenues in 2023 to 20-25% by 2030' (attributed to McKinsey) — the cited finding's §8 carries only the EUR 20-30bn → 100bn+ pool and the 10-15%-of-revenue-pools split; the 5-6% → 20-25% lending-channel series appears in no finding, no snapshot (the McKinsey URL is not snapshotted, and no snapshot contains the phrase 'embedded finance') and nowhere in the knowledge base — it exists only in the author's own draft intel-cache/_trends_v2.json.",
+        "Driver 5: IDC '~74% of consumer payments handled by non-traditional providers by 2030, up from 60% in 2020' — only the '74% by 2030' endpoint is in the finding (§8); the '60% in 2020' baseline traces to no finding, snapshot or knowledge-base entry (the Payments Association/IDC URL is not snapshotted and no snapshot contains 'non-traditional financial service providers')."
+      ]
+    },
+    {
+      "oid": 8,
+      "validated": true,
+      "verdict": "thin",
+      "ungrounded": [
+        "\"Dedicated modernization spend compounds ~24.4% CAGR from ~USD 1.9bn (2025) to ~USD 16.8bn by 2035, led by incremental (phased) modernization\" — the headline sizing/CAGR traces to the finding (§9, market.us), but the segment attribution 'led by incremental (phased) modernization' appears in no cited finding, snapshot or knowledge-base file (market.us returned 403 with no snapshot; the phrase occurs only in the generated narrative/dashboard files)."
+      ]
+    },
+    {
+      "oid": 9,
+      "validated": true,
+      "verdict": "thin",
+      "ungrounded": [
+        "Greece: 'all four majors live' (Tap-to-Phone). No source in findings/snapshots/KB supports this and the project evidence points the other way: findings/06-vendors/2026-07-24.md records Apple's Greek newsroom listing myPOS, Viva and Worldline as launch providers with NBG Pay only 'coming soon' — three live providers (not banks), not 'all four majors live'.",
+        "Greece: 'POS market ~10.4% CAGR 2025-30', attributed to Mordor Intelligence 'greece-pos-terminals-market'. That URL is not snapshotted (verify.py holds nine other Mordor snapshots but not this one), the string appears nowhere in findings/ or knowledge-base/, and the snapshotted Mordor point-of-sale-terminal-market page contains no Greece section or 10.4% figure. The number traces only to the futurist's own uncited sentence in findings/08-futurist/2026-07-15.md line 64.",
+        "Romania: '~25,000 SoftPOS points against ~260,000 terminals for ~521,000 SMEs', attributed to Romania Insider 'romanias-digital-payments-growth-outpacing-merchant-infrastructure'. That URL is not in the snapshot set (only three unrelated romania-insider.com snapshots exist) and none of the three figures appears anywhere in findings/ or knowledge-base/ — Romania SoftPOS coverage in findings/06-vendors (ING 1,000+ merchants, BT Tap to Pay, Global Payments 'tom' 4,000+ merchants) gives no estate-level counts.",
+        "Romania: 'POS ~11.7% CAGR'. No source; the only 11.7% hits in the evidence base are unrelated (Ukraine cashless card transactions +11.7% in 2025).",
+        "Greece: 'Tap-to-Phone tripled in 2025' and '200,000+ users expected by end-2026' are presented as fact under a Mordor citation that does not carry them. They do appear in findings/06-vendors (2026-07-24 tail-greece-cyprus), but that finding explicitly downgrades them: 'a secondary industry blog claims ... this figure is not in any primary source re-checked. [partially-confirmed]'. Traceable, but not to the cited source and not at the confidence the card asserts.",
+        "'micro/small merchants the fastest-growing segment' (Grand View SoftPOS). The local Grand View-sourced material (findings/08-futurist/research/themes/softpos-acquiring.md) carries the 365m→1,243.9m / 23.1% series and an Eastern-Europe regional note, but no segment-growth statement; the GVR SoftPOS report page itself is not snapshotted.",
+        "Flagship Advisory Partners citation for the Worldline/Ingenico vs Nexi/Nets consolidation claim: the cited URL appears nowhere in findings, knowledge-base or the snapshot set. The substance is corroborated elsewhere in the project (findings/06-vendors worldline.md on North Star 2030 and the Shift4 North America sale; softpos-acquiring.md on CVC-Nexi and acquiring M&A), so only the attribution is unsupported."
+      ]
+    },
+    {
+      "oid": 10,
+      "validated": true,
+      "verdict": "thin",
+      "ungrounded": [
+        "\"Euronet extended IAD/managed ATM operations into Romania and Bulgaria\" — the cited Euronet press-release URL has no snapshot in intel-cache/snapshots, and the only Euronet IAD-expansion release the project holds (snapshot c2b0084e16a951e1.txt) is 'Euronet Expands Independent ATM Network Into Belgium and Mexico' (Feb 2024), with no mention of Romania or Bulgaria; the vendor-agent Euronet files cover Croatia, Czechia, Greece, Poland, Austria and the Baltics, never a RO/BG extension. It appears in the futurist finding only as an uncited assertion.",
+        "\"the global ATM base eases ~-2%/yr from ~2.9m (2024) toward a ~4% cumulative drop by 2030\" — the Datos Insights snapshot supports 2.9m and 'a 4% global decrease by the end of the decade' but gives -2% for 2024 only and states 'the rate of decline will slow'; a sustained ~-2%/yr is not in any cited source and is arithmetically inconsistent with the same sentence's ~4% cumulative figure."
+      ]
+    }
+  ]
+}

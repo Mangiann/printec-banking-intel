@@ -1,0 +1,232 @@
+[
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_007",
+  "source_url": "https://www.mbhbank.hu/befektetoi/befektetoknek",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_009",
+  "source_url": "https://www.mbhbefektetesibank.hu/sw/static/file/MBHBankKibocsatasiProgram2025-2026Alaptajekoztato_20251215.pdf",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_010",
+  "source_url": "https://www.mbhjelzalogbank.hu/befektetoknek/kibocsatasi-programok",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_017",
+  "source_url": "https://www.erstebank.hu/hu/ebh-nyito/bankunkrol/erste-group/erste-jelzalogbank-zrt/befektetoi-informaciok",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_031",
+  "source_url": "https://www.cib.hu/document/publications/CIB/2022/kozlemeny/IFRS_2021_CIB_Bank__HU-220325/IFRS_2021_CIB%20Bank__HU-220325.pdf",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_038",
+  "source_url": "https://www.nemzeticegtar.hu/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_090",
+  "source_url": "https://www.mbhbank.hu/sajtoszoba",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_094",
+  "source_url": "https://www.cib.hu/en/Maganszemelyek/rolunk/sajtoszoba/sajtokozlemenyek.html",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_110",
+  "source_url": "https://www.mbhbank.hu/befektetoi/befektetoknek/kozzetetelek/rendkivuli-kozzetetelek",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_140",
+  "source_url": "https://www.mbhbank.hu/befektetoi/befektetoknek/mkb-bankrol/penzugyi-jelentesek/tozsdei-gyorsjelentes-es-befektetoi-prezentacio",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_154",
+  "source_url": "https://ceginfo.hu/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_159",
+  "source_url": "https://www.mbhbank.hu/befektetoi/befektetoknek/mkb-bankrol/penzugyi-jelentesek",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_167",
+  "source_url": "https://wcmassets.kbc.be/content/dam/kbccom/doc/investor-relations/Results/3q2025/3q2025-quarterly-report-en.pdf.cdn.res/last-modified/1762964700620/3q2025-quarterly-report-en.pdf",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_172",
+  "source_url": "https://www.erstegroup.com/en/investors/annualreport2024/downloads",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_236",
+  "source_url": "https://webshop.opten.hu/revolut-bank-uab-magyarorszagi-fioktelepe-e10493517.html",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_270",
+  "source_url": "https://ir.euronetworldwide.com/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_277",
+  "source_url": "https://www.globalpayments.com/hu-hu",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_282",
+  "source_url": "https://www.nexigroup.com/en/investor-relations/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.nexigroup.com/en/investor-relations/overview/",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_287",
+  "source_url": "https://www.finextra.com/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_293",
+  "source_url": "https://ir.euronetworldwide.com/static-files/f89e46b8-6f7b-45f2-9d9a-71f3fcacac7a",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_316",
+  "source_url": "https://www.mtb.hu/kozzetetelek-konszolidalt-eves-beszamolok",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.mbhbefektetesibank.hu:443/",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_317",
+  "source_url": "https://www.mbhjelzalogbank.hu/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a1_live_001__c_324",
+  "source_url": "https://www.mbhbefektetesibank.hu/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ }
+]

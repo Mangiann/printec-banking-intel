@@ -1,0 +1,145 @@
+# research_plan.yaml — the source-scouting work queue for Strategic Intelligence: Banking & Payments.
+# SET = (country x workstream). Work a few per 5-hour window; each set persists independently, so a
+# window cutoff never loses more than the one in-flight run. status: pending | seeded | refresh_due.
+# Researches = the fixed workstreams (project description sec.16). Sector is always banking & payments.
+
+workstreams:
+  A1: {label: "Disclosures", scope: country, covers: "annual reports, investor decks, earnings, press releases"}
+  A2: {label: "Tenders & Procurement", scope: country, covers: "procurement portals, tender/award notices, public contracts"}
+  A3: {label: "Regulation & Deadlines", scope: country, covers: "central banks, supervisors, payment regulators, consultations"}
+  A4: {label: "Market Statistics", scope: country, covers: "central-bank & card/payment stats, cash/ATM/POS data, adoption"}
+  A5: {label: "Early Intent & Jobs", scope: country, covers: "job postings, leadership moves, tech roles, org changes"}
+  A6: {label: "Vendors & Competitors", scope: country, covers: "competitor/vendor sites, case studies, partner pages, events"}
+  A8: {label: "Futurist & Trends", scope: region/global, covers: "consulting/analyst/policy/academic reports, global trend sources"}
+
+countries:   # Printec operating countries (Austria excluded) — scope for A1-A6
+  - {iso: AL, name: "Albania"}
+  - {iso: BA, name: "Bosnia & Herzegovina"}
+  - {iso: BG, name: "Bulgaria"}
+  - {iso: HR, name: "Croatia"}
+  - {iso: CY, name: "Cyprus"}
+  - {iso: CZ, name: "Czech Republic"}
+  - {iso: GR, name: "Greece"}
+  - {iso: HU, name: "Hungary"}
+  - {iso: XK, name: "Kosovo"}
+  - {iso: ME, name: "Montenegro"}
+  - {iso: MK, name: "North Macedonia"}
+  - {iso: RO, name: "Romania"}
+  - {iso: RS, name: "Serbia"}
+  - {iso: SK, name: "Slovakia"}
+  - {iso: SI, name: "Slovenia"}
+  - {iso: UA, name: "Ukraine"}
+
+scopes:   # geographic lenses beyond countries (for A8 trends, EU regulation, global vendors)
+  GLOBAL: "Global — worldwide baseline (BIS, World Bank, global consultancies, card schemes)"
+  EU: "Europe — EU/EEA regulatory bloc + Western-European leading indicators"
+  CEE: "Central & Eastern Europe — Printec's footprint region"
+  US: "United States — card / big-tech / regulatory frontier"
+  APAC: "Asia-Pacific — real-time / super-app frontier"
+
+# The queue. scope = a country ISO or a region code. runs = rounds completed.
+sets:
+  - {scope: AL, workstream: A1, status: pending, runs: 0}
+  - {scope: AL, workstream: A2, status: pending, runs: 0}
+  - {scope: AL, workstream: A3, status: pending, runs: 0}
+  - {scope: AL, workstream: A4, status: pending, runs: 0}
+  - {scope: AL, workstream: A5, status: pending, runs: 0}
+  - {scope: AL, workstream: A6, status: pending, runs: 0}
+  - {scope: BA, workstream: A1, status: pending, runs: 0}
+  - {scope: BA, workstream: A2, status: pending, runs: 0}
+  - {scope: BA, workstream: A3, status: pending, runs: 0}
+  - {scope: BA, workstream: A4, status: pending, runs: 0}
+  - {scope: BA, workstream: A5, status: pending, runs: 0}
+  - {scope: BA, workstream: A6, status: pending, runs: 0}
+  - {scope: BG, workstream: A1, status: pending, runs: 0}
+  - {scope: BG, workstream: A2, status: pending, runs: 0}
+  - {scope: BG, workstream: A3, status: pending, runs: 0}
+  - {scope: BG, workstream: A4, status: pending, runs: 0}
+  - {scope: BG, workstream: A5, status: pending, runs: 0}
+  - {scope: BG, workstream: A6, status: pending, runs: 0}
+  - {scope: HR, workstream: A1, status: pending, runs: 0}
+  - {scope: HR, workstream: A2, status: pending, runs: 0}
+  - {scope: HR, workstream: A3, status: pending, runs: 0}
+  - {scope: HR, workstream: A4, status: pending, runs: 0}
+  - {scope: HR, workstream: A5, status: pending, runs: 0}
+  - {scope: HR, workstream: A6, status: pending, runs: 0}
+  - {scope: CY, workstream: A1, status: pending, runs: 0}
+  - {scope: CY, workstream: A2, status: pending, runs: 0}
+  - {scope: CY, workstream: A3, status: pending, runs: 0}
+  - {scope: CY, workstream: A4, status: pending, runs: 0}
+  - {scope: CY, workstream: A5, status: pending, runs: 0}
+  - {scope: CY, workstream: A6, status: pending, runs: 0}
+  - {scope: CZ, workstream: A1, status: pending, runs: 0}
+  - {scope: CZ, workstream: A2, status: pending, runs: 0}
+  - {scope: CZ, workstream: A3, status: pending, runs: 0}
+  - {scope: CZ, workstream: A4, status: pending, runs: 0}
+  - {scope: CZ, workstream: A5, status: pending, runs: 0}
+  - {scope: CZ, workstream: A6, status: pending, runs: 0}
+  - {scope: GR, workstream: A1, status: pending, runs: 0}
+  - {scope: GR, workstream: A2, status: seeded, runs: 3}
+  - {scope: GR, workstream: A3, status: pending, runs: 0}
+  - {scope: GR, workstream: A4, status: pending, runs: 0}
+  - {scope: GR, workstream: A5, status: pending, runs: 0}
+  - {scope: GR, workstream: A6, status: pending, runs: 0}
+  - {scope: HU, workstream: A1, status: pending, runs: 0}
+  - {scope: HU, workstream: A2, status: pending, runs: 0}
+  - {scope: HU, workstream: A3, status: pending, runs: 0}
+  - {scope: HU, workstream: A4, status: pending, runs: 0}
+  - {scope: HU, workstream: A5, status: pending, runs: 0}
+  - {scope: HU, workstream: A6, status: pending, runs: 0}
+  - {scope: XK, workstream: A1, status: pending, runs: 0}
+  - {scope: XK, workstream: A2, status: pending, runs: 0}
+  - {scope: XK, workstream: A3, status: pending, runs: 0}
+  - {scope: XK, workstream: A4, status: pending, runs: 0}
+  - {scope: XK, workstream: A5, status: pending, runs: 0}
+  - {scope: XK, workstream: A6, status: pending, runs: 0}
+  - {scope: ME, workstream: A1, status: pending, runs: 0}
+  - {scope: ME, workstream: A2, status: pending, runs: 0}
+  - {scope: ME, workstream: A3, status: pending, runs: 0}
+  - {scope: ME, workstream: A4, status: pending, runs: 0}
+  - {scope: ME, workstream: A5, status: pending, runs: 0}
+  - {scope: ME, workstream: A6, status: pending, runs: 0}
+  - {scope: MK, workstream: A1, status: pending, runs: 0}
+  - {scope: MK, workstream: A2, status: pending, runs: 0}
+  - {scope: MK, workstream: A3, status: pending, runs: 0}
+  - {scope: MK, workstream: A4, status: pending, runs: 0}
+  - {scope: MK, workstream: A5, status: pending, runs: 0}
+  - {scope: MK, workstream: A6, status: pending, runs: 0}
+  - {scope: RO, workstream: A1, status: pending, runs: 0}
+  - {scope: RO, workstream: A2, status: pending, runs: 0}
+  - {scope: RO, workstream: A3, status: pending, runs: 0}
+  - {scope: RO, workstream: A4, status: pending, runs: 0}
+  - {scope: RO, workstream: A5, status: pending, runs: 0}
+  - {scope: RO, workstream: A6, status: pending, runs: 0}
+  - {scope: RS, workstream: A1, status: pending, runs: 0}
+  - {scope: RS, workstream: A2, status: pending, runs: 0}
+  - {scope: RS, workstream: A3, status: pending, runs: 0}
+  - {scope: RS, workstream: A4, status: pending, runs: 0}
+  - {scope: RS, workstream: A5, status: pending, runs: 0}
+  - {scope: RS, workstream: A6, status: pending, runs: 0}
+  - {scope: SK, workstream: A1, status: pending, runs: 0}
+  - {scope: SK, workstream: A2, status: pending, runs: 0}
+  - {scope: SK, workstream: A3, status: pending, runs: 0}
+  - {scope: SK, workstream: A4, status: pending, runs: 0}
+  - {scope: SK, workstream: A5, status: pending, runs: 0}
+  - {scope: SK, workstream: A6, status: pending, runs: 0}
+  - {scope: SI, workstream: A1, status: pending, runs: 0}
+  - {scope: SI, workstream: A2, status: pending, runs: 0}
+  - {scope: SI, workstream: A3, status: pending, runs: 0}
+  - {scope: SI, workstream: A4, status: pending, runs: 0}
+  - {scope: SI, workstream: A5, status: pending, runs: 0}
+  - {scope: SI, workstream: A6, status: pending, runs: 0}
+  - {scope: UA, workstream: A1, status: pending, runs: 0}
+  - {scope: UA, workstream: A2, status: pending, runs: 0}
+  - {scope: UA, workstream: A3, status: pending, runs: 0}
+  - {scope: UA, workstream: A4, status: pending, runs: 0}
+  - {scope: UA, workstream: A5, status: pending, runs: 0}
+  - {scope: UA, workstream: A6, status: pending, runs: 0}
+  # --- regional / global sets (A8 trends across the strategic scopes; + EU rules; + global vendors) ---
+  - {scope: GLOBAL, workstream: A8, status: pending, runs: 0, note: "global trends baseline"}
+  - {scope: EU, workstream: A8, status: pending, runs: 0, note: "European trends"}
+  - {scope: CEE, workstream: A8, status: pending, runs: 0, note: "our-region trends"}
+  - {scope: US, workstream: A8, status: pending, runs: 0, note: "US frontier trends"}
+  - {scope: APAC, workstream: A8, status: pending, runs: 0, note: "APAC frontier trends"}
+  - {scope: EU, workstream: A3, status: pending, runs: 0, note: "EU/EEA rules & deadlines"}
+  - {scope: GLOBAL, workstream: A6, status: pending, runs: 0, note: "global vendors/competitors"}

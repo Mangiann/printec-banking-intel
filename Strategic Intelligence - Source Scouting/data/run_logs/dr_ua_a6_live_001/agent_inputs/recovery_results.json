@@ -1,0 +1,232 @@
+[
+ {
+  "candidate_id": "dr_ua_a6_live_001__c_025",
+  "source_url": "https://bipro.prozorro.org/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "http://bipro.prozorro.org/qlikview/index.htm",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_ua_a6_live_001__c_045",
+  "source_url": "https://www.work.ua/jobs-banking-finance/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a6_live_001__c_046",
+  "source_url": "https://www.work.ua/en/jobs/by-company/49602/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a6_live_001__c_053",
+  "source_url": "https://privatbank.ua/work",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://work.privatbank.ua/",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_ua_a6_live_001__c_064",
+  "source_url": "https://happymonday.ua/jobs-search/global_category=fintech",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a6_live_001__c_074",
+  "source_url": "https://privatbank.ua/zakupivli24",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a6_live_001__c_110",
+  "source_url": "https://privatbank.ua/cpa/openbanking",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a6_live_001__c_127",
+  "source_url": "https://www.intellinews.com/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a6_live_001__c_129",
+  "source_url": "https://www.bloomberg.com/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.bloomberg.com/europe",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_ua_a6_live_001__c_134",
+  "source_url": "https://www.kyivpost.com/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a6_live_001__c_165",
+  "source_url": "https://raiffeisen.ua/about/press",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a6_live_001__c_229",
+  "source_url": "https://web.archive.org/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a6_live_001__c_307",
+  "source_url": "https://www.ukr.net/source/payspacemagazine-2312.html",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a6_live_001__c_047",
+  "source_url": "https://www.work.ua/ru/resumes/257347/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.work.ua/resumes/257347/",
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a6_live_001__c_056",
+  "source_url": "https://robota.ua/zapros/bank/ukraine",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a6_live_001__c_061",
+  "source_url": "https://ua.jooble.org/%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0-%D0%B1%D0%B0%D0%BD%D0%BA/%D0%9A%D0%B8%D1%97%D0%B2",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a6_live_001__c_099",
+  "source_url": "https://mof.gov.ua/uk/ebrr",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a6_live_001__c_125",
+  "source_url": "https://www.fintechfutures.com/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a6_live_001__c_135",
+  "source_url": "https://www.oecd.org/en/publications/mapping-ukraine-s-financial-markets-and-corporate-governance-framework-for-a-sustainable-recovery_866c5c44-en.html",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a6_live_001__c_141",
+  "source_url": "https://odessa-journal.com/monobank-developer-becomes-ukraines-first-fintech-unicorn",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a6_live_001__c_226",
+  "source_url": "https://www.finextra.com/company-news/1222/tietoevry",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a6_live_001__c_291",
+  "source_url": "https://ensun.io/search/payment-gateway/ukraine",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a6_live_001__c_305",
+  "source_url": "https://censor.net/biz",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ }
+]

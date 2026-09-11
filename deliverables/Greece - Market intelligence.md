@@ -1,0 +1,298 @@
+# GR — payments & ATM market intelligence
+
+_Generated from the knowledge graph. Every fact below is traceable to a source document; the graph is ~94% accurate (see docs/KB_PROOF_REPORT.md). Facts are the graph's, not a summary._
+
+Graph: **22541 facts** across **8123 entities**.
+
+## The market — most active players
+
+- **Nexi** — payments_processor (1141 facts)
+- **European Central Bank** — regulator (617 facts)
+- **Bank of Greece** — regulator (498 facts)
+- **Visa** — scheme (478 facts)
+- **Optima Bank S.A.** — bank (474 facts)
+- **Alpha Bank Α.Ε.** — bank (427 facts)
+- **Τράπεζα Πειραιώς (Piraeus Bank)** — bank (409 facts)
+- **National Bank of Greece** — bank (407 facts)
+- **Worldline** — payments_processor (356 facts)
+- **European Banking Authority** — regulator (344 facts)
+- **Eurobank Ergasias S.A.** — bank (338 facts)
+- **ΕΠΕΝΔΥΤΙΚΗ ΤΡΑΠΕΖΑ ΕΛΛΑΔΟΣ Α.Ε.** — bank (249 facts)
+- **CrediaBank** — bank (247 facts)
+- **European Banking Authority (EBA)** — regulator (245 facts)
+- **INVESTMENT BANK OF GREECE S.A.** — bank (239 facts)
+- **ECB Banking Supervision Market Contact Group** — public_body (202 facts)
+- **Greece** — government_body (195 facts)
+- **Qualco Group** — fintech (184 facts)
+- **ΑΑΔΕ** — government_body (180 facts)
+- **Mastercard** — scheme (150 facts)
+
+## Deals & moves — acquisitions, bids, investments (50)
+
+- **Alpha Bank Α.Ε.** acquired Flexfin _(referenced)_
+  - _source:_ At the same time, the acquisition of FlexFin in the factoring sector for small and medium-sized enterprises serves the same objective: to de… [rd_959fd3b1efc14]
+- **Greece** invested in “My Home II” Facility _(2026-08-31)_
+  - _source:_ This measure shall consist of a public investment in the “My Home II” Facility, in order to incentivise private investment and improve acces… [rd_47bd2c4597404]
+- **Printec Cash Network A.E.** acquired ΚΕΑ Λειτουργία και Διαχείριση Δικτύων ΑΤΜ Μονοπρόσωπη _(2026-07-18)_
+  - _source:_ Στην πώληση του 80,10% των μετοχών της εταιρείας ΚΕΑ Λειτουργία και Διαχείριση Δικτύων ΑΤΜ Μονοπρόσωπη, στην οποία μεταβιβάστηκε ο κλάδος τη… [rd_6539e7e5dd724]
+- **Ξένοι θεσμικοί επενδυτές** invested in ελληνικό Χρηματιστήριο, με συνεχιζόμενη αναζήτηση ευκαιριών τοποθέτησης _(2026-07-18)_
+  - _source:_ Οι ξένοι επενδυτές εξακολουθούν να αναζητούν ευκαιρίες τοποθέτησης στο ελληνικό Χρηµατιστήριο, όπως αποτυπώνεται και στον ηµερήσιο τζίρο.… [rd_01a791eb380f4]
+- **Επενδυτικά funds** invested in ελληνικό street food, με αυξανόμενα deals παρά τις πιέσεις στην εστίαση _(2026-07-18)_
+  - _source:_ Τα funds ξαναγράφουν τον χάρτη στο ελληνικό street food Τα deals πληθαίνουν, όμως οι πιέσεις στην εστίαση παραμένουν.… [rd_044d9fbc5f704]
+- **Alpha Bank Α.Ε.** acquired Flexfin _(2026-07-18)_
+  - _source:_ Την εξαγορά του 100% της Flexfin ανακοινώνει η Alpha Bank με σκοπό τη συγχώνευσή της με την ABC Factors και τη δημιουργία της πιο καινοτόμου… [rd_104796a4d8144]
+- **Ελληνικές συστημικές τράπεζες** invested in δωρεά 160 εκατ. ευρώ σε ΕΚΠΑ, ΑΠΘ και ΕΜΠ _(2026-07-17)_
+  - _source:_ 17-07-2026 14:03 Νέα δωρεά 160 εκατ. ευρώ σε ΕΚΠΑ, ΑΠΘ και ΕΜΠ από τις 4 συστημικές τράπεζες Newsroom… [rd_6d51e55f4eb44]
+- **EFA GROUP** acquired SSMART _(2026-07-17)_
+  - _source:_ 18:00 17/07 EFA GROUP: Εξαγοράζει το 100% της SSMART και διευρύνει το αποτύπωμα στα Radar Ενισχύονται οι δυνατότητες του Ομίλου σε Συστήματα… [rd_d186cd9a672f4]
+- **Eurobank Ergasias S.A.** announced acquisition Eurolife FFH _(2026-07-16)_
+  - _source:_ Την έγκριση της Ευρωπαϊκής Επιτροπής έλαβε η εξαγορά του 100% της ασφαλιστικής εταιρείας Eurolife από τη Eurobank, καθώς η συναλλαγή κρίθηκε… [rd_576feec4e6094]
+- **BlackRock** invested in CrediaBank _(2026-07-16)_
+  - _source:_ η είσοδος της BlackRock στο μετοχικό κεφάλαιο ενισχύει τη διεθνή επενδυτική εικόνα της CrediaBank και θέτει στο επίκεντρο την οργανική κερδο… [rd_576feec4e6094]
+- **Eurobank Ergasias S.A.** announced acquisition Eurolife FFH _(2026-07-16)_
+  - _source:_ Την έγκριση της Ευρωπαϊκής Επιτροπής έλαβε η εξαγορά του 100% της ασφαλιστικής εταιρείας Eurolife από τη Eurobank, καθώς η συναλλαγή κρίθηκε… [rd_34bcb75829464]
+- **Deutsche Bank AG** invested in Bally's Intralot _(2026-07-16)_
+  - _source:_ Η Deutsche Bank απέκτησε μετοχές της αξίας 2,18 εκατ.… [rd_24463aa80c0d4]
+- **Deutsche Bank AG** invested in Bally's Intralot _(2026-07-16)_
+  - _source:_ Bally’s Intralot: Η Deutsche Bank απέκτησε μετοχές της αξίας 2,18 εκατ. Αγορά μετοχών Bally’s Intralot από την Deutsche Bank… [rd_df4a7af56f694]
+- **BlackRock** invested in CrediaBank _(2026-07-15)_
+  - _source:_ Αλλαξε η μετοχική σύνθεση της CrediaBank - Διεθνείς επενδυτές πήραν το 16,7% Με 3% η BlackRock, 29,4% διατηρεί το Υπερταμείο… [rd_e06b204a52804]
+- **Thrivest Holding** invested in AKTOR Group _(2026-07-15)_
+  - _source:_ Με τα κεφάλαια αυτά η Thrivest θα συμμετέχει στην αύξηση κεφαλαίου της AKTOR διατηρώντας στο ακέραιο τη συμμετοχή της.… [rd_facdac989e9e4]
+- **Thrivest Holding** invested in CrediaBank _(2026-07-15)_
+  - _source:_ Την ίδια στιγμή, η Thrivest παραμένει ο μεγαλύτερος ιδιώτης μέτοχος της CrediaBank, διατηρώντας ποσοστό περίπου 24% , ενώ έχει αναλάβει δέσμ… [rd_9ed84d5df7e24]
+- **Thrivest Holding** invested in AKTOR Group _(2026-07-15)_
+  - _source:_ H Thrivest πούλησε μετοχές της Credia, εισέπραξε €250 εκ για να συμμετάσχει στην αμκ της AKTOR… [rd_973965a740ad4]
+- **Thrivest Holding** invested in CrediaBank _(2026-07-15)_
+  - _source:_ Μετά την ολοκλήρωση της συναλλαγής, η Thrivest θα παραμείνει μεγαλύτερος ιδιώτης μέτοχος της CrediaBank, διατηρώντας ποσοστό 24%, ενώ μεγαλύ… [rd_e06b204a52804]
+- **Υπερταμείο** invested in CrediaBank _(2026-07-15)_
+  - _source:_ Μετά την ολοκλήρωση της συναλλαγής, η Thrivest θα παραμείνει μεγαλύτερος ιδιώτης μέτοχος της CrediaBank, διατηρώντας ποσοστό 24%, ενώ μεγαλύ… [rd_e06b204a52804]
+- **BlackRock** invested in CrediaBank _(2026-07-15)_
+  - _source:_ Με 3% η BlackRock, 29,4% διατηρεί το Υπερταμείο… [rd_e06b204a52804]
+- **BlackRock** invested in CrediaBank _(2026-07-13)_
+  - _source:_ Από τα πρώτα τηλέφωνα φάνηκε η αποδοχή του επικείμενου placement, αυτού που έγινε χθες, με ένα από τα μεγαλύτερα funds στον πλανήτη, το Blac… [rd_8053406e3e754]
+- **Alpha Bank Α.Ε.** announced acquisition ALPHA TRUST Συμμετοχών Α.Ε. _(2026-07-07)_
+  - _source:_ Alpha Bank: Ξεκινά η διαδικασία squeeze-out για την απόκτηση του 100% της Alpha Trust Συμμετοχών… [rd_be2a68b16fb14]
+- **Alpha Bank Α.Ε.** announced acquisition ALPHA TRUST Συμμετοχών Α.Ε. _(2026-07-07)_
+  - _source:_ Alpha Bank: Ξεκινά η διαδικασία squeeze-out για την απόκτηση του 100% της Alpha Trust Συμμετοχών… [rd_1188a86e94484]
+- **Alpha Bank Α.Ε.** announced acquisition ALPHA TRUST Συμμετοχών Α.Ε. _(2026-07-06)_
+  - _source:_ Η «ALPHA TRUST ΣΥΜΜΕΤΟΧΩΝ ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ», κατόπιν σχετικής επίσημης ενημέρωσης που έλαβε την 06.07.2026 από την ανώνυμη εταιρεία με την ε… [rd_f8f994f09c094]
+- **Alpha Bank Α.Ε.** announced acquisition Alpha Trust Holdings S.A. _(2026-07-06)_
+  - _source:_ ALPHA TRUST HOLDINGS S.A. (the "Company"), following an official notification received on 06.07.2026 from "ALPHA BANK S.A." (the " Offeror")… [rd_f1f534c4ce624]
+
+## Product launches (40)
+
+- **Eurobank Ergasias S.A.** launched product Αμοιβαίο κεφάλαιο (LF) Target Maturity X Bond Fund _(2026-07-31)_
+  - _source:_ Αμοιβαίο κεφάλαιο (LF) Target Maturity X Bond Fund Με 5ετή διάρκεια και επιδιωκόμενη ετήσια διανομή μερίσματος από 2,40% έως 3,00%.… [rd_57fa70b5b58e4]
+- **IRIS payments service** launched product Διασυνοριακές άμεσες πληρωμές με αριθμό κινητού, χωρίς IBAN (cross-border instant payments) _(2026-07-18)_
+  - _source:_ Το IRIS βγαίνει εκτός ελληνικών συνόρων και εγκαινιάζει μια νέα εποχή στις διασυνοριακές συναλλαγές , καθώς επιτρέπει την αποστολή χρημάτων … [rd_29c8025207664]
+- **Ελληνικά σούπερ-μάρκετ** launched product περισσότερα e-ταμεία στα σούπερ-μάρκετ _(2026-07-18)_
+  - _source:_ Σούπερ-µάρκετ: Περισσότερα e-ταµεία… [rd_01a791eb380f4]
+- **Profile Software** launched product ProfileOne (agentic AI orchestration platform for financial institutions) _(2026-07-17)_
+  - _source:_ Η Profile (ATH: PROF), παγκόσμιος ηγέτης στη χρηματοοικονομική τεχνολογία με παρουσία σε περισσότερες από 50 χώρες, ανακοίνωσε σήμερα την εμ… [rd_60019c8cce4b4]
+- **National Bank of Greece** launched product τεχνολογία Agentic AI στην τηλεφωνική εξυπηρέτηση πελατών (φωνητικός ψηφιακός βοηθός «Σοφία») _(2026-07-16)_
+  - _source:_ Η Εθνική Τράπεζα γίνεται η πρώτη τράπεζα στη χώρα που θέτει σε παραγωγική λειτουργία τεχνολογία Agentic AI στην τηλεφωνική εξυπηρέτηση πελατ… [rd_54b9deecb3e44]
+- **National Bank of Greece** launched product agentic AI technology in telephone customer service ('Σοφία' digital assistant) _(2026-07-16)_
+  - _source:_ Η Εθνική Τράπεζα γίνεται η πρώτη τράπεζα στη χώρα, που εισάγει την agentic AI τεχνολογία στην τηλεφωνική εξυπηρέτηση πελατών στο τηλεφωνικό … [rd_0e238ee0f93b4]
+- **National Bank of Greece** launched product τεχνολογία Agentic AI στην τηλεφωνική εξυπηρέτηση πελατών (ψηφιακός βοηθός «Σοφία») _(2026-07-16)_
+  - _source:_ Η Εθνική Τράπεζα γίνεται η πρώτη τράπεζα στη χώρα που θέτει σε παραγωγική λειτουργία τεχνολογία Agentic AI στην τηλεφωνική εξυπηρέτηση πελατ… [rd_a2c4b7be01134]
+- **National Bank of Greece** launched product τεχνολογία AI Agents στην τηλεφωνική εξυπηρέτηση πελατών (AI Agents technology in telephone customer service) _(2026-07-16)_
+  - _source:_ Η Εθνική Τράπεζα φέρνει πρώτη στην Ελλάδα, την τεχνολογία των AI Agents στην τηλεφωνική εξυπηρέτηση πελατών… [rd_856fd73652324]
+- **National Bank of Greece** launched product AI agent «Σοφία» — voice AI για την τραπεζική εξυπηρέτηση πελατών _(2026-07-16)_
+  - _source:_ Η Εθνική φέρνει το voice AI στην τραπεζική εξυπηρέτηση Η AI agent «Σοφία», που έχει αναπτύξει η Εθνική Τράπεζα, αναλαμβάνει μέρος της εξυπηρ… [rd_70dd6601a6994]
+- **Alpha Bank Α.Ε.** launched product Visa Click to Pay (first bank in Greece to offer it) — one-click online payments without re-entering card details _(2026-07-16)_
+  - _source:_ Η Alpha Bank φέρνει πρώτη στην Ελλάδα το Visa Click to Pay, προσφέροντας ταχύτερες και ασφαλείς online αγορές χωρίς καταχώρηση στοιχείων κάρ… [rd_a2547c5578494]
+- **National Bank of Greece** launched product Τεχνολογία agentic AI στο τηλεφωνικό κέντρο εξυπηρέτησης πελατών (ψηφιακή βοηθός «Σοφία») _(2026-07-16)_
+  - _source:_ Η Εθνική Τράπεζα ανακοίνωσε σήμερα ότι ενσωματώνει την τεχνολογία agentic AI στο τηλεφωνικό της κέντρο για την εξυπηρέτηση πελατών.… [rd_8547a90dfb624]
+- **National Bank of Greece** launched product AI agent «Σοφία» (voice AI για τραπεζική εξυπηρέτηση πελατών) _(2026-07-16)_
+  - _source:_ Η AI agent «Σοφία», που έχει αναπτύξει η Εθνική Τράπεζα, αναλαμβάνει μέρος της εξυπηρέτησης πελατών - Σταδιακή ενσωμάτωση πρόσθετων λειτουργ… [rd_cbc6634262ee4]
+- **National Bank of Greece** launched product τεχνολογία AI Agents στην τηλεφωνική εξυπηρέτηση πελατών (πρώτη στην Ελλάδα) _(2026-07-16)_
+  - _source:_ Η Εθνική Τράπεζα φέρνει πρώτη στην Ελλάδα, την τεχνολογία των AI Agents στην τηλεφωνική εξυπηρέτηση πελατών… [rd_2a45ae9ede044]
+- **National Bank of Greece** launched product AI agent «Σοφία» (voice AI για την εξυπηρέτηση πελατών) _(2026-07-16)_
+  - _source:_ Η Εθνική φέρνει το voice AI στην τραπεζική εξυπηρέτηση Η AI agent «Σοφία», που έχει αναπτύξει η Εθνική Τράπεζα, αναλαμβάνει μέρος της εξυπηρ… [rd_b671b4727faf4]
+- **Εθνική** launched product AI Agents technology in telephone customer service — first in Greece _(2026-07-16)_
+  - _source:_ Εθνική: Φέρνει πρώτη στην Ελλάδα, την τεχνολογία των AI Agents στην τηλεφωνική εξυπηρέτηση πελατών… [rd_b47b76b3c13e4]
+- **National Bank of Greece** launched product AI agent «Σοφία» (voice AI for customer service) _(2026-07-16)_
+  - _source:_ Η AI agent «Σοφία», που έχει αναπτύξει η Εθνική Τράπεζα, αναλαμβάνει μέρος της εξυπηρέτησης πελατών - Σταδιακή ενσωμάτωση πρόσθετων λειτουργ… [rd_7b563f4738c54]
+- **National Bank of Greece** launched product AI Agents στην τηλεφωνική εξυπηρέτηση (AI Agents in phone customer service) _(2026-07-16)_
+  - _source:_ Εθνική Τράπεζα: Φέρνει πρώτη στην Ελλάδα τους AI Agents στην τηλεφωνική εξυπηρέτηση… [rd_adda3af1f7d54]
+- **National Bank of Greece** launched product AI agent «Σοφία» (voice AI for banking customer service) _(2026-07-16)_
+  - _source:_ Η AI agent «Σοφία», που έχει αναπτύξει η Εθνική Τράπεζα, αναλαμβάνει μέρος της εξυπηρέτησης πελατών - Σταδιακή ενσωμάτωση πρόσθετων λειτουργ… [rd_df4a7af56f694]
+- **National Bank of Greece** launched product «Σοφία» — agentic AI στο τηλεφωνικό κέντρο, εξυπηρέτηση σε φυσική γλώσσα, δυνατότητα διαχείρισης 130.000 κλήσεων τον μήνα _(2026-07-16)_
+  - _source:_ Η Εθνική Τράπεζα φέρνει την agentic AI στην τηλεφωνική εξυπηρέτηση Η Εθνική Τράπεζα ενεργοποιεί τη «Σοφία» στο τηλεφωνικό της κέντρο, με εξυ… [rd_3eb68f83c4874]
+- **National Bank of Greece** launched product φωνητικός AI agent «Σοφία» για την εξυπηρέτηση πελατών _(2026-07-16)_
+  - _source:_ Εθνική Τράπεζα: Πώς αξιοποιεί την Τεχνητή Νοημοσύνη στην εξυπηρέτηση πελατών – Ο πρώτος φωνητικός AI agent (pics) Σοφία, ένας super-ΑΙ Agent… [rd_e1096d8ac4894]
+- **National Bank of Greece** launched product agentic AI τεχνολογία στην τηλεφωνική εξυπηρέτηση πελατών _(2026-07-16)_
+  - _source:_ Η Εθνική Τράπεζα γίνεται η πρώτη τράπεζα στη χώρα, που εισάγει την agentic AI τεχνολογία στην τηλεφωνική εξυπηρέτηση πελατών στο τηλεφωνικό … [rd_973965a740ad4]
+- **National Bank of Greece** launched product τεχνολογία των AI Agents στην τηλεφωνική εξυπηρέτηση πελατών (πρώτη στην Ελλάδα) _(2026-07-16)_
+  - _source:_ Η Εθνική Τράπεζα φέρνει πρώτη στην Ελλάδα, την τεχνολογία των AI Agents στην τηλεφωνική εξυπηρέτηση πελατών… [rd_1c6aa72a52984]
+- **Εθνική Τράπεζα της Ελλάδος Α.Ε.** launched product Σοφία _(2026-07-16)_
+  - _source:_ Η Εθνική Τράπεζα περνά σε μια νέα εποχή στην εξυπηρέτηση πελατών, ενεργοποιώντας την πρώτη φωνητική εφαρμογή AI agent στο contact center της… [rd_24463aa80c0d4]
+- **Εθνική Τράπεζα της Ελλάδος Α.Ε.** launched product AI agent «Σοφία» _(2026-07-16)_
+  - _source:_ Η AI agent «Σοφία», που έχει αναπτύξει η Εθνική Τράπεζα, αναλαμβάνει μέρος της εξυπηρέτησης πελατών… [rd_df4a7af56f694]
+- **National Bank of Greece** launched product Dual Mastercard _(2026-07-16)_
+  - _source:_ Η Ένωση Καταναλωτών Ποιότητα Ζωής (ΕΚΠΟΙΖΩ) καταγγέλλει ότι η Εθνική Τράπεζα προχωρά στην αντικατάσταση υφιστάμενων χρεωστικών καρτών (Debit… [rd_003e8f1efccf4]
+
+## Open opportunities — tenders & contract wins (40)
+
+- **ΟΑΣΑ** issued tender Πρόσκληση για την υποβολή προσφοράς για σύνταξη μελέτης σκοπιμότητας και τευχών διακήρυξης _(2026-07-17)_
+  - _source:_ Πρόσκληση για την υποβολή προσφοράς για σύνταξη μελέτης σκοπιμότητας και τευχών διακήρυξης Ανάρτηση από helpdesk 17 Ιουλίου 2026… [rd_a62227fc47b24]
+- **Υπουργείο Ναυτιλίας και Νησιωτικής Πολιτικής** issued tender Ανοιχτή Δημόσια Διαβούλευση τεχνικών προδιαγραφών για την ανανέωση αδειών 250 φορητών συσκευών ελέγχου ταξιδιωτικών εγγράφων ICAO ID1-ID3, εκτιμώμενου προϋπολογισμού 400.000 € ετησίως _(2026-07-17)_
+  - _source:_ Από την αρμόδια Διεύθυνση Προμηθειών και Εποπτείας Αποθηκών της Γενικής Διεύθυνσης Οικονομικών Υπηρεσιών του Υπουργείου Ναυτιλίας και Νησιωτ… [rd_e2c14fc1c3ab4]
+- **Ι.ΣΤΑΥΡΑΚΗΣ & ΣΙΑ Ε.Ε** won contract GR public body 53475 _(2026-07-14)_
+  - _source:_ Ψ12ΥΟΚ9Α-ΜΚΞ | Aπευθείας ανάθεση για την προμήθεια   θερμικών χαρτοταινιών θερμικού εκτυπωτή και τερματικού POS του CINE ALIMOS | 45.4 EUR |… [rd_4fbec54324064]
+- **CITYZEN ΣΥΣΤΗΜΑΤΑ ΣΤΑΘΜΕΥΣΗΣ ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ** won contract Δημοτικό Λιμενικό Ταμείο Χανίων _(2026-07-14)_
+  - _source:_ O πρώτος των συμβαλλομένων με την ανωτέρω ιδιότητα του και σε εκτέλεση της υπ’ αριθμό 125/2112/2026 απόφασης Προέδρου του Δ.Λ.Τ.Χ (ΑΔΑ: ΨΑΨ2… [rd_adc97ffa01eb4]
+- **Κοινωνία της Πληροφορίας Μ.Α.Ε. (Information Society S.A.)** issued tender Ηλεκτρονικός Ανοικτός Κάτω των Ορίων Διαγωνισμός (Διακήρυξη 15389/25-06-2026) για το έργο «Σχεδιασμός, Υλοποίηση και Λειτουργία Πληροφοριακού Συστήματος για τις ανάγκες του Προγράμματος Τουρισμός για όλους 2026-2027» _(2026-07-10)_
+  - _source:_ Η Κοινωνία της Πληροφορίας Μ.Α.Ε, ανακοινώνει την παροχή συμπληρωματικών πληροφοριών και διευκρινίσεων επί των όρων της υπ’ αρ. 15389/25-06-… [rd_89c0c37bff314]
+- **epay** won contract Π.Ε. Καστοριάς (Περιφέρεια Δυτικής Μακεδονίας) _(2026-07)_
+  - _source:_ Την έγκριση της απευθείας ανάθεσης στην εταιρεία «EURONET MERCHANT SERVICES ΙΔΡΥΜΑ ΠΛΗΡΩΜΩΝ ΜΟΝΟΠΡΟΣΩΠΗ Α.Ε.» (epay), με Α.Φ.Μ. 801567852, γ… [rd_66cf6a3fc97f4]
+- **Δημοτικό Λιμενικό Ταμείο Κεφαλληνίας-Ιθάκης** issued tender Direct award for the supply and installation of an integrated boat mooring management information system and portable PDA POS terminal devices _(2026-06-26)_
+  - _source:_ ΔΙΑΧΕΙΡΙΣΗΣ ΕΛΛΙΜΕΝΙΣΜΟΥ ΣΚΑΦΩΝ ΚΑΙ ΦΟΡΗΤΩΝ ΤΕΡΜΑΤΙΚΩΝ ΣΥΣΚΕΥΩΝ ΤΥΠΟΥ PDA POS ΣΤΟ… [rd_f35be441a5174]
+- **ΣΤΑΣΥ** issued tender Προμήθεια και έκδοση διατακτικών σίτισης τροφής σε ηλεκτρονική μορφή (έξυπνες κάρτες – προπληρωμένες κάρτες) — supply/issuance of electronic meal vouchers (smart cards / prepaid cards) _(2026-06-24)_
+  - _source:_ Τίτλος: Προμήθεια διατακτικών σίτισης τροφής για την κάλυψη των αναγκών των εργαζομένων της ΣΤΑ.ΣΥ. Περιγραφή: Αντικείμενο της σύμβασης είνα… [rd_f9891abb4d094]
+- **ΣΤΑΣΥ** issued tender Προμήθεια και έκδοση διατακτικών σίτισης τροφής σε ηλεκτρονική μορφή (έξυπνες κάρτες – προπληρωμένες κάρτες) — CPV 22440000 Cheque forms / 30162000 Smart cards _(2026-06-22)_
+  - _source:_ Title: Προμήθεια διατακτικών σίτισης τροφής για την κάλυψη των αναγκών των εργαζομένων της ΣΤΑ.ΣΥ. Description: Αντικείμενο της σύμβασης είν… [rd_b38065507eb24]
+- **MΟΝΟΠΡΟΣΩΠΗ ΑΝΩΝΥΜΗ ΕΤΑΙΡΙΑ ΔΙΑΧΕΙΡΙΣΕΩΣ ΚΑΙ ΛΕΙΤΟΥΡΓΙΑΣ ΔΙΚΤΥΩΝ ΗΛΕΚΤΡΟΝΙΚΩΝ ΣΥΝΑΛΛΑΓΩΝ ΚΑΡΝΤΛΙΝΚ** won contract GR public body 50372 _(2026-06-19)_
+  - _source:_ 9ΜΑ5ΟΡΙΦ-ΧΞ9 | ΑΠΟΦΑΣΗ ΠΡΟΕΔΡΟΥ 18/2026 ΑΠΕΥΘΕΙΑΣ ΑΝΑΘΕΣΗΣ ΤΗΣ ΔΑΠΑΝΗΣ ΜΕ ΤΙΤΛΟ «ΥΠΗΡΕΣΙΕΣ ΤΕΧΝΙΚΗΣ ΥΠΟΣΤΗΡΙΞΗΣ ΤΕΡΜΑΤΙΚΩΝ – POS ΓΙΑ ΤΗΝ ΕΙΣ… [rd_4fbec54324064]
+- **ΑΑΔΕ** issued tender Προκαταρκτική Διαβούλευση για τις τεχνικές προδιαγραφές του έργου «Υλοποίηση αλλαγών σε πληροφοριακά συστήματα της ΑΑΔΕ (Change Request 3)» _(2026-06-19)_
+  - _source:_ 22 Ιουν 2026 ΔΙ.Σ.Ε.Π. Δ 526658 ΕΞ 2026 /19-06-2026 Πρόσκληση για τη διενέργεια Προκαταρκτικής Διαβούλευσης για την υποβολή σχολίων/παρατηρή… [rd_0dc6a3f2723a4]
+- **ΑΑΔΕ** issued tender Πρόσκληση Προκαταρκτικής Διαβούλευσης (κωδικός 2026DIAB33095) για τις τεχνικές προδιαγραφές της «Υλοποίησης αλλαγών σε πληροφοριακά συστήματα της ΑΑΔΕ (Change Request 3)» _(2026-06-19)_
+  - _source:_ Στην ιστοσελίδα του ΕΣΗΔΗΣ ( www . promitheus . gov . g r ), στον οικείο χώρο των διαβουλεύσεων έχει αναρτηθεί με Μοναδικό Κωδικό 2026DIAB33… [rd_42ea2581c7f64]
+- **Εθνική Βιβλιοθήκη της Ελλάδος** issued tender Προμήθεια Τραπεζικού Τερματικού Πληρωμών (POS), προϋπολογισμού 620,00€ με ΦΠΑ, με κριτήριο την πλέον συμφέρουσα από οικονομική άποψη προσφορά βάσει τιμής _(2026-06-15)_
+  - _source:_ Η ΕΘΝΙΚΗ ΒΙΒΛΙΟΘΗΚΗ ΤΗΣ ΕΛΛΑΔΟΣ σας καλεί να καταθέσετε προσφορά για την παροχή της προμήθειας, με τίτλο: Προμήθεια Τραπεζικού Τερματικού Πλ… [rd_5834cc2cd5eb4]
+- **Εθνική Βιβλιοθήκη της Ελλάδος** issued tender Εθνική Τράπεζα της Ελλάδος Α.Ε. _(2026-06-15)_
+  - _source:_ ΠΡΟΣ: ΕΘΝΙΚΗ ΤΡΑΠΕΖΑ ΤΗΣ ΕΛΛΑΔΟΣ Α.Ε. E-mail: merchants@nbg.gr / Konstantinidis.anastasios@nbg.gr ΠΡΟΣΚΛΗΣΗ ΕΚΔΗΛΩΣΗΣ ΕΝΔΙΑΦΕΡΟΝΤΟΣ Θέμα: «Π… [rd_5834cc2cd5eb4]
+- **Εθνική Βιβλιοθήκη της Ελλάδος** issued tender Πρόσκληση εκδήλωσης ενδιαφέροντος για προμήθεια ταμειακής μηχανής (cash register / fiscal POS device) για τις ανάγκες του Τμήματος Γραμματείας, προϋπολογισμός 868,00€ με ΦΠΑ _(2026-06-12)_
+  - _source:_ Η ΕΘΝΙΚΗ ΒΙΒΛΙΟΘΗΚΗ ΤΗΣ ΕΛΛΑΔΟΣ σας καλεί να καταθέσε τε προσφορά για την παροχή της υπηρεσίας/προμήθειας, με τίτλο: Προμήθεια ταμειακής μηχ… [rd_ecf71541d6204]
+- **Δ.Ε.Υ.Α. ΚΥΜΗΣ ΑΛΙΒΕΡΙΟΥ** issued tender ΥΠΗΡΕΣΙΕΣ ΗΛΕΚΤΡΟΝΙΚΩΝ ΔΙΑΤΑΚΤΙΚΩΝ ΣΙΤΙΣΗΣ ΕΡΓΑΖΟΜΕΝΩΝ ΜΕΣΩ ΚΑΡΤΑΣ ΕΤΟΥΣ 2026, προϋπολογισμού 372,00 ευρώ με ΦΠΑ _(2026-06-09)_
+  - _source:_ Η ΔΕΥΑ ΚΥΜΗΣ ΑΛΙΒΕΡΙΟΥ προτίθεται να προβεί στην ανάθεση της δαπάνης για την «ΥΠΗΡΕΣΙΕΣ ΗΛΕΚΤΡΟΝΙΚΩΝ ΔΙΑΤΑΚΤΙΚΩΝ ΣΙΤΙΣΗΣ ΕΡΓΑΖΟΜΕΝΩΝ ΜΕΣΩ ΚΑ… [rd_02b812a507b64]
+- **Δ.Ε.Υ.Α. ΚΥΜΗΣ ΑΛΙΒΕΡΙΟΥ** issued tender EDENRED ΥΠΗΡΕΣΙΕΣ ΔΙΑΤΑΚΤΙΚΩΝ _(2026-06-09)_
+  - _source:_ Προς: EDENRED ΥΠΗΡΕΣΙΕΣ ΔΙΑΤΑΚΤΙΚΩΝ ΑΦΜ 094438998 Email: ThomasALEXANDROU@edenred.com… [rd_02b812a507b64]
+- **UP HELLAS ΜΑΕ** won contract Δημοτική Επιχείρηση Ύδρευσης Αποχέτευσης Θάσου (Δ.Ε.Υ.Α.Θ.) _(2026-06-02)_
+  - _source:_ ΣΥΜΒΑΣΗ ΓΙΑ ΤΗΝ ΠΑΡΟΧΗ ΤΗΣ ΥΠΗΡΕΣΙΑΣ ΦΟΡΤΙΣΗΣ ΚΑΙ ΔΙΑΧΕΙΡΙΣΗΣ ΠΡΟΠΛΗΡΩΜΕΝΩΝ ΚΑΡΤΩΝ ΣΙΤΙΣΗΣ ΤΟΥ ΠΡΟΣΩΠΙΚΟΥ ΤΗΣ ΔΕΥΑ Στη Θάσο σήμερα, την Τρίτ… [rd_cfe63faa092a4]
+- **ΚΟΛΠΑΚΙΔΟΥ Π. ΕΛΙΣΑΒΕΤ** won contract Περιφερειακή Ενότητα Δράμας _(2026-05-18)_
+  - _source:_ Ο «ΚΟΛΠΑΚΙΔΟΥ Π. ΕΛΙΣΑΒΕΤ», με έδρα Βεζυρτσόγλου 15, Δράμα, 66131, Δράμα, με ΑΦΜ 062908656, Δ.Ο.Υ Δράμας, εφεξής «ΑΝΑΔΟΧΟΣ». έχοντας υπόψη: … [rd_c3c57d05bff14]
+- **NEXI GREECE  PROCESSING  SERVICES  ΜΟΝΟΠΡΟΣΩΠΗ  ΑΝΩΝΥΜΗ  ΕΤΑΙΡΕΙΑ** won contract Οργανισμός Λιμένος Λαυρίου Α.Ε. _(2026-05-15)_
+  - _source:_ Η ανάθεση για την ανανέωση συντήρησης εξαμήνου (περίοδος 07/05-07/11/2026) , του ενός (1) ενσύρματου τερματικού ηλεκτρονικών πληρωμών POS το… [rd_e6fb49a9efbe4]
+- **ΑΑΔΕ** issued tender ανοικτός διαγωνισμός κάτω των ορίων για προμήθεια συσκευών χώνευσης με μικροκύματα για τα εργαστήρια του Γ.Χ.Κ. _(2026-05-13)_
+  - _source:_ Διακήρυξη ανοικτού διαγωνισμού κάτω των ορίων για την προμήθεια συσκευών χώνευσης με μικροκύματα, για τις ανάγκες των εργαστηρίων του Γ.Χ.Κ.… [rd_03e4b544069b4]
+- **NEXI GREECE  PROCESSING  SERVICES  ΜΟΝΟΠΡΟΣΩΠΗ  ΑΝΩΝΥΜΗ  ΕΤΑΙΡΕΙΑ** won contract GR public body 99221099 _(2026-05-07)_
+  - _source:_ ΡΞ0Ι469ΗΞΥ-Χ84 | Ανάθεση για την ανανέωση συντήρησης εξαμήνου (περίοδος 07/05-07/11/2026) , του ενός (1) ενσύρματου τερματικού ηλεκτρονικών … [rd_4fbec54324064]
+- **Δ.Ε.Υ.Α. ΘΑΣΟΥ** issued tender προμήθεια και φόρτιση προπληρωμένων καρτών σίτισης προσωπικού _(2026-05-05)_
+  - _source:_ ΠΡΟΣΚΛΗΣΗ ΥΠΟΒΟΛΗΣ ΟΙΚΟΝΟΜΙΚΗΣ ΠΡΟΣΦΟΡΑΣ ΓΙΑ ΤΗΝ ΠΡΟΜΗΘΕΙΑ ΚΑΙ ΦΟΡΤΙΣΗ ΠΡΟΠΛΗΡΩΜΕΝΩΝ ΚΑΡΤΩΝ ΣΙΤΙΣΗΣ ΠΡΟΣΩΠΙΚΟΥ… [rd_04c400fab7a94]
+- **Δ.Ε.Υ.Α. ΘΑΣΟΥ** issued tender UP HELLAS ΑΝΩΝΥΜΗ ΜΟΝΟΠΡΟΣΩΠΗ ΕΜΠΟΡΙΚΗ ΕΤΑΙΡΙΑ _(2026-05-05)_
+  - _source:_ Την εταιρία UP HELLAS ΑΝΩΝΥΜΗ ΜΟΝΟΠΡΟΣΩΠΗ ΕΜΠΟΡΙΚΗ ΕΤΑΙΡΙΑ με διακριτικό τίτλο «UP HELLAS MAE» που εδρεύει στο Δήμο Αθηναίων, Μητροπόλεως 3,… [rd_04c400fab7a94]
+- **EURONET MERCHANT SERVICES ΙΔΡΥΜΑ ΠΛΗΡΩΜΩΝ ΜΟΝΟΠΡΟΣΩΠΗ ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ** won contract GR public body 6264 _(2026-05-04)_
+  - _source:_ ΨΙ74Ω19-3Ι7 | Απόφαση υπ'αριθμ. 206/2026 Δημάρχου περί Προμήθειας τερματικών μηχανημάτων POS για τις ανάγκες των Γεφυροπλαστιγγών του Δήμου … [rd_4fbec54324064]
+
+## Competitive relationships (1)
+
+- **Optima Bank S.A.** competes with Comparison with the 4 Greek systemic banks and the 29 largest EU banks on loan growth, NPE ratio and ROTE _(2024-03-31)_
+  - _source:_ Executive Summary Optima bank vs the market 10 Optima bank Loan Growth YoY 49% Depos Growth YoY 40% NPE ratio 1.1% ROTE 25.4% NIM 4.48% Cost… [rd_1bcec86a0d384]
+
+## Executive appointments (30)
+
+- **Eurobank Ergasias S.A.** appointed person Γιώργος Ζανιάς _(2027)_
+  - _source:_ George Zanias Chairman of the BoD, Non-Executive Director Eurobank SA… [rd_4a646dac1ebd4]
+- **Bank of Greece** appointed person Sissy Papagiannidi _(2026-07-24)_
+  - _source:_ Bank of Greece Ms Sissy Papagiannidi Banco de España Mr Juan Ayuso Huertas Banque de France Mr Erick Lacourrège Banca d'Italia Ms Chiara Sco… [rd_a9f41f8729304]
+- **SPACE HELLAS ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ** appointed person Stavros Moustakas _(2026-07-17)_
+  - _source:_ Space Hellas announces the assumption of the duties of Sales Director by Mr. Stavros Moustakas, as part of its strategy for further developm… [rd_70fa637e2f484]
+- **AKTOR Group** appointed person Ελένη Μπαθιανάκη _(2026-07-17)_
+  - _source:_ 19:33 17/07 AKTOR: Νέο μέλος στο Δ.Σ. η Ελένη Μπαθιανάκη – Στα 10 τα μέλη του Με θητεία έως το 2027.… [rd_d186cd9a672f4]
+- **National Bank of Greece** appointed person Στράτος Μολυβιάτης _(2026-07-16)_
+  - _source:_ Όπως υποστήριξε σε χθεσινή συνέντευξη Τύπου ο διευθυντής Λειτουργιών (Group Chief Operating Officer) του ομίλου της Εθνικής, Στράτος Μολυβιά… [rd_1283b01050a24]
+- **Εθνική Τράπεζα της Ελλάδος Α.Ε.** appointed person Στράτος Μολυβιάτης _(2026-07-16)_
+  - _source:_ Σύμφωνα με τον Στράτο Μολυβιάτη, γενικό διευθυντή Λειτουργικής Στήριξης της Εθνικής Τράπεζας της Ελλάδος, η νέα υπηρεσία βρίσκεται ήδη σε πα… [rd_24463aa80c0d4]
+- **SPACE HELLAS ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ** appointed person Μουστάκας _(2026-07-16)_
+  - _source:_ Νέος διευθυντής πωλήσεων στη Space Hellas Ο κ. Μουστάκας είναι κάτοχος MBA από το ALBA Graduate Business School και πτυχιούχος Διοίκησης Επι… [rd_24463aa80c0d4]
+- **SPACE HELLAS ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ** appointed person Μουστάκας _(2026-07-16)_
+  - _source:_ Νέος διευθυντής πωλήσεων στη Space Hellas Ο κ. Μουστάκας είναι κάτοχος MBA από το ALBA Graduate Business School και πτυχιούχος Διοίκησης Επι… [rd_df4a7af56f694]
+- **CrediaBank** appointed person Ελένη Βρεττού _(2026-07-16)_
+  - _source:_ Σχολιάζοντας τη συμφωνία, η Διευθύνουσα Σύμβουλος της CrediaBank , κυρία Ελένη Βρεττού , δήλωσε… [rd_0480431b28d04]
+- **SPACE HELLAS ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ** appointed person Σταύρος Μουστάκας _(2026-07-16)_
+  - _source:_ ΠΡΟΣΩΠΑ Space Hellas: Νέος Διευθυντής Πωλήσεων ο Σταύρος Μουστάκας 16/07/2026 - 15:50… [rd_447248b1c0354]
+- **CrediaBank** appointed person Eleni Vrettou _(2026-07-16)_
+  - _source:_ Commenting on the agreement, Mrs. Eleni Vrettou, Chief Executive Officer of CrediaBank, stated :… [rd_ab5ae83c8ab14]
+- **Bank of Greece** appointed person Ιωάννης Στουρνάρας (Yannis Stournaras) _(2026-07-15)_
+  - _source:_ Το μήνυμα αυτό έστειλε ο διοικητής της Τράπεζας της Ελλάδος, Γιάννης Στουρνάρας, κατά τη Γενική Συνέλευση της Ελληνικής Ένωσης Τραπεζών.… [rd_cc8d46cd24cd4]
+- **Ελληνική Ένωση Τραπεζών (Hellenic Bank Association)** appointed person Γιώργος Ζανιάς _(2026-07-15)_
+  - _source:_ Ο πρόεδρος της Ελληνικής Ένωσης Τραπεζών, Γιώργος Ζανιάς, επισήμανε ότι οι κρίσεις της τελευταίας 15ετίας οδήγησαν σε βαθιά αναδιάρθρωση του… [rd_cc8d46cd24cd4]
+- **Τράπεζα Πειραιώς (Piraeus Bank)** appointed person Μαγδαληνή Σουρέλη _(2026-07-13)_
+  - _source:_ Η Μαγδαληνή Σουρέλη, Head of Retail Payments, Retail Banking and Distribution Network της Πειραιώς, υπογράμμισε:… [rd_5a702737f2a54]
+- **Samsung Electronics** appointed person Άρης Παρασκευόπουλος _(2026-07-13)_
+  - _source:_ Ο Άρης Παρασκευόπουλος, Επικεφαλής του τμήματος της διεύθυνσης Mobile eXperience στη Samsung Electronics για τις αγορές της Ελλάδας και της … [rd_5a702737f2a54]
+- **ΔΙΑΣ Α.Ε.** appointed person Σταυρούλα Καμπουρίδου _(2026-07-09)_
+  - _source:_ Η Διευθύνουσα Σύμβουλος της ΔΙΑΣ, Σταυρούλα Καμπουρίδου, δήλωσε:… [rd_5c2dea7a45754]
+- **Ελληνική Ένωση Τραπεζών (Hellenic Bank Association)** appointed person Giorgos Zanias _(2026-07-06)_
+  - _source:_ The Chairman of the Board of Directors of the Hellenic Bank Association, Giorgos Zanias, speaking on behalf of the four donor banks, made th… [rd_f06955a21b514]
+- **Alpha Bank Α.Ε.** appointed person V. Psaltis _(2026-07-06)_
+  - _source:_ The project was officially handed over today at Megara Civil Airport, in the presence of the Minister of Health, Ad. Georgiadis, the Deputy … [rd_f06955a21b514]
+- **Eurobank Ergasias S.A.** appointed person F. Karavias _(2026-07-06)_
+  - _source:_ The project was officially handed over today at Megara Civil Airport, in the presence of the Minister of Health, Ad. Georgiadis, the Deputy … [rd_f06955a21b514]
+- **National Bank of Greece** appointed person G. Chardouvelis _(2026-07-06)_
+  - _source:_ Board of Directors of the National Bank of Greece, G. Chardouvelis, the CEO of Piraeus Bank, Chr. Megalou, the President of EKAB, G. Charala… [rd_f06955a21b514]
+- **Τράπεζα Πειραιώς (Piraeus Bank)** appointed person Chr. Megalou _(2026-07-06)_
+  - _source:_ Board of Directors of the National Bank of Greece, G. Chardouvelis, the CEO of Piraeus Bank, Chr. Megalou, the President of EKAB, G. Charala… [rd_f06955a21b514]
+- **Hellenic Bank Association (HBA)** appointed person H. Apalagaki _(2026-07-06)_
+  - _source:_ Board of Directors of the National Bank of Greece, G. Chardouvelis, the CEO of Piraeus Bank, Chr. Megalou, the President of EKAB, G. Charala… [rd_f06955a21b514]
+- **Ministry of Health** appointed person Adonis Georgiadis _(2026-07-06)_
+  - _source:_ The Minister of Health, Adonis Georgiadis, made the following statement:… [rd_f06955a21b514]
+- **Eurobank Ergasias S.A.** appointed person Ιάκωβος Γιαννακλής _(2026-07-01)_
+  - _source:_ Ο Αναπληρωτής Διευθύνων Σύμβουλος, Επικεφαλής Retail & Digital Banking, κ. Ιάκωβος Γιαννακλής , ανέφερε:… [rd_f03e19e9dc6a4]
+- **Mastercard** appointed person Παναγιώτης Πολύδωρος _(2026-07-01)_
+  - _source:_ Ο Παναγιώτης Πολύδωρος, Country Manager Ελλάδας, Κύπρου και Μάλτας της Mastercard, δήλωσε :… [rd_f03e19e9dc6a4]
+
+## Regulatory activity (30)
+
+- **Αρχή Προστασίας Δεδομένων Προσωπικού Χαρακτήρα (Hellenic Data Protection Authority)** sanctioned ΔΕΗ _(2026-07-17)_
+  - _source:_ Πρόστιμα 880.000 ευρώ σε ΔΕΗ και τηλεφωνικά κέντρα για προωθητικές κλήσεις και παραβάσεις του ΓΚΠΔ (ΑΠΔΠΧ 7/2026)… [rd_1801b33fe9254]
+- **Τράπεζα Πειραιώς (Piraeus Bank)** certified by Five international distinctions, including Europe's Best Bank for Corporate Responsibility for the second consecutive year - the first Greek bank to be so awarded _(2026-07-17)_
+  - _source:_ Τράπεζα Πειραιώς: Απέσπασε πέντε διεθνείς διακρίσεις Η Πειραιώς, είναι η πρώτη ελληνική τράπεζα που βραβεύεται για δεύτερη συνεχόμενη χρονιά… [rd_f1ddbc0879f84]
+- **ΑΑΔΕ** regulates άρση κατάσχεσης λογαριασμών εφόσον έχει εξοφληθεί το 25% της οφειλής για την οποία επιβλήθηκε η κατάσχεση _(2026-07-16)_
+  - _source:_ Οι φορολογούμενοι μπορούν να ξεμπλοκάρουν τους λογαριασμούς τους, εφόσον έχουν εξοφλήσει το 25% της οφειλής για την οποία επιβλήθηκε η κατάσ… [rd_2e56e949618d4]
+- **ΑΑΔΕ** regulates Procedure for issuing a decision lifting the attachment of accounts on claims held at credit institutions and other liable persons established in the country, under article 62 of Law 4170/2013, for confirmed debts to the Tax Administration under article 18 of Law 5313/2026 _(2026-07-14)_
+  - _source:_ Α. 1145 /14-07-2026 Διαδικασία έκδοσης απόφασης άρσης κατάσχεσης λογαριασμών επί απαιτήσεων στα χέρια πιστωτικών ιδρυμάτων και εγκατεστημένω… [rd_f13f5f57d9384]
+- **Φορολογική Διοίκηση** regulates πιστωτικά ιδρύματα _(2026-07-14)_
+  - _source:_ 2. Φυσικά και Νομικά Πρόσωπα σε βάρος των οποίων έχουν επιβληθεί κατασχέσεις επί απαιτήσεών τους στα χέρια πιστωτικών ιδρυμάτων και εγκατεστ… [rd_f13f5f57d9384]
+- **Hellenic Capital Market Commission** regulates Alpha Bank Α.Ε. _(2026-07-07)_
+  - _source:_ ANNOUNCEMENT OF THE SUBMISSION OF REQUEST TO THE HELLENIC CAPITAL MARKET COMMISION REGARDING THE EXERCISE OF THE SQUEEZE-OUT RIGHT IN THE CO… [rd_f1f534c4ce624]
+- **Αρχή Προστασίας Δεδομένων Προσωπικού Χαρακτήρα (Hellenic Data Protection Authority)** sanctioned ΖΕΝΙΘ _(2026-07-06)_
+  - _source:_ Ανακριβείς πάγιες εντολές εξόφλησης λογαριασμών: 100.000 ευρώ πρόστιμο στη ΖΕΝΙΘ (ΑΠΔΠΧ 8/2026)… [rd_1801b33fe9254]
+- **Αρχή Προστασίας Δεδομένων** sanctioned Τράπεζα Πειραιώς (Piraeus Bank) _(2026-07-06)_
+  - _source:_ Η Αρχή Προστασίας Δεδομένων διαπίστωσε παραβίαση της αρχής της ακρίβειας, του δικαιώματος πρόσβασης και των υποχρεώσεων εποπτείας εκτελούντο… [rd_1801b33fe9254]
+- **ΑΑΔΕ** regulates Πληρωμή βεβαιωμένων οφειλών αποκλειστικά στους φορείς είσπραξης με μοναδικό κωδικό «Ταυτότητα Οφειλής» _(2026-07-01)_
+  - _source:_ Η πληρωμή των βεβαιωμένων οφειλών (φυσικών και νομικών προσώπων/νομικών οντοτήτων) στη Φορολογική Διοίκηση, που έχουν καταχωριστεί στα βιβλί… [rd_98c8363c86504]
+- **ΑΑΔΕ** regulates Οι φορείς είσπραξης δεν μπορούν να αρνηθούν την είσπραξη από μη πελάτες ούτε να επιβάλουν οικονομική επιβάρυνση _(2026-07-01)_
+  - _source:_ Οι φορείς που συμμετέχουν στην είσπραξη δεν μπορούν να αρνηθούν την είσπραξη, εάν ο υπόχρεος προς καταβολή δεν τηρεί λογαριασμό σε αυτούς… [rd_98c8363c86504]
+- **Αρχή Προστασίας Δεδομένων Προσωπικού Χαρακτήρα (Hellenic Data Protection Authority)** sanctioned Τειρεσίας Α.Ε. _(2026-06-26)_
+  - _source:_ Επίπληξη στην ΤΕΙΡΕΣΙΑΣ για ανακριβή και μη επικαιροποιημένα δεδομένα στο Αρχείο Συγκέντρωσης Χορηγήσεων (ΑΠΔΠΧ 4/2026) Η Αρχή διαπίστωσε πα… [rd_1801b33fe9254]
+- **Uni Systems** certified by Microsoft _(2026-06-23)_
+  - _source:_ Uni Systems strengthens its AI capabilities with four new Microsoft Specializations… [rd_4bf6696fbc2e4]
+- **ΑΑΔΕ** regulates Διαδικασία πληρωμής βεβαιωμένων οφειλών στους φορείς είσπραξης με μοναδικό κωδικό πληρωμής και έκδοση ψηφιακού αποδεικτικού είσπραξης _(2026-06-16)_
+  - _source:_ Καθορίζουμε τη διαδικασία πληρωμής των βεβαιωμένων σε Δ.Ο.Υ./ΚΕ.Β.ΕΙΣ./Κ.Ε.ΜΕ.Φ. οφειλών φυσικών και νομικών προσώπων/νομικών οντοτήτων, η ο… [rd_98c8363c86504]
+- **Optima Bank S.A.** certified by Moody's _(2026-06-11)_
+  - _source:_ Οι τίτλοι έλαβαν αξιολόγηση Β3 από την Moody’s.… [rd_6bc8b02cdca24]
+- **Δ.Ε.Υ.Α. ΚΥΜΗΣ ΑΛΙΒΕΡΙΟΥ** regulates υποχρέωση οικονομικών φορέων να υποβάλλουν ηλεκτρονικά τιμολόγια σύμφωνα με το ευρωπαϊκό πρότυπο _(2026-06-09)_
+  - _source:_ Σημειώνεται ότι σύμφωνα με τα οριζόμενα του άρθρου 1 της ΚΥΑ 52445 ΕΞ 2023/4-4-2023 (ΦΕΚ 2385/12-4-2023 τεύχος Β ΄) και την ΚΥΑ οικ.78366 ΕΞ… [rd_02b812a507b64]
+- **National Bank of Greece** certified by Single Supervisory Mechanism (SSM) of the European Central Bank _(2026-06-08)_
+  - _source:_ The programme received approval from the Single Supervisory Mechanism (SSM) of the European Central Bank (ECB) on June 08, 2026.… [rd_0079e81072034]
+- **Αρχή Προστασίας Δεδομένων Προσωπικού Χαρακτήρα** sanctioned ΕΤΑΙΡΕΙΑ ΠΡΟΜΗΘΕΙΑΣ ΑΕΡΙΟΥ ΘΕΣΣΑΛΟΝΙΚΗΣ ΘΕΣΣΑΛΙΑΣ Α.Ε. (ZeniΘ) _(2026-06-05)_
+  - _source:_ 1. Επιβάλλει στην EΤΑΙΡΕΙΑ ΠΡΟΜΗΘΕΙΑΣ ΑΕΡΙΟΥ ΘΕΣΣΑΛΟΝΙΚΗΣ ΘΕΣΣΑΛΙΑΣ Α.Ε. («ZeniΘ»), ως υπεύθυνο επεξεργασίας, με βάση το άρθρο 58 παρ. 2 εδ.… [rd_e0577c2c87bd4]
+- **Αρχή Προστασίας Δεδομένων Προσωπικού Χαρακτήρα** sanctioned Τράπεζα Πειραιώς (Piraeus Bank) _(2026-06-05)_
+  - _source:_ 2. Απευθύνει στην Τράπεζα Πειραιώς Α.Ε., ως υπεύθυνο επεξεργασίας, επίπληξη με βάση το άρθρο 58 παρ. 2 β’ ΓΚΠΔ για τη διαπιστωθείσα παράβαση… [rd_e0577c2c87bd4]
+- **Αρχή Προστασίας Δεδομένων Προσωπικού Χαρακτήρα** sanctioned Τειρεσίας Α.Ε. _(2026-05-26)_
+  - _source:_ Η Αρχή διαπίστωσε παράβαση του άρθρου 5 (1) στοιχ. (δ) του ΓΚΠΔ, και έδωσε εντολή, κατ’ άρθρο 58 παρ. 2 εδ. δ’ στην καταγγελλόμενη ανώνυμη ε… [rd_2ab7109c454f4]
+- **Αρχή Προστασίας Δεδομένων Προσωπικού Χαρακτήρα** regulates Τειρεσίας Α.Ε. _(2026-05-26)_
+  - _source:_ Η Αρχή εξέτασε καταγγελία υποκειμένου δεδομένων, οι οφειλές του οποίου έχουν υπαχθεί σε ρύθμιση κατά τις διατάξεις του ν. 3869/2010, κατά τη… [rd_2ab7109c454f4]
+- **Γενικό Λογιστήριο του Κράτους** regulates πιστωτικά ιδρύματα _(2026-05-25)_
+  - _source:_ - σε χίλια επτακόσια ευρώ (1.700) μηνιαίως για κάθε φυσικό πρόσωπο και σε ένα μόνο πιστωτικό ίδρυμα , από χίλια διακόσια πενήντα (1.250) ευρ… [rd_f0cdc7fdd7534]
+- **Δ.Ε.Υ.Α. ΘΑΣΟΥ** regulates οι κάρτες σίτισης γίνονται δεκτές μόνο σε καταστήματα σίτισης και δεν εξαργυρώνονται με μετρητά, σε ΑΤΜ ή σε εμπορικά καταστήματα _(2026-05-05)_
+  - _source:_ Οι κάρτες θα πρέπει να γίνονται αποδεκτές σε καταστήματα σίτισης και δεν θα μπορούν να εξαργυρωθούν με μετρητά, σε ΑΤΜ ή σε εμπορικά καταστή… [rd_04c400fab7a94]
+- **Δ.Ε.Υ.Α. ΘΑΣΟΥ** regulates υποχρέωση οικονομικών φορέων να υποβάλλουν ηλεκτρονικά τιμολόγια σύμφωνα με το ευρωπαϊκό πρότυπο _(2026-05-05)_
+  - _source:_ για τη παρούσα διαδικασία οι οικονομικοί φορείς υποχρεούνται να υποβάλλουν ηλεκτρονικά τιμολόγια, που είναι σύμφωνα με το ευρωπαϊκό… [rd_04c400fab7a94]
+- **Ανεξάρτητη Αρχή Ελέγχου της Αγοράς** sanctioned Τράπεζα Ηπείρου (Bank of Epirus) _(2026-04-16)_
+  - _source:_ Ανακοίνωση της Τράπεζας Ηπείρου σχετικά με την επιβολή διοικητικού προστίμου από την Ανεξάρτητη Αρχή Ελέγχου της Αγοράς… [rd_50d655f939294]
+- **Ανεξάρτητη Αρχή Ελέγχου της Αγοράς** sanctioned Τράπεζα Ηπείρου (Bank of Epirus) _(2026-04-16)_
+  - _source:_ Ανακοίνωση της Τράπεζας Ηπείρου σχετικά με την επιβολή διοικητικού προστίμου από την Ανεξάρτητη Αρχή Ελέγχου της Αγοράς… [rd_dccb7cfb0b6e4]

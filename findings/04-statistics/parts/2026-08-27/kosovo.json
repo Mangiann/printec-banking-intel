@@ -1,0 +1,61 @@
+{
+  "slug": "kosovo",
+  "status": "partial",
+  "remaining": "TIPS-Clone Nov-2026 onboarding confirmation; SEPA Constitutional Court ruling status; World Bank P507881 Component 3 detail; SoftPOS/Tap-to-Phone; CBK PSP-access regulation; eKYC/AML/HSM/ATM-security categories; leading indicators; 2026 card-report existence recheck",
+  "signals": [
+    {
+      "entity": "Central Bank of the Republic of Kosovo (CBK/BQK)",
+      "country": "Kosovo",
+      "signal": "CBK Monthly Statistics Bulletin No. 297 (reference period May-2026, PDF created 10/07/2026) Table 25.1 shows Kosovo's bank branch network still GROWING against the EU decline trend: total ODC (commercial-bank) network units 200 (2022) -> 215 (Dec-2023) -> 227 (Dec-2024) -> 235 (Dec-2025) -> 234 (May-2026); staff 4,143 (Dec-2024) -> 4,184 (Dec-2025) -> 4,151 (May-2026).",
+      "source_name": "CBK Monthly Statistics Bulletin No. 297, Table 25.1",
+      "source_url": "https://bqk-kos.org/wp-content/uploads/2026/07/CBK_MSB_297_En.pdf",
+      "source_date": "10/07/2026",
+      "source_tier": "regulator",
+      "implies": "A physically expanding branch estate in a cash-heavy euroised economy is the classic branch-transformation window: Glory/Sesami teller cash recyclers (TCR = a machine behind/at the counter that accepts notes and re-dispenses them, cutting manual cash handling), self-service kiosks and NCR intelligent-deposit ATMs in the new units, plus Printec managed field services.",
+      "likelihood": "High - network additions are continuing month by month",
+      "confidence": "Medium",
+      "opp_size": "L",
+      "win": "Medium",
+      "followup": "Map the 8 net new units added during 2025 to individual banks (ProCredit, TEB, Raiffeisen KS, NLB, BKT, Banka Ekonomike) and pitch TCR + kiosk fit-out.",
+      "deadline": "",
+      "is_new": true
+    },
+    {
+      "entity": "CBK payment-system statistics (Table 24.1.1 / 24.1.2)",
+      "country": "Kosovo",
+      "signal": "Cash is NOT retreating in Kosovo. CBK MSB 297: ATM cash WITHDRAWAL count (thousands, non-cumulative) Dec-2024 1,957 -> Dec-2025 1,990; May-2025 1,888 -> May-2026 2,029. ATM withdrawal VALUE Dec-2024 EUR 390.7m -> Dec-2025 EUR 404.8m. ATM CASH-DEPOSIT count Dec-2024 304.9k -> Dec-2025 342.1k, value Dec-2024 EUR 266.4m -> Dec-2025 EUR 304.9m. Domestic POS card payments (count, thousands) Dec-2024 3,283.4 -> Dec-2025 4,503.1 -> May-2026 4,858.1.",
+      "source_name": "CBK Monthly Statistics Bulletin No. 297, Tables 24.1.1 and 24.1.2",
+      "source_url": "https://bqk-kos.org/wp-content/uploads/2026/07/CBK_MSB_297_En.pdf",
+      "source_date": "10/07/2026",
+      "source_tier": "regulator",
+      "implies": "Rising ATM deposit volumes alongside flat-to-rising withdrawals is the exact economics that justifies cash RECYCLERS (an ATM that re-dispenses notes customers deposited, so cash-in-transit runs and vault float both fall) and NCR APTRA OptiCash cash optimisation; POS transaction growth of roughly a third y/y drives terminal refresh and TMS.",
+      "likelihood": "High - the deposit-flow trend is the strongest recycler business case in the region",
+      "confidence": "Medium",
+      "opp_size": "L",
+      "win": "Medium",
+      "followup": "Build a recycler ROI model on the published EUR 304.9m/month ATM cash-deposit value and take it to the top-5 Kosovo banks.",
+      "deadline": "",
+      "is_new": true
+    },
+    {
+      "entity": "CBK 'Use of Bank Cards in Kosovo'",
+      "country": "Kosovo",
+      "signal": "[STANDING - dated 2024] No 2026 edition exists as of 27/08/2026: the live CBK URL still serves the September-2025 edition with data as of 31/12/2024 - 21,548 card-accepting terminals, of which 635 ATMs (634 withdrawal, 53 credit-transfer, 377 cash-deposit-capable = 59.4%) and 20,913 POS. Kosovo therefore has NO published 2025 ATM/POS device count; the CBK Monthly Statistics Bulletin, despite its Table-24 explanatory note, does not carry device counts either.",
+      "source_name": "CBK, Use of Bank Cards in Kosovo, September 2025",
+      "source_url": "https://bqk-kos.org/repository/docs/SistemiIPagesave/Use%20of%20bank%20cards%20in%20Kosovo.pdf?lang=en",
+      "source_date": "Sep-2025",
+      "source_tier": "regulator",
+      "implies": "The 59.4% deposit-capable share means ~258 Kosovo ATMs are still dispense-only - a concrete, countable upgrade/replacement pipeline for NCR intelligent-deposit and recycling units.",
+      "likelihood": "Medium - a 2026 edition is expected around Sep-2026 on the annual cadence",
+      "confidence": "Medium",
+      "opp_size": "L",
+      "win": "Medium",
+      "followup": "Re-check the same stable URL in Sep/Oct-2026 for the edition carrying 31/12/2025 device counts.",
+      "deadline": "",
+      "is_new": false
+    }
+  ],
+  "coverage_notes": "In progress.",
+  "access_issues": "bqk-kos.org HTML pages (/news/, /statistikat/) return a Cloudflare 'Just a moment' JS challenge to both WebFetch (403) and desktop-UA curl. Direct /wp-content/uploads/ and /repository/docs/ PDF URLs return 200 to desktop-UA curl. pdftotext is not installed; pdfminer hangs on the 150-page bulletin - pypdf extract_text works.",
+  "operator_requests": ""
+}

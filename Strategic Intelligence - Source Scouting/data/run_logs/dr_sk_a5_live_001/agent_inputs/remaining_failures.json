@@ -1,0 +1,192 @@
+[
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_061",
+  "source_url": "https://www.sopk.sk/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_078",
+  "source_url": "https://www.zlataminca.sk/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_081",
+  "source_url": "https://www.profesiadays.sk/en/bratislava/vystavovatelia/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_088",
+  "source_url": "https://www.zlataminca.sk/nominacie-zlata-minca-2026/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_096",
+  "source_url": "https://zmluvy.egov.sk/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_111",
+  "source_url": "https://institucie.ineko.sk/institucie/financne_riaditelstvo",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_140",
+  "source_url": "http://ozppap.sk/blog/blog",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_173",
+  "source_url": "https://web.vucke.sk",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_204",
+  "source_url": "https://www.eqs-news.com/news/ad-hoc/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_209",
+  "source_url": "https://www.globenewswire.com/en/search/organization/KBC%2520Group",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "TimeoutError"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_217",
+  "source_url": "https://www.marketscreener.com/quote/stock/TATRA-BANKA-64302959/company/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_231",
+  "source_url": "https://www.dieboldnixdorfag.com/en-us/global-locations/europe-middle-east-and-africa/slovakia/openings",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_254",
+  "source_url": "https://www.crunchbase.com/organization/vacuumlabs",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_260",
+  "source_url": "https://topjobs-kariera.topjobs.sk/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_275",
+  "source_url": "https://www.pozripracu.sk/praca/tatra-banka/12606",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_317",
+  "source_url": "https://www.sk.cpl.com/en",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_326",
+  "source_url": "https://ekonomika.pravda.sk/ludia/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_328",
+  "source_url": "https://e.dennikn.sk/ekonomika/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_sk_a5_live_001__c_333",
+  "source_url": "https://tvnoviny.sk/ekonomika",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ }
+]

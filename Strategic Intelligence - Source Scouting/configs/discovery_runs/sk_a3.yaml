@@ -1,0 +1,15 @@
+# Auto-generated: Slovakia / A3 Regulation & Deadlines / sector=both.
+country: SK
+country_name: Slovakia
+sector: both
+workstreams: [A3]
+topics: [regulation, supervision, consultations, deadlines]
+languages: [sk, en]
+routine_id: R2
+routine_name: source_discovery_scout
+routine_version: 0.3.0
+prompt_path: routines/source_discovery_scout/routine_prompt.md
+url_verification:
+  enabled: false
+dedupe:
+  enabled: true

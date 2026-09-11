@@ -1,0 +1,62 @@
+[
+ {
+  "candidate_id": "dr_me_a2_live_001__c_045",
+  "source_url": "http://www.pretraga.crps.me/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a2_live_001__c_047",
+  "source_url": "http://crps.me/strana/pregled/89",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a2_live_001__c_189",
+  "source_url": "https://financesone.worldbank.org/countries/Montenegro",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a2_live_001__c_218",
+  "source_url": "https://www.sap.com/products/spend-management/ariba-login.html",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a2_live_001__c_219",
+  "source_url": "https://www.sap.com/products/business-network/find-suppliers.html",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a2_live_001__c_244",
+  "source_url": "https://www.halcom.com/sr_en/solutions-2/retail-banking/e-banking/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ }
+]

@@ -1,0 +1,492 @@
+[
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_003",
+  "source_url": "https://bank.gov.ua/en/archive-news/all",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_013",
+  "source_url": "https://www.president.gov.ua/documents",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_016",
+  "source_url": "https://youcontrol.com.ua/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_020",
+  "source_url": "https://interfax.com.ua/news/economic/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_028",
+  "source_url": "https://bank.gov.ua/bank_managers/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_034",
+  "source_url": "https://kyivindependent.com/tag/soe-weekly/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_041",
+  "source_url": "https://kurs.com.ua/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_043",
+  "source_url": "https://yur-gazeta.com/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_045",
+  "source_url": "https://www.mastercard.com/news/eemea/en/newsroom/press-releases/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_046",
+  "source_url": "https://www.mastercard.com/news/eemea/en/newsroom/our-executives/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_048",
+  "source_url": "https://www.visa.com/en_MW/about-visa/newsroom/press-releases.html",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_066",
+  "source_url": "https://english.nv.ua/business/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_069",
+  "source_url": "https://dozorro.org/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_072",
+  "source_url": "https://spending.gov.ua/new/transactions",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_082",
+  "source_url": "https://dozorro.org/blog/yak-dosliditi-monitoringi-derzhauditsluzhbi-v-bi-prozorro",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_134",
+  "source_url": "https://nabu.ua/ua/kalendar-zahodiv.html",
+  "outcome": "unresolved",
+  "http_status": 429,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 429"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_135",
+  "source_url": "https://nabu.ua/ua/tsentr-navchannya.html",
+  "outcome": "unresolved",
+  "http_status": 429,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 429"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_137",
+  "source_url": "https://digital-world.banksinfo.kiev.ua/uk/",
+  "outcome": "unresolved",
+  "http_status": 500,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 500"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_139",
+  "source_url": "https://bankerclub.org/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_149",
+  "source_url": "https://10times.com/ukraine/finance-banking",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_150",
+  "source_url": "https://ukrstat.gov.ua/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_162",
+  "source_url": "https://finbalance.com.ua/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_164",
+  "source_url": "https://nabu.ua/ua/komiteti.html",
+  "outcome": "unresolved",
+  "http_status": 429,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 429"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_166",
+  "source_url": "https://biz.nv.ua/ukr/finance/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_167",
+  "source_url": "https://about.pumb.ua/presscenter/news",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_168",
+  "source_url": "https://about.pumb.ua/management/head",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_169",
+  "source_url": "https://career.pumb.ua/vacancy",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_190",
+  "source_url": "https://nabu.ua/ua/at-rayffayzen-bank-aval-2.html",
+  "outcome": "unresolved",
+  "http_status": 429,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 429"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_191",
+  "source_url": "https://youcontrol.com.ua/catalog/company_details/21677333/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_197",
+  "source_url": "https://www.work.ua/jobs/by-company/843612/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_200",
+  "source_url": "https://thepage.ua/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_237",
+  "source_url": "https://ua.trud.com/ua/jobs/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_247",
+  "source_url": "https://finance.liga.net/ua/bank/news",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_249",
+  "source_url": "https://en.interfax.com.ua/news/economic/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_263",
+  "source_url": "https://finclub.net/all.html?format=feed",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_269",
+  "source_url": "https://news.finbalance.com.ua/bank/all",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_272",
+  "source_url": "https://nabu.ua/ua/novini-rinku.html",
+  "outcome": "unresolved",
+  "http_status": 429,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 429"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_276",
+  "source_url": "https://finance.ua/ua/news",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_277",
+  "source_url": "https://usr.minjust.gov.ua/ua/freesearch",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_278",
+  "source_url": "https://online.minjust.gov.ua/edr-search/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_281",
+  "source_url": "https://smida.gov.ua/db/irregular",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_294",
+  "source_url": "https://nabu.ua/ua/rada-nabu.html",
+  "outcome": "unresolved",
+  "http_status": 429,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 429"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_295",
+  "source_url": "https://nabu.ua/ua/struktura-nabu.html",
+  "outcome": "unresolved",
+  "http_status": 429,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 429"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_296",
+  "source_url": "https://nabu.ua/ua/aparat-asotsiatsiyi.html",
+  "outcome": "unresolved",
+  "http_status": 429,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 429"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_297",
+  "source_url": "https://nabu.ua/ua/zagalni-zbori-nabu-novi-chleni-radi-asotsiatsiyi-ta-prioriteti-na.html",
+  "outcome": "unresolved",
+  "http_status": 429,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 429"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_298",
+  "source_url": "https://nabu.ua/ua/ukrayinska-asotsiatsiya-finteh-ta-innovatsiynih-kompaniy.html",
+  "outcome": "unresolved",
+  "http_status": 429,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 429"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_306",
+  "source_url": "https://www.usubc.org/site/member-news/ihor-olekhov-elected-co-chair-of-the-banking--amp--financial-services-committee-of-the-american-chamber-of-commerce",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_308",
+  "source_url": "https://ukbs.org.ua/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a5_live_001__c_310",
+  "source_url": "https://www.vaks.org.ua/?menu=rada_vaks",
+  "outcome": "unresolved",
+  "http_status": 429,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 429"
+ }
+]

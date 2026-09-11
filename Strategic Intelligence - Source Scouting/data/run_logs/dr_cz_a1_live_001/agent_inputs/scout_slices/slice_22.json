@@ -1,0 +1,987 @@
+{
+  "candidates": [
+    {
+      "source_name": "Patria Online – Investiční doporučení a cílové ceny (výzkum)",
+      "source_url": "https://www.patria.cz/akcie/vyzkum/doporuceni.html",
+      "source_class": "indirect",
+      "primary_language": "cs",
+      "why_relevant": "Central sell-side research hub of Patria Finance (largest broker on the Prague Stock Exchange), publishing consolidated analyst recommendations and target prices. Fetched content directly showed live entries for all three listed Czech-market banks: Komerční banka (Držet, TP 1111 CZK), Moneta Money Bank (Redukovat, TP 175 CZK) and Erste Bank (Držet, TP 2565 CZK), with research attributed to Patria and KBC Securities. This is the single densest interpretation layer over Czech bank disclosures.",
+      "credibility_score": 0.88,
+      "usefulness_score": 0.95,
+      "confidence_score": 0.95,
+      "priority": "critical",
+      "domain": "patria.cz",
+      "source_subtype": "sell_side_research_portal",
+      "topics": [
+        "earnings",
+        "disclosures",
+        "investor relations"
+      ],
+      "access_status": "public",
+      "legal_status": "restricted",
+      "collection_allowed": true,
+      "suggested_collection_method": "Scheduled HTML scrape of the recommendations table (recommendation, target price, potential, issuing house); snapshot on change. Respect robots.txt and Patria ToS; research PDFs are likely licensed — link, do not mirror.",
+      "example_urls": [
+        "https://www.patria.cz/akcie/vyzkum/doporuceni.html",
+        "https://www.patria.cz/akcie/home.html"
+      ],
+      "discovered_via_method": "direct_fetch_of_cell_seed_actor_then_nav_extraction",
+      "queries_used": [
+        "seed actor Patria Online (WebSearch unavailable – budget exhausted)"
+      ],
+      "local_language_terms_used": [
+        "doporučení",
+        "cílová cena",
+        "výzkum",
+        "akcie",
+        "držet",
+        "redukovat"
+      ],
+      "blocked": false,
+      "blocker_type": null,
+      "observed_blocker": null
+    },
+    {
+      "source_name": "Patria Online – Komerční banka issuer page (doporučení / zprávy / hospodaření)",
+      "source_url": "https://www.patria.cz/akcie/BKOMbl.PR/komercni-banka/doporuceni.html",
+      "source_class": "indirect",
+      "primary_language": "cs",
+      "why_relevant": "Per-issuer analyst view for the largest domestically listed Czech bank. Observed live an aggregated 'Průměrná cílová cena' (average target price, 988.37 CZK) plus sibling tabs for Zprávy (news) and Hospodaření (financial performance), i.e. consensus + restated disclosure data in one place. Consensus drift is a leading indicator of what analysts think changed in KB's reporting.",
+      "credibility_score": 0.85,
+      "usefulness_score": 0.9,
+      "confidence_score": 0.9,
+      "priority": "critical",
+      "domain": "patria.cz",
+      "source_subtype": "issuer_analyst_consensus_page",
+      "topics": [
+        "earnings",
+        "disclosures",
+        "investor relations"
+      ],
+      "access_status": "public",
+      "legal_status": "restricted",
+      "collection_allowed": true,
+      "suggested_collection_method": "Poll the three tabs per ticker slug; parse average target price and recommendation history into a time series. Ticker slug pattern observed: BKOMbl.PR / BKOMsp.PR.",
+      "example_urls": [
+        "https://www.patria.cz/akcie/BKOMbl.PR/komercni-banka/doporuceni.html",
+        "https://www.patria.cz/akcie/BKOMbl.PR/komercni-banka/zpravy.html",
+        "https://www.patria.cz/akcie/BKOMbl.PR/komercni-banka/hospodareni.html"
+      ],
+      "discovered_via_method": "snowball_from_patria_recommendations_hub",
+      "queries_used": [
+        "link-following from /akcie/vyzkum/doporuceni.html"
+      ],
+      "local_language_terms_used": [
+        "průměrná cílová cena",
+        "doporučení",
+        "zprávy",
+        "hospodaření",
+        "Komerční banka"
+      ],
+      "blocked": false,
+      "blocker_type": null,
+      "observed_blocker": null
+    },
+    {
+      "source_name": "Patria Online – Moneta Money Bank issuer analyst page",
+      "source_url": "https://www.patria.cz/akcie/MONET.PR/moneta-money-bank/doporuceni.html",
+      "source_class": "indirect",
+      "primary_language": "cs",
+      "why_relevant": "Analyst recommendation and target-price page for Moneta Money Bank, observed live on the Patria research hub with a 'Redukovat' (Reduce) rating and 175 CZK target. Moneta is the purest retail-banking read-across in the CZ listed universe, so broker revisions here track retail margin and fee expectations.",
+      "credibility_score": 0.85,
+      "usefulness_score": 0.88,
+      "confidence_score": 0.88,
+      "priority": "high",
+      "domain": "patria.cz",
+      "source_subtype": "issuer_analyst_consensus_page",
+      "topics": [
+        "earnings",
+        "disclosures",
+        "investor relations"
+      ],
+      "access_status": "public",
+      "legal_status": "restricted",
+      "collection_allowed": true,
+      "suggested_collection_method": "Same per-ticker poller as KB; capture rating changes and target-price revisions with timestamps.",
+      "example_urls": [
+        "https://www.patria.cz/akcie/MONET.PR/moneta-money-bank/doporuceni.html"
+      ],
+      "discovered_via_method": "snowball_from_patria_recommendations_hub",
+      "queries_used": [
+        "link-following from /akcie/vyzkum/doporuceni.html"
+      ],
+      "local_language_terms_used": [
+        "doporučení",
+        "cílová cena",
+        "redukovat",
+        "Moneta Money Bank"
+      ],
+      "blocked": false,
+      "blocker_type": null,
+      "observed_blocker": null
+    },
+    {
+      "source_name": "Patria Online – Erste Bank (Erste Group) issuer analyst page",
+      "source_url": "https://www.patria.cz/akcie/ERSTsp.PR/erste-bank/doporuceni.html",
+      "source_class": "indirect",
+      "primary_language": "cs",
+      "why_relevant": "Analyst page for Erste Group as traded in Prague — the parent of Česká spořitelna, the largest Czech retail bank. Observed live with 'Držet' (Hold) and a 2565 CZK target. Gives Czech-market analyst framing of a group whose primary disclosures are Austrian, which is exactly the interpretation layer this cell exists to capture.",
+      "credibility_score": 0.85,
+      "usefulness_score": 0.85,
+      "confidence_score": 0.88,
+      "priority": "high",
+      "domain": "patria.cz",
+      "source_subtype": "issuer_analyst_consensus_page",
+      "topics": [
+        "earnings",
+        "disclosures",
+        "investor relations"
+      ],
+      "access_status": "public",
+      "legal_status": "restricted",
+      "collection_allowed": true,
+      "suggested_collection_method": "Per-ticker poller; cross-link to Erste Group IR for the underlying primary disclosure.",
+      "example_urls": [
+        "https://www.patria.cz/akcie/ERSTsp.PR/erste-bank/doporuceni.html"
+      ],
+      "discovered_via_method": "snowball_from_patria_recommendations_hub",
+      "queries_used": [
+        "link-following from /akcie/vyzkum/doporuceni.html"
+      ],
+      "local_language_terms_used": [
+        "doporučení",
+        "cílová cena",
+        "držet",
+        "Erste Bank",
+        "Česká spořitelna"
+      ],
+      "blocked": false,
+      "blocker_type": null,
+      "observed_blocker": null
+    },
+    {
+      "source_name": "Patria Online – Zpravodajství: Akcie (equity news wire)",
+      "source_url": "https://www.patria.cz/zpravodajstvi/akcie/zpravy.html",
+      "source_class": "indirect",
+      "primary_language": "cs",
+      "why_relevant": "Patria's equity news stream, where broker commentary on Czech bank results, estimate revisions and rating actions is published in Czech. Confirmed live; article URL pattern is /zpravodajstvi/{id}/{slug}.html, which gives stable, enumerable permalinks suitable for an archive that outlives the issuer's own press page.",
+      "credibility_score": 0.82,
+      "usefulness_score": 0.85,
+      "confidence_score": 0.9,
+      "priority": "high",
+      "domain": "patria.cz",
+      "source_subtype": "financial_news_wire",
+      "topics": [
+        "press releases",
+        "earnings",
+        "disclosures"
+      ],
+      "access_status": "public",
+      "legal_status": "restricted",
+      "collection_allowed": true,
+      "suggested_collection_method": "RSS if offered, else paginated HTML crawl of the section with keyword filter on bank names; store permalink + headline + timestamp, keep full text only if ToS permits.",
+      "example_urls": [
+        "https://www.patria.cz/zpravodajstvi/akcie/zpravy.html",
+        "https://www.patria.cz/zpravodajstvi/zpravy.html"
+      ],
+      "discovered_via_method": "nav_extraction_from_patria_homepage",
+      "queries_used": [
+        "direct fetch of patria.cz nav"
+      ],
+      "local_language_terms_used": [
+        "zpravodajství",
+        "akcie",
+        "zprávy"
+      ],
+      "blocked": false,
+      "blocker_type": null,
+      "observed_blocker": null
+    },
+    {
+      "source_name": "Patria Online – Výsledková sezóna / Kalendář ČR (Czech earnings calendar)",
+      "source_url": "https://www.patria.cz/akcie/home.html",
+      "source_class": "pointer",
+      "primary_language": "cs",
+      "why_relevant": "Patria runs an explicit 'Výsledková sezóna' block with per-region reporting calendars ('2Q26 KALENDÁŘ ČR', plus USA and EU). An issuer reporting calendar is the scheduling backbone for a disclosure-monitoring workstream: it tells the collector when Czech bank results are due before they land.",
+      "credibility_score": 0.8,
+      "usefulness_score": 0.85,
+      "confidence_score": 0.6,
+      "priority": "high",
+      "domain": "patria.cz",
+      "source_subtype": "earnings_calendar",
+      "topics": [
+        "earnings",
+        "investor relations",
+        "disclosures"
+      ],
+      "access_status": "public",
+      "legal_status": "restricted",
+      "collection_allowed": true,
+      "suggested_collection_method": "Locate the 'KALENDÁŘ ČR' link from the akcie home page each quarter and parse the date/company table into the collection scheduler. Exact calendar path not yet resolved — treat as unverified.",
+      "example_urls": [
+        "https://www.patria.cz/akcie/home.html",
+        "https://www.patria.cz/akcie/online/cz.html"
+      ],
+      "discovered_via_method": "observed_section_label_during_fetch_exact_path_unresolved",
+      "queries_used": [
+        "fetch of patria.cz/akcie/vysledky-spolecnosti.html (soft-redirected to portal home)"
+      ],
+      "local_language_terms_used": [
+        "výsledková sezóna",
+        "kalendář",
+        "výsledky společností"
+      ],
+      "blocked": false,
+      "blocker_type": null,
+      "observed_blocker": null
+    },
+    {
+      "source_name": "Patria Online – Ekonomika: analýzy (macro/economic research)",
+      "source_url": "https://www.patria.cz/ekonomika/analyzy.html",
+      "source_class": "indirect",
+      "primary_language": "cs",
+      "why_relevant": "Macro and rates analysis section from the same broker. Bank earnings in CZ are dominated by CNB policy rates and credit-cost expectations, so this is the macro half of the analyst narrative that explains revisions to bank forecasts.",
+      "credibility_score": 0.8,
+      "usefulness_score": 0.7,
+      "confidence_score": 0.8,
+      "priority": "medium",
+      "domain": "patria.cz",
+      "source_subtype": "macro_research_section",
+      "topics": [
+        "earnings",
+        "disclosures"
+      ],
+      "access_status": "public",
+      "legal_status": "restricted",
+      "collection_allowed": true,
+      "suggested_collection_method": "Section crawl with bank/rates keyword filter; link-only retention of PDFs.",
+      "example_urls": [
+        "https://www.patria.cz/ekonomika/analyzy.html",
+        "https://www.patria.cz/ekonomika/makroprehled/cz.html",
+        "https://www.patria.cz/kurzy/vyzkum/analyzy.html"
+      ],
+      "discovered_via_method": "nav_extraction_from_patria_homepage",
+      "queries_used": [
+        "direct fetch of patria.cz nav"
+      ],
+      "local_language_terms_used": [
+        "ekonomika",
+        "analýzy",
+        "makropřehled"
+      ],
+      "blocked": false,
+      "blocker_type": null,
+      "observed_blocker": null
+    },
+    {
+      "source_name": "Kurzy.cz – Zprávy: Oficiální sdělení (official corporate announcements archive)",
+      "source_url": "https://zpravy.kurzy.cz/oficialni-sdeleni/",
+      "source_class": "pointer",
+      "primary_language": "cs",
+      "why_relevant": "Confirmed live category on the Kurzy.cz news subdomain carrying 'Oficiální sdělení' — corporate/official notices such as shareholder meetings and statutory announcements. This is precisely the mirror-and-archive function the cell rationale calls for: issuer announcements preserved in a searchable third-party archive with stable numeric permalinks that outlive the original issuer page.",
+      "credibility_score": 0.72,
+      "usefulness_score": 0.85,
+      "confidence_score": 0.82,
+      "priority": "high",
+      "domain": "kurzy.cz",
+      "source_subtype": "disclosure_mirror_archive",
+      "topics": [
+        "disclosures",
+        "press releases",
+        "investor relations"
+      ],
+      "access_status": "public",
+      "legal_status": "unclear",
+      "collection_allowed": true,
+      "suggested_collection_method": "Crawl the category index; article IDs are short numeric permalinks (e.g. zpravy.kurzy.cz/872523) so an ID-walk or index crawl both work. Filter on bank/payment entity names.",
+      "example_urls": [
+        "https://zpravy.kurzy.cz/oficialni-sdeleni/",
+        "https://zpravy.kurzy.cz/tiskove-zpravy/",
+        "https://zpravy.kurzy.cz/872523"
+      ],
+      "discovered_via_method": "nav_extraction_from_kurzy_news_subdomain",
+      "queries_used": [
+        "direct fetch of zpravy.kurzy.cz"
+      ],
+      "local_language_terms_used": [
+        "oficiální sdělení",
+        "tiskové zprávy",
+        "zprávy",
+        "valná hromada"
+      ],
+      "blocked": false,
+      "blocker_type": null,
+      "observed_blocker": null
+    },
+    {
+      "source_name": "Kurzy.cz – Zprávy: Tiskové zprávy (press-release mirror)",
+      "source_url": "https://zpravy.kurzy.cz/tiskove-zpravy/",
+      "source_class": "pointer",
+      "primary_language": "cs",
+      "why_relevant": "Dedicated press-release category confirmed live on Kurzy.cz. Czech banks and financial institutions push releases into this aggregator, and observed articles were attributed to institutions such as Trinity Bank and Česká spořitelna — so it doubles as a low-effort sweep for bank press output plus attached analyst commentary.",
+      "credibility_score": 0.65,
+      "usefulness_score": 0.78,
+      "confidence_score": 0.82,
+      "priority": "high",
+      "domain": "kurzy.cz",
+      "source_subtype": "press_release_aggregator",
+      "topics": [
+        "press releases",
+        "disclosures",
+        "earnings"
+      ],
+      "access_status": "public",
+      "legal_status": "unclear",
+      "collection_allowed": true,
+      "suggested_collection_method": "Category crawl + entity keyword filter; deduplicate against the issuer's own newsroom to identify which releases only survive here.",
+      "example_urls": [
+        "https://zpravy.kurzy.cz/tiskove-zpravy/",
+        "https://zpravy.kurzy.cz/investice/"
+      ],
+      "discovered_via_method": "nav_extraction_from_kurzy_news_subdomain",
+      "queries_used": [
+        "direct fetch of zpravy.kurzy.cz"
+      ],
+      "local_language_terms_used": [
+        "tiskové zprávy",
+        "investice",
+        "banka"
+      ],
+      "blocked": false,
+      "blocker_type": null,
+      "observed_blocker": null
+    },
+    {
+      "source_name": "Kurzy.cz – Akcie ČR / Burza (Prague exchange quote & issuer pages)",
+      "source_url": "https://www.kurzy.cz/akcie-cz/",
+      "source_class": "indirect",
+      "primary_language": "cs",
+      "why_relevant": "Long-running Czech financial portal (operated by Kurzy.cz spol. s r.o. / AliaWeb) with per-issuer quote and exchange pages for the Prague Stock Exchange. Named in the cell brief as a core aggregator; valuable mainly as a durable secondary index of Czech listed banks. Note: per-issuer pages were not reachable by plain fetch (content appears JS-rendered), so the exact per-bank URLs remain unresolved.",
+      "credibility_score": 0.68,
+      "usefulness_score": 0.6,
+      "confidence_score": 0.55,
+      "priority": "medium",
+      "domain": "kurzy.cz",
+      "source_subtype": "market_data_aggregator",
+      "topics": [
+        "disclosures",
+        "earnings",
+        "investor relations"
+      ],
+      "access_status": "public",
+      "legal_status": "unclear",
+      "collection_allowed": true,
+      "suggested_collection_method": "Headless-browser render required to reach per-issuer pages; plain HTTP fetch returns navigation chrome only. Resolve per-bank slugs once via a rendered session, then poll.",
+      "example_urls": [
+        "https://www.kurzy.cz/akcie-cz/",
+        "https://www.kurzy.cz/akcie-cz/burza/",
+        "https://rejstrik-firem.kurzy.cz/"
+      ],
+      "discovered_via_method": "direct_fetch_of_cell_seed_actor_then_nav_extraction",
+      "queries_used": [
+        "seed actor Kurzy.cz (WebSearch unavailable)"
+      ],
+      "local_language_terms_used": [
+        "akcie ČR",
+        "burza",
+        "kurzy",
+        "obchodní rejstřík"
+      ],
+      "blocked": true,
+      "blocker_type": "javascript_rendering_required",
+      "observed_blocker": "Plain fetch of https://www.kurzy.cz/akcie-cz/ and /akcie-cz/burza/ returned only global navigation and the operator notice (Kurzy.cz, spol. s r.o., AliaWeb, spol. s r.o.); no issuer table or per-company links present in the served HTML."
+    },
+    {
+      "source_name": "Akcie.cz – analyst notes with target prices (Fio-affiliated portal)",
+      "source_url": "https://www.akcie.cz/",
+      "source_class": "indirect",
+      "primary_language": "cs",
+      "why_relevant": "Confirmed live and actively carrying dated analyst notes with explicit Czech-language rating and target-price changes — observed a Komerční banka note with a 1043 CZK target and 'accumulate' rating, plus ČEZ and Colt CZ rating changes, alongside live KB/ERSTE/MONETA quotes. Data credited to BCPP and RM-SYSTÉM, with FIOFONDY / E-BROKER / RM-SYSTÉM branding indicating Fio banka affiliation — i.e. a second, independent Czech broker's view distinct from Patria/KBC.",
+      "credibility_score": 0.75,
+      "usefulness_score": 0.88,
+      "confidence_score": 0.9,
+      "priority": "critical",
+      "domain": "akcie.cz",
+      "source_subtype": "broker_affiliated_research_portal",
+      "topics": [
+        "earnings",
+        "disclosures",
+        "investor relations",
+        "press releases"
+      ],
+      "access_status": "public",
+      "legal_status": "unclear",
+      "collection_allowed": true,
+      "suggested_collection_method": "Crawl the news feed (slug pattern /novinky-z-trhu/{id}-{slug}/ observed) and the BCPP quote index; regex-extract 'cílová cena' and rating verbs (kupovat/akumulovat/držet/redukovat/prodat) into a structured recommendation series.",
+      "example_urls": [
+        "https://www.akcie.cz/zpravy/vse",
+        "https://www.akcie.cz/kurzy-cz/bcpp",
+        "https://www.akcie.cz/kurzovni-listek/prazska-burza"
+      ],
+      "discovered_via_method": "direct_fetch_of_cell_seed_actor_then_nav_extraction",
+      "queries_used": [
+        "seed actor Akcie.cz (WebSearch unavailable)"
+      ],
+      "local_language_terms_used": [
+        "cílová cena",
+        "doporučení",
+        "akumulovat",
+        "kurzovní lístek",
+        "pražská burza",
+        "novinky z trhu"
+      ],
+      "blocked": false,
+      "blocker_type": null,
+      "observed_blocker": null
+    },
+    {
+      "source_name": "Akcie.cz – Novinky z trhu / Zprávy feed",
+      "source_url": "https://www.akcie.cz/zpravy/vse",
+      "source_class": "indirect",
+      "primary_language": "cs",
+      "why_relevant": "The rolling market-news feed behind Akcie.cz. Confirmed live with a dense, high-frequency stream (sequential article IDs observed in the 219xxx range) covering FX, commodities and macro prints. Sequential IDs make full historical backfill and gap-detection straightforward, which is what makes it useful as an archive layer rather than just a feed.",
+      "credibility_score": 0.7,
+      "usefulness_score": 0.72,
+      "confidence_score": 0.88,
+      "priority": "high",
+      "domain": "akcie.cz",
+      "source_subtype": "financial_news_feed",
+      "topics": [
+        "press releases",
+        "earnings",
+        "disclosures"
+      ],
+      "access_status": "public",
+      "legal_status": "unclear",
+      "collection_allowed": true,
+      "suggested_collection_method": "Incremental ID-walk over /novinky-z-trhu/{id}-{slug}/ with a bank/payments keyword filter; cheap to backfill given monotonic IDs.",
+      "example_urls": [
+        "https://www.akcie.cz/zpravy/vse",
+        "https://www.akcie.cz/novinky-z-trhu/219659-vyvoj-cen-komodit-ropa-1-49-zemni-plyn-1-31-stribro-0-89/"
+      ],
+      "discovered_via_method": "snowball_from_akcie_cz_homepage",
+      "queries_used": [
+        "direct fetch of akcie.cz/zpravy/vse"
+      ],
+      "local_language_terms_used": [
+        "novinky z trhu",
+        "zprávy",
+        "vývoj měnových párů"
+      ],
+      "blocked": false,
+      "blocker_type": null,
+      "observed_blocker": null
+    },
+    {
+      "source_name": "Moody's Ratings – public issuer ratings & rating action press releases",
+      "source_url": "https://ratings.moodys.com/",
+      "source_class": "direct",
+      "primary_language": "en",
+      "why_relevant": "Primary publisher of rating actions on Czech banks. Rating action press releases are the highest-signal third-party interrogation of a bank's disclosures: they state explicitly what changed in asset quality, capital or sovereign support assumptions and why. Regulatory rules require the rating and its rationale to be publicly disclosed, so a free tier exists even though the portal is heavily bot-defended.",
+      "credibility_score": 0.97,
+      "usefulness_score": 0.95,
+      "confidence_score": 0.75,
+      "priority": "critical",
+      "domain": "ratings.moodys.com",
+      "source_subtype": "credit_rating_agency",
+      "topics": [
+        "disclosures",
+        "press releases",
+        "earnings",
+        "investor relations"
+      ],
+      "access_status": "requires_free_account",
+      "legal_status": "restricted",
+      "collection_allowed": true,
+      "suggested_collection_method": "Registered-session headless browser against the issuer page for each Czech bank; capture rating action title, date, action type and rating scale. Do not redistribute full press-release text — store metadata plus the link. Consider the licensed API if budget allows.",
+      "example_urls": [
+        "https://ratings.moodys.com/"
+      ],
+      "discovered_via_method": "cell_seed_actor_direct_fetch_attempt",
+      "queries_used": [
+        "seed actor Moody's (WebSearch unavailable)"
+      ],
+      "local_language_terms_used": [
+        "rating",
+        "ratingová agentura",
+        "hodnocení"
+      ],
+      "blocked": true,
+      "blocker_type": "bot_protection_403",
+      "observed_blocker": "HTTP 403 Forbidden on https://ratings.moodys.com/ with no body returned. Interpreted as bot-defended-but-live, NOT dead — needs a browser session to confirm."
+    },
+    {
+      "source_name": "S&P Global Ratings – rating actions and research",
+      "source_url": "https://www.spglobal.com/ratings/en/",
+      "source_class": "direct",
+      "primary_language": "en",
+      "why_relevant": "Second of the big three agencies covering Czech banks and the Czech sovereign. Publishes rating actions, outlook changes and sector commentary (e.g. banking industry country risk assessments) that restate and stress-test issuer disclosures. Sovereign-to-bank rating linkage makes its Czech sovereign actions directly predictive of bank rating moves.",
+      "credibility_score": 0.97,
+      "usefulness_score": 0.93,
+      "confidence_score": 0.75,
+      "priority": "critical",
+      "domain": "spglobal.com",
+      "source_subtype": "credit_rating_agency",
+      "topics": [
+        "disclosures",
+        "press releases",
+        "earnings"
+      ],
+      "access_status": "requires_free_account",
+      "legal_status": "restricted",
+      "collection_allowed": true,
+      "suggested_collection_method": "Free-registration session via headless browser; monitor the rating actions listing filtered to Czech Republic / banks. Metadata + link retention only; full text is licensed.",
+      "example_urls": [
+        "https://www.spglobal.com/ratings/en/"
+      ],
+      "discovered_via_method": "cell_seed_actor_direct_fetch_attempt",
+      "queries_used": [
+        "seed actor S&P (WebSearch unavailable)"
+      ],
+      "local_language_terms_used": [
+        "rating",
+        "výhled",
+        "hodnocení"
+      ],
+      "blocked": true,
+      "blocker_type": "bot_protection_403",
+      "observed_blocker": "HTTP 403 Forbidden on https://www.spglobal.com/ratings/en/ with no body returned. Bot-defended-but-live hypothesis; not confirmed dead."
+    },
+    {
+      "source_name": "Fitch Ratings – Czech bank rating actions and criteria commentary",
+      "source_url": "https://www.fitchratings.com/",
+      "source_class": "direct",
+      "primary_language": "en",
+      "why_relevant": "Third of the big three and an active rater of CEE banking groups. Fitch publishes free rating action commentaries (RACs) with unusually explicit reasoning on Viability Ratings and Government Support Ratings, which is the most analytically useful public restatement of a bank's own disclosures.",
+      "credibility_score": 0.96,
+      "usefulness_score": 0.92,
+      "confidence_score": 0.7,
+      "priority": "critical",
+      "domain": "fitchratings.com",
+      "source_subtype": "credit_rating_agency",
+      "topics": [
+        "disclosures",
+        "press releases",
+        "earnings"
+      ],
+      "access_status": "requires_free_account",
+      "legal_status": "restricted",
+      "collection_allowed": true,
+      "suggested_collection_method": "Registered browser session; Fitch exposes per-entity pages and a filterable rating-actions search. Store action metadata and links.",
+      "example_urls": [
+        "https://www.fitchratings.com/"
+      ],
+      "discovered_via_method": "cell_seed_actor_direct_fetch_attempt",
+      "queries_used": [
+        "seed actor Fitch (WebSearch unavailable)"
+      ],
+      "local_language_terms_used": [
+        "rating",
+        "ratingová agentura"
+      ],
+      "blocked": true,
+      "blocker_type": "fetch_layer_domain_block",
+      "observed_blocker": "Fetch of https://www.fitchratings.com/region/czech-republic returned 'Claude Code is unable to fetch from www.fitchratings.com' — blocked at the fetch layer before any HTTP status. Liveness unknown; the guessed /region/czech-republic path is also unverified."
+    },
+    {
+      "source_name": "WOOD & Company – Insights (public analyses and press releases)",
+      "source_url": "https://www.wood.com/insights/",
+      "source_class": "indirect",
+      "primary_language": "en",
+      "why_relevant": "WOOD & Company is the leading independent CEE-focused broker (35+ years, Prague-headquartered) and one of the few houses producing genuine sell-side equity research on CEE banks. The public /insights/ section carries analyses, interviews and press releases — the freely collectible slice of an otherwise gated research franchise.",
+      "credibility_score": 0.85,
+      "usefulness_score": 0.75,
+      "confidence_score": 0.8,
+      "priority": "high",
+      "domain": "wood.com",
+      "source_subtype": "broker_public_insights",
+      "topics": [
+        "earnings",
+        "disclosures",
+        "press releases"
+      ],
+      "access_status": "public",
+      "legal_status": "unclear",
+      "collection_allowed": true,
+      "suggested_collection_method": "Section crawl with CEE-bank keyword filter; capture publication date, author and any headline estimates disclosed publicly.",
+      "example_urls": [
+        "https://www.wood.com/insights/",
+        "https://www.wood.com/about/"
+      ],
+      "discovered_via_method": "direct_fetch_of_known_cee_broker",
+      "queries_used": [
+        "direct fetch of wood.com"
+      ],
+      "local_language_terms_used": [
+        "analýza",
+        "broker",
+        "výzkum"
+      ],
+      "blocked": false,
+      "blocker_type": null,
+      "observed_blocker": null
+    },
+    {
+      "source_name": "WOOD & Company – research portal (gated equity research)",
+      "source_url": "https://research.wood.cz/login",
+      "source_class": "direct",
+      "primary_language": "en",
+      "why_relevant": "The actual WOOD research distribution portal, surfaced as a link from wood.com. This is where full broker notes on CEE/Czech banks — target prices, estimate tables, sector notes — would live. Worth registering an access route for: it is the highest-quality broker-note source identified in this cell, and no public substitute carries the same depth.",
+      "credibility_score": 0.9,
+      "usefulness_score": 0.9,
+      "confidence_score": 0.75,
+      "priority": "high",
+      "domain": "research.wood.cz",
+      "source_subtype": "gated_broker_research_portal",
+      "topics": [
+        "earnings",
+        "disclosures",
+        "investor relations"
+      ],
+      "access_status": "requires_credentials",
+      "legal_status": "requires_review",
+      "collection_allowed": false,
+      "suggested_collection_method": "DO NOT scrape. Pursue a legitimate institutional research subscription or a licensed distribution agreement; route to access review before any automated collection. Login page confirmed to exist via wood.com.",
+      "example_urls": [
+        "https://research.wood.cz/login"
+      ],
+      "discovered_via_method": "snowball_from_wood_com_homepage",
+      "queries_used": [
+        "direct fetch of wood.com"
+      ],
+      "local_language_terms_used": [
+        "výzkum",
+        "research"
+      ],
+      "blocked": true,
+      "blocker_type": "authentication_required",
+      "observed_blocker": "Portal is a login wall (https://research.wood.cz/login) referenced from wood.com; explicitly described as requiring login credentials."
+    },
+    {
+      "source_name": "J&T Banka – Insight / investment commentary and Wealth Report",
+      "source_url": "https://www.jtbank.cz/",
+      "source_class": "indirect",
+      "primary_language": "cs",
+      "why_relevant": "J&T Banka is a significant Czech investment bank whose analysts are routinely quoted on Czech bank results and the domestic capital market. Confirmed live with an 'Insight' section and a separate Wealth Report property. A useful third independent Czech house alongside Patria/KBC and Fio, though the research section's exact URLs were not resolvable from the homepage fetch.",
+      "credibility_score": 0.78,
+      "usefulness_score": 0.65,
+      "confidence_score": 0.6,
+      "priority": "medium",
+      "domain": "jtbank.cz",
+      "source_subtype": "bank_affiliated_research",
+      "topics": [
+        "earnings",
+        "disclosures",
+        "press releases"
+      ],
+      "access_status": "public",
+      "legal_status": "unclear",
+      "collection_allowed": true,
+      "suggested_collection_method": "Resolve the Insight section URL via a rendered session, then crawl. Also monitor wealthreport.cz as a separate annual publication.",
+      "example_urls": [
+        "https://www.jtbank.cz/",
+        "https://www.wealthreport.cz/"
+      ],
+      "discovered_via_method": "direct_fetch_of_known_czech_investment_bank",
+      "queries_used": [
+        "direct fetch of jtbank.cz"
+      ],
+      "local_language_terms_used": [
+        "analýza",
+        "ranní zprávy",
+        "insight"
+      ],
+      "blocked": false,
+      "blocker_type": null,
+      "observed_blocker": null
+    },
+    {
+      "source_name": "Fio banka – Investiční zpravodajství (investment research)",
+      "source_url": "https://www.fio.cz/zpravodajstvi",
+      "source_class": "indirect",
+      "primary_language": "cs",
+      "why_relevant": "Fio banka runs an in-house analyst team publishing Czech-language investment commentary, and is the house behind the Akcie.cz / e-Broker / RM-SYSTÉM ecosystem identified above. Tracking Fio directly separates its primary research output from the aggregated form it takes on Akcie.cz.",
+      "credibility_score": 0.75,
+      "usefulness_score": 0.7,
+      "confidence_score": 0.6,
+      "priority": "medium",
+      "domain": "fio.cz",
+      "source_subtype": "broker_research_section",
+      "topics": [
+        "earnings",
+        "disclosures",
+        "investor relations"
+      ],
+      "access_status": "public",
+      "legal_status": "unclear",
+      "collection_allowed": true,
+      "suggested_collection_method": "Crawl the zpravodajství section; cross-reference dated notes against Akcie.cz items to attribute authorship. Section link seen on fio.cz; the deeper /zpravodajstvi/analyzy-zpravodajstvi path returned 404 and should not be used.",
+      "example_urls": [
+        "https://www.fio.cz/zpravodajstvi"
+      ],
+      "discovered_via_method": "direct_fetch_then_path_correction_after_404",
+      "queries_used": [
+        "direct fetch of fio.cz (first guessed path 404)"
+      ],
+      "local_language_terms_used": [
+        "zpravodajství",
+        "investiční zpravodajství",
+        "analýzy"
+      ],
+      "blocked": false,
+      "blocker_type": null,
+      "observed_blocker": null
+    },
+    {
+      "source_name": "Roklen24 – finanční zpravodajství (now FX-focused)",
+      "source_url": "https://roklen24.cz/novinky/",
+      "source_class": "indirect",
+      "primary_language": "cs",
+      "why_relevant": "Named in the cell seed as a Czech financial news source. Confirmed live and published by Roklen Holding a.s., but the current site is materially narrower than the seed assumes: it is now an FX/currency-pair education and commentary property with an economic calendar, and does NOT carry bank ratings or traditional sell-side analyst research. Retained at low priority for its central-bank-decision calendar only.",
+      "credibility_score": 0.55,
+      "usefulness_score": 0.3,
+      "confidence_score": 0.85,
+      "priority": "low",
+      "domain": "roklen24.cz",
+      "source_subtype": "fx_news_commentary",
+      "topics": [
+        "press releases"
+      ],
+      "access_status": "public",
+      "legal_status": "unclear",
+      "collection_allowed": true,
+      "suggested_collection_method": "Low-frequency crawl of /novinky/ plus the economic calendar; do not invest in deep extraction given the narrowed scope.",
+      "example_urls": [
+        "https://roklen24.cz/novinky/",
+        "https://roklen24.cz/menove-pary/",
+        "https://roklenfx.roklen.cz/"
+      ],
+      "discovered_via_method": "direct_fetch_of_cell_seed_actor",
+      "queries_used": [
+        "seed actor Roklen24 (WebSearch unavailable)"
+      ],
+      "local_language_terms_used": [
+        "novinky",
+        "měnové páry",
+        "témata týdne",
+        "ekonomický kalendář"
+      ],
+      "blocked": false,
+      "blocker_type": null,
+      "observed_blocker": null
+    },
+    {
+      "source_name": "ESMA – Credit Rating Agencies supervision hub",
+      "source_url": "https://www.esma.europa.eu/esmas-activities/investors-and-issuers/credit-rating-agencies",
+      "source_class": "pointer",
+      "primary_language": "en",
+      "why_relevant": "Confirmed live. ESMA registers and supervises every credit rating agency operating in the EU, so this page is the authoritative pointer to which CRAs may legally rate Czech banks — including smaller EU agencies beyond the big three that the seed query would never surface. It also publishes annual CRA market-share calculations, which is a cheap way to discover under-tracked raters.",
+      "credibility_score": 0.95,
+      "usefulness_score": 0.7,
+      "confidence_score": 0.85,
+      "priority": "high",
+      "domain": "esma.europa.eu",
+      "source_subtype": "regulator_pointer_registry",
+      "topics": [
+        "disclosures",
+        "press releases"
+      ],
+      "access_status": "public",
+      "legal_status": "allowed",
+      "collection_allowed": true,
+      "suggested_collection_method": "Annual pull of the registered-CRA list and the market-share document to refresh the actor map for this cell; then add each newly discovered CRA as its own candidate.",
+      "example_urls": [
+        "https://www.esma.europa.eu/esmas-activities/investors-and-issuers/credit-rating-agencies"
+      ],
+      "discovered_via_method": "snowball_from_esma_homepage_nav_after_failed_hostname_guesses",
+      "queries_used": [
+        "direct fetch of esma.europa.eu nav"
+      ],
+      "local_language_terms_used": [
+        "ratingová agentura",
+        "registr"
+      ],
+      "blocked": false,
+      "blocker_type": null,
+      "observed_blocker": null
+    }
+  ],
+  "negative_findings": [
+    {
+      "finding_type": "tool_or_access_failure",
+      "description": "WebSearch was unavailable for the entire slice: the very first search call returned 'this session has used its web search budget (200 of 200 WebSearch calls)'. No cs-language or en-language query-based discovery could be executed at all.",
+      "result_summary": "Zero search queries ran. Discovery was reconstructed entirely from direct WebFetch of the cell's named seed actors plus link-snowballing through their navigation, which recovered ~21 candidates but cannot surface actors that were not already named or linked.",
+      "why_it_matters": "The seed queries explicitly instructed extension beyond the named actors, and mandatory local-language search could not be performed as a search. Any Czech sell-side house, rating-aggregator portal or broker-note archive not linked from patria.cz / kurzy.cz / akcie.cz / roklen24.cz / wood.com / esma.europa.eu is systematically invisible in this slice.",
+      "severity": "high",
+      "language": "both",
+      "source_class": "unknown",
+      "topics": [
+        "disclosures",
+        "earnings",
+        "press releases"
+      ]
+    },
+    {
+      "finding_type": "local_language_blind_spot",
+      "description": "Czech-language coverage was achieved through Czech-language page content and Czech navigation terms (doporučení, cílová cena, oficiální sdělení, výsledková sezóna, hospodaření), but NOT through Czech-language search queries, because WebSearch was unusable.",
+      "result_summary": "Czech terminology was harvested and applied against fetched pages, confirming real cs-language research artefacts (e.g. Patria ratings in Czech: Držet / Redukovat; Akcie.cz 'cílová cena 1043 Kč'). However no cs query such as 'analytická zpráva české banky doporučení cílová cena' was ever submitted to a search engine.",
+      "why_it_matters": "Local-language search is a hard requirement of the method. Czech-only actors — regional broker blogs, Czech-language rating commentary, smaller analyst newsletters — would normally be found by cs queries and are likely under-represented here.",
+      "severity": "high",
+      "language": "cs",
+      "source_class": "indirect",
+      "topics": [
+        "disclosures",
+        "earnings"
+      ]
+    },
+    {
+      "finding_type": "source_blocked",
+      "description": "All three major rating agencies were unreachable by plain fetch. Moody's (ratings.moodys.com) and S&P Global Ratings (spglobal.com/ratings/en/) both returned HTTP 403 Forbidden with no body; Fitch (www.fitchratings.com) was blocked at the fetch layer before any HTTP status was obtained.",
+      "result_summary": "Three of the highest-value sources in this cell are recorded as blocked-but-presumed-live. None is recorded as dead — a 403 on a major commercial site is a bot-defence signature, not evidence of absence.",
+      "why_it_matters": "Rating actions are the single most informative third-party interrogation of a bank's disclosures. If the collector cannot reach them, the cell loses its highest-credibility layer and falls back on Czech broker portals alone.",
+      "severity": "high",
+      "language": "en",
+      "source_class": "direct",
+      "topics": [
+        "disclosures",
+        "press releases"
+      ]
+    },
+    {
+      "finding_type": "hypothesis_not_confirmed",
+      "description": "Attempts to locate ESMA's European Rating Platform (ERP) — the free, official EU database of individual credit ratings issued by registered CRAs — failed on hostname guesses errp.esma.europa.eu and cerep.esma.europa.eu (both ENOTFOUND) and on the path guess /publications-and-data/european-rating-platform (404). The ESMA CRA supervision hub was reached but does not link the ERP or CEREP.",
+      "result_summary": "The ERP is not recorded as a candidate URL because no real URL for it was observed. Only the confirmed ESMA CRA hub is recorded, as a pointer.",
+      "why_it_matters": "The ERP would be a free, licence-clean, machine-readable substitute for the three bot-defended commercial agency portals — potentially resolving the highest-severity access problem in this cell. Leaving it unresolved is the biggest unrealised win here.",
+      "severity": "high",
+      "language": "en",
+      "source_class": "direct",
+      "topics": [
+        "disclosures",
+        "press releases"
+      ]
+    },
+    {
+      "finding_type": "source_scope_narrower_than_expected",
+      "description": "Roklen24, named in the cell brief as a sell-side/analyst-adjacent source, was confirmed live but has narrowed to FX education, currency-pair commentary and an economic calendar. The fetch explicitly found no bank ratings and no traditional analyst research.",
+      "result_summary": "Roklen24 retained at low priority and usefulness 0.3 rather than being carried at the seed's implied weight.",
+      "why_it_matters": "Prevents the collection pipeline from spending crawl budget and analyst attention on a source that no longer produces the content type this cell needs. The seed list is partially stale and should be corrected upstream.",
+      "severity": "medium",
+      "language": "cs",
+      "source_class": "indirect",
+      "topics": [
+        "earnings",
+        "disclosures"
+      ]
+    },
+    {
+      "finding_type": "source_blocked",
+      "description": "Kurzy.cz per-issuer pages could not be reached. Fetches of https://www.kurzy.cz/akcie-cz/ and https://www.kurzy.cz/akcie-cz/burza/ both returned only global site navigation and the operator notice, with no issuer table and no links for Komerční banka, Moneta or Erste.",
+      "result_summary": "Kurzy.cz is recorded as a candidate at reduced confidence (0.55) with blocked=true and a javascript_rendering_required blocker, rather than with concrete per-bank URLs.",
+      "why_it_matters": "Kurzy.cz is one of the four aggregators named in the cell brief and is valued specifically for its durable searchable archive. Without resolved per-issuer URLs its archive value cannot be exercised by a simple HTTP collector.",
+      "severity": "medium",
+      "language": "cs",
+      "source_class": "indirect",
+      "topics": [
+        "disclosures",
+        "investor relations"
+      ]
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "gap_type": "method_not_executed",
+      "description": "No search-engine querying occurred in this slice (WebSearch budget exhausted before the first call), so the cell was covered by seed-actor fetching and snowballing only.",
+      "recommended_action": "Re-run this cell (#23) with a fresh WebSearch budget and execute the six seed queries plus cs-language extensions such as 'analytik banka cílová cena zvýšil', 'ratingová agentura potvrdila rating české banky', 'konsensus analytiků výsledky KB', 'investiční doporučení bankovní sektor ČR'.",
+      "coverage_dimension": "discovery_method",
+      "severity": "high",
+      "source_class": "unknown",
+      "topics": [
+        "disclosures",
+        "earnings",
+        "press releases"
+      ],
+      "language": "both"
+    },
+    {
+      "gap_type": "high_value_source_unreachable",
+      "description": "Moody's, S&P and Fitch are all blocked to unauthenticated automated fetch, leaving the rating-action layer of this cell undelivered despite being its highest-credibility component.",
+      "recommended_action": "Stand up authenticated headless-browser sessions with free registrations for each agency, and in parallel resolve ESMA's European Rating Platform as a licence-clean alternative. Route all three through access review before automated collection, since agency ToS generally forbid redistribution of press-release text.",
+      "coverage_dimension": "access",
+      "severity": "critical",
+      "source_class": "direct",
+      "topics": [
+        "disclosures",
+        "press releases"
+      ],
+      "language": "en"
+    },
+    {
+      "gap_type": "unresolved_source_url",
+      "description": "ESMA's European Rating Platform and CEREP could not be located; three hostname/path guesses failed and the confirmed ESMA CRA hub does not link them.",
+      "recommended_action": "Search ESMA's 'Databases and Registers' section directly, or query the ESMA site search for 'European Rating Platform'. Confirm whether the ERP offers bulk download or an API covering Czech bank issuers, then promote it as a direct candidate.",
+      "coverage_dimension": "source_identification",
+      "severity": "high",
+      "source_class": "direct",
+      "topics": [
+        "disclosures",
+        "press releases"
+      ],
+      "language": "en"
+    },
+    {
+      "gap_type": "actor_map_incomplete",
+      "description": "Only three Czech-market listed banks (Komerční banka, Moneta Money Bank, Erste/Česká spořitelna) have identifiable analyst-coverage pages. Large unlisted Czech banks — ČSOB (KBC), Raiffeisenbank CZ, UniCredit Bank Czech Republic and Slovakia, Air Bank/Home Credit, Fio banka, Trinity Bank — have no equity analyst layer and are visible to this cell only through rating actions and press mirrors.",
+      "recommended_action": "For unlisted Czech banks, pivot the collection design from equity research to (a) rating-agency issuer pages and (b) parent-group analyst coverage (KBC, Raiffeisen Bank International, UniCredit). Add parent-group research desks to the actor map for this cell.",
+      "coverage_dimension": "entity_coverage",
+      "severity": "high",
+      "source_class": "indirect",
+      "topics": [
+        "disclosures",
+        "earnings",
+        "investor relations"
+      ],
+      "language": "both"
+    },
+    {
+      "gap_type": "source_type_missing",
+      "description": "No Czech-language rating-agency commentary or local rating agency was identified. Historic Czech agencies (e.g. CRA Rating Agency, later absorbed into Moody's) and any smaller ESMA-registered agencies rating Czech institutions were not investigated.",
+      "recommended_action": "Pull the ESMA registered-CRA list and its annual market-share document, then check each smaller registered agency (e.g. Scope Ratings, Creditreform, EuroRating) for Czech bank coverage — these are frequently free-to-read and unblocked, unlike the big three.",
+      "coverage_dimension": "source_type",
+      "severity": "medium",
+      "source_class": "direct",
+      "topics": [
+        "disclosures",
+        "press releases"
+      ],
+      "language": "both"
+    },
+    {
+      "gap_type": "payments_sector_underrepresented",
+      "description": "The run scope is sector=both, but every candidate found is banking-equity or bank-rating oriented. No sell-side or rating coverage of Czech payments actors (card schemes, PSPs, acquirers such as ČSOB/Global Payments JV, Comgate, GoPay) was identified.",
+      "recommended_action": "Extend cs queries toward payments-specific analyst language ('platební instituce', 'akvirer', 'zpracovatel plateb', 'fintech analýza ČR') and check whether payments firms appear in broker notes only via parent-bank coverage.",
+      "coverage_dimension": "sector",
+      "severity": "medium",
+      "source_class": "indirect",
+      "topics": [
+        "disclosures",
+        "earnings"
+      ],
+      "language": "cs"
+    },
+    {
+      "gap_type": "licensing_uncertainty",
+      "description": "Legal status is 'unclear' or 'restricted' for nearly every candidate. Patria, Kurzy.cz and Akcie.cz terms of service were not read, and rating-agency press releases carry explicit redistribution restrictions.",
+      "recommended_action": "Fetch and record robots.txt and ToS for patria.cz, kurzy.cz and akcie.cz before any scheduled crawl, and set a default retention policy of metadata-plus-link for all third-party research text until licensing is cleared.",
+      "coverage_dimension": "legal",
+      "severity": "high",
+      "source_class": "indirect",
+      "topics": [
+        "disclosures",
+        "earnings",
+        "press releases"
+      ],
+      "language": "cs"
+    }
+  ],
+  "brief": "The Czech interpretation-and-archive layer over bank disclosures rests on two solid pillars and one broken one. Patria Online is the strongest: its research hub was confirmed carrying live Czech-language recommendations and target prices for all three listed banks (Komerční banka, Moneta, Erste), with per-issuer consensus, news and financials tabs and an explicit Czech earnings calendar — making it the anchor source for this cell. Akcie.cz (Fio-affiliated) supplies a genuinely independent second broker view with dated target-price notes and sequential article IDs that make historical backfill cheap, while Kurzy.cz contributes an 'Oficiální sdělení' and 'Tiskové zprávy' archive that mirrors issuer announcements beyond the life of the original pages; Roklen24, by contrast, has narrowed to FX commentary and no longer belongs at seed weight. The broken pillar is ratings: Moody's and S&P both returned 403 and Fitch was blocked outright, so the highest-credibility layer is present in the map but not yet collectible, and ESMA's free European Rating Platform — the obvious licence-clean substitute — could not be located. Two structural caveats bound this slice: WebSearch was unavailable for its entire duration, so no cs- or en-language query discovery ran, and analyst coverage exists only for the three listed banks, leaving ČSOB, Raiffeisenbank CZ and UniCredit CZ reachable through rating actions and parent-group research alone."
+}

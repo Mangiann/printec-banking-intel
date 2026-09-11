@@ -1,0 +1,202 @@
+[
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_094",
+  "source_url": "https://www.coe.int/en/web/moneyval/jurisdictions/ukraine",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_104",
+  "source_url": "https://mof.gov.ua/storage/files/%D0%A1%D1%82%D1%80%D0%B0%D1%82%D0%B5%D0%B3%D1%96%D1%8F%20MONEYVAL%20(2023-2027%20%D1%80%D0%BE%D0%BA%D0%B8)_%20%D0%BD%D0%B5%D0%BE%D1%84%D1%96%D1%86%D1%96%D0%B9%D0%BD%D0%B8%D0%B9%20%D0%BF%D0%B5%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%B4.pdf",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_106",
+  "source_url": "https://finclub.net/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_111",
+  "source_url": "https://www.finclub.net/news",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_121",
+  "source_url": "https://www.ukr.net/source/finbalance-com-ua-2374.html",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_124",
+  "source_url": "https://www.kyivpost.com/authors/24",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_308",
+  "source_url": "https://privatbank.ua/news/archive",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_312",
+  "source_url": "https://raiffeisen.ua/aktualna-informatsiia-pro-robotu-raiffeisen-banku",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_313",
+  "source_url": "https://raiffeisen.ua/storage/files/ogoloshennya-zmini-do-pravil-ta-tarifiv-traven-2025.pdf",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_316",
+  "source_url": "https://ukrsibbank.com/news-post/updating-card-tariff-plans-09-2025/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_317",
+  "source_url": "https://ukrsibbank.com/wp-content/uploads/legal_documents/Pravyla_obslugovuvannia_kartkovyh_rahunkiv.pdf",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_007",
+  "source_url": "https://minjust.gov.ua/m/pravovi-periodichni-vidannya",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_038",
+  "source_url": "https://mof.gov.ua/uk/proekti-aktiv-dlja-obgovorennja",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_082",
+  "source_url": "https://mof.gov.ua/uk/vikonannja-ugodi-pro-asociaciju",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_091",
+  "source_url": "https://mof.gov.ua/uk/memorandum_of_economic__financial_policies-677",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_097",
+  "source_url": "https://www.fatf-gafi.org/en/publications/Mutualevaluations/Mutualevaluationofukraine.html",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_209",
+  "source_url": "https://mof.gov.ua/uk/orders_of_the_ministry_of_finance_of_ukraine_in_2025-823",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_210",
+  "source_url": "https://mof.gov.ua/uk/banki-derzhavnogo-sektoru",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_221",
+  "source_url": "https://tax.gov.ua/zakonodavstvo/podatkove-zakonodavstvo/postanovi-kabinetu-ministr/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_234",
+  "source_url": "https://mof.gov.ua/uk/state-service-for-financial-monitoring",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ }
+]

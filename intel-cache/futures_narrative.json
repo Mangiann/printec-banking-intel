@@ -1,0 +1,1173 @@
+{
+ "week": "2026-09-01",
+ "generated_by": "agent-8-futurist (public deep research, 2026-09-01)",
+ "board_view": {
+  "money": [
+   {
+    "segment": "Financial-crime, fraud detection and AML/RegTech",
+    "direction": "up",
+    "magnitude": "~15.5-18% CAGR, on legislated clocks",
+    "note": "Fraud detection was worth about USD 32bn in 2025 and is expected to reach about 65.68bn by 2030 ([MarketsandMarkets](https://www.marketsandmarkets.com/PressReleases/fraud-detection-prevention.asp)). AML, or anti-money-laundering, solutions were worth USD 4.05bn in 2026. They are expected to reach 9.27bn in 2031, a growth rate of 18.01% ([Mordor](https://www.mordorintelligence.com/industry-reports/anti-money-laundering-solutions-market)). This corrects a figure that was wrongly attributed before."
+   },
+   {
+    "segment": "Digital identity, eID and e-signature",
+    "direction": "up",
+    "magnitude": "~15% CAGR; e-signature ~39%",
+    "note": "Identity verification was worth USD 14.34bn in 2025. It is expected to reach 29.32bn by 2030, a growth rate of 15.4% ([MarketsandMarkets](https://www.marketsandmarkets.com/PressReleases/identity-verification.asp)). Demand will be triggered by the acceptance duty that starts on 24 Dec 2027. It will not be driven by the volume of customer onboarding, meaning sign-ups."
+   },
+   {
+    "segment": "AI in banking and AI governance",
+    "direction": "up",
+    "magnitude": "large pool, decelerating governance curve",
+    "note": "AI-governance platforms were worth USD 492m in 2026 and are expected to pass USD 1bn by 2030 ([Gartner](https://www.gartner.com/en/newsroom/press-releases/2026-02-17-gartner-global-ai-regulations-fuel-billion-dollar-market-for-ai-governance-platforms)). Growth then slows. That slowdown means the main buying window is 2026-2028 rather than 2029-31."
+   },
+   {
+    "segment": "Instant payments, VoP and ISO 20022 data",
+    "direction": "up",
+    "magnitude": "very strong but past its mandate spike",
+    "note": "TIPS, the ECB's instant-payment settlement service, settled 2.47bn transactions in 2025, up 82.5% ([ECB TARGET Services Annual Report 2025](https://www.ecb.europa.eu/press/targetservar/html/ecb.targetservar2025.en.html)). Euro-area SCT Inst, which are instant credit transfers, reached 10.1bn transactions in 2025, up 73%. Growth in daily volume had already slowed to +86.8% year on year (YoY) by May 2026."
+   },
+   {
+    "segment": "Payment HSMs and key management",
+    "direction": "up",
+    "magnitude": "~15.3% CAGR; BFSI 37.8% of the market",
+    "note": "HSMs are hardware security modules, which protect payment keys. The market was worth USD 1.74bn in 2025 and 2.04bn in 2026. It is expected to reach 4.80bn by 2032 ([MarketsandMarkets](https://www.marketsandmarkets.com/Market-Reports/hardware-security-modules-market-162277475.html)). This replaces the earlier figure of USD 3.28bn by 2030."
+   },
+   {
+    "segment": "Core modernization services",
+    "direction": "up",
+    "magnitude": "services outgrow licences ~12% CAGR",
+    "note": "Core banking was worth USD 17.19bn in 2025 and is expected to reach 29.01bn in 2031, a growth rate of 9.12%. Services are 36.55% of spend and are growing at 12.12% ([Mordor](https://www.mordorintelligence.com/industry-reports/core-banking-market)). A rival research house puts 2034 at USD 80.65bn, so publish the range ([Fortune Business Insights](https://www.fortunebusinessinsights.com/core-banking-software-market-104392))."
+   },
+   {
+    "segment": "Acceptance: SoftPOS and POS terminals",
+    "direction": "up",
+    "magnitude": "value forecasts spectacular, installed base early",
+    "note": "SoftPOS means taking card payments on an ordinary phone. Transaction value was USD 23.9bn in 2025 and is heading towards USD 540bn by 2030 ([Juniper](https://www.juniperresearch.com/press/soft-pos-transactions-to-accelerate-by-2150/)). Actual use is still small. SoftPOS is only about 1% of Tatra banka's card-present volume and 11% of Ukraine's terminal estate. Ukraine's is the only official series published."
+   },
+   {
+    "segment": "Embedded and open finance",
+    "direction": "mixed",
+    "magnitude": "pool grows, provider population shrinks",
+    "note": "Europe's embedded-finance revenue pool was EUR 20-30bn in 2023 and is heading towards more than EUR 100bn by 2030 ([McKinsey](https://www.mckinsey.com/industries/financial-services/our-insights/embedded-finance-how-banks-and-customer-platforms-are-converging)). Embedded finance means financial services sold inside non-bank apps and platforms. At the same time, the number of EEA and UK third-party providers fell from 554 to 547 over three quarters ([Konsentus](https://www.konsentus.com/tpp-trackers/q2-2026/)). No major consultancy has published a 2026 update of the pool figure."
+   },
+   {
+    "segment": "Tokenization and euro stablecoins",
+    "direction": "flat",
+    "magnitude": "small base, dollar-denominated",
+    "note": "MiCA-compliant stablecoins total about USD 74.2bn. USDC alone is roughly USD 73.5bn, so all compliant euro tokens together are under 1% ([CoinGecko](https://www.coingecko.com/en/categories/mica-compliant-stablecoin)). On-chain RWAs, which are real-world assets recorded on a blockchain, reached USD 38.36bn ([RWA.xyz](https://app.rwa.xyz/))."
+   },
+   {
+    "segment": "ATM managed services (legacy base)",
+    "direction": "up",
+    "magnitude": "~8.8% CAGR, roughly 3x the device market",
+    "note": "ATM managed services were worth USD 9.13bn in 2025 and 9.94bn in 2026. The market is expected to reach 21.26bn by 2035 ([Precedence](https://www.precedenceresearch.com/atm-managed-services-market)). NCR Atleos confirms the trend. Its ATMaaS, or ATM-as-a-service, revenue rose 24% to USD 77m in Q2 2026."
+   }
+  ],
+  "competition": [
+   {
+    "shift": "Supervisors and central banks become buyers, not just rule-setters",
+    "note": "On 4 Aug 2026 the EBA published the draft taxonomy, or data classification, for the 2027 AMLA eligibility collection. National supervisors must now deliver this data in Jan-Mar 2027 ([AMLA](https://www.amla.europa.eu/index_en)). TIPS Clone, the instant-payments platform, went live in the Western Balkans on 20 Jul 2026 ([Banca d'Italia](https://www.bancaditalia.it/media/notizia/tips-clone-platform-for-instant-payments-in-the-western-balkans-goes-live/)). Central banks there have become direct customers for infrastructure."
+   },
+   {
+    "shift": "A dedicated AI-governance arena forms — and the referee is the financial supervisor",
+    "note": "Gartner published its first Magic Quadrant for AI-Governance Platforms on 16 Jun 2026. It lists 13 vendors, although more than 100 vendors claim to offer this capability. IBM, ServiceNow and Truyo lead the list ([Gartner](https://www.gartner.com/en/newsroom/press-releases/2026-02-17-gartner-global-ai-regulations-fuel-billion-dollar-market-for-ai-governance-platforms)). Under AI Act Art. 74(6), the national financial supervisor is the market-surveillance authority. Competition therefore centres on the lender's own decisioning stack, the systems that make credit decisions, rather than on the policy layer."
+   },
+   {
+    "shift": "Trust-service vendors integrate vertically and squeeze the reseller layer",
+    "note": "Fourthline became its own qualified trust service provider on 25 Aug 2026. A qualified trust service provider is a certified provider of e-signatures and digital identity. Coverage contrasts Fourthline directly with the Namirial and InfoCert flows, which still need an SMS one-time password ([Biometric Update](https://www.biometricupdate.com/202608/fourthline-becomes-qualified-trust-service-provider-under-eidas)). Wallet-based verification is also pushing the price per check down from EUR 70-100 towards EUR 3-8."
+   },
+   {
+    "shift": "Core banking fragments rather than consolidates — and that is where integration revenue comes from",
+    "note": "Finastra sold its universal banking business to Pollen Street Capital. This is its third sale of a business in twelve months. The deal puts 150-plus banks across 100-plus countries under a private-equity owner ([Retail Banker International](https://www.retailbankerinternational.com/news/pollen-street-buy-finastra-banking-software/)). Temenos took a different route. It bought the orchestration vendor additiv, which makes software that links banking systems together, rather than more core banking software."
+   },
+   {
+    "shift": "Technology operating models move to the integrator at group level",
+    "note": "Accenture is buying IBM's majority stake in the joint venture that runs a large part of UniCredit's technology infrastructure. The joint venture covers 13 European markets, including CEE. The deal is described as the start of a multi-year programme ([FinTech Futures](https://www.fintechfutures.com/core-banking-technology/accenture-to-acquire-ibms-stake-in-unicredit-technology-joint-venture))."
+   },
+   {
+    "shift": "Acquiring consolidates into three scale players while the hardware supply chain destabilises",
+    "note": "Global Payments is now number three in Europe after its merger with Worldpay. Worldline has halved its net debt to EUR 1,165m. It has also brought leverage, meaning debt compared with earnings, under 2x six months early ([Worldline H1 2026](https://investors.worldline.com/en/home/news-events/financial-press-releases/2026/pr-2026_07_30_01)). At the same time, Ingenico's 2025 sales fell 10%. PAX warned of rising memory-chip costs, and Android is now 75% of its revenue."
+   },
+   {
+    "shift": "Regulated euro-token issuance is being outrun by a US issuer inside Europe's own rulebook",
+    "note": "Roughly 99% of the market for MiCA-compliant stablecoins is USDC. Stablecoins are digital tokens pegged to a currency, and MiCA-compliant ones are issued under the EU crypto rules. The bank consortium Qivalis was still unlicensed and not launched at 1 Sep 2026 ([CoinGecko](https://www.coingecko.com/en/categories/mica-compliant-stablecoin)). The ECB's own Pontes DLT settlement rail goes live on 21 Sep 2026 as the public-money answer."
+   },
+   {
+    "shift": "Cash-handling vendors compete on deposit automation and outsourcing, not dispensing (legacy base)",
+    "note": "Glory's Europe revenue rose 27.1%. The company says this came from recyclers, which are ATMs that re-use deposited notes, sold to postal operators replacing closed bank branches ([Glory Q1 FY3/2027, pp.5-6](https://pdf.irpocket.com/C6457/xoA3/ieAo/sKew/uBCV.pdf)). Separately, the UK CMA opened a Phase 1 inquiry into the Brink's/NCR Atleos deal on 26 Aug 2026, with a decision due by 22 Oct."
+   }
+  ],
+  "threats": [
+   {
+    "threat": "The headline deadlines slip — demand timing, not demand existence, is the live risk",
+    "note": "PSD3 and PSR, the new EU payment rules, are still waiting for the Council's first-reading position. The indicative plenary date is 14 Dec 2026. As a result, the deadline for e-money and payment institutions (EMI/PI) to re-apply for authorisation moves to roughly Dec 2028 ([EP Legislative Observatory](https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2023/0210(COD))). FIDA still lacks the committee approval that PSD3/PSR has, so there is no agreed text."
+   },
+   {
+    "threat": "Open banking is shrinking, and premium-API monetisation has not happened",
+    "note": "The number of third-party providers in the EEA and UK fell from 554 to 547 over three quarters. Withdrawals outnumbered new authorisations by 15 to 10 ([Konsentus](https://www.konsentus.com/tpp-trackers/q2-2026/)). The SEPA Payment Account Access scheme still has zero banks on the supply side after four years."
+   },
+   {
+    "threat": "Agentic-AI outcomes are deteriorating even as volumes rise",
+    "note": "Evident's Q2 2026 tracker shows new banking use cases up 45% quarter on quarter. The share with disclosed outcomes fell to 27% from 41%. Only about one in ten reports a rise in revenue ([Evident](https://evidentinsights.com/insights/banking-use-case-trends-q2-2026)). Gartner's widely quoted prediction on cancellations could not be re-verified this cycle."
+   },
+   {
+    "threat": "DORA has produced no fines, and national penalty regimes diverge wildly",
+    "note": "As of 1 Sep 2026, no DORA enforcement action or penalty against any financial entity or critical provider could be found. National maximum penalties differ widely. Bulgaria caps entity penalties at EUR 50,000 ([Chambers Banking Regulation 2026](https://practiceguides.chambers.com/practice-guides/banking-regulation-2026/bulgaria/trends-and-developments)). Romania's implementing ordinance OUG 14/2026 allows up to 10% of annual turnover or RON 23,000,000 ([ONV Law](https://onvlaw.ro/romania-implements-the-eu-dora-framework-through-emergency-ordinance-no-14-2026/)). The commercial conclusion is to sell on operational and contractual risk, not on a single fine number."
+   },
+   {
+    "threat": "GDPR-versus-AML data sharing is still unresolved, pushing utility revenue to 2029",
+    "note": "Partnerships under AMLR Art. 75 become lawful on 10 Jul 2027. The EDPB-AMLA Joint Guidelines only reach public consultation in H1 2027, and no adoption date has been set ([EDPB](https://www.edpb.europa.eu/news/edpb-and-amla-to-develop-joint-guidelines-on-partnerships-for-information-sharing_en)). FATF's own language also favours encrypted central platforms over privacy-enhancing architectures, which are systems built to share insights without exposing raw data."
+   },
+   {
+    "threat": "The gem markets are contested, and incumbents may take the utility slot",
+    "note": "The privacy-preserving AML consortium proof-of-concept that best validates the federated model was run with SWIFT as counterparty ([FinTech Global](https://fintech.global/2026/04/22/inside-rhinos-push-to-make-privacy-preserving-aml-collaboration-work/)). The federated model means banks sharing insights without pooling their data. In identity, Signicat and Hopae are already building intermediary acceptance at EU level."
+   },
+   {
+    "threat": "Accountability under DORA, PCI and AMLR cannot be outsourced",
+    "note": "The first ESAs incident report shows that 29% of the 3,383 major incidents in 2025 were attributable to third parties. The strongest sanction in the critical-provider regime is forcing firms to end their contract with a provider ([JC 2026 16, p.14](https://www.esma.europa.eu/sites/default/files/2026-06/JC_2026_16_ESAs_2025_report_on_major_ICT-related_incidents.pdf)). Managed delivery can therefore be sold, but legal liability cannot be transferred."
+   },
+   {
+    "threat": "Funding absorption, not demand, gates the Western Balkans and Hungary",
+    "note": "Only about EUR 673.6m of the roughly EUR 5.9bn Reform and Growth Facility had been released by May 2026. Bosnia has already lost EUR 108.4m. Hungary has received 9% of its money under the RRF, the Recovery and Resilience Facility. It is the only Member State with zero result-based payments ([EPRS PE 782.678, p.2](https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/782678/EPRS_BRI(2026)782678_EN.pdf))."
+   },
+   {
+    "threat": "Legacy cash-supplier concentration is still unresolved (legacy base)",
+    "note": "The UK CMA opened a Phase 1 inquiry into Brink's/NCR Atleos on 26 Aug 2026, with a statutory deadline of 22 Oct 2026. This came three weeks after both companies said they expected a faster close in early Q1 2027 ([CMA](https://www.gov.uk/cma-cases/the-brinks-company-slash-ncr-atleos-corporation-merger-inquiry)). A referral to Phase 2 would break that timetable."
+   }
+  ],
+  "timeline": [
+   {
+    "when": "2025",
+    "event": "DORA, the EU digital resilience rules, applies from 17/01. The first [19 critical ICT third-party providers are designated](https://www.eba.europa.eu/publications-and-media/press-releases/european-supervisory-authorities-designate-critical-ict-third-party-providers-under-digital) on 18/11. Verification of Payee, which checks that the payee's name matches the account, becomes mandatory in the euro area on 09/10. The EUR 100,000 cap on instant payments is removed on 05/10. Legacy SWIFT MT cross-border messaging retires on 22/11.\n\nPCI DSS v4.0.1 future-dated requirements take effect on 31/03. These include the cryptographic-inventory duty, which means keeping a list of all encryption keys and methods. The European Accessibility Act applies from 28/06."
+   },
+   {
+    "when": "2026",
+    "event": "Bulgaria adopts the euro on 01/01. PCI PIN bans clear-text key injection into processors' own estates, also on 01/01. MiCA grandfathering, the transition period for existing crypto firms, closes on 01/07. TIPS Clone goes live for Montenegro and Bosnia on 20/07.\n\nThe [AI Act Digital Omnibus enters into force](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R1744) on 27/07. The AI Act becomes generally applicable on 02/08. ECB Pontes DLT settlement goes live on 21/09. Cyber Resilience Act reporting begins on 11/09.\n\nCCD2, the new consumer credit rules, applies to BNPL, meaning buy now, pay later, on 20/11. TIPS Clone window two opens for Albania, Kosovo and North Macedonia in 11/26, when North Macedonia's IBAN mandate also takes effect. [EUDI wallets must be issued](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024R1183) on 24/12, and Art. 45e authentic-source verification must be in place by the same date."
+   },
+   {
+    "when": "2027",
+    "event": "This year carries the heaviest set of deadlines. Bulgaria must deliver the whole instant-payments package, including VoP, on 01/01. AFIR requires card readers on all fast chargers, also on 01/01. Non-euro PSPs, meaning payment service providers, must be able to receive instant transfers from 09/01.\n\n[AMLR applies, with Art. 75 data sharing](https://www.amla.europa.eu/), on 09/07. The duties for non-euro sending and for VoP also bind on 09/07. The digital-euro pilot starts with 36 selected PSPs in H2.\n\nSwiftNet 8.0 ships with PQC, or post-quantum cryptography, enabled and a 15-month migration window. VoP 2.0 goes live in 11/27 and opens adherence to non-EEA countries. [AI Act high-risk obligations apply to credit scoring and to life and health insurance pricing](https://artificialintelligenceact.eu/article/6/) on 02/12. EUDI wallet acceptance becomes binding for medium and large relying parties on 24/12."
+   },
+   {
+    "when": "2028",
+    "event": "AMLA begins direct supervision of about 40 groups. It also becomes fee-funded, with EUR 65.2m in supervisory levies. AI Act rules for AI built into regulated products apply from 02/08. PSD3/PSR application and the EMI/PI re-authorisation deadline fall on the projected calendar, at roughly Dec 2028. Pontes extends towards 24/7 multi-currency settlement in mid-2028. Non-euro national-currency accounts must be reachable outside business hours from 09/06."
+   },
+   {
+    "when": "2029",
+    "event": "The first issue of the digital euro becomes possible. This depends on legislation adopted during 2026 and on Parliament's demand for a roll-out of at least 24 months. PSR liability rules extend Verification of Payee to all credit transfers at about mid-2029. Art. 75 AML data-sharing utilities become bankable, meaning safe to invest in, once the EDPB-AMLA guidelines are adopted. FIDA phase one begins on its revised, streamlined timetable."
+   },
+   {
+    "when": "2030",
+    "event": "[Payment terminals that are not accessible are barred from use](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32019L0882) from 28/06. Self-service terminals may keep running to the end of their economic life. EU critical financial systems must complete their [post-quantum migration](https://digital-strategy.ec.europa.eu/en/library/coordinated-implementation-roadmap-transition-post-quantum-cryptography) by 31/12. The EU Digital Decade target of 80% digital-identity take-up falls due. Projections put cards at about 47% of global non-cash volume, with instant payments and wallets at 32%."
+   },
+   {
+    "when": "2031",
+    "event": "This is the end of the period covered by the timeline. Banking is organised around identity acceptance, real-time payments data, governed AI, financial-crime supervision and operational resilience. These functions are run as managed services across markets. The buyer base includes supervisors, central banks, registries, insurers, telecoms and mobility operators. Cash and self-service continue as a steady income stream, or annuity, from deposit automation and managed services. The ATM estate is still exempt from accessibility replacement."
+   }
+  ],
+  "bottom_line": {
+   "headline": "Identity, real-time data and governed AI reorganise banking by 2030, including buyers outside banks",
+   "thesis": "The headline reforms keep slipping. A quieter set of laws, already passed, takes effect on time. More and more of them land on buyers who are not banks at all. The lasting revenue is therefore in running the shared, regulated infrastructure as a service for that wider group, rather than in selling systems to a bank's channels team.",
+   "picture": [
+    "Regulatory deadlines are changing where demand is likely to come from. Two of the three flagship laws slipped this summer. PSD3/PSR is still waiting for the Council's first-reading position, with an indicative plenary on 14 December 2026. FIDA has no agreed text at all.",
+    "A second tier became law on time. The AI Act's Digital Omnibus entered into force on 27 July 2026 and fixes high-risk credit scoring at 2 December 2027. The AML Regulation applies from 10 July 2027.",
+    "EUDI wallet acceptance binds medium and large relying parties on 24 December 2027. A relying party is any organisation that has to accept the wallet. Non-euro instant payments bind on 9 January 2027, and Verification of Payee on 9 July 2027. The European Accessibility Act removes every non-accessible payment terminal by 28 June 2030.",
+    "Underneath, the market infrastructure has already changed. SEPA instant reached 25% of euro-area credit transfers by number in H2 2025. Verification of Payee already runs at close to a billion requests a month. Identity is turning from a one-off check at sign-up into infrastructure used on every transaction. Deepfakes have climbed to 6.5% of all fraud attempts, from 0.1% three years earlier.",
+    "Both spending and the types of buyers are changing, and the change in buyers matters more. Four markets grow on timetables set by law rather than on discretionary budgets.",
+    "Identity verification grows about 15% a year, toward USD 29bn by 2030. Fraud detection grows from USD 32bn to about 66bn. AML software grows from USD 4.05bn in 2026 to 9.27bn by 2031. Hardware security modules, the tamper-proof boxes that hold payment keys, grow from USD 2.04bn in 2026 to 4.80bn by 2032.",
+    "But the counterparty is increasingly not a bank. This run found dated evidence for six new kinds of buyer. National supervisors are buying the AMLA eligibility data pipeline in a January-to-March 2027 window. Central banks in the Western Balkans became direct infrastructure customers after TIPS Clone went live on 20 July 2026. Charge-point operators face an AFIR card-reader retrofit on 1 January 2027.",
+    "Civil registries and professional chambers owe authentic-source attribute checks from 24 December 2026. Insurers are pulled onto the same 2 December 2027 AI Act deadline as lenders. Regional telecoms and colocation operators inherit DORA evidence duties by contract from designated critical providers. AMLA itself becomes fee-funded in 2028, on EUR 65.2m of supervisory levies.",
+    "The important question is who operates the shared infrastructure. Three counter-signals qualify the picture. The 2026 event in core banking is fragmentation, not consolidation. Finastra sold three business lines in twelve months and left universal banking altogether, putting more than 150 banks under a private-equity owner. Temenos bought an orchestration layer rather than more core banking software.",
+    "Fragmentation creates an opportunity for vendors that provide integration services, and the region has proof the work can be done. National Bank of Greece finished a EUR 1bn-plus Finacle replacement that collapsed roughly forty legacy applications into one.",
+    "Against that, three things are not happening. Open-banking third-party providers are shrinking rather than multiplying, moving from 554 to 552 to 547 across three quarters, with withdrawals outrunning authorisations. The SEPA Payment Account Access scheme still has no banks on the supply side after four years. The MiCA-compliant stablecoin market is about 99% USDC, and every compliant euro token combined is under 1%.",
+    "Cash and ATMs remain a stable source of recurring managed-services revenue, and the cash stock is still growing. They are a legacy base to optimise, and they are unlikely to be the main source of market growth."
+   ],
+   "drivers": [
+    {
+     "title": "The 2027 deadlines: which dates bind and which have slipped",
+     "detail": "The deadlines below are now fixed in law:\n- AI Act high-risk credit scoring: 2 December 2027, unconditional since the Digital Omnibus entered into force on 27 July 2026\n- AMLR: from 10 July 2027\n- EUDI acceptance: from 24 December 2027\n- Non-euro instant payments: from 9 January 2027\n- Verification of Payee: from 9 July 2027\n\nTwo files have slipped. PSD3/PSR is still awaiting the Council's first reading, with an indicative plenary on 14 December 2026. That pushes the re-authorisation deadline for e-money and payment institutions out to roughly December 2028. FIDA has no agreed text at all.\n\nThese binding dates are not the ones most budgets are built around. Plan against the enacted calendar, not the announced one."
+    },
+    {
+     "title": "Real-time payments: volumes, supervision and data work",
+     "detail": "SEPA instant is 25% of euro-area credit transfers by number and 8% by value (H2 2025). TIPS settled 2.47bn transactions in 2025, up 82.5%. Verification of Payee already runs near a billion requests a month. The named weak point is reachability, meaning whether the other bank can actually be reached.\n\nGrowth is now slowing, because the mandate has landed. TIPS daily euro volume grew 86.8% year on year, down from 99.8%. Turnover also fell month on month in May 2026.\n\nCommercial value therefore moves from the payment itself to the services around it: verification, real-time fraud orchestration and ISO 20022 data work. Cleaning up addresses for that data work is a customer-master-data project, not a payments one."
+    },
+    {
+     "title": "AI supervision moves to the financial regulator, which reports to the ECB",
+     "detail": "AI Act Article 74(6) makes the national financial supervisor the market-surveillance authority for high-risk AI inside regulated institutions. Article 74(7) obliges that supervisor to report to the ECB without delay. Romania has already named ASF and BNR.\n\nThis changes what a finding is. An AI Act finding on a credit model is prudential supervisory information, not a privacy fine.\n\nThe EBA's mapping found no significant contradictions with CRR/CRD or DORA. The work is therefore to instrument the model-governance evidence chain that banks already run for their internal ratings. It is sold to the chief risk officer and the model-risk function, on an unconditional 2 December 2027 deadline. Insurers face the same date under Annex III 5(c)."
+    },
+    {
+     "title": "Operational resilience and cryptography become recurring supervised work",
+     "detail": "DORA is now supervised, not merely applicable. There were 3,383 major incidents in 2025, and 29% of them were attributable to third parties. Operational resilience is SSM Priority 2 for 2026-2028.\n\nNo fine has landed anywhere yet. In CEE the argument therefore has to be about operational and contractual risk, not about the risk of a fine. Bulgaria caps penalties at EUR 50,000.\n\nThe dated hardware trigger is not the EU's aspirational 2030 target. It is SwiftNet 8.0, which becomes post-quantum-enabled in 2027 with a 15-month migration window. That feeds a market for hardware security modules (HSMs), the secure devices that hold payment keys, growing 15.3% a year to USD 4.80bn by 2032. Separately, the PCI PIN ban on injecting clear-text keys inside processors' own estates has been in force since 1 January 2026."
+    }
+   ],
+   "gems": [
+    {
+     "title": "The AMLA eligibility data collection makes supervisors the buyer",
+     "detail": "On 4 August 2026 the EBA published the draft data model and taxonomy for the 2027 eligibility data collection. National supervisors organise the collection from obliged entities, and AMLA sets the specifications.\n\nThis creates an obligation to collect, validate, transform and submit data, and it lands on sixteen supervisory authorities. They must meet an EU-specified taxonomy inside a January-to-March 2027 window. Annex I Section C requires per-country transaction counts and values, cash transactions above EUR 20,000, and correspondent, payable-through and nested-account flows.\n\nThe requirement is getting little attention, because most focus is on the bank side of AMLR. The deliverable here is supervisory data engineering, not AML software, and presence in several markets is the qualifying credential.\n\nOne trap to note: AMLA will finalise the provisional entity list around end-September 2026 but will not publish it. The first public naming is the final selection at end-2027.",
+     "tag": "New buyer: national supervisors and central banks"
+    },
+    {
+     "title": "Accessibility rules require replacement of non-compliant POS terminals by 2030",
+     "detail": "The European Accessibility Act has applied since 28 June 2025. Its transition rules treat products and self-service terminals very differently, and few organisations have priced that difference in.\n\nArticle 32(1) lets service providers keep using non-compliant products only until 28 June 2030. Pre-2025 service contracts may run no more than five years from that date. Article 32(2) lets Member States allow self-service terminals, which means ATMs, to run to the end of their economic life, up to twenty years.\n\nSo every non-accessible card terminal in the EU has to be gone by mid-2030. ATM estates face no equivalent pressure until the 2040s.\n\nThis is a mandated, dated, EU-wide replacement wave in the middle of the outlook window. It replaces an existing estate rather than adding a new one. That is why it is a conversation with the compliance owner, not with the merchant.",
+     "tag": "New line: accessibility-driven terminal re-tender"
+    },
+    {
+     "title": "AFIR requires card payment on every fast charger from January 2027",
+     "detail": "Regulation (EU) 2023/1804 Article 5(1) applies from 1 January 2027. Operators must make all publicly accessible charging points of 50 kW or more accept payment by card reader or contactless device. This covers points on the TEN-T network or in safe and secure parking areas, explicitly including points installed before 13 April 2024. Article 7 imposes the same requirement on hydrogen refuelling.\n\nThat is a hard retrofit deadline right at the start of the window. The devices are unattended, so they need terminal management, remote key injection and PCI estate compliance.\n\nThe buyer is a charge-point operator or an e-mobility service provider. That counterparty appears nowhere in a banking-technology account plan. Worldline corroborates the demand commercially, reporting strong growth in Mobility and Self Service driven by petrol and transportation.",
+     "tag": "New buyer: charge-point operators and eMSPs"
+    },
+    {
+     "title": "Authentic-source attribute verification makes registries the customer",
+     "detail": "eIDAS Article 45e requires Member States to let qualified providers of electronic attestations check Annex VI attributes electronically against authentic sources. The deadline is 24 months after the implementing acts, and so 24 December 2026. Checks may run nationally, or through designated intermediaries recognised at national level.\n\nAnnex VI covers eleven attribute families. These include educational and professional qualifications, powers to represent a legal person, public permits and licences, and company financial data. CIR 2026/1735 then specifies how verification results are signed and sealed, from 1 January 2027.\n\nThe buyers are the source owners themselves: civil registries, cadastres, ministries of education, professional chambers, and vehicle and commercial registers. Almost none of them expose a signed, real-time attribute API that a qualified trust provider can call today. Most run batch or legacy systems across CEE and SEE.\n\nThis is an integration and managed-service line against a legal deadline that most of the region has already missed.",
+     "tag": "New buyer: registries and professional chambers"
+    },
+    {
+     "title": "One-leg-out instant payments could go from 95 adherents to 2,800",
+     "detail": "A one-leg-out payment is an instant transfer where only one end sits inside the euro area. Rulebook change request CR#12 would make One-Leg-Out Instant Credit Transfer mandatory for SCT Inst participants on a staggered basis. TIPS release R2026.NOV delivers full OCT Inst compliance. Today just 95 payment service providers adhere to OCT Inst, against 2,817 on SCT Inst.\n\nThat is a roughly thirty-fold expansion of an obligation that almost no one has implemented.\n\nIt matters more here than elsewhere for two reasons. The buyer is the cross-border and remittance product owner, which is a different budget line from domestic payments. The sixteen-market footprint also carries some of Europe's heaviest diaspora remittance flows.\n\nPayment institutions and money transfer operators need a compliant one-leg-out leg on the same timetable.",
+     "tag": "New buyer: cross-border and remittance product owners"
+    }
+   ],
+   "endstate_2030": [
+    {
+     "metric": "Digital identity",
+     "now": "In 2025, 52.3% of people across the EU used an electronic ID. Romania was at 10.1%, Bulgaria 12.1% and Slovakia 13.6%",
+     "then": "Every medium and large regulated business must accept the EU digital wallet",
+     "note": "Wallets are issued from 24 Dec 2026 and must be accepted from 24 Dec 2027. Micro and small firms are exempt. Fines can reach EUR 5m or 1% of turnover. The cost of one identity check is falling from EUR 70-100 towards EUR 3-8."
+    },
+    {
+     "metric": "Payments rails and data",
+     "now": "Instant payments are 25% of euro-area credit transfers by number and 8% by value (H2 2025)",
+     "then": "Instant payments become the default in all 17 markets, with Verification of Payee. The ISO 20022 payment data is sold as a product",
+     "note": "Non-euro countries must comply on 9 Jan and 9 Jul 2027. Bulgaria must comply on 1 Jan 2027. Verification of Payee 2.0 lets non-EEA banks join from Nov 2027. Growth on TIPS is already slowing."
+    },
+    {
+     "metric": "Financial-crime supervision",
+     "now": "Anti-money-laundering is supervised nationally. AMLA has 120 staff and no fee income",
+     "then": "AMLA supervises about 40 banking groups directly, with 432 staff and EUR 65.2m in supervisory fees",
+     "note": "The AML Regulation applies from 10 Jul 2027. Supervisors collect eligibility data in Jan-Mar 2027. Shared data services under Article 75 become viable around 2029, once the EDPB-AMLA guidelines are published."
+    },
+    {
+     "metric": "AI in banking",
+     "now": "Mostly copilots and pilots. More than 85% of ECB-supervised significant banks already use AI",
+     "then": "AI runs under formal governance. The financial regulator supervises it and reports to the ECB",
+     "note": "High-risk credit scoring is covered without exception from 2 Dec 2027. EN 18286:2026 is the first of about 35 harmonised standards. Spending on AI governance platforms grows from USD 492m (2026) to over USD 1bn (2030), although the growth rate slows."
+    },
+    {
+     "metric": "Resilience and cryptography",
+     "now": "DORA reporting is running, with 3,383 major incidents in 2025 and no fine anywhere so far",
+     "then": "Resilience is supervised, and high-risk financial systems have moved to post-quantum cryptography",
+     "note": "SwiftNet 8.0 supports post-quantum cryptography in 2027, with a 15-month window to migrate. The market for hardware security modules (HSMs) grows from USD 2.04bn (2026) to USD 4.80bn (2032). payShield has not announced a date for post-quantum support."
+    },
+    {
+     "metric": "Acceptance estate",
+     "now": "The euro area has 15.0m card terminals located in-country (2025, up 4.3%). SoftPOS is about 1% of card-present volume where it is measured",
+     "then": "Terminals are accessible and take account-to-account and QR payments. SoftPOS covers the smallest merchants",
+     "note": "The Accessibility Act removes non-compliant terminals by 28 Jun 2030. EV chargers must take cards from 1 Jan 2027. Mandate-driven CEE markets grow 17-21% a year, and mature markets 1-3%."
+    },
+    {
+     "metric": "Cash and ATMs (legacy base)",
+     "now": "The euro area has 245,619 ATMs located in-country (2025), falling about 2% a year. The amount of cash in circulation is still growing",
+     "then": "Fewer machines, most able to take deposits, run as a managed service for a recurring fee",
+     "note": "Recyclers and deposit automation are where the growth is. ATM-as-a-service revenue is up 24% at NCR Atleos. ATMs are exempt from accessibility replacement for up to 20 years."
+    }
+   ],
+   "source_note": "Figures trace to EU primary law and registers (EUR-Lex, the Council document register, the EP Legislative Observatory), central banks and supervisors (ECB incl. the Data Portal and SPACE, EBA, ESMA, EIOPA, AMLA, EDPB, EPC, national central banks), statistical authorities (Eurostat), standards and security bodies (NIST, CEN-CENELEC, PCI SSC, EMVCo, ENISA), consulting and analyst houses (McKinsey, Capgemini, Gartner, IDC, Datos Insights, Juniper, Evident) and market-sizing firms (MarketsandMarkets, Mordor, Grand View, Precedence, Fortune Business Insights, market.us), plus vendor and issuer disclosures. All market sizes and adoption curves are projections where labelled, span different end-years and vary materially by analyst — the core-banking and tokenization ranges differ by about 2x and 15x respectively between houses. Regulatory dates are stated as enacted where enacted and as projections where the file is still in negotiation; eleven figures carried in the July edition were corrected against primary sources this cycle."
+  }
+ },
+ "futures": [
+  {
+   "scope": "EU Digital Identity wallet: acceptance becomes binding on 24 Dec 2027",
+   "country": "Footprint-wide (EU-10), Ukraine by mutual recognition",
+   "horizon": "2-5 years (2027-2031)",
+   "direction": "strong growth",
+   "projected": "The identity verification market grows from USD 14.34bn (2025) to USD 29.32bn by 2030, at about 15.4% a year (CAGR) ([MarketsandMarkets](https://www.marketsandmarkets.com/PressReleases/identity-verification.asp)). Demand is triggered by the law rather than by the market. From 24 December 2027, every medium and large regulated business that relies on the EU Digital Identity (EUDI) wallet must accept it. Fines can reach EUR 5m or 1% of turnover.",
+   "confidence": "High",
+   "rationale": "Both dates in the last edition were wrong, and we have corrected them against the legal text. Art. 5a(1) gives 24 months from the date the implementing acts took effect (24 Dec 2024). Governments must therefore issue wallets by 24 December 2026. Art. 5f(2) gives 36 months, so acceptance becomes binding on 24 December 2027. Micro and small enterprises are expressly left out ([Reg. 2024/1183](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024R1183)).\n\nIssuing wallets is a government job, and roughly half the bloc will miss the date. Germany will launch a cut-down wallet on 2 Jan 2027 with no qualified signature, no pseudonymous login and no payments.\n\nThe revenue available to integrators is on the acceptance side. Germany's own sandbox found that signing up relying parties (the businesses that accept the wallet), not technology, is the main constraint.\n\nThe strongest CEE/SEE position is acceptance orchestration (connecting and managing acceptance) across 27 registers, plus the Art. 45e authentic-source hub. It is not another general eKYC (electronic customer identity check) tool. The price of those tools is falling from EUR 70-100 to EUR 3-8 per customer. Fourthline's move to become its own QTSP (qualified trust service provider) also competes directly with the trust-services reseller layer.",
+   "drivers": [
+    "Governments must issue wallets by 24 Dec 2026. Medium and large relying parties must accept them by 24 Dec 2027. Penalties are EUR 5m or 1% of turnover ([Reg. 2024/1183](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024R1183))",
+    "Three implementing acts arrived on 15 Jul 2026. They cover relying-party registration and the intermediary association ([CIR 2026/1730](https://eur-lex.europa.eu/eli/reg_impl/2026/1730/oj/eng)), the wallet trust mark ([CIR 2026/1731](https://eur-lex.europa.eu/eli/reg_impl/2026/1731/oj/eng)), and checking (Q)EAA credentials against authentic sources ([CIR 2026/1735](https://eur-lex.europa.eu/eli/reg_impl/2026/1735/oj/eng))",
+    "ARF v3.0.0 (the wallet's architecture and reference framework) was released on 23 Jul 2026. It adds a new Relying Party Services concept and a functional conformance framework ([EU Digital Identity ARF](https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework/releases/tag/v3.0.0))",
+    "The limit in CEE/SEE is readiness, not opportunity. Across the EU27, 52.3% of people use a private eID (electronic ID). In Romania it is 10.1%, and it has fallen. Bulgaria is at 12.1% and Slovakia at 13.6%. 57% of Romanian non-users say they simply do not have one ([Eurostat](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=E-government_and_electronic_identification))",
+    "Deepfakes now make up 6.5% of all fraud attempts, up from 0.1% three years earlier. 42.5% of fraud attempts in the financial sector are AI-driven. Yet only 22% of organisations have put AI-driven fraud prevention in place ([Signicat](https://www.signicat.com/the-battle-against-ai-driven-identity-fraud))",
+    "The measured gap is in private-sector acceptance. Across the EU27, eID use for business services is 24.6%, against 52.3% for all services. In Bulgaria it is 5.1%, against 12.1% overall ([Eurostat](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=E-government_and_electronic_identification))"
+   ],
+   "source_reports": [
+    {
+     "label": "EUR-Lex — Regulation (EU) 2024/1183 (eIDAS 2), Arts. 5a, 5b, 5f and Annex VI",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024R1183"
+    },
+    {
+     "label": "EUR-Lex — CIR (EU) 2024/2977, Art. 6 (entry into force 24 Dec 2024, which sets both deadlines)",
+     "url": "https://eur-lex.europa.eu/eli/reg_impl/2024/2977/oj/eng"
+    },
+    {
+     "label": "EUR-Lex — CIR (EU) 2026/1735 on (Q)EAA verification against authentic sources (signing rules apply 1 Jan 2027)",
+     "url": "https://eur-lex.europa.eu/eli/reg_impl/2026/1735/oj/eng"
+    },
+    {
+     "label": "Eurostat — E-government and electronic identification (dataset isoc_eid_ieid, 2025 wave)",
+     "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=E-government_and_electronic_identification"
+    },
+    {
+     "label": "MarketsandMarkets — Identity Verification Market to $29.32bn by 2030 (from $14.34bn in 2025, 15.4% CAGR)",
+     "url": "https://www.marketsandmarkets.com/PressReleases/identity-verification.asp"
+    },
+    {
+     "label": "Signicat — deepfakes now 6.5% of all fraud attempts; 42.5% of financial-sector attempts AI-driven",
+     "url": "https://www.signicat.com/the-battle-against-ai-driven-identity-fraud"
+    },
+    {
+     "label": "Biometric Update — Fourthline becomes a qualified trust service provider (25 Aug 2026)",
+     "url": "https://www.biometricupdate.com/202608/fourthline-becomes-qualified-trust-service-provider-under-eidas"
+    }
+   ],
+   "chart": {
+    "title": "Private eID use, % of individuals, 2023 vs 2025 (Eurostat isoc_eid_ieid)",
+    "type": "bar",
+    "labels": [
+     "EU27",
+     "Greece",
+     "Cyprus",
+     "Hungary",
+     "Croatia",
+     "Slovenia",
+     "Czechia",
+     "Slovakia",
+     "Bulgaria",
+     "Romania"
+    ],
+    "series": [
+     {
+      "label": "2023",
+      "data": [
+       41.11,
+       66.37,
+       9.15,
+       31.56,
+       36.7,
+       35.72,
+       28.46,
+       11.49,
+       6.09,
+       10.98
+      ]
+     },
+     {
+      "label": "2025",
+      "data": [
+       52.26,
+       70.02,
+       56.78,
+       51.37,
+       46.01,
+       39.16,
+       35.0,
+       13.64,
+       12.1,
+       10.09
+      ]
+     }
+    ],
+    "horizontal": false
+   },
+   "oid": 0,
+   "cite_files": [
+    "findings/08-futurist/2026-09-01.md"
+   ]
+  },
+  {
+   "scope": "Instant payments: growth slows after the mandate, with value moving to services",
+   "country": "Footprint-wide",
+   "horizon": "2-5 years (2027-2031)",
+   "direction": "strong growth",
+   "projected": "SEPA instant payments reached 25% of euro-area credit transfers by number and 8% by value (H2 2025). They could plausibly reach 35-45% by number by 2028, then level off, because what remains is mostly bulk corporate payments ([ECB](https://www.ecb.europa.eu/press/stats/paysec/html/ecb.pis2025h2~23986fb4a6.en.html)). This is a projection. Growth is already slowing now that the one-off effects of the mandate have passed.",
+   "confidence": "High",
+   "rationale": "The jump from 16% to 25% during 2025 came from two one-off events. These were the IPR (Instant Payments Regulation) duty to send instant payments, and the removal of the EUR 100,000 cap on 5 Oct 2025.\n\nThe slowdown is already visible. Growth in TIPS euro daily volumes fell from +99.8% year-on-year in January 2026 to +86.8% in May, and turnover showed its first month-on-month fall. Value is therefore moving into services on top of the rail, rather than into more volume.\n\nVerification of Payee (checking the payee's name against the account) already handles close to a billion requests a month. Reachability is the named weak spot. The ISO 20022 structured-address work has turned into a customer-master-data project.\n\nTwo corrections matter for the footprint. Bulgaria must deliver the whole instant package, including VoP, on 1 January 2027 under IPR Art. 16(9). That is six months earlier than we assumed before, and we found no acknowledgement from BNB or BORICA. The address deadline is now genuinely open, after Swift extended its 2026 standards release and the ECB began a review on 28 Aug 2026.\n\nThe strongest CEE/SEE opportunity is Verification-of-Payee-as-a-service for markets that have no routing and verification mechanism, following the model DIAS already runs in Greece.",
+   "drivers": [
+    "SEPA instant reached 25% of euro-area credit transfers by number and 8% by value in H2 2025, up from 16% a year earlier ([ECB](https://www.ecb.europa.eu/press/stats/paysec/html/ecb.pis2025h2~23986fb4a6.en.html))",
+    "TIPS settled 2.47bn transactions in 2025, up +82.5%. But growth in euro daily averages had already slowed to +86.8% year-on-year by May 2026 ([ECB TARGET Services Annual Report 2025](https://www.ecb.europa.eu/press/targetservar/html/ecb.targetservar2025.en.html))",
+    "Verification of Payee reached close to one billion requests per month by March 2026. It covers 2,768 adhering PSPs (payment service providers) and 58 routing and verification mechanisms. Reachability is the named weakness ([EPC](https://www.europeanpaymentscouncil.eu/news-insights/news/rvm-msg-reviews-vop-progress-and-advances-vop-20-discussions))",
+    "Bulgaria must deliver send, receive, equal charges and Verification of Payee on 1 Jan 2027 under Art. 16(9). That is a year after it adopts the euro ([Reg. (EU) 2024/886](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202400886))",
+    "The ISO 20022 structured-address deadline is now open. Swift extended its Standards Release 2026, and the ECB is reviewing the November 2026 TARGET releases ([ECB](https://www.ecb.europa.eu/press/intro/news/html/ecb.mipnews260828.en.html))",
+    "One-Leg-Out Instant (instant payments where one side is outside SEPA) has just 95 adhering PSPs, against 2,817 on SCT Inst. Rulebook change CR#12 would make it mandatory in stages ([EPC/ECB AMI-Pay](https://www.ecb.europa.eu/paym/groups/shared/docs/07bd9-ami-pay-2026-05-05-4.-epc-update-on-payment-schemes-and-vop-deployment.pdf))"
+   ],
+   "source_reports": [
+    {
+     "label": "ECB — Payments statistics, second half of 2025 (instant at 25% of credit transfers by number)",
+     "url": "https://www.ecb.europa.eu/press/stats/paysec/html/ecb.pis2025h2~23986fb4a6.en.html"
+    },
+    {
+     "label": "ECB — TARGET Services Annual Report 2025 (TIPS 2.47bn transactions, +82.5%)",
+     "url": "https://www.ecb.europa.eu/press/targetservar/html/ecb.targetservar2025.en.html"
+    },
+    {
+     "label": "EUR-Lex — Instant Payments Regulation (EU) 2024/886, Art. 16(9) (the Bulgarian one-year clock)",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202400886"
+    },
+    {
+     "label": "ECB — Eurosystem reassessing the November 2026 TARGET releases after Swift's SR2026 extension",
+     "url": "https://www.ecb.europa.eu/press/intro/news/html/ecb.mipnews260828.en.html"
+    },
+    {
+     "label": "EPC — VoP progress and VoP 2.0 discussions (close to 1bn requests per month)",
+     "url": "https://www.europeanpaymentscouncil.eu/news-insights/news/rvm-msg-reviews-vop-progress-and-advances-vop-20-discussions"
+    },
+    {
+     "label": "DIAS — 2025 statistics (Greek instant payments 122.1m, +72.8%)",
+     "url": "https://www.dias.com.gr/en/statistics-2025/"
+    }
+   ],
+   "chart": {
+    "title": "SEPA instant as a share of euro-area retail-system credit transfers (%)",
+    "type": "line",
+    "labels": [
+     "H1 2024",
+     "H2 2024",
+     "H1 2025",
+     "H2 2025"
+    ],
+    "series": [
+     {
+      "label": "By number",
+      "data": [
+       15,
+       16,
+       23,
+       25
+      ]
+     },
+     {
+      "label": "By value",
+      "data": [
+       4,
+       4,
+       7,
+       8
+      ]
+     }
+    ],
+    "horizontal": false
+   },
+   "oid": 1,
+   "cite_files": [
+    "findings/08-futurist/2026-09-01.md"
+   ]
+  },
+  {
+   "scope": "Financial crime: the first fixed deadline falls on supervisors, not on banks",
+   "country": "Footprint-wide",
+   "horizon": "2-5 years (2027-2031)",
+   "direction": "strong growth",
+   "projected": "AML (anti-money-laundering) solutions grow from USD 4.05bn (2026) to USD 9.27bn by 2031, at 18.01% CAGR ([Mordor](https://www.mordorintelligence.com/industry-reports/anti-money-laundering-solutions-market)). But the first spend with a fixed date, which cannot be avoided, is the January-to-March 2027 AMLA eligibility data collection. It falls on national supervisors, not on banks.",
+   "confidence": "High",
+   "rationale": "Two things happened this cycle that change the order of events. On 4 August 2026, the EBA published the draft data model and taxonomy for the 2027 eligibility collection. This turns AMLR (the AML Regulation) preparation into a duty to file machine-readable data. That data covers transaction counts per country, cash transactions above EUR 20,000 and flows through nested accounts. National supervisors, not AMLA, must collect it from obliged entities (the firms covered by the rules).\n\nMeanwhile the Art. 75 data-sharing opportunity moved further away. The partnerships become lawful on 10 July 2027, but the EDPB-AMLA Joint Guidelines only reach public consultation in H1 2027, with no adoption date. Revenue you can count on from a shared utility is therefore a 2029-30 event.\n\nNote also the correction to the AMLA staffing series (120, 233, 432, 432, not 160-232-432). The provisional list of entities will be finalised but not published. The first public naming is the final selection at end-2027.\n\nFor CEE/SEE, three positions are strongest. The first two are the supervisory data pipeline and the Central Contact Point service for institutions that passport into other countries. The third is grey-list remediation for the Bosnian and Bulgarian authorities.",
+   "drivers": [
+    "The EBA published the draft reporting framework for the 2027 eligibility data collection on 4 Aug 2026. Supervisor data was due to AMLA by 15 Aug 2026. The list is finalised, but not published, around end-September ([AMLA](https://www.amla.europa.eu/index_en))",
+    "AMLA grows from 120 staff (2025) to 432 by end-2027. It becomes fee-funded, with EUR 65,155,000 of supervisory levies in 2028 ([AMLA SPD 2026-2028, pp.27, 75](https://www.amla.europa.eu/document/download/27549516-d110-4e91-b1ed-d3552b8f9661_en?filename=AMLA+SPD+2026-2028.pdf))",
+    "Payment fraud in the EEA reached EUR 4.2bn in 2024, up +17%. Fraudulent credit transfers were EUR 2.5bn, up +24%. Manipulation of the payer (tricking the person into paying) is now 74% of credit-transfer fraud by value ([EBA/ECB Joint Report, pp.10, 19](https://www.eba.europa.eu/sites/default/files/2025-12/1709846a-84d9-47cf-86a0-b155efb34d66/EBA%20and%20ECB%20Report%20on%20Payment%20Fraud.pdf))",
+    "Art. 75 partnerships are lawful from 10 Jul 2027. But the EDPB-AMLA Joint Guidelines only go to consultation in H1 2027, with no adoption date ([EDPB](https://www.edpb.europa.eu/news/edpb-and-amla-to-develop-joint-guidelines-on-partnerships-for-information-sharing_en))",
+    "Bosnia and Herzegovina joined Bulgaria on the FATF grey list on 19 Jun 2026. This ties donor and EU accession funding to fixing the FIU (financial intelligence unit) and the supervisor ([ComplyAdvantage](https://complyadvantage.com/insights/fatf-plenary-june-2026-outcomes/))",
+    "AMLA opened a survey on Central Contact Points aimed at EMIs (e-money institutions) and PSPs on 6 Aug 2026. The eligibility RTS (technical standard) counts activity carried out through agents and distributors ([AMLA](https://www.amla.europa.eu/index_en))"
+   ],
+   "source_reports": [
+    {
+     "label": "AMLA — Single Programming Document 2026-2028 (staffing 120/233/432/432; EUR 65.155m fee revenue in 2028)",
+     "url": "https://www.amla.europa.eu/document/download/27549516-d110-4e91-b1ed-d3552b8f9661_en?filename=AMLA+SPD+2026-2028.pdf",
+     "page": 27
+    },
+    {
+     "label": "AMLA — RTS under Art. 12(7) AMLAR, Final Report (per-Member-State materiality thresholds)",
+     "url": "https://www.amla.europa.eu/document/download/1c8bca18-fb5e-4b5e-afee-848111754238_en?filename=2.1_20251216_Final+report+-+RTS+under+art.+12(7)+AMLAR.pdf",
+     "page": 10
+    },
+    {
+     "label": "EBA/ECB — 2025 Joint Report on Payment Fraud (EEA fraud EUR 4.2bn in 2024, +17%)",
+     "url": "https://www.eba.europa.eu/sites/default/files/2025-12/1709846a-84d9-47cf-86a0-b155efb34d66/EBA%20and%20ECB%20Report%20on%20Payment%20Fraud.pdf",
+     "page": 10
+    },
+    {
+     "label": "Mordor Intelligence — AML Solutions Market, USD 4.05bn (2026) to 9.27bn (2031), 18.01% CAGR",
+     "url": "https://www.mordorintelligence.com/industry-reports/anti-money-laundering-solutions-market"
+    },
+    {
+     "label": "EDPB — EDPB and AMLA to develop Joint Guidelines on information-sharing partnerships",
+     "url": "https://www.edpb.europa.eu/news/edpb-and-amla-to-develop-joint-guidelines-on-partnerships-for-information-sharing_en"
+    },
+    {
+     "label": "FATF via ComplyAdvantage — June 2026 plenary outcomes (Bosnia added to increased monitoring)",
+     "url": "https://complyadvantage.com/insights/fatf-plenary-june-2026-outcomes/"
+    }
+   ],
+   "chart": {
+    "title": "AMLA capacity ramp: staff at 31 December (SPD 2026-2028, p.27)",
+    "type": "bar",
+    "labels": [
+     "2025",
+     "2026",
+     "2027",
+     "2028"
+    ],
+    "series": [
+     {
+      "label": "Staff",
+      "data": [
+       120,
+       233,
+       432,
+       432
+      ]
+     }
+    ],
+    "horizontal": false
+   },
+   "oid": 2,
+   "cite_files": [
+    "findings/08-futurist/2026-09-01.md"
+   ]
+  },
+  {
+   "scope": "AI in banking: financial supervisors enforce the AI Act",
+   "country": "Footprint-wide (EU-10)",
+   "horizon": "2-5 years (2027-2031)",
+   "direction": "strong growth",
+   "projected": "Spending on governed AI is concentrated in a 2026-2028 buying window. The AI-governance platform market runs from USD 492m (2026) to over USD 1bn by 2030, with growth slowing along the way. It faces a firm 2 December 2027 deadline for high-risk AI ([Gartner](https://www.gartner.com/en/newsroom/press-releases/2026-02-17-gartner-global-ai-regulations-fuel-billion-dollar-market-for-ai-governance-platforms)).",
+   "confidence": "High",
+   "rationale": "This is a matter of banking supervision rather than technology, because of AI Act Art. 74(6). It makes the national financial supervisor the market-surveillance authority for high-risk AI in regulated financial institutions. Art. 74(7) requires that supervisor to report to the ECB without delay. Romania has already made this real by naming ASF and BNR.\n\nAn AI Act finding on a credit-scoring model is therefore prudential supervisory information, not a privacy fine. This settles who owns the budget: the CRO (chief risk officer) and the model-risk function.\n\nThe EBA's mapping found no major conflicts with banking law. It matched the AI Act's QMS (quality management system), documentation and post-market monitoring duties with CRR/CRD Arts. 174-176 and DORA Arts. 17-19. The work to sell is therefore wiring up the existing IRB (internal ratings-based) model-governance evidence chain. It must produce Art. 12 logs, Art. 14 oversight records and Art. 17 QMS artefacts all the time.\n\nTwo honest caveats apply. Enforcement in CEE will lag DE/FR/IT/NL by 12-18 months, because most national implementing laws are not finished. The widely-quoted Gartner prediction about cancelled agentic-AI projects could not be re-checked this cycle.",
+   "drivers": [
+    "AI Act Art. 74(6) makes the national financial supervisor the market-surveillance authority for high-risk AI in regulated institutions. Art. 74(7) requires it to report to the ECB without delay ([AI Act Art. 74](https://artificialintelligenceact.eu/article/74/))",
+    "Romania named ASF and BNR as market-surveillance authorities for financial institutions' high-risk AI. ANCOM is only the single point of contact ([Chambers](https://practiceguides.chambers.com/practice-guides/artificial-intelligence-2026/romania))",
+    "The Digital Omnibus was published as Reg. (EU) 2026/1744 on 24 Jul 2026 and took effect on 27 Jul. It fixes the date for standalone high-risk AI at 2 Dec 2027 and for embedded high-risk AI at 2 Aug 2028. The link to standards being ready has been removed ([EUR-Lex](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R1744))",
+    "EN 18286:2026, the first AI Act harmonised standard, was approved on 12 Jul 2026. But it is one of roughly 35, and the hard ones on accuracy, robustness and bias are still to come ([Adam Leon Smith](https://adamleonsmith.substack.com/p/en-182862026-is-finally-published))",
+    "More than 85% of the significant institutions the ECB supervises already use AI. The ECB expects ongoing monitoring, not just a one-off validation at the start ([ECB Banking Supervision](https://www.bankingsupervision.europa.eu/press/speeches/date/2026/html/ssm.sp260203~672ce5d5ff.en.html))",
+    "Insurers come under the same 2 Dec 2027 rules under Annex III 5(c), for life and health risk assessment and pricing. Underwriting is the fastest-growing use of AI among the 30 insurers tracked ([Evident](https://evidentinsights.com/insights/insurance-use-case-trends-q2-2026))",
+    "The quality of AI adoption is getting worse even as the number of projects rises. The share of new banking use cases with disclosed outcomes fell to 27% from 41%. About one in ten report a revenue uplift ([Evident](https://evidentinsights.com/insights/banking-use-case-trends-q2-2026))"
+   ],
+   "source_reports": [
+    {
+     "label": "AI Act Art. 74 — market surveillance; financial supervisors as the competent authority (74(6)-(7))",
+     "url": "https://artificialintelligenceact.eu/article/74/"
+    },
+    {
+     "label": "EUR-Lex — Regulation (EU) 2026/1744 (the AI Digital Omnibus, OJ 24 Jul 2026, in force 27 Jul 2026)",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R1744"
+    },
+    {
+     "label": "Gartner — AI governance platform market USD 492m (2026) to surpass USD 1bn by 2030",
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2026-02-17-gartner-global-ai-regulations-fuel-billion-dollar-market-for-ai-governance-platforms"
+    },
+    {
+     "label": "A&O Shearman — EBA factsheet mapping the AI Act onto CRR/CRD and DORA (no significant contradictions)",
+     "url": "https://finreg.aoshearman.com/eba-factsheet-on-implications-of-eu-ai-act-for-banking-and-payments-sector"
+    },
+    {
+     "label": "Evident Insights — banking AI use-case trends, Q2 2026 (disclosed outcomes down to 27%)",
+     "url": "https://evidentinsights.com/insights/banking-use-case-trends-q2-2026"
+    },
+    {
+     "label": "Statista — global banking-sector AI spending forecast (2024 observed; other years modelled at a flat 30.3% CAGR)",
+     "url": "https://www.statista.com/statistics/1557311/global-banking-sector-ai-spending-forecast"
+    }
+   ],
+   "chart": {
+    "title": "Global banking-sector AI spend, USD bn — only 2024 is observed; other years modelled at a flat 30.3% CAGR (Statista)",
+    "type": "line",
+    "labels": [
+     "2022",
+     "2023",
+     "2024",
+     "2025",
+     "2026",
+     "2027",
+     "2028"
+    ],
+    "series": [
+     {
+      "label": "AI spend (USD bn, modelled)",
+      "data": [
+       21.03,
+       25.66,
+       31.3,
+       40.78,
+       53.14,
+       69.24,
+       90.22
+      ]
+     }
+    ],
+    "horizontal": false
+   },
+   "oid": 3,
+   "cite_files": [
+    "findings/08-futurist/2026-09-01.md"
+   ]
+  },
+  {
+   "scope": "Operational resilience: supervised through inspections, with no DORA fines yet",
+   "country": "Footprint-wide (EU-10)",
+   "horizon": "2-5 years (2027-2031)",
+   "direction": "growth",
+   "projected": "Resilience becomes an area supervisors watch all the time, rather than one driven by fines. 3,383 major ICT incidents were reported across the EU in 2025, and 29% were caused by third parties. No DORA fine had been issued anywhere as of 1 September 2026 ([ESAs Joint Report, p.14](https://www.esma.europa.eu/sites/default/files/2026-06/JC_2026_16_ESAs_2025_report_on_major_ICT-related_incidents.pdf)).",
+   "confidence": "High",
+   "rationale": "Three separate primary sources agree on the direction: supervision based on evidence and managing concentration risk, not large fines. They are the ESAs incident report, the ECB's SSM priorities 2026-2028 and the ESAs oversight guide. The SSM priorities make operational resilience Priority 2, with two on-site-inspection campaigns.\n\nThis matters for sales. The DORA fine figure in the last edition could not be verified. National maximum fines also differ hugely, from EUR 50,000 in Bulgaria to 10% of turnover in Romania.\n\nThe most useful and least-used finding is the cost field. About 40% of major incidents reported zero direct or indirect cost, and 15% left it blank. That shows immature reporting, and it is a sales argument rather than a comfort.\n\nFor CEE/SEE the position to sell is incident-reporting-as-a-service on retainer for institutions below the significant-institution threshold. From 11 September 2026 these run two clashing reporting clocks, once the Cyber Resilience Act's 24-hour, 72-hour and 14-day duties begin. Note also that three of the nineteen designated critical providers are telecoms, so DORA duties now pass by contract to buyers that are not banks.",
+   "drivers": [
+    "There were 3,383 major ICT incidents in 2025, or 0.18 per entity. System failure caused 51%, external events 27% and cyber attacks only 10% ([ESAs Joint Report, p.13](https://www.esma.europa.eu/sites/default/files/2026-06/JC_2026_16_ESAs_2025_report_on_major_ICT-related_incidents.pdf))",
+    "Around 40% of major incidents reported zero cost and 15% left the field blank. Yet an ESAs Q&A says staff time counts as a cost ([ESAs Joint Report, p.17](https://www.esma.europa.eu/sites/default/files/2026-06/JC_2026_16_ESAs_2025_report_on_major_ICT-related_incidents.pdf))",
+    "The ECB's SSM priorities 2026-2028 make operational resilience Priority 2. They include on-site inspection campaigns on cybersecurity and third parties, and a deep dive on cloud dependency ([ECB Banking Supervision](https://www.bankingsupervision.europa.eu/framework/priorities/html/ssm.supervisory_priorities202511.en.html))",
+    "Three of the 19 designated critical ICT third-party providers are telecoms: Deutsche Telekom, Orange and Colt. Data-centre operators are on the list too. So the duties pass by contract to suppliers that are not banks ([EBA](https://www.eba.europa.eu/publications-and-media/press-releases/european-supervisory-authorities-designate-critical-ict-third-party-providers-under-digital))",
+    "Cyber Resilience Act reporting duties begin on 11 Sep 2026 (24-hour, 72-hour and 14-day). The main duties on products, including payment terminals, apply from 11 Dec 2027 ([European Commission](https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act))",
+    "National fines differ sharply. Bulgaria caps them at EUR 50,000, while Romania's OUG 14/2026 allows up to 10% of turnover or RON 23,000,000 ([ONV Law](https://onvlaw.ro/romania-implements-the-eu-dora-framework-through-emergency-ordinance-no-14-2026/))"
+   ],
+   "source_reports": [
+    {
+     "label": "ESAs — Joint Report on major ICT-related incidents in 2025 (JC 2026 16)",
+     "url": "https://www.esma.europa.eu/sites/default/files/2026-06/JC_2026_16_ESAs_2025_report_on_major_ICT-related_incidents.pdf",
+     "page": 14
+    },
+    {
+     "label": "ECB Banking Supervision — SSM supervisory priorities 2026-2028 (operational resilience as Priority 2)",
+     "url": "https://www.bankingsupervision.europa.eu/framework/priorities/html/ssm.supervisory_priorities202511.en.html"
+    },
+    {
+     "label": "EBA — designation of the first 19 critical ICT third-party providers under DORA",
+     "url": "https://www.eba.europa.eu/publications-and-media/press-releases/european-supervisory-authorities-designate-critical-ict-third-party-providers-under-digital"
+    },
+    {
+     "label": "European Commission — Cyber Resilience Act (reporting 11 Sep 2026; main obligations 11 Dec 2027)",
+     "url": "https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act"
+    },
+    {
+     "label": "ONV Law — Romania implements DORA through Emergency Ordinance 14/2026 (penalties to 10% of turnover)",
+     "url": "https://onvlaw.ro/romania-implements-the-eu-dora-framework-through-emergency-ordinance-no-14-2026/"
+    }
+   ],
+   "chart": {
+    "title": "EU major ICT incidents 2025, share by incident type (%) — ESAs Joint Report, p.13",
+    "type": "bar",
+    "labels": [
+     "System failure",
+     "External event",
+     "Payment-related",
+     "Cyber",
+     "Human error"
+    ],
+    "series": [
+     {
+      "label": "Share of major incidents (%)",
+      "data": [
+       51,
+       27,
+       18,
+       10,
+       12
+      ]
+     }
+    ],
+    "horizontal": true
+   },
+   "oid": 4,
+   "cite_files": [
+    "findings/08-futurist/2026-09-01.md"
+   ]
+  },
+  {
+   "scope": "Post-quantum cryptography: a hardware refresh set by Swift's timetable, not the EU's",
+   "country": "Footprint-wide",
+   "horizon": "2-5 years (2027-2031)",
+   "direction": "growth",
+   "projected": "The market for hardware security modules (HSMs, devices that protect encryption keys) grows from USD 1.74bn (2025) to USD 2.04bn (2026) and USD 4.80bn by 2032, at 15.3% CAGR. Quantum cryptography is the fastest-growing technology segment ([MarketsandMarkets](https://www.marketsandmarkets.com/Market-Reports/hardware-security-modules-market-162277475.html)). This replaces the earlier figure of USD 3.28bn by 2030.",
+   "confidence": "Medium",
+   "rationale": "Two corrections change the timing a lot. First, NIST IR 8547 is dated 12 November 2024 and is still a draft. Its 2030 phase-out and 2035 ban therefore remain draft policy, not settled law. Second, the EU's end-2026 milestone for an inventory of cryptography binds Member States, not banks.\n\nThe rule that binds firms is PCI DSS Requirement 12.3.3, in force since 31 March 2025, plus DORA documentation. COM(2026) 13 routes post-quantum duties into national NIS2 strategies, with 12 months to write them into national law.\n\nThe trigger with a real date is commercial. SwiftNet 8.0 ships with PQC (post-quantum cryptography) in 2027, and institutions get a 15-month window to migrate. That is a fixed timetable, not an aspiration.\n\nPayment hardware is behind. Thales shipped Luna 8 on 4 August 2026, but payShield 11K support is only 'planned for a future release', with no date. EMVCo's own text is far less urgent than market commentary: it has no guidance on shortening timelines and no timelines for issuers. The tight refresh window is therefore 2028-2030, not 2027-2029.\n\nOne related fact can be acted on now. PCI PIN Requirement 32-9 extended the ban on clear-text key injection to firms injecting keys into their own POI v5+ estates on 1 January 2026. It is already in force, and very few suppliers are selling against it.",
+   "drivers": [
+    "PCI PIN Req. 32-9 extended the ban on clear-text key injection to processors injecting keys into their own POI v5+ estates from 1 Jan 2026. It is already binding ([PCI SSC, p.1](https://www.pcisecuritystandards.org/wp-content/uploads/2020/11/PCI_SSC_Bulletin_on_Encrypted_Key_Loading.pdf))",
+    "SwiftNet 8.0 ships with post-quantum support in 2027, with a 15-month migration window for institutions. It is the first PQC migration with a fixed date on every European bank's messaging estate ([The Quantum Insider](https://thequantuminsider.com/2026/08/07/post-quantum-cryptography-timelines/))",
+    "NIST IR 8547 is still an initial public draft dated 12 Nov 2024. The 2030/2035 dates are therefore draft policy ([NIST](https://csrc.nist.gov/pubs/ir/8547/ipd))",
+    "The EU end-2026 cryptographic-inventory milestone binds Member States. The duty on firms is PCI DSS Req. 12.3.3 plus DORA. The amended NIS2 routes PQC into national strategies ([European Commission](https://digital-strategy.ec.europa.eu/en/library/coordinated-implementation-roadmap-transition-post-quantum-cryptography))",
+    "Only two of the 17 footprint countries, Czechia and Slovakia, had published a national PQC strategy as of February 2026. The EU milestone is 31 December 2026 ([GSMA](https://www.gsma.com/newsroom/post-quantum-government-initiatives-by-country-and-region/))",
+    "Thales launched Luna 8 on 4 Aug 2026, claiming PQC up to 100x faster. But payShield 11K support is 'planned for a future release', with no date ([Thales](https://data-protection-updates.gemalto.com/2026/08/04/introducing-luna-8-our-fastest-hsm-ever-built-for-the-post-quantum-era/))"
+   ],
+   "source_reports": [
+    {
+     "label": "MarketsandMarkets — Hardware Security Modules Market, USD 1.74bn (2025) to 4.80bn (2032), 15.3% CAGR",
+     "url": "https://www.marketsandmarkets.com/Market-Reports/hardware-security-modules-market-162277475.html"
+    },
+    {
+     "label": "NIST — IR 8547 (initial public draft, 12 Nov 2024; still draft as of Sept 2026)",
+     "url": "https://csrc.nist.gov/pubs/ir/8547/ipd"
+    },
+    {
+     "label": "PCI SSC — Bulletin on Encrypted Key Loading (Req. 32-9; 1 Jan 2024 and 1 Jan 2026 dates)",
+     "url": "https://www.pcisecuritystandards.org/wp-content/uploads/2020/11/PCI_SSC_Bulletin_on_Encrypted_Key_Loading.pdf",
+     "page": 1
+    },
+    {
+     "label": "European Commission — Coordinated implementation roadmap for the transition to post-quantum cryptography",
+     "url": "https://digital-strategy.ec.europa.eu/en/library/coordinated-implementation-roadmap-transition-post-quantum-cryptography"
+    },
+    {
+     "label": "EMVCo — Quantum computing and EMV chip: what's the threat? (no telescoping guidance, no issuer timelines)",
+     "url": "https://www.emvco.com/knowledge-hub/quantum-computing-and-emv-chip-whats-the-threat/"
+    },
+    {
+     "label": "Thales — Luna 8 HSM launch (payShield 11K support 'planned for a future release')",
+     "url": "https://data-protection-updates.gemalto.com/2026/08/04/introducing-luna-8-our-fastest-hsm-ever-built-for-the-post-quantum-era/"
+    }
+   ],
+   "chart": {
+    "title": "Hardware security module market, USD bn — only 2025, 2026 and 2032 are published points",
+    "type": "bar",
+    "labels": [
+     "2025",
+     "2026",
+     "2032"
+    ],
+    "series": [
+     {
+      "label": "HSM market (USD bn)",
+      "data": [
+       1.74,
+       2.04,
+       4.8
+      ]
+     }
+    ],
+    "horizontal": false
+   },
+   "oid": 5,
+   "cite_files": [
+    "findings/08-futurist/2026-09-01.md"
+   ]
+  },
+  {
+   "scope": "Tokenization in Europe: compliant stablecoins are almost all dollar-denominated",
+   "country": "Global, footprint via consortium membership",
+   "horizon": "2-5 years (2027-2031)",
+   "direction": "mixed",
+   "projected": "Real-world assets on blockchain reached USD 38.36bn at 31 August 2026, against total stablecoins of USD 303.43bn. The MiCA-compliant stablecoin market is roughly 99% USDC. All compliant euro tokens together are under 1% ([CoinGecko](https://www.coingecko.com/en/categories/mica-compliant-stablecoin)). Analyst forecasts for 2030 range from USD 2trn to 9.4trn. That 15x spread reflects disagreement about definitions, not a real forecast range.",
+   "confidence": "Low",
+   "rationale": "The main development this cycle is that MiCA (the EU crypto rules) built a regulated space, and a US issuer was the first to use it. USDT was delisted for EEA retail customers on 1 July 2026. The gap went to USDC, not to euro tokens. Schnabel admitted this publicly at Jackson Hole on 28 August.\n\nThe bank consortium Qivalis is still unlicensed and unlaunched at 1 September 2026. A slip into 2027 is now the most likely case, and the last edition's 'targeting H2 2026' should no longer be treated as on track.\n\nThe public-money rail does have a firm date. ECB Pontes goes live on 21 September 2026, with Clearstream in end-to-end testing, and extends towards 24/7 multi-currency by mid-2028.\n\nOur confidence in the size is Low. The base is tiny, the observed figures disagree by about 50% depending on scope, and Europe's two flagship projects have under-delivered. The DLT Pilot Regime has three licensees after four years, and the register of asset-referenced tokens has been empty since launch.\n\nThe strongest CEE/SEE positions do not depend on tokenization succeeding. They are Pontes onboarding for CSDs (central securities depositories) and bank treasury teams, and correspondent-banking services for the 333 authorised crypto-asset service providers.",
+   "drivers": [
+    "The MiCA-compliant stablecoin category is about USD 74.2bn. USDC is roughly USD 73.5bn of that. All compliant euro tokens together are under 1% ([CoinGecko](https://www.coingecko.com/en/categories/mica-compliant-stablecoin))",
+    "ECB Pontes goes live on 21 Sep 2026 with Clearstream in testing. It extends to 24/7 multi-currency by mid-2028 ([Ledger Insights](https://www.ledgerinsights.com/ecb-targets-21-september-go-live-for-project-pontes-a-primer-on-tokenized-central-bank-money/))",
+    "Qivalis is still unlicensed and unlaunched at 1 Sep 2026, despite 37 member banks including Erste, RBI, UniCredit, Intesa, KBC, NBG and Piraeus. A slip into 2027 is the most likely case ([Ledger Insights](https://www.ledgerinsights.com/qivalis-stablecoin-consortium-adds-25-new-banks/))",
+    "The DLT Pilot Regime has only three authorised infrastructures after four years: CSD Prague, 21X and 360X. CSD Prague is the only licensee in the footprint ([DLA Piper](https://www.dlapiper.com/en-us/insights/publications/2025/07/esma-suggests-amendments-to-the-dlt-pilot-regime-to-make-it-permanent-and-attractive))",
+    "MiCA grandfathering (the transition period under the old rules) closed on 1 Jul 2026 with no extension. Authorised CASPs (crypto-asset service providers) rose to 333 across the EEA. But Poland has 1, and Romania, Hungary and Greece have none on the register ([Outrun](https://outrun.at/micar-dashboard))",
+    "AMLR brings crypto-asset service providers fully into scope as obliged entities from 10 Jul 2027. They must run customer due diligence on one-off transactions above EUR 1,000 ([RapidLEI](https://rapidlei.com/amlr-crypto-casps/))"
+   ],
+   "source_reports": [
+    {
+     "label": "CoinGecko — MiCA-compliant stablecoin category (about 99% USDC by market capitalisation)",
+     "url": "https://www.coingecko.com/en/categories/mica-compliant-stablecoin"
+    },
+    {
+     "label": "RWA.xyz — on-chain real-world assets USD 38.36bn; total stablecoins USD 303.43bn (31 Aug 2026)",
+     "url": "https://app.rwa.xyz/"
+    },
+    {
+     "label": "Ledger Insights — ECB targets 21 September go-live for Project Pontes",
+     "url": "https://www.ledgerinsights.com/ecb-targets-21-september-go-live-for-project-pontes-a-primer-on-tokenized-central-bank-money/"
+    },
+    {
+     "label": "Decta — Euro Stablecoin Trends Report 2026 (compliant euro-stablecoin capitalisation series)",
+     "url": "https://www.decta.com/company/media/euro-stablecoin-trends-report-2026"
+    },
+    {
+     "label": "Outrun — MiCAR dashboard (333 authorised CASPs EEA-wide; per-country counts)",
+     "url": "https://outrun.at/micar-dashboard"
+    }
+   ],
+   "chart": {
+    "title": "MiCA-compliant euro-stablecoin market capitalisation, USD m (like-for-like)",
+    "type": "line",
+    "labels": [
+     "Jun 2025",
+     "Jun 2026",
+     "Sep 2026"
+    ],
+    "series": [
+     {
+      "label": "Compliant euro stablecoins (USD m)",
+      "data": [
+       295.6,
+       673.9,
+       727.0
+      ]
+     }
+    ],
+    "horizontal": false
+   },
+   "oid": 6,
+   "cite_files": [
+    "findings/08-futurist/2026-09-01.md"
+   ]
+  },
+  {
+   "scope": "Open finance: delayed legislation and a shrinking group of licensed providers",
+   "country": "Footprint-wide",
+   "horizon": "2-5 years (2027-2031)",
+   "direction": "mixed",
+   "projected": "Europe's embedded-finance revenue pool (financial services built into non-bank apps) still runs from EUR 20-30bn (2023) to over EUR 100bn by 2030 ([McKinsey](https://www.mckinsey.com/industries/financial-services/our-insights/embedded-finance-how-banks-and-customer-platforms-are-converging)). But the number of licensed providers is falling. The PSD3/PSR re-authorisation deadline has also moved from about 2028 to roughly December 2028. The projected range is October 2028 to April 2029.",
+   "confidence": "Medium",
+   "rationale": "The last edition assumed PSD3/PSR would be adopted in Q2/Q3 2026. That did not happen. Both procedures still read 'awaiting the Council's first-reading position', with an indicative plenary of 14 December 2026. Publication in the Official Journal is therefore most likely in Q1 2027.\n\nThe transition rule also needs correcting. Institutions must apply within 21 months of the law taking effect and may keep operating for up to 27 months. That is not the 24-or-30-month framing we used before.\n\nFIDA is in a worse position still. Its procedure file lacks the committee-approval step that PSD3/PSR has. That is the decisive evidence that no agreed text exists.\n\nTwo signals against the trend belong in any board reading. EEA and UK third-party providers fell from 554 to 547 over three quarters, with more withdrawals than new authorisations. The SEPA Payment Account Access scheme has recorded zero banks on the supply side after four years. Making money from premium APIs is therefore not happening on the voluntary track.\n\nThe MiCA half of the group is the stronger half, and its date is already past. The addressable population in the footprint, leaving out Poland's distorted register, is roughly 465 payment and e-money institutions.",
+   "drivers": [
+    "PSD3 and PSR are not adopted. Both read 'awaiting the Council's 1st reading position', with an indicative plenary of 14 Dec 2026 ([EP Legislative Observatory](https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2023/0210(COD)))",
+    "The transition rule is: apply within 21 months of the law taking effect, and keep operating for up to 27 months. It is not 24 months extendable to 30 ([Council doc 8222/26, Arts. 44-45](https://data.consilium.europa.eu/doc/document/ST-8222-2026-INIT/en/pdf))",
+    "FIDA's procedure file lacks the committee approval of an interinstitutional agreement that PSD3/PSR has. No agreed text exists ([EP Legislative Observatory](https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2023/0205(COD)))",
+    "EEA and UK third-party providers fell from 554 to 552 to 547 over three quarters, with 10 new authorisations against 15 withdrawals ([Konsentus](https://www.konsentus.com/tpp-trackers/q2-2026/))",
+    "The SEPA Payment Account Access scheme still has five participants on the demand side and zero asset holders (banks supplying account access) after four years ([ECB/ERPB](https://www.ecb.europa.eu/paym/groups/erpb/shared/pdf/23th-ERPB-meeting/SEPA_Payment_Account_Access_scheme_status_update.pdf))",
+    "CCD2 (the new consumer credit directive) applies to BNPL (buy now, pay later) from 20 Nov 2026. Ten Member States have not notified any national measures at all, including Bulgaria, Croatia, Cyprus, Poland and Romania ([EUR-Lex NIM](https://eur-lex.europa.eu/legal-content/EN/NIM/?uri=CELEX:32023L2225))",
+    "MiCA grandfathering closed on 1 Jul 2026, and authorised CASPs rose from 199 to 333 between April and August 2026. This is the one half of the group whose deadline is already past ([Outrun](https://outrun.at/micar-dashboard))"
+   ],
+   "source_reports": [
+    {
+     "label": "EP Legislative Observatory — PSR procedure 2023/0210(COD), status and indicative plenary date",
+     "url": "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2023/0210(COD)"
+    },
+    {
+     "label": "Council of the EU — doc 8222/26, PSD3 final compromise text (Arts. 44-45 transitional provisions)",
+     "url": "https://data.consilium.europa.eu/doc/document/ST-8222-2026-INIT/en/pdf"
+    },
+    {
+     "label": "Konsentus — Q2 2026 TPP Tracker (547 providers; withdrawals outrunning authorisations)",
+     "url": "https://www.konsentus.com/tpp-trackers/q2-2026/"
+    },
+    {
+     "label": "EUR-Lex — CCD2 national transposition measures (ten Member States with nothing notified)",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/NIM/?uri=CELEX:32023L2225"
+    },
+    {
+     "label": "McKinsey — Embedded finance: how banks and customer platforms are converging (EUR 100bn+ by 2030)",
+     "url": "https://www.mckinsey.com/industries/financial-services/our-insights/embedded-finance-how-banks-and-customer-platforms-are-converging"
+    }
+   ],
+   "chart": {
+    "title": "Open-banking third-party providers, EEA and UK — the population is shrinking (Konsentus)",
+    "type": "line",
+    "labels": [
+     "Q4 2025",
+     "Q1 2026",
+     "Q2 2026"
+    ],
+    "series": [
+     {
+      "label": "Authorised TPPs",
+      "data": [
+       554,
+       552,
+       547
+      ]
+     }
+    ],
+    "horizontal": false
+   },
+   "oid": 7,
+   "cite_files": [
+    "findings/08-futurist/2026-09-01.md"
+   ]
+  },
+  {
+   "scope": "Core banking modernization: forecast range, vendor fragmentation and regional projects",
+   "country": "Footprint-wide",
+   "horizon": "2-5 years (2027-2031)",
+   "direction": "growth",
+   "projected": "Core banking runs from USD 17.19bn (2025) to USD 29.01bn by 2031 at 9.12% a year on one analyst's numbers. Another analyst puts it at USD 80.65bn by 2034, at 17.4%. That is a roughly 2x gap that public data cannot close, so the honest way to show it is as a range. All sources agree on the mix: services grow at 12.12% CAGR, against solutions ([Mordor](https://www.mordorintelligence.com/industry-reports/core-banking-market)).",
+   "confidence": "Medium",
+   "rationale": "The 'coexistence' statistic from the last edition must be dropped. The '40% of banks by 2026' figure is a 2023 IDC FutureScape prediction, republished in a vendor-sponsored InfoBrief. The '70-80% by 2028' half has no traceable primary source at all.\n\nWhat the evidence does support is the shift in the mix. Services are 36.55% of spend and growing 12.12%. Cloud is 29.8% of deployment and growing 16.7-21.4%. Incremental modernization is already 48.7% of the modernization market. Roughly two-thirds of banking CIOs expect to modernize within one to two years.\n\nThe big structural event of 2026 is fragmentation, not consolidation. Finastra sold three business lines in twelve months and left universal banking entirely, putting 150-plus banks under a private-equity owner. Temenos bought an orchestration layer (software that links systems together) rather than more core. Core, orchestration and experience are now each owned by a different party. This creates an opportunity for vendors that provide integration services.\n\nThe region has proof it can handle both patterns. National Bank of Greece completed a EUR 1bn-plus, five-year Finacle replacement, merging about forty legacy applications into one. Komercni banka finished moving its retail business to Temenos on private cloud on 15 May 2026.",
+   "drivers": [
+    "Finastra sold its universal banking business to Pollen Street Capital: 150-plus clients in 100-plus countries. It was Finastra's third sale of a business in twelve months ([Retail Banker International](https://www.retailbankerinternational.com/news/pollen-street-buy-finastra-banking-software/))",
+    "Accenture is buying IBM's majority stake in the joint venture that runs a large part of UniCredit's technology infrastructure across 13 European markets, including CEE ([FinTech Futures](https://www.fintechfutures.com/core-banking-technology/accenture-to-acquire-ibms-stake-in-unicredit-technology-joint-venture))",
+    "Services grow at 12.12% CAGR, against solutions. Cloud is 29.8% of deployment. Incremental modernization is already 48.7% of the modernization market ([Mordor](https://www.mordorintelligence.com/industry-reports/core-banking-market))",
+    "National Bank of Greece completed a EUR 1bn-plus Finacle core replacement. It merged about 40 legacy applications into one and cut total applications from roughly 1,000 to 250 ([FinTech Futures](https://www.fintechfutures.com/core-banking-technology/national-bank-of-greece-completes-core-banking-transformation-with-infosys-finacle))",
+    "Greece's four systemic banks have announced roughly EUR 4bn of technology spend over several years, including new core banking systems ([pagenews.gr](https://www.pagenews.gr/2026/08/13/epistimi-texnologia/oi-ellinikes-trapezes-rixnoun-e4-dis-sti-nea-epoxi-tou-ai-apo-mobile-banking-stin-trapeza-pou-se-gnorizei/))",
+    "National cloud rules are not all being withdrawn. Only Czechia repealed its cloud guidance in favour of DORA. Hungary reissued its guidance as Recommendation 2/2025, ranking below DORA. Croatia kept its cloud taxonomy. Serbia added a notification gate that requires 30 days' notice before any core-banking migration ([MNB 2/2025](https://www.mnb.hu/letoltes/2-2025-felho-ajanlas.pdf))"
+   ],
+   "source_reports": [
+    {
+     "label": "Mordor Intelligence — Core Banking Market (USD 17.19bn 2025 to 29.01bn 2031; services 12.12% CAGR)",
+     "url": "https://www.mordorintelligence.com/industry-reports/core-banking-market"
+    },
+    {
+     "label": "Fortune Business Insights — Core Banking Software Market (USD 19.30bn 2025 to 80.65bn 2034; Europe USD 6.05bn in 2026)",
+     "url": "https://www.fortunebusinessinsights.com/core-banking-software-market-104392"
+    },
+    {
+     "label": "Retail Banker International — Pollen Street Capital to acquire Finastra's Universal Banking unit",
+     "url": "https://www.retailbankerinternational.com/news/pollen-street-buy-finastra-banking-software/"
+    },
+    {
+     "label": "FinTech Futures — National Bank of Greece completes core banking transformation with Infosys Finacle",
+     "url": "https://www.fintechfutures.com/core-banking-technology/national-bank-of-greece-completes-core-banking-transformation-with-infosys-finacle"
+    },
+    {
+     "label": "MNB — Recommendation 2/2025 on community and public cloud services (replaces 4/2019, subordinate to DORA)",
+     "url": "https://www.mnb.hu/letoltes/2-2025-felho-ajanlas.pdf"
+    }
+   ],
+   "chart": {
+    "title": "Core banking market, USD bn — two houses disagree by ~2x; terminal points are 29.01 (2031, Mordor) vs 80.65 (2034, Fortune BI)",
+    "type": "bar",
+    "labels": [
+     "2025",
+     "2026"
+    ],
+    "series": [
+     {
+      "label": "Mordor",
+      "data": [
+       17.19,
+       18.76
+      ]
+     },
+     {
+      "label": "Fortune Business Insights",
+      "data": [
+       19.3,
+       22.32
+      ]
+     }
+    ],
+    "horizontal": false
+   },
+   "oid": 8,
+   "cite_files": [
+    "findings/08-futurist/2026-09-01.md"
+   ]
+  },
+  {
+   "scope": "Payment acceptance: legal mandates, not technology, drive the terminal estate",
+   "country": "Footprint-wide",
+   "horizon": "2-5 years (2027-2031)",
+   "direction": "strong growth",
+   "projected": "In CEE markets driven by legal mandates, terminal numbers grow at 17-21% a year, against 1-3% in mature markets. The European Accessibility Act removes every non-accessible payment terminal in the EU by 28 June 2030. SoftPOS (card acceptance on a phone) wins the long tail of very small merchants, but does not replace the installed base before 2031 ([ECB Data Portal](https://data-api.ecb.europa.eu/service/data/PTN/A..W2.2222._T.PN?startPeriod=2022&format=csvdata)).",
+   "confidence": "High",
+   "rationale": "A correction comes first. The widely-quoted figure of 25.7m euro-area terminals, up +24.6%, comes from counting terminals supplied by resident payment service providers. Malta alone accounts for 69.3% of the increase, yet fewer than 60,000 machines are actually located there. Counted by where terminals are located, the euro area grew 4.3% in 2025.\n\nWithin that, the CEE split comes from law, not technology. Romania's Law 239/2025 removed the turnover threshold for acceptance entirely from 1 January 2026, forcing roughly 120,000 micro-enterprises to start accepting cards. Slovakia's Act 384/2025 applies from 1 May 2026. Greece required instant-payment acceptance at all points of sale from 1 December 2025.\n\nSoftPOS should be sized honestly. It is about 1% of Tatra banka's card-present volume and 11% of Ukraine's terminal estate, the only official series any central bank in the footprint publishes. We therefore expect it to take 15-20% of new micro-merchant sign-ups by 2027, not of the whole estate.\n\nTwo dated duties create genuinely new work. The first is the wave of accessibility replacements. The second is AFIR's rule on charging points. Every publicly accessible charger of 50 kW or more must accept card or contactless payment from 1 January 2027. This includes chargers installed before 2024.",
+   "drivers": [
+    "The European Accessibility Act bans non-compliant payment terminals from 28 Jun 2030. But it lets self-service terminals run to the end of their economic life, for up to 20 years. This puts the whole POS estate, and not the ATM estate, on a replacement clock ([Dir. 2019/882, Art. 32](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32019L0882))",
+    "AFIR Art. 5 requires card readers or contactless devices on all publicly accessible charging points of 50 kW or more from 1 Jan 2027. This expressly includes those installed before 13 April 2024 ([Reg. (EU) 2023/1804](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R1804))",
+    "Legal acceptance mandates drive demand. Romania's Law 239/2025 removed the turnover threshold entirely from 1 Jan 2026. Slovakia's Act 384/2025 applies from 1 May 2026. Greece required instant-payment acceptance at all points of sale from 1 Dec 2025, across roughly 1.2m terminals",
+    "The resulting CEE split is wide. Over 2021-2025, terminals located in-country grew at 21.4% CAGR in Romania, 18.5% in Slovakia and 17.3% in Bulgaria. That compares with 7.3% in Croatia, 2.5% in Czechia and 2.1% in Hungary ([ECB Data Portal](https://data-api.ecb.europa.eu/service/data/PTN/A..W2.2222._T.PN?startPeriod=2022&format=csvdata))",
+    "SoftPOS reality check: it is about 1% of Tatra banka's card-present volume and 11% of Ukraine's terminal estate. Compare that with transaction-value forecasts running from USD 23.9bn (2025) to USD 540bn by 2030 ([Juniper](https://www.juniperresearch.com/press/soft-pos-transactions-to-accelerate-by-2150/))",
+    "Merchant behaviour is moving faster than merchant hardware. Mobile-payment acceptance in the euro area went from 36% to 68% of companies in two years, while cash acceptance rose from 90% to 92% ([ECB](https://www.ecb.europa.eu/press/use-of-cash/html/ecb.uccea202608.en.html))",
+    "The hardware supply chain is becoming unstable. Ingenico's 2025 sales fell 10%. Worldline's hardware contract expires in 2027. PAX warned of rising memory-chip costs, with Android now 75% of its revenue ([PAX Global](https://www.paxglobal.com.hk/en/latest-news/pax-global-announces-2026-interim-results/))"
+   ],
+   "source_reports": [
+    {
+     "label": "EUR-Lex — Directive (EU) 2019/882 (European Accessibility Act), Art. 32 transitional measures",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32019L0882"
+    },
+    {
+     "label": "EUR-Lex — Regulation (EU) 2023/1804 (AFIR), Art. 5 payment-terminal requirements from 1 Jan 2027",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R1804"
+    },
+    {
+     "label": "ECB Data Portal — dataflow PTN, POS terminals located in the reporting country (the honest series)",
+     "url": "https://data-api.ecb.europa.eu/service/data/PTN/A..W2.2222._T.PN?startPeriod=2022&format=csvdata"
+    },
+    {
+     "label": "ECB — Use of cash by companies in the euro area 2026 (mobile acceptance 36% to 68%; cash acceptance 90% to 92%)",
+     "url": "https://www.ecb.europa.eu/press/use-of-cash/html/ecb.uccea202608.en.html"
+    },
+    {
+     "label": "Juniper Research — SoftPOS transactions to accelerate by 2,150% (USD 23.9bn 2025 to 540bn 2030)",
+     "url": "https://www.juniperresearch.com/press/soft-pos-transactions-to-accelerate-by-2150/"
+    },
+    {
+     "label": "Worldline — H1 2026 results (Merchant Services +2.0% organic; momentum in Greece and CEE; selected for the ECB digital-euro pilot)",
+     "url": "https://investors.worldline.com/en/home/news-events/financial-press-releases/2026/pr-2026_07_30_01"
+    }
+   ],
+   "chart": {
+    "title": "POS terminals located in country: compound annual growth 2021-2025 (%) — ECB dataflow PTN",
+    "type": "bar",
+    "labels": [
+     "Romania",
+     "Slovakia",
+     "Bulgaria",
+     "Croatia",
+     "Slovenia",
+     "Greece",
+     "Czechia",
+     "Hungary"
+    ],
+    "series": [
+     {
+      "label": "CAGR 2021-2025 (%)",
+      "data": [
+       21.4,
+       18.5,
+       17.3,
+       7.3,
+       6.6,
+       4.8,
+       2.5,
+       2.1
+      ]
+     }
+    ],
+    "horizontal": true
+   },
+   "oid": 9,
+   "cite_files": [
+    "findings/08-futurist/2026-09-01.md"
+   ]
+  },
+  {
+   "scope": "Western Balkans: instant payment systems funded by donor programmes",
+   "country": "Serbia, Albania, North Macedonia, Montenegro, Kosovo, Bosnia and Herzegovina",
+   "horizon": "2-5 years (2027-2031)",
+   "direction": "strong growth",
+   "projected": "By 2028, almost every one of the 17 footprint markets will be either inside SEPA instant or running on TIPS Clone (a copy of the ECB's instant payment platform). The open question is therefore who runs and maintains these systems, not whether the region gets instant payments. The pace is set by how fast money is paid out, not by demand. Only about EUR 673.6m of the roughly EUR 5.9bn Reform and Growth Facility had been released by May 2026 ([European Western Balkans](https://europeanwesternbalkans.com/2026/05/20/commission-releases-158-9-million-euros-to-albania-montenegro-and-north-macedonia/)).",
+   "confidence": "Medium",
+   "rationale": "This is the clearest brand-new infrastructure demand in the footprint, and it came faster than expected. TIPS Clone went live on 20 July 2026. Montenegro connected all eleven of its banks on day one. Bosnia connected three banks, holding about a quarter of the sector's assets. Albania, Kosovo and North Macedonia follow in the November 2026 window.\n\nThe builds are paid for by donors, so they show up in public tenders. Montenegro's is funded partly through an EUR 8m World Bank loan and Bosnia's through EUR 2m of EU money.\n\nThe measured benefit is large. Montenegro's average cross-border transaction cost fell from EUR 73.40 to EUR 6.15. The central bank and the ECB put the combined benefit of SEPA and TIPS Clone at about 2.3% of GDP a year.\n\nThe real limit is how much money countries can absorb and the reform conditions attached, not appetite. EUR 330m is already in play to be moved to the front-runners, and Bosnia has lost EUR 108.4m.\n\nOne detail matters for timing. Every Western Balkan country has gone live on SEPA credit transfers only. The trigger to watch for Verification of Payee work is therefore joining SCT Inst, which VoP 2.0 opens to non-EEA participants from November 2027.",
+   "drivers": [
+    "TIPS Clone went live on 20 Jul 2026 for Montenegro (all 11 banks) and Bosnia (3 banks, about 25% of sector assets). Albania, Kosovo and North Macedonia follow in the Nov 2026 window ([Banca d'Italia](https://www.bancaditalia.it/media/notizia/tips-clone-platform-for-instant-payments-in-the-western-balkans-goes-live/))",
+    "Montenegro's average cross-border transaction cost fell from EUR 73.40 to EUR 6.15. The combined benefit of SEPA and TIPS Clone is estimated at about 2.3% of GDP a year ([World Bank](https://www.worldbank.org/en/news/feature/2026/03/25/cheaper-and-faster-payments-sepa-opens-new-horizons-for-the-western-balkans))",
+    "Serbia started using the SEPA schemes on 5 May 2026 with about 18 banks. This covers credit transfers only. SCT Inst (instant transfers) is still to come ([Association of Serbian Banks](https://www.ubs-asb.com/en/news/1758-as-of-5-may-2026-serbia-operationally-accesses-sepa-payment-schemes))",
+    "Only about EUR 673.6m of the roughly EUR 5.9bn Reform and Growth Facility had been released by May 2026. EUR 330m is in play to be moved to the front-runners. Bosnia has already lost EUR 108.4m ([European Western Balkans](https://europeanwesternbalkans.com/2026/05/20/commission-releases-158-9-million-euros-to-albania-montenegro-and-north-macedonia/))",
+    "North Macedonia is the only Western Balkans country whose latest funding tranche is clearly for digital work. It also makes IBAN mandatory for all domestic payments from 1 Nov 2026",
+    "There is a lot of room for card acceptance to grow, and it can be measured. In Kosovo, cash still beats cards 2.5 to 1 by value, even though 99.6% of its 33,853 terminals can take contactless. Montenegro recorded its first ever quarter where card value was higher than ATM withdrawals ([Central Bank of Kosovo](https://bqk-kos.org/repository/docs/SistemiIPagesave/Raport%20Mujor.xlsx))",
+    "VoP 2.0 is published on 27 Nov 2026 and goes live in Nov 2027. It carries the change request that lets non-EEA PSPs join the scheme. This is how these markets enter the Verification of Payee perimeter"
+   ],
+   "source_reports": [
+    {
+     "label": "Banca d'Italia — TIPS Clone platform for instant payments in the Western Balkans goes live (20 Jul 2026)",
+     "url": "https://www.bancaditalia.it/media/notizia/tips-clone-platform-for-instant-payments-in-the-western-balkans-goes-live/"
+    },
+    {
+     "label": "World Bank — Cheaper and faster payments: SEPA opens new horizons for the Western Balkans",
+     "url": "https://www.worldbank.org/en/news/feature/2026/03/25/cheaper-and-faster-payments-sepa-opens-new-horizons-for-the-western-balkans"
+    },
+    {
+     "label": "Central Bank of Bosnia and Herzegovina — domestic instant payments go live",
+     "url": "https://www.cbbh.ba/press/ShowNews/1798?lang=en"
+    },
+    {
+     "label": "European Western Balkans — Commission releases EUR 158.9m to Albania, Montenegro and North Macedonia",
+     "url": "https://europeanwesternbalkans.com/2026/05/20/commission-releases-158-9-million-euros-to-albania-montenegro-and-north-macedonia/"
+    },
+    {
+     "label": "Association of Serbian Banks — Serbia operationally accesses the SEPA payment schemes (5 May 2026)",
+     "url": "https://www.ubs-asb.com/en/news/1758-as-of-5-may-2026-serbia-operationally-accesses-sepa-payment-schemes"
+    }
+   ],
+   "chart": {
+    "title": "Reform and Growth Facility: allocation vs released to May 2026 (EUR m)",
+    "type": "bar",
+    "labels": [
+     "Serbia",
+     "Bosnia & Herz.",
+     "Albania",
+     "Kosovo",
+     "North Macedonia",
+     "Montenegro"
+    ],
+    "series": [
+     {
+      "label": "Allocation",
+      "data": [
+       1700,
+       1100,
+       981.3,
+       939.2,
+       798.6,
+       408.1
+      ]
+     },
+     {
+      "label": "Released by May 2026",
+      "data": [
+       0,
+       0,
+       212.8,
+       0,
+       142.1,
+       89.3
+      ]
+     }
+    ],
+    "horizontal": true
+   },
+   "oid": 10,
+   "cite_files": [
+    "findings/08-futurist/2026-09-01.md"
+   ]
+  },
+  {
+   "scope": "Cash and self-service: fewer ATMs, rising cash in circulation, growth in deposit automation",
+   "country": "Footprint-wide (CEE/SEE lagging the West-EU curve)",
+   "horizon": "2-5 years (2027-2031)",
+   "direction": "mixed",
+   "projected": "The number of ATMs located in the euro area fell from 277,612 (2021) to 245,619 (2025), about -2% a year. But the stock of cash keeps growing, and value is moving into deposit automation and managed services. ATM managed services roughly double from USD 9.13bn (2025) to USD 21.26bn by 2035 ([Precedence](https://www.precedenceresearch.com/atm-managed-services-market)). This is a stable base to make more efficient, but it is unlikely to be the main source of growth.",
+   "confidence": "High",
+   "rationale": "The key fact is a split, not a decline. Cash in circulation keeps rising: euro area +2.4 to 2.9%, Romania +5.8%, Hungary +5.7%, Czechia +2.8%, Ukraine +12.9%, North Macedonia +12.3% and Bosnia +8.6%. At the same time, withdrawal volumes fall and machine numbers ease. A stable or growing stock of cash is therefore served by fewer, smarter machines that can take deposits.\n\nThe ECB's 2026 company survey confirms the floor. Cash acceptance rose from 90% to 92%, and the decline 'has paused'. That makes running both cash and card rails a permanent cost, not a passing one.\n\nCEE is truly split rather than growing evenly. Over 2021-2025, Greece was +29.4%, Hungary +14.6% and Romania +9.9%, against Croatia -18.7%, Slovakia -13.9% and Slovenia -12.3%. Greece's growth is in self-service machines that do not pay out cash: only 6,132 of its 7,421 machines dispense cash. Vendor results confirm that the value has moved into services rather than into unit numbers.\n\nTwo cautions apply. The widely-quoted global figures have had no 2026 update, and the 2.9m base is now 14 months old. The July claim that Euronet extended outsourced ATM management into Romania and Bulgaria could not be confirmed and has been withdrawn.",
+   "drivers": [
+    "ATMs located in the euro area fell from 277,612 (2021) to 245,619 (2025), about -2% a year. But CEE is split: Greece +29.4% and Hungary +14.6%, against Croatia -18.7% and Slovakia -13.9% ([ECB Data Portal](https://data-api.ecb.europa.eu/service/data/PTN/A..W2.2222._T.PN?startPeriod=2022&format=csvdata))",
+    "Cash in circulation keeps growing while withdrawals fall. The euro area grew +2.4 to 2.9% to about EUR 1.61-1.64trn in July 2026. Ukraine, at +12.9%, is the fastest in the footprint ([ECB](https://www.ecb.europa.eu/press/stats/md/html/ecb.md2607~e7127e7d02.en.html))",
+    "The share of euro-area companies that accept cash rose from 90% to 92%. The ECB says the decline 'has paused' ([ECB](https://www.ecb.europa.eu/press/use-of-cash/html/ecb.uccea202608.en.html))",
+    "The value has moved away from the machine itself. NCR Atleos ATM-as-a-Service revenue rose 24% to USD 77m, while the number of managed units stayed flat at 77,000. Brink's logged a 14th quarter in a row of mid-teens or better organic growth in its ATM and cash-recycling services ([NCR Atleos Q2 2026](https://www.sec.gov/Archives/edgar/data/1974138/000197413826000014/ex-991ncratleosearningsrel.htm))",
+    "Deposit automation is where the growth is. Diebold Nixdorf shipped a record number of teller cash recyclers (machines that re-use deposited notes). Glory's Europe revenue rose 27.1%, which it puts down to recyclers sold to postal operators replacing closed bank branches ([Glory, pp.5-6](https://pdf.irpocket.com/C6457/xoA3/ieAo/sKew/uBCV.pdf))",
+    "Supplier concentration is not settled. The UK CMA opened a Phase 1 inquiry into Brink's/NCR Atleos on 26 Aug 2026, with a 22 Oct deadline. That came three weeks after both companies said they expected a faster close in early Q1 2027 ([CMA](https://www.gov.uk/cma-cases/the-brinks-company-slash-ncr-atleos-corporation-merger-inquiry))",
+    "The accessibility rules protect the installed ATM base. Member States may let self-service terminals run to the end of their economic life, for up to 20 years. Non-compliant POS terminals must go by 28 Jun 2030 ([Dir. 2019/882, Art. 32](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32019L0882))"
+   ],
+   "source_reports": [
+    {
+     "label": "ECB Data Portal — dataflow PTN, ATMs located in the reporting country, 2021-2025",
+     "url": "https://data-api.ecb.europa.eu/service/data/PTN/A..W2.2222._T.PN?startPeriod=2022&format=csvdata"
+    },
+    {
+     "label": "ECB — Use of cash by companies in the euro area 2026 (acceptance up 90% to 92%)",
+     "url": "https://www.ecb.europa.eu/press/use-of-cash/html/ecb.uccea202608.en.html"
+    },
+    {
+     "label": "Precedence Research — ATM Managed Services Market, USD 9.13bn (2025) to 21.26bn (2035), 8.82% CAGR",
+     "url": "https://www.precedenceresearch.com/atm-managed-services-market"
+    },
+    {
+     "label": "NCR Atleos — Q2 2026 results (ATMaaS revenue USD 77m, +24%; managed units flat at 77,000)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1974138/000197413826000014/ex-991ncratleosearningsrel.htm"
+    },
+    {
+     "label": "Glory — Q1 FY3/2027 results (Europe +27.1% on recyclers for postal operators replacing bank branches)",
+     "url": "https://pdf.irpocket.com/C6457/xoA3/ieAo/sKew/uBCV.pdf",
+     "page": 5
+    },
+    {
+     "label": "UK Competition and Markets Authority — Brink's / NCR Atleos merger inquiry (Phase 1 deadline 22 Oct 2026)",
+     "url": "https://www.gov.uk/cma-cases/the-brinks-company-slash-ncr-atleos-corporation-merger-inquiry"
+    },
+    {
+     "label": "Datos Insights — global ATM base about 2.9m, -2%/yr (last refreshed 9 Jul 2025; now 14 months stale)",
+     "url": "https://datos-insights.com/press-release/advanced-terminals-and-emerging-markets-reshape-global-atm-landscape/"
+    }
+   ],
+   "chart": {
+    "title": "Euro-area ATMs located in the reporting country (16 consistent reporters)",
+    "type": "line",
+    "labels": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "series": [
+     {
+      "label": "ATMs",
+      "data": [
+       277612,
+       263690,
+       257535,
+       249962,
+       245619
+      ]
+     }
+    ],
+    "horizontal": false
+   },
+   "oid": 11,
+   "cite_files": [
+    "findings/08-futurist/2026-09-01.md"
+   ]
+  }
+ ]
+}

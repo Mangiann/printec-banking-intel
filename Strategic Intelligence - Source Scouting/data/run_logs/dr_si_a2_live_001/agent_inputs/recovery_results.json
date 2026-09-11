@@ -1,0 +1,82 @@
+[
+ {
+  "candidate_id": "dr_si_a2_live_001__c_003",
+  "source_url": "https://ejn.gov.si/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a2_live_001__c_008",
+  "source_url": "http://www.djn.mju.gov.si/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://ejn.gov.si/",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_si_a2_live_001__c_125",
+  "source_url": "https://ejn.gov.si/direktorat/porocila-in-analize.html",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a2_live_001__c_164",
+  "source_url": "https://ejn.gov.si/en/novice/novica-101.html",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a2_live_001__c_187",
+  "source_url": "https://ejn.gov.si/sistem/smernice-in-priporocila.html",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a2_live_001__c_209",
+  "source_url": "https://portalefornitori.intesasanpaolo.com/scriptPfor0/PortaleFornitori/fo/Generale/index.do",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://portalefornitori.intesasanpaolo.com/auth/form8.fcc?APPCTX=PFOR0&TYPE=33554432&REALMOID=06-d30967b4-0bbf-4e03-9460-57e5d3630683&GUID=&SMAUTHREASON=0&METHOD=GET&SMAGENTNAME=agent-pfor0&TARGET=$SM$https%3a%2f%2fportalefornitori%2eintesasanpaolo%2ecom%2fscriptPfor0%2fPortaleFornitori%2ffo%2fGenerale%2findex%2edo",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_si_a2_live_001__c_211",
+  "source_url": "https://www.bancaintesa.rs/en/stanovnistvo/portal-dobavljaca.html",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a2_live_001__c_221",
+  "source_url": "https://www.bsi.si/sl/nadzor-bancnega-sistema/register-subjektov-nadzora",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ }
+]

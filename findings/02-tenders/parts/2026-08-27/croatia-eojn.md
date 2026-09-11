@@ -1,0 +1,178 @@
+# Croatia — EOJN (eojn.hr) — Agent 2 Tenders & Procurement
+
+Run date 27/08/2026 · slug `croatia-eojn` · status **complete** · 19 signals
+
+## Headlines
+
+- **HNB plan v18 dated 24/08/2026** (fetched + pdfminer-extracted) reveals five cash-processing lines invisible on TED, led by **V-34/2026 'Nabava i odrzavanje sustava za obradu novcanica', est. EUR 1,800,000, open procedure, Q4 2026**.
+- **FINA coin counters (EUR 400,000) NOT AWARDED** — TED 435583-2026, one bid received, all tenders rejected (`clos-nw` / `all-rej`). Best near-term Printec opening in Croatia.
+- **EUROKOD PISACIC d.o.o.** now holds both FINA teller cash equipment (EUR 479,819.40) and an HNB cash-centre contract (EUR 152,937.79) — the Croatian cash-service incumbent.
+- **CROZ d.o.o.** won FINA's network HSMs, EUR 299,849.73 — a direct loss against Printec's Thales payShield line.
+- **CPS Service and Support Limited (London, no. 14593464)** is the HNB CPS 7000i banknote-processing incumbent.
+- **eojn.hr** loads with a desktop UA but is an SPA with a 401 API — the buyer procurement-plan PDF is the only reliable forward-looking route for Croatia.
+
+## Signals
+
+### 1. Hrvatska narodna banka (HNB — Croatian National Bank) — L
+
+- **Signal:** NEW. HNB procurement plan version 18, adopted 24/08/2026, carries plan line 0200, ref V-34/2026, 'Nabava i odrzavanje sustava za obradu novcanica' (SUPPLY AND maintenance of a banknote-processing system), estimated EUR 1,800,000 (Croatian plan estimates are stated excl. VAT), open procedure, planned start Q4 2026, 12-month contract, CPV 50530000. This is the largest cash-automation line in the Croatian public sector this year and is a supply line, not a service renewal. No notice on TED or EOJN as at 27/08/2026.
+- **Source:** [HNB — Plan nabave za 2026., v18 (PDF, text extracted locally with pdfminer)](https://www.hnb.hr/documents/20182/121306/h-plan-nabave-hnb-2026.pdf) · 24/08/2026 · *primary*
+- **Implies:** Direct fit for Printec cash automation and banknote processing (Glory / Sesami / Consillion counting and sorting lines) plus the managed-service wrap (500+ field engineers, 100+ service points). Supply+maintenance at a central bank is a multi-year annuity.
+- **Likelihood:** Notice likely published Q4 2026 per the plan; award H1 2027 · **Confidence:** Medium · **Win:** Medium · **Deadline:** — · **New:** True
+- **Follow-up:** Watch EOJN and TED for the V-34/2026 notice from October 2026; engage HNB Direkcija za gotov novac before the technical specification is frozen.
+
+### 2. Hrvatska narodna banka (HNB) — M
+
+- **Signal:** INCUMBENT IDENTIFIED, NEW. The maintenance contract for HNB's CPS 7000i banknote processing-and-destruction system was modified on 24/04/2026 at EUR 210,100.05 — TED notice 282014-2026 (can-modif), CPV 50530000. The contractor is CPS SERVICE AND SUPPORT LIMITED, London, United Kingdom, company number 14593464. Scope per the notice: preventive and corrective servicing plus spare parts for the CPS 7000i. The parallel open procedure TED 236172-2026 (published 07/04/2026, est. EUR 175,000, bids due 06/05/2026) has NO award notice as at 27/08/2026 — status unverified this run. Separately HNB plan line 0123, ref V-13/2026, buys 'senzore 3. razine za provjeru autenticnosti novcanica za veliki sustav za sortiranje (CPS, G+D ili slican)' (level-3 banknote-authentication sensors for the large sorting system, the plan text naming CPS, G+D or similar), est. EUR 264,000, negotiated procedure WITHOUT prior call for competition (a direct award, allowed only where one supplier can perform), Q4 2026, 6 months.
+- **Source:** [TED notice 282014-2026 (XML parsed for the contractor entity) plus HNB Plan nabave 2026 v18](https://ted.europa.eu/en/notice/282014-2026/xml) · 24/04/2026 · *primary*
+- **Implies:** HNB's high-speed banknote estate is locked to the CPS 7000i platform and its UK service company, and the level-3 sensor refresh is being direct-awarded. Printec/Glory cannot displace the installed CPS line; the realistic entries are the OPEN V-34/2026 supply line and the mid-size sorters below.
+- **Likelihood:** Direct award on V-13/2026 highly likely · **Confidence:** Medium · **Win:** Low · **Deadline:** — · **New:** True
+- **Follow-up:** Confirm the named beneficiary when the V-13/2026 VEAT or award notice appears; use the single-source pattern as displacement evidence when bidding V-34/2026.
+
+### 3. Hrvatska narodna banka (HNB) — S
+
+- **Signal:** NEW, three cash-equipment PURCHASE lines added in HNB plan v18 (24/08/2026): line 0481 ref M-24/2026 'Nabava uredaja za sortiranje i pakiranje novcanica u paketice i sveznjeve' (banknote sorting and packet/bundle packaging device), est. EUR 60,000, open procedure, Q3 2026, 1 year, CPV 42990000; line 0482 ref P-407/2026 'Nabava uredaja za sortiranje novcanica (srednja velicina)' (mid-size banknote sorter), est. EUR 26,000, 'jednostavna nabava' (simple below-threshold procurement, invitation-based, never published on TED); line 0483 ref V-53/2026 'Nabava sustava za izvlacenje izrezanih novcanica - lokacija THV' (shredded-banknote extraction system at the THV site), est. EUR 240,000, open procedure, Q4 2026. Ref codes mapped line-by-line from the plan table, not inferred.
+- **Source:** [HNB — Plan nabave za 2026., v18](https://www.hnb.hr/documents/20182/121306/h-plan-nabave-hnb-2026.pdf) · 24/08/2026 · *primary*
+- **Implies:** M-24/2026 and P-407/2026 are directly biddable mid-range banknote counting/sorting hardware (Glory / Consillion class) at a size where Printec's local service network decides the award. P-407/2026 will never surface on TED — it must be chased on EOJN or directly with HNB.
+- **Likelihood:** Q3-Q4 2026 publication per the plan · **Confidence:** Medium · **Win:** Medium · **Deadline:** — · **New:** True
+- **Follow-up:** Ask HNB procurement to be added to the P-407/2026 invitation list; monitor EOJN for M-24/2026 and V-53/2026 notices.
+
+### 4. FINA (Financijska agencija — Croatian Financial Agency, state-owned operator of payment, register and counter services) — M
+
+- **Signal:** NOT AWARDED — A REAL OPENING, NEW. FINA's open procedure 'Brojaci kovanica' (COIN COUNTERS), CPV 30123620, estimated EUR 400,000, closed with NO winner. TED notice 435583-2026 published 25/06/2026: the XML records winner-selection-status 'clos-nw' (closed, no winner) with non-award justification 'all-rej' (all tenders rejected). Exactly ONE tender was received, from an SME, and it was rejected. Award criteria were price plus a warranty-period criterion worth up to 30 points. No re-tender has appeared on TED as at 27/08/2026 (CPV 30123620/30123600/42990000/50530000 sweep for HRV from 01/06/2026 returns nothing).
+- **Source:** [TED notice 435583-2026 (result notice, XML parsed)](https://ted.europa.eu/en/notice/435583-2026/xml) · 25/06/2026 · *primary*
+- **Implies:** FINA still needs coin counters and the market failed to supply a compliant bid — the single best near-term Printec cash-automation entry in Croatia. Glory / Consillion coin counting and sorting maps directly, and Printec's 100+ service points answer the warranty/serviceability criterion that likely sank the single bidder.
+- **Likelihood:** Re-tender expected H2 2026 / early 2027 given FINA's operational need · **Confidence:** Medium · **Win:** High · **Deadline:** — · **New:** True
+- **Follow-up:** Contact FINA procurement now for the technical specification of the failed 435583-2026 procedure and the reason the sole bid was rejected; be ready for the re-tender.
+
+### 5. FINA (Croatian Financial Agency) — M
+
+- **Signal:** AWARD, NEW. 'Servisiranje i odrzavanje blagajnicke opreme' (servicing and maintenance of teller/cashier cash-handling equipment), TED notice 528363-2026 published 30/07/2026, CPV 50310000, awarded value EUR 479,819.40. WINNER: EUROKOD PISACIC d.o.o. (Croatia). The same firm also won HNB's 'Odrzavanje sustava za izvlacenje izrezanih novcanica' (shredded-banknote extraction system maintenance), TED 234073-2026, EUR 152,937.79, published 07/04/2026.
+- **Source:** [TED notices 528363-2026 and 234073-2026](https://ted.europa.eu/en/notice/528363-2026/pdf) · 30/07/2026 · *primary*
+- **Implies:** EUROKOD PISACIC d.o.o. is emerging as THE Croatian cash-equipment service incumbent, holding both the FINA teller estate and an HNB cash-centre contract. It is the competitor to displace or partner with for any Printec cash-automation service play in Croatia, and it is first-class Agent-6 material.
+- **Likelihood:** Contracts running; renewals are the openings · **Confidence:** Medium · **Win:** Low · **Deadline:** — · **New:** True
+- **Follow-up:** Profile EUROKOD PISACIC d.o.o. (OIB/registration, headcount, brand agencies); establish the contract terms and expiry dates on both awards.
+
+### 6. FINA (Croatian Financial Agency) — M
+
+- **Signal:** AWARD, NEW — HSM competitor win. 'Mrezni HSM uredaji za e-servise' (network hardware security modules for e-services; an HSM is the tamper-proof box that guards cryptographic and payment keys), TED notice 481019-2026 published 13/07/2026, CPV 31731100, tendered estimate EUR 300,000, awarded value EUR 299,849.73. WINNER: CROZ d.o.o. (Croatian systems integrator). Notice 297592-2026 was the call, published 30/04/2026, bids due 29/05/2026.
+- **Source:** [TED notices 481019-2026 (award) and 297592-2026 (call)](https://ted.europa.eu/en/notice/481019-2026/pdf) · 13/07/2026 · *primary*
+- **Implies:** Direct hit on Printec's Thales payShield HSM / PCI-PIN / remote key injection line, lost to a local integrator. FINA is the Croatian PKI and e-service backbone, so this sets the key-management incumbency for the next refresh cycle.
+- **Likelihood:** Contract awarded; next refresh 3-5 years · **Confidence:** Medium · **Win:** Low · **Deadline:** — · **New:** True
+- **Follow-up:** Establish which HSM brand CROZ supplied (Thales, Utimaco or Entrust) — if Thales, Printec has a partner-conflict/partner-opportunity to work through rather than around.
+
+### 7. FINA (Croatian Financial Agency) — M
+
+- **Signal:** AWARDS, NEW — instant payments. 'Usluge odrzavanja i podrske radu platnog sustava za obracun instant kreditnih transfera' (maintenance and support of the instant credit transfer clearing system), TED notice 573513-2026 published 19/08/2026, CPV 72267000, awarded value EUR 290,160, WINNERS: Kodilion d.o.o. and KodeLab d.o.o. Companion award for the non-instant leg, 'platni sustavi za obracun kreditnih transfera i izravnih terecenja' (credit transfer and direct debit clearing systems), TED 446999-2026 published 30/06/2026, EUR 227,472, WINNERS: TIS GRUPA d.o.o. and NEOS d.o.o.
+- **Source:** [TED notices 573513-2026 and 446999-2026](https://ted.europa.eu/en/notice/573513-2026/pdf) · 19/08/2026 · *primary*
+- **Implies:** Croatia's national instant-payment and clearing rails are maintained by small local software houses on sub-EUR-300k contracts, not by an international vendor. That is the competitive shape Printec's payments-modernization line (instant payments, ISO 20022) must fit: low ticket, local delivery, incumbent-held.
+- **Likelihood:** Contracts running · **Confidence:** Medium · **Win:** Low · **Deadline:** — · **New:** True
+- **Follow-up:** Map Kodilion, KodeLab, TIS GRUPA and NEOS as potential local delivery partners rather than pure competitors for ISO 20022 / instant-payments work.
+
+### 8. FINA / FINA gotovinski servisi d.o.o. — Unscoped
+
+- **Signal:** INSOURCING SIGNAL, NEW. FINA awarded both of its 2026 cash-logistics contracts to its own subsidiary FINA gotovinski servisi d.o.o.: 'Usluga pohrane gotovog novca' (cash storage service), TED 399255-2026 published 11/06/2026, CPV 63122000, EUR 2,003,999; and 'Usluga prijevoza vrijednosnih posiljki oklopljenim vozilima' (transport of valuables in armoured vehicles, i.e. cash-in-transit), TED 424518-2026 published 19/06/2026, CPV 60100000, EUR 635,999.20. Both awarded values sit within EUR 1 of the published estimates, consistent with in-house allocation rather than open competition.
+- **Source:** [TED notices 399255-2026 and 424518-2026](https://ted.europa.eu/en/notice/399255-2026/pdf) · 19/06/2026 · *primary*
+- **Implies:** Croatia's cash-in-transit adjacency at FINA is closed — a captive subsidiary holds it. Printec's CIT adjacency in Croatia has to come through the equipment and automation layer (recyclers, TCRs, cash optimisation such as NCR APTRA OptiCash) rather than the logistics contract.
+- **Likelihood:** Structural; unlikely to reopen · **Confidence:** Medium · **Win:** Low · **Deadline:** — · **New:** True
+- **Follow-up:** Position OptiCash-style cash-cycle optimisation to FINA gotovinski servisi d.o.o. as the operator, not to FINA as the buyer.
+
+### 9. Hrvatska narodna banka (HNB) — L
+
+- **Signal:** STATUS OF CARRIED BASELINE ITEM — STILL OPEN, deadline confirmed. 'Prosirenje backup sustava' (backup-system expansion), TED notice 528514-2026 published 30/07/2026, CPV 48000000, estimated EUR 1,200,000 excl. VAT, bids due 01/09/2026 11:00. This maps to plan line 0125, ref V-15/2026 (est. EUR 1,200,000, open procedure, Q2 start, 1 year) — ref-to-line mapping taken from the plan table.
+- **Source:** [TED notice 528514-2026 and HNB Plan nabave 2026 v18 line 0125](https://ted.europa.eu/en/notice/528514-2026/pdf) · 30/07/2026 · *primary*
+- **Implies:** Infrastructure rather than a payments product, so an adjacency at best (operational resilience / DORA framing). Value as a relationship and DORA-compliance entry point at the central bank.
+- **Likelihood:** Closes 01/09/2026 · **Confidence:** Medium · **Win:** Low · **Deadline:** 01/09/2026 · **New:** True
+- **Follow-up:** Capture the winner after 01/09/2026 — it will identify HNB's preferred infrastructure integrator ahead of the V-34/2026 cash-processing tender.
+
+### 10. Hrvatska narodna banka (HNB) — L
+
+- **Signal:** COMPETITOR LOCK-IN, NEW. INsig2 d.o.o. has now taken three consecutive HNB technical-protection contracts: 'Unapredenje i obnova sustava tehnicke zastite' TED 68849-2026, EUR 468,711.98, 30/01/2026; 'Odrzavanje sustava tehnicke zastite' TED 181768-2026, EUR 592,927.26, 16/03/2026; and 'Nadogradnja sustava tehnicke zastite HNB-a, projekt sanacije vlage na lokaciji J17' TED 533955-2026, EUR 241,801.01, 03/08/2026 (preceded by VEAT 481618-2026 on 13/07/2026 — a voluntary ex-ante transparency notice signalling a direct award). The J17 award matches plan line 0513, ref V-55/2026, est. EUR 241,900. Still to come in plan v18: line 0124 ref V-14/2026 'Unapredenje i obnova sustava tehnicke zastite' EUR 613,200, negotiated without prior call, Q4 2026; line 0177 ref V-26/2026 'Odrzavanje sustava tehnicke zastite' EUR 900,000, negotiated without prior call, Q1; line 0122 ref V-12/2026 technical protection at the Ban centar building, EUR 200,000, Q4.
+- **Source:** [TED notices 68849-2026, 181768-2026, 533955-2026, 481618-2026; HNB Plan nabave 2026 v18](https://ted.europa.eu/en/notice/533955-2026/pdf) · 03/08/2026 · *primary*
+- **Implies:** HNB's physical/technical security stack is a closed INsig2 estate procured almost entirely by negotiated procedure without prior call. Printec's physical ATM security and branch-security lines have no realistic route in at HNB; the effort belongs at commercial banks and Hrvatska posta instead.
+- **Likelihood:** V-14 and V-26 near-certain direct awards to the incumbent · **Confidence:** Medium · **Win:** Low · **Deadline:** — · **New:** True
+- **Follow-up:** Log INsig2 d.o.o. for Agent 6 as the Croatian central-bank security incumbent; do not spend pre-sales effort on V-14/2026 or V-26/2026.
+
+### 11. HP - Hrvatska posta d.d. (Croatian Post) — L
+
+- **Signal:** STATUS OF CARRIED BASELINE ITEM — BIDS CLOSED, AWARD PENDING. 'Usluge odrzavanja sustava tehnicke zastite u postanskim uredima' (maintenance of technical-protection systems — CCTV, alarms, access control — in post offices), TED notice 490123-2026 published 15/07/2026, CPV 79710000, estimated EUR 1,150,000, bids due 17/08/2026 12:00. As at 27/08/2026 no award notice exists. Predecessor incumbents: AKD-Zastita d.o.o. (TED 104850-2026, EUR 521,055, 13/02/2026) and the pair SECURUS d.o.o. + ECCOS-INZENJERING d.o.o. for buildings and vaults (TED 116629-2026, EUR 237,977.10, 18/02/2026). The new scope is roughly double the previous value. AKD-Zastita also holds Hrvatska posta central alarm monitoring (TED 94210-2026, EUR 559,700, 10/02/2026).
+- **Source:** [TED notices 490123-2026, 104850-2026, 116629-2026, 94210-2026](https://ted.europa.eu/en/notice/490123-2026/pdf) · 17/08/2026 · *primary*
+- **Implies:** Branch/counter physical security across the whole Croatian post-office network — adjacent to Printec physical ATM security and managed field services, and the clearest map of the Croatian security-service bench (AKD-Zastita, SECURUS, ECCOS-INZENJERING) that any Printec branch-security bid must beat or team with.
+- **Likelihood:** Award notice expected September-November 2026 · **Confidence:** Medium · **Win:** Low · **Deadline:** — · **New:** True
+- **Follow-up:** Re-check TED for the 490123-2026 award in September/October and capture winner and value.
+
+### 12. HP - Hrvatska posta d.d. (Croatian Post) — Unscoped
+
+- **Signal:** CARRIED BASELINE ITEM — CLOSED OUT AS UNFOUND. The baseline's Hrvatska posta reference 26.2.83 'POS maintenance' could not be located again this run. Searched: TED buyer query organisation-name-buyer~'posta' place-of-performance=HRV for all of 2026 (78 notices reviewed), a title sweep on POS / kartic / platnih / bankomat / novca / gotovin / blagajn / samoposluz, and a CPV sweep on 30123600/30123620/30132200/66110000/72212442/30160000/30162000. No Hrvatska posta POS or terminal-maintenance notice exists on TED for 2026. Hrvatska posta's 2026 TED footprint is postal sorting (30132100 small-parcel machine, EUR 7,200,000), network equipment (KING ICT d.o.o., EUR 794,328, TED 227661-2026, 02/04/2026), security services and fuel. RECOMMENDATION: drop ref 26.2.83 unless a primary EOJN record is produced — it is most likely a below-threshold 'jednostavna nabava' that never reaches TED.
+- **Source:** [TED Search API v3, buyer and CPV sweeps over HRV 2026 (negative result)](https://api.ted.europa.eu/v3/notices/search) · 27/08/2026 · *primary*
+- **Implies:** No POS/terminal-management opportunity at Croatian Post is evidenced. Printec's POS and TMS lines have no public-sector entry at HP; the route is the commercial banks and acquirers instead.
+- **Likelihood:** n/a — negative finding · **Confidence:** Medium · **Win:** — · **Deadline:** — · **New:** True
+- **Follow-up:** Only revive if a EOJN 'jednostavna nabava' record for ref 26.2.83 can be produced.
+
+### 13. HEP d.d. / HEP-Proizvodnja d.o.o. (Croatian national electricity utility) — L
+
+- **Signal:** STATUS OF CARRIED BASELINE ITEM — STILL OPEN, value now confirmed. 'Rezervni dijelovi i odrzavanje sustava tehnicke zastite' (technical-protection spare parts and maintenance), TED notice 531953-2026 published 31/07/2026, CPV 35120000, estimated EUR 1,373,460, bids due 03/09/2026. The baseline recorded '4 lots' with no figure. Benchmark: ECCOS-INZENJERING d.o.o. + SECURUS d.o.o. won HEP's HE Dale / HE Rijeka technical-protection installation, TED 448221-2026, EUR 1,037,477.82, 30/06/2026; TEHNOZAVOD d.o.o. won HEP EL-TO Zagreb, TED 191539-2026, EUR 557,676.63, 19/03/2026.
+- **Source:** [TED notices 531953-2026, 448221-2026, 191539-2026](https://ted.europa.eu/en/notice/531953-2026/pdf) · 31/07/2026 · *primary*
+- **Implies:** A utility rather than a bank buyer, so subcontract/partner route only for Printec physical security and field services. Its main value is confirming the pricing and the incumbent bench in the Croatian technical-protection market.
+- **Likelihood:** Bids close 03/09/2026 · **Confidence:** Medium · **Win:** Low · **Deadline:** 03/09/2026 · **New:** True
+- **Follow-up:** Capture the winner after 03/09/2026.
+
+### 14. PLINACRO d.o.o. (Croatian gas transmission operator) — M
+
+- **Signal:** OPEN, NEW. 'Modernizacija sustava tehnicke zastite' (technical-protection system modernisation), CPV 35120000, estimated EUR 500,000, bids due 09/09/2026. Published twice: TED 542681-2026 on 05/08/2026 and TED 579168-2026 on 21/08/2026 (the later notice is a corrigendum/republication of the same procurement, same deadline — dedupe on the pair, not on a shared URL).
+- **Source:** [TED notices 542681-2026 and 579168-2026](https://ted.europa.eu/en/notice/579168-2026/pdf) · 21/08/2026 · *primary*
+- **Implies:** Physical-security adjacency in critical infrastructure. Not a bank buyer; relevant to Printec only as a partner/subcontract route and as further evidence of the Croatian security-integrator bench.
+- **Likelihood:** Bids close 09/09/2026 · **Confidence:** Medium · **Win:** Low · **Deadline:** 09/09/2026 · **New:** True
+- **Follow-up:** Capture the winner after 09/09/2026.
+
+### 15. Ministarstvo unutarnjih poslova (MUP — Croatian Ministry of the Interior) — M
+
+- **Signal:** OPEN, NEW. 'Odrzavanje skenera osobnih dokumenata i citaca otisaka prstiju' (maintenance of identity-document scanners and fingerprint readers), TED notice 555035-2026 published 11/08/2026, CPV 50312000, estimated EUR 216,000, bids due 11/09/2026 09:00. A companion MUP notice, TED 465249-2026 (07/07/2026), covers maintenance and servicing of technical-protection equipment at border crossings, est. EUR 240,000, which closed 07/08/2026 with no award notice yet.
+- **Source:** [TED notice 555035-2026](https://ted.europa.eu/en/notice/555035-2026/pdf) · 11/08/2026 · *primary*
+- **Implies:** Adjacent to Printec's digital identity, onboarding and eKYC line (document capture and biometric readers) and to its managed field-service model, though this is document-reader servicing rather than an eIDAS/EUDI software play. Useful as a credential-building public-sector entry in Croatia.
+- **Likelihood:** Bids close 11/09/2026 · **Confidence:** Medium · **Win:** Low · **Deadline:** 11/09/2026 · **New:** True
+- **Follow-up:** Assess whether Printec field services can bid or subcontract; capture the winner after 11/09/2026.
+
+### 16. Hrvatske autoceste d.o.o. (HAC — Croatian Motorways) / Erste Card Club — M
+
+- **Signal:** STATUS OF CARRIED BASELINE ITEM — UNRESOLVED, and no new HAC card-acceptance notice found. The baseline's HAC open-loop card acceptance tender (Visa/Mastercard/Maestro e-commerce plus EFTPOS, deadline was 05/03/2026) has produced NO award, cancellation or republication on TED as at 27/08/2026. What HAC DID conclude is the narrower closed-loop piece: 'Usluga prihvata Diners i Discover kartica vezanih za ENC uredaje' (Diners and Discover card acceptance tied to ENC electronic-toll devices), TED 788693-2025 published 27/11/2025, CPV 72212442, EUR 344,712.75, WINNER: ERSTE CARD CLUB d.o.o. HAC's other 2026 activity is magnetic toll cards (AUGUSTINI d.o.o., TED 58431-2026, EUR 62,400, 27/01/2026; Nagels Druck GmbH, TED 194180-2026, EUR 225,720, 20/03/2026). Searched: HAC buyer sweep 2026, title sweep on prihvat/Visa/Mastercard/EFTPOS from 01/11/2025, and the acquiring CPV set.
+- **Source:** [TED notices 788693-2025, 58431-2026, 194180-2026; negative TED sweeps for the open-loop tender](https://ted.europa.eu/en/notice/788693-2025/pdf) · 27/11/2025 · *primary*
+- **Implies:** Erste Card Club holds the HAC card-acceptance relationship. The open-loop EFTPOS/e-commerce package that Printec's POS, terminal-management (TMS/x-pos/POSight) and softPOS lines would target has now been stalled for nearly six months — either abandoned, re-scoped, or being run below the TED threshold on EOJN only.
+- **Likelihood:** Uncertain; no evidence of an imminent relaunch · **Confidence:** Medium · **Win:** Low · **Deadline:** — · **New:** True
+- **Follow-up:** Ask HAC procurement directly whether the open-loop card-acceptance procedure was cancelled or is being re-scoped; EOJN's SPA search cannot be queried programmatically (see access_issues).
+
+### 17. FINA (Croatian Financial Agency) — S
+
+- **Signal:** AWARD, NEW — document management. 'Usluge odrzavanja skenerske i mikrografske opreme te softvera' (maintenance of scanning and micrographic equipment and software), TED notice 495216-2026 published 17/07/2026, CPV 50310000, lot values EUR 84,636 / EUR 69,720 / EUR 104,870, total EUR 259,226. WINNERS: SCAN d.o.o. (three lots) and Digital Media d.o.o. (one lot). Call was TED 307082-2026, 05/05/2026, est. EUR 260,000, bids due 05/06/2026.
+- **Source:** [TED notices 495216-2026 (award) and 307082-2026 (call)](https://ted.europa.eu/en/notice/495216-2026/pdf) · 17/07/2026 · *primary*
+- **Implies:** Maps to Printec's document-management line. FINA is Croatia's largest institutional document-capture operation and the work is held by two small local firms on sub-EUR-105k lots — a low-ticket, lot-split market that a regional vendor can only win on service coverage.
+- **Likelihood:** Contracts running · **Confidence:** Medium · **Win:** Low · **Deadline:** — · **New:** True
+- **Follow-up:** Note SCAN d.o.o. and Digital Media d.o.o. for Agent 6; establish lot terms and next renewal.
+
+### 18. Croatian banking sector / HUB (Hrvatska udruga banaka — Croatian Banking Association), HNB — XL
+
+- **Signal:** [STANDING — dated 2026] Shared national ATM network for 01/01/2027. Croatian law gives banks a transition period to 01/01/2027 to establish a national ATM network; if they fail, every bank must let any consumer who is not its client withdraw cash free of charge twice a month. HUB states banks are still running detailed analyses of the possible models and that the process is ongoing, describing it as a complex multi-party project requiring technical, operational and legal alignment. An Ernst & Young study commissioned via the banking association produced THREE operating models; it is not public. Market size reported: 3,816 active ATMs (with over 4,700 in the summer peak), the shared MBNet infrastructure covering roughly 1,000 ATMs, and 106 million ATM transactions worth EUR 19.24 billion a year. An earlier proposal to have FINA operate the system was dropped in favour of direct agreement between the banks. HNB has separately said the national ATM infrastructure could be an important step toward optimising the financial system while preserving cash availability, especially in rural and sparsely populated areas. NOTE: this will NEVER appear in a procurement feed — it is a pre-tender positioning play. Press-sourced, therefore Low.
+- **Source:** [tportal.hr (27/04/2026) and N1 info interview with HNB](https://www.tportal.hr/biznis/clanak/sprema-se-velika-promjena-na-bankomatima-ceka-se-samo-jedan-dogovor-20260427) · 27/04/2026 · *press*
+- **Implies:** The single largest ATM opportunity in Croatia. Whichever of the three E&Y models wins, a shared network needs multivendor ATM software (Printec x-core), device telemetry and monitoring, cash optimisation (NCR APTRA OptiCash), managed field services, and very likely a fleet refresh toward recyclers. Printec's Greek precedent is exactly on point: Printec Cash Network S.A. owns 80.10% of Cashflex/KEA and runs roughly 850 off-site Piraeus ATMs — a ready-made operating reference for an independent shared-network operator. Erste Croatia already runs OptiCash.
+- **Likelihood:** A model decision is due before 01/01/2027; any build-out follows in 2027 · **Confidence:** Low · **Win:** Medium · **Deadline:** — · **New:** False
+- **Follow-up:** Approach HUB and the largest member banks now with the Printec Cash Network / Cashflex operating model as a reference; ask HNB's payment-systems area which of the three models it would supervise most readily. Do not wait for a notice — there will not be one.
+
+### 19. EOJN RH (Elektronicki oglasnik javne nabave — Croatian national e-procurement portal, eojn.hr) — Unscoped
+
+- **Signal:** ACCESS FINDING, CHANGED vs the source catalogue. With a desktop Chrome User-Agent, eojn.hr returns HTTP 200 and /procurements-public also returns HTTP 200 (84.5 KB and 76.9 KB) — an improvement on the catalogue's recorded HTTP 500 for that deep link. HOWEVER the served HTML is a pure SPA shell: zero <tr> elements, no server-rendered notice data, and the backing endpoint https://eojn.hr/api/postupci returns HTTP 401 (authentication required). EOJN therefore CANNOT be queried programmatically for notices. Working routes for Croatian procurement this run were (a) the TED Search API v3 for everything above threshold, (b) buyers' own procurement-plan PDFs extracted locally with pdfminer — the HNB plan v18 dated 24/08/2026 alone yielded five cash-processing lines invisible on TED, and (c) the legacy OCDS contract-register download at eojn.nn.hr (HTTP 200, ASP.NET WebForms postback).
+- **Source:** [Direct access test of eojn.hr, /procurements-public and /api/postupci with a desktop Chrome UA](https://eojn.hr/procurements-public) · 27/08/2026 · *primary*
+- **Implies:** Below-threshold Croatian procurement ('jednostavna nabava', e.g. HNB's P-407/2026 mid-size banknote sorter at EUR 26,000) is structurally invisible to automated collection. The buyer procurement-plan PDF is the only reliable forward-looking instrument for Croatia and should be the standing method for this beat.
+- **Likelihood:** Structural until EOJN opens an unauthenticated API · **Confidence:** Medium · **Win:** — · **Deadline:** — · **New:** True
+- **Follow-up:** Make annual harvesting of HNB, Hrvatska posta, HAC, HEP and FINA procurement-plan PDFs a standing step; consider an operator-driven browser session for EOJN keyword searches.
+
+## Coverage notes
+
+FRESH RUN (no checkpoint existed). Method: (1) read intel-cache/ted_notices.json and filtered its 21 HRV rows; (2) read the source catalogue A2 Croatia slice and used its EOJN/DKOM/TED entries; (3) ran ~10 distinct TED Search API v3 queries over HRV in Croatian and English — buyer-name sweeps (posta, narodna banka, autoceste, FINA), title sweeps (tehnicke zastite, POS, kartic, platnih, bankomat, novca, gotovin, blagajn, samoposluz, prihvat, Visa, Mastercard, EFTPOS), and CPV sweeps (30123600/610/620/630, 30132000/200, 66110000, 66172000, 72212442, 30160000, 30162000, 42990000, 50530000, 31731100, 35120000, 48224000, 30144200, 79132100); (4) parsed TED XML directly for two notices to recover the non-award reason (435583-2026) and a contractor entity the search fields omitted (282014-2026); (5) downloaded and locally extracted the HNB 2026 procurement plan PDF v18 dated 24/08/2026 with pdfminer, layout-parsed it into 1,204 table rows, and mapped ref codes to lines positionally (never inferred subject-to-ref); (6) direct access tests of eojn.hr, /procurements-public, /api/postupci, dkom.hr and the legacy eojn.nn.hr OCDS download; (7) open-web search in Croatian for the shared national ATM network. PRODUCT SWEEP — categories with findings this run: (1) ATM & cash automation/recycling — HNB V-34/2026, M-24, P-407, V-53, V-13, V-32, V-31; FINA coin counters (failed procedure) and teller-equipment servicing; (3) POS/acquiring/TMS — only HAC's closed-loop Diners/Discover award and the unresolved open-loop tender; (4) payments modernization — FINA instant-credit-transfer and credit-transfer/direct-debit clearing maintenance awards, HNB payment-services servers; (5) digital identity/onboarding/e-signature — MUP document scanners and fingerprint readers, HNB e-mail signature-management licences (P-108/2026, EUR 9,000); (7) compliance & operational resilience — HNB backup expansion, HNB V-30/2026 ECB-system alignment (EUR 950,000, Q4); (8) physical ATM security — HNB (INsig2 lock-in), Hrvatska posta, HEP, PLINACRO technical protection; (9) payment security & HSM/key management — FINA HSM award to CROZ d.o.o.; (11) managed services/field maintenance — throughout; (12) document management — FINA scanner/micrographic award. CATEGORIES WITH NOTHING THIS RUN: (2) self-service kiosks and branch transformation — no Croatian public buyer tendered kiosks, videobanking or queue management; (6) fraud and transaction monitoring — no notice; (10) card issuing and personalisation — only HAC magnetic toll cards (AUGUSTINI, Nagels Druck), which is not payment-card personalisation. A note on ATM procurement specifically: there are NO public ATM tenders in Croatia and that is a finding, not a gap — Croatian ATMs belong to privately owned commercial banks (Zagrebacka/UniCredit, PBZ/Intesa, Erste, OTP, RBA, HPB) which are not contracting authorities, so their fleet decisions never enter EOJN or TED. The only public cash-handling buyers are HNB, FINA and Hrvatska posta, all covered above.
+
+## Access issues
+
+eojn.hr — homepage and /procurements-public return HTTP 200 with a desktop Chrome User-Agent (better than the catalogue's recorded HTTP 500 for the deep link) but serve a pure SPA shell with no server-rendered rows; the backing endpoint https://eojn.hr/api/postupci returns HTTP 401. No login was attempted and no bot protection was bypassed. Fallback used: TED Search API v3 plus locally extracted buyer procurement-plan PDFs. https://www.hnb.hr/documents/20182/121306/h-plan-nabave-hnb-2026.pdf — fetched successfully (HTTP 200, 842 KB, 17 pages) with a desktop Chrome UA; pdftotext is not installed on this machine, so text was extracted with pdfminer.six and re-assembled into table rows by x/y coordinates. https://www.dkom.hr/javna-objava-odluka/10 — HTTP 200 with a desktop UA, but the page is a Google Custom Search wrapper rather than a server-rendered decisions table; the appeal register was NOT mined this run (see the gap note below) and no DKOM decision is cited. https://eojn.nn.hr/SPIN/application/ipn/Oglasnik/PreuzimanjeUgovoraOCD.aspx — HTTP 200 confirmed reachable, but the ASP.NET __VIEWSTATE postback download was not executed this run for time reasons. Nothing was silently dropped.
+
+## Operator requests
+
+1) EOJN keyword search behind the SPA — an operator with a browser session at https://eojn.hr/procurements-public should search 'bankomat', 'brojac kovanica', 'brojaci novcanica', 'POS', 'samoposluzni' and 'prihvat kartica' for 2026, and specifically resolve (a) whether HAC's open-loop card-acceptance procedure (bids were due 05/03/2026) was cancelled or re-scoped, and (b) whether Hrvatska posta reference 26.2.83 POS maintenance exists at all. 2) DKOM appeal register at https://www.dkom.hr/upisnik/9 — a server-rendered table with year/type/category selects; an operator should pull 2026 appeals naming HRVATSKA NARODNA BANKA, FINA, HP - Hrvatska posta and Hrvatske autoceste, which would reveal blocked or delayed awards (notably the pending Hrvatska posta 490123-2026 result). 3) The Ernst & Young study of the three national-ATM-network operating models, commissioned via HUB, is not public — an operator with a HUB or member-bank contact should request it; it is the single most valuable unobtained document for the Croatian ATM opportunity.

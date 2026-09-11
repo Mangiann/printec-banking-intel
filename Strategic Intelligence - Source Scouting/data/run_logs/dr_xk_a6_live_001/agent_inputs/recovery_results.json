@@ -1,0 +1,132 @@
+[
+ {
+  "candidate_id": "dr_xk_a6_live_001__c_025",
+  "source_url": "https://oshp.rks-gov.net/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a6_live_001__c_039",
+  "source_url": "https://kallxo.com/tag/komisionit-rregullativ-te-prokurimit-publikkrpp/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a6_live_001__c_051",
+  "source_url": "https://opencorporates.com/registers/133",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a6_live_001__c_052",
+  "source_url": "https://aleph.occrp.org/datasets/2747",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a6_live_001__c_053",
+  "source_url": "https://apps.atk-ks.org/BizPasiveApp/VatRegist/SearchVat",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a6_live_001__c_058",
+  "source_url": "https://ask.rks-gov.net/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a6_live_001__c_065",
+  "source_url": "https://kallxo.com/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a6_live_001__c_066",
+  "source_url": "https://kallxo.com/gjate/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a6_live_001__c_140",
+  "source_url": "https://amik.org/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a6_live_001__c_146",
+  "source_url": "https://ekosova.rks-gov.net/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a6_live_001__c_223",
+  "source_url": "https://amik.org/Anetaret-e-AMIK",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a6_live_001__c_224",
+  "source_url": "https://amik.org/Komitetet",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a6_live_001__c_302",
+  "source_url": "https://www.intracom-telecom.com/en/company/profile/international_offices.htm",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ }
+]

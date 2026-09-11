@@ -1,0 +1,23 @@
+[
+{"candidate_id":"dr_sk_a3_live_001__c_320","role":"pointer_once","decision":"approve","priority":"low","rationale":"EU directory of SK financial ADR bodies — mine once for entity leads, not a recurring signal feed."},
+{"candidate_id":"dr_sk_a3_live_001__c_321","role":"keep","decision":"approve","priority":"high","rationale":"SLSP disclosure hub producing recurring Pillar 3 / quarterly regulatory indicator releases."},
+{"candidate_id":"dr_sk_a3_live_001__c_322","role":"keep","decision":"approve","priority":"critical","rationale":"SLSP T&C page carries forward-dated 'zmena zmluvných podmienok' notices — direct payments compliance-deadline signal."},
+{"candidate_id":"dr_sk_a3_live_001__c_323","role":"evidence_not_source","decision":"approve","priority":"high","rationale":"A single quarterly Pillar 3 PDF; valuable evidence and enumerable series, but the VUB disclosure hub is the monitorable place."},
+{"candidate_id":"dr_sk_a3_live_001__c_324","role":"keep","decision":"approve","priority":"high","rationale":"VUB document-update changelog with effective dates — an ideal continuous deadline ticker."},
+{"candidate_id":"dr_sk_a3_live_001__c_325","role":"keep","decision":"approve","priority":"high","rationale":"Tatra banka Opatrenie NBS 16/2014 disclosure hub, recurring quarterly prudential publications."},
+{"candidate_id":"dr_sk_a3_live_001__c_326","role":"keep","decision":"defer","priority":"high","rationale":"High-value T&C change-log archive with rare before/after diffs, but URL did not verify — recheck liveness before approving."},
+{"candidate_id":"dr_sk_a3_live_001__c_327","role":"keep","decision":"approve","priority":"high","rationale":"CSOB consolidated document register with dated VOP/sadzobnik versions; public and standalone."},
+{"candidate_id":"dr_sk_a3_live_001__c_328","role":"evidence_not_source","decision":"approve","priority":"medium","rationale":"One-off pre-notification PDF of a specific VOP change; strong evidence, parent register is the source to monitor."},
+{"candidate_id":"dr_sk_a3_live_001__c_329","role":"evidence_not_source","decision":"approve","priority":"medium","rationale":"Single annual Pillar 3 PDF in a stable folder — evidence artifact, harvest via the CSOB register."},
+{"candidate_id":"dr_sk_a3_live_001__c_330","role":"keep","decision":"approve","priority":"medium","rationale":"365.bank investor/disclosure entry point for a top-4 SK retail bank; recurring regulatory disclosures."},
+{"candidate_id":"dr_sk_a3_live_001__c_331","role":"fold_into_parent","decision":"approve","priority":"medium","rationale":"Annual-report subsection of the same 365.bank disclosure area already covered by the investor hub."},
+{"candidate_id":"dr_sk_a3_live_001__c_332","role":"evidence_not_source","decision":"approve","priority":"medium","rationale":"Dated fee-schedule PDF evidencing instant-payments rules hitting retail pricing; not a standalone feed."},
+{"candidate_id":"dr_sk_a3_live_001__c_333","role":"keep","decision":"approve","priority":"medium","rationale":"Prima banka annual/financial-report archive; steady comparator disclosure series on its own domain."},
+{"candidate_id":"dr_sk_a3_live_001__c_334","role":"keep","decision":"approve","priority":"low","rationale":"SZRB document register — low-yield but public standalone register of conditions and fee schedules."},
+{"candidate_id":"dr_sk_a3_live_001__c_335","role":"keep","decision":"approve","priority":"medium","rationale":"Erste Group Pillar 3 hub gives early parent-level capital/MREL context for SLSP; recurring publication point."},
+{"candidate_id":"dr_sk_a3_live_001__c_336","role":"keep","decision":"defer","priority":"medium","rationale":"Statutory disclosure asset folder could be machine-harvestable, but URL failed and directory listing may be blocked — recheck."},
+{"candidate_id":"dr_sk_a3_live_001__c_337","role":"keep","decision":"approve","priority":"medium","rationale":"CSOB newsroom is a public early-warning feed announcing condition changes and effective dates."},
+{"candidate_id":"dr_sk_a3_live_001__c_338","role":"evidence_not_source","decision":"approve","priority":"high","rationale":"Static legal text of the disclosure measure — reference schema for what banks must publish, not a producing feed."},
+{"candidate_id":"dr_sk_a3_live_001__c_339","role":"pointer_once","decision":"approve","priority":"medium","rationale":"Registry aggregator profile useful for entity resolution and filings lookup; mine as needed rather than monitor."},
+{"candidate_id":"dr_sk_a3_live_001__c_340","role":"keep","decision":"approve","priority":"medium","rationale":"SITA financial news hub reports SK bank T&C/fee changes at announcement time — timely standalone feed."}
+]

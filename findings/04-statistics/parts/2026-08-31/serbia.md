@@ -1,0 +1,118 @@
+# Serbia (NBS) - Agent 4 Market Statistics - run 2026-08-31
+
+Status: COMPLETE. Resumed from the 27/08/2026 checkpoint (3 signals kept) and closed all gaps in `remaining`.
+
+## Headline structural picture
+
+| Metric | Latest | Period | Trend |
+|---|---|---|---|
+| ATMs | 3,412 | end-Q2-2026 | +6.8% y/y (+216) |
+| POS terminals | 195,121 | end-Q2-2026 | +10.1% y/y |
+| Virtual POS | 6,278 | end-Q2-2026 | +21.4% y/y |
+| Cards issued | 13,656,484 | end-Q2-2026 | +5.5% y/y |
+| Branches | 1,316 | end-Q1-2025 (press-quoted NBS) | 1,730 in 2015 |
+| IPS instant payments | 34,459,117 txns / RSD 442bn | Q2-2026 | +30.7% / +32.3% y/y |
+| m-banking users | 5,446,159 | end-Q2-2026 | +13.2% y/y |
+| Distance (eKYC) contracts | 168,733 | Q2-2026 | +25.9% y/y; video-ID -6.5% |
+
+## Signals
+
+### NBS / Serbian ATM estate (19/08/2026) [NEW]
+ATM estate REVERSES a two-year plateau: 3,412 ATMs at end-Q2-2026 vs 3,196 at end-Q2-2025 (+6.8% y/y, +216 machines) - the fastest y/y ATM growth since at least 2016. Contrast Q3-2025, which was still -0.4% y/y. Machine-readable series now available (prihvatna_mreza.xlsx, updated 19/08/2026), which resolves last run's raster-image blocker.
+
+- Source: NBS Acceptance network quarterly series (prihvatna_mreza.xlsx) - https://www.nbs.rs/export/sites/NBS_site/documents/platni-sistem/statistika/el_novac/prihvatna_mreza.xlsx (regulator)
+- Implies: Serbia is one of the very few CEE/SEE markets ADDING ATMs. A +216-machine net add in 12 months is a live hardware and multivendor-software pipeline for NCR Atleos dispensers/recyclers and Printec x-core (already installed at Raiffeisen Serbia), plus device telemetry/monitoring and managed field services on a growing estate.
+- Opp size L | Win Medium | Confidence Medium | Deadline: -
+- Follow-up: Ask Raiffeisen Serbia (x-core reference) and AikBank (NCR recyclers reference) which banks drove the +216; get NBS to confirm whether deposit/recycling-capable ATMs are separately reported.
+
+### NBS cash placement/withdrawal statistics (19/08/2026) [NEW]
+Cash DEPOSIT value now far exceeds cash WITHDRAWAL value and is the faster-growing leg. H1-2026: deposits to payment accounts RSD 1,616,776m on 12,264,618 transactions; withdrawals RSD 1,098,758m on 12,329,724 transactions (provisional half-year read). FY2025: deposits RSD 3,288,916m / 25,395,721 txns vs withdrawals RSD 2,353,166m / 26,403,378 txns. Withdrawal COUNT has fallen every year since 2021 (35.68m -> 30.72m -> 29.94m -> 28.66m -> 26.40m) while withdrawal VALUE rose from RSD 1,875,238m (2021) to RSD 2,353,166m (2025): fewer, bigger withdrawals.
+
+- Source: NBS Payment transactions of cash placement and withdrawal (gotovina.xlsx) - https://www.nbs.rs/export/sites/NBS_site/documents/platni-sistem/statistika/el_novac/gotovina.xlsx (regulator)
+- Implies: Textbook cash-recycler business case. A recycler (an ATM that re-dispenses notes customers deposited, instead of shipping them to a cash centre) directly attacks the CIT and cash-handling cost of a market where deposit value is 1.4x withdrawal value. Sells NCR intelligent-deposit/recycling ATMs, Glory/Sesami TCRs for branch counters, and NCR APTRA OptiCash cash optimisation (Erste Croatia reference).
+- Opp size XL | Win Medium | Confidence Low | Deadline: -
+- Follow-up: Build a Serbia-specific recycling ROI model off these NBS deposit/withdrawal volumes and take it to the top five banks; deposits leg is the pitch, not withdrawals.
+
+### NBS Bank Supervision Department (27/08/2026) [NEW]
+[CORRECTS BASELINE] The NBS quarterly 'Banking Sector in Serbia' report and its Statistical Annex - the assumed home of branch counts - were DISCONTINUED: both the Serbian and English NBS listing pages state 'Latest issue - IV Quarter 2019'. There is no NBS quarterly banking-sector PDF after Q4-2019, so branch counts cannot be sourced there for any current period.
+
+- Source: NBS - Banks / Reports and analyses (EN and SR listing pages) - https://www.nbs.rs/en/finansijske-institucije/banke/izvestaji-i-analize/index.html (regulator)
+- Implies: Methodological, not commercial: stop chasing a report that no longer exists. Best remaining proxies for Serbian branch/network contraction are NBS figures quoted in press and the World Bank/IMF FAS branches-per-100k series.
+- Opp size Unscoped | Win — | Confidence Medium | Deadline: -
+- Follow-up: Ask NBS Bank Supervision directly where post-2019 organisational-unit counts are published; check the annual Financial Stability Report (GISFS) and the NBS Annual Report.
+
+### NBS acquiring network / POS estate (24/08/2026) [NEW]
+Q2-2026 'Overview of data on the provision of payment services and e-money issuance' (published 24/08/2026, reference period end-Q2-2026) reports 195,121 POS terminals, +10.1% y/y - the eleventh consecutive quarter of double-digit POS growth (Q4-2019 91,245 -> Q4-2025 184,656 -> Q2-2026 195,121, i.e. the estate has more than DOUBLED in six and a half years). Virtual points of sale 6,278 (+21.4% y/y). Cards issued 13,656,484 (+5.5%). Card transactions at Serbian merchants 220,906,667 in Q2-2026 (+19.1% y/y); payments with cards issued OUTSIDE Serbia +22.4% y/y (foreign-tourist spend).
+
+- Source: NBS - Overview of data on the provision of payment services and e-money issuance, Q2 2026 (pu-ien_e_II_26.pdf) - https://www.nbs.rs/export/sites/NBS_site/documents-eng/platni-sistem/pregled-pu-ien/pu-ien_e_II_26.pdf (regulator)
+- Implies: Serbia is adding roughly 17-19k acceptance devices a year. That is a direct, recurring pipeline for Verifone/Castles POS terminals and - more durably - for terminal management software (TMS: the system that remotely configures, key-loads and updates terminals), because an estate near 200k devices cannot be managed by field visits. Virtual-POS growth at +21.4% points at e-commerce acquiring and tokenisation work.
+- Opp size L | Win Medium | Confidence Medium | Deadline: -
+- Follow-up: Ask the top acquirers (Banca Intesa, OTP, Raiffeisen, UniCredit, AIK) who runs their TMS today and when the estate contract renews; pitch TMS + softPOS as the way to serve micro-merchants without shipping hardware.
+
+### NBS IPS instant payment system (04/08/2026) [NEW]
+Instant payments keep compounding at ~30%: Q2-2026 34,459,117 IPS transactions (+30.7% y/y from 26,360,262) worth RSD 442bn (+32.3% from RSD 334.1bn); average execution time 1.02 seconds in 2025. Fresh monthly read: July 2026 alone 11,312,229 payments worth RSD 154.9bn, average daily 364,911 transactions, average ticket RSD 13,694 (published 04/08/2026). IPS services now include IPS QR-code bill payment, IPS Scan / IPS Show at physical and internet points of sale, and 'Transfer' (pay to a mobile phone number).
+
+- Source: NBS IPS system performance indicators for July 2026 (ips_07_26.pdf) + NBS Overview Q2-2026 - https://www.nbs.rs/export/sites/NBS_site/documents-eng/platni-sistem/statistika/IPS/ips_07_26.pdf (regulator)
+- Implies: IPS Scan/Show is instant payment AT the point of sale - it competes with the card rail Printec's POS estate serves, and it is growing three times faster than card transactions. The defensive/offensive play is a terminal and acquiring stack that accepts BOTH card and IPS QR from one device, plus ISO 20022-native message handling and real-time transaction monitoring (INETCO) because a 1-second irrevocable rail removes the fraud-review window banks used to rely on.
+- Opp size L | Win Medium | Confidence Medium | Deadline: -
+- Follow-up: Confirm which Printec-supplied POS models in Serbia already render the NBS IPS QR code, and scope an INETCO real-time monitoring pitch framed on instant-payment irrevocability.
+
+### NBS Public Procurement Plan 2026 (version 9) (27/08/2026) [NEW]
+NBS's own 2026 procurement plan, version 9 dated 27/08/2026, contains several directly addressable line items: 'Ukljucenje u SEPA (TIPS)' (accession to SEPA/TIPS) via open procedure, Q1; 'HSM uredaji' (hardware security modules - the tamper-resistant boxes that hold payment keys and do PIN cryptography) via open procedure; 'Hardverski uredaji za balansiranje opterecenja ucesnika u sistemu za IPS' (load-balancing hardware for IPS participants); 'Resenje za sajber zastitu' and 'Resenja za integrisano upravljanje rizicima po bezbednost informacija'; 'Nadogradnja softverskog STIP modula Cortex sistema za podrsku rada DinaCard-CUP cip platnih kartica' (DinaCard-UnionPay chip card support); and 'Masina za brojanje novcanica' (banknote counting machine).
+
+- Source: NBS - Plan javnih nabavki za 2026. godinu, verzija 9 - https://www.nbs.rs/export/sites/NBS_site/documents/propisi/propisi-tend/2026/plan_nabavki_2026_v9.pdf (primary)
+- Implies: Two hard hooks. (1) The SEPA/TIPS line is the first PRIMARY-source evidence that Serbia is procuring TIPS connectivity - it puts Serbia into the same regional instant-payment thread as BiH/Montenegro (live 20/07/2026) and the expected Nov-2026 window, and creates ISO 20022 / scheme-adaptation work at every Serbian bank downstream. (2) The HSM line is a direct Thales HSM / PCI-PIN and remote key injection opportunity at the central bank itself, which is the reference that unlocks the commercial banks. DinaCard-CUP chip work is card issuing/personalisation adjacent.
+- Opp size M | Win Medium | Confidence Medium | Deadline: -
+- Follow-up: Monitor the Serbian Public Procurement Portal (portal.ujn.gov.rs) for the actual calls behind plan items 'HSM uredaji' and 'Ukljucenje u SEPA (TIPS)'; ask NBS Payment System Department whether TIPS accession implies a Banca d'Italia TIPS-Clone or direct TIPS participation.
+
+### NBS Central Register of Electronic Bills of Exchange (CReM) (05/08/2026) [NEW]
+Hard, dated compliance runway confirmed in the NBS Annual Financial Stability Report 2025 (published 05/08/2026): CReM went live 01/12/2025; from 01/06/2026 banks are REQUIRED to accept electronic bills of exchange as collateral; from 30/11/2026 the system must be available to NATURAL PERSONS as well. E-bills are signed with a REMOTE QUALIFIED ELECTRONIC SIGNATURE via the state ConsentID app, with two-factor authentication; a paper e-bill cannot exist or be transferred outside the register. Registration fee capped at RSD 50, deletion free.
+
+- Source: NBS - Annual Financial Stability Report 2025, Text box 4 - https://www.nbs.rs/export/sites/NBS_site/documents-eng/publikacije/fs/fsr_2025.pdf (regulator)
+- Implies: A statutory deadline three months out (30/11/2026) that forces every Serbian bank to expose remote qualified e-signature and identity flows to RETAIL customers, not just corporates. That is the Namirial digital-onboarding / e-signature lane almost verbatim, plus the digital-channel integration and IT-security hardening the NBS explicitly calls for around it.
+- Opp size M | Win Medium | Confidence Medium | Deadline: 30/11/2026
+- Follow-up: Map which Serbian banks already have a qualified e-signature stack for retail and which will need one before 30/11/2026; lead with Namirial + ConsentID interoperability.
+
+### Remote/eKYC account opening (distance contracts) (24/08/2026) [NEW]
+Q2-2026: 168,733 distance contracts on financial services concluded electronically, +25.9% y/y. The MIX has flipped - 129,728 were concluded FULLY electronically (+40.6% y/y) while only 39,005 used customer VIDEO identification (-6.5% y/y). FY2025 comparator: 518,184 distance contracts (+60.0% on 2024), of which 359,177 fully electronic (+54.0%) and 159,007 video-ID (+75.4%). By product in Q2-2026: 83,760 loan contracts (+82.3%), 26,908 overdraft (+30.6%), 3,993 other (+112.1%), but 33,240 account openings (-24.5%) and 20,233 savings (-3.2%). Only 599 video-ID contracts (1.5%) came from non-bank PSPs.
+
+- Source: NBS - Overview of data on the provision of payment services and e-money issuance, Q2 2026 - https://www.nbs.rs/export/sites/NBS_site/documents-eng/platni-sistem/pregled-pu-ien/pu-ien_e_II_26.pdf (regulator)
+- Implies: Video identification (an agent on a video call verifying an ID document) is being displaced by fully automated electronic onboarding - the first y/y FALL in video-ID volumes. That is exactly the migration Namirial-style automated eKYC + qualified e-signature is sold on: cheaper per contract, no agent capacity ceiling, and it scales with the loan-origination surge (+82%) rather than the flat account-opening leg.
+- Opp size M | Win Medium | Confidence Medium | Deadline: -
+- Follow-up: Get the split of which banks still run video-ID call centres; the -6.5% is the wedge for an automated-eKYC replacement business case.
+
+### Serbian retail digital channels (leading indicator) (20/08/2026) [NEW]
+[LEADING] Momentum proxies from the NBS user series (updated 19-20/08/2026): mobile-payment users 5,446,159 at end-Q2-2026, +13.2% y/y (4,809,120) and up from 4,180,152 at Q1-2024; online-payment users 5,178,872, +11.0% y/y. Crucially the CHANNEL MIX is splitting: m-banking transactions rose 26.8% y/y to 42,600,396 while e-banking (desktop) transactions FELL 3.1% to 32,725,879. Card and e-money payments for online purchases hit 34,206,958 in Q2-2026, +28.5% y/y, with dinar online payments +30.8%.
+
+- Source: NBS - Number of users by type of payment service (broj_korisnika.xlsx) + Overview Q2-2026 - https://www.nbs.rs/export/sites/NBS_site/documents/platni-sistem/statistika/el_novac/broj_korisnika.xlsx (regulator)
+- Implies: Mobile is now cannibalising desktop, not just cash - a leading indicator that branch footfall falls next. This is the branch-transformation and self-service argument: fewer, smaller branches served by kiosks and assisted self-service, with teller cash work pushed onto recyclers/TCRs. It also raises the value of device telemetry and managed services, because a shrinking branch network makes remote monitoring of the remaining estate mandatory rather than optional.
+- Opp size Unscoped | Win Medium | Confidence Medium | Deadline: -
+- Follow-up: Pair this with each bank's published app download/rating growth and branch-closure announcements to time kiosk/TCR proposals.
+
+### NBS International and Interbank Clearing of FX Payments (Serbia-BiH-Montenegro platform) (05/08/2026) [NEW]
+The NBS Annual Financial Stability Report 2025 (pub. 05/08/2026) states that the two NBS-operated FX payment systems - which interconnect banks and central banks in SERBIA, BOSNIA AND HERZEGOVINA and MONTENEGRO on a single platform - currently exchange SWIFT MT-format messages, and that 'there is a plan to switch to ISO 20022 message format in 2026'. Settlement is multilateral net, same-business-day.
+
+- Source: NBS - Annual Financial Stability Report 2025 (payment systems chapter) - https://www.nbs.rs/export/sites/NBS_site/documents-eng/publikacije/fs/fsr_2025.pdf (regulator)
+- Implies: A THREE-COUNTRY ISO 20022 migration inside Printec's own footprint, landing in the same window as the TIPS-Clone go-live in BiH and Montenegro. Every participating bank in all three markets must remap MT103/MT202 flows to pacs.008/pacs.009, retest reconciliation and update sanctions/AML screening on richer ISO fields - integration, testing and screening-tuning work, not just software.
+- Opp size Unscoped | Win Medium | Confidence Low | Deadline: -
+- Follow-up: Ask NBS Payment System Department for the ISO 20022 cutover date and coexistence window for the FX clearing systems; run the same question at CBBiH and CBCG so one regional offer covers all three.
+
+### Serbian bank branch network (best available proxy) (05/06/2025) [NEW]
+[STANDING - dated Q1-2025] With the NBS quarterly banking-sector report discontinued after Q4-2019, the best traceable branch figure is 1,316 bank branches in Serbia at end-Q1-2025 across 19 banks with 21,886 employees, versus 1,730 branches / 30 banks / 24,257 employees in 2015 - a 24% network reduction in ten years. Figures are attributed to the NBS publication 'Makroekonomska kretanja i kretanja u finansijskom sektoru u Srbiji' (May-2025 edition) as quoted in Serbian business press; the NBS PDF itself could not be located at a stable URL this run. NO branch figure for any 2026 period was found. Do NOT treat 1,316 as a current count.
+
+- Source: Magazin Biznis, 'Kakva je licna karta bankarskog sektora u Srbiji?' (quoting NBS) - https://magazinbiznis.rs/bankarski-sektor-u-srbiji-u-prvom-kvartalu-2025-godine/ (press)
+- Implies: A branch network shrinking ~2-4% a year while ATMs GROW 6.8% y/y is the signature of branch-to-self-service migration: cash and simple servicing move out of the teller line into recyclers, kiosks and deposit-capable ATMs. That is the Glory/Sesami TCR and bank-kiosk pitch, and it explains why Serbia adds machines while closing counters.
+- Opp size Unscoped | Win — | Confidence Low | Deadline: -
+- Follow-up: OPERATOR: locate the NBS PDF 'Makroekonomska kretanja i kretanja u finansijskom sektoru u Srbiji' (2026 edition) and extract the current branch/employee table - it is the only recurring public branch series left in Serbia.
+
+## Coverage notes
+
+Resumed from checkpoint (3 signals collected 27/08/2026 kept unchanged), then closed the gaps listed in `remaining`. Primary-source route this run: desktop-UA curl against nbs.rs + local pdfminer extraction - no 403s encountered. NEW documents opened that the baseline had not seen: (a) the Q2-2026 'Overview of data on the provision of payment services and e-money issuance' PDF, pu-ien_e_II_26.pdf, which the baseline expected only ~end-Sep 2026 but was in fact posted 24/08/2026; (b) NBS Annual Financial Stability Report 2025 (fsr_2025.pdf, 05/08/2026); (c) NBS monthly IPS bulletins ips_05/06/07_26.pdf; (d) the NBS 2026 Public Procurement Plan v9 (27/08/2026); (e) broj_korisnika.xlsx user series. BRANCH SERIES: closed as far as it can be - re-verified that the NBS quarterly 'Banking Sector in Serbia' report and its statistical annex stop at Q4-2019 (both SR and EN listing pages serve only kvartalni_izvestaj_IV_19.pdf / quarter_report_IV_19.pdf; probes for _I_26/_IV_25/_II_26 filenames all 404). The 2025 Financial Stability Report contains NO branch or business-unit count. Best remaining proxy is the press-quoted NBS figure of 1,316 branches at Q1-2025, flagged STANDING and Low. PRINTEC CATEGORIES - explicit coverage: ATMs/recycling COVERED (checkpoint signals 1-2); POS/acquiring/TMS COVERED; instant payments & ISO 20022 COVERED (IPS + FX-clearing ISO 20022 plan + TIPS procurement line); eKYC/e-signature COVERED (distance contracts + CReM deadline); HSM & key management COVERED (NBS 2026 plan line 'HSM uredaji'); branch transformation/kiosks COVERED via the branch-vs-ATM divergence; card issuing PARTIAL (DinaCard-CUP chip module upgrade in the NBS 2026 plan). NONE FOUND THIS RUN: (i) AML/KYC (IMTF Siron/FICO) - no new Serbian trigger; the standing item is the NBS Decision on guidelines for applying the AML/CFT Law (RS Official Gazette 41/2025) whose annual internal-control reporting deadline of 15/03/2026 has already passed; (ii) physical ATM security / anti-skimming - only tabloid coverage of individual incidents, no NBS or police primary source with figures, so no signal raised; (iii) softPOS/tap-to-phone - the only Serbian deployment traceable is Raiffeisen's RaiPOS on Visa Tap to Phone, sourced to 2022 press with no 2026 trigger, so it is context, not news; (iv) DORA/accessibility compliance - Serbia is outside the EU perimeter and no domestic equivalent surfaced; (v) no ATM cash-withdrawal VALUE split by channel (NBS publishes total account withdrawals, not an ATM-only value series). Also note the NBS device table I.1.2 remains a raster image in the PDF, but this is now moot: prihvatna_mreza.xlsx carries the same series machine-readable back to 2016.
+
+## Access issues
+
+No hard blocks this run. All nbs.rs documents (HTML, XLSX, PDF) returned 200 to curl with a desktop Chrome User-Agent; WebFetch was not needed for the primary sources. Dead-end URLs logged: https://www.nbs.rs/export/sites/NBS_site/documents/kontrola-banaka/kvartalni_izvestaj_I_26.pdf, .../kvartalni_izvestaj_IV_25.pdf, .../documents-eng/kontrola-banaka/quarter_report_I_26.pdf and .../documents/kontrola-banaka/BS_I_2026.pdf all return 404 - confirming the quarterly banking-sector report series ended with Q4-2019. The NBS publication 'Makroekonomska kretanja i kretanja u finansijskom sektoru u Srbiji' (the last public home of branch counts) could not be located at any stable nbs.rs path; it does not appear on the investor-information or statistics landing pages. pdftotext is not installed on this machine; PDF text was extracted with pdfminer.six instead.
+
+## Operator requests
+
+1) Obtain the NBS PDF 'Makroekonomska kretanja i kretanja u finansijskom sektoru u Srbiji' (latest 2026 edition) - it is the only recurring public source of Serbian bank BRANCH and employee counts since the quarterly banking-sector report was discontinued in 2019; a direct request to NBS Bank Supervision or the NBS info-centre (0800 111 110) may be needed. 2) Pull the live calls behind NBS 2026 procurement-plan items 'HSM uredaji' and 'Ukljucenje u SEPA (TIPS)' from the Serbian Public Procurement Portal (portal.ujn.gov.rs), which requires registration - estimated values and deadlines are not in the plan PDF in extractable form. 3) Ask NBS for confirmation of the ISO 20022 cutover date for the International/Interbank Clearing of FX Payments shared with BiH and Montenegro.

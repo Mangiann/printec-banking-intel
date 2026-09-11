@@ -1,0 +1,802 @@
+[
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_004",
+  "source_url": "https://zakon.rada.gov.ua/laws/main/tt70002",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_010",
+  "source_url": "https://nabu.ua/ua/novini-nabu.html",
+  "outcome": "unresolved",
+  "http_status": 429,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 429"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_014",
+  "source_url": "https://old.bank.gov.ua/control/uk/publish/article?art_id=38441973&cat_id=38459171",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_015",
+  "source_url": "https://vue.gov.ua/Акти_Національного_банку_України_нормативно-правові",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "UnicodeEncodeError"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_020",
+  "source_url": "https://zakon.rada.gov.ua/laws/show/vr014500-15",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_025",
+  "source_url": "https://bank.gov.ua/admin_uploads/article/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_033",
+  "source_url": "https://new.bank.gov.ua/ua/supervision/regulation-nonbank-fs-market",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_034",
+  "source_url": "https://drs.gov.ua/regulatory_policy/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_037",
+  "source_url": "https://zakon.rada.gov.ua/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_043",
+  "source_url": "https://nabu.ua/",
+  "outcome": "unresolved",
+  "http_status": 429,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 429"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_044",
+  "source_url": "https://en.interfax.com.ua/news/economic/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_046",
+  "source_url": "https://pravo.ua/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_058",
+  "source_url": "https://www.integrites.com/uk/publications/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_059",
+  "source_url": "https://www.lexology.com/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_060",
+  "source_url": "https://www.mondaq.com/financial-services/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_062",
+  "source_url": "https://ceelegalmatters.com/briefings",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_063",
+  "source_url": "https://yur-gazeta.com/publications/practice/bankivske-ta-finansove-pravo/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_070",
+  "source_url": "https://pulse.kmu.gov.ua/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_072",
+  "source_url": "https://eu-ua.kmu.gov.ua/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_089",
+  "source_url": "https://www.imf.org/en/Countries/UKR",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_090",
+  "source_url": "https://www.imf.org/en/News/SearchNews#q=Ukraine&sort=relevancy",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_098",
+  "source_url": "https://fiu.gov.ua/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_103",
+  "source_url": "https://www.ebrd.com/home/who-we-are/independent-evaluation.html",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_108",
+  "source_url": "https://niss.gov.ua/doslidzhennya/mizhnarodni-vidnosyny/pidtrymka-ukrayiny-hrupoyu-svitovoho-banku-pislya-lyutoho-2022",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_116",
+  "source_url": "https://finbalance.com.ua/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_131",
+  "source_url": "https://nabu.ua/ua/fintech-payments-forum-2026.html",
+  "outcome": "unresolved",
+  "http_status": 429,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 429"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_148",
+  "source_url": "https://old.bank.gov.ua/control/uk/publish/category?cat_id=23582991",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_155",
+  "source_url": "https://supreme.court.gov.ua/supreme/pokazniki-diyalnosti/ogliad_sud_prakt/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_157",
+  "source_url": "https://zakon.rada.gov.ua/laws/show/v0118500-23",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_159",
+  "source_url": "https://amcu.gov.ua/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_160",
+  "source_url": "https://dpss.gov.ua/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_171",
+  "source_url": "https://zakon.rada.gov.ua/go/v0080500-25",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_173",
+  "source_url": "https://bank.gov.ua/files/ISO20022/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_174",
+  "source_url": "https://bank.gov.ua/ua/legislation/drafts",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_175",
+  "source_url": "https://zakon.rada.gov.ua/laws/main/n",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_186",
+  "source_url": "https://zakon.rada.gov.ua/laws/main",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_187",
+  "source_url": "https://zakon.rada.gov.ua/laws/show/2121-14",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_188",
+  "source_url": "https://zakon.rada.gov.ua/laws/show/1591-20",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_189",
+  "source_url": "https://data.rada.gov.ua/open/data/zpr",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_190",
+  "source_url": "https://data.rada.gov.ua/open/data/zak",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_191",
+  "source_url": "https://data.rada.gov.ua/open/main/api/page2",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_192",
+  "source_url": "https://data.rada.gov.ua/open/data/zal",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_197",
+  "source_url": "https://www.president.gov.ua/documents",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_204",
+  "source_url": "https://zakon.rada.gov.ua/laws/main/b19",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_205",
+  "source_url": "https://zakon.rada.gov.ua/laws/main/b9",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_211",
+  "source_url": "https://www.reestrnpa.gov.ua/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_213",
+  "source_url": "https://data.rada.gov.ua/open/main/opendata",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_214",
+  "source_url": "https://www.treasury.gov.ua/diyalnist/normativno-pravova-baza",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_216",
+  "source_url": "http://presa.ua/oficijnij-visnik-ukraini-on-line.html",
+  "outcome": "unresolved",
+  "http_status": 503,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 503"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_217",
+  "source_url": "https://drs.gov.ua/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_219",
+  "source_url": "https://www.sumyjust.gov.ua/oficzijni-vydannya-ministerstva-yustycziyi-ukrayiny/",
+  "outcome": "unresolved",
+  "http_status": 429,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 429"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_228",
+  "source_url": "https://amcu.gov.ua/napryami/kontrol-za-koncentraciyami-ta-uzgodzhenimi-diyami",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_229",
+  "source_url": "https://amcu.gov.ua/news/informatsiia-pro-rishennia-amku-25122025",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_230",
+  "source_url": "https://amcu.gov.ua/news/amku-shvaleno-proyekt-zmin-do-polozhennya-pro-koncentraciyu",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_231",
+  "source_url": "https://fiu.gov.ua/pages/finansovii-monitorint/tehnologi/formi-obliku-i-podannya-informacziji",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_232",
+  "source_url": "https://fiu.gov.ua/assets/userfiles/320/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_233",
+  "source_url": "https://www.sdfm.gov.ua/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_235",
+  "source_url": "https://drs.gov.ua/analysis_projects/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_241",
+  "source_url": "https://dpss.gov.ua/news/znai-svoi-prava-zakhyst-prav-spozhyvachiv-finansovykh-posluh",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_244",
+  "source_url": "https://zakon.rada.gov.ua/go/v0143500-25",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_245",
+  "source_url": "https://zakon.rada.gov.ua/laws/show/v0069500-25",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_247",
+  "source_url": "https://zakon.rada.gov.ua/laws/show/v0095500-17",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_248",
+  "source_url": "https://zakon.rada.gov.ua/laws/show/v0024500-25",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_249",
+  "source_url": "https://cip.gov.ua/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_252",
+  "source_url": "https://zakon.rada.gov.ua/laws/show/4336-IX",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_259",
+  "source_url": "https://nabu.ua/ua/proekt-postanovi-pravlinnya-natsionalnogo-banku.html",
+  "outcome": "unresolved",
+  "http_status": 429,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 429"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_260",
+  "source_url": "https://uaps.com.ua/ua/novyny/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_267",
+  "source_url": "https://data.gov.ua/api/3/action/package_show",
+  "outcome": "unresolved",
+  "http_status": 409,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 409"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_273",
+  "source_url": "https://drs.nsdc.gov.ua/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_278",
+  "source_url": "https://regulation.gov.ua/catalogue/functions/id5592/permits",
+  "outcome": "unresolved",
+  "http_status": 522,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 522"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_279",
+  "source_url": "https://zakon.rada.gov.ua/go/v0156500-23",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_281",
+  "source_url": "https://old.bank.gov.ua/control/uk/publish/article?art_id=24107607&cat_id=17175451",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_282",
+  "source_url": "https://youcontrol.com.ua/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_285",
+  "source_url": "https://nabu.ua/ua/",
+  "outcome": "unresolved",
+  "http_status": 429,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 429"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_286",
+  "source_url": "https://nabu.ua/ua/vihidni-listi-nabu.html",
+  "outcome": "unresolved",
+  "http_status": 429,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 429"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_287",
+  "source_url": "https://nabu.ua/ua/traditsiyniy-monitoring-zmin-u-finsektori-za-tizhden-vid-nabu-72.html",
+  "outcome": "unresolved",
+  "http_status": 429,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 429"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_288",
+  "source_url": "https://nabu.ua/ru/finansoviy-monitoring.html",
+  "outcome": "unresolved",
+  "http_status": 429,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 429"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_297",
+  "source_url": "https://aub.org.ua/104/novyny-aub/14947-ukrainski-banky-za-koordynatsii-bankivskykh-asotsiatsii-pidpysaly-memorandum-pro-zabezpechennia-prozorosti-funktsionuvannia-rynku-platizhnykh-posluh-2",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_298",
+  "source_url": "https://ukbs.org.ua/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a3_live_001__c_320",
+  "source_url": "https://about.pumb.ua/presscenter/notifications",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ }
+]

@@ -1,0 +1,47 @@
+{
+ "agentNo": 3,
+ "agentLabel": "Regulation & Deadlines",
+ "unitNoun": "regulation workstream",
+ "tableKind": "regulation",
+ "findingsDir": "/Users/mangian/Downloads/BANKING/findings/03-regulation",
+ "runDate": "2026-07-24",
+ "prevSummary": "",
+ "units": [
+  {
+   "slug": "instant-payments-sepa",
+   "name": "Instant payments & SEPA (incl. SCT Inst, VoP)",
+   "focus": "go-live dates per country incl. SEPA accession (NM 05/10/2025), Western Balkans TIPS-clone (~July 2026)",
+   "langs": "English+local"
+  },
+  {
+   "slug": "psd3-psr",
+   "name": "PSD3 / PSR",
+   "focus": "EU timeline, fraud-liability, open banking changes",
+   "langs": "English"
+  },
+  {
+   "slug": "iso20022",
+   "name": "ISO 20022 migration",
+   "focus": "deadlines for high-value + instant rails per market",
+   "langs": "English+local"
+  },
+  {
+   "slug": "digital-euro-cbdc",
+   "name": "Digital euro & CBDC",
+   "focus": "ECB programme timeline, acceptance/ATM-wallet readiness",
+   "langs": "English"
+  },
+  {
+   "slug": "accessibility-eaa",
+   "name": "European Accessibility Act (ATMs/self-service)",
+   "focus": "28/06/2025 obligations for ATMs/payment terminals, enforcement per country",
+   "langs": "English+local"
+  },
+  {
+   "slug": "aml-amla-amlr",
+   "name": "AML — AMLA / AMLR",
+   "focus": "AMLR application (2027), AMLA build-up, MONEYVAL pressure (Western Balkans), national AML law changes",
+   "langs": "English+local"
+  }
+ ]
+}

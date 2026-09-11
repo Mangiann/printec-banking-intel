@@ -1,0 +1,14 @@
+{
+  "owner": "Second machine",
+  "scopes": [
+    "CZ",
+    "HU",
+    "XK",
+    "ME",
+    "MK",
+    "SK",
+    "SI",
+    "UA"
+  ],
+  "note": "The eight countries this machine owns: Czech Republic, Hungary, Kosovo, Montenegro, North Macedonia (original five, completed 2026-08-26) and Slovakia, Slovenia, Ukraine (reassigned from the main Printec machine by the project owner on 2026-08-26). Austria is deliberately NOT included — research_plan.yaml excludes it from A1-A6 and it has no sets. Every other country in research_plan.yaml belongs to the main Printec machine and must NOT be run here — the driver will refuse to hand them out or tick them off. Do not edit this list without agreeing it with the project owner first: two machines sharing a scope would duplicate a 4-hour run and could overwrite each other's spreadsheet."
+}

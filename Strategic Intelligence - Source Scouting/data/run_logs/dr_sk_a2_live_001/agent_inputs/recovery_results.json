@@ -1,0 +1,142 @@
+[
+ {
+  "candidate_id": "dr_sk_a2_live_001__c_037",
+  "source_url": "https://financesone.worldbank.org/procurement-notice/DS00979",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a2_live_001__c_082",
+  "source_url": "https://subjekty.nbs.sk/sk/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a2_live_001__c_083",
+  "source_url": "https://subjekty.nbs.sk/api/psd2",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://subjekty.nbs.sk/sk/api/psd2",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_sk_a2_live_001__c_085",
+  "source_url": "https://regfap.nbs.sk/index.php",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a2_live_001__c_086",
+  "source_url": "https://regver.nbs.sk/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a2_live_001__c_218",
+  "source_url": "https://portalefornitori.intesasanpaolo.com/scriptPfor0/PortaleFornitori/fo/Generale/index.do",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://portalefornitori.intesasanpaolo.com/auth/form8.fcc?APPCTX=PFOR0&TYPE=33554432&REALMOID=06-d30967b4-0bbf-4e03-9460-57e5d3630683&GUID=&SMAUTHREASON=0&METHOD=GET&SMAGENTNAME=agent-pfor0&TARGET=$SM$https%3a%2f%2fportalefornitori%2eintesasanpaolo%2ecom%2fscriptPfor0%2fPortaleFornitori%2ffo%2fGenerale%2findex%2edo",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_sk_a2_live_001__c_219",
+  "source_url": "https://www.erstegroup.com/de/ueber-uns/tochtergesellschaften/erste-group-procurement",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a2_live_001__c_221",
+  "source_url": "https://www.slsp.sk/sk/vyhladavanie",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a2_live_001__c_231",
+  "source_url": "https://www.primabanka.sk/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a2_live_001__c_283",
+  "source_url": "https://finstat.sk/50010301/obchodny_register",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a2_live_001__c_028",
+  "source_url": "https://eur-lex.europa.eu/oj/direct-access.html?locale=sk",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a2_live_001__c_102",
+  "source_url": "https://www.finstat.sk/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a2_live_001__c_228",
+  "source_url": "https://www.tatrabanka.sk/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.tatrabanka.sk/sk/personal/",
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a2_live_001__c_268",
+  "source_url": "https://www.globalpayments.sk/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ }
+]

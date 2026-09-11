@@ -1,0 +1,23 @@
+{
+"week": "2026-08-31",
+"updated": "2026-08-31 \u2014 CYCLE COMPLETE except live publish (blocked server-side)",
+"done": [
+"setup",
+"step1-read-playbook-brief",
+"step2-coverage-gate",
+"step3-slicing",
+"step3-country-fanout",
+"step4-master-table",
+"step5-forecast-narrative",
+"step5-competitors",
+"step5-reg-calendar",
+"step5b-competition-brief",
+"step5d-derived-opportunities",
+"step6-validator",
+"step7-build",
+"step8-glossary",
+"step9-weekly-brief"
+],
+"next": null,
+"notes": "COMPLETE. Sixth full run; first cycle with ALL SIX collectors fresh (1,520 raw rows). Full re-triage via 19 country shards -> 334 candidates -> parent reduce collapsed 29 -> master table 129 -> 307 active signals (132 High, 201 opportunities, 25 value-unscoped, 8 imminent, 11 derived plays all surviving the 2-signal/2-agent test after truncated-key repair \u2014 final build shows NO dropped/missing-citation lines). Build clean: KPIs {307 signals, 189 new, 132 high, 201 opps, 17 countries, 11 derived}; verify re-fetched 3,790 sources (2,694 reachable, 289 repaired via registry) and snapshotted. Validator ran for outlooks: 34/62 audited (20 grounded/13 thin/1 unsupported), 28 fall back to self-report (all carry honesty lists); ITS BIG CATCH: the K&H MNB decision H-KPL-I-4/2025 + HUF 60m fine traces to NO current findings file (only prior cycle, itself partially-confirmed) \u2014 corrected in table/outlook/brief; also fixed oid2 ELTA cite, oid7 Art.5d placement, oid12 RON 449,628, and caveated the unevidenced ~5,700 HU national ATM total everywhere. Futures validation FAILED on session limit (resets 6pm Athens) \u2014 futures_narrative unchanged since 2026-07-15 so last cycle's futures_validation still matches; re-run next cycle with Agent 8 refresh. PUBLISH FAILED SERVER-SIDE: creds were set and used, but https://printec-banking-intel.vercel.app/api/upload returns HTTP 500 'Vercel Blob: This store has been suspended' \u2014 the printec-intel-blob store on the user's Vercel account is suspended (likely free-tier usage/billing; last cycle uploaded ~322MB evidence). DIAGNOSED 2026-09-01: the exceeded meter is Advanced Operations 2.2k/2k (monthly, free-tier) \u2014 NOT storage (store holds 341.7MB of the 1GB allowance; deleting files will not help). It RESETS FREE at the next monthly billing date. publish.py now caps evidence uploads at PRINTEC_EV_MAX_FILES=1500/run (findings first, remainder deferred to the delta on the next publish; backup at publish.py.bak-2026-09-01). Real pending delta measured at ~1,004 new snapshots + ~44 docs = ~1,050 ops, inside the 2,000/month allowance. WHEN THE METER RESETS, re-run: set -a; . /Users/mangian/Downloads/BANKING/.env.publish; set +a; cd weekly-intelligence/scripts; /usr/local/bin/python3 run_weekly.py --root /Users/mangian/Downloads/BANKING --week 2026-08-31 \u2014 and confirm 'publish: OK 200' + 'publish-evidence: done'. Local artefacts are complete: dashboard-data.json + dashboard-web/data.json both carry week 2026-08-31. NEXT CYCLE PRIORITIES: (1) re-run Agent 8 (stale since 07-15) + futures validation; (2) route A1 through a real browser session for NBRSM and the EPC (both Cloudflare-gated \u2014 EPC block leaves 5 scheme dates incl. the 20/09 VoP rulebook unverified); (3) close the Cashflex 480-vs-850 fleet count and the Alpha Siron incumbency internally; (4) confirm Printec's stage-1 status on PrivatBank recycler lot; (5) Bulgaria+Serbia are direct-engagement markets \u2014 stop portal-watching them. Brief retracts 5 claims from 2026-08-03 (PrivatBank 1,000 units; CZ no-tender-route; SI density params; BG 1,500->1,840; Addiko all-to-Vienna)."
+}

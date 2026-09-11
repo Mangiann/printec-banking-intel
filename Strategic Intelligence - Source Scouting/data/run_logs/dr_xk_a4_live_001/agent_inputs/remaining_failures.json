@@ -1,0 +1,532 @@
+[
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_015",
+  "source_url": "https://bqk-kos.org/statistika/cesto-postavljana-pitanja-u-odeljenju-za-statistiku/?lang=sr",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_018",
+  "source_url": "https://bqk-kos.org/repository/docs/SistemiIPagesave/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_020",
+  "source_url": "https://data.imf.org/?sk=e5dcab7e-a5ca-4892-a6ea-598b5463a34c",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_021",
+  "source_url": "https://www.imf.org/en/publications/technical-assistance-reports/issues/2026/05/01/republic-of-kosovo-technical-assistance-report-financial-sector-stability-review-follow-up-575786",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_023",
+  "source_url": "https://knowledgecenter.ubt-uni.net/cgi/viewcontent.cgi?article=3304&context=etd",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_027",
+  "source_url": "https://www.bqk-kos.org/repository/docs/SistemiIPagesave/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_032",
+  "source_url": "https://bqk-kos.org/sistemet-e-pagesave/strategjia-per-zhvillimin-e-sistemit-kombetar-te-pagesave/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_036",
+  "source_url": "https://data.imf.org/en/datasets/IMF.STA:FAS",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_037",
+  "source_url": "https://fred.stlouisfed.org/series/KOSFCACNUM",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "TimeoutError"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_040",
+  "source_url": "https://bkt-ks.com/shoqata-e-bankave-te-kosoves/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_043",
+  "source_url": "https://env2.bqk-kos.org/repository/docs/",
+  "outcome": "unresolved",
+  "http_status": 526,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 526"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_045",
+  "source_url": "https://blog.printecgroup.com/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_057",
+  "source_url": "https://euronetworldwide.gcs-web.com/news-releases",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_063",
+  "source_url": "https://www.atk-ks.org/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_085",
+  "source_url": "https://bkt-ks.com/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_091",
+  "source_url": "https://kossev.info/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_092",
+  "source_url": "https://www.kosovo-online.com/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_094",
+  "source_url": "https://bqk-kos.org/statistika/ostale-statistike/?lang=sr",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_096",
+  "source_url": "https://www.kim.gov.rs/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_101",
+  "source_url": "https://www.gorazdevac.info/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_111",
+  "source_url": "https://bqk-kos.org/financial-stability/analysis-and-research/working-papers/?lang=en",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_120",
+  "source_url": "https://kipred.org/en/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_128",
+  "source_url": "https://bqk-kos.org/studija-troskovi-placanja-male-vrednosti-na-kosovu-i-moguce-ustede/?lang=sr",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_129",
+  "source_url": "https://bqk-kos.org/platni-sistem/strategija-za-razvoj-nacionalnog-platnog-sistema/?lang=sr",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_136",
+  "source_url": "https://kosovo.iom.int/blogs/fostering-growth-together-diaspora-contributions-and-remittances-catalysts-kosovo-s-development",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_168",
+  "source_url": "https://ask.rks-gov.net/sr/agencija-za-statistiku-kosova/add-news/harmonizovani-indeks-potrosackih-cena-hipc-januar-2023",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_170",
+  "source_url": "https://ask.rks-gov.net/news/release-calendar/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_171",
+  "source_url": "https://ask.rks-gov.net/umbraco/Surface/Metadata/ExportToXml_Sr",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_172",
+  "source_url": "https://askapi.rks-gov.net/Custom/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_175",
+  "source_url": "https://opendata.rks-gov.net/en/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_182",
+  "source_url": "https://procreditbank-kos.com/shq/rreth-nesh/publikimet-financiare/",
+  "outcome": "unresolved",
+  "http_status": 500,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 500"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_185",
+  "source_url": "https://bkt-ks.com/en/financial-institutions/financial-reports/annual-reports/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_186",
+  "source_url": "https://bkt-ks.com/content/2024/05/IFRS_BKT_KS_2023_alb.pdf",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_187",
+  "source_url": "https://www.bpbbank.com/wp-content/uploads/2023/05/Raporti-Vjetor.pdf",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_191",
+  "source_url": "https://www.procredit-holding.com/investor-relations/reports-publications/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_205",
+  "source_url": "https://procreditbank-kos.com/eng/about-us/financial-publications/annual-reports/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_209",
+  "source_url": "https://hr.nlb-kos.com/en/annual-reports",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_213",
+  "source_url": "https://bkt-ks.com/raportet/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_216",
+  "source_url": "https://financialreports.eu/companies/nlb/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_229",
+  "source_url": "https://thepaymentsassociation.org/article/quipu-becomes-first-processing-and-personalisation-centre-in-kosovo-to-issue-contactless-cards/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_234",
+  "source_url": "https://paymentproviders.io/country/kosovo",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_235",
+  "source_url": "https://www.bankassoc-kos.com/Al/anetaret/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_236",
+  "source_url": "https://www.bankassoc-kos.com/Al/komunikatat/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_248",
+  "source_url": "https://bqk-kos.org/repository/docs/korniza_ligjore/srpski/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_251",
+  "source_url": "https://bqk-kos.org/edu/faq/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_261",
+  "source_url": "https://data.imf.org/FAS",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_264",
+  "source_url": "https://fred.stlouisfed.org/series/KOSFCAANUM",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "TimeoutError"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_265",
+  "source_url": "https://www.imf.org/en/countries/kos",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_302",
+  "source_url": "https://kostt.com/Home/Tenders",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_306",
+  "source_url": "https://www.undp.org/kosovo/procurement",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_307",
+  "source_url": "https://kosovo.iom.int/procurement",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_310",
+  "source_url": "https://kk.rks-gov.net/prishtine/e-prokurimi/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_313",
+  "source_url": "https://opendata.rks-gov.net/sq/organization/about/komisioni-rregullativ-i-prokurimit-publik",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ }
+]

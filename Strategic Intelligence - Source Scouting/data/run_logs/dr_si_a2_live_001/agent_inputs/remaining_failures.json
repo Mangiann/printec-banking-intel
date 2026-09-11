@@ -1,0 +1,292 @@
+[
+ {
+  "candidate_id": "dr_si_a2_live_001__c_002",
+  "source_url": "https://wwwpjn2.enarocanje.si/pjnst/PregledObjav.aspx",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_si_a2_live_001__c_025",
+  "source_url": "https://open-data.europa.eu/en/data/dataset/ted-1",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_si_a2_live_001__c_032",
+  "source_url": "https://api.tech.ec.europa.eu/search-api/prod/rest/search",
+  "outcome": "unresolved",
+  "http_status": 405,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 405"
+ },
+ {
+  "candidate_id": "dr_si_a2_live_001__c_051",
+  "source_url": "https://www.aris-rs.si/sl/NOO/razpisi/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_si_a2_live_001__c_052",
+  "source_url": "https://www.tendersontime.com/european-bank-for-reconstruction-and-development-ebrd-tenders/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_si_a2_live_001__c_058",
+  "source_url": "https://opentender.eu/si",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_si_a2_live_001__c_059",
+  "source_url": "https://opentender.eu/si/company/EU_body_fb0d9364f7b000c4a10a2f5f30018aa948e9d5f35f48d6b0870893238fcee21f",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_si_a2_live_001__c_070",
+  "source_url": "https://www.bisnode.si/produkti/bisnode-gvin/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_si_a2_live_001__c_079",
+  "source_url": "https://www.dnevnik.si/posel",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_si_a2_live_001__c_080",
+  "source_url": "https://www.vecer.com/gospodarstvo",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_si_a2_live_001__c_084",
+  "source_url": "https://racunalniske-novice.com/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_si_a2_live_001__c_087",
+  "source_url": "https://www.odvetnik-marovt.si/aktualna-vprasanja/aktualno/kaj-je-v-ponudbi-javno",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_si_a2_live_001__c_140",
+  "source_url": "https://www.dkom.si/eng/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_si_a2_live_001__c_150",
+  "source_url": "https://www.gov.si/assets/ministrstva/MJU/DJN/Statisticna-porocila/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_si_a2_live_001__c_163",
+  "source_url": "https://ejn.gov.si/statist.html",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_si_a2_live_001__c_171",
+  "source_url": "https://opentender.eu/si/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_si_a2_live_001__c_175",
+  "source_url": "https://podatki.gov.si/dataset/zbirka-e-racun",
+  "outcome": "unresolved",
+  "http_status": 401,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 401"
+ },
+ {
+  "candidate_id": "dr_si_a2_live_001__c_181",
+  "source_url": "https://www.sdh.si/sl-si/aktualno",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_si_a2_live_001__c_227",
+  "source_url": "https://blog.printecgroup.com/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_si_a2_live_001__c_231",
+  "source_url": "https://www.payten.com/si/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_si_a2_live_001__c_244",
+  "source_url": "https://www.bksbank.si/documents/33627/145927/Splosni_pogoji_BizzNet.pdf/328365df-98a6-8a54-db59-8cd428cdb978?t=1606484443527",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_si_a2_live_001__c_245",
+  "source_url": "https://wwwpjn2.enarocanje.si/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_si_a2_live_001__c_247",
+  "source_url": "https://www.flik.si/pravne-osebe/pogosta-vprasanja",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_si_a2_live_001__c_250",
+  "source_url": "https://www.sdh.si/sl-si/novice",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_si_a2_live_001__c_252",
+  "source_url": "https://www.europeanpaymentscouncil.eu/news-insights/insight/instant-payment-environment-slovenia",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_si_a2_live_001__c_256",
+  "source_url": "https://www.bsi.si/financna-stabilnost/nadzor-placil-in-infrastruktur/nadzor-druzb-za-izdajo-elektronskega-denarja/register-druzb-za-izdajo-elektronskega-denarja",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_si_a2_live_001__c_258",
+  "source_url": "https://www.bsi.si/financna-stabilnost/subjekti-nadzora/placilne-institucije-drzav-egp-v-sloveniji",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_si_a2_live_001__c_266",
+  "source_url": "https://www.digitalna.si/digitalna-koalicija",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_si_a2_live_001__c_270",
+  "source_url": "https://www.a-tvp.si/registri/registri",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ }
+]

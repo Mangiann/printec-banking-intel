@@ -1,0 +1,182 @@
+[
+ {
+  "candidate_id": "dr_sk_a2_live_001__c_038",
+  "source_url": "https://opentender.eu/sk",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_sk_a2_live_001__c_074",
+  "source_url": "https://www.otvorenezmluvy.sk/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_sk_a2_live_001__c_106",
+  "source_url": "https://e.dennikn.sk/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_sk_a2_live_001__c_107",
+  "source_url": "https://dennikn.sk/minuta/tema/4340/slovensko-sk",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_sk_a2_live_001__c_109",
+  "source_url": "https://www.itnews.sk/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_sk_a2_live_001__c_146",
+  "source_url": "https://zmluvy.egov.sk/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_sk_a2_live_001__c_159",
+  "source_url": "https://www.sis.gov.sk/files/zakony/zakon_211_2000.pdf",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_sk_a2_live_001__c_173",
+  "source_url": "https://www.zsr.sk/obstaravanie/obstaravanie-podmienkach-zsr/verejne-obstaravanie/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_sk_a2_live_001__c_195",
+  "source_url": "https://kosice-city.sk/verejne-obstaravanie/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_sk_a2_live_001__c_196",
+  "source_url": "https://www.kosickazupa.sk/uradna-tabula/povinne-informacie/verejne-obstaravanie",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_sk_a2_live_001__c_197",
+  "source_url": "https://www.zilinskazupa.sk/sk/verejne-obstaravanie/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_sk_a2_live_001__c_213",
+  "source_url": "https://sk.openprocurements.com/tender/2018-servis-zariadeni-na-spracovanie-bankoviek/",
+  "outcome": "unresolved",
+  "http_status": 503,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 503"
+ },
+ {
+  "candidate_id": "dr_sk_a2_live_001__c_232",
+  "source_url": "https://corporateportal.unicreditgroup.eu/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_sk_a2_live_001__c_239",
+  "source_url": "https://obstaravanie.seas.sk/obstaravanie",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_sk_a2_live_001__c_248",
+  "source_url": "https://obstaravania.egov.sk/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_sk_a2_live_001__c_270",
+  "source_url": "https://ir.euronetworldwide.com/news-releases",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_sk_a2_live_001__c_278",
+  "source_url": "https://www.posam.sk/referencia/tatra-banka-profesionalny-outsourcing/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_sk_a2_live_001__c_280",
+  "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000028823&type=8-K",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ }
+]

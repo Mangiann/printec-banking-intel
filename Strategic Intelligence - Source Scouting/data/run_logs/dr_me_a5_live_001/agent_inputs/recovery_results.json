@@ -1,0 +1,122 @@
+[
+ {
+  "candidate_id": "dr_me_a5_live_001__c_028",
+  "source_url": "https://crnogorska-komercijalna-banka-ad-podgorica.talentlyft.com/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a5_live_001__c_035",
+  "source_url": "https://www.addiko.me/o-nama/zaposljavanje/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://addiko-bank-mne.talentlyft.com/",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_me_a5_live_001__c_057",
+  "source_url": "https://www.erstebank.me/sr_ME/stanovnistvo/racuni-i-kartice/eBankarstvo/Migracija-Halcom-platforme-na-eMon-OfficeBanking",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a5_live_001__c_064",
+  "source_url": "http://www.pretraga.crps.me/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a5_live_001__c_144",
+  "source_url": "https://www.imf.org/external/pubs/ft/scr/2016/cr16201.pdf",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a5_live_001__c_172",
+  "source_url": "https://seonet.ljse.si/default_en.aspx",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a5_live_001__c_207",
+  "source_url": "http://crps.me/strana/pregled/89",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a5_live_001__c_222",
+  "source_url": "https://fondzainovacije.me/en/programi/support-for-the-early-phase-development-of-start-ups/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a5_live_001__c_227",
+  "source_url": "https://poslovi.infostud.com/oglasi-za-posao/crna-gora",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a5_live_001__c_228",
+  "source_url": "https://meetfrank.com/remote-crypto-jobs-in-montenegro",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a5_live_001__c_269",
+  "source_url": "https://www.signalhire.com/companies/komercijalna-banka-ad",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a5_live_001__c_302",
+  "source_url": "https://opencorporates.com/registers/168",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ }
+]

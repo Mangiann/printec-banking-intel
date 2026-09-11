@@ -1,0 +1,452 @@
+[
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_005",
+  "source_url": "http://kba.kozbeszerzes.hu/apex/f?p=103:35",
+  "outcome": "unresolved",
+  "http_status": 503,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 503"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_012",
+  "source_url": "https://kozbeszerzes.dkuzrt.hu/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_023",
+  "source_url": "https://www.bkv.hu/beszerzesek",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_031",
+  "source_url": "https://www.palyazat.gov.hu/doc/45",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_032",
+  "source_url": "https://www.palyazat.gov.hu/tamogatott_projektkereso",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_033",
+  "source_url": "https://www.palyazat.gov.hu/magyarorszg-helyrelltsi-s-ellenllkpessgi-terve",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_036",
+  "source_url": "https://opentender.eu/hu/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_048",
+  "source_url": "https://birosag.hu/birosagi-hatarozatok-gyujteme",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_062",
+  "source_url": "https://adatbazis.k-monitor.hu/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_063",
+  "source_url": "https://atlatszo.hu/kozpenz/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_064",
+  "source_url": "https://www.jogiforum.hu/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_066",
+  "source_url": "https://njt.hu/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "ConnectionResetError"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_072",
+  "source_url": "https://tender-office.hu/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_076",
+  "source_url": "https://opentender.eu/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_081",
+  "source_url": "https://www.tendersontime.com/hungary-tenders/banks-tenders/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_084",
+  "source_url": "https://tenderimpulse.com/all-tender-list-from-country/get-hungary-tenders/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_087",
+  "source_url": "https://eurotenders.net/",
+  "outcome": "unresolved",
+  "http_status": 503,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 503"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_121",
+  "source_url": "https://www.kartyapiac.hu/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_134",
+  "source_url": "https://www.bankweb.hu/iir-magyarorszag-kartyapiac-konferencia/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_138",
+  "source_url": "https://mkb.karrierportal.hu/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_142",
+  "source_url": "https://hu.jooble.org/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_145",
+  "source_url": "https://www.dorsum.eu/news/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_149",
+  "source_url": "https://www.fintechfutures.com/core-banking-technology/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_150",
+  "source_url": "https://www.finextra.com/pressarticles",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_172",
+  "source_url": "https://www.fisac-cgil.it/92104/unicredit-services-procurement-e-nuovo-assetto",
+  "outcome": "unresolved",
+  "http_status": 503,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 503"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_173",
+  "source_url": "https://corporateportal.unicreditgroup.eu/portal/italy/login",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_174",
+  "source_url": "https://www.kh.hu/web/eng/about-us/bank/shareholders",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_178",
+  "source_url": "https://www.tendersontime.com/european-bank-for-reconstruction-and-development-ebrd-tenders/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_179",
+  "source_url": "https://ceelegalmatters.com/banking-2026/banking-hungary-2026",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_192",
+  "source_url": "https://exim.hu/exim/kozerdeku-adatok-m/altalanos-kozzeteteli-lista/gazdalkodasi-adatok-fejlec/kozbeszerzesi-informaciok",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_193",
+  "source_url": "https://exim.hu/doc-list/e-m-szerzodesek?format=html",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_216",
+  "source_url": "https://www.asz.hu/jelentesek/onkormanyzati-jelentesek/7/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_223",
+  "source_url": "https://www.cib.hu/cib_csoport/tarsadalmi_felelossegvallalas/beszallitok/index",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_226",
+  "source_url": "https://www.kh.hu/documents/20184/490492/K&H+Csoport+fenntarthat%C3%B3s%C3%A1gi+ir%C3%A1nyelvek/52d8b2e7-dac8-4bcd-9211-1b85dec37d86",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_243",
+  "source_url": "https://euronetworldwide.gcs-web.com/news-releases",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_245",
+  "source_url": "https://www.ncratleos.com/newsroom",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_259",
+  "source_url": "https://www.itbo.hu/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_263",
+  "source_url": "https://opentender.eu/hu/search/tender",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_264",
+  "source_url": "https://www.4ig.hu/hu/befektetoknek",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_266",
+  "source_url": "https://nisz.hu/hu/kozadat",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_287",
+  "source_url": "https://docs.barion.com/Main_Page",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_288",
+  "source_url": "https://www.kh.hu/vallalkozas/napi-penzugyek/vallalkozoi-bankkartya/bankkartya-elfogadas",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_291",
+  "source_url": "https://www.mastercard.com/global/en/business/support/payment-facilitators.html",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_302",
+  "source_url": "https://ceginformaciosszolgalat.kormany.hu/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a2_live_001__c_315",
+  "source_url": "https://ahalo.hu/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ }
+]

@@ -1,0 +1,1213 @@
+{
+  "generated": "2026-09-08",
+  "source": "ECB Data Portal (data-api.ecb.europa.eu)",
+  "note": "Annual points: stocks (ATMs, POS) = latest half-year per year (S2 preferred); flows (cash withdrawals) = S1 + S2 added, a year with one half so far flagged provisional. Provisional ECB obs (P/E) flagged.",
+  "meta": {
+    "atms": {
+      "label": "ATMs",
+      "unit": "terminals",
+      "flow": "PTN",
+      "source_url": "https://data-api.ecb.europa.eu/service/data/PTN/H.GR+CY+AT+HR+SI+SK+BG+RO+HU+CZ.W0.2221._T.PN?format=csvdata&startPeriod=2016"
+    },
+    "pos": {
+      "label": "POS terminals",
+      "unit": "terminals",
+      "flow": "PTN",
+      "source_url": "https://data-api.ecb.europa.eu/service/data/PTN/H.GR+CY+AT+HR+SI+SK+BG+RO+HU+CZ.W0.2222._T.PN?format=csvdata&startPeriod=2016"
+    },
+    "branches": {
+      "label": "Bank branches",
+      "unit": "offices",
+      "flow": "SSI",
+      "source_url": "https://data-api.ecb.europa.eu/service/data/SSI/A.GR+CY+AT+HR+SI+SK+BG+RO+HU+CZ.122C.N40.1.A1.Z0Z.Z?format=csvdata&startPeriod=2016"
+    },
+    "cash": {
+      "label": "Cash withdrawals",
+      "unit": "million card cash withdrawals per year",
+      "flow": "PAY",
+      "source_url": "https://data-api.ecb.europa.eu/service/data/PAY/H.GR+CY+AT+HR+SI+SK+BG+RO+HU+CZ.W0.CW1.1._Z.N.PN?format=csvdata&startPeriod=2016"
+    }
+  },
+  "series": {
+    "GR": {
+      "atms": [
+        {
+          "year": 2022,
+          "value": 6102.0,
+          "provisional": false
+        },
+        {
+          "year": 2023,
+          "value": 6165.0,
+          "provisional": false
+        },
+        {
+          "year": 2024,
+          "value": 6260.0,
+          "provisional": false
+        },
+        {
+          "year": 2025,
+          "value": 7421.0,
+          "provisional": true
+        }
+      ],
+      "pos": [
+        {
+          "year": 2022,
+          "value": 1057296.0,
+          "provisional": false
+        },
+        {
+          "year": 2023,
+          "value": 1184025.0,
+          "provisional": false
+        },
+        {
+          "year": 2024,
+          "value": 1324916.0,
+          "provisional": false
+        },
+        {
+          "year": 2025,
+          "value": 1157012.0,
+          "provisional": true
+        }
+      ],
+      "branches": [
+        {
+          "year": 2016,
+          "value": 2331.0,
+          "provisional": false
+        },
+        {
+          "year": 2017,
+          "value": 2168.0,
+          "provisional": false
+        },
+        {
+          "year": 2018,
+          "value": 1981.0,
+          "provisional": false
+        },
+        {
+          "year": 2019,
+          "value": 1834.0,
+          "provisional": false
+        },
+        {
+          "year": 2020,
+          "value": 1702.0,
+          "provisional": false
+        },
+        {
+          "year": 2021,
+          "value": 1565.0,
+          "provisional": false
+        },
+        {
+          "year": 2022,
+          "value": 1489.0,
+          "provisional": false
+        },
+        {
+          "year": 2023,
+          "value": 1414.0,
+          "provisional": false
+        },
+        {
+          "year": 2024,
+          "value": 1387.0,
+          "provisional": false
+        },
+        {
+          "year": 2025,
+          "value": 1352.0,
+          "provisional": false
+        }
+      ],
+      "cash": [
+        {
+          "year": 2022,
+          "value": 130.999,
+          "provisional": false
+        },
+        {
+          "year": 2023,
+          "value": 131.419,
+          "provisional": false
+        },
+        {
+          "year": 2024,
+          "value": 129.361,
+          "provisional": false
+        },
+        {
+          "year": 2025,
+          "value": 122.905,
+          "provisional": true
+        }
+      ]
+    },
+    "CY": {
+      "atms": [
+        {
+          "year": 2022,
+          "value": 392.0,
+          "provisional": false
+        },
+        {
+          "year": 2023,
+          "value": 398.0,
+          "provisional": false
+        },
+        {
+          "year": 2024,
+          "value": 398.0,
+          "provisional": false
+        },
+        {
+          "year": 2025,
+          "value": 396.0,
+          "provisional": true
+        }
+      ],
+      "pos": [
+        {
+          "year": 2022,
+          "value": 136215.0,
+          "provisional": false
+        },
+        {
+          "year": 2023,
+          "value": 142532.0,
+          "provisional": false
+        },
+        {
+          "year": 2024,
+          "value": 151399.0,
+          "provisional": false
+        },
+        {
+          "year": 2025,
+          "value": 181874.0,
+          "provisional": true
+        }
+      ],
+      "branches": [
+        {
+          "year": 2016,
+          "value": 544.0,
+          "provisional": false
+        },
+        {
+          "year": 2017,
+          "value": 460.0,
+          "provisional": false
+        },
+        {
+          "year": 2018,
+          "value": 386.0,
+          "provisional": false
+        },
+        {
+          "year": 2019,
+          "value": 328.0,
+          "provisional": false
+        },
+        {
+          "year": 2020,
+          "value": 282.0,
+          "provisional": false
+        },
+        {
+          "year": 2021,
+          "value": 260.0,
+          "provisional": false
+        },
+        {
+          "year": 2022,
+          "value": 204.0,
+          "provisional": false
+        },
+        {
+          "year": 2023,
+          "value": 198.0,
+          "provisional": false
+        },
+        {
+          "year": 2024,
+          "value": 193.0,
+          "provisional": false
+        },
+        {
+          "year": 2025,
+          "value": 193.0,
+          "provisional": false
+        }
+      ],
+      "cash": [
+        {
+          "year": 2022,
+          "value": 16.328,
+          "provisional": false
+        },
+        {
+          "year": 2023,
+          "value": 15.599,
+          "provisional": false
+        },
+        {
+          "year": 2024,
+          "value": 14.64,
+          "provisional": false
+        },
+        {
+          "year": 2025,
+          "value": 13.474,
+          "provisional": true
+        }
+      ]
+    },
+    "AT": {
+      "atms": [
+        {
+          "year": 2022,
+          "value": 13933.0,
+          "provisional": false
+        },
+        {
+          "year": 2023,
+          "value": 13456.0,
+          "provisional": false
+        },
+        {
+          "year": 2024,
+          "value": 13388.0,
+          "provisional": false
+        },
+        {
+          "year": 2025,
+          "value": 13753.0,
+          "provisional": true
+        }
+      ],
+      "pos": [
+        {
+          "year": 2022,
+          "value": 156452.0,
+          "provisional": false
+        },
+        {
+          "year": 2023,
+          "value": 159861.0,
+          "provisional": false
+        },
+        {
+          "year": 2024,
+          "value": 152063.0,
+          "provisional": false
+        },
+        {
+          "year": 2025,
+          "value": 170439.0,
+          "provisional": true
+        }
+      ],
+      "branches": [
+        {
+          "year": 2016,
+          "value": 3934.0,
+          "provisional": false
+        },
+        {
+          "year": 2017,
+          "value": 3765.0,
+          "provisional": false
+        },
+        {
+          "year": 2018,
+          "value": 3631.0,
+          "provisional": false
+        },
+        {
+          "year": 2019,
+          "value": 3513.0,
+          "provisional": false
+        },
+        {
+          "year": 2020,
+          "value": 3109.0,
+          "provisional": false
+        },
+        {
+          "year": 2021,
+          "value": 3422.0,
+          "provisional": false
+        },
+        {
+          "year": 2022,
+          "value": 3292.0,
+          "provisional": false
+        },
+        {
+          "year": 2023,
+          "value": 3185.0,
+          "provisional": false
+        },
+        {
+          "year": 2024,
+          "value": 3140.0,
+          "provisional": false
+        },
+        {
+          "year": 2025,
+          "value": 3046.0,
+          "provisional": false
+        }
+      ],
+      "cash": [
+        {
+          "year": 2022,
+          "value": 205.996,
+          "provisional": false
+        },
+        {
+          "year": 2023,
+          "value": 210.839,
+          "provisional": false
+        },
+        {
+          "year": 2024,
+          "value": 207.156,
+          "provisional": false
+        },
+        {
+          "year": 2025,
+          "value": 196.995,
+          "provisional": true
+        }
+      ]
+    },
+    "HR": {
+      "atms": [
+        {
+          "year": 2022,
+          "value": 4184.0,
+          "provisional": false
+        },
+        {
+          "year": 2023,
+          "value": 4277.0,
+          "provisional": false
+        },
+        {
+          "year": 2024,
+          "value": 3978.0,
+          "provisional": false
+        },
+        {
+          "year": 2025,
+          "value": 3816.0,
+          "provisional": true
+        }
+      ],
+      "pos": [
+        {
+          "year": 2022,
+          "value": 125677.0,
+          "provisional": false
+        },
+        {
+          "year": 2023,
+          "value": 133299.0,
+          "provisional": false
+        },
+        {
+          "year": 2024,
+          "value": 144948.0,
+          "provisional": false
+        },
+        {
+          "year": 2025,
+          "value": 168878.0,
+          "provisional": true
+        }
+      ],
+      "branches": [
+        {
+          "year": 2016,
+          "value": 1142.0,
+          "provisional": false
+        },
+        {
+          "year": 2017,
+          "value": 1112.0,
+          "provisional": false
+        },
+        {
+          "year": 2018,
+          "value": 1028.0,
+          "provisional": false
+        },
+        {
+          "year": 2019,
+          "value": 964.0,
+          "provisional": false
+        },
+        {
+          "year": 2020,
+          "value": 904.0,
+          "provisional": false
+        },
+        {
+          "year": 2021,
+          "value": 874.0,
+          "provisional": false
+        },
+        {
+          "year": 2022,
+          "value": 848.0,
+          "provisional": false
+        },
+        {
+          "year": 2023,
+          "value": 799.0,
+          "provisional": false
+        },
+        {
+          "year": 2024,
+          "value": 784.0,
+          "provisional": false
+        },
+        {
+          "year": 2025,
+          "value": 792.0,
+          "provisional": false
+        }
+      ],
+      "cash": [
+        {
+          "year": 2023,
+          "value": 94.385,
+          "provisional": false
+        },
+        {
+          "year": 2024,
+          "value": 94.27,
+          "provisional": false
+        },
+        {
+          "year": 2025,
+          "value": 90.264,
+          "provisional": true
+        }
+      ]
+    },
+    "SI": {
+      "atms": [
+        {
+          "year": 2022,
+          "value": 1276.0,
+          "provisional": false
+        },
+        {
+          "year": 2023,
+          "value": 1309.0,
+          "provisional": false
+        },
+        {
+          "year": 2024,
+          "value": 1284.0,
+          "provisional": false
+        },
+        {
+          "year": 2025,
+          "value": 1251.0,
+          "provisional": true
+        }
+      ],
+      "pos": [
+        {
+          "year": 2022,
+          "value": 38824.0,
+          "provisional": false
+        },
+        {
+          "year": 2023,
+          "value": 42552.0,
+          "provisional": false
+        },
+        {
+          "year": 2024,
+          "value": 47235.0,
+          "provisional": false
+        },
+        {
+          "year": 2025,
+          "value": 46330.0,
+          "provisional": true
+        }
+      ],
+      "branches": [
+        {
+          "year": 2016,
+          "value": 583.0,
+          "provisional": false
+        },
+        {
+          "year": 2017,
+          "value": 560.0,
+          "provisional": false
+        },
+        {
+          "year": 2018,
+          "value": 532.0,
+          "provisional": false
+        },
+        {
+          "year": 2019,
+          "value": 526.0,
+          "provisional": false
+        },
+        {
+          "year": 2020,
+          "value": 479.0,
+          "provisional": false
+        },
+        {
+          "year": 2021,
+          "value": 441.0,
+          "provisional": false
+        },
+        {
+          "year": 2022,
+          "value": 419.0,
+          "provisional": false
+        },
+        {
+          "year": 2023,
+          "value": 410.0,
+          "provisional": false
+        },
+        {
+          "year": 2024,
+          "value": 374.0,
+          "provisional": false
+        },
+        {
+          "year": 2025,
+          "value": 365.0,
+          "provisional": false
+        }
+      ],
+      "cash": [
+        {
+          "year": 2022,
+          "value": 47.281,
+          "provisional": false
+        },
+        {
+          "year": 2023,
+          "value": 47.184,
+          "provisional": false
+        },
+        {
+          "year": 2024,
+          "value": 45.519,
+          "provisional": false
+        },
+        {
+          "year": 2025,
+          "value": 43.033,
+          "provisional": true
+        }
+      ]
+    },
+    "SK": {
+      "atms": [
+        {
+          "year": 2022,
+          "value": 3437.0,
+          "provisional": false
+        },
+        {
+          "year": 2023,
+          "value": 3314.0,
+          "provisional": false
+        },
+        {
+          "year": 2024,
+          "value": 3277.0,
+          "provisional": false
+        },
+        {
+          "year": 2025,
+          "value": 2796.0,
+          "provisional": true
+        }
+      ],
+      "pos": [
+        {
+          "year": 2022,
+          "value": 123721.0,
+          "provisional": false
+        },
+        {
+          "year": 2023,
+          "value": 143260.0,
+          "provisional": false
+        },
+        {
+          "year": 2024,
+          "value": 171839.0,
+          "provisional": false
+        },
+        {
+          "year": 2025,
+          "value": 194396.0,
+          "provisional": true
+        }
+      ],
+      "branches": [
+        {
+          "year": 2016,
+          "value": 1293.0,
+          "provisional": false
+        },
+        {
+          "year": 2017,
+          "value": 1233.0,
+          "provisional": false
+        },
+        {
+          "year": 2018,
+          "value": 1174.0,
+          "provisional": false
+        },
+        {
+          "year": 2019,
+          "value": 1140.0,
+          "provisional": false
+        },
+        {
+          "year": 2020,
+          "value": 1074.0,
+          "provisional": false
+        },
+        {
+          "year": 2021,
+          "value": 984.0,
+          "provisional": false
+        },
+        {
+          "year": 2022,
+          "value": 942.0,
+          "provisional": false
+        },
+        {
+          "year": 2023,
+          "value": 910.0,
+          "provisional": false
+        },
+        {
+          "year": 2024,
+          "value": 882.0,
+          "provisional": false
+        },
+        {
+          "year": 2025,
+          "value": 850.0,
+          "provisional": false
+        }
+      ],
+      "cash": [
+        {
+          "year": 2022,
+          "value": 68.504,
+          "provisional": false
+        },
+        {
+          "year": 2023,
+          "value": 167.665,
+          "provisional": false
+        },
+        {
+          "year": 2024,
+          "value": 72.594,
+          "provisional": false
+        },
+        {
+          "year": 2025,
+          "value": 67.827,
+          "provisional": true
+        }
+      ]
+    },
+    "BG": {
+      "atms": [
+        {
+          "year": 2023,
+          "value": 5159.0,
+          "provisional": false
+        },
+        {
+          "year": 2024,
+          "value": 5122.0,
+          "provisional": false
+        },
+        {
+          "year": 2025,
+          "value": 5091.0,
+          "provisional": true
+        }
+      ],
+      "pos": [
+        {
+          "year": 2023,
+          "value": 148882.0,
+          "provisional": false
+        },
+        {
+          "year": 2024,
+          "value": 173231.0,
+          "provisional": false
+        },
+        {
+          "year": 2025,
+          "value": 229194.0,
+          "provisional": true
+        }
+      ],
+      "branches": [
+        {
+          "year": 2016,
+          "value": 2936.0,
+          "provisional": false
+        },
+        {
+          "year": 2017,
+          "value": 3060.0,
+          "provisional": false
+        },
+        {
+          "year": 2018,
+          "value": 3142.0,
+          "provisional": false
+        },
+        {
+          "year": 2019,
+          "value": 3420.0,
+          "provisional": false
+        },
+        {
+          "year": 2020,
+          "value": 3536.0,
+          "provisional": false
+        },
+        {
+          "year": 2021,
+          "value": 3748.0,
+          "provisional": false
+        },
+        {
+          "year": 2022,
+          "value": 4526.0,
+          "provisional": false
+        },
+        {
+          "year": 2023,
+          "value": 5088.0,
+          "provisional": false
+        },
+        {
+          "year": 2024,
+          "value": 5171.0,
+          "provisional": false
+        },
+        {
+          "year": 2025,
+          "value": 4542.0,
+          "provisional": false
+        }
+      ],
+      "cash": [
+        {
+          "year": 2023,
+          "value": 131.005,
+          "provisional": false
+        },
+        {
+          "year": 2024,
+          "value": 129.393,
+          "provisional": false
+        },
+        {
+          "year": 2025,
+          "value": 125.415,
+          "provisional": true
+        }
+      ]
+    },
+    "RO": {
+      "atms": [
+        {
+          "year": 2022,
+          "value": 10140.0,
+          "provisional": false
+        },
+        {
+          "year": 2023,
+          "value": 10229.0,
+          "provisional": false
+        },
+        {
+          "year": 2024,
+          "value": 10242.0,
+          "provisional": false
+        },
+        {
+          "year": 2025,
+          "value": 11136.0,
+          "provisional": true
+        }
+      ],
+      "pos": [
+        {
+          "year": 2022,
+          "value": 366328.0,
+          "provisional": false
+        },
+        {
+          "year": 2023,
+          "value": 447292.0,
+          "provisional": false
+        },
+        {
+          "year": 2024,
+          "value": 529862.0,
+          "provisional": false
+        },
+        {
+          "year": 2025,
+          "value": 645670.0,
+          "provisional": true
+        }
+      ],
+      "branches": [
+        {
+          "year": 2016,
+          "value": 4798.0,
+          "provisional": false
+        },
+        {
+          "year": 2017,
+          "value": 4596.0,
+          "provisional": false
+        },
+        {
+          "year": 2018,
+          "value": 4382.0,
+          "provisional": false
+        },
+        {
+          "year": 2019,
+          "value": 4059.0,
+          "provisional": false
+        },
+        {
+          "year": 2020,
+          "value": 3871.0,
+          "provisional": false
+        },
+        {
+          "year": 2021,
+          "value": 3690.0,
+          "provisional": false
+        },
+        {
+          "year": 2022,
+          "value": 3606.0,
+          "provisional": false
+        },
+        {
+          "year": 2023,
+          "value": 3549.0,
+          "provisional": false
+        },
+        {
+          "year": 2024,
+          "value": 3495.0,
+          "provisional": false
+        },
+        {
+          "year": 2025,
+          "value": 3288.0,
+          "provisional": false
+        }
+      ],
+      "cash": [
+        {
+          "year": 2022,
+          "value": 257.972,
+          "provisional": false
+        },
+        {
+          "year": 2023,
+          "value": 261.346,
+          "provisional": false
+        },
+        {
+          "year": 2024,
+          "value": 260.561,
+          "provisional": false
+        },
+        {
+          "year": 2025,
+          "value": 259.203,
+          "provisional": true
+        }
+      ]
+    },
+    "HU": {
+      "atms": [
+        {
+          "year": 2022,
+          "value": 4706.0,
+          "provisional": false
+        },
+        {
+          "year": 2023,
+          "value": 4563.0,
+          "provisional": false
+        },
+        {
+          "year": 2024,
+          "value": 5140.0,
+          "provisional": false
+        },
+        {
+          "year": 2025,
+          "value": 5639.0,
+          "provisional": true
+        }
+      ],
+      "pos": [
+        {
+          "year": 2022,
+          "value": 257091.0,
+          "provisional": false
+        },
+        {
+          "year": 2023,
+          "value": 285795.0,
+          "provisional": false
+        },
+        {
+          "year": 2024,
+          "value": 305266.0,
+          "provisional": false
+        },
+        {
+          "year": 2025,
+          "value": 274974.0,
+          "provisional": true
+        }
+      ],
+      "branches": [
+        {
+          "year": 2016,
+          "value": 2691.0,
+          "provisional": false
+        },
+        {
+          "year": 2017,
+          "value": 2418.0,
+          "provisional": false
+        },
+        {
+          "year": 2018,
+          "value": 2235.0,
+          "provisional": false
+        },
+        {
+          "year": 2019,
+          "value": 1956.0,
+          "provisional": false
+        },
+        {
+          "year": 2020,
+          "value": 1877.0,
+          "provisional": false
+        },
+        {
+          "year": 2021,
+          "value": 1826.0,
+          "provisional": false
+        },
+        {
+          "year": 2022,
+          "value": 1510.0,
+          "provisional": false
+        },
+        {
+          "year": 2023,
+          "value": 1436.0,
+          "provisional": false
+        },
+        {
+          "year": 2024,
+          "value": 1401.0,
+          "provisional": false
+        },
+        {
+          "year": 2025,
+          "value": 1300.0,
+          "provisional": false
+        }
+      ],
+      "cash": [
+        {
+          "year": 2022,
+          "value": 91.825,
+          "provisional": false
+        },
+        {
+          "year": 2023,
+          "value": 90.186,
+          "provisional": false
+        },
+        {
+          "year": 2024,
+          "value": 86.85,
+          "provisional": false
+        },
+        {
+          "year": 2025,
+          "value": 82.106,
+          "provisional": true
+        }
+      ]
+    },
+    "CZ": {
+      "atms": [
+        {
+          "year": 2022,
+          "value": 5200.0,
+          "provisional": false
+        },
+        {
+          "year": 2023,
+          "value": 5088.0,
+          "provisional": false
+        },
+        {
+          "year": 2024,
+          "value": 5034.0,
+          "provisional": false
+        },
+        {
+          "year": 2025,
+          "value": 4926.0,
+          "provisional": true
+        }
+      ],
+      "pos": [
+        {
+          "year": 2022,
+          "value": 238940.0,
+          "provisional": false
+        },
+        {
+          "year": 2023,
+          "value": 254298.0,
+          "provisional": false
+        },
+        {
+          "year": 2024,
+          "value": 268142.0,
+          "provisional": false
+        },
+        {
+          "year": 2025,
+          "value": 285310.0,
+          "provisional": true
+        }
+      ],
+      "branches": [
+        {
+          "year": 2016,
+          "value": 1977.0,
+          "provisional": false
+        },
+        {
+          "year": 2017,
+          "value": 1873.0,
+          "provisional": false
+        },
+        {
+          "year": 2018,
+          "value": 1868.0,
+          "provisional": false
+        },
+        {
+          "year": 2019,
+          "value": 1807.0,
+          "provisional": false
+        },
+        {
+          "year": 2020,
+          "value": 1606.0,
+          "provisional": false
+        },
+        {
+          "year": 2021,
+          "value": 1521.0,
+          "provisional": false
+        },
+        {
+          "year": 2022,
+          "value": 1448.0,
+          "provisional": false
+        },
+        {
+          "year": 2023,
+          "value": 1366.0,
+          "provisional": false
+        },
+        {
+          "year": 2024,
+          "value": 1309.0,
+          "provisional": false
+        },
+        {
+          "year": 2025,
+          "value": 1272.0,
+          "provisional": false
+        }
+      ],
+      "cash": [
+        {
+          "year": 2022,
+          "value": 160.376,
+          "provisional": false
+        },
+        {
+          "year": 2023,
+          "value": 158.011,
+          "provisional": false
+        },
+        {
+          "year": 2024,
+          "value": 151.076,
+          "provisional": false
+        },
+        {
+          "year": 2025,
+          "value": 140.358,
+          "provisional": true
+        }
+      ]
+    }
+  }
+}

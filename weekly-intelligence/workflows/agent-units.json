@@ -1,0 +1,661 @@
+{
+  "_about": "Canonical fan-out work-lists for the collector agents (1-6). Each agent's SKILL.md reads its slice and calls research-harness.workflow.js with it. ONE source of truth for 'what entities does each agent fan out over'. Edit here to add/remove a bank, portal, competitor, etc. The harness renders the table deterministically from the verified signals, so adding a unit here can never be silently dropped — if it returns nothing it shows as ⚠ EMPTY with a coverage warning. unitNoun/tableKind/findingsDir are passed straight through to the harness.",
+  "_shared": {
+    "productContext": "Printec sells: NCR ATMs (dispense / intelligent-deposit / recycling) + x-core multivendor ATM software, ATM/device telemetry & monitoring, self-service & bank kiosks, cash automation/recyclers (Glory / Sesami TCRs, NCR), NCR APTRA OptiCash cash optimisation, POS terminals & acquiring (Verifone / Castles) + terminal management (TMS), digital onboarding/eKYC (Namirial), AML/KYC (IMTF Siron, FICO), transaction monitoring (INETCO), Thales HSM/PCI, physical ATM security, and managed/field services. Key partner: NCR Atleos. Known footprint reference customers: Alpha Bank (Siron AML), BCR (APTRA), Erste Croatia (OptiCash), Raiffeisen Serbia (x-core), Bank of Cyprus (Glory TCR), PrivatBank & AikBank (NCR recyclers), OTP/Raiffeisen Albania."
+  },
+  "1": {
+    "agentNo": 1,
+    "agentLabel": "Bank Disclosures",
+    "findingsDir": "/Users/mangian/Downloads/BANKING/findings/01-bank-disclosures",
+    "unitNoun": "bank",
+    "tableKind": "signals",
+    "units": [
+      {
+        "slug": "nbg-gr",
+        "name": "National Bank of Greece",
+        "focus": "Cosmos/Finacle core go-live, capex split, ATM/branch fleet, self-service, vendors",
+        "langs": "Greek"
+      },
+      {
+        "slug": "piraeus-gr",
+        "name": "Piraeus Financial Holdings",
+        "focus": "CMD AI programme, ATM/branch fleet, Snappi, Cashflex off-site ATMs",
+        "langs": "Greek"
+      },
+      {
+        "slug": "eurobank-gr",
+        "name": "Eurobank Holdings (+ Postbank BG, Eurobank Cyprus)",
+        "focus": "phygital branches, Cash 360 recyclers, AI Factory, FY plan",
+        "langs": "Greek"
+      },
+      {
+        "slug": "alpha-gr",
+        "name": "Alpha Bank (Greece)",
+        "focus": "retail transformation, contactless ATMs, VSS, Siron AML partner",
+        "langs": "Greek"
+      },
+      {
+        "slug": "optima-gr",
+        "name": "Optima Bank",
+        "focus": "lean digital-first model, ATM fleet, capex",
+        "langs": "Greek"
+      },
+      {
+        "slug": "crediabank-gr",
+        "name": "CrediaBank (ex-Attica)",
+        "focus": "rebranding, HSBC Malta, Euronet ATM/acquiring transfer, branch concept",
+        "langs": "Greek"
+      },
+      {
+        "slug": "bank-of-cyprus",
+        "name": "Bank of Cyprus",
+        "focus": "branch reformatting, staffless branches, Glory TCR incumbency, VEP",
+        "langs": "Greek"
+      },
+      {
+        "slug": "eurobank-cyprus",
+        "name": "Eurobank Limited (ex-Hellenic) Cyprus",
+        "focus": "merger integration, ATM/POS harmonisation, Cash 360, synergy target",
+        "langs": "Greek"
+      },
+      {
+        "slug": "alpha-cyprus",
+        "name": "Alpha Bank Cyprus (ex-AstroBank)",
+        "focus": "integration, ATM consolidation, contactless, VSS",
+        "langs": "Greek"
+      },
+      {
+        "slug": "banca-transilvania-ro",
+        "name": "Banca Transilvania",
+        "focus": "annual capex (IT/digital), self-banking machines, OTP RO merger, POS",
+        "langs": "Romanian"
+      },
+      {
+        "slug": "bcr-ro",
+        "name": "BCR (Erste)",
+        "focus": "branch modernisation, APTRA OptiSuite incumbency, George Business, ATM fleet",
+        "langs": "Romanian"
+      },
+      {
+        "slug": "brd-ro",
+        "name": "BRD-SocGen",
+        "focus": "branch contraction, 24/7 self-service zones, recycler upgrade, Safetech",
+        "langs": "Romanian"
+      },
+      {
+        "slug": "cec-ro",
+        "name": "CEC Bank",
+        "focus": "Temenos/Aurachain programme, RON 235m digital, 1,484 ATMs/MFMs, Digital Agencies",
+        "langs": "Romanian"
+      },
+      {
+        "slug": "raiffeisen-ro",
+        "name": "Raiffeisen Bank Romania",
+        "focus": "ATM/POS fleet, cloud, voice-guidance, Garanti BBVA integration",
+        "langs": "Romanian"
+      },
+      {
+        "slug": "unicredit-ro",
+        "name": "UniCredit Bank Romania",
+        "focus": "Alpha Bank RO merger, ATM harmonisation, Prime, Google Cloud",
+        "langs": "Romanian"
+      },
+      {
+        "slug": "dsk-bg",
+        "name": "DSK Bank (OTP)",
+        "focus": "post-euro ATM/CDM strategy, AI assistant, fleet vendor, IT capex",
+        "langs": "Bulgarian"
+      },
+      {
+        "slug": "ubb-bg",
+        "name": "UBB (KBC)",
+        "focus": "post-euro 937 ATMs, cashless branch, Kate AI, Eurohub coin offices",
+        "langs": "Bulgarian"
+      },
+      {
+        "slug": "postbank-bg",
+        "name": "Postbank (Eurobank BG)",
+        "focus": "Express Banking Digital Zones / Postbank NEXT, ~450 ATMs, EVA AI",
+        "langs": "Bulgarian"
+      },
+      {
+        "slug": "unicredit-bulbank-bg",
+        "name": "UniCredit Bulbank",
+        "focus": "Branch of the Future cashless, post-euro ATM replacement, Prime, Google Cloud",
+        "langs": "Bulgarian"
+      },
+      {
+        "slug": "banca-intesa-rs",
+        "name": "Banca Intesa Beograd",
+        "focus": "407 ATMs + 110 cash-in + 118 kiosks, AML, ISP group standards",
+        "langs": "Serbian"
+      },
+      {
+        "slug": "otp-srbija-rs",
+        "name": "OTP banka Srbija",
+        "focus": "274 ATMs, post-merger fleet, open banking/PSD2, Payten processor",
+        "langs": "Serbian"
+      },
+      {
+        "slug": "nlb-komercijalna-rs",
+        "name": "NLB Komercijalna banka",
+        "focus": "300-machine multifunction ATM replacement, >90% services off-branch",
+        "langs": "Serbian"
+      },
+      {
+        "slug": "raiffeisen-rs",
+        "name": "Raiffeisen banka Serbia",
+        "focus": "x-core incumbency (Bank Yourself), iRacun, 1m-client target",
+        "langs": "Serbian"
+      },
+      {
+        "slug": "aik-rs",
+        "name": "AikBank / AikGroup",
+        "focus": "Eurobank Direktna merger, 500+ ATMs, NCR Atleos win, 4-market group",
+        "langs": "Serbian"
+      },
+      {
+        "slug": "croatia-cluster",
+        "name": "Croatia (ZABA, PBZ, Erste HR, OTP HR)",
+        "focus": "ATM fleets, OptiCash (Erste HR incumbency), recyclers, POS/Nexi, vendors",
+        "langs": "Croatian"
+      },
+      {
+        "slug": "slovenia-cluster",
+        "name": "Slovenia (NLB, OTP banka d.d., Intesa SI, Bankart)",
+        "focus": "post-merger OTP fleet, NLB Strategy 2030, Bankart POS/TMS, recyclers",
+        "langs": "Slovenian"
+      },
+      {
+        "slug": "hungary-cluster",
+        "name": "Hungary (OTP, K&H, Erste HU, MBH)",
+        "focus": "Act XVIII ATM mandate, eMACH.ai core, MBH integration, AML fines",
+        "langs": "Hungarian"
+      },
+      {
+        "slug": "czechia-cluster",
+        "name": "Czechia (Ceska sporitelna, CSOB, Komercni, Raiffeisenbank CZ)",
+        "focus": "shared deposit-ATM network, recyclers, Temenos (KB), KAL incumbency, DORA/AMLR",
+        "langs": "Czech"
+      },
+      {
+        "slug": "slovakia-cluster",
+        "name": "Slovakia (Slovenska sporitelna, VUB, Tatra)",
+        "focus": "deposit-ATM expansion, ATM 2.0 coin, eKasa POS mandate, OptiCash/APTRA",
+        "langs": "Slovak"
+      },
+      {
+        "slug": "privatbank-ua",
+        "name": "PrivatBank",
+        "focus": "Printec incumbent (1,140 NCR recyclers), 800-unit 2026 lot, Prozorro tender",
+        "langs": "Ukrainian"
+      },
+      {
+        "slug": "oschadbank-ua",
+        "name": "Oschadbank + Raiffeisen Ukraine",
+        "focus": "ATM fleet, core migration, AI, EBRD guarantee, Power Banking resilience",
+        "langs": "Ukrainian"
+      },
+      {
+        "slug": "albania",
+        "name": "Albania (Raiffeisen AL, BKT, Credins, OTP AL, Tirana Bank)",
+        "focus": "NCR SS80 (Printec), fleet refresh, Creatio, digital banks",
+        "langs": "Albanian"
+      },
+      {
+        "slug": "bosnia",
+        "name": "Bosnia & Herzegovina (UniCredit, Raiffeisen, NLB, Addiko, ASA, Sparkasse)",
+        "focus": "ASA fleet modernisation, deposit ATMs, Temenos cores, instant payments, growing ATM market",
+        "langs": "Bosnian/Serbian/Croatian"
+      },
+      {
+        "slug": "kosovo",
+        "name": "Kosovo (BKT, TEB, ProCredit, BPB, NLB, Banka Ekonomike)",
+        "focus": "BPB Printec incumbency, deposit ATMs, 24/7 zones, Isbank acquisition, CBK growth",
+        "langs": "Albanian"
+      },
+      {
+        "slug": "montenegro",
+        "name": "Montenegro (CKB, NLB, Hipotekarna, Lovcen, Prva, Adriatic, Erste)",
+        "focus": "CKB largest fleet, Prva Cash-In ATMs, Lovcen smart-deposit, AIK/Hipotekarna",
+        "langs": "Montenegrin/Serbian"
+      },
+      {
+        "slug": "north-macedonia",
+        "name": "North Macedonia (Komercijalna, Stopanska/NBG, NLB, Halkbank, Sparkasse, UNIBank, ProCredit, Silk Road)",
+        "focus": "Stopanska NBG transformation, cash-in ATMs, 24/7 zones, SEPA/instant payments, OneID",
+        "langs": "Macedonian"
+      },
+      {
+        "slug": "erste-group",
+        "name": "Erste Group (multi-country deck)",
+        "focus": "country branch counts, IT-cost line, George, Poland integration",
+        "langs": "German"
+      },
+      {
+        "slug": "kbc-group",
+        "name": "KBC Group (CZ/SK/HU/BG)",
+        "focus": "branch deltas, Kate AI, phygital, ATM/self-service per market",
+        "langs": "English"
+      },
+      {
+        "slug": "rbi-group",
+        "name": "RBI Group (multi-country)",
+        "focus": "OPEX, Garanti + Addiko integration timelines, Ukraine status, ISO 20022",
+        "langs": "German"
+      },
+      {
+        "slug": "groups-otp-intesa-nlb-unicredit",
+        "name": "Groups: OTP / Intesa Sanpaolo CEE / NLB / UniCredit",
+        "focus": "subsidiary-level IT-opex, branch/ATM counts, cloud programmes, isytech/Prime",
+        "langs": "English+local"
+      },
+      {
+        "slug": "addiko-group",
+        "name": "Addiko Bank Group (HR/SI/RS/BA/ME)",
+        "focus": "group H1/FY results, RBI/Agri Europe takeover status, branch/ATM footprint per market, digital-lending and self-service plans",
+        "langs": "German/English+local"
+      },
+      {
+        "slug": "procredit-group",
+        "name": "ProCredit Holding (XK/BA/BG/RO/RS/AL/UA/MK)",
+        "focus": "group H1/FY results, 24/7 Zone self-service model, direct-banking/ATM strategy per market, IT investment",
+        "langs": "German/English+local"
+      }
+    ]
+  },
+  "2": {
+    "agentNo": 2,
+    "agentLabel": "Tenders & Procurement",
+    "findingsDir": "/Users/mangian/Downloads/BANKING/findings/02-tenders",
+    "unitNoun": "procurement portal",
+    "tableKind": "tenders",
+    "units": [
+      {
+        "slug": "ted-eu",
+        "name": "TED (EU-wide)",
+        "focus": "ATM, cash automation, self-service, POS, security, IT-outsourcing notices across all EU footprint countries; capture buyer + value + deadline + winner",
+        "langs": "English + filings language"
+      },
+      {
+        "slug": "greece-diavgeia-kimdis",
+        "name": "Greece — Diavgeia / KIMDIS / ESIDIS",
+        "focus": "Greek bank & public ATM/self-service/POS tenders and awards",
+        "langs": "Greek"
+      },
+      {
+        "slug": "romania-seap-sicap",
+        "name": "Romania — SEAP/SICAP (e-licitatie)",
+        "focus": "BCR/BRD/CEC/Transilvania/state ATM, self-service, POS, security tenders + winners",
+        "langs": "Romanian"
+      },
+      {
+        "slug": "bulgaria-eop",
+        "name": "Bulgaria — CAIS EOP (app.eop.bg)",
+        "focus": "post-euro ATM/CDM, recycler, self-service, POS tenders",
+        "langs": "Bulgarian"
+      },
+      {
+        "slug": "serbia-ujn",
+        "name": "Serbia — jnportal.ujn.gov.rs",
+        "focus": "bank & public ATM/self-service/POS tenders + winners",
+        "langs": "Serbian"
+      },
+      {
+        "slug": "ukraine-prozorro",
+        "name": "Ukraine — Prozorro (prozorro.gov.ua + tender.privatbank.ua)",
+        "focus": "PrivatBank 800-ATM 2026 lot, Oschadbank, ATM/SST/IT lots + winners",
+        "langs": "Ukrainian"
+      },
+      {
+        "slug": "croatia-eojn",
+        "name": "Croatia — EOJN (eojn.hr)",
+        "focus": "bank/public ATM, self-service, POS tenders",
+        "langs": "Croatian"
+      },
+      {
+        "slug": "slovenia-enarocanje",
+        "name": "Slovenia — e-narocanje",
+        "focus": "ATM/self-service/POS tenders",
+        "langs": "Slovenian"
+      },
+      {
+        "slug": "slovakia-uvo",
+        "name": "Slovakia — UVO (uvo.gov.sk)",
+        "focus": "ATM/deposit/POS tenders",
+        "langs": "Slovak"
+      },
+      {
+        "slug": "czechia-nen",
+        "name": "Czechia — NEN (nen.nipez.cz) + ČNB E-ZAK (ezak.cnb.cz)",
+        "focus": "ATM/self-service/POS tenders",
+        "langs": "Czech"
+      },
+      {
+        "slug": "hungary-ekr",
+        "name": "Hungary — EKR (ekr.gov.hu / kozbeszerzes.hu)",
+        "focus": "Act XVIII ATM rollout tenders (MBH/Erste/K&H/OTP), self-service/POS",
+        "langs": "Hungarian"
+      },
+      {
+        "slug": "western-balkans-portals",
+        "name": "Western Balkans portals (AL/BA/XK/ME/MK)",
+        "focus": "national e-procurement portals; bank & central-bank ATM/self-service tenders + winners",
+        "langs": "local"
+      },
+      {
+        "slug": "bank-owned-pages",
+        "name": "Bank-owned procurement pages",
+        "focus": "banks that run their own RFP portals (PrivatBank, CEC, others) + recent awards revealing winners",
+        "langs": "local"
+      },
+      {
+        "slug": "cyprus-eprocurement",
+        "name": "Cyprus — eprocurement.gov.cy",
+        "focus": "Central Bank of Cyprus tenders (AML inspection services, IT/security), Cyprus Post, the Department of Insolvency IT programme, national eID/eMRTD awards, and any bank ATM/self-service/POS notices + winners. Added 01/08/2026 after the unit returned in-scope signals.",
+        "langs": "Greek + English"
+      }
+    ]
+  },
+  "3": {
+    "agentNo": 3,
+    "agentLabel": "Regulation & Deadlines",
+    "findingsDir": "/Users/mangian/Downloads/BANKING/findings/03-regulation",
+    "unitNoun": "regulation workstream",
+    "tableKind": "regulation",
+    "units": [
+      {
+        "slug": "dora",
+        "name": "DORA (digital operational resilience)",
+        "focus": "status, ICT third-party register, threat-led pen testing, CTPP designations across footprint",
+        "langs": "English+local"
+      },
+      {
+        "slug": "instant-payments-sepa",
+        "name": "Instant payments & SEPA (incl. SCT Inst, VoP)",
+        "focus": "go-live dates per country incl. SEPA accession (NM 05/10/2025), Western Balkans TIPS-clone (~July 2026)",
+        "langs": "English+local"
+      },
+      {
+        "slug": "psd3-psr",
+        "name": "PSD3 / PSR",
+        "focus": "EU timeline, fraud-liability, open banking changes",
+        "langs": "English"
+      },
+      {
+        "slug": "iso20022",
+        "name": "ISO 20022 migration",
+        "focus": "deadlines for high-value + instant rails per market",
+        "langs": "English+local"
+      },
+      {
+        "slug": "digital-euro-cbdc",
+        "name": "Digital euro & CBDC",
+        "focus": "ECB programme timeline, acceptance/ATM-wallet readiness",
+        "langs": "English"
+      },
+      {
+        "slug": "accessibility-eaa",
+        "name": "European Accessibility Act (ATMs/self-service)",
+        "focus": "28/06/2025 obligations for ATMs/payment terminals, enforcement per country",
+        "langs": "English+local"
+      },
+      {
+        "slug": "aml-amla-amlr",
+        "name": "AML — AMLA / AMLR",
+        "focus": "AMLR application (2027), AMLA build-up, MONEYVAL pressure (Western Balkans), national AML law changes",
+        "langs": "English+local"
+      },
+      {
+        "slug": "eidas-eudi",
+        "name": "eIDAS 2 / EUDI wallet & eID",
+        "focus": "wallet rollout timeline, remote-eKYC enablement per market (incl. BiH remote-eID law)",
+        "langs": "English+local"
+      },
+      {
+        "slug": "euro-adoption",
+        "name": "Euro adoption (Bulgaria + pipeline)",
+        "focus": "Bulgaria changeover residual deadlines (free lev exchange ends 30/06/2026), next-in-line candidates",
+        "langs": "Bulgarian+English"
+      },
+      {
+        "slug": "mica-crypto",
+        "name": "MiCA / crypto-asset rules",
+        "focus": "CASP licensing relevant to bank stablecoin/consortium moves (e.g. Qivalis)",
+        "langs": "English"
+      },
+      {
+        "slug": "horizon-scan",
+        "name": "Horizon scan — emerging regulation beyond the watchlist",
+        "focus": "ACTIVELY DISCOVER new or newly-relevant regulatory developments across the 17-country footprint that the ten fixed workstreams do NOT already cover — new EU proposals/consultations/RTS, new national mandates exceeding EU minimums, new supervisory expectations or enforcement regimes, new technical standards, and any new regulator, source or source-environment worth tracking. Do NOT duplicate DORA / instant-payments / PSD3-PSR / ISO 20022 / digital-euro / accessibility / AML-AMLA / eIDAS-EUDI / euro-adoption / MiCA; surface candidates that deserve promotion to their own workstream next run. Always return at least one row summarising what was scanned, even if nothing genuinely new is found.",
+        "langs": "English+local"
+      }
+    ]
+  },
+  "4": {
+    "agentNo": 4,
+    "agentLabel": "Market Statistics (non-EU; EU counts are scripted via fetch_ecb.py)",
+    "findingsDir": "/Users/mangian/Downloads/BANKING/findings/04-statistics",
+    "unitNoun": "country",
+    "tableKind": "signals",
+    "units": [
+      {
+        "slug": "serbia",
+        "code": "RS",
+        "name": "Serbia (NBS)",
+        "focus": "ATM count, POS, cards, cash-in-circulation, withdrawal value series from the central bank",
+        "langs": "Serbian"
+      },
+      {
+        "slug": "albania",
+        "code": "AL",
+        "name": "Albania (Bank of Albania)",
+        "focus": "ATM/POS/cards/cash series",
+        "langs": "Albanian"
+      },
+      {
+        "slug": "bosnia",
+        "code": "BA",
+        "name": "Bosnia & Herzegovina (CBBiH)",
+        "focus": "ATM/POS series (1,868 ATMs 2025), card-transaction split, cash share",
+        "langs": "Bosnian/Serbian/Croatian"
+      },
+      {
+        "slug": "kosovo",
+        "code": "XK",
+        "name": "Kosovo (CBK)",
+        "focus": "ATM count + deposit-capable share, POS growth, card stats",
+        "langs": "Albanian"
+      },
+      {
+        "slug": "montenegro",
+        "code": "ME",
+        "name": "Montenegro (CBCG)",
+        "focus": "ATM/POS/cards from the 2024 annual report",
+        "langs": "Montenegrin/Serbian"
+      },
+      {
+        "slug": "north-macedonia",
+        "code": "MK",
+        "name": "North Macedonia (NBRM)",
+        "focus": "ATM/POS/card payment statistics tables, e-payment growth",
+        "langs": "Macedonian"
+      },
+      {
+        "slug": "ukraine",
+        "code": "UA",
+        "name": "Ukraine (NBU)",
+        "focus": "ATM/SST count (15,570 ATMs 03/2026), POS, cashless share",
+        "langs": "Ukrainian"
+      }
+    ]
+  },
+  "5": {
+    "agentNo": 5,
+    "agentLabel": "Early Intent (Jobs + Leadership)",
+    "findingsDir": "/Users/mangian/Downloads/BANKING/findings/05-jobs",
+    "unitNoun": "market",
+    "tableKind": "signals",
+    "units": [
+      {
+        "slug": "greece",
+        "name": "Greece",
+        "focus": "bank postings for channels/self-service/ATM/payments/AML + senior leadership changes (CDO/CIO/Head of Payments/Channels)",
+        "langs": "Greek"
+      },
+      {
+        "slug": "cyprus",
+        "name": "Cyprus",
+        "focus": "bank channel/IT/payments postings + leadership moves",
+        "langs": "Greek"
+      },
+      {
+        "slug": "romania",
+        "name": "Romania",
+        "focus": "BCR/BRD/CEC/Transilvania/Raiffeisen postings + leadership",
+        "langs": "Romanian"
+      },
+      {
+        "slug": "bulgaria",
+        "name": "Bulgaria",
+        "focus": "post-euro self-service/ATM/payments postings + leadership",
+        "langs": "Bulgarian"
+      },
+      {
+        "slug": "serbia",
+        "name": "Serbia",
+        "focus": "channel/ATM/payments postings + leadership",
+        "langs": "Serbian"
+      },
+      {
+        "slug": "croatia-slovenia",
+        "name": "Croatia + Slovenia",
+        "focus": "self-service/payments/AML postings + leadership",
+        "langs": "Croatian/Slovenian"
+      },
+      {
+        "slug": "hungary-czechia-slovakia",
+        "name": "Hungary + Czechia + Slovakia",
+        "focus": "ATM-programme (Act XVIII), channels, payments postings + leadership",
+        "langs": "Hungarian/Czech/Slovak"
+      },
+      {
+        "slug": "ukraine",
+        "name": "Ukraine",
+        "focus": "ATM/self-service/resilience postings + leadership",
+        "langs": "Ukrainian"
+      },
+      {
+        "slug": "western-balkans",
+        "name": "Western Balkans (AL/BA/XK/ME/MK)",
+        "focus": "channel/self-service/payments postings + leadership across the small markets",
+        "langs": "local"
+      }
+    ]
+  },
+  "6": {
+    "agentNo": 6,
+    "agentLabel": "Vendors & Competitors",
+    "findingsDir": "/Users/mangian/Downloads/BANKING/findings/06-vendors",
+    "unitNoun": "competitor",
+    "tableKind": "signals",
+    "units": [
+      {
+        "slug": "ncr-atleos",
+        "name": "NCR Atleos (Printec PARTNER)",
+        "focus": "EMEA commentary, footprint wins, ATM-as-a-Service, Brink's deal, product launches",
+        "langs": "English+local"
+      },
+      {
+        "slug": "diebold-nixdorf",
+        "name": "Diebold Nixdorf",
+        "focus": "footprint wins/losses (e.g. Piraeus DN Series), recyclers, DN AllConnect, M&A",
+        "langs": "English+local"
+      },
+      {
+        "slug": "glory",
+        "name": "Glory",
+        "focus": "TCR/recycler wins in footprint banks, partnerships",
+        "langs": "English+local"
+      },
+      {
+        "slug": "worldline",
+        "name": "Worldline",
+        "focus": "acquiring/issuing/ATM-management moves in footprint, divestitures",
+        "langs": "English+local"
+      },
+      {
+        "slug": "euronet",
+        "name": "Euronet / epay",
+        "focus": "IAD estate growth (Greece Piraeus/CrediaBank), ATM outsourcing, acquiring",
+        "langs": "English+local"
+      },
+      {
+        "slug": "mellon",
+        "name": "Mellon Group",
+        "focus": "DIRECT competitor — NBG 700-ATM win (Hyosung/KAL), footprint ATM-services deals",
+        "langs": "Greek+local"
+      },
+      {
+        "slug": "payten-asseco",
+        "name": "Payten / Asseco SEE",
+        "focus": "DIRECT competitor — POS/SoftPOS/digital-channel wins across footprint (NLB, Halkbank, Hipotekarna)",
+        "langs": "local"
+      },
+      {
+        "slug": "brinks-cit",
+        "name": "Brink's / CIT & cash-logistics",
+        "focus": "cash-in-transit + ATM-managed-services moves; Brink's-Atleos",
+        "langs": "English+local"
+      },
+      {
+        "slug": "hyosung-kal",
+        "name": "Hyosung + KAL (Kalignite)",
+        "focus": "ATM hardware + multivendor software wins (NBG via Mellon, Ceska sporitelna KAL)",
+        "langs": "English+local"
+      },
+      {
+        "slug": "tail-greece-cyprus",
+        "name": "Long tail & NEW competitors — Greece + Cyprus",
+        "focus": "LONG-TAIL COMPETITORS + NEW-competitor DISCOVERY in Greece + Cyprus. Do NOT re-research the global names (NCR Atleos, Diebold, Glory, Worldline, Euronet, Mellon, Payten/Asseco, Brink's, Hyosung/KAL — they have their own units). Sweep LOCAL-LANGUAGE press, app stores (soft-POS), bank vendor/case-study pages and THIS WEEK's tender winners for the long tail across every Printec line: POS/acquiring/soft-POS (PSPs, ISOs, bank in-house acquiring), ATM-service & independent ATM operators, CIT/cash-logistics, RegTech/onboarding/AML/fraud (EXCLUDE Printec partners Namirial & IMTF), self-service/kiosk, SIs/core-banking. For EACH player tag tier (global|regional|local-peer) in the signal and set is_new=true if it is NOT already in references/competitors.json. Err toward surfacing small/local players — threat is independent of size. MUST NOT return empty.",
+        "langs": "Greek"
+      },
+      {
+        "slug": "tail-romania",
+        "name": "Long tail & NEW competitors — Romania",
+        "focus": "LONG-TAIL COMPETITORS + NEW-competitor DISCOVERY in Romania. Do NOT re-research the global names (NCR Atleos, Diebold, Glory, Worldline, Euronet, Mellon, Payten/Asseco, Brink's, Hyosung/KAL — they have their own units). Sweep LOCAL-LANGUAGE press, app stores (soft-POS), bank vendor/case-study pages and THIS WEEK's tender winners for the long tail across every Printec line: POS/acquiring/soft-POS (PSPs, ISOs, bank in-house acquiring), ATM-service & independent ATM operators, CIT/cash-logistics, RegTech/onboarding/AML/fraud (EXCLUDE Printec partners Namirial & IMTF), self-service/kiosk, SIs/core-banking. For EACH player tag tier (global|regional|local-peer) in the signal and set is_new=true if it is NOT already in references/competitors.json. Err toward surfacing small/local players — threat is independent of size. MUST NOT return empty.",
+        "langs": "Romanian"
+      },
+      {
+        "slug": "tail-bulgaria",
+        "name": "Long tail & NEW competitors — Bulgaria",
+        "focus": "LONG-TAIL COMPETITORS + NEW-competitor DISCOVERY in Bulgaria. Do NOT re-research the global names (NCR Atleos, Diebold, Glory, Worldline, Euronet, Mellon, Payten/Asseco, Brink's, Hyosung/KAL — they have their own units). Sweep LOCAL-LANGUAGE press, app stores (soft-POS), bank vendor/case-study pages and THIS WEEK's tender winners for the long tail across every Printec line: POS/acquiring/soft-POS (PSPs, ISOs, bank in-house acquiring), ATM-service & independent ATM operators, CIT/cash-logistics, RegTech/onboarding/AML/fraud (EXCLUDE Printec partners Namirial & IMTF), self-service/kiosk, SIs/core-banking. For EACH player tag tier (global|regional|local-peer) in the signal and set is_new=true if it is NOT already in references/competitors.json. Err toward surfacing small/local players — threat is independent of size. MUST NOT return empty.",
+        "langs": "Bulgarian"
+      },
+      {
+        "slug": "tail-serbia-wbalkans",
+        "name": "Long tail & NEW competitors — Serbia + Western Balkans",
+        "focus": "LONG-TAIL COMPETITORS + NEW-competitor DISCOVERY in Serbia, Albania, Bosnia, Kosovo, Montenegro, North Macedonia. Do NOT re-research the global names (NCR Atleos, Diebold, Glory, Worldline, Euronet, Mellon, Payten/Asseco, Brink's, Hyosung/KAL — they have their own units). Sweep LOCAL-LANGUAGE press, app stores (soft-POS), bank vendor/case-study pages and THIS WEEK's tender winners for the long tail across every Printec line: POS/acquiring/soft-POS (PSPs, ISOs, bank in-house acquiring), ATM-service & independent ATM operators, CIT/cash-logistics, RegTech/onboarding/AML/fraud (EXCLUDE Printec partners Namirial & IMTF), self-service/kiosk, SIs/core-banking. For EACH player tag tier (global|regional|local-peer) in the signal and set is_new=true if it is NOT already in references/competitors.json. Err toward surfacing small/local players — threat is independent of size. MUST NOT return empty.",
+        "langs": "Serbian/Albanian/Macedonian/Bosnian"
+      },
+      {
+        "slug": "tail-adriatic-cee",
+        "name": "Long tail & NEW competitors — Croatia/Slovenia + CEE",
+        "focus": "LONG-TAIL COMPETITORS + NEW-competitor DISCOVERY in Croatia, Slovenia, Hungary, Czechia, Slovakia. Do NOT re-research the global names (NCR Atleos, Diebold, Glory, Worldline, Euronet, Mellon, Payten/Asseco, Brink's, Hyosung/KAL — they have their own units). Sweep LOCAL-LANGUAGE press, app stores (soft-POS), bank vendor/case-study pages and THIS WEEK's tender winners for the long tail across every Printec line: POS/acquiring/soft-POS (PSPs, ISOs, bank in-house acquiring), ATM-service & independent ATM operators, CIT/cash-logistics, RegTech/onboarding/AML/fraud (EXCLUDE Printec partners Namirial & IMTF), self-service/kiosk, SIs/core-banking. For EACH player tag tier (global|regional|local-peer) in the signal and set is_new=true if it is NOT already in references/competitors.json. Err toward surfacing small/local players — threat is independent of size. MUST NOT return empty.",
+        "langs": "Croatian/Slovenian/Hungarian/Czech/Slovak"
+      },
+      {
+        "slug": "tail-ukraine",
+        "name": "Long tail & NEW competitors — Ukraine",
+        "focus": "LONG-TAIL COMPETITORS + NEW-competitor DISCOVERY in Ukraine. Do NOT re-research the global names (NCR Atleos, Diebold, Glory, Worldline, Euronet, Mellon, Payten/Asseco, Brink's, Hyosung/KAL — they have their own units). Sweep LOCAL-LANGUAGE press, app stores (soft-POS), bank vendor/case-study pages and THIS WEEK's tender winners for the long tail across every Printec line: POS/acquiring/soft-POS (PSPs, ISOs, bank in-house acquiring), ATM-service & independent ATM operators, CIT/cash-logistics, RegTech/onboarding/AML/fraud (EXCLUDE Printec partners Namirial & IMTF), self-service/kiosk, SIs/core-banking. For EACH player tag tier (global|regional|local-peer) in the signal and set is_new=true if it is NOT already in references/competitors.json. Err toward surfacing small/local players — threat is independent of size. MUST NOT return empty.",
+        "langs": "Ukrainian"
+      },
+      {
+        "slug": "new-competitor-scout",
+        "name": "NEW-competitor discovery scout (cross-footprint)",
+        "focus": "NEW-COMPETITOR DISCOVERY across all 17 footprint countries — find competitors NOT already in references/competitors.json. Systematically work THIS WEEK's tender WINNERS: intel-cache/ted_notices.json (rows with a winner AND framework_drawdown=false AND is_modification=false), intel-cache/prozorro_notices.json (awarded; resolve the supplier via pb_platform_url / link), and Agent 2's latest tenders file — every award winner in an ATM/self-service/POS/cash/security CPV is a potential competitor. Also check app stores (soft-POS apps), 'who beat Printec' / lost-deal press, and bank vendor/case-study pages. For each genuinely-new player return: name, country, what they do/won (with source + date), the Printec line they threaten, and tier (global|regional|local-peer); set is_new=true. Breadth of NEW names is the goal here, not depth. MUST NOT return empty.",
+        "langs": "English+local"
+      }
+    ]
+  }
+}

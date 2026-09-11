@@ -1,0 +1,182 @@
+[
+ {
+  "candidate_id": "dr_si_a5_live_001__c_002",
+  "source_url": "https://www.bsi.si/sl/nadzor-bancnega-sistema/register-subjektov-nadzora",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a5_live_001__c_028",
+  "source_url": "https://seonet.ljse.si/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a5_live_001__c_039",
+  "source_url": "https://www.intesasanpaolobank.si/en/prebivalstvo/nasa-skupina/novosti-in-publikacije/informacije-za-medije.html",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a5_live_001__c_069",
+  "source_url": "https://www.intesasanpaolobank.si/prebivalstvo/nasa-skupina/novosti-in-publikacije/aktualne-objave.html",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a5_live_001__c_084",
+  "source_url": "https://www.intesasanpaolobank.si/document/publications/ISPSLOVENIA/Annual_report_2023/ISPB_LETNO_porocilo_2023_digitalno.pdf",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a5_live_001__c_094",
+  "source_url": "https://www.intesasanpaolobank.si/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a5_live_001__c_095",
+  "source_url": "https://www.bsi.si/sl/nadzor-bancnega-sistema/nadzorniska-razkritja-in-seznami",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a5_live_001__c_158",
+  "source_url": "https://www.intellinews.com/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a5_live_001__c_161",
+  "source_url": "https://www.finextra.com/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a5_live_001__c_162",
+  "source_url": "https://ibsintelligence.com/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a5_live_001__c_172",
+  "source_url": "https://www.bloomberg.com/news/articles/2025-06-03/slovenia-restarts-search-process-for-new-central-bank-governor",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a5_live_001__c_179",
+  "source_url": "https://www.intesasanpaolobank.si/en/prebivalstvo/nasa-skupina/zaposlujemo.html",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a5_live_001__c_187",
+  "source_url": "https://zaposlitve.unicreditbank.si/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a5_live_001__c_205",
+  "source_url": "https://jobs.workable.com/search/slovenia/bitstamp-jobs",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a5_live_001__c_302",
+  "source_url": "https://ejn.gov.si/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a5_live_001__c_142",
+  "source_url": "https://www.eurofound.europa.eu/en/countries/slovenia/collective-bargaining",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a5_live_001__c_160",
+  "source_url": "https://fintechfutures.com/us/region/slovenia",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.fintechfutures.com/about-us",
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a5_live_001__c_174",
+  "source_url": "https://www.openbankingtracker.com/country/slovenia",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ }
+]

@@ -1,0 +1,24 @@
+# secrets — never committed
+.env
+.env.*
+*.pem
+*.key
+
+# dependencies and build caches
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+
+# raw web captures (488 MB, 3,200 files) — a cache the weekly run rebuilds; kept out of Git
+intel-cache/snapshots/
+
+# one-off backup folders made during earlier changes
+_*-backup-*/
+
+# licensed RBR reports and their extracts — held under Printec's licence, kept off the personal repo
+knowledge-base/processed/RBR Reports*.pdf
+knowledge-base/by-agent/*/rbr-*.md
+
+# scratch
+scratch_*.txt

@@ -1,0 +1,132 @@
+[
+ {
+  "candidate_id": "dr_ua_a1_live_001__c_025",
+  "source_url": "https://privatbank.ua/shareholder-stakeholder-information",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a1_live_001__c_028",
+  "source_url": "https://privatbank.ua/statystychna-zvitnist",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a1_live_001__c_079",
+  "source_url": "https://www.ukr.net/source/payspacemagazine-2312.html",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a1_live_001__c_082",
+  "source_url": "https://catalog.youcontrol.market/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://youcontrol.market/catalog",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_ua_a1_live_001__c_089",
+  "source_url": "https://nais.gov.ua/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a1_live_001__c_092",
+  "source_url": "https://www.gleif.org/organizational-identity/get-an-lei-find-lei-issuing-organizations",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.gleif.org/en/organizational-identity/get-an-lei-vlei/get-an-lei-find-lei-issuing-organizations",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_ua_a1_live_001__c_160",
+  "source_url": "https://raiffeisen.ua/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a1_live_001__c_193",
+  "source_url": "https://clarity-project.info/edr/14352406",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a1_live_001__c_201",
+  "source_url": "https://smida.gov.ua/db/owners",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a1_live_001__c_276",
+  "source_url": "https://documents1.worldbank.org/curated/en/124681553044358540/Note-on-the-Strategic-Development-of-an-Enhanced-Bank-Resolution-Framework-for-Ukraine-in-Alignment-with-the-EU-Acquis.pdf",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a1_live_001__c_277",
+  "source_url": "https://ukrsibbank.com/en/private-individuals/deposits/fgvfo/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_ua_a1_live_001__c_292",
+  "source_url": "https://www.bdo.ua/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.bdo.ua/uk-ua/home-2",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_ua_a1_live_001__c_175",
+  "source_url": "https://www.investing.com/news/transcripts/earnings-call-transcript-procredit-holding-lifts-h1-2026-profit-on-stronger-lending-93CH-4858595",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ }
+]

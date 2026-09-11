@@ -1,0 +1,52 @@
+[
+ {
+  "candidate_id": "dr_mk_a3_live_001__c_083",
+  "source_url": "https://www.netcetera.com/references/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.netcetera.com/company/success-stories.html",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_mk_a3_live_001__c_156",
+  "source_url": "http://mkopen.org/catalog/%D0%9E%D1%82%D0%B2%D0%BE%D1%80%D0%B5%D0%BD%D0%B8%20%D0%BF%D0%BE%D0%B4%D0%B0%D1%82%D0%BE%D1%86%D0%B8%20.gov.mk",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://sireimplement.com/hrr8z3t77g?key=0db534d68ad50b1e61db0b52904b3b78",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_mk_a3_live_001__c_179",
+  "source_url": "https://ufr.gov.mk/?page_id=206",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_mk_a3_live_001__c_180",
+  "source_url": "https://ufr.gov.mk/?page_id=200",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_mk_a3_live_001__c_181",
+  "source_url": "https://ufr.gov.mk/?page_id=269",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ }
+]

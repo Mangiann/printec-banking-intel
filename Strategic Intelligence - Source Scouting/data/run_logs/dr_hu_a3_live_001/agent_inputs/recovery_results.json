@@ -1,0 +1,182 @@
+[
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_036",
+  "source_url": "https://kormany.hu/dokumentumtar?categories=2",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_037",
+  "source_url": "https://egyeztetes.kormany.hu/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_045",
+  "source_url": "https://adt.arcanum.com/en/collection/MagyarKozlony/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_058",
+  "source_url": "https://www.vixio.com/blog/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.vixio.com/resources-hub",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_072",
+  "source_url": "https://www.cib.hu/karrierportal",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_144",
+  "source_url": "https://birosag.hu/ugyfeleknek/birosagi-hatarozatok-gyujtemenye",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_172",
+  "source_url": "https://kormany.hu/dokumentumtar?page=1&itemsPerPage=12&filter=%7B%22ministries%22:%5B%22nemzetgazdasagi-miniszterium%22%5D,%22categories%22:%5B2%5D%7D",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_173",
+  "source_url": "https://kormany.hu/dokumentumtar/tarsadalmi-egyeztetes-2",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_174",
+  "source_url": "https://kormany.hu/hirek",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_183",
+  "source_url": "https://kozadat.hu/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://kozadat.hu/kereso/",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_192",
+  "source_url": "https://kormany.hu/dokumentumtar",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_246",
+  "source_url": "https://www.mbhbank.hu/hirdetmenyek/felugyeleti-dosszie/uzletszabalyzat",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_247",
+  "source_url": "https://www.mbhbank.hu/lakossagi/befektetesekkel-kapcsolatos-tajekoztatasok",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_248",
+  "source_url": "https://www.mkb.hu/felugyeleti-dosszie",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.mbhbank.hu:443/?redirected-from=mkb&",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_249",
+  "source_url": "https://www.mbhbefektetesibank.hu/sw/static/file/MBHBankKibocsatasiProgram2025-2026Alaptajekoztato_20251215.pdf",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_253",
+  "source_url": "https://www.erstebank.hu/hu/uzletszabalyzat-aszf",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_263",
+  "source_url": "https://www.cib.hu/document/publications/CIB/2026/kozlemeny/Nyilvanossagrahozatal_20251231_HU_final/Nyilvanossagrahozatal_20251231_HU_final.pdf",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a3_live_001__c_265",
+  "source_url": "https://www.mbhjelzalogbank.hu/uzletszabalyzatok-aszf-hirdetmenyek",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ }
+]

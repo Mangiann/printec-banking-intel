@@ -1,0 +1,282 @@
+[
+ {
+  "candidate_id": "dr_cz_a2_live_001__c_001",
+  "source_url": "https://vestnikverejnychzakazek.cz/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_cz_a2_live_001__c_017",
+  "source_url": "https://www.gemin.cz/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_cz_a2_live_001__c_032",
+  "source_url": "https://opentender.eu/cz/search/tender",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a2_live_001__c_037",
+  "source_url": "https://mv.gov.cz/npo/clanek/mvcr-web-nabidky-a-zakazky-verejne-zakazky-79341-verejne-zakazky.aspx",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a2_live_001__c_050",
+  "source_url": "https://www.nku.cz/cz/pro-media/tiskove-zpravy/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a2_live_001__c_058",
+  "source_url": "https://www.mfcr.cz/cs/kontrola-a-regulace/rizeni-a-kontrola-verejnych-financi/sprava-poskytovanych-prostredku/metodicke-materialy-a-stanoviska",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a2_live_001__c_061",
+  "source_url": "https://www.wolterskluwer.com/cs-cz/solutions/aspi/svet-aspi/nastroje/expertni-databaze-rozhodnuti-uohs-ve-veci-verejnych-zakazek",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a2_live_001__c_068",
+  "source_url": "https://www.profilzadavatele.cz/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_cz_a2_live_001__c_074",
+  "source_url": "https://opentender.eu/cz",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a2_live_001__c_081",
+  "source_url": "https://www.kariera.kb.cz/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_cz_a2_live_001__c_095",
+  "source_url": "https://www.konferenceseminare.cz/trendy-v-platebnim-styku-2026",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a2_live_001__c_114",
+  "source_url": "https://www.irozhlas.cz/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a2_live_001__c_164",
+  "source_url": "https://platebnibrany.gov.cz/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_cz_a2_live_001__c_169",
+  "source_url": "https://www.statnipokladna.cz/cs/o-statni-pokladne/integrovany-informacni-system-statni-pok",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a2_live_001__c_170",
+  "source_url": "https://www.nku.cz/cz/kontrola/kontrolni-zavery/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a2_live_001__c_196",
+  "source_url": "https://www.profilzadavatele.cz/profil-zadavatele/aktualni-zakazky/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_cz_a2_live_001__c_199",
+  "source_url": "https://data.isrs.cz/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_cz_a2_live_001__c_208",
+  "source_url": "https://www.dia.gov.cz/egovernment/registr-smluv/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_cz_a2_live_001__c_229",
+  "source_url": "https://www.dpmhk.cz/articles/885/Modernizace_systemu_elektronickeho_odbavovani_cestujicich_v_MHD_v_Hradci_Kr/",
+  "outcome": "unresolved",
+  "http_status": 503,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 503"
+ },
+ {
+  "candidate_id": "dr_cz_a2_live_001__c_253",
+  "source_url": "https://www.kbsmartpay.cz/komercni-banka-a-worldline-rozsiri-moznosti-plateb-kartami-v-cr/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a2_live_001__c_256",
+  "source_url": "https://www.verifone.com/en/global/taxonomy/partner/printec-czech-republic-sro",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a2_live_001__c_259",
+  "source_url": "https://www.mastercard.com/us/en/news-and-trends/press/2025/september/mastercard-ncr-atleos-itcard-enhance-contactless-experiences-at-atms.html",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a2_live_001__c_283",
+  "source_url": "https://www.mastercard.com/news/europe/cs-cz/tiskove-centrum/tiskove-zpravy/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a2_live_001__c_289",
+  "source_url": "https://www.finance.cz/uvery-a-pujcky/seznamy-a-adresare/clfa/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a2_live_001__c_291",
+  "source_url": "https://www.spcr.cz/struktura-sp-cr/clenska-zakladna/odvetvove-svazy/seznam-clenu/5998-ceska-fintech-asociace-z-s",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a2_live_001__c_295",
+  "source_url": "https://asociacevz.cz/index.php?Itemid=144&id=17&layout=blog&option=com_content&view=category",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a2_live_001__c_298",
+  "source_url": "http://www.aspps.eu/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_cz_a2_live_001__c_303",
+  "source_url": "https://www.komora.cz/o-nas/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ }
+]

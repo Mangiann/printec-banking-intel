@@ -1,0 +1,132 @@
+[
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_003",
+  "source_url": "https://smlouvy.gov.cz/vyhledavani",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_046",
+  "source_url": "https://smlouvy.gov.cz/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_065",
+  "source_url": "https://www.apek.cz/seznam-clenu",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_076",
+  "source_url": "https://www.cap.cz/radni-clenove",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_086",
+  "source_url": "https://financnictvi.konference.cz/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_130",
+  "source_url": "https://kariera.csas.cz/cs/o-praci/it",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_150",
+  "source_url": "https://www.apek.cz/studie-a-pruzkumy",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.apek.cz/nase-projekty#tab_studie",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_160",
+  "source_url": "https://www.globalpayments.cz/cs-cz/online-platby/doplnek-pro-shoptet",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.globalpayments.cz/online-platby/doplnek-pro-shoptet/uzavreni-smlouvy-shoptet",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_254",
+  "source_url": "https://www.sumup.com/cs-cz/platebni-terminal/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_256",
+  "source_url": "https://www.paytenpos.cz/specifikace-pos",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_258",
+  "source_url": "https://www.apek.cz/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_305",
+  "source_url": "https://www.finextra.com/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_cz_a6_live_001__c_309",
+  "source_url": "https://www.fintechfutures.com/us/region/czechia/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.fintechfutures.com/about-us",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ }
+]

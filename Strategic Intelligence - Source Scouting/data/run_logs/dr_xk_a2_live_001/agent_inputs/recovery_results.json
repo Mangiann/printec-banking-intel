@@ -1,0 +1,102 @@
+[
+ {
+  "candidate_id": "dr_xk_a2_live_001__c_017",
+  "source_url": "https://kallxo.com/tag/agjencia-qendrore-e-prokurimit/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a2_live_001__c_031",
+  "source_url": "https://kallxo.com/tag/komisioni-rregullativ-i-prokurimit-publik/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a2_live_001__c_040",
+  "source_url": "https://kallxo.com/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a2_live_001__c_075",
+  "source_url": "https://ekosova.rks-gov.net/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a2_live_001__c_085",
+  "source_url": "https://opencorporates.com/registers/133",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a2_live_001__c_086",
+  "source_url": "https://aleph.occrp.org/datasets/2747",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a2_live_001__c_091",
+  "source_url": "https://amik.org/Anetaret-e-AMIK",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a2_live_001__c_187",
+  "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/participation-of-kosovo-in-eu-programmes.html",
+  "outcome": "verified",
+  "http_status": 202,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a2_live_001__c_198",
+  "source_url": "https://raiffeisen.ua/en/about/procurement",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a2_live_001__c_253",
+  "source_url": "https://kallxo.com/gjate/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ }
+]

@@ -1,0 +1,1652 @@
+{
+  "Greece": {
+    "branches": [
+      {
+        "year": 2014,
+        "value": 2688
+      },
+      {
+        "year": 2015,
+        "value": 2547
+      },
+      {
+        "year": 2016,
+        "value": 2332
+      },
+      {
+        "year": 2017,
+        "value": 2168
+      },
+      {
+        "year": 2018,
+        "value": 1981
+      },
+      {
+        "year": 2019,
+        "value": 1834
+      },
+      {
+        "year": 2020,
+        "value": 1702
+      },
+      {
+        "year": 2021,
+        "value": 1560
+      },
+      {
+        "year": 2022,
+        "value": 1483
+      },
+      {
+        "year": 2023,
+        "value": 1414
+      },
+      {
+        "year": 2024,
+        "value": 1383
+      }
+    ],
+    "atms": [
+      {
+        "year": 2014,
+        "value": 5449
+      },
+      {
+        "year": 2015,
+        "value": 5257
+      },
+      {
+        "year": 2016,
+        "value": 5313
+      },
+      {
+        "year": 2017,
+        "value": 5505
+      },
+      {
+        "year": 2018,
+        "value": 5625
+      },
+      {
+        "year": 2019,
+        "value": 5854
+      },
+      {
+        "year": 2020,
+        "value": 5925
+      },
+      {
+        "year": 2021,
+        "value": 5928
+      },
+      {
+        "year": 2022,
+        "value": 6040
+      },
+      {
+        "year": 2023,
+        "value": 5953
+      },
+      {
+        "year": 2024,
+        "value": 6167
+      }
+    ],
+    "pos": [
+      {
+        "year": 2022,
+        "value": 1057296.0
+      },
+      {
+        "year": 2023,
+        "value": 1184025.0
+      },
+      {
+        "year": 2024,
+        "value": 1324916.0
+      },
+      {
+        "year": 2025,
+        "value": 1157012.0,
+        "provisional": true
+      }
+    ],
+    "cash": [
+      {
+        "year": 2022,
+        "value": 130.999
+      },
+      {
+        "year": 2023,
+        "value": 131.419
+      },
+      {
+        "year": 2024,
+        "value": 129.361
+      },
+      {
+        "year": 2025,
+        "value": 122.905,
+        "provisional": true
+      }
+    ]
+  },
+  "Cyprus": {
+    "atms": [
+      {
+        "year": 2022,
+        "value": 392.0
+      },
+      {
+        "year": 2023,
+        "value": 398.0
+      },
+      {
+        "year": 2024,
+        "value": 398.0
+      },
+      {
+        "year": 2025,
+        "value": 396.0,
+        "provisional": true
+      }
+    ],
+    "pos": [
+      {
+        "year": 2022,
+        "value": 136215.0
+      },
+      {
+        "year": 2023,
+        "value": 142532.0
+      },
+      {
+        "year": 2024,
+        "value": 151399.0
+      },
+      {
+        "year": 2025,
+        "value": 181874.0,
+        "provisional": true
+      }
+    ],
+    "branches": [
+      {
+        "year": 2016,
+        "value": 544.0
+      },
+      {
+        "year": 2017,
+        "value": 460.0
+      },
+      {
+        "year": 2018,
+        "value": 386.0
+      },
+      {
+        "year": 2019,
+        "value": 328.0
+      },
+      {
+        "year": 2020,
+        "value": 282.0
+      },
+      {
+        "year": 2021,
+        "value": 260.0
+      },
+      {
+        "year": 2022,
+        "value": 204.0
+      },
+      {
+        "year": 2023,
+        "value": 198.0
+      },
+      {
+        "year": 2024,
+        "value": 193.0
+      },
+      {
+        "year": 2025,
+        "value": 193.0
+      }
+    ],
+    "cash": [
+      {
+        "year": 2022,
+        "value": 16.328
+      },
+      {
+        "year": 2023,
+        "value": 15.599
+      },
+      {
+        "year": 2024,
+        "value": 14.64
+      },
+      {
+        "year": 2025,
+        "value": 13.474,
+        "provisional": true
+      }
+    ]
+  },
+  "AT": {
+    "atms": [
+      {
+        "year": 2022,
+        "value": 13933.0
+      },
+      {
+        "year": 2023,
+        "value": 13456.0
+      },
+      {
+        "year": 2024,
+        "value": 13388.0
+      },
+      {
+        "year": 2025,
+        "value": 13753.0,
+        "provisional": true
+      }
+    ],
+    "pos": [
+      {
+        "year": 2022,
+        "value": 156452.0
+      },
+      {
+        "year": 2023,
+        "value": 159861.0
+      },
+      {
+        "year": 2024,
+        "value": 152063.0
+      },
+      {
+        "year": 2025,
+        "value": 170439.0,
+        "provisional": true
+      }
+    ],
+    "branches": [
+      {
+        "year": 2016,
+        "value": 3934.0
+      },
+      {
+        "year": 2017,
+        "value": 3765.0
+      },
+      {
+        "year": 2018,
+        "value": 3631.0
+      },
+      {
+        "year": 2019,
+        "value": 3513.0
+      },
+      {
+        "year": 2020,
+        "value": 3109.0
+      },
+      {
+        "year": 2021,
+        "value": 3422.0
+      },
+      {
+        "year": 2022,
+        "value": 3292.0
+      },
+      {
+        "year": 2023,
+        "value": 3185.0
+      },
+      {
+        "year": 2024,
+        "value": 3140.0
+      },
+      {
+        "year": 2025,
+        "value": 3046.0
+      }
+    ],
+    "cash": [
+      {
+        "year": 2022,
+        "value": 205.996
+      },
+      {
+        "year": 2023,
+        "value": 210.839
+      },
+      {
+        "year": 2024,
+        "value": 207.156
+      },
+      {
+        "year": 2025,
+        "value": 196.995,
+        "provisional": true
+      }
+    ]
+  },
+  "Croatia": {
+    "atms": [
+      {
+        "year": 2022,
+        "value": 4184.0
+      },
+      {
+        "year": 2023,
+        "value": 4277.0
+      },
+      {
+        "year": 2024,
+        "value": 3978.0
+      },
+      {
+        "year": 2025,
+        "value": 3816.0,
+        "provisional": true
+      }
+    ],
+    "pos": [
+      {
+        "year": 2022,
+        "value": 125677.0
+      },
+      {
+        "year": 2023,
+        "value": 133299.0
+      },
+      {
+        "year": 2024,
+        "value": 144948.0
+      },
+      {
+        "year": 2025,
+        "value": 168878.0,
+        "provisional": true
+      }
+    ],
+    "branches": [
+      {
+        "year": 2016,
+        "value": 1142.0
+      },
+      {
+        "year": 2017,
+        "value": 1112.0
+      },
+      {
+        "year": 2018,
+        "value": 1028.0
+      },
+      {
+        "year": 2019,
+        "value": 964.0
+      },
+      {
+        "year": 2020,
+        "value": 904.0
+      },
+      {
+        "year": 2021,
+        "value": 874.0
+      },
+      {
+        "year": 2022,
+        "value": 848.0
+      },
+      {
+        "year": 2023,
+        "value": 799.0
+      },
+      {
+        "year": 2024,
+        "value": 784.0
+      },
+      {
+        "year": 2025,
+        "value": 792.0
+      }
+    ],
+    "cash": [
+      {
+        "year": 2023,
+        "value": 94.385
+      },
+      {
+        "year": 2024,
+        "value": 94.27
+      },
+      {
+        "year": 2025,
+        "value": 90.264,
+        "provisional": true
+      }
+    ]
+  },
+  "Slovenia": {
+    "atms": [
+      {
+        "year": 2022,
+        "value": 1276.0
+      },
+      {
+        "year": 2023,
+        "value": 1309.0
+      },
+      {
+        "year": 2024,
+        "value": 1284.0
+      },
+      {
+        "year": 2025,
+        "value": 1251.0,
+        "provisional": true
+      }
+    ],
+    "pos": [
+      {
+        "year": 2022,
+        "value": 38824.0
+      },
+      {
+        "year": 2023,
+        "value": 42552.0
+      },
+      {
+        "year": 2024,
+        "value": 47235.0
+      },
+      {
+        "year": 2025,
+        "value": 46330.0,
+        "provisional": true
+      }
+    ],
+    "branches": [
+      {
+        "year": 2016,
+        "value": 583.0
+      },
+      {
+        "year": 2017,
+        "value": 560.0
+      },
+      {
+        "year": 2018,
+        "value": 532.0
+      },
+      {
+        "year": 2019,
+        "value": 526.0
+      },
+      {
+        "year": 2020,
+        "value": 479.0
+      },
+      {
+        "year": 2021,
+        "value": 441.0
+      },
+      {
+        "year": 2022,
+        "value": 419.0
+      },
+      {
+        "year": 2023,
+        "value": 410.0
+      },
+      {
+        "year": 2024,
+        "value": 374.0
+      },
+      {
+        "year": 2025,
+        "value": 365.0
+      }
+    ],
+    "cash": [
+      {
+        "year": 2022,
+        "value": 47.281
+      },
+      {
+        "year": 2023,
+        "value": 47.184
+      },
+      {
+        "year": 2024,
+        "value": 45.519
+      },
+      {
+        "year": 2025,
+        "value": 43.033,
+        "provisional": true
+      }
+    ]
+  },
+  "Slovakia": {
+    "atms": [
+      {
+        "year": 2022,
+        "value": 3437.0
+      },
+      {
+        "year": 2023,
+        "value": 3314.0
+      },
+      {
+        "year": 2024,
+        "value": 3277.0
+      },
+      {
+        "year": 2025,
+        "value": 2796.0,
+        "provisional": true
+      }
+    ],
+    "pos": [
+      {
+        "year": 2022,
+        "value": 123721.0
+      },
+      {
+        "year": 2023,
+        "value": 143260.0
+      },
+      {
+        "year": 2024,
+        "value": 171839.0
+      },
+      {
+        "year": 2025,
+        "value": 194396.0,
+        "provisional": true
+      }
+    ],
+    "branches": [
+      {
+        "year": 2016,
+        "value": 1293.0
+      },
+      {
+        "year": 2017,
+        "value": 1233.0
+      },
+      {
+        "year": 2018,
+        "value": 1174.0
+      },
+      {
+        "year": 2019,
+        "value": 1140.0
+      },
+      {
+        "year": 2020,
+        "value": 1074.0
+      },
+      {
+        "year": 2021,
+        "value": 984.0
+      },
+      {
+        "year": 2022,
+        "value": 942.0
+      },
+      {
+        "year": 2023,
+        "value": 910.0
+      },
+      {
+        "year": 2024,
+        "value": 882.0
+      },
+      {
+        "year": 2025,
+        "value": 850.0
+      }
+    ],
+    "cash": [
+      {
+        "year": 2022,
+        "value": 68.504
+      },
+      {
+        "year": 2023,
+        "value": 167.665
+      },
+      {
+        "year": 2024,
+        "value": 72.594
+      },
+      {
+        "year": 2025,
+        "value": 67.827,
+        "provisional": true
+      }
+    ]
+  },
+  "Bulgaria": {
+    "atms": [
+      {
+        "year": 2023,
+        "value": 5159.0
+      },
+      {
+        "year": 2024,
+        "value": 5122.0
+      },
+      {
+        "year": 2025,
+        "value": 5091.0,
+        "provisional": true
+      }
+    ],
+    "pos": [
+      {
+        "year": 2023,
+        "value": 148882.0
+      },
+      {
+        "year": 2024,
+        "value": 173231.0
+      },
+      {
+        "year": 2025,
+        "value": 229194.0,
+        "provisional": true
+      }
+    ],
+    "branches": [
+      {
+        "year": 2016,
+        "value": 2936.0
+      },
+      {
+        "year": 2017,
+        "value": 3060.0
+      },
+      {
+        "year": 2018,
+        "value": 3142.0
+      },
+      {
+        "year": 2019,
+        "value": 3420.0
+      },
+      {
+        "year": 2020,
+        "value": 3536.0
+      },
+      {
+        "year": 2021,
+        "value": 3748.0
+      },
+      {
+        "year": 2022,
+        "value": 4526.0
+      },
+      {
+        "year": 2023,
+        "value": 5088.0
+      },
+      {
+        "year": 2024,
+        "value": 5171.0
+      },
+      {
+        "year": 2025,
+        "value": 4542.0
+      }
+    ],
+    "cash": [
+      {
+        "year": 2023,
+        "value": 131.005
+      },
+      {
+        "year": 2024,
+        "value": 129.393
+      },
+      {
+        "year": 2025,
+        "value": 125.415,
+        "provisional": true
+      }
+    ]
+  },
+  "Romania": {
+    "atms": [
+      {
+        "year": 2022,
+        "value": 10140.0
+      },
+      {
+        "year": 2023,
+        "value": 10229.0
+      },
+      {
+        "year": 2024,
+        "value": 10242.0
+      },
+      {
+        "year": 2025,
+        "value": 11136.0,
+        "provisional": true
+      }
+    ],
+    "pos": [
+      {
+        "year": 2022,
+        "value": 366328.0
+      },
+      {
+        "year": 2023,
+        "value": 447292.0
+      },
+      {
+        "year": 2024,
+        "value": 529862.0
+      },
+      {
+        "year": 2025,
+        "value": 645670.0,
+        "provisional": true
+      }
+    ],
+    "branches": [
+      {
+        "year": 2016,
+        "value": 4798.0
+      },
+      {
+        "year": 2017,
+        "value": 4596.0
+      },
+      {
+        "year": 2018,
+        "value": 4382.0
+      },
+      {
+        "year": 2019,
+        "value": 4059.0
+      },
+      {
+        "year": 2020,
+        "value": 3871.0
+      },
+      {
+        "year": 2021,
+        "value": 3690.0
+      },
+      {
+        "year": 2022,
+        "value": 3606.0
+      },
+      {
+        "year": 2023,
+        "value": 3549.0
+      },
+      {
+        "year": 2024,
+        "value": 3495.0
+      },
+      {
+        "year": 2025,
+        "value": 3288.0
+      }
+    ],
+    "cash": [
+      {
+        "year": 2022,
+        "value": 257.972
+      },
+      {
+        "year": 2023,
+        "value": 261.346
+      },
+      {
+        "year": 2024,
+        "value": 260.561
+      },
+      {
+        "year": 2025,
+        "value": 259.203,
+        "provisional": true
+      }
+    ]
+  },
+  "Hungary": {
+    "atms": [
+      {
+        "year": 2022,
+        "value": 4706.0
+      },
+      {
+        "year": 2023,
+        "value": 4563.0
+      },
+      {
+        "year": 2024,
+        "value": 5140.0
+      },
+      {
+        "year": 2025,
+        "value": 5639.0,
+        "provisional": true
+      }
+    ],
+    "pos": [
+      {
+        "year": 2022,
+        "value": 257091.0
+      },
+      {
+        "year": 2023,
+        "value": 285795.0
+      },
+      {
+        "year": 2024,
+        "value": 305266.0
+      },
+      {
+        "year": 2025,
+        "value": 274974.0,
+        "provisional": true
+      }
+    ],
+    "branches": [
+      {
+        "year": 2016,
+        "value": 2691.0
+      },
+      {
+        "year": 2017,
+        "value": 2418.0
+      },
+      {
+        "year": 2018,
+        "value": 2235.0
+      },
+      {
+        "year": 2019,
+        "value": 1956.0
+      },
+      {
+        "year": 2020,
+        "value": 1877.0
+      },
+      {
+        "year": 2021,
+        "value": 1826.0
+      },
+      {
+        "year": 2022,
+        "value": 1510.0
+      },
+      {
+        "year": 2023,
+        "value": 1436.0
+      },
+      {
+        "year": 2024,
+        "value": 1401.0
+      },
+      {
+        "year": 2025,
+        "value": 1300.0
+      }
+    ],
+    "cash": [
+      {
+        "year": 2022,
+        "value": 91.825
+      },
+      {
+        "year": 2023,
+        "value": 90.186
+      },
+      {
+        "year": 2024,
+        "value": 86.85
+      },
+      {
+        "year": 2025,
+        "value": 82.106,
+        "provisional": true
+      }
+    ]
+  },
+  "Czech Republic": {
+    "atms": [
+      {
+        "year": 2022,
+        "value": 5200.0
+      },
+      {
+        "year": 2023,
+        "value": 5088.0
+      },
+      {
+        "year": 2024,
+        "value": 5034.0
+      },
+      {
+        "year": 2025,
+        "value": 4926.0,
+        "provisional": true
+      }
+    ],
+    "pos": [
+      {
+        "year": 2022,
+        "value": 238940.0
+      },
+      {
+        "year": 2023,
+        "value": 254298.0
+      },
+      {
+        "year": 2024,
+        "value": 268142.0
+      },
+      {
+        "year": 2025,
+        "value": 285310.0,
+        "provisional": true
+      }
+    ],
+    "branches": [
+      {
+        "year": 2016,
+        "value": 1977.0
+      },
+      {
+        "year": 2017,
+        "value": 1873.0
+      },
+      {
+        "year": 2018,
+        "value": 1868.0
+      },
+      {
+        "year": 2019,
+        "value": 1807.0
+      },
+      {
+        "year": 2020,
+        "value": 1606.0
+      },
+      {
+        "year": 2021,
+        "value": 1521.0
+      },
+      {
+        "year": 2022,
+        "value": 1448.0
+      },
+      {
+        "year": 2023,
+        "value": 1366.0
+      },
+      {
+        "year": 2024,
+        "value": 1309.0
+      },
+      {
+        "year": 2025,
+        "value": 1272.0
+      }
+    ],
+    "cash": [
+      {
+        "year": 2022,
+        "value": 160.376
+      },
+      {
+        "year": 2023,
+        "value": 158.011
+      },
+      {
+        "year": 2024,
+        "value": 151.076
+      },
+      {
+        "year": 2025,
+        "value": 140.358,
+        "provisional": true
+      }
+    ]
+  },
+  "Serbia": {
+    "branches": [
+      {
+        "year": 2015,
+        "value": 1730,
+        "provisional": true
+      },
+      {
+        "year": 2019,
+        "value": 1598
+      },
+      {
+        "year": 2020,
+        "value": 1576
+      },
+      {
+        "year": 2021,
+        "value": 1515
+      },
+      {
+        "year": 2022,
+        "value": 1371
+      },
+      {
+        "year": 2023,
+        "value": 1341
+      },
+      {
+        "year": 2024,
+        "value": 1337
+      },
+      {
+        "year": 2025,
+        "value": 1288
+      },
+      {
+        "year": 2026,
+        "value": 1288,
+        "provisional": true
+      }
+    ],
+    "cash": [
+      {
+        "year": 2020,
+        "value": 266725
+      },
+      {
+        "year": 2021,
+        "value": 1875238
+      },
+      {
+        "year": 2022,
+        "value": 2048753
+      },
+      {
+        "year": 2023,
+        "value": 2029466
+      },
+      {
+        "year": 2024,
+        "value": 2190683
+      },
+      {
+        "year": 2025,
+        "value": 2353166
+      },
+      {
+        "year": 2026,
+        "value": 1098758,
+        "provisional": true
+      }
+    ],
+    "pos": [
+      {
+        "year": 2019,
+        "value": 91245
+      },
+      {
+        "year": 2020,
+        "value": 97751
+      },
+      {
+        "year": 2021,
+        "value": 114984
+      },
+      {
+        "year": 2022,
+        "value": 120224
+      },
+      {
+        "year": 2023,
+        "value": 136662
+      },
+      {
+        "year": 2024,
+        "value": 160857
+      },
+      {
+        "year": 2025,
+        "value": 184656
+      },
+      {
+        "year": 2026,
+        "value": 195121,
+        "provisional": true
+      }
+    ],
+    "atms": [
+      {
+        "year": 2019,
+        "value": 2953
+      },
+      {
+        "year": 2020,
+        "value": 3042
+      },
+      {
+        "year": 2021,
+        "value": 3097
+      },
+      {
+        "year": 2022,
+        "value": 3071
+      },
+      {
+        "year": 2023,
+        "value": 3078
+      },
+      {
+        "year": 2024,
+        "value": 3218
+      },
+      {
+        "year": 2025,
+        "value": 3265
+      },
+      {
+        "year": 2026,
+        "value": 3412,
+        "provisional": true
+      }
+    ]
+  },
+  "Albania": {
+    "pos": [
+      {
+        "year": 2023,
+        "value": 19184
+      },
+      {
+        "year": 2024,
+        "value": 24481
+      },
+      {
+        "year": 2025,
+        "value": 31263
+      },
+      {
+        "year": 2026,
+        "value": 38662,
+        "provisional": true
+      }
+    ],
+    "atms": [
+      {
+        "year": 2023,
+        "value": 925
+      },
+      {
+        "year": 2024,
+        "value": 1011
+      },
+      {
+        "year": 2025,
+        "value": 1091
+      },
+      {
+        "year": 2026,
+        "value": 1414,
+        "provisional": true
+      }
+    ],
+    "branches": [
+      {
+        "year": 2024,
+        "value": 400
+      },
+      {
+        "year": 2025,
+        "value": 408
+      }
+    ],
+    "cash": [
+      {
+        "year": 2023,
+        "value": 393795.6
+      },
+      {
+        "year": 2024,
+        "value": 423539
+      },
+      {
+        "year": 2025,
+        "value": 483446.7
+      },
+      {
+        "year": 2026,
+        "value": 505722.2,
+        "provisional": true
+      }
+    ]
+  },
+  "Bosnia & Herzegovina": {
+    "atms": [
+      {
+        "year": 2021,
+        "value": 1628
+      },
+      {
+        "year": 2022,
+        "value": 1653
+      },
+      {
+        "year": 2023,
+        "value": 1717
+      },
+      {
+        "year": 2024,
+        "value": 1767
+      },
+      {
+        "year": 2025,
+        "value": 1868
+      }
+    ],
+    "pos": [
+      {
+        "year": 2021,
+        "value": 30657
+      },
+      {
+        "year": 2023,
+        "value": 34019
+      },
+      {
+        "year": 2024,
+        "value": 35035
+      },
+      {
+        "year": 2025,
+        "value": 37895
+      }
+    ],
+    "branches": [
+      {
+        "year": 2020,
+        "value": 789
+      },
+      {
+        "year": 2021,
+        "value": 723
+      },
+      {
+        "year": 2022,
+        "value": 761
+      },
+      {
+        "year": 2023,
+        "value": 747
+      },
+      {
+        "year": 2024,
+        "value": 749
+      },
+      {
+        "year": 2025,
+        "value": 749
+      }
+    ],
+    "cash": [
+      {
+        "year": 2024,
+        "value": 12443848570,
+        "provisional": true
+      },
+      {
+        "year": 2025,
+        "value": 7460000000
+      }
+    ]
+  },
+  "Kosovo": {
+    "atms": [
+      {
+        "year": 2020,
+        "value": 513
+      },
+      {
+        "year": 2021,
+        "value": 516
+      },
+      {
+        "year": 2022,
+        "value": 534
+      },
+      {
+        "year": 2023,
+        "value": 583
+      },
+      {
+        "year": 2024,
+        "value": 635
+      },
+      {
+        "year": 2025,
+        "value": 686
+      }
+    ],
+    "pos": [
+      {
+        "year": 2020,
+        "value": 13421
+      },
+      {
+        "year": 2021,
+        "value": 13836
+      },
+      {
+        "year": 2022,
+        "value": 14769
+      },
+      {
+        "year": 2023,
+        "value": 17187
+      },
+      {
+        "year": 2024,
+        "value": 20859
+      },
+      {
+        "year": 2025,
+        "value": 30259
+      }
+    ],
+    "branches": [
+      {
+        "year": 2022,
+        "value": 200
+      },
+      {
+        "year": 2023,
+        "value": 215
+      },
+      {
+        "year": 2024,
+        "value": 227
+      },
+      {
+        "year": 2025,
+        "value": 235
+      },
+      {
+        "year": 2026,
+        "value": 234,
+        "provisional": true
+      }
+    ],
+    "cash": [
+      {
+        "year": 2021,
+        "value": 950
+      },
+      {
+        "year": 2022,
+        "value": 1700
+      },
+      {
+        "year": 2023,
+        "value": 2215
+      },
+      {
+        "year": 2024,
+        "value": 2084
+      },
+      {
+        "year": 2025,
+        "value": 2373
+      }
+    ]
+  },
+  "Montenegro": {
+    "atms": [
+      {
+        "year": 2018,
+        "value": 494
+      },
+      {
+        "year": 2019,
+        "value": 522
+      },
+      {
+        "year": 2020,
+        "value": 459
+      },
+      {
+        "year": 2021,
+        "value": 451
+      },
+      {
+        "year": 2022,
+        "value": 500
+      },
+      {
+        "year": 2023,
+        "value": 508
+      },
+      {
+        "year": 2024,
+        "value": 626
+      },
+      {
+        "year": 2025,
+        "value": 751
+      },
+      {
+        "year": 2026,
+        "value": 664,
+        "provisional": true
+      }
+    ],
+    "pos": [
+      {
+        "year": 2022,
+        "value": 14814
+      },
+      {
+        "year": 2023,
+        "value": 16310
+      },
+      {
+        "year": 2024,
+        "value": 18775
+      },
+      {
+        "year": 2025,
+        "value": 22566
+      },
+      {
+        "year": 2026,
+        "value": 23250,
+        "provisional": true
+      }
+    ],
+    "cash": [
+      {
+        "year": 2022,
+        "value": 5742
+      },
+      {
+        "year": 2023,
+        "value": 5799
+      },
+      {
+        "year": 2024,
+        "value": 6057
+      },
+      {
+        "year": 2025,
+        "value": 5772
+      },
+      {
+        "year": 2026,
+        "value": 1175,
+        "provisional": true
+      }
+    ]
+  },
+  "North Macedonia": {
+    "atms": [
+      {
+        "year": 2024,
+        "value": 1041
+      },
+      {
+        "year": 2025,
+        "value": 1132
+      },
+      {
+        "year": 2026,
+        "value": 1136,
+        "provisional": true
+      }
+    ],
+    "pos": [
+      {
+        "year": 2024,
+        "value": 34864
+      },
+      {
+        "year": 2025,
+        "value": 36095
+      },
+      {
+        "year": 2026,
+        "value": 36260,
+        "provisional": true
+      }
+    ],
+    "branches": [
+      {
+        "year": 2020,
+        "value": 409
+      },
+      {
+        "year": 2021,
+        "value": 401
+      },
+      {
+        "year": 2022,
+        "value": 397
+      },
+      {
+        "year": 2023,
+        "value": 393
+      },
+      {
+        "year": 2024,
+        "value": 384
+      },
+      {
+        "year": 2025,
+        "value": 371
+      }
+    ]
+  },
+  "Ukraine": {
+    "atms": [
+      {
+        "year": 2020,
+        "value": 18789
+      },
+      {
+        "year": 2021,
+        "value": 18459
+      },
+      {
+        "year": 2022,
+        "value": 15591
+      },
+      {
+        "year": 2023,
+        "value": 15801
+      },
+      {
+        "year": 2024,
+        "value": 15714
+      },
+      {
+        "year": 2025,
+        "value": 15733
+      },
+      {
+        "year": 2026,
+        "value": 15768,
+        "provisional": true
+      }
+    ],
+    "pos": [
+      {
+        "year": 2024,
+        "value": 496617
+      },
+      {
+        "year": 2025,
+        "value": 558602
+      },
+      {
+        "year": 2026,
+        "value": 582547,
+        "provisional": true
+      }
+    ],
+    "branches": [
+      {
+        "year": 2024,
+        "value": 5011
+      },
+      {
+        "year": 2025,
+        "value": 4815
+      },
+      {
+        "year": 2026,
+        "value": 4754,
+        "provisional": true
+      }
+    ],
+    "cash": [
+      {
+        "year": 2021,
+        "value": 581011
+      },
+      {
+        "year": 2022,
+        "value": 666073
+      },
+      {
+        "year": 2023,
+        "value": 716167
+      },
+      {
+        "year": 2024,
+        "value": 759753
+      },
+      {
+        "year": 2025,
+        "value": 866944
+      },
+      {
+        "year": 2026,
+        "value": 921808,
+        "provisional": true
+      }
+    ]
+  }
+}

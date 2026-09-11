@@ -1,0 +1,13 @@
+# EAA (ATMs/self-service) — 2026-07-15 delta run
+
+Baseline = 2026-07-14 (1 day). Report only NEW/CHANGED. Confidence capped Medium.
+
+## NEW / CHANGED signals
+1. **Sweden PTS — 124 complaints, ATM interface/design top product category.** PTS accessibility-law page (dated 17/02/2026): 124 complaints (110 services, 14 products); product complaints "most commonly involve interface and design deficiencies in ATMs (uttagsautomater)". Complaints feeding PTS 2025/2026 supervision-target selection; Konsumentverket runs parallel product-accessibility program covering ATMs/kiosks. NEW — baseline had no Sweden. https://www.pts.se/nyheter-och-pressmeddelanden/klaga-pa-produkters-och-tjansters-tillganglighet/
+2. **Germany MLBF active market surveillance.** Marktüberwachungsstelle der Länder für die Barrierefreiheit (MLBF, seat Magdeburg) doing complaint-driven + random spot-checks under BFSG; fines up to €10k (up to €100k certain violations); no individual right to force ATM retrofit; press flags "Automatensterben" — banks removing ATMs rather than retrofit. Article 03/05/2026. NEW authority/mechanism detail. https://www.gegen-hartz.de/news/neue-vorteile-fuer-schwerbehinderte-durch-marktueberwachung-fuer-barrierefreiheit
+3. **Greece — parliamentary escalation 14/05/2026.** PASOK MP Petros Pappas filed parliamentary referral to Min. National Economy/Finance, Social Cohesion, Digital Governance demanding universal accessibility of banking services/ATMs, ending witness-requirement practice. Escalates prior ESAmeA 11/02/2026 letter. NEW. https://www.aftodioikisi.gr/politiki/sti-voyli-ta-provlimata-prosvasimotitas-stis-trapezes-gia-ta-atoma-me-optiki-anapiria/
+4. **EN 301 549 draft V4.1.0 (2025-11) published by ETSI.** Concrete draft artifact; clauses 9/10/11 aligned to WCAG 2.2 AA; final V4.1.1 → OJEU citation expected ~Oct-2026 as EAA presumption-of-conformity baseline (covers self-service terminals). CHANGED (artifact identified). https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_20/en_301549v040100ev.pdf
+5. **France enforcement widening (web/app precedent).** Court orders vs Carrefour (June 2026, 6-month cure + daily penalty), plus Auchan/E.Leclerc/Picard (May–Jun 2026). e-commerce/app not ATM, but shows injunction teeth post-baseline France 12/11/2025. https://www.levelaccess.com/blog/eaa-compliance-in-2026-how-enforcement-has-evolved-and-what-to-expect-next/
+
+## Printec map
+Voice-guided/accessible ATM + self-service retrofit & managed services (SE/DE/GR pipeline); accessible payment terminals/POS. Automatensterben = risk (removal) but also refresh/recycler upgrade opportunity.

@@ -1,0 +1,432 @@
+[
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_006",
+  "source_url": "http://kba.kozbeszerzes.hu/apex/f?p=103:35",
+  "outcome": "unresolved",
+  "http_status": 503,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 503"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_008",
+  "source_url": "https://www.kozbeszerzes.hu/jogorvoslat/dontobizottsagi-hatarozatok/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_011",
+  "source_url": "https://opentender.eu/hu/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_012",
+  "source_url": "https://adatbazis.k-monitor.hu/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_029",
+  "source_url": "https://opentender.eu/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_036",
+  "source_url": "https://www.palyazat.gov.hu/tamogatott_projektkereso",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_037",
+  "source_url": "https://digitalismegujulas.kormany.hu/tamogatott-projektek-alapadatai-kofop",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_041",
+  "source_url": "https://www.tendersontime.com/european-investment-bank-eib-tenders/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_046",
+  "source_url": "https://hu.indeed.com/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_047",
+  "source_url": "https://hu.jooble.org/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_048",
+  "source_url": "https://m.jobmonitor.hu/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_091",
+  "source_url": "https://www.bankweb.hu/iir-magyarorszag-kartyapiac-konferencia/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_095",
+  "source_url": "https://ceginformaciosszolgalat.kormany.hu/beszamolo-allomany-ertekesitese",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_096",
+  "source_url": "https://ceginformaciosszolgalat.kormany.hu/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_103",
+  "source_url": "https://icegtar.com/",
+  "outcome": "unresolved",
+  "http_status": 523,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 523"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_116",
+  "source_url": "https://www.mavcsoport.hu/mav-csoport/uvegzseb",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_117",
+  "source_url": "https://www.mnv.hu/gazdalkodas/kozbeszerzesek/szerzodeskereso",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_138",
+  "source_url": "https://www.palyazat.gov.hu/helyreallitasi-es-ellenallokepessegi-eszkoz-rrf",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_139",
+  "source_url": "https://digitalismegujulas.kormany.hu/ddigitalis-megujulas-operativ-program-plusz-dimop-plusz",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_142",
+  "source_url": "https://kifu.gov.hu/modern-vallalkozasok-programja/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_153",
+  "source_url": "https://neum.hu/project.html",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_159",
+  "source_url": "https://ibsintelligence.com/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_171",
+  "source_url": "https://therecursive.com/channel/fintech/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_201",
+  "source_url": "https://www.mbhbank.hu/lakossagi/sajtoszoba",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_202",
+  "source_url": "https://www.mbhbank.hu/befektetoi/befektetoknek/kozzetetelek/rendkivuli-kozzetelek",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_204",
+  "source_url": "https://www.kh.hu/csoport/sajto",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_205",
+  "source_url": "https://www.kh.hu/karbantartasok",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_213",
+  "source_url": "https://www.bet.hu/newkibdata/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_216",
+  "source_url": "https://www.fintechfutures.com/core-banking-technology/hungary-s-otp-bank-taps-igcb-for-core-banking-revamp",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_225",
+  "source_url": "https://www.mastercard.com/content/dam/public/mastercardcom/globalrisk/pdf/Global%20Vendor%20Certification%20Program%20FAQs%20(15%20May%202024).pdf",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_227",
+  "source_url": "https://www.mastercard.com/news/europe/en/newsroom/press-releases/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_241",
+  "source_url": "https://otpmobil.hu/blog/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_246",
+  "source_url": "https://www.globalpayments.com/hu-hu/pos-terminal",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_248",
+  "source_url": "https://www.six-payment-services.com/hu/home.html",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_250",
+  "source_url": "https://ir.euronetworldwide.com/news-releases",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_259",
+  "source_url": "https://www.kh.hu/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_263",
+  "source_url": "https://investor.aciworldwide.com/news-releases",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_264",
+  "source_url": "https://euronetworldwide.gcs-web.com/news-releases",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_268",
+  "source_url": "https://s27.q4cdn.com/808990265/files/doc_news/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_271",
+  "source_url": "https://www.finextra.com/pressarticle/73421/hungarys-otp-bank-turns-to-aci-worldwide-for-instant-payments",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_272",
+  "source_url": "https://www.businesswire.com/news/home/20200831005066/en/ACI-Worldwide-and-Partners-Capsys-and-T-Systems-Power-Majority-of-Hungary%E2%80%99s-Real-Time-Payments",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_278",
+  "source_url": "https://ibsintelligence.com/ibsi-news/aci-worldwide-powers-75-of-hungarys-real-time-payments/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_286",
+  "source_url": "https://www.t-systems.hu/jovobankja/instantcc",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ }
+]

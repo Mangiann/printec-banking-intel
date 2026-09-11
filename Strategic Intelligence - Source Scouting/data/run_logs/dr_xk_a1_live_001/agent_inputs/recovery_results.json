@@ -1,0 +1,162 @@
+[
+ {
+  "candidate_id": "dr_xk_a1_live_001__c_020",
+  "source_url": "https://krahaso.bqk-kos.org",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a1_live_001__c_082",
+  "source_url": "https://ask.rks-gov.net/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a1_live_001__c_102",
+  "source_url": "https://cfrr.worldbank.org/publications/kosovo-accounting-and-auditing-report-observance-standards-and-codes",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a1_live_001__c_103",
+  "source_url": "https://kallxo.com/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a1_live_001__c_142",
+  "source_url": "https://www.institutigap.org/documents/36928_mbrojtja_konsumatoreve.pdf",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a1_live_001__c_144",
+  "source_url": "https://kallxo.com/gjate/analize/rriten-ankesat-ndaj-bankave-ne-kosove/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a1_live_001__c_148",
+  "source_url": "https://www.elibrary.imf.org/downloadpdf/view/journals/019/2026/027/019.2026.issue-027-en.pdf",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a1_live_001__c_150",
+  "source_url": "https://documents1.worldbank.org/curated/en/743781468285622837/pdf/ACS93510WP0P130LIC00Kosovo0PFR0Srb0.pdf",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a1_live_001__c_168",
+  "source_url": "https://seonet.ljse.si/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a1_live_001__c_174",
+  "source_url": "https://www.teb.com.tr/teb-hakkinda/teb-faaliyet-raporlari/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a1_live_001__c_220",
+  "source_url": "https://documents1.worldbank.org/curated/en/099062524135521211/pdf/P1813201033cf70518d3b117cd10a7f41d.pdf",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a1_live_001__c_270",
+  "source_url": "https://see.asseco.com/more-sectors/banking/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://see.asseco.com/more-sectors/banking/inact-anti-fraud-solutions/",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_xk_a1_live_001__c_292",
+  "source_url": "https://opencorporates.com/registers/133",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a1_live_001__c_293",
+  "source_url": "https://aleph.occrp.org/datasets/2747",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a1_live_001__c_299",
+  "source_url": "https://www.amik.org/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a1_live_001__c_319",
+  "source_url": "https://nacionale.com/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ }
+]

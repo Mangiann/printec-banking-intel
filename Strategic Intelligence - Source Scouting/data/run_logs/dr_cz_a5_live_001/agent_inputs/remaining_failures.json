@@ -1,0 +1,342 @@
+[
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_018",
+  "source_url": "https://mfcr.gov.cz/cs/ministerstvo/zakladni-informace/primo-rizene-organizace",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_048",
+  "source_url": "https://www.spcss.cz/kariera/volne-pozice/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_049",
+  "source_url": "https://portal.isoss.cz/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_096",
+  "source_url": "https://www.konferenceseminare.cz/trendy-v-platebnim-styku-2026",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_100",
+  "source_url": "https://www.mesec.cz/akce/zlaty-mesec/hlasovani/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_112",
+  "source_url": "https://www.osppp.cz/nase-sluzby/odborove-organizace",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_114",
+  "source_url": "https://www.cmkos.cz/cs/obsah/274/sondy",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_123",
+  "source_url": "https://www.eurofound.europa.eu/en/european-restructuring-monitor",
+  "outcome": "unresolved",
+  "http_status": 429,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 429"
+ },
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_142",
+  "source_url": "https://www.listyregionu.cz/kraj-kralovehradecky/",
+  "outcome": "unresolved",
+  "http_status": 500,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 500"
+ },
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_144",
+  "source_url": "https://www.atmoskop.cz/nazory-na-zamestnavatele",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_145",
+  "source_url": "https://www.glassdoor.com/Reviews/index.htm",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_149",
+  "source_url": "https://cz.jooble.org/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_157",
+  "source_url": "https://apps.eurofound.europa.eu/restructuring-events/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_160",
+  "source_url": "https://www.finextra.com/pressarticle/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_169",
+  "source_url": "https://www.globenewswire.com/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "TimeoutError"
+ },
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_178",
+  "source_url": "https://www.marketscreener.com/quote/stock/KOMERCN-BANKA-6492099/company/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_179",
+  "source_url": "https://www.theofficialboard.com/org-chart/raiffeisenbank-czech-republic",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_191",
+  "source_url": "https://cz.linkedin.com/company/gopay-s-r-o-",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_222",
+  "source_url": "https://www.irozhlas.cz/zpravy-tag/bankovnictvi",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_223",
+  "source_url": "https://echo24.cz/ekonomika",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_242",
+  "source_url": "https://www.e15.cz/clanek/tiskove-zpravy",
+  "outcome": "unresolved",
+  "http_status": 410,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 410"
+ },
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_273",
+  "source_url": "https://www.linkedin.com/in/ales-blazek/",
+  "outcome": "unresolved",
+  "http_status": 999,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 999"
+ },
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_274",
+  "source_url": "https://www.linkedin.com/in/martinvasek/",
+  "outcome": "unresolved",
+  "http_status": 999,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 999"
+ },
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_275",
+  "source_url": "https://www.linkedin.com/in/martin-podol%C3%A1k/",
+  "outcome": "unresolved",
+  "http_status": 999,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 999"
+ },
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_276",
+  "source_url": "https://www.linkedin.com/in/radek-trachta-5261a813/",
+  "outcome": "unresolved",
+  "http_status": 999,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 999"
+ },
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_277",
+  "source_url": "https://www.linkedin.com/in/daniela-peskova-b64b856/",
+  "outcome": "unresolved",
+  "http_status": 999,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 999"
+ },
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_278",
+  "source_url": "https://www.linkedin.com/in/pesek/",
+  "outcome": "unresolved",
+  "http_status": 999,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 999"
+ },
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_280",
+  "source_url": "https://www.linkedin.com/in/silviamazanova/",
+  "outcome": "unresolved",
+  "http_status": 999,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 999"
+ },
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_281",
+  "source_url": "https://www.linkedin.com/in/jan-proch%C3%A1zka-81674052/",
+  "outcome": "unresolved",
+  "http_status": 999,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 999"
+ },
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_282",
+  "source_url": "https://www.linkedin.com/in/kamila-%C5%A1imonov%C3%A1-3b562051/",
+  "outcome": "unresolved",
+  "http_status": 999,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 999"
+ },
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_325",
+  "source_url": "https://www.vig.com/en/investor-relations/ir-newsinside-information/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_328",
+  "source_url": "https://www.eqs-news.com/news/ad-hoc/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_350",
+  "source_url": "https://www.spcr.cz/struktura-sp-cr/clenska-zakladna/odvetvove-svazy/seznam-clenu",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a5_live_001__c_353",
+  "source_url": "https://fondinfo.cz/profesni-sdruzeni-a-asociace/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "TimeoutError"
+ }
+]

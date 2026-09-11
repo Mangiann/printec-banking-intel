@@ -1,0 +1,72 @@
+[
+ {
+  "candidate_id": "dr_mk_a2_live_001__c_055",
+  "source_url": "https://slobodenpristap.mk/en/body/drzhavna_komisija_za_zhalbi_po_javni_nabavki",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_mk_a2_live_001__c_071",
+  "source_url": "http://mkopen.org/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://sireimplement.com/hrr8z3t77g?key=0db534d68ad50b1e61db0b52904b3b78",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_mk_a2_live_001__c_125",
+  "source_url": "https://forum.it.mk/threads/fintek-novosti-uslugi-razvoj.88345/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_mk_a2_live_001__c_133",
+  "source_url": "https://www.sparkasse.at/steiermaerkische/wir-ueber-uns/verbundpartner",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_mk_a2_live_001__c_134",
+  "source_url": "https://www.halkbank.com.tr/tr/bankamiz/bizi-taniyin/bizi-taniyin/haberler-ve-duyurular.html",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.halkbank.com.tr/tr/bankamiz/bizi-taniyin/haberler-ve-duyurular",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_mk_a2_live_001__c_171",
+  "source_url": "https://slobodenpristap.mk/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_mk_a2_live_001__c_256",
+  "source_url": "https://www.netcetera.com/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.netcetera.com/home.html",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ }
+]

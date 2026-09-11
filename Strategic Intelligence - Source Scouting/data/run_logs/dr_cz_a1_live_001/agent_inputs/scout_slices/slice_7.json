@@ -1,0 +1,963 @@
+{
+  "candidates": [
+    {
+      "source_name": "ČNB – Seznam emitentů, kterým bylo uděleno povolení pro krytý blok, a krytých dluhopisů (evropský krytý dluhopis / prémiový)",
+      "source_url": "https://www.cnb.cz/export/sites/cnb/cs/dohled-financni-trh/.galleries/seznamy/ostatni_seznamy/download/seznam_emitentu_pro_kryty_blok_a_krytych_dluhopisu.pdf",
+      "source_class": "pointer",
+      "primary_language": "cs",
+      "why_relevant": "Authoritative regulator-maintained roster of every Czech bank licensed to run a covered block (krytý blok) plus the ISIN-level list of bonds allowed to carry the 'European Covered Bond (Premium)' label. Content retrieved and parsed in this run names exactly six permitted issuers — UniCredit Bank Czech Republic and Slovakia (block HZL_UCB), Česká spořitelna (CSHZL2), Hypoteční banka (HB-Blok 4), MONETA Money Bank (MMB_HZL_CZK_CRR_rezidenční), Raiffeisenbank a.s. (RBCZ_BLOCK_02, RBCZ_BLOCK_03) and Komerční banka (Komerční_banka_HZL_EUR_0001) — with LEI, IČO and registered office. This is the closure list for the whole cell: it bounds the actor map and gives ISINs to snowball into prospectuses and investor reports.",
+      "credibility_score": 0.98,
+      "usefulness_score": 0.95,
+      "confidence_score": 0.95,
+      "priority": "critical",
+      "domain": "cnb.cz",
+      "source_subtype": "regulator_register_pdf",
+      "topics": ["disclosures", "covered_bonds", "hypotecni_zastavni_listy", "issuer_universe", "isin_registry"],
+      "access_status": "open_public",
+      "legal_status": "public_official_document",
+      "collection_allowed": true,
+      "suggested_collection_method": "Scheduled HTTP GET of the static PDF (quarterly or on-change hash check), then table extraction with pdfplumber/pypdf; diff issuer table and ISIN table to detect new covered blocks and new labelled issues.",
+      "example_urls": [
+        "https://www.cnb.cz/cs/dohled-financni-trh/seznamy/ostatni-seznamy/"
+      ],
+      "discovered_via_method": "cs-language search for the ČNB covered-bond register, then direct fetch + local PDF text extraction",
+      "queries_used": [
+        "ČNB seznam krytých bloků evidence krytých dluhopisů registr emitentů"
+      ],
+      "local_language_terms_used": ["krytý blok", "kryté dluhopisy", "evropský krytý dluhopis (prémiový)", "seznam emitentů", "zákon č. 190/2004 Sb. o dluhopisech"],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "ČNB – Registr prospektů (schválené a notifikované prospekty) / SIPRES OAM",
+      "source_url": "https://oam.cnb.cz/sipresextdad/SIPRESWEB.WEB_PROSPECTUS.START_INPUT_OAM?p_lang=cz",
+      "source_class": "pointer",
+      "primary_language": "cs",
+      "why_relevant": "The single legal chokepoint for the whole cell: every base prospectus (základní prospekt) and single-issue prospectus for Czech bank bonds and covered bonds is approved by ČNB and indexed here under Regulation (EU) 2017/1129. Search fields observed: issuer name (separate dropdowns for approved vs notified), LEI, IČO, ISIN, security type (incl. bonds), approval/notification date range, home country. Results are flagged PR (prospectus) vs BP (base prospectus). An English UI is offered. Gives complete, calendar-stamped coverage of debt-programme activity even for banks with weak equity IR.",
+      "credibility_score": 0.98,
+      "usefulness_score": 0.93,
+      "confidence_score": 0.9,
+      "priority": "critical",
+      "domain": "oam.cnb.cz",
+      "source_subtype": "regulator_prospectus_register",
+      "topics": ["disclosures", "prospectuses", "base_prospectus", "bond_programmes", "covered_bonds"],
+      "access_status": "open_public",
+      "legal_status": "public_official_register",
+      "collection_allowed": true,
+      "suggested_collection_method": "Form-driven scrape of the Oracle SIPRESWEB endpoint (GET/POST with p_lang and date-range params); iterate approval-date windows monthly, filter security type = bonds, keep issuer LEI/IČO join keys. Legacy Oracle PL/SQL app — expect session tokens and no JSON API; a headless browser is the safer fallback. Entry point https://www.cnb.cz/cnb/registr_prospektu 302-redirects here.",
+      "example_urls": [
+        "https://www.cnb.cz/cnb/registr_prospektu",
+        "https://www.cnb.cz/cs/dohled-financni-trh/seznamy/registr_prospektu"
+      ],
+      "discovered_via_method": "cs-language search for ČNB approved-prospectus database, then fetch + 302 redirect follow",
+      "queries_used": [
+        "ČNB seznam schválených prospektů dluhopisů databáze prospekty cenných papírů"
+      ],
+      "local_language_terms_used": ["registr prospektů", "schválené prospekty", "notifikované prospekty", "základní prospekt", "prospekt cenného papíru"],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "ČNB – Registr konečných podmínek základních prospektů (final terms register)",
+      "source_url": "https://oam.cnb.cz/sipresextdad/SIPRESWEB.WEB_PROSPECTUS.START_INPUT_OAM?p_lang=cz&p_type=ft",
+      "source_class": "pointer",
+      "primary_language": "cs",
+      "why_relevant": "Separate ČNB register holding the konečné podmínky / emisní dodatky (final terms, emission supplements) filed under each base prospectus. This is the per-issue layer of the debt-investor channel: size, coupon, tenor, call structure, MREL/SNP or covered-bond ranking, listing venue. Because final terms are filed per tranche, this register is the highest-frequency, most granular calendar of Czech bank funding activity available anywhere and is far more timely than annual reports.",
+      "credibility_score": 0.97,
+      "usefulness_score": 0.9,
+      "confidence_score": 0.85,
+      "priority": "critical",
+      "domain": "oam.cnb.cz",
+      "source_subtype": "regulator_final_terms_register",
+      "topics": ["disclosures", "final_terms", "emisni_dodatek", "bond_issuance", "mrel", "covered_bonds"],
+      "access_status": "open_public",
+      "legal_status": "public_official_register",
+      "collection_allowed": true,
+      "suggested_collection_method": "Same SIPRESWEB scraping approach as the prospectus register but with p_type=ft; poll weekly, diff on new filings, resolve issuer via LEI/IČO and store linked PDF URLs for downstream extraction.",
+      "example_urls": [
+        "https://www.cnb.cz/cs/dohled-financni-trh/seznamy/registr_konecnych_podminek_zakladnich_prospektu",
+        "https://www.cnb.cz/cnb/registr_konecnych_podminek_zakladnich_prospektu"
+      ],
+      "discovered_via_method": "snowballed from the ČNB 'Ostatní seznamy' index page, then redirect follow",
+      "queries_used": [
+        "ČNB seznam schválených prospektů dluhopisů databáze prospekty cenných papírů"
+      ],
+      "local_language_terms_used": ["konečné podmínky", "emisní dodatek", "základní prospekt", "emisní podmínky"],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "ČNB OAM – Informace uveřejňované emitenty (central storage of regulated information)",
+      "source_url": "https://www.cnb.cz/cs/dohled-financni-trh/informace-zverejnovane-emitenty/",
+      "source_class": "pointer",
+      "primary_language": "cs",
+      "why_relevant": "Czech officially appointed mechanism (OAM) for central storage of regulated information from issuers of quoted securities. Crucially for this cell, a bank whose only listed paper is bonds or HZL still files here — annual and interim reports, insider information, and other mandatory disclosures across 14 categories. It therefore captures debt-only issuers that never appear in equity-IR workstreams. Archive for pre-1 Aug 2009 filings sits at a separate ČNB URL.",
+      "credibility_score": 0.97,
+      "usefulness_score": 0.85,
+      "confidence_score": 0.85,
+      "priority": "high",
+      "domain": "cnb.cz",
+      "source_subtype": "regulator_regulated_information_store",
+      "topics": ["disclosures", "annual reports", "interim reports", "regulated_information", "bond_issuers"],
+      "access_status": "open_public",
+      "legal_status": "public_official_register",
+      "collection_allowed": true,
+      "suggested_collection_method": "Enter via the ČNB landing page, then drive the OAM application (cnb.cz/oam_cz) with issuer/date filters; harvest filing metadata + PDF links monthly. Expect the same legacy Oracle form pattern as SIPRESWEB.",
+      "example_urls": [
+        "https://cnb.cz/oam_cz"
+      ],
+      "discovered_via_method": "snowballed from ČNB 'Ostatní seznamy' index, then direct fetch",
+      "queries_used": [
+        "ČNB seznam krytých bloků evidence krytých dluhopisů registr emitentů"
+      ],
+      "local_language_terms_used": ["informace uveřejňované emitenty", "centrální evidence regulovaných informací", "emitenti kotovaných cenných papírů"],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Komerční banka – EUR covered bond (debt investor page: base prospectus, final terms, investor reports, HTT)",
+      "source_url": "https://kb.cz/en/about-the-bank/for-investors/eur-covered-bond",
+      "source_class": "direct",
+      "primary_language": "en",
+      "why_relevant": "Best-in-class Czech covered-bond debt-investor page and the model for the whole cell. Observed inventory: EUR 5bn mortgage covered bond base prospectus (Oct 2025 and Jan 2021 editions) plus a First Supplement dated 31 March 2026; final terms per tranche incl. ISIN XS3401900173 / XS3401900256 (June 2026) and 2025/2021 issues; quarterly Covered Bond Investor Reports for two cover pools (KB_EUR_HZL_0001 and KB_HZL_0000, latest observed as of 30 June 2026); quarterly HTT Covered Bond Label reporting in XLSX; a Fitch AAA rating action link; and a redemption notice for XS2289128162. The HTT XLSX is machine-readable cover-pool data — LTV bands, seasoning, regional split, OC — that appears nowhere in KB's annual report.",
+      "credibility_score": 0.95,
+      "usefulness_score": 0.97,
+      "confidence_score": 0.9,
+      "priority": "critical",
+      "domain": "kb.cz",
+      "source_subtype": "issuer_debt_investor_page",
+      "topics": ["investor relations", "covered_bonds", "cover_pool", "htt", "prospectuses", "final_terms", "ratings"],
+      "access_status": "open_public",
+      "legal_status": "issuer_public_disclosure",
+      "collection_allowed": true,
+      "suggested_collection_method": "Quarterly crawl of the page, enumerate /getmedia/ PDF and XLSX links, download and parse the HTT workbook directly into a cover-pool time series; alert on new base-prospectus supplements and new final terms.",
+      "example_urls": [
+        "https://www.kb.cz/getmedia/87ac3fe7-c405-44ca-b876-63fcda419c66/Covered-Bond-Investor-Report-KB_EUR_HZL_0001-as-of-2025-12-31.pdf",
+        "https://www.kb.cz/getmedia/7ce2b4fb-8d88-4cd7-8e26-85074ba577b9/HTT-Covered-Bond-Label-reporting-as-of-2026-06-30.xlsx",
+        "https://www.kb.cz/getmedia/8461304d-5317-47f3-a6c5-8f50b3fe7031/251003-Covered-bond-base-prospectus-EN.pdf"
+      ],
+      "discovered_via_method": "cs+en search on KB covered bond programme, then direct fetch of the IR page and link enumeration",
+      "queries_used": [
+        "Komerční banka \"pro investory\" dluhopisy debt investors covered bond programme EUR 5 bn",
+        "Czech bank covered bond investor report cover pool disclosure harmonised transparency template"
+      ],
+      "local_language_terms_used": ["evropské kryté dluhopisy (prémiové)", "hypoteční zástavní listy", "emise"],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Komerční banka – Informace o cenných papírech (povinně uveřejňované informace)",
+      "source_url": "https://www.kb.cz/cs/o-bance/povinne-uverejnovane-informace/informace-o-cennych-papirech",
+      "source_class": "direct",
+      "primary_language": "cs",
+      "why_relevant": "KB's Czech-language mandatory-disclosure hub for securities. Observed: a rate table (updated 24 July 2026) of ISIN / yield period / coupon 2.00–6.47% p.a. for outstanding HZL KB issues; notices to bondholders (EUR covered bond issuances of 2 Apr 2026 and 9 Oct 2025, nominal-value notifications, redemption and buyback notices); traded issues such as HZL KB 3,125%/2033 (XS3401900173) and HZL KB 2,750%/2030 (XS3203038347); base prospectuses for the EUR 5bn covered bond programme and the legacy KB II bond programme. It also carries a large archive of client/corporate bond programmes KB arranges — a side channel into Czech corporate funding.",
+      "credibility_score": 0.95,
+      "usefulness_score": 0.85,
+      "confidence_score": 0.9,
+      "priority": "high",
+      "domain": "kb.cz",
+      "source_subtype": "issuer_mandatory_disclosure_page",
+      "topics": ["disclosures", "hypotecni_zastavni_listy", "bondholder_notices", "prospectuses", "press releases"],
+      "access_status": "open_public",
+      "legal_status": "issuer_public_disclosure",
+      "collection_allowed": true,
+      "suggested_collection_method": "Monthly crawl; parse the coupon/ISIN table into structured rows; watch the bondholder-notice list for new issuance and early-redemption events.",
+      "example_urls": [],
+      "discovered_via_method": "cs-language search for MREL/bond press releases at KB, then direct fetch",
+      "queries_used": [
+        "Komerční banka emise dluhopisů MREL nepodřízené dluhopisy senior non-preferred tisková zpráva"
+      ],
+      "local_language_terms_used": ["povinně uveřejňované informace", "informace o cenných papírech", "hypoteční zástavní listy", "oznámení vlastníkům dluhopisů"],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Raiffeisenbank a.s. – Emise cenných papírů Raiffeisenbank (base prospectuses, final terms, sustainable-bond impact reports)",
+      "source_url": "https://www.rb.cz/povinne-zverejnovane-informace/emise-cennych-papiru-raiffeisenbank",
+      "source_class": "direct",
+      "primary_language": "cs",
+      "why_relevant": "RBCZ's own debt-issuance disclosure page. Observed: four generations of the 'Raiffeisenbank a.s. EUR 5 bln Note Bond Programme' base prospectus (Nov 2020, Sep 2022, Apr 2024, and a 24 June 2026 update), multiple final terms / emisní podmínky for subordinated and senior non-preferred bonds in CZK and EUR with ISINs and coupon notices, annual Impact and Allocation Reports for its sustainable bond (2021–2025), and a reference to an International Covered Bonds Programme. RBCZ holds two covered blocks (RBCZ_BLOCK_02, RBCZ_BLOCK_03) per the ČNB register, so this page is the primary route to its covered-bond documentation.",
+      "credibility_score": 0.93,
+      "usefulness_score": 0.9,
+      "confidence_score": 0.9,
+      "priority": "high",
+      "domain": "rb.cz",
+      "source_subtype": "issuer_debt_disclosure_page",
+      "topics": ["disclosures", "mrel", "senior_non_preferred", "sustainable_bonds", "covered_bonds", "prospectuses"],
+      "access_status": "open_public",
+      "legal_status": "issuer_public_disclosure",
+      "collection_allowed": true,
+      "suggested_collection_method": "Monthly crawl of the page; enumerate /attachments/pi/rbi/*.pdf links; parse base prospectus + final terms; treat the Impact & Allocation Report as an annual ESG-funding artefact.",
+      "example_urls": [
+        "https://www.rb.cz/povinne-zverejnovane-informace/emise-korporatnich-dluhopisu",
+        "https://www.rb.cz/attachments/investice/Produktovy_list_MREL.pdf"
+      ],
+      "discovered_via_method": "cs-language search on Raiffeisenbank covered bonds/prospectus, then direct fetch of the disclosure hub",
+      "queries_used": [
+        "Raiffeisenbank a.s. kryté dluhopisy emise prospekt investor report Česká republika"
+      ],
+      "local_language_terms_used": ["povinně zveřejňované informace", "emise cenných papírů", "kryté dluhopisy", "podřízené dluhopisy", "emisní podmínky"],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "UniCredit Bank Czech Republic and Slovakia – Debt Investor Relations (prospectuses)",
+      "source_url": "https://www.unicreditbank.cz/en/ostatni/debt-investor-relations.html",
+      "source_class": "direct",
+      "primary_language": "en",
+      "why_relevant": "UCB CZ&SK runs the largest Czech international covered-bond franchise (10 labelled XS issues in the ČNB list, block HZL_UCB). Its Debt Investor Relations section is described in indexed content as the hub for bond and investment-certificate investors, carrying prospectuses, cover pool information for LCR purposes, HTT Covered Bond Label reporting, and planned-issuance investor presentations. Direct HTML fetch returned HTTP 403, but PDFs on the same domain are widely indexed, so the site is bot-defended rather than dead.",
+      "credibility_score": 0.93,
+      "usefulness_score": 0.92,
+      "confidence_score": 0.7,
+      "priority": "high",
+      "domain": "unicreditbank.cz",
+      "source_subtype": "issuer_debt_investor_page",
+      "topics": ["investor relations", "covered_bonds", "cover_pool", "htt", "prospectuses", "investor_presentations"],
+      "access_status": "bot_defended_unverified",
+      "legal_status": "issuer_public_disclosure",
+      "collection_allowed": true,
+      "suggested_collection_method": "Headless browser with realistic UA/headers (plain requests-style fetch is 403'd); enumerate /content/dam/cee2020-pws-cz/... PDF paths, which appear to serve directly. Fall back to search-engine link discovery for new document paths.",
+      "example_urls": [
+        "https://www.unicreditbank.cz/content/dam/cee2020-pws-cz/cz-dokumenty/o-bance/international-covered-bond-programme/Base-Prospectus-MASTER-16092024.pdf",
+        "https://www.unicreditbank.cz/en/popupeditpages/ostatni/dluhopisy-international-covered-bond.html",
+        "https://www.unicreditbank.cz/en/ostatni/dluhopisy-prehled.html"
+      ],
+      "discovered_via_method": "en search on the UniCredit international covered bond programme, then attempted direct fetch",
+      "queries_used": [
+        "unicreditbank.cz \"international covered bond programme\" investor report cover pool documents"
+      ],
+      "local_language_terms_used": ["dluhopisy přehled", "hypoteční zástavní listy"],
+      "blocked": true,
+      "blocker_type": "bot_protection_403",
+      "observed_blocker": "HTTP 403 Forbidden on both https://www.unicreditbank.cz/cs/o-bance/dluhopisy-prehled.html and the English debt-investor-relations page; PDFs on the same host are reachable via indexed links."
+    },
+    {
+      "source_name": "UniCredit Bank CZ&SK – International €10 bln Covered Bond Programme (programme page + base prospectuses)",
+      "source_url": "https://www.unicreditbank.cz/cs/popupeditpages/ostatni/dluhopisy-international-covered-bond.modal.html",
+      "source_class": "direct",
+      "primary_language": "cs",
+      "why_relevant": "Dedicated programme page for the International EUR 10bn Covered Bond Programme. Indexed content shows it hosts Cover Pool Information (for LCR purposes), HTT Covered Bond Label reporting, a Planned Covered Bond Issuance investor presentation, and the Base Prospectus dated 16 September 2024, alongside older editions (e.g. a 10 January 2017 base prospectus under the earlier €5bn programme). This is the deepest non-annual-report disclosure UCB CZ&SK makes about its Czech mortgage book.",
+      "credibility_score": 0.92,
+      "usefulness_score": 0.92,
+      "confidence_score": 0.7,
+      "priority": "high",
+      "domain": "unicreditbank.cz",
+      "source_subtype": "issuer_covered_bond_programme_page",
+      "topics": ["covered_bonds", "cover_pool", "htt", "prospectuses", "investor_presentations", "lcr"],
+      "access_status": "bot_defended_unverified",
+      "legal_status": "issuer_public_disclosure",
+      "collection_allowed": true,
+      "suggested_collection_method": "Headless browser to render the modal page and harvest document links; then direct GET on the /content/dam/ PDF/XLSX paths.",
+      "example_urls": [
+        "https://www.unicreditbank.cz/en/popupeditpages/ostatni/dluhopisy-international-covered-bond.html",
+        "https://www.unicreditbank.cz/content/dam/cee2020-pws-cz/cz-dokumenty-2017/ostatni/international-e5-bln-covered-bond-programme/UCB_Base_Prospectus_dated_10_January_2017.PDF",
+        "https://www.unicreditbank.cz/content/dam/cee2020-pws-cz/cz-dokumenty/o-bance/dluhopisy-prehled/Zakladni-prospekt-Dluhopisy-UCBCS-2025.pdf"
+      ],
+      "discovered_via_method": "en search snowballed from the ECBC/covered-bond query set",
+      "queries_used": [
+        "unicreditbank.cz \"international covered bond programme\" investor report cover pool documents",
+        "ECBC European Covered Bond Fact Book Czech Republic chapter hypotecni zastavni listy"
+      ],
+      "local_language_terms_used": ["dluhopisy", "kryté dluhopisy", "základní prospekt"],
+      "blocked": true,
+      "blocker_type": "bot_protection_403",
+      "observed_blocker": "Host returned HTTP 403 to plain WebFetch on sibling pages; programme page content known only from indexed summaries."
+    },
+    {
+      "source_name": "MONETA Money Bank – Bonds (investors.moneta.cz/bonds)",
+      "source_url": "https://investors.moneta.cz/bonds",
+      "source_class": "direct",
+      "primary_language": "en",
+      "why_relevant": "Full capital-stack debt disclosure in one place, unusually complete for a mid-cap Czech bank. Observed: AT1 prospectus (ISIN XS3402816162, June 2026); Tier 2 base prospectus (XS3154053436, Sep 2025) and legacy T2 final terms (CZ0003704918, CZ0003705188); senior preferred/unsecured prospectuses (XS2898794982 Sep 2024, XS2435601443 Feb 2022, CZ0003707671 Nov 2022); a covered-bond base prospectus (18 Sep 2023) with final terms for HZL MONETA 4,97/26 (CZ0002009012) and HZL MONETA 4,83/27 (CZ0002009020); recurring Cover Pool Overviews through June 2026 (Czech only); and the historical Wüstenrot hypoteční banka Bond Programme II archive. Because MONETA is listed, this sits alongside equity IR but the documents themselves are pure debt-investor material.",
+      "credibility_score": 0.94,
+      "usefulness_score": 0.93,
+      "confidence_score": 0.9,
+      "priority": "critical",
+      "domain": "investors.moneta.cz",
+      "source_subtype": "issuer_debt_investor_page",
+      "topics": ["investor relations", "covered_bonds", "cover_pool", "mrel", "at1", "tier2", "prospectuses", "final_terms"],
+      "access_status": "open_public",
+      "legal_status": "issuer_public_disclosure",
+      "collection_allowed": true,
+      "suggested_collection_method": "Quarterly crawl; enumerate /documents/ PDF links; parse the Czech-language Cover Pool Overview series into a time series; monitor the news feed at investors.moneta.cz/news for mandate announcements that precede filings.",
+      "example_urls": [
+        "https://investors.moneta.cz/news",
+        "https://investors.moneta.cz/documents/12270853/20116277/mmb-senior-preferred-bonds-prospectus-2024-en.pdf",
+        "https://www.kb.cz/getmedia/451d8611-c24c-4a42-a5af-7e13e717c4b3/Zakladni-prospekt_Moneta-MB_CZ0003704918.pdf"
+      ],
+      "discovered_via_method": "en+cs search on MONETA MREL/covered bonds, then direct fetch of the bonds page",
+      "queries_used": [
+        "MONETA Money Bank covered bonds kryté dluhopisy MREL bond issuance investor relations debt"
+      ],
+      "local_language_terms_used": ["kryté dluhopisy", "hypoteční zástavní listy", "MREL dluhopisy", "přehled krycího portfolia"],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Česká spořitelna – Dokumenty ke stažení, sekce Dluhopisy a MREL",
+      "source_url": "https://www.csas.cz/cs/dokumenty-ke-stazeni#/1101/MREL",
+      "source_class": "direct",
+      "primary_language": "cs",
+      "why_relevant": "ČS's IR hub (Pro akcionáře a investory) routes debt investors to a dedicated 'Dluhopisy a MREL' bucket inside its document library. ČS holds covered block CSHZL2 in the ČNB register, joined the Covered Bond Label as the third Czech issuer, and per third-party research published its first HTT-standard report as of 31 March 2026 covering a cover pool of CZK 308.5bn (EUR 12.6bn) of fixed-rate domestic mortgages. Its inaugural EUR 500m mortgage covered bond was Moody's Aaa-rated and listed on the Vienna Stock Exchange regulated market. This is the largest Czech mortgage book and the highest-value cover-pool disclosure in the country.",
+      "credibility_score": 0.93,
+      "usefulness_score": 0.92,
+      "confidence_score": 0.75,
+      "priority": "critical",
+      "domain": "csas.cz",
+      "source_subtype": "issuer_document_library_debt_section",
+      "topics": ["investor relations", "mrel", "covered_bonds", "cover_pool", "htt", "prospectuses"],
+      "access_status": "open_public_js_routed",
+      "legal_status": "issuer_public_disclosure",
+      "collection_allowed": true,
+      "suggested_collection_method": "Headless browser — the document library uses hash-fragment routing (#/1101/MREL), so a plain GET returns the shell. Render, expand the MREL/bond category, harvest PDF/XLSX links quarterly. Cross-check against the Covered Bond Label HTT feed for ČS.",
+      "example_urls": [
+        "https://www.csas.cz/cs/o-nas/pro-akcionare-investory",
+        "https://www.csas.cz/en/about-us/for-shareholders-and-investors",
+        "https://www.csas.cz/en/documents-to-download"
+      ],
+      "discovered_via_method": "cs+en search on ČS debt investors, then direct fetch of the IR page which named the MREL document anchor",
+      "queries_used": [
+        "csas.cz \"debt investors\" MREL \"Česká spořitelna\" věřitelé investoři do dluhopisů stránka",
+        "\"Česká spořitelna\" covered bond investor report cover pool HTT csas.cz \"covered bonds\""
+      ],
+      "local_language_terms_used": ["dokumenty ke stažení", "pro akcionáře a investory", "dluhopisy a MREL", "hypoteční zástavní listy"],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Hypoteční banka / ČSOB Hypoteční banka – document store (základní prospekt dluhopisového programu, emisní dodatky HZL)",
+      "source_url": "https://www.csobhypotecni.cz/documents/d/csobhyp/zakladni-prospekt-dluhopisoveho-programu",
+      "source_class": "direct",
+      "primary_language": "cs",
+      "why_relevant": "Hypoteční banka (formerly Českomoravská hypoteční banka, ČSOB group, covered block HB-Blok 4) has been the country's oldest and largest HZL issuer, issuing continuously since 1996. Its third bond programme, established 2013, runs 30 years and each tranche is documented by an emisní dodatek. Indexed documents include the 3rd programme base prospectus (versions dated 13 July 2018 and 14 April 2019) and emission supplements such as the 25th HZL issue. ČSOB group discloses very little of its Czech mortgage book to equity investors, so this prospectus/supplement trail is the main window.",
+      "credibility_score": 0.9,
+      "usefulness_score": 0.85,
+      "confidence_score": 0.7,
+      "priority": "high",
+      "domain": "csobhypotecni.cz",
+      "source_subtype": "issuer_prospectus_document_store",
+      "topics": ["prospectuses", "emisni_dodatek", "hypotecni_zastavni_listy", "covered_bonds", "disclosures"],
+      "access_status": "partially_blocked_unverified",
+      "legal_status": "issuer_public_disclosure",
+      "collection_allowed": true,
+      "suggested_collection_method": "Document URLs under /documents/d/csobhyp/<slug> appear to serve PDFs directly; HTML index pages returned HTTP 500 to plain fetch, so use a headless browser for the listing page and direct GET for documents. hypotecnibanka.cz 301-redirects to csobhypotecni.cz.",
+      "example_urls": [
+        "https://www.csobhypotecni.cz/documents/d/csobhyp/8-zakladni-prospekt-3-dluhopisoveho-programu-finalni-verze-s-podpisy",
+        "https://www.csobhypotecni.cz/documents/d/csobhyp/emisni-dodatek-25-emise-hzl",
+        "https://www.csobhypotecni.cz/o-bance/zpravy-o-hospodareni-dokumenty/"
+      ],
+      "discovered_via_method": "cs search for csobhypotecni prospectus documents, then attempted fetch of the HTML index",
+      "queries_used": [
+        "csobhypotecni.cz emise hypotečních zástavních listů prospekt dokumenty pro investory",
+        "Hypoteční banka pro investory emise HZL dokumenty prospekt hypotecnibanka.cz"
+      ],
+      "local_language_terms_used": ["základní prospekt dluhopisového programu", "emisní dodatek", "emise HZL", "hypoteční zástavní listy"],
+      "blocked": true,
+      "blocker_type": "server_error_or_bot_protection",
+      "observed_blocker": "HTTP 500 Internal Server Error on https://www.csobhypotecni.cz/o-bance/emise-hzl and /o-bance/zpravy-o-hospodareni-dokumenty/ via plain fetch, while PDF document slugs on the same host are indexed and referenced. Treat as bot-defended/unverified, not dead."
+    },
+    {
+      "source_name": "Hypoteční banka – tiskové zprávy, rubrika Emise HZL",
+      "source_url": "https://www.hypotecnibanka.cz/o-bance/pro-media/tiskove-zpravy/emise-hzl/",
+      "source_class": "direct",
+      "primary_language": "cs",
+      "why_relevant": "Dedicated press-release category for HZL issuance — the announcement layer that dates each tranche and often names the placement channel (e.g. issues placed with ČSOB Private Banking clients rather than institutional books). Useful as a low-latency trigger to go look for the corresponding emisní dodatek, and it reveals distribution strategy that prospectuses do not state plainly.",
+      "credibility_score": 0.88,
+      "usefulness_score": 0.72,
+      "confidence_score": 0.75,
+      "priority": "medium",
+      "domain": "hypotecnibanka.cz",
+      "source_subtype": "issuer_press_release_category",
+      "topics": ["press releases", "hypotecni_zastavni_listy", "bond_issuance", "distribution"],
+      "access_status": "open_public_unverified",
+      "legal_status": "issuer_public_disclosure",
+      "collection_allowed": true,
+      "suggested_collection_method": "Poll the category page or its RSS if present, weekly; extract date, issue name, volume, coupon, placement channel. Note the host 301-redirects to csobhypotecni.cz, so follow redirects.",
+      "example_urls": [
+        "https://www.hypotecnibanka.cz/o-bance/pro-media/tiskove-zpravy/emise-hzl/emisi-hypotecnich-zastavnich-listu-hypotecni-banky/"
+      ],
+      "discovered_via_method": "cs search snowballed from the csobhypotecni prospectus query",
+      "queries_used": [
+        "csobhypotecni.cz emise hypotečních zástavních listů prospekt dokumenty pro investory"
+      ],
+      "local_language_terms_used": ["tiskové zprávy", "emise HZL", "hypoteční zástavní listy", "privátní bankovnictví"],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "ČSOB – Povinně uveřejňované informace (dluhopisový program, emisní dodatky, prospekty)",
+      "source_url": "https://www.csob.cz/csob/povinne-uverejnovane-informace",
+      "source_class": "direct",
+      "primary_language": "cs",
+      "why_relevant": "ČSOB's statutory disclosure hub, which hosts its own dluhopisový program documentation and per-issue emisní dodatky (structured and green/liquidity bonds among them). ČSOB is one of the largest Czech banks and its group parent KBC reports at group level, so the Czech-entity bond documentation here carries entity-level detail absent from group reporting. Plain fetch returned HTTP 500 while linked PDFs on the same host are indexed and reachable.",
+      "credibility_score": 0.9,
+      "usefulness_score": 0.78,
+      "confidence_score": 0.7,
+      "priority": "medium",
+      "domain": "csob.cz",
+      "source_subtype": "issuer_mandatory_disclosure_page",
+      "topics": ["disclosures", "prospectuses", "emisni_dodatek", "bond_programmes"],
+      "access_status": "partially_blocked_unverified",
+      "legal_status": "issuer_public_disclosure",
+      "collection_allowed": true,
+      "suggested_collection_method": "Headless browser for the index page; direct GET on /documents/<id>/<id>/*.pdf paths. Cross-check discovered issues against the ČNB final-terms register so nothing is missed if the page stays unreadable.",
+      "example_urls": [
+        "https://www.csob.cz/documents/10710/25791461/emisni-dodatek-cz0003711129.pdf",
+        "https://www.csob.cz/documents/10710/289251/prospekt11.pdf"
+      ],
+      "discovered_via_method": "cs search on ČSOB mandatory disclosures and MREL, then attempted direct fetch",
+      "queries_used": [
+        "ČSOB povinně uveřejňované informace dluhopisy emise prospekt investoři csob.cz MREL"
+      ],
+      "local_language_terms_used": ["povinně uveřejňované informace", "dluhopisový program", "emisní dodatek", "emisní podmínky"],
+      "blocked": true,
+      "blocker_type": "server_error_or_bot_protection",
+      "observed_blocker": "HTTP 500 Internal Server Error returned to plain WebFetch on the disclosure hub URL; document PDFs on the same host are indexed."
+    },
+    {
+      "source_name": "Covered Bond Label (ECBC/EMF) – issuer directory, HTT database and national information",
+      "source_url": "https://www.coveredbondlabel.com/htt-database",
+      "source_class": "pointer",
+      "primary_language": "en",
+      "why_relevant": "Cross-jurisdiction aggregator that normalises cover-pool disclosure into the Harmonised Transparency Template. Three Czech issuers are labelled: Komerční banka (first Czech issuer to obtain the Label), UniCredit Bank Czech Republic and Slovakia (issuer id 214), and Česká spořitelna (third Czech joiner). The site exposes an issuer directory (/issuers/directory), national information (/issuers/national/list), recently published HTTs (/new-htt), a cover-pool comparison tool (/htt-database), label statistics (/bonds) and a legislative comparative database. It is the fastest way to detect a new Czech HTT filing and to compare Czech cover pools against peers.",
+      "credibility_score": 0.9,
+      "usefulness_score": 0.9,
+      "confidence_score": 0.85,
+      "priority": "high",
+      "domain": "coveredbondlabel.com",
+      "source_subtype": "industry_aggregator_transparency_platform",
+      "topics": ["covered_bonds", "cover_pool", "htt", "disclosures", "benchmarking"],
+      "access_status": "open_public_js_rendered",
+      "legal_status": "industry_body_public_platform",
+      "collection_allowed": true,
+      "suggested_collection_method": "Headless browser — the issuer directory and issuer pages render their tables client-side and returned empty tables to static fetch. Filter country = Czechia, capture issuer pages, then download HTT XLSX files; also poll /new-htt for change detection.",
+      "example_urls": [
+        "https://www.coveredbondlabel.com/issuer/177-komercni-banka-a-s",
+        "https://www.coveredbondlabel.com/issuer/214-unicredit-bank-czech-republic-and-slovakia-a-s",
+        "https://www.coveredbondlabel.com/issuers/directory",
+        "https://www.coveredbondlabel.com/issuers/national/list",
+        "https://www.coveredbondlabel.com/new-htt",
+        "https://www.coveredbondlabel.com/htt"
+      ],
+      "discovered_via_method": "en search on HTT/covered bond label for Czech issuers, then direct fetch and site-structure enumeration",
+      "queries_used": [
+        "Czech bank covered bond investor report cover pool disclosure harmonised transparency template",
+        "Komerční banka \"pro investory\" dluhopisy debt investors covered bond programme EUR 5 bn"
+      ],
+      "local_language_terms_used": ["kryté dluhopisy", "hypoteční zástavní listy"],
+      "blocked": true,
+      "blocker_type": "javascript_rendered_tables",
+      "observed_blocker": "Static fetch of /issuers/directory and /issuer/177-komercni-banka-a-s returned tables showing '0-10 of 0' — data is loaded client-side. /issuers (plural, no path) and /national-information returned HTTP 404, so use the exact paths listed above."
+    },
+    {
+      "source_name": "ECBC / EMF-ECBC – European Covered Bond Fact Book (Czech Republic chapter)",
+      "source_url": "https://hypo.org/sites/default/files/2026-04/ECBC-Fact-Book-2025_2.pdf",
+      "source_class": "indirect",
+      "primary_language": "en",
+      "why_relevant": "Annual reference work with a standing Czech Republic country chapter written by Czech market practitioners (a recent edition credits Pavel Kühn of Česká spořitelna). It sets out the legal basis — Act No. 190/2004 Coll. on Bonds as amended, and the Czech implementation of the EU Covered Bond Directive — the HZL definition, cover-pool eligibility, OC rules, outstanding volumes and issuer list. It is the fastest way to get an authoritative baseline of the Czech covered-bond framework and to date-stamp legal changes, without reading the statute.",
+      "credibility_score": 0.92,
+      "usefulness_score": 0.82,
+      "confidence_score": 0.85,
+      "priority": "high",
+      "domain": "hypo.org",
+      "source_subtype": "industry_body_annual_reference",
+      "topics": ["covered_bonds", "legal_framework", "market_statistics", "hypotecni_zastavni_listy"],
+      "access_status": "open_public",
+      "legal_status": "industry_body_publication",
+      "collection_allowed": true,
+      "suggested_collection_method": "Annual download (published around August/September); extract the Czech Republic chapter by heading and diff year over year to catch framework and volume changes.",
+      "example_urls": [
+        "https://hypo.org/app/uploads/sites/2/2024/08/FactBook-2024_web.pdf",
+        "https://hypo.org/app/uploads/sites/3/2023/08/ECBC-Fact-Book-2023-FINAL.pdf",
+        "https://hypo.org/app/uploads/sites/3/2022/08/ECBC-Fact-Book-2022.pdf"
+      ],
+      "discovered_via_method": "en search combining ECBC fact book with the Czech local term hypoteční zástavní listy",
+      "queries_used": [
+        "ECBC European Covered Bond Fact Book Czech Republic chapter hypotecni zastavni listy"
+      ],
+      "local_language_terms_used": ["hypoteční zástavní listy", "zákon č. 190/2004 Sb. o dluhopisech"],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "NORD/LB Floor Research – Covered Bond & SSA View (weekly) and covered-bond research archive",
+      "source_url": "https://www.nordlb.com/nordlb/floor-research/covered-bonds/market-research-archive",
+      "source_class": "indirect",
+      "primary_language": "en",
+      "why_relevant": "Free, weekly sell-side research that repeatedly runs CEE and Czech/Slovak covered-bond focus pieces. Editions retrieved in this run carry issuer-level Czech detail not published by the issuers themselves in that form — e.g. Česká spořitelna's first HTT report as of 31 March 2026 with a CZK 308.5bn (EUR 12.6bn) all-fixed-rate domestic mortgage cover pool, ČS market shares (retail loans 26.9%, retail deposits 23.5%), KB's new covered-bond programme launch, and the observation that Czechia/Hungary/Poland favour domestic-currency covered bonds while Slovakia moves to EUR benchmarks. Excellent for interpretation and for catching issuance before it hits official registers.",
+      "credibility_score": 0.82,
+      "usefulness_score": 0.85,
+      "confidence_score": 0.85,
+      "priority": "high",
+      "domain": "nordlb.com",
+      "source_subtype": "sellside_research_archive",
+      "topics": ["covered_bonds", "cover_pool", "market_analysis", "issuance_calendar", "benchmarking"],
+      "access_status": "open_public_free_registration_possible",
+      "legal_status": "third_party_copyright_research",
+      "collection_allowed": true,
+      "suggested_collection_method": "Weekly poll of the research archive; download the Covered Bond & SSA View PDF; keyword-filter on Czech/Czechia/Komercni/Ceska sporitelna/UniCredit CZ. Respect copyright — extract facts and cite, do not redistribute the PDFs.",
+      "example_urls": [
+        "https://www.nordlb.com/my-nord/lb-portals/download/research-document-14125?cHash=8ae7ccd00fa312f3d0656d22f0c9175e",
+        "https://www.nordlb.com/my-nord/lb-portals/download/research-document-14179?cHash=d2a560cd91e624df6aa20020a61959b9"
+      ],
+      "discovered_via_method": "en search for third-party Czech covered-bond analysis; snowballed from a NORD/LB PDF that surfaced under an HTT query",
+      "queries_used": [
+        "NORD/LB Covered Bond SSA View Czech Republic covered bond market analysis research",
+        "\"Česká spořitelna\" covered bond investor report cover pool HTT csas.cz \"covered bonds\""
+      ],
+      "local_language_terms_used": [],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "ČNB – Kritéria přijatelnosti pro hypoteční zástavní listy (HZL) a nastavení haircutů",
+      "source_url": "https://www.cnb.cz/cs/financni-trhy/penezni-trh/parametry-dodavaci-repo-operace/kriteria-prijatelnosti-pro-hypotecni-zastavni-listy-hzl-a-nastaveni-haircutu/",
+      "source_class": "indirect",
+      "primary_language": "cs",
+      "why_relevant": "Central-bank eligibility criteria and haircuts for accepting HZL as collateral in ČNB liquidity-providing repo operations. This is a revealed-preference source: it tells you which covered bonds the central bank will finance, on what terms, and therefore which HZL are genuinely liquid instruments versus retained/self-held paper. Changes to haircuts or eligibility are a leading indicator of funding-condition shifts for Czech mortgage lenders.",
+      "credibility_score": 0.96,
+      "usefulness_score": 0.72,
+      "confidence_score": 0.85,
+      "priority": "medium",
+      "domain": "cnb.cz",
+      "source_subtype": "central_bank_collateral_policy",
+      "topics": ["hypotecni_zastavni_listy", "covered_bonds", "collateral", "liquidity", "monetary_operations"],
+      "access_status": "open_public",
+      "legal_status": "public_official_document",
+      "collection_allowed": true,
+      "suggested_collection_method": "Monthly fetch with content hashing; alert on any change to eligibility criteria or haircut tables.",
+      "example_urls": [],
+      "discovered_via_method": "cs seed query on hypoteční zástavní listy",
+      "queries_used": [
+        "hypoteční zástavní listy emise prospekt banka Česká republika"
+      ],
+      "local_language_terms_used": ["hypoteční zástavní listy", "kritéria přijatelnosti", "haircut", "dodávací repo operace"],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "ČNB – Obecný přístup ke stanovení minimálního požadavku na kapitál a způsobilé závazky (MREL) a sekce Řešení krize",
+      "source_url": "https://www.cnb.cz/cs/reseni-krize-na-ft/obecny-pristup-ceske-narodni-banky-ke-stanoveni-minimalniho-pozadavku-na-kapital-a-zpusobile-zavazky/index.html",
+      "source_class": "indirect",
+      "primary_language": "cs",
+      "why_relevant": "ČNB as resolution authority publishes its general methodology for setting MREL — 2*(P1+P2) for large/systemically important/complex banks earmarked for bail-in, and (P1+P2) + coefficient*(P1+P2) for mid-sized, less complex banks resolved via transfer to a private acquirer — plus transition periods and an aggregate estimate that banks would need to add roughly CZK 120–140bn. ČNB explicitly does not publish bank-by-bank MREL values, so this methodology page is the only public way to reverse-engineer why and when a given Czech bank must come to market with senior non-preferred or subordinated paper. It is the demand driver behind most non-covered bank issuance in this cell.",
+      "credibility_score": 0.97,
+      "usefulness_score": 0.8,
+      "confidence_score": 0.85,
+      "priority": "high",
+      "domain": "cnb.cz",
+      "source_subtype": "resolution_authority_policy",
+      "topics": ["mrel", "resolution", "capital", "regulation", "issuance_drivers"],
+      "access_status": "open_public",
+      "legal_status": "public_official_document",
+      "collection_allowed": true,
+      "suggested_collection_method": "Watch the page plus the ČNB news/aktuality feed for revisions ('Revize a doplnění Obecného přístupu k MREL'); hash-diff quarterly.",
+      "example_urls": [
+        "https://www.cnb.cz/cs/reseni-krize-na-ft/tvorba-planu-pro-reseni-krize/",
+        "https://www.cnb.cz/cs/cnb-news/tiskove-zpravy/CNB-zverejnila-jak-bude-postupovat-pri-stanoveni-pozadavku-MREL",
+        "https://www.cnb.cz/cs/cnb-news/aktuality/Revize-a-doplneni-Obecneho-pristupu-k-MREL"
+      ],
+      "discovered_via_method": "cs search on ČNB MREL requirements and resolution planning",
+      "queries_used": [
+        "ČNB MREL požadavky zveřejnění řešení krize banky výroční zpráva o řešení krize"
+      ],
+      "local_language_terms_used": ["minimální požadavek na kapitál a způsobilé závazky", "MREL", "řešení krize", "obecný přístup", "způsobilé závazky"],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Banka CREDITAS – emise dluhopisů (MREL) infoletters and prospectus programme",
+      "source_url": "https://www.creditas.cz/files/bc-dluhopisy-creditas-6-90-27-infoletter.pdf",
+      "source_class": "direct",
+      "primary_language": "cs",
+      "why_relevant": "Challenger-bank corner of the cell, and a useful contrast case: CREDITAS funds MREL in CZK through the retail/domestic channel rather than EUR benchmarks. Retrieved facts include a CZK 1bn three-year MREL issue (CREDITAS 7,50/27, CZK 10,000 nominal, 7.5% fixed, maturity 30 July 2027, issuer call after two years, admitted to the Prague Stock Exchange regulated market), and a June 2024 prospectus permitting up to CZK 20bn of issuance with a first CZK 750m issue under a CZK 2bn programme. Small banks disclose funding cost and capital plans here that never appear elsewhere.",
+      "credibility_score": 0.85,
+      "usefulness_score": 0.72,
+      "confidence_score": 0.75,
+      "priority": "medium",
+      "domain": "creditas.cz",
+      "source_subtype": "issuer_bond_marketing_and_prospectus",
+      "topics": ["mrel", "bond_issuance", "prospectuses", "retail_placement", "capital"],
+      "access_status": "partially_blocked_unverified",
+      "legal_status": "issuer_public_disclosure",
+      "collection_allowed": true,
+      "suggested_collection_method": "Direct GET on /files/*.pdf infoletter paths (these serve); use a headless browser for the investor landing pages, which returned 403. Cross-check every CREDITAS issue against the ČNB final-terms register.",
+      "example_urls": [
+        "https://www.creditas.cz/files/infoletter-2-crinv-2-675-29.pdf",
+        "https://www.creditas.cz/files/ci-crinv-26-infoletter-nahled.pdf"
+      ],
+      "discovered_via_method": "cs search on CREDITAS MREL bond issuance",
+      "queries_used": [
+        "Banka CREDITAS MREL dluhopisy prospekt emise investoři kryté dluhopisy"
+      ],
+      "local_language_terms_used": ["emise dluhopisů", "MREL dluhopisy", "prospekt", "regulovaný trh pražské burzy", "call opce"],
+      "blocked": true,
+      "blocker_type": "bot_protection_403",
+      "observed_blocker": "HTTP 403 Forbidden on https://www.creditas.cz/o-bance/pro-investory via plain fetch; PDF infoletters under /files/ are indexed and referenced."
+    },
+    {
+      "source_name": "Burza cenných papírů Praha (Prague Stock Exchange) – Bonds / Debt securities market and Issuers' Guide",
+      "source_url": "https://www.pse.cz/en/trading/markets/debt-securities",
+      "source_class": "pointer",
+      "primary_language": "en",
+      "why_relevant": "Listing venue for CZK-denominated bank paper, including HZL and CZK MREL issues (e.g. CREDITAS 7,50/27). PSE segments bond trading by Corporate / Public / Financial / Other sector and publishes admission conditions for the Official and Regulated Markets, trading rules, and 'Parameters of Issues'. Admission requires a prospectus plus three years of financial statements and a Central Depository registration confirmation, and issuers commit to ongoing disclosure in Czech, Slovak or English. The financial-sector bond list is a compact way to enumerate outstanding listed Czech bank debt.",
+      "credibility_score": 0.9,
+      "usefulness_score": 0.75,
+      "confidence_score": 0.75,
+      "priority": "medium",
+      "domain": "pse.cz",
+      "source_subtype": "exchange_market_data_and_rules",
+      "topics": ["listings", "bond_issuance", "disclosures", "market_data"],
+      "access_status": "open_public",
+      "legal_status": "exchange_public_data",
+      "collection_allowed": true,
+      "suggested_collection_method": "Crawl the financial-sector bond listing and 'Parameters of Issues' pages monthly; join on ISIN to the ČNB registers. Note /en/market-data/bonds returned HTTP 404 — use the /en/trading/... paths.",
+      "example_urls": [
+        "https://www.pse.cz/en/trading/trading-information/parameters-of-issues",
+        "https://www.pse.cz/en/issuer-guide",
+        "https://www.kurzy.cz/akcie-cz/burza/kurzy/dluhopisy"
+      ],
+      "discovered_via_method": "cs+en search on Prague Stock Exchange bond listings, then direct fetch",
+      "queries_used": [
+        "Burza cenných papírů Praha dluhopisy emitenti prospekt kryté dluhopisy seznam pse.cz",
+        "pse.cz Prague Stock Exchange bonds listed issuers prospectus disclosure page"
+      ],
+      "local_language_terms_used": ["Burza cenných papírů Praha", "dluhopisy", "regulovaný trh", "oficiální trh", "prospekt"],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Centrální depozitář cenných papírů (CDCP) – Seznam vydaných ISINů",
+      "source_url": "https://www.cdcp.cz/wp-content/isbpublic/help/sluzby/Vydaneisiny.html",
+      "source_class": "pointer",
+      "primary_language": "cs",
+      "why_relevant": "Czech CSD publishes a searchable list of ISINs it has assigned since 1 July 2010, searchable by ISIN and by IČO. For this cell it is the authoritative resolver for domestic CZ-prefixed bank bond and HZL identifiers (e.g. CZ0002009012 / CZ0002009020 for MONETA HZL, CZ0003xxxxx for senior/subordinated paper) — the counterpart to the XS/AT identifiers used for international issues. Also publishes an operating manual and an annual Fact Book with issuance statistics.",
+      "credibility_score": 0.9,
+      "usefulness_score": 0.68,
+      "confidence_score": 0.7,
+      "priority": "medium",
+      "domain": "cdcp.cz",
+      "source_subtype": "csd_isin_registry",
+      "topics": ["isin_registry", "bond_issuance", "reference_data"],
+      "access_status": "open_public_unverified",
+      "legal_status": "public_infrastructure_data",
+      "collection_allowed": true,
+      "suggested_collection_method": "Use as an on-demand lookup keyed by IČO of each licensed covered-block issuer (IČOs available from the ČNB krytý blok list); the CDCP Fact Book PDF gives annual aggregates for trend context.",
+      "example_urls": [
+        "https://www.cdcp.cz/wp-content/uploads/fb2020-CDCP.pdf"
+      ],
+      "discovered_via_method": "cs search on the Czech central depository ISIN database",
+      "queries_used": [
+        "Centrální depozitář cenných papírů seznam emisí ISIN databáze cdcp.cz dluhopisy"
+      ],
+      "local_language_terms_used": ["Centrální depozitář cenných papírů", "seznam vydaných ISINů", "zaknihované dluhopisy", "IČ"],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Erste Group Bank AG – Debt Investors / Download-Centre (group-level context for Česká spořitelna)",
+      "source_url": "https://www.erstegroup.com/en/investors/debt",
+      "source_class": "indirect",
+      "primary_language": "en",
+      "why_relevant": "ČS is an Erste Group subsidiary and Erste runs a full debt-investor franchise with a product overview (mortgage covered bonds, public-sector covered bonds, senior instruments), cover-pool reporting and a download centre of finance reports and statements. Group-level MREL strategy, issuance plans and CEE funding commentary set the frame within which ČS's own Czech covered-bond programme operates, and Erste presentations often disclose ČS funding and mortgage-book figures.",
+      "credibility_score": 0.9,
+      "usefulness_score": 0.7,
+      "confidence_score": 0.8,
+      "priority": "medium",
+      "domain": "erstegroup.com",
+      "source_subtype": "parent_group_debt_investor_page",
+      "topics": ["investor relations", "covered_bonds", "mrel", "cover_pool", "funding_plans"],
+      "access_status": "open_public",
+      "legal_status": "issuer_public_disclosure",
+      "collection_allowed": true,
+      "suggested_collection_method": "Quarterly crawl of /en/investors/debt and /en/investors/debt/downloads; keyword-filter documents for 'Ceska sporitelna' / 'Czech' to isolate subsidiary-level disclosure.",
+      "example_urls": [
+        "https://www.erstegroup.com/en/investors/debt/product-overview",
+        "https://www.erstegroup.com/en/investors/debt/downloads"
+      ],
+      "discovered_via_method": "en search on Erste debt IR and ČS cover pool",
+      "queries_used": [
+        "Erste Group debt investor relations covered bonds Ceska sporitelna cover pool data"
+      ],
+      "local_language_terms_used": [],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Cbonds – Czech bank issuer and bond reference pages",
+      "source_url": "https://cbonds.com/company/26631/",
+      "source_class": "indirect",
+      "primary_language": "en",
+      "why_relevant": "Commercial bond-market database with per-issuer and per-ISIN pages for Czech bank paper, carrying identifiers (ISIN, FIGI, WKN), coupon, maturity, currency and rating history. Retrieved examples for Česká spořitelna alone span EUR, USD and perpetual CZK instruments (XS2676413235, XS2555412001, XS2638560156, XS2746647036, XS2852933329, XS2930541698, AT0000A2STV4, CZ0003704769) — an inventory that is far quicker to assemble here than by walking every issuer site. The AT-prefixed identifier is a useful hint that some ČS paper is issued/listed via Austrian infrastructure.",
+      "credibility_score": 0.75,
+      "usefulness_score": 0.72,
+      "confidence_score": 0.8,
+      "priority": "medium",
+      "domain": "cbonds.com",
+      "source_subtype": "commercial_bond_database",
+      "topics": ["reference_data", "bond_issuance", "isin_registry", "ratings"],
+      "access_status": "freemium_partial_paywall",
+      "legal_status": "commercial_terms_apply",
+      "collection_allowed": true,
+      "suggested_collection_method": "Use as a cross-check/enrichment layer only, at low volume and within the site's terms; prefer the official ČNB registers and issuer pages as the system of record. A paid API/subscription would be needed for systematic extraction.",
+      "example_urls": [
+        "https://cbonds.com/bonds/1514505/",
+        "https://cbonds.com/bonds/1365438/",
+        "https://cbonds.com/bonds/543271/"
+      ],
+      "discovered_via_method": "en searches on Czech bank EUR bonds; recurring aggregator across multiple result sets",
+      "queries_used": [
+        "Erste Group debt investor relations covered bonds Ceska sporitelna cover pool data",
+        "Wiener Borse listed Czech bank covered bond Ceska sporitelna Vienna Stock Exchange bond listing prospectus"
+      ],
+      "local_language_terms_used": [],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Hypoindex.cz – tiskové zprávy / rubrika emise hypotečních zástavních listů",
+      "source_url": "https://www.hypoindex.cz/tiskove-zpravy/",
+      "source_class": "pointer",
+      "primary_language": "cs",
+      "why_relevant": "Czech mortgage-market trade portal that reprints bank press releases about HZL issues, often with volume, coupon and target investor group, and provides a running commentary on which banks are leaning on covered-bond funding in a given month. Useful as a low-cost early-warning feed and as an archive of older HZL issues (multiple Česká spořitelna HZL announcements of CZK 2bn/4bn/5bn were surfaced this way) that the banks themselves have since removed from their sites.",
+      "credibility_score": 0.65,
+      "usefulness_score": 0.65,
+      "confidence_score": 0.8,
+      "priority": "medium",
+      "domain": "hypoindex.cz",
+      "source_subtype": "trade_press_release_archive",
+      "topics": ["press releases", "hypotecni_zastavni_listy", "bond_issuance", "mortgage_market"],
+      "access_status": "open_public",
+      "legal_status": "third_party_media_copyright",
+      "collection_allowed": true,
+      "suggested_collection_method": "RSS/section polling weekly with keyword filter on 'hypoteční zástavní listy', 'emise', 'kryté dluhopisy'; use only as a discovery trigger, then verify against the ČNB final-terms register or the issuer page.",
+      "example_urls": [
+        "https://www.hypoindex.cz/clanky/banky-v-prosinci-sazeji-na-hypotecni-zastavni-listy/",
+        "https://www.hypoindex.cz/tiskove-zpravy/ceska-sporitelna-vydava-dve-nove-emise-hypotecnich-zastavnich-listu-v-objemu-2-mld-kc-a-5-mld-kc/"
+      ],
+      "discovered_via_method": "cs seed query on hypoteční zástavní listy; recurring domain across several cs result sets",
+      "queries_used": [
+        "hypoteční zástavní listy emise prospekt banka Česká republika",
+        "\"Česká spořitelna\" hypoteční zástavní listy \"základní prospekt\" emisní dodatek csas.cz povinně uveřejňované informace"
+      ],
+      "local_language_terms_used": ["hypoteční zástavní listy", "emise", "tiskové zprávy", "objem emise"],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "J&T Banka a Fio banka – komentáře k emisím MREL dluhopisů (broker research notes / zprávy z burzy)",
+      "source_url": "https://www.jtbank.cz/clanky/-/j3i0063agy-banka-creditas-emise-mrel-dluhopisu-s-kuponem-7-5",
+      "source_class": "indirect",
+      "primary_language": "cs",
+      "why_relevant": "Czech brokers publish short, dated notes on each domestic MREL/SNP issue, frequently ahead of or alongside the formal filing, and give pricing colour that issuers omit. Retrieved examples cover Banka CREDITAS MREL issues at 7.5% and MONETA's MREL programme — including a CZK 1.5bn issue at an 8% coupon, a mandate for a EUR 300m six-year non-call-five MREL bond at 4.41% p.a., nine-times oversubscription, bookrunners BNP Paribas and JPMorgan with Goldman Sachs Bank Europe and J&T Banka as co-managers, and the resulting +453bp move in MREL ratio to 28.23% against a 22.45% management target. That level of transaction detail is not in any prospectus.",
+      "credibility_score": 0.75,
+      "usefulness_score": 0.78,
+      "confidence_score": 0.8,
+      "priority": "medium",
+      "domain": "jtbank.cz",
+      "source_subtype": "broker_market_commentary",
+      "topics": ["mrel", "bond_issuance", "pricing", "market_analysis"],
+      "access_status": "open_public",
+      "legal_status": "third_party_media_copyright",
+      "collection_allowed": true,
+      "suggested_collection_method": "Poll the article feeds of jtbank.cz, fio.cz/zpravodajstvi and zpravy.kurzy.cz weekly with a keyword filter on 'MREL', 'emise dluhopisů', 'kryté dluhopisy', 'podřízené dluhopisy'; extract issuer, size, coupon, structure, bookrunners.",
+      "example_urls": [
+        "https://www.fio.cz/zpravodajstvi/zpravy-z-burzy/300491-moneta-oznamila-vydani-mrel-dluhopisu-v-objemu-300-mil-eur",
+        "https://www.jtbank.cz/clanky/-/j3iiaztq1g-moneta-mandat-k-emisi-eurovych-mrel-dluhopisu",
+        "https://zpravy.kurzy.cz/778202-banka-creditas-emise-dluhopisu-mrel-s-kuponem-7-5/",
+        "https://www.investicniweb.cz/moneta-vydala-mrel-dluhopisy-v-objemu-15-miliardy-kc-s-kuponem-8"
+      ],
+      "discovered_via_method": "cs searches on MREL bond issuance; recurring broker-commentary cluster",
+      "queries_used": [
+        "Komerční banka emise dluhopisů MREL nepodřízené dluhopisy senior non-preferred tisková zpráva",
+        "MONETA Money Bank covered bonds kryté dluhopisy MREL bond issuance investor relations debt",
+        "Banka CREDITAS MREL dluhopisy prospekt emise investoři kryté dluhopisy"
+      ],
+      "local_language_terms_used": ["emise MREL dluhopisů", "kupón", "mandát k emisi", "upsání", "objem emise", "předčasné splacení"],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Fitch Ratings – Czech covered bond rating actions (e.g. Komerční banka soft bullet covered bonds)",
+      "source_url": "https://www.fitchratings.com/research/structured-finance/covered-bonds/fitch-affirms-komercni-banka-soft-bullet-covered-bond-at-aaa-outlook-stable-24-06-2026",
+      "source_class": "indirect",
+      "primary_language": "en",
+      "why_relevant": "Rating agency covered-bond commentary carries the analytics behind a programme — OC levels relied upon, D-Cap/discontinuity assessment, cover-pool credit assumptions, refinancing spreads — that neither the prospectus nor the HTT states as a judgement. KB's programme is rated AAA (Stable) by Fitch as of 24 June 2026; Česká spořitelna's inaugural covered bond was Moody's Aaa. Rating actions are also the most reliable public signal that a programme has changed materially.",
+      "credibility_score": 0.9,
+      "usefulness_score": 0.75,
+      "confidence_score": 0.8,
+      "priority": "medium",
+      "domain": "fitchratings.com",
+      "source_subtype": "rating_agency_research",
+      "topics": ["ratings", "covered_bonds", "cover_pool", "credit_analysis"],
+      "access_status": "free_registration_partial_paywall",
+      "legal_status": "third_party_copyright_registration_required",
+      "collection_allowed": true,
+      "suggested_collection_method": "Subscribe to Fitch/Moody's/S&P rating-action alerts filtered to Czech Republic + covered bonds/banks; capture headline, date, rating and rationale summary. Full reports generally require a login — treat headlines and press releases as the collectable layer.",
+      "example_urls": [],
+      "discovered_via_method": "snowballed from the Komerční banka EUR covered bond investor page, which links the rating action directly",
+      "queries_used": [
+        "Komerční banka \"pro investory\" dluhopisy debt investors covered bond programme EUR 5 bn"
+      ],
+      "local_language_terms_used": [],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    }
+  ],
+  "negative_findings": [
+    {
+      "finding_type": "no_consolidated_national_cover_pool_disclosure",
+      "description": "Searched in Czech for a national aggregator of covered-bond investor reports / cover-pool data (terms: 'kryté dluhopisy', 'krytý blok', 'evidence krytých bloků', 'seznam emitentů', ČNB Vyhláška č. 2/2019 Sb. o evidenci krytých bloků). ČNB maintains the register of permitted covered blocks and labelled ISINs, and issuers must regularly report to ČNB on compliance, but no public Czech portal publishes the underlying cover-pool data.",
+      "result_summary": "No national HTT/cover-pool portal exists for CZ. Cover-pool disclosure is issuer-by-issuer (KB, UniCredit CZ&SK, MONETA, Česká spořitelna) plus the pan-European Covered Bond Label. The ČNB register gives issuer names, LEI/IČO and ISINs only — no pool composition, LTV, OC or arrears data.",
+      "why_it_matters": "Collection for this cell cannot be centralised on one regulator feed. The pipeline must fan out to six issuer sites (some bot-defended) and to coveredbondlabel.com, and must treat the ČNB list as the completeness check rather than the data source.",
+      "severity": "medium",
+      "language": "cs",
+      "source_class": "direct",
+      "topics": ["covered_bonds", "cover_pool", "disclosures"]
+    },
+    {
+      "finding_type": "issuer_site_bot_protection",
+      "description": "Plain HTTP fetches to several Czech bank disclosure hosts were refused: unicreditbank.cz returned HTTP 403 on both /cs/o-bance/dluhopisy-prehled.html and /en/ostatni/debt-investor-relations.html; creditas.cz returned 403 on /o-bance/pro-investory; csob.cz returned HTTP 500 on /csob/povinne-uverejnovane-informace; csobhypotecni.cz returned HTTP 500 on /o-bance/emise-hzl and /o-bance/zpravy-o-hospodareni-dokumenty/.",
+      "result_summary": "Four issuer hosts are unreadable by simple fetch, yet PDF documents on the very same hosts are indexed and referenced from search results, which strongly suggests bot defence / edge-WAF behaviour rather than dead pages.",
+      "why_it_matters": "This is a hypothesis, not a verdict — none of these should be recorded as dead. The collector for this cell needs a headless-browser tier with realistic headers for HTML index pages, while direct GET on /content/dam/, /documents/ and /files/ PDF paths appears sufficient for the documents themselves.",
+      "severity": "high",
+      "language": "cs",
+      "source_class": "direct",
+      "topics": ["access", "collection_method", "disclosures"]
+    },
+    {
+      "finding_type": "javascript_rendered_aggregator",
+      "description": "coveredbondlabel.com issuer pages and the issuer directory were fetched statically. The Komerční banka issuer page (id 177) rendered its contact list, pool programme list, bond list and HTT section all as '0-10 of 0', and /issuers/directory rendered an empty filter table. /issuers and /national-information both returned HTTP 404.",
+      "result_summary": "The Label's Czech data exists but is client-side rendered; static scraping yields empty tables and would falsely suggest Czech issuers publish nothing.",
+      "why_it_matters": "A naive collector would record the three labelled Czech issuers as having no HTT filings. Headless rendering is mandatory here, and the correct paths are /issuers/directory, /issuers/national/list, /new-htt and /htt-database.",
+      "severity": "medium",
+      "language": "en",
+      "source_class": "pointer",
+      "topics": ["covered_bonds", "htt", "collection_method"]
+    },
+    {
+      "finding_type": "no_dedicated_cover_pool_page_found_for_two_licensed_issuers",
+      "description": "Raiffeisenbank a.s. (covered blocks RBCZ_BLOCK_02 and RBCZ_BLOCK_03, with labelled issue XS3019003253) and Hypoteční banka (HB-Blok 4) both appear in the ČNB covered-block register, but Czech- and English-language searching surfaced no dedicated public cover-pool/HTT/investor-report page for either. RBCZ's securities page references an 'International Covered Bonds Programme' without a linked cover-pool report; Hypoteční banka's trail is prospectus/emisní-dodatek only. Neither was found among Covered Bond Label issuers (KB, UniCredit CZ&SK and Česká spořitelna were the three identified).",
+      "result_summary": "Two of six licensed Czech covered-block issuers have no located public cover-pool disclosure surface.",
+      "why_it_matters": "Cover-pool coverage for CZ is structurally incomplete: any CZ-wide covered-bond comparison built from public sources will be missing Raiffeisenbank and Hypoteční banka, which must be flagged rather than silently treated as zero.",
+      "severity": "medium",
+      "language": "cs",
+      "source_class": "direct",
+      "topics": ["covered_bonds", "cover_pool", "coverage"]
+    },
+    {
+      "finding_type": "glossary_gap_local_terminology",
+      "description": "No settled Czech-language term for 'senior non-preferred' was found in issuer or regulator material. Czech sources use descriptive constructions — 'nepodřízené dluhopisy', 'podřízené dluhopisy', 'MREL dluhopisy', 'způsobilé závazky' — and Raiffeisenbank's own documents use the English 'SNP (Senior Non Preferred)' inside Czech text. Similarly, 'covered bond' has three coexisting Czech renderings depending on vintage and legal basis: the historic 'hypoteční zástavní listy (HZL)', the post-2019 statutory 'kryté dluhopisy' / 'krytý blok', and the EU-label 'evropský krytý dluhopis (prémiový)'.",
+      "result_summary": "Local-language querying works, but only with an explicitly multi-vintage term set; a single-term query misses whole eras of documents.",
+      "why_it_matters": "Any CZ query set for this cell must fire all of {hypoteční zástavní listy, HZL, kryté dluhopisy, krytý blok, evropský krytý dluhopis, emisní dodatek, konečné podmínky, základní prospekt, MREL dluhopisy, způsobilé závazky} plus the English-in-Czech forms (SNP, MREL, HTT, cover pool), or recall collapses.",
+      "severity": "medium",
+      "language": "cs",
+      "source_class": "pointer",
+      "topics": ["glossary", "search_strategy", "covered_bonds", "mrel"]
+    },
+    {
+      "finding_type": "noisy_term_warning",
+      "description": "The Czech terms 'dluhopisy' and 'emise dluhopisů' are heavily contaminated by the Czech retail corporate-bond and mini-bond scene (dluhopisy.cz, dluhopisar.cz, srovnavacdluhopisu.cz, KB's large archive of arranged client issues for Accolade, Allwyn, CZG, Dr. Max, RegioJet and others) and by bank product pages selling third-party bonds. Searching 'banka emise dluhopisů' without qualifiers returns mostly non-bank issuers for whom the bank is merely arranger or paying agent.",
+      "result_summary": "Broad Czech bond queries have low precision for bank-as-issuer material.",
+      "why_it_matters": "Query design must anchor on issuer-role terms ('emitent', 'povinně uveřejňované informace', 'krytý blok', 'MREL') or on the named six licensed issuers; otherwise the collector fills up with corporate mini-bond noise that belongs to a different cell entirely.",
+      "severity": "low",
+      "language": "cs",
+      "source_class": "direct",
+      "topics": ["search_strategy", "noise", "bond_issuance"]
+    },
+    {
+      "finding_type": "run_budget_exhausted",
+      "description": "The session's WebSearch budget (200/200) was consumed before three planned lines of enquiry could be run: (a) the Czech-language route into the ČNB OAM application interface and its filter vocabulary, (b) ČNB ARAD time series for HZL/covered-bond outstanding volumes, and (c) MREL/bond issuance by second-tier Czech deposit-takers and building societies (Air Bank / PPF banka, J&T Banka, Fio banka, Českomoravská stavební spořitelna, Modrá pyramida, Trinity Bank).",
+      "result_summary": "Three known-relevant sub-areas were left unsearched; they are recorded as coverage gaps rather than as absent sources.",
+      "why_it_matters": "Absence of these from the candidate list reflects a run constraint, not a finding that the sources do not exist. They should be the first queries in any follow-up run for this cell.",
+      "severity": "medium",
+      "language": "cs",
+      "source_class": "pointer",
+      "topics": ["coverage", "run_constraints"]
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "gap_type": "listing_venue_disclosure_not_mapped",
+      "description": "Most Czech bank EUR covered bonds and MREL paper carry XS identifiers, and Česká spořitelna's inaugural covered bond is listed on the Vienna Stock Exchange regulated market (with at least one AT-prefixed ČS instrument observed, AT0000A2STV4). The disclosure pages of the foreign listing venues — Wiener Börse, and the Luxembourg / Euronext Dublin venues typically used for XS paper — were not enumerated in this run.",
+      "recommended_action": "Run a dedicated pass over Wiener Börse, Luxembourg Stock Exchange and Euronext Dublin issuer/security pages for the six licensed Czech covered-block issuers plus MONETA and Raiffeisenbank, keyed on the ISINs already extracted from the ČNB register; these venues host prospectus repositories and ongoing-disclosure notices that mirror or supplement issuer sites.",
+      "coverage_dimension": "venue",
+      "severity": "high",
+      "source_class": "direct",
+      "topics": ["listings", "prospectuses", "covered_bonds", "disclosures"],
+      "language": "en"
+    },
+    {
+      "gap_type": "second_tier_issuers_unmapped",
+      "description": "Only the six ČNB-licensed covered-block issuers plus Banka CREDITAS were mapped. Other Czech deposit-takers with MREL obligations and likely bond issuance — Air Bank / PPF banka, J&T Banka, Fio banka, Trinity Bank, Max banka — and the building societies (Českomoravská stavební spořitelna, Modrá pyramida, Raiffeisen stavební spořitelna) were not systematically searched. PPF banka already surfaced as a prospectus host in one result set.",
+      "recommended_action": "Query each institution in Czech with the pattern '<banka> povinně uveřejňované informace dluhopisy emise prospekt' and '<banka> MREL dluhopisy emise', and independently sweep the ČNB final-terms register filtered to credit-institution issuers to catch any bank missed by name-based searching.",
+      "coverage_dimension": "actor",
+      "severity": "high",
+      "source_class": "direct",
+      "topics": ["mrel", "bond_issuance", "prospectuses", "disclosures"],
+      "language": "cs"
+    },
+    {
+      "gap_type": "statistics_series_not_located",
+      "description": "No aggregate time series of Czech covered-bond / HZL outstanding volumes was located. ČNB ARAD is the obvious candidate database but was not reached before the search budget ran out; the CDCP Fact Book and the ECBC Fact Book Czech chapter are partial substitutes.",
+      "recommended_action": "Search ČNB ARAD in Czech for 'hypoteční zástavní listy' and 'kryté dluhopisy' series, and check the ČNB financial-market statistics section, so issuer-level cover-pool data can be normalised against a market total.",
+      "coverage_dimension": "data_type",
+      "severity": "medium",
+      "source_class": "indirect",
+      "topics": ["market_statistics", "covered_bonds"],
+      "language": "cs"
+    },
+    {
+      "gap_type": "no_machine_readable_feed_for_regulator_registers",
+      "description": "Both ČNB registers that matter most here — the prospectus register and the final-terms register — are served by a legacy Oracle PL/SQL web application (oam.cnb.cz/sipresextdad/SIPRESWEB...) with form-driven input and no observed API, JSON endpoint, RSS or bulk export. The covered-block issuer list is a hand-maintained PDF.",
+      "recommended_action": "Build a resilient scraper with a headless-browser fallback and a stable ISIN/LEI/IČO join key; hash the covered-block PDF for change detection. Also test whether ESMA's EU-level prospectus register mirrors ČNB approvals, which would give a cleaner feed for the same content.",
+      "coverage_dimension": "access_method",
+      "severity": "high",
+      "source_class": "pointer",
+      "topics": ["collection_method", "prospectuses", "final_terms"],
+      "language": "cs"
+    },
+    {
+      "gap_type": "rating_agency_cover_pool_analytics_paywalled",
+      "description": "Moody's and S&P covered-bond analytics for Czech programmes (ČS's inaugural bond is Moody's Aaa; KB is Fitch AAA) sit largely behind registration or subscription. Only the Fitch rating-action headline linked from KB's own investor page was reachable in this run.",
+      "recommended_action": "Register for free agency accounts to obtain rating-action press releases and performance-overview summaries, and treat issuer-page rating links (as on KB's covered bond page) as the reliable free entry point. Do not plan on systematic extraction of full agency reports.",
+      "coverage_dimension": "access_status",
+      "severity": "medium",
+      "source_class": "indirect",
+      "topics": ["ratings", "cover_pool", "credit_analysis"],
+      "language": "en"
+    },
+    {
+      "gap_type": "law_firm_and_arranger_deal_channel_underexplored",
+      "description": "Transaction announcements from deal counsel and arrangers (A&O Shearman on both the ČS EUR 500m inaugural covered bond and a UniCredit CZ&SK EUR 500m mortgage covered bond issuance; bookrunner line-ups disclosed via broker notes) proved to be a fast, well-dated channel that often describes programme structure before the issuer publishes anything. Only incidental examples were captured.",
+      "recommended_action": "Add a standing sweep of the Czech capital-markets practice news feeds (A&O Shearman, Clifford Chance, White & Case, Kinstellar, PRK Partners, Allen Overy CZ) and of the British Chamber of Commerce CZ and Czech Banking Association news pages, filtered on 'covered bond', 'krytý dluhopis', 'MREL', to catch deal announcements at T+0.",
+      "coverage_dimension": "source_type",
+      "severity": "medium",
+      "source_class": "indirect",
+      "topics": ["bond_issuance", "covered_bonds", "deal_flow"],
+      "language": "en"
+    }
+  ],
+  "brief": "The Czech debt-investor disclosure channel has an unusually clean spine: ČNB publishes the closed list of six banks licensed to run a covered block (UniCredit Bank CZ&SK, Česká spořitelna, Hypoteční banka, MONETA Money Bank, Raiffeisenbank and Komerční banka) with LEI/IČO and the ISINs entitled to the 'European Covered Bond (Premium)' label, and runs two Oracle-based registers — approved prospectuses and final terms/emisní dodatky — that together date-stamp essentially every bank bond programme and tranche in the country, plus an OAM store that captures regulated filings from debt-only issuers invisible to equity IR. The rich data, though, lives on the issuer side and is uneven: Komerční banka and MONETA publish exemplary debt pages (quarterly Covered Bond Investor Reports, machine-readable HTT workbooks, cover-pool overviews, full AT1/T2/SNP prospectus stacks), Česká spořitelna began HTT reporting in 2026 on a CZK 308.5bn cover pool, UniCredit CZ&SK runs the largest labelled XS franchise behind a 403-guarded site, while Raiffeisenbank and Hypoteční banka hold licensed cover pools with no cover-pool disclosure surface located at all. Terminology is the main recall risk — three coexisting Czech renderings (hypoteční zástavní listy, kryté dluhopisy/krytý blok, evropský krytý dluhopis) and no native term for senior non-preferred — and four issuer hosts (UniCredit, ČSOB, ČSOB Hypoteční banka, CREDITAS) returned 403/500 to plain fetches while their PDFs remain reachable, so a headless-browser tier is a prerequisite rather than an optimisation. Pan-European scaffolding (Covered Bond Label HTT database, ECBC Fact Book, free NORD/LB Floor Research) fills the interpretive layer and is the fastest way to detect a new Czech filing."
+}

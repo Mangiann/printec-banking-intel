@@ -1,0 +1,99 @@
+{
+  "headline": "Banking's center of gravity moves to identity, real-time data and governed AI by 2030",
+  "thesis": "By 2030 banking is re-organizing around a handful of perimeters — identity, real-time payments data, financial-crime/fraud AI under governance, and operational resilience — where regulation seeds much of the demand but competitive value is won in how fast and how widely the rails are operated; the customer-facing infrastructure is increasingly bought by non-banks, and the physical cash estate is the smallest, slowest-moving part of the story. The lightbulb: the durable money is not in any single mandate but in operating the shared, regulated rails — verification, real-time fraud, data products, resilience — as managed services across many markets and a buyer base far wider than banks.",
+  "picture": [
+    "The shape of demand inverts. Identity becomes platform infrastructure rather than a one-off onboarding cost: EUDI wallets must be issued by every Member State by 6 Dec 2026 and accepted by all regulated relying parties for ID and SCA by 6 Dec 2027, while the AML Regulation lands 10 Jul 2027 — turning verification into a recurring, cryptographically-anchored defence as deepfake fraud (Deloitte: ~USD 40bn of US GenAI-fraud losses by 2027, from USD 12.3bn in 2023) breaks legacy eKYC. Payments go instant-by-default — non-euro CEE PSPs bound to SCT Inst and Verification-of-Payee by 9 Jul 2027, EU instant volume ~10x from ~3bn (2024) to ~30bn by 2028 — so value migrates up the stack: not to clearing, but to verification, real-time fraud orchestration and ISO 20022 DATA PRODUCTS, where structured-payment data becomes a sold P&L (cash-flow forecasting, liquidity and treasury analytics), not just a migration artifact. AI moves from copilot to operator, with banking AI software spend rising EUR 31bn (2024) to EUR 55bn (2027) and agentic AI embedded in ~33% of enterprise apps by 2028.",
+    "The money and the buyers both move. Identity-verification (~15-17% CAGR to USD 29-34bn by 2030), digital signature (31-39% CAGR), AML (USD 4.1bn to 9.4bn), RegTech (USD 21bn to 44bn by 2030) and the fraud-detection pool (USD 32bn to ~66bn by 2030) all compound on legislated or loss-driven clocks, not discretionary budgets — and the buyer is increasingly NOT a retail-banking channels team but the CRO, CISO, CDO, model-risk and compliance functions, plus an entirely new non-bank class. PSD3/PSR (in force ~2027) and FIDA (phasing 2027-2030) legitimize the licensed FISP, while the amended Settlement Finality Directive (plus the 2025 EBA/ECB/NCB MoU) grants payment institutions/EMIs direct TARGET2/TIPS access, and embedded finance scales Europe's revenue pool toward EUR 100bn+ by 2030, B2B-dominated. A caution sits under all of it: regulators routinely slip — the EUDI clock itself may drift to ~2032 — so demand timing, not demand existence, is the live risk, and the winners hedge by selling readiness rather than betting on dates landing on schedule.",
+    "The endgame is structural, not cyclical. Operational resilience becomes a standing market in its own right: DORA is no longer just a deadline but a recurring managed-services domain — third-party-risk, resilience testing and the critical-ICT-provider (CTPP) regime — sitting alongside a decade-long core-banking coexistence/integration programme (40% of banks run a modern core beside legacy by 2026, 70-80% by 2028) where services grow faster (~12% CAGR) than licences and the integrator owns the plumbing the SaaS-core vendors don't. Tokenization arrives in bankable form: MiCA is fully binding, a 12-bank consortium (Qivalis) launches a regulated euro stablecoin in H2 2026, the ECB's Pontes DLT settlement rail goes live Q3 2026, and tokenized assets plausibly reach USD 2T (McKinsey base) to USD 9-16T (BCG) by 2030 — pulling custody, key-management and on-chain monitoring into mainstream banking. The durable competitive position belongs to whoever operates the regulated rails — verification, identity acceptance, real-time fraud, AI governance, crypto-agility, resilience and shared compliance utilities — as managed services across many markets, with CEE/SEE's catch-up curves the steepest in the footprint. Cash and ATMs remain a defensible managed-services annuity, but they are the legacy base to optimize, never the growth spine."
+  ],
+  "drivers": [
+    {
+      "title": "The 2027 regulatory wall — but dates slip",
+      "detail": "A stacked, dated mandate hits every regulated entity at once: AMLR and Verification-of-Payee from Jul 2027, EUDI wallet acceptance from 6 Dec 2027, AI Act high-risk from Dec 2027 (Aug 2028 embedded), and PQC migration of critical financial systems by end-2030 — converting compliance from a legal project into a permanent, board-level spend line. The hedge: regulators routinely slip (EUDI may drift to ~2032), so the winning posture is selling readiness and managed compliance, not betting on any single date landing on schedule."
+    },
+    {
+      "title": "Real-time data and the financial-crime/fraud layer",
+      "detail": "Instant payments become the legislated default (EU volume ~10x from ~3bn (2024) to ~30bn by 2028; non-euro CEE bound by 9 Jul 2027), killing batch screening and forcing inline VoP, perpetual KYC and ISO 20022 — which splits into TWO revenue pools: real-time fraud orchestration (market USD 32bn to ~66bn by 2030, the fastest near-term ROI for buyers) and a structured-DATA product line (reconciliation, cash-flow forecasting, liquidity/treasury analytics sold off the rail), not merely a Nov-2025/2026 migration deadline."
+    },
+    {
+      "title": "AI everywhere, governed",
+      "detail": "Banking AI software spend rises EUR 31bn (2024) to EUR 55bn (2027) and agentic AI moves into fraud, service and ops — but with >40% of agentic projects cancelled by 2027, durable money migrates to the governance, model-risk and conformity-assurance scaffolding the AI Act mandates, sold to the CRO and model-risk function rather than the channels team."
+    },
+    {
+      "title": "The endpoint, core and resilience as a service",
+      "detail": "Value decouples from boxes and licences toward recurring contracts: ATM-as-a-Service grows ~3x the device market (USD 9bn (2025) to 22bn by 2035), core modernization is a decade-long coexistence programme (40% sidecar by 2026, 70-80% by 2028) where services outgrow licences (~12% CAGR), and DORA turns operational resilience — third-party-risk, resilience testing, CTPP oversight — into a standing managed-services domain, pushing the customer-facing operating layer to whoever runs the managed rails."
+    }
+  ],
+  "gems": [
+    {
+      "title": "The long-tail obligated relying party (beyond banks and the 12 sectors)",
+      "detail": "eIDAS-2 forces every party legally obliged to use strong user authentication to accept the EU Digital Identity Wallet by ~6 Dec 2027 — and the obligation is explicitly NOT limited to the 12 named sectors (telecom, energy, transport, health, etc.). It reaches ANY firm contractually bound to strong authentication (Art. 5f). The named-vendor scramble (Hopae, Lissi, Digidentity, Signicat) targets banks and large platforms; what stays under-served is the long tail of obligated-but-unequipped buyers — regional transport operators, municipal utilities, iGaming/age-gated platforms, MVNOs, mid-market e-commerce — that carry a hard legal acceptance duty but have no identity/compliance team to build verifier integration. The intermediary construct (Art. 5b(10): an intermediary acting for relying parties is itself a relying party) is what lets an integrator like Printec sell acceptance-as-a-service to many such clients off one registration. Inflection window: wallets live 31 Dec 2026, acceptance mandatory ~6 Dec 2027 — a 2027-2030 onboarding wave concentrated in entities that today have no plan. Caveat: the intermediary role itself is already a contested, well-named market; the edge is the buyer segment, not the role.",
+      "tag": "New buyer: long-tail obligated relying parties with no identity team"
+    },
+    {
+      "title": "Operationalising AI Act self-attestation inside CEE/SEE lending stacks",
+      "detail": "Annex III 5(b) makes credit-scoring AI high-risk with CONTINUOUS, self-attested obligations under internal control (Art.43/Annex VI — no notified body): automatic event logging with 6-month retention (Art.12), meaningful human oversight (Art.14), a quality-management system (Art.17) and ongoing post-market monitoring. The Digital Omnibus deferral (standalone HRAIS to 2 Dec 2027; Annex-I-embedded to 2 Aug 2028, with a Commission early-trigger if standards land sooner) opens a 2026-2027 readiness window. The non-obvious opening is not selling a generic governance SaaS — that market is already crowded (Gartner's first AI Governance MQ, Jun 2026; Credo AI, Holistic AI, Modulos). It is OPERATIONALISING the regime inside the credit-decisioning stack of governance-laggard CEE/SEE lenders: instrumenting their existing scoring engines for logging/oversight/monitoring and producing the recurring self-attestation evidence pack — work Western vendors and Big-4 do not reach but where Printec already holds the integrator relationship. Sold to the CRO / model-risk function as a recurring annuity, not a one-off legal project.",
+      "tag": "New buyer: CRO / model-risk (continuous self-attestation annuity, not one-off audit)"
+    },
+    {
+      "title": "Neutral operator for an Article 75 AML data-sharing utility",
+      "detail": "AMLR Article 75 makes bank-to-bank \"partnerships for information sharing\" (PfIS) applicable EU-wide from 10 Jul 2027 — the harmonised legal basis that was missing when GDPR sank the data-centralising TMNL model in 2024. The compliance crowd (Lucinity, Fenergo, Wodan AI, Consilient) is racing to own the analytics/PET layer (federated learning, FHE, secure enclaves that compute without copying data). The under-served slot is the one Printec already fills in shared ATM/cash networks: the NEUTRAL OPERATOR who runs the shared infrastructure and orchestration so a consortium of competing banks can participate without any single bank — or analytics vendor — holding the keys. That trusted-integrator role for a regulated cross-bank AML utility is a new buyer (bank consortium) and a new product line, triggered by a hard 2027 date and validated by TMNL's failure mode (centralisation, not collaboration, was the problem).",
+      "tag": "New buyer: bank consortium — neutral AML-utility operator"
+    },
+    {
+      "title": "Post-quantum crypto discovery and HSM migration",
+      "detail": "Two hard deadlines converge on the 2027-2030 window: NIST deprecates RSA/ECC after 2030 (disallowed 2035), and the EU's coordinated roadmap (NIS Cooperation Group, 2025) asks member states to stand up cryptographic inventories by end-2026 and migrate critical financial systems to post-quantum cryptography by end-2030 — yet most banks still cannot say where cryptography actually runs in their estate and file quantum under \"future research.\" The near-term billable wedge is discovery: building the cryptographic bill-of-materials (CBOM) that regulators are starting to require. The follow-on is a 3-5 year crypto-agile HSM and key-lifecycle refresh, the most hardware-intensive part of the migration. Crucially this is a horizontal security-architecture practice — the buyer is the CISO/security-architecture team, not Printec's usual cash/branch buyer — and the same discovery-and-refresh motion reaches telecom, eID/digital-identity and utilities, all named secondary PQC markets sustaining demand into the 2030s.",
+      "tag": "New line: PQC discovery and HSM migration"
+    },
+    {
+      "title": "The PSD3/MiCA re-authorisation cohort as a net-new stack buyer",
+      "detail": "Non-banks are the fastest-growing core-banking buyer cohort (~14.8% CAGR to 2031 per Mordor/Straits, vs banks at 73% of the 2025 base) — BNPL providers, EMIs, embedded-finance brands and MiCA CASPs that sit entirely outside the traditional bank-account list. A concrete 2027-2030 catalyst makes them addressable on a deadline rather than as a vague trend: PSD3 merges the PI and EMI regimes into a single payment institution with a ~24-month re-authorisation window (core obligations land H2 2027), and the EBA's 2025 No-Action Letter plus the Feb 2026 Opinion push CASPs handling fiat payments toward PSD3 authorisation. This forces a fixed, named cohort to re-platform onboarding/KYC, AML, secure key management/HSM and card-issuing enablement fast, with no in-house integration team. The opportunity for Printec is the integration, orchestration and managed-service layer around that regulated stack (not building a proprietary core), sold to a buyer it has never invoiced before.",
+      "tag": "New buyer on a regulatory deadline: PSD3 PI/EMI + MiCA CASP cohort"
+    }
+  ],
+  "endstate_2030": [
+    {
+      "metric": "Digital identity (EUDI wallet)",
+      "now": "~52% private-use eID (2025); 10-14% in RO/BG/SK",
+      "then": "Mandatory acceptance by all regulated relying parties; 80% Digital Decade target",
+      "note": "Issuance 6 Dec 2026, acceptance/SCA 6 Dec 2027; analysts expect slip to ~2032"
+    },
+    {
+      "metric": "Payments rails & data products",
+      "now": "Card-led, batch-cleared; ISO 20022 a migration cost",
+      "then": "Instant-by-default, data-rich; structured-data sold as forecasting/liquidity products",
+      "note": "EU instant ~3bn (2024) to ~30bn (2028); A2A offsetting 15-25% of card growth; ISO 20022 inflection Nov 2026"
+    },
+    {
+      "metric": "Financial-crime & fraud AI",
+      "now": "Periodic KYC; rules-based fraud; AML ~USD 4.1bn (2025)",
+      "then": "Perpetual KYC; real-time fraud orchestration; AML ~USD 9.4bn (2030)",
+      "note": "Fraud market USD 32bn to ~66bn by 2030 (fastest ROI); AMLR 10 Jul 2027; AMLA supervision 2028"
+    },
+    {
+      "metric": "AI in banking",
+      "now": "Copilots; AI software ~EUR 31bn (2024); <1% agentic apps",
+      "then": "Agentic AI in fraud/ops; ~EUR 55bn (2027); governed under AI Act",
+      "note": ">40% of agentic projects cancelled by 2027 — value in the assurance layer"
+    },
+    {
+      "metric": "Core banking & resilience",
+      "now": "On-prem 70% share (2025); licence-led; DORA as a deadline",
+      "then": "Coexistence default (70-80% sidecar by 2028); services-led; resilience as managed market",
+      "note": "Core market USD 17bn to 29bn (2031); services ~12% CAGR; DORA TPRM/CTPP recurring"
+    },
+    {
+      "metric": "Tokenization & stablecoins",
+      "now": "Euro-stablecoin ~EUR 450m; unregulated fringe",
+      "then": "Regulated euro stablecoin + tokenized deposits; RWAs USD 2-16T",
+      "note": "MiCA binding; Qivalis launch H2 2026; ECB Pontes Q3 2026; figures projections"
+    },
+    {
+      "metric": "Cash & ATM estate",
+      "now": "Dispense-led fleet; bank-owned; box sales",
+      "then": "Recyclers >50% of shipments; ATMaaS/pooling; managed-services annuity",
+      "note": "Installed base ~2.9m by end-2028; ATMaaS USD 9bn (2025) to 22bn by 2035 — legacy base, not spine"
+    }
+  ],
+  "source_note": "Figures trace to consulting houses (McKinsey, Gartner, Capgemini, Deloitte, BCG, Everest, IDC), EU and central-bank sources (ECB, EBA, ESMA, AMLA, European Commission, NIST/NIS Cooperation Group), market-sizing firms (MarketsandMarkets, Mordor/Straits, Grand View, Juniper) and vendor/regulatory guidance; TARGET2/TIPS access traces to the amended Settlement Finality Directive plus the 2025 EBA/ECB/NCB MoU. All market sizes and adoption curves are projections where labelled, span different end-years (several extend to 2031 or 2035), and vary by analyst; regulatory dates are subject to slippage."
+}

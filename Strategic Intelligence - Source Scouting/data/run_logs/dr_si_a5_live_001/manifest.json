@@ -1,0 +1,79 @@
+{
+  "discovery_run_id": "dr_si_a5_live_001",
+  "routine": {
+    "routine_id": "R2",
+    "routine_name": "source_discovery_scout",
+    "routine_version": "0.3.0"
+  },
+  "actor": {
+    "actor_type": "workflow",
+    "actor_id": "source_discovery_scout_runner",
+    "human_actor_id": null
+  },
+  "created_at": "2026-08-26T19:16:58Z",
+  "started_at": "2026-08-26T19:16:58Z",
+  "completed_at": "2026-08-26T19:16:58Z",
+  "run_status": "completed",
+  "failure_reason": null,
+  "scope": {
+    "country": "SI",
+    "country_name": "Slovenia",
+    "sector": "both",
+    "workstreams": [
+      "A5"
+    ],
+    "topics": [
+      "jobs",
+      "hiring",
+      "leadership moves",
+      "organization changes"
+    ],
+    "languages": [
+      "sl",
+      "en"
+    ]
+  },
+  "glossary_summary": {
+    "terms_total": 0,
+    "terms_validated": 0,
+    "terms_by_tag": {
+      "official": 0,
+      "common_search": 0,
+      "english_in_local": 0,
+      "acronym_alias": 0,
+      "noisy_risky": 0
+    },
+    "actors_identified": 0
+  },
+  "search_summary": {
+    "queries_run": 0,
+    "english_queries": 0,
+    "local_language_queries": 0,
+    "failed_searches": 0,
+    "pointer_sources_found": 49,
+    "pointer_sources_expanded": 0,
+    "urls_verified": 264,
+    "urls_failed": 54
+  },
+  "outputs": {
+    "source_candidates": 318,
+    "access_review_tasks": 19,
+    "negative_findings": 89,
+    "coverage_gaps": 88,
+    "discovered_source_categories": 0
+  },
+  "run_log_refs": {
+    "search_attempts_ref": null,
+    "failed_searches_ref": null,
+    "errors_ref": null,
+    "raw_traces_ref": null,
+    "glossary_ref": null,
+    "discovered_source_categories_ref": null,
+    "workstream_brief_ref": "run_logs/dr_si_a5_live_001/workstream_brief.md"
+  },
+  "validation": {
+    "all_outputs_schema_valid": true,
+    "validation_errors": 0,
+    "dedup_by_normalized_url_applied": true
+  }
+}

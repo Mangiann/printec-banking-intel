@@ -1,0 +1,1148 @@
+{
+  "candidates": [
+    {
+      "source_name": "Zlatá koruna – Finanční akademie / FinTech akademie member roster",
+      "source_url": "https://www.zlatakoruna.info/soutez/2026/financni-akademie",
+      "source_class": "direct",
+      "primary_language": "cs",
+      "why_relevant": "The jury of the oldest CZ financial-product award publishes a full named roster of ~400 Finanční akademie + FinTech akademie members with employer affiliation, refreshed every competition year. This is effectively an annual census of who sits where across CZ banks, insurers, brokers, fintechs and finance media. Year-over-year diffing of name+employer pairs detects moves between institutions and departures without any press release.",
+      "credibility_score": 0.85,
+      "usefulness_score": 0.92,
+      "confidence_score": 0.85,
+      "priority": "critical",
+      "domain": "zlatakoruna.info",
+      "source_subtype": "award_jury_roster",
+      "topics": [
+        "leadership moves",
+        "organization changes",
+        "jobs",
+        "hiring"
+      ],
+      "access_status": "public_free",
+      "legal_status": "public_web_page",
+      "collection_allowed": true,
+      "suggested_collection_method": "Annual scheduled HTML scrape of /soutez/{year}/financni-akademie; parse the member table into (first_name, last_name, employer, year); diff consecutive years to emit employer-change and drop-out events. Also pull the linked Výroční zpráva PDFs where the roster is republished.",
+      "example_urls": [
+        "https://www.zlatakoruna.info/soutez/2026/financni-akademie",
+        "https://www.zlatakoruna.info/soutez/2025",
+        "https://www.zlatakoruna.info/soutez/2024",
+        "https://www.zlatakoruna.info/financni-produkty",
+        "https://www.zlatakoruna.info/"
+      ],
+      "discovered_via_method": "cs seed query on award jury, then WebFetch of the akademie page to confirm roster + archive URL pattern",
+      "queries_used": [
+        "Zlatá koruna porota členové finanční produkty banka"
+      ],
+      "local_language_terms_used": [
+        "Zlatá koruna",
+        "Finanční akademie",
+        "FinTech akademie",
+        "porota",
+        "členové",
+        "výroční zpráva",
+        "soutěž",
+        "ročník"
+      ],
+      "blocked": false,
+      "blocker_type": "none",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Zlatá koruna – competition year archive (2009–2026)",
+      "source_url": "https://www.zlatakoruna.info/",
+      "source_class": "pointer",
+      "primary_language": "cs",
+      "why_relevant": "Consistent /soutez/{YEAR} URL pattern going back to roughly 2009 gives a free ~17-year time series of jury composition, award ceremonies and participating institutions — the archival backbone that makes title-drift detection possible for this cell.",
+      "credibility_score": 0.8,
+      "usefulness_score": 0.8,
+      "confidence_score": 0.8,
+      "priority": "high",
+      "domain": "zlatakoruna.info",
+      "source_subtype": "award_archive_index",
+      "topics": [
+        "organization changes",
+        "leadership moves"
+      ],
+      "access_status": "public_free",
+      "legal_status": "public_web_page",
+      "collection_allowed": true,
+      "suggested_collection_method": "One-off backfill crawl over /soutez/2009 .. /soutez/2026 and their sub-pages, then annual incremental.",
+      "example_urls": [
+        "https://www.zlatakoruna.info/soutez/2025",
+        "https://www.zlatakoruna.info/soutez/2022"
+      ],
+      "discovered_via_method": "snowballed from the Finanční akademie page navigation",
+      "queries_used": [
+        "Zlatá koruna porota členové finanční produkty banka"
+      ],
+      "local_language_terms_used": [
+        "soutěž",
+        "ročník",
+        "archiv"
+      ],
+      "blocked": false,
+      "blocker_type": "none",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Mastercard Banka roku – Odborná porota (expert jury)",
+      "source_url": "https://bankaroku.cz/odborna-porota/",
+      "source_class": "direct",
+      "primary_language": "cs",
+      "why_relevant": "Named jury of analysts, economists, journalists, academics and executives with per-person bios stating current role and employer (e.g. Jana Lvová as CEO Mastercard CZ/SK since 2023). Separate 'Zvláštní odborná porota' page adds a second cohort. Prior-year jury pages remain live under distinct slugs, giving edition-to-edition title comparison.",
+      "credibility_score": 0.85,
+      "usefulness_score": 0.85,
+      "confidence_score": 0.85,
+      "priority": "high",
+      "domain": "bankaroku.cz",
+      "source_subtype": "award_jury_roster",
+      "topics": [
+        "leadership moves",
+        "organization changes"
+      ],
+      "access_status": "public_free",
+      "legal_status": "public_web_page",
+      "collection_allowed": true,
+      "suggested_collection_method": "Scrape jury pages plus bio sub-pages annually (award announced ~November); NER the bio text for role + employer + 'od {year}' tenure markers.",
+      "example_urls": [
+        "https://bankaroku.cz/odborna-porota/",
+        "https://bankaroku.cz/porota-2/",
+        "https://bankaroku.cz/zvlastni-odborna-porota/",
+        "https://bankaroku.cz/metodika/",
+        "https://bankaroku.cz/tz/mastercard-bankou-roku-2025-je-ceska-sporitelna-mezi-pojistovnami-zvitezila-kooperativa-partners-banka-ziskala-mimoradnou-cenu-poroty/"
+      ],
+      "discovered_via_method": "cs query on award jury membership",
+      "queries_used": [
+        "\"Banka roku\" Mastercard porota hodnotitelé odborná porota členové"
+      ],
+      "local_language_terms_used": [
+        "Banka roku",
+        "odborná porota",
+        "zvláštní odborná porota",
+        "metodika",
+        "tisková zpráva"
+      ],
+      "blocked": false,
+      "blocker_type": "none",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Konference Česko: Bankovní republika (Banka roku conference)",
+      "source_url": "https://bankaroku.cz/konference/",
+      "source_class": "direct",
+      "primary_language": "cs",
+      "why_relevant": "The award's companion conference puts CEOs on a public panel list with exact titles — the 2025 edition named Tomáš Salomon (CEO Česká spořitelna), Tomáš Spurný (CEO MONETA), Michal Strcula (CEO Air Bank), Jana Lvová (GM Mastercard CZ/SK), Eva Zamrazilová (ČNB vice-governor). A very high-signal, low-volume CEO-level roster refreshed yearly.",
+      "credibility_score": 0.85,
+      "usefulness_score": 0.85,
+      "confidence_score": 0.8,
+      "priority": "high",
+      "domain": "bankaroku.cz",
+      "source_subtype": "conference_speaker_roster",
+      "topics": [
+        "leadership moves",
+        "organization changes"
+      ],
+      "access_status": "public_free",
+      "legal_status": "public_web_page",
+      "collection_allowed": true,
+      "suggested_collection_method": "Annual scrape of the conference and press-release sections; extract person+title+institution triples from panel listings.",
+      "example_urls": [
+        "https://bankaroku.cz/konference/"
+      ],
+      "discovered_via_method": "cs seed query on banking conference speakers",
+      "queries_used": [
+        "konference bankovnictví platby Praha program řečníci ředitel banky"
+      ],
+      "local_language_terms_used": [
+        "konference",
+        "řečníci",
+        "panelová diskuse",
+        "generální ředitel",
+        "viceguvernérka"
+      ],
+      "blocked": false,
+      "blocker_type": "none",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Payments Summit (Czech Banking Association / ČBA) – speakers & programme",
+      "source_url": "https://www.paymentsummit.cz/en/speakers/",
+      "source_class": "direct",
+      "primary_language": "en",
+      "why_relevant": "Organised by the Czech Banking Association (Česká bankovní asociace), the flagship CZ/SK payments conference. Speaker page lists named representatives of banks, payment institutions, ministries, the European Banking Federation and the European Payments Council with job titles — precisely the payments-org layer that is otherwise opaque. Bilingual site (cs + en) so titles appear in both languages.",
+      "credibility_score": 0.9,
+      "usefulness_score": 0.88,
+      "confidence_score": 0.85,
+      "priority": "critical",
+      "domain": "paymentsummit.cz",
+      "source_subtype": "conference_speaker_roster",
+      "topics": [
+        "leadership moves",
+        "organization changes",
+        "jobs"
+      ],
+      "access_status": "public_free",
+      "legal_status": "public_web_page",
+      "collection_allowed": true,
+      "suggested_collection_method": "Scrape /en/speakers/ and /cs/ equivalent plus /en/programme/ on a monthly cadence in the run-up to the event (speakers are added incrementally — 'additional speakers will be announced'), snapshot each crawl so intra-season additions are preserved.",
+      "example_urls": [
+        "https://www.paymentsummit.cz/en/",
+        "https://www.paymentsummit.cz/en/speakers/",
+        "https://www.paymentsummit.cz/en/programme/"
+      ],
+      "discovered_via_method": "en/cs query on payment systems conferences; WebFetch confirmed organiser and speaker/programme URL paths",
+      "queries_used": [
+        "\"Payment Systems\" konference platební systémy Praha 2026 program"
+      ],
+      "local_language_terms_used": [
+        "platební styk",
+        "Česká bankovní asociace",
+        "ČBA",
+        "program",
+        "řečníci"
+      ],
+      "blocked": false,
+      "blocker_type": "none",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "FinTech Roadmap (Brno/Praha) – annual CZ/SK fintech conference",
+      "source_url": "https://www.fintechroadmap.cz/en",
+      "source_class": "direct",
+      "primary_language": "cs",
+      "why_relevant": "Described as the largest CZ/SK fintech conference (2026 edition at the ČNB Congress Centre, 400+ attendees, 40+ speakers) drawing founders, investors, bankers and regulators. Speaker rosters carry startup founder and bank-innovation-lead titles that rarely appear elsewhere; historic editions since 2022 are documented.",
+      "credibility_score": 0.75,
+      "usefulness_score": 0.8,
+      "confidence_score": 0.8,
+      "priority": "high",
+      "domain": "fintechroadmap.cz",
+      "source_subtype": "conference_speaker_roster",
+      "topics": [
+        "leadership moves",
+        "hiring",
+        "organization changes"
+      ],
+      "access_status": "public_free",
+      "legal_status": "public_web_page",
+      "collection_allowed": true,
+      "suggested_collection_method": "Scrape cs and en speaker/programme pages; supplement with the FinTech Cowboys and Fintree write-ups that name speakers when the site itself is JS-heavy.",
+      "example_urls": [
+        "https://www.fintechroadmap.cz/en",
+        "https://fintree.cz/fintech/fintech-roadmap-2026-se-blizi/",
+        "https://fintechcowboys.cz/brnenska-konference-fintech-roadmap-22-spoji-cesky-a-slovensky-fintech-a-mozna-i-trochu-pomuze-lidem-z-ukrajiny/"
+      ],
+      "discovered_via_method": "cs seed query on Fintech Cowboys events, snowballed to the conference itself",
+      "queries_used": [
+        "Fintech Cowboys akce speakeři fintech Česko konference"
+      ],
+      "local_language_terms_used": [
+        "konference",
+        "speakeři",
+        "řečníci",
+        "zakladatel",
+        "bankéři",
+        "regulátoři"
+      ],
+      "blocked": false,
+      "blocker_type": "none",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "FinTech Cowboys – Czech fintech news & event coverage",
+      "source_url": "https://fintechcowboys.cz/",
+      "source_class": "pointer",
+      "primary_language": "cs",
+      "why_relevant": "The de-facto chronicler of the CZ fintech scene: covers conferences, meetups and personnel news and names the people involved. Best used as a pointer that reveals which events exist, who spoke, and which new fintech actors to add to the actor map.",
+      "credibility_score": 0.6,
+      "usefulness_score": 0.75,
+      "confidence_score": 0.85,
+      "priority": "medium",
+      "domain": "fintechcowboys.cz",
+      "source_subtype": "trade_blog_event_coverage",
+      "topics": [
+        "leadership moves",
+        "hiring",
+        "organization changes"
+      ],
+      "access_status": "public_free",
+      "legal_status": "public_web_page",
+      "collection_allowed": true,
+      "suggested_collection_method": "RSS/feed subscription plus site-search on cs person-move phrases ('novým ředitelem', 'posílil tým', 'odchází z', 'nastupuje do'); use extracted names to seed actor map.",
+      "example_urls": [
+        "https://fintechcowboys.cz/",
+        "https://startupkitchen.community/fintech-cowboys/",
+        "https://x.com/fintechcowboys"
+      ],
+      "discovered_via_method": "cs seed query",
+      "queries_used": [
+        "Fintech Cowboys akce speakeři fintech Česko konference"
+      ],
+      "local_language_terms_used": [
+        "novým ředitelem",
+        "posílil tým",
+        "odchází",
+        "nastupuje",
+        "fintech scéna"
+      ],
+      "blocked": false,
+      "blocker_type": "none",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Retail Summit (Blue Events) – programme & speaker roster",
+      "source_url": "https://www.retailsummit.cz/program",
+      "source_class": "direct",
+      "primary_language": "cs",
+      "why_relevant": "80+ speakers a year across CZ retail, including retail-banking, payments-acceptance and loyalty executives, each listed with title and employer; editions run annually (2024: 85 speakers; 2025: 70+; 2026: March 10–12). Relevant to the payments-acceptance/merchant side of the sector, which pure banking conferences miss.",
+      "credibility_score": 0.8,
+      "usefulness_score": 0.7,
+      "confidence_score": 0.85,
+      "priority": "medium",
+      "domain": "retailsummit.cz",
+      "source_subtype": "conference_speaker_roster",
+      "topics": [
+        "leadership moves",
+        "organization changes"
+      ],
+      "access_status": "public_free",
+      "legal_status": "public_web_page",
+      "collection_allowed": true,
+      "suggested_collection_method": "Annual scrape of /program and speaker detail pages; filter extracted employers against a bank/PSP/acquirer whitelist to cut retail-only noise.",
+      "example_urls": [
+        "https://www.retailsummit.cz/",
+        "https://www.retailsummit.cz/program",
+        "https://www.mam.cz/novinky/akce-a-souteze/akce/konference/2024-03/retail-summit-2024-85-recniku-a-26-hodin-odborneho-programu/"
+      ],
+      "discovered_via_method": "cs seed query on Retail Summit programme",
+      "queries_used": [
+        "Retail Summit 2026 Praha program řečníci Banking Summit"
+      ],
+      "local_language_terms_used": [
+        "program",
+        "řečníci",
+        "panelisté",
+        "odborný program"
+      ],
+      "blocked": false,
+      "blocker_type": "none",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Blue Events – conference portfolio index",
+      "source_url": "https://www.blueevents.eu/konference",
+      "source_class": "pointer",
+      "primary_language": "cs",
+      "why_relevant": "Organiser index covering Retail Summit, New Retail Summit (SK) and adjacent B2B conferences. A single pointer that enumerates which senior-audience events exist each year and where their speaker pages live, including cross-border CZ/SK editions.",
+      "credibility_score": 0.75,
+      "usefulness_score": 0.65,
+      "confidence_score": 0.85,
+      "priority": "medium",
+      "domain": "blueevents.eu",
+      "source_subtype": "event_organiser_index",
+      "topics": [
+        "organization changes",
+        "leadership moves"
+      ],
+      "access_status": "public_free",
+      "legal_status": "public_web_page",
+      "collection_allowed": true,
+      "suggested_collection_method": "Quarterly crawl of the conference index to auto-discover new event sites and their speaker sub-pages.",
+      "example_urls": [
+        "https://www.blueevents.eu/konference",
+        "https://www.blueevents.eu/"
+      ],
+      "discovered_via_method": "snowballed from Retail Summit",
+      "queries_used": [
+        "Blue Events Retail Summit řečníci profil \"ředitel\" banka Česká spořitelna vystoupí"
+      ],
+      "local_language_terms_used": [
+        "konference",
+        "přehled konferencí",
+        "odborná setkání"
+      ],
+      "blocked": false,
+      "blocker_type": "none",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "IT ve finančnictví – Přednášející (speakers) page",
+      "source_url": "https://financnictvi.konference.cz/prednasejici",
+      "source_class": "direct",
+      "primary_language": "cs",
+      "why_relevant": "12th annual edition (23 Sep 2026, Hotel Grandior Praha) focused on DORA/NIS2, cybersecurity and financial-sector IT. The 'přednášející' page names CIO/CISO/IT-security roles at banks and vendors — the technology-organisation layer that business conferences do not expose. Long-running series with per-year archives.",
+      "credibility_score": 0.75,
+      "usefulness_score": 0.8,
+      "confidence_score": 0.85,
+      "priority": "high",
+      "domain": "financnictvi.konference.cz",
+      "source_subtype": "conference_speaker_roster",
+      "topics": [
+        "leadership moves",
+        "organization changes",
+        "jobs"
+      ],
+      "access_status": "public_free",
+      "legal_status": "public_web_page",
+      "collection_allowed": true,
+      "suggested_collection_method": "Scrape /prednasejici and the programme page each edition; snapshot to detect CIO/CISO turnover between editions.",
+      "example_urls": [
+        "https://financnictvi.konference.cz/",
+        "https://financnictvi.konference.cz/prednasejici",
+        "https://www.systemonline.cz/zpravy/konference-svet-it-ve-financnictvi-o-blockchainu-psd2-a-kyberbezpecnosti-z.htm"
+      ],
+      "discovered_via_method": "cs query on financial-IT conferences, snowballed to the speakers sub-page",
+      "queries_used": [
+        "konference \"IT ve finančnictví\" OR \"Trendy v platebním styku\" řečníci archiv minulé ročníky"
+      ],
+      "local_language_terms_used": [
+        "přednášející",
+        "IT ve finančnictví",
+        "kybernetická bezpečnost",
+        "ročník"
+      ],
+      "blocked": false,
+      "blocker_type": "none",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Trendy v platebním styku ČR & SR (organised by CGI IT Czech Republic)",
+      "source_url": "https://www.konferenceseminare.cz/trendy-v-platebnim-styku-2026",
+      "source_class": "direct",
+      "primary_language": "cs",
+      "why_relevant": "Annual CZ/SK payments-operations conference (Majestic Plaza Praha) on SEPA Instant, QR payments, Verification of Payee, PSD3/PSR. Its speaker list is the working payments-operations layer of banks — heads of payments, product owners — a population invisible in press releases but decisive for payments-org mapping.",
+      "credibility_score": 0.75,
+      "usefulness_score": 0.82,
+      "confidence_score": 0.8,
+      "priority": "high",
+      "domain": "konferenceseminare.cz",
+      "source_subtype": "conference_speaker_roster",
+      "topics": [
+        "leadership moves",
+        "organization changes"
+      ],
+      "access_status": "public_free",
+      "legal_status": "public_web_page",
+      "collection_allowed": true,
+      "suggested_collection_method": "Scrape the event page and its programme/speaker block annually; konferenceseminare.cz keeps per-year slugs so backfill by editing the year in the URL.",
+      "example_urls": [
+        "https://www.konferenceseminare.cz/trendy-v-platebnim-styku-2026"
+      ],
+      "discovered_via_method": "cs query on payment-systems conferences",
+      "queries_used": [
+        "\"Payment Systems\" konference platební systémy Praha 2026 program"
+      ],
+      "local_language_terms_used": [
+        "trendy v platebním styku",
+        "platební styk",
+        "okamžité platby",
+        "program",
+        "přednášející"
+      ],
+      "blocked": false,
+      "blocker_type": "none",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "konferenceseminare.cz – Czech B2B event aggregator",
+      "source_url": "https://www.konferenceseminare.cz/",
+      "source_class": "pointer",
+      "primary_language": "cs",
+      "why_relevant": "Aggregator of Czech professional conferences and seminars including the banking/payments track. Use it to enumerate the long tail of smaller, single-topic events whose speaker lists are rich in mid-level bank titles and which no single organiser index would surface.",
+      "credibility_score": 0.6,
+      "usefulness_score": 0.7,
+      "confidence_score": 0.8,
+      "priority": "medium",
+      "domain": "konferenceseminare.cz",
+      "source_subtype": "event_aggregator",
+      "topics": [
+        "organization changes",
+        "leadership moves"
+      ],
+      "access_status": "public_free",
+      "legal_status": "public_web_page",
+      "collection_allowed": true,
+      "suggested_collection_method": "Monthly crawl of finance/banking category listings; auto-enqueue newly discovered event pages for speaker extraction.",
+      "example_urls": [
+        "https://www.konferenceseminare.cz/",
+        "https://www.konferenceseminare.cz/trendy-v-platebnim-styku-2026"
+      ],
+      "discovered_via_method": "snowballed from the payment-systems conference result",
+      "queries_used": [
+        "\"Payment Systems\" konference platební systémy Praha 2026 program"
+      ],
+      "local_language_terms_used": [
+        "konference",
+        "semináře",
+        "přehled akcí",
+        "bankovnictví",
+        "finance"
+      ],
+      "blocked": false,
+      "blocker_type": "none",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Časopis Bankovnictví – Eventy (events section)",
+      "source_url": "https://www.bankovnictvionline.cz/eventy",
+      "source_class": "pointer",
+      "primary_language": "cs",
+      "why_relevant": "The Czech banking trade magazine's event calendar and event coverage. Doubles as a pointer to the sector's event calendar and as a direct source when it reports speaker line-ups and award ceremonies with names and titles. Trade-press framing often makes the role change explicit ('nový ředitel', 've funkci od').",
+      "credibility_score": 0.75,
+      "usefulness_score": 0.75,
+      "confidence_score": 0.85,
+      "priority": "high",
+      "domain": "bankovnictvionline.cz",
+      "source_subtype": "trade_press_event_calendar",
+      "topics": [
+        "leadership moves",
+        "hiring",
+        "organization changes",
+        "jobs"
+      ],
+      "access_status": "public_free_partial_paywall",
+      "legal_status": "public_web_page_with_possible_subscription_wall",
+      "collection_allowed": true,
+      "suggested_collection_method": "Crawl /eventy on a monthly cadence for event discovery; monitor article feed for cs person-move phrases. Expect some articles behind a subscription wall — record as partial.",
+      "example_urls": [
+        "https://www.bankovnictvionline.cz/eventy",
+        "https://www.bankovnictvionline.cz/"
+      ],
+      "discovered_via_method": "cs seed query on banking conferences",
+      "queries_used": [
+        "konference bankovnictví platby Praha program řečníci ředitel banky",
+        "\"Bankovní inovace\" konference cena vyhlášení ročník"
+      ],
+      "local_language_terms_used": [
+        "eventy",
+        "bankovnictví",
+        "nový ředitel",
+        "ve funkci",
+        "jmenován"
+      ],
+      "blocked": false,
+      "blocker_type": "none",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "FIN (R)Evoluce – Měšec.cz annual financial-innovation conference",
+      "source_url": "https://www.tuesday.cz/akce/fin-r-evoluce-2025/",
+      "source_class": "direct",
+      "primary_language": "cs",
+      "why_relevant": "11th edition (Hotel Jalta, Praha), run by consumer-finance server Měšec.cz with moderator Dalibor Z. Chvátal. Speaker line-ups skew to product and digital-channel leads at banks, insurers and fintechs; multiple independent media recaps (Měšec, Euro.cz, Ekonomický magazín) name the speakers, giving redundant capture when the event page itself is thin.",
+      "credibility_score": 0.7,
+      "usefulness_score": 0.72,
+      "confidence_score": 0.8,
+      "priority": "medium",
+      "domain": "tuesday.cz",
+      "source_subtype": "conference_speaker_roster",
+      "topics": [
+        "leadership moves",
+        "organization changes"
+      ],
+      "access_status": "public_free",
+      "legal_status": "public_web_page",
+      "collection_allowed": true,
+      "suggested_collection_method": "Scrape the tuesday.cz event page plus the annual recap articles on mesec.cz / euro.cz / e-news.cz; cross-join names for a fuller roster.",
+      "example_urls": [
+        "https://www.tuesday.cz/akce/fin-r-evoluce-2025/",
+        "https://www.mesec.cz/clanky/konference-fin-r-evoluce-2025-ai-jako-motor-inovaci-ve-financnictvi/",
+        "https://e-news.cz/akce-a-lide/konference-fin-revoluce-2025-zapojeni-ai-nove-platebni-metody-a-dalsi-inovace/",
+        "https://www.euro.cz/pr-clanky/fin-r-evoluce-2025-nove-platebni-metody-zapojeni-ai-a-dalsi-inovace/"
+      ],
+      "discovered_via_method": "cs query on banking-innovation conferences",
+      "queries_used": [
+        "\"Bankovní inovace\" konference cena vyhlášení ročník"
+      ],
+      "local_language_terms_used": [
+        "FIN (R)Evoluce",
+        "konference",
+        "moderátor",
+        "inovace ve financích"
+      ],
+      "blocked": false,
+      "blocker_type": "none",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Zlatý měšec – Měšec.cz consumer finance award",
+      "source_url": "https://www.mesec.cz/akce/zlaty-mesec/hlasovani/",
+      "source_class": "indirect",
+      "primary_language": "cs",
+      "why_relevant": "Long-running CZ award ranking banks and credit unions. The award ceremony and its expert/voting panel put named bank representatives on record, and winners' pages on bank sites (e.g. RSTS ocenění page) mirror the results. Weaker on jury naming than Zlatá koruna, so treat as a secondary corroborator and an actor-map feed.",
+      "credibility_score": 0.6,
+      "usefulness_score": 0.55,
+      "confidence_score": 0.7,
+      "priority": "low",
+      "domain": "mesec.cz",
+      "source_subtype": "award_program",
+      "topics": [
+        "organization changes",
+        "leadership moves"
+      ],
+      "access_status": "public_free",
+      "legal_status": "public_web_page",
+      "collection_allowed": true,
+      "suggested_collection_method": "Annual scrape of the award landing/voting/results pages; capture any published jury or ceremony attendee names.",
+      "example_urls": [
+        "https://www.mesec.cz/akce/zlaty-mesec/hlasovani/",
+        "https://www.rsts.cz/oceneni"
+      ],
+      "discovered_via_method": "cs query on Czech financial awards",
+      "queries_used": [
+        "\"Zlatý měšec\" soutěž porota Měšec.cz finanční ocenění ročník"
+      ],
+      "local_language_terms_used": [
+        "Zlatý měšec",
+        "soutěž",
+        "hlasování",
+        "ocenění",
+        "porota"
+      ],
+      "blocked": false,
+      "blocker_type": "none",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "VŠE Praha – Rozvoj a inovace finančních produktů conference (FFÚ / Katedra bankovnictví a pojišťovnictví)",
+      "source_url": "https://ffu.vse.cz/aktuality/konference-rozvoj-a-inovace-financnich-produktu/",
+      "source_class": "direct",
+      "primary_language": "cs",
+      "why_relevant": "The canonical CZ university-industry panel: 13+ annual editions, held under ČNB-governor patronage, with panels naming sitting CEOs and board members (12th edition panel: Tomáš Salomon, Jan Juchelka, Tomáš Nidetzky, Andrea Ferjenčíková). Academic sites archive announcements and reports indefinitely, giving a durable free time series of who held which seat in a given year.",
+      "credibility_score": 0.85,
+      "usefulness_score": 0.8,
+      "confidence_score": 0.85,
+      "priority": "high",
+      "domain": "vse.cz",
+      "source_subtype": "university_industry_panel",
+      "topics": [
+        "leadership moves",
+        "organization changes"
+      ],
+      "access_status": "public_free",
+      "legal_status": "public_web_page",
+      "collection_allowed": true,
+      "suggested_collection_method": "Crawl ffu.vse.cz/aktuality and kbp.vse.cz/aktuality + /zpravodaj annually; extract panellist name+title+institution from announcement and post-event report items; also harvest the Zpravodaj PDF newsletters.",
+      "example_urls": [
+        "https://ffu.vse.cz/aktuality/konference-rozvoj-a-inovace-financnich-produktu/",
+        "https://kbp.vse.cz/",
+        "https://kbp.vse.cz/aktuality/",
+        "https://kbp.vse.cz/zpravodaj/",
+        "https://iuf.vse.cz/aktuality/1029/"
+      ],
+      "discovered_via_method": "cs query on university-industry banking panels",
+      "queries_used": [
+        "VŠE fakulta financí konference bankovnictví panel diskuse zástupci bank studenti kariéra",
+        "\"Bankovní inovace\" konference cena vyhlášení ročník"
+      ],
+      "local_language_terms_used": [
+        "Rozvoj a inovace finančních produktů",
+        "Katedra bankovnictví a pojišťovnictví",
+        "panelová diskuse",
+        "záštita guvernéra",
+        "zpravodaj",
+        "aktuality"
+      ],
+      "blocked": false,
+      "blocker_type": "none",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "ČNB – Vystoupení, konference, semináře (speeches & conferences archive)",
+      "source_url": "https://www.cnb.cz/cs/verejnost/servis-pro-media/vystoupeni-konference-seminare/",
+      "source_class": "direct",
+      "primary_language": "cs",
+      "why_relevant": "The central bank publishes, with a deep archive, who spoke where and in what capacity — including board members and senior supervisors at industry conferences. Also hosts the '30 let ČNB' conference page with 'Medailonky diskutujících' (participant bios), an explicit named-role census. Authoritative and highly structured.",
+      "credibility_score": 0.98,
+      "usefulness_score": 0.85,
+      "confidence_score": 0.9,
+      "priority": "critical",
+      "domain": "cnb.cz",
+      "source_subtype": "regulator_speech_and_conference_archive",
+      "topics": [
+        "leadership moves",
+        "organization changes"
+      ],
+      "access_status": "public_free",
+      "legal_status": "public_official_publication",
+      "collection_allowed": true,
+      "suggested_collection_method": "Scheduled crawl of the speeches/conferences index (cs and en mirrors) with full backfill; parse speaker name, stated function, event name and date into a role-timeline table. Also crawl the research-conference index at /cs/ekonomicky-vyzkum/konference-seminare-a-workshopy/.",
+      "example_urls": [
+        "https://www.cnb.cz/cs/verejnost/servis-pro-media/vystoupeni-konference-seminare/",
+        "https://www.cnb.cz/cs/ekonomicky-vyzkum/konference-seminare-a-workshopy/",
+        "https://www.cnb.cz/cnb/30_let_cnb_cz/30.-vyroci-cnb-a-ceske-meny-konference-a-prednasky/30-let-cnb-cesta-ceskeho-bankovnictvi-odborna-konference/medailonky-diskutujicich/index.html",
+        "https://www.cnb.cz/cs/verejnost/servis-pro-media/vystoupeni-konference-seminare/prezentace-a-vystoupeni/Moderni-a-bezpecne-platby-podporuji-duveru-ve-financni-system-a-trzni-ekonomiku/"
+      ],
+      "discovered_via_method": "cs queries on payments and banking conferences; ČNB surfaced repeatedly as venue and publisher",
+      "queries_used": [
+        "\"Payment Systems\" konference platební systémy Praha 2026 program",
+        "VŠE fakulta financí konference bankovnictví panel diskuse zástupci bank studenti kariéra"
+      ],
+      "local_language_terms_used": [
+        "vystoupení",
+        "konference",
+        "semináře",
+        "medailonky diskutujících",
+        "guvernér",
+        "viceguvernérka",
+        "bankovní rada"
+      ],
+      "blocked": false,
+      "blocker_type": "none",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Banking Innovation Forum & Expo (Cubex Centrum Praha listing)",
+      "source_url": "https://www.cubexcentrum.cz/event/27-rocnik-banking-innovation-forum-expo/",
+      "source_class": "indirect",
+      "primary_language": "cs",
+      "why_relevant": "A long-running (17th+ edition) banking-innovation forum held in Prague. The venue's event listing is a reliable pointer to the edition, dates and organiser even when the organiser's own site is short-lived; venue pages also enumerate other finance events at the same site.",
+      "credibility_score": 0.6,
+      "usefulness_score": 0.6,
+      "confidence_score": 0.7,
+      "priority": "medium",
+      "domain": "cubexcentrum.cz",
+      "source_subtype": "venue_event_listing",
+      "topics": [
+        "organization changes",
+        "leadership moves"
+      ],
+      "access_status": "public_free",
+      "legal_status": "public_web_page",
+      "collection_allowed": true,
+      "suggested_collection_method": "Crawl the venue event index quarterly to discover finance/banking events and follow through to organiser speaker pages.",
+      "example_urls": [
+        "https://www.cubexcentrum.cz/event/27-rocnik-banking-innovation-forum-expo/",
+        "https://www.cubexcentrum.cz/konference-praha-co-si-nenechat-ujit-2026/",
+        "https://www.cubexcentrum.cz/event/czech-retail-days-2026/"
+      ],
+      "discovered_via_method": "cs query on banking innovation events",
+      "queries_used": [
+        "\"Bankovní inovace\" konference cena vyhlášení ročník"
+      ],
+      "local_language_terms_used": [
+        "ročník",
+        "konference Praha",
+        "bankovní inovace"
+      ],
+      "blocked": false,
+      "blocker_type": "none",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Treasury Fórum (O2 universum Praha)",
+      "source_url": "https://treasuryforum.cz/",
+      "source_class": "direct",
+      "primary_language": "cs",
+      "why_relevant": "Conference for corporate treasury specialists plus the banks and payment-service providers serving them. Speaker and panel lists expose bank transaction-banking / cash-management leadership — a named layer directly adjacent to payments that no other event in this cell covers.",
+      "credibility_score": 0.7,
+      "usefulness_score": 0.7,
+      "confidence_score": 0.75,
+      "priority": "medium",
+      "domain": "treasuryforum.cz",
+      "source_subtype": "conference_speaker_roster",
+      "topics": [
+        "leadership moves",
+        "organization changes"
+      ],
+      "access_status": "public_free",
+      "legal_status": "public_web_page",
+      "collection_allowed": true,
+      "suggested_collection_method": "Annual scrape of programme/speaker pages ahead of the June edition; snapshot for edition-to-edition title drift.",
+      "example_urls": [
+        "https://treasuryforum.cz/"
+      ],
+      "discovered_via_method": "cs query on 2026 banking/payments conferences",
+      "queries_used": [
+        "Economia events konference banky platební karty řečníci program 2026"
+      ],
+      "local_language_terms_used": [
+        "Treasury fórum",
+        "platební styk",
+        "financování",
+        "řízení finančních rizik"
+      ],
+      "blocked": false,
+      "blocker_type": "none",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Economia events (events-economia.cz / events.economia.cz)",
+      "source_url": "https://events-economia.cz/",
+      "source_class": "pointer",
+      "primary_language": "cs",
+      "why_relevant": "The events arm of the publisher of Hospodářské noviny runs finance-sector conferences (e.g. 'Inovace v platebních kartách', TOP realitní fondy) with dedicated 'Řečníci' pages listing names and titles. A single organiser pointer covering several payments/finance events with consistent speaker-page structure.",
+      "credibility_score": 0.75,
+      "usefulness_score": 0.72,
+      "confidence_score": 0.75,
+      "priority": "medium",
+      "domain": "events-economia.cz",
+      "source_subtype": "event_organiser_index",
+      "topics": [
+        "leadership moves",
+        "organization changes"
+      ],
+      "access_status": "public_free",
+      "legal_status": "public_web_page",
+      "collection_allowed": true,
+      "suggested_collection_method": "Crawl the event index quarterly; for each finance event follow the '?action=speakers' style speaker view and extract name/title/employer. Note the speaker URLs carry event hashes, so harvest links rather than constructing them.",
+      "example_urls": [
+        "https://events-economia.cz/",
+        "https://events.economia.cz/15411-inovace-v-platebnich-kartach",
+        "https://events-economia.cz/events/top-realitni-fondy"
+      ],
+      "discovered_via_method": "cs queries on card/payment innovation events and Economia conference programmes",
+      "queries_used": [
+        "\"Bankovní inovace\" konference cena vyhlášení ročník",
+        "Economia events konference banky platební karty řečníci program 2026"
+      ],
+      "local_language_terms_used": [
+        "řečníci",
+        "inovace v platebních kartách",
+        "konference",
+        "program"
+      ],
+      "blocked": false,
+      "blocker_type": "none",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Česká fintech asociace (czechfintech.cz) – events section",
+      "source_url": "https://czechfintech.cz/udalosti/",
+      "source_class": "pointer",
+      "primary_language": "cs",
+      "why_relevant": "Industry association listing fintech-sector events (e.g. Finanční konference editions). Association event pages and member listings reveal which fintechs exist and who represents them publicly — a compact actor-map feed feeding the rest of this cell.",
+      "credibility_score": 0.7,
+      "usefulness_score": 0.65,
+      "confidence_score": 0.7,
+      "priority": "medium",
+      "domain": "czechfintech.cz",
+      "source_subtype": "association_event_index",
+      "topics": [
+        "organization changes",
+        "leadership moves",
+        "jobs"
+      ],
+      "access_status": "public_free",
+      "legal_status": "public_web_page",
+      "collection_allowed": true,
+      "suggested_collection_method": "Quarterly crawl of the events index and any member/board pages; treat representative names as actor-map seeds.",
+      "example_urls": [
+        "https://czechfintech.cz/udalosti/financni-konference-2024/",
+        "https://czechfintech.cz/"
+      ],
+      "discovered_via_method": "cs seed query on Czech fintech events",
+      "queries_used": [
+        "Fintech Cowboys akce speakeři fintech Česko konference"
+      ],
+      "local_language_terms_used": [
+        "Fintech asociace",
+        "události",
+        "finanční konference",
+        "členové"
+      ],
+      "blocked": false,
+      "blocker_type": "none",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Finanční konference (financnikonference.cz)",
+      "source_url": "https://www.financnikonference.cz/",
+      "source_class": "direct",
+      "primary_language": "cs",
+      "why_relevant": "Recurring CZ finance conference whose 2026 speaker list names bank chief economists and market figures with employer (Helena Horská / Raiffeisenbank, David Navrátil / Česká spořitelna, Petr Koblic / Burza cenných papírů Praha, Vít Endler / finGood). Chief-economist seats are a stable, easily-diffed role class.",
+      "credibility_score": 0.7,
+      "usefulness_score": 0.7,
+      "confidence_score": 0.8,
+      "priority": "medium",
+      "domain": "financnikonference.cz",
+      "source_subtype": "conference_speaker_roster",
+      "topics": [
+        "leadership moves",
+        "organization changes"
+      ],
+      "access_status": "public_free",
+      "legal_status": "public_web_page",
+      "collection_allowed": true,
+      "suggested_collection_method": "Annual scrape of the speaker/programme section; store name+employer+title per edition.",
+      "example_urls": [
+        "https://www.financnikonference.cz/"
+      ],
+      "discovered_via_method": "cs seed query on banking/payments conference speakers",
+      "queries_used": [
+        "konference bankovnictví platby Praha program řečníci ředitel banky"
+      ],
+      "local_language_terms_used": [
+        "finanční konference",
+        "řečníci",
+        "hlavní ekonom",
+        "finanční ředitel"
+      ],
+      "blocked": false,
+      "blocker_type": "none",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Fintree.cz – Czech fintech media, event previews and recaps",
+      "source_url": "https://fintree.cz/",
+      "source_class": "indirect",
+      "primary_language": "cs",
+      "why_relevant": "Covers CZ fintech conferences with speaker detail (e.g. the FinTech Roadmap 2026 preview naming venue, scale and speaker count). Useful redundancy when organiser sites are JS-rendered or taken down after the event.",
+      "credibility_score": 0.6,
+      "usefulness_score": 0.6,
+      "confidence_score": 0.8,
+      "priority": "low",
+      "domain": "fintree.cz",
+      "source_subtype": "trade_media_event_coverage",
+      "topics": [
+        "leadership moves",
+        "organization changes"
+      ],
+      "access_status": "public_free",
+      "legal_status": "public_web_page",
+      "collection_allowed": true,
+      "suggested_collection_method": "Feed subscription plus targeted site-search around each conference date window.",
+      "example_urls": [
+        "https://fintree.cz/fintech/fintech-roadmap-2026-se-blizi/"
+      ],
+      "discovered_via_method": "snowballed from FinTech Roadmap search results",
+      "queries_used": [
+        "Fintech Cowboys akce speakeři fintech Česko konference"
+      ],
+      "local_language_terms_used": [
+        "konference",
+        "vyprodáno",
+        "řečníci",
+        "fintech"
+      ],
+      "blocked": false,
+      "blocker_type": "none",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Cashless Future conference site",
+      "source_url": "https://www.cashlessfuture.cz/",
+      "source_class": "indirect",
+      "primary_language": "cs",
+      "why_relevant": "Cashless-payments conference site surfaced in cs search; its programme/contacts sections name organisers and speakers on the cashless/acceptance side. Latest confirmed edition observed is 2022, so it may be dormant — value is mainly as an archived roster for back-dating roles, and it must be re-checked before being treated as live.",
+      "credibility_score": 0.5,
+      "usefulness_score": 0.45,
+      "confidence_score": 0.55,
+      "priority": "low",
+      "domain": "cashlessfuture.cz",
+      "source_subtype": "conference_speaker_roster",
+      "topics": [
+        "leadership moves",
+        "organization changes"
+      ],
+      "access_status": "public_free_possibly_dormant",
+      "legal_status": "public_web_page",
+      "collection_allowed": true,
+      "suggested_collection_method": "One-off archival scrape of the 2022 (and any later) programme pages for back-dated role snapshots; add a liveness re-check before scheduling recurring collection. Supplement with Wayback Machine snapshots.",
+      "example_urls": [
+        "https://www.cashlessfuture.cz/index.html#contacts05-17"
+      ],
+      "discovered_via_method": "cs seed query on banking/payments conferences",
+      "queries_used": [
+        "konference bankovnictví platby Praha program řečníci ředitel banky"
+      ],
+      "local_language_terms_used": [
+        "cashless",
+        "bezhotovostní platby",
+        "kontakty",
+        "program"
+      ],
+      "blocked": false,
+      "blocker_type": "none",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "10times – Prague banking/payments event listings",
+      "source_url": "https://10times.com/retail-summit-prague",
+      "source_class": "pointer",
+      "primary_language": "en",
+      "why_relevant": "International event aggregator with per-event pages, edition histories and organiser links for Prague finance/retail events. Useful for discovering editions and dates in a structured, machine-readable way; not a source of speaker titles itself.",
+      "credibility_score": 0.5,
+      "usefulness_score": 0.5,
+      "confidence_score": 0.8,
+      "priority": "low",
+      "domain": "10times.com",
+      "source_subtype": "event_aggregator",
+      "topics": [
+        "organization changes"
+      ],
+      "access_status": "public_free_with_registration_prompts",
+      "legal_status": "third_party_aggregator_check_tos",
+      "collection_allowed": true,
+      "suggested_collection_method": "Light periodic crawl for event discovery only; check robots.txt/ToS before any systematic extraction and prefer following through to the organiser site.",
+      "example_urls": [
+        "https://10times.com/retail-summit-prague"
+      ],
+      "discovered_via_method": "en query on Retail Summit Prague",
+      "queries_used": [
+        "Retail Summit 2026 Praha program řečníci Banking Summit"
+      ],
+      "local_language_terms_used": [],
+      "blocked": false,
+      "blocker_type": "none",
+      "observed_blocker": ""
+    }
+  ],
+  "negative_findings": [
+    {
+      "finding_type": "entity_not_found",
+      "description": "No standalone Czech event branded 'Banking Summit' was found. Searching 'Retail Summit 2026 Praha program řečníci Banking Summit' returned only Blue Events' Retail Summit / New Retail Summit (SK) and unrelated foreign summits.",
+      "result_summary": "The 'Banking Summit' element of the cell definition appears to be either an alias for another event (most plausibly ČBA's Payments Summit or the Banking Innovation Forum) or a non-CZ brand. Treated as unresolved, not as a discovered source.",
+      "why_it_matters": "Prevents a fabricated source entry and flags that the cell brief's event list needs correcting so downstream collection is not scheduled against a non-existent event.",
+      "severity": "medium",
+      "language": "cs",
+      "source_class": "direct",
+      "topics": [
+        "leadership moves",
+        "organization changes"
+      ]
+    },
+    {
+      "finding_type": "no_dedicated_event_series_found",
+      "description": "No award or conference series branded exactly 'Bankovní inovace' was located in CZ. The cs query surfaced adjacent but differently-named things: VŠE's 'Rozvoj a inovace finančních produktů', 'Banking Innovation Forum & Expo', Economia's 'Inovace v platebních kartách' and Měšec's 'FIN (R)Evoluce'.",
+      "result_summary": "The concept exists in CZ but is distributed across several separately-branded events rather than one 'Bankovní inovace' brand.",
+      "why_it_matters": "Collection must target the four real event brands rather than a single assumed one, or the innovation/digital-leadership title layer will be missed entirely.",
+      "severity": "medium",
+      "language": "cs",
+      "source_class": "direct",
+      "topics": [
+        "leadership moves",
+        "organization changes"
+      ]
+    },
+    {
+      "finding_type": "archive_absence_hypothesis",
+      "description": "The Payments Summit (ČBA) page fetched showed no visible archive of past editions — only the current 2026 speakers/programme. Speakers are also added incrementally ('additional speakers will be announced').",
+      "result_summary": "Historical speaker rosters for this high-value ČBA event may not be retrievable from the live site. Recorded as a hypothesis from a single fetch, not a verdict.",
+      "why_it_matters": "Title-drift detection needs two editions. If no on-site archive exists, the collector must snapshot every crawl itself and backfill from the Wayback Machine, otherwise the first year yields no signal at all.",
+      "severity": "high",
+      "language": "en",
+      "source_class": "direct",
+      "topics": [
+        "leadership moves",
+        "organization changes"
+      ]
+    },
+    {
+      "finding_type": "jury_composition_undocumented",
+      "description": "For Zlatý měšec (Měšec.cz), cs search did not surface a page naming jury members, unlike Zlatá koruna and Banka roku. Only voting and results pages were found.",
+      "result_summary": "Zlatý měšec is retained as a low-priority indirect source; its jury roster is unconfirmed rather than confirmed-absent.",
+      "why_it_matters": "Avoids over-scoring an award as a personnel census when only its results are public.",
+      "severity": "low",
+      "language": "cs",
+      "source_class": "indirect",
+      "topics": [
+        "organization changes"
+      ]
+    },
+    {
+      "finding_type": "possible_dormancy",
+      "description": "cashlessfuture.cz surfaced with 2022 as the most recent identifiable edition; no 2023-2026 edition was found in cs or en search.",
+      "result_summary": "Possibly dormant. Not recorded as dead — no fetch failure was observed and absence from search is weak evidence.",
+      "why_it_matters": "Scheduling recurring collection against a dormant event wastes crawl budget; but its archived roster still has back-dating value.",
+      "severity": "low",
+      "language": "cs",
+      "source_class": "indirect",
+      "topics": [
+        "organization changes"
+      ]
+    },
+    {
+      "finding_type": "no_hiring_signal_in_cell",
+      "description": "Across all cs and en queries in this cell, no event or award source was found that publishes job vacancies or hiring volume. Speaker/jury rosters reveal incumbency and role changes only.",
+      "result_summary": "The 'jobs'/'hiring' topics of the run scope are structurally under-served by the events-and-awards cell.",
+      "why_it_matters": "Signals to the run owner that hiring-volume topics must be carried by other cells (job boards, ATS pages, LinkedIn) — this cell should be scored on leadership-move and org-change detection only.",
+      "severity": "medium",
+      "language": "cs",
+      "source_class": "direct",
+      "topics": [
+        "jobs",
+        "hiring"
+      ]
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "gap_type": "temporal_archive",
+      "description": "Only Zlatá koruna (/soutez/{YEAR} back to ~2009) and ČNB were confirmed to expose a deep, systematically addressable past-edition archive. For most conference sites in this cell the archive depth was not established.",
+      "recommended_action": "For every event source, enable self-snapshotting from the first crawl and run a one-off Wayback Machine backfill of /program, /recnici, /prednasejici, /speakers paths so a two-edition baseline exists immediately rather than in twelve months.",
+      "coverage_dimension": "time_series",
+      "severity": "high",
+      "source_class": "direct",
+      "topics": [
+        "leadership moves",
+        "organization changes"
+      ],
+      "language": "cs"
+    },
+    {
+      "gap_type": "regional",
+      "description": "Almost every source found is Prague-centred, with Brno appearing only via FinTech Roadmap's earlier editions. No Ostrava/Brno/Plzeň regional banking or payments event was identified.",
+      "recommended_action": "Run targeted cs queries such as 'konference bankovnictví Brno', 'fintech konference Ostrava', 'regionální finanční konference' and check regional venue and chamber-of-commerce calendars.",
+      "coverage_dimension": "geography",
+      "severity": "medium",
+      "source_class": "direct",
+      "topics": [
+        "organization changes",
+        "leadership moves"
+      ],
+      "language": "cs"
+    },
+    {
+      "gap_type": "sector_segment",
+      "description": "Card schemes, acquirers, PSPs and POS/terminal vendors are only indirectly represented (via Mastercard at Banka roku and Economia's card conference). No dedicated CZ acquiring/merchant-services event was found.",
+      "recommended_action": "Query cs terms 'akceptace platebních karet konference', 'platební terminály konference', 'akvizice obchodníků', and check the ČBA and Sdružení pro bankovní karty (SBK) event calendars specifically.",
+      "coverage_dimension": "sector",
+      "severity": "high",
+      "source_class": "direct",
+      "topics": [
+        "organization changes",
+        "leadership moves"
+      ],
+      "language": "cs"
+    },
+    {
+      "gap_type": "actor_map_incomplete",
+      "description": "The glossary built during this run covers award/jury and speaker terminology (porota, odborná porota, přednášející, řečníci, panelisté, medailonky diskutujících, ročník, program) but the title-normalisation vocabulary for CZ banking roles was only partially exercised.",
+      "recommended_action": "Build an explicit cs->en title mapping (generální ředitel/CEO, člen představenstva/board member, ředitel divize, výkonný ředitel, hlavní ekonom, produktový ředitel, CIO/ředitel IT) before diffing rosters, otherwise cosmetic title translations will register as false promotions.",
+      "coverage_dimension": "language",
+      "severity": "high",
+      "source_class": "direct",
+      "topics": [
+        "leadership moves",
+        "organization changes"
+      ],
+      "language": "cs"
+    },
+    {
+      "gap_type": "source_type",
+      "description": "University-industry coverage rests almost entirely on VŠE Praha. Other CZ finance faculties (Masarykova univerzita ESF, VŠB-TU Ostrava, Univerzita Karlova IES) were not searched for industry panels or career-day rosters.",
+      "recommended_action": "Query each faculty's aktuality feed in cs for 'panelová diskuse banka', 'kariérní den', 'přednáška z praxe' and add any recurring industry panels to the collection set.",
+      "coverage_dimension": "source_diversity",
+      "severity": "medium",
+      "source_class": "direct",
+      "topics": [
+        "leadership moves",
+        "hiring"
+      ],
+      "language": "cs"
+    },
+    {
+      "gap_type": "verification",
+      "description": "No URL in this slice has been verified for liveness; several were derived from search-result summaries rather than direct fetch. Only zlatakoruna.info and paymentsummit.cz were fetched directly during this run.",
+      "recommended_action": "Run the deterministic liveness pass over all example_urls before scheduling, and treat any 403/timeout as bot-defence rather than death.",
+      "coverage_dimension": "reliability",
+      "severity": "medium",
+      "source_class": "pointer",
+      "topics": [
+        "organization changes"
+      ],
+      "language": "cs"
+    }
+  ],
+  "brief": "The CZ events-and-awards layer is unusually rich for role-census purposes: Zlatá koruna's Finanční akademie publishes a named ~400-person roster with employers every year under a stable /soutez/{YEAR} archive going back to roughly 2009, and Mastercard Banka roku publishes a bio'd expert jury plus a CEO-level conference panel each autumn — together these give a free, self-updating, deeply archived time series of who holds which seat. The conference layer splits cleanly by role class: ČBA's Payments Summit and CGI's Trendy v platebním styku expose the payments-operations and transaction-banking layer, IT ve finančnictví the CIO/CISO layer, FinTech Roadmap the founder/innovation layer, VŠE's Rozvoj a inovace finančních produktů and ČNB's speech archive the board and regulator layer, and Blue Events' Retail Summit the merchant/acceptance side. The main structural weaknesses are archive depth outside Zlatá koruna and ČNB (Payments Summit showed no visible past-edition archive on the page fetched, so self-snapshotting plus a Wayback backfill is required to get a two-edition baseline), a strong Prague bias, and no dedicated CZ acquiring/POS-vendor event. Note that two names in the cell brief — 'Banking Summit' and 'Bankovní inovace' — did not resolve to real standalone CZ event brands and are logged as negative findings rather than invented sources; note also that this cell yields incumbency and title-drift signal but essentially no vacancy or hiring-volume signal, which must come from other cells."
+}

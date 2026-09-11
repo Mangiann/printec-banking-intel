@@ -1,0 +1,15 @@
+# Auto-generated: Montenegro / A5 Early Intent & Jobs / sector=both.
+country: ME
+country_name: Montenegro
+sector: both
+workstreams: [A5]
+topics: [jobs, hiring, leadership moves, organization changes]
+languages: [sr, en]
+routine_id: R2
+routine_name: source_discovery_scout
+routine_version: 0.3.0
+prompt_path: routines/source_discovery_scout/routine_prompt.md
+url_verification:
+  enabled: false
+dedupe:
+  enabled: true

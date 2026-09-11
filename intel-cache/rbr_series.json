@@ -1,0 +1,9231 @@
+{
+ "generated": "2026-06-23",
+ "source": "RBR ATM Market & Forecasts to 2028 (deep-read, internal — do not redistribute)",
+ "countries": {
+  "CZ": {
+   "country": "Czechia",
+   "doc": "rbr-cee-atm-2028",
+   "series": [
+    {
+     "metric": "ATM installed base (total)",
+     "unit": "ATMs (units)",
+     "page": 156,
+     "note": "Figure 6.6 master table, 1995-2028; actual through 2022, 2023-2028 forecast. Matches Fig 4.1 (2018-22) and Fig 6.1 forecast.",
+     "points": [
+      {
+       "year": 1995,
+       "value": 982
+      },
+      {
+       "year": 1996,
+       "value": 1185
+      },
+      {
+       "year": 1997,
+       "value": 1339
+      },
+      {
+       "year": 1998,
+       "value": 1463
+      },
+      {
+       "year": 1999,
+       "value": 1499
+      },
+      {
+       "year": 2000,
+       "value": 1602
+      },
+      {
+       "year": 2001,
+       "value": 1923
+      },
+      {
+       "year": 2002,
+       "value": 2254
+      },
+      {
+       "year": 2003,
+       "value": 2669
+      },
+      {
+       "year": 2004,
+       "value": 2736
+      },
+      {
+       "year": 2005,
+       "value": 2903
+      },
+      {
+       "year": 2006,
+       "value": 3197
+      },
+      {
+       "year": 2007,
+       "value": 3429
+      },
+      {
+       "year": 2008,
+       "value": 3643
+      },
+      {
+       "year": 2009,
+       "value": 3723
+      },
+      {
+       "year": 2010,
+       "value": 3868
+      },
+      {
+       "year": 2011,
+       "value": 4082
+      },
+      {
+       "year": 2012,
+       "value": 4442
+      },
+      {
+       "year": 2013,
+       "value": 4575
+      },
+      {
+       "year": 2014,
+       "value": 4561
+      },
+      {
+       "year": 2015,
+       "value": 4656
+      },
+      {
+       "year": 2016,
+       "value": 4858
+      },
+      {
+       "year": 2017,
+       "value": 5223
+      },
+      {
+       "year": 2018,
+       "value": 5475
+      },
+      {
+       "year": 2019,
+       "value": 5703
+      },
+      {
+       "year": 2020,
+       "value": 5644
+      },
+      {
+       "year": 2021,
+       "value": 5664
+      },
+      {
+       "year": 2022,
+       "value": 5646
+      },
+      {
+       "year": 2023,
+       "value": 5680,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 5730,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 5790,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 5860,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 5940,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 6000,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "ATMs with automated note deposit functionality",
+     "unit": "ATMs (units)",
+     "page": 148,
+     "note": "Figure 4.4, end-2022 only; equals 35% of installed base, up from 33% in 2021. SATs with deposit = 22 (separate).",
+     "points": [
+      {
+       "year": 2022,
+       "value": 1958
+      }
+     ]
+    },
+    {
+     "metric": "ATMs with note recycling functionality (subset of automated note deposit)",
+     "unit": "ATMs (units)",
+     "page": 148,
+     "note": "Figure 4.4, end-2022; 73% of automated-deposit ATMs also recycled banknotes (up from 69%).",
+     "points": [
+      {
+       "year": 2022,
+       "value": 1423
+      }
+     ]
+    },
+    {
+     "metric": "Stand-alone deposit terminals (SATs)",
+     "unit": "terminals (units)",
+     "page": 148,
+     "note": "Deployed only by CS; fell from 43 (2021) to 22 (2022). Fig 4.4 shows 22 SATs with deposit functionality at end-2022.",
+     "points": [
+      {
+       "year": 2021,
+       "value": 43
+      },
+      {
+       "year": 2022,
+       "value": 22
+      }
+     ]
+    },
+    {
+     "metric": "Bank branches (total)",
+     "unit": "branches (units)",
+     "page": 139,
+     "note": "Figure 2.1 total all banks; fell 91 (-6%) in 2022, seventh consecutive year of decline. 2022 = 1,336.",
+     "points": [
+      {
+       "year": 2021,
+       "value": 1427
+      },
+      {
+       "year": 2022,
+       "value": 1336
+      }
+     ]
+    },
+    {
+     "metric": "Cash withdrawals (annual number/volume)",
+     "unit": "million withdrawals",
+     "page": 156,
+     "note": "Figure 6.6 / Fig 4.5 (2018-22) / Fig 6.4 forecast. Actual through 2022; 2023-2028 forecast declining ~3%/yr.",
+     "points": [
+      {
+       "year": 1995,
+       "value": 35
+      },
+      {
+       "year": 1996,
+       "value": 48
+      },
+      {
+       "year": 1997,
+       "value": 55
+      },
+      {
+       "year": 1998,
+       "value": 59
+      },
+      {
+       "year": 1999,
+       "value": 70
+      },
+      {
+       "year": 2000,
+       "value": 86
+      },
+      {
+       "year": 2001,
+       "value": 96
+      },
+      {
+       "year": 2002,
+       "value": 117
+      },
+      {
+       "year": 2003,
+       "value": 117
+      },
+      {
+       "year": 2004,
+       "value": 127
+      },
+      {
+       "year": 2005,
+       "value": 139
+      },
+      {
+       "year": 2006,
+       "value": 148
+      },
+      {
+       "year": 2007,
+       "value": 153
+      },
+      {
+       "year": 2008,
+       "value": 170
+      },
+      {
+       "year": 2009,
+       "value": 175
+      },
+      {
+       "year": 2010,
+       "value": 175
+      },
+      {
+       "year": 2011,
+       "value": 178
+      },
+      {
+       "year": 2012,
+       "value": 181
+      },
+      {
+       "year": 2013,
+       "value": 183
+      },
+      {
+       "year": 2014,
+       "value": 185
+      },
+      {
+       "year": 2015,
+       "value": 188
+      },
+      {
+       "year": 2016,
+       "value": 190
+      },
+      {
+       "year": 2017,
+       "value": 188
+      },
+      {
+       "year": 2018,
+       "value": 182
+      },
+      {
+       "year": 2019,
+       "value": 177
+      },
+      {
+       "year": 2020,
+       "value": 142
+      },
+      {
+       "year": 2021,
+       "value": 141
+      },
+      {
+       "year": 2022,
+       "value": 148
+      },
+      {
+       "year": 2023,
+       "value": 144,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 144,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 140,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 136,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 132,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 128,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Cash withdrawals - average number per ATM per month",
+     "unit": "withdrawals per ATM per month",
+     "page": 156,
+     "note": "Figure 6.6 master table; actual through 2022, forecast 2023-2028 (falls to 1,787 by 2028).",
+     "points": [
+      {
+       "year": 2018,
+       "value": 2843
+      },
+      {
+       "year": 2019,
+       "value": 2639
+      },
+      {
+       "year": 2020,
+       "value": 2086
+      },
+      {
+       "year": 2021,
+       "value": 2083
+      },
+      {
+       "year": 2022,
+       "value": 2187
+      },
+      {
+       "year": 2023,
+       "value": 2148,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 2103,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 2025,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 1946,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 1864,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 1787,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Cash withdrawals - annual value (local currency)",
+     "unit": "CZK billion",
+     "page": 150,
+     "note": "Figure 4.6 (2018-22 actual). Forecast: reaches CZK 885bn by 2028 (p.156, at 2022 FX), shown as provisional.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 702
+      },
+      {
+       "year": 2019,
+       "value": 712
+      },
+      {
+       "year": 2020,
+       "value": 653
+      },
+      {
+       "year": 2021,
+       "value": 699
+      },
+      {
+       "year": 2022,
+       "value": 761
+      },
+      {
+       "year": 2028,
+       "value": 885,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Cash withdrawals - annual value (USD)",
+     "unit": "USD billion",
+     "page": 150,
+     "note": "Figure 4.6 (2018-22). Fig 3.10 CEE forecast gives CZ value 36,38,38,38,38,38 (USD bn) 2023-2028; p.156 confirms USD 38bn by 2028.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 32
+      },
+      {
+       "year": 2019,
+       "value": 31
+      },
+      {
+       "year": 2020,
+       "value": 28
+      },
+      {
+       "year": 2021,
+       "value": 32
+      },
+      {
+       "year": 2022,
+       "value": 33
+      },
+      {
+       "year": 2023,
+       "value": 36,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 38,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 38,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 38,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 38,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 38,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Cash withdrawals - average value per withdrawal (local currency)",
+     "unit": "CZK per withdrawal",
+     "page": 150,
+     "note": "Figure 4.6 (2018-22 actual). Forecast: reaches CZK 6,918 by 2028 (p.156, at 2022 FX).",
+     "points": [
+      {
+       "year": 2018,
+       "value": 3847
+      },
+      {
+       "year": 2019,
+       "value": 4023
+      },
+      {
+       "year": 2020,
+       "value": 4596
+      },
+      {
+       "year": 2021,
+       "value": 4943
+      },
+      {
+       "year": 2022,
+       "value": 5131
+      },
+      {
+       "year": 2028,
+       "value": 6918,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Cash withdrawals - average value per withdrawal (USD)",
+     "unit": "USD per withdrawal",
+     "page": 150,
+     "note": "Figure 4.6 (2018-22). Forecast USD 296 by 2028 (p.156, at 2022 FX).",
+     "points": [
+      {
+       "year": 2018,
+       "value": 178
+      },
+      {
+       "year": 2019,
+       "value": 175
+      },
+      {
+       "year": 2020,
+       "value": 198
+      },
+      {
+       "year": 2021,
+       "value": 228
+      },
+      {
+       "year": 2022,
+       "value": 220
+      },
+      {
+       "year": 2028,
+       "value": 296,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "ATMs deployed by IADs (independent ATM deployers)",
+     "unit": "ATMs (units)",
+     "page": 137,
+     "note": "Fig 1.1 key metrics 2022: 953 IAD ATMs (rank 2 in CEE), = 17% of installed base; four IADs present (p.178 corroborates 953 at end-2022).",
+     "points": [
+      {
+       "year": 2022,
+       "value": 953
+      }
+     ]
+    },
+    {
+     "metric": "ATM shipments (forecast)",
+     "unit": "ATMs (units)",
+     "page": 154,
+     "note": "Figure 6.3 forecast 2023-2028 (all provisional). Note: country chapter p.154 lists 2025 as 160; CEE table Fig 3.4 (p.47) lists 2025 as 550 - the 550 is consistent with the 358+450 replacement/new split, so 160 appears to be an OCR/transcription anomaly in the chapter table.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 450,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 460,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 550,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 600,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 600,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 520,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "ATM shipments - new installations (forecast)",
+     "unit": "ATMs (units)",
+     "page": 154,
+     "note": "Figure 6.3 'of which new installations', 2023-2028 forecast.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 92,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 90,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 100,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 100,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 100,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 80,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "ATM shipments - replacements (forecast)",
+     "unit": "ATMs (units)",
+     "page": 154,
+     "note": "Figure 6.3 'of which replacements', 2023-2028 forecast.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 358,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 370,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 450,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 500,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 500,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 440,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "ATMs by location - off-site",
+     "unit": "ATMs (units)",
+     "page": 146,
+     "note": "Figure 4.3, 2018-2022 actual; off-site = 68% of base in 2022.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 3363
+      },
+      {
+       "year": 2019,
+       "value": 3745
+      },
+      {
+       "year": 2020,
+       "value": 3748
+      },
+      {
+       "year": 2021,
+       "value": 3827
+      },
+      {
+       "year": 2022,
+       "value": 3866
+      }
+     ]
+    },
+    {
+     "metric": "ATMs by location - lobby",
+     "unit": "ATMs (units)",
+     "page": 146,
+     "note": "Figure 4.3, 2018-2022 actual; lobby = 16% of base in 2022.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 780
+      },
+      {
+       "year": 2019,
+       "value": 753
+      },
+      {
+       "year": 2020,
+       "value": 868
+      },
+      {
+       "year": 2021,
+       "value": 867
+      },
+      {
+       "year": 2022,
+       "value": 885
+      }
+     ]
+    },
+    {
+     "metric": "ATMs by location - through-the-wall (TTW)",
+     "unit": "ATMs (units)",
+     "page": 146,
+     "note": "Figure 4.3, 2018-2022 actual; TTW = 14% of base in 2022.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 1200
+      },
+      {
+       "year": 2019,
+       "value": 1087
+      },
+      {
+       "year": 2020,
+       "value": 914
+      },
+      {
+       "year": 2021,
+       "value": 867
+      },
+      {
+       "year": 2022,
+       "value": 794
+      }
+     ]
+    },
+    {
+     "metric": "ATMs by location - hall",
+     "unit": "ATMs (units)",
+     "page": 146,
+     "note": "Figure 4.3, 2018-2022 actual; hall = ~2% of base in 2022.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 130
+      },
+      {
+       "year": 2019,
+       "value": 114
+      },
+      {
+       "year": 2020,
+       "value": 110
+      },
+      {
+       "year": 2021,
+       "value": 98
+      },
+      {
+       "year": 2022,
+       "value": 96
+      }
+     ]
+    },
+    {
+     "metric": "ATMs by location - drive-through",
+     "unit": "ATMs (units)",
+     "page": 146,
+     "note": "Figure 4.3, 2018-2022 actual; all five 2022 units deployed by KB at fuel stations.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 2
+      },
+      {
+       "year": 2019,
+       "value": 4
+      },
+      {
+       "year": 2020,
+       "value": 4
+      },
+      {
+       "year": 2021,
+       "value": 5
+      },
+      {
+       "year": 2022,
+       "value": 5
+      }
+     ]
+    },
+    {
+     "metric": "ATMs per million people (density)",
+     "unit": "ATMs per million people",
+     "page": 153,
+     "note": "2022 actual (538, Fig 1.1/4.2); forecast 2023-2028 from Fig 6.1 rising to 572 by 2028.",
+     "points": [
+      {
+       "year": 2022,
+       "value": 538
+      },
+      {
+       "year": 2023,
+       "value": 541,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 546,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 552,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 558,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 566,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 572,
+       "provisional": true
+      }
+     ]
+    }
+   ]
+  },
+  "SK": {
+   "country": "Slovakia",
+   "doc": "rbr-cee-atm-2028",
+   "series": [
+    {
+     "metric": "ATM installed base (total)",
+     "unit": "ATMs",
+     "page": 360,
+     "note": "Figure 4.1 historical count table; 2022 end-year base 3,183, CAGR 2018-22 1.7%. Matches deployer total (Fig 3.1) and manufacturer total (Fig 5.1).",
+     "points": [
+      {
+       "year": 2018,
+       "value": 2981
+      },
+      {
+       "year": 2019,
+       "value": 3090
+      },
+      {
+       "year": 2020,
+       "value": 3221
+      },
+      {
+       "year": 2021,
+       "value": 3203
+      },
+      {
+       "year": 2022,
+       "value": 3183
+      }
+     ]
+    },
+    {
+     "metric": "ATM installed base (total) - forecast",
+     "unit": "ATMs",
+     "page": 367,
+     "note": "Figure 6.1 forecast installed base 2023-2028; reaches 3,325 by end-2028 (+4% on 2022). All forecast/provisional.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 3200,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 3225,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 3250,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 3275,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 3300,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 3325,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "IAD-deployed ATMs (of which IADs)",
+     "unit": "ATMs",
+     "page": 355,
+     "note": "Figure 1.1 Key metrics 2022: ATMs of which IADs = 371 (rank 7). ATM Point + Euronet = ~12% of base; IADs forecast to add ~200 ATMs by 2028 (p.367).",
+     "points": [
+      {
+       "year": 2022,
+       "value": 371
+      }
+     ]
+    },
+    {
+     "metric": "ATMs with automated note deposit functionality",
+     "unit": "ATMs",
+     "page": 363,
+     "note": "Figure 4.4: 647 ATMs with automated note deposit at end-2022 (= 20% of base, up from 19% in 2021); cheque deposit 0. Excludes 14 SATs.",
+     "points": [
+      {
+       "year": 2022,
+       "value": 647
+      }
+     ]
+    },
+    {
+     "metric": "Note-recycling ATMs (cash recyclers)",
+     "unit": "ATMs",
+     "page": 363,
+     "note": "Figure 4.4: of the 647 automated-note-deposit ATMs, 512 are note-recycling (79% of deposit-capable ATMs) at end-2022.",
+     "points": [
+      {
+       "year": 2022,
+       "value": 512
+      }
+     ]
+    },
+    {
+     "metric": "Bank branches (total)",
+     "unit": "branches",
+     "page": 356,
+     "note": "Figure 2.1 branches-by-bank totals: end-2021 1,043 -> end-2022 989 (-54, -5%). Forecast (p.367) to fall ~7% to ~925 by end-2028.",
+     "points": [
+      {
+       "year": 2021,
+       "value": 1043
+      },
+      {
+       "year": 2022,
+       "value": 989
+      },
+      {
+       "year": 2028,
+       "value": 925,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Cash withdrawals - annual number",
+     "unit": "million withdrawals",
+     "page": 364,
+     "note": "Figure 4.5 historical annual number; +13% in 2022 to 81m, CAGR 2018-22 -4.4%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 98
+      },
+      {
+       "year": 2019,
+       "value": 94
+      },
+      {
+       "year": 2020,
+       "value": 75
+      },
+      {
+       "year": 2021,
+       "value": 72
+      },
+      {
+       "year": 2022,
+       "value": 81
+      }
+     ]
+    },
+    {
+     "metric": "Cash withdrawals - annual number (forecast)",
+     "unit": "million withdrawals",
+     "page": 369,
+     "note": "Figure 6.4 narrative: number of withdrawals forecast to decline ~4% p.a., falling to 63m by the outer forecast years (2028). Only the 2028 endpoint is numerically stated.",
+     "points": [
+      {
+       "year": 2028,
+       "value": 63,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Average cash withdrawals per ATM per month",
+     "unit": "withdrawals per ATM per month",
+     "page": 364,
+     "note": "Figure 4.5 average; recovered to 2,110 in 2022, CAGR 2018-22 -6.9%. Forecast to fall to ~1,830 by 2028 (p.369 narrative).",
+     "points": [
+      {
+       "year": 2018,
+       "value": 2813
+      },
+      {
+       "year": 2019,
+       "value": 2383
+      },
+      {
+       "year": 2020,
+       "value": 1983
+      },
+      {
+       "year": 2021,
+       "value": 1863
+      },
+      {
+       "year": 2022,
+       "value": 2110
+      },
+      {
+       "year": 2028,
+       "value": 1830,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Cash withdrawals - annual value (EUR)",
+     "unit": "EUR billion",
+     "page": 365,
+     "note": "Figure 4.6 annual value EUR bn, CAGR 2018-22 8.4%; rounded to whole EUR bn in the table.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 15
+      },
+      {
+       "year": 2019,
+       "value": 16
+      },
+      {
+       "year": 2020,
+       "value": 14
+      },
+      {
+       "year": 2021,
+       "value": 16
+      },
+      {
+       "year": 2022,
+       "value": 20
+      }
+     ]
+    },
+    {
+     "metric": "Cash withdrawals - annual value (USD)",
+     "unit": "USD billion",
+     "page": 365,
+     "note": "Figure 4.6 annual value USD bn, CAGR 2018-22 4.7%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 18
+      },
+      {
+       "year": 2019,
+       "value": 17
+      },
+      {
+       "year": 2020,
+       "value": 16
+      },
+      {
+       "year": 2021,
+       "value": 19
+      },
+      {
+       "year": 2022,
+       "value": 21
+      }
+     ]
+    },
+    {
+     "metric": "Cash withdrawals - annual value (EUR) forecast",
+     "unit": "EUR billion",
+     "page": 370,
+     "note": "Figure 6.5 narrative: total withdrawal value forecast to reach EUR 26bn (USD 28bn) by 2028. Only 2028 endpoint numerically stated.",
+     "points": [
+      {
+       "year": 2028,
+       "value": 26,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Average value per cash withdrawal (EUR)",
+     "unit": "EUR per withdrawal",
+     "page": 365,
+     "note": "Figure 4.6 average value per withdrawal EUR; 2022 = EUR 252 (per narrative, +13%). Forecast to EUR 361 by 2028 (p.370). Note: the per-withdrawal table row reads 5.1/5.1/4.6/5.0/6.4 (EUR) for 2018-22 but narrative gives the EUR 252 / EUR 361 average-value figures; reproduced both - 252 (2022) and 361 (2028) are the explicitly stated average-withdrawal-value numbers.",
+     "points": [
+      {
+       "year": 2022,
+       "value": 252
+      },
+      {
+       "year": 2028,
+       "value": 361,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Average value of cash withdrawals per ATM (EUR '000)",
+     "unit": "EUR thousand per ATM",
+     "page": 365,
+     "note": "Figure 4.6 average value per ATM, EUR '000; CAGR 2018-22 13.6%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 157
+      },
+      {
+       "year": 2019,
+       "value": 165
+      },
+      {
+       "year": 2020,
+       "value": 192
+      },
+      {
+       "year": 2021,
+       "value": 219
+      },
+      {
+       "year": 2022,
+       "value": 252
+      }
+     ]
+    },
+    {
+     "metric": "Cash withdrawal value as proportion of GDP",
+     "unit": "% of GDP",
+     "page": 365,
+     "note": "Figure 4.6; 18.9% of national GDP in 2022.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 16.4
+      },
+      {
+       "year": 2019,
+       "value": 16.4
+      },
+      {
+       "year": 2020,
+       "value": 15.4
+      },
+      {
+       "year": 2021,
+       "value": 16.3
+      },
+      {
+       "year": 2022,
+       "value": 18.9
+      }
+     ]
+    },
+    {
+     "metric": "ATM shipments (forecast)",
+     "unit": "ATMs shipped per year",
+     "page": 368,
+     "note": "Figure 6.3 forecast shipments 2023-2028, CAGR -1.7%; replacements ~89% of shipments throughout; ~2,100 total over period.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 360,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 360,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 360,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 360,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 320,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 330,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "ATMs per million people",
+     "unit": "ATMs per million people",
+     "page": 367,
+     "note": "Figure 1.1/4.2 give 2022 = 564 (down from 588 in 2021). Figure 6.1 forecast row 2023-2028 rising to 589.",
+     "points": [
+      {
+       "year": 2021,
+       "value": 588
+      },
+      {
+       "year": 2022,
+       "value": 564
+      },
+      {
+       "year": 2023,
+       "value": 567,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 571,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 576,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 580,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 585,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 589,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "ATMs by location: Off-site",
+     "unit": "ATMs",
+     "page": 362,
+     "note": "Figure 4.3 location counts; off-site = 68% of base at end-2022, CAGR 2018-22 3.6%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 1893
+      },
+      {
+       "year": 2019,
+       "value": 1990
+      },
+      {
+       "year": 2020,
+       "value": 2144
+      },
+      {
+       "year": 2021,
+       "value": 2150
+      },
+      {
+       "year": 2022,
+       "value": 2179
+      }
+     ]
+    },
+    {
+     "metric": "ATMs by location: Through-the-wall",
+     "unit": "ATMs",
+     "page": 362,
+     "note": "Figure 4.3 location counts; TTW = 22% of base at end-2022, CAGR 2018-22 -5.4%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 888
+      },
+      {
+       "year": 2019,
+       "value": 805
+      },
+      {
+       "year": 2020,
+       "value": 773
+      },
+      {
+       "year": 2021,
+       "value": 760
+      },
+      {
+       "year": 2022,
+       "value": 712
+      }
+     ]
+    }
+   ]
+  },
+  "HU": {
+   "country": "Hungary",
+   "doc": "rbr-cee-atm-2028",
+   "series": [
+    {
+     "metric": "ATM installed base (total), historical",
+     "unit": "ATMs",
+     "page": 169,
+     "note": "Fig 4.1 Number and growth of ATMs 2018-2022; CAGR -1.4%. Same end-2022 value (4,780) appears in Fig 1.1 (p.164) and Fig 3.1 deployer total (p.168).",
+     "points": [
+      {
+       "year": 2018,
+       "value": 5067
+      },
+      {
+       "year": 2019,
+       "value": 5095
+      },
+      {
+       "year": 2020,
+       "value": 5004
+      },
+      {
+       "year": 2021,
+       "value": 4919
+      },
+      {
+       "year": 2022,
+       "value": 4780
+      }
+     ]
+    },
+    {
+     "metric": "ATM installed base (total), forecast",
+     "unit": "ATMs",
+     "page": 175,
+     "note": "Fig 6.1 Forecast ATM installed base 2023-2028; CAGR 0.8%. 5,100 by end-2028 (+7% vs 2022). All provisional forecast years.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 4900,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 4950,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 5000,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 5050,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 5075,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 5100,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "ATM installed base, long historical series (Fig 6.6 appendix)",
+     "unit": "ATMs",
+     "page": 179,
+     "note": "Fig 6.6 full annual 1995-2028; some interior cells faint per source note, and 2020-2022 appendix values diverge slightly from Fig 4.1 (e.g. 2020=4,919 here vs 5,004 in Fig 4.1; 2021/2022 both 4,900). 2023-2028 forecast marked provisional.",
+     "points": [
+      {
+       "year": 1995,
+       "value": 665
+      },
+      {
+       "year": 1996,
+       "value": 1089
+      },
+      {
+       "year": 1997,
+       "value": 1486
+      },
+      {
+       "year": 1998,
+       "value": 2070
+      },
+      {
+       "year": 1999,
+       "value": 2431
+      },
+      {
+       "year": 2000,
+       "value": 2476
+      },
+      {
+       "year": 2001,
+       "value": 2544
+      },
+      {
+       "year": 2002,
+       "value": 2742
+      },
+      {
+       "year": 2003,
+       "value": 2975
+      },
+      {
+       "year": 2004,
+       "value": 3193
+      },
+      {
+       "year": 2005,
+       "value": 3545
+      },
+      {
+       "year": 2006,
+       "value": 3888
+      },
+      {
+       "year": 2007,
+       "value": 4218
+      },
+      {
+       "year": 2008,
+       "value": 4647
+      },
+      {
+       "year": 2009,
+       "value": 4754
+      },
+      {
+       "year": 2010,
+       "value": 4827
+      },
+      {
+       "year": 2011,
+       "value": 4927
+      },
+      {
+       "year": 2012,
+       "value": 4785
+      },
+      {
+       "year": 2013,
+       "value": 4830
+      },
+      {
+       "year": 2014,
+       "value": 4880
+      },
+      {
+       "year": 2015,
+       "value": 4971
+      },
+      {
+       "year": 2016,
+       "value": 4924
+      },
+      {
+       "year": 2017,
+       "value": 5107
+      },
+      {
+       "year": 2018,
+       "value": 5067
+      },
+      {
+       "year": 2019,
+       "value": 5095
+      },
+      {
+       "year": 2020,
+       "value": 4919
+      },
+      {
+       "year": 2021,
+       "value": 4900
+      },
+      {
+       "year": 2022,
+       "value": 4900
+      },
+      {
+       "year": 2023,
+       "value": 4900,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 4950,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 5000,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 5050,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 5075,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 5100,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "IAD-deployed ATMs (subset of installed base), end-2022",
+     "unit": "ATMs",
+     "page": 164,
+     "note": "Fig 1.1 key metrics: 762 IAD ATMs at end-2022 (16% of base), rank 3 in CEE. Also stated 762 IAD ATMs at end-2022 on p.179 region context.",
+     "points": [
+      {
+       "year": 2022,
+       "value": 762
+      }
+     ]
+    },
+    {
+     "metric": "ATMs with automated note deposit functionality, 2022",
+     "unit": "ATMs",
+     "page": 171,
+     "note": "Fig 4.4: automated note deposit ATMs = 1,012 (21% of base); text says note deposit offered at 21% of ATMs, unchanged from 2021. SATs = 0.",
+     "points": [
+      {
+       "year": 2022,
+       "value": 1012
+      }
+     ]
+    },
+    {
+     "metric": "Cash recycling ATMs (note recyclers), 2022",
+     "unit": "ATMs",
+     "page": 171,
+     "note": "Fig 4.4: of the 1,012 automated note-deposit ATMs, 316 are note recyclers. (Region p.181 notes ~99% of Hungary's automated note-deposit ATMs are recyclers; figure table itself gives 316.)",
+     "points": [
+      {
+       "year": 2022,
+       "value": 316
+      }
+     ]
+    },
+    {
+     "metric": "Bank branches (total), historical",
+     "unit": "branches",
+     "page": 165,
+     "note": "Fig 2.1 branches-by-bank totals; -2% in 2022. End-2022 total (1,510) also in Fig 1.1 (p.164). Sources MNB/Hungarian banks.",
+     "points": [
+      {
+       "year": 2021,
+       "value": 1826
+      },
+      {
+       "year": 2022,
+       "value": 1510
+      }
+     ]
+    },
+    {
+     "metric": "ATMs by location: Off-site, 2018-2022",
+     "unit": "ATMs",
+     "page": 170,
+     "note": "Fig 4.3 location count table; off-site rose 55% to 64% of base; CAGR +2.4%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 2777
+      },
+      {
+       "year": 2019,
+       "value": 2870
+      },
+      {
+       "year": 2020,
+       "value": 2976
+      },
+      {
+       "year": 2021,
+       "value": 3034
+      },
+      {
+       "year": 2022,
+       "value": 3050
+      }
+     ]
+    },
+    {
+     "metric": "ATMs by location: Through-the-wall (TTW), 2018-2022",
+     "unit": "ATMs",
+     "page": 170,
+     "note": "Fig 4.3 location count table; CAGR -12.1%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 1171
+      },
+      {
+       "year": 2019,
+       "value": 1117
+      },
+      {
+       "year": 2020,
+       "value": 954
+      },
+      {
+       "year": 2021,
+       "value": 778
+      },
+      {
+       "year": 2022,
+       "value": 700
+      }
+     ]
+    },
+    {
+     "metric": "ATMs by location: Lobby, 2018-2022",
+     "unit": "ATMs",
+     "page": 170,
+     "note": "Fig 4.3 location count table; CAGR -1.0%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 1040
+      },
+      {
+       "year": 2019,
+       "value": 1041
+      },
+      {
+       "year": 2020,
+       "value": 1017
+      },
+      {
+       "year": 2021,
+       "value": 1062
+      },
+      {
+       "year": 2022,
+       "value": 998
+      }
+     ]
+    },
+    {
+     "metric": "ATMs by location: Hall, 2018-2022",
+     "unit": "ATMs",
+     "page": 170,
+     "note": "Fig 4.3 location count table; CAGR -20.6%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 78
+      },
+      {
+       "year": 2019,
+       "value": 66
+      },
+      {
+       "year": 2020,
+       "value": 56
+      },
+      {
+       "year": 2021,
+       "value": 44
+      },
+      {
+       "year": 2022,
+       "value": 31
+      }
+     ]
+    },
+    {
+     "metric": "Cash withdrawals, annual number, historical",
+     "unit": "million withdrawals",
+     "page": 172,
+     "note": "Fig 4.5; CAGR -4.0%. 2022 = 92m (+3% vs 2021). (Fig 6.4 forecast text on p.177 references 88m for 2022; the historical Fig 4.5 table states 92m.)",
+     "points": [
+      {
+       "year": 2018,
+       "value": 109
+      },
+      {
+       "year": 2019,
+       "value": 105
+      },
+      {
+       "year": 2020,
+       "value": 94
+      },
+      {
+       "year": 2021,
+       "value": 90
+      },
+      {
+       "year": 2022,
+       "value": 92
+      }
+     ]
+    },
+    {
+     "metric": "Cash withdrawals, annual number, forecast",
+     "unit": "million withdrawals",
+     "page": 50,
+     "note": "Fig 3.8 CEE forecast-by-country table (Hungary row); CAGR -2.3%. Forecast text p.177: 80m by 2028. All provisional.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 90,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 88,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 86,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 84,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 82,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 80,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Average number of cash withdrawals per ATM per month, historical",
+     "unit": "withdrawals per ATM per month",
+     "page": 172,
+     "note": "Fig 4.5; CAGR -2.8%. 2022=1,586 also in Fig 1.1 (p.164) and Fig 6.6 appendix (p.179).",
+     "points": [
+      {
+       "year": 2018,
+       "value": 1779
+      },
+      {
+       "year": 2019,
+       "value": 1714
+      },
+      {
+       "year": 2020,
+       "value": 1547
+      },
+      {
+       "year": 2021,
+       "value": 1509
+      },
+      {
+       "year": 2022,
+       "value": 1586
+      }
+     ]
+    },
+    {
+     "metric": "Average number of cash withdrawals per ATM per month, forecast",
+     "unit": "withdrawals per ATM per month",
+     "page": 179,
+     "note": "Fig 6.6 appendix per-ATM-per-month column, forecast years. Forecast text p.177: falls from 1,586 (2022) to 1,310 (2028). All provisional.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 1489,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 1461,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 1393,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 1350,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 1330,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 1310,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Cash withdrawals as a share of ATM transactions, 2018-2022",
+     "unit": "percent",
+     "page": 172,
+     "note": "Fig 4.5; CAGR -1.7%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 91
+      },
+      {
+       "year": 2019,
+       "value": 91
+      },
+      {
+       "year": 2020,
+       "value": 84
+      },
+      {
+       "year": 2021,
+       "value": 84
+      },
+      {
+       "year": 2022,
+       "value": 85
+      }
+     ]
+    },
+    {
+     "metric": "Cash withdrawals, annual value (local currency), historical",
+     "unit": "HUF billion",
+     "page": 173,
+     "note": "Fig 4.6; CAGR 4.9%. 2022 = HUF 8.8 trillion (USD 24bn), +13% vs 2021.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 7281
+      },
+      {
+       "year": 2019,
+       "value": 7810
+      },
+      {
+       "year": 2020,
+       "value": 7555
+      },
+      {
+       "year": 2021,
+       "value": 7846
+      },
+      {
+       "year": 2022,
+       "value": 8827
+      }
+     ]
+    },
+    {
+     "metric": "Cash withdrawals, annual value (USD), historical",
+     "unit": "USD billion",
+     "page": 173,
+     "note": "Fig 4.6 USD row; CAGR -3.4%. Same Hungary row appears in CEE summary table p.55 (27/27/25/26/24).",
+     "points": [
+      {
+       "year": 2018,
+       "value": 27
+      },
+      {
+       "year": 2019,
+       "value": 27
+      },
+      {
+       "year": 2020,
+       "value": 25
+      },
+      {
+       "year": 2021,
+       "value": 26
+      },
+      {
+       "year": 2022,
+       "value": 24
+      }
+     ]
+    },
+    {
+     "metric": "Cash withdrawals, annual value (USD), forecast",
+     "unit": "USD billion",
+     "page": 51,
+     "note": "Fig 3.10 CEE forecast value-by-country table (Hungary row); CAGR 2.2%. Forecast text p.178: HUF 11.5 trillion (USD 31bn) by 2028. All provisional.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 28,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 29,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 30,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 30,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 31,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 31,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Average value of a cash withdrawal (local currency), historical",
+     "unit": "HUF",
+     "page": 173,
+     "note": "Fig 4.6; CAGR 9.3%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 67056
+      },
+      {
+       "year": 2019,
+       "value": 74072
+      },
+      {
+       "year": 2020,
+       "value": 80621
+      },
+      {
+       "year": 2021,
+       "value": 87331
+      },
+      {
+       "year": 2022,
+       "value": 95631
+      }
+     ]
+    },
+    {
+     "metric": "Average value of a cash withdrawal (USD), historical",
+     "unit": "USD",
+     "page": 173,
+     "note": "Fig 4.6; CAGR 0.6%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 250
+      },
+      {
+       "year": 2019,
+       "value": 258
+      },
+      {
+       "year": 2020,
+       "value": 262
+      },
+      {
+       "year": 2021,
+       "value": 288
+      },
+      {
+       "year": 2022,
+       "value": 257
+      }
+     ]
+    },
+    {
+     "metric": "Average value of a cash withdrawal, forecast endpoints",
+     "unit": "HUF",
+     "page": 178,
+     "note": "Fig 6.5 forecast text: rises from HUF 95,631 (USD 257) in 2022 to HUF 143,920 (USD 386) in 2028; ~5%/yr 2023-2028. Only 2022 base and 2028 endpoint stated numerically; 2028 provisional.",
+     "points": [
+      {
+       "year": 2022,
+       "value": 95631
+      },
+      {
+       "year": 2028,
+       "value": 143920,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Average value of withdrawal per ATM (local currency), 2018-2022",
+     "unit": "HUF million",
+     "page": 173,
+     "note": "Fig 4.6; CAGR 5.9%. 2022 ~HUF 1.8bn (USD 4.9m) per ATM.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 1431.3
+      },
+      {
+       "year": 2019,
+       "value": 1342.1
+      },
+      {
+       "year": 2020,
+       "value": 1496.2
+      },
+      {
+       "year": 2021,
+       "value": 1581.4
+      },
+      {
+       "year": 2022,
+       "value": 1802.3
+      }
+     ]
+    },
+    {
+     "metric": "Cash withdrawal value as a proportion of GDP, 2018-2022",
+     "unit": "percent",
+     "page": 173,
+     "note": "Fig 4.6; CAGR -4.1%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 16.6
+      },
+      {
+       "year": 2019,
+       "value": 16.4
+      },
+      {
+       "year": 2020,
+       "value": 15.6
+      },
+      {
+       "year": 2021,
+       "value": 14.2
+      },
+      {
+       "year": 2022,
+       "value": 14.2
+      }
+     ]
+    },
+    {
+     "metric": "Forecast ATM shipments (total)",
+     "unit": "ATMs shipped",
+     "page": 176,
+     "note": "Fig 6.3; CAGR 4.3%. ~3,200 total shipments 2023-2028. All provisional.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 430,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 450,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 580,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 610,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 600,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 530,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Forecast ATM shipments: new installations",
+     "unit": "ATMs shipped",
+     "page": 176,
+     "note": "Fig 6.3 'of which new installations'; CAGR -31.6%. All provisional.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 100,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 30,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 35,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 35,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 15,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 15,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Forecast ATM shipments: replacements",
+     "unit": "ATMs shipped",
+     "page": 176,
+     "note": "Fig 6.3 'of which replacements'; CAGR 9.3%. All provisional.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 330,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 420,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 545,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 575,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 585,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 515,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "ATM density: ATMs per million people, forecast",
+     "unit": "ATMs per million people",
+     "page": 175,
+     "note": "Fig 6.1; CAGR 0.8%. Historical 2022 value 480 (Fig 1.1/Fig 4.2, p.164/169); 2021 was 507 per body text. All listed years provisional (forecast).",
+     "points": [
+      {
+       "year": 2023,
+       "value": 492,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 497,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 502,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 507,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 509,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 512,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "ATM density measures, 2022",
+     "unit": "various (per row)",
+     "page": 169,
+     "note": "Fig 4.2: ATMs per million people 480; per 100 bank branches 317; per 100 bank branches+post offices 114; per 1,000 km2 51; per USD billion GDP 29. Encoded as 2022 points; units differ per measure (see note).",
+     "points": [
+      {
+       "year": 2022,
+       "value": 480
+      },
+      {
+       "year": 2022,
+       "value": 317
+      },
+      {
+       "year": 2022,
+       "value": 114
+      },
+      {
+       "year": 2022,
+       "value": 51
+      },
+      {
+       "year": 2022,
+       "value": 29
+      }
+     ]
+    },
+    {
+     "metric": "Manufacturer installed base: NCR, 2018-2022",
+     "unit": "ATMs",
+     "page": 174,
+     "note": "Fig 5.1; CAGR 5.1%. Source-transcribed values; 2020 NCR cell illegible in digest (omitted). NCR ~47% share at end-2022.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 1846
+      },
+      {
+       "year": 2019,
+       "value": 1941
+      },
+      {
+       "year": 2021,
+       "value": 2007
+      },
+      {
+       "year": 2022,
+       "value": 2256
+      }
+     ]
+    },
+    {
+     "metric": "Manufacturer installed base: Diebold Nixdorf, 2018-2022",
+     "unit": "ATMs",
+     "page": 174,
+     "note": "Fig 5.1; CAGR -7.4%. ~45% share at end-2022.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 2761
+      },
+      {
+       "year": 2019,
+       "value": 2824
+      },
+      {
+       "year": 2020,
+       "value": 2660
+      },
+      {
+       "year": 2021,
+       "value": 2299
+      },
+      {
+       "year": 2022,
+       "value": 2159
+      }
+     ]
+    },
+    {
+     "metric": "Manufacturer installed base: Triton, 2018-2022",
+     "unit": "ATMs",
+     "page": 174,
+     "note": "Fig 5.1; CAGR 7.3%. ~7% share, stable.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 260
+      },
+      {
+       "year": 2019,
+       "value": 330
+      },
+      {
+       "year": 2020,
+       "value": 337
+      },
+      {
+       "year": 2021,
+       "value": 340
+      },
+      {
+       "year": 2022,
+       "value": 345
+      }
+     ]
+    },
+    {
+     "metric": "Manufacturer installed base: Genmega, 2022",
+     "unit": "ATMs",
+     "page": 174,
+     "note": "Fig 5.1; new entrant, negligible share; only 2022 value given.",
+     "points": [
+      {
+       "year": 2022,
+       "value": 5
+      }
+     ]
+    }
+   ]
+  },
+  "RO": {
+   "country": "Romania",
+   "doc": "rbr-cee-atm-2028",
+   "series": [
+    {
+     "metric": "ATM installed base (total)",
+     "unit": "ATMs (units)",
+     "page": 3266,
+     "note": "Figure 4.3/5.1 historical totals (also matches Fig 4.1). Romania p.6/p.8/p.12.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 10400
+      },
+      {
+       "year": 2019,
+       "value": 10328
+      },
+      {
+       "year": 2020,
+       "value": 9991
+      },
+      {
+       "year": 2021,
+       "value": 9974
+      },
+      {
+       "year": 2022,
+       "value": 10044
+      }
+     ]
+    },
+    {
+     "metric": "ATM installed base (total) - FORECAST",
+     "unit": "ATMs (units)",
+     "page": 3231,
+     "note": "Figure 6.1 forecast (Romania p.13). 2028 stated as 10,200 in table; body text says ~10,150. CEE Fig 3.2 (p.45) gives 2028=10,150.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 10060,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 10080,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 10120,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 10140,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 10150,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 10200,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "ATM installed base by manufacturer - NCR",
+     "unit": "ATMs (units)",
+     "page": 3213,
+     "note": "Figure 5.1 (Romania p.12); 58% share in 2022.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 5994
+      },
+      {
+       "year": 2019,
+       "value": 5900
+      },
+      {
+       "year": 2020,
+       "value": 5734
+      },
+      {
+       "year": 2021,
+       "value": 5768
+      },
+      {
+       "year": 2022,
+       "value": 5807
+      }
+     ]
+    },
+    {
+     "metric": "ATM installed base by manufacturer - Diebold Nixdorf",
+     "unit": "ATMs (units)",
+     "page": 3213,
+     "note": "Figure 5.1 (Romania p.12); 39% share in 2022.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 4073
+      },
+      {
+       "year": 2019,
+       "value": 4082
+      },
+      {
+       "year": 2020,
+       "value": 3928
+      },
+      {
+       "year": 2021,
+       "value": 3884
+      },
+      {
+       "year": 2022,
+       "value": 3913
+      }
+     ]
+    },
+    {
+     "metric": "ATM installed base by manufacturer - GRG",
+     "unit": "ATMs (units)",
+     "page": 3213,
+     "note": "Figure 5.1 (Romania p.12); 2% share in 2022.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 196
+      },
+      {
+       "year": 2019,
+       "value": 212
+      },
+      {
+       "year": 2020,
+       "value": 197
+      },
+      {
+       "year": 2021,
+       "value": 195
+      },
+      {
+       "year": 2022,
+       "value": 193
+      }
+     ]
+    },
+    {
+     "metric": "ATM installed base by manufacturer - KEBA",
+     "unit": "ATMs (units)",
+     "page": 3213,
+     "note": "Figure 5.1 (Romania p.12); 1% share in 2022.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 137
+      },
+      {
+       "year": 2019,
+       "value": 134
+      },
+      {
+       "year": 2020,
+       "value": 132
+      },
+      {
+       "year": 2021,
+       "value": 127
+      },
+      {
+       "year": 2022,
+       "value": 131
+      }
+     ]
+    },
+    {
+     "metric": "ATMs with automated note deposit functionality",
+     "unit": "ATMs (units)",
+     "page": 3185,
+     "note": "Figure 4.4 (Romania p.9), 2022 only. Digest renders header '2.3%' garbled; total automated-deposit ATMs = 2,376 (24% of base per prose).",
+     "points": [
+      {
+       "year": 2022,
+       "value": 2376
+      }
+     ]
+    },
+    {
+     "metric": "Cash recycling ATMs (note recyclers)",
+     "unit": "ATMs (units)",
+     "page": 3185,
+     "note": "Figure 4.4 (Romania p.9), 2022 only; ~73% of automated-deposit ATMs also recycle.",
+     "points": [
+      {
+       "year": 2022,
+       "value": 1727
+      }
+     ]
+    },
+    {
+     "metric": "Standalone terminals (SATs) with automated note deposit",
+     "unit": "SATs (units)",
+     "page": 3185,
+     "note": "Figure 4.4 (Romania p.9), 2022 only.",
+     "points": [
+      {
+       "year": 2022,
+       "value": 1680
+      }
+     ]
+    },
+    {
+     "metric": "Bank branches (total)",
+     "unit": "branches (outlets)",
+     "page": 3070,
+     "note": "Figure 2.1 (Romania p.2); only 2021 and 2022 given. -54 outlets (-1%) in 2022.",
+     "points": [
+      {
+       "year": 2021,
+       "value": 4524
+      },
+      {
+       "year": 2022,
+       "value": 4470
+      }
+     ]
+    },
+    {
+     "metric": "Number of cash withdrawals",
+     "unit": "million withdrawals per year",
+     "page": 3194,
+     "note": "Figure 4.5 (Romania p.10). Matches CEE Fig 1.14 (p.39). CAGR 1.5%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 277
+      },
+      {
+       "year": 2019,
+       "value": 294
+      },
+      {
+       "year": 2020,
+       "value": 267
+      },
+      {
+       "year": 2021,
+       "value": 280
+      },
+      {
+       "year": 2022,
+       "value": 295
+      }
+     ]
+    },
+    {
+     "metric": "Number of cash withdrawals - FORECAST",
+     "unit": "million withdrawals per year",
+     "page": 584,
+     "note": "CEE Figure 3.8 forecast by country (p.50). Body text on Romania p.14 says ~282 million by 2028; this country-table series differs (shows growth to 315). Both from same report.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 300,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 303,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 306,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 309,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 312,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 315,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Average cash withdrawals per ATM per month",
+     "unit": "withdrawals per ATM per month",
+     "page": 3194,
+     "note": "Figure 4.5 (Romania p.10). CAGR 3.0%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 2181
+      },
+      {
+       "year": 2019,
+       "value": 2361
+      },
+      {
+       "year": 2020,
+       "value": 2189
+      },
+      {
+       "year": 2021,
+       "value": 2337
+      },
+      {
+       "year": 2022,
+       "value": 2456
+      }
+     ]
+    },
+    {
+     "metric": "Value of cash withdrawals (local currency)",
+     "unit": "RON billion per year",
+     "page": 3203,
+     "note": "Figure 4.6 (Romania p.11). CAGR 7.5%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 198
+      },
+      {
+       "year": 2019,
+       "value": 222
+      },
+      {
+       "year": 2020,
+       "value": 221
+      },
+      {
+       "year": 2021,
+       "value": 243
+      },
+      {
+       "year": 2022,
+       "value": 265
+      }
+     ]
+    },
+    {
+     "metric": "Value of cash withdrawals (USD)",
+     "unit": "USD billion per year",
+     "page": 3203,
+     "note": "Figure 4.6 (Romania p.11). Matches CEE Fig 1.16 (p.41). CAGR 2.8%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 51
+      },
+      {
+       "year": 2019,
+       "value": 52
+      },
+      {
+       "year": 2020,
+       "value": 52
+      },
+      {
+       "year": 2021,
+       "value": 58
+      },
+      {
+       "year": 2022,
+       "value": 57
+      }
+     ]
+    },
+    {
+     "metric": "Value of cash withdrawals (USD) - FORECAST",
+     "unit": "USD billion per year",
+     "page": 614,
+     "note": "CEE Figure 3.10 forecast by country (p.51). CAGR 5.2%.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 64,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 69,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 72,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 76,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 79,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 82,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Value of cash withdrawals (local currency) - FORECAST",
+     "unit": "RON billion per year",
+     "page": 3247,
+     "note": "Figure 6.5 (Romania p.15). Only 2028 stated numerically in body text (RON 385bn, USD 82bn at 2022 FX); intermediate years are chart-only.",
+     "points": [
+      {
+       "year": 2028,
+       "value": 385,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Average value of a cash withdrawal (local currency)",
+     "unit": "RON per withdrawal",
+     "page": 3203,
+     "note": "Figure 4.6 (Romania p.11). CAGR 5.9%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 715
+      },
+      {
+       "year": 2019,
+       "value": 756
+      },
+      {
+       "year": 2020,
+       "value": 829
+      },
+      {
+       "year": 2021,
+       "value": 869
+      },
+      {
+       "year": 2022,
+       "value": 898
+      }
+     ]
+    },
+    {
+     "metric": "Average value of a cash withdrawal (local currency) - FORECAST",
+     "unit": "RON per withdrawal",
+     "page": 3247,
+     "note": "Figure 6.5 body text (Romania p.15); only 2028 stated numerically (RON 1,221 / USD 261 at 2022 FX).",
+     "points": [
+      {
+       "year": 2028,
+       "value": 1221,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Average value of a cash withdrawal (USD)",
+     "unit": "USD per withdrawal",
+     "page": 3203,
+     "note": "Figure 4.6 (Romania p.11). CAGR 1.3%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 182
+      },
+      {
+       "year": 2019,
+       "value": 178
+      },
+      {
+       "year": 2020,
+       "value": 195
+      },
+      {
+       "year": 2021,
+       "value": 209
+      },
+      {
+       "year": 2022,
+       "value": 192
+      }
+     ]
+    },
+    {
+     "metric": "Average value withdrawn per ATM (local currency)",
+     "unit": "RON million per ATM per year",
+     "page": 3203,
+     "note": "Figure 4.6 (Romania p.11). CAGR 9.0%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 18.7
+      },
+      {
+       "year": 2019,
+       "value": 21.4
+      },
+      {
+       "year": 2020,
+       "value": 21.8
+      },
+      {
+       "year": 2021,
+       "value": 24.4
+      },
+      {
+       "year": 2022,
+       "value": 26.5
+      }
+     ]
+    },
+    {
+     "metric": "Cash withdrawal value as proportion of GDP",
+     "unit": "percent of GDP",
+     "page": 3203,
+     "note": "Figure 4.6 (Romania p.11). CAGR -2.4%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 20.7
+      },
+      {
+       "year": 2019,
+       "value": 20.9
+      },
+      {
+       "year": 2020,
+       "value": 20.7
+      },
+      {
+       "year": 2021,
+       "value": 20.5
+      },
+      {
+       "year": 2022,
+       "value": 18.8
+      }
+     ]
+    },
+    {
+     "metric": "Forecast ATM shipments",
+     "unit": "ATMs shipped per year",
+     "page": 3239,
+     "note": "Figure 6.3 (Romania p.14); matches CEE Fig 3.4 (p.47). CAGR 5.9%. All forecast years.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 739,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 807,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 909,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 1011,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 1028,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 985,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Forecast ATM shipments - new installations",
+     "unit": "ATMs shipped per year",
+     "page": 3239,
+     "note": "Figure 6.3 sub-row 'of which new installations' (Romania p.14). All forecast years.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 30,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 40,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 40,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 40,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 40,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 40,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Forecast ATM shipments - replacements",
+     "unit": "ATMs shipped per year",
+     "page": 3239,
+     "note": "Figure 6.3 sub-row 'of which replacements' (Romania p.14). All forecast years.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 709,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 767,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 869,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 971,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 990,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 945,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "ATMs by location - Off-site",
+     "unit": "ATMs (units)",
+     "page": 3173,
+     "note": "Figure 4.3 (Romania p.8); ~51% of base in 2022. CAGR 0.9%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 4895
+      },
+      {
+       "year": 2019,
+       "value": 5106
+      },
+      {
+       "year": 2020,
+       "value": 4874
+      },
+      {
+       "year": 2021,
+       "value": 4886
+      },
+      {
+       "year": 2022,
+       "value": 5081
+      }
+     ]
+    },
+    {
+     "metric": "ATMs by location - Through-the-wall (TTW)",
+     "unit": "ATMs (units)",
+     "page": 3173,
+     "note": "Figure 4.3 (Romania p.8). CAGR -3.2%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 4323
+      },
+      {
+       "year": 2019,
+       "value": 4042
+      },
+      {
+       "year": 2020,
+       "value": 3941
+      },
+      {
+       "year": 2021,
+       "value": 3896
+      },
+      {
+       "year": 2022,
+       "value": 3788
+      }
+     ]
+    },
+    {
+     "metric": "ATMs by location - Lobby",
+     "unit": "ATMs (units)",
+     "page": 3173,
+     "note": "Figure 4.3 (Romania p.8). CAGR 0.5%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 1026
+      },
+      {
+       "year": 2019,
+       "value": 1032
+      },
+      {
+       "year": 2020,
+       "value": 1050
+      },
+      {
+       "year": 2021,
+       "value": 1061
+      },
+      {
+       "year": 2022,
+       "value": 1046
+      }
+     ]
+    },
+    {
+     "metric": "ATMs by location - Hall",
+     "unit": "ATMs (units)",
+     "page": 3173,
+     "note": "Figure 4.3 (Romania p.8). CAGR -4.6%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 156
+      },
+      {
+       "year": 2019,
+       "value": 148
+      },
+      {
+       "year": 2020,
+       "value": 126
+      },
+      {
+       "year": 2021,
+       "value": 131
+      },
+      {
+       "year": 2022,
+       "value": 129
+      }
+     ]
+    },
+    {
+     "metric": "ATMs per million people",
+     "unit": "ATMs per million inhabitants",
+     "page": 3163,
+     "note": "Figure 4.2 (2022) plus prose: 511 end-2022, down from 516 end-2021.",
+     "points": [
+      {
+       "year": 2021,
+       "value": 516
+      },
+      {
+       "year": 2022,
+       "value": 511
+      }
+     ]
+    },
+    {
+     "metric": "ATMs per million people - FORECAST",
+     "unit": "ATMs per million inhabitants",
+     "page": 3231,
+     "note": "Figure 6.1 forecast (Romania p.13). CAGR 0.2%.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 512,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 513,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 514,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 515,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 516,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 526,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "ATMs per 100 bank branches",
+     "unit": "ATMs per 100 branches",
+     "page": 3163,
+     "note": "Figure 4.2 (2022) plus prose: rose from 220 (end-2021) to 225 (end-2022).",
+     "points": [
+      {
+       "year": 2021,
+       "value": 220
+      },
+      {
+       "year": 2022,
+       "value": 225
+      }
+     ]
+    }
+   ]
+  },
+  "BG": {
+   "country": "Bulgaria",
+   "doc": "rbr-cee-atm-2028",
+   "series": [
+    {
+     "metric": "ATM installed base",
+     "unit": "ATMs (count)",
+     "page": 103,
+     "note": "Figure 6.6 full 1995-2028 series (BNB/ECB/RBR); 2023-2028 are forecast. Peak 5,792 in 2013, 4,994 in 2022, 4,400 by 2028. Matches Fig 4.1/4.4/5.1 historical and Fig 6.1 forecast.",
+     "points": [
+      {
+       "year": 1995,
+       "value": 23
+      },
+      {
+       "year": 1996,
+       "value": 69
+      },
+      {
+       "year": 1997,
+       "value": 118
+      },
+      {
+       "year": 1998,
+       "value": 162
+      },
+      {
+       "year": 1999,
+       "value": 279
+      },
+      {
+       "year": 2000,
+       "value": 420
+      },
+      {
+       "year": 2001,
+       "value": 642
+      },
+      {
+       "year": 2002,
+       "value": 829
+      },
+      {
+       "year": 2003,
+       "value": 1222
+      },
+      {
+       "year": 2004,
+       "value": 1905
+      },
+      {
+       "year": 2005,
+       "value": 2862
+      },
+      {
+       "year": 2006,
+       "value": 3472
+      },
+      {
+       "year": 2007,
+       "value": 4439
+      },
+      {
+       "year": 2008,
+       "value": 5121
+      },
+      {
+       "year": 2009,
+       "value": 5388
+      },
+      {
+       "year": 2010,
+       "value": 5536
+      },
+      {
+       "year": 2011,
+       "value": 5594
+      },
+      {
+       "year": 2012,
+       "value": 5655
+      },
+      {
+       "year": 2013,
+       "value": 5792
+      },
+      {
+       "year": 2014,
+       "value": 5615
+      },
+      {
+       "year": 2015,
+       "value": 5616
+      },
+      {
+       "year": 2016,
+       "value": 5751
+      },
+      {
+       "year": 2017,
+       "value": 5731
+      },
+      {
+       "year": 2018,
+       "value": 5604
+      },
+      {
+       "year": 2019,
+       "value": 5614
+      },
+      {
+       "year": 2020,
+       "value": 5400
+      },
+      {
+       "year": 2021,
+       "value": 5250
+      },
+      {
+       "year": 2022,
+       "value": 4994
+      },
+      {
+       "year": 2023,
+       "value": 4800,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 4700,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 4600,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 4500,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 4450,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 4400,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Automated note deposit ATMs (ADTs)",
+     "unit": "ATMs (count)",
+     "page": 95,
+     "note": "Fig 4.4 deposit-automation, 2022 only; ADTs up 2% YoY to 768. Of which note recycling = 8 (see separate series). 13% of installed base per CEE comparison p.83.",
+     "points": [
+      {
+       "year": 2022,
+       "value": 768
+      }
+     ]
+    },
+    {
+     "metric": "Cash recyclers (note recycling ATMs)",
+     "unit": "ATMs (count)",
+     "page": 95,
+     "note": "Fig 4.4: 8 recyclers in 2022 (~1% of base); grew from a single recycling ATM the prior year (p.91 narrative cites end-2021=1). Smallest recycler count among CEE primary markets.",
+     "points": [
+      {
+       "year": 2021,
+       "value": 1
+      },
+      {
+       "year": 2022,
+       "value": 8
+      }
+     ]
+    },
+    {
+     "metric": "Bank branches",
+     "unit": "branches (count)",
+     "page": 86,
+     "note": "Fig 1.1 key metrics 2022: 1,860 branches, CEE rank 7. Network fell by ~92 in 2022 (p.88), down from ~270 closed the prior year. Only the 2022 point is given numerically.",
+     "points": [
+      {
+       "year": 2022,
+       "value": 1860
+      }
+     ]
+    },
+    {
+     "metric": "Annual number of cash withdrawals",
+     "unit": "million withdrawals/year",
+     "page": 103,
+     "note": "Fig 6.6 / Fig 4.5 / Fig 6.4. Historical 2018-2022 from BCB; 2023-2028 forecast (~3%/yr) reaching 158m in 2028.",
+     "points": [
+      {
+       "year": 1997,
+       "value": 1
+      },
+      {
+       "year": 1998,
+       "value": 2
+      },
+      {
+       "year": 1999,
+       "value": 3
+      },
+      {
+       "year": 2000,
+       "value": 6
+      },
+      {
+       "year": 2001,
+       "value": 12
+      },
+      {
+       "year": 2002,
+       "value": 20
+      },
+      {
+       "year": 2003,
+       "value": 33
+      },
+      {
+       "year": 2004,
+       "value": 45
+      },
+      {
+       "year": 2005,
+       "value": 57
+      },
+      {
+       "year": 2006,
+       "value": 70
+      },
+      {
+       "year": 2007,
+       "value": 82
+      },
+      {
+       "year": 2008,
+       "value": 91
+      },
+      {
+       "year": 2009,
+       "value": 89
+      },
+      {
+       "year": 2010,
+       "value": 91
+      },
+      {
+       "year": 2011,
+       "value": 90
+      },
+      {
+       "year": 2012,
+       "value": 93
+      },
+      {
+       "year": 2013,
+       "value": 96
+      },
+      {
+       "year": 2014,
+       "value": 96
+      },
+      {
+       "year": 2015,
+       "value": 106
+      },
+      {
+       "year": 2016,
+       "value": 115
+      },
+      {
+       "year": 2017,
+       "value": 120
+      },
+      {
+       "year": 2018,
+       "value": 121
+      },
+      {
+       "year": 2019,
+       "value": 126
+      },
+      {
+       "year": 2020,
+       "value": 118
+      },
+      {
+       "year": 2021,
+       "value": 125
+      },
+      {
+       "year": 2022,
+       "value": 136
+      },
+      {
+       "year": 2023,
+       "value": 143,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 149,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 153,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 156,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 157,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 158,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Average cash withdrawals per ATM per month",
+     "unit": "withdrawals per ATM per month",
+     "page": 103,
+     "note": "Fig 6.6 / Fig 4.5 / Fig 6.4. Historical from BCB; 2023-2028 forecast, rising to 2,976 by 2028 (~34% above 2022) as fleet shrinks while volume rises.",
+     "points": [
+      {
+       "year": 1997,
+       "value": 891
+      },
+      {
+       "year": 1998,
+       "value": 1190
+      },
+      {
+       "year": 1999,
+       "value": 1134
+      },
+      {
+       "year": 2000,
+       "value": 1431
+      },
+      {
+       "year": 2001,
+       "value": 1883
+      },
+      {
+       "year": 2002,
+       "value": 2266
+      },
+      {
+       "year": 2003,
+       "value": 2682
+      },
+      {
+       "year": 2004,
+       "value": 2398
+      },
+      {
+       "year": 2005,
+       "value": 1993
+      },
+      {
+       "year": 2006,
+       "value": 1842
+      },
+      {
+       "year": 2007,
+       "value": 1728
+      },
+      {
+       "year": 2008,
+       "value": 1586
+      },
+      {
+       "year": 2009,
+       "value": 1411
+      },
+      {
+       "year": 2010,
+       "value": 1388
+      },
+      {
+       "year": 2011,
+       "value": 1348
+      },
+      {
+       "year": 2012,
+       "value": 1378
+      },
+      {
+       "year": 2013,
+       "value": 1398
+      },
+      {
+       "year": 2014,
+       "value": 1403
+      },
+      {
+       "year": 2015,
+       "value": 1573
+      },
+      {
+       "year": 2016,
+       "value": 1686
+      },
+      {
+       "year": 2017,
+       "value": 1742
+      },
+      {
+       "year": 2018,
+       "value": 1785
+      },
+      {
+       "year": 2019,
+       "value": 1876
+      },
+      {
+       "year": 2020,
+       "value": 1789
+      },
+      {
+       "year": 2021,
+       "value": 1958
+      },
+      {
+       "year": 2022,
+       "value": 2216
+      },
+      {
+       "year": 2023,
+       "value": 2433,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 2614,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 2742,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 2857,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 2924,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 2976,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Annual value of cash withdrawals (BGN)",
+     "unit": "BGN billion/year",
+     "page": 97,
+     "note": "Fig 4.6 historical 2018-2022; Fig 6.5 adds forecast 2023-2028 bar values (~8%/yr) reaching BGN 78bn (USD 42bn) in 2028. Forecast values read from chart bars.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 26
+      },
+      {
+       "year": 2019,
+       "value": 29
+      },
+      {
+       "year": 2020,
+       "value": 30
+      },
+      {
+       "year": 2021,
+       "value": 37
+      },
+      {
+       "year": 2022,
+       "value": 45
+      },
+      {
+       "year": 2023,
+       "value": 53,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 59,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 64,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 69,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 73,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 78,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Annual value of cash withdrawals (USD)",
+     "unit": "USD billion/year",
+     "page": 97,
+     "note": "Fig 4.6 historical 2018-2022; 2028 forecast USD 42bn at 2022 exchange rate (p.102). Intermediate forecast USD values not stated.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 15
+      },
+      {
+       "year": 2019,
+       "value": 16
+      },
+      {
+       "year": 2020,
+       "value": 17
+      },
+      {
+       "year": 2021,
+       "value": 22
+      },
+      {
+       "year": 2022,
+       "value": 24
+      },
+      {
+       "year": 2028,
+       "value": 42,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Average value of a cash withdrawal (BGN)",
+     "unit": "BGN per withdrawal",
+     "page": 97,
+     "note": "Fig 4.6 historical 2018-2022; Fig 6.5 forecast line reaching BGN 493 (USD 265) by 2028. Only 2028 forecast endpoint stated numerically.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 210
+      },
+      {
+       "year": 2019,
+       "value": 226
+      },
+      {
+       "year": 2020,
+       "value": 254
+      },
+      {
+       "year": 2021,
+       "value": 294
+      },
+      {
+       "year": 2022,
+       "value": 329
+      },
+      {
+       "year": 2028,
+       "value": 493,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Average value of a cash withdrawal (USD)",
+     "unit": "USD per withdrawal",
+     "page": 97,
+     "note": "Fig 4.6 historical 2018-2022; 2028 forecast USD 265 at 2022 rate (p.102).",
+     "points": [
+      {
+       "year": 2018,
+       "value": 127
+      },
+      {
+       "year": 2019,
+       "value": 130
+      },
+      {
+       "year": 2020,
+       "value": 148
+      },
+      {
+       "year": 2021,
+       "value": 178
+      },
+      {
+       "year": 2022,
+       "value": 177
+      },
+      {
+       "year": 2028,
+       "value": 265,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Average value withdrawn per ATM (BGN)",
+     "unit": "BGN million per ATM per year",
+     "page": 97,
+     "note": "Fig 4.6, 2018-2022 only.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 4.5
+      },
+      {
+       "year": 2019,
+       "value": 5.1
+      },
+      {
+       "year": 2020,
+       "value": 5.4
+      },
+      {
+       "year": 2021,
+       "value": 6.9
+      },
+      {
+       "year": 2022,
+       "value": 8.7
+      }
+     ]
+    },
+    {
+     "metric": "Average value withdrawn per ATM (USD)",
+     "unit": "USD million per ATM per year",
+     "page": 97,
+     "note": "Fig 4.6, 2018-2022 only.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 2.7
+      },
+      {
+       "year": 2019,
+       "value": 2.9
+      },
+      {
+       "year": 2020,
+       "value": 3.2
+      },
+      {
+       "year": 2021,
+       "value": 4.2
+      },
+      {
+       "year": 2022,
+       "value": 4.7
+      }
+     ]
+    },
+    {
+     "metric": "Cash withdrawal value as proportion of GDP",
+     "unit": "% of GDP",
+     "page": 97,
+     "note": "Fig 4.6, 2018-2022 only.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 23.2
+      },
+      {
+       "year": 2019,
+       "value": 23.8
+      },
+      {
+       "year": 2020,
+       "value": 24.9
+      },
+      {
+       "year": 2021,
+       "value": 26.5
+      },
+      {
+       "year": 2022,
+       "value": 27.1
+      }
+     ]
+    },
+    {
+     "metric": "ATM installed base by location",
+     "unit": "ATMs (count)",
+     "page": 94,
+     "note": "Fig 4.3 breakdown 2018-2022. Drive-through = 0 all years (omitted). Off-site dominates (64% in 2022).",
+     "points": [
+      {
+       "year": 2018,
+       "value": 5604
+      },
+      {
+       "year": 2019,
+       "value": 5614
+      },
+      {
+       "year": 2020,
+       "value": 5400
+      },
+      {
+       "year": 2021,
+       "value": 5250
+      },
+      {
+       "year": 2022,
+       "value": 4994
+      }
+     ]
+    },
+    {
+     "metric": "Off-site ATMs",
+     "unit": "ATMs (count)",
+     "page": 94,
+     "note": "Fig 4.3 location split, off-site (away-from-branch) component, 2018-2022.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 3411
+      },
+      {
+       "year": 2019,
+       "value": 3539
+      },
+      {
+       "year": 2020,
+       "value": 3403
+      },
+      {
+       "year": 2021,
+       "value": 3339
+      },
+      {
+       "year": 2022,
+       "value": 3217
+      }
+     ]
+    },
+    {
+     "metric": "Through-the-wall (TTW) ATMs",
+     "unit": "ATMs (count)",
+     "page": 94,
+     "note": "Fig 4.3 location split, 2018-2022.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 1651
+      },
+      {
+       "year": 2019,
+       "value": 1488
+      },
+      {
+       "year": 2020,
+       "value": 1400
+      },
+      {
+       "year": 2021,
+       "value": 1256
+      },
+      {
+       "year": 2022,
+       "value": 1098
+      }
+     ]
+    },
+    {
+     "metric": "Branch lobby ATMs",
+     "unit": "ATMs (count)",
+     "page": 94,
+     "note": "Fig 4.3 location split, 2018-2022.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 488
+      },
+      {
+       "year": 2019,
+       "value": 533
+      },
+      {
+       "year": 2020,
+       "value": 551
+      },
+      {
+       "year": 2021,
+       "value": 614
+      },
+      {
+       "year": 2022,
+       "value": 649
+      }
+     ]
+    },
+    {
+     "metric": "Branch hall ATMs",
+     "unit": "ATMs (count)",
+     "page": 94,
+     "note": "Fig 4.3 location split, 2018-2022.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 54
+      },
+      {
+       "year": 2019,
+       "value": 54
+      },
+      {
+       "year": 2020,
+       "value": 46
+      },
+      {
+       "year": 2021,
+       "value": 41
+      },
+      {
+       "year": 2022,
+       "value": 30
+      }
+     ]
+    },
+    {
+     "metric": "ATM installed base by manufacturer - NCR",
+     "unit": "ATMs (count)",
+     "page": 98,
+     "note": "Fig 5.1, 2018-2022. NCR is dominant (~83% in 2022).",
+     "points": [
+      {
+       "year": 2018,
+       "value": 4549
+      },
+      {
+       "year": 2019,
+       "value": 4515
+      },
+      {
+       "year": 2020,
+       "value": 4401
+      },
+      {
+       "year": 2021,
+       "value": 4291
+      },
+      {
+       "year": 2022,
+       "value": 4164
+      }
+     ]
+    },
+    {
+     "metric": "ATM installed base by manufacturer - Diebold Nixdorf",
+     "unit": "ATMs (count)",
+     "page": 98,
+     "note": "Fig 5.1, 2018-2022.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 1055
+      },
+      {
+       "year": 2019,
+       "value": 1099
+      },
+      {
+       "year": 2020,
+       "value": 985
+      },
+      {
+       "year": 2021,
+       "value": 937
+      },
+      {
+       "year": 2022,
+       "value": 796
+      }
+     ]
+    },
+    {
+     "metric": "ATM installed base by manufacturer - GRG",
+     "unit": "ATMs (count)",
+     "page": 98,
+     "note": "Fig 5.1, 2018-2022; GRG entered 2020.",
+     "points": [
+      {
+       "year": 2020,
+       "value": 14
+      },
+      {
+       "year": 2021,
+       "value": 22
+      },
+      {
+       "year": 2022,
+       "value": 34
+      }
+     ]
+    },
+    {
+     "metric": "IAD-deployed ATMs",
+     "unit": "ATMs (count)",
+     "page": 86,
+     "note": "Fig 1.1 key metrics 2022: 70 IAD ATMs (rank 11), all Euronet. p.91 deployer table confirms Euronet 70 in both 2021 and 2022.",
+     "points": [
+      {
+       "year": 2021,
+       "value": 70
+      },
+      {
+       "year": 2022,
+       "value": 70
+      }
+     ]
+    },
+    {
+     "metric": "Forecast ATM shipments (total)",
+     "unit": "ATMs shipped/year",
+     "page": 100,
+     "note": "Fig 6.3 forecast 2023-2028; ~2,400 total over period, replacements ~96%. All years are forecast.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 240,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 390,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 460,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 460,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 470,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 390,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Forecast ATM shipments - new installations",
+     "unit": "ATMs shipped/year",
+     "page": 100,
+     "note": "Fig 6.3 forecast 2023-2028; new-installation component.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 20,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 20,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 15,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 15,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 10,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 10,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Forecast ATM shipments - replacements",
+     "unit": "ATMs shipped/year",
+     "page": 100,
+     "note": "Fig 6.3 forecast 2023-2028; replacement component.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 220,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 370,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 445,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 445,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 460,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 380,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Forecast ATM density (ATMs per million people)",
+     "unit": "ATMs per million people",
+     "page": 99,
+     "note": "Fig 6.1 forecast 2023-2028. Historical 2022 value was 736 (p.93). Declines to 649 by 2028.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 708,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 693,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 678,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 664,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 656,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 649,
+       "provisional": true
+      }
+     ]
+    }
+   ]
+  },
+  "HR": {
+   "country": "Croatia",
+   "doc": "rbr-cee-atm-2028",
+   "series": [
+    {
+     "metric": "ATM installed base (ATMs in service at year-end)",
+     "unit": "ATMs",
+     "page": 118,
+     "note": "Figure 4.1 in-service ATM count 2018-2022, CAGR -2.0%; end-2022 total installed base (incl. winterised) was 6,423.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 5148
+      },
+      {
+       "year": 2019,
+       "value": 5446
+      },
+      {
+       "year": 2020,
+       "value": 4894
+      },
+      {
+       "year": 2021,
+       "value": 4910
+      },
+      {
+       "year": 2022,
+       "value": 4754
+      }
+     ]
+    },
+    {
+     "metric": "Forecast ATM installed base (in service)",
+     "unit": "ATMs",
+     "page": 126,
+     "note": "Figure 6.1 forecast, CAGR -1.1%; all years are forecast/provisional.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 4700,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 4650,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 4600,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 4550,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 4500,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 4450,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Automated note-deposit ATMs",
+     "unit": "ATMs",
+     "page": 121,
+     "note": "Figure 4.4: 840 bank ATMs accepted note deposit at end-2022 (plus 63 SATs); ~18-20% of bank ATMs.",
+     "points": [
+      {
+       "year": 2022,
+       "value": 840
+      }
+     ]
+    },
+    {
+     "metric": "Note-recycling ATMs (cash recyclers)",
+     "unit": "ATMs",
+     "page": 121,
+     "note": "Figure 4.4: of the 840 deposit ATMs, ~110 (13%) were recycling ATMs at end-2022.",
+     "points": [
+      {
+       "year": 2022,
+       "value": 110
+      }
+     ]
+    },
+    {
+     "metric": "Bank branches",
+     "unit": "branches",
+     "page": 112,
+     "note": "Figure 2.1 total bank branches 2021->2022 (-18); Figure 1.1 confirms 862 at end-2022.",
+     "points": [
+      {
+       "year": 2021,
+       "value": 880
+      },
+      {
+       "year": 2022,
+       "value": 862
+      }
+     ]
+    },
+    {
+     "metric": "Number of ATM cash withdrawals",
+     "unit": "million withdrawals/year",
+     "page": 123,
+     "note": "Figure 4.5 history 2018-2022, CAGR ~-1%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 102
+      },
+      {
+       "year": 2019,
+       "value": 103
+      },
+      {
+       "year": 2020,
+       "value": 89
+      },
+      {
+       "year": 2021,
+       "value": 93
+      },
+      {
+       "year": 2022,
+       "value": 98
+      }
+     ]
+    },
+    {
+     "metric": "Number of ATM cash withdrawals (forecast)",
+     "unit": "million withdrawals/year",
+     "page": 129,
+     "note": "Figure 6.6 forecast rows 2023-2028; 2027 value not legible in scan so omitted; all provisional.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 100,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 103,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 105,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 106,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 106,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Average cash withdrawals per ATM per month",
+     "unit": "withdrawals per ATM per month",
+     "page": 123,
+     "note": "Figure 4.5 history, based on year-end ATM count.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 1686
+      },
+      {
+       "year": 2019,
+       "value": 1625
+      },
+      {
+       "year": 2020,
+       "value": 1439
+      },
+      {
+       "year": 2021,
+       "value": 1581
+      },
+      {
+       "year": 2022,
+       "value": 1685
+      }
+     ]
+    },
+    {
+     "metric": "Average cash withdrawals per ATM per month (forecast)",
+     "unit": "withdrawals per ATM per month",
+     "page": 129,
+     "note": "Figure 6.6 forecast; some values approximate/faint in scan; all provisional.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 1792,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 1836,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 1894,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 1913,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 1938,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 1974,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Value of ATM cash withdrawals",
+     "unit": "EUR billion/year",
+     "page": 124,
+     "note": "Figure 4.6 annual value in EUR bn, CAGR 3.7%; USD-bn series was 12/12/12/13/13.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 10
+      },
+      {
+       "year": 2019,
+       "value": 11
+      },
+      {
+       "year": 2020,
+       "value": 10
+      },
+      {
+       "year": 2021,
+       "value": 11
+      },
+      {
+       "year": 2022,
+       "value": 12
+      }
+     ]
+    },
+    {
+     "metric": "Average value per ATM cash withdrawal",
+     "unit": "EUR per withdrawal",
+     "page": 124,
+     "note": "Figure 4.6 average withdrawal value in EUR, CAGR 4.9%; forecast avg value to grow ~3.2% p.a. 2023-2028.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 102
+      },
+      {
+       "year": 2019,
+       "value": 105
+      },
+      {
+       "year": 2020,
+       "value": 117
+      },
+      {
+       "year": 2021,
+       "value": 121
+      },
+      {
+       "year": 2022,
+       "value": 123
+      }
+     ]
+    },
+    {
+     "metric": "Forecast ATM shipments (total)",
+     "unit": "ATMs shipped/year",
+     "page": 127,
+     "note": "Figure 6.3 forecast shipments, CAGR 8.8%; ~1,800 total over period; all provisional.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 210,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 260,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 360,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 360,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 340,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 320,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Forecast ATM shipments - new installations",
+     "unit": "ATMs shipped/year",
+     "page": 127,
+     "note": "Figure 6.3 new-installation component, CAGR -45.1%; all provisional.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 100,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 10,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 5,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 5,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 5,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 5,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Forecast ATM shipments - replacements",
+     "unit": "ATMs shipped/year",
+     "page": 127,
+     "note": "Figure 6.3 replacement component, CAGR 23.4%; all provisional.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 110,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 250,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 305,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 355,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 335,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 315,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "IAD-deployed ATMs (in service)",
+     "unit": "ATMs",
+     "page": 110,
+     "note": "Figure 1.1 'of which IADs' at end-2022 = 580 (rank 4 in CEE). IAD fleet fell 13% in 2022.",
+     "points": [
+      {
+       "year": 2022,
+       "value": 580
+      }
+     ]
+    },
+    {
+     "metric": "ATM installed base by manufacturer - Diebold Nixdorf",
+     "unit": "ATMs",
+     "page": 125,
+     "note": "Figure 5.1 manufacturer shares, CAGR 0.1%; ~69% share end-2022.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 3263
+      },
+      {
+       "year": 2019,
+       "value": 3413
+      },
+      {
+       "year": 2020,
+       "value": 3263
+      },
+      {
+       "year": 2021,
+       "value": 3286
+      },
+      {
+       "year": 2022,
+       "value": 3275
+      }
+     ]
+    },
+    {
+     "metric": "ATM installed base by manufacturer - NCR",
+     "unit": "ATMs",
+     "page": 125,
+     "note": "Figure 5.1 manufacturer shares, CAGR -5.7%; ~31% in-service share end-2022.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 1873
+      },
+      {
+       "year": 2019,
+       "value": 2033
+      },
+      {
+       "year": 2020,
+       "value": 1621
+      },
+      {
+       "year": 2021,
+       "value": 1624
+      },
+      {
+       "year": 2022,
+       "value": 1479
+      }
+     ]
+    },
+    {
+     "metric": "ATM density - ATMs per million people",
+     "unit": "ATMs per million people",
+     "page": 119,
+     "note": "Figure 4.2 end-2022 = 1,180 (rank 1 in CEE); ~1,600 incl. winterised. Forecast (Fig 6.1) declines from 1,166 (2023) to 1,104 (2028).",
+     "points": [
+      {
+       "year": 2022,
+       "value": 1180
+      },
+      {
+       "year": 2023,
+       "value": 1166,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 1154,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 1141,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 1129,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 1117,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 1104,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "MBNET shared-network ATMs",
+     "unit": "ATMs",
+     "page": 114,
+     "note": "Figure 3.1 MBNET domestic-sharing member ATMs 2018-2022, CAGR -2.3%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 1085
+      },
+      {
+       "year": 2019,
+       "value": 1054
+      },
+      {
+       "year": 2020,
+       "value": 1036
+      },
+      {
+       "year": 2021,
+       "value": 1040
+      },
+      {
+       "year": 2022,
+       "value": 989
+      }
+     ]
+    }
+   ]
+  },
+  "SI": {
+   "country": "Slovenia",
+   "doc": "rbr-cee-atm-2028",
+   "series": [
+    {
+     "metric": "ATM installed base (number of ATMs)",
+     "unit": "ATMs",
+     "page": 570,
+     "note": "Fig 3.1 historical installed base 2018-2022; total contracting, CAGR -2.7%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 1580
+      },
+      {
+       "year": 2019,
+       "value": 1545
+      },
+      {
+       "year": 2020,
+       "value": 1419
+      },
+      {
+       "year": 2021,
+       "value": 1427
+      },
+      {
+       "year": 2022,
+       "value": 1415
+      }
+     ]
+    },
+    {
+     "metric": "ATM installed base - FORECAST",
+     "unit": "ATMs",
+     "page": 575,
+     "note": "Fig 5.1 forecast installed base 2023-2028, CAGR -1.0%; all years provisional.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 1370,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 1340,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 1320,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 1310,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 1305,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 1300,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Of which IADs (independent ATM deployer ATMs - Euronet)",
+     "unit": "ATMs",
+     "page": 565,
+     "note": "Fig 1.1 Key metrics 2022: 90 IAD ATMs (rank 10; CEE 17,839). Euronet is sole IAD.",
+     "points": [
+      {
+       "year": 2022,
+       "value": 90
+      }
+     ]
+    },
+    {
+     "metric": "Bank branches (total)",
+     "unit": "branches",
+     "page": 566,
+     "note": "Fig 1.2 total branches; 2022 = 430 (also Fig 1.1 key metric). Decline of 23 (-5%).",
+     "points": [
+      {
+       "year": 2021,
+       "value": 453
+      },
+      {
+       "year": 2022,
+       "value": 430
+      }
+     ]
+    },
+    {
+     "metric": "Number of cash withdrawals (annual volume)",
+     "unit": "million withdrawals",
+     "page": 572,
+     "note": "Fig 3.4; CAGR -7.2%. 2022 = 42m, down 1% on 2021.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 56
+      },
+      {
+       "year": 2019,
+       "value": 55
+      },
+      {
+       "year": 2020,
+       "value": 44
+      },
+      {
+       "year": 2021,
+       "value": 42
+      },
+      {
+       "year": 2022,
+       "value": 42
+      }
+     ]
+    },
+    {
+     "metric": "Average cash withdrawals per ATM per month",
+     "unit": "withdrawals/ATM/month",
+     "page": 572,
+     "note": "Fig 3.4; CAGR -4.2%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 2911
+      },
+      {
+       "year": 2019,
+       "value": 2956
+      },
+      {
+       "year": 2020,
+       "value": 2456
+      },
+      {
+       "year": 2021,
+       "value": 2484
+      },
+      {
+       "year": 2022,
+       "value": 2454
+      }
+     ]
+    },
+    {
+     "metric": "Annual value of cash withdrawals (EUR)",
+     "unit": "EUR billion",
+     "page": 573,
+     "note": "Fig 3.5; 2022 = EUR 6.5bn, up 4% on 2021.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 6.4
+      },
+      {
+       "year": 2019,
+       "value": 6.6
+      },
+      {
+       "year": 2020,
+       "value": 6
+      },
+      {
+       "year": 2021,
+       "value": 6.3
+      },
+      {
+       "year": 2022,
+       "value": 6.5
+      }
+     ]
+    },
+    {
+     "metric": "Annual value of cash withdrawals (USD)",
+     "unit": "USD billion",
+     "page": 573,
+     "note": "Fig 3.5; CAGR -2.3%. USD conversion of EUR series.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 7.6
+      },
+      {
+       "year": 2019,
+       "value": 7.4
+      },
+      {
+       "year": 2020,
+       "value": 6.9
+      },
+      {
+       "year": 2021,
+       "value": 7.5
+      },
+      {
+       "year": 2022,
+       "value": 6.9
+      }
+     ]
+    },
+    {
+     "metric": "Average value of a cash withdrawal (EUR)",
+     "unit": "EUR",
+     "page": 573,
+     "note": "Fig 3.5; CAGR +8.4%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 113
+      },
+      {
+       "year": 2019,
+       "value": 119
+      },
+      {
+       "year": 2020,
+       "value": 137
+      },
+      {
+       "year": 2021,
+       "value": 149
+      },
+      {
+       "year": 2022,
+       "value": 156
+      }
+     ]
+    },
+    {
+     "metric": "Average value of a cash withdrawal (USD)",
+     "unit": "USD",
+     "page": 573,
+     "note": "Fig 3.5; CAGR +5.2%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 134
+      },
+      {
+       "year": 2019,
+       "value": 133
+      },
+      {
+       "year": 2020,
+       "value": 157
+      },
+      {
+       "year": 2021,
+       "value": 176
+      },
+      {
+       "year": 2022,
+       "value": 164
+      }
+     ]
+    },
+    {
+     "metric": "Cash withdrawal value as proportion of GDP",
+     "unit": "% of GDP",
+     "page": 573,
+     "note": "Fig 3.5; CAGR -5.5%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 13.9
+      },
+      {
+       "year": 2019,
+       "value": 13.5
+      },
+      {
+       "year": 2020,
+       "value": 12.8
+      },
+      {
+       "year": 2021,
+       "value": 12.1
+      },
+      {
+       "year": 2022,
+       "value": 11.1
+      }
+     ]
+    },
+    {
+     "metric": "ATMs by manufacturer - NCR (installed base)",
+     "unit": "ATMs",
+     "page": 574,
+     "note": "Fig 4.1; CAGR -6.7%. 55% share end-2022.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 1022
+      },
+      {
+       "year": 2019,
+       "value": 960
+      },
+      {
+       "year": 2020,
+       "value": 809
+      },
+      {
+       "year": 2021,
+       "value": 788
+      },
+      {
+       "year": 2022,
+       "value": 776
+      }
+     ]
+    },
+    {
+     "metric": "ATMs by manufacturer - Diebold Nixdorf (installed base)",
+     "unit": "ATMs",
+     "page": 574,
+     "note": "Fig 4.1; CAGR +3.4%. 45% share end-2022.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 558
+      },
+      {
+       "year": 2019,
+       "value": 585
+      },
+      {
+       "year": 2020,
+       "value": 610
+      },
+      {
+       "year": 2021,
+       "value": 639
+      },
+      {
+       "year": 2022,
+       "value": 639
+      }
+     ]
+    },
+    {
+     "metric": "ATMs by location - Through-the-wall (TTW)",
+     "unit": "ATMs",
+     "page": 571,
+     "note": "Fig 3.3; CAGR -6.6%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 460
+      },
+      {
+       "year": 2019,
+       "value": 447
+      },
+      {
+       "year": 2020,
+       "value": 373
+      },
+      {
+       "year": 2021,
+       "value": 366
+      },
+      {
+       "year": 2022,
+       "value": 350
+      }
+     ]
+    },
+    {
+     "metric": "ATMs by location - Off-site",
+     "unit": "ATMs",
+     "page": 571,
+     "note": "Fig 3.3; CAGR -1.2%. ~72% of all ATMs.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 1061
+      },
+      {
+       "year": 2019,
+       "value": 1039
+      },
+      {
+       "year": 2020,
+       "value": 980
+      },
+      {
+       "year": 2021,
+       "value": 1009
+      },
+      {
+       "year": 2022,
+       "value": 1013
+      }
+     ]
+    },
+    {
+     "metric": "ATMs by location - Lobby",
+     "unit": "ATMs",
+     "page": 571,
+     "note": "Fig 3.3; CAGR -0.6%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 41
+      },
+      {
+       "year": 2019,
+       "value": 40
+      },
+      {
+       "year": 2020,
+       "value": 47
+      },
+      {
+       "year": 2021,
+       "value": 40
+      },
+      {
+       "year": 2022,
+       "value": 40
+      }
+     ]
+    },
+    {
+     "metric": "ATMs by location - Hall",
+     "unit": "ATMs",
+     "page": 571,
+     "note": "Fig 3.3; CAGR ~-10.2%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 12
+      },
+      {
+       "year": 2019,
+       "value": 16
+      },
+      {
+       "year": 2020,
+       "value": 8
+      },
+      {
+       "year": 2021,
+       "value": 11
+      },
+      {
+       "year": 2022,
+       "value": 11
+      }
+     ]
+    },
+    {
+     "metric": "ATMs by location - Drive-through",
+     "unit": "ATMs",
+     "page": 571,
+     "note": "Fig 3.3; flat at 1 each year.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 1
+      },
+      {
+       "year": 2019,
+       "value": 1
+      },
+      {
+       "year": 2020,
+       "value": 1
+      },
+      {
+       "year": 2021,
+       "value": 1
+      },
+      {
+       "year": 2022,
+       "value": 1
+      }
+     ]
+    },
+    {
+     "metric": "Domestic sharing - ATMs in Bankart agreement",
+     "unit": "ATMs",
+     "page": 567,
+     "note": "Fig 2.1; CAGR -4.5%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 1472
+      },
+      {
+       "year": 2019,
+       "value": 1420
+      },
+      {
+       "year": 2020,
+       "value": 1299
+      },
+      {
+       "year": 2021,
+       "value": 1241
+      },
+      {
+       "year": 2022,
+       "value": 1222
+      }
+     ]
+    },
+    {
+     "metric": "Domestic sharing - ATMs in ISP Card agreement",
+     "unit": "ATMs",
+     "page": 567,
+     "note": "Fig 2.1; CAGR -1.2%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 108
+      },
+      {
+       "year": 2019,
+       "value": 108
+      },
+      {
+       "year": 2020,
+       "value": 103
+      },
+      {
+       "year": 2021,
+       "value": 103
+      },
+      {
+       "year": 2022,
+       "value": 103
+      }
+     ]
+    },
+    {
+     "metric": "ATM shipments - FORECAST total",
+     "unit": "ATMs shipped",
+     "page": 576,
+     "note": "Fig 5.3 forecast shipments 2023-2028, CAGR +3.5%; ~790 total over period. All provisional.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 105,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 120,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 140,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 150,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 145,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 125,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "ATM shipments - FORECAST new installations",
+     "unit": "ATMs shipped",
+     "page": 576,
+     "note": "Fig 5.3; CAGR -12.9%. All provisional.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 10,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 10,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 10,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 5,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 5,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 5,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "ATM shipments - FORECAST replacements",
+     "unit": "ATMs shipped",
+     "page": 576,
+     "note": "Fig 5.3; CAGR +4.8%. Over 90% of shipments are replacements. All provisional.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 95,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 110,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 130,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 145,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 140,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 120,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "ATMs per million people",
+     "unit": "ATMs per million people",
+     "page": 570,
+     "note": "Fig 3.2 density 2022 = 668 (rank 5); text gives 2021 = 679.",
+     "points": [
+      {
+       "year": 2021,
+       "value": 679
+      },
+      {
+       "year": 2022,
+       "value": 668
+      }
+     ]
+    },
+    {
+     "metric": "ATMs per million people - FORECAST",
+     "unit": "ATMs per million people",
+     "page": 575,
+     "note": "Fig 5.1 forecast density 2023-2028, CAGR -1.0%. All provisional.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 646,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 632,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 623,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 618,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 616,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 613,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Cash-deposit-enabled ATMs (deposit automation) - UniCredit banka only",
+     "unit": "ATMs",
+     "page": 569,
+     "note": "Text only: UniCredit Bank offered cash deposits at 61 ATMs at end-2022. No full deposit-automation/recycler time-series given for Slovenia.",
+     "points": [
+      {
+       "year": 2022,
+       "value": 61
+      }
+     ]
+    }
+   ]
+  },
+  "RS": {
+   "country": "Serbia",
+   "doc": "rbr-cee-atm-2028",
+   "series": [
+    {
+     "metric": "ATM installed base (total units)",
+     "unit": "ATMs",
+     "page": 348,
+     "note": "Full historical+forecast series from Figure 6.6 (p.348); 2023-2028 are forecast. Matches Fig 4.1 (p.339) for 2018-2022 and Fig 6.1 (p.345) for 2023-2028.",
+     "points": [
+      {
+       "year": 2000,
+       "value": 20
+      },
+      {
+       "year": 2001,
+       "value": 100
+      },
+      {
+       "year": 2002,
+       "value": 170
+      },
+      {
+       "year": 2003,
+       "value": 250
+      },
+      {
+       "year": 2004,
+       "value": 450
+      },
+      {
+       "year": 2005,
+       "value": 837
+      },
+      {
+       "year": 2006,
+       "value": 1348
+      },
+      {
+       "year": 2007,
+       "value": 2063
+      },
+      {
+       "year": 2008,
+       "value": 2570
+      },
+      {
+       "year": 2009,
+       "value": 2722
+      },
+      {
+       "year": 2010,
+       "value": 2857
+      },
+      {
+       "year": 2011,
+       "value": 2830
+      },
+      {
+       "year": 2012,
+       "value": 2817
+      },
+      {
+       "year": 2013,
+       "value": 2765
+      },
+      {
+       "year": 2014,
+       "value": 2634
+      },
+      {
+       "year": 2015,
+       "value": 2705
+      },
+      {
+       "year": 2016,
+       "value": 2882
+      },
+      {
+       "year": 2017,
+       "value": 2685
+      },
+      {
+       "year": 2018,
+       "value": 2848
+      },
+      {
+       "year": 2019,
+       "value": 2953
+      },
+      {
+       "year": 2020,
+       "value": 3042
+      },
+      {
+       "year": 2021,
+       "value": 3097
+      },
+      {
+       "year": 2022,
+       "value": 3071
+      },
+      {
+       "year": 2023,
+       "value": 3150,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 3200,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 3250,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 3300,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 3325,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 3350,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "ATM density - ATMs per million people",
+     "unit": "ATMs per million people",
+     "page": 345,
+     "note": "2022 actual from Fig 4.2 (p.340, =425); 2023-2028 forecast from Fig 6.1 (p.345). 2028 = 464.",
+     "points": [
+      {
+       "year": 2022,
+       "value": 425
+      },
+      {
+       "year": 2023,
+       "value": 436,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 443,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 450,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 457,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 460,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 464,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Cash recyclers / note-recycling ATMs (number of recycling-enabled ATMs)",
+     "unit": "ATMs",
+     "page": 341,
+     "note": "p.371 (regional) states recyclers grew from 28 (end-2021) to 40 (end-2022); Fig 4.4 (p.341) confirms 40 note-recycling ATMs at end-2022. Recycling remains uncommon in Serbia.",
+     "points": [
+      {
+       "year": 2021,
+       "value": 28
+      },
+      {
+       "year": 2022,
+       "value": 40
+      }
+     ]
+    },
+    {
+     "metric": "Automated note-deposit ATMs (deposit-automation installed base)",
+     "unit": "ATMs",
+     "page": 341,
+     "note": "Fig 4.4 (p.341): 963 ATMs with automated note deposit at end-2022 (of which 40 are recyclers); also 88 SATs. Note p.342: automated note deposit offered at 13% of ATMs in 2022, up from 8% in 2021.",
+     "points": [
+      {
+       "year": 2022,
+       "value": 963
+      }
+     ]
+    },
+    {
+     "metric": "Stand-alone deposit terminals (SATs) with automated note deposit",
+     "unit": "SATs",
+     "page": 341,
+     "note": "Fig 4.4 (p.341): 88 SATs with automated note-deposit functionality at end-2022 (Banca Intesa and AIK banka).",
+     "points": [
+      {
+       "year": 2022,
+       "value": 88
+      }
+     ]
+    },
+    {
+     "metric": "Number of ATM cash withdrawals (annual volume)",
+     "unit": "million transactions",
+     "page": 348,
+     "note": "Full 2004-2028 series from Fig 6.6 (p.348); 2018-2022 confirmed by Fig 4.5 (p.342); 2023-2028 forecast (1% avg annual growth, reaching 112m by 2028). Pre-2004 years n.a.",
+     "points": [
+      {
+       "year": 2004,
+       "value": 7
+      },
+      {
+       "year": 2005,
+       "value": 14
+      },
+      {
+       "year": 2006,
+       "value": 23
+      },
+      {
+       "year": 2007,
+       "value": 36
+      },
+      {
+       "year": 2008,
+       "value": 45
+      },
+      {
+       "year": 2009,
+       "value": 48
+      },
+      {
+       "year": 2010,
+       "value": 52
+      },
+      {
+       "year": 2011,
+       "value": 56
+      },
+      {
+       "year": 2012,
+       "value": 63
+      },
+      {
+       "year": 2013,
+       "value": 65
+      },
+      {
+       "year": 2014,
+       "value": 71
+      },
+      {
+       "year": 2015,
+       "value": 75
+      },
+      {
+       "year": 2016,
+       "value": 77
+      },
+      {
+       "year": 2017,
+       "value": 86
+      },
+      {
+       "year": 2018,
+       "value": 89
+      },
+      {
+       "year": 2019,
+       "value": 93
+      },
+      {
+       "year": 2020,
+       "value": 91
+      },
+      {
+       "year": 2021,
+       "value": 97
+      },
+      {
+       "year": 2022,
+       "value": 101
+      },
+      {
+       "year": 2023,
+       "value": 104,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 106,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 108,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 110,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 111,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 112,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Average cash withdrawals per ATM per month",
+     "unit": "withdrawals per ATM per month",
+     "page": 348,
+     "note": "Fig 6.6 (p.348) series 2004-2028; 2018-2022 confirmed by Fig 4.5 (p.342). 2023-2028 forecast, stabilising ~2,800 by 2028.",
+     "points": [
+      {
+       "year": 2004,
+       "value": 1667
+      },
+      {
+       "year": 2005,
+       "value": 1813
+      },
+      {
+       "year": 2006,
+       "value": 1754
+      },
+      {
+       "year": 2007,
+       "value": 1759
+      },
+      {
+       "year": 2008,
+       "value": 1619
+      },
+      {
+       "year": 2009,
+       "value": 1512
+      },
+      {
+       "year": 2010,
+       "value": 1553
+      },
+      {
+       "year": 2011,
+       "value": 1641
+      },
+      {
+       "year": 2012,
+       "value": 1859
+      },
+      {
+       "year": 2013,
+       "value": 1941
+      },
+      {
+       "year": 2014,
+       "value": 2192
+      },
+      {
+       "year": 2015,
+       "value": 2352
+      },
+      {
+       "year": 2016,
+       "value": 2292
+      },
+      {
+       "year": 2017,
+       "value": 2571
+      },
+      {
+       "year": 2018,
+       "value": 2680
+      },
+      {
+       "year": 2019,
+       "value": 2667
+      },
+      {
+       "year": 2020,
+       "value": 2525
+      },
+      {
+       "year": 2021,
+       "value": 2628
+      },
+      {
+       "year": 2022,
+       "value": 2734
+      },
+      {
+       "year": 2023,
+       "value": 2789,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 2785,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 2794,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 2789,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 2790,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 2794,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Annual value of ATM cash withdrawals (RSD)",
+     "unit": "RSD billion",
+     "page": 343,
+     "note": "Fig 4.6 (p.343) 2018-2022 actual; 2028 forecast from p.347 narrative (RSD 2.1 trillion = ~2,100 bn). Intermediate forecast years not given numerically.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 829
+      },
+      {
+       "year": 2019,
+       "value": 937
+      },
+      {
+       "year": 2020,
+       "value": 1093
+      },
+      {
+       "year": 2021,
+       "value": 1225
+      },
+      {
+       "year": 2022,
+       "value": 1404
+      },
+      {
+       "year": 2028,
+       "value": 2100,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Annual value of ATM cash withdrawals (USD)",
+     "unit": "USD billion",
+     "page": 343,
+     "note": "Fig 4.6 (p.343) 2018-2022; 2028 forecast from p.347 (USD 19 billion at 2022 FX). Values rounded in source.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 8
+      },
+      {
+       "year": 2019,
+       "value": 9
+      },
+      {
+       "year": 2020,
+       "value": 11
+      },
+      {
+       "year": 2021,
+       "value": 12
+      },
+      {
+       "year": 2022,
+       "value": 13
+      },
+      {
+       "year": 2028,
+       "value": 19,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Average value of a cash withdrawal (RSD)",
+     "unit": "RSD",
+     "page": 343,
+     "note": "Fig 4.6 (p.343) 2018-2022; 2028 forecast from p.347 (RSD 18,900).",
+     "points": [
+      {
+       "year": 2018,
+       "value": 9324
+      },
+      {
+       "year": 2019,
+       "value": 10096
+      },
+      {
+       "year": 2020,
+       "value": 12027
+      },
+      {
+       "year": 2021,
+       "value": 12654
+      },
+      {
+       "year": 2022,
+       "value": 13876
+      },
+      {
+       "year": 2028,
+       "value": 18900,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Average value of a cash withdrawal (USD)",
+     "unit": "USD",
+     "page": 343,
+     "note": "Fig 4.6 (p.343) 2018-2022; 2028 forecast from p.347 (USD 170).",
+     "points": [
+      {
+       "year": 2018,
+       "value": 93
+      },
+      {
+       "year": 2019,
+       "value": 96
+      },
+      {
+       "year": 2020,
+       "value": 117
+      },
+      {
+       "year": 2021,
+       "value": 127
+      },
+      {
+       "year": 2022,
+       "value": 124
+      },
+      {
+       "year": 2028,
+       "value": 170,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Average value withdrawn per ATM (RSD)",
+     "unit": "RSD million per ATM",
+     "page": 343,
+     "note": "Fig 4.6 (p.343), 2018-2022 actual.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 299.8
+      },
+      {
+       "year": 2019,
+       "value": 323.1
+      },
+      {
+       "year": 2020,
+       "value": 364.5
+      },
+      {
+       "year": 2021,
+       "value": 399.1
+      },
+      {
+       "year": 2022,
+       "value": 455.2
+      }
+     ]
+    },
+    {
+     "metric": "Cash withdrawal value as proportion of GDP",
+     "unit": "percent of GDP",
+     "page": 343,
+     "note": "Fig 4.6 (p.343), 2018-2022 actual. Reflects strong cash reliance in Serbia.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 16.4
+      },
+      {
+       "year": 2019,
+       "value": 17.3
+      },
+      {
+       "year": 2020,
+       "value": 19.8
+      },
+      {
+       "year": 2021,
+       "value": 19.5
+      },
+      {
+       "year": 2022,
+       "value": 19.8
+      }
+     ]
+    },
+    {
+     "metric": "Cash withdrawals as % of all ATM transactions",
+     "unit": "percent",
+     "page": 342,
+     "note": "Fig 4.5 (p.342), 2018-2022 actual.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 73
+      },
+      {
+       "year": 2019,
+       "value": 77
+      },
+      {
+       "year": 2020,
+       "value": 77
+      },
+      {
+       "year": 2021,
+       "value": 78
+      },
+      {
+       "year": 2022,
+       "value": 75
+      }
+     ]
+    },
+    {
+     "metric": "Forecast ATM shipments (total units shipped per year)",
+     "unit": "ATMs shipped",
+     "page": 346,
+     "note": "Fig 6.3 (p.346), all forecast years 2023-2028; total 2,100 units over the period, avg 350/yr.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 400,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 400,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 350,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 350,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 300,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 300,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Forecast ATM shipments - new installations",
+     "unit": "ATMs shipped",
+     "page": 346,
+     "note": "Fig 6.3 (p.346), forecast 2023-2028 new-installation component.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 79,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 50,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 50,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 50,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 25,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 25,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Forecast ATM shipments - replacements",
+     "unit": "ATMs shipped",
+     "page": 346,
+     "note": "Fig 6.3 (p.346), forecast 2023-2028 replacement component. 87% of all shipments over period are replacements.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 321,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 350,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 300,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 300,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 275,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 275,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "ATMs by location - Through-the-wall (TTW)",
+     "unit": "ATMs",
+     "page": 340,
+     "note": "Fig 4.3 (p.340), 2018-2022 actual location-mix counts.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 1606
+      },
+      {
+       "year": 2019,
+       "value": 1590
+      },
+      {
+       "year": 2020,
+       "value": 1634
+      },
+      {
+       "year": 2021,
+       "value": 1606
+      },
+      {
+       "year": 2022,
+       "value": 1524
+      }
+     ]
+    },
+    {
+     "metric": "ATMs by location - Off-site",
+     "unit": "ATMs",
+     "page": 340,
+     "note": "Fig 4.3 (p.340), 2018-2022 actual.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 978
+      },
+      {
+       "year": 2019,
+       "value": 1046
+      },
+      {
+       "year": 2020,
+       "value": 1084
+      },
+      {
+       "year": 2021,
+       "value": 1134
+      },
+      {
+       "year": 2022,
+       "value": 1139
+      }
+     ]
+    },
+    {
+     "metric": "ATMs by location - Lobby",
+     "unit": "ATMs",
+     "page": 340,
+     "note": "Fig 4.3 (p.340), 2018-2022 actual; fastest-growing location segment (CAGR 12.1%).",
+     "points": [
+      {
+       "year": 2018,
+       "value": 220
+      },
+      {
+       "year": 2019,
+       "value": 276
+      },
+      {
+       "year": 2020,
+       "value": 284
+      },
+      {
+       "year": 2021,
+       "value": 311
+      },
+      {
+       "year": 2022,
+       "value": 348
+      }
+     ]
+    },
+    {
+     "metric": "ATMs by location - Hall",
+     "unit": "ATMs",
+     "page": 340,
+     "note": "Fig 4.3 (p.340), 2018-2022 actual.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 44
+      },
+      {
+       "year": 2019,
+       "value": 41
+      },
+      {
+       "year": 2020,
+       "value": 39
+      },
+      {
+       "year": 2021,
+       "value": 45
+      },
+      {
+       "year": 2022,
+       "value": 60
+      }
+     ]
+    },
+    {
+     "metric": "ATM density - ATMs per 100 bank branches",
+     "unit": "ATMs per 100 bank branches",
+     "page": 340,
+     "note": "Fig 4.2 (p.340): 219 in 2022 (up from 209 in 2021, per narrative). Forecast 264 ATMs per 100 outlets by 2028 (p.345); no full branch-count series given in the digest for Serbia.",
+     "points": [
+      {
+       "year": 2021,
+       "value": 209
+      },
+      {
+       "year": 2022,
+       "value": 219
+      },
+      {
+       "year": 2028,
+       "value": 264,
+       "provisional": true
+      }
+     ]
+    }
+   ]
+  },
+  "UA": {
+   "country": "Ukraine",
+   "doc": "rbr-cee-atm-2028",
+   "series": [
+    {
+     "metric": "ATM installed base (year-end)",
+     "unit": "ATMs (units)",
+     "page": 416,
+     "note": "Full history+forecast table (Fig 7.6); 2023-2028 are RBR forecasts. Matches Fig 4.1 (2018-2022) and Fig 3.2/7.1 forecast. Peak 30,472 in 2013.",
+     "points": [
+      {
+       "year": 1996,
+       "value": 75
+      },
+      {
+       "year": 1997,
+       "value": 150
+      },
+      {
+       "year": 1998,
+       "value": 200
+      },
+      {
+       "year": 1999,
+       "value": 300
+      },
+      {
+       "year": 2000,
+       "value": 450
+      },
+      {
+       "year": 2001,
+       "value": 1556
+      },
+      {
+       "year": 2002,
+       "value": 2618
+      },
+      {
+       "year": 2003,
+       "value": 5027
+      },
+      {
+       "year": 2004,
+       "value": 8104
+      },
+      {
+       "year": 2005,
+       "value": 10565
+      },
+      {
+       "year": 2006,
+       "value": 13744
+      },
+      {
+       "year": 2007,
+       "value": 20931
+      },
+      {
+       "year": 2008,
+       "value": 26505
+      },
+      {
+       "year": 2009,
+       "value": 27025
+      },
+      {
+       "year": 2010,
+       "value": 27581
+      },
+      {
+       "year": 2011,
+       "value": 28634
+      },
+      {
+       "year": 2012,
+       "value": 29550
+      },
+      {
+       "year": 2013,
+       "value": 30472
+      },
+      {
+       "year": 2014,
+       "value": 24880
+      },
+      {
+       "year": 2015,
+       "value": 21733
+      },
+      {
+       "year": 2016,
+       "value": 20497
+      },
+      {
+       "year": 2017,
+       "value": 20254
+      },
+      {
+       "year": 2018,
+       "value": 20138
+      },
+      {
+       "year": 2019,
+       "value": 19930
+      },
+      {
+       "year": 2020,
+       "value": 19209
+      },
+      {
+       "year": 2021,
+       "value": 18939
+      },
+      {
+       "year": 2022,
+       "value": 15591
+      },
+      {
+       "year": 2023,
+       "value": 14800,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 14500,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 14300,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 14200,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 14150,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 14100,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Automated note deposit ATMs (deposit-automation ATMs)",
+     "unit": "ATMs (units)",
+     "page": 389,
+     "note": "Fig 4.4/4.5, end-2022: 2,596 ATMs offer automated note deposit (17% of installed base).",
+     "points": [
+      {
+       "year": 2022,
+       "value": 2596
+      }
+     ]
+    },
+    {
+     "metric": "Cash recyclers (note-recycling ATMs)",
+     "unit": "ATMs (units)",
+     "page": 389,
+     "note": "Fig 4.4/4.5, end-2022: 1,620 ATMs offer note recycling (10% of installed base); subset of automated note deposit.",
+     "points": [
+      {
+       "year": 2022,
+       "value": 1620
+      }
+     ]
+    },
+    {
+     "metric": "Stand-alone deposit terminals (SATs) with automated note deposit",
+     "unit": "terminals (units)",
+     "page": 390,
+     "note": "Fig 4.5, end-2022: 12,688 SATs (down 16% y/y per p.378); PrivatBank holds ~98% of country total.",
+     "points": [
+      {
+       "year": 2022,
+       "value": 12688
+      }
+     ]
+    },
+    {
+     "metric": "Bank branches (year-end)",
+     "unit": "branches (units)",
+     "page": 379,
+     "note": "Fig 2.1 total: 6,685 (2021) -> 5,336 (2022), -1,349; 2022 fell ~20% y/y. 67 banks operating end-2022.",
+     "points": [
+      {
+       "year": 2021,
+       "value": 6685
+      },
+      {
+       "year": 2022,
+       "value": 5336
+      }
+     ]
+    },
+    {
+     "metric": "Cash withdrawals - annual number",
+     "unit": "million withdrawals",
+     "page": 416,
+     "note": "Fig 7.6 history+forecast; 2023-2028 forecast. 2022 fell -34% y/y (-263m) to 514m. Matches Fig 4.7 (2018-2022) and Fig 3.8 forecast (460->415).",
+     "points": [
+      {
+       "year": 2001,
+       "value": 43
+      },
+      {
+       "year": 2002,
+       "value": 70
+      },
+      {
+       "year": 2003,
+       "value": 138
+      },
+      {
+       "year": 2004,
+       "value": 232
+      },
+      {
+       "year": 2005,
+       "value": 295
+      },
+      {
+       "year": 2006,
+       "value": 391
+      },
+      {
+       "year": 2007,
+       "value": 486
+      },
+      {
+       "year": 2008,
+       "value": 567
+      },
+      {
+       "year": 2009,
+       "value": 513
+      },
+      {
+       "year": 2010,
+       "value": 571
+      },
+      {
+       "year": 2011,
+       "value": 661
+      },
+      {
+       "year": 2012,
+       "value": 725
+      },
+      {
+       "year": 2013,
+       "value": 755
+      },
+      {
+       "year": 2014,
+       "value": 693
+      },
+      {
+       "year": 2015,
+       "value": 678
+      },
+      {
+       "year": 2016,
+       "value": 738
+      },
+      {
+       "year": 2017,
+       "value": 780
+      },
+      {
+       "year": 2018,
+       "value": 842
+      },
+      {
+       "year": 2019,
+       "value": 890
+      },
+      {
+       "year": 2020,
+       "value": 786
+      },
+      {
+       "year": 2021,
+       "value": 777
+      },
+      {
+       "year": 2022,
+       "value": 514
+      },
+      {
+       "year": 2023,
+       "value": 460,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 440,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 430,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 425,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 420,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 415,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Cash withdrawals - average number per ATM per month",
+     "unit": "withdrawals per ATM per month",
+     "page": 416,
+     "note": "Fig 7.6 history+forecast; 2023-2028 forecast. Matches Fig 4.7 (2018-2022).",
+     "points": [
+      {
+       "year": 2001,
+       "value": 3573
+      },
+      {
+       "year": 2002,
+       "value": 2795
+      },
+      {
+       "year": 2003,
+       "value": 3009
+      },
+      {
+       "year": 2004,
+       "value": 3199
+      },
+      {
+       "year": 2005,
+       "value": 2634
+      },
+      {
+       "year": 2006,
+       "value": 2681
+      },
+      {
+       "year": 2007,
+       "value": 2336
+      },
+      {
+       "year": 2008,
+       "value": 1990
+      },
+      {
+       "year": 2009,
+       "value": 1597
+      },
+      {
+       "year": 2010,
+       "value": 1743
+      },
+      {
+       "year": 2011,
+       "value": 1960
+      },
+      {
+       "year": 2012,
+       "value": 2077
+      },
+      {
+       "year": 2013,
+       "value": 2096
+      },
+      {
+       "year": 2014,
+       "value": 2087
+      },
+      {
+       "year": 2015,
+       "value": 2424
+      },
+      {
+       "year": 2016,
+       "value": 2913
+      },
+      {
+       "year": 2017,
+       "value": 3190
+      },
+      {
+       "year": 2018,
+       "value": 3475
+      },
+      {
+       "year": 2019,
+       "value": 3703
+      },
+      {
+       "year": 2020,
+       "value": 3347
+      },
+      {
+       "year": 2021,
+       "value": 3395
+      },
+      {
+       "year": 2022,
+       "value": 2483
+      },
+      {
+       "year": 2023,
+       "value": 2523,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 2503,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 2488,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 2485,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 2469,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 2448,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Cash withdrawals - annual value (UAH)",
+     "unit": "UAH billion",
+     "page": 392,
+     "note": "Fig 4.8 (2018-2022). 2028 forecast ~UAH 2.8 trillion (p.415). 2022 value rose despite fewer withdrawals (war/inflation).",
+     "points": [
+      {
+       "year": 2018,
+       "value": 1579
+      },
+      {
+       "year": 2019,
+       "value": 1778
+      },
+      {
+       "year": 2020,
+       "value": 1749
+      },
+      {
+       "year": 2021,
+       "value": 1993
+      },
+      {
+       "year": 2022,
+       "value": 2355
+      },
+      {
+       "year": 2028,
+       "value": 2800,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Cash withdrawals - annual value (USD)",
+     "unit": "USD billion",
+     "page": 392,
+     "note": "Fig 4.8 (2018-2022); also matches Fig 1.16 regional table. 2028 forecast ~USD 86bn (p.415). Forecast value (USD bn) by country p.51: 80/80/81/82/84/86 (2023-2028).",
+     "points": [
+      {
+       "year": 2018,
+       "value": 58
+      },
+      {
+       "year": 2019,
+       "value": 69
+      },
+      {
+       "year": 2020,
+       "value": 65
+      },
+      {
+       "year": 2021,
+       "value": 73
+      },
+      {
+       "year": 2022,
+       "value": 72
+      },
+      {
+       "year": 2023,
+       "value": 80,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 80,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 81,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 82,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 84,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 86,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Cash withdrawals - average value per withdrawal (UAH)",
+     "unit": "UAH",
+     "page": 392,
+     "note": "Fig 4.8 (2018-2022); average jumped sharply in 2022 (war/inflation).",
+     "points": [
+      {
+       "year": 2018,
+       "value": 1875
+      },
+      {
+       "year": 2019,
+       "value": 1998
+      },
+      {
+       "year": 2020,
+       "value": 2225
+      },
+      {
+       "year": 2021,
+       "value": 2564
+      },
+      {
+       "year": 2022,
+       "value": 4577
+      }
+     ]
+    },
+    {
+     "metric": "Cash withdrawals - average value per withdrawal (USD)",
+     "unit": "USD",
+     "page": 392,
+     "note": "Fig 4.8 (2018-2022); also Fig 1.16 per-withdrawal column = 140 USD (2022).",
+     "points": [
+      {
+       "year": 2018,
+       "value": 69
+      },
+      {
+       "year": 2019,
+       "value": 77
+      },
+      {
+       "year": 2020,
+       "value": 82
+      },
+      {
+       "year": 2021,
+       "value": 94
+      },
+      {
+       "year": 2022,
+       "value": 140
+      }
+     ]
+    },
+    {
+     "metric": "ATM shipments (forecast)",
+     "unit": "ATMs (units)",
+     "page": 413,
+     "note": "Fig 7.3 forecast (matches Fig 3.4 regional). All years are forecasts. ~2,400 units projected 2023-2028.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 200,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 300,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 400,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 450,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 500,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 550,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "ATM density - ATMs per million people",
+     "unit": "ATMs per million people",
+     "page": 416,
+     "note": "Fig 7.6/4.2; 2022=393 (Fig 1.1/4.2). Forecast 2023-2028 from p.412 (373->355).",
+     "points": [
+      {
+       "year": 2021,
+       "value": 435
+      },
+      {
+       "year": 2022,
+       "value": 393
+      },
+      {
+       "year": 2023,
+       "value": 373,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 365,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 360,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 358,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 356,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 355,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "ATMs by manufacturer installed base - Diebold Nixdorf",
+     "unit": "ATMs (units)",
+     "page": 393,
+     "note": "Fig 5.1; largest supplier, ~83% share end-2022.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 15993
+      },
+      {
+       "year": 2019,
+       "value": 16089
+      },
+      {
+       "year": 2020,
+       "value": 15739
+      },
+      {
+       "year": 2021,
+       "value": 15756
+      },
+      {
+       "year": 2022,
+       "value": 12985
+      }
+     ]
+    },
+    {
+     "metric": "ATMs by manufacturer installed base - NCR",
+     "unit": "ATMs (units)",
+     "page": 393,
+     "note": "Fig 5.1; ~17% share end-2022.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 4061
+      },
+      {
+       "year": 2019,
+       "value": 3787
+      },
+      {
+       "year": 2020,
+       "value": 3416
+      },
+      {
+       "year": 2021,
+       "value": 3143
+      },
+      {
+       "year": 2022,
+       "value": 2580
+      }
+     ]
+    },
+    {
+     "metric": "Domestic sharing network - UPC connected ATMs",
+     "unit": "ATMs (units)",
+     "page": 382,
+     "note": "Fig 3.1 sharing agreements, 2018-2022.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 3806
+      },
+      {
+       "year": 2019,
+       "value": 3513
+      },
+      {
+       "year": 2020,
+       "value": 3042
+      },
+      {
+       "year": 2021,
+       "value": 2997
+      },
+      {
+       "year": 2022,
+       "value": 2443
+      }
+     ]
+    },
+    {
+     "metric": "Domestic sharing network - Radius connected ATMs",
+     "unit": "ATMs (units)",
+     "page": 382,
+     "note": "Fig 3.1 sharing agreements, 2018-2022 (FUIB-owned, largest branded network).",
+     "points": [
+      {
+       "year": 2018,
+       "value": 1723
+      },
+      {
+       "year": 2019,
+       "value": 1559
+      },
+      {
+       "year": 2020,
+       "value": 1448
+      },
+      {
+       "year": 2021,
+       "value": 1649
+      },
+      {
+       "year": 2022,
+       "value": 1338
+      }
+     ]
+    },
+    {
+     "metric": "ATMs by location - Off-site",
+     "unit": "ATMs (units)",
+     "page": 387,
+     "note": "Fig 4.3 (off-site = 71% of base end-2022). Some scan values near legibility limit per source note.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 12836
+      },
+      {
+       "year": 2019,
+       "value": 13000
+      },
+      {
+       "year": 2020,
+       "value": 12776
+      },
+      {
+       "year": 2021,
+       "value": 12768
+      },
+      {
+       "year": 2022,
+       "value": 11033
+      }
+     ]
+    }
+   ]
+  },
+  "AL": {
+   "country": "Albania",
+   "doc": "rbr-cee-atm-2028",
+   "series": [
+    {
+     "metric": "ATM installed base (total)",
+     "unit": "ATMs (units)",
+     "page": 428,
+     "note": "Figure 3.1, 2018-2022 historical, CAGR 5.6%; matches 860 at end-2022 (Fig 1.1 p.425).",
+     "points": [
+      {
+       "year": 2018,
+       "value": 691
+      },
+      {
+       "year": 2019,
+       "value": 704
+      },
+      {
+       "year": 2020,
+       "value": 736
+      },
+      {
+       "year": 2021,
+       "value": 827
+      },
+      {
+       "year": 2022,
+       "value": 860
+      }
+     ]
+    },
+    {
+     "metric": "ATM installed base (forecast)",
+     "unit": "ATMs (units)",
+     "page": 433,
+     "note": "Figure 5.1 forecast 2023-2028, CAGR 5.0%, reaching 1,150 by end-2028; all forecast years provisional.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 900,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 950,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 1000,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 1050,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 1110,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 1150,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "ATM installed base by location - Branch-based",
+     "unit": "ATMs (units)",
+     "page": 429,
+     "note": "Figure 3.3, branch-based (TTW) ATMs, CAGR -4.1%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 375
+      },
+      {
+       "year": 2019,
+       "value": 350
+      },
+      {
+       "year": 2020,
+       "value": 366
+      },
+      {
+       "year": 2021,
+       "value": 408
+      },
+      {
+       "year": 2022,
+       "value": 317
+      }
+     ]
+    },
+    {
+     "metric": "ATM installed base by location - Off-site",
+     "unit": "ATMs (units)",
+     "page": 429,
+     "note": "Figure 3.3, off-site ATMs (63% of base in 2022), CAGR 14.5%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 316
+      },
+      {
+       "year": 2019,
+       "value": 354
+      },
+      {
+       "year": 2020,
+       "value": 370
+      },
+      {
+       "year": 2021,
+       "value": 419
+      },
+      {
+       "year": 2022,
+       "value": 543
+      }
+     ]
+    },
+    {
+     "metric": "ATM installed base by manufacturer - NCR",
+     "unit": "ATMs (units)",
+     "page": 432,
+     "note": "Figure 4.1, NCR ~80% share each year 2018-2022, CAGR 5.6%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 554
+      },
+      {
+       "year": 2019,
+       "value": 564
+      },
+      {
+       "year": 2020,
+       "value": 589
+      },
+      {
+       "year": 2021,
+       "value": 662
+      },
+      {
+       "year": 2022,
+       "value": 688
+      }
+     ]
+    },
+    {
+     "metric": "ATM installed base by manufacturer - Diebold Nixdorf",
+     "unit": "ATMs (units)",
+     "page": 432,
+     "note": "Figure 4.1, Diebold Nixdorf ~20% share each year 2018-2022, CAGR 5.9%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 137
+      },
+      {
+       "year": 2019,
+       "value": 140
+      },
+      {
+       "year": 2020,
+       "value": 147
+      },
+      {
+       "year": 2021,
+       "value": 165
+      },
+      {
+       "year": 2022,
+       "value": 172
+      }
+     ]
+    },
+    {
+     "metric": "Bank branches (total)",
+     "unit": "branches",
+     "page": 426,
+     "note": "Figure 1.2, total branches across all banks; 418 at end-2022 also confirmed in Fig 1.1 (p.425). Forecast text (p.433) expects decline to ~410 by 2028 (no annual series given).",
+     "points": [
+      {
+       "year": 2021,
+       "value": 431
+      },
+      {
+       "year": 2022,
+       "value": 418
+      }
+     ]
+    },
+    {
+     "metric": "Number of cash withdrawals (annual volume)",
+     "unit": "million withdrawals",
+     "page": 430,
+     "note": "Figure 3.4, CAGR 4.5%; reached 20 million in 2022 (+8% on 2021). Values rounded to whole millions in digest.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 16
+      },
+      {
+       "year": 2019,
+       "value": 16
+      },
+      {
+       "year": 2020,
+       "value": 16
+      },
+      {
+       "year": 2021,
+       "value": 18
+      },
+      {
+       "year": 2022,
+       "value": 20
+      }
+     ]
+    },
+    {
+     "metric": "Average cash withdrawals per ATM per month",
+     "unit": "withdrawals per ATM per month",
+     "page": 430,
+     "note": "Figure 3.4, CAGR 0.4%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 1912
+      },
+      {
+       "year": 2019,
+       "value": 1966
+      },
+      {
+       "year": 2020,
+       "value": 1870
+      },
+      {
+       "year": 2021,
+       "value": 1946
+      },
+      {
+       "year": 2022,
+       "value": 1945
+      }
+     ]
+    },
+    {
+     "metric": "Annual value of cash withdrawals (local currency)",
+     "unit": "ALL billion",
+     "page": 431,
+     "note": "Figure 3.5, CAGR 9.6%; reached ALL 280bn (USD 2.5bn) in 2022. Note: digest lists six values for a 2018-2022 row; the 196/196 entry is flagged approximate in source - 2020 value treated as 196.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 174
+      },
+      {
+       "year": 2019,
+       "value": 196
+      },
+      {
+       "year": 2020,
+       "value": 196
+      },
+      {
+       "year": 2021,
+       "value": 212
+      },
+      {
+       "year": 2022,
+       "value": 280
+      }
+     ]
+    },
+    {
+     "metric": "Average value of cash withdrawal (local currency)",
+     "unit": "ALL per withdrawal",
+     "page": 431,
+     "note": "Figure 3.5, CAGR 4.9%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 11758
+      },
+      {
+       "year": 2019,
+       "value": 11911
+      },
+      {
+       "year": 2020,
+       "value": 13124
+      },
+      {
+       "year": 2021,
+       "value": 13482
+      },
+      {
+       "year": 2022,
+       "value": 14233
+      }
+     ]
+    },
+    {
+     "metric": "Average value of cash withdrawal (USD)",
+     "unit": "USD per withdrawal",
+     "page": 431,
+     "note": "Figure 3.5, CAGR 3.8%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 109
+      },
+      {
+       "year": 2019,
+       "value": 108
+      },
+      {
+       "year": 2020,
+       "value": 121
+      },
+      {
+       "year": 2021,
+       "value": 130
+      },
+      {
+       "year": 2022,
+       "value": 126
+      }
+     ]
+    },
+    {
+     "metric": "Cash withdrawal value as proportion of GDP",
+     "unit": "% of GDP",
+     "page": 431,
+     "note": "Figure 3.5, CAGR 2.4%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 11.9
+      },
+      {
+       "year": 2019,
+       "value": 11.6
+      },
+      {
+       "year": 2020,
+       "value": 12.9
+      },
+      {
+       "year": 2021,
+       "value": 13
+      },
+      {
+       "year": 2022,
+       "value": 13.1
+      }
+     ]
+    },
+    {
+     "metric": "ATMs per million people (density, historical and forecast)",
+     "unit": "ATMs per million people",
+     "page": 433,
+     "note": "2021=290, 2022=303 from p.428/p.425; 2023-2028 forecast from Fig 5.1 (p.433), reaching 405 in 2028. Forecast years provisional.",
+     "points": [
+      {
+       "year": 2021,
+       "value": 290
+      },
+      {
+       "year": 2022,
+       "value": 303
+      },
+      {
+       "year": 2023,
+       "value": 317,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 334,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 352,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 369,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 391,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 405,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "ATM shipments (forecast, total)",
+     "unit": "ATMs shipped (units)",
+     "page": 434,
+     "note": "Figure 5.3, CAGR 7.6%; ~740 total over forecast period (~125/yr avg). All forecast years provisional.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 90,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 110,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 130,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 130,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 150,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 130,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "ATM shipments (forecast) - new installations",
+     "unit": "ATMs shipped (units)",
+     "page": 434,
+     "note": "Figure 5.3, CAGR 0.0%. All forecast years provisional.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 40,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 50,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 50,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 50,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 60,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 40,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "ATM shipments (forecast) - replacements",
+     "unit": "ATMs shipped (units)",
+     "page": 434,
+     "note": "Figure 5.3, CAGR 12.5%; replacements share rises 56%->69% 2023-2028. All forecast years provisional.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 50,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 60,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 80,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 80,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 90,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 90,
+       "provisional": true
+      }
+     ]
+    }
+   ]
+  },
+  "BA": {
+   "country": "Bosnia and Herzegovina",
+   "doc": "rbr-cee-atm-2028",
+   "series": [
+    {
+     "metric": "ATM installed base (historical)",
+     "unit": "ATMs",
+     "page": 470,
+     "note": "Fig 3.1 Number and growth of ATMs 2018-2022; peaked at 1,670 in 2020 then declined; CAGR -0.6%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 1584
+      },
+      {
+       "year": 2019,
+       "value": 1635
+      },
+      {
+       "year": 2020,
+       "value": 1670
+      },
+      {
+       "year": 2021,
+       "value": 1636
+      },
+      {
+       "year": 2022,
+       "value": 1546
+      }
+     ]
+    },
+    {
+     "metric": "ATM installed base (forecast)",
+     "unit": "ATMs",
+     "page": 473,
+     "note": "Fig 4.1 Forecast ATM installed base 2023-2028; declines ~2% p.a. to 1,370; CAGR -1.7%.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 1490,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 1450,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 1430,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 1410,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 1390,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 1370,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "ATM annual growth rate (historical)",
+     "unit": "% per year",
+     "page": 470,
+     "note": "Fig 3.1 percentage growth line; turns negative in 2021 and falls to -5.5% in 2022.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 2.3
+      },
+      {
+       "year": 2019,
+       "value": 3.2
+      },
+      {
+       "year": 2020,
+       "value": 2.1
+      },
+      {
+       "year": 2021,
+       "value": -2
+      },
+      {
+       "year": 2022,
+       "value": -5.5
+      }
+     ]
+    },
+    {
+     "metric": "ATM annual growth rate (forecast)",
+     "unit": "% per year",
+     "page": 473,
+     "note": "Fig 4.1 forecast percentage growth 2023-2028.",
+     "points": [
+      {
+       "year": 2023,
+       "value": -3.6,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": -2.7,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": -1.4,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": -1.4,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": -1.4,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": -1.4,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Branch-based ATMs (historical)",
+     "unit": "ATMs",
+     "page": 471,
+     "note": "Fig 3.3 ATMs by location; branch-based count, CAGR -1.6%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 1034
+      },
+      {
+       "year": 2019,
+       "value": 1056
+      },
+      {
+       "year": 2020,
+       "value": 1049
+      },
+      {
+       "year": 2021,
+       "value": 1014
+      },
+      {
+       "year": 2022,
+       "value": 971
+      }
+     ]
+    },
+    {
+     "metric": "Off-site ATMs (historical)",
+     "unit": "ATMs",
+     "page": 471,
+     "note": "Fig 3.3 ATMs by location; off-site count, CAGR +1.1%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 550
+      },
+      {
+       "year": 2019,
+       "value": 579
+      },
+      {
+       "year": 2020,
+       "value": 621
+      },
+      {
+       "year": 2021,
+       "value": 622
+      },
+      {
+       "year": 2022,
+       "value": 575
+      }
+     ]
+    },
+    {
+     "metric": "Off-site ATM share (historical)",
+     "unit": "% of total ATMs",
+     "page": 471,
+     "note": "Fig 3.3 stacked-bar location split; off-site percentage of fleet.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 35
+      },
+      {
+       "year": 2019,
+       "value": 35
+      },
+      {
+       "year": 2020,
+       "value": 37
+      },
+      {
+       "year": 2021,
+       "value": 38
+      },
+      {
+       "year": 2022,
+       "value": 37
+      }
+     ]
+    },
+    {
+     "metric": "Bank branches",
+     "unit": "branches",
+     "page": 466,
+     "note": "Fig 1.2 Branches by bank totals; fell -141 in 2022 (~19% drop), mainly Sberbank closures. Key metrics (p.464) also states 666 branches in 2022.",
+     "points": [
+      {
+       "year": 2021,
+       "value": 807
+      },
+      {
+       "year": 2022,
+       "value": 666
+      }
+     ]
+    },
+    {
+     "metric": "Cash recyclers / independent deployer (IAD) ATMs",
+     "unit": "ATMs",
+     "page": 464,
+     "note": "Fig 1.1 Key metrics 2022: 'of which IADs' = 0 (no independent/non-bank deployers); RBR reports no separate cash-recycler/deposit-automation series for BiH.",
+     "points": [
+      {
+       "year": 2022,
+       "value": 0
+      }
+     ]
+    },
+    {
+     "metric": "Forecast ATM shipments (total)",
+     "unit": "ATMs shipped",
+     "page": 474,
+     "note": "Fig 5.3 Forecast ATM shipments 2023-2028; ~904 total, ~150/yr, CAGR 12.6%; all replacements.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 94,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 130,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 160,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 170,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 180,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 170,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Forecast ATM shipments - replacements",
+     "unit": "ATMs shipped",
+     "page": 474,
+     "note": "Fig 5.3; replacements = 100% of shipments every year; new installations forecast at 0 throughout.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 94,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 130,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 160,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 170,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 180,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 170,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "ATMs per million people (historical and forecast)",
+     "unit": "ATMs per million people",
+     "page": 473,
+     "note": "2022 value 478 from Fig 1.1/3.2 (p.464/471); 2023-2028 from Fig 4.1 forecast (p.473), CAGR -1.7%.",
+     "points": [
+      {
+       "year": 2022,
+       "value": 478
+      },
+      {
+       "year": 2023,
+       "value": 461,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 448,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 442,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 436,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 430,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 424,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Domestic ATM sharing (BH Mreza Bankomata members)",
+     "unit": "shared ATMs",
+     "page": 467,
+     "note": "Fig 2.1 Domestic sharing agreements 2018-2022; jump in 2022 driven by ASA Banka's Sberbank acquisition; CAGR 11.1%; ~13% of country ATMs shared at end-2022.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 136
+      },
+      {
+       "year": 2019,
+       "value": 138
+      },
+      {
+       "year": 2020,
+       "value": 149
+      },
+      {
+       "year": 2021,
+       "value": 152
+      },
+      {
+       "year": 2022,
+       "value": 207
+      }
+     ]
+    }
+   ]
+  },
+  "MK": {
+   "country": "North Macedonia",
+   "doc": "rbr-cee-atm-2028",
+   "series": [
+    {
+     "metric": "ATM installed base (historical)",
+     "unit": "ATMs",
+     "page": 558,
+     "note": "Figure 3.1 number of ATMs 2018-2022; peaked ~1,050 end-2015, fell to 981 in 2021, recovered to 1,013 in 2022; CAGR -0.7%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 1040
+      },
+      {
+       "year": 2019,
+       "value": 1041
+      },
+      {
+       "year": 2020,
+       "value": 991
+      },
+      {
+       "year": 2021,
+       "value": 981
+      },
+      {
+       "year": 2022,
+       "value": 1013
+      }
+     ]
+    },
+    {
+     "metric": "ATM installed base (forecast)",
+     "unit": "ATMs",
+     "page": 561,
+     "note": "Figure 5.1 forecast installed base 2023-2028; expands to 1,060 by end-2028, CAGR 0.6%.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 1030,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 1040,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 1050,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 1055,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 1060,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 1060,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Independently deployed ATMs (IADs)",
+     "unit": "ATMs",
+     "page": 555,
+     "note": "Figure 1.1 key metrics 2022; North Macedonia has 0 IADs (no cash-recycler/deposit-automation series reported).",
+     "points": [
+      {
+       "year": 2022,
+       "value": 0
+      }
+     ]
+    },
+    {
+     "metric": "Bank branches (total)",
+     "unit": "branches",
+     "page": 556,
+     "note": "Figure 1.2 total branches by bank; 392 in 2021, 391 in 2022 (net -1).",
+     "points": [
+      {
+       "year": 2021,
+       "value": 392
+      },
+      {
+       "year": 2022,
+       "value": 391
+      }
+     ]
+    },
+    {
+     "metric": "Annual number of cash withdrawals",
+     "unit": "million withdrawals",
+     "page": 559,
+     "note": "Figure 3.3 2018-2022; dipped 2020 (COVID), recovered to 29m in 2022; CAGR 1.0%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 28
+      },
+      {
+       "year": 2019,
+       "value": 28
+      },
+      {
+       "year": 2020,
+       "value": 25
+      },
+      {
+       "year": 2021,
+       "value": 28
+      },
+      {
+       "year": 2022,
+       "value": 29
+      }
+     ]
+    },
+    {
+     "metric": "Average cash withdrawals per ATM per month",
+     "unit": "withdrawals per ATM per month",
+     "page": 559,
+     "note": "Figure 3.3 2018-2022; CAGR 1.9%, reaching 2,426 end-2022.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 2249
+      },
+      {
+       "year": 2019,
+       "value": 2265
+      },
+      {
+       "year": 2020,
+       "value": 2065
+      },
+      {
+       "year": 2021,
+       "value": 2344
+      },
+      {
+       "year": 2022,
+       "value": 2426
+      }
+     ]
+    },
+    {
+     "metric": "Annual value of cash withdrawals",
+     "unit": "MKD billion",
+     "page": 560,
+     "note": "Figure 3.4 2018-2022; CAGR 6.7%; 2022 = MKD 186.7bn (USD 3.3bn), shown rounded as 187.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 144
+      },
+      {
+       "year": 2019,
+       "value": 150
+      },
+      {
+       "year": 2020,
+       "value": 153
+      },
+      {
+       "year": 2021,
+       "value": 173
+      },
+      {
+       "year": 2022,
+       "value": 187
+      }
+     ]
+    },
+    {
+     "metric": "Average value of a cash withdrawal",
+     "unit": "MKD",
+     "page": 560,
+     "note": "Figure 3.4 2018-2022; CAGR 5.7%; 2022 = MKD 6,434 (USD 11.8).",
+     "points": [
+      {
+       "year": 2018,
+       "value": 5153
+      },
+      {
+       "year": 2019,
+       "value": 5300
+      },
+      {
+       "year": 2020,
+       "value": 6076
+      },
+      {
+       "year": 2021,
+       "value": 6222
+      },
+      {
+       "year": 2022,
+       "value": 6434
+      }
+     ]
+    },
+    {
+     "metric": "Average value withdrawn per ATM",
+     "unit": "MKD million",
+     "page": 560,
+     "note": "Figure 3.4 2018-2022; CAGR 7.8%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 139
+      },
+      {
+       "year": 2019,
+       "value": 144
+      },
+      {
+       "year": 2020,
+       "value": 151
+      },
+      {
+       "year": 2021,
+       "value": 174
+      },
+      {
+       "year": 2022,
+       "value": 188
+      }
+     ]
+    },
+    {
+     "metric": "Cash withdrawal value as proportion of GDP",
+     "unit": "% of GDP",
+     "page": 560,
+     "note": "Figure 3.4 2018-2022; CAGR 1.8%.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 21.8
+      },
+      {
+       "year": 2019,
+       "value": 21.6
+      },
+      {
+       "year": 2020,
+       "value": 22.9
+      },
+      {
+       "year": 2021,
+       "value": 24
+      },
+      {
+       "year": 2022,
+       "value": 23.4
+      }
+     ]
+    },
+    {
+     "metric": "Forecast total ATM shipments",
+     "unit": "ATMs shipped",
+     "page": 562,
+     "note": "Figure 5.3 forecast shipments 2023-2028; peaks at 155 in 2026-2027 then falls to 130 in 2028; CAGR 6.0%; mostly replacements.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 97,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 120,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 150,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 155,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 155,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 130,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Forecast ATM shipments - new installations",
+     "unit": "ATMs shipped",
+     "page": 562,
+     "note": "Figure 5.3 new-installation share of forecast shipments 2023-2028; declines to 0 by 2028.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 17,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 10,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 10,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 5,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 5,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 0,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Forecast ATM shipments - replacements",
+     "unit": "ATMs shipped",
+     "page": 562,
+     "note": "Figure 5.3 replacement share of forecast shipments 2023-2028; CAGR 10.2%.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 80,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 110,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 140,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 150,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 150,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 130,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "ATMs per million people (forecast)",
+     "unit": "ATMs per million people",
+     "page": 561,
+     "note": "Figure 5.1 forecast density 2023-2028; 2022 actual was 484 (Fig 1.1/3.2, p.555/558).",
+     "points": [
+      {
+       "year": 2022,
+       "value": 484
+      },
+      {
+       "year": 2023,
+       "value": 492,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 497,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 502,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 504,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 506,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 506,
+       "provisional": true
+      }
+     ]
+    }
+   ]
+  },
+  "ME": {
+   "country": "Montenegro",
+   "doc": "rbr-cee-atm-2028",
+   "series": [
+    {
+     "metric": "ATM installed base",
+     "unit": "ATMs",
+     "page": 600,
+     "note": "From Figure 1 (ATMs by country, tertiary markets), 2022 snapshot; single year only — RBR provides no Montenegro-specific time series or forecast (forecasts in Figures 2-4 are pooled across the tertiary/secondary markets).",
+     "points": [
+      {
+       "year": 2022,
+       "value": 460
+      }
+     ]
+    },
+    {
+     "metric": "ATMs per million people",
+     "unit": "ATMs per million population",
+     "page": 600,
+     "note": "Figure 1, 2022; derived density (population 0.6m).",
+     "points": [
+      {
+       "year": 2022,
+       "value": 734
+      }
+     ]
+    },
+    {
+     "metric": "ATMs per USD billion GDP",
+     "unit": "ATMs per USD bn GDP",
+     "page": 600,
+     "note": "Figure 1, 2022; derived density (GDP USD 6.1bn).",
+     "points": [
+      {
+       "year": 2022,
+       "value": 75
+      }
+     ]
+    },
+    {
+     "metric": "ATMs per 1,000 km2",
+     "unit": "ATMs per 1,000 km2",
+     "page": 600,
+     "note": "Figure 1, 2022; derived density (area 13.8 thousand km2).",
+     "points": [
+      {
+       "year": 2022,
+       "value": 33
+      }
+     ]
+    },
+    {
+     "metric": "Population",
+     "unit": "million people",
+     "page": 600,
+     "note": "Figure 1, 2022 context value (source: CIA/IMF), not an ATM metric.",
+     "points": [
+      {
+       "year": 2022,
+       "value": 0.6
+      }
+     ]
+    },
+    {
+     "metric": "GDP",
+     "unit": "USD billion",
+     "page": 600,
+     "note": "Figure 1, 2022 context value (source: IMF), not an ATM metric.",
+     "points": [
+      {
+       "year": 2022,
+       "value": 6.1
+      }
+     ]
+    }
+   ]
+  },
+  "XK": {
+   "country": "Kosovo",
+   "doc": "rbr-cee-atm-2028",
+   "series": [
+    {
+     "metric": "ATM installed base",
+     "unit": "ATMs",
+     "points": [
+      {
+       "year": 2022,
+       "value": 520
+      }
+     ],
+     "page": 600,
+     "note": "Figure 1 'ATMs by country (tertiary markets), 2022' — Kosovo 520 ATMs; single 2022 cross-section, no Kosovo-only time series given."
+    },
+    {
+     "metric": "ATMs per million people",
+     "unit": "ATMs per million people",
+     "points": [
+      {
+       "year": 2022,
+       "value": 313
+      }
+     ],
+     "page": 600,
+     "note": "Figure 1 — Kosovo 313 ATMs per million (population 1.7m)."
+    },
+    {
+     "metric": "ATMs per USD billion GDP",
+     "unit": "ATMs per USD bn GDP",
+     "points": [
+      {
+       "year": 2022,
+       "value": 56
+      }
+     ],
+     "page": 600,
+     "note": "Figure 1 — Kosovo 56 ATMs per USD bn GDP (GDP USD 9.4bn)."
+    },
+    {
+     "metric": "ATMs per 1,000 km2",
+     "unit": "ATMs per 1,000 km2",
+     "points": [
+      {
+       "year": 2022,
+       "value": 48
+      }
+     ],
+     "page": 600,
+     "note": "Figure 1 — Kosovo 48 ATMs per 1,000 km2 (area 10.9k km2)."
+    }
+   ]
+  },
+  "AT": {
+   "country": "Austria",
+   "doc": "rbr-we-atm-2028",
+   "series": [
+    {
+     "metric": "ATM installed base (historical)",
+     "unit": "ATMs (units)",
+     "page": 65,
+     "note": "Fig 4.1 country chapter; 2022 fell ~3%, strongest decline ever recorded in Austria.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 8773
+      },
+      {
+       "year": 2019,
+       "value": 8987
+      },
+      {
+       "year": 2020,
+       "value": 9069
+      },
+      {
+       "year": 2021,
+       "value": 9165
+      },
+      {
+       "year": 2022,
+       "value": 8933
+      }
+     ]
+    },
+    {
+     "metric": "ATM installed base (forecast)",
+     "unit": "ATMs (units)",
+     "page": 44,
+     "note": "Fig 3.2 regional forecast (also Austria Fig 7.1); only primary market forecast broadly flat, CAGR +0.1%.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 8975,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 9000,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 9025,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 9050,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 9050,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 9025,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "ATMs with automated note deposit (cash recyclers / deposit-automation)",
+     "unit": "ATMs (units)",
+     "page": 68,
+     "note": "Fig 4.4 / 4.5 2022: 2,287 automated note deposit (26%), of which 2,278 note recycling (26%); cheque deposit 0. SATs with note deposit = 275.",
+     "points": [
+      {
+       "year": 2022,
+       "value": 2287
+      }
+     ]
+    },
+    {
+     "metric": "ATMs with note recycling (cash recyclers)",
+     "unit": "ATMs (units)",
+     "page": 68,
+     "note": "Fig 4.4 2022; subset of automated note deposit ATMs, 26% of total 8,933.",
+     "points": [
+      {
+       "year": 2022,
+       "value": 2278
+      }
+     ]
+    },
+    {
+     "metric": "ATMs with NFC cash withdrawal",
+     "unit": "ATMs (units)",
+     "page": 68,
+     "note": "Fig 4.4 functionality 2022; 14% of total.",
+     "points": [
+      {
+       "year": 2022,
+       "value": 1212
+      }
+     ]
+    },
+    {
+     "metric": "Bank branches (total)",
+     "unit": "branches",
+     "page": 59,
+     "note": "Fig 2.1 branches by bank 2021/2022 (ONB + RBR); total fell from 3,280 to 3,180 (-100). Fig 1.1 also lists 3,180 for 2022.",
+     "points": [
+      {
+       "year": 2021,
+       "value": 3280
+      },
+      {
+       "year": 2022,
+       "value": 3180
+      }
+     ]
+    },
+    {
+     "metric": "ATM cash withdrawals - volume (historical)",
+     "unit": "million withdrawals per year",
+     "page": 38,
+     "note": "Fig 1.14 primary-markets table; CAGR -9.6%, avg 1,675/ATM/month in 2022. Country chapter narrative cites 182 million in 2022.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 273
+      },
+      {
+       "year": 2019,
+       "value": 277
+      },
+      {
+       "year": 2020,
+       "value": 214
+      },
+      {
+       "year": 2021,
+       "value": 181
+      },
+      {
+       "year": 2022,
+       "value": 182
+      }
+     ]
+    },
+    {
+     "metric": "ATM cash withdrawals - volume (forecast)",
+     "unit": "million withdrawals per year",
+     "page": 49,
+     "note": "Fig 3.8 forecast total withdrawals by country; CAGR -2%.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 185,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 180,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 175,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 171,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 168,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 165,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "ATM cash withdrawals - value (historical)",
+     "unit": "USD billion per year",
+     "page": 40,
+     "note": "Fig 1.16 primary-markets table; CAGR -5.4%; avg USD 237 per withdrawal, USD 4.8m per ATM in 2022. (Country narrative: 2022 ~EUR 41bn / USD 43bn.)",
+     "points": [
+      {
+       "year": 2018,
+       "value": 54
+      },
+      {
+       "year": 2019,
+       "value": 52
+      },
+      {
+       "year": 2020,
+       "value": 45
+      },
+      {
+       "year": 2021,
+       "value": 46
+      },
+      {
+       "year": 2022,
+       "value": 43
+      }
+     ]
+    },
+    {
+     "metric": "ATM cash withdrawals - value (forecast)",
+     "unit": "USD billion per year",
+     "page": 51,
+     "note": "Fig 3.10 forecast total value by country; CAGR +0.7%.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 50,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 51,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 51,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 51,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 51,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 52,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "ATM shipments (forecast)",
+     "unit": "ATMs shipped per year",
+     "page": 46,
+     "note": "Fig 3.4 forecast shipments by country; CAGR +0.3%; ~3,200 over 2023-2028, ~92% replacements rising to 98% by 2028.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 590,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 500,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 490,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 490,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 540,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 600,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "Replacements as % of ATM shipments (forecast)",
+     "unit": "% of shipments",
+     "page": 47,
+     "note": "Fig 3.6 forecast; CAGR +1.5%; replacement share rises to 98% by 2028.",
+     "points": [
+      {
+       "year": 2023,
+       "value": 91,
+       "provisional": true
+      },
+      {
+       "year": 2024,
+       "value": 90,
+       "provisional": true
+      },
+      {
+       "year": 2025,
+       "value": 90,
+       "provisional": true
+      },
+      {
+       "year": 2026,
+       "value": 90,
+       "provisional": true
+      },
+      {
+       "year": 2027,
+       "value": 95,
+       "provisional": true
+      },
+      {
+       "year": 2028,
+       "value": 98,
+       "provisional": true
+      }
+     ]
+    },
+    {
+     "metric": "ATMs by location (historical)",
+     "unit": "ATMs (units), by location type",
+     "page": 66,
+     "note": "Fig 4.3 country chapter; 2022 split: Hall 8, Lobby 4,726, TTW 1,481, Off-site 2,697, Drive-through 9 (totals 8,933). Series below shows total; off-site grew at +5.7% CAGR, lobby ~53% of estate.",
+     "points": [
+      {
+       "year": 2018,
+       "value": 8773
+      },
+      {
+       "year": 2019,
+       "value": 8987
+      },
+      {
+       "year": 2020,
+       "value": 9069
+      },
+      {
+       "year": 2021,
+       "value": 9165
+      },
+      {
+       "year": 2022,
+       "value": 8933
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

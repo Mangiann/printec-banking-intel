@@ -1,0 +1,61 @@
+{
+  "slug": "romania-seap-sicap",
+  "status": "partial",
+  "remaining": "BNR (Banca Nationala a Romaniei) notice sweep by contracting authority; Posta Romana open procedures; deadlines/details for the open POS acquiring tenders (CN1094258, CN1092633, SCN1175047); TED Romania cross-check; Romanian banking press (BCR/BRD/Banca Transilvania ATM/self-service programmes); RAMS/Imprimeria; security & CIT tenders.",
+  "signals": [
+    {
+      "entity": "SEAP/SICAP (e-licitatie.ro) portal itself",
+      "country": "Romania",
+      "signal": "SICAP's undocumented public JSON API is reachable and filterable without login: POST https://e-licitatie.ro/api-pub/NoticeCommon/GetCNoticeList/ with {\"contractName\":\"<kw>\",\"sysNoticeTypeIds\":[],\"sortProperties\":[]} filters contract notices, and POST https://e-licitatie.ro/api-pub/DirectAcquisitionCommon/GetDirectAcquisitionList/ with {\"directAcquisitionName\":\"<kw>\"} returns direct-award records INCLUDING the named winning supplier, its fiscal code, the contracting authority and the closing value. Endpoint names were recovered from the Angular bundle https://e-licitatie.ro/app-pub. The award-notice endpoint GetCANoticeList ignores its contractObject filter (returns the unfiltered 3,000-row cap).",
+      "source_name": "SICAP / e-licitatie.ro public API (api-pub), verified live",
+      "source_url": "https://e-licitatie.ro/pub/notices/contract-notices/list/1/1",
+      "source_date": "01/08/2026",
+      "source_tier": "primary",
+      "implies": "Gives Printec a repeatable, no-login monitoring route into the whole Romanian public-sector demand pool for cash-handling, POS acquiring and self-service kiosks, including named competitor wins at direct-award level.",
+      "likelihood": "n/a - access method",
+      "confidence": "Medium",
+      "opp_size": "Unscoped",
+      "win": "—",
+      "followup": "Add the two working endpoints to the source access registry; schedule a weekly keyword sweep.",
+      "deadline": "",
+      "is_new": true
+    },
+    {
+      "entity": "CEC Bank S.A.",
+      "country": "Romania",
+      "signal": "CEC Bank's own procurement page cec.ro/achizitii, which returned 403 to the fetch tool in prior runs, is reachable when requested with a desktop browser User-Agent (HTTP 200, 97,630 bytes). As of 01/08/2026 it lists only TWO procedures, both already closed: (a) risk analyses for physical security of CEC Bank premises, offer deadline 23/04/2026; (b) an IT messaging (Info SMS) solution, offer deadline 13/03/2026. NO ATM, self-service, cash-recycling or POS procedure is currently published there.",
+      "source_name": "CEC Bank - Achizitii (own procurement page)",
+      "source_url": "https://www.cec.ro/achizitii",
+      "source_date": "01/08/2026",
+      "source_tier": "primary",
+      "implies": "The baseline watch item 'CEC Romania post-rollout maintenance/managed services' is NOT yet on the market. CEC buys as a commercial bank outside public-procurement law, so Printec must work the account directly rather than wait for a portal notice.",
+      "likelihood": "No live CEC hardware/self-service tender in the next 1-2 months on current evidence",
+      "confidence": "Medium",
+      "opp_size": "Unscoped",
+      "win": "—",
+      "followup": "Poll cec.ro/achizitii weekly with a desktop UA; approach CEC procurement directly on ATM/recycler maintenance.",
+      "deadline": "",
+      "is_new": true
+    },
+    {
+      "entity": "C.N. Posta Romana S.A. (fiscal code RO 427410)",
+      "country": "Romania",
+      "signal": "Romanian Post bought banknote counting/verification machines by direct award DA40258980, 'Masini de numarat si verificat bancnote', closing value RON 267,680, published 27/04/2026, WON by EUTRON INVEST ROMANIA (fiscal code RO 4096491). Separately, DA40059888 (23/03/2026) awarded maintenance and repair of 12 banknote processing/verification sorters to ROPECO BUCURESTI (RO 4912700), closing value RON 54,064.",
+      "source_name": "SICAP direct-acquisition records DA40258980 / DA40059888",
+      "source_url": "https://e-licitatie.ro/pub/direct-acquisitions/list/1",
+      "source_date": "27/04/2026",
+      "source_tier": "primary",
+      "implies": "Posta Romana is a live cash-automation buyer (counters + sorters) and a natural Printec target for cash recyclers/teller automation and managed service; both incumbents are Romanian resellers, not OEM-direct.",
+      "likelihood": "Recurring buyer - further counter/sorter lots likely within 6-12 months",
+      "confidence": "Medium",
+      "opp_size": "S",
+      "win": "Medium",
+      "followup": "Map Posta Romana's cash-centre estate and the Eutron/Ropeco service contracts' expiry.",
+      "deadline": "",
+      "is_new": true
+    }
+  ],
+  "coverage_notes": "In progress.",
+  "access_issues": "GetCANoticeList contractObject filter ignored by the server.",
+  "operator_requests": "none yet"
+}

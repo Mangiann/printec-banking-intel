@@ -1,0 +1,189 @@
+# OTP banka Srbija - bank disclosure findings (run 27/08/2026)
+
+**Slug:** `otp-srbija-rs`  |  **Status:** complete  |  **Signals:** 15  |  All confidence capped at Medium (Low where noted).
+
+## Headline
+
+- **Group primary disclosure (05/08/2026):** OTP Bank Serbia = **149 branches, 306 ATMs, 34,295 POS, 2,581 FTE at 30/06/2026** (from 153 / 301 / 32,040 / 2,664 at 31/12/2025). Branches down, headcount down, **ATMs and POS up**.
+- **Locator reconciliation (27/08/2026):** the bank's own embedded locator returns **313 standalone ATMs, 250 (80%) deposit-capable**, 179 EUR cash-in, 277 EUR-dispensing; 138 branches of which **47 have a Zone 0-24 self-service area**. This is the country-vs-group reconciliation the baseline asked for: 313 locator markers vs 306 disclosed ATMs.
+- **Market (NBS, 19-26/08/2026):** Serbia had **3,412 ATMs (+6.8% y/y)** and **195,121 POS (+10.1% y/y)** at end-Q2 2026 - a *growing* ATM market. ATM cash-in is already **24% of ATM cash value**.
+- **Fresh triggers:** OTP m-bank **v38.0.1 on 18/08/2026 adds pre-staged cash withdrawal from the app** and ConsentID e-signature for loans >RSD 1.2m; **SEPA SCT live in Serbia from 05/05/2026**; **20+ branch-adaptation tenders Jan-Aug 2026**, one closing **27/08/2026**.
+- **Competition:** Payten (Asseco SEE) runs **four Serbian entities** and a catalogue that overlaps Printec's almost line for line. Treat OTP Serbia as displacement, not greenfield.
+
+## Signals
+
+### 1. OTP banka Srbija - Serbia
+
+**Signal.** OTP Group H1-2026 interim report (published 05/08/2026) network table: OTP Bank Serbia had 149 branches, 306 ATMs, 34,295 POS terminals and 2,581 FTE at 30/06/2026, against 153 branches, 301 ATMs, 32,040 POS and 2,664 FTE at 31/12/2025 - i.e. -4 branches, +5 ATMs, +2,255 POS (+7.0% in six months) and -83 staff. Group-wide the same table shows 1,177 branches / 5,619 ATMs / 287,188 POS at 30/06/2026 vs 1,196 / 5,622 / 288,771 at 31/12/2025.
+
+**Source.** OTP Bank Nyrt - Feleves jelentes, 2026 elso feleves eredmeny (LETSZAM ES EGYEB ADATOK table, p.53) - <https://www.otpbank.hu/apps05/capital-market/api/getPublicationFile?token=72F1DFA1AEDBB713B47C000000000079F847A02D44BC72F1DFA1AEDB> - 05/08/2026 (primary)
+
+**Implies for Printec.** Serbia is one of only a handful of OTP units still ADDING ATMs while cutting branches and headcount: an explicit branch-to-self-service substitution. Fleet refresh, recyclers, branch self-service zones and managed services all sit on that trend; the 7% half-year POS growth is a live acquiring-estate expansion.
+
+**Likelihood** Already happening - confirmed in the current reporting period | **Confidence** Medium | **Opp size** L | **Win** Medium | **New** True
+
+**Follow-up.** Ask OTP Serbia which of the 306 ATMs are due for hardware replacement in 2027 and who holds the current maintenance contract.
+
+### 2. OTP banka Srbija - Serbia
+
+**Signal.** The bank's own branch/ATM locator embeds a machine-readable dataset (JS vars allMarkers / allLocations on the Lokacije page; pulled 27/08/2026) listing 459 network points: 313 standalone ATM locations, 138 branches, 6 business centres and 2 partner points. Of the 313 ATMs, 250 (79.9%) carry the cash_in (deposit-capable) flag, 179 also accept EUR cash-in and 277 dispense EUR. Of the 138 branches, 47 have a Zone 0-24 self-service area, 79 an ATS, 12 a night safe, 46 a cash_in machine and 37 disabled access.
+
+**Source.** OTP banka Srbija - Lokacije ekspozitura i bankomata (embedded locator dataset) - <https://www.otpbanka.rs/lokacije-ekspozitura-i-bankomata/> - 27/08/2026 (primary)
+
+**Implies for Printec.** Contrast with the Bulgarian and Croatian comparables in the baseline (UBB 33%, Postbank 45%, Erste Croatia 30% deposit-capable): OTP Serbia is already ~80% deposit-enabled. The white space is therefore NOT greenfield recyclers but (a) the residual 63 cash-out-only ATMs and 36 non-EUR units, (b) the refresh/upgrade cycle on an ageing recycler fleet, and (c) managed services / cash-cycle optimisation on an estate that is already automated.
+
+**Likelihood** Medium - refresh cycle is continuous but timing undisclosed | **Confidence** Medium | **Opp size** M | **Win** Medium | **New** True
+
+**Follow-up.** Re-pull this dataset each run: a change in the 250/313 deposit ratio is itself the signal.
+
+### 3. OTP banka Srbija - Serbia
+
+**Signal.** Bank article of 08/07/2026 states the ATM network covers more than 90 towns across Serbia with over 300 of the most modern devices, and describes cardless contactless withdrawal (tap card or phone, no card insertion), RSD and EUR cash withdrawal, RSD and EUR cash-in, balance enquiry, PIN change, last-three-amounts fast withdrawal, an in-app daily limit up to RSD 550,000, and merchant daily-takings (pazar) deposit at machines inside its Zone 0-24 self-service areas.
+
+**Source.** OTP banka Srbija - Sta sve mozete da obavite na bankomatu OTP banke bez odlaska u ekspozituru? - <https://www.otpbanka.rs/sta-sve-mozete-da-obavite-na-bankomatu-otp-banke/> - 08/07/2026 (primary)
+
+**Implies for Printec.** The bank is publicly positioning ATMs as branch-substitution service centres, not cash dispensers. That is the exact envelope of Printec self-service software, cash automation/recyclers and managed services, and it opens the door to added transaction sets (bill payment, card servicing, video-teller).
+
+**Likelihood** Already happening | **Confidence** Medium | **Opp size** L | **Win** Medium | **New** True
+
+### 4. OTP banka Srbija - Serbia
+
+**Signal.** OTP m-bank release 38.0.1, published 18/08/2026 (iOS) / 17/08/2026 (Android), adds three functions: schedule/pre-announce a cash withdrawal in advance through the app; open a Junior package directly in the app; and sign loans above RSD 1,200,000 using the ConsentID qualified-e-signature app. The Android listing shows 1M+ downloads and 28.2k reviews (4.6 stars). The app is still published under the legacy bundle id eu.newfrontier.iBanking.mobile.SOG.Retail inherited from Societe Generale Srbija.
+
+**Source.** Apple App Store lookup API (OTP m-bank, seller OTP BANKA SRBIJA) and Google Play listing (OTP m-Bank) - <https://itunes.apple.com/lookup?id=803935073&country=rs> - 18/08/2026 (primary)
+
+**Implies for Printec.** Pre-staged / cardless withdrawal initiated in the mobile app requires ATM-side software and a token/authorisation channel - a direct self-service software and integration opportunity. In-app product opening plus qualified e-signature above a RSD 1.2m threshold is a digital-onboarding/eKYC and fraud-screening pull. The retained legacy SGS bundle id indicates the retail digital channel still runs on the inherited platform five years after the merger, which is where replatforming budget typically lands.
+
+**Likelihood** Already shipped - integration work is live now | **Confidence** Medium | **Opp size** L | **Win** Medium | **New** True
+
+**Follow-up.** Identify the ATM-side vendor behind the pre-staged withdrawal (Payten MoneyGet is the obvious regional candidate - do NOT assume, verify).
+
+### 5. OTP banka Srbija - Serbia
+
+**Signal.** The bank publishes an open tender board. At least 20 branch-adaptation (Adaptacija ekspoziture) tenders were posted between 12/01/2026 and 18/08/2026 - Kula, Svrljig, Sid, Apatin, Prijepolje, Smederevska Palanka, Stara Pazova, Kursumlija, Nis (x2), Vrsac, Pozega, Odzaci, Vrbas, Backa Palanka, Belgrade/Save Maskovica, Paracin, Leskovac, Valjevo, Kaludjerica. The Kula tender was posted 18/08/2026 with applications closing 27/08/2026.
+
+**Source.** OTP banka Srbija - Aktuelni tenderi OTP banke - <https://www.otpbanka.rs/tenderi/> - 18/08/2026 (primary)
+
+**Implies for Printec.** Roughly one in seven branches is being refitted inside eight months. Branch refurbishment is the moment self-service zones, recyclers and teller-cash automation get specified. It is also a live, low-friction procurement channel Printec can register against.
+
+**Likelihood** Already happening - rolling programme | **Confidence** Medium | **Opp size** M | **Win** Medium | **New** True | **Deadline** 27/08/2026
+
+**Follow-up.** Register with OTP Serbia procurement for the branch-adaptation tender list and ask whether self-service/cash-automation equipment is scoped separately from the fit-out.
+
+### 6. OTP banka Srbija - Serbia
+
+**Signal.** Corporate cash-handling page lists merchant daily-takings (pazar) deposit via branch counters, an Express Cash service, night-safe deposit and cash collection and transport, and names exactly 30 branches equipped with cash-in machines (Arandjelovac, 11 Belgrade sites, Cacak, Jagodina, Kragujevac, Kraljevo, Krusevac, Leskovac, Loznica, Nis, Novi Sad, Pancevo, Smederevo, Sombor, Stara Pazova, Subotica, Sabac, Uzice, Valjevo, Vranje, Zrenjanin).
+
+**Source.** OTP banka Srbija - Uplata pazara (Privreda / Platni promet) - <https://www.otpbanka.rs/privreda/platni-promet-privreda/uplata-pazara-privreda/> - 27/08/2026 (primary)
+
+**Implies for Printec.** Only 30 named merchant cash-in points nationally (the locator flags 46 branches with cash_in) against a 149-branch network - the merchant cash-deposit channel is thin and still leans on counters, night safes and CIT. That is the classic case for branch cash recyclers and teller cash automation, and for smart-safe/CIT-reduction propositions.
+
+**Likelihood** Medium | **Confidence** Medium | **Opp size** M | **Win** Medium | **New** True
+
+**Follow-up.** Reconcile the 30 named merchant cash-in branches against the locator's 46 cash_in flags - one of the two is stale; ask the bank which.
+
+### 7. OTP banka Srbija - Serbia
+
+**Signal.** New POS product page dated 30/07/2026 offers: standard Android POS terminals delivered to the merchant within 24h of contract signature and self-installed in minutes; OTP GO POS, a tap-to-phone softPOS app turning an Android NFC phone into a terminal (Visa, Mastercard, Apple Pay, Google Pay and all banks' wallets); combined POS + e-fiscalisation devices supplied through e-fiscalisation partners; and POS add-ons IPS QR payment, cash-back at POS, and instalments up to 24 months.
+
+**Source.** OTP banka Srbija - POS terminali OTP banke - <https://www.otpbanka.rs/pos-terminali-otp-banke/> - 30/07/2026 (primary)
+
+**Implies for Printec.** A modernised acquiring stack (softPOS, self-install Android terminals, QR, cashback, e-fiscalisation integration) consistent with the +2,255 POS added in H1. Cash-back at POS is also a cash-access substitute that changes ATM siting economics. Printec POS/acquiring, terminal estate management and merchant onboarding all map here - but note this is contested ground.
+
+**Likelihood** Already live | **Confidence** Medium | **Opp size** L | **Win** Medium | **New** True
+
+### 8. OTP banka Srbija - Serbia
+
+**Signal.** Bank confirms that from 05/05/2026 clients of banks in Serbia can send and receive SEPA Credit Transfer euro payments to and from SEPA-area banks using standardised SEPA SCT formats and IBAN, on the SHA charging principle, with SWIFT/BIC resolved automatically in the background.
+
+**Source.** OTP banka Srbija - SEPA SCT placanja: sta su, kako funkcionisu i sta znace za klijente u Srbiji - <https://www.otpbanka.rs/sepa-placanja-sta-znace-za-klijente-u-srbiji/> - 25/05/2026 (primary)
+
+**Implies for Printec.** SEPA entry forces ISO 20022 message handling, IBAN/BIC derivation and euro cross-border sanctions and AML screening at volume - a direct pull for transaction monitoring, AML/compliance tooling and payment-hub integration work, and it raises the compliance bar across the whole Serbian sector at once.
+
+**Likelihood** Already live - remediation and tuning work runs through 2026-27 | **Confidence** Medium | **Opp size** L | **Win** Medium | **New** True
+
+**Follow-up.** Obtain the NBS primary announcement of the SEPA SCT go-live and Serbia's SEPA scheme adherence date to date the trigger at regulator level.
+
+### 9. National Bank of Serbia (market context) - Serbia
+
+**Signal.** NBS acceptance-network statistics, file updated 19/08/2026: Serbia had 3,412 ATMs and 195,121 POS terminals at end-Q2 2026, up from 3,336 / 187,957 at Q1-2026 and 3,196 / 177,185 at Q2-2025 (+6.8% ATMs, +10.1% POS y/y); virtual points of sale 6,278. Q2-2026 ATM activity with domestically issued cards: 3,406,129 cash-IN transactions worth RSD 173,936m against 27,288,350 cash-OUT transactions worth RSD 552,239m.
+
+**Source.** National Bank of Serbia - Payment system statistics: Acceptance network (prihvatna_mreza.xlsx) and Payment transactions in the acceptance network (trans_prihvatna_mreza.xlsx) - <https://www.nbs.rs/export/sites/NBS_site/documents/platni-sistem/statistika/el_novac/prihvatna_mreza.xlsx> - 19/08/2026 (regulator)
+
+**Implies for Printec.** Serbia is a GROWING ATM market against the European trend (+216 machines y/y), and deposits already represent 24% of ATM cash value moved. This is a live recycler, cash-cycle-management and ATM-as-a-service market, not a shrinking one - the strongest structural argument in Printec's CEE footprint right now. It also updates the baseline's Q1-2026 figure of 3,336 / 187,957.
+
+**Likelihood** Already happening | **Confidence** Medium | **Opp size** XL | **Win** Medium | **New** True
+
+### 10. National Bank of Serbia (market context) - Serbia
+
+**Signal.** NBS press release 26/08/2026: at end-Q2 2026 Serbia had 13.7m payment cards issued to 7.1m registered users (+706,000 cards, +5.5% y/y); 237.9m card purchases were made in the domestic acceptance network in Q2 2026, +19.3% y/y, of which 220.9m on domestically issued and 17.0m on foreign-issued cards; card transaction volume has more than doubled (+105%) since Q2 2022.
+
+**Source.** National Bank of Serbia - Card payments in Serbia record double-digit growth rates - <https://www.nbs.rs/en/scripts/showcontent/index.html?id=21674&konverzija=no> - 26/08/2026 (regulator)
+
+**Implies for Printec.** Card acceptance is compounding at ~20% a year, which drives terminal estate growth, switching/processing capacity, and fraud/transaction-monitoring load. Supports POS/acquiring, transaction monitoring and HSM/security propositions. Foreign-issued card volume up 133% in four years also argues for DCC and tourist-facing ATM functionality.
+
+**Likelihood** Already happening | **Confidence** Medium | **Opp size** L | **Win** Medium | **New** True
+
+### 11. National Bank of Serbia (market context) - Serbia
+
+**Signal.** NBS press release 21/08/2026: registered m-banking users reached 5,446,159 at end-Q2 2026 (+13.2% y/y) and e-banking users 5,178,872 (+11.0% y/y). 75.3m payments were made via m- and e-banking in Q2 2026 (+11.8% y/y), with m-banking up 26.8% from 33.6m to 42.6m payments while e-banking FELL 3.1% from 33.8m to 32.7m.
+
+**Source.** National Bank of Serbia - Continued positive trends in digital banking in Q2 2026 - <https://www.nbs.rs/en/scripts/showcontent/index.html?id=21670&konverzija=no> - 21/08/2026 (regulator)
+
+**Implies for Printec.** Mobile has overtaken desktop as the primary initiation channel in Serbia and is the only one still growing. Origination and servicing move to the phone, which raises the value of remote identity proofing (eKYC), device/behavioural fraud detection and mobile-initiated ATM interactions - and it explains OTP's Aug-2026 app release.
+
+**Likelihood** Already happening | **Confidence** Medium | **Opp size** L | **Win** Medium | **New** True
+
+### 12. OTP banka Srbija - Serbia
+
+**Signal.** OTP Group H1-2026 report on the Serbian unit: after-tax profit HUF 32bn for H1, -19% y/y (HUF 16.2bn in Q2); net interest margin -27bp y/y under retail interest-rate caps and euro-rate pass-through on a loan book about two-thirds FX (mostly EUR) denominated; net fee and commission income +17% y/y (+16% q/q in Q2); H1 operating costs +7% y/y in HUF and +17% in dinar terms, attributed MAINLY to higher IT and marketing spend plus higher supervisory fees. Stage 3 ratio improved to 2.1% with 66.4% coverage.
+
+**Source.** OTP Bank Nyrt - Feleves jelentes, 2026 elso feleves eredmeny, OTP Bank Szerbia section - <https://www.otpbank.hu/apps05/capital-market/api/getPublicationFile?token=72F1DFA1AEDBB713B47C000000000079F847A02D44BC72F1DFA1AEDB> - 05/08/2026 (primary)
+
+**Implies for Printec.** IT is explicitly named as the cost driver even as profit falls 19% - the budget exists but is under visible scrutiny. That tilts the buying centre away from capex hardware refresh and towards managed services, ATM-as-a-service and opex-priced propositions, and makes cost-per-transaction the winning argument.
+
+**Likelihood** Medium | **Confidence** Medium | **Opp size** M | **Win** Medium | **New** True
+
+### 13. OTP banka Srbija - Serbia
+
+**Signal.** OTP Group H1-2026 report attributes Serbian consumer-loan growth (+5% ytd, performing book +7% ytd FX-adjusted) to lively retail demand AND digital application journeys, naming the Cash2go and Klik kredit products.
+
+**Source.** OTP Bank Nyrt - Feleves jelentes, 2026 elso feleves eredmeny, OTP Bank Szerbia section - <https://www.otpbank.hu/apps05/capital-market/api/getPublicationFile?token=72F1DFA1AEDBB713B47C000000000079F847A02D44BC72F1DFA1AEDB> - 05/08/2026 (primary)
+
+**Implies for Printec.** Remote lending at scale needs identity proofing, document capture, liveness and qualified e-signature (the app now routes >RSD 1.2m loans through ConsentID) plus application-fraud screening - the digital onboarding/eKYC and AML/fraud parts of the Printec offer.
+
+**Likelihood** Already happening | **Confidence** Medium | **Opp size** M | **Win** Medium | **New** True
+
+### 14. Payten / Asseco SEE (competitor) - Serbia
+
+**Signal.** Payten (Asseco SEE Group) operates FOUR legal entities in Serbia - Payten d.o.o. Beograd (Bulevar Mihaila Pupina 10B), Chip Card a.d. Belgrade (card personalisation), Afusion d.o.o. Beograd and Monri Payments d.o.o. Beograd (e-commerce gateway) - and its published catalogue for payment and financial institutions covers ATM infrastructure and services, ATM outsourcing, ATM software, MoneyGet cardless cash, SoftPOS, POS infrastructure and services, processing, and InACT transaction monitoring/fraud.
+
+**Source.** Payten (Asseco SEE) - company contacts and Offer for Payment & Financial Institutions / ATM Related Services - <https://www.payten.com/en/offers/for-payment-financial-institutions/atm-related-services/> - 27/08/2026 (primary)
+
+**Implies for Printec.** Payten's Serbian stack overlaps Printec's offer almost line for line (ATM hardware+software+outsourcing, POS, softPOS, processing, monitoring) and it is locally incorporated with a card-personalisation bureau. Any OTP Serbia self-service or acquiring pursuit should be scoped as a displacement, not a greenfield sale, and differentiated on cash-cycle/recycler depth and managed-service SLAs.
+
+**Likelihood** Standing competitive condition | **Confidence** Medium | **Opp size** Unscoped | **Win** Low | **New** True
+
+**Follow-up.** Establish whether Payten currently holds OTP Serbia ATM managed services, processing or the MoneyGet cardless channel - this run could not confirm a named client relationship.
+
+### 15. OTP Group (parent, context for Serbia) - Hungary / Baltics
+
+**Signal.** OTP Group's H1-2026 report devotes a section to the pending Luminor Bank acquisition, describing it as entry in a single step into three euro-area Baltic markets, states the purchase price was set BELOW book value under conservative valuation principles, and praises Luminor management specifically for modernising the bank's IT systems and successfully launching a new mobile banking platform, with ongoing IT infrastructure work expected to improve its cost/income ratio.
+
+**Source.** OTP Bank Nyrt - Feleves jelentes, 2026 elso feleves eredmeny (Luminor transaction section) - <https://www.otpbank.hu/apps05/capital-market/api/getPublicationFile?token=72F1DFA1AEDBB713B47C000000000079F847A02D44BC72F1DFA1AEDB> - 05/08/2026 (primary)
+
+**Implies for Printec.** Group capital and senior management attention are being pulled to the Baltics, and the report holds up IT modernisation as the value case. Read two ways for Serbia: competition for group IT capex in the near term, but an explicit group-level endorsement of IT-modernisation spending as the route to a better C/I ratio - useful framing in a Serbian pitch.
+
+**Likelihood** Medium | **Confidence** Low | **Opp size** Unscoped | **Win** Low | **New** True
+
+## Coverage notes
+
+Fresh run - no prior checkpoint existed for 27/08/2026. Session WebSearch budget (200/200) was already exhausted by earlier banks BEFORE this task started, so ZERO keyword searches were possible; all 15 signals were obtained by direct WebFetch/curl against primary URLs, plus local parsing of the bank's own embedded locator JSON, NBS statistical XLSX files and the 78-page OTP Group H1 PDF (pdfminer.six, since pdftotext is absent). Angles worked: (1) the bank's live site www.otpbanka.rs via its open WordPress REST API (posts, pages, search) - this surfaced the 08/07/2026 ATM article, the 25/05/2026 SEPA article, the 30/07/2026 POS page and the tender board; (2) the embedded machine-readable locator dataset (allMarkers/allLocations) giving a 313-ATM / 250-deposit-capable count reconciled against the group's own 306-ATM disclosure; (3) OTP Group IR - the H1-2026 PDF was retrieved through the getPublicationFile token endpoint after the /IR/Reports paths 404'd; (4) NBS as regulator - statistics XLSX files and the news archive, which yielded two press releases dated 26/08 and 21/08/2026, i.e. one and six days before this run; (5) Apple's public lookup API and the Play listing for the mobile app release notes; (6) Payten/Asseco SEE corporate site for competitor mapping. GENUINE GAPS, not quiet ground: (a) OPEN BANKING / PSD2 - no OTP Serbia developer or PSD2 API portal responds on either domain (developer/api/psd2 subdomains of otpbanka.rs and otpsrbija.rs all fail to resolve), and NBS's Payment services page carries only undated generic framework text; with no search budget I could not locate a 2026 amendment to the Law on Payment Services or an NBS open-banking consultation, so PSD2 remains UNCOVERED this run and should be the first target next run. (b) POST-MERGER CONSOLIDATION - the Vojvodjanska/Societe Generale Srbija integration completed in 2021 and produced no 2026 trigger I could source; the only fresh, checkable trace is the retained legacy SGS mobile bundle id, reported as an observation not a conclusion. (c) NBS quarterly Banking Sector report for Q2-2026 could not be located (the documents-eng/kontrola-banaka quarter_report_*.pdf pattern 404s and the listing page is JS-rendered), so no per-bank branch/employee cross-check against NBS. (d) No OTP Serbia H1-2026 standalone local financial statement was found on the Serbian site.
+
+## Access issues
+
+BLOCKED: https://www.otpsrbija.rs/ serves an EXPIRED TLS certificate and then returns HTTP 403 to curl even with a desktop Chrome User-Agent and -k (ssl_verify_result 19, 403, 40,779 bytes of WAF page). ROUTE USED: switched to the bank's other live public domain www.otpbanka.rs, which returns 200 and exposes an open WordPress REST API - all bank-side content in this report comes from there and is cited as such. BLOCKED: https://www.otpbank.hu/portal/en/IR/Reports and .../IR_Reports 404/301; ROUTE USED: parsed the Hungarian /portal/hu/ir-jelentesek page and pulled the H1 PDF from its getPublicationFile token URL (200, 2.81 MB, 78pp), extracting text locally with pdfminer.six. BLOCKED: https://www.nbs.rs/en/drugi-nivo-navigacije/press/ 404 and the news-archive pagination depends on a jsessionid; ROUTE USED: /en/drugi-nivo-navigacije/pres/arhiva-vesti/ plus direct /en/scripts/showcontent/index.html?id=NNNNN article URLs. NBS itself served everything at 200 with a desktop UA - no 403 encountered on nbs.rs. NOT REACHED: nbs.rs/en/finansijske-institucije/banke/spisak-banaka/ (404) and the quarter_report_II_26.pdf / aneks_II_26.xls pattern (404) - logged, not silently dropped. NO WEB SEARCH WAS AVAILABLE for this bank (budget exhausted upstream), which is the single largest constraint on this run's coverage.
+
+## Operator requests
+
+none - no paywalled or gated PDF was hit. If a future run wants the per-bank Serbian sector cross-check, an operator should retrieve the NBS Banking Sector in Serbia quarterly report for Q2-2026 (the listing page at https://www.nbs.rs/en/finansijske-institucije/banke/izvestaji-i-analize/ renders its document list via JavaScript and the direct PDF path pattern no longer resolves).

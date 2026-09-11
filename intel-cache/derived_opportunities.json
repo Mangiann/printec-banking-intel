@@ -1,0 +1,364 @@
+{
+ "_readme": "LIVE — read by build_dashboard.py, rendered on Overview, All signals and each market's drill-down. Indirect (composed) opportunities: plays that no single signal states, produced by intersecting 2+ signals from 2+ INDEPENDENT agents. Rules: (1) >=2 components from >=2 agents; (2) every component cited by signal key so it traces to a dated source; (3) must name a buyer or bounded buyer set, a dated trigger, and a Printec line; (4) always badged DERIVED - inference, never a sourced deal; (5) confidence capped at Medium-High (the facts may be High, the composition is inference and cannot inherit it); (6) contributes EUR 0 to value bars unless a component carries a real figure - never invent sizing; (7) every entry carries a falsifier so the next cycle can check it. Rules 1, 2 and 5 are ENFORCED BY THE ENGINE at build time (agents are counted from the resolved components, not from the 'agents' field): an entry that fails is dropped with a printed reason, and an entry citing a signal that has left the table is kept but badged 'stale citation' in the UI. Maintained weekly by the orchestrator — see agent-briefs/07-orchestrator.md step 5d.",
+ "week": "2026-08-31",
+ "authored": "2026-08-31 — Orchestrator cycle 6. Re-checked every carried entry against the new 307-row table, repaired citation keys broken by re-triage, retired and rewrote the Addiko play (its 'everything moves to Vienna' premise was overtaken by the Alta Group carve-out), and added three plays this cycle's rows make visible.",
+ "confidence_cap": "Medium-High",
+ "derived": [
+  {
+   "id": "end-of-life-inventory-becomes-the-atm-refresh-case",
+   "title": "SSM footprint — supervised banks must list their own end-of-life ATM estate by a fixed date",
+   "countries": [
+    "GR",
+    "CY",
+    "AT",
+    "HR",
+    "SI",
+    "SK",
+    "BG"
+   ],
+   "products": [
+    "atm_recycling",
+    "self_service",
+    "managed_services",
+    "compliance_resilience"
+   ],
+   "buyer": "The 21 named significant institutions across Greece, Cyprus, Austria, Croatia, Slovenia, Slovakia and Bulgaria — and, through inherited group ICT standards, their CEE subsidiaries",
+   "trigger": "ECB letter SSM-2026-0301 of 07/07/2026 requires each bank to send a full action plan to its Joint Supervisory Team by 31/10/2026. The structural measures must expressly include 'updating legacy, unsupported or end-of-life technologies'. Plans are being drafted now, in September and October 2026. The annual IT Risk Questionnaire moves to February 2027.",
+   "claim": "The compliance duty requires banks to produce the one document a hardware refresh case has always lacked. It is a list of the bank's own end-of-life technology, written by the bank and reviewed by the supervisor, with a timeline for fixing it. ATM and self-service estates that run unsupported operating systems belong on that list, whether or not anyone planned to review them.\n\nSeparately, Czechia's four-bank shared network has ~957 of 1,917 machines that cannot take a deposit. Bulgaria's four largest banks have ~1,840 dispense-only sites. Both figures already come from the banks' own data.\n\nThe commercial conclusion is to arrive in September with the remediation timeline that the Joint Supervisory Team will be monitoring, rather than to arrive in 2027 with a product.",
+   "why_not_visible_in_one_signal": "The ECB letter is typed threat_macro: a supervisory duty with no single buyer and no euro value. The Bulgarian and Czech device-census rows are national opportunities with no regulatory deadline. Neither row shows that a compliance document due on 31/10/2026 is what turns a vague deposit-capability gap into a dated, budgeted programme.",
+   "cite_signals": [
+    "ecb-ssm-2026-0301-end-of-life-ict-action-plans-due-to-supervisory-teams-by-31-10",
+    "bulgaria-big-four-atm-estate-deposit-capability-white-space-quantified",
+    "czechia-four-bank-shared-deposit-atm-network-kb-moneta-air-bank-unicredit-cz",
+    "windows-11-and-end-of-life-atm-software-kal-s-hypervisor-pitch-against-the-ecb-s"
+   ],
+   "agents": [
+    "A1",
+    "A2",
+    "A3"
+   ],
+   "confidence": "Medium-High",
+   "size_band": "Unscoped",
+   "falsifier": "If the action plans limit 'end-of-life technology' to core banking and cloud only, and leave out self-service estates as operational assets, the opening closes. Ask one significant institution in September whether ATMs appear in its inventory. The answer can be checked before the deadline."
+  },
+  {
+   "id": "structured-address-cutover-hits-the-unregulated-balkans",
+   "title": "Western Balkans — a November deadline that no domestic regulator is enforcing, affecting banks with no budget for it",
+   "countries": [
+    "RS",
+    "BA",
+    "MK",
+    "ME",
+    "XK",
+    "AL",
+    "UA"
+   ],
+   "products": [
+    "payments_instant",
+    "compliance_resilience",
+    "fraud_monitoring",
+    "managed_services"
+   ],
+   "buyer": "Commercial banks in Serbia, Bosnia, North Macedonia, Montenegro, Kosovo, Albania and Ukraine with cross-border correspondent traffic",
+   "trigger": "SWIFT's 2026 standards release removes unstructured postal addresses from cross-border messages over the 14–15/11/2026 weekend. The EPC retail cut-off moved forward to 15/11/2026 03:30 CET. SWIFT's own material says ~65% of payment messages still carry unstructured addresses.",
+   "claim": "Every EU bank has a home regulator, an RTGS (central bank settlement system) migration project and a budget line pointing at this date. The Western Balkans have none of that. The BIS/CPMI assessment has no entry at all for Serbia, Bosnia, North Macedonia, Montenegro or Kosovo. As a result, nobody has told those banks that the date exists. Their cross-border payments will still be rejected in exactly the same way.\n\nBosnia's position is more exposed. Its domestic clearing is tied by contract to the EPC rulebook, which pulls an EU date into a non-EU market.\n\nThat creates an emergency fix window from September to October. The work is cleaning party data, repairing payments and retuning screening for structured fields. It can be sold to banks that will only find the problem when messages start bouncing.",
+   "why_not_visible_in_one_signal": "The ISO 20022 row covers the whole footprint and reads as an EU compliance item. The Western Balkans rows are about a new instant payment rail going live, which is a different programme with a different sponsor. Neither shows the overlap: the same small change teams face an unfunded external deadline six weeks after their instant-payment go-live.",
+   "cite_signals": [
+    "iso-20022-structured-data-cutover-swift-sr2026-nov-2026-and-the-second-wave-nov-",
+    "bosnia-herzegovina-sepa-accession-iso-20022-structured-address-remediation",
+    "serbia-sepa-instant-payments-wave",
+    "montenegro-sepa-cost-collapse-iso-20022-rts-x-modernisation"
+   ],
+   "agents": [
+    "A1",
+    "A3",
+    "A4"
+   ],
+   "confidence": "Medium-High",
+   "size_band": "Unscoped",
+   "falsifier": "If the region's correspondent banks absorb the change for their counterparties, the local buyer disappears. The same applies if the large group parents (RBI, Intesa, OTP, NLB) fix it centrally for their subsidiaries, leaving only the independent banks. Ask one Bosnian and one Serbian bank in September whether the date is on their plan."
+  },
+  {
+   "id": "the-deposit-gap-is-now-measured-not-asserted",
+   "title": "Footprint — the recycler business case can now be built from the banks' own published device data, bank by bank",
+   "countries": [
+    "BG",
+    "CZ",
+    "RS",
+    "HR",
+    "SK",
+    "ME",
+    "XK"
+   ],
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "self_service"
+   ],
+   "buyer": "Named banks whose own locators or disclosures now quantify the gap: UBB, DSK, Postbank and UniCredit Bulbank; the Czech four-bank pool; AikBank, NLB Komercijalna, Raiffeisen and OTP in Serbia; Erste Croatia and OTP Croatia; Tatra, SLSP and VÚB in Slovakia",
+   "trigger": "This cycle's bank-disclosure run pulled live locator data across eleven markets in the last days of July 2026. It produced per-bank splits of deposit-capable machines that had never existed before. Bulgaria's big four have ~1,500 dispense-only sites, and the Czech pool has 957 of 1,917. The remaining splits are 457 of 568 at AikBank and 467 of 666 at Erste Croatia. They also include 353 of 460 at OTP Croatia and 102 of 304 at NLB Komercijalna.",
+   "claim": "Recycler selling (recyclers are ATMs that re-use deposited notes) has always relied on national averages and vendor estimates, which a bank can dismiss. A bank cannot dismiss its own published locator in the same way. The change is from a market argument to an account argument: a named list of that bank's own cash-out-only sites, set against its own published deposit volumes.\n\nUBB disclosed BGN 406m through deposit ATMs, against BGN 2.3bn at branch counters. Serbia's regulator shows ATM deposits up 31.7% by count, while withdrawals grew 0.9%.\n\nThe same data also sizes what should not be chased. That is why Česká spořitelna is typed lost rather than pursued.",
+   "why_not_visible_in_one_signal": "Each country row reads as a national opportunity of ordinary size. None of them shows that the type of evidence changed this cycle across eleven markets at once, from inference to the banks' own machine-readable data. That change is what makes a single reusable business-case template worth building, instead of eleven country pitches.",
+   "cite_signals": [
+    "bulgaria-big-four-atm-estate-deposit-capability-white-space-quantified",
+    "czechia-four-bank-shared-deposit-atm-network-kb-moneta-air-bank-unicredit-cz",
+    "aikbank-a-d-beograd-568-atm-fleet-with-457-dispense-only-units-on-rolling-de-sta",
+    "erste-steierm-rkische-bank-erste-croatia-467-withdrawal-only-atms",
+    "serbia-cash-in-not-cash-out-is-where-the-atm-channel-is-growing"
+   ],
+   "agents": [
+    "A1",
+    "A2",
+    "A4"
+   ],
+   "confidence": "Medium-High",
+   "size_band": "Unscoped",
+   "falsifier": "Locator flags are marketing labels, not device inventories. The Czech and Bulgarian shards both warn that 'deposit' tags may under- or over-count. UBB's own two deposit fields disagree by five sites. If a bank's audited count clearly contradicts its locator, the template loses its authority. Ask two banks for the audited figure before the template is standardised."
+  },
+  {
+   "id": "identity-supply-lands-a-year-before-the-bank-duty",
+   "title": "EU-10 — wallets arrive in December 2026 and the bank obligation twelve months later, with seven markets not yet building",
+   "countries": [
+    "BG",
+    "HR",
+    "CZ",
+    "RO",
+    "SI",
+    "CY",
+    "HU"
+   ],
+   "products": [
+    "digital_onboarding",
+    "payment_security_hsm",
+    "compliance_resilience"
+   ],
+   "buyer": "Banks in the seven EU footprint markets with no public wallet sandbox — Bulgaria, Croatia, Czechia, Romania, Slovenia, plus Cyprus and Hungary on unconfirmed paths",
+   "trigger": "Member States must provide a wallet by 24/12/2026. Private relying parties, including banks, must accept it by 24/12/2027. The amended relying-party register regulation comes into force 11/08/2026. An April-2026 tracker records seven of the ten EU footprint markets with no public sandbox.",
+   "claim": "Supply and obligation are twelve months apart. The markets least ready on the supply side are the same ones whose banks will have the least time to build a verifier. A verifier is the software that checks a wallet's identity credentials.\n\nRomania is the useful counter-case. Its tier-one banks have already built chip-ID onboarding against a government interface, so the greenfield onboarding pitch there is closed. The open lane in Romania is chip-read hardware and relying-party key management.\n\nThe reusable approach is a verifier delivered as a service. It can be sized for optional traffic, because acceptance is only on the user's request. It should be sold into the seven markets that cannot do it themselves.",
+   "why_not_visible_in_one_signal": "The eIDAS row is footprint-wide regulation with no buyer. The Romanian and Macedonian identity rows are national obligations. None of them shows the twelve-month gap between issuance and acceptance. None shows that seven markets have no sandbox five months before issuance. Together, those two facts define the window in which an outsourced verifier beats an in-house build.",
+   "cite_signals": [
+    "eidas-2-eu-digital-identity-wallet-issuance-24-12-2026-bank-acceptance-duty-a-ye",
+    "romania-chip-electronic-id-becomes-the-onboarding-standard-national-wallet-due-d",
+    "north-macedonia-eidas-2-transposed-bank-wallet-verifier-obligation-from-01-06-20",
+    "greece-opsea-national-eid-security-documents-tender"
+   ],
+   "agents": [
+    "A1",
+    "A2",
+    "A3"
+   ],
+   "confidence": "Medium",
+   "size_band": "Unscoped",
+   "falsifier": "If Member States ship wallets with a free national relying-party toolkit, the verifier layer becomes a commodity. Greece's existing state wallet infrastructure suggests this is possible. Only the key-management and screening add-ons would then survive. Watch what each Member State publishes alongside its wallet in December 2026."
+  },
+  {
+   "id": "cy-digital-euro-on-a-printec-incumbent",
+   "title": "Cyprus — the only named digital-euro pilot bank in the footprint that is also a confirmed Printec incumbent",
+   "countries": [
+    "CY"
+   ],
+   "products": [
+    "payments_instant",
+    "payment_security_hsm",
+    "managed_services"
+   ],
+   "buyer": "Bank of Cyprus (and JCC)",
+   "trigger": "The ECB named 36 pilot payment service providers on 14/07/2026, including Bank of Cyprus and JCC. Workstream G5 is writing the ATM and terminal implementation specifications now. The pilot runs in H2-2027 for twelve months. Offline person-to-person payments are confirmed in scope.",
+   "claim": "Bank of Cyprus is the one place where a dated digital-euro pilot lands on an estate where Printec's incumbency is confirmed at source. Teller cash recyclers are now identified as Sesami units across 35 of 54 branches. The confirmed base also includes branch transformation, more than 26,000 managed POS and 132 ATMs.\n\nThat turns a footprint-wide forward driver into a concrete, time-limited engagement. The work is a firmware, acceptance and key-management gap assessment across a known device base, carried out while the specifications are still being written. That is also the cheapest moment to influence them.\n\nThe confirmed offline scope matters most for hardware, because it needs a secure element that today's terminals do not have.",
+   "why_not_visible_in_one_signal": "The digital-euro row is typed threat_macro and says plainly that it is not yet a discrete deal. The Bank of Cyprus row sits in the installed-base lane, so it is deliberately left out of every opportunity ranking. Neither lane shows the overlap.",
+   "cite_signals": [
+    "ecb-digital-euro-atm-and-terminal-specifications-pilot-and-rollout-strategy",
+    "bank-of-cyprus-branch-transformation-acquisitions",
+    "cyprus-regulator-flagged-atm-rationalisation-plus-75-unit-independent-deployer-w"
+   ],
+   "agents": [
+    "A1",
+    "A2",
+    "A3"
+   ],
+   "confidence": "Medium-High",
+   "size_band": "Unscoped",
+   "falsifier": "If the pilot's device work is limited to JCC as acquirer only, with no ATM or terminal workstream at Bank of Cyprus, the incumbency gives no advantage. The H1 results and the G5 specification drafts will show which case applies. Note also that JCC has just lost the state e-payments contract to VivaBank, which may redirect its own investment."
+  },
+  {
+   "id": "operator-not-bank-becomes-the-buyer",
+   "title": "Footprint — as estates convert to operated contracts, the buyer for software and services shifts from the bank to the operator",
+   "countries": [],
+   "footprint_wide": true,
+   "products": [
+    "managed_services",
+    "atm_recycling",
+    "physical_security"
+   ],
+   "buyer": "The operators themselves: NCR Atleos and Brink's post-close, Euronet, Mellon, Payten",
+   "trigger": "Brink's received Indian competition clearance on 22/07/2026 for the $6.6bn Atleos purchase. Closing is targeted around Q1-2027, with the UK authority still outstanding. Euronet's Q2-2026 results of 30/07/2026 show 57,814 installed ATMs and no mention of its unclosed Greek acquisition. That acquisition's scope is now confirmed to include card issuing and three-year payments exclusivity.",
+   "claim": "Each estate that converts to an operated contract removes a bank-side hardware buyer. It also creates an operator-side buyer for multivendor software, telemetry, cash optimisation and maintenance.\n\nPrintec is Atleos Global Partner of the Year, which is the global title and not the European one previously recorded. That standing is the existing route into the merged entity's channel. Post-close terms are decided in the window before Q1-2027, not after it.\n\nThe counterweight this cycle is stronger than before. Asseco Central Europe, Mellon and Česká spořitelna all run on KAL's Kalignite, which Brink's part-owns. The same close that reshapes the channel therefore also consolidates a rival software layer.",
+   "why_not_visible_in_one_signal": "All the component rows are typed threat_macro and read purely as threats: channel risk, account foreclosure, and a rival's software reference. Read together, they describe a buyer moving rather than a buyer being lost.",
+   "cite_signals": [
+    "ncr-atleos-brink-s-merger-partner-channel-risk-partner-of-the-year",
+    "euronet-greece-croatia-platform-pivot-threat",
+    "asseco-central-europe-kal-kalignite-the-multivendor-layer-under-three-separate-p",
+    "sector-wide-branch-consolidation-continues"
+   ],
+   "agents": [
+    "A1",
+    "A4",
+    "A6",
+    "A8"
+   ],
+   "confidence": "Medium",
+   "size_band": "Unscoped",
+   "falsifier": "If the merged Atleos and Brink's entity brings services in-house and cuts channel partners after close, the operator-as-buyer route closes rather than opens. The post-close partner and Cashzone strategy is the thing to ask for. The KAL independence question should be put directly to Atleos channel management."
+  },
+  {
+   "id": "wb-november-2026-instant-rail-window",
+   "title": "Western Balkans — one fixed November window, but it onboards the central banks, so the commercial-bank work is still unbought",
+   "countries": [
+    "AL",
+    "XK",
+    "MK",
+    "BA"
+   ],
+   "products": [
+    "payments_instant",
+    "payment_security_hsm",
+    "fraud_monitoring",
+    "digital_onboarding"
+   ],
+   "buyer": "Commercial banks in Albania, Kosovo and North Macedonia, plus the ~18 Bosnian banks not yet connected",
+   "trigger": "Montenegro and Bosnia went live on the shared platform on 20/07/2026, though Bosnia launched with only three banks connected. A second onboarding window is set for November 2026. It onboards the central banks of Albania, Kosovo and North Macedonia, not their commercial banks. Bosnia separately has a compulsory participation date of 01/01/2027 under its central bank's rulebook of 10/07/2026.",
+   "claim": "The correction this cycle sharpens the opportunity rather than weakening it. Three markets share one hard date and one technical stack. Kosovo's banks are already being taken through file-format and transaction-limit standardisation across every bank.\n\nNovember onboards only the central banks. The commercial-bank integration is therefore unscheduled, unfunded and unbought in three markets at once. That work covers the payment hub, 24/7 operations, sanctions screening inside a ten-second window, and key management. Bosnia has the same work under a legal deadline.\n\nOne reusable readiness package sold four times is a better use of effort than four country campaigns.",
+   "why_not_visible_in_one_signal": "Each country row is already an opportunity on its own, so the engine ranks them as separate pursuits. The shared deadline and the shared technical stack are only visible across the rows. So is the fact that the November date does not oblige a single commercial bank.",
+   "cite_signals": [
+    "albania-tips-clone-instant-payment-rail-november-2026-go-live",
+    "bosnia-herzegovina-ips-bih-mandatory-participation-rulebook-10-07-2026-deadline-",
+    "kosovo-kips-upgrade-and-instant-payment-bank-side-integration-across-all-banks",
+    "north-macedonia-instant-payments-arrive-on-two-rails-tips-clone-kibs-instant-mip"
+   ],
+   "agents": [
+    "A1",
+    "A2",
+    "A3",
+    "A4"
+   ],
+   "confidence": "Medium-High",
+   "size_band": "Unscoped",
+   "falsifier": "If the three central banks onboard on different technical profiles, the package advantage falls back into separate pursuits. The same happens if the November window slips. Firm per-country commercial-bank timetables are the open item, and none is published."
+  },
+  {
+   "id": "addiko-splits-into-two-buying-centres-not-one",
+   "title": "SEE — the Addiko integration splits into two buying centres, and the larger one is a first-time owner",
+   "countries": [
+    "HR",
+    "SI",
+    "AT",
+    "RS",
+    "BA",
+    "ME"
+   ],
+   "products": [
+    "atm_recycling",
+    "self_service",
+    "managed_services",
+    "compliance_resilience",
+    "card_issuing",
+    "fraud_monitoring"
+   ],
+   "buyer": "Two distinct buyers, not one: RBI group procurement in Vienna with the Raiffeisenbank Austria d.d. integration office in Zagreb for Croatia and Slovenia; and Alta Group d.o.o. of Belgrade for Addiko Serbia, Addiko Sarajevo, Addiko Banja Luka and Addiko Podgorica.",
+   "trigger": "RBI's offer succeeded on 03/08/2026 at 56.16% of shares subject to the offer (55.55% of total capital). NLB's rival bid failed at 31.22%. RBI's own offer document names Alta Group d.o.o. Belgrade as the onward buyer of the four Western Balkans banks, under a transaction agreement signed 08/05/2026. Additional acceptance closes 03/11/2026. All closing conditions are due by 14/05/2027. Carve-out closing is expected H2-2027.",
+   "claim": "Last cycle's read was that the whole five-market integration would be bought in Vienna. That is wrong, and the correction opens a larger opportunity than the original claim.\n\nRBI keeps only Croatia, Slovenia and Austria. There the work is a classic funded merger integration against a EUR 75m envelope, with incumbent group frameworks to displace.\n\nThe four Western Balkans banks go instead to Alta Group. Alta already owns Alta Banka Beograd and Alta Banka Bitola, but has never run a six-bank group across four jurisdictions. A first-time owner at that scale has no group vendor framework to fall back on.\n\nThe Transitional Services Agreement gives Alta a contractual deadline to build one. It runs for 12 months after closing, with a single 12-month extension. Every shared service must therefore be re-sourced by roughly 2H2028-2H2029.\n\nThat is a greenfield platform programme, bought by an owner that must buy it rather than inherit it. It covers core and card consolidation, one cash-automation estate, and one AML and transaction-monitoring platform answering to four regulators.",
+   "why_not_visible_in_one_signal": "The bank-disclosure rows record the takeover result. The jobs rows record the carve-out buyer and the services exit deadline. The per-market rows record each bank's device estate. No single row says that the footprint's largest integration programme has two buying centres with opposite characteristics, one entrenched and framework-bound, the other greenfield and vendor-dependent. No row says that the contractual services-exit date, not the closing date, sets the procurement calendar.",
+   "falsifier": "If Alta Group extends the Transitional Services Agreement to its full 24 months, it may then simply transfer Addiko's existing vendor contracts instead of re-tendering. The greenfield framing would collapse into a renewal Printec is not party to. Equally, if regulatory or antitrust clearances stall past the 14/05/2027 long stop, the carve-out may not complete in the form described.",
+   "cite_signals": [
+    "raiffeisen-bank-international-addiko-croatian-and-slovenian-integration-on-a-eur",
+    "addiko-carve-out-to-alta-group-a-six-bank-western-balkans-group-under-a-first-ti",
+    "raiffeisen-banka-srbija-415-device-estate-named-cash-automation-incumbents-addik",
+    "nlb-komercijalna-banka-group-atm-and-cash-deposit-upgrade-against-102-non-deposi"
+   ]
+  },
+  {
+   "id": "supplier-becomes-competitor-while-the-supervisor-demands-an-inventory",
+   "title": "Footprint — Printec's ATM supplier changes owner in the same quarter that every supervised bank must list its end-of-life technology",
+   "countries": [
+    "GR",
+    "CY",
+    "AT",
+    "HR",
+    "SI",
+    "SK",
+    "BG",
+    "RO",
+    "CZ",
+    "HU"
+   ],
+   "products": [
+    "atm_recycling",
+    "managed_services",
+    "compliance_resilience",
+    "self_service"
+   ],
+   "buyer": "The SSM significant institutions filing AI-cyber action plans — Alpha, Piraeus, Eurobank, NBG, Bank of Cyprus, Hellenic, Erste Group and its Croatian and Slovak subsidiaries, RBI, BAWAG, UniCredit Bank Austria, NLB, Zagrebačka, PBZ, Tatra, VÚB, Slovenská sporiteľňa, UniCredit Bulbank, DSK and UBB.",
+   "trigger": "Two deadlines fall together. The UK CMA opened its Phase 1 inquiry into Brink's acquisition of NCR Atleos on 26/08/2026, with a statutory decision deadline of 22/10/2026. Completion was pulled forward to early Q1-2027. Nine days after that decision deadline, on 31/10/2026, every SSM significant institution must file an action plan with its Joint Supervisory Team. The plan must name the institution's 'legacy, unsupported or end-of-life technologies'.",
+   "claim": "A bank writing that inventory in October has to decide what happens to an ageing self-service estate. It has to decide at the exact moment when the estate's main supplier is being absorbed by Brink's. Brink's ATM outsourcing line is growing 14% organically, and it has just signed a full outsourcing agreement with an unnamed European bank consortium.\n\nThe two facts pull the bank in opposite directions, but they point Printec the same way. Supervisory pressure says refresh or replace. Supplier uncertainty says do not sign a long hardware commitment to a vendor whose ownership changes in ninety days.\n\nThe opening is a vendor-neutral end-of-life assessment with a managed-service wrapper. It lets a bank satisfy its supervisor without betting on the outcome of a merger review.\n\nKAL is arguing the opposite case to the same banks. It says a Linux virtualisation layer lets old hardware run a newer Windows and defers the refresh entirely. That argument will happen whether or not Printec takes part in it.",
+   "why_not_visible_in_one_signal": "The regulation row carries a compliance deadline with no vendor angle. The competitor rows carry an ownership change with no bank deadline. The KAL row carries a software pitch. Only the intersection shows that a supervisory filing date and a supply-chain ownership change fall in the same quarter. It also shows that the bank's answer to one is limited by the other.",
+   "falsifier": "If the CMA clears the merger quickly, and Atleos' European channel terms are publicly reaffirmed before 31/10/2026, supplier uncertainty stops being a reason for a bank to wait. The play then becomes an ordinary compliance sale. Equally, if the action plans limit end-of-life technology to core banking and cloud only, and leave out self-service estates as operational assets, the opening closes.",
+   "cite_signals": [
+    "ecb-ssm-2026-0301-end-of-life-ict-action-plans-due-to-supervisory-teams-by-31-10",
+    "ncr-atleos-brink-s-merger-partner-channel-risk-partner-of-the-year",
+    "brink-s-atm-as-a-service-and-the-bank-consortium-outsourcing-model",
+    "windows-11-and-end-of-life-atm-software-kal-s-hypervisor-pitch-against-the-ecb-s"
+   ]
+  },
+  {
+   "id": "two-merger-integrations-one-quarter-romania-and-cyprus",
+   "title": "Romania and Cyprus — two bank mergers put four self-service estates in scope in one quarter, each with a date before decisions are fixed",
+   "countries": [
+    "RO",
+    "CY"
+   ],
+   "products": [
+    "atm_recycling",
+    "self_service",
+    "card_issuing",
+    "pos_acquiring",
+    "managed_services",
+    "core_digital"
+   ],
+   "buyer": "Raiffeisen Bank Romania merging Garanti BBVA Romania, and Eurobank Limited in Cyprus merging Hellenic Bank.",
+   "trigger": "RBI's Romanian acquisition is guided to close in early October 2026. Its integration budget of c. EUR 70m is pre-funded by a EUR 600m eurobond raised on 20/08/2026. RBI enters its quiet period on 23/10/2026. In Cyprus, Eurobank Limited disclosed on 06/08/2026 that almost 90% of deposits and 95% of withdrawals now run through machines on a 156-ATM fleet. That is set against a full technical integration targeted for April 2027.",
+   "claim": "Two integrations that no single row connects are running to almost the same timetable. Both are device-heavy rather than software-heavy.\n\nRomania creates the country's #3 bank. It has two overlapping self-service, card and acquiring estates to rationalise, on a budget that is already raised. The practical window to shape scope closes when RBI goes quiet on 23/10/2026, not when the deal closes.\n\nCyprus is the mirror image. The merged bank has the island's largest ATM fleet, is not a Printec incumbent, and has just published the strongest channel-migration statistic in the footprint. That is the argument for standardising the fleet before the April-2027 core cutover rather than after it.\n\nTreated as one campaign, the two share a reusable proposition and the same eight-week selling window. The proposition is merged-estate rationalisation with a migration-window managed service.",
+   "why_not_visible_in_one_signal": "The Romanian and Cypriot rows sit in different markets and were filed by different shards. Each reads as an ordinary post-merger integration. No row states that both freeze their scope within the same quarter, or that both are decided by device economics rather than platform choice. No row states that one bank has published the deposit-and-withdrawal migration figure the other needs to justify the same investment.",
+   "falsifier": "If RBI Romania limits the Garanti integration entirely to its existing group frameworks in Vienna, with no local device procurement, the shared window disappears. The same happens if Eurobank Cyprus puts off fleet standardisation until after the April-2027 cutover. In either case these revert to two unrelated pursuits.",
+   "cite_signals": [
+    "raiffeisen-romania-garanti-bbva-romania-closing-early-october-2026-and-a-budgete",
+    "eurobank-limited-cyprus-hellenic-bank-merger-156-atm-harmonisation-and-an-april-",
+    "cyprus-atm-estate-the-outsourcing-threat-brink-s-an-accelerated-ncr-atleos-close",
+    "raiffeisen-bank-romania-1-211-device-own-estate-and-the-sole-large-bank-ropay-ac"
+   ]
+  },
+  {
+   "id": "hungary-bans-decommissioning-so-the-whole-estate-becomes-a-refresh-market",
+   "title": "Hungary — the law that bars banks from removing ATMs turns the national estate into a protected replacement market",
+   "countries": [
+    "HU"
+   ],
+   "products": [
+    "atm_recycling",
+    "self_service",
+    "managed_services",
+    "physical_security"
+   ],
+   "buyer": "The nine banks carrying Act XVIII allocations — OTP, MBH, K&H, Erste Hungary, CIB, Raiffeisen Hungary, UniCredit Hungary, Gránit and MagNet — with OTP (428 units) and MBH (195/316) carrying the largest tranches.",
+   "trigger": "Act XIV of 2026, in force since 14/05/2026, bars banks from decommissioning any existing ATM or branch cash-payout point. It does expressly allow replacement. Its subsection (1b) expects that a replacement machine may not fit the original site because of its size and security requirements. Phase 2 of Act XVIII requires an ATM in every settlement above 500 inhabitants, and is due 31/12/2026.",
+   "claim": "In the rest of the footprint, the commercial question is how fast a bank can shrink its fleet. In Hungary, shrinking the estate is not allowed. The existing estate is commonly put at roughly 5,700 machines, although no cited document carries a verified national total. The law turns that estate from a declining base into a protected replacement base, on top of the 1,039 mandated new rural sites.\n\nSubsection (1b) is the clause that is easy to miss. It accepts that a replacement may not physically fit its predecessor's site. In effect, the legislator has written a site-survey, relocation and enclosure workstream into national law.\n\nOTP and MBH are both reducing their Hungarian estates. OTP Core went from 1,987 to 1,929 ATMs in H1-2026. That is only lawful as replacement, so the activity is happening now.\n\nThe market has almost no in-house capability to absorb this work. Only two of sixteen nationwide 'ATM' job hits sit at banks, so the build must be bought in.",
+   "why_not_visible_in_one_signal": "The regulation rows record a ban, which reads as a limit rather than a market. The bank rows record fleets shrinking, which reads as contraction. The jobs row records no hiring, which reads as nothing at all. Only together do they show a legally protected replacement market that the banks themselves cannot staff.",
+   "falsifier": "If the MNB issues guidance allowing net decommissioning where another cash-access point exists within a set radius, the protected base shrinks. If the nine allocated banks meet Phase 2 through existing shared-network arrangements rather than new installations, the 1,039-unit figure overstates the addressable build.",
+   "cite_signals": [
+    "hungary-act-xiv-of-2026-atm-decommissioning-and-relocation-freeze",
+    "hungary-act-xviii-rural-atm-rollout-mnb-validation-uptime-mandate",
+    "mbh-bank-115-location-2026-atm-programme-plus-a-500-unit-replacement-cycle",
+    "otp-bank-hungary-and-erste-bank-hungary-cash-in-white-space-against-a-shrinking-"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,82 @@
+[
+ {
+  "candidate_id": "dr_me_a6_live_001__c_114",
+  "source_url": "https://crnogorska-komercijalna-banka-ad-podgorica.talentlyft.com/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_125",
+  "source_url": "http://www.pretraga.crps.me/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_140",
+  "source_url": "https://www.elibrary.imf.org/view/journals/002/2025/304/article-A001-en.xml",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_163",
+  "source_url": "http://crps.me/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_174",
+  "source_url": "https://www.erstebank.me/sr_ME/footer-stanovnistvo/press/o-nama",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_197",
+  "source_url": "https://www.erstebank.rs/en/about-us/procurement",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_208",
+  "source_url": "https://www.sap.com/products/business-network/find-suppliers.html",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_293",
+  "source_url": "http://crps.me/strana/pregled/89",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ }
+]

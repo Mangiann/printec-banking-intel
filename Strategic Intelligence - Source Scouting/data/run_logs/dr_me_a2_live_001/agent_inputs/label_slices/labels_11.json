@@ -1,0 +1,16 @@
+[
+{"candidate_id":"dr_me_a2_live_001__c_254","role":"keep","decision":"approve","priority":"medium","rationale":"Global ATM/branch-automation OEM newsroom that names bank wins; standalone monitorable feed relevant to ME fleet deals."},
+{"candidate_id":"dr_me_a2_live_001__c_255","role":"keep","decision":"approve","priority":"medium","rationale":"NCR Atleos newsroom publishes bank/processor partnership announcements; primary supplier-side signal for ATM estate refresh."},
+{"candidate_id":"dr_me_a2_live_001__c_256","role":"keep","decision":"defer","priority":"high","rationale":"Local ME business/tender portal with high value but failed verification and unclear ToS; re-check liveness and access."},
+{"candidate_id":"dr_me_a2_live_001__c_257","role":"fold_into_parent","decision":"approve","priority":"medium","rationale":"CBCG sub-page on the TIPS Clone supplier chain; covered by monitoring cbcg.me, useful as anchor evidence."},
+{"candidate_id":"dr_me_a2_live_001__c_258","role":"keep","decision":"approve","priority":"high","rationale":"Dedicated regulator fintech hub on its own subdomain; names PSP/fintech actors ahead of licensing and tenders."},
+{"candidate_id":"dr_me_a2_live_001__c_259","role":"evidence_not_source","decision":"approve","priority":"medium","rationale":"One-off regulator blog mapping the ME fintech ecosystem; valuable actor inventory, not a recurring feed."},
+{"candidate_id":"dr_me_a2_live_001__c_260","role":"keep","decision":"approve","priority":"high","rationale":"Independent ATM deployer operating in ME and buying hardware/CIT/switching directly; first-class procurement actor site."},
+{"candidate_id":"dr_me_a2_live_001__c_261","role":"pointer_once","decision":"approve","priority":"high","rationale":"ICT cluster member list with fintech committee; mine once for local payments-supplier leads, then archive."},
+{"candidate_id":"dr_me_a2_live_001__c_262","role":"pointer_once","decision":"approve","priority":"medium","rationale":"Banking association member list and payment committees; one-off mining of the 11 banks plus occasional policy signals."},
+{"candidate_id":"dr_me_a2_live_001__c_263","role":"fold_into_parent","decision":"defer","priority":"low","rationale":"Country landing page of a global corporate site; agent-network detail is thin and rarely updated, unclear collection terms."},
+{"candidate_id":"dr_me_a2_live_001__c_264","role":"keep","decision":"approve","priority":"medium","rationale":"ME acquirer POS product page usable as change-detection proxy for terminal-fleet refresh; in-scope payments actor."},
+{"candidate_id":"dr_me_a2_live_001__c_265","role":"keep","decision":"defer","priority":"medium","rationale":"E-fiscalisation vendor ecosystem drives merchant terminal replacement, but credibility and legal status need a check."},
+{"candidate_id":"dr_me_a2_live_001__c_266","role":"evidence_not_source","decision":"approve","priority":"medium","rationale":"Single authoritative EPC article dating ME SEPA accession; strong evidence, not a ME-specific recurring feed."},
+{"candidate_id":"dr_me_a2_live_001__c_267","role":"keep","decision":"approve","priority":"critical","rationale":"IFI-financed payments-infrastructure project brings World Bank procurement plans and award notices into public view."}
+]

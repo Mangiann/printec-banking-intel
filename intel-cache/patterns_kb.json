@@ -1,0 +1,728 @@
+{
+ "generated": "2026-06-25",
+ "source": "KB-mined (RBR deep-reads + Futurist research + statistics/regulation/vendor findings)",
+ "patterns": [
+  {
+   "pattern": "Cash use is levelling off rather than disappearing. Transactional use erodes ~3-4%/yr, while the amount of cash in circulation and the value of withdrawals hold or rise.",
+   "evidence": "In the euro area, cash at the point of sale fell from 72% (2019) to 59% (2022) to 52% (2024) by number of payments. It is still ~50% of transactions. Euro cash in circulation hit a record EUR1.59tn (~10% of GDP), and has stayed above 10% for a decade.\n\nECB counts of card withdrawals fall in every footprint country (RO -1.8%, HU -6.6%, CZ -10.7% over 2yr). The value holds up: Poland ATM withdrawal value rose from PLN104.9bn to 109.1bn from Q4'24 to Q4'25, and Romania was flat at +0.5%. RBR expects CEE withdrawal volume -1.8% CAGR (average yearly change) while value rises +2.7% CAGR (~USD1tn) to 2028.\n\nCrises push demand up: COVID +EUR140bn, the Ukraine invasion +36% in border countries, and the Apr-2025 Iberian blackout. The footprint also stays more cash-heavy. SPACE 2024 puts cash at 56% of spending by value in SI/SK/AT and 51% in Croatia. Albania is still 65% of withdrawal value.",
+   "implication": "The installed cash-access base stays useful for much longer than a 'death of cash' view suggests, especially in CEE/SEE.\n\nSell on cost per transaction for fleets with falling volumes: cash optimisation, OptiCash, recyclers (ATMs that re-use deposited notes) and managed operations. The commercial conclusion is to offer fewer, smarter, higher-value deposit and recycling machines, rather than to expect growth in withdrawals.",
+   "confidence": "High",
+   "sources": "findings/08-futurist/research/themes/cash-to-digital.md; findings/04-statistics/historical-series-2023-2025.md (s.2b); knowledge-base/by-agent/agent-4-statistics/rbr-cee-atm-2028.md; ECB SPACE 2024",
+   "citations": [
+    {
+     "text": "ECB SPACE 2024 (cash use at POS)",
+     "url": "https://www.ecb.europa.eu/press/pr/date/2024/html/ecb.pr241219~172b929461.en.html"
+    },
+    {
+     "text": "ECB Economic Bulletin 2025 — cash across four crises",
+     "url": "https://www.ecb.europa.eu/press/economic-bulletin/articles/2025/html/ecb.ebart202506_02~1a773e2ca3.en.html"
+    },
+    {
+     "text": "RBR ATM Market & Forecasts to 2028 (CEE)",
+     "url": "/api/evidence?pdf=rbr-cee-atm-2028"
+    }
+   ],
+   "group": "Cash & ATM economics"
+  },
+  {
+   "pattern": "ATM fleets sit in three tiers along the EU-maturity line. Mature euro-area fleets shrink ~3-6%/yr, CEE-EU is flat (driven by replacement), and non-EU SEE still grows. The footprint runs ~one cycle behind Western Europe.",
+   "evidence": "The global base has fallen every year since 2018, from 3.24m in 2019 to 2.9m in 2024. Western Europe fell -3.6% in 2022 to 352,770 and heads to 316,126 by 2028 (-1.8% CAGR). The euro-area ECB series is -5.7% over 2yr. CEE is flat (RBR 236,507 to 231,895 by 2028, -0.1% CAGR).\n\nThe live footprint splits three ways (IAD = independent ATM deployer):\nGROWING — Hungary +18.6% (mandate), Greece +15.3% (deployer/IAD wave), Montenegro +23% (2024), Albania +8%, Kosovo +8.4%, Serbia back to +3.6% (Q1'26);\nSTABLE — Bulgaria, Slovenia, Cyprus, Ukraine (~15.7k held flat through 3 war years);\nDECLINING — Austria -4.6%/2yr, Czechia -3.7%.\n\nRBR expects 6 of 12 primary CEE markets to grow to 2028.",
+   "implication": "No single ATM strategy fits the whole footprint. The mature tier is a rationalisation and consolidation market, while SEE is a build-out market at the same time. Money for new units and replacements is available now in HU/GR/RO and the Western Balkans.\n\nThis gives a multi-year window to sell hardware and to lock in managed services before mature-market shrinkage reaches each country. Tier each market by EU maturity to choose the approach.",
+   "confidence": "High",
+   "sources": "findings/04-statistics/2026-06-24.md; historical-series-2023-2025.md; knowledge-base/by-agent/agent-4-statistics/rbr-we-atm-2028.md + rbr-cee-atm-2028.md",
+   "citations": [
+    {
+     "text": "ECB Data Portal — ATM/terminal series (PTN)",
+     "url": "https://data-api.ecb.europa.eu/service/data/PTN/H.U2.W0.2221+2222._T.PN?format=csvdata&startPeriod=2023"
+    },
+    {
+     "text": "ECB EU structural financial indicators end-2025",
+     "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260612~ab34769159.en.html"
+    },
+    {
+     "text": "RBR ATM Market & Forecasts to 2028 (Western Europe)",
+     "url": "/api/evidence?pdf=rbr-we-atm-2028"
+    },
+    {
+     "text": "RBR ATM Market & Forecasts to 2028 (CEE)",
+     "url": "/api/evidence?pdf=rbr-cee-atm-2028"
+    }
+   ],
+   "group": "Cash & ATM economics"
+  },
+  {
+   "pattern": "Deposit automation and cash recycling are replacing machines within a flat or shrinking fleet. Dispense-only ATMs are being converted to recyclers, which are machines that re-use deposited notes, and this is the one growing hardware segment. The main mechanism is retrofit, not net-new units.",
+   "evidence": "Globally, more than 50% of ATMs now accept automated deposits. The recycler base is forecast to pass 1.2m by 2029 (~+20%/5yr), described as 'well over half of all ATM shipments worldwide'.\n\nThe economics are clear. Cash handling is up to ~50% of TCO. Recyclers cut CIT visits by up to ~80% and give ~20% lower TCO.\n\nFootprint penetration is low and largely untouched outside Russia. Ukraine is only 17.8% deposit-capable, with ~13,000 dispense-only candidates. Serbia has 40 recyclers and Bulgaria 8, and Croatia is only 48% even contactless-capable, against Hungary at 99% and Slovakia at 79%.\n\nConversion is under way. Albania is 39% deposit-capable with ATM deposits +109% (2025). Kosovo is at 59.4%, up from ~51%. OTP Albania is deploying NCR SelfServ 80, and Tatra banka runs ATM 2.0.",
+   "implication": "This is the highest-confidence long-term product line (NCR Atleos recyclers/SelfServ 80). In the footprint, the approach is fleet conversion of large dispense-only bases, such as Ukraine's ~13k and the SEE markets, at a higher value per unit.\n\nAttach software and service to each conversion: x-core multivendor, telemetry and OptiCash. Low current penetration means a long runway.",
+   "confidence": "High",
+   "sources": "findings/08-futurist/research/themes/cash-recycling-deposit.md; products/atm-recyclers.md; rbr-cee-atm-2028-deep.md (p.34-37); findings/04-statistics/2026-06-24.md",
+   "citations": [
+    {
+     "text": "Datos Insights / RBR — Recycling ATMs Defy Market Downturn",
+     "url": "https://datos-insights.com/press-release/recycling-atms-defy-market-downturn-with-continued-growth/"
+    },
+    {
+     "text": "ABA Banking Journal — Recycling the narrative on cash (TCO/CIT economics)",
+     "url": "https://bankingjournal.aba.com/2026/01/recycling-the-narrative-on-cash/"
+    },
+    {
+     "text": "ECB SPACE 2024",
+     "url": "https://www.ecb.europa.eu/press/pr/date/2024/html/ecb.pr241219~172b929461.en.html"
+    }
+   ],
+   "group": "Cash & ATM economics"
+  },
+  {
+   "pattern": "Owning the ATM channel is separating from running it. ATM-as-a-Service, multi-bank pooling utilities and transfers of bank estates to IADs (independent ATM deployers) are the fast-growing part of an otherwise flat ATM market. The recurring operating layer is moving away from individual banks.",
+   "evidence": "ATMaaS grows at ~9-12% CAGR and managed services at ~7-10%, against a device market of ~3%, so roughly ~2-3x.\n\nThe KAL/ATM Marketplace 2025-26 survey found 19% of banks already fully outsource the ATM network. A further +24% plan to do so within 2yr, nearly doubling into 2027-28. NCR Atleos ATMaaS revenue is up +30-37% YoY (ARR $288m, ATMaaS +33% FY25).\n\nPooling cuts network cost by up to ~40% and consolidates fleets, as in Sweden (Bankomat 2,700->1,200) and the Netherlands (Geldmaat 6,400->3,800). IADs are ~18% of global ATMs. In CEE, Poland is 64% IAD-deployed and Hungary 16%, which grew fastest.\n\nIn the footprint, Euronet took CrediaBank's 141 ATMs (GR), and Atleos ATMaaS went to Epirus Bank. Hungary's Act XVIII legally allows joint installation and operation, which is the precondition for pooling.",
+   "implication": "Demand shifts from one-off machine sales to multi-year per-device or per-transaction contracts. That is the strongest pull toward Printec's managed-services and ATMaaS line, built with NCR Atleos.\n\nThe commercial goal is to own the customer-facing operating contract and to act as the neutral regional operator for emerging pooling utilities. The outcome to avoid is being pushed down to subcontracted field service under a pan-regional IAD such as Euronet, or under Atleos direct.",
+   "confidence": "Medium",
+   "sources": "findings/08-futurist/research/themes/atm-pooling-aaas.md; products/managed-services.md; rbr-cee-atm-2028-deep.md (p.25 IAD); findings/06-vendors/2026-06-25.md",
+   "citations": [
+    {
+     "text": "NCR Atleos FY2025 results (ATMaaS growth)",
+     "url": "https://www.businesswire.com/news/home/20260226147008/en/NCR-Atleos-Corporation-Reports-Strong-Results-in-2025"
+    },
+    {
+     "text": "Tietoevry — ATM Pooling (Bankomat/Geldmaat consolidation, cost cut)",
+     "url": "https://www.tietoevry.com/en/campaigns/2025/atm-pooling/"
+    },
+    {
+     "text": "CMS Law-Now — Hungary Act XVIII of 2025 (joint ATM operation)",
+     "url": "https://cms-lawnow.com/en/ealerts/2025/05/new-hungarian-law-requires-atms-in-all-towns-and-villages"
+    }
+   ],
+   "group": "Operating model & vendor landscape"
+  },
+  {
+   "pattern": "This is a branch transformation wave over 2024-2026, not branch elimination. Branches are shrinking structurally and the cuts are accelerating, with the steepest cuts in the most recent year. Self-service absorbs the displaced transactions.",
+   "evidence": "Euro-area offices fell -42%, from ~186k (2008) to ~106k (2023). The EU total fell -3.41% (2024) and then -2.62% (2025) to 122,889, with cuts in 23 of 27 states.\n\nFootprint cuts sped up into 2025: Bulgaria -10.7% (euro-prep year, sharpest in the EU), Slovenia -11.0%, Hungary -9.5%, Romania -7.4% and Czechia -6.9%. Greece is -45% on branches since 2015 while ATMs rose ~17%. Cyprus lost 370 branches and 4,634 jobs (2015-25).\n\nRBR notes that branch-based ATMs fall faster than off-site ones. Off-site machines are 64% of the CEE base and the only growing location band. McKinsey's target is to move >90% of simple activity to assisted or self-service channels.",
+   "implication": "Each closed teller line or refitted branch turns into self-service demand: recyclers, ITMs/VTMs (interactive and video-teller machines), onboarding kiosks and branch-substitution ATMs.\n\nHigher branch density and later digital adoption put CEE/SEE earlier on the closure-and-transform curve, which gives a durable multi-year cross-sell. Front-loaded closures, such as Bulgaria's euro year, create concentrated replacement demand that can be timed.",
+   "confidence": "High",
+   "sources": "findings/08-futurist/research/themes/branch-transformation.md; findings/04-statistics/historical-series-2023-2025.md (s.3); 2026-06-24.md; rbr-cee-atm-2028-deep.md (p.31)",
+   "citations": [
+    {
+     "text": "ECB EU structural financial indicators end-2025",
+     "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260612~ab34769159.en.html"
+    },
+    {
+     "text": "ECB Data Portal — changing landscape of bank offices",
+     "url": "https://data.ecb.europa.eu/blog/blog-posts/changing-landscape-bank-offices-euro-area"
+    },
+    {
+     "text": "McKinsey — Reimagining the bank branch for the digital era",
+     "url": "https://www.mckinsey.com/industries/financial-services/our-insights/reimagining-the-bank-branch-for-the-digital-era"
+    }
+   ],
+   "group": "Branches & channel shift"
+  },
+  {
+   "pattern": "The surviving branch is rebuilt around assisted and self-service. Floor space flips from teller-heavy to self-service, and ~80-90% of simple transactions move across. The interactive and video-teller (ITM/VTM) 'branch-in-a-box' becomes the fastest-growing self-service category, and the branch's role shifts to advice.",
+   "evidence": "McKinsey recommends moving >90% of simple activity to assisted or self-service. It also recommends flipping floor space from ~70% teller to the reverse, and reducing average branch staff (FTEs) from 6 to 4 by 2030.\n\nVendors are converging on the same model. Diebold Nixdorf Branch Automation (Aug-2025) aims to move up to 80% of teller transactions onto ATMs/TCRs with on-demand video. NCR Atleos ITMs handle ~95% of teller transactions with live video.\n\nThe market is growing quickly. The ITM market goes from ~US$1.69bn (2024) to ~US$5.88bn (2033), at ~15.6% CAGR. Video-teller grows at ~17-19.5% CAGR and bank kiosks at ~16% CAGR. Channel proof: Serbia m-banking txns +28% while branches fall.",
+   "implication": "Demand moves from plain dispense ATMs toward deposit and recycling machines, video-teller machines and onboarding/KYC kiosks.\n\nThis frames Printec's offer as turning shrinking branches into fewer, higher-value assisted-service endpoints. The package is hardware, remote-teller software and onboarding, wrapped in managed services, and it is the highest-growth part of the physical channel.",
+   "confidence": "High",
+   "sources": "findings/08-futurist/research/themes/branch-transformation.md; self-service-assisted.md; products/self-service-kiosks.md (Mordor/Astute ITM CAGRs)",
+   "citations": [
+    {
+     "text": "McKinsey — Reimagining the bank branch for the digital era",
+     "url": "https://www.mckinsey.com/industries/financial-services/our-insights/reimagining-the-bank-branch-for-the-digital-era"
+    },
+    {
+     "text": "Mordor Intelligence — Bank Kiosk Market (video-teller CAGR)",
+     "url": "https://www.mordorintelligence.com/industry-reports/bank-kiosk-market"
+    },
+    {
+     "text": "Astute Analytica — Global Interactive Teller Machine Market to 2033",
+     "url": "https://www.globenewswire.com/news-release/2024/12/17/2998155/0/en/Global-Interactive-Teller-Machine-Market-to-Hit-Valuation-of-US-5-883-89-Million-by-2033-Astute-Analytica.html"
+    }
+   ],
+   "group": "Branches & channel shift"
+  },
+  {
+   "pattern": "EU payment and resilience rules apply in the euro area first and in the non-euro footprint ~2 years later. The same vendor approach runs again with a built-in lag. That gives a second sales wave on dates that are already known.",
+   "evidence": "The IPR (Instant Payments Regulation) ladder has two waves. In the euro area, receive applied on 09/01/2025 and send plus VoP on 09/10/2025, which is done in GR/CY/SI/SK/HR/AT.\n\nThe non-euro EU countries (CZ/HU/RO) follow later. Receive applies on 09/01/2027. Send-from-EUR and VoP apply on 09/07/2027. Send-from-local applies on 09/06/2028.\n\nVoP (Verification of Payee), the ISO 20022 structured address (14/11/2026) and AMLR (10/07/2027) follow the same euro-first, non-euro-later shape. Euro-area banks bought payment hubs, VoP and 24-7 operations in 2024-25, and CZ/HU/RO must buy the same in 2026-27.",
+   "implication": "Whatever was sold to Greek, Cypriot, Croatian, Austrian, Slovak and Slovenian banks in 2024-25 can be pitched again to Czech, Hungarian and Romanian banks across 2026-27. That includes VoP, transaction monitoring, ISO 20022 parsing and instant connectivity, with the same propositions and references.\n\nPeak vendor selection for the non-euro tail is H2-2026 to H1-2027.",
+   "confidence": "High",
+   "sources": "findings/03-regulation/parts/2026-06-24/instant-payments-sepa.md; findings/03-regulation/2024-2026-baseline.md (Pattern 2); iso20022.md; aml-amla-amlr.md",
+   "citations": [
+    {
+     "text": "EUR-Lex: Instant Payments Regulation (EU) 2024/886",
+     "url": "https://eur-lex.europa.eu/eli/reg/2024/886/oj/eng"
+    },
+    {
+     "text": "ECB — Instant Payments Regulation page (deadline ladder)",
+     "url": "https://www.ecb.europa.eu/paym/retail/instant_payments/html/instant_payments_regulation.en.html"
+    },
+    {
+     "text": "SWIFT — ISO 20022 structured-address milestone Nov 2026",
+     "url": "https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed"
+    }
+   ],
+   "group": "Payments & regulation"
+  },
+  {
+   "pattern": "Each EU regulation runs a fixed cycle. Specifications land ~12-18mo before the deadline, and bank buying clusters 6-12mo before. A higher-margin enforcement and assurance spend then ramps up ~12mo after application. Bank spend can be scheduled years ahead, with a second 'assurance' revenue wave.",
+   "evidence": "DORA shows the pattern. Batch-1 RTS came in Jan 2024 and applied from Jan 2025. CTPP designation followed, covering 19 providers on 18/11/2025. The TLPT first-cycle deadline is 17/01/2028, with notifications during 2026. It is built into the 2026 SREP/Pillar-2 add-ons.\n\nThe EAA applied from 28/06/2025, and market-surveillance audits are ramping up in NL/DE/AT in 2026.\n\nPSD3/PSR was approved by ECON on 05/05/2026. It carries an ~18mo application clock and an ~24mo VoP-liability tail, so commitments run from H2-2026 into 2027. AMLA RTS is due 10/07/2026, and AMLR applies 10/07/2027.",
+   "implication": "Build the compliance and managed-services pipeline off the sequence of legal deadlines, rather than off discretionary IT budgets.\n\nThe high-margin 'year-2' assurance phase is bigger and stickier than the one-off build. It covers resilience testing, incident reporting, TLPT support, EAA remediation and AML/CDD refresh. Sell testing, remediation and managed services in the year after each go-live.",
+   "confidence": "High",
+   "sources": "findings/03-regulation/2024-2026-baseline.md (Patterns 1 & 3); findings/03-regulation/parts/2026-06-24/dora.md; psd3-psr.md; resilience-compliance.md",
+   "citations": [
+    {
+     "text": "EUR-Lex: Regulation (EU) 2022/2554 (DORA)",
+     "url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng"
+    },
+    {
+     "text": "EUR-Lex: Instant Payments Regulation (EU) 2024/886",
+     "url": "https://eur-lex.europa.eu/eli/reg/2024/886/oj/eng"
+    },
+    {
+     "text": "Council of the EU: PSD3/PSR provisional agreement (27/11/2025)",
+     "url": "https://www.consilium.europa.eu/en/press/press-releases/2025/11/27/payment-services-council-and-parliament-agree-to-step-up-the-fight-against-fraud-and-increase-transparency/"
+    },
+    {
+     "text": "AMLA: About the Anti-Money Laundering Authority",
+     "url": "https://www.amla.europa.eu/about-amla_en"
+    }
+   ],
+   "group": "Payments & regulation"
+  },
+  {
+   "pattern": "Operational-resilience and financial-crime compliance has changed from one-off 'get-ready' projects into a permanent, legally required running cost. It grows whatever the economy does, and it now reaches into the vendor supply chain through DORA CTPP.",
+   "evidence": "DORA has been in force since 17/01/2025. The ESAs' first incident report, published 03/06/2026, logged 3,383 major 2025 incidents. About 70% of firms expect permanently higher running costs (McKinsey), and ~22,000 EU entities are in scope.\n\nThe cost per institution is EUR 25-150m for large banks and EUR 1-5m for mid-sized ones, which is where most CEE/SEE banks sit. 19 Critical ICT Third-Party Providers were designated on 18/11/2025 under direct EU oversight.\n\nFinancial crime adds more cost. Global financial-crime compliance costs USD 206bn/yr (EMEA USD 85bn), and RegTech grows at ~16% CAGR (USD 20.7bn 2025->44bn 2030). National transposition is under way: Romania OUG 14/2026, Greece Law 5193/2025 and Hungary's 'Mini-DORA'.",
+   "implication": "This is the rare bank-IT line that is contractually obliged to grow in any economic climate. It is a structural tailwind for Printec's highest-margin security, compliance and managed-services portfolio (INETCO, FICO, IMTF Siron).\n\nMid-sized CEE/SEE banks cannot staff this in-house, because labour is 72-79% of AML cost, so they outsource. CTPP also means Printec must supply DORA-aligned attestations on its NCR Atleos and managed-services stack to win and keep contracts.",
+   "confidence": "High",
+   "sources": "findings/08-futurist/research/themes/resilience-compliance.md; findings/03-regulation/parts/2026-06-24/dora.md; aml-amla-amlr.md",
+   "citations": [
+    {
+     "text": "EUR-Lex: Regulation (EU) 2022/2554 (DORA)",
+     "url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng"
+    },
+    {
+     "text": "McKinsey: Europe's new resilience regime — DORA",
+     "url": "https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/europes-new-resilience-regime-the-race-to-get-ready-for-dora"
+    },
+    {
+     "text": "LexisNexis Risk Solutions: Global financial-crime compliance costs (USD 206bn, 2023)",
+     "url": "https://risk.lexisnexis.com/about-us/press-room/press-release/20230926-global-financial-crime-compliance-costs"
+    },
+    {
+     "text": "ECB Banking Supervision: SSM 2026 priorities speech (03/06/2026)",
+     "url": "https://www.bankingsupervision.europa.eu/press/speeches/date/2026/html/ssm.sp260603~255bec155b.en.html"
+    }
+   ],
+   "group": "Payments & regulation"
+  },
+  {
+   "pattern": "Verification of Payee checks the payee's name before a transfer. Together with ISO 20022 structured data, it turns fraud, AML and identity tooling into a standing, recurring compliance duty rather than project work. The question moves from whether a bank can clear instant payments to whether it can clear them safely, with structured data, at scale.",
+   "evidence": "VoP has been a standing legal duty in the euro area since 09/10/2025; non-euro EU by 09/07/2027; the PSR makes VoP mandatory across ALL credit transfers with a ~24mo liability transition. The EPC VoP rulebook keeps updating: v1.0 (05/10/2025)->v1.1 (20/09/2026)->v2.0 (end-Nov 2026). SWIFT CBPR+ structured-address mandate 14/11/2026 (~65% of messages were still unstructured when announced). The PSR shifts APP-fraud liability onto PSPs. Bank readiness gap: only 13% have a strong instant-payments tech foundation, 5% are 'ready to lead'. National instant schemes are multiplying (Greece IRIS mandatory, 4.25m users; Romania RoPay 2.0; Serbia IPS 609k/day; Ukraine SEP 4.1).",
+   "implication": "There is recurring, rather than one-off, demand for transaction-monitoring, fraud, VoP and identity lines (INETCO, FICO, IMTF Siron, Namirial). Master-data clean-up projects around the Nov-2026 address cut-off add to this.\n\nThe PSR liability shift gives banks a hard, measurable return to justify fraud-analytics spend. Non-euro footprint banks with low readiness approaching the Jul-2027 deadline are the prime 2026-27 pipeline.",
+   "confidence": "High",
+   "sources": "findings/03-regulation/parts/2026-06-24/instant-payments-sepa.md; psd3-psr.md; iso20022.md; findings/08-futurist/research/themes/instant-payments-iso20022.md",
+   "citations": [
+    {
+     "text": "ECB: Instant Payments Regulation overview",
+     "url": "https://www.ecb.europa.eu/paym/retail/instant_payments/html/instant_payments_regulation.en.html"
+    },
+    {
+     "text": "European Payments Council: Verification of Payee scheme",
+     "url": "https://www.europeanpaymentscouncil.eu/what-we-do/other-schemes/verification-payee"
+    },
+    {
+     "text": "SWIFT: ISO 20022 for financial institutions",
+     "url": "https://www.swift.com/standards/iso-20022/iso-20022-financial-institutions-focus-payments-instructions"
+    },
+    {
+     "text": "Council of the EU: PSD3/PSR agreement (mandatory VoP, 27/11/2025)",
+     "url": "https://www.consilium.europa.eu/en/press/press-releases/2025/11/27/payment-services-council-and-parliament-agree-to-step-up-the-fight-against-fraud-and-increase-transparency/"
+    }
+   ],
+   "group": "Payments & regulation"
+  },
+  {
+   "pattern": "EU payment and identity rules flow into the non-EU Western Balkans and Ukraine with a 1-3yr lag. They arrive through SEPA accession and a shared TIPS-clone, which is a copy of the ECB's instant-payment system. The region is repeating the euro area's 2014-17 modernisation on a predictable, pre-set timetable.",
+   "evidence": "The accession steps follow a fixed order:\n- Montenegro and Albania joined SEPA: Nov 2024\n- Serbia became the 41st SEPA country: May 2025\n- AL/MD/ME/MK joined the schemes: Oct 2025\n- Serbian Operational Readiness: May 2026\n- Ukraine accession: ~2027-28\n\nBanca d'Italia is building a central switch for AL/BA/XK/ME. It is a TIPS-clone built on ISO 20022, the modern payment-message standard, and should run by ~mid-2026.\n\nTake-up is already visible. North Macedonia is live through 9 banks (Oct 2025). Albania recorded 363k transfers and EUR4.3bn in the first 6mo, with cross-border cost down from EUR73.40 to 6.15. Ukraine has SEP 4.1 instant, UETR mandatory 01/04/2026 and a SEPA bill due ~Jul 2026. The EU Growth Plan (EUR6bn 2024-2027) funds the spend.",
+   "implication": "This is a predictable, ordered pipeline of SEPA adherence, ISO 20022 migration and instant-payment connections. It covers Serbia, Albania, N. Macedonia, Montenegro, Bosnia, Kosovo and Ukraine, which is Printec's non-EU home market.\n\nBanca d'Italia builds the central switch, so Printec's value sits on the bank side: connectivity, x-core message transformation, onboarding and acceptance. Get in place market by market, in deadline order.",
+   "confidence": "High",
+   "sources": "findings/03-regulation/2024-2026-baseline.md (Pattern 4); instant-payments-sepa.md; iso20022.md; findings/08-futurist/research/regions/see-non-eu.md",
+   "citations": [
+    {
+     "text": "ECB MIP news: instant-payment settlement service in the Western Balkans (17/01/2025)",
+     "url": "https://www.ecb.europa.eu/press/intro/news/html/ecb.mipnews250117_2.en.html"
+    },
+    {
+     "text": "World Bank: SEPA opens new horizons for the Western Balkans (25/03/2026)",
+     "url": "https://www.worldbank.org/en/news/feature/2026/03/25/cheaper-and-faster-payments-sepa-opens-new-horizons-for-the-western-balkans"
+    },
+    {
+     "text": "European Commission: Serbia inclusion in SEPA (22/05/2025)",
+     "url": "https://enlargement.ec.europa.eu/news/european-commission-welcomes-inclusion-serbia-single-euro-payments-area-2025-05-22_en"
+    }
+   ],
+   "group": "Payments & regulation"
+  },
+  {
+   "pattern": "One-off events create demand spikes with fixed dates. National mandates and euro changeovers go beyond the EU minimum and squeeze years of capital spending into sharp ~6-month local windows. Local laws, rather than Brussels, produce the fastest hardware and terminal spend.",
+   "evidence": "Greece made IRIS, its instant-payment scheme, mandatory for all businesses, with fines of EUR 10-20k in Nov-Dec 2025. This goes beyond the IPR and forced IRIS into 1.2m POS and ~70k e-shops within months (~122m txns/~EUR11bn in 2025). Greece also added the 11/08/2025 ATM-fee ban/cap.\n\nBulgaria's euro changeover ran to a fixed timetable. The Commission approved it in Jun 2025. 96% of ATMs were euro-ready by 01/01/2026, with full cutover by 01/02/2026. Free lev<->euro exchange ends 30/06/2026. That packed years of cash-logistics, ATM and core-system spending into ~6 months.\n\nRomania built RoPay ahead of its 2027 dates. Hungary added NIS2/'Mini-DORA' beyond the EU minimum.",
+   "implication": "The biggest and fastest bursts of terminal, POS and ATM spend come from national laws and changeovers. Watch national legislation in the footprint, along with ERM-II and convergence signals. Line up stock and integration capacity before the announcement, because the windows are short and the spending is heavy.\n\nGreece IRIS and Bulgaria's changeover are the templates. The next euro candidate and the digital-euro pilots are likely to repeat the same pattern.",
+   "confidence": "Medium",
+   "sources": "findings/03-regulation/2024-2026-baseline.md (Patterns 5 & 6); euro-adoption.md; instant-payments-sepa.md",
+   "citations": [
+    {
+     "text": "ECB: Bulgaria joins the euro area (01/01/2026)",
+     "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260101~c830245e42.en.html"
+    },
+    {
+     "text": "BNB: euro changeover Q&A (lev/euro exchange)",
+     "url": "https://www.bnb.bg/AboutUs/AUEurosystem/AUAccessionToTheEuroArea/AUAEFIQuestionsAndAnswers/POAEFI_QUESTIONSANDANS13_BG"
+    },
+    {
+     "text": "GreekReporter: Greece makes IRIS payments mandatory (Law 5193/2025)",
+     "url": "https://greekreporter.com/2025/12/02/greece-iris-payments-mandatory-all-businesses/"
+    }
+   ],
+   "group": "Procurement & demand cadence"
+  },
+  {
+   "pattern": "IT cost lines are rising, not falling. Cash-in-transit (CIT) and cash-handling costs, compliance running costs and fixed costs per machine are all climbing. This pushes banks to outsource run-and-maintain work and to move spend towards recurring services.",
+   "evidence": "Cash handling is up to ~50% of ATM total cost of ownership (TCO); CIT cost +~40% (2020-25); ~75% of ATM operating cost is fixed; cash handling is 4-10% of EU bank operating cost. ~70% of firms expect permanently higher compliance running costs (DORA). Global financial-crime compliance costs USD 206bn/yr and is rising for ~98% of institutions. Banking AI software spend is rising from ~EUR31bn (2024) to ~EUR55bn (2027). Recyclers and pooling cut cash operating cost by up to ~30-40%; recyclers cut CIT visits by up to ~80%. NCR Atleos ATMaaS revenue +33% FY25.",
+   "implication": "Rising fixed and compliance costs are themselves the reason to buy. Replacing a dispense-only machine with a recycler does more work at a lower cash-handling cost, and pressure on fixed costs pushes banks to outsource.\n\nThat is the core case for Printec's recycler line and its managed-services / ATMaaS (ATM-as-a-Service) model. Sell on the cost saving, not on feature lists.",
+   "confidence": "High",
+   "sources": "findings/08-futurist/research/themes/self-service-assisted.md; cash-recycling-deposit.md; resilience-compliance.md; products/managed-services.md",
+   "citations": [
+    {
+     "text": "ECB SPACE 2024 (cash use, payment attitudes)",
+     "url": "https://www.ecb.europa.eu/stats/ecb_surveys/space/html/ecb.space2024~19d46f0f17.en.html"
+    },
+    {
+     "text": "McKinsey: transforming nonpersonnel cost management in banking",
+     "url": "https://www.mckinsey.com/industries/financial-services/our-insights/a-new-frontier-for-transforming-nonpersonnel-cost-management-in-banking"
+    },
+    {
+     "text": "ABA Banking Journal: Recycling the narrative on cash (ATM TCO/CIT)",
+     "url": "https://bankingjournal.aba.com/2026/01/recycling-the-narrative-on-cash/"
+    },
+    {
+     "text": "McKinsey: Europe's new resilience regime — DORA (permanent run-costs)",
+     "url": "https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/europes-new-resilience-regime-the-race-to-get-ready-for-dora"
+    }
+   ],
+   "group": "Cash & ATM economics"
+  },
+  {
+   "pattern": "Hardware, cash logistics and payment processing are merging into a few vertically integrated 'end-to-end cash-ecosystem' players. This squeezes pure integrators from both sides.",
+   "evidence": "There has been a dense multi-year wave of deals:\n- Brink's-NCR Atleos $6.6bn (announced Feb-2026, closing Q1-2027, ~$10bn combined company)\n- Euronet-CoreCard (Q4-2025) and Euronet-Spain/Portugal (Apr-2026)\n- Worldline buying Eurobank's last 20% of Worldline Greece (EUR72m, May-2026)\n- Glory-Acrelec (Nov-2025) and Glory-Flooid (2024)\n- Loomis-Burroughs (2025)\n- Global Payments-Worldpay (Jan-2026)\n\nEach deal combines two or more of {ATM hardware, ATM software, CIT, processing/acquiring}.",
+   "implication": "Printec's classic role as an independent integrator is being squeezed. Ecosystem players can supply the whole stack themselves and bid end to end.\n\nPrintec should move up to owning the customer-facing managed-services contract, together with the local integration and compliance layer, rather than reselling boxes. It also has to choose, deal by deal, which large players to partner with and which to defend against.",
+   "confidence": "High",
+   "sources": "findings/06-vendors/historical-baseline.md; findings/06-vendors/2026-06-25.md; findings/08-futurist/research/products/managed-services.md",
+   "citations": [
+    {
+     "text": "Loomis — strategic acquisition of Burroughs (US/Canada ATM lifecycle services), 06/05/2025",
+     "url": "https://www.prnewswire.com/news-releases/loomis-makes-strategic-acquisition-in-the-us-by-acquiring-burroughs-302447351.html"
+    },
+    {
+     "text": "Brink's invests in KAL ATM Software (IR), 12/06/2025",
+     "url": "https://investors.brinks.com/news-releases/news-release-details/brinks-invests-kal-advance-atm-managed-services-solutions/"
+    },
+    {
+     "text": "Brink's to Acquire NCR Atleos for $6.6 Billion (IR), 26/02/2026",
+     "url": "https://investors.brinks.com/news-releases/news-release-details/brinks-acquire-ncr-atleos-66-billion-creating-leading-financial"
+    }
+   ],
+   "group": "Operating model & vendor landscape"
+  },
+  {
+   "pattern": "Printec's key supplier and its key competitors are becoming the same companies, which creates channel and partner risk. The firms Printec resells are building their own networks, and are being bought by Printec's direct rivals at the same time.",
+   "evidence": "NCR Atleos named Printec Global + Regional (Europe) Partner of the Year 2026. At the same time, Atleos is being bought by Brink's, a direct AMS/CIT competitor.\n\nAtleos also runs its own Cashzone IAD (independent ATM deployer) estate in Greece (DirectPay/iXchange, Jul-2025). It sells ATMaaS directly to Greek banks (Epirus, Jan-2026), bypassing the reseller.\n\nKAL multivendor software, the concept behind the x-core line, is part-owned by Brink's. It powers competitor Mellon/Hyosung wins (NBG) and KAL incumbencies (Ceska sporitelna, OTP). The UK CMA is reviewing the Brink's-Atleos overlap, with a possible Cashzone sale.",
+   "implication": "Printec's route to market depends on partners whose owners and plans it does not control, and who can cut it out.\n\nUse the Atleos award as leverage to lock in co-sell terms and margin or territory protection now, before the Brink's deal closes and changes the channel economics. Build a spread of suppliers so that one change of ownership cannot strand the business.",
+   "confidence": "High",
+   "sources": "findings/06-vendors/2026-06-25.md; findings/06-vendors/parts/2026-06-25/hyosung-kal.md; findings/06-vendors/historical-baseline.md",
+   "citations": [
+    {
+     "text": "Brink's invests in KAL — hardware-independent ATM software (IR), 12/06/2025",
+     "url": "https://investors.brinks.com/news-releases/news-release-details/brinks-invests-kal-advance-atm-managed-services-solutions/"
+    },
+    {
+     "text": "Brink's to Acquire NCR Atleos for $6.6 Billion (NCR Atleos IR), 26/02/2026",
+     "url": "https://investor.ncratleos.com/news-events/press-releases/detail/174/brinks-to-acquire-ncr-atleos-for-6-6-billion-creating-leading-financial-technology-infrastructure-company"
+    }
+   ],
+   "group": "Operating model & vendor landscape"
+  },
+  {
+   "pattern": "Cash-in-transit (CIT) incumbents are moving up from armoured trucks into ATM managed services and POS acceptance. Former neutral suppliers are becoming direct rivals for the recurring-services contract.",
+   "evidence": "Brink's AMS+DRS grew 15% organic for 13 straight quarters. It is about 1/3 of revenue, with ~2/3 of installs greenfield new logos, and Europe is its highest-mix region at 44%. Brink's took a strategic equity stake in KAL (Jun-2025), then agreed to buy Atleos.\n\nLoomis bought Burroughs, a US ATM maintenance business, and launched Loomis Pay on Castles POS. CITs in the footprint already bundle ATM support: CIT One (Romania, owned by BCR/BRD/Raiffeisen, >50% share, >5,000 ATMs) and SOT 161 (Bulgaria). Brink's, Mellon and KAL jointly pitched ATM pooling to NBG and Eurobank (Athens, Apr-2026), based on the Lloyds/Brink's UK model.",
+   "implication": "The CIT layer Printec used to work alongside now competes for the same ATM-lifecycle and retail cash-automation contracts. Where a bank-owned or large CIT controls cash replenishment, the addressable market shrinks. CIT One, for example, blocks BCR/BRD/Raiffeisen ATM-service revenue.\n\nThe opening is with banks that do not own a CIT, and in the software, telemetry and optimisation that CITs do not provide.",
+   "confidence": "High",
+   "sources": "findings/06-vendors/2026-06-25.md; findings/06-vendors/historical-baseline.md",
+   "citations": [
+    {
+     "text": "Euronet to acquire CrediaBank merchant-acquiring business in Greece (IR), 07/01/2026",
+     "url": "https://ir.euronetworldwide.com/news-releases/news-release-details/euronet-signs-strategic-partnership-agreement-acquire-merchant"
+    },
+    {
+     "text": "Euronet–CrediaBank strategic partnership (GlobeNewswire), 07/01/2026",
+     "url": "https://www.globenewswire.com/news-release/2026/01/07/3214584/23467/en/Euronet-Signs-Strategic-Partnership-Agreement-to-Acquire-Merchant-Acquiring-Business-of-CrediaBank-in-Greece.html"
+    },
+    {
+     "text": "Asseco SEE / Payten — AIK Bank full digital onboarding (DCIF + Digital Origination)",
+     "url": "https://asee.io/news/aikbank-online-onboarding-dcif-digital-origination/"
+    }
+   ],
+   "group": "Operating model & vendor landscape"
+  },
+  {
+   "pattern": "Competition is decided by multivendor software, which runs on any maker's hardware, and by the cost of switching an installed base. The machine itself matters less. Challenger sales models plus deep single-account incumbency create a concentrated, locked-in market.",
+   "evidence": "Mellon is running a multi-country Hyosung+KAL push: Greece (NBG 700 recyclers 2024), then Bulgaria (Sofia 2024), then Romania (Hyosung+KAL launch 2025). KAL is explicitly hardware-independent, supporting 40+ manufacturers, and is designed to displace incumbents without swapping the fleet.\n\nThere are also clear lock-in examples. Piraeus has >1,200 Diebold Nixdorf recyclers, which blocks NCR and Printec there. JCC owns Cyprus's National POS and National ATM networks. Payten has been DN's SEE master distributor since 2018, and adds processing (Chip Card) and the MoneyGet IAD. Worldline/Cardlink runs Greece's largest acceptance network (267k POS).",
+   "implication": "Winning comes down to which multivendor software and managed-services contract owns the estate. Hardware-agnostic software (KAL vs NCR x-core) converts a fleet without replacing it.\n\nLead with Printec's multivendor software and services advantage, and defend reference accounts. Where rivals hold the software or processing layer, as with Payten in SEE, JCC in Cyprus and Worldline/Cardlink in Greece, the open space is mid-tier and cooperative banks.",
+   "confidence": "Medium",
+   "sources": "findings/06-vendors/historical-baseline.md; findings/06-vendors/2026-06-25.md; parts/2026-06-25/diebold-nixdorf.md; parts/2026-06-25/tail-greece-cyprus.md",
+   "citations": [
+    {
+     "text": "National Bank of Serbia — Payment system statistics",
+     "url": "https://nbs.rs/en/ciljevi-i-funkcije/platni-sistem/statistika/"
+    },
+    {
+     "text": "NBS — Overview of data on the provision of payment services and e-money issuance",
+     "url": "https://www.nbs.rs/export/sites/NBS_site/documents-eng/platni-sistem/pregled-pu-ien/pu-ien_e_III_24.pdf"
+    },
+    {
+     "text": "National Bank of the Republic of North Macedonia — Payment statistics",
+     "url": "https://www.nbrm.mk/platiezhna_statistika-en.nspx"
+    }
+   ],
+   "group": "Operating model & vendor landscape"
+  },
+  {
+   "pattern": "Consolidation in payments and acceptance is pushing players up the stack, from terminals into card issuing, acquiring, wallets, lending and orchestration. Software-only acceptance, known as SoftPOS, takes card payments on a phone and is eroding hardware POS. This widens the competitive front into Printec's adjacent acquiring and onboarding lines.",
+   "evidence": "Euronet adds issuing (CoreCard), an A2A/IRIS wallet and >240,000 merchants via CrediaBank. Worldline/Cardlink pushes POS-as-cash-register, certified by AADE. Viva.com reported FY25 EUR258.6m, up 26%, and holds a full banking licence across 29 countries, including SK and SI.\n\nPayten launched AI orchestration and AI merchant onboarding. Mellon extended to SoftPOS (NBG Pay, PayzyPOS) and IRIS, with 350k+ deployed and 500k+ supported across 9 countries. SoftPOS keeps replacing hardware POS (Payten N. Macedonia, Viva, myPOS/Advent).",
+   "implication": "Printec's POS, acquiring and TMS revenue faces two pressures at once. One is software-only erosion from SoftPOS. The other is full-stack acquirers that own issuing, acceptance and wallet together. AI-driven onboarding also encroaches on the eKYC/identity (Namirial) line.\n\nThe response is to bundle cash, card and managed services, a differentiator that rivals such as Loomis Pay are now copying. The second step is to partner up the stack rather than compete terminal by terminal.",
+   "confidence": "Medium",
+   "sources": "findings/06-vendors/2026-06-25.md; findings/06-vendors/historical-baseline.md",
+   "citations": [
+    {
+     "text": "European Commission — EU Digital Identity (EUDI) Wallet implementation (eIDAS 2.0)",
+     "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet-implementation"
+    },
+    {
+     "text": "Gartner — 30% of enterprises will consider IDV unreliable due to deepfakes by 2026 (01/02/2024)",
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2024-02-01-gartner-predicts-30-percent-of-enterprises-will-consider-identity-verification-and-authentication-solutions-unreliable-in-isolation-due-to-deepfakes-by-2026"
+    },
+    {
+     "text": "NBS — Q1 2026 distance/eKYC contract data (Payment system statistics)",
+     "url": "https://nbs.rs/en/ciljevi-i-funkcije/platni-sistem/statistika/"
+    }
+   ],
+   "group": "Operating model & vendor landscape"
+  },
+  {
+   "pattern": "Digital platforms have reached scale, so the branch's role shifts to advice, and the shift is now mobile-first. Mobile banking is actively taking users from desktop and internet banking, not simply growing alongside it.",
+   "evidence": "Serbia Q1-2026: m-banking users 5.34m (+10.3%) and m-banking transactions +28.1%, while e-banking transactions FELL -2.5% (users only +5.7%). North Macedonia: 71.7-71.8% of all electronically started payments go via mobile; mobile-enabled cards +~120% y/y. Montenegro mobile-payment users +45% vs internet +33% (end-2024). Ukraine ~85-91% of POS contactless, 18.6m tokenised cards. Greece's consumer access to instant payments rose from 33.0% to 62.4% (2022->2024, the fastest in the euro area).",
+   "implication": "The endpoint that matters is the phone, not the branch PC. Build self-service, onboarding and acquiring around mobile and wallet rails: tokenisation, QR, SoftPOS, push-provisioning and app-to-ATM cardless withdrawal. Treat in-branch kiosks as bridges to the app.\n\nMobile-first transaction software and integration is structurally favoured over fixed-channel equipment. Freed branch capacity moves to advice.",
+   "confidence": "High",
+   "sources": "findings/04-statistics/2026-06-24.md; findings/04-statistics/parts/2026-06-24/serbia.md; findings/08-futurist/research/regions/see-non-eu.md; ukraine.md",
+   "citations": [
+    {
+     "text": "EU AI Act — Annex III (high-risk systems; fraud-detection exemption)",
+     "url": "https://artificialintelligenceact.eu/annex/3/"
+    },
+    {
+     "text": "European Commission — Regulatory framework on AI (AI Act timelines)",
+     "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+    },
+    {
+     "text": "McKinsey — Capturing the full value of generative AI in banking",
+     "url": "https://www.mckinsey.com/industries/financial-services/our-insights/capturing-the-full-value-of-generative-ai-in-banking"
+    },
+    {
+     "text": "Mastercard — Accelerates card fraud detection with generative AI (May 2024)",
+     "url": "https://www.mastercard.com/us/en/news-and-trends/press/2024/may/mastercard-accelerates-card-fraud-detection-with-generative-ai-technology.html"
+    }
+   ],
+   "group": "Branches & channel shift"
+  },
+  {
+   "pattern": "Remote and digital onboarding and eKYC (electronic identity checks) are moving from optional to mandatory. They are scaling on digital-identity rails such as the EUDI Wallet and national eIDs. They must now resist deepfakes, which makes verification a recurring managed defence rather than a one-off install.",
+   "evidence": "Under eIDAS 2.0, the EUDI Wallet must be available in every member state by end-2026. Bank acceptance becomes mandatory from Dec 2027. AMLR applies in full from Jul 2027.\n\nDemand is scaling. Serbia recorded 139,244 distance financial-service contracts in Q1-2026 (+49.16%). Of these, 105,103 were electronic (+54.91%) and 34,141 used video-ID (+33.85%), while distance loans rose +112.7%. Ukraine's Diia (~23m users/~81% of adults) and Poland's mojeID (~22m) enable account opening.\n\nThere is a counter-force. Deepfake attacks occurred about every 5 min in 2024, and document forgeries rose +244%. Gartner flags that 30% of enterprises will view standalone IDV as unreliable by 2026, and only ~29% of onboarding data collection is AI-automated.",
+   "implication": "A fixed regulatory deadline of Dec 2027 makes onboarding and eKYC a compliance requirement across the footprint. Ship a EUDI-Wallet relying-party connector.\n\nPosition eKYC as a continuously updated, layered liveness and anti-deepfake managed service, which produces recurring revenue. Broker bank-as-identity-provider deals in markets where the state wallet is late.",
+   "confidence": "High",
+   "sources": "findings/08-futurist/research/themes/digital-onboarding-eid.md; findings/04-statistics/parts/2026-06-24/serbia.md; regions/ukraine.md; regions/greece-cyprus.md",
+   "citations": [
+    {
+     "text": "Datos Insights (RBR) — Advanced Terminals and Emerging Markets Reshape Global ATM Landscape (2025)",
+     "url": "https://datos-insights.com/press-release/advanced-terminals-and-emerging-markets-reshape-global-atm-landscape/"
+    },
+    {
+     "text": "LINK — The ATM Network (UK ATM time series 2018-2025)",
+     "url": "https://www.link.co.uk/data-research/the-atm-network"
+    },
+    {
+     "text": "McKinsey — Attacking the cost of cash (pooling/recycling economics)",
+     "url": "https://www.mckinsey.com/industries/financial-services/our-insights/attacking-the-cost-of-cash"
+    },
+    {
+     "text": "Council of the EU — Single currency: strengthening the role of cash (19/12/2025)",
+     "url": "https://www.consilium.europa.eu/en/press/press-releases/2025/12/19/single-currency-council-agrees-position-on-the-digital-euro-and-on-strengthening-the-role-of-cash/"
+    }
+   ],
+   "group": "Digital & identity"
+  },
+  {
+   "pattern": "AI is moving from assistant to operator in self-service and onboarding. The most durable and lowest-friction win is in operations and at the endpoint: predictive maintenance, fraud and AI-guided assisted service. Fully autonomous customer self-service is held back by a persistent preference for dealing with a human.",
+   "evidence": "NCR Atleos's AI service platform runs at fleet scale. It reports 95%+ diagnostic accuracy, a 13% global reduction in ATM service revisits, and a 50% drop in North America tech-support cases across 600,000+ ATMs.\n\nFraud offers the clearest return and is exempt from the EU AI Act's high-risk class. Credit scoring and biometric ID are treated differently and become high-risk from 02/08/2026. Banking AI software spend is rising from ~EUR31bn (2024) to ~EUR55bn (2027).\n\nThere is a limit. Capgemini finds gen-AI could save up to 66% of onboarding and operations time, yet 61% of customers still contact a human after a poor chatbot experience. That argues for assisted service rather than full automation.",
+   "implication": "AI is a tailwind, not a threat. Sell 'AI-optimised availability' SLAs (service-level agreements) on the managed-services fleet, which means fewer revisits, higher uptime and higher margin. Sell AI fraud and video analytics at the endpoint, because they deploy fast and carry light regulation.\n\nPosition customer-facing AI as assisted, with a video-teller or copilot and a human fallback. AI that is compliant by design, logged and under human oversight is itself a reason to buy for CEE/SEE banks whose governance is behind.",
+   "confidence": "Medium",
+   "sources": "findings/08-futurist/research/themes/ai-in-banking.md; self-service-assisted.md",
+   "citations": [
+    {
+     "text": "CMS — New Hungarian law requires ATMs in all towns and villages (Act XVIII of 2025), 13/05/2025",
+     "url": "https://cms.law/en/hun/legal-updates/new-hungarian-law-requires-atms-in-all-towns-and-villages"
+    },
+    {
+     "text": "Council of the EU — Single currency: strengthening the role of cash (19/12/2025)",
+     "url": "https://www.consilium.europa.eu/en/press/press-releases/2025/12/19/single-currency-council-agrees-position-on-the-digital-euro-and-on-strengthening-the-role-of-cash/"
+    },
+    {
+     "text": "ECB — Access to and acceptance of cash",
+     "url": "https://www.ecb.europa.eu/euro/cash_strategy/acceptance-cash/html/index.en.html"
+    }
+   ],
+   "group": "Digital & identity"
+  },
+  {
+   "pattern": "Western Europe is a delayed template, running 3-7yr ahead. Pooling and shared-ATM-utility models, IAD (independent ATM deployer) takeover of bank estates, and recycler retrofit on a shrinking fleet are the mechanisms that reach CEE/SEE next.",
+   "evidence": "Western European mechanisms are already consolidating fleets. Geldmaat in the Netherlands went from ~6,400 to 3,800 machines, and Bankomat in Sweden from 2,700 to 1,200, cutting cost by ~40%. Belgium's Batopin is retrofitting deposit capability to about half its cash points by 2026.\n\nIADs rose from 16% to 18%+ of the Western European base, and recycling is 64% of automated-deposit ATMs. RBR flags pooling and IAD takeover as levers to 'watch spreading toward CEE/SEE'.\n\nThe footprint is behind the curve. Poland is the regional IAD anchor at 64% IAD-deployed, while SEE recycling is rare, with Serbia at 40 and Bulgaria at 8. UK free-to-use ATMs fell from 52,040 (2018) to 33,710 (2025), about -35%.",
+   "implication": "The mature-market order book previews Printec's CEE/SEE pipeline. Position now as integrator and operator for emerging footprint pooling consortia, taking the role Auriga plays for Batopin. Bundle recyclers, managed services and monitoring, and white-label or operate IAD estates as banks pull back.\n\nThere is a multi-year runway, because the local estate is still flat to growing. Take the pooling, recycler and ATMaaS positions before the decline arrives.",
+   "confidence": "High",
+   "sources": "findings/08-futurist/research/regions/western-europe.md; knowledge-base/by-agent/agent-8-futurist/rbr-we-atm-2028.md; agent-4-statistics/rbr-cee-atm-2028.md",
+   "citations": [
+    {
+     "text": "National Bank of Serbia — Overview of payment services and e-money issuance (2023-2024)",
+     "url": "https://www.nbs.rs/export/sites/NBS_site/documents-eng/platni-sistem/pregled-pu-ien/pu-ien_e_IV_24.pdf"
+    },
+    {
+     "text": "RBR ATM Market & Forecasts to 2028 (CEE)",
+     "url": "/api/evidence?pdf=rbr-cee-atm-2028"
+    }
+   ],
+   "group": "Macro & country divergence"
+  },
+  {
+   "pattern": "A regulatory and resilience floor is being written into law under the self-service and cash estate. Cash-access mandates and payment-resilience rules protect a minimum machine network by law, exactly where banks would otherwise cut. That reduces the risk in the installed base.",
+   "evidence": "Hungary's constitutional right to pay in cash, dated 14/04/2025, together with Act XVIII, requires ATMs in every municipality, with fines of HUF 2-200m. This drove the fleet above 5,500 by Dec 2025 even as withdrawals fell -9.4%. Per-bank allocations were gazetted, for example OTP 428 and MBH 195.\n\nThe EU Single Currency Package (Council 19/12/2025) requires 'sufficient and effective access to cash', with ATM geographic standards and a cash-acceptance mandate. Greece introduced an ATM-fee ban/cap of EUR1.50 on 11/08/2025.\n\nNational backstops exist as well: DNB 5km, UK LINK 1km plus 184 banking hubs, and Batopin/Geldmaat. Resilience forms a second floor. Ukraine runs a ~2,400-branch Power Banking network, and Sweden and Norway paused their cashless drive.",
+   "implication": "Where mandates apply, the minimum network is guaranteed demand, even at low-volume or rural sites. This favours banking-hub and shared self-service infrastructure, low-cost outsourced run-and-maintain, and resilient, power-independent self-service terminals (SST) with telemetry.\n\nThe mandate turns a shrinking cost line into a guaranteed-network duty that Printec can run as a service. The Greek fee cap in particular speeds the shift to recycler and ATMaaS economics.",
+   "confidence": "High",
+   "sources": "findings/08-futurist/research/regions/cee-eu.md; greece-cyprus.md; western-europe.md; findings/04-statistics/2026-06-24.md",
+   "citations": [
+    {
+     "text": "ECB (MIP news) — Instant payment settlement service in Western Balkans (17/01/2025)",
+     "url": "https://www.ecb.europa.eu/press/intro/news/html/ecb.mipnews250117_2.en.html"
+    },
+    {
+     "text": "World Bank — Cheaper and Faster Payments: SEPA Opens New Horizons for the Western Balkans (25/03/2026)",
+     "url": "https://www.worldbank.org/en/news/feature/2026/03/25/cheaper-and-faster-payments-sepa-opens-new-horizons-for-the-western-balkans"
+    },
+    {
+     "text": "European Commission — Growth Plan for the Western Balkans",
+     "url": "https://enlargement.ec.europa.eu/enlargement-policy/growth-plan-western-balkans_en"
+    },
+    {
+     "text": "World Bank — Western Balkan Regular Economic Report No. 28 (Fall 2025)",
+     "url": "https://documents1.worldbank.org/curated/en/099100625100539134/pdf/P512916-fe1dc2c8-b236-4cfe-ad18-88303a06122e.pdf"
+    }
+   ],
+   "group": "Payments & regulation"
+  },
+  {
+   "pattern": "Serbia is different, because its physical network stays structurally stable while peers shrink. Country-specific cash culture, tourism and policy decide whether a fleet grows or shrinks, rather than the regional average. Neighbouring markets therefore diverge sharply.",
+   "evidence": "Serbia has the footprint's strongest reluctance to go off-site, at only 37% off-site, which means a preference for through-the-wall (TTW) machines. It has among CEE's highest withdrawals per ATM at ~2,734/month, and the fleet returned to +3.6% growth (Q1-2026, 3,336). Branches are down -24% since 2015, yet the network is resilient.\n\nWithin CEE-EU to 2028 the picture splits. The growers are Czechia, Slovakia, Hungary, Romania and Serbia. The decliners are Bulgaria (-1.7%, fastest fall) and Croatia (-1.1%), although Croatia was the only footprint country that added branches in 2025.\n\nGreece shows ATMs +15.3%, driven by off-site and IAD deployment, while withdrawals fell -6.6%. Romania is the only primary CEE market with flat withdrawals (+0.5%) alongside +39% POS.",
+   "implication": "Density, withdrawals per machine and the grow-or-shrink call must be read country by country, not by region.\n\nRomania, Serbia and the tourism markets justify recyclers, because cash volume there is resilient. Hungary's mandated rural fleet runs low volumes, so sell low-cost managed operations. Bulgaria, Croatia and Czechia are consolidation and replacement markets. The same product needs a different sales pitch in each country.",
+   "confidence": "High",
+   "sources": "findings/04-statistics/historical-series-2023-2025.md (s.1,2b,6); knowledge-base/by-agent/agent-8-futurist/rbr-cee-atm-2028.md; findings/04-statistics/parts/2026-06-24/serbia.md",
+   "citations": [
+    {
+     "text": "Council of the EU — Bulgaria ready to use the euro from 1 January 2026 (08/07/2025)",
+     "url": "https://www.consilium.europa.eu/en/press/press-releases/2025/07/08/bulgaria-ready-to-use-the-euro-from-1-january-2026-council-takes-final-steps/"
+    },
+    {
+     "text": "ECB — Convergence Report June 2026 (press release, 24/06/2026)",
+     "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260624~ec1dcac037.en.html"
+    },
+    {
+     "text": "ECB — Croatia adopts the euro (Economic Bulletin focus, 2023)",
+     "url": "https://www.ecb.europa.eu/press/economic-bulletin/focus/2023/html/ecb.ebbox202208_02~15fd36600a.en.html"
+    },
+    {
+     "text": "RBR ATM Market & Forecasts to 2028 (CEE)",
+     "url": "/api/evidence?pdf=rbr-cee-atm-2028"
+    }
+   ],
+   "group": "Macro & country divergence"
+  },
+  {
+   "pattern": "Non-EU SEE is being brought to EU standards by policy and infrastructure years before membership, through SEPA, instant rails and anti-cash mandates. It is a build-out opportunity rather than a rationalisation one, on a timeline that is already set out in the calendar.",
+   "evidence": "SEPA accession is a fact for 4 of the 6 WB6 countries. AL, ME and MK went live in Oct 2025, and Serbia becomes operational in May 2026. The shared Banca d'Italia TIPS-clone goes live ~mid-2026 for AL/BiH/Kosovo/ME.\n\nAlbania's 2026 fiscal package requires POS for all taxpayers by 31/12/2026, under 'Cashless Albania 2030', with a target of >=60% digital by 2028.\n\nAcceptance is building fast. Serbia POS grew +10.3% to 187,957 and Albania POS +27.7% to 31,263. Kosovo POS grew +21.4%, and only 6.7% of account-holding businesses have a terminal, which is the clearest greenfield opportunity. The EU Growth Plan (EUR6bn 2024-2027) funds it.",
+   "implication": "There is a multi-year POS, SoftPOS and acquiring runway, plus dated SEPA and TIPS integration windows. These pull in Printec's payments, ISO 20022, fraud/AML, HSM and onboarding lines.\n\nSequence the work by readiness. Serbia and N. Macedonia lead on POS, acquiring and software. Albania moves fastest on policy, with POS and onboarding to 2028. Bosnia and Kosovo lag, so they come later but offer a bigger catch-up.",
+   "confidence": "High",
+   "sources": "findings/08-futurist/research/regions/see-non-eu.md; findings/04-statistics/2026-06-24.md",
+   "citations": [
+    {
+     "text": "World Bank — Updated Ukraine Recovery and Reconstruction Needs Assessment (RDNA5), 23/02/2026",
+     "url": "https://www.worldbank.org/en/news/press-release/2026/02/23/updated-ukraine-recovery-and-reconstruction-needs-assessment-released"
+    },
+    {
+     "text": "NBU — Instant Payments project page",
+     "url": "https://bank.gov.ua/en/payments/ips"
+    },
+    {
+     "text": "IMF — Ukraine Country Report No. 26/58 (2026)",
+     "url": "https://www.imf.org/-/media/files/publications/cr/2026/english/1ukrea2026001-source-pdf.pdf"
+    }
+   ],
+   "group": "Macro & country divergence"
+  },
+  {
+   "pattern": "Euro adoption moving east is a recurring, deadline-driven conversion event. Each accession triggers a full ATM, POS and cash-cycle reconfiguration on a fixed timetable. A rationalisation phase then follows the changeover.",
+   "evidence": "The pipeline is staged. Croatia joined in 2023, with ~70% of ATMs dispensing EUR on day 1 and all within 15 days. Bulgaria became the 21st euro member on 01/01/2026, with full cutover by 01/02/2026. Free exchange ends 30/06/2026, and the IPR is pinned to 01/01/2027. Romania targets ~2029-2030, and that date is slipping.\n\nPost-changeover rationalisation is visible. Bulgaria's branches fell -10.7% in 2025, its euro-prep year and the sharpest cut in the EU. Its ATM base is forecast to fall fastest among CEE primaries, at -1.7% CAGR to 2028. The ECB June-2026 Convergence Report finds no next adopter is imminent, with Czechia closest but not in ERM II.",
+   "implication": "Euro-conversion projects are repeatable, calendar-locked revenue across Printec's full stack: hardware reconfiguration, software, integration and managed services. The Croatia to Bulgaria reference can be reused directly for Romania at ~2029-2030.\n\nPlan for a demand pulse followed by post-euro fleet rationalisation, as seen in Bulgaria. Prepare the recycler and managed-services follow-on, not only the changeover spike.",
+   "confidence": "High",
+   "sources": "findings/08-futurist/research/regions/cee-eu.md; findings/04-statistics/historical-series-2023-2025.md; knowledge-base/by-agent/agent-8-futurist/rbr-cee-atm-2028.md; euro-adoption.md",
+   "citations": [
+    {
+     "text": "National Bank of Serbia — Overview of payment-services and e-money data (ATM/POS/IPS series)",
+     "url": "https://www.nbs.rs/export/sites/NBS_site/documents-eng/platni-sistem/pregled-pu-ien/pu-ien_e_IV_24.pdf"
+    },
+    {
+     "text": "National Bank of Serbia — Payment-system statistics portal",
+     "url": "https://nbs.rs/en/ciljevi-i-funkcije/platni-sistem/statistika/"
+    },
+    {
+     "text": "RBR ATM Market & Forecasts to 2028 (CEE)",
+     "url": "/api/evidence?pdf=rbr-cee-atm-2028"
+    }
+   ],
+   "group": "Payments & regulation"
+  },
+  {
+   "pattern": "Ukraine is a one-of-a-kind market where war resilience, rather than cash culture or maturity, is the lasting driver of demand. It has a flat but critical self-service estate, energy-independent banking, a large recycler-upgrade gap, and a reconstruction wave that comes later.",
+   "evidence": "Through 4 years of war the ATM fleet has stayed stable at ~15.6-15.8k, down -0.6% in 2025. It has been maintained rather than expanded, while digital use raced ahead. Cashless is 96% by count and 67.3% by value, and POS is 558k+ with 90.9% contactless.\n\nThe NBU requires ATMs to be pre-stocked against outages. Power Banking covers ~2,400 energy-independent branches, about 75% of systemic banks, with national ATM roaming and a Diia filter.\n\nDeposit and recycling capability is only 17.8% of the fleet, leaving ~13,000 dispense-only upgrade candidates. Branches keep shrinking, at 4,934 in Oct-2025 with 744 suspended. A reconstruction need of ~USD588bn over 10 years frames a re-equipment cycle that depends on a ceasefire.",
+   "implication": "Demand pulls toward resilient, energy-independent self-service, and toward ATM telemetry and remote monitoring across a roaming fleet. Recycler and intelligent-deposit upgrades follow, and PrivatBank is an existing NCR-recycler reference. Field and managed services plus security and compliance complete the offer, which gives a resilience angle unique in CEE.\n\nThe large reconstruction upside is real but arrives later, around 2028+. Treat it as a scenario, not a forecast.",
+   "confidence": "Medium",
+   "sources": "findings/08-futurist/research/regions/ukraine.md; findings/04-statistics/parts/2026-06-24/ukraine.md; historical-series-2023-2025.md (s.5)",
+   "citations": [
+    {
+     "text": "ECB (MIP news) — Roll-out of instant-payment settlement service in the Western Balkans (TIPS-clone), 17/01/2025",
+     "url": "https://www.ecb.europa.eu/press/intro/news/html/ecb.mipnews250117_2.en.html"
+    },
+    {
+     "text": "European Commission (Enlargement) — Commission welcomes inclusion of Serbia in SEPA, 22/05/2025",
+     "url": "https://enlargement.ec.europa.eu/news/european-commission-welcomes-inclusion-serbia-single-euro-payments-area-2025-05-22_en"
+    },
+    {
+     "text": "European Commission — Growth Plan for the Western Balkans (EUR 6bn Reform & Growth Facility)",
+     "url": "https://enlargement.ec.europa.eu/enlargement-policy/growth-plan-western-balkans_en"
+    },
+    {
+     "text": "World Bank — Cheaper and Faster Payments: SEPA Opens New Horizons for the Western Balkans, 25/03/2026",
+     "url": "https://www.worldbank.org/en/news/feature/2026/03/25/cheaper-and-faster-payments-sepa-opens-new-horizons-for-the-western-balkans"
+    }
+   ],
+   "group": "Macro & country divergence"
+  },
+  {
+   "pattern": "State-owned banks, post offices and central banks run the only publicly visible ATM and POS procurement. Commercial banks buy directly, away from the tender portals. The visible tender pipeline therefore understates real demand and points to the wrong buyers.",
+   "evidence": "This is a structural finding across markets. There are zero commercial-bank ATM/POS notices on EKR (Hungary), NEN/E-ZAK (Czechia), UVO (Slovakia), e-narocanje (Slovenia), EOJN (Croatia), UJN (Serbia) or SICAP (Romania, for BCR/BRD/BT). The finding is explicitly 'structural, not a coverage gap'.\n\nBuyers using the public route fall into three groups. Central banks include the HNB cash-equipment cluster, BNB, BNR and NBS, which are mostly G+D-locked. State banks include CEC on its own portal, plus Ukraine's Oschadbank and PrivatBank on Prozorro. Posts include Bulgarian Post, with a 9.5M BGN euro programme, Posta Romana, Slovenska/Slovenije posta and Posta Srbije.",
+   "implication": "Watching portals is necessary, but it covers only a minority of demand. Split the coverage into two streams.\n\nRun a scripted portal watch for the state, post and central-bank slice, where Printec can bid on open tenders. Run a named-account business-development push for commercial banks through the NCR Atleos channel. Posts, including ELTA and the Bulgarian, Romanian, Slovenian and Serbian posts, are a rising class of banking-channel buyers that tender publicly.",
+   "confidence": "High",
+   "sources": "findings/02-tenders/2026-06-24.md; findings/02-tenders/historical-baseline.md",
+   "citations": [
+    {
+     "text": "EU Council — Bulgaria ready to use the euro from 1 January 2026, 08/07/2025",
+     "url": "https://www.consilium.europa.eu/en/press/press-releases/2025/07/08/bulgaria-ready-to-use-the-euro-from-1-january-2026-council-takes-final-steps/"
+    },
+    {
+     "text": "Bulgarian National Bank — euro changeover FAQ (lev/euro exchange, cutover)",
+     "url": "https://www.bnb.bg/AboutUs/AUEurosystem/AUAccessionToTheEuroArea/AUAEFIQuestionsAndAnswers/index.htm"
+    },
+    {
+     "text": "ECB — Convergence Report June 2026 press release, 24/06/2026",
+     "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260624~ec1dcac037.en.html"
+    },
+    {
+     "text": "RBR ATM Market & Forecasts to 2028 (CEE)",
+     "url": "/api/evidence?pdf=rbr-cee-atm-2028"
+    }
+   ],
+   "group": "Procurement & demand cadence"
+  },
+  {
+   "pattern": "Hardware demand is a replacement-cycle business, not a growth business. Re-fleeting dominates shipments, while the net installed base stays flat or declines.",
+   "evidence": "RBR reports that in CEE replacements were 84% of shipments (2023), rising to ~89% by 2028. The installed base peaked at ~256k (2013) and drifts to 231,895 by 2028 (-1.8%/yr).\n\nFootprint refresh programmes confirm this. CEC Bank (RO) replaced ~1,100 and then >1,400 units, 'until the entire network is modernized'. PrivatBank (UA) bought 1,200 ATMs in 2025 and confirmed 800 in 2026, swapping fully depreciated machines for recyclers. Printec's 1,140-unit/838.6M UAH NCR contract is the incumbency anchor there.\n\nElsewhere, CSOB has ~230 of ~1,000 machines recycling (+~20%/yr). Slovak deposit-ATM fleets are growing: SLSP ~280, Tatra ~294 and VUB ~146.",
+   "implication": "Addressable ATM revenue is overwhelmingly recurring re-fleet and maintenance, rather than greenfield. The durable play is to defend incumbency and capture refreshes on machines reaching end of life, using NCR recyclers, x-core multivendor software, telemetry, OptiCash and managed or field services.\n\nMeasure each fleet's age profile to time refresh bids, instead of chasing net-new volume the market is not producing. A shrinking base still generates large, steady shipment demand.",
+   "confidence": "High",
+   "sources": "knowledge-base/by-agent/agent-4-statistics/rbr-cee-atm-2028-deep.md (Figs 3.1/3.5/3.6); findings/02-tenders/2026-06-24.md; findings/02-tenders/historical-baseline.md; findings/05-jobs/2026-06-24.md",
+   "citations": [
+    {
+     "text": "National Bank of Ukraine — Cashless payments dominated card transactions in 2024",
+     "url": "https://bank.gov.ua/en/news/all/bezgotivkovi-rozrahunki-u-2024-rotsi-suttyevo-perevajali-sered-operatsiy-z-platijnimi-kartkami"
+    },
+    {
+     "text": "National Bank of Ukraine — Instant Payments project page",
+     "url": "https://bank.gov.ua/en/payments/ips"
+    },
+    {
+     "text": "World Bank — Updated Ukraine Recovery and Reconstruction Needs Assessment (RDNA5), 23/02/2026",
+     "url": "https://www.worldbank.org/en/news/press-release/2026/02/23/updated-ukraine-recovery-and-reconstruction-needs-assessment-released"
+    },
+    {
+     "text": "National Bank of Ukraine — ISO 20022 implementation project page",
+     "url": "https://bank.gov.ua/en/payments/project-iso20022"
+    }
+   ],
+   "group": "Cash & ATM economics"
+  },
+  {
+   "pattern": "Leading indicators appear before the tender. Leadership appointments and 3+ concurrent role clusters in architecture, PMO, cards and cash operations signal channel and platform programmes ~6-12 months ahead. Bank M&A releases a fleet-standardisation budget 6-24 months after close.",
+   "evidence": "The operating rule is that a bank crosses a 'program threshold' at 3+ similar roles. Architecture, PMO and procurement hires come ~6-12mo before vendor selection.\n\nExamples include Banca Transilvania's 'Enterprise Architect-Cards Domain', and CEOs or COOs with a digital mandate at SLSP, CIB, ING Romania, NBG Cyprus and NLB. Cash-operations and ATM-specialist roles include a Raiffeisen RS recycling-device handler and a Hipotekarna ME 'ATM specijalista'.\n\nMergers are the second trigger. Cyprus had three back-to-back deals with post-merger hiring clusters:\n- Hellenic to Eurobank: 12/2025\n- AstroBank to Alpha: 10/2025\n- BoC to CDBbank: H2-2026\n\nIntesa absorbed First Bank RO (~700 ATMs incl. Euronet). Nova KBM and SKB became one OTP (~450 ATMs). NLB and RBI are competing for Addiko across 5 SEE markets, with a decision ~22/07/2026.",
+   "implication": "Get in position before an RFP exists. Approach the new digital or operations sponsor's office during the planning window, rather than after the tender is published, when incumbents are entrenched.\n\nEach merger freezes standalone spend, then releases a standardisation and migration budget. Those are prime windows for x-core multivendor software to unify mixed NCR/Diebold fleets, unified telemetry, OptiCash, TMS rationalisation and IMTF/FICO AML re-screening.\n\nKeep a hiring and M&A tracker for each market. One caveat: the counts come from aggregators and are point-in-time.",
+   "confidence": "Medium",
+   "sources": "findings/05-jobs/2026-06-24.md; findings/05-jobs/2026-06-12.md",
+   "citations": [
+    {
+     "text": "Croatian National Bank (HNB) — Plan nabave za 2026 (annual cash-equipment procurement plan)",
+     "url": "https://www.hnb.hr/documents/20182/121306/h-plan-nabave-hnb-2026.pdf"
+    },
+    {
+     "text": "Mediapool — Bulgarian Post euro-changeover equipment programme (Council of Ministers decision 21/05/2025)",
+     "url": "https://www.mediapool.bg/balgarski-poshti-poluchava-95-mln-lv-za-obmyana-na-levovete-v-evro-news371434.html"
+    },
+    {
+     "text": "Prozorro — Ukraine public e-procurement portal (Oschadbank/PrivatBank state lots)",
+     "url": "https://prozorro.gov.ua/tender/UA-2026-05-12-011684-a"
+    }
+   ],
+   "group": "Procurement & demand cadence"
+  },
+  {
+   "pattern": "A predictable baseline of demand recurs on fixed clocks. The central banks' yearly cash-equipment cycle and the service and maintenance re-tenders can be put in the diary and bid for ahead of time.",
+   "evidence": "Contract-expiry triggers: Posta Romana Tezaur banking services on a 9-month term (re-tender ~mid-2026); BNR banknote-processing maintenance on ~annual cycles; the HNB 2026 Procurement Plan publishes a dated cash-equipment cluster (V-34 ~1.8M EUR supply Q4-2026, plus V-31/32/33/43/53 maintenance lots with quarters); Ukraine's Oschadbank/PrivatBank run continuous Prozorro lots (ATM parts, cash bags, recycler maintenance, ~95k EUR/yr); BPS/Posta Srbije recurring CIT + ATM servicing; banks reinforce ATMs each winter (UA Power Banking).",
+   "implication": "Re-tender dates can be put in the diary and bid for ahead of time, rather than found late. Maintenance and managed-services renewals are the stickiest and highest-margin re-entry points, and incumbents are most exposed at the end of a contract.\n\nOne caveat: central-bank banknote-processing cores are largely G+D-locked. The contestable cycle is therefore teller, coin and sorting peripherals plus ATM-fleet service, not the high-speed central sorter.",
+   "confidence": "Medium",
+   "sources": "findings/02-tenders/2026-06-24.md; findings/02-tenders/historical-baseline.md; findings/05-jobs/2026-06-24.md",
+   "citations": [
+    {
+     "text": "RBR ATM Market & Forecasts to 2028 (CEE)",
+     "url": "/api/evidence?pdf=rbr-cee-atm-2028"
+    },
+    {
+     "text": "FinClub — PrivatBank 838.6M UAH contract for 1,140 NCR SelfServ recyclers (16/01/2025)",
+     "url": "https://finclub.net/news/pryvatbank-vytratyt-840-mln-hrn-na-bankomaty-z-obminom-valiuty.html"
+    },
+    {
+     "text": "Ziarul Financiar (ZF) — CEC Bank replaced ~1,100 ATMs with multifunction machines",
+     "url": "https://www.zf.ro/banci-si-asigurari/cec-bank-a-inlocuit-circa-1-100-de-bancomate-si-aparate-21878490"
+    }
+   ],
+   "group": "Procurement & demand cadence"
+  }
+ ]
+}

@@ -1,0 +1,212 @@
+[
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_067",
+  "source_url": "https://www.tender.sk/",
+  "outcome": "unresolved",
+  "http_status": 500,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 500"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_071",
+  "source_url": "https://zmluvy.egov.sk/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_081",
+  "source_url": "https://blog.printecgroup.com/eft-pos-atm-landscape-in-cee",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_082",
+  "source_url": "https://www.dieboldnixdorf.com/en-us/banking/insights/case-studies-banking/",
+  "outcome": "unresolved",
+  "http_status": 500,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 500"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_102",
+  "source_url": "https://www.argusadvisoryresearch.com/reports/country-reports/europe/slovakia.html",
+  "outcome": "unresolved",
+  "http_status": 522,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 522"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_103",
+  "source_url": "https://www.veriskfinancialresearch.com/reports/country-reports/europe/slovakia-country-report.html",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_108",
+  "source_url": "https://www.imf.org/en/publications/cr/issues/2025/03/21/slovak-republic-financial-system-stability-assessment-565444",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_144",
+  "source_url": "https://dennikn.sk/minuta/rubrika/432/ekonomika",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_153",
+  "source_url": "https://www.fininfo.sk/fininfo/podnety-odpovede/platobne-sluzby-ucty/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_156",
+  "source_url": "https://www.samosr.sk/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_160",
+  "source_url": "https://www.zlataminca.sk/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_176",
+  "source_url": "https://sdw.ecb.europa.eu/reports.do?node=100000964",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_180",
+  "source_url": "https://data.imf.org/en/datasets/IMF.STA:FAS",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_208",
+  "source_url": "http://sdw.ecb.europa.eu/browse.do?node=bbn5153",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_209",
+  "source_url": "https://data.ecb.europa.eu/data/data-categories/payment-statistics/payment-services-large-value-payment-systems-and-retail-payment-systems-new/annual-payments-statistics-discontinued",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_219",
+  "source_url": "https://fred.stlouisfed.org/series/SVKFCAANUM",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "TimeoutError"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_244",
+  "source_url": "https://www.mfsr.sk/uhp/analyzy/",
+  "outcome": "unresolved",
+  "http_status": 301,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 301"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_251",
+  "source_url": "https://susr.statistics.sk/ExportPdf2/PdfExportSrvlt",
+  "outcome": "unresolved",
+  "http_status": 500,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 500"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_285",
+  "source_url": "https://www.unicreditbank.sk/sk/o-banke/vysledky.html",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_299",
+  "source_url": "https://www.besteron.sk/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_sk_a4_live_001__c_312",
+  "source_url": "https://www.mastercard.com/news/europe/en/newsroom/press-releases/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ }
+]

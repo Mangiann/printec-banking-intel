@@ -1,0 +1,532 @@
+[
+ {
+  "candidate_id": "dr_me_a6_live_001__c_019",
+  "source_url": "https://bild.studio/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_023",
+  "source_url": "https://www.cbcg.me/en/core-functions/supervision/financial-service-providers/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_032",
+  "source_url": "https://www.ncratleos.com/newsroom",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_034",
+  "source_url": "https://openwaygroup.com/case-studies",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_035",
+  "source_url": "https://www.bpcbt.com/newsroom",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_049",
+  "source_url": "https://itspot.me/sponzori/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_061",
+  "source_url": "https://komora.me/en/cem/udruzenje-bankarstva-i-drugih-finansijskih-organizacija-i-osiguranja",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_073",
+  "source_url": "https://mina.news/mina-business/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_079",
+  "source_url": "https://me.ekapija.com/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_080",
+  "source_url": "https://www.ekapija.com/me/news",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_092",
+  "source_url": "https://play.google.com/store/apps/details?id=hr.asseco.android.jimba.nlbcrnagoracorp.me",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_096",
+  "source_url": "http://www.privrednakomora.me/sadrzaj/comtrade-it-solutions-and-services-doo-podgorica",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_098",
+  "source_url": "https://www.ckb.me/about-us/about-bank/about-ckb",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_111",
+  "source_url": "https://www.mans.co.me/institucije/komisija-za-zastitu-prava-u-postupcima-javnih-nabavki/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_121",
+  "source_url": "https://see.asseco.com/news-events/news/mobile-banking-in-nlb-montenegro-1688/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_126",
+  "source_url": "https://www.cbcg.me/e/kljucne-funkcije/nadzor-usaglasenosti-poslovanja-i-zastita-prava/zastita-prava-klijenata-kreditnih-institucija-i-korisnika-finansijskih-usluga/pravo-na-prigovor",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_127",
+  "source_url": "https://www.privrednakomora.me/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_136",
+  "source_url": "https://www.cbcg.me/me/o-nama/godisnji-finansijski-izvjestaji-sa-izvjestajem-nezavisnog-revizora",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_139",
+  "source_url": "https://www.imf.org/en/countries/mne",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_149",
+  "source_url": "https://www.cbcg.me/me/propisi",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_150",
+  "source_url": "https://web.archive.org/cdx/search/cdx?url=*.me&output=json",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_151",
+  "source_url": "https://web.archive.org/web/*/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_164",
+  "source_url": "https://www.undp.org/montenegro/press-releases/e-services-driver-digital-transformation-montenegro",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_171",
+  "source_url": "https://www.ckb.me/opste/novosti-detalj?nid=246",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_172",
+  "source_url": "https://www.ckb.me/upload/2.-Izvjestaj-nezavisnog-revizora_Konsolidovani_CKB_FS-and-Notes_31.12.2024_MNE.pdf",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_175",
+  "source_url": "https://www.hipotekarnabanka.com/obavjestenja/saopstenje-za-javnost-357",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_186",
+  "source_url": "https://ubcg.info/en/amb-members-2/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_191",
+  "source_url": "http://www.etenderi.me/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_192",
+  "source_url": "https://www.ekapija.com/en/tender",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_200",
+  "source_url": "https://www.ckb.me/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_212",
+  "source_url": "https://www.tendersontime.com/montenegro-tenders/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_216",
+  "source_url": "https://www.cbcg.me/e/javnost-rada/tenderi-i-oglasi",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_219",
+  "source_url": "https://www.dri.co.me/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_221",
+  "source_url": "https://wapi.gov.me/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_225",
+  "source_url": "https://www.privrednakomora.me/portal-javnih-nabavki",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_240",
+  "source_url": "https://www.undp.org/montenegro/procurement",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_242",
+  "source_url": "https://www.eib.org/en/about/procurement/calls-technical-assistance/index.htm",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_244",
+  "source_url": "https://www.kfw-entwicklungsbank.de/Internationale-Finanzierung/KfW-Entwicklungsbank/Beschaffung/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_262",
+  "source_url": "https://www.ckb.me/large-companies/cards-and-pos-terminals-2/cards-and-pos-terminals-2",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_265",
+  "source_url": "https://www.mastercard.me/me-me/poslovna-saradnja/mala-i-srednja-preduzeca/business-kartica/banke-prihvatioci.html",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_269",
+  "source_url": "https://paymentproviders.io/country/montenegro",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_275",
+  "source_url": "https://www.nabavke.com/javne-nabavke-tenderi-crna-gora",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_281",
+  "source_url": "https://www.mastercard.com/news/europe/en/newsroom/press-releases/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_287",
+  "source_url": "https://cbcg.me/eng/kljucne-funkcije/kontrolna-funkcija/bankarski-sistem",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_289",
+  "source_url": "https://www.cbcg.me/c/kljucne-funkcije/kontrolna-funkcija/pruzaoci-finansijskih-usluga/mikrokreditne-finansijske-institucije",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_292",
+  "source_url": "https://crps.me/Portal/Start",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_297",
+  "source_url": "https://data.gov.me/datasets",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_298",
+  "source_url": "https://www.euprava.me/usluge/detalji_usluge?generatedServiceId=612",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_304",
+  "source_url": "https://www.cbcg.me/r/mapa-sajta",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_306",
+  "source_url": "https://ubcg.info/publikacije/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_307",
+  "source_url": "https://komora.me/pkcg/udruzenje-informacionih-i-komunikacionih-tehnologija",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_308",
+  "source_url": "https://www.privrednakomora.me/tip-organizacione-strukture/udruzenja",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_me_a6_live_001__c_309",
+  "source_url": "https://komora.me/wp-content/uploads/2025/11/PKCG_Glasnik_Novembar_2025_005.pdf",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ }
+]

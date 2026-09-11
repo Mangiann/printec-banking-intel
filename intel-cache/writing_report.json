@@ -1,0 +1,2539 @@
+{
+ "n": 316,
+ "by_rule": {
+  "long sentence": 269,
+  "ALL-CAPS emphasis": 21,
+  "several deadlines in one sentence": 11,
+  "dense paragraph": 15
+ },
+ "findings": [
+  {
+   "rule": "long sentence (36 words)",
+   "excerpt": "A second onboarding window is scheduled for November 2026, when the central banks of Albania, Kosovo and North Macedonia are expected to join (A3, primary). · G",
+   "where": "signals",
+   "index": 1,
+   "field": "signal",
+   "title": "Albania — TIPS Clone instant-payment rail, November 2026 go-live"
+  },
+  {
+   "rule": "long sentence (45 words)",
+   "excerpt": "The platform settles in local currency in central-bank money and in euro in commercial-bank money, which are two separately screened flows (A3). · Context volum",
+   "where": "signals",
+   "index": 1,
+   "field": "signal",
+   "title": "Albania — TIPS Clone instant-payment rail, November 2026 go-live"
+  },
+  {
+   "rule": "long sentence (33 words)",
+   "excerpt": "So as of mid-2026 no customer-operated machine in Albania is certified to recycle notes, and every deposit must be sorted again on a staff-operated machine. · T",
+   "where": "signals",
+   "index": 2,
+   "field": "signal",
+   "title": "Printec Albania / Bank of Albania banknote-machine certification — the"
+  },
+  {
+   "rule": "long sentence (44 words)",
+   "excerpt": "Putting a fitness-capable machine through central-bank testing would therefore turn Printec's existing position into a recycler upgrade cycle across the 458 dep",
+   "where": "signals",
+   "index": 2,
+   "field": "implies",
+   "title": "Printec Albania / Bank of Albania banknote-machine certification — the"
+  },
+  {
+   "rule": "ALL-CAPS emphasis",
+   "excerpt": " bid. The winner is a consortium of SEC ONE d.o.o. and Delta Security d.o.o., runni",
+   "where": "signals",
+   "index": 29,
+   "field": "signal",
+   "title": "BiH postal operators — cash handling bought in public, and the named l"
+  },
+  {
+   "rule": "ALL-CAPS emphasis",
+   "excerpt": "ostbank (Eurobank Bulgaria) — \"Postbank NEXT\" branch-format rebuild",
+   "where": "signals",
+   "index": 36,
+   "field": "bank_theme",
+   "title": "Postbank (Eurobank Bulgaria) — \"Postbank NEXT\" branch-format rebuild"
+  },
+  {
+   "rule": "ALL-CAPS emphasis",
+   "excerpt": "The NEXT format now has a published device speci",
+   "where": "signals",
+   "index": 36,
+   "field": "signal",
+   "title": "Postbank (Eurobank Bulgaria) — \"Postbank NEXT\" branch-format rebuild"
+  },
+  {
+   "rule": "ALL-CAPS emphasis",
+   "excerpt": " 35th-anniversary rebrand release calls NEXT a network of next-generation offices, a",
+   "where": "signals",
+   "index": 36,
+   "field": "signal",
+   "title": "Postbank (Eurobank Bulgaria) — \"Postbank NEXT\" branch-format rebuild"
+  },
+  {
+   "rule": "ALL-CAPS emphasis",
+   "excerpt": "Chase Postbank for the NEXT rollout target, the site pipeline and t",
+   "where": "signals",
+   "index": 36,
+   "field": "follow_up",
+   "title": "Postbank (Eurobank Bulgaria) — \"Postbank NEXT\" branch-format rebuild"
+  },
+  {
+   "rule": "long sentence (31 words)",
+   "excerpt": "Monitor TED and the Varna buyer profile weekly. Компютърнет Сървисиз, the Pleven validator incumbent, is a candidate partner for a joint bid, and КОМИТЕКС shoul",
+   "where": "signals",
+   "index": 42,
+   "field": "follow_up",
+   "title": "Община Варна (Varna Municipality) — open-loop transit acceptance tende"
+  },
+  {
+   "rule": "long sentence (36 words)",
+   "excerpt": "The award record also names the sitting BNB IT integrators. ТехноЛогика ЕАД holds subscription support at EUR 254,872, plus a EUR 14,112 information-system chan",
+   "where": "signals",
+   "index": 43,
+   "field": "signal",
+   "title": "Bulgarian National Bank — institutional IT, document-management and se"
+  },
+  {
+   "rule": "long sentence (39 words)",
+   "excerpt": "It is restricted, so the diary entry has to be the contract notice and pre-qualification stage, not the award, or Printec cannot bid the next one at all. ТехноЛ",
+   "where": "signals",
+   "index": 43,
+   "field": "implies",
+   "title": "Bulgarian National Bank — institutional IT, document-management and se"
+  },
+  {
+   "rule": "several deadlines in one sentence",
+   "excerpt": "Central-bank infrastructure tables published 25/08/2026 show installed ATMs rising from 3,787 at 31/01/2026 to 4,633 at 30/06/2026.",
+   "where": "signals",
+   "index": 56,
+   "field": "signal",
+   "title": "Croatia — the 22% H1-2026 ATM build-out is coastal, low-specification "
+  },
+  {
+   "rule": "long sentence (34 words)",
+   "excerpt": "That is the largest ATM estate on the island, and 49% of the 321 machines run by the eight member banks (A1). · The bank's own channel data, released 06/08/2026",
+   "where": "signals",
+   "index": 65,
+   "field": "signal",
+   "title": "Eurobank Limited (Cyprus) — Hellenic Bank merger: ~156-ATM harmonisati"
+  },
+  {
+   "rule": "long sentence (33 words)",
+   "excerpt": "In Q2-2026 alone the bank cut 139 staff and 6 business centres, while 2 retail branches were added. · The directors repeat that the operational merger is under ",
+   "where": "signals",
+   "index": 65,
+   "field": "signal",
+   "title": "Eurobank Limited (Cyprus) — Hellenic Bank merger: ~156-ATM harmonisati"
+  },
+  {
+   "rule": "long sentence (39 words)",
+   "excerpt": "Cyprus adjusted net profit fell 7.7% year on year to EUR 231m, even though the group grew. · The FY-2025 deck puts Cyprus merger synergies at EUR 140m, fully in",
+   "where": "signals",
+   "index": 65,
+   "field": "signal",
+   "title": "Eurobank Limited (Cyprus) — Hellenic Bank merger: ~156-ATM harmonisati"
+  },
+  {
+   "rule": "long sentence (31 words)",
+   "excerpt": "It names Cyprus in scope but publishes no Cyprus allocation. · On vendors, the much smaller ex-Eurobank Cyprus side went live on Temenos core, digital and finan",
+   "where": "signals",
+   "index": 65,
+   "field": "signal",
+   "title": "Eurobank Limited (Cyprus) — Hellenic Bank merger: ~156-ATM harmonisati"
+  },
+  {
+   "rule": "long sentence (40 words)",
+   "excerpt": "A recycler is an ATM or counter machine that re-dispenses the notes customers have just paid in. · Two legacy estates must be moved onto one driver, one hardwar",
+   "where": "signals",
+   "index": 65,
+   "field": "implies",
+   "title": "Eurobank Limited (Cyprus) — Hellenic Bank merger: ~156-ATM harmonisati"
+  },
+  {
+   "rule": "long sentence (44 words)",
+   "excerpt": "Glory is a named key partner of Printec Cyprus rather than a rival to displace, so a Glory-badged recycler in this account is a Printec win. · The OEM (original",
+   "where": "signals",
+   "index": 66,
+   "field": "signal",
+   "title": "Bank of Cyprus — branch transformation + acquisitions"
+  },
+  {
+   "rule": "long sentence (46 words)",
+   "excerpt": "They were rolled out over three years from 2018 and are now ageing into a refresh window (A1). · The branch model has not changed since February 2026: 29 branch",
+   "where": "signals",
+   "index": 66,
+   "field": "signal",
+   "title": "Bank of Cyprus — branch transformation + acquisitions"
+  },
+  {
+   "rule": "long sentence (53 words)",
+   "excerpt": "The clearest measured gap is how cash is accepted. 32 sites still take business deposits in sealed envelopes, credited later, with an 11am cut-off, against only",
+   "where": "signals",
+   "index": 66,
+   "field": "signal",
+   "title": "Bank of Cyprus — branch transformation + acquisitions"
+  },
+  {
+   "rule": "long sentence (42 words)",
+   "excerpt": "Money is not an objection: 1H-2026 profit after tax was EUR 252m, up 7%, with a EUR 105m interim dividend. · Eleven of twelve live vacancies are technology role",
+   "where": "signals",
+   "index": 66,
+   "field": "signal",
+   "title": "Bank of Cyprus — branch transformation + acquisitions"
+  },
+  {
+   "rule": "long sentence (38 words)",
+   "excerpt": "The money is therefore in service, monitoring and refresh of what was just installed, not in a pipeline of new conversions. · The live upgrade case is the 27-si",
+   "where": "signals",
+   "index": 66,
+   "field": "implies",
+   "title": "Bank of Cyprus — branch transformation + acquisitions"
+  },
+  {
+   "rule": "long sentence (47 words)",
+   "excerpt": "It must be checked directly with the bank, and the card opportunity must not be sold as a merger-driven mass reissue (A1). · What did move: Alpha Bank's Q2-2026",
+   "where": "signals",
+   "index": 67,
+   "field": "signal",
+   "title": "Alpha Bank Cyprus — ex-AstroBank cutover, whole-portfolio card reissue"
+  },
+  {
+   "rule": "long sentence (44 words)",
+   "excerpt": "There is also a parallel ex-AstroBank product tree, a live system-integration FAQ hub and two sets of call-centre numbers (A1, A5). · Nine branch consolidations",
+   "where": "signals",
+   "index": 67,
+   "field": "signal",
+   "title": "Alpha Bank Cyprus — ex-AstroBank cutover, whole-portfolio card reissue"
+  },
+  {
+   "rule": "long sentence (44 words)",
+   "excerpt": "Vendor choices on self-service driving, screens, authentication and the AML rulebase are therefore being frozen in the next few months. · Staff leaving under a ",
+   "where": "signals",
+   "index": 67,
+   "field": "implies",
+   "title": "Alpha Bank Cyprus — ex-AstroBank cutover, whole-portfolio card reissue"
+  },
+  {
+   "rule": "long sentence (34 words)",
+   "excerpt": "It notes that machines added in remote and mountainous areas, under a government and banking-association initiative, were more than offset by removals in centra",
+   "where": "signals",
+   "index": 68,
+   "field": "signal",
+   "title": "Cyprus — regulator-flagged ATM rationalisation plus ~75-unit independe"
+  },
+  {
+   "rule": "long sentence (47 words)",
+   "excerpt": "It states that \"further changes in the total number of ATMs in Cyprus may be observed within the coming months as the institutions reassess and rationalise thei",
+   "where": "signals",
+   "index": 68,
+   "field": "signal",
+   "title": "Cyprus — regulator-flagged ATM rationalisation plus ~75-unit independe"
+  },
+  {
+   "rule": "long sentence (33 words)",
+   "excerpt": "Fewer machines, each paying out larger amounts, is the standard case for recycler-class replacement, availability-based managed services, cash forecasting and c",
+   "where": "signals",
+   "index": 68,
+   "field": "implies",
+   "title": "Cyprus — regulator-flagged ATM rationalisation plus ~75-unit independe"
+  },
+  {
+   "rule": "long sentence (50 words)",
+   "excerpt": "Segment margin rose to 18.7% from 16.6% on only 2% organic growth, so the margin gain comes from the mix of business rather than from volume. · Group managed-se",
+   "where": "signals",
+   "index": 69,
+   "field": "signal",
+   "title": "Cyprus ATM estate — the outsourcing threat: Brink's, an accelerated NC"
+  },
+  {
+   "rule": "long sentence (32 words)",
+   "excerpt": "Brink's also bid EUR 59,050 on the Electricity Authority's banknote-counter tender (A2). · Euronet is separately marketing to Cypriot banks a network participat",
+   "where": "signals",
+   "index": 69,
+   "field": "signal",
+   "title": "Cyprus ATM estate — the outsourcing threat: Brink's, an accelerated NC"
+  },
+  {
+   "rule": "long sentence (37 words)",
+   "excerpt": "Both Brink's and Euronet are targeting the consolidation the regulator has pre-announced. · An Atleos owned by Brink's places Printec's key ATM hardware partner",
+   "where": "signals",
+   "index": 69,
+   "field": "implies",
+   "title": "Cyprus ATM estate — the outsourcing threat: Brink's, an accelerated NC"
+  },
+  {
+   "rule": "long sentence (33 words)",
+   "excerpt": "The state terminal estate is therefore a competitive loss, not a Printec slot. · Implementation is one month of technical preparation, then four to six months c",
+   "where": "signals",
+   "index": 70,
+   "field": "signal",
+   "title": "JCC Payment Systems — Cypriot state e-payments monopoly broken by Viva"
+  },
+  {
+   "rule": "long sentence (35 words)",
+   "excerpt": "Go-live is expected during 2027. · Bid values as reported this cycle: Viva EUR 3,920,000 plus EUR 172,942, against JCC's EUR 4,450,000 plus EUR 522,821. · The p",
+   "where": "signals",
+   "index": 70,
+   "field": "signal",
+   "title": "JCC Payment Systems — Cypriot state e-payments monopoly broken by Viva"
+  },
+  {
+   "rule": "long sentence (48 words)",
+   "excerpt": "Recurring profit after tax was flat at EUR 5.1m, with net fee income of EUR 15m going to its 75% owner Bank of Cyprus (A1). · Six of JCC's seven live vacancies ",
+   "where": "signals",
+   "index": 70,
+   "field": "signal",
+   "title": "JCC Payment Systems — Cypriot state e-payments monopoly broken by Viva"
+  },
+  {
+   "rule": "long sentence (40 words)",
+   "excerpt": "On the regulator's own statement, that is the highest average value in the euro area. · Manipulation of the payer, that is authorised push-payment fraud where t",
+   "where": "signals",
+   "index": 71,
+   "field": "signal",
+   "title": "Cyprus — payment-fraud surge against a hard Verification-of-Payee cut-"
+  },
+  {
+   "rule": "long sentence (43 words)",
+   "excerpt": "It is the case for behavioural and authorised-push-payment analytics, real-time transaction monitoring, name-matching tuning and stronger authentication, sold a",
+   "where": "signals",
+   "index": 71,
+   "field": "implies",
+   "title": "Cyprus — payment-fraud surge against a hard Verification-of-Payee cut-"
+  },
+  {
+   "rule": "long sentence (45 words)",
+   "excerpt": "Renewals are estimated at EUR 1,390,000 and options at EUR 150,000, giving a maximum lifetime envelope of about EUR 7.19m. · It is an open procedure, awarded on",
+   "where": "signals",
+   "index": 72,
+   "field": "signal",
+   "title": "Department of Insolvency — integrated case-management system and infra"
+  },
+  {
+   "rule": "long sentence (41 words)",
+   "excerpt": "A tender with unpriced risk that nobody is bidding suits a regional integrator with local field engineers, working in a consortium with a case-management and do",
+   "where": "signals",
+   "index": 72,
+   "field": "implies",
+   "title": "Department of Insolvency — integrated case-management system and infra"
+  },
+  {
+   "rule": "long sentence (33 words)",
+   "excerpt": "It then deletes closed notices, so its sub-threshold pipeline is invisible after the fact (A2). · The exception is the state-owned Housing Finance Corporation, ",
+   "where": "signals",
+   "index": 73,
+   "field": "signal",
+   "title": "Cyprus — a direct-sales market, not a tender market, with the Housing "
+  },
+  {
+   "rule": "long sentence (32 words)",
+   "excerpt": "It also paid Pansophic Software EUR 13,800, unopposed and without a prior call for competition, to move its property valuation system out of KEDIPES' data centr",
+   "where": "signals",
+   "index": 73,
+   "field": "signal",
+   "title": "Cyprus — a direct-sales market, not a tender market, with the Housing "
+  },
+  {
+   "rule": "long sentence (49 words)",
+   "excerpt": "The Cyprus Migration Department, contracting through the Ministry of Interior, has awarded an end-to-end solution for issuing electronic machine-readable travel",
+   "where": "signals",
+   "index": 74,
+   "field": "signal",
+   "title": "Veridos — Cyprus sovereign credential issuance awarded at EUR 22.9m, w"
+  },
+  {
+   "rule": "long sentence (37 words)",
+   "excerpt": "The contract was concluded on 18/12/2024 and only came to light when the award notice reached the EU journal on 29/07/2026, roughly nineteen months later. · Sep",
+   "where": "signals",
+   "index": 74,
+   "field": "signal",
+   "title": "Veridos — Cyprus sovereign credential issuance awarded at EUR 22.9m, w"
+  },
+  {
+   "rule": "long sentence (36 words)",
+   "excerpt": "The Council of Ministers has still not published the decision naming the accessibility surveillance authorities, so enforcement remains a live gap. · Administra",
+   "where": "signals",
+   "index": 75,
+   "field": "signal",
+   "title": "Cyprus accessibility law — a 28/06/2030 replacement cliff for every AT"
+  },
+  {
+   "rule": "long sentence (32 words)",
+   "excerpt": "That covers audio output, tactile keypads, screen reader or voice guidance, reach and contrast. · An accessibility audit is a no-regrets opening that can lead t",
+   "where": "signals",
+   "index": 75,
+   "field": "implies",
+   "title": "Cyprus accessibility law — a 28/06/2030 replacement cliff for every AT"
+  },
+  {
+   "rule": "long sentence (39 words)",
+   "excerpt": "It is especially relevant at Eurobank Limited, where only some machines have embossed keys or headphone ports. · Sell the 2030 replacement deadline, plus procur",
+   "where": "signals",
+   "index": 75,
+   "field": "implies",
+   "title": "Cyprus accessibility law — a 28/06/2030 replacement cliff for every AT"
+  },
+  {
+   "rule": "long sentence (65 words)",
+   "excerpt": "Cards are 75% of all non-cash payment volume, the highest share in the euro area (A5). · Viva.com will supply the entire public-service terminal estate itself, ",
+   "where": "signals",
+   "index": 76,
+   "field": "signal",
+   "title": "Cyprus acceptance market — softPOS erodes terminal supply while Mellon"
+  },
+  {
+   "rule": "long sentence (38 words)",
+   "excerpt": "That is a second Cypriot provider crossing from online acquiring into in-person acceptance without shipping a terminal (A6). · Mellon Technologies completed the",
+   "where": "signals",
+   "index": 76,
+   "field": "signal",
+   "title": "Cyprus acceptance market — softPOS erodes terminal supply while Mellon"
+  },
+  {
+   "rule": "long sentence (31 words)",
+   "excerpt": "It normally comes before putting a country under direct group control and pushing the full catalogue through it. · Payten and ASEE, by contrast, have no registe",
+   "where": "signals",
+   "index": 76,
+   "field": "signal",
+   "title": "Cyprus acceptance market — softPOS erodes terminal supply while Mellon"
+  },
+  {
+   "rule": "long sentence (38 words)",
+   "excerpt": "The local rivals are therefore Mellon, Euronet, the softPOS providers and local integrators, not Payten, although buying a Cypriot company would be Payten's obv",
+   "where": "signals",
+   "index": 76,
+   "field": "signal",
+   "title": "Cyprus acceptance market — softPOS erodes terminal supply while Mellon"
+  },
+  {
+   "rule": "long sentence (51 words)",
+   "excerpt": "Two providers now put a card terminal on an ordinary phone, and the state estate has gone that way for at least five and a half years. · The defensible ground i",
+   "where": "signals",
+   "index": 76,
+   "field": "implies",
+   "title": "Cyprus acceptance market — softPOS erodes terminal supply while Mellon"
+  },
+  {
+   "rule": "long sentence (47 words)",
+   "excerpt": "It also includes the use cases software terminals cannot serve: unmanned kiosks, high-volume lanes and cash-accepting points. · Mellon taking full control means",
+   "where": "signals",
+   "index": 76,
+   "field": "implies",
+   "title": "Cyprus acceptance market — softPOS erodes terminal supply while Mellon"
+  },
+  {
+   "rule": "long sentence (42 words)",
+   "excerpt": "It offers this as software-as-a-service or on-premise, and claims more than 100 institutions. · Its own partners page carries named customer testimonials from B",
+   "where": "signals",
+   "index": 77,
+   "field": "signal",
+   "title": "Complytek — a local RegTech already inside Bank of Cyprus on governanc"
+  },
+  {
+   "rule": "long sentence (33 words)",
+   "excerpt": "Earlier milestones include one billion transactions monitored and a place on a RegTech industry list (A6). · One detail matters: its foothold inside those banks",
+   "where": "signals",
+   "index": 77,
+   "field": "signal",
+   "title": "Complytek — a local RegTech already inside Bank of Cyprus on governanc"
+  },
+  {
+   "rule": "long sentence (44 words)",
+   "excerpt": "This is the most direct long-tail threat to Printec's anti-money-laundering and know-your-customer line in Cyprus, and it is already inside Printec's own refere",
+   "where": "signals",
+   "index": 77,
+   "field": "implies",
+   "title": "Complytek — a local RegTech already inside Bank of Cyprus on governanc"
+  },
+  {
+   "rule": "long sentence (47 words)",
+   "excerpt": "A local vendor with those advantages can displace a licensed foreign compliance suite in a mid-sized bank, on price and responsiveness. · Because it came in thr",
+   "where": "signals",
+   "index": 77,
+   "field": "implies",
+   "title": "Complytek — a local RegTech already inside Bank of Cyprus on governanc"
+  },
+  {
+   "rule": "long sentence (71 words)",
+   "excerpt": "Of these, 969 accept deposits and 944 are cash-out-only, meaning they can pay out but not take cash in. · By owner: Komerční banka 740 machines (475 deposit / 2",
+   "where": "signals",
+   "index": 78,
+   "field": "signal",
+   "title": "Czechia — four-bank shared deposit-ATM network (KB / Moneta / Air Bank"
+  },
+  {
+   "rule": "long sentence (33 words)",
+   "excerpt": "The pool is therefore shrinking slightly while deposit capability spreads across it (A1). · The programme to move duplicate ATMs is nearly done: 124 target muni",
+   "where": "signals",
+   "index": 78,
+   "field": "signal",
+   "title": "Czechia — four-bank shared deposit-ATM network (KB / Moneta / Air Bank"
+  },
+  {
+   "rule": "long sentence (40 words)",
+   "excerpt": "January 2026 alone carried over 155,000 shared deposits worth nearly CZK 2bn (A5). · The rival three-bank camp of Česká spořitelna, ČSOB and Raiffeisenbank went",
+   "where": "signals",
+   "index": 78,
+   "field": "signal",
+   "title": "Czechia — four-bank shared deposit-ATM network (KB / Moneta / Air Bank"
+  },
+  {
+   "rule": "long sentence (36 words)",
+   "excerpt": "It credits the customer's account at another bank typically within 30 minutes. ČS deposit counts are up 15% year on year against volume up 8%, and ČSOB counts a",
+   "where": "signals",
+   "index": 78,
+   "field": "signal",
+   "title": "Czechia — four-bank shared deposit-ATM network (KB / Moneta / Air Bank"
+  },
+  {
+   "rule": "long sentence (33 words)",
+   "excerpt": "The two worst-covered fleets are MONETA, with 311 of 541 cash-out-only, and Air Bank, with 254 of 373. · That is a machine-by-machine retrofit and recycler-repl",
+   "where": "signals",
+   "index": 78,
+   "field": "implies",
+   "title": "Czechia — four-bank shared deposit-ATM network (KB / Moneta / Air Bank"
+  },
+  {
+   "rule": "long sentence (34 words)",
+   "excerpt": "That puts a number on the gap behind MONETA's stated automation programme for the first time. · The weaker evidence (A5) is a single unattributed Czech aggregat",
+   "where": "signals",
+   "index": 79,
+   "field": "signal",
+   "title": "MONETA Money Bank — multicurrency cash automation + coin-machine expan"
+  },
+  {
+   "rule": "long sentence (37 words)",
+   "excerpt": "MONETA has enabled the CZK 5,000 banknote on sixteen ATMs nationwide, with at least one per regional capital, and dropped the CZK 500 note from those cassettes.",
+   "where": "signals",
+   "index": 79,
+   "field": "signal",
+   "title": "MONETA Money Bank — multicurrency cash automation + coin-machine expan"
+  },
+  {
+   "rule": "long sentence (46 words)",
+   "excerpt": "MONETA now runs more than half its branches with no over-the-counter cash withdrawal or deposit, and has introduced a fee for teller cash deposits. · The same a",
+   "where": "signals",
+   "index": 79,
+   "field": "signal",
+   "title": "MONETA Money Bank — multicurrency cash automation + coin-machine expan"
+  },
+  {
+   "rule": "long sentence (35 words)",
+   "excerpt": "A bank does not hire a business architect and an IT process owner for a function it plans to leave alone. · This is the clearest new buying centre in the Czech ",
+   "where": "signals",
+   "index": 80,
+   "field": "implies",
+   "title": "ČSOB Czechia (KBC group) — international card-acquiring platform build"
+  },
+  {
+   "rule": "long sentence (46 words)",
+   "excerpt": "It touches card acceptance end to end: the acquiring platform itself, the merchant terminal estate, terminal management and remote update, and the security modu",
+   "where": "signals",
+   "index": 80,
+   "field": "implies",
+   "title": "ČSOB Czechia (KBC group) — international card-acquiring platform build"
+  },
+  {
+   "rule": "long sentence (43 words)",
+   "excerpt": "The budget for the July 2027 send-plus-Verification-of-Payee step must be committed now, between Q3-2026 and Q1-2027, which is the real selling window. · Named ",
+   "where": "signals",
+   "index": 81,
+   "field": "implies",
+   "title": "Czech banks — instant euro payments and Verification of Payee, on a fi"
+  },
+  {
+   "rule": "long sentence (49 words)",
+   "excerpt": "It used 10,000 records in both correct and deliberately altered spellings, and sorted institutions into three categories by severity. · Its 2025 supervision rep",
+   "where": "signals",
+   "index": 82,
+   "field": "signal",
+   "title": "Czech banking sector — regulator-mandated AML remediation and a market"
+  },
+  {
+   "rule": "long sentence (51 words)",
+   "excerpt": "The CNB separately flagged failings in client due diligence, in investigating transaction-monitoring alerts, and in screening the whole ownership structure of c",
+   "where": "signals",
+   "index": 82,
+   "field": "signal",
+   "title": "Czech banking sector — regulator-mandated AML remediation and a market"
+  },
+  {
+   "rule": "long sentence (54 words)",
+   "excerpt": "Banka CREDITAS wants an AML Operations manager, ČSOB an AML process manager, UniCredit CZ a KYC/AML specialist, the CNB itself an AML IT specialist, and PAYMONT",
+   "where": "signals",
+   "index": 82,
+   "field": "signal",
+   "title": "Czech banking sector — regulator-mandated AML remediation and a market"
+  },
+  {
+   "rule": "long sentence (33 words)",
+   "excerpt": "Seven institutions plus the central bank staffed financial-crime teams in a single month, and the screening, monitoring and case-management tools follow the peo",
+   "where": "signals",
+   "index": 82,
+   "field": "implies",
+   "title": "Czech banking sector — regulator-mandated AML remediation and a market"
+  },
+  {
+   "rule": "long sentence (36 words)",
+   "excerpt": "The incumbents are tuning what they already run. · Penta Bank hiring both a financial-crime head and an anti-fraud team lead on the same day is the clearest sig",
+   "where": "signals",
+   "index": 82,
+   "field": "implies",
+   "title": "Czech banking sector — regulator-mandated AML remediation and a market"
+  },
+  {
+   "rule": "long sentence (41 words)",
+   "excerpt": "The buyer is Státní tiskárna cenin, s.p., the Czech state security printer, IČO 00001279, not the Slovak spelling carried in the master row. · What moved: the m",
+   "where": "signals",
+   "index": 83,
+   "field": "signal",
+   "title": "Štátna tlačiareň cenín (STC) — biometric enrolment kiosks (pre-tender)"
+  },
+  {
+   "rule": "long sentence (44 words)",
+   "excerpt": "The consultation, NEN reference N006/26/P00000099, was published 24/04/2026 with responses due 08/05/2026, and was still recorded as unfinished on 27/08/2026. ·",
+   "where": "signals",
+   "index": 83,
+   "field": "signal",
+   "title": "Štátna tlačiareň cenín (STC) — biometric enrolment kiosks (pre-tender)"
+  },
+  {
+   "rule": "several deadlines in one sentence",
+   "excerpt": "The consultation, NEN reference N006/26/P00000099, was published 24/04/2026 with responses due 08/05/2026, and was still recorded as unfinished on 27/08/2026. ·",
+   "where": "signals",
+   "index": 83,
+   "field": "signal",
+   "title": "Štátna tlačiareň cenín (STC) — biometric enrolment kiosks (pre-tender)"
+  },
+  {
+   "rule": "long sentence (53 words)",
+   "excerpt": "It asks the market about technical feasibility, service and maintenance scope, component-level pricing, periodic inspections, fraud detection and prevention cap",
+   "where": "signals",
+   "index": 83,
+   "field": "signal",
+   "title": "Štátna tlačiareň cenín (STC) — biometric enrolment kiosks (pre-tender)"
+  },
+  {
+   "rule": "long sentence (32 words)",
+   "excerpt": "That followed an earlier market consultation and a framework purchase of 6 biometric cameras and 22 fingerprint readers. · STC's own LAN-replacement tender, at ",
+   "where": "signals",
+   "index": 83,
+   "field": "signal",
+   "title": "Štátna tlačiareň cenín (STC) — biometric enrolment kiosks (pre-tender)"
+  },
+  {
+   "rule": "long sentence (45 words)",
+   "excerpt": "The consultation closed without Printec taking part, so this is now catch-up positioning rather than shaping the specification. · STC's repeated failure to attr",
+   "where": "signals",
+   "index": 83,
+   "field": "implies",
+   "title": "Štátna tlačiareň cenín (STC) — biometric enrolment kiosks (pre-tender)"
+  },
+  {
+   "rule": "long sentence (54 words)",
+   "excerpt": "TED notice 503719-2026, published 21/07/2026 under buyer reference P26V00000011, covers \"Platební brána pro vybrané prodejní kanály\", a payment gateway for sele",
+   "where": "signals",
+   "index": 84,
+   "field": "signal",
+   "title": "Operátor ICT (City of Prague ICT operator) — CZK 250m payment gateway,"
+  },
+  {
+   "rule": "long sentence (48 words)",
+   "excerpt": "This is a ten-million-euro city payments mandate, awarded on capability rather than price alone, at the operator of Prague's transport ticketing and city-paymen",
+   "where": "signals",
+   "index": 84,
+   "field": "implies",
+   "title": "Operátor ICT (City of Prague ICT operator) — CZK 250m payment gateway,"
+  },
+  {
+   "rule": "long sentence (37 words)",
+   "excerpt": "It therefore matters as competitor intelligence even if Printec does not bid. · Open-loop transit acceptance, letting a passenger tap an ordinary bank card at t",
+   "where": "signals",
+   "index": 84,
+   "field": "implies",
+   "title": "Operátor ICT (City of Prague ICT operator) — CZK 250m payment gateway,"
+  },
+  {
+   "rule": "long sentence (36 words)",
+   "excerpt": "Availability was 97.5% in H1-2026. 137 network optimisation studies produced only ten new off-site machines, so this is redeployment, not expansion. 98% of bran",
+   "where": "signals",
+   "index": 98,
+   "field": "signal",
+   "title": "Alpha Bank — retail/branch transformation (+ Cyprus integration)"
+  },
+  {
+   "rule": "long sentence (38 words)",
+   "excerpt": "Both are therefore still pre-launch shells, which leaves only a short window (A6). · By board decision of 22/06/2026, Mellon resolved to spin off its \"Outsourci",
+   "where": "signals",
+   "index": 105,
+   "field": "signal",
+   "title": "Mellon Technologies — €259m Greek rival ring-fences its services arm"
+  },
+  {
+   "rule": "long sentence (40 words)",
+   "excerpt": "This structure is normally used ahead of a carve-out sale, a joint venture or a cleaner bid vehicle for large multi-year service contracts (A6). · Mellon also r",
+   "where": "signals",
+   "index": 105,
+   "field": "signal",
+   "title": "Mellon Technologies — €259m Greek rival ring-fences its services arm"
+  },
+  {
+   "rule": "long sentence (35 words)",
+   "excerpt": "It also keeps a certification matrix covering roughly 70 Greek accounting and retail software products tested against its terminal interconnection (A6). · Its c",
+   "where": "signals",
+   "index": 105,
+   "field": "signal",
+   "title": "Mellon Technologies — €259m Greek rival ring-fences its services arm"
+  },
+  {
+   "rule": "long sentence (38 words)",
+   "excerpt": "It also hosts the vendors that sell whole-estate ATM outsourcing to Greek banks. · Its standard bundle matches Printec's almost item for item: Hyosung ATMs and ",
+   "where": "signals",
+   "index": 105,
+   "field": "implies",
+   "title": "Mellon Technologies — €259m Greek rival ring-fences its services arm"
+  },
+  {
+   "rule": "long sentence (34 words)",
+   "excerpt": "The notice does not say whether that includes VAT, so it should not be quoted either way. · The scope improves services already delivered at 108 Phase-A sites a",
+   "where": "signals",
+   "index": 106,
+   "field": "signal",
+   "title": "ODAP — €30.0m visitor digital services at archaeological sites, award "
+  },
+  {
+   "rule": "long sentence (32 words)",
+   "excerpt": "It is a direct fit for Printec self-service kiosks, queue management and card acceptance across 125 busy cash-and-card sites. · Realistically, Printec's positio",
+   "where": "signals",
+   "index": 106,
+   "field": "implies",
+   "title": "ODAP — €30.0m visitor digital services at archaeological sites, award "
+  },
+  {
+   "rule": "long sentence (35 words)",
+   "excerpt": "The tender was therefore still open at stage one as at 27/08/2026. · The EU journal records a total value of €415,648,352 excluding VAT, which matches the €515.",
+   "where": "signals",
+   "index": 107,
+   "field": "signal",
+   "title": "Greece — OPSEA national eID / security-documents tender"
+  },
+  {
+   "rule": "long sentence (36 words)",
+   "excerpt": "It also flags the EU's twentieth sanctions package of 23/04/2026, which tightens crypto-asset restrictions (A1). · Separately, the European Commission's transpo",
+   "where": "signals",
+   "index": 108,
+   "field": "signal",
+   "title": "Bank of Greece — AML enforcement + transaction-monitoring inspection p"
+  },
+  {
+   "rule": "long sentence (32 words)",
+   "excerpt": "Client books are moving to authorised firms at volume (A3). · Greek press reports that the Hellenic Capital Market Commission granted Greece's first two crypto ",
+   "where": "signals",
+   "index": 108,
+   "field": "signal",
+   "title": "Bank of Greece — AML enforcement + transaction-monitoring inspection p"
+  },
+  {
+   "rule": "long sentence (33 words)",
+   "excerpt": "Remediation budget therefore has to be committed across 2026 and 2027, which means now. · The supervisor has also stated that inspecting transaction-monitoring ",
+   "where": "signals",
+   "index": 108,
+   "field": "implies",
+   "title": "Bank of Greece — AML enforcement + transaction-monitoring inspection p"
+  },
+  {
+   "rule": "long sentence (32 words)",
+   "excerpt": "Track both the AMLA 2027 selection list and the outcome of the 15/06/2026 Bank of Greece collection. · Do not assume any Siron incumbency at Alpha, as it is not",
+   "where": "signals",
+   "index": 108,
+   "field": "follow_up",
+   "title": "Bank of Greece — AML enforcement + transaction-monitoring inspection p"
+  },
+  {
+   "rule": "long sentence (40 words)",
+   "excerpt": "That alliance links the Greek, Portuguese, Spanish and Italian account-to-account schemes, so users send money by mobile number with no account number. · Reach ",
+   "where": "signals",
+   "index": 109,
+   "field": "signal",
+   "title": "Greece — IRIS instant payments as a mandated card alternative"
+  },
+  {
+   "rule": "long sentence (34 words)",
+   "excerpt": "That is a named, dated onboarding gap to sell into before the end-2026 scaling event. · Second, from 2027 cross-border account-to-account acceptance at Greek me",
+   "where": "signals",
+   "index": 109,
+   "field": "implies",
+   "title": "Greece — IRIS instant payments as a mandated card alternative"
+  },
+  {
+   "rule": "long sentence (32 words)",
+   "excerpt": "Position instant-payment fraud monitoring to the four systemic banks and to DIAS. · Obtain the DIAS and EuroPA primary roadmap documents, because the end-2026 a",
+   "where": "signals",
+   "index": 109,
+   "field": "follow_up",
+   "title": "Greece — IRIS instant payments as a mandated card alternative"
+  },
+  {
+   "rule": "long sentence (36 words)",
+   "excerpt": "Alongside it, Cardlink and Worldline bundle card acceptance with the tax-authority-certified fiscal cash-register function in a single device sold through the E",
+   "where": "signals",
+   "index": 110,
+   "field": "signal",
+   "title": "Greece — softPOS / Tap-to-Pay commoditises card acceptance"
+  },
+  {
+   "rule": "long sentence (34 words)",
+   "excerpt": "That is a real integration cost any challenger has to displace (A6). · On the commercial side, Worldline's chief executive said on the H1-2026 call that \"Greece",
+   "where": "signals",
+   "index": 110,
+   "field": "signal",
+   "title": "Greece — softPOS / Tap-to-Pay commoditises card acceptance"
+  },
+  {
+   "rule": "long sentence (35 words)",
+   "excerpt": "It extends Worldline from merchant acquiring into state payments infrastructure, at the same authority that sets terminal and fiscal-integration rules (A6). · E",
+   "where": "signals",
+   "index": 110,
+   "field": "signal",
+   "title": "Greece — softPOS / Tap-to-Pay commoditises card acceptance"
+  },
+  {
+   "rule": "long sentence (41 words)",
+   "excerpt": "That is the benchmark every Printec terminal proposal is measured against, and the acquirer, not the merchant, decides on the terminal. · The defensible respons",
+   "where": "signals",
+   "index": 110,
+   "field": "implies",
+   "title": "Greece — softPOS / Tap-to-Pay commoditises card acceptance"
+  },
+  {
+   "rule": "long sentence (35 words)",
+   "excerpt": "Publish a Greek integration-certification matrix, and give priority to certifying with the software houses missing from the rival's list. · Establish the scope ",
+   "where": "signals",
+   "index": 110,
+   "field": "follow_up",
+   "title": "Greece — softPOS / Tap-to-Pay commoditises card acceptance"
+  },
+  {
+   "rule": "long sentence (34 words)",
+   "excerpt": "The bank's own locator returns 32 sites, of which 29 have an ATM, and no off-site machines at all. · Meanwhile deposits grew 37% year on year to €7.1bn and are ",
+   "where": "signals",
+   "index": 111,
+   "field": "signal",
+   "title": "Optima bank — cash-in white space against a capex ceiling"
+  },
+  {
+   "rule": "long sentence (33 words)",
+   "excerpt": "Identify the current hardware vendor and maintenance provider for the 29 machines, which is disclosed nowhere. · Re-pull the locator each cycle, because a chang",
+   "where": "signals",
+   "index": 111,
+   "field": "follow_up",
+   "title": "Optima bank — cash-in white space against a capex ceiling"
+  },
+  {
+   "rule": "long sentence (40 words)",
+   "excerpt": "Two policy developments moved this cycle, and they pull Greek cash infrastructure in opposite directions. · First, a written answer was given to a parliamentary",
+   "where": "signals",
+   "index": 112,
+   "field": "signal",
+   "title": "Greece — cash access policy: merchant cash-out and the EU legal-tender"
+  },
+  {
+   "rule": "long sentence (39 words)",
+   "excerpt": "No Greek bill was tabled as at 31/08/2026 (A5). · Second, and pulling the other way, the European Parliament confirmed by plenary on 08/07/2026 its negotiating ",
+   "where": "signals",
+   "index": 112,
+   "field": "signal",
+   "title": "Greece — cash access policy: merchant cash-out and the EU legal-tender"
+  },
+  {
+   "rule": "long sentence (33 words)",
+   "excerpt": "Retrieve the actual written parliamentary answer from the Hellenic Parliament register, to confirm the €50 cap and the exact wording before quoting it. · Obtain",
+   "where": "signals",
+   "index": 112,
+   "field": "follow_up",
+   "title": "Greece — cash access policy: merchant cash-out and the EU legal-tender"
+  },
+  {
+   "rule": "long sentence (43 words)",
+   "excerpt": "Confirm whether the density indicator and the Commission backstop survive in the mandate's articles, not only in a pre-vote summary. · Track both branches of th",
+   "where": "signals",
+   "index": 112,
+   "field": "follow_up",
+   "title": "Greece — cash access policy: merchant cash-out and the EU legal-tender"
+  },
+  {
+   "rule": "ALL-CAPS emphasis",
+   "excerpt": "WHAT MOVED: two agents independently read An",
+   "where": "signals",
+   "index": 113,
+   "field": "signal",
+   "title": "Hungary — Act XVIII rural ATM rollout + MNB validation/uptime mandate"
+  },
+  {
+   "rule": "ALL-CAPS emphasis",
+   "excerpt": "d settlements, each package assigned to ONE obligated bank: OTP Bank 428 settlement",
+   "where": "signals",
+   "index": 113,
+   "field": "signal",
+   "title": "Hungary — Act XVIII rural ATM rollout + MNB validation/uptime mandate"
+  },
+  {
+   "rule": "ALL-CAPS emphasis",
+   "excerpt": "n could be found (A2, A5). NEWLY CLOSED THIS CYCLE: the rollout generates ZERO procu",
+   "where": "signals",
+   "index": 113,
+   "field": "signal",
+   "title": "Hungary — Act XVIII rural ATM rollout + MNB validation/uptime mandate"
+  },
+  {
+   "rule": "long sentence (81 words)",
+   "excerpt": "WHAT MOVED: two agents independently read Annex 1 of MNB decree 19/2025 (VI. 26.) line by line and produced the same allocation — 80 settlement packages coverin",
+   "where": "signals",
+   "index": 113,
+   "field": "signal",
+   "title": "Hungary — Act XVIII rural ATM rollout + MNB validation/uptime mandate"
+  },
+  {
+   "rule": "long sentence (33 words)",
+   "excerpt": "MNB Recommendation 6/2025 separately expects each bank to list and publish per-machine accessibility features down to settlement level, including speech support",
+   "where": "signals",
+   "index": 113,
+   "field": "signal",
+   "title": "Hungary — Act XVIII rural ATM rollout + MNB validation/uptime mandate"
+  },
+  {
+   "rule": "long sentence (41 words)",
+   "excerpt": "There will never be a tender to bid for, because the buying happens bank by bank. · The requirement covers dispense hardware with accessibility packages, plus r",
+   "where": "signals",
+   "index": 113,
+   "field": "implies",
+   "title": "Hungary — Act XVIII rural ATM rollout + MNB validation/uptime mandate"
+  },
+  {
+   "rule": "long sentence (36 words)",
+   "excerpt": "Physical security for unattended sites and rural service-level field support complete the list. · The five-year minimum on hand-over contracts and the three-yea",
+   "where": "signals",
+   "index": 113,
+   "field": "implies",
+   "title": "Hungary — Act XVIII rural ATM rollout + MNB validation/uptime mandate"
+  },
+  {
+   "rule": "long sentence (48 words)",
+   "excerpt": "Go straight to OTP, MBH and K&H procurement on rural low-footfall hardware, monitoring and field service, because they carry 57 of the 80 packages. · Ask MNB or",
+   "where": "signals",
+   "index": 113,
+   "field": "follow_up",
+   "title": "Hungary — Act XVIII rural ATM rollout + MNB validation/uptime mandate"
+  },
+  {
+   "rule": "long sentence (38 words)",
+   "excerpt": "Replacement of the machine is expressly carved out (\"ide nem értve az ATM cseréjét\"). · A relocation is allowed only in a justified case, and only if an ATM kee",
+   "where": "signals",
+   "index": 114,
+   "field": "signal",
+   "title": "Hungary — Act XIV of 2026 ATM decommissioning and relocation freeze"
+  },
+  {
+   "rule": "long sentence (41 words)",
+   "excerpt": "The justified cases listed are moving into a settlement with no ATM at all, evidence from average cash-withdrawal volume data, or the landlord ending the site l",
+   "where": "signals",
+   "index": 114,
+   "field": "signal",
+   "title": "Hungary — Act XIV of 2026 ATM decommissioning and relocation freeze"
+  },
+  {
+   "rule": "long sentence (44 words)",
+   "excerpt": "That total is commonly cited, but the independent validator notes it is not reconciled to any per-bank census in this cycle's evidence. · The statute itself exp",
+   "where": "signals",
+   "index": 114,
+   "field": "implies",
+   "title": "Hungary — Act XIV of 2026 ATM decommissioning and relocation freeze"
+  },
+  {
+   "rule": "long sentence (32 words)",
+   "excerpt": "Of 538 branch-type points, 525 still run a staffed cash desk. · The API tags every machine by predecessor brand: 803 are legacy Takarékbank, 383 legacy MKB and ",
+   "where": "signals",
+   "index": 115,
+   "field": "signal",
+   "title": "MBH Bank — 115-location 2026 ATM programme plus a ~500-unit replacemen"
+  },
+  {
+   "rule": "long sentence (50 words)",
+   "excerpt": "This is the largest single identified cash-in gap in Hungary, at a bank that is buying ahead of the mandate rather than under enforcement. 803 individually iden",
+   "where": "signals",
+   "index": 115,
+   "field": "implies",
+   "title": "MBH Bank — 115-location 2026 ATM programme plus a ~500-unit replacemen"
+  },
+  {
+   "rule": "long sentence (40 words)",
+   "excerpt": "It names the integration surface, and it shows that a competitor already sits inside the transaction path. · A brand-new channels owner in his first hundred day",
+   "where": "signals",
+   "index": 115,
+   "field": "implies",
+   "title": "MBH Bank — 115-location 2026 ATM programme plus a ~500-unit replacemen"
+  },
+  {
+   "rule": "long sentence (31 words)",
+   "excerpt": "That is a net loss of 58 ATMs, or 2.9%, in six months, and 69 fewer than at 31/03/2026 (A1). · This runs directly against the standstill in force since 14/05/20",
+   "where": "signals",
+   "index": 116,
+   "field": "signal",
+   "title": "OTP Bank Hungary and Erste Bank Hungary — cash-in white space against "
+  },
+  {
+   "rule": "long sentence (43 words)",
+   "excerpt": "It states, on the MNB decree: \"in the case of OTP this means the installation of 195 new or relocated ATMs across Hungary in 2025 and further 233 in 2026\". · OT",
+   "where": "signals",
+   "index": 116,
+   "field": "signal",
+   "title": "OTP Bank Hungary and Erste Bank Hungary — cash-in white space against "
+  },
+  {
+   "rule": "long sentence (50 words)",
+   "excerpt": "Only 624 (33.8%) take cash in, and 1,220 are cash-out only. 376 sites are hosted in municipal or other public premises, which is exactly the Act XVIII delivery ",
+   "where": "signals",
+   "index": 116,
+   "field": "signal",
+   "title": "OTP Bank Hungary and Erste Bank Hungary — cash-in white space against "
+  },
+  {
+   "rule": "long sentence (44 words)",
+   "excerpt": "That sits on a very thin base of 97 branches in 72 settlements, so the ATM network is effectively the branch estate. · Cross-matching the OTP, MBH and Erste fee",
+   "where": "signals",
+   "index": 116,
+   "field": "signal",
+   "title": "OTP Bank Hungary and Erste Bank Hungary — cash-in white space against "
+  },
+  {
+   "rule": "long sentence (39 words)",
+   "excerpt": "Both readings are commercially live: a jointly installed pool is one large supply-and-install job, and a catch-up is the same job with a tight deadline. · Meanw",
+   "where": "signals",
+   "index": 116,
+   "field": "implies",
+   "title": "OTP Bank Hungary and Erste Bank Hungary — cash-in white space against "
+  },
+  {
+   "rule": "several deadlines in one sentence",
+   "excerpt": "KBC's 2Q2026 disclosures of 06/08/2026 put K&H at 188 branches, down from 189 at 31/03/2026, 191 at 31/12/2025 and 193 a year earlier.",
+   "where": "signals",
+   "index": 117,
+   "field": "signal",
+   "title": "K&H Bank — MNB-ordered branch teller capacity, queue analytics and app"
+  },
+  {
+   "rule": "long sentence (41 words)",
+   "excerpt": "That is the fastest-shrinking network in KBC's International Markets business unit, on a flat 1.7m clients, EUR 9bn of loans and EUR 12bn of deposits (A1). · KB",
+   "where": "signals",
+   "index": 117,
+   "field": "signal",
+   "title": "K&H Bank — MNB-ordered branch teller capacity, queue analytics and app"
+  },
+  {
+   "rule": "long sentence (31 words)",
+   "excerpt": "At the same time its owner faces open-ended regulated margin pressure, and is cutting branches faster than anywhere else in its group. · Those two forces point ",
+   "where": "signals",
+   "index": 117,
+   "field": "implies",
+   "title": "K&H Bank — MNB-ordered branch teller capacity, queue analytics and app"
+  },
+  {
+   "rule": "long sentence (48 words)",
+   "excerpt": "Lead with teller recyclers, queue management, appointment booking and statistically sound waiting-time analytics. · Obtain the ATM and deposit-ATM counts direct",
+   "where": "signals",
+   "index": 117,
+   "field": "follow_up",
+   "title": "K&H Bank — MNB-ordered branch teller capacity, queue analytics and app"
+  },
+  {
+   "rule": "long sentence (41 words)",
+   "excerpt": "It must also deliver a register of every client whose ownership and control structure is not yet established to the required standard. · The earlier decision H-",
+   "where": "signals",
+   "index": 118,
+   "field": "signal",
+   "title": "Raiffeisen Bank Hungary — twin MNB AML fines mandating automated due d"
+  },
+  {
+   "rule": "long sentence (31 words)",
+   "excerpt": "No agent refiled the underlying MNB decisions this cycle, so that evidence is carried forward from the master rather than re-verified. · What is new is that the",
+   "where": "signals",
+   "index": 118,
+   "field": "signal",
+   "title": "Raiffeisen Bank Hungary — twin MNB AML fines mandating automated due d"
+  },
+  {
+   "rule": "long sentence (40 words)",
+   "excerpt": "Curt Chadha takes over group Retail Banking from 01/09/2026, with an explicit digital-transformation and group-cooperation remit (A5). · On the regime side, the",
+   "where": "signals",
+   "index": 118,
+   "field": "signal",
+   "title": "Raiffeisen Bank Hungary — twin MNB AML fines mandating automated due d"
+  },
+  {
+   "rule": "long sentence (32 words)",
+   "excerpt": "Two deadlines are still ahead. · Because the named weakness sits with an outsourced alert pre-screening provider, this is a chance to displace an incumbent as w",
+   "where": "signals",
+   "index": 118,
+   "field": "implies",
+   "title": "Raiffeisen Bank Hungary — twin MNB AML fines mandating automated due d"
+  },
+  {
+   "rule": "long sentence (38 words)",
+   "excerpt": "That date has now passed, and the Hungarian supervisor's published regime has moved from build to enforcement. · Continuing duties are registration within 30 da",
+   "where": "signals",
+   "index": 119,
+   "field": "signal",
+   "title": "Hungary — cyber-audit remediation wave after the 30/06/2026 NIS2 deadl"
+  },
+  {
+   "rule": "long sentence (38 words)",
+   "excerpt": "They also include supervisory fees, use of registered auditors, and protective measures matching the assigned security class. · A3 independently re-confirmed th",
+   "where": "signals",
+   "index": 119,
+   "field": "signal",
+   "title": "Hungary — cyber-audit remediation wave after the 30/06/2026 NIS2 deadl"
+  },
+  {
+   "rule": "long sentence (33 words)",
+   "excerpt": "All of these reach the ATM, self-service and POS estates. · In practice that means device telemetry and monitoring to produce evidence, and multivendor ATM soft",
+   "where": "signals",
+   "index": 119,
+   "field": "implies",
+   "title": "Hungary — cyber-audit remediation wave after the 30/06/2026 NIS2 deadl"
+  },
+  {
+   "rule": "long sentence (39 words)",
+   "excerpt": "It also means terminal management for auditable firmware and parameter changes, and managed services with documented patch controls. · It runs alongside the 31/",
+   "where": "signals",
+   "index": 119,
+   "field": "implies",
+   "title": "Hungary — cyber-audit remediation wave after the 30/06/2026 NIS2 deadl"
+  },
+  {
+   "rule": "long sentence (32 words)",
+   "excerpt": "It confirms the Entrust specification and the HUF 41,000,000 minimum liability-insurance requirement on the winner. · Separately, A2 records a second, distinct ",
+   "where": "signals",
+   "index": 120,
+   "field": "signal",
+   "title": "Magyar Nemzeti Bank — Entrust nShield HSM tender (live)"
+  },
+  {
+   "rule": "long sentence (42 words)",
+   "excerpt": "Capture the winning Entrust reseller from the award notice under EKR001466692026 in September–October 2026, and log it as the Hungarian key-management competito",
+   "where": "signals",
+   "index": 120,
+   "field": "follow_up",
+   "title": "Magyar Nemzeti Bank — Entrust nShield HSM tender (live)"
+  },
+  {
+   "rule": "long sentence (42 words)",
+   "excerpt": "Budapest's transport authority is running the largest Hungarian payments-modernisation programme visible on the procurement register, across at least two live p",
+   "where": "signals",
+   "index": 121,
+   "field": "signal",
+   "title": "Budapest BKK — open-loop cEMV transit programme and the 317-unit ticke"
+  },
+  {
+   "rule": "long sentence (33 words)",
+   "excerpt": "Running alongside it is the separate cEMV e-ticket system build, EKR000407142026, published April–May 2026 (A2). · A second contract is already awarded, and it ",
+   "where": "signals",
+   "index": 121,
+   "field": "signal",
+   "title": "Budapest BKK — open-loop cEMV transit programme and the 317-unit ticke"
+  },
+  {
+   "rule": "long sentence (33 words)",
+   "excerpt": "There are also 15 POS and 350 mPOS for on-street penalty collection to be commissioned within 30 days, and softPOS on about 350 devices within 60. · There is an",
+   "where": "signals",
+   "index": 121,
+   "field": "signal",
+   "title": "Budapest BKK — open-loop cEMV transit programme and the 317-unit ticke"
+  },
+  {
+   "rule": "long sentence (35 words)",
+   "excerpt": "They are the validator and terminal estate for the open-loop rollout, its terminal management, and the real-time fraud and transaction monitoring written into t",
+   "where": "signals",
+   "index": 121,
+   "field": "implies",
+   "title": "Budapest BKK — open-loop cEMV transit programme and the 317-unit ticke"
+  },
+  {
+   "rule": "long sentence (41 words)",
+   "excerpt": "Lot 1 requires the supply, installation, operation and maintenance of 180 dual-currency or 360 single-currency physical POS terminals, plus helpdesk, fraud mana",
+   "where": "signals",
+   "index": 122,
+   "field": "signal",
+   "title": "Hungary — state-sector card acceptance consolidating on SimplePay (OTP"
+  },
+  {
+   "rule": "long sentence (33 words)",
+   "excerpt": "The transaction-history qualification bars mean a prime bid is not the realistic route. · What is left, and what these notices show in unusual detail, is the la",
+   "where": "signals",
+   "index": 122,
+   "field": "implies",
+   "title": "Hungary — state-sector card acceptance consolidating on SimplePay (OTP"
+  },
+  {
+   "rule": "long sentence (34 words)",
+   "excerpt": "Open a supply conversation with SimplePay and with the challenger acquirers, rather than planning a prime bid. · Capture the tax-authority result notice under E",
+   "where": "signals",
+   "index": 122,
+   "field": "follow_up",
+   "title": "Hungary — state-sector card acceptance consolidating on SimplePay (OTP"
+  },
+  {
+   "rule": "long sentence (43 words)",
+   "excerpt": "Lot 2 is 16 self-service kiosks plus four as an option, 8 automated border-control gates, four switches, four dual-monitor workstations and eight wall-mounted s",
+   "where": "signals",
+   "index": 123,
+   "field": "signal",
+   "title": "Országos Rendőr-főkapitányság — EU Entry/Exit System border kiosk and "
+  },
+  {
+   "rule": "long sentence (32 words)",
+   "excerpt": "No estimated value was published for either lot. · The incumbent from the previous automated-gate contract is verified as ARH Informatikai Zrt., Budapest, which",
+   "where": "signals",
+   "index": 123,
+   "field": "signal",
+   "title": "Országos Rendőr-főkapitányság — EU Entry/Exit System border kiosk and "
+  },
+  {
+   "rule": "long sentence (35 words)",
+   "excerpt": "It uses the same kiosk hardware, outdoor enclosure and field-service capability sold to banks for branch transformation, with a biometric-enrolment layer attach",
+   "where": "signals",
+   "index": 123,
+   "field": "implies",
+   "title": "Országos Rendőr-főkapitányság — EU Entry/Exit System border kiosk and "
+  },
+  {
+   "rule": "long sentence (39 words)",
+   "excerpt": "Hungary is no longer an uncontested market, and its service layer is thinner than assumed. · On Mellon: its audited FY2025 group accounts, signed 07/07/2026, di",
+   "where": "signals",
+   "index": 124,
+   "field": "signal",
+   "title": "Hungary — competitor and channel map: Mellon arrives, Euronet is alrea"
+  },
+  {
+   "rule": "long sentence (50 words)",
+   "excerpt": "A6 could find no dated 2026 source for its scale, so that must not be quoted (A6). · On field service: Mile Banktechnika Kft. won the maintenance of Budapest Sp",
+   "where": "signals",
+   "index": 124,
+   "field": "signal",
+   "title": "Hungary — competitor and channel map: Mellon arrives, Euronet is alrea"
+  },
+  {
+   "rule": "long sentence (39 words)",
+   "excerpt": "A single-bid outcome at roughly EUR 127k shows how thin the Hungarian field is. · On cash logistics: the state railway's cash-in-transit award of July 2026 name",
+   "where": "signals",
+   "index": 124,
+   "field": "signal",
+   "title": "Hungary — competitor and channel map: Mellon arrives, Euronet is alrea"
+  },
+  {
+   "rule": "long sentence (37 words)",
+   "excerpt": "That is an installed self-service estate entirely outside the banks (A2, A6). · On closed-loop payments: FestiPay Zrt. holds Budapest Spas' cashless payment sys",
+   "where": "signals",
+   "index": 124,
+   "field": "signal",
+   "title": "Hungary — competitor and channel map: Mellon arrives, Euronet is alrea"
+  },
+  {
+   "rule": "long sentence (42 words)",
+   "excerpt": "A regional rival with ten times the revenue has set up a capitalised legal entity and has not yet hired, so the head start is short rather than permanent. · Eur",
+   "where": "signals",
+   "index": 124,
+   "field": "implies",
+   "title": "Hungary — competitor and channel map: Mellon arrives, Euronet is alrea"
+  },
+  {
+   "rule": "long sentence (32 words)",
+   "excerpt": "That argues for quoting hardware only with a locked multi-year service and telemetry wrap. · On the other hand, the cash-logistics firms are a channel rather th",
+   "where": "signals",
+   "index": 124,
+   "field": "implies",
+   "title": "Hungary — competitor and channel map: Mellon arrives, Euronet is alrea"
+  },
+  {
+   "rule": "long sentence (36 words)",
+   "excerpt": "Watch the Hungarian company register and Mellon's own recruitment pages for the first Budapest hires. · Establish which recycler brands Mile Banktechnika is cer",
+   "where": "signals",
+   "index": 124,
+   "field": "follow_up",
+   "title": "Hungary — competitor and channel map: Mellon arrives, Euronet is alrea"
+  },
+  {
+   "rule": "long sentence (37 words)",
+   "excerpt": "Unlike the total fleet, they do not fall back in winter, so deposit capability is a permanent part of the estate (A4). · Agent 1 rebuilt the same fleet independ",
+   "where": "signals",
+   "index": 146,
+   "field": "signal",
+   "title": "Montenegro — fastest-growing SEE ATM fleet"
+  },
+  {
+   "rule": "long sentence (35 words)",
+   "excerpt": "That gives about 641 published locations, which is within 3.5% of the regulator's 664. · The same work showed where the gap sits: NLB 124 withdrawal-only, Prva ",
+   "where": "signals",
+   "index": 146,
+   "field": "signal",
+   "title": "Montenegro — fastest-growing SEE ATM fleet"
+  },
+  {
+   "rule": "long sentence (45 words)",
+   "excerpt": "This is the typical pattern for authorised-push-payment fraud, where the victim is tricked into sending the money themselves (A4). · Third, a Council Decision o",
+   "where": "signals",
+   "index": 147,
+   "field": "signal",
+   "title": "Montenegro — instant payments live at all 11 banks: Verification of Pa"
+  },
+  {
+   "rule": "long sentence (41 words)",
+   "excerpt": "The regulator estimates EUR 1m of annual savings, rising to EUR 2.8m (A1, A4). · First official volumes were 56,678 instant transfers worth EUR 21.53m in the 12",
+   "where": "signals",
+   "index": 147,
+   "field": "signal",
+   "title": "Montenegro — instant payments live at all 11 banks: Verification of Pa"
+  },
+  {
+   "rule": "long sentence (39 words)",
+   "excerpt": "It covers real-time transaction monitoring, fraud scoring, a Verification-of-Payee matching engine, and 24/7 managed operations for the banks with thin in-house",
+   "where": "signals",
+   "index": 147,
+   "field": "implies",
+   "title": "Montenegro — instant payments live at all 11 banks: Verification of Pa"
+  },
+  {
+   "rule": "long sentence (45 words)",
+   "excerpt": "So channel quality, rather than the rails, is the binding constraint on the migration the regulator is encouraging with its 5-cent price cap. · The addressable ",
+   "where": "signals",
+   "index": 148,
+   "field": "implies",
+   "title": "Montenegro — instant-payments phase 2 (QR acceptance, phone-number ali"
+  },
+  {
+   "rule": "long sentence (46 words)",
+   "excerpt": "CKB had already run a two-month campaign paying EUR 20 each to the first 500 customers who deposited at an ATM twice and never used a teller (A1). · Two banks s",
+   "where": "signals",
+   "index": 150,
+   "field": "signal",
+   "title": "Montenegro — branch and counter cash automation (teller recyclers, bus"
+  },
+  {
+   "rule": "long sentence (44 words)",
+   "excerpt": "They have a 150-banknote limit and a business daily-takings flow tagged by date and organisational unit (A1). · Macro backdrop: retail deposits grew 13.45% year",
+   "where": "signals",
+   "index": 150,
+   "field": "signal",
+   "title": "Montenegro — branch and counter cash automation (teller recyclers, bus"
+  },
+  {
+   "rule": "long sentence (38 words)",
+   "excerpt": "They will fund automation instead: teller cash recyclers behind the counter, self-service business-deposit machines in the lobby, and cash-cycle optimisation so",
+   "where": "signals",
+   "index": 150,
+   "field": "implies",
+   "title": "Montenegro — branch and counter cash automation (teller recyclers, bus"
+  },
+  {
+   "rule": "long sentence (36 words)",
+   "excerpt": "An identical tender, reference EC-ENEST/TGD/2026/EA-LOP/0005, was announced on 03/02/2026, and no reason for the relaunch was given. · The procurement runs thro",
+   "where": "signals",
+   "index": 151,
+   "field": "signal",
+   "title": "Central Bank of Montenegro — vault and cash-operations equipment tende"
+  },
+  {
+   "rule": "long sentence (52 words)",
+   "excerpt": "The 17 sites are named: four in Podgorica plus Nikšić, Cetinje, two in Budva, two in Kotor, Tivat, Bar, Ulcinj, Bijelo Polje, Berane, Rožaje and Pljevlja. · The",
+   "where": "signals",
+   "index": 152,
+   "field": "signal",
+   "title": "Prva banka Crne Gore — phase two of the deposit-ATM rollout"
+  },
+  {
+   "rule": "long sentence (36 words)",
+   "excerpt": "Further phases are therefore stated bank policy rather than speculation. · Against the bank's own published network of 109 ATM locations and 31 branches and cou",
+   "where": "signals",
+   "index": 152,
+   "field": "signal",
+   "title": "Prva banka Crne Gore — phase two of the deposit-ATM rollout"
+  },
+  {
+   "rule": "long sentence (40 words)",
+   "excerpt": "Customers are directed to ATMs to withdraw and to cash-in devices to deposit daily takings free of charge, with a free cash-in card issued in branch. · Separate",
+   "where": "signals",
+   "index": 153,
+   "field": "signal",
+   "title": "CKB (OTP Group) — counter cash-out at the branch and a managed migrati"
+  },
+  {
+   "rule": "long sentence (51 words)",
+   "excerpt": "They also include talking to vendors and card schemes about new projects, certifications and mandates, and helping to plan the expansion of the ATM network. · T",
+   "where": "signals",
+   "index": 154,
+   "field": "signal",
+   "title": "Hipotekarna banka — card-acceptance department staffing up for ATM exp"
+  },
+  {
+   "rule": "long sentence (41 words)",
+   "excerpt": "It also runs 24/7 self-service \"Zona\" lobbies at Mediteranska 4, the Blue Star building and the Splendid hotel, and opened a 24/7 ATM zone inside its relocated ",
+   "where": "signals",
+   "index": 154,
+   "field": "signal",
+   "title": "Hipotekarna banka — card-acceptance department staffing up for ATM exp"
+  },
+  {
+   "rule": "long sentence (35 words)",
+   "excerpt": "Working out which of the two applies is the first question to answer. · With 69 withdrawal-only machines and 10 sites still using manual overnight safes, the ha",
+   "where": "signals",
+   "index": 156,
+   "field": "implies",
+   "title": "Erste Bank Podgorica — Erste Smart Cash self-service rollout and a new"
+  },
+  {
+   "rule": "several deadlines in one sentence",
+   "excerpt": "They entered the feed in a short burst: 2 on 26/05/2026, 26 on 29/05/2026, 4 on 15/06/2026 and 46 on 16/06/2026, which totals 78.",
+   "where": "signals",
+   "index": 157,
+   "field": "signal",
+   "title": "Lovćen banka — 78 of 101 published ATM locations are Euronet-branded"
+  },
+  {
+   "rule": "long sentence (32 words)",
+   "excerpt": "The central bank's contribution allowed the provisional closing of EU accession Chapter 4 on free movement of capital (A1). · The Work Report PDF itself is stil",
+   "where": "signals",
+   "index": 159,
+   "field": "signal",
+   "title": "Montenegro — SEPA cost collapse + ISO 20022 RTS/X modernisation"
+  },
+  {
+   "rule": "long sentence (52 words)",
+   "excerpt": "Bank balance sheets grew 8.61% year on year, capital 14.21%, loans 12.35% and retail deposits 13.45%, with tourism arrivals up 5.71% in the first half (A1). · T",
+   "where": "signals",
+   "index": 159,
+   "field": "signal",
+   "title": "Montenegro — SEPA cost collapse + ISO 20022 RTS/X modernisation"
+  },
+  {
+   "rule": "long sentence (33 words)",
+   "excerpt": "It means message transformation, managing intraday liquidity between the real-time and instant systems, reconciliation, and 24/7 managed operations. · The effic",
+   "where": "signals",
+   "index": 159,
+   "field": "implies",
+   "title": "Montenegro — SEPA cost collapse + ISO 20022 RTS/X modernisation"
+  },
+  {
+   "rule": "long sentence (34 words)",
+   "excerpt": "The draft is explicitly framed around the central bank's future integration into the European System of Central Banks. · The Council also approved a draft Law a",
+   "where": "signals",
+   "index": 160,
+   "field": "signal",
+   "title": "Montenegro — CRD VI / CRR III and resolution alignment, with EU access"
+  },
+  {
+   "rule": "long sentence (41 words)",
+   "excerpt": "That includes anti-money-laundering and sanctions screening, regulatory reporting and data quality, hardware security modules and PIN key management, and resili",
+   "where": "signals",
+   "index": 160,
+   "field": "implies",
+   "title": "Montenegro — CRD VI / CRR III and resolution alignment, with EU access"
+  },
+  {
+   "rule": "long sentence (34 words)",
+   "excerpt": "Because large payments are pushed off cash and onto wire transfer, they would also need cash-handling traceability and deposit-source logging at branch and ATM.",
+   "where": "signals",
+   "index": 161,
+   "field": "implies",
+   "title": "Montenegro — AML/CFT overhaul in force (Sl. list CG 59/2026)"
+  },
+  {
+   "rule": "long sentence (51 words)",
+   "excerpt": "ECB President Lagarde referred to the accession on 24/07/2026 and the National Bank (NBRSM) repeated it, but both say \"expected\", with no day named (A4). · In p",
+   "where": "signals",
+   "index": 162,
+   "field": "signal",
+   "title": "North Macedonia — instant payments arrive on two rails (TIPS Clone + K"
+  },
+  {
+   "rule": "long sentence (35 words)",
+   "excerpt": "Most project messages were processed in ISO 20022, the international payment-message standard (A4). · Separately, KIBS, the private clearing house, already hold",
+   "where": "signals",
+   "index": 162,
+   "field": "signal",
+   "title": "North Macedonia — instant payments arrive on two rails (TIPS Clone + K"
+  },
+  {
+   "rule": "long sentence (38 words)",
+   "excerpt": "Trade press reports that two banks are preparing to initiate payments over it by 15/09/2026, with the names not published (A1, A5). · NBRSM's own statistics sti",
+   "where": "signals",
+   "index": 162,
+   "field": "signal",
+   "title": "North Macedonia — instant payments arrive on two rails (TIPS Clone + K"
+  },
+  {
+   "rule": "long sentence (49 words)",
+   "excerpt": "The identical notice 09887/2026, published 04/06/2026 with opening 06/07/2026, was cancelled on 28/07/2026 because no bid, or no acceptable bid, was submitted (",
+   "where": "signals",
+   "index": 163,
+   "field": "signal",
+   "title": "North Macedonia — NBRSM TIPS-clone connectivity tender (2nd attempt) c"
+  },
+  {
+   "rule": "several deadlines in one sentence",
+   "excerpt": "The identical notice 09887/2026, published 04/06/2026 with opening 06/07/2026, was cancelled on 28/07/2026 because no bid, or no acceptable bid, was submitted (",
+   "where": "signals",
+   "index": 163,
+   "field": "signal",
+   "title": "North Macedonia — NBRSM TIPS-clone connectivity tender (2nd attempt) c"
+  },
+  {
+   "rule": "long sentence (47 words)",
+   "excerpt": "ASEE already supports the national payment system's MIPS and SWIFT equipment, so it is a direct competitor inside the layer where the TIPS work lands. · In prac",
+   "where": "signals",
+   "index": 163,
+   "field": "implies",
+   "title": "North Macedonia — NBRSM TIPS-clone connectivity tender (2nd attempt) c"
+  },
+  {
+   "rule": "long sentence (43 words)",
+   "excerpt": "Only about 16,700 merchants hold roughly 36,000 accepting devices, a base he called concentrated and unequal. · His named remedies are instant payments \"by the ",
+   "where": "signals",
+   "index": 164,
+   "field": "signal",
+   "title": "North Macedonia — central bank's merchant-acceptance programme: nation"
+  },
+  {
+   "rule": "long sentence (35 words)",
+   "excerpt": "Halkbank is running a parallel \"Cashless Bitola\" offer on its Halk Mobi POS (A5). · NLB Group has separately quantified a regional acquiring push, with end-to-e",
+   "where": "signals",
+   "index": 164,
+   "field": "signal",
+   "title": "North Macedonia — central bank's merchant-acceptance programme: nation"
+  },
+  {
+   "rule": "long sentence (34 words)",
+   "excerpt": "Branch numbers keep falling: 371 at end-2025, from 409 in 2020, a fall of 9.3% (A4). · At Stopanska specifically, H1-2026 pre-tax profit fell 30% year on year a",
+   "where": "signals",
+   "index": 165,
+   "field": "signal",
+   "title": "North Macedonia — NBG Stopanska + SEPA + deposit-ATM growth"
+  },
+  {
+   "rule": "long sentence (49 words)",
+   "excerpt": "That is the strongest managed-services and vendor-renegotiation argument in the country, and the executives who signed it are now in post to 2030. · The market ",
+   "where": "signals",
+   "index": 165,
+   "field": "implies",
+   "title": "North Macedonia — NBG Stopanska + SEPA + deposit-ATM growth"
+  },
+  {
+   "rule": "long sentence (41 words)",
+   "excerpt": "The branch is staffed only 08:00-16:00 on weekdays, with the self-service devices covering the rest. · The bank's own newsroom documents the same treatment at a",
+   "where": "signals",
+   "index": 166,
+   "field": "signal",
+   "title": "North Macedonia — Komercijalna banka repeatable branch-transformation "
+  },
+  {
+   "rule": "long sentence (34 words)",
+   "excerpt": "All of this is contactless, including phone wallets, with a cash-in ceiling of 40 notes per transaction (A1). · H1-2026 pre-tax profit was MKD 2,798.2m, down 5.",
+   "where": "signals",
+   "index": 166,
+   "field": "signal",
+   "title": "North Macedonia — Komercijalna banka repeatable branch-transformation "
+  },
+  {
+   "rule": "long sentence (39 words)",
+   "excerpt": "That is a live cash-automation reference and a template the bank is likely to repeat (A5). · Its H1-2026 filing records a new branch at Univerzalna Sala and a f",
+   "where": "signals",
+   "index": 167,
+   "field": "signal",
+   "title": "North Macedonia — NLB Banka Skopje digital-concept branches, contact-c"
+  },
+  {
+   "rule": "long sentence (43 words)",
+   "excerpt": "Other sources are a fully drawn EBRD EUR 30m green line, and MKD 2.6bn of 2025 profit retained (A1). · At group level, NLB's Investor Day deck states verbatim a",
+   "where": "signals",
+   "index": 167,
+   "field": "signal",
+   "title": "North Macedonia — NLB Banka Skopje digital-concept branches, contact-c"
+  },
+  {
+   "rule": "long sentence (32 words)",
+   "excerpt": "It sits under a named group-level upgrade of ATMs and cash-deposit systems. · The immediate openings are self-service and branch-automation hardware for new and",
+   "where": "signals",
+   "index": 167,
+   "field": "implies",
+   "title": "North Macedonia — NLB Banka Skopje digital-concept branches, contact-c"
+  },
+  {
+   "rule": "long sentence (31 words)",
+   "excerpt": "As at 27/08/2026 both brands still run live consumer websites in parallel. silkroadbank.com.mk carries Silk Road branding with OneID electronic identification l",
+   "where": "signals",
+   "index": 178,
+   "field": "signal",
+   "title": "North Macedonia — unfinished Silk Road to Centralna kooperativna banka"
+  },
+  {
+   "rule": "several deadlines in one sentence",
+   "excerpt": "The deadline has been pushed twice, from 31/08/2026 to 03/09/2026 and then to 10/09/2026.",
+   "where": "signals",
+   "index": 182,
+   "field": "signal",
+   "title": "Romania — municipal self-service tax-collection frameworks, Arad open "
+  },
+  {
+   "rule": "ALL-CAPS emphasis",
+   "excerpt": "d RoPay Instant to merchants inside the YOU BRD app. It covers QR at the till, stat",
+   "where": "signals",
+   "index": 185,
+   "field": "signal",
+   "title": "BRD-SocGen — 24/7 cash-zone saturation and acquiring in reverse"
+  },
+  {
+   "rule": "long sentence (37 words)",
+   "excerpt": "Active bank employees fell to 4,641 from 4,965 in six months, and staff costs are down 8.3%. 24/7 zones now cover 268 of 334 branches, at a proven build rate of",
+   "where": "signals",
+   "index": 185,
+   "field": "signal",
+   "title": "BRD-SocGen — 24/7 cash-zone saturation and acquiring in reverse"
+  },
+  {
+   "rule": "long sentence (38 words)",
+   "excerpt": "Cutting branches and staff at this pace, while the roughly 1,200-machine footprint stays flat, forces transactions onto self-service. 1,093 machines that cannot",
+   "where": "signals",
+   "index": 186,
+   "field": "implies",
+   "title": "UniCredit Bank Romania — network cut to ~200 branches plus a dated 40-"
+  },
+  {
+   "rule": "long sentence (36 words)",
+   "excerpt": "The 09/01/2027 date also brings charges parity, so an instant transfer may cost no more than the equivalent non-instant one. 09/07/2027 brings mandatory Verific",
+   "where": "signals",
+   "index": 192,
+   "field": "signal",
+   "title": "Romania — instant euro payments: banks must receive by 09/01/2027 and "
+  },
+  {
+   "rule": "long sentence (36 words)",
+   "excerpt": "It adds a Functional Conformance Assessment Framework with a live public test catalogue (A3). certSIGN, Romania's incumbent qualified trust service provider, ha",
+   "where": "signals",
+   "index": 196,
+   "field": "signal",
+   "title": "Romania — chip electronic ID becomes the onboarding standard; national"
+  },
+  {
+   "rule": "long sentence (32 words)",
+   "excerpt": "Device migration is proven at this bank: 86% of dinar deposits and 73% of euro deposits already happen on machines. 24% of branches now run cashless, and networ",
+   "where": "signals",
+   "index": 202,
+   "field": "signal",
+   "title": "Banca Intesa Beograd — Payten ATM-outsourcing re-tender window on a 43"
+  },
+  {
+   "rule": "long sentence (32 words)",
+   "excerpt": "It enters into force on the eighth day after publication, and it fully repeals the 2019/2020/2021 regime (A1, A3). · Point 33 sets two transition periods for in",
+   "where": "signals",
+   "index": 204,
+   "field": "signal",
+   "title": "Serbia — NBS remote-identification rulebook (Off. Gazette 43/2026): 6-"
+  },
+  {
+   "rule": "long sentence (32 words)",
+   "excerpt": "In exceptional cases they can happen within 72 hours afterwards, under enhanced monitoring and transaction limits (A1). · The demand pattern has changed, and th",
+   "where": "signals",
+   "index": 204,
+   "field": "signal",
+   "title": "Serbia — NBS remote-identification rulebook (Off. Gazette 43/2026): 6-"
+  },
+  {
+   "rule": "long sentence (37 words)",
+   "excerpt": "The new unattended route is what removes the limit set by staffed hours. · AikBank is the clearest single case, because its online account opening depends on a ",
+   "where": "signals",
+   "index": 204,
+   "field": "implies",
+   "title": "Serbia — NBS remote-identification rulebook (Off. Gazette 43/2026): 6-"
+  },
+  {
+   "rule": "long sentence (31 words)",
+   "excerpt": "A bill can neither exist nor be transferred outside the register. · NBS says clearly that the phasing needs gradual adjustment of information systems, internal ",
+   "where": "signals",
+   "index": 205,
+   "field": "signal",
+   "title": "Serbia — CReM electronic bills of exchange: statutory retail deadline "
+  },
+  {
+   "rule": "long sentence (38 words)",
+   "excerpt": "Unlike the bank-by-bank platform models used elsewhere in the region, CReM is a single central register run by NBS, so every bank connects to the same interface",
+   "where": "signals",
+   "index": 205,
+   "field": "signal",
+   "title": "Serbia — CReM electronic bills of exchange: statutory retail deadline "
+  },
+  {
+   "rule": "long sentence (43 words)",
+   "excerpt": "It also covers ATM servicing at commercial locations: replacing consumables, handling rejected and retained banknotes and retained payment cards, and physical-t",
+   "where": "signals",
+   "index": 206,
+   "field": "signal",
+   "title": "Banka Poštanska štedionica — unawarded ATM-servicing and cash-escort c"
+  },
+  {
+   "rule": "long sentence (35 words)",
+   "excerpt": "So 'in progress' is a page-maintenance artefact, not proof that the decision is late, and the contract may already be placed (A2). · A second procedure, C32-2-3",
+   "where": "signals",
+   "index": 206,
+   "field": "signal",
+   "title": "Banka Poštanska štedionica — unawarded ATM-servicing and cash-escort c"
+  },
+  {
+   "rule": "long sentence (37 words)",
+   "excerpt": "That servicing covers consumables, reject and retract handling, and captured cards, which matches a managed and field-services model closely. · Because the invi",
+   "where": "signals",
+   "index": 206,
+   "field": "implies",
+   "title": "Banka Poštanska štedionica — unawarded ATM-servicing and cash-escort c"
+  },
+  {
+   "rule": "long sentence (36 words)",
+   "excerpt": "This bank publishes no award notices anywhere, so direct contact is the only route. · Line up a licensed Serbian cash-transport partner now, so a consortium bid",
+   "where": "signals",
+   "index": 206,
+   "field": "follow_up",
+   "title": "Banka Poštanska štedionica — unawarded ATM-servicing and cash-escort c"
+  },
+  {
+   "rule": "long sentence (34 words)",
+   "excerpt": "The useful move is therefore to capture the winner and prepare for the next cycle, or for a third round if 34/2026 also fails. · The opportunity size drops from",
+   "where": "signals",
+   "index": 207,
+   "field": "implies",
+   "title": "Pošta Srbije — money-counting machines (re-tender closed 10/08/2026, i"
+  },
+  {
+   "rule": "long sentence (54 words)",
+   "excerpt": "Documentation is issued only on request from srb.nabavka@procredit-group.com, so anyone not on the invitation list is invisible (A1). · The tender also shows th",
+   "where": "signals",
+   "index": 208,
+   "field": "signal",
+   "title": "ProCredit Bank Serbia — live fraud-monitoring procurement, and a cash-"
+  },
+  {
+   "rule": "long sentence (45 words)",
+   "excerpt": "The service covers all ART Petrol filling stations, and the Soulfood, PerSu, ABC trgovine, MB93, AD Podunavlje, KTK Komerc, BB Trade and D Market chains (A1). ·",
+   "where": "signals",
+   "index": 208,
+   "field": "signal",
+   "title": "ProCredit Bank Serbia — live fraud-monitoring procurement, and a cash-"
+  },
+  {
+   "rule": "long sentence (33 words)",
+   "excerpt": "It is to find out whether the process is still open or is being re-run, and to get onto the invitation list permanently. · The wider strategic read matters more",
+   "where": "signals",
+   "index": 208,
+   "field": "implies",
+   "title": "ProCredit Bank Serbia — live fraud-monitoring procurement, and a cash-"
+  },
+  {
+   "rule": "long sentence (31 words)",
+   "excerpt": "That platform is a nameable set of 20 banks plus three central banks, which currently exchange SWIFT MT messages (A4). · Meanwhile the domestic instant rail kee",
+   "where": "signals",
+   "index": 209,
+   "field": "signal",
+   "title": "Serbia — SEPA / instant-payments wave"
+  },
+  {
+   "rule": "long sentence (32 words)",
+   "excerpt": "Card purchases at Serbian merchants hit 237.9m in Q2-2026, up 19.3% year on year and more than double the Q2-2022 figure (A1, A4). · The branch base is going th",
+   "where": "signals",
+   "index": 210,
+   "field": "signal",
+   "title": "Serbia — cash-in, not cash-out, is where the ATM channel is growing"
+  },
+  {
+   "rule": "long sentence (38 words)",
+   "excerpt": "At the same time a branch network 17% smaller than five years ago pushes cash onto the machines. · Money going into ATMs is growing roughly three and a half tim",
+   "where": "signals",
+   "index": 210,
+   "field": "implies",
+   "title": "Serbia — cash-in, not cash-out, is where the ATM channel is growing"
+  },
+  {
+   "rule": "long sentence (38 words)",
+   "excerpt": "It also covers POS infrastructure and software, acquiring and issuing processing, tokenisation and transaction monitoring (A1). · Its MoneyGet independent ATM n",
+   "where": "signals",
+   "index": 211,
+   "field": "signal",
+   "title": "Serbia — the incumbent competitor set is now named: Payten/ASEE, Mello"
+  },
+  {
+   "rule": "long sentence (38 words)",
+   "excerpt": "The contracts also include a payment-gateway upgrade, the card-payment device estates of Belgrade's public parking and garage operators, and a small POS order a",
+   "where": "signals",
+   "index": 211,
+   "field": "signal",
+   "title": "Serbia — the incumbent competitor set is now named: Payten/ASEE, Mello"
+  },
+  {
+   "rule": "long sentence (34 words)",
+   "excerpt": "Meanwhile the independent-terminal-network and fiscal-cash-register lines grew EUR 2.7m, and independent-network transactions rose 41% year on year (A6). · Serb",
+   "where": "signals",
+   "index": 211,
+   "field": "signal",
+   "title": "Serbia — the incumbent competitor set is now named: Payten/ASEE, Mello"
+  },
+  {
+   "rule": "several deadlines in one sentence",
+   "excerpt": "They are Ingenico terminals at Raiffeisen (20/08/2025), a queue-management rollout across 60-plus OTP branches (18/02/2026), and POS acquiring at ProCredit (12/",
+   "where": "signals",
+   "index": 211,
+   "field": "signal",
+   "title": "Serbia — the incumbent competitor set is now named: Payten/ASEE, Mello"
+  },
+  {
+   "rule": "long sentence (36 words)",
+   "excerpt": "That makes it the most active non-Payten challenger, and it puts the firm inside two priority accounts (A6). · Euronet, by contrast, named no new European ATM-o",
+   "where": "signals",
+   "index": 211,
+   "field": "signal",
+   "title": "Serbia — the incumbent competitor set is now named: Payten/ASEE, Mello"
+  },
+  {
+   "rule": "long sentence (42 words)",
+   "excerpt": "In that model a single device replaces several acquirer terminals, and the terminal relationship moves away from the bank entirely. · Mellon is also moving into",
+   "where": "signals",
+   "index": 211,
+   "field": "implies",
+   "title": "Serbia — the incumbent competitor set is now named: Payten/ASEE, Mello"
+  },
+  {
+   "rule": "long sentence (40 words)",
+   "excerpt": "Most of these procurements had only one or two bidders (A2). · On the kiosk side, Inova Tech d.o.o. and Elektro Energy d.o.o. won the Velika Plana municipal sel",
+   "where": "signals",
+   "index": 212,
+   "field": "signal",
+   "title": "Serbia — public-sector cash automation and kiosks are held by named lo"
+  },
+  {
+   "rule": "long sentence (53 words)",
+   "excerpt": "Other named incumbents at NBS are exceet Card Schweiz AG on DataCard personalisation service, Latis d.o.o. on vault doors, and the Taurunum pair on manned guard",
+   "where": "signals",
+   "index": 212,
+   "field": "signal",
+   "title": "Serbia — public-sector cash automation and kiosks are held by named lo"
+  },
+  {
+   "rule": "long sentence (31 words)",
+   "excerpt": "Elektro Energy is therefore better treated as a candidate installation partner than as a competitor. · The bank segment should be defended on what a municipal k",
+   "where": "signals",
+   "index": 212,
+   "field": "implies",
+   "title": "Serbia — public-sector cash automation and kiosks are held by named lo"
+  },
+  {
+   "rule": "long sentence (36 words)",
+   "excerpt": "Do the same for Vivex Group (office@vivex.rs), and decide whether it is a partner or a competitor. · Re-verify all the contract values through an authenticated ",
+   "where": "signals",
+   "index": 212,
+   "field": "follow_up",
+   "title": "Serbia — public-sector cash automation and kiosks are held by named lo"
+  },
+  {
+   "rule": "long sentence (44 words)",
+   "excerpt": "Sections 17(5)-(6) class it a \"particularly serious breach\" that can cost the merchant its trade licence. · Third, on the Financial Directorate register of vali",
+   "where": "signals",
+   "index": 213,
+   "field": "signal",
+   "title": "Slovakia — eKasa cashless mandate + deposit-ATM expansion"
+  },
+  {
+   "rule": "long sentence (37 words)",
+   "excerpt": "Diebold Nixdorf holds two of its own decisions, and also supplies the protected data store into a third party's certified stack. · Fourth, the regulator confirm",
+   "where": "signals",
+   "index": 213,
+   "field": "signal",
+   "title": "Slovakia — eKasa cashless mandate + deposit-ATM expansion"
+  },
+  {
+   "rule": "long sentence (32 words)",
+   "excerpt": "The 5-year certification clock binds only the manufacturer, and must not be sold to merchants as a forced replacement. · The QR-code alternative means the small",
+   "where": "signals",
+   "index": 213,
+   "field": "signal",
+   "title": "Slovakia — eKasa cashless mandate + deposit-ATM expansion"
+  },
+  {
+   "rule": "long sentence (39 words)",
+   "excerpt": "Every certified cash-register program and protected data store in Slovakia would need re-integration, and probably re-certification against a new specification.",
+   "where": "signals",
+   "index": 214,
+   "field": "implies",
+   "title": "Finančné riaditeľstvo SR — SAFE, the replacement national revenue-reco"
+  },
+  {
+   "rule": "long sentence (44 words)",
+   "excerpt": "Its winner becomes the systems integrator that any later counter or self-service work must go through. · The BalíkoBOX parcel-locker field-maintenance framework",
+   "where": "signals",
+   "index": 215,
+   "field": "signal",
+   "title": "Slovenská pošta — self-service kiosks + EUR 1.75m security managed ser"
+  },
+  {
+   "rule": "long sentence (42 words)",
+   "excerpt": "A EUR 1.75m three-year support contract is open for bids for another week, and it is awarded purely on price, which favours a regional cost base. · The BalíkoBO",
+   "where": "signals",
+   "index": 215,
+   "field": "implies",
+   "title": "Slovenská pošta — self-service kiosks + EUR 1.75m security managed ser"
+  },
+  {
+   "rule": "long sentence (31 words)",
+   "excerpt": "The award points to a re-tender around May 2028 with no competition to beat. · The unconverted kiosk pilot is still the one self-service opening at Slovak Post ",
+   "where": "signals",
+   "index": 215,
+   "field": "implies",
+   "title": "Slovenská pošta — self-service kiosks + EUR 1.75m security managed ser"
+  },
+  {
+   "rule": "long sentence (31 words)",
+   "excerpt": "A sweep of every NBS notice from 06/07/2026 to 27/08/2026 found no CORBS tender. · What is new is that the central bank's cash-equipment cycle now has dates, no",
+   "where": "signals",
+   "index": 216,
+   "field": "signal",
+   "title": "Národná banka Slovenska — core-banking pre-RFP + ageing cash estate"
+  },
+  {
+   "rule": "long sentence (44 words)",
+   "excerpt": "The coin processing and packaging lines went to QEX a.s. of Trenčín, at EUR 1,589,050.07, with ten years of service. · At the same time NBS awarded HICO s.r.o. ",
+   "where": "signals",
+   "index": 216,
+   "field": "signal",
+   "title": "Národná banka Slovenska — core-banking pre-RFP + ageing cash estate"
+  },
+  {
+   "rule": "long sentence (34 words)",
+   "excerpt": "It also covers supplying software components, including IBM MQ and a SharePoint connector, and then operational support and further services. · Consultations we",
+   "where": "signals",
+   "index": 217,
+   "field": "signal",
+   "title": "Národná banka Slovenska — integration platform, tender notice expected"
+  },
+  {
+   "rule": "long sentence (31 words)",
+   "excerpt": "It also commits the supplier to \"preparing IS CSI for further development, new functionality and integration with other systems\". · Bids opened 20/07/2026 and n",
+   "where": "signals",
+   "index": 218,
+   "field": "signal",
+   "title": "Národná banka Slovenska — central identity platform and the named-inte"
+  },
+  {
+   "rule": "long sentence (32 words)",
+   "excerpt": "This cycle it gained a much firmer base number and a new driver. · Slovenská sporiteľňa's H1-2026 disclosures state 733 ATMs, including 296 deposit machines, wh",
+   "where": "signals",
+   "index": 219,
+   "field": "signal",
+   "title": "Slovakia — commercial-bank deposit-ATM and recycler build-out"
+  },
+  {
+   "rule": "long sentence (36 words)",
+   "excerpt": "VÚB is holding its network exactly flat at 163 outlets while headcount falls, which means automation inside the branch rather than closure (A1, 28/07/2026). · Č",
+   "where": "signals",
+   "index": 219,
+   "field": "signal",
+   "title": "Slovakia — commercial-bank deposit-ATM and recycler build-out"
+  },
+  {
+   "rule": "long sentence (39 words)",
+   "excerpt": "The banks themselves name security regimes, staff training and vault equipment as the cost they are escaping (A5). · Erste's group disclosures show Slovakia tak",
+   "where": "signals",
+   "index": 219,
+   "field": "signal",
+   "title": "Slovakia — commercial-bank deposit-ATM and recycler build-out"
+  },
+  {
+   "rule": "long sentence (56 words)",
+   "excerpt": "The banks have stated the problem themselves, in exactly the terms a managed cash service answers. · VÚB at 25 of 121 and UniCredit at 16 of 47 are the least co",
+   "where": "signals",
+   "index": 219,
+   "field": "implies",
+   "title": "Slovakia — commercial-bank deposit-ATM and recycler build-out"
+  },
+  {
+   "rule": "long sentence (33 words)",
+   "excerpt": "The previous EUR 200 cross-bank withdrawal cap is abolished. ČSOB contributes 428 machines and 365.bank 176. · The arrangement covers withdrawals only. ČSOB's d",
+   "where": "signals",
+   "index": 220,
+   "field": "signal",
+   "title": "ČSOB Slovakia / 365.bank / Poštová banka — ~600-machine shared ATM net"
+  },
+  {
+   "rule": "long sentence (31 words)",
+   "excerpt": "A legal merger of the two banks was planned for autumn 2026 (A5). · KBC's own 2Q2026 quarterly report separately confirms the corporate side, and settles what A",
+   "where": "signals",
+   "index": 220,
+   "field": "signal",
+   "title": "ČSOB Slovakia / 365.bank / Poštová banka — ~600-machine shared ATM net"
+  },
+  {
+   "rule": "long sentence (40 words)",
+   "excerpt": "KBC justified it in part by \"significant cost synergies related to the branch network and head office in Slovakia\". 365.bank's distribution rests on a long-stan",
+   "where": "signals",
+   "index": 220,
+   "field": "signal",
+   "title": "ČSOB Slovakia / 365.bank / Poštová banka — ~600-machine shared ATM net"
+  },
+  {
+   "rule": "long sentence (55 words)",
+   "excerpt": "A Slovenská sporiteľňa spokesperson states on the record that a client in Slovakia currently cannot deposit cash to an account at another bank through another b",
+   "where": "signals",
+   "index": 221,
+   "field": "signal",
+   "title": "Slovakia — cross-bank deposit-ATM interoperability, still at the analy"
+  },
+  {
+   "rule": "long sentence (43 words)",
+   "excerpt": "No implementation date is set (A5, 28/05/2026). · The new ČSOB, 365.bank and Poštová banka shared network of about 600 machines, live from 01/07/2026, deliberat",
+   "where": "signals",
+   "index": 221,
+   "field": "signal",
+   "title": "Slovakia — cross-bank deposit-ATM interoperability, still at the analy"
+  },
+  {
+   "rule": "long sentence (73 words)",
+   "excerpt": "The estate this serves is clearly live and uses several makers: PrivatBank bought UAH 13.2m of Wincor/DN large-assembly modules in one procurement family (1,500",
+   "where": "signals",
+   "index": 247,
+   "field": "signal",
+   "title": "PrivatBank — Diebold Nixdorf recycler maintenance twice failed, re-run"
+  },
+  {
+   "rule": "several deadlines in one sentence",
+   "excerpt": "The estate this serves is clearly live and uses several makers: PrivatBank bought UAH 13.2m of Wincor/DN large-assembly modules in one procurement family (1,500",
+   "where": "signals",
+   "index": 247,
+   "field": "signal",
+   "title": "PrivatBank — Diebold Nixdorf recycler maintenance twice failed, re-run"
+  },
+  {
+   "rule": "long sentence (36 words)",
+   "excerpt": "A fixed-date, market-wide field-services and firmware event across roughly 38,700 devices: note-template and firmware updates on every acceptor, dispenser, recy",
+   "where": "signals",
+   "index": 253,
+   "field": "implies",
+   "title": "NBU — UAH 2,000 banknote fleet reconfiguration (~38,700 devices, Aug–D"
+  },
+  {
+   "rule": "long sentence (72 words)",
+   "excerpt": "(1) Fines, published 07/08/2026 for July enforcement against 2 banks and 19 non-bank institutions: JSC Raiffeisen Bank fined UAH 16,100,000 for poor customer du",
+   "where": "signals",
+   "index": 256,
+   "field": "signal",
+   "title": "NBU — AML enforcement biting at named banks, plus a published 2026 ins"
+  },
+  {
+   "rule": "long sentence (50 words)",
+   "excerpt": "It also received a written warning covering missing enhanced measures on politically exposed persons, failure to configure and automate generation of the standa",
+   "where": "signals",
+   "index": 256,
+   "field": "signal",
+   "title": "NBU — AML enforcement biting at named banks, plus a published 2026 ins"
+  },
+  {
+   "rule": "long sentence (36 words)",
+   "excerpt": "(2) A named, dated inspection calendar: the NBU's plan, revised 31/07/2026 and updated 25/08/2026, lists Q1 Bank Ukrainskyi Kapital, Q2 Cominbank and UkrSibbank",
+   "where": "signals",
+   "index": 256,
+   "field": "signal",
+   "title": "NBU — AML enforcement biting at named banks, plus a published 2026 ins"
+  },
+  {
+   "rule": "long sentence (40 words)",
+   "excerpt": "(3) A draft resolution on payment-service-provider control over payment operations (consultation opened 17/07/2026, closed 14/08/2026, comments published 21/08/",
+   "where": "signals",
+   "index": 256,
+   "field": "signal",
+   "title": "NBU — AML enforcement biting at named banks, plus a published 2026 ins"
+  },
+  {
+   "rule": "several deadlines in one sentence",
+   "excerpt": "(3) A draft resolution on payment-service-provider control over payment operations (consultation opened 17/07/2026, closed 14/08/2026, comments published 21/08/",
+   "where": "signals",
+   "index": 256,
+   "field": "signal",
+   "title": "NBU — AML enforcement biting at named banks, plus a published 2026 ins"
+  },
+  {
+   "rule": "long sentence (32 words)",
+   "excerpt": "Related pressure at the top of the market: the NBU opened unscheduled inspections of Sense Bank on 21/08/2026 over alleged interference with, and switching off ",
+   "where": "signals",
+   "index": 256,
+   "field": "signal",
+   "title": "NBU — AML enforcement biting at named banks, plus a published 2026 ins"
+  },
+  {
+   "rule": "long sentence (32 words)",
+   "excerpt": "This is a Linux virtualisation layer that runs a newer Windows on old ATM hardware, \"even if unsupported by the ATM hardware vendor\". Česká spořitelna is quoted",
+   "where": "signals",
+   "index": 270,
+   "field": "signal",
+   "title": "Windows 11 and end-of-life ATM software — KAL's hypervisor pitch again"
+  },
+  {
+   "rule": "long sentence (32 words)",
+   "excerpt": "The two-page invitation has no technical annex, so the split between the retail half and the logistics control-tower half has to be requested from the named con",
+   "where": "outlook",
+   "index": 2,
+   "field": "projected",
+   "title": "ELTA EUR 6m retail transformation: consultation open until 10 Septembe"
+  },
+  {
+   "rule": "long sentence (31 words)",
+   "excerpt": "The outlets are 52 retail branches plus 15 business and private-banking centres. 139 staff and six business centres were shed in the second quarter alone, while",
+   "where": "outlook",
+   "index": 4,
+   "field": "projected",
+   "title": "Almost nine in ten Eurobank Cyprus deposits now arrive at a machine"
+  },
+  {
+   "rule": "ALL-CAPS emphasis",
+   "excerpt": "25154550_HALF-YEAR-REPORT-30-06-2026-IN-ACCORDANCE-WITH-FSA-REGULATIO.pdf)). BRD shows abo",
+   "where": "outlook",
+   "index": 10,
+   "field": "summary",
+   "title": "Deposit automation on Romania's cash-dispense-only ATM fleets"
+  },
+  {
+   "rule": "ALL-CAPS emphasis",
+   "excerpt": "LF-YEAR-REPORT-30-06-2026-IN-ACCORDANCE-WITH-FSA-REGULATIO.pdf)). BRD shows about 94",
+   "where": "outlook",
+   "index": 10,
+   "field": "summary",
+   "title": "Deposit automation on Romania's cash-dispense-only ATM fleets"
+  },
+  {
+   "rule": "ALL-CAPS emphasis",
+   "excerpt": "25154550_HALF-YEAR-REPORT-30-06-2026-IN-ACCORDANCE-WITH-FSA-REGULATIO.pdf)).\n\nBRD's locato",
+   "where": "outlook",
+   "index": 10,
+   "field": "projected",
+   "title": "Deposit automation on Romania's cash-dispense-only ATM fleets"
+  },
+  {
+   "rule": "ALL-CAPS emphasis",
+   "excerpt": "LF-YEAR-REPORT-30-06-2026-IN-ACCORDANCE-WITH-FSA-REGULATIO.pdf)).\n\nBRD's locator pul",
+   "where": "outlook",
+   "index": 10,
+   "field": "projected",
+   "title": "Deposit automation on Romania's cash-dispense-only ATM fleets"
+  },
+  {
+   "rule": "long sentence (38 words)",
+   "excerpt": "Every multifunctional machine accepts cash in, and not one of the 1,100 does. 211 of the 282 branches have no staffed cash desk, and only 66 accept business cas",
+   "where": "outlook",
+   "index": 10,
+   "field": "projected",
+   "title": "Deposit automation on Romania's cash-dispense-only ATM fleets"
+  },
+  {
+   "rule": "long sentence (34 words)",
+   "excerpt": "Its estate is flat at 1,207 ATM records, of which only 114 can take any cash deposit. 27 branches are already flagged as running with no cash at the counter (Un",
+   "where": "outlook",
+   "index": 10,
+   "field": "projected",
+   "title": "Deposit automation on Romania's cash-dispense-only ATM fleets"
+  },
+  {
+   "rule": "ALL-CAPS emphasis",
+   "excerpt": "25154550_HALF-YEAR-REPORT-30-06-2026-IN-ACCORDANCE-WITH-FSA-REGULATIO.pdf)).\n\nBRD's own fe",
+   "where": "outlook",
+   "index": 10,
+   "field": "drivers",
+   "title": "Deposit automation on Romania's cash-dispense-only ATM fleets"
+  },
+  {
+   "rule": "ALL-CAPS emphasis",
+   "excerpt": "LF-YEAR-REPORT-30-06-2026-IN-ACCORDANCE-WITH-FSA-REGULATIO.pdf)).\n\nBRD's own feed gi",
+   "where": "outlook",
+   "index": 10,
+   "field": "drivers",
+   "title": "Deposit automation on Romania's cash-dispense-only ATM fleets"
+  },
+  {
+   "rule": "long sentence (38 words)",
+   "excerpt": "UniCredit's half-year report, filed 25/08/2026, shows 246 branches against 265 at 31/12/2025. 1,093 of its 1,207 ATM records cannot take cash in, and 27 branche",
+   "where": "outlook",
+   "index": 10,
+   "field": "drivers",
+   "title": "Deposit automation on Romania's cash-dispense-only ATM fleets"
+  },
+  {
+   "rule": "several deadlines in one sentence",
+   "excerpt": "UniCredit's half-year report, filed 25/08/2026, shows 246 branches against 265 at 31/12/2025. 1,093 of its 1,207 ATM records cannot take cash in, and 27 branche",
+   "where": "outlook",
+   "index": 10,
+   "field": "drivers",
+   "title": "Deposit automation on Romania's cash-dispense-only ATM fleets"
+  },
+  {
+   "rule": "long sentence (34 words)",
+   "excerpt": "Erste Croatia's own locator shows 665 ATMs, of which 199 accept deposits. 100 of its 106 branches still run a staffed cash desk, against only six cashless branc",
+   "where": "outlook",
+   "index": 15,
+   "field": "projected",
+   "title": "Croatian cash-point registry maps deposit capability bank by bank"
+  },
+  {
+   "rule": "dense paragraph (7 sentences)",
+   "excerpt": "Where to aim:\n- Zagrebacka banka through group vendor management rather than the Zagreb board, since it advertises no se",
+   "where": "outlook",
+   "index": 15,
+   "field": "projected",
+   "title": "Croatian cash-point registry maps deposit capability bank by bank"
+  },
+  {
+   "rule": "long sentence (31 words)",
+   "excerpt": "It will handle card payments across the motorway operator's e-commerce and toll-plaza terminal channels at EUR 1,141,358, against a EUR 1,600,000 estimate, from",
+   "where": "outlook",
+   "index": 16,
+   "field": "summary",
+   "title": "HPB: card platform change, motorway acceptance win and deposit gap"
+  },
+  {
+   "rule": "long sentence (31 words)",
+   "excerpt": "It also has 65 branches, none of them cashless, plus a partner network of 219 machines run by an external deployer and 973 post-office counter locations (HNB ca",
+   "where": "outlook",
+   "index": 16,
+   "field": "projected",
+   "title": "HPB: card platform change, motorway acceptance win and deposit gap"
+  },
+  {
+   "rule": "dense paragraph (7 sentences)",
+   "excerpt": "Where to aim:\n- HPB directly, on card issuing and acquiring software.\n- Unattended terminal supply with terminal managem",
+   "where": "outlook",
+   "index": 16,
+   "field": "projected",
+   "title": "HPB: card platform change, motorway acceptance win and deposit gap"
+  },
+  {
+   "rule": "long sentence (33 words)",
+   "excerpt": "The second is an acquiring win published on 07/08/2026 that requires the bank to deploy and run a fleet of unattended terminals it does not have today (TED 5490",
+   "where": "outlook",
+   "index": 16,
+   "field": "rationale",
+   "title": "HPB: card platform change, motorway acceptance win and deposit gap"
+  },
+  {
+   "rule": "several deadlines in one sentence",
+   "excerpt": "The UAH 29.8m self-service servicing contract closed on 28/08/2026 with a single domestic bidder and runs from 01/09/2026 to 31/08/2027.",
+   "where": "outlook",
+   "index": 18,
+   "field": "drivers",
+   "title": "Sense Bank puts both device estates out to contract in one fortnight"
+  },
+  {
+   "rule": "dense paragraph (9 sentences)",
+   "excerpt": "The specification is confirmed word for word on a Diebold Nixdorf software baseline:\n- extended module statuses for the ",
+   "where": "outlook",
+   "index": 19,
+   "field": "projected",
+   "title": "PrivatBank recycler tender moves to its stage-2 commercial round"
+  },
+  {
+   "rule": "long sentence (31 words)",
+   "excerpt": "The UAH 2,000 note enters circulation on 04/09/2026, the first new highest denomination in the currency, and configuration materials were released free during A",
+   "where": "outlook",
+   "index": 20,
+   "field": "drivers",
+   "title": "New UAH 2,000 note requires nationwide device reconfiguration"
+  },
+  {
+   "rule": "long sentence (36 words)",
+   "excerpt": "Together they indicate that the window to shape the next arrangement is the next two quarters, because silence from both parties is just as consistent with a qu",
+   "where": "outlook",
+   "index": 21,
+   "field": "rationale",
+   "title": "Banca Intesa's outsourced ATM estate approaches its stated 36-month te"
+  },
+  {
+   "rule": "long sentence (34 words)",
+   "excerpt": "The 2023 outsourcing of 122 external-location machines on a stated 36-month term was re-verified unchanged on 27/08/2026, with no renewal or re-tender notice pu",
+   "where": "outlook",
+   "index": 21,
+   "field": "drivers",
+   "title": "Banca Intesa's outsourced ATM estate approaches its stated 36-month te"
+  },
+  {
+   "rule": "long sentence (35 words)",
+   "excerpt": "Only 123 of the bank's 434 self-service devices are multifunction cash-in and cash-out units, even though the bank itself discloses that 86% of dinar deposits a",
+   "where": "outlook",
+   "index": 21,
+   "field": "drivers",
+   "title": "Banca Intesa's outsourced ATM estate approaches its stated 36-month te"
+  },
+  {
+   "rule": "long sentence (32 words)",
+   "excerpt": "Serbia is one of very few European markets adding machines, with 3,412 at 30/06/2026 and machine deposit value up 53.6% year on year while teller withdrawals fe",
+   "where": "outlook",
+   "index": 21,
+   "field": "drivers",
+   "title": "Banca Intesa's outsourced ATM estate approaches its stated 36-month te"
+  },
+  {
+   "rule": "dense paragraph (8 sentences)",
+   "excerpt": "- Hardware security modules, the tamper-proof boxes that hold a bank's payment keys and encrypt card PINs.\n- Joining the",
+   "where": "outlook",
+   "index": 22,
+   "field": "projected",
+   "title": "National Bank of Serbia procurement plan for cash and payment systems"
+  },
+  {
+   "rule": "dense paragraph (7 sentences)",
+   "excerpt": "- The hardware security module line and the payments software upgrade. A central-bank reference is what opens doors at t",
+   "where": "outlook",
+   "index": 22,
+   "field": "projected",
+   "title": "National Bank of Serbia procurement plan for cash and payment systems"
+  },
+  {
+   "rule": "dense paragraph (7 sentences)",
+   "excerpt": "- Bor, announced 03/08.\n- Požarevac, announced 07/08. Works run 14/08 to 18/09.\n- Belgrade-Rakovica, announced 24/08. Wo",
+   "where": "outlook",
+   "index": 23,
+   "field": "projected",
+   "title": "AikBank branch refits and its 457 dispense-only machines"
+  },
+  {
+   "rule": "dense paragraph (8 sentences)",
+   "excerpt": "- The sixteen banks outside the scheme. The central bank's joiner announcements are a free, dated pipeline tracker that ",
+   "where": "outlook",
+   "index": 25,
+   "field": "projected",
+   "title": "Sixteen Bosnian banks still outside the instant-payment scheme before "
+  },
+  {
+   "rule": "dense paragraph (8 sentences)",
+   "excerpt": "Two account-level facts shape the approach. The first is that ownership is changing at four Western Balkans banks. Addik",
+   "where": "outlook",
+   "index": 26,
+   "field": "projected",
+   "title": "Bosnia's deposit-machine conversion as cash in circulation rises"
+  },
+  {
+   "rule": "long sentence (31 words)",
+   "excerpt": "VÚB at 25 of 121 and UniCredit at 16 of 47 are the least converted, so they carry the largest remaining retrofit pipelines. ČSOB Slovakia is third at 47 of 120.",
+   "where": "outlook",
+   "index": 28,
+   "field": "projected",
+   "title": "Slovak banks are removing branch cash desks across the market"
+  },
+  {
+   "rule": "long sentence (32 words)",
+   "excerpt": "Customers of ČSOB, 365.bank and Poštová banka can use it on their own bank's terms. ČSOB contributes 428 machines and 365.bank 176, and the previous EUR 200 cro",
+   "where": "outlook",
+   "index": 29,
+   "field": "projected",
+   "title": "ČSOB and 365.bank merger: shared withdrawals, no shared deposits"
+  },
+  {
+   "rule": "long sentence (34 words)",
+   "excerpt": "A new buying centre for card acceptance has appeared in Czechia, and it is being built quickly. ČSOB posted five card-acceptance vacancies in August 2026, all i",
+   "where": "outlook",
+   "index": 31,
+   "field": "summary",
+   "title": "ČSOB is hiring for an international card-acquiring platform in Prague"
+  },
+  {
+   "rule": "long sentence (32 words)",
+   "excerpt": "The other is the domestic KIBS Instant service behind the Strela app, where trade reporting says two banks were preparing to start sending payments by 15/09/202",
+   "where": "outlook",
+   "index": 42,
+   "field": "summary",
+   "title": "North Macedonia: two instant payment systems arriving together"
+  },
+  {
+   "rule": "long sentence (32 words)",
+   "excerpt": "The vice-governor named a national interoperable QR code, payment by simple alias, instant confirmation and request-to-pay as the remedies, and the cost of acce",
+   "where": "outlook",
+   "index": 42,
+   "field": "projected",
+   "title": "North Macedonia: two instant payment systems arriving together"
+  },
+  {
+   "rule": "long sentence (32 words)",
+   "excerpt": "Atleos held no Q2 earnings call and published no outlook, so the usual regional commentary has gone quiet for at least two quarters (UK CMA — Brink's / NCR Atle",
+   "where": "outlook",
+   "index": 44,
+   "field": "drivers",
+   "title": "Supervisory action plans due by October require banks to name their en"
+  },
+  {
+   "rule": "long sentence (32 words)",
+   "excerpt": "Seven of the ten markets still had no public sandbox as of an April-2026 tracker, so those banks cannot test on their own (European Commission — EUDI Architectu",
+   "where": "outlook",
+   "index": 46,
+   "field": "projected",
+   "title": "Ten months to the money-laundering regulation, with the technical rule"
+  },
+  {
+   "rule": "dense paragraph (8 sentences)",
+   "excerpt": "- Romania: BCR's 1,100 dispense-only machines, and CEC Bank's roughly 350 branches marked for operating-model redesign.\n",
+   "where": "product_outlooks",
+   "index": 0,
+   "field": "projected",
+   "title": "ATM fleet conversion: dispense-only machines becoming deposit machines"
+  },
+  {
+   "rule": "dense paragraph (8 sentences)",
+   "excerpt": "- CEC Bank and BCR in Romania, where 211 of BCR's 282 branches already run with no cash desk and depend on lobby machine",
+   "where": "product_outlooks",
+   "index": 1,
+   "field": "projected",
+   "title": "Branch counter closures and the move of counter work to lobby machines"
+  },
+  {
+   "rule": "dense paragraph (8 sentences)",
+   "excerpt": "- BCR in Romania, where three quarters of branches have no cash desk, so service levels are contractual rather than opti",
+   "where": "product_outlooks",
+   "index": 3,
+   "field": "projected",
+   "title": "Managed services: regulatory duties on uptime, patching and telemetry"
+  },
+  {
+   "rule": "long sentence (35 words)",
+   "excerpt": "NLB Komercijalna's electronic-banking equipment maintenance rose 30.7% year on year to RSD 207.8m, while capital work in progress rose 15.7%. 49 of the towns it",
+   "where": "product_outlooks",
+   "index": 3,
+   "field": "drivers",
+   "title": "Managed services: regulatory duties on uptime, patching and telemetry"
+  },
+  {
+   "rule": "dense paragraph (8 sentences)",
+   "excerpt": "- The roughly sixteen Bosnian banks outside the instant scheme.\n- The small-team Montenegrin banks: Adriatic, Zapad, Uni",
+   "where": "product_outlooks",
+   "index": 4,
+   "field": "projected",
+   "title": "Payments: two fixed cutover dates inside the next twelve months"
+  },
+  {
+   "rule": "dense paragraph (10 sentences)",
+   "excerpt": "- Hrvatska poštanska banka. Its live vacancy states that the bank has defined a card strategy that “requires implementin",
+   "where": "product_outlooks",
+   "index": 5,
+   "field": "projected",
+   "title": "Card issuing: national processors hold the core, with openings at the "
+  },
+  {
+   "rule": "long sentence (33 words)",
+   "excerpt": "Resilience becomes an area supervisors watch all the time, rather than one driven by fines. 3,383 major ICT incidents were reported across the EU in 2025, and 2",
+   "where": "futures",
+   "index": 4,
+   "field": "projected",
+   "title": "Operational resilience: supervised through inspections, with no DORA f"
+  },
+  {
+   "rule": "long sentence (36 words)",
+   "excerpt": "The cost per institution is EUR 25-150m for large banks and EUR 1-5m for mid-sized ones, which is where most CEE/SEE banks sit. 19 Critical ICT Third-Party Prov",
+   "where": "patterns",
+   "index": 8,
+   "field": "Evidence (see Metrics/Milestones)",
+   "title": "Operational-resilience and financial-crime compliance has changed from"
+  },
+  {
+   "rule": "ALL-CAPS emphasis",
+   "excerpt": "027; the PSR makes VoP mandatory across ALL credit transfers with a ~24mo liability",
+   "where": "patterns",
+   "index": 9,
+   "field": "Evidence (see Metrics/Milestones)",
+   "title": "Verification of Payee checks the payee's name before a transfer. Toget"
+  },
+  {
+   "rule": "long sentence (31 words)",
+   "excerpt": "VoP has been a standing legal duty in the euro area since 09/10/2025; non-euro EU by 09/07/2027; the PSR makes VoP mandatory across ALL credit transfers with a ",
+   "where": "patterns",
+   "index": 9,
+   "field": "Evidence (see Metrics/Milestones)",
+   "title": "Verification of Payee checks the payee's name before a transfer. Toget"
+  },
+  {
+   "rule": "long sentence (43 words)",
+   "excerpt": "Cash handling is up to ~50% of ATM total cost of ownership (TCO); CIT cost +~40% (2020-25); ~75% of ATM operating cost is fixed; cash handling is 4-10% of EU ba",
+   "where": "patterns",
+   "index": 12,
+   "field": "Evidence (see Metrics/Milestones)",
+   "title": "IT cost lines are rising, not falling. Cash-in-transit (CIT) and cash-"
+  },
+  {
+   "rule": "dense paragraph (7 sentences)",
+   "excerpt": "There has been a dense multi-year wave of deals:\n- Brink's-NCR Atleos $6.6bn (announced Feb-2026, closing Q1-2027, ~$10b",
+   "where": "patterns",
+   "index": 13,
+   "field": "Evidence (see Metrics/Milestones)",
+   "title": "Hardware, cash logistics and payment processing are merging into a few"
+  },
+  {
+   "rule": "long sentence (69 words)",
+   "excerpt": "Contract-expiry triggers: Posta Romana Tezaur banking services on a 9-month term (re-tender ~mid-2026); BNR banknote-processing maintenance on ~annual cycles; t",
+   "where": "patterns",
+   "index": 30,
+   "field": "Evidence (see Metrics/Milestones)",
+   "title": "A predictable baseline of demand recurs on fixed clocks. The central b"
+  },
+  {
+   "rule": "ALL-CAPS emphasis",
+   "excerpt": "EPSILON NET Group's EPSILON ALL in ONE solution is IAPR-certified. It l",
+   "where": "competitors",
+   "index": 79,
+   "field": "latest",
+   "title": "EPSILON NET Group"
+  },
+  {
+   "rule": "ALL-CAPS emphasis",
+   "excerpt": "EPSILON NET Group's EPSILON ALL in ONE solution is IAPR-certified. It links th",
+   "where": "competitors",
+   "index": 79,
+   "field": "latest",
+   "title": "EPSILON NET Group"
+  },
+  {
+   "rule": "ALL-CAPS emphasis",
+   "excerpt": "aders, aimed at banks and insurers. Its ONE FOR ALL qualified certificate works wit",
+   "where": "competitors",
+   "index": 98,
+   "field": "latest",
+   "title": "Halcom a.d. Beograd"
+  },
+  {
+   "rule": "ALL-CAPS emphasis",
+   "excerpt": "s, aimed at banks and insurers. Its ONE FOR ALL qualified certificate works with ~1",
+   "where": "competitors",
+   "index": 98,
+   "field": "latest",
+   "title": "Halcom a.d. Beograd"
+  },
+  {
+   "rule": "ALL-CAPS emphasis",
+   "excerpt": "imed at banks and insurers. Its ONE FOR ALL qualified certificate works with ~17 Se",
+   "where": "competitors",
+   "index": 98,
+   "field": "latest",
+   "title": "Halcom a.d. Beograd"
+  },
+  {
+   "rule": "dense paragraph (7 sentences)",
+   "excerpt": "RBI's offer succeeded on 03/08/2026 at 56.16% of shares subject to the offer (55.55% of total capital). NLB's rival bid ",
+   "where": "derived",
+   "index": 6,
+   "field": "trigger",
+   "title": "SEE — the Addiko integration splits into two buying centres, and the l"
+  },
+  {
+   "rule": "long sentence (36 words)",
+   "excerpt": "It lets a newer Windows run on old ATM hardware, even where the hardware vendor no longer supports it. Česká spořitelna is quoted by name saying it can now sign",
+   "where": "competition_brief",
+   "index": 0,
+   "field": "brief",
+   "title": ""
+  }
+ ]
+}

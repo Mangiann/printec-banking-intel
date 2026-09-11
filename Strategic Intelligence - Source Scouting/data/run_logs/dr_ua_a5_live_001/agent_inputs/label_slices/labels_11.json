@@ -1,0 +1,20 @@
+[
+{"candidate_id":"dr_ua_a5_live_001__c_298","role":"pointer_once","decision":"defer","priority":"high","rationale":"NABU member directory is a one-off lead-mining map of UA banking actors; URL check failed so re-verify before mining."},
+{"candidate_id":"dr_ua_a5_live_001__c_299","role":"keep","decision":"approve","priority":"critical","rationale":"EMA board roster is the highest-precision payments-side leadership page and changes on a dated election cycle."},
+{"candidate_id":"dr_ua_a5_live_001__c_300","role":"fold_into_parent","decision":"approve","priority":"medium","rationale":"EMA about/newsroom is a section of the same ema.com.ua site already monitored via the board page."},
+{"candidate_id":"dr_ua_a5_live_001__c_301","role":"keep","decision":"approve","priority":"critical","rationale":"AUB Council page is a direct, recurring roster of serving senior bankers — core A5 leadership signal."},
+{"candidate_id":"dr_ua_a5_live_001__c_302","role":"fold_into_parent","decision":"approve","priority":"high","rationale":"AUB committees page is a sibling section under the same working-body area covered by the Council crawl."},
+{"candidate_id":"dr_ua_a5_live_001__c_303","role":"pointer_once","decision":"approve","priority":"high","rationale":"AUB member list is a static actor census to mine once for leads, not a continuous signal feed."},
+{"candidate_id":"dr_ua_a5_live_001__c_304","role":"keep","decision":"approve","priority":"medium","rationale":"AUB news archive is a genuine recurring feed of council elections and org changes; monitor the archive index, not the sample article."},
+{"candidate_id":"dr_ua_a5_live_001__c_305","role":"keep","decision":"approve","priority":"high","rationale":"AmCham banking committee publishes dated, English-language co-chair elections for the international-bank segment."},
+{"candidate_id":"dr_ua_a5_live_001__c_306","role":"evidence_not_source","decision":"defer","priority":"low","rationale":"Single mirrored appointment article; useful corroboration only and URL verification failed."},
+{"candidate_id":"dr_ua_a5_live_001__c_307","role":"keep","decision":"approve","priority":"medium","rationale":"EBA Ukraine publishes dated committee-chair elections across financial-sector committees — steady leadership feed."},
+{"candidate_id":"dr_ua_a5_live_001__c_308","role":"keep","decision":"defer","priority":"medium","rationale":"Third banking association adds regional member banks, but site unreachable in this pass — re-check liveness."},
+{"candidate_id":"dr_ua_a5_live_001__c_309","role":"keep","decision":"approve","priority":"medium","rationale":"Non-bank finance association is in scope under the payments/lending breadth clause and publishes member and position material."},
+{"candidate_id":"dr_ua_a5_live_001__c_310","role":"fold_into_parent","decision":"defer","priority":"low","rationale":"Council sub-page of vaks.org.ua, marginal cooperative-finance relevance and URL check failed."},
+{"candidate_id":"dr_ua_a5_live_001__c_311","role":"marginal","decision":"defer","priority":"low","rationale":"Second credit-union association is peripheral to banking/payments leadership tracking; low expected yield."},
+{"candidate_id":"dr_ua_a5_live_001__c_312","role":"keep","decision":"approve","priority":"low","rationale":"Compliance/AML association names holders of a senior banking function via board, speakers and cohorts."},
+{"candidate_id":"dr_ua_a5_live_001__c_313","role":"keep","decision":"approve","priority":"high","rationale":"Registry aggregator gives dated, authoritative signatory-change corroboration independent of association websites."},
+{"candidate_id":"dr_ua_a5_live_001__c_314","role":"keep","decision":"approve","priority":"low","rationale":"Wikipedia succession lists are a cheap entity-resolution and historical-backfill aid, low credibility so secondary use only."},
+{"candidate_id":"dr_ua_a5_live_001__c_315","role":"keep","decision":"approve","priority":"medium","rationale":"BANKIR forum speaker pages yield dated name+title+institution snapshots for dozens of serving executives at once."}
+]

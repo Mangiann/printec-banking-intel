@@ -1,0 +1,901 @@
+{
+  "candidates": [
+    {
+      "source_name": "World Bank Global Findex Database 2025 - North Macedonia microdata",
+      "source_url": "https://microdata.worldbank.org/index.php/catalog/7958",
+      "source_class": "direct",
+      "primary_language": "en",
+      "why_relevant": "Nationally representative demand-side survey for MK with ~300 indicators covering account ownership, card ownership and use, digital payments made/received, cash usage and merchant payments - the only comparable demand-side benchmark for MK payments behaviour.",
+      "credibility_score": 0.95,
+      "usefulness_score": 0.95,
+      "confidence_score": 0.9,
+      "priority": "critical",
+      "domain": "microdata.worldbank.org",
+      "source_subtype": "survey microdata catalogue entry",
+      "topics": [
+        "market statistics",
+        "payment statistics",
+        "card statistics",
+        "cash usage"
+      ],
+      "access_status": "open (microdata may require licensed access request)",
+      "legal_status": "World Bank open data / microdata terms of use",
+      "collection_allowed": true,
+      "suggested_collection_method": "Download country dataset from microdata catalogue; supplement with the Findex indicator API (api.worldbank.org) filtered to MKD; annual/triennial refresh",
+      "example_urls": [
+        "https://microdata.worldbank.org/index.php/catalog/7958",
+        "https://www.worldbank.org/en/publication/globalfindex/download-data",
+        "https://microdata.worldbank.org/index.php/catalog/7860"
+      ],
+      "discovered_via_method": "en web search on Findex + North Macedonia",
+      "queries_used": [
+        "World Bank Global Findex 2025 North Macedonia account ownership digital payments data"
+      ],
+      "local_language_terms_used": [],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "World Bank Global Findex programme page and download portal",
+      "source_url": "https://www.worldbank.org/en/publication/globalfindex",
+      "source_class": "pointer",
+      "primary_language": "en",
+      "why_relevant": "Master entry point to Findex reports, indicator definitions, country briefs and bulk downloads; snowballs to DataBank, microdata catalogue and methodology notes needed to interpret MK figures.",
+      "credibility_score": 0.95,
+      "usefulness_score": 0.8,
+      "confidence_score": 0.9,
+      "priority": "high",
+      "domain": "worldbank.org",
+      "source_subtype": "programme/publication hub",
+      "topics": [
+        "market statistics",
+        "payment statistics",
+        "cash usage"
+      ],
+      "access_status": "open",
+      "legal_status": "CC-BY / World Bank terms",
+      "collection_allowed": true,
+      "suggested_collection_method": "Periodic crawl of publication + download-data pages for new editions",
+      "example_urls": [
+        "https://www.worldbank.org/en/publication/globalfindex/download-data"
+      ],
+      "discovered_via_method": "en web search",
+      "queries_used": [
+        "World Bank Global Findex 2025 North Macedonia account ownership digital payments data"
+      ],
+      "local_language_terms_used": [],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "IMF Financial Access Survey (FAS) dataset - North Macedonia series",
+      "source_url": "https://data.imf.org/en/datasets/IMF.STA:FAS",
+      "source_class": "direct",
+      "primary_language": "en",
+      "why_relevant": "Annual supply-side access series reported by the National Bank to the IMF: ATMs per 100,000 adults and per 1,000 km2, POS terminals (recently added indicator), branches, deposit/loan accounts - the core comparable ATM/POS density series for MK.",
+      "credibility_score": 0.95,
+      "usefulness_score": 0.95,
+      "confidence_score": 0.85,
+      "priority": "critical",
+      "domain": "data.imf.org",
+      "source_subtype": "official statistical database",
+      "topics": [
+        "ATM POS data",
+        "payment statistics",
+        "market statistics"
+      ],
+      "access_status": "open (portal migrated to new data.imf.org; legacy sk= links may redirect)",
+      "legal_status": "IMF data terms, attribution required",
+      "collection_allowed": true,
+      "suggested_collection_method": "IMF SDMX/JSON data API pull for reference area MKD, FAS indicator codes; annual refresh after the October FAS release",
+      "example_urls": [
+        "https://www.imf.org/en/news/articles/2025/10/29/pr-25351-imf-releases-the-2025-financial-access-survey-results",
+        "https://data.imf.org/-/media/iData/External-Storage/Documents/1BAA165DAE2E4EE3A8EF3BD702DCFF29/en/FAS_Glossary.pdf"
+      ],
+      "discovered_via_method": "en web search + snowball from IMF press release",
+      "queries_used": [
+        "IMF Financial Access Survey North Macedonia ATMs POS terminals per 100000 adults"
+      ],
+      "local_language_terms_used": [],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "IMF FAS annual highlights reports and glossary of indicators",
+      "source_url": "https://data.imf.org/-/media/iData/External-Storage/Documents/6283296788924FC692761C4DE4A71BA7/en/FAS-2024-Highlights-Report.pdf",
+      "source_class": "indirect",
+      "primary_language": "en",
+      "why_relevant": "Explains definitions and breaks in ATM/POS indicators and gives regional benchmarks against which MK density can be read; essential for avoiding misinterpretation of series changes.",
+      "credibility_score": 0.9,
+      "usefulness_score": 0.7,
+      "confidence_score": 0.8,
+      "priority": "medium",
+      "domain": "data.imf.org",
+      "source_subtype": "methodology / highlights report",
+      "topics": [
+        "ATM POS data",
+        "payment statistics"
+      ],
+      "access_status": "open PDF",
+      "legal_status": "IMF terms",
+      "collection_allowed": true,
+      "suggested_collection_method": "Annual PDF download and text extraction of definitions/notes",
+      "example_urls": [
+        "https://www.imf.org/-/media/Files/Data/Home/2020-fas-trends-and-developments.ashx"
+      ],
+      "discovered_via_method": "en web search",
+      "queries_used": [
+        "IMF Financial Access Survey North Macedonia ATMs POS terminals per 100000 adults"
+      ],
+      "local_language_terms_used": [],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "World Bank Open Data indicator FB.ATM.TOTL.P5 (ATMs per 100,000 adults), North Macedonia",
+      "source_url": "https://data.worldbank.org/indicator/FB.ATM.TOTL.P5?locations=MK",
+      "source_class": "indirect",
+      "primary_language": "en",
+      "why_relevant": "Redistributes the IMF FAS ATM density series for MK in an easily machine-readable API form with long time series; convenient for trend charts and cross-country comparison.",
+      "credibility_score": 0.85,
+      "usefulness_score": 0.8,
+      "confidence_score": 0.9,
+      "priority": "high",
+      "domain": "data.worldbank.org",
+      "source_subtype": "indicator API / redistributor",
+      "topics": [
+        "ATM POS data",
+        "market statistics"
+      ],
+      "access_status": "open",
+      "legal_status": "CC-BY 4.0",
+      "collection_allowed": true,
+      "suggested_collection_method": "World Bank indicator API: /v2/country/MKD/indicator/FB.ATM.TOTL.P5?format=json",
+      "example_urls": [
+        "https://data.worldbank.org/country/north-macedonia"
+      ],
+      "discovered_via_method": "en web search",
+      "queries_used": [
+        "IMF Financial Access Survey North Macedonia ATMs POS terminals per 100000 adults"
+      ],
+      "local_language_terms_used": [],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "FRED series MKDFCAANUM - ATMs per 100,000 adults, Macedonia",
+      "source_url": "https://fred.stlouisfed.org/series/MKDFCAANUM",
+      "source_class": "indirect",
+      "primary_language": "en",
+      "why_relevant": "Stable, versioned mirror of the IMF FAS ATM series with a clean API and vintage history; useful as a fallback when IMF/World Bank portals are being migrated.",
+      "credibility_score": 0.8,
+      "usefulness_score": 0.6,
+      "confidence_score": 0.85,
+      "priority": "medium",
+      "domain": "fred.stlouisfed.org",
+      "source_subtype": "data mirror / API",
+      "topics": [
+        "ATM POS data"
+      ],
+      "access_status": "open, free API key",
+      "legal_status": "FRED terms; underlying IMF copyright",
+      "collection_allowed": true,
+      "suggested_collection_method": "FRED API series observations pull",
+      "example_urls": [],
+      "discovered_via_method": "en web search",
+      "queries_used": [
+        "IMF Financial Access Survey North Macedonia ATMs POS terminals per 100000 adults"
+      ],
+      "local_language_terms_used": [],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "IMF Article IV consultation staff reports - Republic of North Macedonia",
+      "source_url": "https://www.imf.org/en/publications/cr/issues/2025/05/06/republic-of-north-macedonia-2025-article-iv-consultation-press-release-and-staff-report-566702",
+      "source_class": "direct",
+      "primary_language": "en",
+      "why_relevant": "Annual independent assessment of the MK banking and financial system with data annexes (credit growth, bank concentration, deposits, payment/financial-sector reform commitments including SEPA); also documents Selected Issues papers on digitalisation.",
+      "credibility_score": 0.95,
+      "usefulness_score": 0.85,
+      "confidence_score": 0.9,
+      "priority": "high",
+      "domain": "imf.org",
+      "source_subtype": "surveillance report series",
+      "topics": [
+        "market statistics",
+        "payment statistics"
+      ],
+      "access_status": "open PDF/HTML",
+      "legal_status": "IMF publication terms",
+      "collection_allowed": true,
+      "suggested_collection_method": "Monitor IMF country page for MKD; download Article IV PDF + concluding statements annually; parse statistical annex tables",
+      "example_urls": [
+        "https://www.imf.org/en/news/articles/2026/06/05/pr-26187-republic-of-north-macedonia-imf-executive-board-concludes-2026-article-iv-consultation",
+        "https://www.imf.org/en/news/articles/2026/03/31/mcs-04012026-north-macedonia-staff-concluding-statement-of-the-2026-article-iv-mission",
+        "https://www.imf.org/-/media/files/publications/cr/2025/english/1mkdea2025001-print-pdf.pdf"
+      ],
+      "discovered_via_method": "en web search",
+      "queries_used": [
+        "IMF Article IV consultation North Macedonia 2025 staff report financial sector payments"
+      ],
+      "local_language_terms_used": [],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "IMF eLibrary - North Macedonia country report series",
+      "source_url": "https://www.elibrary.imf.org/view/journals/002/2025/101/article-A001-en.xml",
+      "source_class": "pointer",
+      "primary_language": "en",
+      "why_relevant": "Structured XML/HTML rendering of the same country reports, easier to parse than PDFs and gives a full archive back-catalogue for time-series extraction.",
+      "credibility_score": 0.9,
+      "usefulness_score": 0.65,
+      "confidence_score": 0.8,
+      "priority": "medium",
+      "domain": "elibrary.imf.org",
+      "source_subtype": "publication archive",
+      "topics": [
+        "market statistics"
+      ],
+      "access_status": "mostly open; some content gated",
+      "legal_status": "IMF eLibrary terms",
+      "collection_allowed": true,
+      "suggested_collection_method": "Targeted fetch of article XML per report issue",
+      "example_urls": [
+        "https://www.elibrary.imf.org/view/journals/002/2025/101/article-A002-en.xml"
+      ],
+      "discovered_via_method": "snowball from IMF search results",
+      "queries_used": [
+        "IMF Article IV consultation North Macedonia 2025 staff report financial sector payments"
+      ],
+      "local_language_terms_used": [],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "European Commission Enlargement Package - North Macedonia country report",
+      "source_url": "https://enlargement.ec.europa.eu/countries/north-macedonia_en",
+      "source_class": "direct",
+      "primary_language": "en",
+      "why_relevant": "Annual accession progress report includes chapters on free movement of capital, financial services and payment systems; documents alignment with PSD2/SEPA, supervisory capacity and outstanding legislative gaps that shape the MK payments market.",
+      "credibility_score": 0.95,
+      "usefulness_score": 0.85,
+      "confidence_score": 0.9,
+      "priority": "high",
+      "domain": "enlargement.ec.europa.eu",
+      "source_subtype": "accession progress report",
+      "topics": [
+        "market statistics",
+        "payment statistics"
+      ],
+      "access_status": "open",
+      "legal_status": "EU reuse decision 2011/833/EU",
+      "collection_allowed": true,
+      "suggested_collection_method": "Annual (autumn) download of the country report PDF; section extraction on Chapters 4, 9 and the digital economy sections",
+      "example_urls": [
+        "https://portal.mdt.gov.mk/post-body-files/posleden-izvestaj-za-zemjata-file-idbC.pdf",
+        "https://www.mep.gov.mk/post/?id=5657"
+      ],
+      "discovered_via_method": "mk + en web search, snowball to MK-hosted translation",
+      "queries_used": [
+        "Извештај на Европската комисија за Северна Македонија 2025 финансиски услуги платни системи поглавје",
+        "North Macedonia Growth Plan Reform Agenda SEPA payments commitment European Commission document"
+      ],
+      "local_language_terms_used": [
+        "Извештај на Европската комисија",
+        "финансиски услуги",
+        "платни системи",
+        "поглавје"
+      ],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Ministry of European Affairs (MEP) - EC reports and Growth Plan / Reform Agenda pages (Macedonian)",
+      "source_url": "https://mep.gov.mk/mk-MK/eu-integracii/plan-za-rast-za-zapaden-balkan-i-reformska-agenda",
+      "primary_language": "mk",
+      "source_class": "pointer",
+      "why_relevant": "Macedonian-language mirror and index of EC country reports, the Reform Agenda 2024-2027 and Growth Plan milestones (incl. SEPA accession), plus payment-request/monitoring news - the local gateway into the EU donor layer.",
+      "credibility_score": 0.85,
+      "usefulness_score": 0.8,
+      "confidence_score": 0.85,
+      "priority": "high",
+      "domain": "mep.gov.mk",
+      "source_subtype": "government EU-integration portal",
+      "topics": [
+        "market statistics",
+        "payment statistics"
+      ],
+      "access_status": "open",
+      "legal_status": "public government content",
+      "collection_allowed": true,
+      "suggested_collection_method": "Scrape MK/EN news and document listings; watch Reform Agenda milestone pages",
+      "example_urls": [
+        "https://www.mep.gov.mk/post/?id=5657",
+        "https://mep.gov.mk/mk-MK/transparentnost/novosti/severna-makedonija-od-denes-i-oficijalno-del-od-sepa-polesni-i-pobrzi-plakjanja-vo-evra",
+        "https://mep.gov.mk/mk-MK/eu-integracii/plan-za-rast-za-zapaden-balkan-i-reformska-agenda/reformska-agenda-na-severna-makedonija-2024-2027-godina"
+      ],
+      "discovered_via_method": "mk web search",
+      "queries_used": [
+        "\"Реформска агенда\" Северна Македонија ИПА донаторски проекти дигитални плаќања СЕПА"
+      ],
+      "local_language_terms_used": [
+        "Реформска агенда",
+        "План за раст за Западен Балкан",
+        "СЕПА",
+        "плаќања во евра"
+      ],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "EU Reform and Growth Facility - Reform Agenda for North Macedonia 2024-2027",
+      "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/growth-plan-western-balkans_en",
+      "source_class": "direct",
+      "primary_language": "en",
+      "why_relevant": "The Reform Agenda binds disbursements to specific payment-market steps (SEPA membership, payment-services law alignment, digitalisation of public payments); its indicator tables are a forward calendar of MK payment-market change.",
+      "credibility_score": 0.9,
+      "usefulness_score": 0.85,
+      "confidence_score": 0.85,
+      "priority": "high",
+      "domain": "enlargement.ec.europa.eu",
+      "source_subtype": "programme document / conditionality framework",
+      "topics": [
+        "payment statistics",
+        "market statistics"
+      ],
+      "access_status": "open",
+      "legal_status": "EU reuse decision",
+      "collection_allowed": true,
+      "suggested_collection_method": "Download the MK Reform Agenda annex and each payment-request assessment; diff milestone status per release",
+      "example_urls": [
+        "https://www.eeas.europa.eu/delegations/north-macedonia/north-macedonia-first-country-receive-pre-financing-under-growth-plan_en",
+        "https://www.eeas.europa.eu/delegations/montenegro/commission-approves-reform-agendas-montenegro-albania-kosovo-north-macedonia-and-serbia-paving-way_en",
+        "https://www.eeas.europa.eu/delegations/north-macedonia/first-meeting-monitoring-committee-reform-and-growth-facility-between-eu-and-north-macedonia_en"
+      ],
+      "discovered_via_method": "en web search + snowball via EEAS",
+      "queries_used": [
+        "North Macedonia Growth Plan Reform Agenda SEPA payments commitment European Commission document"
+      ],
+      "local_language_terms_used": [],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "European Commission - North Macedonia financial assistance under IPA",
+      "source_url": "https://neighbourhood-enlargement.ec.europa.eu/enlargement-policy/overview-instrument-pre-accession-assistance/north-macedonia-financial-assistance-under-ipa_en",
+      "source_class": "pointer",
+      "primary_language": "en",
+      "why_relevant": "Authoritative index of IPA II/III programming documents and action fiches for MK; action fiches describe baseline market conditions (e.g. digital public services, PFM, e-payments) and the budget behind them.",
+      "credibility_score": 0.9,
+      "usefulness_score": 0.75,
+      "confidence_score": 0.85,
+      "priority": "high",
+      "domain": "neighbourhood-enlargement.ec.europa.eu",
+      "source_subtype": "programme documentation index",
+      "topics": [
+        "market statistics",
+        "payment statistics"
+      ],
+      "access_status": "open",
+      "legal_status": "EU reuse decision",
+      "collection_allowed": true,
+      "suggested_collection_method": "Crawl the IPA country page annually for new annual action documents; PDF text mining for payments/banking keywords",
+      "example_urls": [],
+      "discovered_via_method": "en web search",
+      "queries_used": [
+        "EU funding tenders portal EuropeAid calls North Macedonia delegation \"tenders\" IPA opportunities"
+      ],
+      "local_language_terms_used": [],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "TED - Tenders Electronic Daily (EU procurement notices, IPA/EU-funded contracts for MK)",
+      "source_url": "https://ted.europa.eu/",
+      "source_class": "direct",
+      "primary_language": "en",
+      "why_relevant": "Publishes EU-funded contract notices and award notices for MK IPA projects (public finance management IT, e-government, digital transformation); technical specifications and award values reveal vendors, budgets and system landscape relevant to payments infrastructure.",
+      "credibility_score": 0.95,
+      "usefulness_score": 0.85,
+      "confidence_score": 0.9,
+      "priority": "critical",
+      "domain": "ted.europa.eu",
+      "source_subtype": "procurement notice register",
+      "topics": [
+        "market statistics",
+        "ATM POS data",
+        "payment statistics"
+      ],
+      "access_status": "open, with bulk/open-data downloads and an API",
+      "legal_status": "EU open data; reuse permitted",
+      "collection_allowed": true,
+      "suggested_collection_method": "TED search API / daily XML bulk packages filtered on country=MK and CPV codes for banking, payment and IT services; keep award notices for vendor mapping",
+      "example_urls": [
+        "https://ted.europa.eu/en/notice/555776-2025/pdfs",
+        "https://ted.europa.eu/udl?uri=TED%3ANOTICE%3A506354-2019%3ATEXT%3AEN%3AHTML",
+        "https://single-market-economy.ec.europa.eu/single-market/public-procurement/digital-procurement/tenders-electronic-daily_en"
+      ],
+      "discovered_via_method": "en web search + snowball to specific MK IPA notices",
+      "queries_used": [
+        "TED europa tenders North Macedonia IPA payment system banking digitalisation contract notice"
+      ],
+      "local_language_terms_used": [],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "EU Funding & Tenders Portal (EuropeAid prospect and call details, .../ACT/MK references)",
+      "source_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/home",
+      "source_class": "direct",
+      "primary_language": "en",
+      "why_relevant": "Forward-looking pipeline of EU-funded actions for MK before they reach TED; prospect notices give sector, indicative budget and timing for digitalisation/financial-sector actions.",
+      "credibility_score": 0.9,
+      "usefulness_score": 0.7,
+      "confidence_score": 0.8,
+      "priority": "medium",
+      "domain": "ec.europa.eu",
+      "source_subtype": "funding opportunity portal",
+      "topics": [
+        "market statistics"
+      ],
+      "access_status": "open, heavy JavaScript SPA",
+      "legal_status": "EU reuse decision",
+      "collection_allowed": true,
+      "suggested_collection_method": "Use the portal's underlying SEDIA search REST endpoint rather than scraping the SPA; filter for MK/IPA references",
+      "example_urls": [
+        "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/prospect-details/186948PROSPECTSEN",
+        "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/prospect-details/178581PROSPECTSEN"
+      ],
+      "discovered_via_method": "en web search",
+      "queries_used": [
+        "EU funding tenders portal EuropeAid calls North Macedonia delegation \"tenders\" IPA opportunities"
+      ],
+      "local_language_terms_used": [],
+      "blocked": true,
+      "blocker_type": "javascript_spa",
+      "observed_blocker": "Portal renders client-side; plain HTML fetches typically return an application shell rather than notice content (hypothesis, not verified)"
+    },
+    {
+      "source_name": "EBRD Project Summary Documents (PSD) search - North Macedonia financial institutions",
+      "source_url": "https://www.ebrd.com/home/work-with-us/projects.html",
+      "source_class": "direct",
+      "primary_language": "en",
+      "why_relevant": "PSDs disclose counterparty bank, amount, purpose and expected transition impact for EBRD credit lines to MK banks (Go Digital Western Balkans, SME digitalisation with Sparkasse and NLB Banka Skopje) - a running record of who is funding MK bank digitalisation and how much.",
+      "credibility_score": 0.9,
+      "usefulness_score": 0.8,
+      "confidence_score": 0.8,
+      "priority": "high",
+      "domain": "ebrd.com",
+      "source_subtype": "IFI project disclosure register",
+      "topics": [
+        "market statistics",
+        "payment statistics"
+      ],
+      "access_status": "open; site restructured in 2024-25 so legacy PSD URLs may redirect",
+      "legal_status": "EBRD public disclosure",
+      "collection_allowed": true,
+      "suggested_collection_method": "Paginate the PSD search filtered by country=North Macedonia and sector=financial institutions; store project id, signing date, amount, client",
+      "example_urls": [
+        "https://www.ebrd.com/home/news-and-events/news/2025/ebrd-and-eu-support-sme-digitalisation-in--north-macedonia-with-.html",
+        "https://www.ebrd.com/home/news-and-events/news/2025/go-digital-nlb-bank-in-skopje.html",
+        "https://www.ebrd.com/home/work-with-us/projects/psd/53583.html"
+      ],
+      "discovered_via_method": "en web search + snowball from EBRD news to PSD pages",
+      "queries_used": [
+        "EBRD North Macedonia project digital payments financial sector \"project summary documents\""
+      ],
+      "local_language_terms_used": [],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "EBRD North Macedonia country strategy and results snapshot",
+      "source_url": "https://www.ebrd.com/content/dam/ebrd_dxp/assets/pdfs/country-strategies/north-macedonia/The-EBRD-in-North-Macedonia-Results-Snapshot.pdf",
+      "source_class": "indirect",
+      "primary_language": "en",
+      "why_relevant": "Country strategy and diagnostics set out EBRD's read of MK financial-sector gaps (digitalisation, access to finance, capital markets) and the planned pipeline - useful as an independent structural assessment of the market.",
+      "credibility_score": 0.85,
+      "usefulness_score": 0.65,
+      "confidence_score": 0.85,
+      "priority": "medium",
+      "domain": "ebrd.com",
+      "source_subtype": "country strategy / diagnostic",
+      "topics": [
+        "market statistics"
+      ],
+      "access_status": "open PDF",
+      "legal_status": "EBRD public disclosure",
+      "collection_allowed": true,
+      "suggested_collection_method": "Download strategy + annual results PDFs on a strategy cycle (roughly 5-yearly, with annual assessments)",
+      "example_urls": [],
+      "discovered_via_method": "en web search",
+      "queries_used": [
+        "EBRD North Macedonia project digital payments financial sector \"project summary documents\""
+      ],
+      "local_language_terms_used": [],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "World Bank projects & operations - North Macedonia (incl. NODE P170993)",
+      "source_url": "https://projects.worldbank.org/en/projects-operations/project-detail/P170993",
+      "source_class": "direct",
+      "primary_language": "en",
+      "why_relevant": "Project appraisal documents, results frameworks and implementation status reports for MK digital-economy and financial-sector operations contain baseline/target indicators on digital payments, connectivity and government e-payments.",
+      "credibility_score": 0.9,
+      "usefulness_score": 0.8,
+      "confidence_score": 0.85,
+      "priority": "high",
+      "domain": "projects.worldbank.org",
+      "source_subtype": "IFI project register",
+      "topics": [
+        "market statistics",
+        "payment statistics"
+      ],
+      "access_status": "open, with a documented projects API",
+      "legal_status": "World Bank open access policy (CC-BY)",
+      "collection_allowed": true,
+      "suggested_collection_method": "World Bank Projects API filtered on countrycode=MK; harvest linked documents from the Documents & Reports API",
+      "example_urls": [
+        "https://www.worldbank.org/ext/en/country/northmacedonia",
+        "https://financesone.worldbank.org/countries/north%20macedonia",
+        "https://www.worldbank.org/en/news/press-release/2023/12/15/world-bank-to-support-macroeconomic-and-climate-reforms-in-north-macedonia"
+      ],
+      "discovered_via_method": "en web search",
+      "queries_used": [
+        "World Bank projects North Macedonia financial sector digital payments loan documents projects.worldbank.org"
+      ],
+      "local_language_terms_used": [],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "World Bank Documents & Reports - North Macedonia policy notes and country economic reports",
+      "source_url": "https://documents1.worldbank.org/curated/en/099008512112429283/pdf/IDU1102c34701ba0b146d21a1e010d27c68032cf.pdf",
+      "source_class": "indirect",
+      "primary_language": "en",
+      "why_relevant": "Policy notes and Western Balkans Regular Economic Reports contain analysis on MK payment-system modernisation, SEPA entry and cross-border payment costs, often with original charts not published locally.",
+      "credibility_score": 0.9,
+      "usefulness_score": 0.75,
+      "confidence_score": 0.85,
+      "priority": "high",
+      "domain": "documents.worldbank.org",
+      "source_subtype": "analytical report archive",
+      "topics": [
+        "market statistics",
+        "payment statistics",
+        "cash usage"
+      ],
+      "access_status": "open, full-text search API available",
+      "legal_status": "CC-BY 3.0 IGO",
+      "collection_allowed": true,
+      "suggested_collection_method": "Documents & Reports API (wds) query: country=Macedonia + keywords payments/SEPA/cards/ATM; scheduled quarterly",
+      "example_urls": [
+        "https://www.worldbank.org/en/news/video/2025/04/17/north-macedonia-joins-the-single-euro-payments-area-sepa"
+      ],
+      "discovered_via_method": "en web search + snowball",
+      "queries_used": [
+        "World Bank projects North Macedonia financial sector digital payments loan documents projects.worldbank.org"
+      ],
+      "local_language_terms_used": [],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "World Bank Global Payment Systems Survey (GPSS)",
+      "source_url": "https://documents1.worldbank.org/curated/en/099011624132054588/pdf/P1787031cca90801019d011a41f21efe348.pdf",
+      "source_class": "direct",
+      "primary_language": "en",
+      "why_relevant": "Periodic central-bank-reported survey of payment system infrastructure (RTGS, ACH, card switches, retail instruments, oversight) with country-level responses; the main supranational description of MK payment infrastructure design.",
+      "credibility_score": 0.9,
+      "usefulness_score": 0.8,
+      "confidence_score": 0.7,
+      "priority": "high",
+      "domain": "worldbank.org",
+      "source_subtype": "infrastructure survey",
+      "topics": [
+        "payment statistics",
+        "market statistics"
+      ],
+      "access_status": "report open; country-level dataset availability uncertain",
+      "legal_status": "CC-BY 3.0 IGO",
+      "collection_allowed": true,
+      "suggested_collection_method": "Download the Payment Systems Worldwide report per survey round; check the World Bank data catalogue for any accompanying country dataset",
+      "example_urls": [],
+      "discovered_via_method": "en web search",
+      "queries_used": [
+        "World Bank Remittance Prices Worldwide Global Payment Systems Survey database country coverage"
+      ],
+      "local_language_terms_used": [],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "World Bank Remittance Prices Worldwide (RPW)",
+      "source_url": "https://remittanceprices.worldbank.org/",
+      "source_class": "indirect",
+      "primary_language": "en",
+      "why_relevant": "Quarterly corridor-level pricing of cross-border transfers; MK is a significant remittance-receiving economy, so corridor pricing and instrument mix (cash pickup vs account vs card) proxies cash-versus-digital behaviour.",
+      "credibility_score": 0.85,
+      "usefulness_score": 0.7,
+      "confidence_score": 0.8,
+      "priority": "medium",
+      "domain": "remittanceprices.worldbank.org",
+      "source_subtype": "price benchmarking database",
+      "topics": [
+        "payment statistics",
+        "cash usage"
+      ],
+      "access_status": "open, quarterly CSV/report downloads and DataBank access",
+      "legal_status": "CC-BY / World Bank terms",
+      "collection_allowed": true,
+      "suggested_collection_method": "Quarterly CSV download plus DataBank 'Remittance Prices Worldwide (Corridors)' query; verify MK corridor coverage before relying on it",
+      "example_urls": [
+        "https://databank.worldbank.org/source/remittance-prices-worldwide-(corridors)",
+        "https://datacatalog.worldbank.org/search/dataset/0037898/remittance-prices-worldwide",
+        "https://remittanceprices.worldbank.org/resources"
+      ],
+      "discovered_via_method": "en web search",
+      "queries_used": [
+        "World Bank Remittance Prices Worldwide Global Payment Systems Survey database country coverage"
+      ],
+      "local_language_terms_used": [],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Council of Europe Development Bank (CEB) - North Macedonia country page and project disclosures",
+      "source_url": "https://coebank.org/en/countries/north-macedonia/",
+      "source_class": "indirect",
+      "primary_language": "en",
+      "why_relevant": "CEB lends to the Development Bank of North Macedonia and microfinance institutions (e.g. Horizonti), so its disclosures map on-lending channels and financial-inclusion funding, though it does not fund payment infrastructure directly.",
+      "credibility_score": 0.8,
+      "usefulness_score": 0.45,
+      "confidence_score": 0.6,
+      "priority": "low",
+      "domain": "coebank.org",
+      "source_subtype": "IFI project disclosure",
+      "topics": [
+        "market statistics"
+      ],
+      "access_status": "open; exact country-page URL not confirmed, reachable from coebank.org navigation",
+      "legal_status": "CEB public disclosure",
+      "collection_allowed": true,
+      "suggested_collection_method": "Low-frequency crawl of CEB news and project listings filtered on North Macedonia",
+      "example_urls": [
+        "https://coebank.org/en/news-and-publications/news/ceb-and-north-macedonia-sign-a-3-million-multi-donor-grant-agreement-for-renovation-of-school-facilities/",
+        "https://coebank.org/en/news-and-publications/projects-focus/"
+      ],
+      "discovered_via_method": "en web search",
+      "queries_used": [
+        "Council of Europe Development Bank CEB North Macedonia projects"
+      ],
+      "local_language_terms_used": [],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "EEAS / EU Delegation to North Macedonia",
+      "source_url": "https://www.eeas.europa.eu/delegations/north-macedonia_en",
+      "source_class": "pointer",
+      "primary_language": "en",
+      "why_relevant": "Announces IPA calls, Growth Plan disbursements, subcommittee meetings on economic and financial issues and statistics; a reliable early signal of donor-funded activity touching MK payments before formal documents publish.",
+      "credibility_score": 0.85,
+      "usefulness_score": 0.6,
+      "confidence_score": 0.8,
+      "priority": "medium",
+      "domain": "eeas.europa.eu",
+      "source_subtype": "delegation news / calls portal",
+      "topics": [
+        "market statistics"
+      ],
+      "access_status": "open",
+      "legal_status": "EU reuse decision",
+      "collection_allowed": true,
+      "suggested_collection_method": "RSS/news scrape of the delegation page, keyword-filtered on payments, banking, digitalisation, IPA",
+      "example_urls": [
+        "https://www.eeas.europa.eu/delegations/north-macedonia/first-call-proposals-under-ipa-3-cross-border-cooperation-greece-north-macedonia_en",
+        "https://eeas.europa.eu/delegations/north-macedonia/eu-north-macedonia-22nd-subcommittee-economic-and-financial-issues-and-statistics_en"
+      ],
+      "discovered_via_method": "snowball from EU search results",
+      "queries_used": [
+        "TED europa tenders North Macedonia IPA payment system banking digitalisation contract notice"
+      ],
+      "local_language_terms_used": [],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "OpenTender / Open Contracting Data Registry - TED-derived European procurement data",
+      "source_url": "https://data.open-contracting.org/en/publication/150",
+      "source_class": "indirect",
+      "primary_language": "en",
+      "why_relevant": "Structured, cleaned OCDS re-publication of TED notices; far easier to query at scale for MK-related EU-funded contracts than TED's own interface, and it also aggregates national procurement data.",
+      "credibility_score": 0.75,
+      "usefulness_score": 0.65,
+      "confidence_score": 0.8,
+      "priority": "medium",
+      "domain": "data.open-contracting.org",
+      "source_subtype": "third-party procurement data aggregator",
+      "topics": [
+        "market statistics"
+      ],
+      "access_status": "open bulk downloads",
+      "legal_status": "open data, check per-publisher licence",
+      "collection_allowed": true,
+      "suggested_collection_method": "Bulk OCDS download, filter buyer/beneficiary country and CPV codes; treat as secondary to TED for authoritative values",
+      "example_urls": [],
+      "discovered_via_method": "en web search snowball",
+      "queries_used": [
+        "TED europa tenders North Macedonia IPA payment system banking digitalisation contract notice"
+      ],
+      "local_language_terms_used": [],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    },
+    {
+      "source_name": "Ministry of Finance of North Macedonia - ESPEO / EU economic reporting pages (Macedonian)",
+      "source_url": "https://finance.gov.mk/mk-MK/oblasti/espeo/espeo-izvestai-2025",
+      "source_class": "indirect",
+      "primary_language": "mk",
+      "why_relevant": "Hosts the Macedonian-language reporting that feeds the EU economic dialogue (Economic Reform Programme and related reports), the national counterpart to EC/IMF assessments and often the first place their underlying tables appear locally.",
+      "credibility_score": 0.85,
+      "usefulness_score": 0.6,
+      "confidence_score": 0.75,
+      "priority": "medium",
+      "domain": "finance.gov.mk",
+      "source_subtype": "ministry reporting page",
+      "topics": [
+        "market statistics"
+      ],
+      "access_status": "open",
+      "legal_status": "public government content",
+      "collection_allowed": true,
+      "suggested_collection_method": "Annual crawl of the ESPEO report listing; PDF extraction of financial-sector chapters",
+      "example_urls": [],
+      "discovered_via_method": "mk web search",
+      "queries_used": [
+        "Извештај на Европската комисија за Северна Македонија 2025 финансиски услуги платни системи поглавје"
+      ],
+      "local_language_terms_used": [
+        "Извештаи",
+        "Министерство за финансии",
+        "ЕСПЕО"
+      ],
+      "blocked": false,
+      "blocker_type": "",
+      "observed_blocker": ""
+    }
+  ],
+  "negative_findings": [
+    {
+      "finding_type": "indicator_gap",
+      "description": "No confirmed POS-terminal series for North Macedonia was located inside the IMF FAS results surfaced by search; only ATM-per-100,000-adults values for MK were visible. FAS documentation states POS terminals were added as a newer access-point indicator, but MK reporting of it is unconfirmed.",
+      "result_summary": "ATM density for MK found via FAS/World Bank/FRED; MK POS density not confirmed at the supranational layer.",
+      "why_it_matters": "POS terminal density is a core A4 metric; if FAS does not carry MK POS data, the national central bank payment statistics become the only source and the international benchmark cannot be built.",
+      "severity": "high",
+      "language": "en",
+      "source_class": "direct",
+      "topics": [
+        "ATM POS data",
+        "payment statistics"
+      ]
+    },
+    {
+      "finding_type": "no_local_language_supranational_source",
+      "description": "Supranational and donor bodies in this cell (IMF, World Bank, EBRD, CEB, TED, OECD-style benchmarks) publish essentially only in English for North Macedonia; Macedonian-language material found was national-government mirroring of EU documents (MEP, Ministry of Finance, MDT portal) rather than donor-original publication.",
+      "result_summary": "Macedonian-language queries returned government mirrors and media coverage, not donor primary sources.",
+      "why_it_matters": "Macedonian-language monitoring of this cell should target government EU-integration portals rather than the donors themselves; searching donor sites in mk will keep returning nothing.",
+      "severity": "medium",
+      "language": "mk",
+      "source_class": "pointer",
+      "topics": [
+        "market statistics",
+        "payment statistics"
+      ]
+    },
+    {
+      "finding_type": "unverified_url_structure",
+      "description": "The CEB country page URL for North Macedonia and the current EBRD PSD search URL were inferred from site navigation patterns rather than observed directly; EBRD restructured its website and legacy PSD/SolrSearch URLs appear to redirect.",
+      "result_summary": "Both entries recorded with reduced confidence; treat as hypotheses for the liveness pass.",
+      "why_it_matters": "A collector hard-coding these paths may 404; the discovery pass should resolve them from the site root instead.",
+      "severity": "low",
+      "language": "en",
+      "source_class": "direct",
+      "topics": [
+        "market statistics"
+      ]
+    },
+    {
+      "finding_type": "no_dedicated_donor_payments_project",
+      "description": "No donor-funded project dedicated specifically to card/ATM/POS acceptance infrastructure in North Macedonia was identified. Donor digitalisation money found is directed at SME digital technology on-lending (EBRD Go Digital), public administration and PFM IT (IPA), and the digital economy broadly (World Bank NODE).",
+      "result_summary": "Payment-acceptance infrastructure is not an explicit donor line item in the material found.",
+      "why_it_matters": "Analysts should not expect a donor project register to describe the acceptance market directly; the donor layer is mainly useful for benchmarks, conditionality (SEPA) and adjacent IT tenders.",
+      "severity": "medium",
+      "language": "en",
+      "source_class": "direct",
+      "topics": [
+        "ATM POS data",
+        "market statistics"
+      ]
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "gap_type": "unqueried_actor",
+      "description": "Several plausible supranational actors in this cell were not searched in this pass: EIB / EIB Global, BIS (CPMI Red Book and statistics, likely non-member so probably absent), UNCDF, USAID/SIDA/SECO bilateral donors, the Western Balkans Investment Framework (WBIF) project pipeline, and the Vienna Initiative / EFSE and Green for Growth funds.",
+      "recommended_action": "Run a second pass over WBIF (wbif.eu) project pipeline, EIB project register, EFSE and the Vienna Initiative reports filtered on North Macedonia.",
+      "coverage_dimension": "actor",
+      "severity": "medium",
+      "source_class": "direct",
+      "topics": [
+        "market statistics",
+        "payment statistics"
+      ],
+      "language": "en"
+    },
+    {
+      "gap_type": "unverified_dataset_granularity",
+      "description": "It was not established whether Findex 2025 country-level microdata for MK is openly downloadable or requires a licensed-access request, nor whether the MK sample supports card/POS-level breakdowns.",
+      "recommended_action": "Open the MK microdata catalogue entry and read the access policy and questionnaire before planning collection.",
+      "coverage_dimension": "access",
+      "severity": "medium",
+      "source_class": "direct",
+      "topics": [
+        "card statistics",
+        "cash usage"
+      ],
+      "language": "en"
+    },
+    {
+      "gap_type": "language_coverage",
+      "description": "Albanian-language coverage (a significant official language in MK) was entirely outside the run's declared language set and was not attempted for donor/EU material.",
+      "recommended_action": "If the run scope ever widens, add sq-language queries against EU delegation and government EU-integration portals.",
+      "coverage_dimension": "language",
+      "severity": "low",
+      "source_class": "pointer",
+      "topics": [
+        "market statistics"
+      ],
+      "language": "sq"
+    },
+    {
+      "gap_type": "api_access_method",
+      "description": "The concrete machine-access paths for IMF FAS (post-migration data.imf.org SDMX endpoints) and for the TED search API were not tested, only inferred.",
+      "recommended_action": "Prototype one SDMX call for MKD FAS indicators and one TED API query with a MK country filter to confirm parameters before building collectors.",
+      "coverage_dimension": "collection method",
+      "severity": "medium",
+      "source_class": "direct",
+      "topics": [
+        "ATM POS data",
+        "payment statistics"
+      ],
+      "language": "en"
+    }
+  ],
+  "brief": "The supranational and donor layer is the strongest English-language backbone for North Macedonia payments intelligence: IMF FAS supplies the supply-side ATM (and possibly POS) density series, World Bank Findex 2025 supplies the demand-side account/card/digital-payment behaviour, and IMF Article IV plus the EC Enlargement Package supply annual independent narrative on the banking and payment-system reform trajectory. The donor money layer - EU IPA and the Reform and Growth Facility, EBRD Go Digital credit lines to Sparkasse and NLB Banka Skopje, World Bank digital-economy and financial-sector operations - is documented through TED procurement notices, EU Funding & Tenders prospects and IFI project registers, all of which are machine-collectable and reveal vendors, budgets and system scope. Almost nothing in this layer is published in Macedonian; local-language monitoring must instead target the government mirrors (mep.gov.mk, finance.gov.mk, mdt.gov.mk) that republish EC reports and Reform Agenda milestones such as SEPA accession. The main open risks are whether MK actually reports POS terminals to FAS and whether Findex MK microdata is openly downloadable - both should be resolved before collectors are built."
+}

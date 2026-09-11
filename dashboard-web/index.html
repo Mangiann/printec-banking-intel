@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Market Intelligence Dashboard</title>
+<meta name="description" content="Weekly banking-technology market intelligence for Printec Group across its 17-country footprint.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <button class="side-toggle" id="sideToggle" title="Collapse / expand" aria-label="Collapse or expand sidebar" aria-expanded="true">
+      <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg>
+    </button>
+    <div class="brand">
+      <img class="brand-logo" src="printec-logo.svg" alt="Printec" width="163" height="75">
+      <span class="brand-sub">Market Intelligence Dashboard</span>
+    </div>
+    <div class="side-scroll" id="nav"></div>
+  </aside>
+
+  <main class="main" id="main">
+    <div class="banner" id="banner"></div>
+    <div id="root">
+      <div class="loader"><div class="ring"></div><div>Loading the latest intelligence…</div></div>
+    </div>
+  </main>
+</div>
+<script defer src="atm-sources.js"></script>
+<script defer src="product-outlooks.js"></script>
+<script defer src="footprint-map.js"></script>
+<script defer src="app.js"></script>
+</body>
+</html>

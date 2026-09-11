@@ -1,0 +1,212 @@
+[
+ {
+  "candidate_id": "dr_cz_a3_live_001__c_032",
+  "source_url": "https://www.mfcr.cz/cs/soukromy-sektor/bankovnictvi-a-platebni-sluzby/platebni-sluzby-a-vyporadani-obchodu/aktuality",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a3_live_001__c_046",
+  "source_url": "https://developer.rb.cz/psd2",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_cz_a3_live_001__c_054",
+  "source_url": "https://developers.jtbank.cz/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "ConnectionResetError"
+ },
+ {
+  "candidate_id": "dr_cz_a3_live_001__c_062",
+  "source_url": "https://www.apiportal.cz/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_cz_a3_live_001__c_070",
+  "source_url": "https://www.irozhlas.cz/ekonomika",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a3_live_001__c_094",
+  "source_url": "https://esipa.cz/sbirka/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a3_live_001__c_097",
+  "source_url": "https://www.cnb.cz/cs/financni-stabilita/zpravy-o-financni-stabilite/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a3_live_001__c_118",
+  "source_url": "https://www.konferenceseminare.cz/trendy-v-platebnim-styku-2026",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a3_live_001__c_126",
+  "source_url": "https://www.partnersbanka.cz/kariera/specialista-compliance-zkraceny-uvazek-dlouhodoba-spoluprace",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a3_live_001__c_150",
+  "source_url": "https://www.cnb.cz/export/sites/cnb/cs/dohled-financni-trh/.galleries/prilohy/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a3_live_001__c_175",
+  "source_url": "https://www.komora.cz/pripominkovane-materialy/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a3_live_001__c_189",
+  "source_url": "https://www.eba.europa.eu/publications-and-media/events/consultation-papers",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a3_live_001__c_213",
+  "source_url": "https://archiv.financnianalytickyurad.cz/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_cz_a3_live_001__c_219",
+  "source_url": "https://www.coe.int/en/web/moneyval/jurisdictions/czech-republic",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a3_live_001__c_249",
+  "source_url": "https://www.czech-ba.cz/cs",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a3_live_001__c_260",
+  "source_url": "https://odok.gov.cz/portal/veklep/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a3_live_001__c_261",
+  "source_url": "https://www.komora.cz/aktivity/ceska-legislativa/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a3_live_001__c_266",
+  "source_url": "https://www2.deloitte.com/cz/cs/pages/financial-services/articles/regulatorni-novinky.html",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a3_live_001__c_269",
+  "source_url": "https://www.ey.com/cs_cz/insights/financial-services",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_cz_a3_live_001__c_288",
+  "source_url": "https://www.lexology.com/library/detail.aspx?g=1846245b-47ca-4480-83a7-2ec2cf457c47",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_cz_a3_live_001__c_303",
+  "source_url": "https://www.apiportal.cz/psd2/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "URLError"
+ }
+]

@@ -1,0 +1,371 @@
+{
+  "_about": "Stable, verified STRUCTURAL facts about footprint banks — the figures that do NOT change week-to-week (asset size/rank, branch & ATM fleet counts, known ATM/software vendor, Printec relationship, current C-suite, recent M&A). Purpose: stop the research agents from re-deriving these from memory every run and the verify pass from re-correcting the same stale numbers (the 2026-06-24 Agent-5 run had the adversarial pass contradict 9 carried figures, most of them static structural facts). This is a CURATED reference, NOT a machine-fetched cache — a human/operator updates it after each run with any figure the verify pass corrected or freshly confirmed against a PRIMARY source.",
+  "_how_to_use": "Agents (esp. Agent 5 Jobs and Agent 1 Bank-Disclosures): BEFORE asserting a structural fact (fleet size, branch/ATM count, asset rank, incumbent vendor, current CxO), read this file's entry for the bank. If your fresh research AGREES, cite the primary source and move on (don't burn budget re-deriving). If it DISAGREES, that is a real signal — report the delta with both the old (this file) and new (your source) value + date, and the operator updates this file. NEVER treat a value here as a source to cite — it is a memory of the last verified value; always re-anchor a reported figure to a live primary URL. Fields marked status:'unverified' or 'aggregator' are NOT confirmed — treat them as leads to verify, not facts.",
+  "_maintenance": "After each Agent-5 / Agent-1 run, fold the verify-pass corrections into the matching entry, bump '_verified', and add the primary source URL. Keep ONLY primary/regulator/IR-sourced figures; drop anything that cannot be re-confirmed. Add new footprint banks as they surface. One source of truth shared by the collector agents — the equivalent of agent-units.json for stable facts.",
+  "_generated": "2026-06-24",
+  "_source_run": "findings/05-jobs/2026-06-24.md (Agent 5) + carried Agent-1 disclosures; figures below are the verify-pass-confirmed or -corrected values from that run",
+  "_fact_status_legend": {
+    "confirmed": "re-checked against a primary/regulator/IR source this run",
+    "corrected": "the prior baseline figure was wrong; this is the corrected primary value",
+    "partially-confirmed": "direction/order-of-magnitude right but the exact figure rests on a secondary source",
+    "aggregator": "from a third-party aggregator only — verify before relying",
+    "unverified": "internal/CRM claim or single weak source — lead, not fact",
+    "historical": "a completed past event, retained so it is not re-reported as new"
+  },
+
+  "greece": {
+    "national-bank-of-greece": {
+      "name": "National Bank of Greece (NBG)", "country": "GR",
+      "atm_vendor": { "value": "Hyosung Series 8 hardware + KAL (Kalignite) multivendor software, deployed by Mellon Technologies (700 recycling ATMs + cash dispensers)", "as_of": "2024-01-16", "status": "confirmed", "note": "competitor-locked on ATM hardware+software; Printec angle is software/services layers (AML, INETCO monitoring, OptiCash, telemetry, vendor-agnostic managed services), NOT hardware" },
+      "careers": { "ats": "SAP SuccessFactors (company=national05)", "url": "https://www.nbg.gr/en/group/human-resources/career-opportunities/jobs-nbg", "access": "server-rendered, dated postings + job IDs; apply links → career2.successfactors.eu company=national05" },
+      "printec_relationship": "none on ATM stack (Mellon/Hyosung/KAL); potential on AML/monitoring/cash-optimisation software layers",
+      "_verified": "2026-06-24"
+    },
+    "alpha-bank": {
+      "name": "Alpha Bank (Greece)", "country": "GR",
+      "printec_relationship": { "value": "existing Printec customer — IMTF Siron AML", "status": "confirmed", "note": "installed-base upsell territory: Siron AML, transaction monitoring, Thales HSM/PCI" },
+      "careers": { "ats": "SAP-based, plain web_fetch works", "url": "https://careers.alpha.gr/go/des-tis-diathesimes-theseis/9364055/", "access": "paginate /20/; sort ?sortColumn=referencedate&sortDirection=desc" },
+      "_verified": "2026-06-24"
+    },
+    "eurobank-gr": {
+      "name": "Eurobank (Greece)", "country": "GR",
+      "printec_relationship": { "value": "Printec is delivery partner for Eurobank's FICO AML/KYC (incl. FICO Siron); won 2021 FICO Decisions Award for Regulatory Compliance", "as_of": "2021-03-01", "status": "confirmed", "note": "real-time AML across all channels; upsell = INETCO transaction monitoring + AML scenarios + eKYC (Namirial) + managed services" },
+      "hiring_plan": { "value": "+350 new hires planned 2026", "status": "partially-confirmed" },
+      "careers": { "ats": "careers.eurobank.gr/go/All-Jobs/827502/", "access": "JS-rendered (returned 0 to web_fetch; LinkedIn shows ~16) — BROWSER-ONLY" },
+      "_verified": "2026-06-24"
+    },
+    "piraeus-bank": {
+      "name": "Piraeus Financial Holdings", "country": "GR",
+      "branches": { "value": 527, "status": "partially-confirmed", "as_of": "2026-03-05" },
+      "atms": { "value": 1913, "status": "partially-confirmed", "as_of": "2026-03-05" },
+      "strategy": { "value": "CMD 2026-2030 (05/03/2026): ~900 new hires, AI/digital leadership, €5bn shareholder distributions; Snappi neobank (JV with Natech) on Paymentology issuer-processor; Fintech & AI Lab", "status": "confirmed" },
+      "careers": { "ats": "Workable (apply.workable.com/piraeus-bank)", "access": "JS-rendered SPA — BROWSER-ONLY; /api/v3/accounts/piraeus-bank/jobs returned 404 (slug/path TBD)" },
+      "_verified": "2026-06-24"
+    },
+    "crediabank": {
+      "name": "CrediaBank (ex-Attica + Pancreta)", "country": "GR",
+      "branches": { "value": "65 retail branches + 5 business centres", "status": "partially-confirmed" },
+      "recent_ma": { "value": "Attica + Pancreta IT/digital systems fully merged Sep-2025; 'New Experience' branch concept (flagship Skoufa St, Kolonaki) — renovate ALL branches by end-2026", "status": "partially-confirmed" },
+      "vendor_note": { "value": "Euronet signed deal (07/01/2026, close Q3-2026) to acquire CrediaBank merchant acquiring AND manage its in-branch + off-site ATMs", "status": "confirmed", "note": "removes CrediaBank ATM estate + acquiring/POS as direct Printec hardware targets; residual Printec scope = eKYC/onboarding + bank-level AML + in-branch self-service Euronet doesn't cover" },
+      "_verified": "2026-06-24"
+    }
+  },
+
+  "cyprus": {
+    "bank-of-cyprus": {
+      "name": "Bank of Cyprus", "country": "CY",
+      "branch_network": { "value": "~29 standard branches, 12 lending units, 15 transaction branches, 6 staffless 'Digital Branches & ATMs' (3 Nicosia, 1 each Limassol/Larnaca/Paphos)", "as_of": "2025-08", "status": "confirmed", "note": "baseline had staffless count as 4 — corrected to 6" },
+      "printec_relationship": { "value": "existing Glory TCR reference customer", "status": "confirmed" },
+      "recent_ma": { "value": "agreed to acquire CDBbank performing loan portfolio (~€150m) + deposits (~€500m), announced 23/03/2026, completion expected H2-2026", "status": "confirmed", "note": "3rd Cyprus integration event → migration/TMS/AML re-screening/cash-automation opportunity" },
+      "careers": { "ats": "SAP SuccessFactors (career55.sapsf.eu, company=bankofcypr)", "url": "https://www.bankofcyprus.com/en-gb/group/Careers/career-opportunities/", "access": "public page showed 0 vacancies 24/06/2026; reqs surface via career55.sapsf.eu" },
+      "_verified": "2026-06-24"
+    },
+    "eurobank-cyprus": {
+      "name": "Eurobank Limited (ex-Hellenic Bank)", "country": "CY",
+      "assets": { "value": "~€28bn", "status": "confirmed", "note": "now the LARGEST Cyprus bank" },
+      "recent_ma": { "value": "Hellenic Bank → Eurobank merger legally completed 03/12/2025; Hellenic brand discontinued", "status": "confirmed", "date": "2025-12-03" },
+      "careers": { "ats": "own portal eurobank.cy/en/group/open-vacancies", "access": "WebFetch 403 (anti-bot); ~8 open roles post-merger (digital channels, middleware, IT security, GenAI/analytics)" },
+      "_verified": "2026-06-24"
+    },
+    "alpha-bank-cyprus": {
+      "name": "Alpha Bank Cyprus (ex-AstroBank)", "country": "CY",
+      "assets": { "value": ">€6.6bn", "status": "confirmed", "note": "Cyprus' 3rd-largest bank" },
+      "recent_ma": { "value": "AstroBank acquisition completed 31/10/2025; unification of digital platforms, cards, apps & systems continuing 'gradually' through 2026 (ex-AstroBank app still separate)", "status": "confirmed", "date": "2025-10-31" },
+      "careers": { "ats": "no public ATS list — applications by email to careers@alphabank.com.cy", "access": "rely on Cyprus Work aggregation (press tier)" },
+      "_verified": "2026-06-24"
+    }
+  },
+
+  "romania": {
+    "banca-transilvania": {
+      "name": "Banca Transilvania", "country": "RO",
+      "atms": { "value": "~1,800 ATMs incl. 550+ multifunctional (BT Express / BT Express Plus, cash deposit/withdrawal in lei + FX)", "status": "confirmed", "note": "largest RO fleet — x-core/recycler/OptiCash/telemetry target" },
+      "careers": { "ats": "custom hrscapi JSON — PLAIN web_fetch works (no browser)", "url": "https://cariere.bancatransilvania.ro/hrscapi/api/CareersSite/jobOpenings?currentPage=1&itemsPerPage=50", "access": "returns all openings as JSON; ~18 openings (24/06/2026, down from 23)" },
+      "_verified": "2026-06-24"
+    },
+    "bcr": {
+      "name": "BCR (Erste Group)", "country": "RO",
+      "printec_relationship": { "value": "existing Printec customer — APTRA (NCR) reference", "status": "confirmed", "note": "upsell: NCR intelligent-deposit/recyclers, x-core, telemetry, OptiCash, managed services" },
+      "self_service": { "value": "'Self Service 24 Banking' zones (ATMs + multifunctional + rapid tellers)", "status": "confirmed" },
+      "careers": { "ats": "Erste Group careers (erstegroup-careers.com/bcr/...)", "access": "HTML readable via web_fetch; ~36 roles 24/06/2026", "url": "https://erstegroup-careers.com/bcr/go/bcr-career/4305701/" },
+      "_verified": "2026-06-24"
+    },
+    "intesa-sanpaolo-romania": {
+      "name": "Intesa Sanpaolo Bank Romania", "country": "RO",
+      "assets": { "value": "~€3.1bn", "status": "confirmed" },
+      "fleet": { "value": "58 branches, 700+ ATMs/multifunctional terminals (incl. Euronet)", "status": "confirmed" },
+      "recent_ma": { "value": "First Bank merger by absorption legally effective 31/10/2025; integration completed 03/11/2025", "status": "confirmed", "date": "2025-10-31" },
+      "leadership": { "value": "Anca Petcu — Chief Operations & Transformation Officer + VP (NBR-approved, announced ~12/03/2026); coordinates Operations & IT incl. ICT + Back Office & Payments", "status": "confirmed" },
+      "_verified": "2026-06-24"
+    },
+    "cec-bank": {
+      "name": "CEC Bank", "country": "RO",
+      "network": { "value": "~1,000-branch network (state-owned)", "status": "partially-confirmed" },
+      "self_service": { "value": "5 pilot 'Agenții Digitale' launched 05/06/2026 (self-service cash-in/out, FX, payments, transfers + videobanking); pilot stage, expansion decision pending; no vendor named", "status": "confirmed", "date": "2026-06-05", "note": "window to influence vendor choice — NCR recyclers/kiosks/videobanking/telemetry" },
+      "careers": { "access": "cec.ro press releases 403 (JS/WAF); cec.mingle.ro careers JS-blocked — use press + ZF/Bursa coverage" },
+      "_verified": "2026-06-24"
+    }
+  },
+
+  "bulgaria": {
+    "dsk-bank": {
+      "name": "DSK Bank (OTP)", "country": "BG",
+      "atms": { "value": "~730 ATMs (early 2026)", "status": "corrected", "note": "baseline said ~1,000 / ~874 (Aug-2025) — corrected to ~730; deposit-capable ATMs went euro-only from 01/01/2026 (single-currency-at-a-time limitation = CDM reconfiguration case)" },
+      "careers": { "ats": "dev.bg/company/dsk-bank (IT, server-rendered) + dskbank.bg/en/career", "access": "dev.bg readable; ~29 IT roles 24/06/2026; jobs.bg/bg.jooble index only 1 listing" },
+      "_verified": "2026-06-24"
+    },
+    "postbank-bg": {
+      "name": "Postbank / Eurobank Bulgaria", "country": "BG",
+      "self_service": { "value": "'Express Banking Digital Zones' (CASH recycler/CDM + cashless KIOSK) across 34 towns (~75% urban pop); +160% transaction growth after extending functionality", "status": "confirmed" },
+      "ai_program": { "value": "'100+ AI projects' program (announced Nov-2025); EVA AI voice bot live from early 2026; AI Loan Administration won Transform IT Awards 2026", "status": "confirmed" },
+      "_verified": "2026-06-24"
+    },
+    "unicredit-bulbank": {
+      "name": "UniCredit Bulbank", "country": "BG",
+      "it_team": { "value": "~180 IT specialists", "status": "aggregator" },
+      "careers": { "ats": "jobs.bg/en/company/unicreditbulbank", "access": "WebFetch 403 — count of 37 roles from snippet; BROWSER for full list" },
+      "_verified": "2026-06-24"
+    },
+    "ubb": {
+      "name": "UBB (KBC)", "country": "BG",
+      "leadership": { "value": "CEO Christof De Mil (since Jan 2025, registered 17/04/2025) — NOT a new change", "status": "confirmed" },
+      "_verified": "2026-06-24"
+    }
+  },
+
+  "serbia": {
+    "banca-intesa-beograd": {
+      "name": "Banca Intesa Beograd", "country": "RS",
+      "assets": { "value": "~€8.7bn", "status": "confirmed", "note": "LARGEST RS bank" },
+      "digital": { "value": "first RS bank with fully paperless in-branch experience via cloud QES (ConsentID + Intesa Mobi); 16,000+ ConsentID activations since 2023", "status": "partially-confirmed" },
+      "_verified": "2026-06-24"
+    },
+    "unicredit-serbia": {
+      "name": "UniCredit Bank Serbia", "country": "RS",
+      "assets": { "value": "~€7.6bn / 759.88 bln RSD, 10.85% share", "status": "corrected", "note": "2nd-largest RS bank; baseline conflated this with NLB Komercijalna's ~€6.2bn" },
+      "atms": { "value": "multifunctional 24/7 (RSD+EUR deposit, bill pay, PIN, mKes cardless); recycling-capable", "status": "confirmed" },
+      "_verified": "2026-06-24"
+    },
+    "nlb-komercijalna": {
+      "name": "NLB Komercijalna banka", "country": "RS",
+      "assets": { "value": "~€6.1-6.2bn / 711.58 bln RSD, ~10% share", "status": "corrected", "note": "ranked 5th-6th, NOT 3rd (baseline error); ~€5.6bn was 2024 data; part of NLB Group" },
+      "_verified": "2026-06-24"
+    },
+    "aikbank": {
+      "name": "AikBank (ex-AIK banka)", "country": "RS",
+      "rank": { "value": "3rd-largest RS bank after 31/03/2025 merger with Eurobank Direktna", "status": "corrected", "note": "baseline used pre-merger figures (60 branches / 400+ ATMs)" },
+      "network": { "value": "~110 branches, 500+ ATMs across 54 cities + 24/7 digital zones", "status": "partially-confirmed" },
+      "printec_relationship": { "value": "NCR-recycler customer", "status": "unverified", "note": "internal/CRM claim — cannot verify externally" },
+      "_verified": "2026-06-24"
+    },
+    "raiffeisen-serbia": {
+      "name": "Raiffeisen banka Serbia", "country": "RS",
+      "printec_relationship": { "value": "x-core multivendor ATM software customer ('Bank Yourself')", "status": "confirmed" },
+      "careers": { "ats": "poslovi.infostud.com (server-rendered, plain fetch)", "url": "https://poslovi.infostud.com/oglasi-za-posao-raiffeisen-banka-a.d." },
+      "_verified": "2026-06-24"
+    },
+    "otp-srbija": {
+      "name": "OTP banka Srbija", "country": "RS",
+      "careers": { "ats": "poslovi.infostud.com", "url": "https://poslovi.infostud.com/oglasi-za-posao-otp-banka", "access": "sustained 4-5 role AI/DevOps/Cloud/ICT-risk cluster (rotates, not escalates)" },
+      "_verified": "2026-06-24"
+    }
+  },
+
+  "croatia": {
+    "zagrebacka-banka": {
+      "name": "Zagrebačka banka (UniCredit)", "country": "HR",
+      "atms": { "value": "750+ ATMs (cash deposit on marked units) + dedicated coin-deposit self-service devices", "status": "unverified", "note": "from ZSE FY2025 annual report; LARGEST Croatian bank" },
+      "_verified": "2026-06-24"
+    },
+    "erste-croatia": {
+      "name": "Erste banka Hrvatska", "country": "HR",
+      "fleet": { "value": "~750 ATMs, 125 branches; 24h self-service zones (deposit-withdrawal ATMs, Erste Smart Cash, intelligent safes)", "status": "unverified", "note": "from bank site" },
+      "printec_relationship": { "value": "Printec OptiCash (APTRA) reference customer", "status": "confirmed" },
+      "leadership": { "value": "CEO Christoph Schoefboeck (Erste&Steiermärkische Bank d.d.)", "status": "confirmed" },
+      "_verified": "2026-06-24"
+    },
+    "hpb": {
+      "name": "HPB (Hrvatska poštanska banka)", "country": "HR",
+      "fleet": { "value": "69 centres, 655 ATMs", "status": "confirmed", "as_of": "2023" },
+      "recent_ma": { "value": "Nova hrvatska banka merged into HPB 03/07/2023 (ATM harmonisation 26-Jun–07-Jul-2023)", "status": "historical", "note": "COMPLETED 2023 — NOT a live 2026 integration (baseline/researcher mis-dated to 2026); fleet refresh is normal-lifecycle only" },
+      "careers": { "source": "public PDF", "url": "https://www.hpb.hr/UserDocsImages/Karijera/Natjecaji_javna_objava.pdf" },
+      "_verified": "2026-06-24"
+    }
+  },
+
+  "slovenia": {
+    "nlb": {
+      "name": "NLB (Nova Ljubljanska banka) Group", "country": "SI",
+      "leadership": { "value": "Reinhard Holl — Chief Transformation Officer / CTO (board); appointment announced 20/02/2025, CTO from Jun-2025, responsible for IT from Oct-2025", "status": "corrected", "note": "baseline had this as a Feb-2026 NEW appointment — it is ~1 yr into execution, NOT new; target 90%+ E2E-digitised transactions" },
+      "recent_ma": { "value": "takeover bid for Addiko at €37.00/share; acceptance deadline 22/07/2026 (extendable to 27/10/2026), ECB/SSM approval pending; competing RBI bid was €26.50", "status": "confirmed", "note": "if completed → multi-year SEE integration of Addiko 5-market ATM/card/channel estate" },
+      "careers": { "ats": "Cornerstone (nlb.csod.com)", "access": "JS-rendered — BROWSER-ONLY" },
+      "_verified": "2026-06-24"
+    },
+    "intesa-sanpaolo-slovenia": {
+      "name": "Intesa Sanpaolo Bank Slovenija", "country": "SI",
+      "leadership": { "value": "Mojca Kovač — CEO (announced 16/03/2026, succeeds Luigi Fuzio who moved to a Group role); first female CEO in ISP International Banks Division; ex-retail board member", "status": "confirmed" },
+      "_verified": "2026-06-24"
+    },
+    "otp-slovenija": {
+      "name": "OTP banka Slovenija", "country": "SI",
+      "leadership": { "value": "Radu Topliceanu — Retail board member", "status": "partially-confirmed" },
+      "careers": { "ats": "FledgeHR (otpbanka.fledgehr.com/jobs)", "access": "roles by division + detail /jobs/{id}; bebee.com/si mirrors JD text" },
+      "_verified": "2026-06-24"
+    },
+    "bankart": {
+      "name": "Bankart (SI sector processor)", "country": "SI",
+      "profile": { "value": "bank-owned sector processor (~250 staff): cards, POS, transaction routing/acquiring; central payments infra built with Nets (SCT incl. instant via Nets RealTime24/7, ~2017-2018)", "status": "partially-confirmed", "note": "not a new build; adjacency = INETCO monitoring, fraud/AML on instant rails, POS/TMS, Thales HSM" },
+      "_verified": "2026-06-24"
+    }
+  },
+
+  "hungary": {
+    "_act_xviii_atm_mandate": {
+      "name": "MNB Act XVIII ATM-deployment mandate (HU)", "country": "HU",
+      "summary": { "value": "1,039 ATMs total to be deployed across 9 named banks for the 500-1,000-resident phase, deadline 31/12/2026, ~HUF 4.156bn aggregate", "status": "confirmed", "source": "njt.hu 2025. évi XVIII. törvény; Economx/money.hu", "date": "2025-06-27" },
+      "per_bank_counts": { "OTP": 428, "MBH": 195, "K&H": 117, "Erste": 104, "Raiffeisen": 65, "CIB": 52, "UniCredit": 52, "Granit": 13, "MagNet": 13 },
+      "note": "Phase 1 (1,000+ residents) due 31/12/2025; transfer contracts for the 500+ phase due by 28/02/2026; banks may swap settlements. Largest hard ATM-procurement signal in the region. HANDOFF: Agent 2 watch EKR/kozbeszerzes.hu for the 9 banks' rural-ATM lots; Agent 6 map each bank's incumbent ATM vendor.",
+      "_verified": "2026-06-24"
+    },
+    "otp-bank": {
+      "name": "OTP Bank (Hungary)", "country": "HU",
+      "atms": { "value": "~1,900 total / ~500 deposit-capable; ~90% of cash deposits via ATM; 73% mobile-banking usage", "status": "aggregator", "note": "NOT confirmed on otpbank.hu — secondary figures; OTP has the largest HU ATM network. Mandate: +428 ATMs (largest allocation)" },
+      "careers": { "ats": "SAP SuccessFactors (karrier.otpbank.hu/allasajanlatok)", "access": "JS shell to plain fetch — BROWSER for full enumeration" },
+      "_verified": "2026-06-24"
+    },
+    "kh-bank": {
+      "name": "K&H Bank (KBC)", "country": "HU",
+      "leadership": { "value": "CEO Péter Roebben (since 01/01/2025); Loska Gergely — Chief Information & Innovation Officer (CIIO), joined ExCo 14/07/2025 (IT ops + digital transformation)", "status": "confirmed" },
+      "mandate": { "value": "+117 ATMs by end-2026 (Act XVIII)", "status": "confirmed" },
+      "atms": { "value": "~600 ATMs / all-NFC / 85% cashier-less branches", "status": "aggregator", "note": "secondary, not primary-confirmed" },
+      "_verified": "2026-06-24"
+    },
+    "erste-hungary": {
+      "name": "Erste Bank Hungary", "country": "HU",
+      "leadership": { "value": "CEO Radovan Jelasity; Harmati László is Deputy CEO Retail (since 02/04/2013), board mandate expires 31/05/2026", "status": "corrected", "note": "baseline wrongly named 'Harmati László' as CEO with a 28/02/2026 expiry — Harmati is the Retail DEPUTY (mandate to 31/05/2026); the CEO is Jelasity" },
+      "mandate": { "value": "+104 ATMs (Act XVIII)", "status": "confirmed" },
+      "_verified": "2026-06-24"
+    },
+    "mbh-bank": {
+      "name": "MBH Bank", "country": "HU",
+      "mandate": { "value": "+195 ATMs (Act XVIII, 2nd-largest allocation)", "status": "confirmed" },
+      "self_service": { "value": "FaceKom-based self-service 'capsules' (secure online ID + videobank), advisory branch at Etele Plaza (May-2026, no cash desk), consolidation of former Budapest Bank ATMs", "status": "partially-confirmed", "note": "x-core/eKYC (Namirial) + Budapest Bank ATM consolidation opportunity" },
+      "_verified": "2026-06-24"
+    },
+    "cib-bank": {
+      "name": "CIB Bank (Intesa Sanpaolo)", "country": "HU",
+      "leadership": { "value": "Luigi Fuzio — new Chairman & CEO (~24/03/2026, ex-ISP Slovenia); Pál Simák departed to ISP Milan; Balázs Szabó general deputy CEO", "status": "confirmed", "note": "adversarial pass REVERSED an earlier 'stale' misread — the appointment is real and is_new=true" },
+      "mandate": { "value": "+52 ATMs (Act XVIII)", "status": "confirmed" },
+      "_verified": "2026-06-24"
+    }
+  },
+
+  "czechia": {
+    "komercni-banka": {
+      "name": "Komerční banka", "country": "CZ",
+      "atms": { "value": "750+ ATMs, 481 deposit ATMs (BANKNOTE deposit only — max 200 notes/350,000 CZK; CANNOT deposit coins, NO banknote-to-coin conversion), 153 branches", "status": "corrected", "note": "baseline/researcher wrongly claimed coin deposit + banknote-to-coin conversion — kb.cz primary contradicts. DROP the Glory coin-recycler pitch; lead with banknote recyclers/deposit ATMs + x-core/monitoring" },
+      "program": { "value": "'Nová éra bankovnictví' — ~80 key branches rebuilt to new concept by end-2025 (~½ network)", "status": "confirmed" },
+      "_verified": "2026-06-24"
+    },
+    "csob": {
+      "name": "ČSOB", "country": "CZ",
+      "atms": { "value": "~1,000 ATMs, ~230 recycling", "status": "aggregator", "as_of": "2025-02", "note": "Feb-2025 figure; older '239 deposit ATMs' from a 2020 press release; current 2025/26 totals not freshly confirmed. KBC-owned" },
+      "_verified": "2026-06-24"
+    },
+    "raiffeisenbank-cz": {
+      "name": "Raiffeisenbank ČR", "country": "CZ",
+      "careers": { "ats": "rb.jobs.cz/volna-mista", "access": "dedicated IT track ~51 roles (24/06/2026)" },
+      "_verified": "2026-06-24"
+    },
+    "ceska-sporitelna": {
+      "name": "Česká spořitelna (Erste)", "country": "CZ",
+      "careers": { "ats": "kariera.csas.cz (JS SPA)", "access": "BROWSER-ONLY; csas.jobs.cz decommissioned (S3 NoSuchKey)" },
+      "_verified": "2026-06-24"
+    }
+  },
+
+  "slovakia": {
+    "slovenska-sporitelna": {
+      "name": "Slovenská sporiteľňa (Erste)", "country": "SK",
+      "leadership": { "value": "Michaela Bauer — CEO (took office 01/03/2026, succeeds Peter Krutil); ex-KBC Chief Innovation Officer (CZ), former ČSOB CZ board member; remit spans digital channels, payments, IT, data, AI, operations", "status": "confirmed", "note": "SK's largest bank; KBC/ČSOB recycler background favourable for full Printec stack" },
+      "_verified": "2026-06-24"
+    },
+    "tatra-banka": {
+      "name": "Tatra banka (RBI)", "country": "SK",
+      "careers": { "ats": "profesia.sk (company_id=565)", "url": "https://www.profesia.sk/en/work/information-technology/?company_id=565", "access": "IT filter readable via plain fetch; ~11-13 IT roles (core banking + digital channels)" },
+      "leadership_source": "banky.sk — dated SK/CZ top-management-changes aggregator (standing high-value leadership source)",
+      "_verified": "2026-06-24"
+    },
+    "vub-banka": {
+      "name": "VÚB banka (Intesa Sanpaolo)", "country": "SK",
+      "core": { "value": "core-banking modernisation (Oracle Flexcube in stack) + branch redesign to advisory + cloud/AI (Azure, Oracle)", "status": "unverified", "note": "from AppsRunTheWorld/MINDSPIRE — not primary-confirmed; window to re-bid x-core/kiosks/cash-automation if real" },
+      "_verified": "2026-06-24"
+    },
+    "unicredit-cz-sk": {
+      "name": "UniCredit Bank Czech Republic and Slovakia", "country": "CZ/SK",
+      "leadership": { "value": "Marco Iannaccone — Chairman & CEO (took office 01/04/2026, succeeds Jakub Dušílek); concurrently CEE Head of Client Solutions", "status": "confirmed", "note": "single decision-maker across CZ+SK footprint" },
+      "_verified": "2026-06-24"
+    }
+  },
+
+  "ukraine": {
+    "privatbank": {
+      "name": "PrivatBank", "country": "UA",
+      "fleet": { "value": "7,433 ATMs, 9,831 self-service terminals, 346,820 POS", "status": "confirmed", "source": "NBU data via fixygen", "as_of": "2026-05-01", "note": "largest UA ATM operator" },
+      "self_service": { "value": "ATM-Recycler cash FX service (USD/EUR→UAH, ≤1,000 per tx, 24/7, no fee) launched 23/12/2024, recycler network expanding; solar+satellite mobile autonomous ATMs", "status": "confirmed" },
+      "printec_relationship": { "value": "existing NCR-recycler reference customer (1,140 NCR recyclers per Agent-1 brief)", "status": "confirmed" },
+      "careers": { "ats": "robota.ua company203681", "access": "WebFetch 403 (anti-bot) — BROWSER or API; work.ua/DOU mirrors" },
+      "_verified": "2026-06-24"
+    },
+    "oschadbank": {
+      "name": "Oschadbank", "country": "UA",
+      "leadership": { "value": "Yuriy Katsion — Chairman of the Management Board (took office 26/01/2026, open competition, NBU-approved); career Oschadbank since 2001", "status": "confirmed", "note": "2025-2028 strategy: wartime resilience + recovery → Power Banking, autonomous SST, telemetry, physical security; pairs with SST-procurement hire" },
+      "fleet": { "value": "large state-bank ATM fleet (multi-thousand)", "status": "partially-confirmed" },
+      "careers": { "ats": "robota.ua company234100", "access": "403 — work.ua company49602 + DOU mirrors" },
+      "_verified": "2026-06-24"
+    },
+    "monobank": {
+      "name": "monobank (Universal Bank)", "country": "UA",
+      "fleet": { "value": "NO own ATMs; ~1,200 own card top-up terminals (Aug-2025), network expanding", "status": "confirmed", "note": "own-ATM ambition is only a 2021 founder statement, not a current program" },
+      "careers": { "ats": "robota.ua company127046" },
+      "_verified": "2026-06-24"
+    },
+    "power-banking": {
+      "name": "Power Banking network (NBU-led)", "country": "UA",
+      "summary": { "value": "~2,408 resilient branches (Feb-2026, ~75% systemically-important banks); national ATM roaming (~10,000-20,000 UAH/day during blackouts); alternative power/comms/reinforced collection", "status": "partially-confirmed", "note": "sector-wide resilience play: telemetry/monitoring, multivendor SW for cross-bank roaming, autonomous/backup-powered ATMs, physical security" },
+      "_verified": "2026-06-24"
+    }
+  },
+
+  "western_balkans": {
+    "raiffeisen-albania": {
+      "name": "Raiffeisen Bank Albania", "country": "AL",
+      "fleet": { "value": "72 branches (8 digital), 198 ATMs (largest estate in Albania), 345,000+ Raiffeisen ON users", "status": "corrected", "note": "baseline said 75 branches/181 ATMs/169,000 users — all three were stale; corrected to primary raiffeisen.al figures" },
+      "_verified": "2026-06-24"
+    },
+    "credins-bank": {
+      "name": "Credins Bank", "country": "AL",
+      "fleet": { "value": "52 branches, 99 ATMs; ATM txns +11% YoY, POS +31%; Credins Online 78%+ of customers", "status": "partially-confirmed", "as_of": "2026" },
+      "leadership": { "value": "CEO Maltin Korkuti", "status": "confirmed" },
+      "strategy": { "value": "branch-to-advisory transformation; SEPA live 2025, Instant Payment top 2026 priority; cybersecurity top investment", "status": "partially-confirmed" },
+      "_verified": "2026-06-24"
+    },
+    "bbi": {
+      "name": "Bosna Bank International (BBI)", "country": "BA",
+      "fleet": { "value": "13 'Digital Smart ATM' deposit-capable locations + ~9 multipurpose ATMs (24/7 cash-in, QR market deposit, FX, cardless via KVIKO app)", "status": "partially-confirmed", "note": "unknown incumbent ATM vendor = displacement opening for NCR intelligent-deposit + x-core + telemetry" },
+      "_verified": "2026-06-24"
+    },
+    "nlb-skopje": {
+      "name": "NLB Banka Skopje", "country": "MK",
+      "leadership": { "value": "Kiril Buhov — newly appointed Management Board member (1-yr mandate from 03/01/2026; IT/digital/cyber/banking-ops; ex-Halkbank MK IS Division Director); Katerina Janković reappointed (4-yr from 30/01/2026); Igor Davčevski departed 02/01/2026", "status": "confirmed", "note": "named IT/digital sponsor; NLB also a likely Addiko acquirer" },
+      "leadership_source": "bankarstvo.mk — primary MK leadership + careers source",
+      "_verified": "2026-06-24"
+    },
+    "hipotekarna": {
+      "name": "Hipotekarna banka", "country": "ME",
+      "hiring": { "value": "'ATM specijalista' in Payment Card Acceptance Service (manage ATMs, monitor cash control, vendor liaison) — deadline 23/06/2026", "status": "partially-confirmed", "source": "bankar.me (403 to fetch; title-corroborated)" },
+      "leadership_source": "bankar.me",
+      "_verified": "2026-06-24"
+    }
+  }
+}

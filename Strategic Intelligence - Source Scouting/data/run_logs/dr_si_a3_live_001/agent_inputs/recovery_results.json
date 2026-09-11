@@ -1,0 +1,142 @@
+[
+ {
+  "candidate_id": "dr_si_a3_live_001__c_005",
+  "source_url": "https://www.bsi.si/sl/nadzor-bancnega-sistema/nadzorniska-razkritja-in-seznami",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a3_live_001__c_010",
+  "source_url": "https://www.bsi.si/sl/poslovni-subjekti/porocanje/tehnicna-navodila-in-xml-sheme",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a3_live_001__c_011",
+  "source_url": "https://www.bsi.si/sl/pravni-okvir/arhiv-navodil",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a3_live_001__c_086",
+  "source_url": "https://www.intesasanpaolobank.si/prebivalstvo/nasa-skupina/novosti-in-publikacije/aktualne-objave/takojsnja-placila-poslovna-banka-IN0.html",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a3_live_001__c_105",
+  "source_url": "https://www.intesasanpaolobank.si/document/documents/ISPSLOVENIA/storitve-na-racunu/Splosni_pogoji_za_opravljanje_placilnih_storitev_za_potrosnike.pdf",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a3_live_001__c_130",
+  "source_url": "https://www.bsi.si/sl/nadzor-bancnega-sistema/register-subjektov-nadzora",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a3_live_001__c_218",
+  "source_url": "https://www.bsi.si/en/banking-supervision/register-of-supervised-entities",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a3_live_001__c_239",
+  "source_url": "https://seonet.ljse.si/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a3_live_001__c_245",
+  "source_url": "https://www.intesasanpaolobank.si/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a3_live_001__c_251",
+  "source_url": "https://www.sparkasse.si/sl/gospodarstvo/poslovni-racun/placilni-promet/takojsnja-placila",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a3_live_001__c_278",
+  "source_url": "https://ejn.gov.si/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a3_live_001__c_283",
+  "source_url": "https://ejn.gov.si/sistem/usmeritve-in-navodila/koristne-informacije.html",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a3_live_001__c_045",
+  "source_url": "https://www.coe.int/en/web/moneyval",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_si_a3_live_001__c_144",
+  "source_url": "https://www.openbankingtracker.com/country/slovenia",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ }
+]

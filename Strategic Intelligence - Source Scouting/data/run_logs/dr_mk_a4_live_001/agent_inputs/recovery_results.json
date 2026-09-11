@@ -1,0 +1,122 @@
+[
+ {
+  "candidate_id": "dr_mk_a4_live_001__c_122",
+  "source_url": "https://www.imf.org/-/media/files/publications/wp/2018/wp1817.pdf",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_mk_a4_live_001__c_178",
+  "source_url": "https://www.netcetera.com/references/Halkbank.html",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_mk_a4_live_001__c_179",
+  "source_url": "https://support.google.com/wallet/answer/12059326?hl=en&co=GENIE.CountryCode%3DMK",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_mk_a4_live_001__c_182",
+  "source_url": "https://forum.it.mk/threads/dali-nekoj-ima-iskustvo-so-casys-kasis.27443/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_mk_a4_live_001__c_224",
+  "source_url": "https://data.imf.org/-/media/iData/External-Storage/Documents/6283296788924FC692761C4DE4A71BA7/en/FAS-2024-Highlights-Report.pdf",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_mk_a4_live_001__c_226",
+  "source_url": "https://www.elibrary.imf.org/view/journals/002/2025/101/article-A001-en.xml",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_mk_a4_live_001__c_235",
+  "source_url": "https://documents1.worldbank.org/curated/en/099008512112429283/pdf/IDU1102c34701ba0b146d21a1e010d27c68032cf.pdf",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_mk_a4_live_001__c_236",
+  "source_url": "https://documents1.worldbank.org/curated/en/099011624132054588/pdf/P1787031cca90801019d011a41f21efe348.pdf",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_mk_a4_live_001__c_247",
+  "source_url": "https://www.sparkasse.mk/mk/za-nas/finanskiski-izveshtai",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_mk_a4_live_001__c_290",
+  "source_url": "https://visa.gcs-web.com/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_mk_a4_live_001__c_297",
+  "source_url": "https://iute.mk/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_mk_a4_live_001__c_317",
+  "source_url": "https://ingenico.com/en/products-services/payment-terminals",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ }
+]

@@ -1,0 +1,527 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://printec.group/schemas/strategic-intelligence-banking-payments/access_review_task.schema.json",
+  "title": "AccessReviewTask",
+  "description": "An AccessReviewTask is a SOURCING-LAYER EXTENSION and a HUMAN HANDOFF object. It is raised by the Source Discovery Scout or a connector when a promising source is found but cannot be fully accessed, collected, or legally evaluated without human help (login, registration, paid subscription, manual download, credentials, terms/legal review, etc.). It is NOT Evidence, a Claim, a Signal, a BankNeed, or an Opportunity, and must never carry downstream intelligence content. It links back to the SourceCandidate that raised it via candidate_id (the SourceCandidate references it via access_review_task_id). task_status is the AUTHORITATIVE ROLLUP state, computed deterministically from human_review.review_status and resolution.resolution_status; it must not be hand-edited into a state inconsistent with those sub-statuses (JSON Schema cannot fully enforce this cross-field rule). resolution.resolution_status = source_promoted mirrors the SourceCandidate.promotion / Source Registry update; it does not replace them as the source of truth.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "task_id",
+    "discovery_run_id",
+    "candidate_id",
+    "created_at",
+    "updated_at",
+    "task_status",
+    "priority",
+    "country",
+    "sector",
+    "workstream",
+    "source_name",
+    "source_url",
+    "target_urls",
+    "access_status",
+    "legal_status",
+    "blocker_type",
+    "observed_blocker",
+    "automated_attempts",
+    "requested_human_actions",
+    "requested_actions_notes",
+    "human_review",
+    "resolution"
+  ],
+  "properties": {
+    "task_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Stable unique identifier for this access-review task."
+    },
+    "discovery_run_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Identifier of the discovery run that raised this task; links to data/run_logs."
+    },
+    "candidate_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "candidate_id of the SourceCandidate that raised this task (SourceCandidate.access_review_task_id points back here)."
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the task was created (RFC 3339 / ISO 8601 date-time)."
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the task was last updated (RFC 3339 / ISO 8601 date-time)."
+    },
+    "task_status": {
+      "type": "string",
+      "enum": [
+        "open",
+        "in_review",
+        "waiting_for_human",
+        "resolved",
+        "rejected",
+        "blocked",
+        "cancelled"
+      ],
+      "description": "AUTHORITATIVE ROLLUP state for the task, computed deterministically from human_review.review_status and resolution.resolution_status. It must not be hand-edited independently of those sub-statuses."
+    },
+    "priority": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ],
+      "description": "Triage priority for the human handoff."
+    },
+    "country": {
+      "type": "string",
+      "pattern": "^[A-Z]{2}$",
+      "description": "ISO 3166-1 alpha-2 country code, e.g. 'GR'."
+    },
+    "sector": {
+      "type": "string",
+      "enum": [
+        "banking",
+        "payments",
+        "both"
+      ],
+      "description": "Which side of Printec's market the source primarily serves."
+    },
+    "workstream": {
+      "type": "string",
+      "enum": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "A6",
+        "A8",
+        "A9"
+      ],
+      "description": "Workstream code per architecture section 16 (A7 is intentionally not defined)."
+    },
+    "source_name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Human-readable name of the source this task concerns."
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Primary/landing URL of the source. May be only the landing page; see target_urls for specific assets."
+    },
+    "target_urls": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "description": "Specific report, PDF, download page, document page, tender page, or asset URLs the human should inspect. May be empty when no specific asset is known."
+    },
+    "access_status": {
+      "type": "string",
+      "enum": [
+        "public",
+        "blocked",
+        "requires_free_account",
+        "requires_paid_subscription",
+        "requires_manual_download",
+        "requires_credentials",
+        "requires_legal_review",
+        "forbidden_do_not_collect",
+        "unknown"
+      ],
+      "description": "Access boundary per sourcing_layer_scope.md section 7. Matches SourceCandidate.access_status."
+    },
+    "legal_status": {
+      "type": "string",
+      "enum": [
+        "allowed",
+        "unclear",
+        "restricted",
+        "forbidden",
+        "requires_review"
+      ],
+      "description": "Legal disposition for collecting from this source. Matches SourceCandidate.legal_status."
+    },
+    "blocker_type": {
+      "type": "string",
+      "enum": [
+        "login_required",
+        "free_registration_required",
+        "paid_subscription_required",
+        "captcha_or_bot_block",
+        "manual_download_required",
+        "file_not_directly_linked",
+        "credentials_needed",
+        "terms_of_use_unclear",
+        "legal_review_needed",
+        "geo_blocked",
+        "broken_link",
+        "forbidden_source",
+        "unknown"
+      ],
+      "description": "Technical/policy diagnosis of the blocker. Definitions: login_required = an interactive login form blocks access; free_registration_required = a free account signup appears necessary; paid_subscription_required = paid access is necessary; credentials_needed = credentials may exist or may be granted but are not currently available to the system; manual_download_required = a human likely has to download a file manually; file_not_directly_linked = the landing page references a file/report but the downloadable asset is not directly reachable; forbidden_source = the source appears legally or policy-forbidden for collection."
+    },
+    "observed_blocker": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Free-text description of what actually blocked access, as observed."
+    },
+    "automated_attempts": {
+      "type": "array",
+      "description": "History of automated access attempts. May be empty if the task was raised from classification alone rather than an actual fetch attempt.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "attempted_at",
+          "attempted_by",
+          "actions",
+          "result_summary",
+          "error_messages",
+          "artifact_paths"
+        ],
+        "properties": {
+          "attempted_at": {
+            "type": "string",
+            "format": "date-time",
+            "description": "When this attempt was made (RFC 3339 / ISO 8601 date-time)."
+          },
+          "attempted_by": {
+            "type": "string",
+            "description": "Routine or connector that made the attempt."
+          },
+          "actions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Actions taken during the attempt. May be empty."
+          },
+          "result_summary": {
+            "type": "string",
+            "description": "Short summary of the attempt result."
+          },
+          "error_messages": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Error messages captured during the attempt. May be empty."
+          },
+          "artifact_paths": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Paths to artifacts captured during the attempt; screenshots are allowed as artifacts. May be empty."
+          }
+        }
+      }
+    },
+    "requested_human_actions": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "create_free_account_if_allowed",
+          "check_terms_of_use",
+          "download_document_manually",
+          "upload_document_to_ingestion_folder",
+          "provide_credentials_if_permitted",
+          "confirm_subscription_access",
+          "mark_source_forbidden",
+          "reject_candidate",
+          "approve_manual_collection",
+          "clarify_access_route",
+          "other"
+        ]
+      },
+      "description": "Non-empty, de-duplicated list of concrete actions requested from the human."
+    },
+    "requested_actions_notes": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Nullable free-text that should explain any 'other' action or otherwise clarify the request."
+    },
+    "human_review": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Human review state for access/legal/credential clearance. Feeds the task_status rollup. Null-valued fields are expected before review occurs.",
+      "required": [
+        "review_status",
+        "reviewer",
+        "reviewed_at",
+        "review_notes",
+        "legal_notes",
+        "credentials_notes",
+        "redistribution_notes"
+      ],
+      "properties": {
+        "review_status": {
+          "type": "string",
+          "enum": [
+            "not_reviewed",
+            "needs_review",
+            "approved",
+            "rejected",
+            "legal_review_required",
+            "credentials_required",
+            "resolved"
+          ],
+          "description": "This enum is intentionally different from SourceCandidate.review.review_status: AccessReviewTask tracks human access/legal/credential review, not candidate lifecycle review."
+        },
+        "reviewer": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Identifier of the human reviewer; null until reviewed."
+        },
+        "reviewed_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time",
+          "description": "When reviewed (RFC 3339 / ISO 8601 date-time); null until reviewed."
+        },
+        "review_notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Free-text reviewer notes; null if none."
+        },
+        "legal_notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Notes on legal/terms considerations; null if none."
+        },
+        "credentials_notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Notes on credentials/access provisioning; null if none."
+        },
+        "redistribution_notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Notes on redistribution/retention constraints; null if none."
+        }
+      }
+    },
+    "resolution": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Resolution state of the task. Feeds the task_status rollup. Null-valued fields are expected before resolution.",
+      "required": [
+        "resolution_status",
+        "resolved_at",
+        "resolved_by",
+        "outcome_summary",
+        "linked_uploaded_document_ids",
+        "updated_candidate_id",
+        "updated_source_id",
+        "follow_up_required",
+        "follow_up_notes"
+      ],
+      "properties": {
+        "resolution_status": {
+          "type": "string",
+          "enum": [
+            "unresolved",
+            "access_granted",
+            "manual_upload_completed",
+            "credentials_added",
+            "collection_forbidden",
+            "candidate_rejected",
+            "source_promoted",
+            "no_action_possible"
+          ],
+          "description": "Outcome of the task. 'source_promoted' mirrors SourceCandidate.promotion / the Source Registry update; it does not replace them as the source of truth."
+        },
+        "resolved_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time",
+          "description": "When resolved (RFC 3339 / ISO 8601 date-time); null until resolved."
+        },
+        "resolved_by": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Who resolved the task; null until resolved."
+        },
+        "outcome_summary": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Free-text summary of the resolution outcome; null if not yet resolved."
+        },
+        "linked_uploaded_document_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "IDs of documents manually uploaded as a result of this task (pointers only; not document content). May be empty."
+        },
+        "updated_candidate_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "candidate_id updated as a result; null if none."
+        },
+        "updated_source_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Source Registry source_id updated as a result; null if none."
+        },
+        "follow_up_required": {
+          "type": "boolean",
+          "description": "Whether further follow-up is required after this resolution."
+        },
+        "follow_up_notes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Notes on required follow-up; null if none."
+        }
+      }
+    },
+    "assigned_to": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Optional. Person or queue the task is assigned to; null if unassigned."
+    },
+    "due_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Optional. When the task should be resolved by (RFC 3339 / ISO 8601 date-time); important for time-sensitive sources such as tenders. Null if none."
+    },
+    "time_sensitive": {
+      "type": "boolean",
+      "description": "Optional. True when the source/asset is time-sensitive (e.g. a tender with a closing date)."
+    },
+    "raised_by": {
+      "type": "string",
+      "description": "Optional. The routine or connector that raised this task."
+    },
+    "cost_hint": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Optional. Rough cost indication for paid access; null if unknown."
+    },
+    "cost_notes": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Optional. Free-text notes on cost; null if none."
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true,
+      "description": "Optional free-form extension bag. This is the ONLY place additional properties are allowed."
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "anyOf": [
+          {
+            "required": [
+              "access_status"
+            ],
+            "properties": {
+              "access_status": {
+                "const": "forbidden_do_not_collect"
+              }
+            }
+          },
+          {
+            "required": [
+              "legal_status"
+            ],
+            "properties": {
+              "legal_status": {
+                "const": "forbidden"
+              }
+            }
+          }
+        ]
+      },
+      "then": {
+        "properties": {
+          "resolution": {
+            "properties": {
+              "resolution_status": {
+                "not": {
+                  "enum": [
+                    "access_granted",
+                    "manual_upload_completed",
+                    "credentials_added",
+                    "source_promoted"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "blocker_type"
+        ],
+        "properties": {
+          "blocker_type": {
+            "const": "forbidden_source"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "legal_status": {
+            "enum": [
+              "forbidden",
+              "requires_review"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

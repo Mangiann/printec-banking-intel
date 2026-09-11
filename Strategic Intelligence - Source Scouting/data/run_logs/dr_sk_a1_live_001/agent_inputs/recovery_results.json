@@ -1,0 +1,352 @@
+[
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_001",
+  "source_url": "https://www.slsp.sk/sk/informacie-o-banke/investori/financne-ukazovatele",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_013",
+  "source_url": "https://www.primabanka.sk/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_019",
+  "source_url": "https://ceri.nbs.sk/prospekty",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://ceri.nbs.sk:443/login",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_044",
+  "source_url": "https://www.slsp.sk/en/information-about-bank/investors/financial-indicators",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_069",
+  "source_url": "https://www.slsp.sk/en/information-about-bank/investors/ratings",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_121",
+  "source_url": "https://www.anasoft.com/sk/home/referencie/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.anasoft.com/sk/referencie",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_127",
+  "source_url": "https://ingenico.com/en/newsroom/press-releases",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_135",
+  "source_url": "https://ceri.nbs.sk/issuers",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_188",
+  "source_url": "https://ceri.nbs.sk/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_200",
+  "source_url": "https://www.slsp.sk/sk/vans/zhodnotenie-financii/kapitalove-trhy/dlhopisy-a-hypotekarne-zalozne-listy",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_204",
+  "source_url": "https://ceri.nbs.sk/manuals",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_206",
+  "source_url": "https://registre.nbs.sk/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_220",
+  "source_url": "https://www.csob.sk/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.csob.sk/individualni-klienti",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_230",
+  "source_url": "https://subjekty.nbs.sk/sk/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_231",
+  "source_url": "https://subjekty.nbs.sk/api/psd2",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://subjekty.nbs.sk/sk/api/psd2",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_247",
+  "source_url": "https://www.slsp.sk/sk/biznis/globalpayments",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_290",
+  "source_url": "https://subjekty.nbs.sk/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://subjekty.nbs.sk/sk/",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_302",
+  "source_url": "https://www.primabanka.sk/platobne-sluzby/psd2-poskytovatelia-ps",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_003",
+  "source_url": "https://www.tatrabanka.sk/sk/o-banke/financne-ukazovatele/financne-spravy-spolocnosti/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_004",
+  "source_url": "https://www.raiffeisen.sk/sk/o-banke/dolezite-informacie/financne-ukazovatele/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_020",
+  "source_url": "https://finstat.sk/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_037",
+  "source_url": "https://www.tatrabanka.sk/en/about-bank/economic-results/annual-reports/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_058",
+  "source_url": "https://finstat.sk/00686930",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_059",
+  "source_url": "https://www.tatrabanka.sk/sk/o-banke/financne-ukazovatele/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_105",
+  "source_url": "https://www.finstat.sk/00682420",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_113",
+  "source_url": "https://www.finstat.sk/35760419",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_132",
+  "source_url": "https://www.finstat.sk/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_166",
+  "source_url": "https://www.tatrabanka.sk/en/about-bank/people/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_202",
+  "source_url": "https://www.tatrabanka.sk/en/about-bank/economic-results/covered-bonds/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_219",
+  "source_url": "https://www.tatrabanka.sk/sk/o-banke/financne-ukazovatele/ostatne-informacie/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_245",
+  "source_url": "https://www.globalpayments.sk/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_260",
+  "source_url": "https://finstat.sk/31372074",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_280",
+  "source_url": "https://finstat.sk/36631124",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_289",
+  "source_url": "https://index.sme.sk/c/773427/novy-medzibankovy-platobny-system-sips-je-uz-v-prevadzke.html",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.sme.sk/index/c/novy-medzibankovy-platobny-system-sips-je-uz-v-prevadzke",
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ },
+ {
+  "candidate_id": "dr_sk_a1_live_001__c_326",
+  "source_url": "https://finstat.sk/30813182",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "browser-handshake GET 200"
+ }
+]

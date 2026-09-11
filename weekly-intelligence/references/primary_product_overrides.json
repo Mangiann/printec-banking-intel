@@ -1,0 +1,9 @@
+{
+  "_note": "Which product line a signal LEADS on. By default ingest.py takes the first category in product_map.json that matched, so a row is filed under whichever category the reference file happens to list first — atm_recycling — regardless of what the row is actually about. That is a systemic bias, not a per-row mistake; until it is fixed at the ranking level, this file re-files the rows where it produces a plainly wrong lead. Key = the signal's slug (its bank_theme slugified, as it appears in dashboard-data.json). The named product must already be among the row's matched products; ingest.py warns and ignores the entry otherwise.",
+  "overrides": {
+    "ecb-ssm-2026-0301-end-of-life-ict-action-plans-due-to-supervisory-teams-by-31-10": {
+      "primary_product": "compliance_resilience",
+      "why": "A supervisory letter that binds every significant institution to file an AI-cyber action plan by 31/10/2026. Its ATM relevance is a consequence of the end-of-life clause, not the subject. Raised on the strategy call of 04/09/2026 (26:24): it belongs at the top of Compliance, not of ATMs."
+    }
+  }
+}

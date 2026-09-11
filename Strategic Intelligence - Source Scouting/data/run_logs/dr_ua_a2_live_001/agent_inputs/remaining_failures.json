@@ -1,0 +1,522 @@
+[
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_010",
+  "source_url": "https://specifications.prozorro.org/specifications",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_014",
+  "source_url": "https://dozorro.org/tools",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_019",
+  "source_url": "https://e-tender.ua/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_021",
+  "source_url": "https://spending.gov.ua/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_030",
+  "source_url": "https://zakupki.com.ua/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_033",
+  "source_url": "https://youcontrol.com.ua/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_041",
+  "source_url": "https://dozorro.org/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_042",
+  "source_url": "https://dozorro.org/blog",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_043",
+  "source_url": "https://ti-ukraine.org/en/ti_format/research/public-procurement/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_045",
+  "source_url": "https://promo.dream.gov.ua/en/partners",
+  "outcome": "unresolved",
+  "http_status": 522,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 522"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_055",
+  "source_url": "https://toolkit.data.gov.ua/documents/OpenDataToolkit-14_Public-procurement.pdf",
+  "outcome": "unresolved",
+  "http_status": 502,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 502"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_056",
+  "source_url": "https://dozorro.org/ngo/TI-Ukraine",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_058",
+  "source_url": "https://rpr.org.ua/",
+  "outcome": "unresolved",
+  "http_status": 429,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 429"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_072",
+  "source_url": "https://fondy.ua/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "TimeoutError"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_086",
+  "source_url": "https://sibis.com.ua/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_094",
+  "source_url": "https://help-biz.sensebank.com.ua/hc/uk/articles/360015799420",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_104",
+  "source_url": "https://nabu.ua/ua/banki-uchasniki-nabu.html",
+  "outcome": "unresolved",
+  "http_status": 429,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 429"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_105",
+  "source_url": "https://nabu.ua/ua/fintech-payments-forum-2026.html",
+  "outcome": "unresolved",
+  "http_status": 429,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 429"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_107",
+  "source_url": "https://ukbs.org.ua/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_122",
+  "source_url": "https://youcontrol.com.ua/en/catalog/company_details/30401000/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_125",
+  "source_url": "https://zakon.rada.gov.ua/go/1178-2022-%D0%BF",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_130",
+  "source_url": "https://ti-ukraine.org/en/project/public-procurement-oversight/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_135",
+  "source_url": "https://koda.gov.ua/gromadskosti/vidkryti-dani/publichni-zakupivli/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_152",
+  "source_url": "https://dozorro.org/profile/UA-EDR-43395033",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_166",
+  "source_url": "https://bank.gov.ua/ua/about/procurements",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_167",
+  "source_url": "https://ti-ukraine.org/en/ti_tag/bi-prozorro-en/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_168",
+  "source_url": "https://spending.gov.ua/new/en/transactions",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_170",
+  "source_url": "https://youcontrol.com.ua/catalog/company_details/24747867/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_175",
+  "source_url": "https://csltd.com.ua/press-center/news/onlain_zustrich_sep_4_1_mittievi_platezhi_realizatsiia_cs",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_178",
+  "source_url": "https://e-tender.ua/en/zakupivli-rajffajzen-bank-na-e-tender-87",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_191",
+  "source_url": "https://smarttender.biz/commercial-trades/",
+  "outcome": "unresolved",
+  "http_status": 404,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 404"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_206",
+  "source_url": "https://www.undp.org/ukraine/procurement",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_220",
+  "source_url": "https://niss.gov.ua/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_230",
+  "source_url": "https://eu4digitalua.eu/en/procurement/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_240",
+  "source_url": "https://api.spending.gov.ua/api/v2/api/transactions/",
+  "outcome": "unresolved",
+  "http_status": 400,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 400"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_241",
+  "source_url": "https://confluence.spending.gov.ua/pages/viewpage.action?pageId=10716714",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_242",
+  "source_url": "https://edata.gov.ua/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_243",
+  "source_url": "https://www.publicfinance.gov.ua/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_244",
+  "source_url": "https://openbudget.gov.ua/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_256",
+  "source_url": "https://youcontrol.com.ua/news/analiz-tenderiv-perevirky-publichnykh-zakupivel/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_257",
+  "source_url": "https://youcontrol.com.ua/en/catalog/",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_261",
+  "source_url": "https://usr.minjust.gov.ua/ua/freesearch",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_262",
+  "source_url": "https://amcu.gov.ua/napryami/oskarzhennya-publichnih-zakupivel/zvedeni-vidomosti-shchodo-spotvorennya-rezultativ-torgiv",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_263",
+  "source_url": "https://amcu.gov.ua/news/v-amku-stvoreno-derzhavnyi-reiestr-subiektiv-hospodariuvannia-prytiahnutykh-do-vidpovidalnosti",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_264",
+  "source_url": "https://toolkit.data.gov.ua/c8/public-procurement-prohibition.html",
+  "outcome": "unresolved",
+  "http_status": 502,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 502"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_266",
+  "source_url": "https://education.zakupki.prom.ua/analiz-postachalnykiv/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_268",
+  "source_url": "https://amcu.gov.ua/napryami/oskarzhennya-publichnih-zakupivel",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_269",
+  "source_url": "https://amcu.gov.ua/napryami/oskarzhennya-publichnih-zakupivel/komisia-z-rozglyadu-skarg",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_270",
+  "source_url": "https://amcu.gov.ua/news/shchodo-oprilyudnennya-rishen-postijno-diyuchoyi-adminkolegiyi-amku-z-rozglyadu-skarg-pro-porushennya-zakonodavstva-u-sferi-publichnih-zakupivel",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_271",
+  "source_url": "https://public-api.prozorro.gov.ua/api/2.5",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_278",
+  "source_url": "https://dozorro.org/amku-practice",
+  "outcome": "unresolved",
+  "http_status": 403,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "http 403"
+ },
+ {
+  "candidate_id": "dr_ua_a2_live_001__c_279",
+  "source_url": "https://risk.dozorro.org/",
+  "outcome": "unresolved",
+  "http_status": null,
+  "corrected_url": null,
+  "method": "http_get_browser_handshake",
+  "ladder_step": "waf_handshake",
+  "evidence": "URLError"
+ }
+]

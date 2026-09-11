@@ -1,0 +1,23 @@
+[
+{"candidate_id":"dr_hu_a4_live_001__c_298","role":"keep","decision":"approve","priority":"critical","rationale":"Harmonised ECB payment-statistics datasets carrying HU card/ATM/POS series; core A4 monitoring target."},
+{"candidate_id":"dr_hu_a4_live_001__c_299","role":"fold_into_parent","decision":"approve","priority":"medium","rationale":"Methodology/release-calendar section of the ECB stats site already covered by monitoring the ECB data portal."},
+{"candidate_id":"dr_hu_a4_live_001__c_300","role":"keep","decision":"approve","priority":"medium","rationale":"Recurring semi-annual press-release hub giving narrative and headline tables with each payment-stats vintage."},
+{"candidate_id":"dr_hu_a4_live_001__c_301","role":"keep","decision":"approve","priority":"high","rationale":"Pre-computed per-capita payment indicators for fast HU-vs-EU benchmarking; standalone dashboard."},
+{"candidate_id":"dr_hu_a4_live_001__c_302","role":"keep","decision":"approve","priority":"high","rationale":"Annual structural banking indicators (HU branches, institutions) — context denominator for ATM/self-service arguments."},
+{"candidate_id":"dr_hu_a4_live_001__c_303","role":"keep","decision":"approve","priority":"high","rationale":"SDMX REST API turns the whole ECB layer into low-cost automated collection."},
+{"candidate_id":"dr_hu_a4_live_001__c_304","role":"keep","decision":"approve","priority":"low","rationale":"Euro-area-only cash-usage survey; recurring comparator baseline for HU payment-habits data, no HU rows."},
+{"candidate_id":"dr_hu_a4_live_001__c_305","role":"keep","decision":"approve","priority":"high","rationale":"Eurostat ISOC database supplies HU demand-side e-commerce/internet-banking adoption series."},
+{"candidate_id":"dr_hu_a4_live_001__c_306","role":"evidence_not_source","decision":"defer","priority":"low","rationale":"Single HU-language explainer article, useful for terminology only; URL check failed so re-verify later."},
+{"candidate_id":"dr_hu_a4_live_001__c_307","role":"keep","decision":"approve","priority":"medium","rationale":"CPMI Red Book database as peer/global benchmark layer; HU coverage limited but series are durable and machine-readable."},
+{"candidate_id":"dr_hu_a4_live_001__c_308","role":"evidence_not_source","decision":"approve","priority":"low","rationale":"One-off methodology publication defining indicator taxonomy for reconciling HU figures across aggregators."},
+{"candidate_id":"dr_hu_a4_live_001__c_309","role":"keep","decision":"defer","priority":"critical","rationale":"IMF FAS is the long HU ATM/branch density series; URL verification failed, so re-check liveness before approval."},
+{"candidate_id":"dr_hu_a4_live_001__c_310","role":"keep","decision":"defer","priority":"medium","rationale":"API-friendly FRED mirror of the HU FAS series; redundancy path, URL needs re-verification."},
+{"candidate_id":"dr_hu_a4_live_001__c_311","role":"keep","decision":"approve","priority":"medium","rationale":"DBnomics normalises IMF/ECB/Eurostat/BIS series into one API — cheap cross-check and fallback layer."},
+{"candidate_id":"dr_hu_a4_live_001__c_312","role":"keep","decision":"approve","priority":"critical","rationale":"Global Findex is the only comparable demand-side behavioural dataset with HU adult-level card/digital-payment indicators."},
+{"candidate_id":"dr_hu_a4_live_001__c_313","role":"keep","decision":"approve","priority":"high","rationale":"World Bank indicator API republishes HU ATM density and Findex panels with documented metadata."},
+{"candidate_id":"dr_hu_a4_live_001__c_314","role":"keep","decision":"approve","priority":"medium","rationale":"Recurring central-bank survey with HU payment-system structural facts absent from transaction statistics."},
+{"candidate_id":"dr_hu_a4_live_001__c_315","role":"keep","decision":"approve","priority":"high","rationale":"EBA EUCLID PIR is the authoritative live register of HU-authorised PIs/EMIs — actor map for the payments landscape."},
+{"candidate_id":"dr_hu_a4_live_001__c_316","role":"evidence_not_source","decision":"approve","priority":"medium","rationale":"Periodic fraud report artifact; records the material caveat that HU is excluded from the 2025 edition."},
+{"candidate_id":"dr_hu_a4_live_001__c_317","role":"evidence_not_source","decision":"approve","priority":"low","rationale":"Static guideline defining what HU PSP fraud data MNB collects and when it becomes available."},
+{"candidate_id":"dr_hu_a4_live_001__c_318","role":"marginal","decision":"reject","priority":"low","rationale":"Low-credibility third-party mirror fully redundant with the authoritative EBA EUCLID register."}
+]

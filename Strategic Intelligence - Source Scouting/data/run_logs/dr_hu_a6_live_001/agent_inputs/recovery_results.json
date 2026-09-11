@@ -1,0 +1,172 @@
+[
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_050",
+  "source_url": "https://www.mbhbank.hu/karrier",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_102",
+  "source_url": "https://ceginfo.hu/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_110",
+  "source_url": "https://webshop.opten.hu/diebold-nixdorf-kft-e10327253.html",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_118",
+  "source_url": "https://www.kozadat.hu/kereso/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_140",
+  "source_url": "https://vallalkozzdigitalisan.mkik.hu/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_157",
+  "source_url": "https://www.finextra.com/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_173",
+  "source_url": "https://financialit.net/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_203",
+  "source_url": "https://www.mbhbank.hu/befektetoi/befektetoknek/mkb-bankrol/penzugyi-jelentesek",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_210",
+  "source_url": "https://www.cib.hu/en/Maganszemelyek/rolunk/sajtoszoba/sajtokozlemenyek.html",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_211",
+  "source_url": "https://www.cib.hu/Maganszemelyek/rolunk/sajtoszoba/heti-riport.html",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_214",
+  "source_url": "https://www.mbhjelzalogbank.hu/befektetoknek/penzugyi-informaciok",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_215",
+  "source_url": "https://www.mbhbank.hu/sw/static/file/MBHBankAltalanosUzletszabalzsatTorzsszoveg2025.05.31.pdf",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_220",
+  "source_url": "https://www.keler.hu/K%C3%B6z%C3%A9rdek%C5%B1%20adatok/",
+  "outcome": "repaired",
+  "http_status": 200,
+  "corrected_url": "https://www.keler.hu/K%C3%B6z%C3%A9rdek%C5%B1%20adatok",
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200 after redirect"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_222",
+  "source_url": "https://www.kelerkszf.hu/K%C3%B6z%C3%A9rdek%C5%B1%20adatok",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_257",
+  "source_url": "https://kosarertek.hu/ceg/worldline/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_293",
+  "source_url": "https://www.nemzeticegtar.hu/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_hu_a6_live_001__c_323",
+  "source_url": "https://knyr.mkik.hu/Kamreg/Nyilvantarto/Kereses",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ }
+]

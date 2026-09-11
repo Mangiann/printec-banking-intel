@@ -1,0 +1,18 @@
+{
+  "week": "2026-09-07",
+  "generated_utc": "2026-09-11T08:26:26Z",
+  "n_signals": 307,
+  "n_new_this_week": 163,
+  "n_stale_new": 6,
+  "n_fresh": 264,
+  "n_standing": 10,
+  "n_high_conf": 132,
+  "n_opportunities": 168,
+  "n_unscoped_opps": 22,
+  "n_timeseries_points": 435,
+  "n_events": 13,
+  "n_patterns": 8,
+  "n_country_stats": 17,
+  "stats_source_file": "2026-08-31.md",
+  "master_table": "master-signal-table.md"
+}

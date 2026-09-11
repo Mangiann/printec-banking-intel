@@ -1,0 +1,20 @@
+[
+{"candidate_id":"dr_mk_a5_live_001__c_287","role":"keep","decision":"approve","priority":"critical","rationale":"Parent-group newsroom that announces MK subsidiary board/org changes ahead of local coverage."},
+{"candidate_id":"dr_mk_a5_live_001__c_288","role":"keep","decision":"approve","priority":"high","rationale":"Regulated inside-information feed carrying board nominations and M&A cascading to NLB Skopje."},
+{"candidate_id":"dr_mk_a5_live_001__c_289","role":"fold_into_parent","decision":"approve","priority":"medium","rationale":"Static governance roster; useful change-detection target but a sub-page of the NLB corporate site."},
+{"candidate_id":"dr_mk_a5_live_001__c_290","role":"keep","decision":"approve","priority":"critical","rationale":"Direct owner of Sparkasse Bank Makedonija; canonical upstream record of MK subsidiary reorganisation."},
+{"candidate_id":"dr_mk_a5_live_001__c_291","role":"keep","decision":"approve","priority":"medium","rationale":"Ultimate group newsroom; CEE restructurings shape the MK unit's mandate, lower signal density."},
+{"candidate_id":"dr_mk_a5_live_001__c_292","role":"keep","decision":"approve","priority":"high","rationale":"MK bank's own newsroom — local publication point for appointments and org structure."},
+{"candidate_id":"dr_mk_a5_live_001__c_293","role":"keep","decision":"approve","priority":"high","rationale":"Halkbank parent material-disclosure page; subsidiary capital/appointment notices surface here first."},
+{"candidate_id":"dr_mk_a5_live_001__c_294","role":"keep","decision":"approve","priority":"high","rationale":"Statutory TR disclosure platform, authoritative machine-friendly feed for Halkbank Skopje changes."},
+{"candidate_id":"dr_mk_a5_live_001__c_295","role":"keep","decision":"approve","priority":"high","rationale":"MK subsidiary corporate site carrying GM and board composition changes."},
+{"candidate_id":"dr_mk_a5_live_001__c_296","role":"keep","decision":"approve","priority":"critical","rationale":"Ad-hoc feed of the listed parent; group board changes propagate directly into ProCredit Skopje governance."},
+{"candidate_id":"dr_mk_a5_live_001__c_297","role":"keep","decision":"approve","priority":"high","rationale":"Recurring report series enumerating MK supervisory-board seats and dated management changes."},
+{"candidate_id":"dr_mk_a5_live_001__c_298","role":"fold_into_parent","decision":"approve","priority":"low","rationale":"Shareholder-notification sub-page of ProCredit IR; secondary signal covered by the ad-hoc feed."},
+{"candidate_id":"dr_mk_a5_live_001__c_299","role":"keep","decision":"approve","priority":"high","rationale":"IFI country hub with news plus project documents disclosing stakes and board-nomination rights in MK banks."},
+{"candidate_id":"dr_mk_a5_live_001__c_300","role":"evidence_not_source","decision":"approve","priority":"low","rationale":"One-off methodology PDF for interpreting nominee-director appointments; reference, not a signal stream."},
+{"candidate_id":"dr_mk_a5_live_001__c_301","role":"keep","decision":"approve","priority":"medium","rationale":"Bulgarian majority parent of CKB Skopje; upstream site for subsidiary board and strategy changes."},
+{"candidate_id":"dr_mk_a5_live_001__c_302","role":"keep","decision":"defer","priority":"medium","rationale":"Only channel for this foreign-owned MK bank's management news, but URL check failed — recheck liveness."},
+{"candidate_id":"dr_mk_a5_live_001__c_303","role":"marginal","decision":"defer","priority":"low","rationale":"Low-credibility commercial aggregator, failed verification and likely paywalled; corroboration only."},
+{"candidate_id":"dr_mk_a5_live_001__c_304","role":"keep","decision":"needs_access","priority":"medium","rationale":"Strong early hiring/leadership-move signal but login-gated and ToS-restricted; human must clear access."}
+]

@@ -1,0 +1,1152 @@
+{
+  "generated": "2026-08-31",
+  "source": "National central banks (Agent 4, researched & adversarially verified)",
+  "series": {
+    "RS": {
+      "branches": [
+        {
+          "year": 2015,
+          "value": 1730,
+          "provisional": true,
+          "unit": "bank branches ('filijale', 2015; press-quoted NBS, definitional break vs the 'organisational units' label used for 2021/2026)",
+          "source": "Magazin Biznis quoting NBS 'Makroekonomska kretanja i kretanja u finansijskom sektoru u Srbiji'",
+          "url": "https://magazinbiznis.rs/bankarski-sektor-u-srbiji-u-prvom-kvartalu-2025-godine/"
+        },
+        {
+          "year": 2019,
+          "value": 1598,
+          "provisional": false,
+          "unit": "offices",
+          "source": "NBS - investor presentation, Banking Sector Overview table",
+          "url": "https://www.nbs.rs/export/sites/NBS_site/documents-eng/finansijska-stabilnost/presentation_invest.pdf"
+        },
+        {
+          "year": 2020,
+          "value": 1576,
+          "provisional": false,
+          "unit": "offices",
+          "source": "NBS - investor presentation, Banking Sector Overview table",
+          "url": "https://www.nbs.rs/export/sites/NBS_site/documents-eng/finansijska-stabilnost/presentation_invest.pdf"
+        },
+        {
+          "year": 2021,
+          "value": 1515,
+          "provisional": false,
+          "unit": "offices",
+          "source": "NBS - investor presentation, Banking Sector Overview table",
+          "url": "https://www.nbs.rs/export/sites/NBS_site/documents-eng/finansijska-stabilnost/presentation_invest.pdf"
+        },
+        {
+          "year": 2022,
+          "value": 1371,
+          "provisional": false,
+          "unit": "offices",
+          "source": "NBS - investor presentation, Banking Sector Overview table",
+          "url": "https://www.nbs.rs/export/sites/NBS_site/documents-eng/finansijska-stabilnost/presentation_invest.pdf"
+        },
+        {
+          "year": 2023,
+          "value": 1341,
+          "provisional": false,
+          "unit": "offices",
+          "source": "NBS - investor presentation, Banking Sector Overview table",
+          "url": "https://www.nbs.rs/export/sites/NBS_site/documents-eng/finansijska-stabilnost/presentation_invest.pdf"
+        },
+        {
+          "year": 2024,
+          "value": 1337,
+          "provisional": false,
+          "unit": "offices",
+          "source": "NBS - investor presentation, Banking Sector Overview table",
+          "url": "https://www.nbs.rs/export/sites/NBS_site/documents-eng/finansijska-stabilnost/presentation_invest.pdf"
+        },
+        {
+          "year": 2025,
+          "value": 1288,
+          "provisional": false,
+          "unit": "offices",
+          "source": "NBS - investor presentation, Banking Sector Overview table",
+          "url": "https://www.nbs.rs/export/sites/NBS_site/documents-eng/finansijska-stabilnost/presentation_invest.pdf"
+        },
+        {
+          "year": 2026,
+          "value": 1288,
+          "provisional": true,
+          "unit": "bank organisational units (end-Mar-2026; press-quoted NBS)",
+          "source": "Kamatica, 'Zašto banke zatvaraju filijale po Srbiji?' (quoting NBS)",
+          "url": "https://www.kamatica.com/analiza/zasto-banke-zatvaraju-filijale-po-srbiji/78914"
+        }
+      ],
+      "cash": [
+        {
+          "year": 2020,
+          "value": 266725,
+          "provisional": false,
+          "unit": "RSD million (currency in circulation, end-Dec)",
+          "source": "NBS - Table SBMS01 Main Monetary Aggregates",
+          "url": "https://www.nbs.rs/export/sites/NBS_site/documents/statistika/monetarni_sektor/SBMS01.xlsx"
+        },
+        {
+          "year": 2021,
+          "value": 1875238,
+          "provisional": false,
+          "unit": "RSD million withdrawn from payment accounts (full year 2021)",
+          "source": "NBS Payment transactions of cash placement and withdrawal (gotovina.xlsx)",
+          "url": "https://www.nbs.rs/export/sites/NBS_site/documents/platni-sistem/statistika/el_novac/gotovina.xlsx"
+        },
+        {
+          "year": 2022,
+          "value": 2048753,
+          "provisional": false,
+          "unit": "RSD million withdrawn from payment accounts (full year 2022)",
+          "source": "NBS Payment transactions of cash placement and withdrawal (gotovina.xlsx)",
+          "url": "https://www.nbs.rs/export/sites/NBS_site/documents/platni-sistem/statistika/el_novac/gotovina.xlsx"
+        },
+        {
+          "year": 2023,
+          "value": 2029466,
+          "provisional": false,
+          "unit": "RSD million withdrawn from payment accounts (full year 2023)",
+          "source": "NBS Payment transactions of cash placement and withdrawal (gotovina.xlsx)",
+          "url": "https://www.nbs.rs/export/sites/NBS_site/documents/platni-sistem/statistika/el_novac/gotovina.xlsx"
+        },
+        {
+          "year": 2024,
+          "value": 2190683,
+          "provisional": false,
+          "unit": "RSD million withdrawn from payment accounts (full year 2024)",
+          "source": "NBS Payment transactions of cash placement and withdrawal (gotovina.xlsx)",
+          "url": "https://www.nbs.rs/export/sites/NBS_site/documents/platni-sistem/statistika/el_novac/gotovina.xlsx"
+        },
+        {
+          "year": 2025,
+          "value": 2353166,
+          "provisional": false,
+          "unit": "RSD million withdrawn from payment accounts (full year 2025)",
+          "source": "NBS Payment transactions of cash placement and withdrawal (gotovina.xlsx)",
+          "url": "https://www.nbs.rs/export/sites/NBS_site/documents/platni-sistem/statistika/el_novac/gotovina.xlsx"
+        },
+        {
+          "year": 2026,
+          "value": 1098758,
+          "provisional": true,
+          "unit": "RSD million withdrawn from payment accounts (H1-2026 only, provisional half-year - NOT comparable to the full-year points above)",
+          "source": "NBS Payment transactions of cash placement and withdrawal (gotovina.xlsx)",
+          "url": "https://www.nbs.rs/export/sites/NBS_site/documents/platni-sistem/statistika/el_novac/gotovina.xlsx"
+        }
+      ],
+      "pos": [
+        {
+          "year": 2019,
+          "value": 91245,
+          "provisional": false,
+          "unit": "terminals (end-Q4-2019)",
+          "source": "NBS Acceptance network quarterly series (prihvatna_mreza.xlsx)",
+          "url": "https://www.nbs.rs/export/sites/NBS_site/documents/platni-sistem/statistika/el_novac/prihvatna_mreza.xlsx"
+        },
+        {
+          "year": 2020,
+          "value": 97751,
+          "provisional": false,
+          "unit": "terminals (end-Q4-2020)",
+          "source": "NBS Acceptance network quarterly series (prihvatna_mreza.xlsx)",
+          "url": "https://www.nbs.rs/export/sites/NBS_site/documents/platni-sistem/statistika/el_novac/prihvatna_mreza.xlsx"
+        },
+        {
+          "year": 2021,
+          "value": 114984,
+          "provisional": false,
+          "unit": "terminals (end-Q4-2021)",
+          "source": "NBS Acceptance network quarterly series (prihvatna_mreza.xlsx)",
+          "url": "https://www.nbs.rs/export/sites/NBS_site/documents/platni-sistem/statistika/el_novac/prihvatna_mreza.xlsx"
+        },
+        {
+          "year": 2022,
+          "value": 120224,
+          "provisional": false,
+          "unit": "terminals (end-Q4-2022)",
+          "source": "NBS Acceptance network quarterly series (prihvatna_mreza.xlsx)",
+          "url": "https://www.nbs.rs/export/sites/NBS_site/documents/platni-sistem/statistika/el_novac/prihvatna_mreza.xlsx"
+        },
+        {
+          "year": 2023,
+          "value": 136662,
+          "provisional": false,
+          "unit": "terminals (end-Q4-2023)",
+          "source": "NBS Acceptance network quarterly series (prihvatna_mreza.xlsx)",
+          "url": "https://www.nbs.rs/export/sites/NBS_site/documents/platni-sistem/statistika/el_novac/prihvatna_mreza.xlsx"
+        },
+        {
+          "year": 2024,
+          "value": 160857,
+          "provisional": false,
+          "unit": "terminals (end-Q4-2024)",
+          "source": "NBS Acceptance network quarterly series (prihvatna_mreza.xlsx)",
+          "url": "https://www.nbs.rs/export/sites/NBS_site/documents/platni-sistem/statistika/el_novac/prihvatna_mreza.xlsx"
+        },
+        {
+          "year": 2025,
+          "value": 184656,
+          "provisional": false,
+          "unit": "terminals (end-Q4-2025)",
+          "source": "NBS Acceptance network quarterly series (prihvatna_mreza.xlsx)",
+          "url": "https://www.nbs.rs/export/sites/NBS_site/documents/platni-sistem/statistika/el_novac/prihvatna_mreza.xlsx"
+        },
+        {
+          "year": 2026,
+          "value": 195121,
+          "provisional": true,
+          "unit": "terminals (end-Q2-2026, provisional part-year)",
+          "source": "NBS Acceptance network quarterly series (prihvatna_mreza.xlsx)",
+          "url": "https://www.nbs.rs/export/sites/NBS_site/documents/platni-sistem/statistika/el_novac/prihvatna_mreza.xlsx"
+        }
+      ],
+      "atms": [
+        {
+          "year": 2019,
+          "value": 2953,
+          "provisional": false,
+          "unit": "terminals (end-Q4-2019)",
+          "source": "NBS Acceptance network quarterly series (prihvatna_mreza.xlsx)",
+          "url": "https://www.nbs.rs/export/sites/NBS_site/documents/platni-sistem/statistika/el_novac/prihvatna_mreza.xlsx"
+        },
+        {
+          "year": 2020,
+          "value": 3042,
+          "provisional": false,
+          "unit": "terminals (end-Q4-2020)",
+          "source": "NBS Acceptance network quarterly series (prihvatna_mreza.xlsx)",
+          "url": "https://www.nbs.rs/export/sites/NBS_site/documents/platni-sistem/statistika/el_novac/prihvatna_mreza.xlsx"
+        },
+        {
+          "year": 2021,
+          "value": 3097,
+          "provisional": false,
+          "unit": "terminals (end-Q4-2021)",
+          "source": "NBS Acceptance network quarterly series (prihvatna_mreza.xlsx)",
+          "url": "https://www.nbs.rs/export/sites/NBS_site/documents/platni-sistem/statistika/el_novac/prihvatna_mreza.xlsx"
+        },
+        {
+          "year": 2022,
+          "value": 3071,
+          "provisional": false,
+          "unit": "terminals (end-Q4-2022)",
+          "source": "NBS Acceptance network quarterly series (prihvatna_mreza.xlsx)",
+          "url": "https://www.nbs.rs/export/sites/NBS_site/documents/platni-sistem/statistika/el_novac/prihvatna_mreza.xlsx"
+        },
+        {
+          "year": 2023,
+          "value": 3078,
+          "provisional": false,
+          "unit": "terminals (end-Q4-2023)",
+          "source": "NBS Acceptance network quarterly series (prihvatna_mreza.xlsx)",
+          "url": "https://www.nbs.rs/export/sites/NBS_site/documents/platni-sistem/statistika/el_novac/prihvatna_mreza.xlsx"
+        },
+        {
+          "year": 2024,
+          "value": 3218,
+          "provisional": false,
+          "unit": "terminals (end-Q4-2024)",
+          "source": "NBS Acceptance network quarterly series (prihvatna_mreza.xlsx)",
+          "url": "https://www.nbs.rs/export/sites/NBS_site/documents/platni-sistem/statistika/el_novac/prihvatna_mreza.xlsx"
+        },
+        {
+          "year": 2025,
+          "value": 3265,
+          "provisional": false,
+          "unit": "terminals (end-Q4-2025)",
+          "source": "NBS Acceptance network quarterly series (prihvatna_mreza.xlsx)",
+          "url": "https://www.nbs.rs/export/sites/NBS_site/documents/platni-sistem/statistika/el_novac/prihvatna_mreza.xlsx"
+        },
+        {
+          "year": 2026,
+          "value": 3412,
+          "provisional": true,
+          "unit": "terminals (end-Q2-2026, provisional part-year)",
+          "source": "NBS Acceptance network quarterly series (prihvatna_mreza.xlsx)",
+          "url": "https://www.nbs.rs/export/sites/NBS_site/documents/platni-sistem/statistika/el_novac/prihvatna_mreza.xlsx"
+        }
+      ]
+    },
+    "AL": {
+      "pos": [
+        {
+          "year": 2023,
+          "value": 19184,
+          "provisional": false,
+          "unit": "terminals",
+          "source": "Bank of Albania - F6_TERMINALS_T2_Shqip (end-2023)",
+          "url": "https://www.bankofalbania.org/rc/doc/F6_TERMINALS_T2_Shqip_34619.xlsx"
+        },
+        {
+          "year": 2024,
+          "value": 24481,
+          "provisional": false,
+          "unit": "terminals",
+          "source": "Bank of Albania - F6_TERMINALS_T2_Shqip (end-2024)",
+          "url": "https://www.bankofalbania.org/rc/doc/F6_TERMINALS_T2_Shqip_34619.xlsx"
+        },
+        {
+          "year": 2025,
+          "value": 31263,
+          "provisional": false,
+          "unit": "terminals",
+          "source": "Bank of Albania - F6_TERMINALS_T2_Shqip (end-2025)",
+          "url": "https://www.bankofalbania.org/rc/doc/F6_TERMINALS_T2_Shqip_34619.xlsx"
+        },
+        {
+          "year": 2026,
+          "value": 38662,
+          "provisional": true,
+          "unit": "terminals",
+          "source": "Bank of Albania - F6_TERMINALS_T2_Shqip (end-Q2-2026, provisional/unaudited)",
+          "url": "https://www.bankofalbania.org/rc/doc/F6_TERMINALS_T2_Shqip_34619.xlsx"
+        }
+      ],
+      "atms": [
+        {
+          "year": 2023,
+          "value": 925,
+          "provisional": false,
+          "unit": "terminals",
+          "source": "Bank of Albania - F6_TERMINALS_T2_Shqip (end-2023)",
+          "url": "https://www.bankofalbania.org/rc/doc/F6_TERMINALS_T2_Shqip_34619.xlsx"
+        },
+        {
+          "year": 2024,
+          "value": 1011,
+          "provisional": false,
+          "unit": "terminals",
+          "source": "Bank of Albania - F6_TERMINALS_T2_Shqip (end-2024)",
+          "url": "https://www.bankofalbania.org/rc/doc/F6_TERMINALS_T2_Shqip_34619.xlsx"
+        },
+        {
+          "year": 2025,
+          "value": 1091,
+          "provisional": false,
+          "unit": "terminals",
+          "source": "Bank of Albania - F6_TERMINALS_T2_Shqip (end-2025)",
+          "url": "https://www.bankofalbania.org/rc/doc/F6_TERMINALS_T2_Shqip_34619.xlsx"
+        },
+        {
+          "year": 2026,
+          "value": 1414,
+          "provisional": true,
+          "unit": "terminals",
+          "source": "Bank of Albania - F6_TERMINALS_T2_Shqip (end-Q2-2026, provisional/unaudited)",
+          "url": "https://www.bankofalbania.org/rc/doc/F6_TERMINALS_T2_Shqip_34619.xlsx"
+        }
+      ],
+      "branches": [
+        {
+          "year": 2024,
+          "value": 400,
+          "provisional": false,
+          "unit": "branches",
+          "source": "Revista Monitor 30/07/2026, reporting Bank of Albania data (end-2024)",
+          "url": "https://monitor.al/mbulimi-i-popullsise-me-sherbime-bankare-po-permiresohet/"
+        },
+        {
+          "year": 2025,
+          "value": 408,
+          "provisional": false,
+          "unit": "branches",
+          "source": "Revista Monitor 30/07/2026, reporting Bank of Albania data (end-2025)",
+          "url": "https://monitor.al/mbulimi-i-popullsise-me-sherbime-bankare-po-permiresohet/"
+        }
+      ],
+      "cash": [
+        {
+          "year": 2023,
+          "value": 393795.6,
+          "provisional": false,
+          "unit": "million lek (currency outside depository corporations, end-Dec-2023)",
+          "source": "Bank of Albania - Raporti Statistikor Mujor Qershor 2026, table 1-8.a",
+          "url": "https://www.bankofalbania.org/rc/doc/RSM_Qershor_2026_shqip_34681.pdf"
+        },
+        {
+          "year": 2024,
+          "value": 423539,
+          "provisional": false,
+          "unit": "million lek (currency outside depository corporations, end-Dec-2024)",
+          "source": "Bank of Albania - Raporti Statistikor Mujor Qershor 2026, table 1-8.a",
+          "url": "https://www.bankofalbania.org/rc/doc/RSM_Qershor_2026_shqip_34681.pdf"
+        },
+        {
+          "year": 2025,
+          "value": 483446.7,
+          "provisional": false,
+          "unit": "million lek (currency outside depository corporations, end-Dec-2025)",
+          "source": "Bank of Albania - Raporti Statistikor Mujor Qershor 2026, table 1-8.a",
+          "url": "https://www.bankofalbania.org/rc/doc/RSM_Qershor_2026_shqip_34681.pdf"
+        },
+        {
+          "year": 2026,
+          "value": 505722.2,
+          "provisional": true,
+          "unit": "million lek (currency outside depository corporations, end-June-2026, interim read)",
+          "source": "Bank of Albania - Raporti Statistikor Mujor Qershor 2026, table 1-8.a",
+          "url": "https://www.bankofalbania.org/rc/doc/RSM_Qershor_2026_shqip_34681.pdf"
+        }
+      ]
+    },
+    "BA": {
+      "atms": [
+        {
+          "year": 2021,
+          "value": 1628,
+          "provisional": false,
+          "unit": "terminals",
+          "source": "CBBiH — Karticarstvo u BiH u 2025. godini (ref. FY-2025, pub. 11/03/2026)",
+          "url": "https://www.cbbh.ba/content/Archive/1244?lang=bs"
+        },
+        {
+          "year": 2022,
+          "value": 1653,
+          "provisional": false,
+          "unit": "terminals",
+          "source": "CBBiH — Karticarstvo u BiH u 2025. godini (ref. FY-2025, pub. 11/03/2026)",
+          "url": "https://www.cbbh.ba/content/Archive/1244?lang=bs"
+        },
+        {
+          "year": 2023,
+          "value": 1717,
+          "provisional": false,
+          "unit": "terminals",
+          "source": "CBBiH — Karticarstvo u BiH u 2025. godini (ref. FY-2025, pub. 11/03/2026)",
+          "url": "https://www.cbbh.ba/content/Archive/1244?lang=bs"
+        },
+        {
+          "year": 2024,
+          "value": 1767,
+          "provisional": false,
+          "unit": "terminals",
+          "source": "CBBiH — Karticarstvo u BiH u 2025. godini (ref. FY-2025, pub. 11/03/2026)",
+          "url": "https://www.cbbh.ba/content/Archive/1244?lang=bs"
+        },
+        {
+          "year": 2025,
+          "value": 1868,
+          "provisional": false,
+          "unit": "terminals",
+          "source": "CBBiH — Karticarstvo u BiH u 2025. godini (ref. FY-2025, pub. 11/03/2026)",
+          "url": "https://www.cbbh.ba/content/Archive/1244?lang=bs"
+        }
+      ],
+      "pos": [
+        {
+          "year": 2021,
+          "value": 30657,
+          "provisional": false,
+          "unit": "terminals",
+          "source": "CBBiH press ShowNews/1428 (2021 card report) — re-confirmed verbatim",
+          "url": "https://cbbh.ba/press/ShowNews/1428?lang=bs"
+        },
+        {
+          "year": 2023,
+          "value": 34019,
+          "provisional": false,
+          "unit": "terminals",
+          "source": "CBBiH card report (2023 comparative) — not re-confirmed from ShowNews/1649 fetch; kept as consistent trend",
+          "url": "https://www.cbbh.ba/press/ShowNews/1649?lang=bs"
+        },
+        {
+          "year": 2024,
+          "value": 35035,
+          "provisional": false,
+          "unit": "terminals",
+          "source": "CBBiH — Karticarstvo u BiH u 2025. godini (ref. FY-2025, pub. 11/03/2026)",
+          "url": "https://www.cbbh.ba/content/Archive/1244?lang=bs"
+        },
+        {
+          "year": 2025,
+          "value": 37895,
+          "provisional": false,
+          "unit": "terminals",
+          "source": "CBBiH — Karticarstvo u BiH u 2025. godini (ref. FY-2025, pub. 11/03/2026)",
+          "url": "https://www.cbbh.ba/content/Archive/1244?lang=bs"
+        }
+      ],
+      "branches": [
+        {
+          "year": 2020,
+          "value": 789,
+          "provisional": false,
+          "unit": "bank organisational units",
+          "source": "CBBiH — Platni sistemi u BiH u 2025. godini (ref. FY-2025, pub. 30/03/2026)",
+          "url": "https://www.cbbh.ba/content/Archive/1243?lang=bs"
+        },
+        {
+          "year": 2021,
+          "value": 723,
+          "provisional": false,
+          "unit": "bank organisational units",
+          "source": "CBBiH — Platni sistemi u BiH u 2025. godini (ref. FY-2025, pub. 30/03/2026)",
+          "url": "https://www.cbbh.ba/content/Archive/1243?lang=bs"
+        },
+        {
+          "year": 2022,
+          "value": 761,
+          "provisional": false,
+          "unit": "bank organisational units",
+          "source": "CBBiH — Platni sistemi u BiH u 2025. godini (ref. FY-2025, pub. 30/03/2026)",
+          "url": "https://www.cbbh.ba/content/Archive/1243?lang=bs"
+        },
+        {
+          "year": 2023,
+          "value": 747,
+          "provisional": false,
+          "unit": "bank organisational units",
+          "source": "CBBiH — Platni sistemi u BiH u 2025. godini (ref. FY-2025, pub. 30/03/2026)",
+          "url": "https://www.cbbh.ba/content/Archive/1243?lang=bs"
+        },
+        {
+          "year": 2024,
+          "value": 749,
+          "provisional": false,
+          "unit": "bank organisational units",
+          "source": "CBBiH — Platni sistemi u BiH u 2025. godini (ref. FY-2025, pub. 30/03/2026)",
+          "url": "https://www.cbbh.ba/content/Archive/1243?lang=bs"
+        },
+        {
+          "year": 2025,
+          "value": 749,
+          "provisional": false,
+          "unit": "bank organisational units",
+          "source": "CBBiH — Platni sistemi u BiH u 2025. godini (ref. FY-2025, pub. 30/03/2026)",
+          "url": "https://www.cbbh.ba/content/Archive/1243?lang=bs"
+        }
+      ],
+      "cash": [
+        {
+          "year": 2024,
+          "value": 12443848570,
+          "provisional": true,
+          "unit": "KM (ATM cash withdrawals, value)",
+          "source": "CBBiH 2025 card report 2024 comparative (via press) — not independently re-confirmed; consistent with reported +9.2% y/y",
+          "url": "https://www.bl-portal.com/ekonomija/rekordnih-21-milijardu-km-provuceno-kroz-kartice-u-bih-se-najvise-koriste-za-podizanje-gotovine/"
+        },
+        {
+          "year": 2025,
+          "value": 7460000000,
+          "provisional": false,
+          "unit": "KM, cash in circulation outside banks at 31/12/2025 (CBBiH's own rounding: '7,46 milijardi KM')",
+          "source": "CBBiH — Godisnji izvjestaj za 2025. godinu, section 2.4 (ref. FY-2025)",
+          "url": "https://www.cbbh.ba/Home/GetTableAttachment?contentId=9f738fd5-ed4c-4437-abf8-3f420d280f49&lang=bs"
+        }
+      ]
+    },
+    "XK": {
+      "atms": [
+        {
+          "year": 2020,
+          "value": 513,
+          "provisional": false,
+          "unit": "terminals",
+          "source": "CBK Annual Report 2024 (Grafik 64)",
+          "url": "https://bqk-kos.org/wp-content/uploads/2025/07/BQK_RV_2024.pdf"
+        },
+        {
+          "year": 2021,
+          "value": 516,
+          "provisional": false,
+          "unit": "terminals",
+          "source": "CBK Annual Report 2025, Chart 64 (re-verified 31/08/2026)",
+          "url": "https://bqk-kos.org/wp-content/uploads/2026/07/CBK_AnnualReport_2025-1.pdf?lang=en"
+        },
+        {
+          "year": 2022,
+          "value": 534,
+          "provisional": false,
+          "unit": "terminals",
+          "source": "CBK Annual Report 2025, Chart 64 (re-verified 31/08/2026)",
+          "url": "https://bqk-kos.org/wp-content/uploads/2026/07/CBK_AnnualReport_2025-1.pdf?lang=en"
+        },
+        {
+          "year": 2023,
+          "value": 583,
+          "provisional": false,
+          "unit": "terminals",
+          "source": "CBK Annual Report 2025, Chart 64 (re-verified 31/08/2026)",
+          "url": "https://bqk-kos.org/wp-content/uploads/2026/07/CBK_AnnualReport_2025-1.pdf?lang=en"
+        },
+        {
+          "year": 2024,
+          "value": 635,
+          "provisional": false,
+          "unit": "terminals",
+          "source": "CBK Annual Report 2025, Chart 64 (cross-matches 'Use of Bank Cards in Kosovo', Sep-2025, Table 1)",
+          "url": "https://bqk-kos.org/wp-content/uploads/2026/07/CBK_AnnualReport_2025-1.pdf?lang=en"
+        },
+        {
+          "year": 2025,
+          "value": 686,
+          "provisional": false,
+          "unit": "terminals",
+          "source": "CBK Annual Report 2025, Chart 64 (re-verified 31/08/2026)",
+          "url": "https://bqk-kos.org/wp-content/uploads/2026/07/CBK_AnnualReport_2025-1.pdf?lang=en"
+        }
+      ],
+      "pos": [
+        {
+          "year": 2020,
+          "value": 13421,
+          "provisional": false,
+          "unit": "terminals",
+          "source": "CBK Annual Report 2024 (Grafik 65)",
+          "url": "https://bqk-kos.org/wp-content/uploads/2025/07/BQK_RV_2024.pdf"
+        },
+        {
+          "year": 2021,
+          "value": 13836,
+          "provisional": false,
+          "unit": "terminals",
+          "source": "CBK Annual Report 2025, Chart 65 (re-verified 31/08/2026)",
+          "url": "https://bqk-kos.org/wp-content/uploads/2026/07/CBK_AnnualReport_2025-1.pdf?lang=en"
+        },
+        {
+          "year": 2022,
+          "value": 14769,
+          "provisional": false,
+          "unit": "terminals",
+          "source": "CBK Annual Report 2025, Chart 65 (re-verified 31/08/2026)",
+          "url": "https://bqk-kos.org/wp-content/uploads/2026/07/CBK_AnnualReport_2025-1.pdf?lang=en"
+        },
+        {
+          "year": 2023,
+          "value": 17187,
+          "provisional": false,
+          "unit": "terminals",
+          "source": "CBK Annual Report 2025, Chart 65 (re-verified 31/08/2026)",
+          "url": "https://bqk-kos.org/wp-content/uploads/2026/07/CBK_AnnualReport_2025-1.pdf?lang=en"
+        },
+        {
+          "year": 2024,
+          "value": 20859,
+          "provisional": false,
+          "unit": "terminals",
+          "source": "CBK Annual Report 2025, Chart 65 (the Sep-2025 card report gives 20,913 on a slightly different definition)",
+          "url": "https://bqk-kos.org/wp-content/uploads/2026/07/CBK_AnnualReport_2025-1.pdf?lang=en"
+        },
+        {
+          "year": 2025,
+          "value": 30259,
+          "provisional": false,
+          "unit": "terminals",
+          "source": "CBK Annual Report 2025, Chart 65 (re-verified 31/08/2026)",
+          "url": "https://bqk-kos.org/wp-content/uploads/2026/07/CBK_AnnualReport_2025-1.pdf?lang=en"
+        }
+      ],
+      "branches": [
+        {
+          "year": 2022,
+          "value": 200,
+          "provisional": false,
+          "unit": "ODC network units",
+          "source": "CBK Monthly Statistics Bulletin No. 297, Table 25.1 (re-verified 31/08/2026)",
+          "url": "https://bqk-kos.org/wp-content/uploads/2026/07/CBK_MSB_297_En.pdf"
+        },
+        {
+          "year": 2023,
+          "value": 215,
+          "provisional": false,
+          "unit": "ODC network units (December)",
+          "source": "CBK Monthly Statistics Bulletin No. 297, Table 25.1 (re-verified 31/08/2026)",
+          "url": "https://bqk-kos.org/wp-content/uploads/2026/07/CBK_MSB_297_En.pdf"
+        },
+        {
+          "year": 2024,
+          "value": 227,
+          "provisional": false,
+          "unit": "ODC network units (December)",
+          "source": "CBK Monthly Statistics Bulletin No. 297, Table 25.1 (re-verified 31/08/2026)",
+          "url": "https://bqk-kos.org/wp-content/uploads/2026/07/CBK_MSB_297_En.pdf"
+        },
+        {
+          "year": 2025,
+          "value": 235,
+          "provisional": false,
+          "unit": "ODC network units (December; peaked at 237 in Aug-2025)",
+          "source": "CBK Monthly Statistics Bulletin No. 297, Table 25.1 (re-verified 31/08/2026)",
+          "url": "https://bqk-kos.org/wp-content/uploads/2026/07/CBK_MSB_297_En.pdf"
+        },
+        {
+          "year": 2026,
+          "value": 234,
+          "provisional": true,
+          "unit": "ODC network units (Jun-2026, interim year-to-date read)",
+          "source": "CBK Monthly Statistics Bulletin No. 298 (Qershor 2026), Table 25.1 — Albanian-only edition, published 07/08/2026",
+          "url": "https://bqk-kos.org/wp-content/uploads/2026/08/BQK_BMS_298_Sq.pdf"
+        }
+      ],
+      "cash": [
+        {
+          "year": 2021,
+          "value": 950,
+          "provisional": false,
+          "unit": "EUR million of banknotes exported from Kosovo",
+          "source": "CBK Annual Report 2025, Chart 88 (re-verified 31/08/2026)",
+          "url": "https://bqk-kos.org/wp-content/uploads/2026/07/CBK_AnnualReport_2025-1.pdf?lang=en"
+        },
+        {
+          "year": 2022,
+          "value": 1700,
+          "provisional": false,
+          "unit": "EUR million of banknotes exported from Kosovo",
+          "source": "CBK Annual Report 2025, Chart 88 (re-verified 31/08/2026)",
+          "url": "https://bqk-kos.org/wp-content/uploads/2026/07/CBK_AnnualReport_2025-1.pdf?lang=en"
+        },
+        {
+          "year": 2023,
+          "value": 2215,
+          "provisional": false,
+          "unit": "EUR million of banknotes exported from Kosovo",
+          "source": "CBK Annual Report 2025, Chart 88 (re-verified 31/08/2026)",
+          "url": "https://bqk-kos.org/wp-content/uploads/2026/07/CBK_AnnualReport_2025-1.pdf?lang=en"
+        },
+        {
+          "year": 2024,
+          "value": 2084,
+          "provisional": false,
+          "unit": "EUR million of banknotes exported from Kosovo (report's own operations table gives 2,075 — chart value used)",
+          "source": "CBK Annual Report 2025, Chart 88 (re-verified 31/08/2026)",
+          "url": "https://bqk-kos.org/wp-content/uploads/2026/07/CBK_AnnualReport_2025-1.pdf?lang=en"
+        },
+        {
+          "year": 2025,
+          "value": 2373,
+          "provisional": false,
+          "unit": "EUR million of banknotes exported from Kosovo (report's own operations table gives 2,370 — chart value used)",
+          "source": "CBK Annual Report 2025, Chart 88 (re-verified 31/08/2026)",
+          "url": "https://bqk-kos.org/wp-content/uploads/2026/07/CBK_AnnualReport_2025-1.pdf?lang=en"
+        }
+      ]
+    },
+    "ME": {
+      "atms": [
+        {
+          "year": 2018,
+          "value": 494,
+          "provisional": false,
+          "unit": "terminals (Q4-2018)",
+          "source": "CBCG - Uređaji za prihvatanje platnih kartica, Q1-2026 workbook (primary, re-downloaded and re-read 31/08/2026)",
+          "url": "https://www.cbcg.me/slike_i_fajlovi/fajlovi/fajlovi_platni_promet/usluge_e-novac/2026/broj_uredjaja_prihvatanje_platnih_kartica_q1-2026.zip"
+        },
+        {
+          "year": 2019,
+          "value": 522,
+          "provisional": false,
+          "unit": "terminals (Q4-2019)",
+          "source": "CBCG - Uređaji za prihvatanje platnih kartica, Q1-2026 workbook (primary, re-downloaded and re-read 31/08/2026)",
+          "url": "https://www.cbcg.me/slike_i_fajlovi/fajlovi/fajlovi_platni_promet/usluge_e-novac/2026/broj_uredjaja_prihvatanje_platnih_kartica_q1-2026.zip"
+        },
+        {
+          "year": 2020,
+          "value": 459,
+          "provisional": false,
+          "unit": "terminals (Q4-2020)",
+          "source": "CBCG - Uređaji za prihvatanje platnih kartica, Q1-2026 workbook (primary, re-downloaded and re-read 31/08/2026)",
+          "url": "https://www.cbcg.me/slike_i_fajlovi/fajlovi/fajlovi_platni_promet/usluge_e-novac/2026/broj_uredjaja_prihvatanje_platnih_kartica_q1-2026.zip"
+        },
+        {
+          "year": 2021,
+          "value": 451,
+          "provisional": false,
+          "unit": "terminals (Q4-2021)",
+          "source": "CBCG - Uređaji za prihvatanje platnih kartica, Q1-2026 workbook (primary, re-downloaded and re-read 31/08/2026)",
+          "url": "https://www.cbcg.me/slike_i_fajlovi/fajlovi/fajlovi_platni_promet/usluge_e-novac/2026/broj_uredjaja_prihvatanje_platnih_kartica_q1-2026.zip"
+        },
+        {
+          "year": 2022,
+          "value": 500,
+          "provisional": false,
+          "unit": "terminals (Q4-2022)",
+          "source": "CBCG - Uređaji za prihvatanje platnih kartica, Q1-2026 workbook (primary, re-downloaded and re-read 31/08/2026)",
+          "url": "https://www.cbcg.me/slike_i_fajlovi/fajlovi/fajlovi_platni_promet/usluge_e-novac/2026/broj_uredjaja_prihvatanje_platnih_kartica_q1-2026.zip"
+        },
+        {
+          "year": 2023,
+          "value": 508,
+          "provisional": false,
+          "unit": "terminals (Q4-2023)",
+          "source": "CBCG - Uređaji za prihvatanje platnih kartica, Q1-2026 workbook (primary, re-downloaded and re-read 31/08/2026)",
+          "url": "https://www.cbcg.me/slike_i_fajlovi/fajlovi/fajlovi_platni_promet/usluge_e-novac/2026/broj_uredjaja_prihvatanje_platnih_kartica_q1-2026.zip"
+        },
+        {
+          "year": 2024,
+          "value": 626,
+          "provisional": false,
+          "unit": "terminals (Q4-2024)",
+          "source": "CBCG - Uređaji za prihvatanje platnih kartica, Q1-2026 workbook (primary, re-downloaded and re-read 31/08/2026; re-pointed from the 2024 Work Report, which could not be re-extracted this run)",
+          "url": "https://www.cbcg.me/slike_i_fajlovi/fajlovi/fajlovi_platni_promet/usluge_e-novac/2026/broj_uredjaja_prihvatanje_platnih_kartica_q1-2026.zip"
+        },
+        {
+          "year": 2025,
+          "value": 751,
+          "provisional": false,
+          "unit": "terminals (Q4-2025)",
+          "source": "CBCG - Uređaji za prihvatanje platnih kartica, Q1-2026 workbook (primary, re-downloaded and re-read 31/08/2026)",
+          "url": "https://www.cbcg.me/slike_i_fajlovi/fajlovi/fajlovi_platni_promet/usluge_e-novac/2026/broj_uredjaja_prihvatanje_platnih_kartica_q1-2026.zip"
+        },
+        {
+          "year": 2026,
+          "value": 664,
+          "provisional": true,
+          "unit": "terminals (Q1-2026, partial-year quarter read; Q1 is seasonally below Q4 in every year of the series)",
+          "source": "CBCG - Uređaji za prihvatanje platnih kartica, Q1-2026 workbook (primary, re-downloaded and re-read 31/08/2026)",
+          "url": "https://www.cbcg.me/slike_i_fajlovi/fajlovi/fajlovi_platni_promet/usluge_e-novac/2026/broj_uredjaja_prihvatanje_platnih_kartica_q1-2026.zip"
+        }
+      ],
+      "pos": [
+        {
+          "year": 2022,
+          "value": 14814,
+          "provisional": false,
+          "unit": "terminals",
+          "source": "CBCG Godišnji izvještaj o radu 2024 (Table 8.7, p.107)",
+          "url": "https://www.cbcg.me/slike_i_fajlovi/fajlovi/fajlovi_publikacije/god_izv_o_radu_cbcg/godisnji_izvjestaj_o_radu_2024.pdf"
+        },
+        {
+          "year": 2023,
+          "value": 16310,
+          "provisional": false,
+          "unit": "terminals",
+          "source": "CBCG Godišnji izvještaj o radu 2024 (Table 8.7, p.107)",
+          "url": "https://www.cbcg.me/slike_i_fajlovi/fajlovi/fajlovi_publikacije/god_izv_o_radu_cbcg/godisnji_izvjestaj_o_radu_2024.pdf"
+        },
+        {
+          "year": 2024,
+          "value": 18775,
+          "provisional": false,
+          "unit": "terminals (Q4-2024)",
+          "source": "CBCG - Uređaji za prihvatanje platnih kartica, Q1-2026 workbook (primary, re-downloaded and re-read 31/08/2026; re-pointed from the 2024 Work Report, which could not be re-extracted this run)",
+          "url": "https://www.cbcg.me/slike_i_fajlovi/fajlovi/fajlovi_platni_promet/usluge_e-novac/2026/broj_uredjaja_prihvatanje_platnih_kartica_q1-2026.zip"
+        },
+        {
+          "year": 2025,
+          "value": 22566,
+          "provisional": false,
+          "unit": "terminals (Q4-2025)",
+          "source": "CBCG - Uređaji za prihvatanje platnih kartica, Q1-2026 workbook (primary, re-downloaded and re-read 31/08/2026)",
+          "url": "https://www.cbcg.me/slike_i_fajlovi/fajlovi/fajlovi_platni_promet/usluge_e-novac/2026/broj_uredjaja_prihvatanje_platnih_kartica_q1-2026.zip"
+        },
+        {
+          "year": 2026,
+          "value": 23250,
+          "provisional": true,
+          "unit": "terminals (Q1-2026, partial-year quarter read; POS shows no seasonal dip)",
+          "source": "CBCG - Uređaji za prihvatanje platnih kartica, Q1-2026 workbook (primary, re-downloaded and re-read 31/08/2026)",
+          "url": "https://www.cbcg.me/slike_i_fajlovi/fajlovi/fajlovi_platni_promet/usluge_e-novac/2026/broj_uredjaja_prihvatanje_platnih_kartica_q1-2026.zip"
+        }
+      ],
+      "cash": [
+        {
+          "year": 2022,
+          "value": 5742,
+          "provisional": false,
+          "unit": "EUR million, full-year over-the-counter cash deposits+withdrawals on transaction accounts (excludes ATM cash)",
+          "source": "CBCG - Platne transakcije uplate i isplate gotovog novca, Q1-2026 workbook (primary, re-downloaded and re-read 31/08/2026)",
+          "url": "https://www.cbcg.me/slike_i_fajlovi/fajlovi/fajlovi_platni_promet/usluge_e-novac/2026/platne_transak_uplate_isplate_got_novca_q1-2026.zip"
+        },
+        {
+          "year": 2023,
+          "value": 5799,
+          "provisional": false,
+          "unit": "EUR million, full-year over-the-counter cash deposits+withdrawals on transaction accounts (excludes ATM cash)",
+          "source": "CBCG - Platne transakcije uplate i isplate gotovog novca, Q1-2026 workbook (primary, re-downloaded and re-read 31/08/2026)",
+          "url": "https://www.cbcg.me/slike_i_fajlovi/fajlovi/fajlovi_platni_promet/usluge_e-novac/2026/platne_transak_uplate_isplate_got_novca_q1-2026.zip"
+        },
+        {
+          "year": 2024,
+          "value": 6057,
+          "provisional": false,
+          "unit": "EUR million, full-year over-the-counter cash deposits+withdrawals on transaction accounts (excludes ATM cash)",
+          "source": "CBCG - Platne transakcije uplate i isplate gotovog novca, Q1-2026 workbook (primary, re-downloaded and re-read 31/08/2026)",
+          "url": "https://www.cbcg.me/slike_i_fajlovi/fajlovi/fajlovi_platni_promet/usluge_e-novac/2026/platne_transak_uplate_isplate_got_novca_q1-2026.zip"
+        },
+        {
+          "year": 2025,
+          "value": 5772,
+          "provisional": false,
+          "unit": "EUR million, full-year over-the-counter cash deposits+withdrawals on transaction accounts (excludes ATM cash)",
+          "source": "CBCG - Platne transakcije uplate i isplate gotovog novca, Q1-2026 workbook (primary, re-downloaded and re-read 31/08/2026)",
+          "url": "https://www.cbcg.me/slike_i_fajlovi/fajlovi/fajlovi_platni_promet/usluge_e-novac/2026/platne_transak_uplate_isplate_got_novca_q1-2026.zip"
+        },
+        {
+          "year": 2026,
+          "value": 1175,
+          "provisional": true,
+          "unit": "EUR million, Q1-2026 only (vs 1,250 in Q1-2025) - one quarter, not a year total",
+          "source": "CBCG - Platne transakcije uplate i isplate gotovog novca, Q1-2026 workbook (primary, re-downloaded and re-read 31/08/2026)",
+          "url": "https://www.cbcg.me/slike_i_fajlovi/fajlovi/fajlovi_platni_promet/usluge_e-novac/2026/platne_transak_uplate_isplate_got_novca_q1-2026.zip"
+        }
+      ]
+    },
+    "MK": {
+      "atms": [
+        {
+          "year": 2024,
+          "value": 1041,
+          "provisional": false,
+          "unit": "terminals",
+          "source": "NBRSM, Payment statistics, Table 3 - Card accepting devices (Q1-2026 file, 'Last reviewed on: 25.06.2026'); reference period Dec-2024; cross-checked against Table 3.2 (2025 file, 27/03/2026)",
+          "url": "https://www.nbrm.mk/content/Platni%20sistemi/Table%203%20Q1%202026.xlsx"
+        },
+        {
+          "year": 2025,
+          "value": 1132,
+          "provisional": false,
+          "unit": "terminals",
+          "source": "NBRSM, Payment statistics, Table 3 - Card accepting devices (Q1-2026 file, 'Last reviewed on: 25.06.2026'); reference period Dec-2025; cross-checked against Table 3.2 (2025 file, 27/03/2026)",
+          "url": "https://www.nbrm.mk/content/Platni%20sistemi/Table%203%20Q1%202026.xlsx"
+        },
+        {
+          "year": 2026,
+          "value": 1136,
+          "provisional": true,
+          "unit": "terminals",
+          "source": "NBRSM, Payment statistics, Table 3 - Card accepting devices (Q1-2026 file, 'Last reviewed on: 25.06.2026'); reference period Mar-2026, part-year read",
+          "url": "https://www.nbrm.mk/content/Platni%20sistemi/Table%203%20Q1%202026.xlsx"
+        }
+      ],
+      "pos": [
+        {
+          "year": 2024,
+          "value": 34864,
+          "provisional": false,
+          "unit": "POS terminals (total, incl. EFTPOS 34,778)",
+          "source": "NBRSM, Payment statistics, Table 3 - Card accepting devices (Q1-2026 file, 'Last reviewed on: 25.06.2026'); reference period Dec-2024",
+          "url": "https://www.nbrm.mk/content/Platni%20sistemi/Table%203%20Q1%202026.xlsx"
+        },
+        {
+          "year": 2025,
+          "value": 36095,
+          "provisional": false,
+          "unit": "POS terminals (total, incl. EFTPOS 36,010)",
+          "source": "NBRSM, Payment statistics, Table 3 - Card accepting devices (Q1-2026 file, 'Last reviewed on: 25.06.2026'); reference period Dec-2025",
+          "url": "https://www.nbrm.mk/content/Platni%20sistemi/Table%203%20Q1%202026.xlsx"
+        },
+        {
+          "year": 2026,
+          "value": 36260,
+          "provisional": true,
+          "unit": "POS terminals (total, incl. EFTPOS 36,185)",
+          "source": "NBRSM, Payment statistics, Table 3 - Card accepting devices (Q1-2026 file, 'Last reviewed on: 25.06.2026'); reference period Mar-2026, part-year read",
+          "url": "https://www.nbrm.mk/content/Platni%20sistemi/Table%203%20Q1%202026.xlsx"
+        }
+      ],
+      "branches": [
+        {
+          "year": 2020,
+          "value": 409,
+          "provisional": false,
+          "unit": "bank branches / sub-branches",
+          "source": "NBRSM, Payment statistics, Table 3.2 - Branches, ATMs, agents, terminal devices at POS by municipality (2025 file, HTTP Last-Modified 27/03/2026); national figure = sum of 80 municipality rows, no total row in file",
+          "url": "https://www.nbrm.mk/content/Platni%20sistemi/Table%203.2%202025.xlsx"
+        },
+        {
+          "year": 2021,
+          "value": 401,
+          "provisional": false,
+          "unit": "bank branches / sub-branches",
+          "source": "NBRSM, Payment statistics, Table 3.2 (2025 file, HTTP Last-Modified 27/03/2026); national figure = sum of 80 municipality rows",
+          "url": "https://www.nbrm.mk/content/Platni%20sistemi/Table%203.2%202025.xlsx"
+        },
+        {
+          "year": 2022,
+          "value": 397,
+          "provisional": false,
+          "unit": "bank branches / sub-branches",
+          "source": "NBRSM, Payment statistics, Table 3.2 (2025 file, HTTP Last-Modified 27/03/2026); national figure = sum of 80 municipality rows",
+          "url": "https://www.nbrm.mk/content/Platni%20sistemi/Table%203.2%202025.xlsx"
+        },
+        {
+          "year": 2023,
+          "value": 393,
+          "provisional": false,
+          "unit": "bank branches / sub-branches",
+          "source": "NBRSM, Payment statistics, Table 3.2 (2025 file, HTTP Last-Modified 27/03/2026); national figure = sum of 80 municipality rows",
+          "url": "https://www.nbrm.mk/content/Platni%20sistemi/Table%203.2%202025.xlsx"
+        },
+        {
+          "year": 2024,
+          "value": 384,
+          "provisional": false,
+          "unit": "bank branches / sub-branches",
+          "source": "NBRSM, Payment statistics, Table 3.2 (2025 file, HTTP Last-Modified 27/03/2026); national figure = sum of 80 municipality rows",
+          "url": "https://www.nbrm.mk/content/Platni%20sistemi/Table%203.2%202025.xlsx"
+        },
+        {
+          "year": 2025,
+          "value": 371,
+          "provisional": false,
+          "unit": "bank branches / sub-branches",
+          "source": "NBRSM, Payment statistics, Table 3.2 (2025 file, HTTP Last-Modified 27/03/2026); national figure = sum of 80 municipality rows",
+          "url": "https://www.nbrm.mk/content/Platni%20sistemi/Table%203.2%202025.xlsx"
+        }
+      ]
+    },
+    "UA": {
+      "atms": [
+        {
+          "year": 2020,
+          "value": 18789,
+          "provisional": false,
+          "unit": "ATMs, exact count as at 01/01/2021 (= end-2020 position); the NBU table's 'self-service devices' total also counts self-service terminals (PTKS), which are excluded here",
+          "source": "NBU PC_table_1.xlsx (payment-infrastructure monthly series), year-end position as at 1 January of the following year; read 11/09/2026",
+          "url": "https://bank.gov.ua/ua/file/download?file=PC_table_1.xlsx"
+        },
+        {
+          "year": 2021,
+          "value": 18459,
+          "provisional": false,
+          "unit": "ATMs, exact count as at 01/01/2022 (= end-2021 position); the NBU table's 'self-service devices' total also counts self-service terminals (PTKS), which are excluded here",
+          "source": "NBU PC_table_1.xlsx (payment-infrastructure monthly series), year-end position as at 1 January of the following year; read 11/09/2026",
+          "url": "https://bank.gov.ua/ua/file/download?file=PC_table_1.xlsx"
+        },
+        {
+          "year": 2022,
+          "value": 15591,
+          "provisional": false,
+          "unit": "ATMs, exact count as at 01/01/2023 (= end-2022 position); the NBU table's 'self-service devices' total also counts self-service terminals (PTKS), which are excluded here",
+          "source": "NBU PC_table_1.xlsx (payment-infrastructure monthly series), year-end position as at 1 January of the following year; read 11/09/2026",
+          "url": "https://bank.gov.ua/ua/file/download?file=PC_table_1.xlsx"
+        },
+        {
+          "year": 2023,
+          "value": 15801,
+          "provisional": false,
+          "unit": "ATMs, exact count as at 01/01/2024 (= end-2023 position); the NBU table's 'self-service devices' total also counts self-service terminals (PTKS), which are excluded here",
+          "source": "NBU PC_table_1.xlsx (payment-infrastructure monthly series), year-end position as at 1 January of the following year; read 11/09/2026",
+          "url": "https://bank.gov.ua/ua/file/download?file=PC_table_1.xlsx"
+        },
+        {
+          "year": 2024,
+          "value": 15714,
+          "provisional": false,
+          "unit": "ATMs, exact count as at 01/01/2025 (= end-2024 position); NBU rounds to 15.7k in its news release",
+          "source": "NBU PC_table_1.xlsx (payment-infrastructure monthly series), cross-checked against NBU FY2024 release of 03/03/2025",
+          "url": "https://bank.gov.ua/ua/file/download?file=PC_table_1.xlsx"
+        },
+        {
+          "year": 2025,
+          "value": 15733,
+          "provisional": false,
+          "unit": "ATMs, exact count as at 01/01/2026 (= end-2025 position); NBU rounds to 15.7k in its news release",
+          "source": "NBU PC_table_1.xlsx, cross-checked against NBU FY2025 release of 16/02/2026",
+          "url": "https://bank.gov.ua/ua/file/download?file=PC_table_1.xlsx"
+        },
+        {
+          "year": 2026,
+          "value": 15768,
+          "provisional": true,
+          "unit": "ATMs, exact count as at 01/07/2026 (H1-2026 read, provisional/half-year); NBU rounds to 15.8k. Of these only 2,785 are deposit-capable",
+          "source": "NBU PC_table_1.xlsx, published with the H1-2026 release of 18/08/2026",
+          "url": "https://bank.gov.ua/ua/file/download?file=PC_table_1.xlsx"
+        }
+      ],
+      "pos": [
+        {
+          "year": 2024,
+          "value": 496617,
+          "provisional": false,
+          "unit": "POS terminals in the trade & service network, exact count as at 01/01/2025 (= end-2024); 97.5% contactless; NBU rounds to 496.6k",
+          "source": "NBU PC_table_1.xlsx, cross-checked against NBU FY2024 release of 03/03/2025",
+          "url": "https://bank.gov.ua/ua/file/download?file=PC_table_1.xlsx"
+        },
+        {
+          "year": 2025,
+          "value": 558602,
+          "provisional": false,
+          "unit": "POS terminals in the trade & service network, exact count as at 01/01/2026 (= end-2025), +12.5% y/y, ~85% contactless; NBU rounds to 558.6k",
+          "source": "NBU PC_table_1.xlsx, cross-checked against NBU FY2025 release of 16/02/2026",
+          "url": "https://bank.gov.ua/ua/file/download?file=PC_table_1.xlsx"
+        },
+        {
+          "year": 2026,
+          "value": 582547,
+          "provisional": true,
+          "unit": "POS terminals in the trade & service network, exact count as at 01/07/2026 (H1-2026 read, provisional/half-year); NBU rounds to 582.5k",
+          "source": "NBU PC_table_1.xlsx, published with the H1-2026 release of 18/08/2026",
+          "url": "https://bank.gov.ua/ua/file/download?file=PC_table_1.xlsx"
+        }
+      ],
+      "branches": [
+        {
+          "year": 2024,
+          "value": 5011,
+          "provisional": false,
+          "unit": "operating bank structural units, as at 01/01/2025 (= end-2024 position)",
+          "source": "NBU Kil_pidr_2026-07-01.xlsx, sheet 'Динаміка 2008-2026', totals row",
+          "url": "https://bank.gov.ua/files/stat/Kil_pidr_2026-07-01.xlsx"
+        },
+        {
+          "year": 2025,
+          "value": 4815,
+          "provisional": false,
+          "unit": "operating bank structural units, as at 01/01/2026 (= end-2025 position)",
+          "source": "NBU Kil_pidr_2026-07-01.xlsx, sheet 'Динаміка 2008-2026', totals row",
+          "url": "https://bank.gov.ua/files/stat/Kil_pidr_2026-07-01.xlsx"
+        },
+        {
+          "year": 2026,
+          "value": 4754,
+          "provisional": true,
+          "unit": "operating bank structural units, as at 01/07/2026 (mid-year read, provisional); a further 787 units were temporarily suspended at the same date",
+          "source": "NBU Kil_pidr_2026-07-01.xlsx, sheets 'Динаміка 2008-2026' and 'Діючі підрозділи_на 01.07.26'",
+          "url": "https://bank.gov.ua/files/stat/Kil_pidr_2026-07-01.xlsx"
+        }
+      ],
+      "cash": [
+        {
+          "year": 2021,
+          "value": 581011,
+          "provisional": false,
+          "unit": "UAH million — M0, currency in circulation outside deposit-taking corporations, as at 01/01/2022 (= end-2021 position)",
+          "source": "NBU open statistics API, monetary directory, series id_api='M0'",
+          "url": "https://bank.gov.ua/NBUStatService/v1/statdirectory/monetary?json"
+        },
+        {
+          "year": 2022,
+          "value": 666073,
+          "provisional": false,
+          "unit": "UAH million — M0, as at 01/01/2023 (= end-2022 position)",
+          "source": "NBU open statistics API, monetary directory, series id_api='M0'",
+          "url": "https://bank.gov.ua/NBUStatService/v1/statdirectory/monetary?json"
+        },
+        {
+          "year": 2023,
+          "value": 716167,
+          "provisional": false,
+          "unit": "UAH million — M0, as at 01/01/2024 (= end-2023 position)",
+          "source": "NBU open statistics API, monetary directory, series id_api='M0'",
+          "url": "https://bank.gov.ua/NBUStatService/v1/statdirectory/monetary?json"
+        },
+        {
+          "year": 2024,
+          "value": 759753,
+          "provisional": false,
+          "unit": "UAH million — M0, as at 01/01/2025 (= end-2024 position)",
+          "source": "NBU open statistics API, monetary directory, series id_api='M0'",
+          "url": "https://bank.gov.ua/NBUStatService/v1/statdirectory/monetary?json"
+        },
+        {
+          "year": 2025,
+          "value": 866944,
+          "provisional": false,
+          "unit": "UAH million — M0, as at 01/01/2026 (= end-2025 position); +14.1% during 2025",
+          "source": "NBU open statistics API, monetary directory, series id_api='M0'",
+          "url": "https://bank.gov.ua/NBUStatService/v1/statdirectory/monetary?json"
+        },
+        {
+          "year": 2026,
+          "value": 921808,
+          "provisional": true,
+          "unit": "UAH million — M0, as at 01/08/2026 (end-July 2026, latest monthly read, provisional); +6.3% YTD",
+          "source": "NBU open statistics API, monetary directory, series id_api='M0'",
+          "url": "https://bank.gov.ua/NBUStatService/v1/statdirectory/monetary?json"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1191 @@
+{
+  "week": "2026-09-07",
+  "signals": {
+    "albania-pos-acceptance-mandate-deposit-atm-growth": {
+      "confidence": "High",
+      "bank_theme": "Albania — POS acceptance mandate + deposit-ATM growth"
+    },
+    "albania-tips-clone-instant-payment-rail-november-2026-go-live": {
+      "confidence": "High",
+      "bank_theme": "Albania — TIPS Clone instant-payment rail, November 2026 go-live"
+    },
+    "printec-albania-bank-of-albania-banknote-machine-certification-the-fitness-gate": {
+      "confidence": "Medium",
+      "bank_theme": "Printec Albania / Bank of Albania banknote-machine certification — the fitness gate"
+    },
+    "albania-third-party-atm-partnership-operators-forming-an-independent-deployer-la": {
+      "confidence": "Medium",
+      "bank_theme": "Albania — third-party ATM partnership operators forming an independent deployer layer"
+    },
+    "albania-branch-counter-cash-and-paper-payments-the-teller-automation-case": {
+      "confidence": "Medium",
+      "bank_theme": "Albania — branch counter cash and paper payments, the teller-automation case"
+    },
+    "otp-bank-albania-fastest-atm-build-in-the-otp-group-plus-a-card-platform-cutover": {
+      "confidence": "Medium",
+      "bank_theme": "OTP Bank Albania — fastest ATM build in the OTP group plus a card-platform cutover"
+    },
+    "raiffeisen-bank-albania-self-service-zone-conversion-and-an-open-digital-signatu": {
+      "confidence": "Medium",
+      "bank_theme": "Raiffeisen Bank Albania — self-service zone conversion and an open digital-signature gap"
+    },
+    "bkt-branch-rebuild-an-eight-year-old-atm-fleet-and-post-office-cash-in": {
+      "confidence": "Medium",
+      "bank_theme": "BKT — branch rebuild, an eight-year-old ATM fleet and post-office cash-in"
+    },
+    "credins-bank-funded-pos-and-atm-modernisation-plus-a-2026-loan-origination-build": {
+      "confidence": "Medium",
+      "bank_theme": "Credins Bank — funded POS and ATM modernisation plus a 2026 loan-origination build"
+    },
+    "albania-eidas2-electronic-identification-and-digital-identity-wallet-law-adopted": {
+      "confidence": "Medium",
+      "bank_theme": "Albania — eIDAS2 electronic identification and digital identity wallet law adopted"
+    },
+    "bank-of-albania-banknote-packaging-system-now-closed-inside-a-live-procurement-c": {
+      "confidence": "Medium",
+      "bank_theme": "Bank of Albania — banknote packaging system, now closed, inside a live procurement cycle"
+    },
+    "bank-of-albania-non-eu-digital-resilience-mirror-plus-aml-regulation-amendment": {
+      "confidence": "Medium",
+      "bank_theme": "Bank of Albania — non-EU digital-resilience mirror plus AML regulation amendment"
+    },
+    "albania-acquiring-economics-reset-interchange-caps-plus-a-new-payment-systems-la": {
+      "confidence": "Medium",
+      "bank_theme": "Albania — acquiring economics reset: interchange caps plus a new payment-systems law"
+    },
+    "albania-jet-bank-launch-and-backbase-entrenchment": {
+      "confidence": "Medium",
+      "bank_theme": "Albania — Jet Bank launch and Backbase entrenchment"
+    },
+    "euronet-atm-as-a-service-campaign-aimed-at-bank-finance-departments": {
+      "confidence": "High",
+      "bank_theme": "Euronet — ATM-as-a-Service campaign aimed at bank finance departments"
+    },
+    "union-financiar-tirane-and-iutepay-the-non-bank-payments-and-e-money-layer": {
+      "confidence": "Medium",
+      "bank_theme": "Union Financiar Tirane and IutePay — the non-bank payments and e-money layer"
+    },
+    "geldservice-austria-gsa-eur-9-1m-recycler-framework-multi-vendor-cash-software": {
+      "confidence": "High",
+      "bank_theme": "Geldservice Austria (GSA) — EUR 9.1m recycler framework + multi-vendor cash software"
+    },
+    "bosnia-herzegovina-ips-bih-mandatory-participation-rulebook-10-07-2026-deadline-": {
+      "confidence": "High",
+      "bank_theme": "Bosnia & Herzegovina — IPS BiH mandatory participation (rulebook 10/07/2026, deadline 01/01/2027)"
+    },
+    "bosnia-herzegovina-sepa-accession-iso-20022-structured-address-remediation": {
+      "confidence": "High",
+      "bank_theme": "Bosnia & Herzegovina — SEPA accession + ISO 20022 structured-address remediation"
+    },
+    "bosnia-herzegovina-bank-modernization-fatf-grey-list": {
+      "confidence": "High",
+      "bank_theme": "Bosnia & Herzegovina — bank modernization + FATF grey-list"
+    },
+    "payten-asseco-see-bih-atm-service-incumbency-and-a-disclosed-retreat": {
+      "confidence": "High",
+      "bank_theme": "Payten / Asseco SEE — BiH ATM service incumbency and a disclosed retreat"
+    },
+    "fbih-banking-agency-binding-ict-risk-decision-with-an-annual-external-ict-audit-": {
+      "confidence": "High",
+      "bank_theme": "FBiH Banking Agency — binding ICT-risk decision with an annual external ICT audit due 31/03/2027"
+    },
+    "seven-fbih-banks-with-zero-own-pos-estate-greenfield-card-acceptance": {
+      "confidence": "High",
+      "bank_theme": "Seven FBiH banks with zero own POS estate — greenfield card acceptance"
+    },
+    "unicredit-bank-d-d-mostar-largest-fbih-acquirer-fresh-funding-two-mandated-audit": {
+      "confidence": "Medium",
+      "bank_theme": "UniCredit Bank d.d. Mostar — largest FBiH acquirer, fresh funding, two mandated audits, not yet on the instant rail"
+    },
+    "raiffeisen-bank-d-d-bosna-i-hercegovina-largest-atm-fleet-in-the-country-fresh-b": {
+      "confidence": "Medium",
+      "bank_theme": "Raiffeisen Bank d.d. Bosna i Hercegovina — largest ATM fleet in the country, fresh bond funding"
+    },
+    "asa-banka-d-d-sarajevo-fresh-capital-new-strategy-period-mandated-ict-audit-proc": {
+      "confidence": "Medium",
+      "bank_theme": "ASA Banka d.d. Sarajevo — fresh capital, new strategy period, mandated ICT audit, processor stake"
+    },
+    "ziraatbank-bh-d-d-sarajevo-building-merchant-acquiring-while-its-security-functi": {
+      "confidence": "Medium",
+      "bank_theme": "ZiraatBank BH d.d. Sarajevo — building merchant acquiring while its security function is unfilled"
+    },
+    "nlb-banka-d-d-sarajevo-and-nlb-banka-a-d-banja-luka-worst-cost-to-income-in-the-": {
+      "confidence": "Medium",
+      "bank_theme": "NLB Banka d.d. Sarajevo and NLB Banka a.d. Banja Luka — worst cost-to-income in the group, three-scope audit mandate"
+    },
+    "unicredit-prime-a-nine-country-branch-refit-that-names-customer-flow-management-": {
+      "confidence": "Medium",
+      "bank_theme": "UniCredit PRIME — a nine-country branch refit that names customer-flow management as a requirement"
+    },
+    "bih-postal-operators-cash-handling-bought-in-public-and-the-named-local-incumben": {
+      "confidence": "Medium",
+      "bank_theme": "BiH postal operators — cash handling bought in public, and the named local incumbents"
+    },
+    "bamcard-d-d-sarajevo-the-domestic-processor-and-an-unresolved-partner-or-compete": {
+      "confidence": "Low",
+      "bank_theme": "BAMCARD d.d. Sarajevo — the domestic processor, and an unresolved partner-or-compete question"
+    },
+    "bosnia-herzegovina-no-electronic-identity-or-trust-services-law-remote-onboardin": {
+      "confidence": "Medium",
+      "bank_theme": "Bosnia & Herzegovina — no electronic-identity or trust-services law, remote onboarding legally blocked"
+    },
+    "bulgaria-post-euro-changeover-consolidation": {
+      "confidence": "High",
+      "bank_theme": "Bulgaria — post-euro changeover consolidation"
+    },
+    "bulgaria-big-four-atm-estate-deposit-capability-white-space-quantified": {
+      "confidence": "High",
+      "bank_theme": "Bulgaria — big-four ATM estate: deposit-capability white space quantified"
+    },
+    "bulgaria-verification-of-payee-cliff-at-01-01-2027-legal-basis-contested": {
+      "confidence": "High",
+      "bank_theme": "Bulgaria — Verification of Payee cliff at 01/01/2027 (legal basis contested)"
+    },
+    "unicredit-bulbank-bank-named-atm-obsolescence-inside-a-group-renewal-plan-to-202": {
+      "confidence": "Medium",
+      "bank_theme": "UniCredit Bulbank — bank-named \"ATM obsolescence\" inside a Group renewal plan to 2027"
+    },
+    "postbank-eurobank-bulgaria-postbank-next-branch-format-rebuild": {
+      "confidence": "High",
+      "bank_theme": "Postbank (Eurobank Bulgaria) — \"Postbank NEXT\" branch-format rebuild"
+    },
+    "borica-openway-way4-the-national-switch-layer-under-every-bulgarian-atm-bid": {
+      "confidence": "High",
+      "bank_theme": "BORICA / OpenWay Way4 — the national switch layer under every Bulgarian ATM bid"
+    },
+    "dsk-bank-otp-disclosed-it-cost-cycle-card-systems-build-out-and-a-greenfield-kio": {
+      "confidence": "High",
+      "bank_theme": "DSK Bank (OTP) — disclosed IT cost cycle, card-systems build-out and a greenfield kiosk layer"
+    },
+    "borica-centralised-national-anti-fraud-model-with-sibs-rules-by-end-2026-and-mar": {
+      "confidence": "Medium",
+      "bank_theme": "BORICA — centralised national anti-fraud model with SIBS, rules by end-2026 and market implementation from 2027"
+    },
+    "bulgaria-coin-handling-the-unautomated-tail-of-the-changeover": {
+      "confidence": "High",
+      "bank_theme": "Bulgaria — coin handling, the unautomated tail of the changeover"
+    },
+    "bulgarian-posts-the-counter-service-went-fee-bearing-and-the-cash-logistics-cont": {
+      "confidence": "High",
+      "bank_theme": "Български пощи (Bulgarian Posts) — the counter service went fee-bearing, and the cash-logistics contract expires around 24/11/2026"
+    },
+    "varna-municipality-open-loop-transit-acceptance-tender-closed-with-zero-bidders": {
+      "confidence": "Medium",
+      "bank_theme": "Община Варна (Varna Municipality) — open-loop transit acceptance tender closed with zero bidders"
+    },
+    "bulgarian-national-bank-institutional-it-document-management-and-security-procur": {
+      "confidence": "Medium",
+      "bank_theme": "Bulgarian National Bank — institutional IT, document-management and security procurement, with G+D sole-sourced at the sorter layer"
+    },
+    "procredit-bank-bulgaria-a-euro-fee-income-hole-and-a-bank-staffing-up-to-run-its": {
+      "confidence": "High",
+      "bank_theme": "ProCredit Bank Bulgaria — a euro fee-income hole and a bank staffing up to run its own ATM estate"
+    },
+    "tbi-bank-private-equity-ownership-a-new-chief-risk-officer-and-a-funded-financia": {
+      "confidence": "Medium",
+      "bank_theme": "tbi bank — private-equity ownership, a new Chief Risk Officer and a funded financial-crime build"
+    },
+    "datecspay-a-bulgarian-terminal-maker-becomes-a-full-service-acquirer-issuer-and-": {
+      "confidence": "Medium",
+      "bank_theme": "Датекс Пеймънт Технолоджи (DatecsPay) — a Bulgarian terminal maker becomes a full-service acquirer, issuer and cash-out provider"
+    },
+    "bulgaria-local-identity-trust-service-and-core-banking-vendors-are-closing-the-s": {
+      "confidence": "High",
+      "bank_theme": "Bulgaria — local identity, trust-service and core-banking vendors are closing the software lane"
+    },
+    "bulgaria-european-accessibility-act-market-surveillance-now-bites-on-atms-and-pa": {
+      "confidence": "Medium",
+      "bank_theme": "Bulgaria — European Accessibility Act market surveillance now bites on ATMs and payment terminals"
+    },
+    "croatia-national-shared-atm-network-hub-ministry-of-finance-hnb": {
+      "confidence": "High",
+      "bank_theme": "Croatia — national shared ATM network (HUB / Ministry of Finance / HNB)"
+    },
+    "croatian-banks-measurable-per-bank-atm-deposit-gap-now-public-from-the-central-b": {
+      "confidence": "High",
+      "bank_theme": "Croatian banks — measurable per-bank ATM deposit gap now public from the central-bank cash-point registry (ZABA, PBZ, RBA)"
+    },
+    "erste-steierm-rkische-bank-erste-croatia-467-withdrawal-only-atms": {
+      "confidence": "Medium",
+      "bank_theme": "Erste & Steiermärkische Bank (Erste Croatia) — 467 withdrawal-only ATMs"
+    },
+    "otp-banka-hrvatska-353-withdrawal-only-atms-plus-a-funded-branch-reformatting-pr": {
+      "confidence": "Medium",
+      "bank_theme": "OTP banka Hrvatska — 353 withdrawal-only ATMs plus a funded branch-reformatting programme"
+    },
+    "hrvatska-po-tanska-banka-hpb-declared-card-ecosystem-change-programme-a-won-toll": {
+      "confidence": "High",
+      "bank_theme": "Hrvatska poštanska banka (HPB) — declared card-ecosystem change programme, a won toll-road acquiring contract and the country's worst deposit ratio"
+    },
+    "hrvatska-po-tanska-banka-crypto-asset-authorisation-supervised-by-the-central-ba": {
+      "confidence": "Medium",
+      "bank_theme": "Hrvatska poštanska banka — crypto-asset authorisation supervised by the central bank"
+    },
+    "hrvatska-narodna-banka-hnb-cash-automation-procurement-pipeline": {
+      "confidence": "Medium",
+      "bank_theme": "Hrvatska narodna banka (HNB) — cash-automation procurement pipeline"
+    },
+    "croatia-the-22-h1-2026-atm-build-out-is-coastal-low-specification-and-third-part": {
+      "confidence": "High",
+      "bank_theme": "Croatia — the 22% H1-2026 ATM build-out is coastal, low-specification and third-party, not a bank recycler wave"
+    },
+    "fina-financijska-agencija-a-eur-400-000-coin-counter-tender-that-failed-with-no-": {
+      "confidence": "High",
+      "bank_theme": "FINA (Financijska agencija) — a EUR 400,000 coin-counter tender that failed with no winner, inside an otherwise captured account"
+    },
+    "ministarstvo-unutarnjih-poslova-ministry-of-the-interior-two-open-identity-docum": {
+      "confidence": "Medium",
+      "bank_theme": "Ministarstvo unutarnjih poslova (Ministry of the Interior) — two open identity-document hardware tenders closing in September"
+    },
+    "hp-hrvatska-po-ta-d-d-croatian-post-card-acceptance-held-by-a-bank-a-pending-sec": {
+      "confidence": "Medium",
+      "bank_theme": "HP — Hrvatska pošta d.d. (Croatian Post) — card acceptance held by a bank, a pending security award and recurring device buys"
+    },
+    "podravska-banka-aikgroup-pending-change-of-control-28-atm-estate-10-349-terminal": {
+      "confidence": "Medium",
+      "bank_theme": "Podravska banka / AikGroup — pending change of control, 28-ATM estate, 10,349-terminal POS partner programme"
+    },
+    "croatia-free-basic-services-package-deposit-migration-driver-with-a-coin-carve-o": {
+      "confidence": "High",
+      "bank_theme": "Croatia — free-basic-services package: deposit-migration driver with a coin carve-out"
+    },
+    "croatia-european-accessibility-act-nn-89-2025-the-harshest-fines-in-the-footprin": {
+      "confidence": "Medium",
+      "bank_theme": "Croatia — European Accessibility Act (NN 89/2025): the harshest fines in the footprint, with the central bank as supervisor of bank services"
+    },
+    "croatian-local-competitors-mellon-buys-into-the-zagreb-branch-estate-and-identyu": {
+      "confidence": "Medium",
+      "bank_theme": "Croatian local competitors — Mellon buys into the Zagreb branch estate, and Identyum is building toward qualified trust-service status"
+    },
+    "hrvatska-narodna-banka-technical-and-physical-security-estate-closed-to-insig2": {
+      "confidence": "High",
+      "bank_theme": "Hrvatska narodna banka — technical and physical security estate closed to INsig2"
+    },
+    "eurobank-limited-cyprus-hellenic-bank-merger-156-atm-harmonisation-and-an-april-": {
+      "confidence": "High",
+      "bank_theme": "Eurobank Limited (Cyprus) — Hellenic Bank merger: ~156-ATM harmonisation and an April-2027 core cutover"
+    },
+    "bank-of-cyprus-branch-transformation-acquisitions": {
+      "confidence": "High",
+      "bank_theme": "Bank of Cyprus — branch transformation + acquisitions"
+    },
+    "alpha-bank-cyprus-ex-astrobank-cutover-whole-portfolio-card-reissue-and-a-branch": {
+      "confidence": "High",
+      "bank_theme": "Alpha Bank Cyprus — ex-AstroBank cutover, whole-portfolio card reissue and a Branch Network Redesign Program"
+    },
+    "cyprus-regulator-flagged-atm-rationalisation-plus-75-unit-independent-deployer-w": {
+      "confidence": "Medium",
+      "bank_theme": "Cyprus — regulator-flagged ATM rationalisation plus ~75-unit independent-deployer white space"
+    },
+    "cyprus-atm-estate-the-outsourcing-threat-brink-s-an-accelerated-ncr-atleos-close": {
+      "confidence": "High",
+      "bank_theme": "Cyprus ATM estate — the outsourcing threat: Brink's, an accelerated NCR Atleos close and Euronet's asset-purchase pitch"
+    },
+    "jcc-payment-systems-cypriot-state-e-payments-monopoly-broken-by-vivabank": {
+      "confidence": "High",
+      "bank_theme": "JCC Payment Systems — Cypriot state e-payments monopoly broken by VivaBank"
+    },
+    "cyprus-payment-fraud-surge-against-a-hard-verification-of-payee-cut-over": {
+      "confidence": "High",
+      "bank_theme": "Cyprus — payment-fraud surge against a hard Verification-of-Payee cut-over"
+    },
+    "department-of-insolvency-integrated-case-management-system-and-infrastructure-as": {
+      "confidence": "Medium",
+      "bank_theme": "Department of Insolvency — integrated case-management system and infrastructure-as-a-service, closing 15/09/2026"
+    },
+    "cyprus-a-direct-sales-market-not-a-tender-market-with-the-housing-finance-corpor": {
+      "confidence": "Medium",
+      "bank_theme": "Cyprus — a direct-sales market, not a tender market, with the Housing Finance Corporation the one public bank buyer"
+    },
+    "veridos-cyprus-sovereign-credential-issuance-awarded-at-eur-22-9m-with-citizen-e": {
+      "confidence": "Medium",
+      "bank_theme": "Veridos — Cyprus sovereign credential issuance awarded at EUR 22.9m, with citizen eID split out to JCC"
+    },
+    "cyprus-accessibility-law-a-28-06-2030-replacement-cliff-for-every-atm-and-paymen": {
+      "confidence": "Medium",
+      "bank_theme": "Cyprus accessibility law — a 28/06/2030 replacement cliff for every ATM and payment terminal"
+    },
+    "cyprus-acceptance-market-softpos-erodes-terminal-supply-while-mellon-takes-full-": {
+      "confidence": "High",
+      "bank_theme": "Cyprus acceptance market — softPOS erodes terminal supply while Mellon takes full local control"
+    },
+    "complytek-a-local-regtech-already-inside-bank-of-cyprus-on-governance-expanding-": {
+      "confidence": "Medium",
+      "bank_theme": "Complytek — a local RegTech already inside Bank of Cyprus on governance, expanding toward AML"
+    },
+    "czechia-four-bank-shared-deposit-atm-network-kb-moneta-air-bank-unicredit-cz": {
+      "confidence": "High",
+      "bank_theme": "Czechia — four-bank shared deposit-ATM network (KB / Moneta / Air Bank / UniCredit CZ)"
+    },
+    "moneta-money-bank-multicurrency-cash-automation-coin-machine-expansion-2026-prog": {
+      "confidence": "Medium",
+      "bank_theme": "MONETA Money Bank — multicurrency cash automation + coin-machine expansion (2026 programme)"
+    },
+    "sob-czechia-kbc-group-international-card-acquiring-platform-build": {
+      "confidence": "Medium",
+      "bank_theme": "ČSOB Czechia (KBC group) — international card-acquiring platform build"
+    },
+    "czech-banks-instant-euro-payments-and-verification-of-payee-on-a-fixed-2027-cloc": {
+      "confidence": "High",
+      "bank_theme": "Czech banks — instant euro payments and Verification of Payee, on a fixed 2027 clock"
+    },
+    "czech-banking-sector-regulator-mandated-aml-remediation-and-a-market-wide-financ": {
+      "confidence": "High",
+      "bank_theme": "Czech banking sector — regulator-mandated AML remediation and a market-wide financial-crime hiring wave"
+    },
+    "t-tna-tla-iare-cen-n-stc-biometric-enrolment-kiosks-pre-tender": {
+      "confidence": "Medium",
+      "bank_theme": "Štátna tlačiareň cenín (STC) — biometric enrolment kiosks (pre-tender)"
+    },
+    "oper-tor-ict-city-of-prague-ict-operator-czk-250m-payment-gateway-bidding-now": {
+      "confidence": "Medium",
+      "bank_theme": "Operátor ICT (City of Prague ICT operator) — CZK 250m payment gateway, bidding now"
+    },
+    "czechia-cash-automation-demand-locked-inside-incumbent-frameworks": {
+      "confidence": "High",
+      "bank_theme": "Czechia — cash-automation demand locked inside incumbent frameworks"
+    },
+    "esk-po-ta-five-year-payment-gateway-mandate-left-unfilled-and-heading-for-a-re-r": {
+      "confidence": "Medium",
+      "bank_theme": "Česká pošta — five-year payment-gateway mandate left unfilled and heading for a re-run"
+    },
+    "esk-spo-itelna-contracting-self-service-estate-behind-a-kal-oki-software-incumbe": {
+      "confidence": "Medium",
+      "bank_theme": "Česká spořitelna — contracting self-service estate behind a KAL / OKI software incumbency"
+    },
+    "komer-n-banka-temenos-core-migration-a-diebold-nixdorf-pilot-and-a-digital-board": {
+      "confidence": "High",
+      "bank_theme": "Komerční banka — Temenos core migration, a Diebold Nixdorf pilot and a digital board seat falling vacant"
+    },
+    "czechia-eet-2-0-nationwide-fiscal-sales-recording-mandate-from-01-01-2027": {
+      "confidence": "Medium",
+      "bank_theme": "Czechia — EET 2.0 nationwide fiscal sales-recording mandate from 01/01/2027"
+    },
+    "digit-ln-a-informa-n-agentura-dia-cancelled-eu-digital-identity-wallet-register-": {
+      "confidence": "Medium",
+      "bank_theme": "Digitální a informační agentura (DIA) — cancelled EU digital identity wallet register, re-tender window open"
+    },
+    "czech-public-sector-the-state-rents-card-acceptance-rather-than-buying-terminals": {
+      "confidence": "Medium",
+      "bank_theme": "Czech public sector — the state rents card acceptance rather than buying terminals"
+    },
+    "czech-public-sector-hardware-security-modules-sefira-and-entrust-hold-the-ground": {
+      "confidence": "Medium",
+      "bank_theme": "Czech public-sector hardware security modules — SEFIRA and Entrust hold the ground uncontested"
+    },
+    "czechia-dora-and-the-new-cybersecurity-act-create-a-dual-compliance-surface-with": {
+      "confidence": "High",
+      "bank_theme": "Czechia — DORA and the new Cybersecurity Act create a dual compliance surface, with a hard December 2026 data date"
+    },
+    "czechia-euro-deferred-no-erm-ii-no-certis-iso-20022-migration-no-digital-koruna": {
+      "confidence": "Medium",
+      "bank_theme": "Czechia — euro deferred: no ERM II, no CERTIS ISO 20022 migration, no digital koruna"
+    },
+    "v-eobecn-zdravotn-poji-ovna-vzp-nationwide-alarm-and-access-control-renewal-bidd": {
+      "confidence": "Medium",
+      "bank_theme": "Všeobecná zdravotní pojišťovna (VZP) — nationwide alarm and access-control renewal, biddable to 02/10/2026"
+    },
+    "piraeus-cashflex-printec-owned-off-site-atm-fleet": {
+      "confidence": "High",
+      "bank_theme": "Piraeus / Cashflex — Printec-owned off-site ATM fleet"
+    },
+    "piraeus-bank-h1-2026-channel-programme-and-in-branch-kiosk-rollout": {
+      "confidence": "Medium",
+      "bank_theme": "Piraeus Bank — H1-2026 channel programme and in-branch kiosk rollout"
+    },
+    "alpha-bank-retail-branch-transformation-cyprus-integration": {
+      "confidence": "High",
+      "bank_theme": "Alpha Bank — retail/branch transformation (+ Cyprus integration)"
+    },
+    "nbg-core-complete-channel-renewal": {
+      "confidence": "High",
+      "bank_theme": "NBG — core complete + channel renewal"
+    },
+    "eurobank-phygital-branches-aml-build-out": {
+      "confidence": "High",
+      "bank_theme": "Eurobank — \"phygital\" branches + AML build-out"
+    },
+    "crediabank-q1-profit-new-experience-branch-refurbishment": {
+      "confidence": "High",
+      "bank_theme": "CrediaBank — Q1 profit + \"New Experience\" branch refurbishment"
+    },
+    "elta-hellenic-post-117-atm-estate-2026-2030-development-plan": {
+      "confidence": "High",
+      "bank_theme": "ELTA (Hellenic Post) — 117-ATM estate + 2026–2030 Development Plan"
+    },
+    "boos-s-a-greek-cash-automation-competitor-missing-from-the-roster": {
+      "confidence": "High",
+      "bank_theme": "BOOS S.A. — Greek cash-automation competitor missing from the roster"
+    },
+    "greece-offsite-atm-deployment-competitive-lock-up": {
+      "confidence": "High",
+      "bank_theme": "Greece — offsite ATM deployment + competitive lock-up"
+    },
+    "mellon-technologies-259m-greek-rival-ring-fences-its-services-arm": {
+      "confidence": "High",
+      "bank_theme": "Mellon Technologies — €259m Greek rival ring-fences its services arm"
+    },
+    "odap-30-0m-visitor-digital-services-at-archaeological-sites-award-pending": {
+      "confidence": "Medium",
+      "bank_theme": "ODAP — €30.0m visitor digital services at archaeological sites, award pending"
+    },
+    "greece-opsea-national-eid-security-documents-tender": {
+      "confidence": "Medium",
+      "bank_theme": "Greece — OPSEA national eID / security-documents tender"
+    },
+    "bank-of-greece-aml-enforcement-transaction-monitoring-inspection-priority": {
+      "confidence": "High",
+      "bank_theme": "Bank of Greece — AML enforcement + transaction-monitoring inspection priority"
+    },
+    "greece-iris-instant-payments-as-a-mandated-card-alternative": {
+      "confidence": "High",
+      "bank_theme": "Greece — IRIS instant payments as a mandated card alternative"
+    },
+    "greece-softpos-tap-to-pay-commoditises-card-acceptance": {
+      "confidence": "Medium",
+      "bank_theme": "Greece — softPOS / Tap-to-Pay commoditises card acceptance"
+    },
+    "optima-bank-cash-in-white-space-against-a-capex-ceiling": {
+      "confidence": "Medium",
+      "bank_theme": "Optima bank — cash-in white space against a capex ceiling"
+    },
+    "greece-cash-access-policy-merchant-cash-out-and-the-eu-legal-tender-file": {
+      "confidence": "High",
+      "bank_theme": "Greece — cash access policy: merchant cash-out and the EU legal-tender file"
+    },
+    "hungary-act-xviii-rural-atm-rollout-mnb-validation-uptime-mandate": {
+      "confidence": "High",
+      "bank_theme": "Hungary — Act XVIII rural ATM rollout + MNB validation/uptime mandate"
+    },
+    "hungary-act-xiv-of-2026-atm-decommissioning-and-relocation-freeze": {
+      "confidence": "High",
+      "bank_theme": "Hungary — Act XIV of 2026 ATM decommissioning and relocation freeze"
+    },
+    "mbh-bank-115-location-2026-atm-programme-plus-a-500-unit-replacement-cycle": {
+      "confidence": "High",
+      "bank_theme": "MBH Bank — 115-location 2026 ATM programme plus a ~500-unit replacement cycle"
+    },
+    "otp-bank-hungary-and-erste-bank-hungary-cash-in-white-space-against-a-shrinking-": {
+      "confidence": "Medium",
+      "bank_theme": "OTP Bank Hungary and Erste Bank Hungary — cash-in white space against a shrinking OTP estate"
+    },
+    "k-h-bank-mnb-ordered-branch-teller-capacity-queue-analytics-and-appointment-book": {
+      "confidence": "Medium",
+      "bank_theme": "K&H Bank — MNB-ordered branch teller capacity, queue analytics and appointment booking"
+    },
+    "raiffeisen-bank-hungary-twin-mnb-aml-fines-mandating-automated-due-diligence-and": {
+      "confidence": "Medium-High",
+      "bank_theme": "Raiffeisen Bank Hungary — twin MNB AML fines mandating automated due diligence and beneficial-owner remediation"
+    },
+    "hungary-cyber-audit-remediation-wave-after-the-30-06-2026-nis2-deadline": {
+      "confidence": "Medium",
+      "bank_theme": "Hungary — cyber-audit remediation wave after the 30/06/2026 NIS2 deadline"
+    },
+    "magyar-nemzeti-bank-entrust-nshield-hsm-tender-live": {
+      "confidence": "Medium",
+      "bank_theme": "Magyar Nemzeti Bank — Entrust nShield HSM tender (live)"
+    },
+    "budapest-bkk-open-loop-cemv-transit-programme-and-the-317-unit-ticket-machine-re": {
+      "confidence": "Medium",
+      "bank_theme": "Budapest BKK — open-loop cEMV transit programme and the 317-unit ticket-machine refresh"
+    },
+    "hungary-state-sector-card-acceptance-consolidating-on-simplepay-otp-mobil": {
+      "confidence": "Medium",
+      "bank_theme": "Hungary — state-sector card acceptance consolidating on SimplePay (OTP Mobil)"
+    },
+    "orsz-gos-rend-r-f-kapit-nys-g-eu-entry-exit-system-border-kiosk-and-biometric-ca": {
+      "confidence": "Medium",
+      "bank_theme": "Országos Rendőr-főkapitányság — EU Entry/Exit System border kiosk and biometric capture tender"
+    },
+    "hungary-competitor-and-channel-map-mellon-arrives-euronet-is-already-embedded-ca": {
+      "confidence": "High",
+      "bank_theme": "Hungary — competitor and channel map: Mellon arrives, Euronet is already embedded, cash-machine field service is thin"
+    },
+    "hungary-2026-27-payments-infrastructure-deadline-stack-the-viber-address-gap-and": {
+      "confidence": "Medium",
+      "bank_theme": "Hungary — 2026-27 payments-infrastructure deadline stack: the VIBER address gap and the instant-euro build"
+    },
+    "magyar-nemzeti-bank-banknote-processing-estate-held-single-source-by-giesecke-de": {
+      "confidence": "Medium",
+      "bank_theme": "Magyar Nemzeti Bank — banknote-processing estate held single-source by Giesecke+Devrient"
+    },
+    "kosovo-pos-whitespace-deposit-atm-upgrade-bpb-printec-incumbent": {
+      "confidence": "High",
+      "bank_theme": "Kosovo — POS whitespace + deposit-ATM upgrade (BPB Printec-incumbent)"
+    },
+    "kosovo-kips-upgrade-and-instant-payment-bank-side-integration-across-all-banks": {
+      "confidence": "High",
+      "bank_theme": "Kosovo — KIPS upgrade and instant-payment bank-side integration across all banks"
+    },
+    "nexi-payments-spa-kosovo-central-bank-instant-payment-connectivity-core": {
+      "confidence": "High",
+      "bank_theme": "Nexi Payments SpA — Kosovo central-bank instant-payment connectivity core"
+    },
+    "banka-qendrore-e-kosov-s-bqk-cash-centre-maintenance-cycle": {
+      "confidence": "Medium",
+      "bank_theme": "Banka Qendrore e Kosovës (BQK) — cash-centre maintenance cycle"
+    },
+    "banka-qendrore-e-kosov-s-bqk-centralised-it-access-management-project-twice-unfi": {
+      "confidence": "Medium",
+      "bank_theme": "Banka Qendrore e Kosovës (BQK) — centralised IT access-management project, twice unfilled"
+    },
+    "kosovo-cbk-regulation-on-information-systems-and-cyber-risk-management-kosovo-s-": {
+      "confidence": "High",
+      "bank_theme": "Kosovo — CBK Regulation on Information Systems and Cyber Risk Management (Kosovo's DORA)"
+    },
+    "teb-sh-a-bnp-paribas-teb-group-kosovo-recurring-cash-handling-digital-onboarding": {
+      "confidence": "High",
+      "bank_theme": "TEB Sh.A. (BNP Paribas / TEB group), Kosovo — recurring cash-handling, digital-onboarding and ATM-services tender cycle"
+    },
+    "procredit-bank-kosova-29-site-branch-light-estate-and-an-open-numbered-tender-pr": {
+      "confidence": "Medium",
+      "bank_theme": "ProCredit Bank Kosova — 29-site branch-light estate and an open numbered tender programme"
+    },
+    "banka-ekonomike-i-bank-kosova-absorption-plus-an-open-cash-equipment-tender-boar": {
+      "confidence": "Medium",
+      "bank_theme": "Banka Ekonomike — İşbank Kosova absorption plus an open cash-equipment tender board"
+    },
+    "nlb-banka-kosovo-group-mandated-atm-and-cash-deposit-system-upgrade": {
+      "confidence": "Medium",
+      "bank_theme": "NLB Banka Kosovo — group-mandated ATM and cash-deposit-system upgrade"
+    },
+    "kosovo-softpos-tap-to-phone-shift-in-merchant-acceptance": {
+      "confidence": "Medium",
+      "bank_theme": "Kosovo — softPOS / Tap-to-Phone shift in merchant acceptance"
+    },
+    "kosovo-remote-onboarding-and-electronic-identity-national-eid-the-arc-remote-dat": {
+      "confidence": "High",
+      "bank_theme": "Kosovo — remote onboarding and electronic identity: national eID, the ARC remote data-update regulation, and unmet bank demand"
+    },
+    "kosovo-law-08-l-304-on-banks-compliance-deadline-with-the-payment-services-law-s": {
+      "confidence": "Medium",
+      "bank_theme": "Kosovo — Law 08/L-304 on Banks compliance deadline, with the Payment Services law still blocking SEPA"
+    },
+    "kosovo-cash-operations-compliance-spine-the-ecb-tested-machine-gate-and-the-new-": {
+      "confidence": "High",
+      "bank_theme": "Kosovo — cash-operations compliance spine: the ECB tested-machine gate and the new Counterfeit Monitoring System"
+    },
+    "banka-p-r-biznes-bpb-north-mitrovica-counter-hour-cut-and-an-outsourced-atm-mana": {
+      "confidence": "Medium",
+      "bank_theme": "Banka për Biznes (BPB) — North Mitrovica counter-hour cut and an outsourced ATM-management bundle"
+    },
+    "bkt-kosova-cardless-business-cash-deposit-at-atms-and-a-rising-infrastructure-sp": {
+      "confidence": "Medium",
+      "bank_theme": "BKT Kosova — cardless business cash deposit at ATMs and a rising infrastructure spend line"
+    },
+    "raiffeisen-bank-kosovo-185-atms-against-37-branches-the-most-self-service-weight": {
+      "confidence": "Medium",
+      "bank_theme": "Raiffeisen Bank Kosovo — 185 ATMs against 37 branches, the most self-service-weighted Western Balkans unit"
+    },
+    "world-bank-kosovo-financial-sector-development-project-p507881-component-3-catal": {
+      "confidence": "High",
+      "bank_theme": "World Bank Kosovo Financial Sector Development Project (P507881) — Component 3, Catalyzing Faster Payments"
+    },
+    "kosovo-commercial-bank-branch-estate-has-plateaued-turning-a-build-market-into-a": {
+      "confidence": "Medium",
+      "bank_theme": "Kosovo — commercial-bank branch estate has plateaued, turning a build market into a refit market"
+    },
+    "montenegro-fastest-growing-see-atm-fleet": {
+      "confidence": "High",
+      "bank_theme": "Montenegro — fastest-growing SEE ATM fleet"
+    },
+    "montenegro-instant-payments-live-at-all-11-banks-verification-of-payee-mandate-i": {
+      "confidence": "High",
+      "bank_theme": "Montenegro — instant payments live at all 11 banks: Verification of Payee mandate, irrevocable rail, 5-cent fee cap"
+    },
+    "montenegro-instant-payments-phase-2-qr-acceptance-phone-number-alias-request-to-": {
+      "confidence": "High",
+      "bank_theme": "Montenegro — instant-payments phase 2 (QR acceptance, phone-number alias, Request-to-Pay) and the digital-channel gap"
+    },
+    "montenegro-pos-and-card-acceptance-estate-20-y-y-tms-softpos-whitespace": {
+      "confidence": "High",
+      "bank_theme": "Montenegro — POS and card-acceptance estate +20% y/y (TMS / softPOS whitespace)"
+    },
+    "montenegro-branch-and-counter-cash-automation-teller-recyclers-business-cash-dep": {
+      "confidence": "High",
+      "bank_theme": "Montenegro — branch and counter cash automation (teller recyclers, business cash deposit)"
+    },
+    "central-bank-of-montenegro-vault-and-cash-operations-equipment-tender-closes-07-": {
+      "confidence": "Low",
+      "bank_theme": "Central Bank of Montenegro — vault and cash-operations equipment tender, closes 07/10/2026"
+    },
+    "prva-banka-crne-gore-phase-two-of-the-deposit-atm-rollout": {
+      "confidence": "Medium",
+      "bank_theme": "Prva banka Crne Gore — phase two of the deposit-ATM rollout"
+    },
+    "ckb-otp-group-counter-cash-out-at-the-branch-and-a-managed-migration-to-deposit-": {
+      "confidence": "Medium",
+      "bank_theme": "CKB (OTP Group) — counter cash-out at the branch and a managed migration to deposit ATMs"
+    },
+    "hipotekarna-banka-card-acceptance-department-staffing-up-for-atm-expansion-and-v": {
+      "confidence": "High",
+      "bank_theme": "Hipotekarna banka — card-acceptance department staffing up for ATM expansion and vendor renewal"
+    },
+    "nlb-banka-podgorica-124-withdrawal-only-atms-inside-a-funded-group-cash-transiti": {
+      "confidence": "Medium",
+      "bank_theme": "NLB Banka Podgorica — 124 withdrawal-only ATMs inside a funded group Cash Transition programme"
+    },
+    "erste-bank-podgorica-erste-smart-cash-self-service-rollout-and-a-new-data-capabi": {
+      "confidence": "High",
+      "bank_theme": "Erste Bank Podgorica — Erste Smart Cash self-service rollout and a new data capability"
+    },
+    "lov-en-banka-78-of-101-published-atm-locations-are-euronet-branded": {
+      "confidence": "Low",
+      "bank_theme": "Lovćen banka — 78 of 101 published ATM locations are Euronet-branded"
+    },
+    "payten-asseco-see-publicly-disclosed-atm-hardware-retreat-naming-montenegro": {
+      "confidence": "Medium",
+      "bank_theme": "Payten (Asseco SEE) — publicly disclosed ATM hardware retreat naming Montenegro"
+    },
+    "montenegro-sepa-cost-collapse-iso-20022-rts-x-modernisation": {
+      "confidence": "High",
+      "bank_theme": "Montenegro — SEPA cost collapse + ISO 20022 RTS/X modernisation"
+    },
+    "montenegro-crd-vi-crr-iii-and-resolution-alignment-with-eu-accession-negotiation": {
+      "confidence": "Medium",
+      "bank_theme": "Montenegro — CRD VI / CRR III and resolution alignment, with EU accession negotiations targeted to close by end-2026"
+    },
+    "montenegro-aml-cft-overhaul-in-force-sl-list-cg-59-2026": {
+      "confidence": "Low",
+      "bank_theme": "Montenegro — AML/CFT overhaul in force (Sl. list CG 59/2026)"
+    },
+    "north-macedonia-instant-payments-arrive-on-two-rails-tips-clone-kibs-instant-mip": {
+      "confidence": "High",
+      "bank_theme": "North Macedonia — instant payments arrive on two rails (TIPS Clone + KIBS Instant), MIPS rebuilt on ISO 20022"
+    },
+    "north-macedonia-nbrsm-tips-clone-connectivity-tender-2nd-attempt-closing-18-09-2": {
+      "confidence": "Medium",
+      "bank_theme": "North Macedonia — NBRSM TIPS-clone connectivity tender (2nd attempt) closing 18/09/2026, and the incumbent suppliers around it"
+    },
+    "north-macedonia-central-bank-s-merchant-acceptance-programme-national-qr-aliases": {
+      "confidence": "High",
+      "bank_theme": "North Macedonia — central bank's merchant-acceptance programme: national QR, aliases, request-to-pay and low-cost softPOS"
+    },
+    "north-macedonia-nbg-stopanska-sepa-deposit-atm-growth": {
+      "confidence": "High",
+      "bank_theme": "North Macedonia — NBG Stopanska + SEPA + deposit-ATM growth"
+    },
+    "north-macedonia-komercijalna-banka-repeatable-branch-transformation-template-plu": {
+      "confidence": "High",
+      "bank_theme": "North Macedonia — Komercijalna banka repeatable branch-transformation template plus a 191-machine ATM estate"
+    },
+    "north-macedonia-nlb-banka-skopje-digital-concept-branches-contact-centre-moderni": {
+      "confidence": "High",
+      "bank_theme": "North Macedonia — NLB Banka Skopje digital-concept branches, contact-centre modernisation and fresh parent capital"
+    },
+    "north-macedonia-sparkasse-bank-makedonija-runs-82-atms-with-no-deposit-capabilit": {
+      "confidence": "Medium",
+      "bank_theme": "North Macedonia — Sparkasse Bank Makedonija runs 82 ATMs with no deposit capability"
+    },
+    "north-macedonia-procredit-bank-s-near-branchless-model-runs-on-24-7-self-service": {
+      "confidence": "Medium",
+      "bank_theme": "North Macedonia — ProCredit Bank's near-branchless model runs on 24/7 self-service zones with an ageing sub-fleet"
+    },
+    "north-macedonia-oneid-national-digital-identity-is-now-the-live-remote-onboardin": {
+      "confidence": "High",
+      "bank_theme": "North Macedonia — OneID national digital identity is now the live remote-onboarding rail, with three banks still outside it"
+    },
+    "north-macedonia-eidas-2-transposed-bank-wallet-verifier-obligation-from-01-06-20": {
+      "confidence": "High",
+      "bank_theme": "North Macedonia — eIDAS 2 transposed; bank wallet-verifier obligation from 01/06/2027"
+    },
+    "north-macedonia-single-register-of-accounts-electronic-forced-collection-system": {
+      "confidence": "Low",
+      "bank_theme": "North Macedonia — Single Register of Accounts (ЕРС) + electronic forced-collection system"
+    },
+    "north-macedonia-mandatory-app-based-strong-authentication-in-force-with-tokenise": {
+      "confidence": "Medium",
+      "bank_theme": "North Macedonia — mandatory app-based strong authentication in force, with tokenised cards up 137%"
+    },
+    "north-macedonia-payten-holds-halkbank-skopje-s-softpos-acceptance-product": {
+      "confidence": "High",
+      "bank_theme": "North Macedonia — Payten holds Halkbank Skopje's softPOS acceptance product"
+    },
+    "north-macedonia-casys-and-the-macedonian-banking-association-formalise-a-sector-": {
+      "confidence": "Medium",
+      "bank_theme": "North Macedonia — CaSys and the Macedonian Banking Association formalise a sector-wide payments and fraud agenda"
+    },
+    "north-macedonia-unibanka-squeezed-by-card-scheme-and-licence-fees-with-a-dated-c": {
+      "confidence": "Medium",
+      "bank_theme": "North Macedonia — UNIBanka squeezed by card-scheme and licence fees, with a dated capital-allocation meeting on 24/09/2026"
+    },
+    "north-macedonia-alta-banka-bitola-stays-small-and-the-addiko-outcome-closes-the-": {
+      "confidence": "Low",
+      "bank_theme": "North Macedonia — ALTA banka Bitola stays small, and the Addiko outcome closes the NLB integration thesis here"
+    },
+    "north-macedonia-unfinished-silk-road-to-centralna-kooperativna-banka-brand-migra": {
+      "confidence": "Low",
+      "bank_theme": "North Macedonia — unfinished Silk Road to Centralna kooperativna banka brand migration"
+    },
+    "romania-draft-law-b409-2026-would-force-a-screen-flow-change-on-every-atm-in-the": {
+      "confidence": "Medium",
+      "bank_theme": "Romania — draft law B409/2026 would force a screen-flow change on every ATM in the market inside 90 days"
+    },
+    "cec-bank-full-stack-modernization-digital-agencies": {
+      "confidence": "High",
+      "bank_theme": "CEC Bank — full-stack modernization + digital agencies"
+    },
+    "romania-public-sector-pos-acquiring-pool-banca-transilvania-is-the-channel": {
+      "confidence": "High",
+      "bank_theme": "Romania — public-sector POS acquiring pool; Banca Transilvania is the channel"
+    },
+    "romania-municipal-self-service-tax-collection-frameworks-arad-open-until-10-09-2": {
+      "confidence": "Medium",
+      "bank_theme": "Romania — municipal self-service tax-collection frameworks, Arad open until 10/09/2026"
+    },
+    "banca-na-ional-a-rom-niei-security-hsm-procurement-stream": {
+      "confidence": "Medium",
+      "bank_theme": "Banca Naţională a României — security + HSM procurement stream"
+    },
+    "bcr-erste-fleet-rationalisation-780-unit-off-site-atm-perimeter": {
+      "confidence": "High",
+      "bank_theme": "BCR (Erste) — fleet rationalisation + ~780-unit off-site ATM perimeter"
+    },
+    "brd-socgen-24-7-cash-zone-saturation-and-acquiring-in-reverse": {
+      "confidence": "High",
+      "bank_theme": "BRD-SocGen — 24/7 cash-zone saturation and acquiring in reverse"
+    },
+    "unicredit-bank-romania-network-cut-to-200-branches-plus-a-dated-40-unit-prime-re": {
+      "confidence": "Medium",
+      "bank_theme": "UniCredit Bank Romania — network cut to ~200 branches plus a dated 40-unit Prime refit"
+    },
+    "raiffeisen-romania-garanti-bbva-romania-closing-early-october-2026-and-a-budgete": {
+      "confidence": "High",
+      "bank_theme": "Raiffeisen Romania / Garanti BBVA Romania — closing early October 2026 and a budgeted 2027 migration and rebranding programme"
+    },
+    "raiffeisen-bank-romania-1-211-device-own-estate-and-the-sole-large-bank-ropay-ac": {
+      "confidence": "High",
+      "bank_theme": "Raiffeisen Bank Romania — 1,211-device own estate and the sole large-bank RoPay acceptance gap"
+    },
+    "banca-transilvania-it-digital-cards-platform": {
+      "confidence": "High",
+      "bank_theme": "Banca Transilvania — IT/digital + cards platform"
+    },
+    "romanian-banking-sector-ron-3-73bn-competition-fines-reset-the-2026-27-capex-cli": {
+      "confidence": "Medium",
+      "bank_theme": "Romanian banking sector — RON 3.73bn competition fines reset the 2026-27 capex climate"
+    },
+    "romania-dual-atm-pos-estate-expansion": {
+      "confidence": "Medium",
+      "bank_theme": "Romania — dual ATM + POS estate expansion"
+    },
+    "romania-instant-euro-payments-banks-must-receive-by-09-01-2027-and-send-with-ver": {
+      "confidence": "High",
+      "bank_theme": "Romania — instant euro payments: banks must receive by 09/01/2027 and send with Verification of Payee by 09/07/2027"
+    },
+    "euronet-romania-entrenched-independent-off-site-deployer": {
+      "confidence": "High",
+      "bank_theme": "Euronet Romania — entrenched independent off-site deployer"
+    },
+    "romania-non-bank-self-service-and-agent-networks-are-substituting-for-rural-atms": {
+      "confidence": "High",
+      "bank_theme": "Romania — non-bank self-service and agent networks are substituting for rural ATMs and for card terminals"
+    },
+    "romania-domestic-cash-automation-and-kiosk-incumbents-plus-an-unconsolidated-sta": {
+      "confidence": "Medium",
+      "bank_theme": "Romania — domestic cash-automation and kiosk incumbents, plus an unconsolidated State Treasury counting-machine estate"
+    },
+    "romania-chip-electronic-id-becomes-the-onboarding-standard-national-wallet-due-d": {
+      "confidence": "High",
+      "bank_theme": "Romania — chip electronic ID becomes the onboarding standard; national wallet due Dec-2026"
+    },
+    "romania-dora-and-aml-supervisory-evidence-is-becoming-the-gate-on-printec-s-own-": {
+      "confidence": "High",
+      "bank_theme": "Romania — DORA and AML supervisory evidence is becoming the gate on Printec's own managed-services sales"
+    },
+    "aikbank-a-d-beograd-568-atm-fleet-with-457-dispense-only-units-on-rolling-de-sta": {
+      "confidence": "High",
+      "bank_theme": "AikBank a.d. Beograd — 568-ATM fleet with 457 dispense-only units, on rolling de-staffing and refurbishment waves"
+    },
+    "nlb-komercijalna-banka-group-atm-and-cash-deposit-upgrade-against-102-non-deposi": {
+      "confidence": "High",
+      "bank_theme": "NLB Komercijalna banka — group ATM and cash-deposit upgrade against 102 non-deposit ATMs"
+    },
+    "otp-banka-srbija-self-provisioning-after-the-moneyget-exit-on-a-rolling-branch-r": {
+      "confidence": "High",
+      "bank_theme": "OTP banka Srbija — self-provisioning after the MoneyGet exit, on a rolling branch-refit programme"
+    },
+    "raiffeisen-banka-srbija-415-device-estate-named-cash-automation-incumbents-addik": {
+      "confidence": "High",
+      "bank_theme": "Raiffeisen banka Srbija — 415-device estate, named cash-automation incumbents, Addiko merger in play"
+    },
+    "banca-intesa-beograd-payten-atm-outsourcing-re-tender-window-on-a-434-device-est": {
+      "confidence": "High",
+      "bank_theme": "Banca Intesa Beograd — Payten ATM-outsourcing re-tender window on a 434-device estate"
+    },
+    "national-bank-of-serbia-unlet-2026-cash-automation-hsm-pipeline": {
+      "confidence": "High",
+      "bank_theme": "National Bank of Serbia — unlet 2026 cash-automation + HSM pipeline"
+    },
+    "serbia-nbs-remote-identification-rulebook-off-gazette-43-2026-6-and-12-month-ada": {
+      "confidence": "High",
+      "bank_theme": "Serbia — NBS remote-identification rulebook (Off. Gazette 43/2026): 6- and 12-month adaptation deadlines"
+    },
+    "serbia-crem-electronic-bills-of-exchange-statutory-retail-deadline-30-11-2026": {
+      "confidence": "Medium",
+      "bank_theme": "Serbia — CReM electronic bills of exchange: statutory retail deadline 30/11/2026"
+    },
+    "banka-po-tanska-tedionica-unawarded-atm-servicing-and-cash-escort-contract-plus-": {
+      "confidence": "Medium",
+      "bank_theme": "Banka Poštanska štedionica — unawarded ATM-servicing and cash-escort contract, plus a funded branch-infrastructure programme"
+    },
+    "po-ta-srbije-money-counting-machines-re-tender-closed-10-08-2026-in-evaluation": {
+      "confidence": "Medium",
+      "bank_theme": "Pošta Srbije — money-counting machines (re-tender closed 10/08/2026, in evaluation)"
+    },
+    "procredit-bank-serbia-live-fraud-monitoring-procurement-and-a-cash-at-pos-model-": {
+      "confidence": "Medium",
+      "bank_theme": "ProCredit Bank Serbia — live fraud-monitoring procurement, and a cash-at-POS model that displaces ATMs"
+    },
+    "serbia-sepa-instant-payments-wave": {
+      "confidence": "High",
+      "bank_theme": "Serbia — SEPA / instant-payments wave"
+    },
+    "serbia-cash-in-not-cash-out-is-where-the-atm-channel-is-growing": {
+      "confidence": "High",
+      "bank_theme": "Serbia — cash-in, not cash-out, is where the ATM channel is growing"
+    },
+    "serbia-the-incumbent-competitor-set-is-now-named-payten-asee-mellon-and-moneyget": {
+      "confidence": "High",
+      "bank_theme": "Serbia — the incumbent competitor set is now named: Payten/ASEE, Mellon and MoneyGet"
+    },
+    "serbia-public-sector-cash-automation-and-kiosks-are-held-by-named-local-incumben": {
+      "confidence": "Medium",
+      "bank_theme": "Serbia — public-sector cash automation and kiosks are held by named local incumbents"
+    },
+    "slovakia-ekasa-cashless-mandate-deposit-atm-expansion": {
+      "confidence": "High",
+      "bank_theme": "Slovakia — eKasa cashless mandate + deposit-ATM expansion"
+    },
+    "finan-n-riadite-stvo-sr-safe-the-replacement-national-revenue-recording-platform": {
+      "confidence": "Medium",
+      "bank_theme": "Finančné riaditeľstvo SR — SAFE, the replacement national revenue-recording platform"
+    },
+    "slovensk-po-ta-self-service-kiosks-eur-1-75m-security-managed-services": {
+      "confidence": "Medium",
+      "bank_theme": "Slovenská pošta — self-service kiosks + EUR 1.75m security managed services"
+    },
+    "n-rodn-banka-slovenska-core-banking-pre-rfp-ageing-cash-estate": {
+      "confidence": "Medium",
+      "bank_theme": "Národná banka Slovenska — core-banking pre-RFP + ageing cash estate"
+    },
+    "n-rodn-banka-slovenska-integration-platform-tender-notice-expected-14-09-2026": {
+      "confidence": "Medium",
+      "bank_theme": "Národná banka Slovenska — integration platform, tender notice expected 14/09/2026"
+    },
+    "n-rodn-banka-slovenska-central-identity-platform-and-the-named-integrator-map": {
+      "confidence": "Medium",
+      "bank_theme": "Národná banka Slovenska — central identity platform and the named-integrator map"
+    },
+    "slovakia-commercial-bank-deposit-atm-and-recycler-build-out": {
+      "confidence": "High",
+      "bank_theme": "Slovakia — commercial-bank deposit-ATM and recycler build-out"
+    },
+    "sob-slovakia-365-bank-po-tov-banka-600-machine-shared-atm-network-heading-into-a": {
+      "confidence": "High",
+      "bank_theme": "ČSOB Slovakia / 365.bank / Poštová banka — ~600-machine shared ATM network heading into a legal merger"
+    },
+    "slovakia-cross-bank-deposit-atm-interoperability-still-at-the-analysis-stage-wit": {
+      "confidence": "Medium",
+      "bank_theme": "Slovakia — cross-bank deposit-ATM interoperability, still at the analysis stage with no vendor locked in"
+    },
+    "penta-bank-formerly-privatbanka-greenfield-platform-build-with-an-entirely-new-c": {
+      "confidence": "Medium",
+      "bank_theme": "Penta Bank (formerly Privatbanka) — greenfield platform build with an entirely new C-suite"
+    },
+    "asseco-central-europe-kal-kalignite-the-multivendor-layer-under-three-separate-p": {
+      "confidence": "Medium",
+      "bank_theme": "Asseco Central Europe / KAL Kalignite — the multivendor layer under three separate Printec rivals"
+    },
+    "slovakia-diebold-nixdorf-loomis-and-protectus-are-building-the-local-cash-and-fi": {
+      "confidence": "High",
+      "bank_theme": "Slovakia — Diebold Nixdorf, Loomis and protectus are building the local cash and field-service layer"
+    },
+    "sonet-slovakia-asee-payten-quietly-accumulating-slovak-public-sector-pos-framewo": {
+      "confidence": "Medium",
+      "bank_theme": "SONET Slovakia (ASEE / Payten) — quietly accumulating Slovak public-sector POS frameworks"
+    },
+    "slovakia-amld6-act-73-2026-reporting-system-registration-by-30-11-2026-and-indep": {
+      "confidence": "Medium",
+      "bank_theme": "Slovakia — AMLD6 Act 73/2026: reporting-system registration by 30/11/2026 and independent beneficial-owner verification"
+    },
+    "slovakia-the-eu-supervisory-deadline-stack-landing-on-slovak-banks-in-the-next-t": {
+      "confidence": "Medium",
+      "bank_theme": "Slovakia — the EU supervisory deadline stack landing on Slovak banks in the next twelve months"
+    },
+    "slovakia-nbs-led-fraud-and-crypto-supervision-as-the-transaction-monitoring-open": {
+      "confidence": "Medium",
+      "bank_theme": "Slovakia — NBS-led fraud and crypto supervision as the transaction-monitoring opening"
+    },
+    "banka-slovenije-6-year-banknote-sorter-maintenance": {
+      "confidence": "Medium",
+      "bank_theme": "Banka Slovenije — 6-year banknote-sorter maintenance"
+    },
+    "banka-slovenije-and-sid-banka-the-only-two-slovenian-bank-buyers-that-tender-pub": {
+      "confidence": "Medium",
+      "bank_theme": "Banka Slovenije and SID banka — the only two Slovenian bank buyers that tender publicly"
+    },
+    "po-ta-slovenije-printec-incumbent-parcel-lockers-payment-kiosk": {
+      "confidence": "High",
+      "bank_theme": "Pošta Slovenije — Printec incumbent (parcel lockers + payment kiosk)"
+    },
+    "slovenia-draft-cash-access-act-sets-a-statutory-atm-density-floor": {
+      "confidence": "High",
+      "bank_theme": "Slovenia — draft Cash Access Act sets a statutory ATM density floor"
+    },
+    "nlb-d-d-atm-accessibility-retrofit-to-2030-under-the-slovenian-accessibility-act": {
+      "confidence": "High",
+      "bank_theme": "NLB d.d. — ATM accessibility retrofit to 2030 under the Slovenian accessibility act"
+    },
+    "bankart-the-bank-owned-processor-gating-every-slovenian-atm-and-pos-win": {
+      "confidence": "High",
+      "bank_theme": "Bankart — the bank-owned processor gating every Slovenian ATM and POS win"
+    },
+    "nlb-d-d-cash-light-branch-format-and-cash-deposit-system-rollout-in-slovenia": {
+      "confidence": "High",
+      "bank_theme": "NLB d.d. — cash-light branch format and cash-deposit-system rollout in Slovenia"
+    },
+    "nlb-d-d-merchant-acquiring-pos-estate-modernisation-and-the-digital-euro-pilot": {
+      "confidence": "High",
+      "bank_theme": "NLB d.d. — merchant acquiring, POS estate modernisation and the digital-euro pilot"
+    },
+    "otp-banka-slovenija-post-merger-estate-consolidation-and-an-active-atm-skimming-": {
+      "confidence": "High",
+      "bank_theme": "OTP banka Slovenija — post-merger estate consolidation and an active ATM skimming wave"
+    },
+    "mellon-technologies-plants-a-slovenian-legal-entity-the-market-moves-from-safe-t": {
+      "confidence": "Medium",
+      "bank_theme": "Mellon Technologies plants a Slovenian legal entity — the market moves from safe to contested"
+    },
+    "slovenia-digital-identity-key-management-and-secure-document-procurement-all-thr": {
+      "confidence": "Medium",
+      "bank_theme": "Slovenia — digital identity, key management and secure-document procurement, all through local channels"
+    },
+    "slovenia-the-cash-in-transit-and-cash-service-field-all-channel-partners-rather-": {
+      "confidence": "Medium",
+      "bank_theme": "Slovenia — the cash-in-transit and cash-service field, all channel partners rather than competitors"
+    },
+    "slovenia-commercial-banks-sit-outside-public-procurement-so-the-pipeline-is-invi": {
+      "confidence": "Medium",
+      "bank_theme": "Slovenia — commercial banks sit outside public procurement, so the pipeline is invisible to tender monitoring"
+    },
+    "slovenia-moneyval-enhanced-follow-up-meets-nlb-s-ai-at-scale-aml": {
+      "confidence": "High",
+      "bank_theme": "Slovenia — MONEYVAL enhanced follow-up meets NLB's \"AI at scale: AML\""
+    },
+    "privatbank-1-000-unit-recycler-renewal-live-tender-pb-2026-03-17-3068329": {
+      "confidence": "High",
+      "bank_theme": "PrivatBank — 1,000-unit recycler renewal (live tender PB-2026-03-17-3068329)"
+    },
+    "privatbank-banknote-sorter-contest-running-without-printec-pb-2026-08-20-3072069": {
+      "confidence": "Medium",
+      "bank_theme": "PrivatBank — banknote-sorter contest running without Printec (PB-2026-08-20-3072069)"
+    },
+    "privatbank-android-pos-estate-plus-an-unassigned-terminal-management-and-field-s": {
+      "confidence": "High",
+      "bank_theme": "PrivatBank — Android POS estate plus an unassigned terminal-management and field-service requirement"
+    },
+    "privatbank-thales-payshield-hsm-refresh-running-entirely-outside-printec": {
+      "confidence": "High",
+      "bank_theme": "PrivatBank — Thales payShield HSM refresh running entirely outside Printec"
+    },
+    "privatbank-diebold-nixdorf-recycler-maintenance-twice-failed-re-run-invited": {
+      "confidence": "Medium",
+      "bank_theme": "PrivatBank — Diebold Nixdorf recycler maintenance twice failed, re-run invited"
+    },
+    "privatbank-fragmented-regional-atm-logistics-consolidatable-before-the-dec-2026-": {
+      "confidence": "Medium",
+      "bank_theme": "PrivatBank — fragmented regional ATM logistics, consolidatable before the Dec-2026 renewals"
+    },
+    "sense-bank-live-hsm-support-atm-cassette-repair-tenders": {
+      "confidence": "High",
+      "bank_theme": "Sense Bank — live HSM support + ATM cassette repair tenders"
+    },
+    "ukrgasbank-81-atm-competitive-loss-printec-software-incumbency": {
+      "confidence": "High",
+      "bank_theme": "Ukrgasbank — 81-ATM competitive loss + Printec software incumbency"
+    },
+    "oschadbank-competitive-cash-automation-entry-point": {
+      "confidence": "High",
+      "bank_theme": "Oschadbank — competitive cash-automation entry point"
+    },
+    "ukrposhta-pos-estate-cit-outsourcing-printec-already-qualified": {
+      "confidence": "Medium",
+      "bank_theme": "Ukrposhta — POS estate + CIT outsourcing; Printec already qualified"
+    },
+    "nbu-uah-2-000-banknote-fleet-reconfiguration-38-700-devices-aug-dec-2026": {
+      "confidence": "High",
+      "bank_theme": "NBU — UAH 2,000 banknote fleet reconfiguration (~38,700 devices, Aug–Dec 2026)"
+    },
+    "nbu-resolution-no-67-mandatory-one-time-password-identity-capture-at-self-servic": {
+      "confidence": "Medium",
+      "bank_theme": "NBU Resolution No. 67 — mandatory one-time-password identity capture at self-service cash-in terminals"
+    },
+    "nbu-resolution-no-81-customer-verification-methods-widened-for-financial-inclusi": {
+      "confidence": "High",
+      "bank_theme": "NBU Resolution No. 81 — customer verification methods widened for financial inclusion"
+    },
+    "nbu-aml-enforcement-biting-at-named-banks-plus-a-published-2026-inspection-calen": {
+      "confidence": "High",
+      "bank_theme": "NBU — AML enforcement biting at named banks, plus a published 2026 inspection calendar and an outsourcing-friendly monitoring rule"
+    },
+    "nbu-resolution-no-85-treksep-payment-tracking-duties-one-hour-sla-already-live": {
+      "confidence": "High",
+      "bank_theme": "NBU Resolution No. 85 — TrekSEP payment-tracking duties, one-hour SLA already live"
+    },
+    "nbu-resolutions-no-70-72-and-73-third-party-risk-management-now-binding-on-banks": {
+      "confidence": "Medium",
+      "bank_theme": "NBU Resolutions No. 70, 72 and 73 — third-party risk management now binding on banks and payment providers"
+    },
+    "ukraine-open-banking-aspsp-platform-layer-already-delivered-by-a-named-incumbent": {
+      "confidence": "High",
+      "bank_theme": "Ukraine open banking — ASPSP platform layer already delivered by a named incumbent"
+    },
+    "ukraine-flat-atm-fleet-against-96-cashless-and-continuing-branch-contraction": {
+      "confidence": "High",
+      "bank_theme": "Ukraine — flat ATM fleet against 96% cashless and continuing branch contraction"
+    },
+    "ukraine-domestic-full-stack-self-service-rivals-now-hold-software-hardware-and-s": {
+      "confidence": "Medium",
+      "bank_theme": "Ukraine — domestic full-stack self-service rivals now hold software, hardware and service"
+    },
+    "ncr-atleos-brink-s-merger-partner-channel-risk-partner-of-the-year": {
+      "confidence": "Medium",
+      "bank_theme": "NCR Atleos / Brink's merger — partner-channel risk (+ Partner of the Year)"
+    },
+    "brink-s-atm-as-a-service-and-the-bank-consortium-outsourcing-model": {
+      "confidence": "Medium",
+      "bank_theme": "Brink's — ATM-as-a-Service and the bank-consortium outsourcing model"
+    },
+    "mellon-group-competitive-escalation-threat": {
+      "confidence": "Medium",
+      "bank_theme": "Mellon Group — competitive escalation (threat)"
+    },
+    "payten-asseco-see-pos-softpos-digital-onboarding-threat": {
+      "confidence": "Medium",
+      "bank_theme": "Payten / Asseco SEE — POS/SoftPOS + digital onboarding (threat)"
+    },
+    "euronet-greece-croatia-platform-pivot-threat": {
+      "confidence": "Medium",
+      "bank_theme": "Euronet — Greece + Croatia + platform pivot (threat)"
+    },
+    "diebold-nixdorf-european-banking-hardware-decline-but-a-hard-push-on-recyclers-a": {
+      "confidence": "Medium",
+      "bank_theme": "Diebold Nixdorf — European banking hardware decline, but a hard push on recyclers and branch automation"
+    },
+    "glory-emea-becomes-its-biggest-region-and-the-euro-banknote-redesign-becomes-a-d": {
+      "confidence": "Medium",
+      "bank_theme": "Glory — EMEA becomes its biggest region, and the euro banknote redesign becomes a dated demand cycle"
+    },
+    "worldline-financial-services-keeps-shrinking-and-outsourced-bank-estates-come-ba": {
+      "confidence": "Medium",
+      "bank_theme": "Worldline — Financial Services keeps shrinking, and outsourced bank estates come back to market"
+    },
+    "windows-11-and-end-of-life-atm-software-kal-s-hypervisor-pitch-against-the-ecb-s": {
+      "confidence": "High",
+      "bank_theme": "Windows 11 and end-of-life ATM software — KAL's hypervisor pitch against the ECB's end-of-life mandate"
+    },
+    "loomis-automated-solutions-converts-cash-in-transit-relationships-into-recycler-": {
+      "confidence": "Medium",
+      "bank_theme": "Loomis — Automated Solutions converts cash-in-transit relationships into recycler and smart-safe contracts"
+    },
+    "giesecke-devrient-group-incl-veridos-the-central-bank-cash-tier-and-sovereign-id": {
+      "confidence": "Medium",
+      "bank_theme": "Giesecke+Devrient group (incl. Veridos) — the central-bank cash tier and sovereign identity are closing to Printec"
+    },
+    "auro-domus-baseline-correction-on-croatia-s-independent-atm-deployer": {
+      "confidence": "Low",
+      "bank_theme": "Auro Domus — baseline correction on Croatia's independent ATM deployer"
+    },
+    "ecb-ssm-2026-0301-end-of-life-ict-action-plans-due-to-supervisory-teams-by-31-10": {
+      "confidence": "High",
+      "bank_theme": "ECB SSM-2026-0301 — end-of-life ICT action plans due to supervisory teams by 31/10/2026"
+    },
+    "ecb-post-quantum-cryptography-pre-announced-second-letter-to-banks": {
+      "confidence": "Medium",
+      "bank_theme": "ECB post-quantum cryptography — pre-announced second letter to banks"
+    },
+    "dora-register-of-information-and-subcontracting-evidence-supplier-side-renewal-e": {
+      "confidence": "Medium",
+      "bank_theme": "DORA register of information and subcontracting evidence — supplier-side renewal exposure"
+    },
+    "dora-threat-led-penetration-testing-group-level-red-team-scope-reaching-the-atm-": {
+      "confidence": "Medium",
+      "bank_theme": "DORA threat-led penetration testing — group-level red-team scope reaching the ATM and terminal estate"
+    },
+    "aml-amlr-and-amld6-compliance-wave-with-the-binding-detail-rules-overdue": {
+      "confidence": "Medium",
+      "bank_theme": "AML — AMLR and AMLD6 compliance wave, with the binding detail rules overdue"
+    },
+    "amla-direct-supervision-the-2027-selection-pipeline-for-cross-border-groups": {
+      "confidence": "Medium",
+      "bank_theme": "AMLA direct supervision — the 2027 selection pipeline for cross-border groups"
+    },
+    "iso-20022-structured-data-cutover-swift-sr2026-nov-2026-and-the-second-wave-nov-": {
+      "confidence": "Medium",
+      "bank_theme": "ISO 20022 structured-data cutover — SWIFT SR2026 (Nov-2026) and the second wave (Nov-2027)"
+    },
+    "eidas-2-eu-digital-identity-wallet-issuance-24-12-2026-bank-acceptance-duty-a-ye": {
+      "confidence": "Medium",
+      "bank_theme": "eIDAS 2 / EU digital identity wallet — issuance 24/12/2026, bank acceptance duty a year later"
+    },
+    "ecb-digital-euro-atm-and-terminal-specifications-pilot-and-rollout-strategy": {
+      "confidence": "High",
+      "bank_theme": "ECB digital euro — ATM and terminal specifications, pilot and rollout strategy"
+    },
+    "eu-cash-legal-tender-regulation-a-possible-cash-access-point-density-obligation": {
+      "confidence": "Medium",
+      "bank_theme": "EU cash legal-tender Regulation — a possible cash-access-point density obligation"
+    },
+    "ecb-euro-banknote-redesign-a-note-recognition-and-sensor-refresh-cycle-from-arou": {
+      "confidence": "Medium",
+      "bank_theme": "ECB euro banknote redesign — a note-recognition and sensor refresh cycle from around 2029"
+    },
+    "psd3-and-the-payment-services-regulation-package-slipped-all-compliance-clocks-r": {
+      "confidence": "Medium",
+      "bank_theme": "PSD3 and the Payment Services Regulation — package slipped, all compliance clocks re-based"
+    },
+    "instant-payments-regulation-and-verification-of-payee-the-non-euro-and-bulgarian": {
+      "confidence": "Medium",
+      "bank_theme": "Instant Payments Regulation and Verification of Payee — the non-euro and Bulgarian wave"
+    },
+    "eaa-accessibility-atm-kiosk-refresh-driver": {
+      "confidence": "Medium",
+      "bank_theme": "EAA accessibility — ATM/kiosk refresh driver"
+    },
+    "cyber-resilience-act-product-side-obligations-on-the-machines-printec-sells": {
+      "confidence": "Medium",
+      "bank_theme": "Cyber Resilience Act — product-side obligations on the machines Printec sells"
+    },
+    "enisa-certification-scheme-for-managed-security-services-a-qualification-test-fo": {
+      "confidence": "Medium",
+      "bank_theme": "ENISA certification scheme for managed security services — a qualification test for Printec itself"
+    },
+    "mica-transitional-period-closed-and-a-review-that-reopens-the-rules": {
+      "confidence": "Medium",
+      "bank_theme": "MiCA — transitional period closed, and a review that reopens the rules"
+    },
+    "ai-act-as-amended-by-the-digital-omnibus-the-high-risk-wall-moves-to-december-20": {
+      "confidence": "Medium",
+      "bank_theme": "AI Act as amended by the Digital Omnibus — the high-risk wall moves to December 2027"
+    },
+    "sector-wide-branch-consolidation-continues": {
+      "confidence": "Medium",
+      "bank_theme": "Sector-wide — branch consolidation continues"
+    },
+    "raiffeisen-bank-international-addiko-croatian-and-slovenian-integration-on-a-eur": {
+      "confidence": "High",
+      "bank_theme": "Raiffeisen Bank International / Addiko — Croatian and Slovenian integration on a EUR 75m budget"
+    },
+    "addiko-carve-out-to-alta-group-a-six-bank-western-balkans-group-under-a-first-ti": {
+      "confidence": "High",
+      "bank_theme": "Addiko carve-out to Alta Group — a six-bank Western Balkans group under a first-time owner"
+    }
+  },
+  "movements": {
+    "added": [],
+    "removed": [],
+    "confidence_changed": [],
+    "baseline": false
+  }
+}

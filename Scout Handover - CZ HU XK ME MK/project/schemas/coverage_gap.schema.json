@@ -1,0 +1,288 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://printec.group/schemas/strategic-intelligence-banking-payments/coverage_gap.schema.json",
+  "title": "CoverageGap",
+  "description": "A CoverageGap is a first-class SOURCING-LAYER record. It describes an identified weakness in source coverage along a specific dimension (country, workstream, topic, source_class, source_subtype, language, entity set, time horizon, refresh/freshness, source quality, access/legal, or pointer expansion). Its job is to let the Coverage Auditor know what is missing, weak, stale, inaccessible, legally blocked, under-searched, or dependent on human review. It is NOT Evidence, a Claim, a Signal, a BankNeed, or an Opportunity, and must not contain final market intelligence - description and why_it_matters describe COVERAGE, not market conclusions, and the 'basis' object holds only ID links to other sourcing records (not Evidence objects). Two orthogonal axes: coverage_dimension = which axis of coverage is weak; gap_type = the nature of the weakness.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "gap_id",
+    "discovery_run_id",
+    "created_at",
+    "updated_at",
+    "gap_status",
+    "gap_type",
+    "coverage_dimension",
+    "severity",
+    "confidence_score",
+    "country",
+    "sector",
+    "workstream",
+    "topics",
+    "source_class",
+    "language",
+    "description",
+    "why_it_matters",
+    "basis",
+    "follow_up",
+    "resolution"
+  ],
+  "properties": {
+    "gap_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Stable unique identifier for this coverage gap."
+    },
+    "discovery_run_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Identifier of the run that identified or last updated this gap; links to data/run_logs."
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the gap was created (RFC 3339 / ISO 8601 date-time)."
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the gap was last updated (RFC 3339 / ISO 8601 date-time)."
+    },
+    "gap_status": {
+      "type": "string",
+      "enum": ["open", "reviewed", "in_progress", "resolved", "accepted", "superseded", "invalid"],
+      "description": "Lifecycle status of the gap. 'accepted' = acknowledged but deliberately not being closed now. When 'resolved', resolution.resolution_ref must be set; when 'superseded', resolution.superseded_by_gap_id must be set (both enforced below)."
+    },
+    "gap_type": {
+      "type": "string",
+      "enum": [
+        "missing",
+        "weak",
+        "stale",
+        "inaccessible",
+        "legally_blocked",
+        "under_searched",
+        "unexpanded_pointer",
+        "needs_human_review",
+        "low_quality",
+        "unknown"
+      ],
+      "description": "Nature of the weakness. missing = no coverage/candidates at all; weak = some coverage but insufficient; stale = coverage exists but is outdated; inaccessible = useful sources exist but cannot be accessed; legally_blocked = blocked for legal/policy reasons; under_searched = not enough searching done yet; unexpanded_pointer = known pointer sources not yet expanded; needs_human_review = closing the gap depends on human review; low_quality = sources exist but are too low-quality; unknown = nature not yet determined."
+    },
+    "coverage_dimension": {
+      "type": "string",
+      "enum": [
+        "country",
+        "workstream",
+        "topic",
+        "source_class",
+        "source_subtype",
+        "language",
+        "entity_set",
+        "time_horizon",
+        "refresh_cadence",
+        "source_quality",
+        "access_legal",
+        "pointer_expansion",
+        "field_intelligence"
+      ],
+      "description": "Which axis of coverage (architecture section 14) this gap is about."
+    },
+    "severity": {
+      "type": "string",
+      "enum": ["low", "medium", "high", "critical"],
+      "description": "Importance of the gap itself (how much it weakens coverage)."
+    },
+    "confidence_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Confidence that this is a real coverage gap, 0..1."
+    },
+    "country": {
+      "type": "string",
+      "pattern": "^[A-Z]{2}$",
+      "description": "ISO 3166-1 alpha-2 country code, e.g. 'GR'."
+    },
+    "sector": {
+      "type": "string",
+      "enum": ["banking", "payments", "both"],
+      "description": "Which side of Printec's market this gap concerns."
+    },
+    "workstream": {
+      "type": "string",
+      "enum": ["A1", "A2", "A3", "A4", "A5", "A6", "A8", "A9"],
+      "description": "Workstream code per architecture section 16 (A7 is intentionally not defined)."
+    },
+    "topics": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 },
+      "description": "Non-empty list of topics the gap concerns. Plural for consistency with SourceCandidate.topics / NegativeFinding.topics."
+    },
+    "source_class": {
+      "type": "string",
+      "enum": ["direct", "indirect", "pointer", "unknown", "not_applicable"],
+      "description": "Source class dimension of the gap. SourceCandidate uses only direct/indirect/pointer; CoverageGap (like NegativeFinding) also allows 'unknown' and 'not_applicable' for gaps not tied to a specific class."
+    },
+    "source_subtype": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Optional finer source-type classification, aligned with SourceCandidate.source_subtype (e.g. 'procurement_portal', 'job_board', 'bank_register'). Lets gaps be tracked at source-type granularity. Optional; omit when not applicable."
+    },
+    "language": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9-]*$",
+      "description": "The SEARCH/COVERAGE language dimension of the gap (not a source's primary language) as a BCP-47-like tag where possible, e.g. 'el', 'en', or the literal 'unknown'. Lenient shape check, not full BCP-47 validation."
+    },
+    "time_horizon": {
+      "type": "string",
+      "enum": ["near_term", "mid_term", "long_term", "not_applicable"],
+      "description": "Optional time-horizon dimension (architecture section 14 / section 1). near_term ~6-12 months, mid_term ~1-3 years, long_term ~3-5 years. Omit or use 'not_applicable' when the gap is horizon-agnostic."
+    },
+    "access_status": {
+      "type": "string",
+      "enum": [
+        "public",
+        "blocked",
+        "requires_free_account",
+        "requires_paid_subscription",
+        "requires_manual_download",
+        "requires_credentials",
+        "requires_legal_review",
+        "forbidden_do_not_collect",
+        "unknown"
+      ],
+      "description": "Optional access dimension, reusing SourceCandidate.access_status. Set when the gap is about access (coverage_dimension access_legal / gap_type inaccessible)."
+    },
+    "legal_status": {
+      "type": "string",
+      "enum": ["allowed", "unclear", "restricted", "forbidden", "requires_review"],
+      "description": "Optional legal dimension, reusing SourceCandidate.legal_status. Set when the gap is about legal/policy blocking."
+    },
+    "related_entities": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Optional entity set the gap concerns (e.g. 'Greek systemic banks', a regulator, a vendor). Supports entity_set gaps."
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "description": "What the coverage weakness is (coverage-meta, not market intelligence). Required non-empty."
+    },
+    "why_it_matters": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Why this gap matters for coverage completeness, decision confidence, or knowing what we do not know. Required non-empty."
+    },
+    "basis": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "ID links substantiating the gap. Links only - holds no Evidence objects and no market intelligence.",
+      "required": [
+        "linked_negative_finding_ids",
+        "linked_candidate_ids",
+        "linked_source_ids",
+        "linked_access_review_task_ids",
+        "example_urls"
+      ],
+      "properties": {
+        "linked_negative_finding_ids": { "type": "array", "items": { "type": "string" }, "description": "NegativeFinding finding_ids that evidence this gap. May be empty." },
+        "linked_candidate_ids": { "type": "array", "items": { "type": "string" }, "description": "SourceCandidate candidate_ids relevant to this gap. May be empty." },
+        "linked_source_ids": { "type": "array", "items": { "type": "string" }, "description": "Source Registry source_ids relevant to this gap. May be empty." },
+        "linked_access_review_task_ids": { "type": "array", "items": { "type": "string" }, "description": "AccessReviewTask task_ids relevant to this gap. May be empty." },
+        "example_urls": { "type": "array", "items": { "type": "string", "format": "uri" }, "description": "Illustrative URLs. May be empty." }
+      }
+    },
+    "follow_up": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Follow-up state and remediation recommendation. Null-valued fields are expected before follow-up is assigned.",
+      "required": [
+        "follow_up_required",
+        "recommended_action",
+        "assigned_to",
+        "due_at",
+        "follow_up_notes"
+      ],
+      "properties": {
+        "follow_up_required": { "type": "boolean", "description": "Whether follow-up is required." },
+        "recommended_action": {
+          "type": "string",
+          "enum": [
+            "expand_search",
+            "expand_local_language_terms",
+            "expand_pointer_source",
+            "add_source_class",
+            "find_alternative_sources",
+            "schedule_refresh",
+            "request_human_review",
+            "request_access_or_legal_review",
+            "accept_gap",
+            "update_playbook",
+            "no_action",
+            "other"
+          ],
+          "description": "Recommended action to close or manage the gap. Use follow_up_notes to explain 'other'."
+        },
+        "assigned_to": { "type": ["string", "null"], "description": "Person or queue responsible for follow-up; null if unassigned. Named 'assigned_to' for consistency with AccessReviewTask / NegativeFinding." },
+        "due_at": { "type": ["string", "null"], "format": "date-time", "description": "When follow-up is due (RFC 3339 / ISO 8601 date-time); null if none." },
+        "follow_up_notes": { "type": ["string", "null"], "description": "Free-text follow-up notes; null if none." }
+      }
+    },
+    "resolution": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Resolution/supersession detail. Null-valued fields are expected until the gap is resolved or superseded.",
+      "required": [
+        "resolution_ref",
+        "resolution_reason",
+        "resolved_at",
+        "resolved_by",
+        "superseded_by_gap_id"
+      ],
+      "properties": {
+        "resolution_ref": { "type": ["string", "null"], "description": "Reference to what closed the gap (e.g. a source_id, candidate_id, or note). Must be a non-empty string when gap_status is 'resolved' (enforced below); null otherwise." },
+        "resolution_reason": { "type": ["string", "null"], "description": "Free-text reason/explanation of the resolution; null if none." },
+        "resolved_at": { "type": ["string", "null"], "format": "date-time", "description": "When resolved (RFC 3339 / ISO 8601 date-time); null until resolved." },
+        "resolved_by": { "type": ["string", "null"], "description": "Who resolved the gap; null until resolved." },
+        "superseded_by_gap_id": { "type": ["string", "null"], "description": "gap_id that supersedes this one. Must be a non-empty string when gap_status is 'superseded' (enforced below); null otherwise." }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true,
+      "description": "Optional free-form extension bag. This is the ONLY place additional properties are allowed."
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "required": ["gap_status"],
+        "properties": { "gap_status": { "const": "resolved" } }
+      },
+      "then": {
+        "properties": {
+          "resolution": {
+            "required": ["resolution_ref"],
+            "properties": { "resolution_ref": { "type": "string", "minLength": 1 } }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": ["gap_status"],
+        "properties": { "gap_status": { "const": "superseded" } }
+      },
+      "then": {
+        "properties": {
+          "resolution": {
+            "required": ["superseded_by_gap_id"],
+            "properties": { "superseded_by_gap_id": { "type": "string", "minLength": 1 } }
+          }
+        }
+      }
+    }
+  ]
+}

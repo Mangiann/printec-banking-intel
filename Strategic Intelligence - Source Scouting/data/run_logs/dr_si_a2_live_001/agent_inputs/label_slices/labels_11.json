@@ -1,0 +1,20 @@
+[
+{"candidate_id":"dr_si_a2_live_001__c_254","role":"fold_into_parent","decision":"approve","priority":"medium","rationale":"Single ATM-network announcement page on otpbanka.si; covered by monitoring the bank's press/news parent."},
+{"candidate_id":"dr_si_a2_live_001__c_255","role":"evidence_not_source","decision":"defer","priority":"low","rationale":"One-off T&C PDF from a single savings bank — useful as dated evidence of scheme/processor change, not a recurring feed."},
+{"candidate_id":"dr_si_a2_live_001__c_256","role":"keep","decision":"approve","priority":"high","rationale":"Statutory Banka Slovenije e-money issuer register; failed URL is a soft signal, register itself is durable and in-scope."},
+{"candidate_id":"dr_si_a2_live_001__c_257","role":"keep","decision":"approve","priority":"high","rationale":"Central-bank hub for non-bank PSP and FMI supervision — durable index of payment-market buyers."},
+{"candidate_id":"dr_si_a2_live_001__c_258","role":"fold_into_parent","decision":"approve","priority":"medium","rationale":"EEA passporting list sits under the bsi.si supervised-entities parent already being monitored."},
+{"candidate_id":"dr_si_a2_live_001__c_259","role":"fold_into_parent","decision":"approve","priority":"low","rationale":"Adjacent credit-servicer/intermediary registers on bsi.si; marginal for A2 tenders but captured via parent."},
+{"candidate_id":"dr_si_a2_live_001__c_260","role":"pointer_once","decision":"approve","priority":"high","rationale":"ZBS member list enumerates the Slovenian bank buyer universe — mine once for the actor map, then archive."},
+{"candidate_id":"dr_si_a2_live_001__c_261","role":"pointer_once","decision":"approve","priority":"medium","rationale":"ZBS committee/working-body page names payments and IT owners; one-off harvest, rarely changes."},
+{"candidate_id":"dr_si_a2_live_001__c_262","role":"keep","decision":"approve","priority":"medium","rationale":"Bancni vestnik archive publishes continuously and signals bank modernisation projects ahead of tenders."},
+{"candidate_id":"dr_si_a2_live_001__c_263","role":"keep","decision":"approve","priority":"high","rationale":"National Payments Council publishes recurring minutes naming initiatives that become procurement."},
+{"candidate_id":"dr_si_a2_live_001__c_264","role":"pointer_once","decision":"approve","priority":"high","rationale":"GZS ZIT membership enumerates the domestic ICT supplier/bidder pool — one-off mine."},
+{"candidate_id":"dr_si_a2_live_001__c_265","role":"pointer_once","decision":"approve","priority":"medium","rationale":"GZS chamber index used once to enumerate finance- and ICT-adjacent associations; homepage itself is not a signal feed."},
+{"candidate_id":"dr_si_a2_live_001__c_266","role":"pointer_once","decision":"defer","priority":"low","rationale":"Digital coalition working-group list is a broad, weakly payments-specific actor index; failed URL — recheck before mining."},
+{"candidate_id":"dr_si_a2_live_001__c_267","role":"pointer_once","decision":"approve","priority":"low","rationale":"Blockchain Alliance membership overlaps crypto-payments vendor pool; modest credibility, mine once."},
+{"candidate_id":"dr_si_a2_live_001__c_268","role":"marginal","decision":"defer","priority":"low","rationale":"Second blockchain association, largely redundant with c_267 and low credibility for A2 tenders."},
+{"candidate_id":"dr_si_a2_live_001__c_269","role":"keep","decision":"approve","priority":"critical","rationale":"OPSI open-data list of all ZJN-3 contracting authorities — the definitive buyer register for the A2 workstream."},
+{"candidate_id":"dr_si_a2_live_001__c_270","role":"keep","decision":"defer","priority":"medium","rationale":"ATVP statutory registers extend the financial-actor universe but are securities-side and URL failed; recheck liveness."},
+{"candidate_id":"dr_si_a2_live_001__c_271","role":"keep","decision":"approve","priority":"high","rationale":"EBA PSD2 central register, bulk-downloadable and filterable to SI; durable cross-check on national lists."}
+]

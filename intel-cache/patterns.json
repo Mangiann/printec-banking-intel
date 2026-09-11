@@ -1,0 +1,58 @@
+[
+  {
+    "#": "1",
+    "Pattern": "Branches shrink, ATMs grow (Greece)",
+    "Evidence (see Metrics/Milestones)": "GR branches -48.5% 2014→2024 (2,688→1,383) while ATMs +13% (5,449→6,167); off-branch ATMs growing fastest (HBA). ATMs-per-branch ratio rose from ~2.0 to ~4.5 (see GR_Sector_Series row 9)",
+    "What it means for Printec": "Structural: self-service replaces teller infrastructure. Off-site/white-label ATM formats and managed services are the growth segment, not branch-attached machines",
+    "Confidence": "Medium"
+  },
+  {
+    "#": "2",
+    "Pattern": "Cash is plateauing, not dying",
+    "Evidence (see Metrics/Milestones)": "GR ATM withdrawal value still +1.2% YoY in 9M 2025 despite card transactions nearly doubling 2020→2024",
+    "What it means for Printec": "Cash infrastructure stays mission-critical while per-branch volumes thin → favors recycling, pooling, ATM-as-a-Service economics",
+    "Confidence": "Medium"
+  },
+  {
+    "#": "3",
+    "Pattern": "Cost lines are rising for IT, not falling",
+    "Evidence (see Metrics/Milestones)": "GR sector opex +12.6% 1H25; OTP 'other expenses' +~20% on IT infra/software; BT investment plan +20.6% to RON 1,017m for 2026; Erste/RBI cite higher IT spend",
+    "What it means for Printec": "2024–26 is a spend expansion phase across the region — vendor budgets exist now; position before budgets lock for 2027",
+    "Confidence": "Medium"
+  },
+  {
+    "#": "4",
+    "Pattern": "Branch transformation wave (2024→2026), not branch elimination",
+    "Evidence (see Metrics/Milestones)": "Alpha invests in branches + contactless ATMs (Apr 2026); BCR >30% branches redesigned by 2025; Eurobank next-gen branches with Cash 360; Oschadbank ~600 new-format branches; Hellenic ATM-only service points (Oct 2024); NLB Bank&Go mobile branches",
+    "What it means for Printec": "Banks are refitting, not just closing. Each refit = self-service hardware, cash automation, queuing/digital signage, security — Printec's core catalogue",
+    "Confidence": "Medium"
+  },
+  {
+    "#": "5",
+    "Pattern": "State-owned banks run open ATM procurement cycles",
+    "Evidence (see Metrics/Milestones)": "PrivatBank: 1,200 ATMs bought 2025, ~800 planned 2026; Oschadbank modernization strategy 2024–2028",
+    "What it means for Printec": "Ukraine = largest visible hardware pipeline in footprint; both banks tender publicly (Prozorro)",
+    "Confidence": "Medium"
+  },
+  {
+    "#": "6",
+    "Pattern": "One-off events create dated demand spikes",
+    "Evidence (see Metrics/Milestones)": "Bulgaria euro changeover (Jan 2026): all ATMs reconfigured, deposit regimes diverged by bank; free exchange ends 30 Jun 2026. NBG core upgrade completes Q1 2026",
+    "What it means for Printec": "Post-event windows: BG fleet optimization H2 2026; NBG channel integration 2026–27. Time outreach to these dates",
+    "Confidence": "Medium"
+  },
+  {
+    "#": "7",
+    "Pattern": "Digital platforms hit scale → branch role shifts to advice",
+    "Evidence (see Metrics/Milestones)": "George 11.7m users/72% digital sales; Kate 6.1m users; Snappi 100k in 2 quarters; BCR 97% digital investment transactions; NLB >60% penetration targeting 80% by 2030; GR mobile users 6.9m vs 3.6m internet",
+    "What it means for Printec": "Tellers disappear from the value chain → residual physical transactions concentrate on self-service; advisory branches still need cash automation in back office",
+    "Confidence": "Medium"
+  },
+  {
+    "#": "8",
+    "Pattern": "Serbia diverges: physical network stable",
+    "Evidence (see Metrics/Milestones)": "WB branches/100k adults flat (24.0 → 23.97, 2023→2024); Intesa keeps 147 branches; George Serbia launch only Q2 2026",
+    "What it means for Printec": "Serbia is 2–3 years behind EU markets in digital migration → branch/ATM expansion and first-wave digital projects both live",
+    "Confidence": "Low"
+  }
+]

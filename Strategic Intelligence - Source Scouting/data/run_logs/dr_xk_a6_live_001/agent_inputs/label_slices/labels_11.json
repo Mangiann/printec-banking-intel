@@ -1,0 +1,19 @@
+[
+{"candidate_id":"dr_xk_a6_live_001__c_309","role":"keep","decision":"approve","priority":"medium","rationale":"Standalone Kosovo job portal with finance/IT verticals and bank employer pages; url_verification failed is soft only, re-check liveness."},
+{"candidate_id":"dr_xk_a6_live_001__c_310","role":"keep","decision":"approve","priority":"medium","rationale":"Live standalone Kosovo board adding redundancy coverage of bank and vendor vacancies."},
+{"candidate_id":"dr_xk_a6_live_001__c_311","role":"keep","decision":"approve","priority":"medium","rationale":"Live real-time Kosovo employment platform with cheap tag feeds carrying bank/vendor roles."},
+{"candidate_id":"dr_xk_a6_live_001__c_312","role":"keep","decision":"approve","priority":"medium","rationale":"Faceted engineering feed on its own domain surfacing technical bank/vendor roles that name platforms."},
+{"candidate_id":"dr_xk_a6_live_001__c_313","role":"pointer_once","decision":"approve","priority":"low","rationale":"Aggregator best mined once for employer and board leads rather than monitored continuously."},
+{"candidate_id":"dr_xk_a6_live_001__c_314","role":"keep","decision":"approve","priority":"low","rationale":"Cross-border KS/AL board giving group-level (Albanian parent bank) hiring signals; secondary value."},
+{"candidate_id":"dr_xk_a6_live_001__c_315","role":"pointer_once","decision":"approve","priority":"medium","rationale":"Meta-search vertical useful to discover boards and employers outside the known set, then archive."},
+{"candidate_id":"dr_xk_a6_live_001__c_316","role":"keep","decision":"approve","priority":"medium","rationale":"Classifieds IT section reaches sub-tier POS/ATM service firms and integrators invisible on formal boards."},
+{"candidate_id":"dr_xk_a6_live_001__c_317","role":"keep","decision":"approve","priority":"medium","rationale":"Serbian-language location feed covers northern-Kosovo banking/IT footprint absent from Albanian boards."},
+{"candidate_id":"dr_xk_a6_live_001__c_318","role":"keep","decision":"approve","priority":"medium","rationale":"Developer board whose ads state explicit technology stacks - direct vendor/platform fingerprint value."},
+{"candidate_id":"dr_xk_a6_live_001__c_319","role":"fold_into_parent","decision":"approve","priority":"high","rationale":"Single vendor posting on kosovajob.com; strong evidence of Asseco Prishtina banking unit but covered by monitoring the parent board."},
+{"candidate_id":"dr_xk_a6_live_001__c_320","role":"keep","decision":"needs_access","priority":"critical","rationale":"Highest-value platform-name source but requires credentials; human must clear access and ToS before collection."},
+{"candidate_id":"dr_xk_a6_live_001__c_321","role":"keep","decision":"approve","priority":"high","rationale":"Public listings whose package IDs and developer names expose bank app builders and date platform migrations."},
+{"candidate_id":"dr_xk_a6_live_001__c_322","role":"keep","decision":"approve","priority":"high","rationale":"Seller entity on App Store names the actual development vendor; new app IDs date channel replacements."},
+{"candidate_id":"dr_xk_a6_live_001__c_323","role":"keep","decision":"approve","priority":"high","rationale":"Public per-version SDK/tracker reports reveal undisclosed digital-channel vendors inside bank APKs."},
+{"candidate_id":"dr_xk_a6_live_001__c_324","role":"keep","decision":"approve","priority":"medium","rationale":"Independent second read on app libraries and developer portfolios, exposing white-label vendors across banks."},
+{"candidate_id":"dr_xk_a6_live_001__c_325","role":"pointer_once","decision":"approve","priority":"high","rationale":"XK provider/API directory to mine once as the canonical Kosovo bank target list; low update cadence."}
+]

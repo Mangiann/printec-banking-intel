@@ -1,0 +1,182 @@
+[
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_041",
+  "source_url": "https://ask.rks-gov.net/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_070",
+  "source_url": "https://kallxo.com/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_106",
+  "source_url": "https://javniservis.net/sekcije/drustvo/bez-dinara-druze/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_161",
+  "source_url": "https://kallxo.com/gjate/analize/rriten-ankesat-ndaj-bankave-ne-kosove/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_163",
+  "source_url": "https://documents1.worldbank.org/curated/en/599571622614259782/pdf/Monitoring-Real-Time-Labor-Market-Trends-Through-Online-Job-Vacancies-Kosovo.pdf",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_166",
+  "source_url": "https://ask.rks-gov.net/Themes/ITC",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_167",
+  "source_url": "https://ask.rks-gov.net/Releases/Details/9883",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_179",
+  "source_url": "https://kallxo.com/lajm/anketa-e-ask-se-gati-100-e-familjeve-ne-kosove-kane-pasur-qasje-ne-internet-ne-vitin-2025/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_193",
+  "source_url": "https://www.teb.com.tr/about-teb/annual-reports/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_208",
+  "source_url": "https://seonet.ljse.si/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_244",
+  "source_url": "https://www.amik.org/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_257",
+  "source_url": "https://digitalfinance.worldbank.org/country/kosovo",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_258",
+  "source_url": "https://documents1.worldbank.org/curated/en/099840103312221887/pdf/P1633600460f900e108b1c0418cd323705f.pdf",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_259",
+  "source_url": "https://datacatalog.worldbank.org/search/dataset/0067036/global-payment-systems-survey",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_262",
+  "source_url": "https://data.imf.org/-/media/iData/External-Storage/Documents/7FC05452C6C743D2BFB6188D2E248A38/en/2025-FAS-Annual-Report.pdf",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_266",
+  "source_url": "https://www.elibrary.imf.org/view/journals/002/2024/365/article-A006-en.xml",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_296",
+  "source_url": "https://oshp.rks-gov.net/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_xk_a4_live_001__c_311",
+  "source_url": "https://kallxo.com/tag/e-prokurimi/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ }
+]

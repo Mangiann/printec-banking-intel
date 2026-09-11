@@ -1,0 +1,92 @@
+[
+ {
+  "candidate_id": "dr_me_a3_live_001__c_052",
+  "source_url": "https://www.cbbh.ba/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a3_live_001__c_054",
+  "source_url": "https://seonet.ljse.si/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a3_live_001__c_106",
+  "source_url": "https://www.occrp.org/en",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a3_live_001__c_124",
+  "source_url": "https://crnogorska-komercijalna-banka-ad-podgorica.talentlyft.com/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a3_live_001__c_140",
+  "source_url": "http://www.pretraga.crps.me/",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a3_live_001__c_152",
+  "source_url": "https://www.coe.int/en/web/moneyval/jurisdictions/montenegro",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a3_live_001__c_244",
+  "source_url": "https://www.erstebank.me/sr_ME/footer-stanovnistvo/o-banci/Godisnji-izvjestaj-banke",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a3_live_001__c_245",
+  "source_url": "https://www.erstebank.me/sr_ME/footer-stanovnistvo/Dokumenta",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ },
+ {
+  "candidate_id": "dr_me_a3_live_001__c_306",
+  "source_url": "https://www.erstebank.me/sr_ME/stanovnistvo/racuni-i-kartice/eBankarstvo/Migracija-Halcom-platforme-na-eMon-OfficeBanking",
+  "outcome": "verified",
+  "http_status": 200,
+  "corrected_url": null,
+  "method": "http_get",
+  "ladder_step": "get_recheck",
+  "evidence": "GET 200"
+ }
+]

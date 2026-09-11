@@ -1,0 +1,1224 @@
+{
+  "candidates": [
+    {
+      "source_name": "Veřejný rejstřík a Sbírka listin (ISVR) — entity search, Ministry of Justice",
+      "source_url": "https://or.justice.cz/ias/ui/rejstrik",
+      "source_class": "pointer",
+      "primary_language": "cs",
+      "why_relevant": "Root search UI of the Czech public register (obchodní rejstřík) and collection of deeds. Every Czech-incorporated bank, payment institution, e-money institution, ATM operator, processor and IT vendor is registered here with IČO, legal form, registered capital, statutory bodies, shareholders (for s.r.o.), branches and the file number (spisová značka) used to reach its filings. It is the entry point that turns a company NAME into a stable subjektId used by every deeper URL.",
+      "credibility_score": 0.98,
+      "usefulness_score": 0.95,
+      "confidence_score": 0.92,
+      "priority": "critical",
+      "domain": "or.justice.cz",
+      "source_subtype": "official_company_register",
+      "topics": [
+        "disclosures",
+        "annual reports",
+        "investor relations",
+        "press releases",
+        "earnings"
+      ],
+      "access_status": "open_with_limits",
+      "legal_status": "permitted",
+      "collection_allowed": true,
+      "suggested_collection_method": "Resolve company -> subjektId via GET https://or.justice.cz/ias/ui/rejstrik-$firma?ico={ICO} (confirmed link pattern ./rejstrik-firma.vysledky?subjektId=...), then follow to extract and deed-collection URLs. Respect the published operating conditions: max 3000 requests/day and max 50 requests/minute per user, random CAPTCHA challenges; use polite pacing, caching and a persistent IČO->subjektId map.",
+      "example_urls": [
+        "https://or.justice.cz/ias/ui/rejstrik-$firma?ico=45317054",
+        "https://or.justice.cz/ias/ui/podminky"
+      ],
+      "discovered_via_method": "seed query + direct HTTP probe of the register root; extracted outbound href patterns from the returned HTML",
+      "queries_used": [
+        "sbírka listin výroční zpráva platební instituce obchodní rejstřík justice.cz (cs)",
+        "Czech Republic collection of deeds annual report filing obligation register of companies English guide (en)"
+      ],
+      "local_language_terms_used": [
+        "obchodní rejstřík",
+        "veřejný rejstřík",
+        "sbírka listin",
+        "IČO",
+        "spisová značka",
+        "rejstříkový soud"
+      ],
+      "blocked": false,
+      "blocker_type": null,
+      "observed_blocker": null
+    },
+    {
+      "source_name": "Sbírka listin — per-entity list of filed documents (annual report, financial statements, auditor's report)",
+      "source_url": "https://or.justice.cz/ias/ui/vypis-sl-firma?subjektId=68415",
+      "source_class": "direct",
+      "primary_language": "cs",
+      "why_relevant": "This is the actual disclosure channel of the cell: for a given subjektId it lists every document filed into the collection of deeds, labelled in Czech with the reporting year — 'účetní závěrka [2024]', 'výroční zpráva [2024]', 'zpráva auditora [2024]', 'zpráva o vztazích [2024]' (related-party report). Confirmed on a bank (Komerční banka, subjektId=68415) with an unbroken 2018–2024 series. For unlisted payment institutions, processors and IT suppliers with no IR page and no press releases, this is the only place revenue, equity, auditor identity and intra-group relations are disclosed. The related-party report is the single best public artefact for mapping which group entities supply which bank.",
+      "credibility_score": 0.98,
+      "usefulness_score": 0.97,
+      "confidence_score": 0.9,
+      "priority": "critical",
+      "domain": "or.justice.cz",
+      "source_subtype": "statutory_filing_repository",
+      "topics": [
+        "disclosures",
+        "annual reports",
+        "investor relations",
+        "press releases",
+        "earnings"
+      ],
+      "access_status": "open_with_limits",
+      "legal_status": "permitted",
+      "collection_allowed": true,
+      "suggested_collection_method": "Per subjektId GET the vypis-sl-firma page, parse the document rows (Czech labels + year in square brackets), then follow ./vypis-sl-detail?dokument={id}&subjektId={sid}&spis={spis} to the PDF. Filings are PDF (often scanned) so pair with OCR + table extraction. Poll annually per entity around the statutory deadline (filing due within 12 months of period end; approval within 6 months), plus a monthly delta sweep for late filers.",
+      "example_urls": [
+        "https://or.justice.cz/ias/ui/vypis-sl-firma?subjektId=68415",
+        "https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=14477347&subjektId=68415&spis=74106"
+      ],
+      "discovered_via_method": "snowballed from the entity-search HTML: the ./vypis-sl-firma?subjektId= link was extracted from a live IČO lookup, then the deed list itself was fetched and its Czech document labels read",
+      "queries_used": [
+        "sbírka listin výroční zpráva platební instituce obchodní rejstřík justice.cz (cs)"
+      ],
+      "local_language_terms_used": [
+        "sbírka listin",
+        "účetní závěrka",
+        "výroční zpráva",
+        "zpráva auditora",
+        "zpráva o vztazích",
+        "notářský zápis"
+      ],
+      "blocked": false,
+      "blocker_type": null,
+      "observed_blocker": null
+    },
+    {
+      "source_name": "Úplný výpis z obchodního rejstříku (full historical extract)",
+      "source_url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=68415&typ=UPLNY",
+      "source_class": "pointer",
+      "primary_language": "cs",
+      "why_relevant": "The 'úplný výpis' shows the full struck-through history of a company: former trade names, seat moves, share capital increases, changes of statutory bodies, sole-shareholder entries, mergers and branch (odštěpný závod) registrations. This is exactly the pointer behaviour the cell needs — it reveals rebrandings, silent ownership transfers of payment/IT vendors and subsidiary structures that no corporate website lists, and it dates each change.",
+      "credibility_score": 0.97,
+      "usefulness_score": 0.9,
+      "confidence_score": 0.88,
+      "priority": "high",
+      "domain": "or.justice.cz",
+      "source_subtype": "register_extract",
+      "topics": [
+        "disclosures",
+        "annual reports"
+      ],
+      "access_status": "open_with_limits",
+      "legal_status": "permitted",
+      "collection_allowed": true,
+      "suggested_collection_method": "GET rejstrik-firma.vysledky?subjektId={sid}&typ=UPLNY and diff successive snapshots to detect ownership/name/officer changes; typ=PLATNY gives current state only. Same 3000/day + 50/min limits and CAPTCHA risk as the rest of ISVR.",
+      "example_urls": [
+        "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=68415&typ=UPLNY",
+        "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=68415&typ=PLATNY"
+      ],
+      "discovered_via_method": "href pattern extracted from the live IČO search result page",
+      "queries_used": [
+        "sbírka listin výroční zpráva platební instituce obchodní rejstřík justice.cz (cs)"
+      ],
+      "local_language_terms_used": [
+        "úplný výpis",
+        "platný výpis",
+        "obchodní firma",
+        "statutární orgán",
+        "jediný akcionář",
+        "odštěpný závod"
+      ],
+      "blocked": false,
+      "blocker_type": null,
+      "observed_blocker": null
+    },
+    {
+      "source_name": "Veřejný rejstřík a evidence — new ISVR portal (msp.gov.cz, pilot operation)",
+      "source_url": "https://verejnerejstriky.msp.gov.cz/",
+      "source_class": "pointer",
+      "primary_language": "cs",
+      "why_relevant": "Modern replacement front-end for or.justice.cz, announced on the legacy site as running 'v ověřovacím provozu' (verification/pilot operation). Its client state exposes three search scopes — publicRegister, trusts, realOwners — so it is the forward-looking access path for register + deeds + trusts, and it carries the official explainer articles (operating conditions, list of registry courts, ESM/ESF notes). Must be tracked because the legacy or.justice.cz URL patterns this cell depends on will eventually be retired here.",
+      "credibility_score": 0.95,
+      "usefulness_score": 0.7,
+      "confidence_score": 0.75,
+      "priority": "high",
+      "domain": "msp.gov.cz",
+      "source_subtype": "official_company_register",
+      "topics": [
+        "disclosures",
+        "annual reports",
+        "investor relations",
+        "press releases",
+        "earnings"
+      ],
+      "access_status": "open",
+      "legal_status": "permitted",
+      "collection_allowed": true,
+      "suggested_collection_method": "Monitor the portal and its /clanky/ explainer pages for the cut-over announcement and for the new deep-link URL scheme; re-map the IČO -> deed-list crawler when the legacy paths are deprecated. Search is client-side (Nuxt), so a headless browser is needed for deep links.",
+      "example_urls": [
+        "https://verejnerejstriky.msp.gov.cz/clanky/obecne-informace/verejny-rejstrik-a-sbirka-listin",
+        "https://verejnerejstriky.msp.gov.cz/clanky/kontakt/podminky-provozu-a-vyuzivani-udaju-verejneho-rejstriku-na-siti-internet",
+        "https://verejnerejstriky.msp.gov.cz/clanky/kontakt/seznam-rejstrikovych-soudu"
+      ],
+      "discovered_via_method": "snowballed: outbound link on or.justice.cz plus the banner announcing the new register UI; portal HTML and its article hrefs were then fetched directly",
+      "queries_used": [
+        "dataor.justice.cz otevřená data veřejný rejstřík XML sbírka listin (cs)"
+      ],
+      "local_language_terms_used": [
+        "veřejný rejstřík a evidence",
+        "ověřovací provoz",
+        "evidence skutečných majitelů",
+        "evidence svěřenských fondů",
+        "rejstříkové soudy"
+      ],
+      "blocked": false,
+      "blocker_type": null,
+      "observed_blocker": null
+    },
+    {
+      "source_name": "Opendata ISVR — bulk open data of the public register (dataor.justice.cz)",
+      "source_url": "https://dataor.justice.cz/",
+      "source_class": "pointer",
+      "primary_language": "cs",
+      "why_relevant": "Local open-data catalogue of the Ministry of Justice publishing the public register in bulk as XML/CSV, filterable by registry court, legal form and period (coverage stated back to 1900). This is the scalable way to build the CZ banking/payments actor universe — every a.s./s.r.o. with its officers, seat and registration events — without hammering the web UI. Its user manual (81 pages) documents per-legal-form attribute sets (s.r.o., a.s., družstvo, ...).",
+      "credibility_score": 0.95,
+      "usefulness_score": 0.85,
+      "confidence_score": 0.8,
+      "priority": "high",
+      "domain": "dataor.justice.cz",
+      "source_subtype": "open_data_catalogue",
+      "topics": [
+        "disclosures",
+        "annual reports"
+      ],
+      "access_status": "open_with_limits",
+      "legal_status": "requires_review",
+      "collection_allowed": true,
+      "suggested_collection_method": "Pull dataset distributions from the catalogue (React SPA; use its JSON API or a headless browser), load XML/CSV into a local entity store keyed by IČO, and use it as the master actor list that drives targeted Sbírka listin fetches. NOTE the published usage terms before any commercial use.",
+      "example_urls": [
+        "https://dataor.justice.cz/files/ISVR_OpenData_Uzivatelska_prirucka.pdf",
+        "https://dataor.justice.cz/files/ISVR_OpenData_Podminky_uziti.pdf",
+        "https://dataor.justice.cz/files/ISVR_OpenData_FAQ.pdf"
+      ],
+      "discovered_via_method": "local-language search for justice open data, then direct fetch of the catalogue, its JS bundle (to find file paths) and its two PDF annexes",
+      "queries_used": [
+        "dataor.justice.cz otevřená data veřejný rejstřík XML sbírka listin (cs)"
+      ],
+      "local_language_terms_used": [
+        "otevřená data",
+        "datová sada",
+        "veřejný rejstřík",
+        "rejstříkový soud",
+        "právní forma",
+        "podmínky užití"
+      ],
+      "blocked": false,
+      "blocker_type": null,
+      "observed_blocker": null
+    },
+    {
+      "source_name": "Opendata ISVR machine API (CKAN-style action endpoints)",
+      "source_url": "https://dataor.justice.cz/api/3/action/package_show",
+      "source_class": "pointer",
+      "primary_language": "cs",
+      "why_relevant": "The dataor SPA calls a CKAN-style API (/api/3/action/package_list_compact, /api/3/action/package_show, /api/file/) — i.e. the bulk register data is reachable programmatically rather than only through the browser UI. Worth tracking because it would remove the SPA/headless-browser dependency from the actor-universe pipeline.",
+      "credibility_score": 0.85,
+      "usefulness_score": 0.75,
+      "confidence_score": 0.55,
+      "priority": "medium",
+      "domain": "dataor.justice.cz",
+      "source_subtype": "open_data_api",
+      "topics": [
+        "disclosures",
+        "annual reports"
+      ],
+      "access_status": "open_with_limits",
+      "legal_status": "requires_review",
+      "collection_allowed": true,
+      "suggested_collection_method": "Read the exact query parameters from the ISVR open-data user manual (chapters 3-4, 'Přístup k lokálnímu katalogu' / 'Exportování datové sady') or from the SPA network traffic, then call package_show / package_list_compact and fetch distributions via /api/file/.",
+      "example_urls": [
+        "https://dataor.justice.cz/api/3/action/package_list_compact",
+        "https://dataor.justice.cz/api/file/"
+      ],
+      "discovered_via_method": "extracted the endpoint strings from the site's JavaScript bundle (/static/js/main.4de5f955.chunk.js) after the SPA returned no server-rendered content",
+      "queries_used": [],
+      "local_language_terms_used": [
+        "lokální katalog otevřených dat",
+        "exportování datové sady"
+      ],
+      "blocked": true,
+      "blocker_type": "file_not_directly_linked",
+      "observed_blocker": "Endpoints exist but parameters are undocumented on-page: an unparameterised call to /api/3/action/package_list_compact returned HTTP 400 with an empty body, and package_show?id=full returned 'MissingObject{type=ShowResult, id=...}'. Correct dataset ids/params must be read from the user manual or the SPA's own XHR calls."
+    },
+    {
+      "source_name": "ARES — Administrativní registr ekonomických subjektů (web)",
+      "source_url": "https://ares.gov.cz/ekonomicke-subjekty",
+      "source_class": "pointer",
+      "primary_language": "cs",
+      "why_relevant": "The Ministry of Finance meta-register that federates the public register (VR), trade register (RŽP), statistical register (RES), VAT/tax registrations and more behind one IČO lookup. For this cell it is the fastest disambiguator: it confirms an entity exists, gives its legal form, NACE codes (e.g. 6419, 64929, 66190 for payment-adjacent activity), incorporation date and which source registers hold data on it — which then tells you where to go for filings.",
+      "credibility_score": 0.96,
+      "usefulness_score": 0.9,
+      "confidence_score": 0.9,
+      "priority": "critical",
+      "domain": "ares.gov.cz",
+      "source_subtype": "official_meta_register",
+      "topics": [
+        "disclosures",
+        "annual reports",
+        "investor relations",
+        "press releases",
+        "earnings"
+      ],
+      "access_status": "open_with_limits",
+      "legal_status": "permitted",
+      "collection_allowed": true,
+      "suggested_collection_method": "Use the REST API rather than the web UI for anything automated; keep a local IČO index refreshed from ARES and use datumAktualizace to schedule re-checks.",
+      "example_urls": [
+        "https://ares.gov.cz/stranky/vyvojar-info",
+        "https://ares.gov.cz/swagger-ui/",
+        "https://ares.gov.cz/stranky/otevrena-data",
+        "https://ares.gov.cz/stranky/podminky-provozu"
+      ],
+      "discovered_via_method": "seed query in Czech, then direct probes of the ARES site sections",
+      "queries_used": [
+        "ARES ekonomické subjekty vyhledávání platební služby API ares.gov.cz (cs)",
+        "Czech Republic business register ARES company financial statements search (en)"
+      ],
+      "local_language_terms_used": [
+        "ekonomické subjekty",
+        "zdrojové registry",
+        "IČO",
+        "DIČ",
+        "právní forma",
+        "CZ-NACE"
+      ],
+      "blocked": false,
+      "blocker_type": null,
+      "observed_blocker": null
+    },
+    {
+      "source_name": "ARES REST API — ekonomicke-subjekty (unauthenticated JSON)",
+      "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/45317054",
+      "source_class": "direct",
+      "primary_language": "cs",
+      "why_relevant": "Open, key-free JSON API returning the structured entity record: obchodniJmeno, sidlo, pravniForma, datumVzniku, DIČ, czNace2008 list and a seznamRegistraci block showing which source registers (VR/RES/RŽP/DPH/insolvency/...) hold the subject. A POST /vyhledat search accepts obchodniJmeno and returns paged hits — a live test on the Czech term 'platební' returned 'Platební instituce Roger a.s.' (IČO 01729462). This is the workhorse for building and refreshing the CZ payments actor map, and NACE filtering surfaces suppliers that never call themselves 'payments'.",
+      "credibility_score": 0.96,
+      "usefulness_score": 0.95,
+      "confidence_score": 0.93,
+      "priority": "critical",
+      "domain": "ares.gov.cz",
+      "source_subtype": "official_register_api",
+      "topics": [
+        "disclosures",
+        "annual reports",
+        "investor relations",
+        "press releases",
+        "earnings"
+      ],
+      "access_status": "open_with_limits",
+      "legal_status": "permitted",
+      "collection_allowed": true,
+      "suggested_collection_method": "GET /ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/{ico} for single lookups; POST /ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat with JSON body {obchodniJmeno|ico|czNace, pocet, start} for discovery sweeps. Published limits: users are blocked above ~500 queries/minute, for repeated identical or malformed queries, for high query concurrency, for spreading load across IPs to dodge limits, and for random database trawling — so run bounded, deduplicated, targeted queries only.",
+      "example_urls": [
+        "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+        "https://data.mf.gov.cz/api/ares.html"
+      ],
+      "discovered_via_method": "documented on the MF open-data portal and the ARES developer page; endpoint shape then confirmed by live GET (IČO 45317054) and POST search",
+      "queries_used": [
+        "ARES ekonomické subjekty vyhledávání platební služby API ares.gov.cz (cs)"
+      ],
+      "local_language_terms_used": [
+        "platební instituce",
+        "obchodní jméno",
+        "vyhledat",
+        "ekonomické subjekty",
+        "datum vzniku"
+      ],
+      "blocked": false,
+      "blocker_type": null,
+      "observed_blocker": null
+    },
+    {
+      "source_name": "Portál otevřených dat Ministerstva financí — ARES datasets and API conditions",
+      "source_url": "https://data.mf.gov.cz/topics/ares",
+      "source_class": "pointer",
+      "primary_language": "cs",
+      "why_relevant": "MF's open-data portal page for ARES: it documents the REST and legacy XML interfaces, links the 'AresRestApi' JSON specification attachment, and states the operating limits verbatim (blocking above 500 queries/minute, on repeated identical/incorrect queries, on multi-IP limit circumvention, on random database trawling). Required reading to keep the actor-map pipeline lawful and unblocked, and it also points to downloadable ARES datasets.",
+      "credibility_score": 0.95,
+      "usefulness_score": 0.7,
+      "confidence_score": 0.85,
+      "priority": "medium",
+      "domain": "data.mf.gov.cz",
+      "source_subtype": "open_data_catalogue",
+      "topics": [
+        "disclosures"
+      ],
+      "access_status": "open",
+      "legal_status": "permitted",
+      "collection_allowed": true,
+      "suggested_collection_method": "Fetch the ARES topic page and the linked API specification attachment; re-check quarterly for interface/limit changes and for new bulk distributions.",
+      "example_urls": [
+        "https://data.mf.gov.cz/api/ares.html",
+        "https://mf.gov.cz/cs/ministerstvo/informacni-systemy/ares"
+      ],
+      "discovered_via_method": "search result in Czech, then direct fetch and text extraction of the limits section",
+      "queries_used": [
+        "ARES ekonomické subjekty vyhledávání platební služby API ares.gov.cz (cs)"
+      ],
+      "local_language_terms_used": [
+        "podmínky provozu",
+        "limity",
+        "dotazy za minutu",
+        "otevřená data"
+      ],
+      "blocked": false,
+      "blocker_type": null,
+      "observed_blocker": null
+    },
+    {
+      "source_name": "Evidence skutečných majitelů (ESM) — beneficial ownership register",
+      "source_url": "https://esm.justice.cz/ias/issm/rejstrik",
+      "source_class": "pointer",
+      "primary_language": "cs",
+      "why_relevant": "The statutory beneficial-ownership register — historically the only free way to see who ultimately controls a Czech payment institution, processor or ATM operator behind holding chains. It remains highly valuable for ownership mapping, but its free public channel has been shut: the Ministry of Justice announced that from 17 December 2025 'Veřejná část ESM a otevřená data budou nedostupná', following Czech Supreme Court / Supreme Administrative Court and CJEU rulings and the 6th AML package. Access now requires login via data box, privileged remote access, or proving legitimate interest to a court.",
+      "credibility_score": 0.97,
+      "usefulness_score": 0.85,
+      "confidence_score": 0.85,
+      "priority": "high",
+      "domain": "esm.justice.cz",
+      "source_subtype": "beneficial_ownership_register",
+      "topics": [
+        "disclosures"
+      ],
+      "access_status": "restricted_login_required",
+      "legal_status": "requires_review",
+      "collection_allowed": false,
+      "suggested_collection_method": "Do not scrape. Route through a lawful channel: (a) data-box authenticated access for entries the organisation is entitled to, (b) the announced automated form giving AML-obliged entities remote access, if the organisation qualifies, (c) court application on legitimate interest, or (d) fall back to úplný výpis shareholder data and to licensed commercial databases holding pre-December-2025 snapshots. Contact point published: issm@msp.justice.cz, data box kq4aawz.",
+      "example_urls": [
+        "https://esm.justice.cz/ias/issm/rejstrik",
+        "https://verejnerejstriky.msp.gov.cz/clanky/obecne-informace/evidence-skutecnych-majitelu"
+      ],
+      "discovered_via_method": "local-language search on the ESM register, then fetch of the ministry's own closure announcement",
+      "queries_used": [
+        "evidence skutečných majitelů esm.justice.cz veřejný částečný výpis (cs)"
+      ],
+      "local_language_terms_used": [
+        "evidence skutečných majitelů",
+        "skutečný majitel",
+        "částečný výpis",
+        "úplný výpis",
+        "oprávněný zájem",
+        "datová schránka"
+      ],
+      "blocked": true,
+      "blocker_type": "login_required",
+      "observed_blocker": "Ministry of Justice notice: the public part of ESM and its open data were made unavailable from 17 December 2025; public users must now demonstrate legitimate interest to a court, while registered persons access it via data-box login or privileged remote access."
+    },
+    {
+      "source_name": "Evidence svěřenských fondů (ESF) — register of trusts",
+      "source_url": "https://esf.justice.cz/ias/isesf/rejstrik",
+      "source_class": "pointer",
+      "primary_language": "cs",
+      "why_relevant": "Companion register to the commercial register covering svěřenské fondy (Czech trusts), which are a common holding layer above Czech operating companies including fintech/payment vendors. Useful when a payment institution's registered shareholder is a trust rather than a company, i.e. exactly where the commercial register stops explaining ownership.",
+      "credibility_score": 0.93,
+      "usefulness_score": 0.55,
+      "confidence_score": 0.7,
+      "priority": "medium",
+      "domain": "esf.justice.cz",
+      "source_subtype": "trust_register",
+      "topics": [
+        "disclosures"
+      ],
+      "access_status": "open",
+      "legal_status": "permitted",
+      "collection_allowed": true,
+      "suggested_collection_method": "Look up by trust name / administrator when an úplný výpis shows a trust as shareholder; treat as a targeted follow-up rather than a bulk crawl.",
+      "example_urls": [
+        "https://esf.justice.cz/ias/isesf/rejstrik",
+        "https://verejnerejstriky.msp.gov.cz/clanky/obecne-informace/evidence-sverenskych-fondu"
+      ],
+      "discovered_via_method": "snowballed from the or.justice.cz footer navigation, then probed directly",
+      "queries_used": [],
+      "local_language_terms_used": [
+        "svěřenský fond",
+        "evidence svěřenských fondů",
+        "svěřenský správce"
+      ],
+      "blocked": false,
+      "blocker_type": null,
+      "observed_blocker": null
+    },
+    {
+      "source_name": "Insolvenční rejstřík (ISIR)",
+      "source_url": "https://isir.justice.cz/isir/common/index.do",
+      "source_class": "indirect",
+      "primary_language": "cs",
+      "why_relevant": "Insolvency register run by the same ministry. For this cell it is the negative-signal companion to the deeds collection: it flags payment intermediaries, ATM/cash-handling firms and IT suppliers entering insolvency or reorganisation — an early indicator of a bank's supplier risk, of consolidation opportunities, and of why a filing series suddenly stops.",
+      "credibility_score": 0.95,
+      "usefulness_score": 0.6,
+      "confidence_score": 0.85,
+      "priority": "medium",
+      "domain": "isir.justice.cz",
+      "source_subtype": "insolvency_register",
+      "topics": [
+        "disclosures"
+      ],
+      "access_status": "open",
+      "legal_status": "permitted",
+      "collection_allowed": true,
+      "suggested_collection_method": "Watch by IČO for the actor list built from ARES/dataor; the register also exposes documents per case. A third-party API (Hlídač státu) mirrors ISIR if the native UI proves awkward to automate.",
+      "example_urls": [
+        "https://isir.justice.cz/isir/common/index.do",
+        "https://upadci.justice.cz/"
+      ],
+      "discovered_via_method": "snowballed from or.justice.cz footer links ('Insolvenční rejstřík', 'Evidence úpadců'), then probed",
+      "queries_used": [],
+      "local_language_terms_used": [
+        "insolvenční rejstřík",
+        "evidence úpadců",
+        "úpadek",
+        "reorganizace"
+      ],
+      "blocked": false,
+      "blocker_type": null,
+      "observed_blocker": null
+    },
+    {
+      "source_name": "Registr živnostenského podnikání (RŽP) — Portál živnostenského podnikání",
+      "source_url": "https://rzp.gov.cz/",
+      "source_class": "pointer",
+      "primary_language": "cs",
+      "why_relevant": "Trade-licence register. It records the licensed activity scope of a company (e.g. 'Poskytování software, poradenství v oblasti informačních technologií...') and its establishments, and it covers sole traders and small vendors that are in ARES but carry little in the deeds collection. Useful for finding the long tail of POS/IT service suppliers around banks and for confirming what a vendor is actually licensed to do.",
+      "credibility_score": 0.9,
+      "usefulness_score": 0.6,
+      "confidence_score": 0.75,
+      "priority": "medium",
+      "domain": "rzp.gov.cz",
+      "source_subtype": "trade_licence_register",
+      "topics": [
+        "disclosures"
+      ],
+      "access_status": "open",
+      "legal_status": "permitted",
+      "collection_allowed": true,
+      "suggested_collection_method": "Query by IČO for entities already in the actor map; cross-check activity descriptions to classify vendors into POS / software / cash handling categories. ARES also mirrors RŽP status via seznamRegistraci.stavZdrojeRzp.",
+      "example_urls": [
+        "https://rzp.gov.cz/",
+        "https://www.rzp.cz/"
+      ],
+      "discovered_via_method": "identified as an ARES source register (stavZdrojeRzp) in the live API response, then probed; a deep-link path failed to connect and the working root was recovered",
+      "queries_used": [],
+      "local_language_terms_used": [
+        "živnostenský rejstřík",
+        "předmět podnikání",
+        "provozovna",
+        "volná živnost"
+      ],
+      "blocked": false,
+      "blocker_type": null,
+      "observed_blocker": null
+    },
+    {
+      "source_name": "Registr ekonomických subjektů (RES) — Czech Statistical Office search",
+      "source_url": "https://apl.czso.cz/irsw/",
+      "source_class": "pointer",
+      "primary_language": "cs",
+      "why_relevant": "The statistical register behind ARES's RES layer. Its distinctive added value for this cell is the employee-size band and the institutional-sector/NACE classification for entities that file only abbreviated accounts — i.e. a size proxy for small payment and IT vendors whose deeds filings disclose almost no P&L detail.",
+      "credibility_score": 0.92,
+      "usefulness_score": 0.6,
+      "confidence_score": 0.75,
+      "priority": "medium",
+      "domain": "czso.cz",
+      "source_subtype": "statistical_business_register",
+      "topics": [
+        "disclosures"
+      ],
+      "access_status": "open",
+      "legal_status": "permitted",
+      "collection_allowed": true,
+      "suggested_collection_method": "Look up by IČO to attach size band and NACE to actor records; use as an enrichment pass over the ARES-derived universe rather than a discovery source.",
+      "example_urls": [
+        "https://apl.czso.cz/irsw/vyhled_form.jsp"
+      ],
+      "discovered_via_method": "identified as an ARES source register (stavZdrojeRes); the csu.gov.cz landing path returned 404 and the working application was recovered at apl.czso.cz/irsw",
+      "queries_used": [],
+      "local_language_terms_used": [
+        "registr ekonomických subjektů",
+        "kategorie počtu zaměstnanců",
+        "institucionální sektor"
+      ],
+      "blocked": false,
+      "blocker_type": null,
+      "observed_blocker": null
+    },
+    {
+      "source_name": "Registr plátců DPH (ADIS) — VAT payer register, Financial Administration",
+      "source_url": "https://adisspr.mfcr.cz/dpr/DphReg",
+      "source_class": "indirect",
+      "primary_language": "cs",
+      "why_relevant": "VAT registration register showing registration/deregistration dates, unreliable-payer status and published bank accounts. A weak but cheap health and continuity signal on payment-sector suppliers, and a way to date when a newly incorporated fintech actually started trading.",
+      "credibility_score": 0.9,
+      "usefulness_score": 0.45,
+      "confidence_score": 0.7,
+      "priority": "low",
+      "domain": "mfcr.cz",
+      "source_subtype": "tax_register",
+      "topics": [
+        "disclosures"
+      ],
+      "access_status": "open",
+      "legal_status": "permitted",
+      "collection_allowed": true,
+      "suggested_collection_method": "Batch check DIČ from ARES records; monitor for 'nespolehlivý plátce' flags on vendors already in the actor map.",
+      "example_urls": [
+        "https://adisspr.mfcr.cz/dpr/DphReg"
+      ],
+      "discovered_via_method": "identified as an ARES source register (stavZdrojeDph) in the live API response, then probed directly",
+      "queries_used": [],
+      "local_language_terms_used": [
+        "registr plátců DPH",
+        "nespolehlivý plátce",
+        "DIČ",
+        "zveřejněné bankovní účty"
+      ],
+      "blocked": false,
+      "blocker_type": null,
+      "observed_blocker": null
+    },
+    {
+      "source_name": "Národní katalog otevřených dat (NKOD) — data.gov.cz",
+      "source_url": "https://data.gov.cz/",
+      "source_class": "pointer",
+      "primary_language": "cs",
+      "why_relevant": "National open-data catalogue that indexes the datasets published by the Ministry of Justice (ISVR), Ministry of Finance (ARES), ČSÚ and others. The right place to discover new or replacement bulk distributions when a ministry moves or re-publishes a register, and to see each dataset's declared licence.",
+      "credibility_score": 0.93,
+      "usefulness_score": 0.6,
+      "confidence_score": 0.8,
+      "priority": "medium",
+      "domain": "data.gov.cz",
+      "source_subtype": "open_data_catalogue",
+      "topics": [
+        "disclosures"
+      ],
+      "access_status": "open",
+      "legal_status": "permitted",
+      "collection_allowed": true,
+      "suggested_collection_method": "Run periodic keyword sweeps in Czech ('obchodní rejstřík', 'sbírka listin', 'ekonomické subjekty') over the catalogue's dataset search / SPARQL endpoint to detect new distributions and licence changes.",
+      "example_urls": [
+        "https://data.gov.cz/datov%C3%A9-sady?dotaz=ob"
+      ],
+      "discovered_via_method": "inferred from first principles (who aggregates state datasets) and probed directly",
+      "queries_used": [],
+      "local_language_terms_used": [
+        "Národní katalog otevřených dat",
+        "datové sady",
+        "poskytovatel dat"
+      ],
+      "blocked": false,
+      "blocker_type": null,
+      "observed_blocker": null
+    },
+    {
+      "source_name": "ČNB — seznamy regulovaných a registrovaných subjektů (JERRS)",
+      "source_url": "https://apl.cnb.cz/apljerrsdad/JERRS.WEB07.INTRO_PAGE",
+      "source_class": "pointer",
+      "primary_language": "cs",
+      "why_relevant": "Czech National Bank's register of licensed and registered financial-market entities. It is the authoritative way to enumerate which CZ entities are banks, payment institutions, small-scale payment service providers, e-money institutions or their agents — and it carries IČO, which is the join key into the commercial register and ARES. Used as the seeding list, the deeds collection then supplies each of those entities' annual accounts.",
+      "credibility_score": 0.97,
+      "usefulness_score": 0.85,
+      "confidence_score": 0.75,
+      "priority": "high",
+      "domain": "cnb.cz",
+      "source_subtype": "regulator_entity_register",
+      "topics": [
+        "disclosures",
+        "annual reports",
+        "investor relations",
+        "press releases",
+        "earnings"
+      ],
+      "access_status": "open",
+      "legal_status": "permitted",
+      "collection_allowed": true,
+      "suggested_collection_method": "Export the entity lists by category, keep IČO as the primary key, and drive the Sbírka listin / ARES fetchers from that list. (Note: the ČNB registers themselves are likely another coverage cell's primary source; here they are used purely as a pointer feeding register lookups.)",
+      "example_urls": [
+        "https://apl.cnb.cz/apljerrsdad/JERRS.WEB07.INTRO_PAGE"
+      ],
+      "discovered_via_method": "inferred from first principles (who licenses payment institutions in CZ) and probed directly; the intended web search for this source could not be run because the session's web-search budget was exhausted",
+      "queries_used": [],
+      "local_language_terms_used": [
+        "seznamy regulovaných a registrovaných subjektů",
+        "platební instituce",
+        "poskytovatel platebních služeb malého rozsahu",
+        "instituce elektronických peněz"
+      ],
+      "blocked": false,
+      "blocker_type": null,
+      "observed_blocker": null
+    },
+    {
+      "source_name": "European e-Justice Portal — Business Registers Interconnection (BRIS)",
+      "source_url": "https://e-justice.europa.eu/489/EN/business_registers__search_for_a_company_in_the_eu",
+      "source_class": "pointer",
+      "primary_language": "en",
+      "why_relevant": "EU-level search across national business registers, including the Czech one. Its value for this cell is cross-border: when a CZ payment institution or processor is a subsidiary of a Slovak, Austrian, German or Polish parent, BRIS lets you follow the chain into the parent's home register (and its filings) without knowing each national portal.",
+      "credibility_score": 0.93,
+      "usefulness_score": 0.6,
+      "confidence_score": 0.8,
+      "priority": "medium",
+      "domain": "e-justice.europa.eu",
+      "source_subtype": "cross_border_register_gateway",
+      "topics": [
+        "disclosures",
+        "annual reports"
+      ],
+      "access_status": "open",
+      "legal_status": "permitted",
+      "collection_allowed": true,
+      "suggested_collection_method": "Use manually / semi-automatically for parent-company resolution once a foreign shareholder appears in a Czech úplný výpis; not a bulk source.",
+      "example_urls": [
+        "https://e-justice.europa.eu/489/EN/business_registers__search_for_a_company_in_the_eu"
+      ],
+      "discovered_via_method": "inferred from first principles (who interconnects EU registers) and probed directly",
+      "queries_used": [],
+      "local_language_terms_used": [],
+      "blocked": false,
+      "blocker_type": null,
+      "observed_blocker": null
+    },
+    {
+      "source_name": "Kurzy.cz — Rejstřík firem / Sbírka listin mirror",
+      "source_url": "https://rejstrik-firem.kurzy.cz/obchodni-rejstrik/sbirka-listin/",
+      "source_class": "indirect",
+      "primary_language": "cs",
+      "why_relevant": "Large Czech financial portal that mirrors the commercial register and indexes the collection of deeds per company, often with parsed financial highlights and a cleaner, non-CAPTCHA HTML surface than or.justice.cz. Useful as a redundancy path and for quick human lookups, but it is a derivative of the official register and can lag or mis-parse, so the official filing remains the source of truth.",
+      "credibility_score": 0.7,
+      "usefulness_score": 0.6,
+      "confidence_score": 0.8,
+      "priority": "medium",
+      "domain": "kurzy.cz",
+      "source_subtype": "commercial_register_aggregator",
+      "topics": [
+        "disclosures",
+        "annual reports",
+        "investor relations",
+        "press releases",
+        "earnings"
+      ],
+      "access_status": "open",
+      "legal_status": "requires_review",
+      "collection_allowed": true,
+      "suggested_collection_method": "Use for cross-checks and manual research; check the site's terms before any systematic harvesting, and never treat its parsed figures as primary evidence — link back to the or.justice.cz document.",
+      "example_urls": [
+        "https://rejstrik-firem.kurzy.cz/04136632/merkado-z-s/",
+        "https://www.podnikani.cz/"
+      ],
+      "discovered_via_method": "local-language search for Czech register aggregators, then direct probe",
+      "queries_used": [
+        "merk.cz cribis kurzy.cz rejstřík firem účetní závěrky sbírka listin databáze firem (cs)"
+      ],
+      "local_language_terms_used": [
+        "rejstřík firem",
+        "sbírka listin",
+        "obchodní rejstřík"
+      ],
+      "blocked": false,
+      "blocker_type": null,
+      "observed_blocker": null
+    },
+    {
+      "source_name": "Peníze.cz — Obchodní rejstřík / rejstřík firem",
+      "source_url": "https://rejstrik.penize.cz/",
+      "source_class": "indirect",
+      "primary_language": "cs",
+      "why_relevant": "Another well-established Czech register aggregator, notable for rendering ownership and officer relationship graphs and for surfacing extracted financial statement values per year. Helpful for fast triage of a payments vendor's size and connections before deciding whether to pull the underlying filings.",
+      "credibility_score": 0.68,
+      "usefulness_score": 0.55,
+      "confidence_score": 0.8,
+      "priority": "low",
+      "domain": "penize.cz",
+      "source_subtype": "commercial_register_aggregator",
+      "topics": [
+        "disclosures",
+        "annual reports",
+        "investor relations",
+        "press releases",
+        "earnings"
+      ],
+      "access_status": "open",
+      "legal_status": "requires_review",
+      "collection_allowed": true,
+      "suggested_collection_method": "Manual / low-volume use for triage and relationship discovery; verify anything material against the official deeds filing.",
+      "example_urls": [
+        "https://rejstrik.penize.cz/"
+      ],
+      "discovered_via_method": "local-language search for Czech register aggregators, then direct probe",
+      "queries_used": [
+        "merk.cz cribis kurzy.cz rejstřík firem účetní závěrky sbírka listin databáze firem (cs)"
+      ],
+      "local_language_terms_used": [
+        "rejstřík firem",
+        "vazby osob a firem"
+      ],
+      "blocked": false,
+      "blocker_type": null,
+      "observed_blocker": null
+    },
+    {
+      "source_name": "Merk.cz (Imper) — company database with parsed účetní závěrky",
+      "source_url": "https://www.merk.cz/ucetni-zaverky/",
+      "source_class": "indirect",
+      "primary_language": "cs",
+      "why_relevant": "Commercial company database that parses filed financial statements into structured indicators (revenue trend, profitability, indebtedness, creditworthiness) and person-company links. Its dedicated 'Účetní závěrky' section is effectively a structured layer over the same deeds filings this cell targets — valuable when you need many CZ vendors' revenue series without building your own PDF extraction.",
+      "credibility_score": 0.72,
+      "usefulness_score": 0.7,
+      "confidence_score": 0.8,
+      "priority": "medium",
+      "domain": "merk.cz",
+      "source_subtype": "commercial_data_vendor",
+      "topics": [
+        "disclosures",
+        "annual reports",
+        "earnings"
+      ],
+      "access_status": "freemium_registration",
+      "legal_status": "requires_review",
+      "collection_allowed": true,
+      "suggested_collection_method": "Evaluate the paid tier / API for bulk financial indicators on the payments actor list; confirm licensing for internal market-intelligence reuse before ingesting.",
+      "example_urls": [
+        "https://www.merk.cz/ucetni-zaverky/"
+      ],
+      "discovered_via_method": "local-language search for Czech company databases, then direct probe",
+      "queries_used": [
+        "merk.cz cribis kurzy.cz rejstřík firem účetní závěrky sbírka listin databáze firem (cs)"
+      ],
+      "local_language_terms_used": [
+        "účetní závěrky",
+        "databáze firem",
+        "tržby",
+        "bonita"
+      ],
+      "blocked": false,
+      "blocker_type": null,
+      "observed_blocker": null
+    },
+    {
+      "source_name": "CRIBIS (CRIF) — Czech credit and company information service",
+      "source_url": "https://www.cribis.cz/",
+      "source_class": "indirect",
+      "primary_language": "cs",
+      "why_relevant": "Paid credit-information service built on the register, deeds filings, insolvency and payment-behaviour data. The realistic route to comprehensive, normalised financials and group structures for hundreds of CZ payment/IT vendors at once, including entities whose PDF filings are scanned and hard to parse.",
+      "credibility_score": 0.8,
+      "usefulness_score": 0.7,
+      "confidence_score": 0.8,
+      "priority": "medium",
+      "domain": "cribis.cz",
+      "source_subtype": "commercial_data_vendor",
+      "topics": [
+        "disclosures",
+        "annual reports",
+        "earnings"
+      ],
+      "access_status": "paid_subscription_required",
+      "legal_status": "requires_review",
+      "collection_allowed": true,
+      "suggested_collection_method": "Procurement decision: request a scoped subscription/API trial covering NACE 64/66 and IT-services vendors; treat as licensed data with redistribution limits.",
+      "example_urls": [
+        "https://www.cribis.cz/"
+      ],
+      "discovered_via_method": "named in the Czech-language search results as a peer of Merk/Bisnode, then probed directly",
+      "queries_used": [
+        "merk.cz cribis kurzy.cz rejstřík firem účetní závěrky sbírka listin databáze firem (cs)"
+      ],
+      "local_language_terms_used": [
+        "prověření firmy",
+        "bonita",
+        "obchodní rejstřík"
+      ],
+      "blocked": true,
+      "blocker_type": "paid_subscription_required",
+      "observed_blocker": "Public site is reachable but the company data itself sits behind a paid subscription; no free bulk access observed."
+    },
+    {
+      "source_name": "Dun & Bradstreet Czech Republic (formerly Bisnode / Albertina)",
+      "source_url": "https://www.dnb.com/cs-cz/",
+      "source_class": "indirect",
+      "primary_language": "en",
+      "why_relevant": "The old Bisnode.cz and Albertina.cz Czech data brands now redirect to Dun & Bradstreet's Czech site — i.e. the historic Albertina/Bisnode CZ company-data franchise is the same vendor today. Relevant as the main international provider of normalised Czech company financials, ownership trees and DUNS-linked group structures, and as one of the few places likely to retain pre-December-2025 beneficial-ownership snapshots.",
+      "credibility_score": 0.82,
+      "usefulness_score": 0.7,
+      "confidence_score": 0.78,
+      "priority": "medium",
+      "domain": "dnb.com",
+      "source_subtype": "commercial_data_vendor",
+      "topics": [
+        "disclosures",
+        "annual reports",
+        "earnings"
+      ],
+      "access_status": "paid_subscription_required",
+      "legal_status": "requires_review",
+      "collection_allowed": true,
+      "suggested_collection_method": "Commercial evaluation for group-structure and financials enrichment; ask explicitly about Czech beneficial-ownership history coverage given the ESM public shutdown.",
+      "example_urls": [
+        "https://www.bisnode.cz/",
+        "https://www.albertina.cz/"
+      ],
+      "discovered_via_method": "recovery step: probed the legacy Czech brand domains bisnode.cz and albertina.cz, both of which resolve to https://www.dnb.com/cs-cz/ (rebrand/merge, not a dead source)",
+      "queries_used": [],
+      "local_language_terms_used": [
+        "databáze firem",
+        "Albertina",
+        "Bisnode"
+      ],
+      "blocked": true,
+      "blocker_type": "paid_subscription_required",
+      "observed_blocker": "Data products are commercial; the public site is a marketing/landing surface only. Note also that https://www.dnb.com/cs-cz.html returned 404 while https://www.dnb.com/cs-cz/ resolved."
+    },
+    {
+      "source_name": "Hlídač státu — open data and API over Czech state sources (incl. justice/ISIR)",
+      "source_url": "https://www.hlidacstatu.cz/api/v1/doc",
+      "source_class": "pointer",
+      "primary_language": "cs",
+      "why_relevant": "Civic-tech platform that republishes Czech state datasets — including justice-sector and insolvency data — as documented APIs under an open licence (CC BY). Valuable as a pre-normalised, automation-friendly alternative to hammering the ministry's own UIs, and as a monitor of which state registers publish properly as open data.",
+      "credibility_score": 0.78,
+      "usefulness_score": 0.6,
+      "confidence_score": 0.72,
+      "priority": "medium",
+      "domain": "hlidacstatu.cz",
+      "source_subtype": "civic_tech_aggregator",
+      "topics": [
+        "disclosures"
+      ],
+      "access_status": "free_registration_required",
+      "legal_status": "requires_review",
+      "collection_allowed": true,
+      "suggested_collection_method": "Register for an API token, then use the documented endpoints for company/insolvency lookups; keep attribution per the CC BY licence and validate anything material against the official register.",
+      "example_urls": [
+        "https://www.hlidacstatu.cz/statniweby/info/436",
+        "https://www.hlidacstatu.cz/statniweby/info/180"
+      ],
+      "discovered_via_method": "local-language search for bulk downloading of justice data; the /api/v2/doc path returned 404 and the live documentation was recovered at /api/v1/doc",
+      "queries_used": [
+        "hlídač státu firmy API otevřená data justice sbírka listin stahování PDF (cs)"
+      ],
+      "local_language_terms_used": [
+        "otevřená data",
+        "insolvenční rejstřík",
+        "API dokumentace"
+      ],
+      "blocked": false,
+      "blocker_type": null,
+      "observed_blocker": null
+    },
+    {
+      "source_name": "Chytrý rejstřík — commercial register with revenue and risk overlays",
+      "source_url": "https://www.chytryrejstrik.cz/",
+      "source_class": "indirect",
+      "primary_language": "cs",
+      "why_relevant": "Aggregator positioning itself around 'tržby, rizika, vozidla, kontakty' and publishing explainers on exactly what the collection of deeds contains (financial statements, annual reports). Useful as a secondary index and, in particular, as a Czech-language reference for how filings are structured and labelled.",
+      "credibility_score": 0.6,
+      "usefulness_score": 0.45,
+      "confidence_score": 0.75,
+      "priority": "low",
+      "domain": "chytryrejstrik.cz",
+      "source_subtype": "commercial_register_aggregator",
+      "topics": [
+        "disclosures",
+        "annual reports"
+      ],
+      "access_status": "freemium_registration",
+      "legal_status": "requires_review",
+      "collection_allowed": true,
+      "suggested_collection_method": "Manual reference use; check terms before automated access. Do not use as evidence — use it to locate the official filing.",
+      "example_urls": [
+        "https://www.chytryrejstrik.cz/clanky/dokumenty-ve-sbirce-listin-zaverky-vyrocni-zpravy"
+      ],
+      "discovered_via_method": "top hit on the Czech seed query about which documents the collection of deeds contains, then probed",
+      "queries_used": [
+        "sbírka listin výroční zpráva platební instituce obchodní rejstřík justice.cz (cs)"
+      ],
+      "local_language_terms_used": [
+        "sbírka listin",
+        "účetní závěrka",
+        "výroční zpráva",
+        "tržby"
+      ],
+      "blocked": false,
+      "blocker_type": null,
+      "observed_blocker": null
+    },
+    {
+      "source_name": "ARES.CZ — unofficial mirror/search over ARES data",
+      "source_url": "https://ares.cz/obchodni-rejstrik/",
+      "source_class": "indirect",
+      "primary_language": "cs",
+      "why_relevant": "A privately operated site branded 'ARES.CZ' that mirrors register data with IČO/DIČ search. Tracked mainly as a disambiguation hazard: it is NOT the Ministry of Finance system (ares.gov.cz) and must never be cited as the official register, though it can serve as a convenience mirror when the official UI throws challenges.",
+      "credibility_score": 0.45,
+      "usefulness_score": 0.3,
+      "confidence_score": 0.85,
+      "priority": "low",
+      "domain": "ares.cz",
+      "source_subtype": "unofficial_register_mirror",
+      "topics": [
+        "disclosures"
+      ],
+      "access_status": "open",
+      "legal_status": "requires_review",
+      "collection_allowed": true,
+      "suggested_collection_method": "Do not ingest as authoritative. Keep on a domain deny/flag list so analysts never confuse ares.cz with ares.gov.cz.",
+      "example_urls": [
+        "https://ares.cz/",
+        "https://www.aresgov.cz/"
+      ],
+      "discovered_via_method": "appeared alongside the official ARES in Czech search results; identified as a look-alike domain during probing",
+      "queries_used": [
+        "ARES ekonomické subjekty vyhledávání platební služby API ares.gov.cz (cs)"
+      ],
+      "local_language_terms_used": [
+        "ARES",
+        "obchodní rejstřík",
+        "IČO"
+      ],
+      "blocked": false,
+      "blocker_type": null,
+      "observed_blocker": null
+    },
+    {
+      "source_name": "Obchodnirejstrik.cz — independent register search",
+      "source_url": "https://www.obchodnirejstrik.cz/",
+      "source_class": "indirect",
+      "primary_language": "cs",
+      "why_relevant": "Long-running independent Czech register search site. Low unique value over the official register, but a useful fallback index and a source of alternate company-name spellings when the official search is strict about diacritics and legal-form suffixes.",
+      "credibility_score": 0.55,
+      "usefulness_score": 0.35,
+      "confidence_score": 0.75,
+      "priority": "low",
+      "domain": "obchodnirejstrik.cz",
+      "source_subtype": "commercial_register_aggregator",
+      "topics": [
+        "disclosures"
+      ],
+      "access_status": "open",
+      "legal_status": "requires_review",
+      "collection_allowed": true,
+      "suggested_collection_method": "Manual fallback lookups only.",
+      "example_urls": [
+        "https://www.obchodnirejstrik.cz/"
+      ],
+      "discovered_via_method": "local-language aggregator search, then direct probe",
+      "queries_used": [
+        "merk.cz cribis kurzy.cz rejstřík firem účetní závěrky sbírka listin databáze firem (cs)"
+      ],
+      "local_language_terms_used": [
+        "obchodní rejstřík",
+        "rejstřík firem"
+      ],
+      "blocked": false,
+      "blocker_type": null,
+      "observed_blocker": null
+    }
+  ],
+  "negative_findings": [
+    {
+      "finding_type": "access_revoked_source_restricted",
+      "description": "Free public access to the Czech beneficial-ownership register (Evidence skutečných majitelů) was withdrawn. The Ministry of Justice announced that from 17 December 2025 the public part of ESM and its open data are unavailable, citing Czech Supreme Court / Supreme Administrative Court and CJEU case law on disproportionate interference with privacy and the transposition of the new EU AML package.",
+      "result_summary": "esm.justice.cz still responds, but the freely searchable public extract and open-data distribution that this cell relied on for ultimate-ownership mapping are no longer available to an unauthenticated researcher; access now requires data-box login, privileged remote access, an AML-obliged-entity form, or proof of legitimate interest before a court.",
+      "why_it_matters": "Ownership of Czech payment institutions, processors and ATM/IT vendors is frequently held through layered holdings; without ESM the register only shows the registered shareholder, so ultimate control must now be inferred from úplný výpis history, related-party reports in the deeds collection, or bought from commercial databases.",
+      "severity": "high",
+      "language": "cs",
+      "source_class": "pointer",
+      "topics": [
+        "disclosures"
+      ]
+    },
+    {
+      "finding_type": "unexpanded_pointer",
+      "description": "The Ministry of Justice open-data catalogue (dataor.justice.cz) is a client-side React application whose datasets are served through CKAN-style endpoints discovered in its JavaScript bundle: /api/3/action/package_list_compact, /api/3/action/package_show and /api/file/.",
+      "result_summary": "Calling /api/3/action/package_list_compact without parameters returned HTTP 400 with a zero-byte body, and /api/3/action/package_show?id=full returned 'MissingObject{type=ShowResult, id=full}'. The correct dataset identifiers and query parameters were not determined in this run; they are documented in the 81-page ISVR open-data user manual (sections 3-4) which was downloaded but not fully read.",
+      "why_it_matters": "This is the only bulk, non-rate-limited path to the whole Czech register; until the parameters are worked out, the actor-universe build stays dependent on the rate-limited and CAPTCHA-protected or.justice.cz web UI.",
+      "severity": "medium",
+      "language": "cs",
+      "source_class": "pointer",
+      "topics": [
+        "disclosures"
+      ]
+    },
+    {
+      "finding_type": "missing_bulk_distribution",
+      "description": "No bulk or API distribution of the Sbírka listin documents themselves (the annual report / financial statement PDFs) was found. The ISVR open data covers register entries — the user manual's structure is organised by legal form and its mandatory/optional attribute sets (s.r.o., a.s., družstvo, nadace, SVJ...), i.e. subject data, not filed documents.",
+      "result_summary": "The documents appear to be reachable only per entity, through or.justice.cz/ias/ui/vypis-sl-firma?subjektId={id} and then vypis-sl-detail?dokument={id}&subjektId={id}&spis={id}.",
+      "why_it_matters": "Collecting the disclosures at scale therefore requires an entity-by-entity crawl inside the ministry's published limits (3000 requests/day, 50/minute, random CAPTCHA), which shapes the whole collection architecture and argues for a licensed commercial mirror as a complement.",
+      "severity": "high",
+      "language": "cs",
+      "source_class": "direct",
+      "topics": [
+        "disclosures",
+        "annual reports"
+      ]
+    },
+    {
+      "finding_type": "licence_restriction_found",
+      "description": "The ISVR open-data usage terms (dataor.justice.cz/files/ISVR_OpenData_Podminky_uziti.pdf, v1.0, 4 March 2019) permit users to disseminate, use and cite the data and to use it 'pro nekomerční použití' (for non-commercial use), and state that the distribution contains personal data so the recipient becomes a data controller under GDPR.",
+      "result_summary": "The same document states the distribution is neither a copyright-protected database nor protected by the sui generis database right, so its structure and content may be freely extracted and reused — but the non-commercial usage wording and the GDPR controller status are unresolved for a commercial market-intelligence programme.",
+      "why_it_matters": "A commercial intelligence product built on bulk ISVR data may exceed the stated licence; this needs legal review before ingestion, whereas per-entity public register lookups and ARES API use are not covered by that clause.",
+      "severity": "high",
+      "language": "cs",
+      "source_class": "pointer",
+      "topics": [
+        "disclosures"
+      ]
+    },
+    {
+      "finding_type": "dead_link_recovered",
+      "description": "Three candidate URLs failed on first probe and were recovered rather than recorded as dead: https://csu.gov.cz/registr-ekonomickych-subjektu returned 404 (RES application recovered at https://apl.czso.cz/irsw/); a deep link into rzp.gov.cz (/verejne-udaje/cs/udaje/vyber-subjektu.html) failed to connect (working root https://rzp.gov.cz/); https://www.hlidacstatu.cz/api/v2/doc returned 404 while the live documentation sits at /api/v1/doc. Separately https://www.dnb.com/cs-cz.html returned 404 while https://www.dnb.com/cs-cz/ resolved, and bisnode.cz / albertina.cz both redirect there (rebrand, not death).",
+      "result_summary": "All five were recovered to working equivalents via root/nav or entity research; none is a genuinely dead source.",
+      "why_it_matters": "Documents the recovery ladder outcomes so a later verify pass does not re-flag these as broken, and records the Bisnode->Dun & Bradstreet rebrand for entity resolution.",
+      "severity": "low",
+      "language": "cs",
+      "source_class": "pointer",
+      "topics": [
+        "disclosures"
+      ]
+    },
+    {
+      "finding_type": "noisy_term",
+      "description": "Two Czech term collisions were observed during searching. 'ARES' resolves both to the official Ministry of Finance system at ares.gov.cz and to an unrelated private look-alike at ares.cz (plus aresgov.cz). 'Sbírka' is ambiguous: 'sbírka listin' (collection of deeds) versus 'e-Sbírka' / 'Sbírka zákonů' (the collection of laws at zakony.gov.cz), which surfaced in results for a deeds-related query.",
+      "result_summary": "Queries mixing 'sbírka' with 'API/otevřená data' pulled e-Sbírka legal-code results; queries for 'ARES' pulled the private mirror above the official system.",
+      "why_it_matters": "Both terms need disambiguators ('sbírka listin' + 'obchodní rejstřík'; 'ARES' + 'ares.gov.cz' or 'ekonomické subjekty') or the collection pipeline will ingest the wrong corpus or cite an unofficial mirror as the official register.",
+      "severity": "medium",
+      "language": "cs",
+      "source_class": "pointer",
+      "topics": [
+        "disclosures"
+      ]
+    },
+    {
+      "finding_type": "search_budget_exhausted",
+      "description": "The session's web-search budget (200 calls) was exhausted partway through this cell, after which no further WebSearch queries could be issued.",
+      "result_summary": "Planned follow-up searches — notably Czech-language searches for the ČNB list of licensed payment institutions, for 'výroční zpráva a účetní závěrka uložená do sbírky listin 2025 platební', and for bulk deeds-download tooling — were not run as searches. Affected sources were instead reached by direct URL probing and by snowballing links out of already-fetched pages, so ČNB's JERRS register is recorded on a direct probe alone rather than on search evidence.",
+      "why_it_matters": "Coverage of this cell is grounded but not exhaustive; a follow-up run with search budget should re-run the unexecuted seed queries, especially the 2025-specific filing query.",
+      "severity": "medium",
+      "language": "cs",
+      "source_class": "pointer",
+      "topics": [
+        "disclosures",
+        "annual reports"
+      ]
+    },
+    {
+      "finding_type": "unexpanded_pointer",
+      "description": "The new ministry portal verejnerejstriky.msp.gov.cz (announced on or.justice.cz as running in 'ověřovací provoz') is a Nuxt application whose search runs client-side; its deep-link route scheme was not determined.",
+      "result_summary": "Guessed routes /vyhledavani, /vyhledat, /sbirka-listin and /subjekt/{ico} all returned 404, while the root and the /clanky/... article pages responded. Its client state exposes three search scopes (publicRegister, trusts, realOwners).",
+      "why_it_matters": "When the legacy or.justice.cz URL patterns are retired, the whole deeds-collection crawler must be re-pointed; the replacement URL scheme is still unknown and needs a headless-browser session to capture.",
+      "severity": "medium",
+      "language": "cs",
+      "source_class": "pointer",
+      "topics": [
+        "disclosures",
+        "annual reports"
+      ]
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "gap_type": "legally_blocked",
+      "description": "Ultimate beneficial ownership for Czech payment institutions, processors and vendors is no longer obtainable from a free public source after the 17 December 2025 closure of the ESM public part and its open data.",
+      "recommended_action": "Decide an access route and get it approved: (a) test whether the organisation qualifies as an AML-obliged entity for the announced automated remote-access form, (b) price a commercial provider (Dun & Bradstreet CZ, CRIF/CRIBIS) that retains ownership trees and pre-2025 snapshots, and (c) meanwhile fall back on úplný výpis shareholder history plus 'zpráva o vztazích' related-party reports in the deeds collection.",
+      "coverage_dimension": "access_legal",
+      "severity": "high",
+      "source_class": "pointer",
+      "topics": [
+        "disclosures"
+      ],
+      "language": "cs"
+    },
+    {
+      "gap_type": "inaccessible",
+      "description": "There is no machine-readable index or bulk feed of the Sbírka listin documents, and the only official web path is rate-limited (3000 requests/day, max 50/minute) with random CAPTCHA challenges, per the ministry's published operating conditions.",
+      "recommended_action": "Design the collector around a persistent IČO->subjektId->spis map plus an annual/quarterly delta sweep within those limits; in parallel write to the Ministry of Justice (odbor informatiky) asking about higher-volume access under the 'written guarantees' clause in the operating conditions, and evaluate a licensed mirror as fallback.",
+      "coverage_dimension": "access_legal",
+      "severity": "high",
+      "source_class": "direct",
+      "topics": [
+        "disclosures",
+        "annual reports"
+      ],
+      "language": "cs"
+    },
+    {
+      "gap_type": "legally_blocked",
+      "description": "The ISVR bulk open data carries a stated non-commercial usage condition and contains personal data making the recipient a GDPR controller, which is unresolved for a commercial market-intelligence use case.",
+      "recommended_action": "Obtain legal sign-off on the ISVR open-data terms before bulk ingestion; if commercial use is not covered, restrict the pipeline to per-entity public register lookups and the ARES REST API (whose published conditions set only volume limits) and document that decision in the source registry.",
+      "coverage_dimension": "access_legal",
+      "severity": "high",
+      "source_class": "pointer",
+      "topics": [
+        "disclosures"
+      ],
+      "language": "cs"
+    },
+    {
+      "gap_type": "extraction_gap",
+      "description": "Deeds filings are PDFs, frequently scanned images, and are legally required to be in Czech; there is no structured XBRL-style financial feed for unlisted Czech entities.",
+      "recommended_action": "Budget an OCR + Czech-language table-extraction stage (rozvaha / výkaz zisku a ztráty / příloha v účetní závěrce) with a validated mapping to a common financial schema, and consider buying pre-parsed financials (Merk, CRIBIS, D&B) for breadth while parsing only strategically important filings in-house.",
+      "coverage_dimension": "topic",
+      "severity": "high",
+      "source_class": "direct",
+      "topics": [
+        "annual reports",
+        "earnings"
+      ],
+      "language": "cs"
+    },
+    {
+      "gap_type": "thin_coverage",
+      "description": "Small and micro entities file abbreviated statements (zkrácený rozsah) that may omit the profit-and-loss detail, and many small vendors omit or delay filing entirely despite the sanction regime; foreign banks and EU-passporting payment providers operating in CZ through a branch (odštěpný závod) or on a freedom-of-services basis may file little or nothing in the Czech deeds collection.",
+      "recommended_action": "Flag every actor with an expected-but-missing or abbreviated filing, enrich size from the statistical register (RES employee bands) and VAT status, and for passporting/branch players route to the home-country register via BRIS and to the ČNB notification lists instead of expecting a Czech filing.",
+      "coverage_dimension": "source_class",
+      "severity": "medium",
+      "source_class": "direct",
+      "topics": [
+        "disclosures",
+        "annual reports",
+        "earnings"
+      ],
+      "language": "cs"
+    },
+    {
+      "gap_type": "undercovered_language",
+      "description": "Documents in the collection of deeds must be drawn up and lodged in Czech, so essentially the entire disclosure corpus for this cell is Czech-only; the English-language layer is limited to guides and to a few large banks' voluntary English annual reports.",
+      "recommended_action": "Treat Czech as the working language of this cell: maintain the Czech filing-label glossary (účetní závěrka, výroční zpráva, zpráva auditora, zpráva o vztazích, rozvaha, výkaz zisku a ztráty, příloha) as the parser's key vocabulary, and machine-translate only for downstream reporting, never for matching.",
+      "coverage_dimension": "language",
+      "severity": "medium",
+      "source_class": "direct",
+      "topics": [
+        "annual reports",
+        "disclosures"
+      ],
+      "language": "en"
+    },
+    {
+      "gap_type": "time_horizon_gap",
+      "description": "Filing timing creates a structural lag: statements are approved within 6 months and filed within 12 months of period end, and late filing is common, so the deeds collection is a 6-18 month-old view and cannot support earnings-cycle or quarterly monitoring.",
+      "recommended_action": "Schedule the collector for a main annual sweep (mid-year through year-end for the prior financial year) plus monthly catch-up passes for late filers, and pair this cell with faster channels (regulator statistics, press releases, listed-bank IR) for anything time-sensitive.",
+      "coverage_dimension": "time_horizon",
+      "severity": "medium",
+      "source_class": "direct",
+      "topics": [
+        "annual reports",
+        "earnings"
+      ],
+      "language": "cs"
+    },
+    {
+      "gap_type": "unexpanded_pointer_set",
+      "description": "The actor universe for this cell has not yet been enumerated: the NACE-code and regulator-list sweeps that would turn the register into a concrete list of CZ banking/payments companies and their suppliers were designed but not executed.",
+      "recommended_action": "Run two sweeps and store the resulting IČO list: (1) ČNB JERRS export of banks, payment institutions, small-scale providers, e-money institutions and agents; (2) ARES POST /vyhledat filtered on CZ-NACE 6419, 6499, 6612, 6619, 6209, 6311 and on Czech name tokens ('platební', 'platebn', 'karty', 'terminál', 'bankomat', 'processing'). Then resolve each to subjektId and pull the deeds list.",
+      "coverage_dimension": "source_class",
+      "severity": "high",
+      "source_class": "pointer",
+      "topics": [
+        "disclosures",
+        "annual reports"
+      ],
+      "language": "cs"
+    }
+  ],
+  "brief": "For Czech banking and payments, the statutory disclosure floor is the Ministry of Justice public register and its Sbírka listin: every Czech-incorporated bank, payment institution, processor, ATM operator and IT supplier must lodge účetní závěrka, výroční zpráva, zpráva auditora and (in groups) zpráva o vztazích there, free to read, which makes it the only channel where a silent private payments company still reveals revenue, auditor and intra-group relations — confirmed live on a bank with an unbroken 2018-2024 series. The practical architecture is two-layer: ARES (open REST API, IČO/NACE/legal form) and the ISVR bulk open data build and refresh the actor universe, then per-entity or.justice.cz URLs (rejstrik-$firma?ico= -> vypis-sl-firma?subjektId= -> vypis-sl-detail?dokument=) fetch the actual filings, with úplný výpis supplying name changes, shareholders and branches that no company website lists. The binding constraints are legal and mechanical rather than editorial: the register web UI is capped at 3000 requests/day and 50/minute with random CAPTCHA, the ISVR open-data licence states non-commercial use and GDPR controller status, there is no bulk feed of the deed PDFs (which are Czech-only and often scanned), and the beneficial-ownership register ESM was closed to the public on 17 December 2025 — so ownership depth now needs a lawful access route or a commercial provider (CRIBIS, Dun & Bradstreet CZ, Merk). Priorities: enumerate the actor list from ČNB's licensed-entity register plus NACE sweeps in ARES, settle the ISVR licence question, and build the OCR/extraction stage before scaling collection."
+}

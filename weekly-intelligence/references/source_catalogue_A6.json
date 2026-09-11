@@ -1,0 +1,1880 @@
+{
+ "_about": "Source catalogue for Agent 6 (Vendors & Competitors) — ADDITIONAL candidate sources, NOT a substitute for your normal web search and NOT a checklist to exhaust. URLs are the AUDITED/CORRECTED ones (re-tested), critical+high priority only. Only 5 of 17 footprint countries are covered; if your market is absent, research as normal. Open a URL only if it is relevant to your unit — and cite only what you actually opened. Prefer entries with tested_ok=true. Recency rule still wins: a fresher source found by search beats a catalogue entry.",
+ "workstream": "A6",
+ "agent": 6,
+ "generated": "2026-07-30",
+ "coverage_note": "critical+high only; 462 lower-priority/duplicate rows omitted for this workstream",
+ "counts": {
+  "Greece": 43,
+  "Albania": 36,
+  "Bulgaria": 38,
+  "Croatia": 45,
+  "Bosnia & Herzegovina": 44
+ },
+ "by_country": {
+  "Greece": [
+   {
+    "name": "Alpha Services and Holdings - Group Results and Reporting",
+    "url": "https://www.alpha.gr/en/group/investor-relations/group-results-and-reporting",
+    "priority": "critical",
+    "type": "bank_investor_relations_portal",
+    "access": "Download found and tested",
+    "tested_ok": true,
+    "how": "Scrape the IR sub-pages (Financial-Statements-Bank-and-Group, financial-results-presentations, ESG disclosures) for hrefs to /-/media/AlphaGr/Files/Group/... PDFs, then GET each PD"
+   },
+   {
+    "name": "IOBE (Foundation for Economic & Industrial Research) — Electronic Payments in Greece studies",
+    "url": "https://iobe.gr/en/finance-capital-markets/",
+    "priority": "critical",
+    "type": "local_economic_research_institute",
+    "access": "Download found and tested",
+    "tested_ok": true,
+    "how": "Scrape the topic listing pages (e.g. /en/finance-capital-markets/, /en/markets-sectors/, paginated) for study landing pages, then download the study PDFs which live under https://i"
+   },
+   {
+    "name": "Netcompany-Intrasoft — Banking (PROFITS core, case studies)",
+    "url": "https://netcompany.com/",
+    "priority": "critical",
+    "type": "vendor_case_study",
+    "access": "Better resource found",
+    "tested_ok": true,
+    "how": "Scrape https://netcompany.com/news/ (news cards with date, title, article URL). Uses a 'Load more news' button (lazy-load) so pagination/XHR handling or a headless browser may be n"
+   },
+   {
+    "name": "TED — Tenders Electronic Daily (EU Official Journal Supplement)",
+    "url": "https://ted.europa.eu/en/",
+    "priority": "critical",
+    "type": "eu_procurement_portal",
+    "access": "API found and tested",
+    "tested_ok": true,
+    "how": "Primary: POST JSON to https://api.ted.europa.eu/v3/notices/search with query='buyer-name=\"Bank of Greece\"' (or CPV/country filters), no auth, paginate via page/limit; JSON includes"
+   },
+   {
+    "name": "Ταμείο Παρακαταθηκών & Δανείων (Consignment Deposits & Loans Fund) — Procurement notices",
+    "url": "https://www.tpd.gr/prokirykseis-promitheion/",
+    "priority": "critical",
+    "type": "issuer_procurement_page",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Scrape the static HTML tender pages (/prokirykseis-promitheion/ and /prokirykseis-proskliseis/) for dated notice entries and follow the linked PDF documents under /wp-content/uploa"
+   },
+   {
+    "name": "Infosys Finacle — Newsroom / press releases (NBG 'Cosmos')",
+    "url": "https://www.infosys.com/newsroom/press-releases.html",
+    "priority": "critical",
+    "type": "vendor_press_release",
+    "access": "Manual validation required",
+    "tested_ok": false,
+    "how": "Use a real browser session (Akamai JS/bot challenge) to load newsroom + /rss/ feeds; OR collect Infosys Finacle press releases via a mirror such as PR Newswire (https://www.prnewsw"
+   },
+   {
+    "name": "ACI Worldwide — Newsroom / Press Releases",
+    "url": "https://www.aciworldwide.com/newsroom/press-releases",
+    "priority": "high",
+    "type": "vendor_press_release_index",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Scrape static HTML list of headlines+dates at /newsroom/press-releases (year filter navigation). Individual releases link to investor.aciworldwide.com. No RSS found (investor RSS p"
+   },
+   {
+    "name": "Athens Exchange / Euronext Athens - regulatory disclosures (Optima, CrediaBank, Profile)",
+    "url": "https://athens.euronext.com/en/market-data/announcements",
+    "priority": "high",
+    "type": "regulated_disclosure_feed",
+    "access": "Better resource found",
+    "tested_ok": true,
+    "how": "Scrape the server-rendered HTML announcement table at https://athens.euronext.com/en/market-data/announcements, paginating with ?page=N (page=0..N); each row links to /en/more-opti"
+   },
+   {
+    "name": "BoG — Credit institution establishment & operation / authorisation (EN)",
+    "url": "https://www.bankofgreece.gr/",
+    "priority": "high",
+    "type": "regulator_authorisation_framework_page",
+    "access": "Download found and tested",
+    "tested_ok": true,
+    "how": "Primary: GET the DCAT catalog https://www.bankofgreece.gr/OpenDataSetsCatalog/catalog.xml (8.4MB, no auth), parse dcat:Distribution nodes for downloadURL + dcterms:format + dcterms"
+   },
+   {
+    "name": "Business Daily - Technology & Banks sections",
+    "url": "https://www.businessdaily.gr/",
+    "priority": "high",
+    "type": "business_media",
+    "access": "Better resource found",
+    "tested_ok": true,
+    "how": "GET RSS feed https://www.businessdaily.gr/rss.xml (no auth) for latest items across all sections; for section-specific/older content scrape HTML lists at /agores, /trapezes, /tehno"
+   },
+   {
+    "name": "CrediaBank (ex-Attica Bank / Pancreta) Newsroom & Investor Relations",
+    "url": "https://www.crediabank.com/en/group/press-office/",
+    "priority": "high",
+    "type": "bank_press_room",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Scrape HTML announcement listing at /en/group/press-office/ (EN) and /omilos/grafeio-typou/ (EL); items are per-year sub-paths (/YYYY/slug/). Use GET requests (server returns 200 o"
+   },
+   {
+    "name": "Deloitte — Digital Banking Maturity (EMEA/global benchmark incl. Greek banks)",
+    "url": "https://www.deloitte.com/gr/en.html",
+    "priority": "high",
+    "type": "recurring_benchmark_study",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Scrape HTML listing pages: Greece press releases (https://www.deloitte.com/gr/en/about/press-room/press-releases.html) and industry/insights hubs (banking-capital-markets, financia"
+   },
+   {
+    "name": "ECB Banking Supervision — press releases & stress-test reports",
+    "url": "https://www.bankingsupervision.europa.eu/home/html/index.en.html",
+    "priority": "high",
+    "type": "regulator_press_and_reports",
+    "access": "API found and tested",
+    "tested_ok": true,
+    "how": "For statistics (A4): GET SDMX API https://data-api.ecb.europa.eu/service/data/SUP with format=csvdata or jsondata, no auth, quarterly updates, filter by series key. For disclosures"
+   },
+   {
+    "name": "Epsilon Net — FinTech Solutions (NBG open-banking partner)",
+    "url": "https://ir.epsilonnet.gr/",
+    "priority": "high",
+    "type": "vendor_website",
+    "access": "Better resource found",
+    "tested_ok": true,
+    "how": "Scrape the IR portal ir.epsilonnet.gr sections: /katigories/deltia-typou/ (press releases), /katigories/anakoinoseis-xa/ (ATHEX/stock-exchange announcements), /parousiaseis/ (prese"
+   },
+   {
+    "name": "European Investment Bank (EIB) — press releases & project portal (Greece)",
+    "url": "https://www.eib.org/en/projects/loans/index.htm?countries=GR",
+    "priority": "high",
+    "type": "eu_financing_body_project_register",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Scrape the HTML project register at https://www.eib.org/en/projects/loans/index.htm?countries=GR (signed loans) and https://www.eib.org/en/projects/all/ (paginated); also monitor p"
+   },
+   {
+    "name": "Found.ation — FWD Greece: Innovation Pulse ecosystem map",
+    "url": "https://thefoundation.gr/innovation-platform/our-publications/startups-in-greece/",
+    "priority": "high",
+    "type": "ecosystem_map_report",
+    "access": "Download found and tested",
+    "tested_ok": true,
+    "how": "Download the annual XLSX/PDF from the publications page. Direct PDF returns HTTP 200 application/pdf (content-length ~3.88 MB). Scrape the /our-publications/startups-in-greece/ pag"
+   },
+   {
+    "name": "Global Finance — World's Best Digital Banks / Best Bank awards (Greece winners)",
+    "url": "https://gfmag.com/awards-ranking/",
+    "priority": "high",
+    "type": "international_awards_programme",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Scrape HTML. Paginate the awards-ranking hub (52 pages) and winner-announcements list; filter articles mentioning Greece / Best Bank in Greece. Server-rendered, no auth."
+   },
+   {
+    "name": "Hellenic Bank Association (ΕΕΤ) — European Banking Union pages (SSM/SRM/EBA)",
+    "url": "https://www.hba.gr/en",
+    "priority": "high",
+    "type": "industry_association_legal_index",
+    "access": "Download found and tested",
+    "tested_ok": true,
+    "how": "Scrape server-rendered HTML list pages (ASP.NET MVC, Microsoft-IIS) at https://www.hba.gr/{En/}{Media,Statistics,ActivityAreas,FinancialLaw}/List?type=<TYPE> ; paginate via query p"
+   },
+   {
+    "name": "Hellenic Competition Commission (EPANT) - merger decisions",
+    "url": "https://www.epant.gr/",
+    "priority": "high",
+    "type": "regulator_decisions",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Scrape HTML list at https://www.epant.gr/apofaseis-gnomodotiseis.html (EL) or /en/decisions.html (EN), paginating with ?start=N (increments of ~23; 45 pages EL / 16 EN). Follow ite"
+   },
+   {
+    "name": "Ingenico - Newsroom / Blogs",
+    "url": "https://ingenico.com/en/",
+    "priority": "high",
+    "type": "vendor_pressroom",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Scrape HTML at https://ingenico.com/en/newsroom/press-releases and /en/newsroom/blogs; follow ?page=N pagination ('Show me more' link). Item links follow /en/newsroom/press-release"
+   },
+   {
+    "name": "Mastercard Newsroom — global",
+    "url": "https://newsroom.mastercard.com/news/press/",
+    "priority": "high",
+    "type": "scheme_official_newsroom",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Scrape https://newsroom.mastercard.com/news/press/ (releases grouped by year, reverse-chronological) and follow per-release article pages; use the Europe region filter for EU-relev"
+   },
+   {
+    "name": "Mobile & IoT Awards / Mobile Excellence Awards (Boussias + AUEB ELTRUN)",
+    "url": "https://m-awards.boussiasevents.gr/past-winners/",
+    "priority": "high",
+    "type": "industry_awards_programme",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Scrape static HTML past-winners page (years 2015-2026, categorized winner lists). Some years include downloadable PDF award documents and photo galleries. WordPress wp-json REST AP"
+   },
+   {
+    "name": "NETinfo — Digital banking case studies / news",
+    "url": "https://www.netinfo.eu/",
+    "priority": "high",
+    "type": "vendor_case_study",
+    "access": "API found and tested",
+    "tested_ok": true,
+    "how": "Poll RSS https://netinfo.eu/feed/ (application/rss+xml, real news items confirmed) for lightweight monitoring, or pull full structured content via WP REST /wp-json/wp/v2/posts?per_"
+   },
+   {
+    "name": "Natech Banking Solutions - Customers / News (core-banking vendor for cooperatives)",
+    "url": "https://natechbanking.com/",
+    "priority": "high",
+    "type": "vendor_customer_page",
+    "access": "API found and tested",
+    "tested_ok": true,
+    "how": "GET JSON https://natechbanking.com/wp-json/wp/v2/posts?per_page=100&page=N (no auth). 46 posts currently (X-WP-Total=46). Use X-WP-TotalPages for pagination. Also poll /wp-json/wp/"
+   },
+   {
+    "name": "Open Business Portal — Γενική Γραμματεία Εμπορίου δημοσιότητα search (openbusiness-portal.mindev.gov.gr)",
+    "url": "https://openbusiness-portal.mindev.gov.gr/anazitisi-dimosiotitas-epicheirisis/",
+    "priority": "high",
+    "type": "official_business_registry",
+    "access": "Better resource found",
+    "tested_ok": true,
+    "how": "Use the official GEMI Open Data JSON API (Swagger docs at https://opendata-api.businessportal.gr/opendata/docs/) instead of scraping the mindev search form. Also see publicity.busi"
+   },
+   {
+    "name": "Oracle — Financial Services Customer Stories",
+    "url": "https://www.oracle.com/customers/?industry=financial-services",
+    "priority": "high",
+    "type": "vendor_case_study_library",
+    "access": "Better resource found",
+    "tested_ok": true,
+    "how": "Load oracle.com/customers?industry=financial-services in a browser session and scrape the rendered customer cards (Oracle blocks non-browser fetchers with 403; listing is JS-popula"
+   },
+   {
+    "name": "PYMNTS",
+    "url": "https://www.pymnts.com/",
+    "priority": "high",
+    "type": "international_trade_press",
+    "access": "Better resource found",
+    "tested_ok": true,
+    "how": "GET RSS feeds per relevant tag/category, e.g. https://www.pymnts.com/tag/evo-payments/feed/ (tested, returns article items) and https://www.pymnts.com/fintech-payments/feed/. Poll "
+   },
+   {
+    "name": "Piraeus Group Press Office - Announcements & Press Releases (EN)",
+    "url": "https://www.piraeusgroup.gr/en/investor-relations",
+    "priority": "high",
+    "type": "corporate_press_room",
+    "access": "Download found and tested",
+    "tested_ok": true,
+    "how": "Scrape the server-rendered HTML pages (financial-results, annual-reports, oikonomiko-hmerologio, press-office/news-announcements) with plain HTTP GET, no auth/JS needed. Extract di"
+   },
+   {
+    "name": "Profile Software — Case Studies (Greek)",
+    "url": "https://www.profilesw.com/about-us/investor-relations/",
+    "priority": "high",
+    "type": "vendor_case_study",
+    "access": "Download found and tested",
+    "tested_ok": true,
+    "how": "Two-part collection. (1) Financial-report PDFs: static assets under /wp-content/uploads/ are NOT behind the Cloudflare challenge - GET directly with a normal browser User-Agent (te"
+   },
+   {
+    "name": "Vendor award-announcement pages (Performance Technologies, Netcompany, Info Quest, Profile Software, Worldline Greece)",
+    "url": "https://www.performance.gr/category/company-news/",
+    "priority": "high",
+    "type": "vendor_awards_pointer",
+    "access": "API found and tested",
+    "tested_ok": true,
+    "how": "GET JSON https://www.performance.gr/wp-json/wp/v2/posts?per_page=100&page=N (no auth); filter by category (company-news) via ?categories=<id>; alternatively RSS at https://www.perf"
+   },
+   {
+    "name": "Visa Inc. — Investor Relations press releases (gcs-web)",
+    "url": "https://usa.visa.com/about-visa/newsroom.html",
+    "priority": "high",
+    "type": "scheme_corporate_ir_newsroom",
+    "access": "Better resource found",
+    "tested_ok": true,
+    "how": "gcs-web.com (Q4 investor platform) returns 403 to non-browser clients. Instead scrape the Visa USA newsroom (https://usa.visa.com/about-visa/newsroom.html, returns 200) and/or inve"
+   },
+   {
+    "name": "Viva.com (Viva Wallet) - Blog / Press & product",
+    "url": "https://www.viva.com/en-gr/financial-statements",
+    "priority": "high",
+    "type": "vendor_press_room",
+    "access": "Download found and tested",
+    "tested_ok": true,
+    "how": "Scrape the server-rendered HTML of https://www.viva.com/en-gr/financial-statements (and el-gr equivalent) with a Mozilla User-Agent over HTTP/1.1; extract all href PDF links pointi"
+   },
+   {
+    "name": "banks.com.gr — Greek banking news (vendor tags)",
+    "url": "https://banks.com.gr/",
+    "priority": "high",
+    "type": "local_business_media",
+    "access": "Better resource found",
+    "tested_ok": true,
+    "how": "GET RSS https://banks.com.gr/feed/ (application/rss+xml, no auth). Use sitemap https://banks.com.gr/sitemap_index.xml for full URL discovery. Vendor tag pages have per-tag feeds at"
+   },
+   {
+    "name": "ethosEVENTS – Απολογισμοί (post-event recaps) section",
+    "url": "https://ethosevents.eu/en/",
+    "priority": "high",
+    "type": "post_event_recap_archive",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Scrape HTML from https://ethosevents.eu/en/upcoming-events/ for event names + dates (static, category-tabbed), and per-event pages under /en/event/<slug>/ for agenda/sponsors/speak"
+   },
+   {
+    "name": "kariera.gr — job board (banking/IT postings + company pages)",
+    "url": "https://www.kariera.gr/en/jobs",
+    "priority": "high",
+    "type": "job_board",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "GET each page with a real browser User-Agent header (site is behind Cloudflare which 403s default/WebFetch agents but serves 200 to a normal Mozilla UA); parse the embedded <script"
+   },
+   {
+    "name": "Συνήγορος του Καταναλωτή - Financial Services (Greek Consumer Ombudsman)",
+    "url": "https://www.synigoroskatanaloti.gr/",
+    "priority": "high",
+    "type": "consumer_ombudsman_authority",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Scrape server-rendered HTML. Recommendations register: GET https://www.synigoroskatanaloti.gr/el/systaseis-porismata?page=N (57 pages, 0-indexed); filter Financial Services via sub"
+   },
+   {
+    "name": "FintechFutures — Challenger banks / funding desk",
+    "url": "https://www.fintechfutures.com/region/greece",
+    "priority": "high",
+    "type": "trade_media",
+    "access": "Manual validation required",
+    "tested_ok": false,
+    "how": "Browser session needed: use headless Chrome/Playwright with a real browser fingerprint to pass Cloudflare bot management, load https://www.fintechfutures.com/region/greece (and /ke"
+   },
+   {
+    "name": "Google Play - Greek banking/payment app reviews (Eurobank, Piraeus, Alpha, NBG)",
+    "url": "https://play.google.com/store/apps/details?id=com.EurobankEFG&hl=el_GR",
+    "priority": "high",
+    "type": "app_store_reviews",
+    "access": "Partially validated",
+    "tested_ok": false,
+    "how": "Use the google-play-scraper library (or parse AF_initDataCallback JSON from the server-rendered details page for metadata/ratingCount; use the batchexecute RPC for reviews). Both s"
+   },
+   {
+    "name": "IBS Intelligence — case studies & IBSi news (banking tech)",
+    "url": "https://ibsintelligence.com/",
+    "priority": "high",
+    "type": "industry_news_aggregator",
+    "access": "Manual validation required",
+    "tested_ok": false,
+    "how": "Browser session required: fetch via a real/headless browser that solves the Cloudflare challenge, then use search page https://ibsintelligence.com/?s=greece+bank (or WP REST /wp-js"
+   },
+   {
+    "name": "Insomnia.gr Forums - POS / payments merchant threads",
+    "url": "https://www.insomnia.gr/forums/",
+    "priority": "high",
+    "type": "consumer_merchant_forum",
+    "access": "Partially validated",
+    "tested_ok": false,
+    "how": "Scrape forum HTML with a browser User-Agent (default WebFetch UA is 403-blocked; curl with Mozilla UA returns 200). Use site search/relevant subforum for POS/payments threads. Stan"
+   },
+   {
+    "name": "Printec Group - LinkedIn company page",
+    "url": "https://www.linkedin.com/",
+    "priority": "high",
+    "type": "vendor_social_media",
+    "access": "Manual validation required",
+    "tested_ok": false,
+    "how": "Authenticated browser session required. HEAD on company URLs returns HTTP 200 but the GET body is an auth wall (Sign in / Join now); profile URLs (/in/*) return HTTP 405 to non-bro"
+   },
+   {
+    "name": "Sifted - Greece country page",
+    "url": "https://sifted.eu/countries/greece",
+    "priority": "high",
+    "type": "country_filter_page",
+    "access": "Manual validation required",
+    "tested_ok": false,
+    "how": "Cloudflare blocks automated fetches; much content is subscriber-gated. Use authenticated browser session for monitoring, or RSS if entitled. Manual monitoring otherwise."
+   },
+   {
+    "name": "Trustpilot - viva.com / Viva Wallet reviews",
+    "url": "https://www.trustpilot.com/review/viva.com",
+    "priority": "high",
+    "type": "consumer_review_aggregator",
+    "access": "Manual validation required",
+    "tested_ok": false,
+    "how": "Public review page returns HTTP 403 to non-browser clients (bot/anti-scraping protection, even with browser UA). Either use Trustpilot's official API with credentials, or collect v"
+   }
+  ],
+  "Albania": [
+   {
+    "name": "Banka Kombetare Tregtare (BKT) - Audited Reports / Raporte te audituara",
+    "url": "https://www.bkt.com.al/en/about-us/investor-relations",
+    "priority": "critical",
+    "type": "bank_audited_financial_statements",
+    "access": "Download found and tested",
+    "tested_ok": true,
+    "how": "Scrape the four investor-relations index pages (annual-reports, audited-reports, periodic-financial-reports, credit-ratings-reports) with a browser User-Agent to harvest /assets/up"
+   },
+   {
+    "name": "Credins Bank - Annual Reports / Raporte Vjetore",
+    "url": "https://www.bankacredins.com/",
+    "priority": "critical",
+    "type": "bank_annual_report",
+    "access": "Download found and tested",
+    "tested_ok": true,
+    "how": "Site was rebuilt on Webflow (assets on cdn.prod.website-files.com). For A1/A3 disclosures: scrape /reports-and-announcements and download the linked PDFs (Reg.60 transparency repor"
+   },
+   {
+    "name": "European Payments Council — Document Library & Press Releases (SEPA scheme decisions)",
+    "url": "https://www.europeanpaymentscouncil.eu/what-we-do/be-involved/register-participants/registers-participants-sepa-payment-schemes",
+    "priority": "critical",
+    "type": "scheme_owner_publications",
+    "access": "Download found and tested",
+    "tested_ok": true,
+    "how": "GET the per-scheme CSV register directly, e.g. https://www.europeanpaymentscouncil.eu/sites/default/files/participants_export/vop/vop.csv with a browser User-Agent header (Mozilla/"
+   },
+   {
+    "name": "Helius Systems (ASEE / Asseco SEE Group)",
+    "url": "https://helius-software.com/",
+    "priority": "critical",
+    "type": "banking_software_house_vendor_site",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Static-scrape the homepage/about/services pages (Netlify-hosted static HTML, HTTP 200, no JS needed) for A6 vendor/competitor intel. For A5 jobs/early-intent, monitor their LinkedI"
+   },
+   {
+    "name": "IFC Disclosure Portal (Project Information & Data) — Albania",
+    "url": "https://disclosures.ifc.org/project-disclosures",
+    "priority": "critical",
+    "type": "ifi_project_database",
+    "access": "Better resource found",
+    "tested_ok": true,
+    "how": "Do NOT scrape the JS disclosure portal. Pull the 'IFC Investment Services Projects' (0037737/DS00499) and 'IFC Advisory Services Projects' (0037738) CSV from the World Bank Data Ca"
+   },
+   {
+    "name": "Open Procurement Albania (AIS)",
+    "url": "https://openprocurement.al/en",
+    "priority": "critical",
+    "type": "procurement_transparency_database",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Two options. (1) HTML scrape of openprocurement.al directly: pages are fully server-side rendered (Cloudflare, no JS/login), list pages use Yii-style URLs /en/{registry}/list with "
+   },
+   {
+    "name": "Raiffeisen Bank Shqipëri — Arkiva Lajme / Deklarata për Shtyp",
+    "url": "https://www.raiffeisen.al/en/individuals.html",
+    "priority": "critical",
+    "type": "bank_newsroom",
+    "access": "API found and tested",
+    "tested_ok": true,
+    "how": "For A1 media/A2 tenders: poll the newslist JSON servlet page-by-page (pagenumber increments while hasMore=true) and follow each item's 'link' to the article HTML for full text; pro"
+   },
+   {
+    "name": "Union Financiar Tiranë (UFT) — sole Western Union agent for Albania",
+    "url": "https://uft.al/?lang=en",
+    "priority": "critical",
+    "type": "operator_agent_official_site",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Scrape uft.al with a browser User-Agent (server-rendered WordPress). News/press are individual WP posts; try the WP RSS feed /feed/ and news category pages for A1/A6 press monitori"
+   },
+   {
+    "name": "Apps Run The World — Oracle FLEXCUBE customer database + Albanian bank profiles",
+    "url": "https://www.appsruntheworld.com/customers-database/customers/view/national-bank-of-greece-greece",
+    "priority": "critical",
+    "type": "vendor_customer_aggregator",
+    "access": "Manual validation required",
+    "tested_ok": false,
+    "how": "Site is Cloudflare bot-protected (403 to curl/WebFetch) AND the detailed technographic fields are behind a paid subscription (exports >2000 profiles require contacting ARTW). Use a"
+   },
+   {
+    "name": "AKEP — postal & electronic communications regulator (universal postal service analysis)",
+    "url": "https://akep.al/en/",
+    "priority": "high",
+    "type": "sector_regulator",
+    "access": "Download found and tested",
+    "tested_ok": true,
+    "how": "Static HTTP scraping. Crawl the statistics page https://akep.al/publikime/statistika/ (SQ) and English mirror https://akep.al/en/publications/statistics/, plus the regulatory-acts "
+   },
+   {
+    "name": "Albanian Association of Banks (AAB) — e-Albania payment scheme explainer (Shoqata Shqiptare e Bankave)",
+    "url": "https://aab.al/en/",
+    "priority": "high",
+    "type": "banking industry association",
+    "access": "Download found and tested",
+    "tested_ok": true,
+    "how": "Static WordPress site. Scrape https://aab.al/en/data/ HTML and regex-extract href links matching wp-content/uploads/.*\\.(xlsx|pdf) then GET each file directly (no cookies/JS needed"
+   },
+   {
+    "name": "Albanian Center for Quality Journalism (ACQJ) — Find Albania / RedFlag",
+    "url": "https://acqj.al/",
+    "priority": "high",
+    "type": "investigative_journalism_ngo_tool",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Scrape article/category HTML pages (economics/business sections) for early-intent/market-intelligence signals; check for a WordPress feed (/feed) for updates. No searchable busines"
+   },
+   {
+    "name": "AmCham Albania — Events & Digital Business Committee",
+    "url": "https://amcham.com.al/",
+    "priority": "high",
+    "type": "chamber-of-commerce events & committee",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "WordPress site — HTTP GET /event/ (200) gives the first page of events; additional events load via a 'Load More' AJAX call (admin-ajax.php). For reliable structured harvest test th"
+   },
+   {
+    "name": "American Bank of Investments (ABI Bank) — News (Activities) / Media",
+    "url": "https://www.abi.al/",
+    "priority": "high",
+    "type": "bank_newsroom",
+    "access": "Download found and tested",
+    "tested_ok": true,
+    "how": "Static HTTP scraping. Crawl the listing pages (English: /eng/c/105/annual-report, /eng/c/8/news, /eng/c/102/career-opportunities; Albanian: /c/46/pasqyra-financiare, /c/43/publikim"
+   },
+   {
+    "name": "Bank of Albania — Projects funded by IPA EU funds",
+    "url": "https://www.bankofalbania.org/",
+    "priority": "high",
+    "type": "eu_funding_project_page",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Direct HTTP GET scraping with a normal browser User-Agent header (the site 403s the default WebFetch UA but returns 200 to curl/browser UAs). For market statistics (A4): iterate th"
+   },
+   {
+    "name": "Comtrade System Integration Adriatic",
+    "url": "https://comtradeintegration.com/en/",
+    "priority": "high",
+    "type": "system_integrator_vendor_site",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Static HTML scrape of /en/banking-finances/ and /en/ plus blog/news links for vendor offerings, financial-sector case studies and client references. No API/downloads; monitor newsr"
+   },
+   {
+    "name": "EIB financed-projects & pipeline database — Albania filter",
+    "url": "https://www.eib.org/en/projects/loans/index.htm?countries=GR",
+    "priority": "high",
+    "type": "ifi_project_database",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Scrape the HTML project register at https://www.eib.org/en/projects/loans/index.htm?countries=GR (signed loans) and https://www.eib.org/en/projects/all/ (paginated); also monitor p"
+   },
+   {
+    "name": "Early Warning System (rightsindevelopment.org) — IFI project aggregator",
+    "url": "https://ewsdata.rightsindevelopment.org/",
+    "priority": "high",
+    "type": "ifi_aggregator_database",
+    "access": "Download found and tested",
+    "tested_ok": true,
+    "how": "Crawl individual project records by ID at /projects/{IFI}-{num}/ (public, no login) and pull the structured PDF at /projects/{IFI}-{num}/pdf/ (302 -> temp PDF, 200 application/pdf,"
+   },
+   {
+    "name": "General Directorate of Taxation — online payment of tax obligations via e-Albania (Drejtoria e Përgjithshme e Tatimeve)",
+    "url": "https://www.tatime.gov.al/",
+    "priority": "high",
+    "type": "tax authority e-services / news",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Scrape portal pages (Apache, static HTML, HTTP 200). The e-services hub links to e-Albania for authenticated actual filing/payment. For registry lookups (taxpayer/passive-subject) "
+   },
+   {
+    "name": "Helius Systems (vendor of Posta Shqiptare e-Posta payment app)",
+    "url": "https://www.oktopayments.com/",
+    "priority": "high",
+    "type": "technology_vendor",
+    "access": "Better resource found",
+    "tested_ok": true,
+    "how": "Ignore hugedomains.com (domain reseller, not a source). Scrape oktopayments.com (news/about/products) for A6 vendor/competitor intel on OKTO."
+   },
+   {
+    "name": "IFC Albania advisory (SECO) — payment-services legislation & open banking programme",
+    "url": "https://www.ifc.org/en/pressroom",
+    "priority": "high",
+    "type": "ifi_advisory_programme",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Scrape IFC pressroom listing (HTTP 200, HTML) filtered by region=Europe / country=Albania & Bosnia for A5/A6 signals; supplement with IFC country pages (e.g. /en/where-we-work/euro"
+   },
+   {
+    "name": "INTECH+ (Intech Plus)",
+    "url": "https://www.intech-al.com/",
+    "priority": "high",
+    "type": "system_integrator_vendor_site",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Scrape corporate site pages (services, solutions, clients/references, news) for vendor/competitor intelligence in the Albanian banking IT market. Cross-reference LinkedIn (linkedin"
+   },
+   {
+    "name": "LinkedIn Jobs — Albania (al.linkedin.com) bank/IT/payments filters",
+    "url": "https://al.linkedin.com/",
+    "priority": "high",
+    "type": "professional_network_jobs",
+    "access": "API found and tested",
+    "tested_ok": true,
+    "how": "For A5 (hiring/early-intent): poll the guest jobs endpoint per keyword (banking/fintech/payments/POS/kartela) with location=Albania, paginate via start=0,10,20..., parse HTML job c"
+   },
+   {
+    "name": "Media Ownership Monitor Albania (albania.mom-gmr.org)",
+    "url": "https://albania.mom-gmr.org/en/",
+    "priority": "high",
+    "type": "media_ownership_database",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Static nginx-served HTML (HTTP 200, no bot protection). Scrape the /en/media/, /en/owners/ and /en/companies/ listing pages plus per-entity profile pages. No CSV/JSON export expose"
+   },
+   {
+    "name": "OTP Bank Albania - Publications / Rezultate Financiare",
+    "url": "https://otpbank.al/en/",
+    "priority": "high",
+    "type": "bank_annual_report",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Static HTML scraping of the media sub-pages (news, tenders, publications, careers) — content is server-side rendered, no JS needed. Harvest PDF links (annual reports 'Raporti Vjeto"
+   },
+   {
+    "name": "PayLink — national card payment operator (Albania)",
+    "url": "https://paylink.al/en/home/",
+    "priority": "high",
+    "type": "card_processor_vendor",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Periodic HTML scrape of the English (/en/...) and Albanian sections — About Us, Products & Services, Activities, Job Vacancies, Contact — for corporate profile (A1), vendor/competi"
+   },
+   {
+    "name": "Paysera Albania - official site & company profile",
+    "url": "https://www.paysera.com/v2/en/blog",
+    "priority": "high",
+    "type": "emi_fintech_vendor_site",
+    "access": "Better resource found",
+    "tested_ok": true,
+    "how": "Scrape the blog index (https://www.paysera.com/v2/en/blog -> redirects to /blog-international), the press/newsroom page (https://www.paysera.com/v2/en/press, 'More press releases.."
+   },
+   {
+    "name": "Posta Shqiptare — Arkëtime (Bill collection & cash-in services)",
+    "url": "https://www.postashqiptare.al/",
+    "priority": "high",
+    "type": "operator_service_page",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Scrape the static HTML service/category pages (/c/51/pagesa payments, /transferta-parash money transfer, /d/82/arketime bill-collection). For fees/tariffs follow the referenced 'Ta"
+   },
+   {
+    "name": "Printec Group - corporate solutions & self-service ATM pages",
+    "url": "https://www.printecgroup.com/",
+    "priority": "high",
+    "type": "vendor_corporate_site",
+    "access": "API found and tested",
+    "tested_ok": true,
+    "how": "GET JSON API https://apply.workable.com/api/v1/widget/accounts/printec (no auth, returns ~62KB JSON with all open jobs incl. location/country for Greece filtering). For news/vendor"
+   },
+   {
+    "name": "QKB / e-Albania - Deposited financial statements register (Regjistri Tregtar)",
+    "url": "https://qkb.gov.al/",
+    "priority": "high",
+    "type": "company_registry_financial_filings",
+    "access": "API found and tested",
+    "tested_ok": true,
+    "how": "For company-level A1/A6 data: automate an HTTP POST to https://format.qkb.gov.al/kerko-per-subjekt/ with x-www-form-urlencoded search params (e.g. emriISubjektit or nipt), then par"
+   },
+   {
+    "name": "Revista Monitor — Teknologjia Financiare (Fintech) section",
+    "url": "https://monitor.al/",
+    "priority": "high",
+    "type": "topic_tag_index",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Poll the RSS feeds on a schedule: main feed https://monitor.al/feed/ and topic feeds https://monitor.al/financa/feed/, https://monitor.al/ekonomi/feed/, https://monitor.al/teknolog"
+   },
+   {
+    "name": "Ria Money Transfer — Send money to Albania (corridor page)",
+    "url": "https://www.riamoneytransfer.com/",
+    "priority": "high",
+    "type": "vendor_official_site",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "HTTP GET the corridor pages (200 OK) for the static partner-bank list (useful A6 competitor/vendor mapping). The live exchange rate (e.g. USD->ALL) is injected dynamically; capturi"
+   },
+   {
+    "name": "opencorporates.al — Albanian business registry (telco & payment entities)",
+    "url": "https://opencorporates.al/en",
+    "priority": "high",
+    "type": "business registry aggregator (QKB data)",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Scrape server-rendered company pages via NIPT URL pattern https://opencorporates.al/{sq|en}/nipt/{NIPT} (HTTP GET, Cloudflare-fronted but 200 for normal requests, no JS/auth). Enum"
+   },
+   {
+    "name": "One Albania — official individual/consumer site (self-care, top-up, bill pay)",
+    "url": "https://www.one.al/",
+    "priority": "high",
+    "type": "operator official site",
+    "access": "Partially validated",
+    "tested_ok": false,
+    "how": "Render with headless browser — homepage returns HTTP 200 but only the site name in static HTML (SPA/JS). Use browser rendering to reach news/press pages; test https://www.one.al/me"
+   },
+   {
+    "name": "Vodafone Albania — My Vodafone app / online services (bill pay & top-up)",
+    "url": "https://www.vodafone.al/",
+    "priority": "high",
+    "type": "operator official product page",
+    "access": "Partially validated",
+    "tested_ok": false,
+    "how": "Scrape public marketing/terms HTML pages (rimbushje-online, M-Pesa service/terms pages) via HTTP GET — server-rendered, 200 OK. The My Vodafone self-care portal (/my-vodafone) is a"
+   },
+   {
+    "name": "e-Posta portal (Posta Shqiptare digital wallet & services)",
+    "url": "https://eposta.postashqiptare.al/",
+    "priority": "high",
+    "type": "operator_digital_platform",
+    "access": "Manual validation required",
+    "tested_ok": false,
+    "how": "Requires a headless browser to render the SPA and, for account data, authenticated login (do not automate credentials). For public/product info use the parent site postashqiptare.a"
+   }
+  ],
+  "Bulgaria": [
+   {
+    "name": "BNB Press Office — Governing Council Decisions (Решения на Управителния съвет)",
+    "url": "https://www.bnb.bg/",
+    "priority": "critical",
+    "type": "regulator_press_release_feed",
+    "access": "Download found and tested",
+    "tested_ok": true,
+    "how": "Server-rendered classic site (.htm pages) with stable URL scheme; no JS or auth needed. For A1/A6 registers, GET the four direct XLSX files under /bnbweb/groups/public/documents/bn"
+   },
+   {
+    "name": "BORICA - Certified POS/ATM terminals list (PDF) and certification service",
+    "url": "https://www.borica.bg/en",
+    "priority": "critical",
+    "type": "certification_registry",
+    "access": "Download found and tested",
+    "tested_ok": true,
+    "how": "Direct HTTP GET (curl/requests, no JS, no auth). Scrape the Documents & Resources sections (Operationals, Financial Reports, Legal, Certifications) and the /en/latest/novini press-"
+   },
+   {
+    "name": "Evrotrust — Success Stories (bank case studies)",
+    "url": "https://evrotrust.com/success-stories/",
+    "priority": "critical",
+    "type": "vendor case-study library",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Scrape the paginated HTML (success-stories/page/2/ etc.) for case-study links; parse each story for named bank/fintech clients (A6 vendor/competitor intel). Static HTML, curl with "
+   },
+   {
+    "name": "Fibank / Първа инвестиционна банка — Investors: financial information",
+    "url": "https://www.fibank.bg/en/investors",
+    "priority": "critical",
+    "type": "bank_annual_report",
+    "access": "Download found and tested",
+    "tested_ok": true,
+    "how": "Scrape the IR sub-pages (financial-information, general-meetings-of-shareholders, corporate-governance, shareholder-information, stock-information, bonds) and about-us/news + caree"
+   },
+   {
+    "name": "Iris Solutions (irisbgsf.com) — first Bulgarian PSD2 TPP / PSD2 HUB aggregator",
+    "url": "https://www.irisbgsf.com/en",
+    "priority": "critical",
+    "type": "tpp_aggregator_vendor_site",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Static HTML scrape/monitor of the /en news-blog and about pages for A5 (early-intent/growth signals) and A6 (vendor/competitor moves); no careers page surfaced — check periodically"
+   },
+   {
+    "name": "Mellon Bulgaria EAD - corporate site (client list & vendor representation)",
+    "url": "https://www.mellon.bg/",
+    "priority": "critical",
+    "type": "integrator_distributor_site",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Static HTML scrape of the WordPress site. Careers listings under /category/careers/ (WP category feed likely available at /category/careers/feed/), vendor/product pages under /card"
+   },
+   {
+    "name": "Printec Bulgaria - Printec Group country page",
+    "url": "https://www.printecgroup.com/",
+    "priority": "critical",
+    "type": "vendor_corporate_site",
+    "access": "API found and tested",
+    "tested_ok": true,
+    "how": "GET JSON API https://apply.workable.com/api/v1/widget/accounts/printec (no auth, returns ~62KB JSON with all open jobs incl. location/country for Greece filtering). For news/vendor"
+   },
+   {
+    "name": "Sirma - Stories (banking & fintech case studies hub)",
+    "url": "https://sirma.com/stories.html",
+    "priority": "critical",
+    "type": "vendor_case_study_hub",
+    "access": "Better resource found",
+    "tested_ok": true,
+    "how": "HTTP GET + HTML parse of stories.html (case studies), news.html and insights.html for banking/fintech client wins; industries/fintech.html and services pages for solution/competito"
+   },
+   {
+    "name": "UniCredit Bulbank — Annual reports / Годишен отчет (Investor & About us)",
+    "url": "https://www.unicreditbulbank.bg/en/about-us/investors/financial-reports/",
+    "priority": "critical",
+    "type": "bank_annual_report",
+    "access": "Better resource found",
+    "tested_ok": true,
+    "how": "Use an HTTP client (curl/requests) with a browser User-Agent (WebFetch/default UAs are 403-blocked by the WAF; JS not required). Scrape the Financial Reports HTML index and collect"
+   },
+   {
+    "name": "myPOS Newsroom (official press page)",
+    "url": "https://www.mypos.com/en-gb/newsroom",
+    "priority": "critical",
+    "type": "vendor_newsroom",
+    "access": "Better resource found",
+    "tested_ok": true,
+    "how": "Fetch https://www.mypos.com/sitemap.xml (200, application/xml, tested). Filter <loc> entries matching '/en-gb/newsroom/post/' (22), '/bg-bg/blog' (212), and localized '/hr-hr/...' "
+   },
+   {
+    "name": "Digitalk.bg — IT проекти / Transform IT Awards",
+    "url": "https://digitalk.bg/",
+    "priority": "critical",
+    "type": "it_trade_press",
+    "access": "Manual validation required",
+    "tested_ok": false,
+    "how": "Site blocks automated agents (HTTP 403 to curl and WebFetch, including with a real browser User-Agent) — anti-bot/JS challenge. Collect via a full headless browser with a persisten"
+   },
+   {
+    "name": "BTA — Bulgarian News Agency (national wire)",
+    "url": "https://www.bta.bg/en/",
+    "priority": "high",
+    "type": "news_agency_national",
+    "access": "Better resource found",
+    "tested_ok": true,
+    "how": "Poll RSS feeds https://www.bta.bg/en/rss/free (English) and https://www.bta.bg/bg/rss/free (Bulgarian) via simple HTTP GET (text/xml, no auth, updatePeriod hourly) for new items; f"
+   },
+   {
+    "name": "BankSoft (Пловдив) - clients & references",
+    "url": "https://www.banksoft.bg/clients.html",
+    "priority": "high",
+    "type": "vendor_client_reference_page",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Scrape the static clients.html for vendor-client relationships (logos + names by category). Single static page, Apache, 200, no auth. Low change frequency — periodic re-crawl suffi"
+   },
+   {
+    "name": "DEV.bg — Paynetics employer page (Phyre / PHOS wallets)",
+    "url": "https://dev.bg/company/select/indfintech/",
+    "priority": "high",
+    "type": "employer_job_page",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "HTTP scrape of server-rendered HTML: crawl the fintech filter page /company/select/indfintech/ to enumerate relevant companies, then each /company/<slug>/ profile for headcount + o"
+   },
+   {
+    "name": "DSK Bank - Media Center News (English)",
+    "url": "https://dskbank.bg/en",
+    "priority": "high",
+    "type": "corporate_newsroom",
+    "access": "Download found and tested",
+    "tested_ok": true,
+    "how": "Static HTTP GET. Scrape the /документи (EN: /en/individual-clients/about-us/documents) page for links under /docs/default-source/... which are directly downloadable PDF/XLSX (serve"
+   },
+   {
+    "name": "Datecs Ltd - corporate site & news",
+    "url": "https://www.datecs.bg/",
+    "priority": "high",
+    "type": "vendor_corporate_site",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Static HTTP GET + HTML parse of /bg/jobs (careers, A5/A6) and /bg/news (corporate news, A3/A6). No auth, no JS. English variants under /en/. Poll periodically for new openings/news"
+   },
+   {
+    "name": "EBA EUCLID — Payment Institutions Register bulk download",
+    "url": "https://euclid.eba.europa.eu/register/",
+    "priority": "high",
+    "type": "supranational_register_download",
+    "access": "Download found and tested",
+    "tested_ok": true,
+    "how": "For bulk/full data: GET https://euclid.eba.europa.eu/register/api/filemetadata to read latest_version_relative_zip_path + golden_copy_path_context (base https://euclid.eba.europa.e"
+   },
+   {
+    "name": "Enterprise Innovation & Tech Awards — 'Най-добра банкова и разплащателна технология (FinTech)' category",
+    "url": "https://awards.enterprise.bg/",
+    "priority": "high",
+    "type": "b2b_media_award",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Monitor the site (and parent enterprise.bg editorial) around the annual ceremony for FinTech-category nominees/winners. Static HTML (LiteSpeed, 200), Bulgarian; nominee/winner list"
+   },
+   {
+    "name": "FSC — DORA Register of Information (регистър на информацията, ICT third-party providers)",
+    "url": "https://www.fsc.bg/en/",
+    "priority": "high",
+    "type": "ict_provider_register",
+    "access": "API found and tested",
+    "tested_ok": true,
+    "how": "Primary: poll WordPress REST API https://www.fsc.bg/wp-json/wp/v2/posts?per_page=100&page=N&after=<ISO> for news + Commission meeting decisions (Решения от заседания), covers A1/A3"
+   },
+   {
+    "name": "Fibank (First Investment Bank) - English press office (Pressat)",
+    "url": "https://fibank.pressat.co.uk/",
+    "priority": "high",
+    "type": "press_release_wire",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Consume the Pressat RSS feed for this press office (linked from the 'Follow' section) for structured press-release items; fall back to scraping the HTML listing. Cloudflare-fronted"
+   },
+   {
+    "name": "OneSpan — Newsroom (United Bulgarian Bank / Cronto deployment)",
+    "url": "https://www.onespan.com/about/news-releases",
+    "priority": "high",
+    "type": "vendor press release",
+    "access": "Better resource found",
+    "tested_ok": true,
+    "how": "Scrape the /about/news-releases index and filter for SEE/Bulgaria-relevant items (e.g., UBB); individual release pages are static HTML (200, no auth). The 2019 UBB release is a fix"
+   },
+   {
+    "name": "OpenCorporates — Ministry of Justice Registry Agency (register #37, Bulgaria)",
+    "url": "https://opencorporates.com/registers/88",
+    "priority": "high",
+    "type": "open_company_data_aggregator",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Use OpenCorporates REST API (v0.4) with jurisdiction_code=gr and an api_token for structured JSON; or scrape HTML at /companies/gr. NOTE original sample /registers/88 returns 404 t"
+   },
+   {
+    "name": "OpenWay Group — Blog & BORICA case studies (WAY4 card processing)",
+    "url": "https://openwaygroup.com/new-blog",
+    "priority": "high",
+    "type": "vendor_customer_case_study",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Scrape the server-rendered /new-blog archive page (all articles listed by year on one page, no pagination); follow article links for full text. Also /way4-payment-platform and case"
+   },
+   {
+    "name": "Paynetics — Announcements / Media Centre",
+    "url": "https://www.paynetics.digital/",
+    "priority": "high",
+    "type": "vendor_newsroom",
+    "access": "Better resource found",
+    "tested_ok": true,
+    "how": "Primary: poll WordPress RSS feeds - site-wide https://www.paynetics.digital/feed/ and media archive https://www.paynetics.digital/media/feed/ (both HTTP 200 application/rss+xml, no"
+   },
+   {
+    "name": "Payten / Asseco SEE (ASEE) - payments & ATM solutions",
+    "url": "https://www.payten.com/en/news-events/news/",
+    "priority": "high",
+    "type": "integrator_distributor_site",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Static HTTP GET scraping. Fetch https://www.payten.com/en/news-events/news/ (nginx, 200, text/html, fully server-rendered — no browser/JS required). Parse article links matching th"
+   },
+   {
+    "name": "Postbank (Eurobank Bulgaria) - News (English)",
+    "url": "https://www.postbank.bg/",
+    "priority": "high",
+    "type": "corporate_newsroom",
+    "access": "Download found and tested",
+    "tested_ok": true,
+    "how": "For A1/A4 disclosures: scrape the annual-reports page (redirects www.postbank.bg -> content.postbank.bg) for /-/media/*.pdf links and download the yearly annual report + consolidat"
+   },
+   {
+    "name": "RabbIT Solutions (11235 Ltd.) — Bulgarian RegTech vendor",
+    "url": "https://rabbitregtech.com/",
+    "priority": "high",
+    "type": "local vendor website",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Scrape homepage + product/about/clients sections for vendor profile, product lineup, and client/partner names. Static HTML (Apache, 200), no auth. A KYC-KYB manual/demo is gated be"
+   },
+   {
+    "name": "Software Group (Sofia) - DigiWave digital banking platform & clients",
+    "url": "https://www.softwaregroup.com/about-us/news",
+    "priority": "high",
+    "type": "vendor_product_site",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Scrape the /about-us/news HTML listing with pagination (numbered pages 1-10+), plus /solutions/* product pages. Static server-rendered HTML (IIS), no JS needed. No RSS feed exists "
+   },
+   {
+    "name": "Visa Innovation Program (Visa + Eleven Ventures) — programme hub",
+    "url": "https://fintechbulgaria.com/",
+    "priority": "high",
+    "type": "scheme-backed accelerator / programme co",
+    "access": "API found and tested",
+    "tested_ok": true,
+    "how": "Poll WordPress REST API https://fintechbulgaria.com/wp-json/wp/v2/posts (paginated, date-filterable) for structured articles; or the RSS feed /feed/ for latest items. Both open, no"
+   },
+   {
+    "name": "myPR.bg — free press-release aggregator",
+    "url": "https://www.mypr.bg/news/business/",
+    "priority": "high",
+    "type": "pr_aggregator_free",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Subscribe to the Business-category RSS feed (site advertises RSS for categories and custom selections) and/or scrape the /news/business/ listing; keyword-filter for bank/fintech/pa"
+   },
+   {
+    "name": "Агенция по вписванията — институционален сайт (registryagency.bg)",
+    "url": "https://www.registryagency.bg/bg/registri/targovski-registar/",
+    "priority": "high",
+    "type": "government_agency_site",
+    "access": "Better resource found",
+    "tested_ok": true,
+    "how": "Informational pages (all 3 sample URLs) are directly fetchable (HTTP 200) and describe the access routes. For A1 GFO/financial-statement collection use either the paid full-databas"
+   },
+   {
+    "name": "Computerworld.bg — ИТ проекти",
+    "url": "https://computerworld.bg/",
+    "priority": "high",
+    "type": "it_trade_press",
+    "access": "Manual validation required",
+    "tested_ok": false,
+    "how": "Retry DNS/collection from a network that can resolve computerworld.bg (the site is live and indexed - it may be geo/DNS restricted from this environment, or use a resolver that ret"
+   },
+   {
+    "name": "Dealroom.co — Bulgaria companies dashboard (app.dealroom.co)",
+    "url": "https://app.dealroom.co/dashboard/f/all_geo/anyof_Bulgaria",
+    "priority": "high",
+    "type": "startup_data_platform_query",
+    "access": "Manual validation required",
+    "tested_ok": false,
+    "how": "Use a Dealroom subscription with export or the official Dealroom API (key-based) to pull Bulgaria company records; the /dashboard SPA cannot be scraped without an authenticated ses"
+   },
+   {
+    "name": "PitchBook — company & fintech industry profiles",
+    "url": "https://pitchbook.com/profiles/industry/fintech",
+    "priority": "high",
+    "type": "startup_data_platform_company_profile",
+    "access": "Manual validation required",
+    "tested_ok": false,
+    "how": "Requires a PitchBook subscription (platform export or contracted data feed/API); public profile pages are SEO teasers behind Cloudflare and yield little structured data."
+   },
+   {
+    "name": "Salt Edge — Bulgaria coverage & PSD2 compliance product",
+    "url": "https://www.saltedge.com/products/account_information/coverage/gr",
+    "priority": "high",
+    "type": "aggregator_vendor_site",
+    "access": "Partially validated",
+    "tested_ok": false,
+    "how": "Best: use Salt Edge Providers API (GET https://www.saltedge.com/api/v6/providers?country_code=GR) with App-id/Secret to get the Greek provider list as JSON. Otherwise render the co"
+   },
+   {
+    "name": "jobs.bg — keyword search (developer / java developer)",
+    "url": "https://www.jobs.bg/front_job_search.php?categories%5B%5D=4",
+    "priority": "high",
+    "type": "keyword_search_query",
+    "access": "Manual validation required",
+    "tested_ok": false,
+    "how": "Collect via a real/headless browser session that solves the Cloudflare managed challenge (e.g. Playwright/Puppeteer with stealth + persistent cookies, or a residential-proxy anti-b"
+   },
+   {
+    "name": "openbanking.bg — Bulgarian Open Banking API monitoring portal (by Iris Solutions)",
+    "url": "https://openbanking.bg/",
+    "priority": "high",
+    "type": "api_status_monitor_portal",
+    "access": "Manual validation required",
+    "tested_ok": false,
+    "how": "Requires a real browser (Angular SPA: app-root + main.*.js, no server-rendered content). Open in a headless/Chrome session and capture XHR/fetch calls in DevTools/Network to find t"
+   },
+   {
+    "name": "ДАКСИ (Daxy) — фирмена бизнес информация и архив на Държавен вестник",
+    "url": "https://www.daxy.com/",
+    "priority": "high",
+    "type": "commercial_business_intelligence",
+    "access": "Manual validation required",
+    "tested_ok": false,
+    "how": "Requires a paid DAXY subscription/prepaid access card; queries run through cgi-bin form endpoints (page.py, glob/daxyglobal_www1.html) after login. Not reproducible without credent"
+   }
+  ],
+  "Croatia": [
+   {
+    "name": "ASEE (Asseco SEE) — Banking Risk & Compliance / InACT Anti-Fraud & AML",
+    "url": "https://asee.io/",
+    "priority": "critical",
+    "type": "vendor_product_and_case_study_pages",
+    "access": "API found and tested",
+    "tested_ok": true,
+    "how": "Collect via the public WordPress REST API on asee.io: paginate wp/v2/posts (news, 140 items), wp/v2/press_release (corporate releases, 56 items) and wp/v2/fin_press_release (financ"
+   },
+   {
+    "name": "Aircash — company newsroom / About",
+    "url": "https://aircash.eu/",
+    "priority": "critical",
+    "type": "company_website_newsroom",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "HTTP GET on server-rendered pages: /press (EN newsroom) and /hr-HR/novosti (Croatian news/blog), paginate via ?p=N (e.g. /press?p=1). Also /hr-HR/regulatory-info (A3 regulation) an"
+   },
+   {
+    "name": "Ministarstvo gospodarstva – Popis informacijskih posrednika za e-račun",
+    "url": "https://mingo.gov.hr/",
+    "priority": "critical",
+    "type": "regulator_registry",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Static HTML scrape: parse the numbered intermediaries list (currently 17 entries, e.g. FINA … monoform d.o.o.) directly from page text; scrape the consumer-protection subpage for A"
+   },
+   {
+    "name": "Money Motion — Startups (pitch-competition finalists)",
+    "url": "https://www.money-motion.eu/",
+    "priority": "critical",
+    "type": "conference_startup_directory",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Static HTML scrape of /speakers/, /startups/, /news/ and /agenda with a simple HTTP GET + HTML parser (WordPress-style markup, speaker/startup cards embedded in DOM, no JS executio"
+   },
+   {
+    "name": "Mastercard Croatia Newsroom (mastercard.hr - Vizija/Novosti)",
+    "url": "https://www.mastercard.com/news/europe/en/newsroom/press-releases/",
+    "priority": "critical",
+    "type": "card_scheme_newsroom",
+    "access": "Partially validated",
+    "tested_ok": false,
+    "how": "For corporate/financial disclosures: GET investor.mastercard.com RSS feed (200, text/xml, no auth) — provides <title>/<link> per press release (confirmed working, e.g. 'Mastercard "
+   },
+   {
+    "name": "Arhivanalitika / Ekonomski lab (Velimir Sonje)",
+    "url": "https://arhivanalitika.hr/",
+    "priority": "high",
+    "type": "independent_think_tank",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Crawl the month-by-month archive and section pages for articles; optionally monitor the weekly newsletter/'Pregledi' pages for new banking/finance commentary. Some premium content "
+   },
+   {
+    "name": "Banksoft d.o.o. - Banking solutions & references",
+    "url": "https://banksoft.eu/",
+    "priority": "high",
+    "type": "vendor_reference_list",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Static HTML scrape of /banking-references (client banks: Slatinska, Istarska kreditna, Jadranska, Podravska, Splitska/SocGen, Bosna Bank International, etc.), /banking-solutions an"
+   },
+   {
+    "name": "CROZ",
+    "url": "https://croz.net/",
+    "priority": "high",
+    "type": "vendor_case_study",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Scrape corporate site (news/blog, references/case studies, careers) as HTML; Cloudflare-fronted but reachable"
+   },
+   {
+    "name": "Diverto (diverto.hr)",
+    "url": "https://marlink.com/solutions/possibility-portfolio/possibility-solutions/cyber-security/",
+    "priority": "high",
+    "type": "cybersecurity_vendor_site",
+    "access": "Better resource found",
+    "tested_ok": true,
+    "how": "Track Diverto via Marlink knowledge-hub/news; standalone diverto.hr is deprecated (redirects to Marlink cyber-security page, which returns 403 to bots)"
+   },
+   {
+    "name": "EOJN RH – Napredno pretraživanje (advanced search subscription)",
+    "url": "https://eojn.nn.hr/SPIN/application/ipn/Oglasnik/PreuzimanjeUgovoraOCD.aspx",
+    "priority": "high",
+    "type": "eprocurement_alert_subscription",
+    "access": "Download found and tested",
+    "tested_ok": true,
+    "how": "ASP.NET WebForms postback: GET the .aspx page (keep session cookie), scrape __VIEWSTATE/__VIEWSTATEGENERATOR/__EVENTVALIDATION, then POST with __EVENTTARGET=dataPoMjesecima$ctrlN$c"
+   },
+   {
+    "name": "Ekonomski institut, Zagreb (EIZG) - Sektorske analize",
+    "url": "https://www.eizg.hr/publikacije/serijske-publikacije/sektorske-analize/616",
+    "priority": "high",
+    "type": "academic_research_institute",
+    "access": "Download found and tested",
+    "tested_ok": true,
+    "how": "Scrape the sektorske-analize listing page for /userdocsimages/.../*.pdf links and download PDFs; predictable path pattern (SA_<sector>_<year>.pdf)"
+   },
+   {
+    "name": "Electrocoin / PayCek - official sites",
+    "url": "https://paycek.io/?l=en",
+    "priority": "high",
+    "type": "actor corporate website",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Scrape homepage/product pages with a real browser User-Agent (GET, not HEAD) for A6 competitor/vendor tracking; Cloudflare tolerates normal GET requests with a browser UA."
+   },
+   {
+    "name": "Electrocoin / PayCek — company site",
+    "url": "https://electrocoin.eu/",
+    "priority": "high",
+    "type": "company_website",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Seed a crawler from the sitemap (https://electrocoin.eu/sitemap.xml -> sitemap1.xml, ~661 URLs including all /hr/blog/*, /en/blog/*, /en/press). Blog/press list pages are client-si"
+   },
+   {
+    "name": "Enable Banking — Open Banking Specifics in Croatia (market docs)",
+    "url": "https://enablebanking.com/docs/markets/gr/",
+    "priority": "high",
+    "type": "aggregator_market_documentation",
+    "access": "API found and tested",
+    "tested_ok": true,
+    "how": "For a public, no-auth source scrape the market docs HTML at https://enablebanking.com/docs/markets/gr/ (lists NBG, Piraeus, Alpha, Eurobank ASPSPs + capabilities). For structured d"
+   },
+   {
+    "name": "Erste Card Club (Diners Club Croatia / Discover issuer)",
+    "url": "https://www.erstebank.hr/hr/press/priopcenja-za-medije",
+    "priority": "high",
+    "type": "card_issuer_website",
+    "access": "Better resource found",
+    "tested_ok": true,
+    "how": "Retarget collection to the successors: (1) Erste Bank Croatia press releases https://www.erstebank.hr/hr/press/priopcenja-za-medije (A1/A5 news) and financial reports https://www.e"
+   },
+   {
+    "name": "Erste banka Hrvatska - cards / card business pages",
+    "url": "https://www.erstebank.hr/en/about-us/financial-reports-and-announcements",
+    "priority": "high",
+    "type": "bank_issuer_press",
+    "access": "Download found and tested",
+    "tested_ok": true,
+    "how": "Scrape the financial-reports-and-announcements page (both /en and /hr) for static <a href> links to cdn0.erstegroup.com/content/dam/hr/ebc/www_erstebank_hr/... and download the PDF"
+   },
+   {
+    "name": "Etranet Group — EFTPOS/POS maintenance & Ingenico distributor (HR)",
+    "url": "https://etranet.hr/",
+    "priority": "high",
+    "type": "vendor_website",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Direct HTML scraping (Apache, HTTP 200). Rich vendor profile: product lines, hardware partnerships, client list (OTP, Raiffeisen, HT, INA, Splitska banka). Scrape o-nama, products,"
+   },
+   {
+    "name": "Euromoney Awards for Excellence — Croatia national winners",
+    "url": "https://www.euromoney.com/awards/awards-for-excellence/all-results/",
+    "priority": "high",
+    "type": "international_award_issuer",
+    "access": "Better resource found",
+    "tested_ok": true,
+    "how": "Scrape HTML. Start from all-results index and country-award archive (https://www.euromoney.com/awards-articles/country-award/), follow the yearly 'national winners ... Greece' arti"
+   },
+   {
+    "name": "Global Finance Magazine — World's Best Digital Banks / Best Banks (country & CEE lists)",
+    "url": "https://gfmag.com/awards-ranking/",
+    "priority": "high",
+    "type": "international_award_issuer",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Scrape HTML. Paginate the awards-ranking hub (52 pages) and winner-announcements list; filter articles mentioning Greece / Best Bank in Greece. Server-rendered, no auth."
+   },
+   {
+    "name": "HANFA — Tržište kriptoimovine register (MiCA CASP / virtual-asset providers)",
+    "url": "https://www.hanfa.hr/",
+    "priority": "high",
+    "type": "regulatory_register",
+    "access": "Download found and tested",
+    "tested_ok": true,
+    "how": "Scrape the server-rendered index pages (/statistika/mjesecna-izvjesca/, /publikacije/*, /registri/*) for href links to /media/*.xlsx and /media/*.pdf and download directly via HTTP"
+   },
+   {
+    "name": "HNB — Registered Account Information Service Providers (AISP) registration page",
+    "url": "https://www.hnb.hr/en/statistics/statistical-data",
+    "priority": "high",
+    "type": "regulator_licensing_page",
+    "access": "Download found and tested",
+    "tested_ok": true,
+    "how": "Server-side HTTP scraping: fetch each landing page (curl returns full static HTML with /documents/ links despite Liferay), extract current-period /documents/20182/... file URLs, an"
+   },
+   {
+    "name": "HPB (Hrvatska poštanska banka) — Priopćenja za javnost",
+    "url": "https://www.hpb.hr/",
+    "priority": "high",
+    "type": "bank_newsroom_press_hub",
+    "access": "Download found and tested",
+    "tested_ok": true,
+    "how": "Scrape the /322 financial-reports page (and its 'Arhiva' archive section) for anchor hrefs under /UserDocsImages/Financijska-izvjesca/*.pdf|*.zip; fetch PDFs directly (static, no J"
+   },
+   {
+    "name": "HRC d.o.o. (Hibis core banking) - euro conversion case study / references",
+    "url": "https://www.hrc.si/",
+    "priority": "high",
+    "type": "vendor_website_case_study",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Scrape static HTML pages: /hr/platforma and /eng/about-us (references, client list ~13 banks in SI/HR, case studies). Small vendor site - low update frequency; periodic scrape of p"
+   },
+   {
+    "name": "HUB - Hrvatska udruga banaka (Croatian Banking Association)",
+    "url": "https://www.hub.hr/hr",
+    "priority": "high",
+    "type": "industry_association",
+    "access": "Download found and tested",
+    "tested_ok": true,
+    "how": "Plain HTTP GET (curl/requests, no JS, no auth). Poll the RSS feed(s) at /hr/taxonomy/term/<id>/feed for new items (press releases, analize), scrape section landing pages (hub-anali"
+   },
+   {
+    "name": "IN2 grupa - Finance / references",
+    "url": "https://www.in2.hr/en/finance/",
+    "priority": "high",
+    "type": "vendor_reference_page",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Scrape finance solutions/references and news pages as HTML (EN and HR versions available)"
+   },
+   {
+    "name": "Infigo IS (infigo.hr / infigo.is)",
+    "url": "https://www.infigo.hr/",
+    "priority": "high",
+    "type": "cybersecurity_vendor_site",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Scrape corporate site (solutions, references, news/blog) as HTML; also see infigo.is"
+   },
+   {
+    "name": "KOIOS d.o.o. - euro adoption DWH & regulatory reporting (SIBS takeover)",
+    "url": "https://koios.hr/",
+    "priority": "high",
+    "type": "vendor_website_blog",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Scrape corporate site (solutions, news/references, careers) as HTML"
+   },
+   {
+    "name": "Monri Payments (member of Payten/ASEE) — News",
+    "url": "https://monri.com/",
+    "priority": "high",
+    "type": "company_website_newsroom",
+    "access": "API found and tested",
+    "tested_ok": true,
+    "how": "Poll the WordPress REST API https://monri.com/wp-json/wp/v2/posts?per_page=20&orderby=date&_fields=id,date,modified,slug,link,title,tags for incremental news collection; filter by "
+   },
+   {
+    "name": "Novac.hr (Hanza Media / Jutarnji list economy)",
+    "url": "https://www.jutarnji.hr/novac",
+    "priority": "high",
+    "type": "business_media",
+    "access": "Better resource found",
+    "tested_ok": true,
+    "how": "novac.hr 301-redirects (novac.hr -> novac.jutarnji.hr -> www.jutarnji.hr/novac). Point the collector at the final URL https://www.jutarnji.hr/novac. Scrape article listings; consid"
+   },
+   {
+    "name": "OpenBankingTracker — Croatia providers directory (75 banks, HR)",
+    "url": "https://www.openbankingtracker.com/country/greece",
+    "priority": "high",
+    "type": "market_directory",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Scrape the server-rendered HTML table at /country/greece (columns: Name, Markets, Developer Portal, Bank Stack, AIS, PIS, APIs). For depth, scrape per-provider pages /provider/<slu"
+   },
+   {
+    "name": "Payten / Asseco SEE Hrvatska - card & ATM technology partner",
+    "url": "https://www.payten.com/en/news-events/news/",
+    "priority": "high",
+    "type": "vendor_website",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Static HTTP GET scraping. Fetch https://www.payten.com/en/news-events/news/ (nginx, 200, text/html, fully server-rendered — no browser/JS required). Parse article links matching th"
+   },
+   {
+    "name": "Porezna uprava – Fiskalizacija 2.0 / eRačun technical portal",
+    "url": "https://porezna.gov.hr/fiskalizacija/bezgotovinski-racuni",
+    "priority": "high",
+    "type": "regulator_technical_spec",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Scrape the fiskalizacija portal HTML and follow links to technical documentation (UBL 2.1 eRacun spec, KPD 2025, validator) as PDFs; watch the eRacun/Dokumentacija section for new "
+   },
+   {
+    "name": "Poslovna inteligencija (poslovna-inteligencija.hr)",
+    "url": "https://www.solvership.com/",
+    "priority": "high",
+    "type": "systems_integrator_vendor_site",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Static HTML scrape of services/industries/clients/insights pages; poll periodically for new case studies and banking references"
+   },
+   {
+    "name": "Privredna banka Zagreb (PBZ) — Priopćenja i novosti",
+    "url": "https://www.pbz.hr/en/gradjani/financial-reports.html",
+    "priority": "high",
+    "type": "bank_newsroom_press_hub",
+    "access": "Download found and tested",
+    "tested_ok": true,
+    "how": "Fetch HTML index pages (financial-reports.html and per-year pages e.g. /en/gradjani/financial-reports/2025.html), parse hrefs under /document/documents/PBZ/financijska-izvjesca/ an"
+   },
+   {
+    "name": "The Recursive",
+    "url": "https://www.therecursive.com/",
+    "priority": "high",
+    "type": "regional_cee_tech_fintech_press",
+    "access": "Better resource found",
+    "tested_ok": true,
+    "how": "Poll RSS feeds: GET https://www.therecursive.com/feed/ for all posts and https://www.therecursive.com/tag/greece/feed/ (also /tag/fintech/feed/, /tag/deals/feed/) for filtered item"
+   },
+   {
+    "name": "ZICER Startup Factory — accelerator cohort pages",
+    "url": "https://www.zicer.hr/startups/?lang=en",
+    "priority": "high",
+    "type": "accelerator_portfolio",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Scrape the startups grid (logo alt text + outbound links) on the ?lang=en page; no pagination/filters, single page listing"
+   },
+   {
+    "name": "Zagrebačka banka — Ponuda poslova / karijere (+ Talentlyft board)",
+    "url": "https://www.zaba.hr/home/o-nama/investitori",
+    "priority": "high",
+    "type": "employer_career_page",
+    "access": "Download found and tested",
+    "tested_ok": true,
+    "how": "Scrape the static HTML sections (investitori/financijski-izvjestaji, investitori/obavijesti/objave-zabe, press/novosti, press/publikacije, o-nama/karijere). PDFs are directly linke"
+   },
+   {
+    "name": "data.gov.hr - Sudski registar & Poslovni subjekti CKAN datasets",
+    "url": "https://data.gov.hr/ckan/api/3/action/package_search",
+    "priority": "high",
+    "type": "open_data_catalogue",
+    "access": "API found and tested",
+    "tested_ok": true,
+    "how": "Harvest via CKAN Action API: page through package_search (rows=1000,start=...) to enumerate all datasets, or filter by organization (fq=organization=hrvatska-narodna-banka / hrvats"
+   },
+   {
+    "name": "odluke.sudovi.hr - Tražilica odluka sudova RH (official court-decisions search)",
+    "url": "https://odluke.sudovi.hr/",
+    "priority": "high",
+    "type": "court_decisions_database",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Homepage reachable; search is a JS-driven form. Automate via headless browser submitting search terms, then follow decision-detail links; no documented public API/export found"
+   },
+   {
+    "name": "op.europa.eu Public Procurement — procurement-details pages",
+    "url": "https://ted.europa.eu/",
+    "priority": "high",
+    "type": "procurement_detail_page",
+    "access": "Better resource found",
+    "tested_ok": true,
+    "how": "Use TED Search API (api.ted.europa.eu/v3/notices/search) filtered to Greece + financial/banking CPV codes; JSON responses, paginate. op.europa.eu page is just a gateway to TED."
+   },
+   {
+    "name": "FINA RGFI - Registar godišnjih financijskih izvještaja (Annual Financial Statements Registry)",
+    "url": "https://rgfi.fina.hr/JavnaObjava-web/jsp/prijavaKorisnika.jsp",
+    "priority": "high",
+    "type": "financial_statements_registry",
+    "access": "Manual validation required",
+    "tested_ok": false,
+    "how": "For programmatic corporate-disclosure collection (A1/A6): register a free RGFI Javna objava account and use the search-by-OIB/name interface (login-gated) to pull statements/CSV, r"
+   },
+   {
+    "name": "FINA Registar stvarnih vlasnika (Beneficial Ownership Register)",
+    "url": "https://www.fina.hr/",
+    "priority": "high",
+    "type": "beneficial_ownership_register",
+    "access": "Partially validated",
+    "tested_ok": false,
+    "how": "For public workstreams (A2/A3/A4/A5/A6): plain HTTP GET / WebFetch on www.fina.hr sub-pages (all return HTTP 200, server-rendered HTML, no JS needed) — e.g. EuroNKS participants, p"
+   },
+   {
+    "name": "Joberty (joberty.com) — IT jobs + company tech-stack/reviews",
+    "url": "https://www.joberty.com/hr/IT-jobs?location=Croatia",
+    "priority": "high",
+    "type": "tech_community_jobboard",
+    "access": "Manual validation required",
+    "tested_ok": false,
+    "how": "Render with a headless browser (JS required). Homepage/listing returns only a ~3.6KB React shell via curl and WebFetch shows no listings. Capture the internal XHR/fetch (likely a J"
+   },
+   {
+    "name": "NFCW",
+    "url": "https://www.nfcw.com/country/greece/",
+    "priority": "high",
+    "type": "cards_mobile_payments_trade_press",
+    "access": "Manual validation required",
+    "tested_ok": false,
+    "how": "Archive is likely WordPress (try /feed/ or /country/greece/feed/ and /wp-json), but site is behind Cloudflare and blocks automated fetch (403). Use a real browser session / proper "
+   },
+   {
+    "name": "PBZ Corporate — Priopćenja i novosti (corp.pbz.hr)",
+    "url": "https://corp.pbz.hr/en/investor-relations",
+    "priority": "high",
+    "type": "bank_newsroom_press_hub",
+    "access": "Manual validation required",
+    "tested_ok": false,
+    "how": "Scrape HTML index pages at corp.pbz.hr/en/financial-reports, /en/publications and /en/investor-relations for annual-report/financial-statement PDF links; also press releases at cor"
+   }
+  ],
+  "Bosnia & Herzegovina": [
+   {
+    "name": "CorvusPay — Internet Payment Gateway (regional, incl. BiH banks)",
+    "url": "https://www.corvuspay.com/",
+    "priority": "critical",
+    "type": "psp_gateway_vendor_site",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Scrape HTML pages (banke-prihvatitelji, blog, cesto-postavljana-pitanja, en/ mirror) but SET A BROWSER User-Agent — default curl/bot UA returns HTTP 403 (bot protection). With a Mo"
+   },
+   {
+    "name": "Elevator Lab (Raiffeisen Bank International fintech programme)",
+    "url": "https://www.rbinternational.com/en/investors/results-reports.html",
+    "priority": "critical",
+    "type": "bank_fintech_accelerator",
+    "access": "Download found and tested",
+    "tested_ok": true,
+    "how": "Static HTTP GET. Scrape the results-reports / annual-reports / quarterly-reports / press-releases HTML pages for anchor hrefs matching '/content/dam/rbi/...coredownload.<ext>' then"
+   },
+   {
+    "name": "Temenos - Newsroom / Press Releases",
+    "url": "https://www.temenos.com/press-releases/",
+    "priority": "critical",
+    "type": "vendor_press_release_case_study",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Scrape paginated HTML: GET https://www.temenos.com/press-releases/page/N/ (N=1..54, path-based pagination returns server-rendered HTML, no JS/auth needed). Filter deal/partner/go-l"
+   },
+   {
+    "name": "APIF - Registar poslovnih subjekata Republike Srpske (RS business-entity register)",
+    "url": "https://www.apif.net/index.php?lang=sr",
+    "priority": "critical",
+    "type": "official_company_register",
+    "access": "Partially validated",
+    "tested_ok": false,
+    "how": "HTTP GET the Joomla pages with a real browser User-Agent header (mandatory: default/curl UA is rejected with HTTP 403; Mozilla UA returns 200). Parse register/publication HTML page"
+   },
+   {
+    "name": "Mastercard Bosna i Hercegovina (official market site)",
+    "url": "https://www.mastercard.ba/bs-ba.html",
+    "priority": "critical",
+    "type": "card_scheme_official_site",
+    "access": "Manual validation required",
+    "tested_ok": false,
+    "how": "Blocked by Akamai bot protection (AkamaiGHost, HTTP 403) to both curl and WebFetch even with a full browser User-Agent. Requires a real browser session (headless Chrome / claude-in"
+   },
+   {
+    "name": "ABRS — Microcredit organizations register (Mikrokreditne organizacije)",
+    "url": "https://abrs.ba/en/",
+    "priority": "high",
+    "type": "microcredit register",
+    "access": "Download found and tested",
+    "tested_ok": true,
+    "how": "For market statistics (A4): scrape https://abrs.ba/en/banks-3/ and the MCO quarterly page for the *KTabeleBanke.xlsx links (predictable /wp-content/uploads/YYYY/MM/YYYYMMDD*.xlsx p"
+   },
+   {
+    "name": "ASEE / Asseco SEE - News & Events (vendor customer references)",
+    "url": "https://asee.io/",
+    "priority": "high",
+    "type": "vendor_customer_reference",
+    "access": "API found and tested",
+    "tested_ok": true,
+    "how": "Collect via the public WordPress REST API on asee.io: paginate wp/v2/posts (news, 140 items), wp/v2/press_release (corporate releases, 56 items) and wp/v2/fin_press_release (financ"
+   },
+   {
+    "name": "Akta.ba - Tenderi (BiH business portal & tender aggregator)",
+    "url": "https://www.akta.ba/",
+    "priority": "high",
+    "type": "commercial tender aggregator / business ",
+    "access": "Better resource found",
+    "tested_ok": true,
+    "how": "Scrape server-rendered HTML section pages (no JS needed): /tenderi and /Tenderi/DodjeleUgovoraPretraga for A2 procurement (paginated), /registar/{id}/{slug} for A1/A6 company profi"
+   },
+   {
+    "name": "Apple Support — Apple Pay participating banks (Europe/MEA)",
+    "url": "https://support.apple.com/en-us/109516",
+    "priority": "high",
+    "type": "wallet_provider_registry",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Fetch page via curl and parse HTML by country heading; confirmed contains Albania, Bosnia, Bulgaria, Croatia. Static, no JS/auth. Ideal A6 vendor/competitor (bank issuer coverage) "
+   },
+   {
+    "name": "BH Telecom — Vijesti / Usluge za privatne korisnike (news/announcements)",
+    "url": "https://www.bhtelecom.ba/nabavke-i-pozivi/",
+    "priority": "high",
+    "type": "press_release_feed",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Scrape server-rendered HTML of /nabavke-i-pozivi/ and /obavjestenja/; follow 'Vidi arhivu' archive links to enumerate dated notices; fetch linked PDF tender documents. Dropdown fil"
+   },
+   {
+    "name": "Banca d'Italia - Access of Western Balkan central banks to TIPS",
+    "url": "https://www.bancaditalia.it/compiti/sistema-pagamenti/pagamenti-tips/index.html",
+    "priority": "high",
+    "type": "foreign_central_bank_official_site",
+    "access": "Better resource found",
+    "tested_ok": true,
+    "how": "Scrape static HTML on the corrected /pagamenti-tips/ page and the /media/notizia/ news items (e.g. TIPS Clone Western Balkans). Add ?com.dotmarketing.htmlpage.language=1 for Englis"
+   },
+   {
+    "name": "Bloomberg Adria BiH - finance/fintech news (finansije)",
+    "url": "https://ba.bloombergadria.com/biznis/finansije",
+    "priority": "high",
+    "type": "business_media",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "HTTP scrape of the paginated finansije section (server-side rendered HTML, ~38 pages). Iterate pagination links; parse article cards/headlines. No login needed."
+   },
+   {
+    "name": "CBBH — Statistics web portal (payment-transaction data)",
+    "url": "https://www.cbbh.ba/?lang=en",
+    "priority": "high",
+    "type": "regulator_data_portal",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "HTTP GET with a browser User-Agent. IMPORTANT: use GET, never HEAD (HEAD requests to /, /Content/* return spurious 302->500; identical GET returns 200). Crawl publication index pag"
+   },
+   {
+    "name": "Comtrade System Integration - Financial Institutions",
+    "url": "https://comtradeintegration.com/en/",
+    "priority": "high",
+    "type": "integrator_solutions_page",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Static HTML scrape of /en/banking-finances/ and /en/ plus blog/news links for vendor offerings, financial-sector case studies and client references. No API/downloads; monitor newsr"
+   },
+   {
+    "name": "EBRD Contract Awards Notification",
+    "url": "https://www.ebrd.com/home/work-with-us/project-procurement/procurement-notices.html",
+    "priority": "high",
+    "type": "contract_award_index",
+    "access": "Better resource found",
+    "tested_ok": true,
+    "how": "Use updated notices page with Location=Greece filter (public); it is JS/filter-driven, so capture its backing XHR or render headless. For full client notices use ECEPP search (ecep"
+   },
+   {
+    "name": "Finextra - Press Releases (pressarticle) newsroom",
+    "url": "https://www.finextra.com/channel/payments",
+    "priority": "high",
+    "type": "fintech trade press / vendor press-relea",
+    "access": "API found and tested",
+    "tested_ok": true,
+    "how": "GET the payments RSS feed https://www.finextra.com/rss/channel.aspx?channel=payments (200 text/xml, no auth) for latest payments/fintech headlines incl. Greek banks/Viva Wallet. Fo"
+   },
+   {
+    "name": "Forbes (N1) BiH — Aktuelnosti",
+    "url": "https://forbes.n1info.ba/aktuelnosti/",
+    "priority": "high",
+    "type": "news_portal",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Scrape the Aktuelnosti section with pagination (page URLs) for A1/A6 company & competitor coverage; supplement with the /feed RSS. Cloudflare-fronted but GET/WebFetch succeed."
+   },
+   {
+    "name": "Google Wallet Help — supported payment methods (Bosnia & Herzegovina)",
+    "url": "https://support.google.com/wallet/answer/12059326?hl=en&co=GENIE.CountryCode%3DAL",
+    "priority": "high",
+    "type": "wallet_provider_registry",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Fetch the article URL per country by varying co=GENIE.CountryCode (AL, HR, BG, etc.); the supported-banks table is present in the HTML and parseable by WebFetch. HEAD/curl returns "
+   },
+   {
+    "name": "IDDEEA - Agencija za identifikacione dokumente, evidenciju i razmjenu podataka (e-IDDEEA)",
+    "url": "https://www.iddeea.gov.ba/bs/feed/",
+    "priority": "high",
+    "type": "egov_agency_official_site",
+    "access": "Better resource found",
+    "tested_ok": true,
+    "how": "Use the WordPress RSS feed https://www.iddeea.gov.ba/bs/feed/ (validated, returns news items e.g. director's statement) for news collection; the wp-json REST API is firewall-blocke"
+   },
+   {
+    "name": "Intesa Sanpaolo Banka BiH — Zaposlenje (job ads)",
+    "url": "https://intesasanpaolobanka.ba/",
+    "priority": "high",
+    "type": "bank_careers_page",
+    "access": "Download found and tested",
+    "tested_ok": true,
+    "how": "Fetch pages server-side (WebFetch / headless browser with a real browser User-Agent) since plain curl is WAF-blocked; scrape the finansijski-izvjestaji.html page for /document/docu"
+   },
+   {
+    "name": "LANACO - Banja Luka (IT & banking digital transformation)",
+    "url": "https://www.lanaco.com/en/karijera",
+    "priority": "high",
+    "type": "local_integrator_site",
+    "access": "Better resource found",
+    "tested_ok": true,
+    "how": "Sample URL https://www.lanaco.com/karijera/ returns HTTP 500. Use working localized paths instead: careers hub at https://www.lanaco.com/en/karijera (EN) and the actual vacancy lis"
+   },
+   {
+    "name": "MF banka a.d. Banja Luka — official site (novosti, digital banking, careers)",
+    "url": "https://mfbanka.com/index.php/finansijski-izvjestaji/",
+    "priority": "high",
+    "type": "bank_official_site",
+    "access": "Download found and tested",
+    "tested_ok": true,
+    "how": "WordPress site: scrape /index.php/finansijski-izvjestaji/ for hrefs to /wp-content/uploads/*.pdf (annual reports, auditor reports, EN + SR statements). Scrape /index.php/novosti/ a"
+   },
+   {
+    "name": "Monri Payments (member of Payten/ASEE) - News & Press / BiH tag",
+    "url": "https://monri.com/",
+    "priority": "high",
+    "type": "payment processor / acquirer newsroom",
+    "access": "API found and tested",
+    "tested_ok": true,
+    "how": "Poll the WordPress REST API https://monri.com/wp-json/wp/v2/posts?per_page=20&orderby=date&_fields=id,date,modified,slug,link,title,tags for incremental news collection; filter by "
+   },
+   {
+    "name": "NLB Banka BiH — digitalne usluge (Apple Pay / Google Pay / NLB Pay)",
+    "url": "https://www.nlb-fbih.ba/",
+    "priority": "high",
+    "type": "issuer_bank_site",
+    "access": "Better resource found",
+    "tested_ok": true,
+    "how": "Scrape the izvjestaji-emitenta and godisnji-izvjestaji index pages for the dated PDF/XLSX links, then fetch each report file directly over HTTPS (static server, no JS/API needed). "
+   },
+   {
+    "name": "NTH Mobile — Mobile Payment Conditions Bosnia and Herzegovina",
+    "url": "https://www.nth-mobile.com/conditions/",
+    "priority": "high",
+    "type": "aggregator_carrier_billing",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Direct static HTML scrape of each /conditions/{country}/ page (nginx, HTTP 200, text/html). One page per country; parse tables/paragraphs for operator shares, penetration, VAT, pri"
+   },
+   {
+    "name": "Nova Banka — NOVApay web-shop payment gateway (Banja Luka / RS)",
+    "url": "https://www.novabanka.com/",
+    "priority": "high",
+    "type": "bank_acquiring_gateway",
+    "access": "Download found and tested",
+    "tested_ok": true,
+    "how": "Scrape the annual-reports page (both /en/annual-reports and /sr/godisnji-izvjestaji) with a simple HTTP GET + HTML parse; collect all hrefs matching the pattern https://www.novaban"
+   },
+   {
+    "name": "OZP — Izvješća o radu (annual consumer-ombudsman reports, 2007–2016+)",
+    "url": "https://www.ozp.gov.ba/",
+    "priority": "high",
+    "type": "annual report series (PDF)",
+    "access": "Download found and tested",
+    "tested_ok": true,
+    "how": "Scrape the report index pages (/izvjesca-o-radu, /posebna-izvjesca) for href=*.pdf links (hosted under /sites/default/files/dokumenti/ and /images/stories/novosti/), then download "
+   },
+   {
+    "name": "PING d.o.o. Sarajevo - Core Banking (ABIS) & Digital Banking (ELBA)",
+    "url": "https://www.ping.ba/en/",
+    "priority": "high",
+    "type": "local_vendor_product_page",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "HTTP scrape the WordPress portfolio/news pages (server-rendered HTML with schema.org JSON-LD). Use curl with -k or a client that tolerates an incomplete TLS chain (LiteSpeed server"
+   },
+   {
+    "name": "Payten - News & Events / customer references",
+    "url": "https://www.payten.com/en/news-events/news/",
+    "priority": "high",
+    "type": "vendor_news_reference",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Static HTTP GET scraping. Fetch https://www.payten.com/en/news-events/news/ (nginx, 200, text/html, fully server-rendered — no browser/JS required). Parse article links matching th"
+   },
+   {
+    "name": "Raiffeisen Bank BiH — Raiffeisen e-pay (e-commerce card acceptance)",
+    "url": "https://www.raiffeisenbank.ba/en/about-us/publications-reports/financial-reports/publications.html",
+    "priority": "high",
+    "type": "bank_acquiring_gateway",
+    "access": "Download found and tested",
+    "tested_ok": true,
+    "how": "Static HTTP scrape via curl/requests. Site runs Adobe Experience Manager: report pages list PDFs as /content/dam/rbi/retail/eu/ba/.../<file>.pdf.coredownload.pdf which return appli"
+   },
+   {
+    "name": "The Paypers - Payments & Fintech news",
+    "url": "https://thepaypers.com/payments/news",
+    "priority": "high",
+    "type": "payments trade press",
+    "access": "Better resource found",
+    "tested_ok": true,
+    "how": "Discover article URLs from XML sitemaps: https://thepaypers.com/__sitemap__/rss.xml (recent, Google-news schema) and https://thepaypers.com/__sitemap__/content_items_2026.xml (~251"
+   },
+   {
+    "name": "UBBiH — Documents: Presentations (Prezentacije)",
+    "url": "https://ubbih.ba/",
+    "priority": "high",
+    "type": "association_document_repository",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Static HTML scraping. Crawl section landing pages (news /bs/novosti/kratke-vijesti and /bs/novosti/bhbankar, events /bs/dogadjaji, jobs /bs/novosti/zaposljavanje, tag pages e.g. /b"
+   },
+   {
+    "name": "UniCredit Bank d.d. Mostar (BiH) - Press and Media",
+    "url": "https://www.unicredit.ba/ba/banka/poslovanje/izvjestaji.html",
+    "priority": "high",
+    "type": "bank_newsroom_press_release",
+    "access": "Download found and tested",
+    "tested_ok": true,
+    "how": "HTTP GET with a real browser User-Agent header (default UAs are 403'd by Akamai bot protection). Fetch the index HTML pages (izvjestaji.html, tarife_naknada.html, obavijesti.html, "
+   },
+   {
+    "name": "World Bank Projects & Operations - Bosnia and Herzegovina portfolio",
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement",
+    "priority": "high",
+    "type": "ifi_project_database",
+    "access": "API found and tested",
+    "tested_ok": true,
+    "how": "Poll the Search API v3 projects endpoint per country (countrycode_exact=AL and =BA) in JSON, paging with rows/os; join to WDS documents API by project id (P-code) for reports; for "
+   },
+   {
+    "name": "dgMarket - Bosnia and Herzegovina tenders (global donor/gov aggregator)",
+    "url": "https://www2.dgmarket.com/",
+    "priority": "high",
+    "type": "global donor/government tender aggregato",
+    "access": "Better resource found",
+    "tested_ok": true,
+    "how": "Scrape HTML tender lists from www2.dgmarket.com with a browser User-Agent (Greece country filter). Avoid the legacy www.dgmarket.com/tenders/list.do path which returns 403 (Cloudfl"
+   },
+   {
+    "name": "e-Nabavke — Tender Invitations / Bidding Invitation Announcements (Obavještenje o nabavci)",
+    "url": "https://www.ejn.gov.ba/",
+    "priority": "high",
+    "type": "government tender-invitation search",
+    "access": "API found and tested",
+    "tested_ok": true,
+    "how": "Collect via the open.ejn.gov.ba OData API. Enumerate entity sets from the service root, then page each with $top/$skip and incremental $filter=LastUpdated gt <ts> for delta pulls. "
+   },
+   {
+    "name": "eComm — eCommerce Association in BiH",
+    "url": "https://e-comm.ba/en/",
+    "priority": "high",
+    "type": "industry_association",
+    "access": "Accessible and validated",
+    "tested_ok": true,
+    "how": "Scrape /en/ news and event pages for market-intelligence and vendor/partner signals; harvest the /en/ebooks-en/ downloads page for eCommerce market research/eBooks. Static HTML (Ap"
+   },
+   {
+    "name": "DevelopmentAid.org - EU Delegation BiH & WBIF tenders",
+    "url": "https://www.developmentaid.org/tenders",
+    "priority": "high",
+    "type": "donor/IFI tender aggregator",
+    "access": "Manual validation required",
+    "tested_ok": false,
+    "how": "For structured collection use the official DevelopmentAid External API (https://www.developmentaid.org/api/external) with a purchased membership api-key. Free/anonymous access only"
+   },
+   {
+    "name": "FIA - Finansijsko-informatička agencija FBiH (Registar finansijskih izvještaja)",
+    "url": "https://fia.ba/Registar/Index",
+    "priority": "high",
+    "type": "official_financial_statements_register",
+    "access": "Manual validation required",
+    "tested_ok": false,
+    "how": "Browser-automation session with network inspection to capture the api.fia.ba XHR endpoint the RFI search calls; the search form loads Google reCAPTCHA (render=explicit), so automat"
+   },
+   {
+    "name": "FinTech Futures - Core banking / payments news",
+    "url": "https://www.fintechfutures.com/region/greece",
+    "priority": "high",
+    "type": "banking-tech trade press",
+    "access": "Manual validation required",
+    "tested_ok": false,
+    "how": "Browser session needed: use headless Chrome/Playwright with a real browser fingerprint to pass Cloudflare bot management, load https://www.fintechfutures.com/region/greece (and /ke"
+   },
+   {
+    "name": "Google Play - BiH bank mobile-banking apps (vendor-revealing listings)",
+    "url": "https://play.google.com/store/apps/details?id=com.EurobankEFG&hl=el_GR",
+    "priority": "high",
+    "type": "app_store_listing",
+    "access": "Partially validated",
+    "tested_ok": false,
+    "how": "Use the google-play-scraper library (or parse AF_initDataCallback JSON from the server-rendered details page for metadata/ratingCount; use the batchexecute RPC for reviews). Both s"
+   },
+   {
+    "name": "Individual employee / consultant posts (banking-tech staff) on LinkedIn",
+    "url": "https://www.linkedin.com/",
+    "priority": "high",
+    "type": "employee_declared_client_posts",
+    "access": "Manual validation required",
+    "tested_ok": false,
+    "how": "Authenticated browser session required. HEAD on company URLs returns HTTP 200 but the GET body is an auth wall (Sign in / Join now); profile URLs (/in/*) return HTTP 405 to non-bro"
+   },
+   {
+    "name": "Nezavisne novine — Ekonomija (Tržište / Privreda)",
+    "url": "https://www.nezavisne.com/ekonomija",
+    "priority": "high",
+    "type": "daily newspaper — economy desk",
+    "access": "Manual validation required",
+    "tested_ok": false,
+    "how": "Requires a real browser session: whole domain sits behind Cloudflare bot protection (returns HTTP 403 to curl and to WebFetch, even with a desktop Chrome User-Agent). Use a headles"
+   },
+   {
+    "name": "eKapija - Tenderi / Javne nabavke (regional aggregator)",
+    "url": "https://www.ekapija.com/en/tender",
+    "priority": "high",
+    "type": "commercial regional tender aggregator",
+    "access": "Partially validated",
+    "tested_ok": false,
+    "how": "Collect via a headless/real browser that solves the Cloudflare JS bot challenge (curl and WebFetch both return HTTP 403). After the challenge, tender listings are plain server-rend"
+   }
+  ]
+ }
+}

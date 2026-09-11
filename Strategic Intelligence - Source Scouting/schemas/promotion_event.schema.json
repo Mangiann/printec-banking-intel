@@ -1,0 +1,183 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://printec.group/schemas/strategic-intelligence-banking-payments/promotion_event.schema.json",
+  "title": "PromotionEvent",
+  "description": "An append-only, immutable AUDIT record of a single step in the SourceCandidate -> Source Registry promotion workflow. It is first-class sourcing-layer memory (lineage/auditability, architecture section 3/19) and is NOT Evidence, a Claim, a Signal, a BankNeed, or an Opportunity. Records are NEVER updated in place; each step appends a new event. Crash-safe write-ahead pattern (v1 file-based JSONL): a single physical attempt appends, in sequence order, event_status 'intent' (before writes) -> 'source_written' -> 'candidate_written' -> 'committed'; on failure it appends 'rolling_back' (before compensations) -> 'rolled_back' (all compensations succeeded) or 'rollback_failed' (a compensation failed; record left inconsistent -> MANDATORY human reconciliation). All events of one physical attempt share (promotion_attempt_id, attempt_generation); the intent is the event_status='intent' event. promotion_attempt_id is the stable idempotency key reused across retries; attempt_generation increments per retry so each physical attempt pairs 1:1 with its own terminal event. 'sequence' is the authoritative monotonic total order for reconciliation (NOT timestamp). Because the last event of an (attempt_id, generation) names how far the writes got, the log alone determines the correct compensation. The promotion workflow is DETERMINISTIC code, not a Claude reasoning task.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "event_id",
+    "promotion_attempt_id",
+    "attempt_generation",
+    "sequence",
+    "timestamp",
+    "actor",
+    "workflow_version",
+    "candidate_id",
+    "action",
+    "target_source_id",
+    "event_status",
+    "gates_evaluated",
+    "safety_overrides",
+    "human_review_refs",
+    "before_refs_or_hashes",
+    "after_refs_or_hashes",
+    "failure_reason",
+    "rollback_actions"
+  ],
+  "properties": {
+    "event_id": { "type": "string", "minLength": 1, "description": "Unique identifier of this audit event (one per appended row)." },
+    "promotion_attempt_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Stable idempotency key for a promotion of a given candidate; REUSED across retries. Groups all events of all physical attempts of one logical promotion."
+    },
+    "attempt_generation": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Monotonic physical-attempt number within promotion_attempt_id; increments on each retry (first attempt = 1). All events of one physical attempt share (promotion_attempt_id, attempt_generation), so each attempt pairs 1:1 with its own terminal event and unresolved-intent detection is well-defined across retries."
+    },
+    "sequence": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Monotonic global log sequence number. This is the AUTHORITATIVE total order for reconciliation and 'latest state' reconstruction (timestamp is for human audit only and must not be used for ordering)."
+    },
+    "timestamp": { "type": "string", "format": "date-time", "description": "When this event was appended (RFC 3339 / ISO 8601 date-time). Human audit only; not an ordering key (use sequence)." },
+    "actor": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Who/what produced the event.",
+      "required": ["actor_type", "actor_id", "human_actor_id"],
+      "properties": {
+        "actor_type": { "type": "string", "enum": ["workflow", "human", "system"], "description": "Kind of actor. Promotion transitions are produced by 'workflow' (deterministic code); 'human' for manual actions; 'system' for automated maintenance." },
+        "actor_id": { "type": "string", "minLength": 1, "description": "Identifier of the acting workflow/human/system." },
+        "human_actor_id": { "type": ["string", "null"], "description": "The human on whose authority the workflow acted (e.g. the promoter/reviewer), or null." }
+      }
+    },
+    "workflow_version": { "type": "string", "minLength": 1, "description": "Version of the promotion workflow that produced this event (for reproducibility/audit)." },
+    "candidate_id": { "type": "string", "minLength": 1, "description": "candidate_id of the SourceCandidate this promotion attempt concerns." },
+    "action": {
+      "type": "string",
+      "enum": ["promote_new", "merge_into_existing", "update_existing", "reject", "retire", "deactivate_source", "no_op"],
+      "description": "The promotion action. promote_new = mint a new Source; merge_into_existing = append candidate to an existing Source; update_existing = conservative in-place update; reject = candidate rejected, no Source; retire = candidate retired, no Source; deactivate_source = retire/reject cascade deactivating a previously-promoted Source; no_op = already promoted / nothing to do."
+    },
+    "target_source_id": {
+      "type": ["string", "null"],
+      "description": "The Source created/merged/updated/deactivated; null when no Source is involved (reject / retire-without-source / no_op) or not yet minted (an 'intent' event for promote_new). MUST be non-null once event_status reaches source_written/candidate_written/committed for a Source-writing action (enforced below)."
+    },
+    "event_status": {
+      "type": "string",
+      "enum": ["intent", "source_written", "candidate_written", "committed", "awaiting_human", "gate_failed", "failed", "rolling_back", "rolled_back", "rollback_failed", "no_op"],
+      "description": "Phase/outcome of this event within its physical attempt. Forward path: intent (write-ahead, pre-write) -> source_written -> candidate_written -> committed (writes done + cross-refs verified). Early exits (no writes): gate_failed, awaiting_human, no_op, failed (pre-write failure, nothing to compensate). Rollback path (write-ahead-disciplined): rolling_back (compensation intent, lists PLANNED compensations) -> rolled_back (all compensations succeeded/not_needed) or rollback_failed (a compensation FAILED; record left inconsistent -> mandatory human reconciliation)."
+    },
+    "gates_evaluated": {
+      "type": "array",
+      "description": "Every validation gate evaluated and its result (architecture section 19: no routine silently skips work). May be empty only for a pure no_op.",
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["gate", "passed", "detail"],
+        "properties": {
+          "gate": { "type": "string", "minLength": 1, "description": "Gate id/name, e.g. 'G2_review_approved', 'G6_safety_rules', 'G9_activation'." },
+          "passed": { "type": "boolean" },
+          "detail": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "safety_overrides": {
+      "type": "array",
+      "description": "Every safety-driven forced value applied (e.g. collection_allowed forced false because legal_status is forbidden). May be empty.",
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["field", "forced_value", "reason"],
+        "properties": {
+          "field": { "type": "string", "minLength": 1 },
+          "forced_value": { "type": "string" },
+          "reason": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "human_review_refs": {
+      "type": "array",
+      "description": "References to human sign-offs (candidate approval, legal/access clearance, merge/update confirmation, registry-field entry, reactivation, segregation-of-duties). May be empty for a normal public source.",
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["review_type", "reviewer", "decided_at", "decision", "notes"],
+        "properties": {
+          "review_type": { "type": "string", "enum": ["candidate_approval", "legal_or_access_clearance", "merge_confirmation", "registry_field_entry", "reactivation", "segregation_of_duties", "scalar_conflict_resolution", "manual_reconciliation", "other"] },
+          "reviewer": { "type": "string", "minLength": 1 },
+          "decided_at": { "type": ["string", "null"], "format": "date-time" },
+          "decision": { "type": ["string", "null"] },
+          "notes": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "before_refs_or_hashes": {
+      "type": "object", "additionalProperties": false,
+      "description": "Pre-step lineage snapshot (references and content hashes of the candidate and source before this step's write). Null members where not applicable.",
+      "required": ["candidate_ref", "candidate_hash", "source_ref", "source_hash"],
+      "properties": {
+        "candidate_ref": { "type": ["string", "null"] },
+        "candidate_hash": { "type": ["string", "null"] },
+        "source_ref": { "type": ["string", "null"] },
+        "source_hash": { "type": ["string", "null"] }
+      }
+    },
+    "after_refs_or_hashes": {
+      "type": "object", "additionalProperties": false,
+      "description": "Post-step lineage snapshot (references and content hashes after this step's write). Reconciliation recomputes on-disk hashes and compares them to the most recent committed event's after_*_hash to detect drift/torn writes (see workflow doc). Null members where not yet written.",
+      "required": ["candidate_ref", "candidate_hash", "source_ref", "source_hash"],
+      "properties": {
+        "candidate_ref": { "type": ["string", "null"] },
+        "candidate_hash": { "type": ["string", "null"] },
+        "source_ref": { "type": ["string", "null"] },
+        "source_hash": { "type": ["string", "null"] }
+      }
+    },
+    "failure_reason": {
+      "type": ["string", "null"],
+      "description": "Reason the attempt failed / is rolling back. MUST be a non-empty string when event_status is 'failed', 'gate_failed', 'rolling_back', 'rolled_back', or 'rollback_failed' (enforced below); null otherwise."
+    },
+    "rollback_actions": {
+      "type": "array",
+      "description": "Compensating actions. On 'rolling_back' this lists the PLANNED compensations (result 'pending'); on 'rolled_back'/'rollback_failed' their outcomes. MUST be non-empty for rolling_back/rolled_back/rollback_failed (enforced below); empty otherwise. Each compensating action must be idempotent so re-execution against a partially-compensated state is well-defined.",
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["compensating_action", "target_ref", "result", "detail"],
+        "properties": {
+          "compensating_action": { "type": "string", "minLength": 1, "description": "e.g. 'void_new_source', 'revert_candidate_promotion', 'remove_merged_candidate_id'." },
+          "target_ref": { "type": ["string", "null"] },
+          "result": { "type": "string", "enum": ["pending", "succeeded", "failed", "not_needed"] },
+          "detail": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "metadata": { "type": "object", "additionalProperties": true, "description": "Optional free-form extension bag. This is the ONLY place additional properties are allowed." }
+  },
+  "allOf": [
+    {
+      "if": { "required": ["event_status"], "properties": { "event_status": { "enum": ["failed", "gate_failed", "rolling_back", "rolled_back", "rollback_failed"] } } },
+      "then": { "properties": { "failure_reason": { "type": "string", "minLength": 1 } } }
+    },
+    {
+      "if": {
+        "required": ["event_status", "action"],
+        "properties": {
+          "event_status": { "enum": ["source_written", "candidate_written", "committed"] },
+          "action": { "enum": ["promote_new", "merge_into_existing", "update_existing", "deactivate_source"] }
+        }
+      },
+      "then": { "properties": { "target_source_id": { "type": "string", "minLength": 1 } } }
+    },
+    {
+      "if": { "required": ["event_status"], "properties": { "event_status": { "enum": ["rolling_back", "rolled_back", "rollback_failed"] } } },
+      "then": { "properties": { "rollback_actions": { "minItems": 1 } } }
+    },
+    {
+      "if": {
+        "required": ["rollback_actions"],
+        "properties": { "rollback_actions": { "contains": { "type": "object", "required": ["result"], "properties": { "result": { "const": "failed" } } } } }
+      },
+      "then": { "properties": { "event_status": { "const": "rollback_failed" } } }
+    }
+  ]
+}

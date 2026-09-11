@@ -1,0 +1,171 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://printec.group/schemas/strategic-intelligence-banking-payments/discovery_run_manifest.schema.json",
+  "title": "DiscoveryRunManifest",
+  "description": "The audit anchor for a single Source Discovery Scout (R2) run. Every durable record the run produces (SourceCandidate, AccessReviewTask, NegativeFinding, CoverageGap) carries discovery_run_id equal to this manifest's discovery_run_id. The manifest records the run's scope, the local-language glossary/actor-map summary, the search summary, output counts, validation results, and references to the run-log artifacts (search_attempts / failed_searches / errors / raw_traces / glossary / discovered_source_categories / workstream_brief) which are kept as JSONL/markdown under data/run_logs and are NOT first-class schemas. It is sourcing-layer audit memory (architecture section 3/19), NOT Evidence/Claim/Signal/BankNeed/Opportunity. Counts are computed deterministically by the runner from the actual records, never asserted by an LLM. It hard-enforces the run-quality rules: a failed/aborted run must carry a reason; a completed run must have a completion time; and if any search failed, at least one NegativeFinding must exist (architecture section 21).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "discovery_run_id",
+    "routine",
+    "actor",
+    "created_at",
+    "started_at",
+    "completed_at",
+    "run_status",
+    "failure_reason",
+    "scope",
+    "glossary_summary",
+    "search_summary",
+    "outputs",
+    "run_log_refs",
+    "validation"
+  ],
+  "properties": {
+    "discovery_run_id": { "type": "string", "minLength": 1, "description": "Unique run identifier. Every SourceCandidate/AccessReviewTask/NegativeFinding/CoverageGap produced by this run sets discovery_run_id to this value." },
+    "routine": {
+      "type": "object", "additionalProperties": false,
+      "description": "Which routine produced the run.",
+      "required": ["routine_id", "routine_name", "routine_version"],
+      "properties": {
+        "routine_id": { "type": "string", "minLength": 1, "description": "Architecture routine id, e.g. 'R2'." },
+        "routine_name": { "type": "string", "minLength": 1, "description": "Folder/routine name, e.g. 'source_discovery_scout'." },
+        "routine_version": { "type": "string", "minLength": 1, "description": "Version of the routine prompt/runner." }
+      }
+    },
+    "actor": {
+      "type": "object", "additionalProperties": false,
+      "description": "Who/what executed the run.",
+      "required": ["actor_type", "actor_id", "human_actor_id"],
+      "properties": {
+        "actor_type": { "type": "string", "enum": ["workflow", "human", "system"] },
+        "actor_id": { "type": "string", "minLength": 1 },
+        "human_actor_id": { "type": ["string", "null"], "description": "Human who triggered the run, if any; else null." }
+      }
+    },
+    "created_at": { "type": "string", "format": "date-time", "description": "When the manifest record was created (RFC 3339 / ISO 8601 date-time)." },
+    "started_at": { "type": "string", "format": "date-time", "description": "When the run started." },
+    "completed_at": { "type": ["string", "null"], "format": "date-time", "description": "When the run finished; null while running. Non-null required when run_status is completed/completed_with_errors (enforced below)." },
+    "run_status": {
+      "type": "string",
+      "enum": ["running", "completed", "completed_with_errors", "failed", "aborted"],
+      "description": "Run outcome. 'completed_with_errors' = finished but with recorded errors/validation issues; 'failed'/'aborted' require failure_reason (enforced below)."
+    },
+    "failure_reason": { "type": ["string", "null"], "description": "Why the run failed/aborted. MUST be a non-empty string when run_status is 'failed' or 'aborted' (enforced below); null otherwise." },
+    "scope": {
+      "type": "object", "additionalProperties": false,
+      "description": "The country/workstream/topic/language scope of the run.",
+      "required": ["country", "country_name", "sector", "workstreams", "topics", "languages"],
+      "properties": {
+        "country": { "type": "string", "pattern": "^[A-Z]{2}$", "description": "ISO 3166-1 alpha-2 country code (or 'ZZ' for a global/multi-country run)." },
+        "country_name": { "type": ["string", "null"], "description": "Display name, e.g. 'Greece'; null if not applicable." },
+        "sector": { "type": "string", "enum": ["banking", "payments", "both"] },
+        "workstreams": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "enum": ["A1", "A2", "A3", "A4", "A5", "A6", "A8", "A9"] }, "description": "Workstream code(s) the run targeted (architecture section 16; A7 not defined)." },
+        "topics": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 }, "description": "Topics in scope." },
+        "languages": { "type": "array", "minItems": 1, "items": { "type": "string", "pattern": "^[A-Za-z][A-Za-z0-9-]*$" }, "description": "Search/coverage languages (BCP-47-like tags, e.g. 'en', 'el'). English-only is not sufficient (architecture section 18)." }
+      }
+    },
+    "glossary_summary": {
+      "type": "object", "additionalProperties": false,
+      "description": "Summary of the local-language glossary / actor map built for the run (architecture section 18). The full glossary is a run-log artifact; this carries the counts.",
+      "required": ["terms_total", "terms_validated", "terms_by_tag", "actors_identified"],
+      "properties": {
+        "terms_total": { "type": "integer", "minimum": 0 },
+        "terms_validated": { "type": "integer", "minimum": 0, "description": "Terms validated against real results (not accepted merely because a model generated them)." },
+        "terms_by_tag": {
+          "type": "object", "additionalProperties": false,
+          "description": "Term counts by tag (architecture section 18).",
+          "required": ["official", "common_search", "english_in_local", "acronym_alias", "noisy_risky"],
+          "properties": {
+            "official": { "type": "integer", "minimum": 0 },
+            "common_search": { "type": "integer", "minimum": 0 },
+            "english_in_local": { "type": "integer", "minimum": 0 },
+            "acronym_alias": { "type": "integer", "minimum": 0 },
+            "noisy_risky": { "type": "integer", "minimum": 0, "description": "Terms usable only with disambiguators (e.g. the Greek 'προμήθεια' = procurement OR bank fee)." }
+          }
+        },
+        "actors_identified": { "type": "integer", "minimum": 0, "description": "Distinct actors (banks, regulators, vendors, associations, etc.) mapped." }
+      }
+    },
+    "search_summary": {
+      "type": "object", "additionalProperties": false,
+      "description": "Deterministic tallies of what the run searched and verified.",
+      "required": ["queries_run", "english_queries", "local_language_queries", "failed_searches", "pointer_sources_found", "pointer_sources_expanded", "urls_verified", "urls_failed"],
+      "properties": {
+        "queries_run": { "type": "integer", "minimum": 0 },
+        "english_queries": { "type": "integer", "minimum": 0 },
+        "local_language_queries": { "type": "integer", "minimum": 0 },
+        "failed_searches": { "type": "integer", "minimum": 0, "description": "Searches that errored or returned nothing/only-noise. If > 0, at least one NegativeFinding is required (enforced below)." },
+        "pointer_sources_found": { "type": "integer", "minimum": 0 },
+        "pointer_sources_expanded": { "type": "integer", "minimum": 0 },
+        "urls_verified": { "type": "integer", "minimum": 0, "description": "URLs deterministically verified by the runner (not asserted by an LLM)." },
+        "urls_failed": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "outputs": {
+      "type": "object", "additionalProperties": false,
+      "description": "Counts of durable records produced (computed by the runner from the actual records).",
+      "required": ["source_candidates", "access_review_tasks", "negative_findings", "coverage_gaps", "discovered_source_categories"],
+      "properties": {
+        "source_candidates": { "type": "integer", "minimum": 0 },
+        "access_review_tasks": { "type": "integer", "minimum": 0 },
+        "negative_findings": { "type": "integer", "minimum": 0 },
+        "coverage_gaps": { "type": "integer", "minimum": 0 },
+        "discovered_source_categories": { "type": "integer", "minimum": 0, "description": "Inferred source categories (a run-log artifact); an empty category should also surface as a CoverageGap." }
+      }
+    },
+    "run_log_refs": {
+      "type": "object", "additionalProperties": false,
+      "description": "References (paths under data/run_logs or the run folder) to the run-log artifacts that are NOT first-class schemas. Null if not produced.",
+      "required": ["search_attempts_ref", "failed_searches_ref", "errors_ref", "raw_traces_ref", "glossary_ref", "discovered_source_categories_ref", "workstream_brief_ref"],
+      "properties": {
+        "search_attempts_ref": { "type": ["string", "null"] },
+        "failed_searches_ref": { "type": ["string", "null"] },
+        "errors_ref": { "type": ["string", "null"] },
+        "raw_traces_ref": { "type": ["string", "null"] },
+        "glossary_ref": { "type": ["string", "null"] },
+        "workstream_brief_ref": { "type": ["string", "null"], "description": "Path to the human-readable workstream_brief.md (compiled prose memory)." },
+        "discovered_source_categories_ref": { "type": ["string", "null"], "description": "Path to the discovered_source_categories run-log artifact (the inferred source-category map)." }
+      }
+    },
+    "validation": {
+      "type": "object", "additionalProperties": false,
+      "description": "Output-quality gate results (architecture section 19).",
+      "required": ["all_outputs_schema_valid", "validation_errors", "dedup_by_normalized_url_applied"],
+      "properties": {
+        "all_outputs_schema_valid": { "type": "boolean", "description": "Whether every emitted record validated against its schema." },
+        "validation_errors": { "type": "integer", "minimum": 0 },
+        "dedup_by_normalized_url_applied": { "type": "boolean", "description": "Whether deterministic dedup by normalized URL was applied (architecture section 19)." }
+      }
+    },
+    "metadata": { "type": "object", "additionalProperties": true, "description": "Optional free-form extension bag. The ONLY place additional properties are allowed." }
+  },
+  "allOf": [
+    {
+      "if": { "required": ["run_status"], "properties": { "run_status": { "enum": ["failed", "aborted"] } } },
+      "then": { "properties": { "failure_reason": { "type": "string", "minLength": 1 } } }
+    },
+    {
+      "if": { "required": ["run_status"], "properties": { "run_status": { "enum": ["completed", "completed_with_errors"] } } },
+      "then": { "properties": { "completed_at": { "type": "string", "minLength": 1 } } }
+    },
+    {
+      "if": {
+        "required": ["search_summary"],
+        "properties": { "search_summary": { "required": ["failed_searches"], "properties": { "failed_searches": { "minimum": 1 } } } }
+      },
+      "then": {
+        "properties": { "outputs": { "properties": { "negative_findings": { "minimum": 1 } } } }
+      }
+    },
+    {
+      "if": {
+        "required": ["search_summary"],
+        "properties": { "search_summary": { "required": ["local_language_queries"], "properties": { "local_language_queries": { "const": 0 } } } }
+      },
+      "then": {
+        "properties": { "outputs": { "properties": { "negative_findings": { "minimum": 1 } } } }
+      }
+    }
+  ]
+}
