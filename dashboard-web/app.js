@@ -77,7 +77,7 @@ const TABS = [
   {id:'accounts',   label:'Accounts & timing',  group:'data',         icon:ICON.accounts,   title:'Account targets and deadlines',             sub:'Named banks to approach, with the reason to act now, plus the regulatory deadlines that force banks to spend (the buying window).'},
   {id:'signals',    label:'All signals',        group:'data',         icon:ICON.signals,    title:'All signals',             sub:'Every signal in this week\u2019s table: opportunities, positions already held, deals a competitor won, and the market drivers behind them. Filter by market, product, lane or confidence.'},
   // BUDGET — the group budget beside the market, a stand-alone tab at the end (11/09/2026)
-  {id:'budget',     label:'Budget 2026',        group:'budget',       icon:ICON.overview,   title:'Budget 2026 against the market',   sub:'The group budget for 2026 by market and product line, set beside what the tool knows: open opportunities, dated items this year, competitors and the market outlook. Each cell gets one action and the evidence behind it. Source: budget_clean.xlsx, second submission.'},
+  {id:'budget',     label:'Budget 2027',        group:'budget',       icon:ICON.overview,   title:'Budget 2027 proposal',   sub:'The 2027 budget proposal by market and product line, built from the 2026 budget and the market evidence: the outlook for each market, the open opportunities, and the competitive threat. Two scenarios: the stretch, which we propose, and the base, which is the floor. Click a cell for the three parts of its number.'},
 ];
 const TAB_GROUPS = [
   {id:'near',   label:'Near-term perspectives'},
@@ -1352,63 +1352,17 @@ function renderBudget(s){
   if(!B||!B.cells||!B.cells.length){ s.appendChild(el("div","card","<div class='empty'>No budget file in this build. Put <code>budget/budget_clean.xlsx</code> in the project folder and rebuild.</div>")); return; }
   const sigByKey={}; (DASH.signals||[]).forEach(x=>sigByKey[x.key]=x);
   const T=B.totals, U=B.uncovered||{};
-  // 1. the budget at a glance
-  const top=el("div","card");
-  top.innerHTML=`<div class="hd"><div><h2>The 2026 budget at a glance</h2><div class="desc">Figures from <b>${esc(B.budget_file||'the budget file')}</b> (${esc(B.sheet||'')}). Target is the budgeted revenue, revenue profit is the budgeted profit, and margin is profit divided by revenue. Hardware and software are revenue to win this year; services and outsourcing are largely the installed base.</div></div></div>
-    <div class="bg-tiles">
-      <div class="bg-tile"><div class="k">Target revenue</div><b>${bgM(T.target)}</b></div>
-      <div class="bg-tile"><div class="k">Revenue profit</div><b>${bgM(T.rp)}</b><span class="small muted">${T.margin_pct}% margin</span></div>
-      <div class="bg-tile"><div class="k">New revenue to win</div><b>${bgM(T.new)}</b><span class="small muted">hardware + software</span></div>
-      <div class="bg-tile"><div class="k">Recurring</div><b>${bgM(T.recurring)}</b><span class="small muted">services + outsourcing</span></div>
-      <div class="bg-tile"><div class="k">Covered by the 12 product lines</div><b>${T.covered_pct}%</b><span class="small muted">${bgM(T.covered)}</span></div>
-      <div class="bg-tile"><div class="k">Not covered</div><b>${bgM((U.retail||0)+(U.other||0))}</b><span class="small muted">retail ${bgM(U.retail||0)} \u00b7 other ${bgM(U.other||0)}</span></div>
-    </div>
-    <div class="bg-legend">${Object.entries(B.actions_legend||{}).map(([a,t])=>`<div>${bgPill(a)}<span>${esc(t)}</span></div>`).join('')}</div>`;
-  s.appendChild(top);
-  // 2. the grid: markets down, product lines across
-  const grid=el("div","card");
-  grid.innerHTML=`<div class="hd"><div><h2>Markets and product lines</h2><div class="desc">Each cell is a budget line: target revenue, coloured by its action. <b>Click a cell</b> for the numbers, the reasons and the signals behind it. Lines under \u20ac0.05m are left blank.</div></div></div>`;
-  const lines=(B.by_line||[]); const rows=(B.by_country||[]);
-  const byKey={}; B.cells.forEach(c=>byKey[c.code+'|'+c.line]=c);
-  const wrapT=el("div","tablewrap"); const t=el("table","bgtable");
-  t.innerHTML=`<thead><tr><th>Market</th>${lines.map(l=>`<th title="${esc(l.line_label)}">${esc(l.line_label)}</th>`).join('')}<th>Not covered</th><th>Total</th></tr></thead>`;
-  const tb=el("tbody");
-  rows.forEach(r=>{
-    const tr=el("tr");
-    tr.innerHTML=`<td><b>${esc(r.country)}</b><div class="small muted">${r.margin_pct}% margin</div></td>`
-      +lines.map(l=>{ const c=byKey[r.code+'|'+l.line]; if(!c||c.target<5e4) return '<td class="bg-cell bg-none"></td>';
-          return `<td class="bg-cell ${bgCls(c.action)}" data-k="${esc(r.code+'|'+l.line)}" role="button" tabindex="0" title="${esc(r.country)} \u00d7 ${esc(l.line_label)}: ${esc(BG_ACT[c.action])}. Margin ${c.margin_pct}%. ${c.n_opps} open opportunit${c.n_opps===1?'y':'ies'}.">${bgM(c.target)}<div class="bg-act">${esc(BG_ACT[c.action])}</div></td>`; }).join('')
-      +`<td class="small muted">${bgM((r.retail||0)+(r.other||0))}</td><td><b>${bgM(r.target)}</b></td>`;
-    tb.appendChild(tr);
-  });
-  const tf=el("tr","bg-total"); tf.innerHTML=`<td><b>Group</b></td>${lines.map(l=>`<td><b>${bgM(l.target)}</b><div class="small muted">${l.margin_pct}%</div></td>`).join('')}<td class="small muted">${bgM((U.retail||0)+(U.other||0))}</td><td><b>${bgM(T.target)}</b></td>`;
-  tb.appendChild(tf); t.appendChild(tb); wrapT.appendChild(t); grid.appendChild(wrapT);
-  const detail=el("div","bg-detail"); detail.hidden=true; grid.appendChild(detail);
-  const showCell=k=>{ const c=byKey[k]; if(!c) return; detail.hidden=false; detail.innerHTML=`<div class="bg-detail-h">${bgPill(c.action)}<b>${esc(c.country)} \u00d7 ${esc(c.line_label)}</b><button type="button" class="bg-close" aria-label="Close">\u00d7</button></div>`; detail.appendChild(bgCellBody(c,sigByKey)); detail.querySelector('.bg-close').addEventListener('click',()=>{ detail.hidden=true; }); detail.scrollIntoView({behavior:'smooth',block:'nearest'}); };
-  t.querySelectorAll('.bg-cell[data-k]').forEach(td=>{ td.addEventListener('click',()=>showCell(td.dataset.k)); td.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); showCell(td.dataset.k); } }); });
-  s.appendChild(grid);
-  // 3. the actions, ranked by the money behind them
-  const act=el("div","card");
-  const live=B.cells.filter(c=>c.action!=='watch'), watch=B.cells.filter(c=>c.action==='watch');
-  act.innerHTML=`<div class="hd"><div><h2>Actions, ranked by the money behind them</h2><div class="desc">${live.length} budget lines have an action this week, out of ${B.cells.length}. The amount shown is the revenue the action concerns: new revenue for win, find and stretch; recurring revenue for defend; profit for protect margin. Open a line for the reasons, the dated items and the signals.</div></div></div>`;
-  live.forEach(c=>{
-    const d=el("details","bg-item "+bgCls(c.action));
-    d.innerHTML=`<summary><span class="bg-sum-left">${bgPill(c.action)}<b>${esc(c.country)} \u00d7 ${esc(c.line_label)}</b></span><span class="bg-sum-right"><span class="bg-stake">${bgM(c.stake)}</span><span class="small muted">target ${bgM(c.target)} \u00b7 margin ${c.margin_pct}% \u00b7 ${c.n_opps} open</span></span></summary>`;
-    d.appendChild(bgCellBody(c,sigByKey)); act.appendChild(d);
-  });
-  if(watch.length){
-    const wd=el("details","bg-watch"); wd.innerHTML=`<summary>${watch.length} lines on watch: nothing dated, nothing threatening this week</summary>`;
-    const ul=el("div","bg-watchlist"); ul.innerHTML=watch.map(c=>`<span class="tag">${esc(c.country)} \u00d7 ${esc(c.line_label)} ${bgM(c.target)}</span>`).join(' '); wd.appendChild(ul); act.appendChild(wd);
-  }
-  s.appendChild(act);
+  // the 2026 join is the base year of the proposal and feeds its cells; it is no longer laid out
+  // on its own (asked 14/09/2026): the tab is the 2027 proposal
   // 4. the 2027 proposal: the same grid carried forward on the evidence, base and stretch
   const P=DASH.budget_2027;
-  if(P&&P.cells&&P.cells.length){
+  if(!P||!P.cells||!P.cells.length){ s.appendChild(el("div","card","<div class='empty'>No 2027 proposal in this build. Put <code>budget/budget_clean.xlsx</code> in the project folder and rebuild.</div>")); return; }
+  {
     const T2=P.totals; const pc=v=>(v>=0?'+':'')+Number(v).toFixed(1)+'%';
     const card=el("div","card");
-    card.innerHTML=`<div class="hd"><div><h2>Budget 2027: a proposal from the 2026 budget and the market evidence</h2><div class="desc">Each 2026 line is carried into 2027 on three visible parts: the <b>market</b> outlook for its metric, the <b>share</b> Printec can take from the open opportunities (weighted by deal band), and a <b>threat</b> haircut for competitor wins and high-threat rivals. The <b>base</b> counts dated opportunities and the mean outlook; the <b>stretch</b> counts all open opportunities and the upper end of the outlook. Margins are held at 2026 levels. Retail lines and budget with no product name are carried flat. The base year is the 2026 target, because no actuals file exists yet.</div></div></div>
+    card.innerHTML=`<div class="hd"><div><h2>The 2027 proposal, by market and product line</h2><div class="desc">Each 2026 line is carried into 2027 on three visible parts: the <b>market</b> outlook for its metric, the <b>share</b> Printec can take from the open opportunities (weighted by deal band), and a <b>threat</b> haircut for competitor wins and high-threat rivals. The <b>base</b> counts dated opportunities and the mean outlook; the <b>stretch</b> counts all open opportunities and the upper end of the outlook. Margins are held at 2026 levels. Retail lines and budget with no product name are carried flat. The base year is the 2026 target, because no actuals file exists yet.</div></div></div>
       <div class="bg-tiles">
-        <div class="bg-tile"><div class="k">2026 budget</div><b>${bgM(T2.rev_2026)}</b><span class="small muted">profit ${bgM(T2.rp_2026)}</span></div>
+        <div class="bg-tile"><div class="k">Base year (2026 budget)</div><b>${bgM(T2.rev_2026)}</b><span class="small muted">profit ${bgM(T2.rp_2026)}</span></div>
         <div class="bg-tile"><div class="k">2027 base</div><b>${bgM(T2.base)}</b><span class="small muted">${pc(T2.base_growth_pct)} \u00b7 profit ${bgM(T2.rp_base)}</span></div>
         <div class="bg-tile"><div class="k">2027 stretch (proposed)</div><b>${bgM(T2.stretch)}</b><span class="small muted">${pc(T2.stretch_growth_pct)} \u00b7 profit ${bgM(T2.rp_stretch)}</span></div>
       </div>
@@ -2759,7 +2713,7 @@ function drawBaselineChart(id, cfs, overlays){
 const RENDER={budget:renderBudget,overview:renderOverview,country:renderCountry,product:renderProduct,competition:renderCompetition,accounts:renderAccounts,signals:renderSignals,outlook:renderOutlook,baselines:renderBaselines,underlying:renderUnderlying,futures:renderFutures,patterns:renderPatterns};
 function navCount(id){
   const k=DASH.kpis;
-  return {budget:((DASH.budget||{}).cells||[]).filter(c=>c.action!=='watch').length,overview:k.n_signals,country:k.n_countries_active,product:DASH.products.filter(p=>p.n_signals>0).length,
+  return {budget:((DASH.budget_2027||{}).cells||[]).length,overview:k.n_signals,country:k.n_countries_active,product:DASH.products.filter(p=>p.n_signals>0).length,
           competition:DASH.competitors.length,accounts:DASH.account_targets.length,signals:k.n_signals,
           outlook:(DASH.outlook||[]).length,baselines:(DASH.forecast||[]).length,
           futures:(DASH.futures||[]).length,patterns:DASH.patterns.length,

@@ -1025,7 +1025,7 @@ details.ol-market-fold[open]>summary{margin-bottom:10px}
 .ol-market-meta{display:inline-flex;gap:6px;align-items:center}
 .tag.quiet{background:var(--card-2);color:var(--ink-3);border:1px solid var(--line)}
 
-/* ---- Budget 2026 tab (11/09/2026) ---- */
+/* ---- Budget tab (11/09/2026; 2027 proposal only since 14/09/2026) ---- */
 .bg-tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:4px 0 14px}
 .bg-tile{background:var(--card-2);border:1px solid var(--line);border-radius:var(--r-sm);padding:10px 12px;display:flex;flex-direction:column;gap:2px}
 .bg-tile .k,.bg-nums .k,.bg-sec .k{font-size:10px;text-transform:uppercase;letter-spacing:.07em;font-weight:700;color:var(--ink-3)}
