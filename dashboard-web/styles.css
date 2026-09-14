@@ -1024,3 +1024,67 @@ details.ol-market-fold[open]>summary h2::before{transform:rotate(45deg)}
 details.ol-market-fold[open]>summary{margin-bottom:10px}
 .ol-market-meta{display:inline-flex;gap:6px;align-items:center}
 .tag.quiet{background:var(--card-2);color:var(--ink-3);border:1px solid var(--line)}
+
+/* ---- Budget 2026 tab (11/09/2026) ---- */
+.bg-tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:4px 0 14px}
+.bg-tile{background:var(--card-2);border:1px solid var(--line);border-radius:var(--r-sm);padding:10px 12px;display:flex;flex-direction:column;gap:2px}
+.bg-tile .k,.bg-nums .k,.bg-sec .k{font-size:10px;text-transform:uppercase;letter-spacing:.07em;font-weight:700;color:var(--ink-3)}
+.bg-tile b{font-size:18px;letter-spacing:-.01em}
+.bg-legend{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:6px 18px;font-size:12px;color:var(--ink-2)}
+.bg-legend>div{display:flex;gap:8px;align-items:baseline}
+.bg-pill{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.03em;padding:2px 9px;border-radius:var(--pill);border:1px solid transparent;white-space:nowrap}
+.bg-win{background:#dcebf8;color:#27506f;border-color:#c2dbef}
+.bg-find{background:#fbe6c8;color:#7a4a00;border-color:#f0d3a0}
+.bg-defend{background:#f8dcdc;color:#7a2222;border-color:#efc2c2}
+.bg-protect-margin{background:#ead9f3;color:#4b2a6b;border-color:#d8c1e8}
+.bg-market-risk{background:#f3e3d0;color:#6b3a10;border-color:#e6cbae}
+.bg-stretch{background:#dff0dc;color:#2a5a1f;border-color:#c3e2bd}
+.bg-watch{background:var(--card-2);color:var(--ink-3);border-color:var(--line)}
+.bgtable{border-collapse:collapse;width:100%;font-size:12px}
+.bgtable th{font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-3);text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);white-space:normal;max-width:120px;vertical-align:bottom}
+.bgtable td{padding:6px 8px;border-bottom:1px solid var(--line-2);vertical-align:top}
+.bgtable .bg-cell{font-weight:700;cursor:pointer;border-radius:6px;min-width:74px}
+.bgtable .bg-cell:hover{outline:2px solid var(--ink-3)}
+.bgtable .bg-cell.bg-none{background:transparent;cursor:default}
+.bgtable .bg-cell.bg-none:hover{outline:0}
+.bgtable .bg-act{font-size:10px;font-weight:600;opacity:.8}
+.bgtable .bg-cell.bg-watch{font-weight:600;color:var(--ink-2)}
+.bgtable .bg-total td{border-top:2px solid var(--line);border-bottom:0}
+.bg-detail{margin-top:14px;padding:12px 14px;border:1px solid var(--line);border-radius:var(--r-sm);background:var(--card-2)}
+.bg-detail-h{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.bg-detail-h b{font-size:14px}
+.bg-close{margin-left:auto;background:transparent;border:1px solid var(--line);border-radius:var(--pill);width:26px;height:26px;cursor:pointer;color:var(--ink-3);font-size:14px}
+.bg-body{display:grid;gap:12px}
+.bg-nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:8px 16px}
+.bg-nums>div{display:flex;flex-direction:column;gap:1px}
+.bg-nums b{font-size:15px}
+.bg-sec{display:grid;gap:5px}
+.bg-reasons,.bg-dated,.bg-rivals{margin:0;padding-left:18px;font-size:12.3px;line-height:1.55}
+.bg-date{font-weight:700;color:var(--ink);margin-right:4px;white-space:nowrap}
+.bg-subs{display:flex;flex-wrap:wrap;gap:5px}
+.bg-item{border:1px solid var(--line);border-radius:var(--r-sm);background:var(--card);margin-top:8px}
+.bg-item>summary{list-style:none;cursor:pointer;padding:10px 13px;display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}
+.bg-item>summary::-webkit-details-marker{display:none}
+.bg-item>summary:hover{background:var(--card-2)}
+.bg-item[open]>summary{border-bottom:1px solid var(--line-2)}
+.bg-item>.bg-body{padding:12px 13px}
+.bg-sum-left,.bg-sum-right{display:inline-flex;align-items:center;gap:9px;flex-wrap:wrap}
+.bg-stake{font-weight:800;font-size:14px}
+.bg-watch{margin-top:12px}
+.bg-watch>summary{cursor:pointer;font-size:12px;font-weight:700;color:var(--ink-2);padding:8px 0}
+.bg-watchlist{display:flex;flex-wrap:wrap;gap:5px;padding:6px 0}
+
+/* Budget 2027 proposal grid: colour = growth */
+.b27table .b27-up2{background:#cfe8c8;color:#1f4a17}
+.b27table .b27-up{background:#e6f3e2;color:#2a5a1f}
+.b27table .b27-flat{background:var(--card-2);color:var(--ink-2)}
+.b27table .b27-dn{background:#fbe9e3;color:#7a3a22}
+.b27table .b27-dn2{background:#f5d3c8;color:#6b2a12}
+
+/* Admin unlock at the foot of the sidebar (14/09/2026) */
+.admin-link{opacity:.55;font-size:11px}
+.admin-link:hover{opacity:1}
+.admin-box{margin:4px 11px 8px 22px;padding:9px 10px;border:1px solid var(--line);border-radius:var(--r-sm);background:var(--card);display:grid;gap:6px}
+.admin-box input{width:100%;box-sizing:border-box;margin-top:3px;padding:5px 7px;border:1px solid var(--line);border-radius:6px;font:inherit;font-size:12px}
+.admin-row{display:flex;align-items:center;gap:8px}
+.admin-go{padding:4px 10px;border:1px solid var(--line);border-radius:var(--pill);background:var(--card-2);font:inherit;font-size:11.5px;font-weight:700;cursor:pointer}

@@ -1,0 +1,18 @@
+{
+  "_note": "How the group budget file (budget/budget_clean.xlsx) maps onto the dashboard. countries: budget entity -> footprint code. lines: budget subcategory -> product_map.json id. retail: subcategories outside banking, shown as 'not covered'. Anything else unmapped is reported as 'other'. OUT (outsourcing) rows keep the product line where the subcategory names one (ATM, EFT-POS), otherwise they are managed services. Written 11/09/2026.",
+  "countries": {"Printec Albania":"AL","Printec Bosnia":"BA","Printec Bulgaria":"BG","Printec Croatia":"HR","Printec Cyprus":"CY","Printec Greece":"GR","Printec Hungary":"HU","Printec Kosovo":"XK","Printec Montenegro":"ME","Printec North Mac":"MK","Printec Romania":"RO","Printec Serbia":"RS","Printec Slovakia":"SK","Printec Slovenia":"SI","Printec Ukraine":"UA","Printec Czech":"CZ"},
+  "lines": {
+    "ATM":"atm_recycling","TCD/TCR":"atm_recycling","Intelligent Safes & Cashiers":"atm_recycling","Other Cash handling solutions":"atm_recycling","Cash Forecasting and Optimization":"atm_recycling",
+    "EFT-POS":"pos_acquiring","X-POS":"pos_acquiring","Unattended POS":"pos_acquiring","Merchant Portal (MMP)":"pos_acquiring","Other e-payments":"pos_acquiring","Switching":"pos_acquiring",
+    "Self-Service Kiosks":"self_service","Payment kiosk (OPT/IPT)":"self_service","Virtual Teller Station (VTS)":"self_service","Smart Queueing":"self_service","X-CORE":"self_service","X-Visio(IDM)":"self_service","Other Branch equipment":"self_service","Other SS & DT Solutions":"self_service",
+    "Anti-Money Laundering (AML)":"compliance_resilience","Other Security & Compliance":"compliance_resilience",
+    "Real-time Transactions Monitoring":"fraud_monitoring","Fraud Prevention & Detection":"fraud_monitoring",
+    "eSignature":"digital_onboarding",
+    "ATM & Safe Security solutions":"physical_security",
+    "Cards & Loyalty":"card_issuing",
+    "General IT & ITMS":"managed_services","Fleet Management System (FMS)":"managed_services",
+    "eCommerce":"core_digital"
+  },
+  "retail": ["Self Checkout (SCO)","ECR – POS","Other Store equipment","Smart Vending Machines","Vendipack(Telefispay)","Telecom solutions","Printing/Scanning Solutions"],
+  "metric_for_outlook": {"atm_recycling":"ATMs","managed_services":"ATMs","pos_acquiring":"POS terminals","self_service":"Bank branches"}
+}

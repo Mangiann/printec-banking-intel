@@ -22,3 +22,6 @@ knowledge-base/by-agent/*/rbr-*.md
 
 # scratch
 scratch_*.txt
+
+# Printec budget files — confidential, never committed
+budget/

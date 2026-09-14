@@ -745,6 +745,29 @@ def main():
             for v in o: _strip_scope(v)
     _strip_scope(DASH)
 
+    # ---- the 2026 group budget beside the market (budget/budget_clean.xlsx; see budget_actions.py) ----
+    # Computed on the finished payload so every cell joins the same signals, deadlines and outlooks the
+    # tabs show. The result is NOT put into the payload: it is written to budget/ (git-ignored) and the
+    # artifact build encrypts it behind the admin password (decision of 14/09/2026). No budget file -> nothing.
+    try:
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        import budget_actions as _ba, budget_2027 as _b27
+        _root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+        _bud = _ba.compute(_root, DASH)
+        if _bud:
+            _bdir = os.path.join(_root, "budget"); os.makedirs(_bdir, exist_ok=True)
+            with open(os.path.join(_bdir, "budget_actions.json"), "w", encoding="utf-8") as _fh:
+                json.dump(_bud, _fh, ensure_ascii=False, indent=1)
+            print(_ba.summary_line(_bud))
+            _p27 = _b27.compute(_root, DASH, _bud)
+            if _p27:
+                with open(os.path.join(_bdir, "budget_2027.json"), "w", encoding="utf-8") as _fh:
+                    json.dump(_p27, _fh, ensure_ascii=False, indent=1)
+                _t = _p27["totals"]
+                print("budget 2027: base EUR %.1fm (%+.1f%%), stretch EUR %.1fm (%+.1f%%)" % (_t["base"] / 1e6, _t["base_growth_pct"], _t["stretch"] / 1e6, _t["stretch_growth_pct"]))
+    except Exception as _e:
+        print("warn: budget join skipped:", _e)
+
     dash_str = json.dumps(DASH, ensure_ascii=False)
 
     # ---- 1. dashboard-data.json (the artifact the orchestrator publishes) ----
