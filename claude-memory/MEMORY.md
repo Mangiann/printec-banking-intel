@@ -7,3 +7,7 @@
 - [Printec dashboard artifact](printec-dashboard-artifact.md) — shared Claude Artifact URL for the BANKING dashboard; single-file rebuild recipe; republishing does NOT update viewers until the share pin is moved.
 - [Plain English everywhere](plain-english-everywhere.md) — user wants simple English in replies and in all dashboard/document copy; keep every figure when rewording.
 - [Charts: no trend fit](charts-no-trend-fit.md) — projections start from the last reported point (mean if several); outlook % = mean ± std of patterns+signals only; product tags via LLM critic (Agent 10).
+- [BANKING repo on GitHub](banking-repo-github.md) — temporary private repo Mangiann/printec-banking-intel; exclusions; old dashboard-web .git backup path; "push" = commit + push main.
+- [Budget 2026 tab](budget-2026-tab.md) — group budget (target/profit/margin by country × product) joined into the dashboard via budget_actions.py; file in git-ignored budget/; no actuals yet; Agent 11 brief pending.
+- [Budget board 2027](budget-board-2027.md) — 13-agent board, two sittings on 14/09/2026 (board_2027.py + agent-briefs/board/); run 2 after colleague feedback: new business, deals-vs-outlook split, footprint-wide half weight, branch decline = conversion demand; €156.22m (+5.1%), reachable +11.1%, 7–3; artifact v57 (move the share pin).
+- [Budget tab presentation](budget-tab-presentation.md) — colleagues (14/09/2026): only a very simple executive summary on top, then the moves grid with details underneath; long report folded. Never put the report back on top.

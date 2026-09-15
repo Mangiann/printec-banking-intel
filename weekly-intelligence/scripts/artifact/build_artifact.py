@@ -53,7 +53,8 @@ def collect_docs(dash):
     return docs
 
 # ---- the budget, encrypted behind the admin password (14/09/2026) -------------------------------
-# One app, one file. The budget payload (budget/budget_actions.json + budget/budget_2027.json) is
+# One app, one file. The budget payload (budget/budget_actions.json + budget/budget_2027.json +
+# budget/budget_2027_board.json when the board has sat) is
 # encrypted with AES-256-GCM under a key derived from the password in budget/budget.password
 # (PBKDF2-HMAC-SHA256, 200,000 rounds). The page holds only the ciphertext; the Admin link in the
 # sidebar asks for the password and decrypts in the browser (WebCrypto). No file, no budget block.
@@ -65,6 +66,9 @@ def budget_block():
     payload = {"budget": json.loads(rd(p26))}
     if os.path.exists(p27):
         p = json.loads(rd(p27)); p.pop("rows", None); payload["budget_2027"] = p
+    pbd = os.path.join(bdir, "budget_2027_board.json")     # the board's decision (board_2027.py finalize)
+    if os.path.exists(pbd):
+        payload["budget_2027_board"] = json.loads(rd(pbd))
     pw_path = os.path.join(bdir, "budget.password")
     if os.path.exists(pw_path):
         password = rd(pw_path).strip()

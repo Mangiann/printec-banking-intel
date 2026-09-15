@@ -43,30 +43,56 @@ def read_budget_rows(root, bmap):
     from budget_actions import read_budget
     return read_budget(os.path.join(root, "budget", "budget_clean.xlsx"), bmap)
 
-def cell_growth(x, sigs_by_key, case):
-    """The three parts and the two rates for one budget cell, in one scenario."""
+def cell_growth(x, sigs_by_key, case, fw_home=None, origins=None):
+    """The three parts and the two rates for one budget cell, in one scenario.
+
+    fw_home: {(country code, signal key): line} - the one cell per country where a footprint-wide item
+    is counted (its lead product line), at half weight; elsewhere it is listed but not counted.
+    origins: the outlook's readings split by origin (patterns vs signals) for the note.
+    """
     C = CAP[case]
     ol = x.get("outlook") or {}
     m = ol.get("mean_pct")
+    branch_line = x.get("line") == "self_service" and (ol.get("metric") == "Bank branches")
     if m is None:
         market, market_note = 0.0, "no market projection for this line; market part set to 0"
     else:
         sd = ol.get("std_pct") or 0.0
-        raw = m + (sd if case == "stretch" else 0.0)
-        market = clamp(raw, *C["market"])
-        market_note = "%s outlook %s %+.1f%% a year%s" % (ol.get("metric"), ol.get("year"), m,
-                       (" plus one standard deviation (%.1f) for the stretch" % sd) if case == "stretch" and sd else "")
+        if branch_line:
+            # a falling branch count is demand for converting the branches that stay (cash automation,
+            # self-service, new formats), not a smaller market: the outlook enters as its absolute value
+            raw = abs(m) + (sd if case == "stretch" else 0.0)
+            market = clamp(raw, 0.0, C["market"][1])
+            market_note = "Bank branches outlook %s %+.1f%% a year, read as conversion demand (+%.1f%%)%s" % (
+                ol.get("year"), m, abs(m), (" plus one standard deviation (%.1f) for the stretch" % sd) if case == "stretch" and sd else "")
+        else:
+            raw = m + (sd if case == "stretch" else 0.0)
+            market = clamp(raw, *C["market"])
+            market_note = "%s outlook %s %+.1f%% a year%s" % (ol.get("metric"), ol.get("year"), m,
+                           (" plus one standard deviation (%.1f) for the stretch" % sd) if case == "stretch" and sd else "")
+        if origins:
+            market_note += " (readings: %s)" % ", ".join("%s %+.1f%%" % (k, v) for k, v in origins.items())
     pts, used, single = 0.0, [], None
     for o in x.get("opportunities", []):
         s = sigs_by_key.get(o["key"], {})
         dated = bool(s.get("has_future_trigger")) or bool(o.get("future_date"))
+        fw = bool(s.get("footprint_wide"))
+        home = (fw_home or {}).get((x.get("code"), o["key"]))
+        if fw and home and home != x.get("line"):
+            used.append({"key": o["key"], "title": o.get("title"), "band": o.get("size_band"), "points": 0.0, "dated": o.get("future_date"),
+                         "footprint_wide": True, "counted_in": home})
+            continue
         if case == "base" and not dated:
             continue
         p = BAND_PTS.get(o.get("size_band") or "Unscoped", 0.5)
-        pts += p; used.append({"key": o["key"], "title": o.get("title"), "band": o.get("size_band"), "points": p, "dated": o.get("future_date")})
+        if fw:
+            p = p / 2.0     # a regulatory or group-wide wave counts once per country, at half weight
+        pts += p; used.append({"key": o["key"], "title": o.get("title"), "band": o.get("size_band"), "points": p, "dated": o.get("future_date"),
+                               "footprint_wide": fw})
     share = min(C["share"], pts)
-    if used:
-        top = max(used, key=lambda u: u["points"])
+    counted = [u for u in used if u["points"] > 0]
+    if counted:
+        top = max(counted, key=lambda u: u["points"])
         if top["points"] >= 0.5 * pts and top["points"] >= 2.0:
             single = top["title"]
     n_lost, n_high = x.get("n_lost", 0), x.get("n_high_threat", 0)
@@ -86,9 +112,42 @@ def compute(root, D, B=None):
     sigs = {s["key"]: s for s in D.get("signals", [])}
     cells = {(c["code"], c["line"]): c for c in B["cells"]}
     retail = set(bmap["retail"])
+    name = D.get("code2name", {}); labels = D.get("prod_label", {})
+    # a footprint-wide item (a regulation, a group-wide programme) is counted once per country, in the cell
+    # of its lead product line if that cell exists, else in the country's largest cell among its products
+    fw_home = {}
+    by_cc = defaultdict(list)
+    for (cc, line), x in cells.items():
+        by_cc[cc].append((line, x["target"]))
+    for (cc, line), x in cells.items():
+        for o in x.get("opportunities", []):
+            sg = sigs.get(o["key"], {})
+            if not sg.get("footprint_wide") or (cc, o["key"]) in fw_home:
+                continue
+            lead = sg.get("primary_product")
+            have = {l for l, _ in by_cc[cc]}
+            if lead in have:
+                fw_home[(cc, o["key"])] = lead
+            else:
+                cand = [(l, t) for l, t in by_cc[cc] if l in (sg.get("products") or [])]
+                fw_home[(cc, o["key"])] = max(cand, key=lambda lt: lt[1])[0] if cand else line
+    # the outlook's readings by origin: patterns (structural patterns) versus signals (the master table)
+    cons = {(c["country"], c["metric"]): c for c in D.get("projection_consensus", [])}
+    def origins_for(x):
+        ol = x.get("outlook") or {}
+        c = cons.get((x.get("country"), ol.get("metric")))
+        if not c:
+            return None
+        g = defaultdict(list)
+        for r in c.get("readings", []):
+            g["patterns" if r.get("origin") == "patterns" else "signals"].append(r.get("growth_pct"))
+        return {k: round(sum(v) / len(v), 1) for k, v in g.items() if v and all(t is not None for t in v)}
     out_cells, lines_out = [], []
     for (cc, line), x in cells.items():
-        g = {case: cell_growth(x, sigs, case) for case in ("base", "stretch")}
+        org = origins_for(x)
+        g = {case: cell_growth(x, sigs, case, fw_home, org) for case in ("base", "stretch")}
+        for case in g:
+            g[case]["outlook_origins"] = org or {}
         rec = {}
         for case in ("base", "stretch"):
             new27 = x["new"] * (1 + g[case]["new_rate_pct"] / 100.0)
@@ -130,14 +189,52 @@ def compute(root, D, B=None):
         d["rp_2026"] += l["rp_2026"]; d["rp_base"] += l["base"]["rp"]; d["rp_stretch"] += l["stretch"]["rp"]
         k = l["line"] or ("retail" if l["sub"] in retail else "other")
         e = by_line[k]; e["rev_2026"] += l["rev_2026"]; e["base"] += l["base"]["rev"]; e["stretch"] += l["stretch"]["rev"]
-    name = D.get("code2name", {}); labels = D.get("prod_label", {})
     pc = lambda a, b: round((a / b - 1) * 100, 1) if b else 0.0
+    # new business: country x product combinations with open opportunities in the signals but no 2026
+    # budget (or under EUR 50k), including the two product areas outside the twelve budget lines. The
+    # model puts no euro on them (it never invents a figure); the board prices them.
+    new_business = []
+    covered = {(c["code"], c["line"]) for c in out_cells if c["target_2026"] >= 5e4}
+    for cc in {c[0] for c in cells}:
+        for prod, lab in labels.items():
+            if (cc, prod) in covered:
+                continue
+            opps = [sg for sg in sigs.values() if cc in (sg.get("countries") or []) and prod in (sg.get("products") or []) and sg.get("is_opportunity")]
+            if not opps:
+                continue
+            new_business.append({"code": cc, "country": name.get(cc, cc), "line": prod, "line_label": lab,
+                                 "in_budget_lines": prod in {c["line"] for c in out_cells} or prod in bmap["lines"].values(),
+                                 "n_opps": len(opps),
+                                 "opportunities": [{"key": sg["key"], "title": sg.get("bank_theme"), "band": sg.get("size_band"),
+                                                    "dated": sg.get("future_date") or "", "confidence": sg.get("confidence"),
+                                                    "footprint_wide": bool(sg.get("footprint_wide"))}
+                                                   for sg in sorted(opps, key=lambda z: -(z.get("pot_value") or 0))]})
+    new_business.sort(key=lambda e: (-e["n_opps"], e["code"]))
+    # where the growth comes from, in euros: named deals (share), the market outlook, the threat haircut,
+    # recurring revenue - so a signal-based part and an outlook-based part can be read separately
+    parts = {}
+    for case in ("base", "stretch"):
+        mk = sh = th = rc = 0.0
+        for c in out_cells:
+            gg = c[case]
+            mk += c["new_2026"] * gg["market_pct"] / 100.0; sh += c["new_2026"] * gg["share_pct"] / 100.0
+            th -= c["new_2026"] * gg["threat_pct"] / 100.0; rc += c["recurring_2026"] * gg["recurring_rate_pct"] / 100.0
+        ncell = len(out_cells)
+        org = [c[case].get("outlook_origins") or {} for c in out_cells]
+        parts[case] = {"named_deals": round(sh, 2), "market_outlook": round(mk, 2), "threat": round(th, 2), "recurring": round(rc, 2),
+                       "outlook_cells": {"patterns_and_signals": sum(1 for o in org if "patterns" in o and "signals" in o),
+                                         "signals_only": sum(1 for o in org if "signals" in o and "patterns" not in o),
+                                         "patterns_only": sum(1 for o in org if "patterns" in o and "signals" not in o),
+                                         "none": sum(1 for o in org if not o)}}
     payload = {"generated": D.get("week"), "base_year": 2026, "target_year": 2027,
                "method": {"market": "2027 outlook of the cell's metric (mean of patterns and signals); stretch = mean + one std dev; capped",
                           "share": "open opportunities weighted by deal band (XL 3, L 2, M 1, S/unscoped 0.5 points, one point = one percent of new revenue); base counts dated ones only; capped at %s%% base / %s%% stretch" % (CAP["base"]["share"], CAP["stretch"]["share"]),
                           "threat": "minus %s pts per recorded competitor win (max %s) and %s pt per high-threat rival beyond two (max %s); stretch takes half" % (CAP["base"]["loss"], CAP["base"]["loss_max"], CAP["base"]["rival"], CAP["base"]["rival_max"]),
                           "recurring": "half the market rate, minus the loss haircut; +2 pts in the stretch for price and scope",
                           "margin": "held at the 2026 margin of each budget line", "uncovered": "retail and 'other' lines carried flat",
+                          "footprint_wide": "a regulatory or group-wide item is counted once per country, in its lead product line, at half weight; it is listed but not counted elsewhere",
+                          "branches": "for self-service and branch transformation a falling branch count is read as conversion demand: the branch outlook enters as its absolute value",
+                          "new_business": "country x product combinations with opportunities but no 2026 budget are listed for the board to price; the model puts no euro on them",
                           "base_is_target": "no actuals file: the 2026 TARGET is the base, not the 2026 outturn"},
                "totals": {"rev_2026": round(t26, 2), "rp_2026": round(rp26, 2),
                           "base": round(tot("base"), 2), "base_growth_pct": pc(tot("base"), t26), "rp_base": round(tot("base", "rp"), 2),
@@ -148,6 +245,7 @@ def compute(root, D, B=None):
                "by_line": [{"line": k, "line_label": labels.get(k, k), "rev_2026": round(v["rev_2026"], 2), "base": round(v["base"], 2), "base_growth_pct": pc(v["base"], v["rev_2026"]),
                             "stretch": round(v["stretch"], 2), "stretch_growth_pct": pc(v["stretch"], v["rev_2026"])}
                            for k, v in sorted(by_line.items(), key=lambda kv: -kv[1]["rev_2026"])],
+               "parts": parts, "new_business": new_business,
                "cells": sorted(out_cells, key=lambda c: -c["target_2026"]), "rows": lines_out}
     return payload
 

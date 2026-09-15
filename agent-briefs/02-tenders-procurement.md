@@ -50,6 +50,18 @@ country** (TED itself is a single subagent covering all EU members in one expert
 
 See the playbook's "Scaling the work" section for the general pattern.
 
+## Bank-named opportunities per country and product line (added 14/09/2026)
+
+The budget board that sits on the master table needs opportunities it can price: a named bank or buyer, a
+scope, a date, and the product line it creates demand for. Footprint-wide regulatory waves are useful
+context but the board counts them once per country at half weight, so they cannot carry a budget cell. For
+every country in the footprint, look deliberately for bank-named developments in every product line,
+including the lines Printec does not yet sell in that country (managed services and outsourcing,
+compliance and operational resilience, digital onboarding and identity, fraud and transaction monitoring,
+payments modernisation, payment security and key management). A country x product line with no 2026
+revenue but a named buyer and a date is new business; write it up as a normal finding, name the line, and
+say that Printec has no position there today.
+
 ## Output
 
 `findings/02-tenders/YYYY-MM-DD.md` — standard signal table + open-tender pipeline list sorted by deadline. Flag anything closing within 30 days at the top.

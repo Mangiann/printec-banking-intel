@@ -25,3 +25,6 @@ scratch_*.txt
 
 # Printec budget files — confidential, never committed
 budget/
+
+# test-only artifact with the budget in plain text
+weekly-intelligence/scripts/artifact/printec-dashboard.TEST.html

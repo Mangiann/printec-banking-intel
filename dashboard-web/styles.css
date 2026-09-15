@@ -1081,6 +1081,57 @@ details.ol-market-fold[open]>summary{margin-bottom:10px}
 .b27table .b27-dn{background:#fbe9e3;color:#7a3a22}
 .b27table .b27-dn2{background:#f5d3c8;color:#6b2a12}
 
+/* Budget 2027: the board's decision (14/09/2026) */
+.bg-tile.bg-tile-main{border-color:var(--cyan);box-shadow:inset 3px 0 0 var(--cyan)}
+.bg-basis{margin:-6px 0 12px;max-width:78ch;line-height:1.5}
+.bg-parts{margin:2px 0 14px;padding:10px 12px;border:1px solid var(--line);border-radius:var(--r-sm);background:var(--card-2)}
+.bg-parts .k{font-size:10px;text-transform:uppercase;letter-spacing:.07em;font-weight:700;color:var(--ink-3);margin-bottom:6px}
+.bg-parts-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin-bottom:6px}
+.bg-part b{display:block;font-size:16px;letter-spacing:-.01em}
+.bg-part span{font-size:11.5px;color:var(--ink-2);line-height:1.4}
+.bg-unpriced{margin-top:10px;line-height:1.5}
+.bg-onepager{max-width:80ch;margin-top:2px}
+.bg-onepager .md-p{color:var(--ink)}
+.bg-est{position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:16px}
+.bg-estcard{cursor:pointer;transition:transform .12s,box-shadow .12s;outline:2px solid transparent;outline-offset:2px}
+.bg-estcard:hover{transform:translateY(-1px)}
+.bg-estcard.on{outline-color:var(--ink);box-shadow:var(--shadow)}
+.bg-estcard:focus-visible{outline-color:var(--cyan)}
+.bg-estnum{position:relative;font-size:26px;font-weight:800;letter-spacing:-.8px;line-height:1.05;margin:2px 0 6px}
+.bg-estshown{position:relative;display:none;font-size:10px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;margin-top:8px;opacity:.85}
+.bg-estcard.on .bg-estshown{display:block}
+.bg-esthint{position:relative;font-size:11.5px;color:var(--cyan-ink);opacity:.75;margin-top:10px}
+.bg-secp{margin-bottom:22px}
+.bg-secp:last-child{margin-bottom:0}
+.bg-prose .md-p{font-size:14px;line-height:1.68;color:var(--ink);margin:0 0 10px;max-width:none}
+.bg-prose .md-p:last-child{margin-bottom:0}
+.bg-full{margin-top:18px}
+.bg-full .bl-panel-body .bl-sec{margin:18px 0 22px}
+.bg-grid4{grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+.bg-flash{animation:bgflash 1.2s ease}
+@keyframes bgflash{0%{box-shadow:0 0 0 3px var(--cyan)}100%{box-shadow:var(--shadow-sm)}}
+.bg-summary{max-width:72ch;margin:4px 0 6px}
+.bg-summary p{margin:0 0 8px;font-size:14px;line-height:1.6}
+.bg-fullreport{margin-top:12px;border-top:1px solid var(--line);padding-top:10px}
+.bg-fullreport>summary{cursor:pointer;font-size:12.5px;list-style:none;display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.bg-fullreport>summary::-webkit-details-marker{display:none}
+.bg-fullreport>summary::before{content:"\25B8";color:var(--ink-3);margin-right:2px}
+.bg-fullreport[open]>summary::before{content:"\25BE"}
+.bg-fullbody{margin-top:12px}
+.bg-boardsec{margin-bottom:12px;padding:10px 12px;border:1px solid var(--line);border-radius:var(--r-sm);background:var(--card)}
+.bg-boardsec .bg-nums{margin-bottom:8px}
+.bg-headline{font-size:14.5px;font-weight:600;line-height:1.5;margin:2px 0 12px;max-width:78ch}
+.bg-report{display:grid;gap:12px;max-width:78ch}
+.bg-rsec h3{font-size:12.5px;margin:0 0 4px;letter-spacing:.01em}
+.bg-rsec p{margin:0 0 6px;font-size:12.6px;line-height:1.6;color:var(--ink-2)}
+.bg-levers,.bg-votes{margin-top:12px;border-top:1px solid var(--line);padding-top:10px}
+.bg-levers summary,.bg-votes summary{cursor:pointer;font-size:12.5px}
+.bg-lever-list{display:grid;gap:10px;margin-top:10px}
+.bg-lever{padding:8px 10px;border:1px solid var(--line-2);border-radius:var(--r-sm);background:var(--card-2)}
+.bg-lever-h{margin-bottom:3px;font-size:12.5px}
+.bg-two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-top:12px}
+.bg-minority p{margin:0 0 8px;line-height:1.55}
+
 /* Admin unlock at the foot of the sidebar (14/09/2026) */
 .admin-link{opacity:.55;font-size:11px}
 .admin-link:hover{opacity:1}
