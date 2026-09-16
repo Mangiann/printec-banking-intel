@@ -1376,11 +1376,13 @@ function renderBudget(s){
   const splitLead=md=>String(md||'').split(/\n\s*\n/).map(x=>x.trim()).filter(Boolean).map(par=>{ const m=par.match(/^\*\*(.+?)\*\*\.?\s*([\s\S]*)$/); return m?{lead:m[1].replace(/\.$/,''),text:m[2]}:{lead:'',text:par}; });
 
   // ---- scenario shown in the moves grid; the estimate cards switch it ----
-  const SCEN={y2026:{label:'2026 budget'},floor:{label:'Lowest acceptable'},budget:{label:'2027 budget'},reach:{label:'Most the evidence supports'}};
+  const SCEN={y2026:{label:'2026 budget'},floor:{label:'Lowest acceptable'},budget:{label:'2027 budget'},upside:{label:'Maximum on the table'},today:{label:'Reviewed budget before the plan'}};
+  const isPlan=hasBoard&&!!Bd.plan_based;
   let scen=hasBoard?'budget':'y2026';
   const cellVal=(k,sc)=>{ const c=B.cells.find(x=>x.code+'|'+x.line===k); const b=bdK[k]; if(!c) return null;
     if(sc==='y2026'||!b) return {v:c.target,g:null};
-    const x=b.board; const v=sc==='floor'?x.floor:sc==='reach'?(reachSet.has(k)?x.upside:x.target):x.target; return {v,g:c.target?(v/c.target-1)*100:null}; };
+    const x=b.board;
+    const v=sc==='floor'?x.floor:sc==='upside'?x.upside:sc==='today'?((x.today&&x.today.target!=null)?x.today.target:x.target):x.target; return {v,g:c.target?(v/c.target-1)*100:null}; };
 
   // 1. executive summary, in the Future outlook's form: cyan hero with the number, four estimate cards
   //    (clickable: they switch the moves grid), then the summary's paragraphs as full-width sections
@@ -1392,11 +1394,13 @@ function renderBudget(s){
     hero.innerHTML=`<span class="bl-blob"></span><span class="bl-kicker">Budget 2027</span><h2 class="bl-htitle">Executive summary</h2>${thesis?`<div class="bl-thesis">${mdToHtml(thesis)}</div>`:''}
       <div class="bg-est">
         ${[['y2026','k-blue','2026 budget',bgM(Tb.rev_2026),'profit '+bgM(Tb.rp_2026)],
-           ['floor','k-yellow','Lowest acceptable',bgM(Tb.floor),pc(Tb.floor_growth_pct)+' on 2026'],
+           ['floor','k-yellow','Lowest acceptable',bgM(Tb.floor),pc(Tb.floor_growth_pct)+' on 2026 · profit '+bgM(Tb.rp_floor)],
            ['budget','k-green','2027 budget',bgM(Tb.commit),pc(Tb.commit_growth_pct)+' · profit '+bgM(Tb.rp_commit)],
-           ['reach','k-lilac','Most the evidence supports',bgM(Tb.reachable!=null?Tb.reachable:Tb.upside),pc(Tb.reachable_growth_pct!=null?Tb.reachable_growth_pct:Tb.upside_growth_pct)+' · if the dated deals are won']]
+           isPlan?['upside','k-lilac','Maximum on the table',bgM(Tb.upside),pc(Tb.upside_growth_pct)+' · every deal won, every capability built']
+                 :['reach','k-lilac','Most the evidence supports',bgM(Tb.reachable!=null?Tb.reachable:Tb.upside),pc(Tb.reachable_growth_pct!=null?Tb.reachable_growth_pct:Tb.upside_growth_pct)+' · if the dated deals are won']]
           .map(([id,tone,lab,big,sub])=>`<div class="bl-kpi ${tone} bg-estcard${scen===id?' on':''}" data-scen="${id}" role="button" tabindex="0" title="Show this estimate in the table below"><span class="blob"></span><div class="bl-kpi-h"><div class="bl-kpi-t">${esc(lab)}</div></div><div class="bg-estnum">${big}</div><div class="bl-kpi-d">${esc(sub)}</div><div class="bg-estshown">shown in the table</div></div>`).join('')}
       </div>
+      ${isPlan&&Tb.supported_today?`<div class="bg-esthint bg-today"><span class="bg-estcard bg-todaylink" data-scen="today" role="button" tabindex="0" title="Show what the evidence supports today, cell by cell">What the evidence supports today, before the plan\u2019s actions: <b>${bgM(Tb.supported_today)} (${pc(Tb.supported_today_growth_pct)})</b>; the reviewed budget before the plan was ${bgM((Tb.today||{}).commit||0)} (${pc(((Tb.today||{}).commit_growth_pct)||0)}). Click to show that budget in the table.</span></div>`:''}
       <div class="bg-esthint">Click an estimate to show it in the table of moves below.</div>`;
     s.appendChild(hero);
     const card=el("div","card");
@@ -1429,14 +1433,18 @@ function renderBudget(s){
   const boardBlock=k=>{ const b=bdK[k]; const c=byKey[k]; const m=mdK[k]; if(!b&&!m) return '';
     if(!b) return `<div class="bg-sec"><div class="k">2027 (model)</div><div class="small">Base ${bgM(m.base.target)} (${pc(m.base.growth_pct)}) · stretch ${bgM(m.stretch.target)} (${pc(m.stretch.growth_pct)}).</div></div>`;
     const x=b.board; const capv=x.capacity?`${esc(x.capacity.verdict==='yes'?'delivery confirmed':x.capacity.verdict==='yes-with-hire'?'delivery confirmed with hires':x.capacity.verdict==='no'?'delivery not confirmed':x.capacity.verdict)}${x.capacity.reason?': '+esc(x.capacity.reason):''}`:'';
+    const fmtD=d=>{ const mm=String(d||'').match(/^(\d{4})-(\d{2})-(\d{2})$/); if(!mm) return esc(d||''); const MO=['January','February','March','April','May','June','July','August','September','October','November','December']; return `${parseInt(mm[3])} ${MO[parseInt(mm[2])-1]} ${mm[1]}`; };
+    const PA=x.plan_actions||[];
     return `<div class="bg-sec bg-boardsec"><div class="k">The 2027 number</div>
       <div class="bg-nums">
         <div><span class="k">2026 budget</span><b>${bgM(c.target)}</b></div>
-        <div><span class="k">2027 budget</span><b>${bgM(x.target)}</b> <span class="muted small">${pc(x.growth_pct)}</span></div>
-        <div><span class="k">Lowest acceptable</span><b>${bgM(x.floor)}</b></div>
-        <div><span class="k">${reachSet.has(k)?'Most the evidence supports':'Highest estimate (no 2027 date)'}</span><b>${bgM(x.upside)}</b></div>
+        <div><span class="k">Lowest acceptable</span><b>${bgM(x.floor)}</b>${x.floor_growth_pct!=null?` <span class="muted small">${pc(x.floor_growth_pct)}</span>`:''}</div>
+        <div><span class="k">2027 budget</span><b>${bgM(x.target)}</b>${x.growth_pct!=null?` <span class="muted small">${pc(x.growth_pct)}</span>`:''}</div>
+        <div><span class="k">Maximum on the table</span><b>${bgM(x.upside)}</b></div>
+        ${x.today?`<div><span class="k">What the evidence supports today</span><b>${bgM(x.today.floor)} / ${bgM(x.today.target)} / ${bgM(x.today.upside)}</b> <span class="muted small">floor / budget / highest, before the plan</span></div>`:''}
         ${m?`<div><span class="k">Model base / stretch</span><b>${bgM(m.base.target)} / ${bgM(m.stretch.target)}</b></div>`:''}
       </div>
+      ${PA.length?`<div class="k" style="margin-top:6px">The plan for this line: ${PA.length} action${PA.length===1?'':'s'}, ${bgM(PA.reduce((s,a)=>s+(a.eur_budget||0),0))} to the budget${x.gap_closer_eur?`, plus ${bgM(x.gap_closer_eur)} on the floor from one of the three closing facts`:''}</div><ul class="bg-dated">${PA.map(a=>`<li>${esc(a.what)} <span class="muted small">\u00b7 ${esc(a.kind)} \u00b7 by ${fmtD(a.by)} \u00b7 ${esc(a.owner)} \u00b7 floor ${bgM(a.eur_floor||0)}, budget ${bgM(a.eur_budget||0)}${a.deal_title?' \u00b7 '+esc(a.deal_title):''}</span></li>`).join('')}</ul>`:''}
       <div class="small"><b>${esc(x.proposer_title)}${x.decided_by_chair?' · settled in the review':''}:</b> ${esc(x.reason)}${x.decided_by_chair&&x.chair_reason?` <b>Settled:</b> ${esc(x.chair_reason)}`:''}</div>
       ${x.parts?`<div class="small muted">Named deals net of threat ${bgM(x.parts.named_deals_net)} · market outlook ${bgM(x.parts.market_outlook)} · recurring ${bgM(x.parts.recurring)}.</div>`:''}
       ${(x.assumptions||[]).length?`<div class="small"><b>Assumptions:</b> ${x.assumptions.map(a=>esc(a.text||'')+(a.conversion_pct!=null?' ('+a.conversion_pct+'%'+(a.date?' by '+esc(a.date):'')+')':'')).join(' ')}</div>`:''}
@@ -1446,7 +1454,7 @@ function renderBudget(s){
       ${chips(x.evidence,'Evidence')}
     </div>`; };
   const grid=el("div","card");
-  grid.innerHTML=`<div class="hd"><div><h2>The moves, market by market</h2><div class="desc">Each cell is a budget line with the estimate chosen above (<b class="bg-scenlabel"></b>) and the move it calls for. <b>Click a cell</b> and the details appear underneath: the numbers, why this move, the dated items, the signals and how the 2027 number was set. Lines under €0.05m are left blank.</div></div></div>
+  grid.innerHTML=`<div class="hd"><div><h2>The moves, market by market</h2><div class="desc">Each cell is a budget line with the estimate chosen above (<b class="bg-scenlabel"></b>) and the move it calls for. <b>Click a cell</b> and the details appear underneath: the numbers, why this move, the dated items, the signals and how the 2027 number was set. Lines under €0.05m are left blank. The column <b>Retail and other, carried flat</b> holds the budget lines the market model does not analyse (retail equipment and rows with no product name); they keep their 2026 figure in every estimate and count in the totals.</div></div></div>
     <div class="bg-legend">${Object.entries(B.actions_legend||{}).map(([a,tx])=>`<div>${bgPill(a)}<span>${esc(tx)}</span></div>`).join('')}</div>`;
   const wrapT=el("div","tablewrap"); const t=el("table","bgtable"); wrapT.appendChild(t); grid.appendChild(wrapT);
   const detail=el("div","bg-detail"); detail.hidden=true; grid.appendChild(detail);
@@ -1456,12 +1464,13 @@ function renderBudget(s){
     detail.appendChild(bgCellBody(c,sigByKey)); detail.querySelector('.bg-close').addEventListener('click',()=>{ detail.hidden=true; }); detail.scrollIntoView({behavior:'smooth',block:'nearest'}); };
   // totals: anchor on the file's own totals for the scenario (floor / commit) and add only the difference
   // the visible cells make, so retail, unnamed lines, tiny cells and new business are never double counted
-  const anchorKey=sc=>sc==='floor'?'floor':'commit';
-  const anchorCell=(b,sc)=>sc==='floor'?b.board.floor:b.board.target;
-  const nbDelta=(sc,pred)=>sc==='reach'?(Bd?Bd.new_business.filter(pred).reduce((a,o)=>a+((reachSet.has(o.code+'|'+o.line)?o.board.upside:o.board.target)-o.board.target),0):0):0;
+  const anchorKey=sc=>sc==='floor'?'floor':sc==='upside'?'upside':'commit';
+  const anchorCell=(b,sc)=>sc==='floor'?b.board.floor:sc==='upside'?b.board.upside:sc==='today'?((b.board.today&&b.board.today.target!=null)?b.board.today.target:b.board.target):b.board.target;
+  const nbDelta=(sc,pred)=>{ if(!Bd) return 0; if(sc==='today') return Bd.new_business.filter(pred).reduce((a,o)=>a+(((o.board.today||{}).target||0)-o.board.target),0); return 0; };
   const drawGrid=()=>{
     grid.querySelector('.bg-scenlabel').textContent=SCEN[scen].label;
-    t.innerHTML=`<thead><tr><th>Market</th>${lines.map(l=>`<th title="${esc(l.line_label)}">${esc(l.line_label)}</th>`).join('')}<th>Not covered</th><th>Total</th></tr></thead>`;
+    const NC='Budget lines the market model does not analyse, carried into 2027 unchanged: retail lines (self-checkout, retail POS, store equipment, vending, telecom, printing) and rows with no product name (“Other”). Included in the country total, no move of their own.';
+    t.innerHTML=`<thead><tr><th>Market</th>${lines.map(l=>`<th title="${esc(l.line_label)}">${esc(l.line_label)}</th>`).join('')}<th title="${esc(NC)}">Retail and other, carried flat <span class="bg-help" aria-hidden="true">?</span></th><th>Total</th></tr></thead>`;
     const tb=el("tbody"); const lineVal={}, lineAnchor={};
     rows.forEach(r=>{
       const tr=el("tr"); let rowVal=0, rowAnchor=0;
@@ -1469,12 +1478,12 @@ function renderBudget(s){
           rowVal+=n.v; lineVal[l.line]=(lineVal[l.line]||0)+n.v; if(b){ const av=anchorCell(b,scen); rowAnchor+=av; lineAnchor[l.line]=(lineAnchor[l.line]||0)+av; }
           return `<td class="bg-cell ${bgCls(c.action)}" data-k="${esc(k)}" role="button" tabindex="0" title="${esc(r.country)} × ${esc(l.line_label)}: ${esc(BG_ACT[c.action])}. 2026 ${bgM(c.target)}${n.g!=null?` → ${bgM(n.v)} (${pc(n.g)})`:''}. ${c.n_opps} open opportunit${c.n_opps===1?'y':'ies'}.">${bgM(n.v)}<div class="bg-act">${esc(BG_ACT[c.action])}${n.g!=null?' · '+pc(n.g):''}</div></td>`; }).join('');
       const rc=bdC[r.code];
-      const total=(scen==='y2026'||!rc)?r.target:(rc[anchorKey(scen)]+(rowVal-rowAnchor)+nbDelta(scen,o=>o.code===r.code));
-      tr.innerHTML=`<td><b>${esc(r.country)}</b><div class="small muted">2026 ${bgM(r.target)}</div></td>`+cellsHtml+`<td class="small muted">${bgM((r.retail||0)+(r.other||0))}</td><td><b>${bgM(total)}</b>${scen!=='y2026'&&r.target?`<div class="small muted">${pc((total/r.target-1)*100)}</div>`:''}</td>`;
+      const total=(scen==='y2026'||!rc)?r.target:(rc[scen==='today'?'commit':anchorKey(scen)]+(rowVal-rowAnchor)+nbDelta(scen,o=>o.code===r.code));
+      tr.innerHTML=`<td><b>${esc(r.country)}</b><div class="small muted">2026 ${bgM(r.target)}</div></td>`+cellsHtml+`<td class="small muted" title="${esc(r.country)}: retail ${bgM(r.retail||0)}, other ${bgM(r.other||0)}. ${esc(NC)}">${bgM((r.retail||0)+(r.other||0))}<div class="bg-act">retail ${bgM(r.retail||0)} · other ${bgM(r.other||0)}</div></td><td><b>${bgM(total)}</b>${scen!=='y2026'&&r.target?`<div class="small muted">${pc((total/r.target-1)*100)}</div>`:''}</td>`;
       tb.appendChild(tr);
     });
-    const grand=(scen==='y2026'||!hasBoard)?T.target:scen==='reach'?(Bd.totals.reachable!=null?Bd.totals.reachable:Bd.totals.upside):Bd.totals[anchorKey(scen)];
-    const tf=el("tr","bg-total"); tf.innerHTML=`<td><b>Group</b></td>${lines.map(l=>{ const lc=bdL[l.line]; const v=(scen==='y2026'||!lc)?l.target:(lc[anchorKey(scen)]+((lineVal[l.line]||0)-(lineAnchor[l.line]||0))+nbDelta(scen,o=>o.line===l.line)); return `<td><b>${bgM(v)}</b><div class="small muted">${scen!=='y2026'&&l.target?pc((v/l.target-1)*100):(l.margin_pct+'%')}</div></td>`; }).join('')}<td class="small muted">${bgM((U.retail||0)+(U.other||0))}</td><td><b>${bgM(grand)}</b>${scen!=='y2026'&&T.target?`<div class="small muted">${pc((grand/T.target-1)*100)}</div>`:''}</td>`;
+    const grand=(scen==='y2026'||!hasBoard)?T.target:scen==='today'?((Bd.totals.today||{}).commit||Bd.totals.commit):Bd.totals[anchorKey(scen)];
+    const tf=el("tr","bg-total"); tf.innerHTML=`<td><b>Group</b></td>${lines.map(l=>{ const lc=bdL[l.line]; const v=(scen==='y2026'||!lc)?l.target:(lc[scen==='today'?'commit':anchorKey(scen)]+((lineVal[l.line]||0)-(lineAnchor[l.line]||0))+nbDelta(scen,o=>o.line===l.line)); return `<td><b>${bgM(v)}</b><div class="small muted">${scen!=='y2026'&&l.target?pc((v/l.target-1)*100):(l.margin_pct+'%')}</div></td>`; }).join('')}<td class="small muted" title="${esc(NC)}">${bgM((U.retail||0)+(U.other||0))}<div class="bg-act">retail ${bgM(U.retail||0)} · other ${bgM(U.other||0)}</div></td><td><b>${bgM(grand)}</b>${scen!=='y2026'&&T.target?`<div class="small muted">${pc((grand/T.target-1)*100)}</div>`:''}</td>`;
     tb.appendChild(tf); t.appendChild(tb);
     t.querySelectorAll('.bg-cell[data-k]').forEach(td=>{ td.addEventListener('click',()=>showCell(td.dataset.k)); td.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); showCell(td.dataset.k); } }); });
   };

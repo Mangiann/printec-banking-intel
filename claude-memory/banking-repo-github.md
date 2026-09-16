@@ -14,6 +14,6 @@ Excluded by `.gitignore`: `.env*`, `node_modules`, `intel-cache/snapshots/` (488
 
 The old `dashboard-web` Vercel repo (40 commits, remote github.com/karakasi/Printec-market-research) had its `.git` moved to `~/Downloads/BANKING-dashboard-web-dotgit-backup`. The Vercel deployment itself is gone (404).
 
-The files kept out of Git (secrets, licensed RBR reports and extracts, backup folders, snapshots zip, old dashboard-web Git history) are copied to the user's Printec OneDrive: `~/Library/CloudStorage/OneDrive-PrintecS.A/Printec-banking-backup/<date>/` (first copy 11/09/2026, 173 MB, with a README). Never use the KorrDot OneDrive for Printec material — the user refused it.
+The files kept out of Git (secrets, licensed RBR reports and extracts, backup folders, snapshots zip, old dashboard-web Git history) are copied to the user's Printec OneDrive: `~/Library/CloudStorage/OneDrive-PrintecS.A/Printec-banking-backup/<date>/` (first copy 11/09/2026, 173 MB, with a README; later dated folders hold only what changed — 2026-09-15 has the git-ignored budget/ folder with both board sittings, the built dashboard, the board briefs and the secrets, 17 MB). Never use the KorrDot OneDrive for Printec material — the user refused it.
 
 **How to apply:** when the user says "push", commit the day's changes in BANKING and push `main`. Commit as user.name `mangian`, email mangian27@gmail.com (repo-local config). See [[printec-dashboard-artifact]] and [[banking-collector-project]].

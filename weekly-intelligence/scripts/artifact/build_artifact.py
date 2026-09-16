@@ -99,6 +99,13 @@ def main():
     body = body.replace('src="printec-logo.svg"', 'src="data:image/svg+xml;base64,%s"' % logo)
 
     app = patch_artifact.apply(rd(os.path.join(WEB, "app.js")))
+    # the chat lives inside app.js's own function scope (it needs DASH, sigByKey, mdToHtml ...): insert it
+    # before the closing "})();" of the renderer
+    _tail = "\n})();"
+    assert app.rstrip().endswith("})();"), "app.js no longer ends with the renderer's closing })();"
+    _i = app.rstrip().rfind(_tail)
+    import datetime as _dt
+    app = app[:_i] + "\n" + patch_artifact.ASK_JS.replace("__ASK_BUILD__", _dt.datetime.now().strftime("%d/%m/%Y %H:%M")) + app[_i:]
 
     parts = [
         "<title>Printec Intelligence Dashboard</title>",
@@ -107,7 +114,7 @@ def main():
         "<style>", rd(os.path.join(WEB, "styles.css")).rstrip("\n"),
         # single-file build: no architecture sub-page to link to, and paint the canvas explicitly
         "\n/* single-file build */\n.archbtn{display:none !important}\nhtml,body{background:var(--bg)}\n",
-        patch_artifact.CSS, "</style>",
+        patch_artifact.CSS, patch_artifact.ASK_CSS, "</style>",
         body,
         "<script>", rd(os.path.join(HERE, "chart.umd.min.js")).rstrip("\n"), "</script>",
         "<script>", "window.__DASH_DATA__ = " + data + ";", "</script>",

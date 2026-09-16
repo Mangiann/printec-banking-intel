@@ -585,7 +585,7 @@ def write_decision_md(F, path):
          "| **Budget (commit)** | **%s** | **%+.1f%%** | %s |" % (m(T["commit"]), T["commit_growth_pct"], m(T["rp_commit"])),
          "| Largest reachable on the evidence | %s | %+.1f%% | %s |" % (m(T["reachable"]), T["reachable_growth_pct"], m(T["rp_reachable"])),
          "| Upside on the table (every seat's highest number) | %s | %+.1f%% | %s |" % (m(T["upside"]), T["upside_growth_pct"], m(T["rp_upside"])), "",
-         "Vote: %d for, %d against." % (F["vote_count"]["for"], F["vote_count"]["against"]), ""]
+         ("Vote: %d for, %d against." % (F["vote_count"]["for"], F["vote_count"]["against"])) if F.get("vote_count") else "", ""]
     if F.get("largest_reachable_basis"):
         L += ["How the largest reachable figure is built: " + F["largest_reachable_basis"], ""]
     q = T.get("parts") or {}
@@ -622,12 +622,17 @@ def write_decision_md(F, path):
         L.append("| %s | %.1f | %.1f | %.1f | %+.1f%% | %.1f | %+.1f%% |" % (c["country"], c["rev_2026"] / 1e6, c["floor"] / 1e6, c["commit"] / 1e6, c["commit_growth_pct"], c["upside"] / 1e6, c["upside_growth_pct"]))
     L += ["", "## By product line", "", "| Line | 2026 | Floor | Budget | Budget % | Largest reachable | % |", "|---|---|---|---|---|---|---|"]
     for l in F["by_line"]:
-        L.append("| %s | %.1f | %.1f | %.1f | %+.1f%% | %.1f | %+.1f%% |" % (l["line_label"], l["rev_2026"] / 1e6, l["floor"] / 1e6, l["commit"] / 1e6, l["commit_growth_pct"], l["upside"] / 1e6, l["upside_growth_pct"]))
-    L += ["", "## Votes", ""]
-    for v in F["votes"]:
-        L.append("- %s (%s): **%s**. %s" % (v["title"], v["camp"], v["vote"], v["reason"]))
+        L.append("| %s | %.1f | %.1f | %.1f | %s | %.1f | %s |" % (l["line_label"], l["rev_2026"] / 1e6, l["floor"] / 1e6, l["commit"] / 1e6,
+                 ("%+.1f%%" % l["commit_growth_pct"]) if l.get("commit_growth_pct") is not None else "new", l["upside"] / 1e6,
+                 ("%+.1f%%" % l["upside_growth_pct"]) if l.get("upside_growth_pct") is not None else "new"))
+    if F.get("votes"):
+        L += ["", "## Votes", ""]
+        for v in F["votes"]:
+            L.append("- %s (%s): **%s**. %s" % (v["title"], v["camp"], v["vote"], v["reason"]))
     if F.get("minority_report"):
         L += ["", "## Minority report", "", F["minority_report"]]
+    if F.get("dissent_views"):
+        L += ["", "## The views that would set a lower number", ""] + ["- **%s**: %s %s" % (v["title"], v.get("reason", ""), v.get("text", "")) for v in F["dissent_views"]]
     with open(path, "w", encoding="utf-8") as fh:
         fh.write("\n".join(L) + "\n")
 
@@ -691,9 +696,295 @@ def cmd_publicize(root):
     print("public board file written: %d cell texts replaced, %d lower views, seats mapped to views" % (n, len(F["dissent_views"])))
 
 
+# ------------------------------------------------------------------ mandate -----------------------
+def cmd_mandate(root):
+    """The third sitting (the Chairman's mandate): validate the chair's decision, sum the actions and write
+    budget/budget_2027_mandate.json for the dashboard plus budget/BUDGET_2027_MANDATE.md."""
+    bdir = os.path.join(root, "budget")
+    F = load(os.path.join(bdir, "budget_2027_board.json"))
+    P = load(os.path.join(bdir, "budget_2027.json"))
+    Dc = load(os.path.join(bdir, "board", "mandate", "decision.json"))
+    sigidx = load(os.path.join(bdir, "board", "packet", "signals_index.json"))
+    if not (F and P and Dc):
+        sys.exit("need budget_2027_board.json, budget_2027.json and board/mandate/decision.json")
+    cells = {"%s|%s" % (o["code"], o["line"]): o for o in F["cells"] + F["new_business"]}
+    nbmeta = {"%s|%s" % (e["code"], e["line"]): e for e in P.get("new_business", [])}
+    name = {c["code"]: c["country"] for c in P["by_country"]}; label = {l["line"]: l["line_label"] for l in P["by_line"]}
+    for k, v in (D_ := load(os.path.join(root, "intel-cache", "dashboard-data.json")) or {}).get("prod_label", {}).items():
+        label.setdefault(k, v)
+    log = []
+    def cellinfo(k):
+        if k in cells:
+            o = cells[k]; return o["country"], o["line_label"], o["board"]["floor"], o["board"]["target"], o["board"]["upside"], bool(o.get("new_business"))
+        if k in nbmeta:
+            e = nbmeta[k]; return e["country"], e["line_label"], 0.0, 0.0, 0.0, True
+        cc, ln = (k.split("|") + [""])[:2]
+        return name.get(cc, cc), label.get(ln, ln), 0.0, 0.0, 0.0, True
+    actions = []
+    for a in Dc.get("actions", []):
+        k = a.get("cell", "")
+        if "|" not in k:
+            log.append("action without a cell dropped: %s" % a.get("what", "")[:60]); continue
+        cc, ll, fl, tg, up, nb = cellinfo(k)
+        ev = [x for x in (a.get("evidence") or ([a["deal"]] if a.get("deal") else [])) if x in sigidx]
+        if a.get("deal") and a["deal"] not in sigidx:
+            log.append("deal key not in the packet on %s: %s" % (k, a["deal"]))
+        actions.append({"cell": k, "code": k.split("|")[0], "line": k.split("|")[1], "country": cc, "line_label": ll, "new_business": nb,
+                        "what": a.get("what", ""), "kind": a.get("kind", ""), "deal": a.get("deal", "") if a.get("deal") in sigidx else "",
+                        "deal_title": sigidx.get(a.get("deal", ""), {}).get("title", ""), "by": a.get("by", ""), "owner": a.get("owner", ""),
+                        "eur_floor": float(a.get("eur_floor") or 0), "eur_budget": float(a.get("eur_budget") or 0), "evidence": ev,
+                        "floor_now": fl, "budget_now": tg, "upside_now": up})
+    actions.sort(key=lambda a: -(a["eur_floor"] + a["eur_budget"]))
+    def agg(key):
+        d = defaultdict(lambda: {"eur_floor": 0.0, "eur_budget": 0.0, "n": 0})
+        for a in actions:
+            x = d[a[key] or "other"]; x["eur_floor"] += a["eur_floor"]; x["eur_budget"] += a["eur_budget"]; x["n"] += 1
+        return sorted([{key: k, **v} for k, v in d.items()], key=lambda r: -(r["eur_floor"] + r["eur_budget"]))
+    T = F["totals"]
+    # the ladder may come as a list of steps or as a dict keyed by step id
+    LABEL = {"floor_today": "Floor today", "floor_dd": "Floor, double digits", "budget": "Budget", "maximum": "Maximum on the table"}
+    raw = Dc.get("ladder") or []
+    steps = [dict(v, step=k) for k, v in raw.items()] if isinstance(raw, dict) else raw
+    order = {k: i for i, k in enumerate(LABEL)}
+    steps.sort(key=lambda st: order.get(st.get("step", ""), 99))
+    ladder = []
+    for st in steps:
+        e = float(st.get("eur") or 0)
+        ladder.append({"step": st.get("step", ""), "label": st.get("label") or LABEL.get(st.get("step", ""), st.get("step", "")), "eur": e,
+                       "pct": pc(e, T["rev_2026"]) if e else None, "by": st.get("by") or st.get("date", ""), "conditions": st.get("conditions") or [],
+                       "text": st.get("text", ""), "meets_double_digit": st.get("meets_double_digit"), "shortfall_eur": st.get("shortfall_eur"),
+                       "gap_closers": st.get("gap_closers") or [], "reached_by": st.get("reached_by") or []})
+    rawd = Dc.get("delivery_ask") or []
+    da = rawd.get("entries", []) if isinstance(rawd, dict) else rawd
+    da_summary = {k: v for k, v in rawd.items() if k != "entries"} if isinstance(rawd, dict) else {}
+    for d in da:
+        d["cost_eur"] = float(d.get("cost_eur") or 0); d["eur_at_stake"] = float(d.get("eur_at_stake") or 0)
+    steps_out = []
+    for x in Dc.get("next_steps") or []:
+        steps_out.append(("%s (by %s)" % (x.get("step", ""), x.get("by"))) if isinstance(x, dict) and x.get("by") else (x.get("step", "") if isinstance(x, dict) else str(x)))
+    M = {"generated": datetime.date.today().isoformat(), "built_from": F.get("built_from"), "base_2026": T["rev_2026"],
+         "double_digit_floor": round(T["rev_2026"] * 1.10, 2),
+         "floor_now": T["floor"], "budget_now": T["commit"], "reachable_now": T.get("reachable"), "upside_now": T["upside"],
+         "headline": Dc.get("headline", ""), "onepager_md": Dc.get("onepager_md", ""),
+         "ladder": ladder, "focus": Dc.get("focus") or {}, "actions": actions,
+         "actions_by_kind": agg("kind"), "actions_by_country": agg("country"), "actions_by_owner": agg("owner"),
+         "totals": {"eur_floor": round(sum(a["eur_floor"] for a in actions), 2), "eur_budget": round(sum(a["eur_budget"] for a in actions), 2), "n_actions": len(actions),
+                    "delivery_cost_budget": round(sum(d["cost_eur"] for d in da if d.get("for") == "budget"), 2),
+                    "delivery_cost_maximum": round(sum(d["cost_eur"] for d in da if d.get("for") == "maximum"), 2)},
+         "capability": Dc.get("capability") or [], "delivery_ask": da, "restructuring": Dc.get("restructuring", ""),
+         "delivery_summary": da_summary, "view_conditions": Dc.get("sceptic_conditions") or Dc.get("view_conditions") or [], "next_steps": steps_out, "log": log}
+    save(os.path.join(bdir, "budget_2027_mandate.json"), M)
+    L = ["# Budget 2027: the Chairman's mandate", "", "Prepared %s on the model build of %s." % (M["generated"], M["built_from"]), "",
+         "## The ladder", "", "| Step | 2027 | Growth | By | Conditions |", "|---|---|---|---|---|"]
+    for st in ladder:
+        L.append("| %s | %s | %s | %s | %s |" % (st["label"], m(st["eur"]) if st["eur"] else "-", ("%+.1f%%" % st["pct"]) if st["pct"] is not None else "-", st["by"], "; ".join(st["conditions"])))
+    L += ["", Dc.get("onepager_md", ""), "", "## The actions (%d, %s to the floor, %s to the budget)" % (len(actions), m(M["totals"]["eur_floor"]), m(M["totals"]["eur_budget"])), "",
+          "| Cell | Action | Kind | By | Owner | Floor EUR m | Budget EUR m |", "|---|---|---|---|---|---|---|"]
+    for a in actions:
+        L.append("| %s x %s | %s | %s | %s | %s | %.2f | %.2f |" % (a["country"], a["line_label"], a["what"], a["kind"], a["by"], a["owner"], a["eur_floor"] / 1e6, a["eur_budget"] / 1e6))
+    if da:
+        L += ["", "## The delivery ask", "", "| Country | Lines | People | Skills | By | Cost EUR m | At stake EUR m | Case |", "|---|---|---|---|---|---|---|---|"]
+        for d in da:
+            L.append("| %s | %s | %s | %s | %s | %.2f | %.2f | %s |" % (d.get("country"), ", ".join(d.get("lines") or []), d.get("people"), d.get("skills"), d.get("by"), d["cost_eur"] / 1e6, d["eur_at_stake"] / 1e6, d.get("for")))
+    if M["restructuring"]:
+        L += ["", "## What the restructuring should give delivery", "", M["restructuring"]]
+    with open(os.path.join(bdir, "BUDGET_2027_MANDATE.md"), "w", encoding="utf-8") as fh:
+        fh.write("\n".join(L) + "\n")
+    print("mandate file written: %d actions, %s to the floor, %s to the budget; ladder %s" % (len(actions), m(M["totals"]["eur_floor"]), m(M["totals"]["eur_budget"]), ", ".join("%s %s" % (st["label"], m(st["eur"])) for st in ladder)))
+    for l in log:
+        print("  note:", l)
+
+
+# ------------------------------------------------------------------ plan --------------------------
+GAP_CLOSERS = {"RO|atm_recycling": 1300000.0, "GR|atm_recycling": 900000.0, "BG|atm_recycling": 840000.0}   # the three facts (15/09/2026)
+
+
+def cmd_plan(root, phase):
+    """Make the plan's numbers the tab's numbers (decision of 15/09/2026): every cell's floor, budget and
+    maximum become its current number plus the euros of the plan's actions, the three facts that close the
+    gap to a double-digit floor are added to the floor, and the reviewed numbers are kept per cell as
+    "today's evidence". Phase "numbers" writes budget/board/plan/numbers.json and a brief for the writer;
+    phase "texts" merges budget/board/plan/texts_plan.json into the final budget/budget_2027_board.json."""
+    bdir = os.path.join(root, "budget"); pdir = os.path.join(bdir, "board", "plan")
+    F = load(os.path.join(bdir, "budget_2027_board.today.json")) or load(os.path.join(bdir, "budget_2027_board.json"))
+    M = load(os.path.join(bdir, "budget_2027_mandate.json"))
+    P = load(os.path.join(bdir, "budget_2027.json"))
+    if not (F and M and P):
+        sys.exit("need budget_2027_board.json, budget_2027_mandate.json and budget_2027.json")
+    if not os.path.exists(os.path.join(bdir, "budget_2027_board.today.json")):
+        save(os.path.join(bdir, "budget_2027_board.today.json"), F)     # the reviewed numbers, kept once
+    F = json.loads(json.dumps(F))
+    acts = defaultdict(list)
+    for a in M["actions"]:
+        acts[a["cell"]].append(a)
+    known = {"%s|%s" % (o["code"], o["line"]) for o in F["cells"] + F["new_business"]}
+    # new-business combinations the plan opens that are not in the file yet
+    cmargin = {c["code"]: (c["rp_2026"] / c["rev_2026"] * 100 if c["rev_2026"] else 0.0) for c in P["by_country"]}
+    name = {c["code"]: c["country"] for c in P["by_country"]}
+    label = {l["line"]: l["line_label"] for l in P["by_line"]}
+    for k, v in (load(os.path.join(root, "intel-cache", "dashboard-data.json")) or {}).get("prod_label", {}).items():
+        label.setdefault(k, v)
+    # maximum-case new business the delivery ask reverses: euros at stake per cell, for cells with no plan budget
+    max_nb = defaultdict(float)
+    for d in M.get("delivery_ask", []):
+        if d.get("for") == "maximum":
+            for k in d.get("cells") or []:
+                max_nb[k] += d.get("eur_at_stake", 0.0) / max(1, len(d.get("cells") or []))
+    for k in list(acts) + [k for k in max_nb if k not in acts]:
+        if k not in known and "|" in k:
+            cc, ln = k.split("|")
+            known.add(k)
+            F["new_business"].append({"code": cc, "country": name.get(cc, cc), "line": ln, "line_label": label.get(ln, ln), "target_2026": 0.0, "base": 0.0, "stretch": 0.0, "new_business": True,
+                                      "board": {"target": 0.0, "floor": 0.0, "upside": 0.0, "parts": {"market_outlook": 0.0, "recurring": 0.0, "named_deals_net": 0.0, "case": "new"},
+                                                "growth_pct": None, "floor_growth_pct": None, "upside_growth_pct": None, "new": 0.0, "recurring": 0.0, "rp": 0.0,
+                                                "margin_pct": round(cmargin.get(cc, 0.0), 1), "proposer": "plan", "proposer_title": "The plan", "reason": "", "evidence": [],
+                                                "conditions": [], "assumptions": [], "capacity": None, "capped_by_capacity": False, "dissent": None, "decided_by_chair": False, "chair_reason": "", "above_stretch": False}})
+    for o in F["cells"] + F["new_business"]:
+        k = "%s|%s" % (o["code"], o["line"]); b = o["board"]; A = acts.get(k, [])
+        today = {"floor": b["floor"], "target": b["target"], "upside": b["upside"], "reason": b.get("reason", ""), "proposer_title": b.get("proposer_title", "")}
+        fl = b["floor"] + sum(a["eur_floor"] for a in A) + GAP_CLOSERS.get(k, 0.0)
+        tg = b["target"] + sum(a["eur_budget"] for a in A)
+        tg = max(tg, fl)
+        up = max(b["upside"], tg)
+        if o.get("new_business") and tg <= 0 and max_nb.get(k):
+            up = max(up, max_nb[k])
+        ratio = tg / b["target"] if b["target"] else 1.0
+        b.update({"today": today, "floor": round(fl, 2), "target": round(tg, 2), "upside": round(up, 2),
+                  "growth_pct": pc(tg, o["target_2026"]) if o["target_2026"] else None, "floor_growth_pct": pc(fl, o["target_2026"]) if o["target_2026"] else None,
+                  "upside_growth_pct": pc(up, o["target_2026"]) if o["target_2026"] else None,
+                  "new": round((b.get("new") or 0) * ratio if b["target"] else tg, 2), "recurring": round((b.get("recurring") or 0) * ratio if b["target"] else 0.0, 2),
+                  "rp": round(tg * b["margin_pct"] / 100.0, 2),
+                  "plan_actions": [{"what": a["what"], "kind": a["kind"], "by": a["by"], "owner": a["owner"], "eur_floor": a["eur_floor"], "eur_budget": a["eur_budget"],
+                                    "deal": a.get("deal", ""), "deal_title": a.get("deal_title", ""), "evidence": a.get("evidence", [])} for a in A],
+                  "gap_closer_eur": GAP_CLOSERS.get(k, 0.0), "plan_floor_delta": round(fl - today["floor"], 2), "plan_budget_delta": round(tg - today["target"], 2)})
+        if o.get("new_business"):
+            b["parts"] = {"market_outlook": 0.0, "recurring": 0.0, "named_deals_net": round(tg, 2), "case": "new"}
+        b["evidence"] = list(dict.fromkeys(b.get("evidence", []) + [e for a in A for e in a.get("evidence", [])]))
+    # totals and breakdowns: covered cells plus the flat lines, anchored on the model's flat part as before
+    T = F["totals"]; unc = T["commit_existing"] - sum(o["board"]["today"]["target"] for o in F["cells"])
+    cells_all = F["cells"] + F["new_business"]
+    def tot(key): return sum(o["board"][key] for o in cells_all) + unc
+    def rp(key): return sum(o["board"][key] * o["board"]["margin_pct"] / 100.0 for o in cells_all) + (T["rp_2026"] - sum(c["rp_2026"] for c in P["cells"])) * 1.0
+    today_totals = {k: T[k] for k in ("floor", "commit", "upside", "reachable", "floor_growth_pct", "commit_growth_pct", "upside_growth_pct", "reachable_growth_pct", "rp_floor", "rp_commit", "rp_upside", "rp_reachable") if k in T}
+    T.update({"floor": round(tot("floor"), 2), "commit": round(tot("target"), 2), "upside": round(tot("upside"), 2),
+              "rp_floor": round(rp("floor"), 2), "rp_commit": round(rp("target"), 2), "rp_upside": round(rp("upside"), 2),
+              "new_business_commit": round(sum(o["board"]["target"] for o in F["new_business"]), 2), "new_business_upside": round(sum(o["board"]["upside"] for o in F["new_business"]), 2),
+              "commit_existing": round(sum(o["board"]["target"] for o in F["cells"]) + unc, 2), "today": today_totals,
+              "supported_today": today_totals.get("reachable"), "supported_today_growth_pct": today_totals.get("reachable_growth_pct")})
+    for k in ("floor", "commit", "upside"):
+        T[k + "_growth_pct"] = pc(T[k], T["rev_2026"])
+    T["reachable"], T["reachable_growth_pct"], T["rp_reachable"] = T["upside"], T["upside_growth_pct"], T["rp_upside"]
+    T["parts"] = {"named_deals_net": round(sum(o["board"]["parts"]["named_deals_net"] for o in F["cells"]), 2), "market_outlook": round(sum(o["board"]["parts"]["market_outlook"] for o in F["cells"]), 2),
+                  "recurring": round(sum(o["board"]["parts"]["recurring"] for o in F["cells"]), 2), "new_business": T["new_business_commit"], "flat": 0.0,
+                  "outlook_cells": (T.get("parts") or {}).get("outlook_cells"),
+                  "plan_by_kind": M.get("actions_by_kind", []), "gap_closers": round(sum(GAP_CLOSERS.values()), 2)}
+    T["parts"]["plan_actions"] = round(sum(a["eur_budget"] for a in M["actions"]), 2)
+    # the named-deals part of the plan: what the actions add on top of today's split
+    T["parts"]["named_deals_net"] = round(T["parts"]["named_deals_net"] + sum(a["eur_budget"] for a in M["actions"] if a["kind"] in ("date", "share", "capability", "hire") and a["cell"] in {"%s|%s" % (o["code"], o["line"]) for o in F["cells"]}), 2)
+    T["parts"]["recurring"] = round(T["parts"]["recurring"] + sum(a["eur_budget"] for a in M["actions"] if a["kind"] in ("pricing", "efficiency") and a["cell"] in {"%s|%s" % (o["code"], o["line"]) for o in F["cells"]}), 2)
+    by_c, by_l = defaultdict(lambda: defaultdict(float)), defaultdict(lambda: defaultdict(float))
+    for o in cells_all:
+        for key in ("floor", "target", "upside"):
+            by_c[o["code"]][key] += o["board"][key]; by_l[o["line"]][key] += o["board"][key]
+    cov_c, cov_l = defaultdict(float), defaultdict(float)
+    for o in F["cells"]:
+        cov_c[o["code"]] += o["board"]["today"]["target"]; cov_l[o["line"]] += o["board"]["today"]["target"]
+    for c in F["by_country"]:
+        flat = c["commit"] - cov_c[c["code"]] - sum(o["board"]["today"]["target"] for o in F["new_business"] if o["code"] == c["code"])
+        v = by_c[c["code"]]
+        c.update({"floor": round(v["floor"] + flat, 2), "commit": round(v["target"] + flat, 2), "upside": round(v["upside"] + flat, 2)})
+        for key, kk in (("floor", "floor"), ("commit", "commit"), ("upside", "upside")):
+            c[key + "_growth_pct"] = pc(c[kk], c["rev_2026"])
+    seen = {l["line"] for l in F["by_line"]}
+    for l in F["by_line"]:
+        flat = l["commit"] - cov_l[l["line"]] - sum(o["board"]["today"]["target"] for o in F["new_business"] if o["line"] == l["line"])
+        v = by_l[l["line"]]
+        l.update({"floor": round(v["floor"] + flat, 2), "commit": round(v["target"] + flat, 2), "upside": round(v["upside"] + flat, 2)})
+        for key in ("floor", "commit", "upside"):
+            l[key + "_growth_pct"] = pc(l[key], l["rev_2026"])
+    for ln, v in by_l.items():
+        if ln not in seen and (v["target"] or v["upside"]):
+            F["by_line"].append({"line": ln, "line_label": label.get(ln, ln), "rev_2026": 0.0, "base": 0.0, "stretch": 0.0, "floor": round(v["floor"], 2), "commit": round(v["target"], 2), "upside": round(v["upside"], 2),
+                                 "floor_growth_pct": None, "commit_growth_pct": None, "upside_growth_pct": None})
+    F["largest_reachable_cells"] = sorted({a["cell"] for a in M["actions"]} | set(GAP_CLOSERS))
+    F["plan"] = {"ladder": M["ladder"], "capability": M["capability"], "delivery_ask": M["delivery_ask"], "delivery_summary": M.get("delivery_summary", {}),
+                 "view_conditions": M["view_conditions"], "next_steps": M["next_steps"], "restructuring": M["restructuring"], "focus": M["focus"],
+                 "actions_by_kind": M["actions_by_kind"], "n_actions": len(M["actions"]), "gap_closers": GAP_CLOSERS,
+                 "delivery_cost_budget": M["totals"]["delivery_cost_budget"], "delivery_cost_maximum": M["totals"]["delivery_cost_maximum"]}
+    F["generated"] = datetime.date.today().isoformat(); F["plan_based"] = True
+    os.makedirs(pdir, exist_ok=True)
+    if phase == "numbers":
+        save(os.path.join(pdir, "numbers.json"), F)
+        # a compact brief for the writer: the new numbers by line and country, and the top cells with their actions
+        top = sorted(F["cells"] + F["new_business"], key=lambda o: -(o["board"]["target"] - o["board"]["today"]["target"]))[:30]
+        L = ["# The 2027 plan numbers (for the writer)", "",
+             "| | 2027 | Growth on 2026 (EUR %.2fm) |" % (T["rev_2026"] / 1e6), "|---|---|---|",
+             "| Lowest acceptable (floor) | EUR %.2fm | %+.1f%% |" % (T["floor"] / 1e6, T["floor_growth_pct"]),
+             "| 2027 budget | EUR %.2fm | %+.1f%% |" % (T["commit"] / 1e6, T["commit_growth_pct"]),
+             "| Maximum on the table | EUR %.2fm | %+.1f%% |" % (T["upside"] / 1e6, T["upside_growth_pct"]),
+             "| What the evidence supports today (reference) | EUR %.2fm | %+.1f%% |" % ((T["supported_today"] or 0) / 1e6, T["supported_today_growth_pct"] or 0),
+             "| Reviewed budget before the plan (reference) | EUR %.2fm | %+.1f%% |" % (today_totals["commit"] / 1e6, today_totals["commit_growth_pct"]),
+             "| Profit at held margins: floor / budget / maximum | EUR %.2fm / %.2fm / %.2fm | |" % (T["rp_floor"] / 1e6, T["rp_commit"] / 1e6, T["rp_upside"] / 1e6), "",
+             "New business in the budget: EUR %.2fm. The three facts added to the floor: %s (EUR %.2fm together)." % (T["new_business_commit"] / 1e6, ", ".join("%s +%.2fm" % (k, v / 1e6) for k, v in GAP_CLOSERS.items()), sum(GAP_CLOSERS.values()) / 1e6), "",
+             "## By product line", "", "| Line | 2026 | Floor | Budget | Budget % | Maximum |", "|---|---|---|---|---|---|"]
+        for l in sorted(F["by_line"], key=lambda x: -x["commit"]):
+            L.append("| %s | %.2f | %.2f | %.2f | %s | %.2f |" % (l["line_label"], l["rev_2026"] / 1e6, l["floor"] / 1e6, l["commit"] / 1e6, ("%+.1f%%" % l["commit_growth_pct"]) if l["commit_growth_pct"] is not None else "new", l["upside"] / 1e6))
+        L += ["", "## By market", "", "| Market | 2026 | Floor | Budget | Budget % | Maximum |", "|---|---|---|---|---|---|"]
+        for c in sorted(F["by_country"], key=lambda x: -x["commit"]):
+            L.append("| %s | %.2f | %.2f | %.2f | %+.1f%% | %.2f |" % (c["country"], c["rev_2026"] / 1e6, c["floor"] / 1e6, c["commit"] / 1e6, c["commit_growth_pct"], c["upside"] / 1e6))
+        L += ["", "## The thirty cells that move most (today's budget -> plan budget), with their actions", ""]
+        for o in top:
+            b = o["board"]
+            L.append("### %s x %s: EUR %.2fm today -> floor %.2fm, budget %.2fm, maximum %.2fm" % (o["country"], o["line_label"], b["today"]["target"] / 1e6, b["floor"] / 1e6, b["target"] / 1e6, b["upside"] / 1e6))
+            for a in b["plan_actions"]:
+                L.append("- [%s, by %s, %s, +%.2fm budget] %s%s" % (a["kind"], a["by"], a["owner"], a["eur_budget"] / 1e6, a["what"], (" (" + a["deal_title"] + ")") if a["deal_title"] else ""))
+            if b.get("gap_closer_eur"):
+                L.append("- [fact added to the floor, +%.2fm] one of the three facts that close the gap to a double-digit floor" % (b["gap_closer_eur"] / 1e6))
+            L.append("")
+        with open(os.path.join(pdir, "NUMBERS_BRIEF.md"), "w", encoding="utf-8") as fh:
+            fh.write("\n".join(L))
+        print("plan numbers: floor %s (%+.1f%%), budget %s (%+.1f%%), maximum %s (%+.1f%%); supported today %s; new cells %d" % (
+            m(T["floor"]), T["floor_growth_pct"], m(T["commit"]), T["commit_growth_pct"], m(T["upside"]), T["upside_growth_pct"], m(T["supported_today"] or 0), len(F["new_business"])))
+        return
+    TP = load(os.path.join(pdir, "texts_plan.json"))
+    if not TP:
+        sys.exit("phase texts needs budget/board/plan/texts_plan.json")
+    R = F["report"]
+    for k in ("headline", "executive_summary_md", "conditions", "change_our_mind", "sections", "levers"):
+        if k in TP:
+            R[k] = TP[k]
+    sigidx = load(os.path.join(bdir, "board", "packet", "signals_index.json")) or {}
+    for sec in R.get("sections", []):
+        sec["evidence"] = [k for k in (sec.get("evidence") or []) if k in sigidx]
+    cellmap = {"%s|%s" % (o["code"], o["line"]): o for o in F["cells"] + F["new_business"]}
+    for lv in R.get("levers", []):
+        lv["evidence"] = [k for k in (lv.get("evidence") or []) if k in sigidx]
+        o = cellmap.get(lv.get("cell"))
+        if o:
+            lv.update({"country": o["country"], "line_label": o["line_label"], "target_2026": o["target_2026"], "commit": o["board"]["target"], "upside": o["board"]["upside"],
+                       "commit_growth_pct": o["board"]["growth_pct"], "upside_growth_pct": o["board"]["upside_growth_pct"]})
+    if TP.get("largest_reachable_basis"):
+        F["largest_reachable_basis"] = TP["largest_reachable_basis"]
+    if TP.get("dissent_views"):
+        F["dissent_views"] = TP["dissent_views"]
+    cells_t = {c["cell"]: c for c in TP.get("cells", [])}
+    n = 0
+    for o in F["cells"] + F["new_business"]:
+        t = cells_t.get("%s|%s" % (o["code"], o["line"]))
+        if t and t.get("reason"):
+            o["board"]["reason"] = t["reason"]; o["board"]["proposer_title"] = t.get("set_by", "The plan"); n += 1
+    save(os.path.join(bdir, "budget_2027_board.json"), F)
+    write_decision_md(F, os.path.join(bdir, "BUDGET_2027_PLAN.md"))
+    print("plan board file written: %d cell texts, floor %s, budget %s, maximum %s" % (n, m(T["floor"]), m(T["commit"]), m(T["upside"])))
+
+
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", choices=["packet", "reconcile", "finalize", "publicize"])
+    ap.add_argument("cmd", choices=["packet", "reconcile", "finalize", "publicize", "mandate", "plan"])
+    ap.add_argument("--phase", default="numbers")
     ap.add_argument("--root", required=True)
     a = ap.parse_args()
-    {"packet": cmd_packet, "reconcile": cmd_reconcile, "finalize": cmd_finalize, "publicize": cmd_publicize}[a.cmd](os.path.abspath(a.root))
+    if a.cmd == "plan":
+        cmd_plan(os.path.abspath(a.root), a.phase)
+    else:
+        {"packet": cmd_packet, "reconcile": cmd_reconcile, "finalize": cmd_finalize, "publicize": cmd_publicize, "mandate": cmd_mandate}[a.cmd](os.path.abspath(a.root))

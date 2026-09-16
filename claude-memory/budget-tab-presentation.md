@@ -18,6 +18,8 @@ Fourth round (14/09/2026): the ranked list "The moves, ranked by the money behin
 
 Fifth round (14/09/2026): clicking an estimate card must scroll the reader down to the moves grid (smooth scroll + a short cyan flash on the card), otherwise nobody sees what the click changed.
 
+Sixth round (15/09/2026): the mandate's ladder cards (floor with actions landed / budget with actions landed / maximum) are clickable like the estimate cards and switch the moves grid; per-cell values = board floor/target + the mandate's per-cell action euros (`MdA` in app.js), group totals anchored on the ladder's own euros. Artifact v64.
+
 **Why:** the readers are a mixed management team; a ten-section report with evidence chips reads as noise. The earlier layout (moves grid coloured by action → click → reasons, dated items, signals) was what they liked.
 
 **How to apply:** `renderBudget` in app.js now has three cards: (1) "Budget 2027 in short": four tiles + eight to ten one-idea sentences from `report.executive_summary` (the chair writes it; brief updated), with the full report inside a closed `<details class="bg-fullreport">`; (2) "The moves, market by market": the 2026 action grid (budget_actions.json) showing the board's 2027 number per cell, drill-down = board block + `bgCellBody`; (3) [removed 14/09/2026] the ranked moves list. Do not put the long report back on top. Keep this shape for any future budget content: summary first, moves grid second, everything else folded. See [[plain-english-everywhere]] and [[budget-board-2027]].

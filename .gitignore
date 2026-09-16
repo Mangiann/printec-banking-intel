@@ -28,3 +28,4 @@ budget/
 
 # test-only artifact with the budget in plain text
 weekly-intelligence/scripts/artifact/printec-dashboard.TEST.html
+*.bak-*

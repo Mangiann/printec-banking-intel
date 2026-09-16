@@ -6,7 +6,7 @@ metadata:
 ---
 
 The BANKING dashboard is shared with colleagues as a Claude Artifact at
-**https://claude.ai/code/artifact/f8587bba-8f0d-4417-9a35-57ac4fa67ec3**
+**https://claude.ai/code/artifact/f8587bba-8f0d-4417-9a35-57ac4fa67ec3** (since 16/09/2026 the platform lists it under the short link https://claude.ai/artifact/Xfg3R2ND4oGgLG8fkMdTwY; same artifact, version 66 carries the "Ask the data" chat and declares `capabilities: {sample: {}}` — keep declaring it on every republish, a non-empty capabilities object is a full-set declaration)
 (a second artifact, "Printec Weekly Intelligence", holds the weekly brief).
 
 **Share-pin gotcha (the important part):** the artifact's share link is *pinned to a specific version*. Republishing does NOT update what colleagues see — the owner must open the artifact → Share and move the pinned version to the latest, otherwise viewers keep seeing the old dashboard. Always tell the user this after republishing.

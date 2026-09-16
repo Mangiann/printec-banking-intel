@@ -1110,6 +1110,13 @@ details.ol-market-fold[open]>summary{margin-bottom:10px}
 .bg-grid4{grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
 .bg-flash{animation:bgflash 1.2s ease}
 @keyframes bgflash{0%{box-shadow:0 0 0 3px var(--cyan)}100%{box-shadow:var(--shadow-sm)}}
+.bg-ladder-c{margin:8px 0 0;padding-left:16px;font-size:11.5px;line-height:1.45;position:relative}
+.bg-ladder-c li{margin:2px 0}
+.bg-mandate .bl-grid{margin-bottom:14px}
+.bg-actions{margin-top:8px}
+.bg-short{margin-top:6px}
+.bg-ladderfold{margin:4px 0 16px}
+.bg-help{display:inline-block;width:14px;height:14px;border-radius:50%;border:1px solid var(--ink-3);color:var(--ink-3);font-size:9.5px;line-height:12px;text-align:center;margin-left:3px;cursor:help;text-transform:none;letter-spacing:0}
 .bg-summary{max-width:72ch;margin:4px 0 6px}
 .bg-summary p{margin:0 0 8px;font-size:14px;line-height:1.6}
 .bg-fullreport{margin-top:12px;border-top:1px solid var(--line);padding-top:10px}
