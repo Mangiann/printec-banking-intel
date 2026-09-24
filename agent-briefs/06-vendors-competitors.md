@@ -137,6 +137,16 @@ Don't research the whole watchlist in one context — **fan out**. Each weekly r
 The subagent count tracks the active competitor set — it is not fixed. See the playbook's
 "Scaling the work" section for the general pattern (and why products fan out as analysts, not collectors).
 
+## Triage the cross-agent candidate list every run (added 18/09/2026)
+
+Before the hunt below, run `python3 weekly-intelligence/scripts/competitor_candidates.py --since <last run date>` and read
+`intel-cache/COMPETITOR_CANDIDATES.md`. It lists every vendor-like name that ANY agent (bank disclosures, tenders,
+regulation, jobs, statistics) wrote next to a cue such as competitor, incumbent, integrator, installer, supplier or
+winner, and that no watchlist detect token matches. Decide each one: a real Printec competitor goes onto the roster
+with `scripts/add_competitor.py` (with the finding as its first `latest`); banks, buyers, regulators and partners are
+ignored. Why: on 18/09/2026 Novidea, the installer of Eurobank's 450+ GRGBanking recyclers, had been named twice by
+the bank-disclosures agent and never reached the watchlist, so it never appeared as a competitor on the dashboard.
+
 ## Discover NEW competitors every run (the roster must grow, not just refresh)
 
 The weekly run is BOTH a deep-dive on known names AND an active hunt for NEW competitors. The fan-out

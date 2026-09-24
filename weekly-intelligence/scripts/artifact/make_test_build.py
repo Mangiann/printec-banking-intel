@@ -15,11 +15,13 @@ out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "printec-dashboar
 subprocess.run([sys.executable, os.path.join(HERE, "build_artifact.py"), out], check=True, cwd=HERE)
 h = open(out, encoding="utf-8").read()
 bdir = os.path.join(ROOT, "budget")
-P = json.load(open(os.path.join(bdir, "budget_2027.json"))); P.pop("rows", None)
-payload = {"budget": json.load(open(os.path.join(bdir, "budget_actions.json"))), "budget_2027": P}
-pbd = os.path.join(bdir, "budget_2027_board.json")
-if os.path.exists(pbd):
-    payload["budget_2027_board"] = json.load(open(pbd))
+payload = {}
+pst = os.path.join(bdir, "budget_2027_stretch.json")
+if os.path.exists(pst):
+    payload["budget_2027_stretch"] = json.load(open(pst))
+pcat = os.path.join(bdir, "budget_2027_categories.json")
+if os.path.exists(pcat):
+    payload["budget_2027_categories"] = json.load(open(pcat))
 old = "const P=await budgetDecrypt(inp.value);"; assert h.count(old) == 1
 h = h.replace(old, "const P=window.__DASH_BUDGET_PLAIN__||await budgetDecrypt(inp.value);")
 h = h.replace("<script>\nwindow.__DASH_BUDGET_ENC__", "<script>window.__DASH_BUDGET_PLAIN__=" + json.dumps(payload, ensure_ascii=False) + ";</script>\n<script>\nwindow.__DASH_BUDGET_ENC__", 1)

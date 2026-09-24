@@ -58,17 +58,56 @@ def collect_docs(dash):
 # encrypted with AES-256-GCM under a key derived from the password in budget/budget.password
 # (PBKDF2-HMAC-SHA256, 200,000 rounds). The page holds only the ciphertext; the Admin link in the
 # sidebar asks for the password and decrypts in the browser (WebCrypto). No file, no budget block.
+def strip_stretch(cat):
+    """The category file carries a 'stretch' scenario; the plain copy must not (the stretch is behind the password)."""
+    c = json.loads(json.dumps(cat))
+    c["scenarios"] = [x for x in c.get("scenarios", []) if x != "stretch"]
+    for k in ("stretch", "rp_stretch", "total_stretch"):
+        c.get("group", {}).pop(k, None)
+    for k in ("waterfall", "by_source"):
+        (c.get("group", {}).get(k) or {}).pop("stretch", None) if k == "waterfall" else (c.get(k) or {}).pop("stretch", None)
+    for C in c.get("countries", []):
+        for k in ("stretch", "rp_stretch", "total_stretch"):
+            C.pop(k, None)
+        (C.get("waterfall") or {}).pop("stretch", None)
+        for x in C.get("subs", []):
+            x.pop("stretch", None)
+        for cell in C.get("cells", []):
+            (cell.get("scen") or {}).pop("stretch", None)
+    for cell in c.get("cells", []):
+        (cell.get("scen") or {}).pop("stretch", None)
+    (c.get("checks") or {}).pop("stretch", None)
+    c.pop("_stretch", None)
+    return c
+
 def budget_block():
+    """Since 24/09/2026 the base budget (EUR 180.0m) is embedded in PLAIN text and visible to every viewer
+    (window.__DASH_BUDGET__); only the stretched budget (EUR 200.0m) and the category file's stretch scenario
+    are encrypted behind the admin password (window.__DASH_BUDGET_ENC__, PBKDF2-HMAC-SHA256 200,000 rounds +
+    AES-256-GCM, decrypted in the browser with WebCrypto)."""
     bdir = os.path.join(ROOT, "budget")
     p26, p27 = os.path.join(bdir, "budget_actions.json"), os.path.join(bdir, "budget_2027.json")
     if not os.path.exists(p26):
-        return "", "no budget data (budget/budget_actions.json missing)"
-    payload = {"budget": json.loads(rd(p26))}
+        return "", "", "no budget data (budget/budget_actions.json missing)"
+    plain = {"budget": json.loads(rd(p26))}
     if os.path.exists(p27):
-        p = json.loads(rd(p27)); p.pop("rows", None); payload["budget_2027"] = p
-    pbd = os.path.join(bdir, "budget_2027_board.json")     # the board's decision (board_2027.py finalize)
+        p = json.loads(rd(p27)); p.pop("rows", None); plain["budget_2027"] = p
+    pbd = os.path.join(bdir, "budget_2027_board.json")     # the plan (board_2027.py target)
     if os.path.exists(pbd):
-        payload["budget_2027_board"] = json.loads(rd(pbd))
+        plain["budget_2027_board"] = json.loads(rd(pbd))
+    pcat = os.path.join(bdir, "budget_2027_categories.json")   # the plan in the Excel's HW/SW/SV/OUT categories
+    cat_full = json.loads(rd(pcat)) if os.path.exists(pcat) else None
+    if cat_full:
+        plain["budget_2027_categories"] = strip_stretch(cat_full)
+    secret = {}
+    pst = os.path.join(bdir, "budget_2027_stretch.json")   # the stretch to EUR 200.0m (board_2027.py stretch)
+    if os.path.exists(pst):
+        secret["budget_2027_stretch"] = json.loads(rd(pst))
+        if cat_full:
+            secret["budget_2027_categories"] = cat_full
+    plain_js = "window.__DASH_BUDGET__ = " + json.dumps(plain, ensure_ascii=False) + ";"
+    if not secret:
+        return plain_js, "", "base budget in plain text; no stretch to encrypt"
     pw_path = os.path.join(bdir, "budget.password")
     if os.path.exists(pw_path):
         password = rd(pw_path).strip()
@@ -83,10 +122,10 @@ def budget_block():
     from cryptography.hazmat.primitives.ciphers.aead import AESGCM
     salt, iv, iters = os.urandom(16), os.urandom(12), 200_000
     key = PBKDF2HMAC(algorithm=hashes.SHA256(), length=32, salt=salt, iterations=iters).derive(password.encode("utf-8"))
-    ct = AESGCM(key).encrypt(iv, json.dumps(payload, ensure_ascii=False).encode("utf-8"), None)
+    ct = AESGCM(key).encrypt(iv, json.dumps(secret, ensure_ascii=False).encode("utf-8"), None)
     blob = {"v": 1, "kdf": "PBKDF2-SHA256", "iter": iters, "salt": base64.b64encode(salt).decode(),
             "iv": base64.b64encode(iv).decode(), "ct": base64.b64encode(ct).decode()}
-    return "window.__DASH_BUDGET_ENC__ = " + json.dumps(blob) + ";", "encrypted into the file; password in %s" % os.path.relpath(pw_path, ROOT)
+    return plain_js, "window.__DASH_BUDGET_ENC__ = " + json.dumps(blob) + ";", "base budget in plain text; stretch encrypted (password in %s)" % os.path.relpath(pw_path, ROOT)
 
 def main():
     data = rd(os.path.join(WEB, "data.json")).strip()
@@ -120,7 +159,9 @@ def main():
         "<script>", "window.__DASH_DATA__ = " + data + ";", "</script>",
         "<script>", "window.__DASH_DOCS__ = " + json.dumps(docs, ensure_ascii=False) + ";", "</script>",
     ]
-    enc_js, budget_note = budget_block()
+    plain_js, enc_js, budget_note = budget_block()
+    if plain_js:
+        parts += ["<script>", plain_js, "</script>"]
     if enc_js:
         parts += ["<script>", enc_js, "</script>"]
     for js in ("atm-sources.js", "product-outlooks.js", "footprint-map.js"):

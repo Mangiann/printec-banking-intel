@@ -1044,7 +1044,7 @@ details.ol-market-fold[open]>summary{margin-bottom:10px}
 .bgtable th{font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-3);text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);white-space:normal;max-width:120px;vertical-align:bottom}
 .bgtable td{padding:6px 8px;border-bottom:1px solid var(--line-2);vertical-align:top}
 .bgtable .bg-cell{font-weight:700;cursor:pointer;border-radius:6px;min-width:74px}
-.bgtable .bg-cell:hover{outline:2px solid var(--ink-3)}
+.bgtable .bg-cell:hover,.bgtable .bg-cell:focus-visible{outline:none;filter:brightness(.92);box-shadow:inset 0 0 0 2px rgba(0,0,0,.12)}
 .bgtable .bg-cell.bg-none{background:transparent;cursor:default}
 .bgtable .bg-cell.bg-none:hover{outline:0}
 .bgtable .bg-act{font-size:10px;font-weight:600;opacity:.8}
@@ -1093,10 +1093,12 @@ details.ol-market-fold[open]>summary{margin-bottom:10px}
 .bg-onepager{max-width:80ch;margin-top:2px}
 .bg-onepager .md-p{color:var(--ink)}
 .bg-est{position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:16px}
-.bg-estcard{cursor:pointer;transition:transform .12s,box-shadow .12s;outline:2px solid transparent;outline-offset:2px}
-.bg-estcard:hover{transform:translateY(-1px)}
-.bg-estcard.on{outline-color:var(--ink);box-shadow:var(--shadow)}
-.bg-estcard:focus-visible{outline-color:var(--cyan)}
+/* selectable blocks: no frame; they change colour on hover and when selected, like the chips elsewhere (18/09/2026) */
+.bg-estcard{cursor:pointer;transition:transform .12s,box-shadow .12s,background .15s,filter .15s;outline:none;filter:saturate(.7);opacity:.88}
+.bg-estcard:hover,.bg-estcard:focus-visible{transform:translateY(-1px);filter:saturate(1);opacity:1;box-shadow:var(--shadow)}
+.bg-estcard.on{filter:saturate(1);opacity:1;box-shadow:var(--shadow)}
+.bg-estcard.on.k-blue{background:var(--blue)} .bg-estcard.on.k-green{background:var(--green)} .bg-estcard.on.k-yellow{background:var(--yellow)} .bg-estcard.on.k-lilac{background:var(--lilac)} .bg-estcard.on.k-cyan{background:var(--cyan)}
+.bg-estcard.on .blob{background:rgba(255,255,255,.55)}
 .bg-estnum{position:relative;font-size:26px;font-weight:800;letter-spacing:-.8px;line-height:1.05;margin:2px 0 6px}
 .bg-estshown{position:relative;display:none;font-size:10px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;margin-top:8px;opacity:.85}
 .bg-estcard.on .bg-estshown{display:block}
@@ -1109,7 +1111,7 @@ details.ol-market-fold[open]>summary{margin-bottom:10px}
 .bg-full .bl-panel-body .bl-sec{margin:18px 0 22px}
 .bg-grid4{grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
 .bg-flash{animation:bgflash 1.2s ease}
-@keyframes bgflash{0%{box-shadow:0 0 0 3px var(--cyan)}100%{box-shadow:var(--shadow-sm)}}
+@keyframes bgflash{0%{background-color:var(--cyan-soft)}100%{background-color:transparent}}
 .bg-ladder-c{margin:8px 0 0;padding-left:16px;font-size:11.5px;line-height:1.45;position:relative}
 .bg-ladder-c li{margin:2px 0}
 .bg-mandate .bl-grid{margin-bottom:14px}
@@ -1146,3 +1148,110 @@ details.ol-market-fold[open]>summary{margin-bottom:10px}
 .admin-box input{width:100%;box-sizing:border-box;margin-top:3px;padding:5px 7px;border:1px solid var(--line);border-radius:6px;font:inherit;font-size:12px}
 .admin-row{display:flex;align-items:center;gap:8px}
 .admin-go{padding:4px 10px;border:1px solid var(--line);border-radius:var(--pill);background:var(--card-2);font:inherit;font-size:11.5px;font-weight:700;cursor:pointer}
+
+/* ---- Budget tab: the budget by category (hardware / software / services / outsourcing), 17/09/2026 ---- */
+.bgc .bgc-tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:12px 0 14px}
+.bgc .bgc-tile .bg-estnum{font-size:22px}
+.bgc-code{font-size:10px;font-weight:700;letter-spacing:.06em;opacity:.7;margin-left:4px}
+.bgc-charts{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:12px;margin:6px 0 14px}
+.bgc-chart{border:1px solid var(--line);border-radius:var(--r-sm);background:var(--card-2);padding:10px 12px 8px;min-width:0}
+.bgc-chart.bgc-wide{grid-column:1/-1}
+.bgc-ct{font-size:12px;font-weight:700;color:var(--ink-2);margin-bottom:4px}
+.bgc-cv{position:relative;height:250px;width:100%}
+.bgc-cv.bgc-tall{height:340px}
+.bgc-cv.bgc-big{height:420px}
+@media (max-width:640px){ .bgc-cv.bgc-big{height:300px} }
+.bgc-country{margin-top:6px;padding-top:12px;border-top:1px solid var(--line)}
+.bgc-pick{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+.bgc-pick label{font-size:11px;text-transform:uppercase;letter-spacing:.07em;font-weight:700;color:var(--ink-3)}
+.bgc-pick select{font:inherit;font-size:13px;padding:6px 10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink)}
+.bgc-ctot{font-size:12.5px;color:var(--ink-2)}
+.bgc-table td,.bgc-table th{white-space:nowrap}
+.bgc-table tr.bgc-sub td{font-size:12px;color:var(--ink-2);padding-top:3px;padding-bottom:3px}
+.bgc-table tr.bgc-sub td:first-child{padding-left:22px}
+.bgc-lines{display:block;font-size:10.5px;color:var(--ink-3);white-space:normal;max-width:360px}
+.bgc-text{margin-top:12px}
+.bgc-text .k{font-size:10px;text-transform:uppercase;letter-spacing:.07em;font-weight:700;color:var(--ink-3);margin-bottom:6px}
+.bgc-p{position:relative;padding-left:16px;font-size:13px;line-height:1.6;margin:0 0 8px}
+.bgc-dot{position:absolute;left:0;top:8px;width:8px;height:8px;border-radius:50%}
+.bgc-rules{margin-top:10px}
+.bgc-ol{margin:6px 0 8px 18px;padding:0;font-size:12.5px;line-height:1.55}
+.bgc-ol li{margin-bottom:4px}
+@media (max-width:640px){ .bgc-cv{height:210px} }
+
+/* ---- Budget tab: the four drivers of the growth, opening of the executive report (17/09/2026) ---- */
+.bgd-eq{display:flex;flex-wrap:wrap;align-items:flex-end;gap:6px 10px;margin:14px 0 10px}
+.bgd-n{display:flex;flex-direction:column;font-size:20px;font-weight:800;line-height:1.1;color:var(--ink);border-bottom:3px solid var(--c,var(--ink-3));padding-bottom:4px}
+.bgd-n small{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-3);margin-top:3px}
+.bgd-n.bgd-tot{font-size:24px;border-bottom-color:var(--ink)}
+.bgd-op{font-size:18px;font-weight:700;color:var(--ink-3);padding-bottom:18px}
+.bgd-bar{display:flex;height:12px;border-radius:8px;overflow:hidden;margin:4px 0 16px;background:var(--line)}
+.bgd-bar span{display:block;height:100%}
+.bgd-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin-bottom:10px}
+.bgd-tile .bg-estnum{font-size:24px;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.bgd-pct{font-size:11.5px;font-weight:700;opacity:.75}
+.bgd-what{position:relative;font-size:13.5px;line-height:1.5;font-weight:600;margin:8px 0 6px}
+.bgd-proof{position:relative;font-size:12.6px;line-height:1.55;opacity:.92}
+.bgd-in{position:relative;list-style:none;margin:8px 0 2px;padding:6px 0 0;border-top:1px solid rgba(0,0,0,.12);font-size:12.2px}
+.bgd-in li{display:flex;justify-content:space-between;gap:10px;padding:2px 0}
+.bgd-in li b{white-space:nowrap}
+.bgd-tile .ol-builton{position:relative;margin-top:8px}
+
+/* the four drivers made prominent + the lever waterfall and the "how" table (17/09/2026) */
+.bgd{box-shadow:var(--shadow)}
+.bgd .bl-shead h2{font-size:21px}
+.bgd-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:760px){ .bgd-grid{grid-template-columns:1fr} }
+.bgd-tile{padding:20px 22px 20px;border-left:6px solid rgba(0,0,0,.18)}
+.bgd-tile .bl-kpi-t{font-size:17px}
+.bgd-tile .bg-estnum{font-size:34px}
+.bgd-num{position:relative;display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:rgba(0,0,0,.78);color:#fff;font-size:13px;font-weight:800;flex:none}
+.bgd-strip{position:relative;margin-top:14px;padding-top:12px;border-top:1px solid rgba(0,0,0,.12)}
+.bgd-strip-k{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.07em;opacity:.8;margin-bottom:8px}
+.bgd-strip-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:8px}
+.bgd-chip{all:unset;box-sizing:border-box;cursor:pointer;display:grid;grid-template-columns:auto 1fr;grid-template-rows:auto auto;column-gap:8px;align-items:center;background:var(--card);border-radius:12px;padding:9px 12px;border-left:6px solid var(--c);box-shadow:var(--shadow-sm)}
+.bgd-chip{transition:background .15s,transform .12s}
+.bgd-chip:hover,.bgd-chip:focus-visible{outline:none;background:color-mix(in srgb,var(--c) 28%,var(--card));transform:translateY(-1px)}
+.bgd-chip:active{background:color-mix(in srgb,var(--c) 45%,var(--card))}
+.bgd-chip-n{grid-row:1/3;display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:var(--ink);color:#fff;font-size:12px;font-weight:800}
+.bgd-chip-t{font-size:12px;font-weight:700;color:var(--ink-2)}
+.bgd-chip b{font-size:18px;font-weight:800;color:var(--ink);grid-column:2}
+.bgd-chip small{display:none}
+.bgd-lev{margin-top:18px;padding-top:16px;border-top:1px solid var(--line)}
+.bgd-h3{font-size:16px;font-weight:800;margin:6px 0 2px}
+.bgd-legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px;color:var(--ink-2);margin:8px 0 4px}
+.bgd-legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+.bgd-cv{position:relative;width:100%;margin:4px 0 18px}
+.bgd-dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:7px}
+.bgd-table td{vertical-align:top}
+.bgd-table td.bgd-how{min-width:240px;white-space:normal;font-size:12.6px;line-height:1.5}
+
+.bgd-sigk{position:relative;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;opacity:.8;margin-top:10px}
+.bgd-tile .ol-builton .ol-evk{display:none}
+.bgd-fold{position:relative;margin-top:8px;font-size:12.5px}
+.bgd-fold summary{cursor:pointer;font-weight:700;color:var(--ink);padding:6px 0}
+.bgd-siglist{display:flex;flex-direction:column;gap:4px;max-height:360px;overflow:auto;padding:4px 2px 4px 0}
+.bgd-sigrow{display:grid;grid-template-columns:auto 1fr auto auto;gap:8px;align-items:center;padding:3px 0;border-bottom:1px solid rgba(0,0,0,.08)}
+.bgd-rank{font-size:11px;font-weight:800;color:var(--ink-3);min-width:18px;text-align:right}
+.bgd-sigrow.bgd-top{background:rgba(255,255,255,.45);border-radius:6px;padding:4px 6px}
+.bgd-sigrow.bgd-top .bgd-rank{color:var(--ink)}
+.bgd-sigrow b{white-space:nowrap}
+.bgd-siglist .ol-sigdetail{grid-column:1/-1}
+
+.bgd-lines li span{line-height:1.35}
+.bgd-lines li .small{font-size:11px}
+
+.bgd-sigrow.bgd-noeur{grid-template-columns:auto 1fr auto}
+
+/* the stretch to EUR 200.0m (22/09/2026) */
+.bgs{box-shadow:var(--shadow)}
+.bgs .bl-shead h2{font-size:20px}
+.bgs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;margin:8px 0 10px}
+.bgs-tile{border-left:6px solid var(--c,var(--lilac))}
+.bgs-tile .bg-estnum{font-size:26px}
+.bgs-warn{margin:6px 0 10px;padding:8px 12px;border-radius:10px;background:var(--yellow-soft);color:var(--yellow-ink);font-size:12.5px;font-weight:700}
+.bgs-prose{margin:6px 0 10px}
+.bgs-lines{max-width:640px;font-size:12.6px;margin-bottom:12px}
+.bg-estcard.on.k-lilac{background:var(--lilac)}
+
+.bgd-names li{padding:3px 0}

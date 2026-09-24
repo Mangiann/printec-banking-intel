@@ -77,7 +77,8 @@ const TABS = [
   {id:'accounts',   label:'Accounts & timing',  group:'data',         icon:ICON.accounts,   title:'Account targets and deadlines',             sub:'Named banks to approach, with the reason to act now, plus the regulatory deadlines that force banks to spend (the buying window).'},
   {id:'signals',    label:'All signals',        group:'data',         icon:ICON.signals,    title:'All signals',             sub:'Every signal in this week\u2019s table: opportunities, positions already held, deals a competitor won, and the market drivers behind them. Filter by market, product, lane or confidence.'},
   // BUDGET — the group budget beside the market, a stand-alone tab at the end (11/09/2026)
-  {id:'budget',     label:'Budget 2027',        group:'budget',       icon:ICON.overview,   title:'Budget 2027',   sub:'The 2027 budget: the executive summary, then the moves market by market. Click an estimate to show it in the table; click a cell or open a line for the details.'},
+  {id:'budget',     label:'Budget 2027',        group:'budget',              icon:ICON.overview,   title:'Budget 2027',   sub:'The 2027 budget: the executive summary, the four drivers of the growth, then the budget by category and the moves market by market. Click an estimate to show it in the table; click a cell or open a line for the details.'},
+  {id:'budget_stretch', label:'Stretched budget',  group:'budget', nested:true, icon:ICON.futures,   title:'Budget 2027: the stretched budget',   sub:'The base budget taken to EUR 200.0m from new business and the payments industry only. No named deal of the plan is changed. The five layers, what the new business is, what must be true, then the budget by category and the moves market by market on the stretch.'},
 ];
 const TAB_GROUPS = [
   {id:'near',   label:'Near-term perspectives'},
@@ -1299,7 +1300,7 @@ function shortCell(t){
    the action each cell was given and the reasons the script recorded. Nothing is computed here. */
 const BG_ACT={win:'Win',find:'Find',defend:'Defend','protect margin':'Protect margin','market risk':'Market risk',stretch:'Stretch',watch:'Watch'};
 const bgCls=a=>'bg-'+String(a||'watch').replace(/\s+/g,'-');
-const bgM=v=>'\u20ac'+(Number(v||0)/1e6).toFixed(1)+'m';
+const bgM=v=>{ const x=Number(v||0)/1e6; if(x===0) return '\u20ac0.0m'; const a=Math.abs(x); const d=a>=0.05?1:a>=0.005?2:3; return '\u20ac'+x.toFixed(d)+'m'; };
 function bgPill(a){ return `<span class="bg-pill ${bgCls(a)}">${esc(BG_ACT[a]||a)}</span>`; }
 function bgCellBody(x, sigByKey){
   const w=el("div","bg-body");
@@ -1339,15 +1340,16 @@ function budgetUnlockDialog(nav, adm){
   adm.insertAdjacentElement('afterend',box);
   const inp=box.querySelector('input'), msg=box.querySelector('.admin-msg');
   const go=async()=>{ msg.textContent='Checking\u2026';
-    try{ const P=await budgetDecrypt(inp.value); DASH.budget=P.budget; if(P.budget_2027) DASH.budget_2027=P.budget_2027; if(P.budget_2027_board) DASH.budget_2027_board=P.budget_2027_board;
-         window.__DASH_BUDGET_UNLOCKED__=true; box.remove(); adm.remove(); buildShell(); show('budget'); }
+    try{ const P=await budgetDecrypt(inp.value); if(P.budget) DASH.budget=P.budget; if(P.budget_2027) DASH.budget_2027=P.budget_2027; if(P.budget_2027_board) DASH.budget_2027_board=P.budget_2027_board; if(P.budget_2027_categories) DASH.budget_2027_categories=P.budget_2027_categories; if(P.budget_2027_stretch) DASH.budget_2027_stretch=P.budget_2027_stretch;
+         window.__DASH_BUDGET_UNLOCKED__=true; box.remove(); adm.remove(); buildShell(); show(P.budget_2027_stretch?'budget_stretch':'budget'); }
     catch(e){ msg.textContent='Wrong password.'; inp.select(); } };
   box.querySelector('.admin-go').addEventListener('click',go);
   inp.addEventListener('keydown',e=>{ if(e.key==='Enter'){ e.preventDefault(); go(); } });
   inp.focus();
 }
-function renderBudget(s){
-  s.innerHTML="";
+function fmtDate(d){ const mm=String(d||'').match(/^(\d{4})-(\d{2})-(\d{2})$/); if(!mm) return String(d||''); const MO=['January','February','March','April','May','June','July','August','September','October','November','December']; return `${parseInt(mm[3])} ${MO[parseInt(mm[2])-1]} ${mm[1]}`; }
+function renderBudget(s,mode){
+  s.innerHTML=""; const isStretch=(mode==='stretch')&&!!(DASH.budget_2027_stretch&&DASH.budget_2027_stretch.layers);
   const B=DASH.budget;
   if(!B||!B.cells||!B.cells.length){ s.appendChild(el("div","card","<div class='empty'>No budget file in this build. Put <code>budget/budget_clean.xlsx</code> in the project folder and rebuild.</div>")); return; }
   const sigByKey={}; (DASH.signals||[]).forEach(x=>sigByKey[x.key]=x);
@@ -1376,13 +1378,14 @@ function renderBudget(s){
   const splitLead=md=>String(md||'').split(/\n\s*\n/).map(x=>x.trim()).filter(Boolean).map(par=>{ const m=par.match(/^\*\*(.+?)\*\*\.?\s*([\s\S]*)$/); return m?{lead:m[1].replace(/\.$/,''),text:m[2]}:{lead:'',text:par}; });
 
   // ---- scenario shown in the moves grid; the estimate cards switch it ----
-  const SCEN={y2026:{label:'2026 budget'},floor:{label:'Lowest acceptable'},budget:{label:'2027 budget'},upside:{label:'Maximum on the table'},today:{label:'Reviewed budget before the plan'}};
-  const isPlan=hasBoard&&!!Bd.plan_based;
-  let scen=hasBoard?'budget':'y2026';
+  const SCEN={y2026:{label:'2026 budget'},floor:{label:'Lowest acceptable'},budget:{label:'2027 budget'},upside:{label:'Maximum on the table'},today:{label:'Reviewed budget before the plan'},stretch:{label:'Stretch to €200m'}}; if(hasBoard&&Bd.single_number) SCEN.budget.label='2027 base budget'; SCEN.stretch.label='Stretched budget';
+  const ST=DASH.budget_2027_stretch; const hasStretch=!!(ST&&ST.layers&&ST.layers.length); const stK={}; if(hasStretch){ (ST.cells||[]).forEach(x=>stK[x.code+'|'+x.line]=x); }
+  const isPlan=hasBoard&&!!Bd.plan_based; const single=hasBoard&&!!Bd.single_number; const onlyT=hasBoard&&!!Bd.only_target;
+  let scen=hasBoard?(isStretch?'stretch':'budget'):'y2026';
   const cellVal=(k,sc)=>{ const c=B.cells.find(x=>x.code+'|'+x.line===k); const b=bdK[k]; if(!c) return null;
     if(sc==='y2026'||!b) return {v:c.target,g:null};
     const x=b.board;
-    const v=sc==='floor'?x.floor:sc==='upside'?x.upside:sc==='today'?((x.today&&x.today.target!=null)?x.today.target:x.target):x.target; return {v,g:c.target?(v/c.target-1)*100:null}; };
+    const v=sc==='floor'?x.floor:sc==='upside'?x.upside:sc==='today'?((x.today&&x.today.target!=null)?x.today.target:x.target):sc==='stretch'?((stK[k]&&stK[k].stretch!=null)?stK[k].stretch:x.target):x.target; return {v,g:c.target?(v/c.target-1)*100:null}; };
 
   // 1. executive summary, in the Future outlook's form: cyan hero with the number, four estimate cards
   //    (clickable: they switch the moves grid), then the summary's paragraphs as full-width sections
@@ -1391,39 +1394,225 @@ function renderBudget(s){
     const paras=splitLead(R.executive_summary_md||'');
     const thesis=paras.length&&!paras[0].lead?paras.shift().text:'';
     const hero=el("div","bl-hero");
-    hero.innerHTML=`<span class="bl-blob"></span><span class="bl-kicker">Budget 2027</span><h2 class="bl-htitle">Executive summary</h2>${thesis?`<div class="bl-thesis">${mdToHtml(thesis)}</div>`:''}
+    const stThesis=isStretch?String((ST.texts||{}).summary_md||'').split(/\n\s*\n/)[0].replace(/\*\*/g,''):'';
+    hero.innerHTML=`<span class="bl-blob"></span><span class="bl-kicker">${isStretch?'Budget 2027 · stretched':'Budget 2027'}</span><h2 class="bl-htitle">${isStretch?'The stretched budget':'Executive summary'}</h2>${isStretch?(stThesis?`<div class="bl-thesis">${esc(stThesis)}</div>`:''):(thesis?`<div class="bl-thesis">${mdToHtml(thesis)}</div>`:'')}
       <div class="bg-est">
-        ${[['y2026','k-blue','2026 budget',bgM(Tb.rev_2026),'profit '+bgM(Tb.rp_2026)],
+        ${(single?(isStretch?[['budget','k-green','2027 base budget',bgM(Tb.commit),pc(Tb.commit_growth_pct)+' on 2026 · profit '+bgM(Tb.rp_commit)],
+           ['stretch','k-lilac','Stretched budget',bgM(ST.total),pc(ST.growth_pct)+' on 2026 · +'+bgM(ST.total-ST.start)+' from new business and the payments industry · no named deal changed']]
+          :[['y2026','k-blue','2026 budget',bgM(Tb.rev_2026),'profit '+bgM(Tb.rp_2026)],
+           ['budget','k-green','2027 base budget',bgM(Tb.commit),pc(Tb.commit_growth_pct)+' on 2026 · profit '+bgM(Tb.rp_commit)]])
+          :[['y2026','k-blue','2026 budget',bgM(Tb.rev_2026),'profit '+bgM(Tb.rp_2026)],
            ['floor','k-yellow','Lowest acceptable',bgM(Tb.floor),pc(Tb.floor_growth_pct)+' on 2026 · profit '+bgM(Tb.rp_floor)],
            ['budget','k-green','2027 budget',bgM(Tb.commit),pc(Tb.commit_growth_pct)+' · profit '+bgM(Tb.rp_commit)],
            isPlan?['upside','k-lilac','Maximum on the table',bgM(Tb.upside),pc(Tb.upside_growth_pct)+' · every deal won, every capability built']
-                 :['reach','k-lilac','Most the evidence supports',bgM(Tb.reachable!=null?Tb.reachable:Tb.upside),pc(Tb.reachable_growth_pct!=null?Tb.reachable_growth_pct:Tb.upside_growth_pct)+' · if the dated deals are won']]
+                 :['reach','k-lilac','Most the evidence supports',bgM(Tb.reachable!=null?Tb.reachable:Tb.upside),pc(Tb.reachable_growth_pct!=null?Tb.reachable_growth_pct:Tb.upside_growth_pct)+' · if the dated deals are won']])
           .map(([id,tone,lab,big,sub])=>`<div class="bl-kpi ${tone} bg-estcard${scen===id?' on':''}" data-scen="${id}" role="button" tabindex="0" title="Show this estimate in the table below"><span class="blob"></span><div class="bl-kpi-h"><div class="bl-kpi-t">${esc(lab)}</div></div><div class="bg-estnum">${big}</div><div class="bl-kpi-d">${esc(sub)}</div><div class="bg-estshown">shown in the table</div></div>`).join('')}
       </div>
       ${isPlan&&Tb.supported_today?`<div class="bg-esthint bg-today"><span class="bg-estcard bg-todaylink" data-scen="today" role="button" tabindex="0" title="Show what the evidence supports today, cell by cell">What the evidence supports today, before the plan\u2019s actions: <b>${bgM(Tb.supported_today)} (${pc(Tb.supported_today_growth_pct)})</b>; the reviewed budget before the plan was ${bgM((Tb.today||{}).commit||0)} (${pc(((Tb.today||{}).commit_growth_pct)||0)}). Click to show that budget in the table.</span></div>`:''}
       <div class="bg-esthint">Click an estimate to show it in the table of moves below.</div>`;
     s.appendChild(hero);
+    // the four drivers of the growth, for the opening of the executive report (17/09/2026): amount, share,
+    // one sentence on what it is, one on what proves it, what is inside, the signals behind it
+    const DR=Bd.drivers;
+    if(!isStretch&&DR&&DR.items&&DR.items.length){
+      const KC={named_deals:'k-cyan',market_outlook:'k-yellow',recurring:'k-green',new_business:'k-lilac'};
+      const cssv=(n,fb)=>{ try{ const v=getComputedStyle(document.documentElement).getPropertyValue(n).trim(); return v||fb; }catch(e){ return fb; } };
+      const HEX={named_deals:cssv('--cyan','#35B6D6'),market_outlook:cssv('--yellow','#E0B93B'),recurring:cssv('--green','#5BB58A'),new_business:cssv('--lilac','#9B85D9')};
+      const TITLE={}; DR.items.forEach(d=>TITLE[d.key]=d.title);
+      // a strip of the four drivers inside the top panel: the first thing an executive reads after the number
+      const strip=el("div","bgd-strip");
+      strip.innerHTML=`<div class="bgd-strip-k">The four drivers of the growth of ${bgM(DR.growth)}</div><div class="bgd-strip-row">${DR.items.map((d,n)=>`<button type="button" class="bgd-chip" style="--c:${HEX[d.key]}" data-go="bgd-${esc(d.key)}"><span class="bgd-chip-n">${n+1}</span><span class="bgd-chip-t">${esc(d.title)}</span><b>${bgM(d.eur)}</b><small>${d.share_pct.toFixed(0)}%</small></button>`).join('')}</div>`;
+      hero.appendChild(strip);
+      const dc=el("div","card bgd");
+      dc.innerHTML=`${shead('lilac',GL.bolt,'The four drivers: where the growth of '+bgM(DR.growth)+' comes from','Four drivers take the 2026 budget of '+bgM(DR.from)+' to '+bgM(DR.to)+'. Each euro is counted once.')}
+        <div class="bgd-eq"><span class="bgd-n">${bgM(DR.from)}<small>2026</small></span>${DR.items.map(d=>`<span class="bgd-op">+</span><span class="bgd-n" style="--c:${HEX[d.key]}">${bgM(d.eur)}<small>${esc(d.title)}</small></span>`).join('')}<span class="bgd-op">=</span><span class="bgd-n bgd-tot">${bgM(DR.to)}<small>2027 budget</small></span></div>
+        <div class="bgd-bar" role="img" aria-label="Share of the growth by driver">${DR.items.map(d=>`<span style="width:${Math.max(2,d.share_pct)}%;background:${HEX[d.key]}" title="${esc(d.title)}: ${bgM(d.eur)} (${d.share_pct}%)"></span>`).join('')}</div>
+        <div class="bgd-grid">${DR.items.map((d,n)=>`<div class="bl-kpi ${KC[d.key]||'k-blue'} bgd-tile" id="bgd-${esc(d.key)}"><span class="blob"></span>
+            <div class="bl-kpi-h"><span class="bgd-num">${n+1}</span><div class="bl-kpi-t">${esc(d.title)}</div></div>
+            <div class="bg-estnum">${bgM(d.eur)} <span class="bgd-pct">${d.share_pct.toFixed(0)}% of the growth${d.show_rate&&d.rate_pct!=null?` · +${d.rate_pct.toFixed(1)}% of ${esc(d.rate_of)}`:''}</span></div>
+            <div class="bgd-what">${esc(d.what)}</div>
+            <div class="bgd-proof"><b>What proves it.</b> ${esc(d.proof)}</div>
+            ${(d.inside||[]).length>1?`<ul class="bgd-in">${d.inside.map(x=>`<li><span>${esc(x[0])}</span><b>${bgM(x[1])}</b></li>`).join('')}</ul>`:''}
+            ${(d.lines||[]).length?`<details class="bgd-fold"><summary>What the new business is</summary><ul class="bgd-in bgd-lines bgd-names">${d.lines.map(r=>`<li><span>${esc(r.line)}</span></li>`).join('')}</ul></details>`:''}
+            ${(d.signals||[]).length?`<details class="bgd-fold"><summary>Top signals: the ${d.signals.length} signals behind this driver, largest first${d.show_rate?'':`, ${bgM(d.signals_total)} of the ${bgM(d.eur)}${d.signals_total<d.eur-5e4&&d.rest_note?`; ${esc(d.rest_note)}`:''}`}</summary>
+              <div class="ol-builton bgd-siglist">${d.signals.map((x,i)=>sigByKey[x.key]?`<div class="bgd-sigrow${i<5?' bgd-top':''}${d.show_rate?' bgd-noeur':''}"><span class="bgd-rank">${i+1}</span><span class="srcfile ol-sig" data-sigkey="${esc(x.key)}" role="button" tabindex="0" title="Show this signal &amp; its sources">${esc(sigByKey[x.key].bank_theme)}</span>${d.show_rate?'':`<b>${bgM(x.eur)}</b>`}<span class="small muted">${x.n} action${x.n===1?'':'s'}</span></div>`:'').join('')}<div class="ol-sigdetail" hidden></div></div></details>`:''}
+            ${(d.readings||[]).length?`<details class="bgd-fold"><summary>Top market readings: the ${d.readings.length} readings behind it, largest first</summary>
+              <div class="bgd-siglist">${d.readings.map((r,i)=>`<div class="bgd-sigrow${i<5?' bgd-top':''} bgd-noeur"><span class="bgd-rank">${i+1}</span><span>${esc(r.country)} × ${esc(r.line)}<div class="small muted">${esc(r.note)}</div></span></div>`).join('')}</div></details>`:''}
+          </div>`).join('')}</div>
+        <div class="small muted">${esc(DR.note||'')}</div>
+        ${(DR.levers||[]).length?`<div class="bgd-lev"><div class="bgd-h3">Step by step: every lever and the revenue it brings</div>
+          <div class="desc">Read from the top: the 2026 budget, then each lever in the colour of its driver, down to the 2027 budget. Better pricing and efficiency are steps of their own.</div>
+          <div class="bgd-legend">${DR.items.map(d=>`<span><i style="background:${HEX[d.key]}"></i>${esc(d.title)}</span>`).join('')}</div>
+          <div class="bgd-cv" style="height:${Math.max(360,(DR.levers.length+2)*30)}px"><canvas id="bgd-wf"></canvas></div>
+          <div class="bgd-h3">How each step is achieved</div>
+          <div class="desc">For the sales and delivery teams: what the step means in practice, the rate behind it, who owns it and by when.</div>
+          <div class="tablewrap"><table class="bgtable bgd-table"><thead><tr><th>Lever</th><th>Brings</th><th>The rate behind it</th><th>How</th><th>Who</th><th>By when</th></tr></thead><tbody>${DR.levers.map(l=>`<tr><td><span class="bgd-dot" style="background:${HEX[l.driver]}"></span><b>${esc(l.label)}</b><div class="small muted">${esc(TITLE[l.driver]||'')}${l.n?` · ${l.n} action${l.n===1?'':'s'}`:''}</div></td><td style="white-space:nowrap"><b>+${bgM(l.eur)}</b></td><td>${l.rate!=null?`<b>${l.rate<1?l.rate.toFixed(2):l.rate.toFixed(1)}%</b><div class="small muted">of ${esc(l.rate_of)}</div>`:'<span class="small muted">new revenue, no 2026 base</span>'}</td><td class="bgd-how">${esc(l.how)}${l.example?`<div class="small muted">Example. ${esc(l.example)}</div>`:''}</td><td class="small">${esc(l.who||'')}</td><td class="small">${esc(l.when||'')}</td></tr>`).join('')}</tbody></table></div>
+          <div class="small muted">Rates are the lever’s revenue divided by its 2026 base: hardware and software sales ${bgM((DR.bases||{}).new)}, recurring revenue ${bgM((DR.bases||{}).recurring)}, revenue of the analysed lines ${bgM((DR.bases||{}).covered)}.</div></div>`:''}`;
+      s.appendChild(dc);
+      strip.querySelectorAll('.bgd-chip').forEach(b=>b.addEventListener('click',()=>{ const t=document.getElementById(b.dataset.go); if(t){ t.scrollIntoView({behavior:'smooth',block:'center'}); t.classList.remove('bg-flash'); void t.offsetWidth; t.classList.add('bg-flash'); } }));
+      if((DR.levers||[]).length) setTimeout(()=>{ const ctx=document.getElementById('bgd-wf'); if(!ctx||!window.Chart) return;
+        const fmt=bgM;
+        const labels=['2026 budget'], data=[[0,DR.from]], colors=['#8E877A'], meta=[{t:1,v:DR.from}]; let run=DR.from;
+        DR.levers.forEach(l=>{ const a=run,b=run+l.eur; labels.push(l.label+'   +'+fmt(l.eur)); data.push([Math.min(a,b),Math.max(a,b)]); colors.push(l.eur>=0?HEX[l.driver]:'#C0564A'); meta.push({d:l.eur,a,b,r:l.rate,ro:l.rate_of}); run=b; });
+        labels.push('2027 base budget'); data.push([0,run]); colors.push('#16130D'); meta.push({t:1,v:run});
+        const span=run-DR.from; const xmin=Math.max(0,Math.floor((DR.from-Math.max(span*0.9,DR.from*0.05))/1e6)*1e6);
+        charts.push(new Chart(ctx,{type:'bar',data:{labels,datasets:[{data,backgroundColor:colors,borderRadius:4,borderSkipped:false,maxBarThickness:20}]},
+          options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},
+            tooltip:{backgroundColor:'#141310',padding:10,cornerRadius:10,titleFont:{family:chartFont()},bodyFont:{family:chartFont()},
+              callbacks:{label:it=>{ const m=meta[it.dataIndex]; return m.t?fmt(m.v):['+'+fmt(m.d)+'  ('+fmt(m.a)+' → '+fmt(m.b)+')'].concat(m.r!=null?[(m.r<1?m.r.toFixed(2):m.r.toFixed(1))+'% of '+m.ro]:[]); }}}},
+            scales:{x:{min:xmin,ticks:{color:'#928B7B',font:{family:chartFont()},callback:v=>'€'+(v/1e6).toFixed(0)+'m'},grid:{color:'#EFE7D6'},border:{display:false}},
+                    y:{ticks:{color:'#5F594C',font:{family:chartFont(),size:11},autoSkip:false},grid:{display:false},border:{display:false}}}}}));
+      },0);
+    }
+    // 1c. the stretch to EUR 200.0m: new business and the payments industry only, no named deal changed
+    //     (asked 22/09/2026). Data: board_2027.py stretch; texts: the writer's stretch_texts.json.
+    if(isStretch){
+      const cssv=(n,fb)=>{ try{ const v=getComputedStyle(document.documentElement).getPropertyValue(n).trim(); return v||fb; }catch(e){ return fb; } };
+      const LC=['#9B85D9','#35B6D6','#5BB58A','#E0B93B','#C58CC9']; const TX=ST.texts||{};
+      const sc=el("div","card bgs"); sc.id='bgs';
+      const layers=ST.layers.filter(l=>l.eur>=5e3);
+      sc.innerHTML=`${shead('lilac',GL.gem,'The stretch to '+bgM(ST.target)+': new business and the payments industry',TX.headline||('The budget of '+bgM(ST.start)+' taken to '+bgM(ST.total)+' from new business and the payments industry. No named deal of the plan is changed.'))}
+        <div class="bgd-eq"><span class="bgd-n">${bgM(ST.start)}<small>2027 budget</small></span>${layers.map((l,i)=>`<span class="bgd-op">+</span><span class="bgd-n" style="--c:${LC[i%LC.length]}">${bgM(l.eur)}<small>${esc(l.title)}</small></span>`).join('')}<span class="bgd-op">=</span><span class="bgd-n bgd-tot">${bgM(ST.total)}<small>stretch</small></span></div>
+        ${ST.unsupported>5e4?`<div class="bgs-warn">${bgM(ST.unsupported)} of the ${bgM(ST.target)} is not yet backed by a signal.</div>`:''}
+        <div class="bgd-cv" style="height:${Math.max(280,(layers.length+2)*40)}px"><canvas id="bgs-wf"></canvas></div>
+        ${TX.summary_md?`<div class="bg-prose bgs-prose">${mdToHtml(TX.summary_md)}</div>`:''}
+        <div class="bgd-h3">The five layers</div>
+        <div class="bgs-grid">${layers.map((l,i)=>`<div class="bl-kpi k-lilac bgd-tile bgs-tile" style="--c:${LC[i%LC.length]}"><span class="blob"></span>
+            <div class="bl-kpi-h"><span class="bgd-num">${i+1}</span><div class="bl-kpi-t">${esc(l.title)}</div></div>
+            <div class="bg-estnum">+${bgM(l.eur)} <span class="bgd-pct">${l.n} item${l.n===1?'':'s'}</span></div>
+            <div class="bgd-what">${esc(l.what)}</div>
+            ${l.proof?`<div class="bgd-proof"><b>What proves it.</b> ${esc(l.proof)}</div>`:''}
+            ${(l.items||[]).length?`<details class="bgd-fold"><summary>The ${l.items.length} item${l.items.length===1?'':'s'}, largest first</summary><div class="bgd-siglist">${l.items.slice(0,60).map((x,j)=>`<div class="bgd-sigrow${j<5?' bgd-top':''}"><span class="bgd-rank">${j+1}</span><span>${esc(x.country)} × ${esc(x.line_label)}${x.largest?`<div class="small muted">${esc(x.largest)}</div>`:x.why?`<div class="small muted">${esc(x.why)}</div>`:x.note?`<div class="small muted">${esc(x.note)}</div>`:''}</span><b>${bgM(x.eur!=null?x.eur:x.stretch)}</b>${x.rate_total?`<span class="small muted">${(x.rate_total*100).toFixed(1)}%</span>`:x.rate?`<span class="small muted">${(x.rate*100).toFixed(1)}%</span>`:x.pct?`<span class="small muted">+${x.pct}%</span>`:'<span></span>'}</div>`).join('')}</div></details>`:''}
+            ${(l.signals||[]).length?`<details class="bgd-fold"><summary>Top signals: the ${l.signals.length} signals behind this layer, largest first</summary><div class="ol-builton bgd-siglist">${l.signals.map((x,j)=>sigByKey[x.key]?`<div class="bgd-sigrow${j<5?' bgd-top':''} bgd-noeur"><span class="bgd-rank">${j+1}</span><span class="srcfile ol-sig" data-sigkey="${esc(x.key)}" role="button" tabindex="0" title="Show this signal &amp; its sources">${esc(sigByKey[x.key].bank_theme)}</span></div>`:'').join('')}<div class="ol-sigdetail" hidden></div></div></details>`:''}
+          </div>`).join('')}</div>
+        <div class="bgd-h3">What the new business is</div>
+        <div class="desc">The ${(ST.new_cells||[]).length} country and product combinations the stretch adds, by product line, with the countries. The plan's own 29 new-business combinations are not repeated here.</div>
+        <ul class="bgd-in bgd-lines bgs-lines">${(ST.new_business_lines||[]).map(r=>`<li><span>${esc(r.line)}<div class="small muted">${esc(r.countries.join(', '))}</div></span><b>${bgM(r.eur)}</b></li>`).join('')}</ul>
+        ${(ST.capabilities||[]).length?`<div class="bgd-h3">The capability decisions the plan already names</div><div class="bl-stack">${ST.capabilities.map(c=>`<div class="bl-tile"><span class="bl-pill bl-lilac">${esc(c.area)}</span><div class="bl-tile-t">${esc(c.decision)} · by ${esc(fmtDate(c.by))} · ${esc(c.owner)}</div><div class="bl-tile-d">${esc(c.text)}</div></div>`).join('')}</div>`:''}
+        ${(ST.futures||[]).length?`<div class="bgd-h3">Why the payments industry: the Future outlook to 2030</div><div class="bl-stack">${ST.futures.map(f=>`<div class="bl-tile"><span class="bl-pill bl-green">${esc(f.direction||'')}${f.confidence?' · confidence '+esc(f.confidence):''}</span><div class="bl-tile-t">${esc(f.scope)}</div><div class="bl-tile-d">${esc(f.projected)}</div></div>`).join('')}</div>`:''}
+        ${(TX.conditions||[]).length?`<div class="bgd-h3">What must be true</div><div class="bl-stack">${TX.conditions.map((x,i)=>`<div class="bl-tile"><div class="bl-tile-d"><b>${i+1}.</b> ${esc(x)}</div></div>`).join('')}</div>`:''}
+        ${(TX.risks||[]).length?`<div class="bgd-h3">The risks</div><div class="bl-stack">${TX.risks.map(x=>`<div class="bl-tile"><div class="bl-tile-d">${esc(x)}</div></div>`).join('')}</div>`:''}
+        <div class="small muted">${esc(ST.profit_note||'')} Profit on the stretch: ${bgM(ST.rp_stretch)}. Rates: ${(ST.rates.dated*100).toFixed(1)}% of opportunity value with a 2027-dated opportunity and ${(ST.rates.undated*100).toFixed(1)}% without, as the plan priced its own new business; the payments combinations at ${((ST.rates.undated+ST.rates.payments_uplift)*100).toFixed(1)}%, against ${(ST.rates.best_third*100).toFixed(0)}% for the plan's best third.</div>`;
+      s.appendChild(sc);
+      setTimeout(()=>{ const ctx=document.getElementById('bgs-wf'); if(!ctx||!window.Chart) return;
+        const fmt=bgM;
+        const labels=['2027 base budget'], data=[[0,ST.start]], colors=['#8E877A'], meta=[{t:1,v:ST.start}]; let run=ST.start;
+        layers.forEach((l,i)=>{ const a=run,b=run+l.eur; labels.push(l.title+'   +'+fmt(l.eur)); data.push([a,b]); colors.push(LC[i%LC.length]); meta.push({d:l.eur,a,b}); run=b; });
+        labels.push('Stretch'); data.push([0,run]); colors.push('#16130D'); meta.push({t:1,v:run});
+        const span=run-ST.start; const xmin=Math.max(0,Math.floor((ST.start-Math.max(span*0.6,ST.start*0.03))/1e6)*1e6);
+        charts.push(new Chart(ctx,{type:'bar',data:{labels,datasets:[{data,backgroundColor:colors,borderRadius:4,borderSkipped:false,maxBarThickness:22}]},
+          options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{backgroundColor:'#141310',padding:10,cornerRadius:10,titleFont:{family:chartFont()},bodyFont:{family:chartFont()},callbacks:{label:it=>{ const m=meta[it.dataIndex]; return m.t?fmt(m.v):'+'+fmt(m.d)+'  ('+fmt(m.a)+' → '+fmt(m.b)+')'; }}}},
+            scales:{x:{min:xmin,ticks:{color:'#928B7B',font:{family:chartFont()},callback:v=>'€'+(v/1e6).toFixed(0)+'m'},grid:{color:'#EFE7D6'},border:{display:false}},y:{ticks:{color:'#5F594C',font:{family:chartFont(),size:11},autoSkip:false},grid:{display:false},border:{display:false}}}}}));
+      },0);
+    }
+    if(!isStretch){
     const card=el("div","card");
-    card.innerHTML=paras.map((p,i)=>`<div class="bl-sec bg-secp">${shead(TONES[i%TONES.length],[GL.bolt,GL.grid,GL.map,GL.target,GL.gem,GL.shield,GL.check][i%7],p.lead||'',null)}<div class="bg-prose">${mdToHtml(p.text)}</div></div>`).join('');
+    const parasShown=(DR&&DR.items)?paras.filter(p=>!/^where the growth comes from/i.test(p.lead||'')):paras;
+    card.innerHTML=parasShown.map((p,i)=>`<div class="bl-sec bg-secp">${shead(TONES[i%TONES.length],[GL.bolt,GL.grid,GL.map,GL.target,GL.gem,GL.shield,GL.check][i%7],p.lead||'',null)}<div class="bg-prose">${mdToHtml(p.text)}</div></div>`).join('');
     // the full explanation, folded, in the same form
     const d=el("details","bl-panel bg-full"); d.innerHTML=`<summary class="bl-panel-sum">The full explanation: how the number was built, the evidence, the challenges<span class="bl-panel-chev" aria-hidden="true"></span></summary>`;
     const body=el("div","bl-panel-body");
     let h='';
-    if(Tb.parts){ const KC=['k-cyan','k-yellow','k-green','k-lilac']; const parts=[['Named deals in the signals',Tb.parts.named_deals_net,'net of the competitor threat'],['Market outlook',Tb.parts.market_outlook,Tb.parts.outlook_cells?`${Tb.parts.outlook_cells.patterns_and_signals} cells on patterns and signals readings, ${Tb.parts.outlook_cells.signals_only} on signals only, ${Tb.parts.outlook_cells.none} with no outlook`:''],['Recurring revenue',Tb.parts.recurring,'price and scope on services and outsourcing'],['New business',Tb.parts.new_business||0,'country and product combinations with no 2026 budget']];
+    if(Tb.parts&&!(DR&&DR.items)){ const KC=['k-cyan','k-yellow','k-green','k-lilac']; const parts=[['Named deals in the signals',Tb.parts.named_deals_net,'net of the competitor threat'],['Market outlook',Tb.parts.market_outlook,Tb.parts.outlook_cells?`${Tb.parts.outlook_cells.patterns_and_signals} cells on patterns and signals readings, ${Tb.parts.outlook_cells.signals_only} on signals only, ${Tb.parts.outlook_cells.none} with no outlook`:''],['Recurring revenue',Tb.parts.recurring,'price and scope on services and outsourcing'],['New business',Tb.parts.new_business||0,'country and product combinations with no 2026 budget']];
       h+=`<div class="bl-sec">${shead('lilac',GL.bolt,'Where the growth of '+bgM(Tb.commit-Tb.rev_2026)+' comes from','Estimates that rest on named deals in the signals and estimates that rest on the market outlook are shown separately. The outlook is the mean of the dashboard’s readings; there is no statistical trend fit.')}<div class="bl-grid bg-grid4">${parts.map((q,i)=>`<div class="bl-kpi ${KC[i]}"><span class="blob"></span><div class="bl-kpi-h"><div class="bl-kpi-t">${esc(q[0])}</div></div><div class="bg-estnum">${bgM(q[1])}</div><div class="bl-kpi-d">${esc(q[2])}</div></div>`).join('')}</div></div>`; }
     if(Bd.largest_reachable_basis) h+=`<div class="bl-sec">${shead('green',GL.target,'How the most the evidence supports is built',null)}<div class="bg-prose">${mdToHtml(Bd.largest_reachable_basis)}</div></div>`;
     (R.sections||[]).forEach((x,i)=>{ h+=`<div class="bl-sec">${shead(TONES[(i+1)%TONES.length],[GL.doc,GL.grid,GL.map,GL.target,GL.shield,GL.bolt,GL.check,GL.gem][i%8],x.title,null)}<div class="bg-prose">${mdToHtml(x.text)}</div>${chips(x.evidence)}</div>`; });
     if((R.levers||[]).length) h+=`<div class="bl-sec">${shead('yellow',GL.gem,'The levers behind the most the evidence supports',R.levers.length+' budget lines, with the deals and dates they rest on.')}<div class="bl-stack">${R.levers.map(l=>`<div class="bl-tile"><span class="bl-pill bl-green">${esc(l.country||'')} · ${esc(l.line_label||l.cell)}</span><div class="bl-tile-t">2026 ${bgM(l.target_2026||0)} → budget ${bgM(l.commit||0)}${l.commit_growth_pct!=null?` (${pc(l.commit_growth_pct)})`:''} → reachable ${bgM(l.upside||0)}${l.upside_growth_pct!=null?` (${pc(l.upside_growth_pct)})`:''}</div><div class="bl-tile-d">${esc(l.why||'')}</div>${chips(l.evidence)}</div>`).join('')}</div></div>`;
     if((Bd.new_business||[]).length||(Bd.new_business_unpriced||[]).length){
-      h+=`<div class="bl-sec">${shead('cyan',GL.flag,'New business',`${(Bd.new_business||[]).length} country and product combinations with no 2026 budget are in the number${(Bd.new_business_unpriced||[]).length?`; ${Bd.new_business_unpriced.length} more have opportunities but no number yet`:''}.`)}<div class="tablewrap"><table class="bgtable"><thead><tr><th>Country × product</th><th>2027 budget</th><th>Most the evidence supports</th><th>Set by</th><th>Why</th></tr></thead><tbody>${(Bd.new_business||[]).slice().sort((x,y)=>y.board.target-x.board.target).map(o=>`<tr><td><b>${esc(o.country)}</b><div class="small muted">${esc(o.line_label)}</div></td><td><b>${bgM(o.board.target)}</b>${o.board.dissent?`<div class="small muted">${esc(o.board.dissent.view||viewName(o.board.dissent.seat))} would set ${bgM(o.board.dissent.number)}</div>`:''}</td><td>${bgM(o.board.upside)}</td><td class="small">${esc(o.board.proposer_title)}${o.board.decided_by_chair?' · settled in the review':''}</td><td class="small">${esc(o.board.reason)}${chips(o.board.evidence)}</td></tr>`).join('')}</tbody></table></div>`;
+      h+=`<div class="bl-sec">${shead('cyan',GL.flag,'New business',`${(Bd.new_business||[]).length} country and product combinations with no 2026 budget are in the number${(Bd.new_business_unpriced||[]).length?`; ${Bd.new_business_unpriced.length} more have opportunities but no number yet`:''}.`)}<div class="tablewrap"><table class="bgtable"><thead><tr><th>Country × product</th><th>2027 budget</th>${single?'':'<th>Most the evidence supports</th>'}<th>Set by</th><th>Why</th></tr></thead><tbody>${(Bd.new_business||[]).slice().sort((x,y)=>y.board.target-x.board.target).map(o=>`<tr><td><b>${esc(o.country)}</b><div class="small muted">${esc(o.line_label)}</div></td><td><b>${bgM(o.board.target)}</b>${o.board.dissent?`<div class="small muted">${esc(o.board.dissent.view||viewName(o.board.dissent.seat))} would set ${bgM(o.board.dissent.number)}</div>`:''}</td>${single?'':`<td>${bgM(o.board.upside)}</td>`}<td class="small">${esc(o.board.proposer_title)}${o.board.decided_by_chair?' · settled in the review':''}</td><td class="small">${esc(o.board.reason)}${chips(o.board.evidence)}</td></tr>`).join('')}</tbody></table></div>`;
       if((Bd.new_business_unpriced||[]).length){ const top=Bd.new_business_unpriced.slice().sort((x,y)=>y.n_opps-x.n_opps).slice(0,12); h+=`<div class="small muted bg-unpriced"><b>With opportunities but no number yet</b> (largest first): ${top.map(e=>`${esc(e.country)} × ${esc(e.line_label)} (${e.n_opps})`).join(' · ')}${Bd.new_business_unpriced.length>12?` and ${Bd.new_business_unpriced.length-12} more`:''}.</div>`; }
       h+=`</div>`;
     }
     if((R.conditions||[]).length) h+=`<div class="bl-sec">${shead('green',GL.check,'Conditions attached to the budget',null)}<div class="bl-stack">${R.conditions.map((x,i)=>`<div class="bl-tile"><div class="bl-tile-d"><b>${i+1}.</b> ${esc(x)}</div></div>`).join('')}</div></div>`;
     if((R.change_our_mind||[]).length) h+=`<div class="bl-sec">${shead('yellow',GL.bolt,'What would change the number',null)}<div class="bl-stack">${R.change_our_mind.map(x=>`<div class="bl-tile"><div class="bl-tile-d">${esc(x)}</div></div>`).join('')}</div></div>`;
-    if((Bd.dissent_views||[]).length) h+=`<div class="bl-sec">${shead('lilac',GL.shield,'The views that would set a lower number',null)}<div class="bl-stack">${Bd.dissent_views.map(v=>`<div class="bl-tile"><span class="bl-pill bl-green">${esc(v.title)}</span><div class="bl-tile-t">${esc(v.reason||'')}</div><div class="bl-tile-d">${esc(v.text||'')}</div></div>`).join('')}</div></div>`;
+    if((Bd.dissent_views||[]).length) h+=`<div class="bl-sec">${shead('lilac',GL.shield,onlyT?'What each view still needs':'The views that would set a lower number',null)}<div class="bl-stack">${Bd.dissent_views.map(v=>`<div class="bl-tile"><span class="bl-pill bl-green">${esc(v.title)}</span><div class="bl-tile-t">${esc(v.reason||'')}</div><div class="bl-tile-d">${esc(v.text||'')}</div></div>`).join('')}</div></div>`;
     h+=`<div class="small muted evsrc">Built on the dashboard’s signals and market readings. Every figure traces to a budget line or a signal; conversion rates are labelled assumptions, never evidence. Model build of ${esc(Bd.built_from)}.</div>`;
     body.innerHTML=h; d.appendChild(body); card.appendChild(d); s.appendChild(card);
+    }
+  }
+
+  // 1b. the budget in the categories of the Printec budget Excel (hardware, software, services,
+  //     outsourcing): waterfalls for the group and for one market, the category table with its
+  //     subcategories, and the written explanation. Asked by management on 17/09/2026. Data:
+  //     budget_categories.py; the numbers are the plan's numbers split, never re-estimated.
+  const CT=DASH.budget_2027_categories; let drawCats=()=>{}; const MID=isStretch?'s':'b';
+  if(hasBoard&&CT&&CT.group){
+    const CATS=CT.categories||['HW','SW','SV','OUT']; const CL=CT.cat_label||{};
+    const cssv=(n,fb)=>{ try{ const v=getComputedStyle(document.documentElement).getPropertyValue(n).trim(); return v||fb; }catch(e){ return fb; } };
+    const CCOL={HW:cssv('--blue','#3B6FD6'),SW:cssv('--lilac','#8C6BD6'),SV:cssv('--green','#2E9E6B'),OUT:cssv('--yellow','#D9A81F')};
+    const NEG='#C0564A', BASE='#8E877A', END='#16130D';
+    const SRC_LABEL={model_deals:'Deals and outlook (model)',date:'Dated orders',share:'Share wins',hire:'Hires',capability:'Capability decisions',pricing:'Price steps',efficiency:'Efficiency steps',closing_fact:'Closing facts',balance:'New business the capability decisions open, and balance',stretch:'The stretch: new business and the payments industry'};
+    const SRC_ORDER=['model_deals','date','share','hire','capability','pricing','efficiency','closing_fact','balance','stretch'];
+    const catCard=el("div","card bgc");
+    catCard.innerHTML=`<div class="hd"><div><h2>The budget by category</h2><div class="desc">The same 2027 numbers in the categories of the Printec budget file: hardware, software, services and outsourcing, with their subcategories. The estimate chosen above (<b class="bgc-scenlabel"></b>) is split, never re-estimated: a dated order is divided the way the country’s revenue for that subcategory already divides, the model’s recurring growth goes to services and outsourcing, hires to services, capability decisions to software. Retail lines and budget with no product name are carried flat inside their own category.</div></div></div>
+      <div class="bgc-tiles"></div>
+      <div class="bgc-charts"><div class="bgc-chart bgc-wide"><div class="bgc-ct">Group: from 2026 to 2027, category by category</div><div class="bgc-cv bgc-big"><canvas id="bgc-wf-group-${MID}"></canvas></div></div><div class="bgc-chart bgc-wide"><div class="bgc-ct">Group: the same growth by what produces it</div><div class="bgc-cv bgc-tall"><canvas id="bgc-wf-source-${MID}"></canvas></div></div></div>
+      <div class="bgc-country"><div class="bgc-pick"><label for="bgc-sel-${MID}">Market</label><select id="bgc-sel-${MID}" class="bgc-sel"></select><span class="bgc-ctot"></span></div>
+        <div class="bgc-charts"><div class="bgc-chart bgc-wide"><div class="bgc-ct bgc-cct"></div><div class="bgc-cv"><canvas id="bgc-wf-country-${MID}"></canvas></div></div></div>
+        <div class="tablewrap"><table class="bgtable bgc-table"></table></div><div class="small muted">Subcategories under €50k in both years are inside the category totals but not listed.</div>
+        <div class="bgc-text"></div></div>
+      <details class="bl-panel bgc-rules"><summary class="bl-panel-sum">How the split is made, and why the profit differs from the line view<span class="bl-panel-chev" aria-hidden="true"></span></summary><div class="bl-panel-body"><ol class="bgc-ol">${(CT.rules||[]).map(r=>`<li>${esc(r)}</li>`).join('')}</ol><div class="small muted">${esc(CT.profit_note||'')}</div></div></details>`;
+    s.appendChild(catCard);
+    const sel=catCard.querySelector('.bgc-sel');
+    const countries=(CT.countries||[]).slice().sort((a,b)=>(b.total_budget||0)-(a.total_budget||0));
+    countries.forEach(c=>{ const o=document.createElement('option'); o.value=c.code; o.textContent=c.country; sel.appendChild(o); });
+    let catCharts=[];
+    const kill=()=>{ catCharts.forEach(c=>{ try{ c.destroy(); }catch(e){} }); catCharts=[]; };
+    // the category view always shows a 2027 estimate: with a single budget number there is nothing else to show,
+    // and a waterfall from 2026 to 2026 is flat (asked 18/09/2026)
+    const scenKey=()=>scen==='y2026'?(single?'budget':null):(scen==='stretch'&&!(CT.scenarios||[]).includes('stretch'))?'budget':scen;
+    const fmtM=bgM;
+    const waterfall=(id,from,steps,endLabel,fromLabel,horizontal)=>{
+      const ctx=document.getElementById(id); if(!ctx||!window.Chart) return;
+      const wrap=l=>{ const w=String(l).split(' '); if(w.length<3) return l; const out=[]; let cur=''; w.forEach(x=>{ if((cur+' '+x).trim().length>14&&cur){ out.push(cur); cur=x; } else cur=(cur+' '+x).trim(); }); if(cur) out.push(cur); return out; };
+      const labels=[fromLabel||'2026'], data=[[0,from]], colors=[BASE], meta=[{kind:'total',v:from}]; let run=from;
+      steps.forEach(st=>{ const a=run, b=run+st.delta; labels.push(wrap(st.label)); data.push([Math.min(a,b),Math.max(a,b)]); colors.push(st.delta>=0?st.color:NEG); meta.push({kind:'step',d:st.delta,a,b}); run=b; });
+      labels.push(wrap(endLabel)); data.push([0,run]); colors.push(END); meta.push({kind:'total',v:run});
+      const lo=Math.min(from,run,...meta.filter(m=>m.kind==='step').map(m=>Math.min(m.a,m.b))); const span=Math.max(run,from)-lo; const ymin=Math.max(0,Math.floor((lo-Math.max(span*1.2,lo*0.06))/1e6)*1e6);
+      const catAxis={ticks:{color:'#5F594C',font:{family:chartFont(),size:11},autoSkip:false,maxRotation:0},grid:{display:false},border:{display:false}};
+      const valAxis={min:ymin,ticks:{color:'#928B7B',font:{family:chartFont()},callback:v=>'€'+(v/1e6).toFixed(0)+'m'},grid:{color:'#EFE7D6'},border:{display:false}};
+      const ch=new Chart(ctx,{type:'bar',data:{labels:horizontal?labels.map(l=>Array.isArray(l)?l.join(' '):l):labels,datasets:[{data,backgroundColor:colors,borderRadius:4,borderSkipped:false,maxBarThickness:horizontal?22:46}]},
+        options:{indexAxis:horizontal?'y':'x',responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},
+          tooltip:{backgroundColor:'#141310',padding:10,cornerRadius:10,titleFont:{family:chartFont()},bodyFont:{family:chartFont()},
+            callbacks:{title:it=>{ const l=labels[it[0].dataIndex]; return Array.isArray(l)?l.join(' '):l; },label:it=>{ const m=meta[it.dataIndex]; return m.kind==='total'?fmtM(m.v):((m.d>=0?'+':'−')+fmtM(Math.abs(m.d))+'  ('+fmtM(m.a)+' → '+fmtM(m.b)+')'); }}}},
+          scales:horizontal?{x:valAxis,y:catAxis}:{x:catAxis,y:valAxis}}});
+      catCharts.push(ch); charts.push(ch);
+    };
+    const growth=(a,b)=>a?((b/a-1)*100):null;
+    drawCats=()=>{
+      kill();
+      const sk=scenKey(); const G=CT.group; const SL=SCEN[sk||scen].label;
+      catCard.querySelector('.bgc-scenlabel').textContent=SL;
+      // tiles: one per category, plus profit
+      const tiles=catCard.querySelector('.bgc-tiles'); const TK={HW:'k-blue',SW:'k-lilac',SV:'k-green',OUT:'k-yellow'};
+      tiles.innerHTML=CATS.map(k=>{ const a=G.y2026[k], b=sk?G[sk][k]:a; const rp=sk?(G['rp_'+sk]||{})[k]:(G.rp_2026||{})[k]; const g=growth(a,b);
+          return `<div class="bl-kpi ${TK[k]} bgc-tile"><span class="blob"></span><div class="bl-kpi-h"><div class="bl-kpi-t">${esc(CL[k]||k)} <span class="bgc-code">${k}</span></div></div><div class="bg-estnum">${fmtM(b)}</div><div class="bl-kpi-d">${sk?`2026 ${fmtM(a)}${g!=null?' · '+pc(g):''}`:'2026 budget'}${rp!=null?` · profit ${fmtM(rp)}${b?' ('+(rp/b*100).toFixed(0)+'%)':''}`:''}</div></div>`; }).join('')
+        +(Object.values(G.flat||{}).reduce((x,y)=>x+y,0)<1?'':`<div class="bl-kpi k-cyan bgc-tile"><span class="blob"></span><div class="bl-kpi-h"><div class="bl-kpi-t">Retail</div></div><div class="bg-estnum">${fmtM(Object.values(G.flat||{}).reduce((x,y)=>x+y,0))}</div><div class="bl-kpi-d">carried flat from 2026, shown on its own</div></div>`)
+        +`<div class="bl-kpi k-cyan bgc-tile"><span class="blob"></span><div class="bl-kpi-h"><div class="bl-kpi-t">Profit at held category margins</div></div><div class="bg-estnum">${fmtM(sk?G['rp_total_'+sk]:G.rp_total_2026)}</div><div class="bl-kpi-d">${sk?`2026 ${fmtM(G.rp_total_2026)} · ${(G['rp_total_'+sk]/G['total_'+sk]*100).toFixed(1)}% of revenue`:'54.1% of revenue'}</div></div>`;
+      // group waterfalls
+      const gsteps=CATS.map(k=>({label:CL[k]||k,delta:sk?(G[sk][k]-G.y2026[k]):0,color:CCOL[k]}));
+      waterfall('bgc-wf-group-'+MID,G.total_y2026,gsteps,sk?SL:'2026');
+      const bs=(CT.by_source||{})[sk||'budget']||{};
+      const ssteps=SRC_ORDER.filter(k=>bs[k]).map(k=>({label:SRC_LABEL[k]||k,delta:sk?Object.values(bs[k]).reduce((x,y)=>x+y,0):0,color:k.startsWith('model')?'#6FA8DC':k==='date'?CCOL.HW:k==='share'?CCOL.SW:(k==='hire'||k==='capacity')?CCOL.SV:k==='capability'?CCOL.OUT:k==='stretch'?cssv('--lilac','#BFA7E6'):'#B9B2A3'})).filter(x=>Math.abs(x.delta)>=5e4);
+      waterfall('bgc-wf-source-'+MID,G.total_y2026,ssteps,sk?SL:'2026',null,true);
+      // one market
+      const C=countries.find(c=>c.code===sel.value)||countries[0]; if(!C) return;
+      catCard.querySelector('.bgc-cct').textContent=C.country+': from 2026 to 2027, category by category';
+      const ct=sk?C['total_'+sk]:C.total_y2026;
+      catCard.querySelector('.bgc-ctot').innerHTML=`2026 <b>${fmtM(C.total_y2026)}</b>${sk?` → ${esc(SL)} <b>${fmtM(ct)}</b> (${pc(growth(C.total_y2026,ct))})`:''}`;
+      waterfall('bgc-wf-country-'+MID,C.total_y2026,CATS.map(k=>({label:CL[k]||k,delta:sk?(C[sk][k]-C.y2026[k]):0,color:CCOL[k]})),sk?SL:'2026');
+      const t=catCard.querySelector('.bgc-table');
+      const flatTot=Object.values(C.flat||{}).reduce((x,y)=>x+y,0);
+      t.innerHTML=`<thead><tr><th>Category</th><th>2026</th><th>${esc(sk?SL:'2026')}</th><th>Change</th><th>Profit</th><th>Margin</th></tr></thead><tbody>${CATS.map(k=>{ const a=C.y2026[k], b=sk?C[sk][k]:a; if(!a&&!b) return ''; const rp=sk?(C['rp_'+sk]||{})[k]:(C.rp_2026||{})[k]; const subs=(C.subs||[]).filter(x=>x.cat===k&&!x.flat&&(x.y2026>=5e4||(sk?x[sk]:0)>=5e4));
+          return `<tr class="bgc-cat"><td><b>${esc(CL[k]||k)}</b> <span class="bgc-code">${k}</span></td><td>${fmtM(a)}</td><td><b>${fmtM(b)}</b></td><td>${sk?((b-a>=0?'+':'−')+fmtM(Math.abs(b-a))+(a?' · '+pc(growth(a,b)):'')):'—'}</td><td>${rp!=null?fmtM(rp):'—'}</td><td>${rp!=null&&b?(rp/b*100).toFixed(0)+'%':'—'}</td></tr>`
+            +subs.map(x=>{ const v=sk?x[sk]:x.y2026; return `<tr class="bgc-sub"><td>${esc(x.sub)}<span class="bgc-lines">${esc((x.lines||[]).join(', '))}</span></td><td>${fmtM(x.y2026)}</td><td>${fmtM(v)}</td><td>${sk?((v-x.y2026>=0?'+':'−')+fmtM(Math.abs(v-x.y2026))):'—'}</td><td>${sk==='budget'?fmtM(x.rp_budget):'—'}</td><td>${(x.rm*100).toFixed(0)}%</td></tr>`; }).join(''); }).join('')}
+${flatTot<1?'':`        <tr class="bgc-cat"><td><b>Retail</b> <span class="bgc-code">flat</span></td><td>${fmtM(flatTot)}</td><td>${fmtM(flatTot)}</td><td>—</td><td>${fmtM(Object.values(C.flat_rp||{}).reduce((x,y)=>x+y,0))}</td><td></td></tr>`}
+        <tr class="bg-total"><td><b>${esc(C.country)}</b></td><td><b>${fmtM(C.total_y2026)}</b></td><td><b>${fmtM(ct)}</b></td><td>${sk?pc(growth(C.total_y2026,ct)):'—'}</td><td><b>${fmtM(sk==='budget'?C.rp_total_budget:sk?Object.values(C['rp_'+sk]||{}).reduce((x,y)=>x+y,0)+Object.values(C.flat_rp||{}).reduce((x,y)=>x+y,0):C.rp_total_2026)}</b></td><td></td></tr></tbody>`;
+      const tx=catCard.querySelector('.bgc-text');
+      tx.innerHTML=`<div class="k">How the 2027 budget moves each category in ${esc(C.country)}</div>`+CATS.filter(k=>(C.text||{})[k]).map(k=>`<div class="bgc-p"><span class="bgc-dot" style="background:${CCOL[k]}"></span>${esc(C.text[k])}</div>`).join('')+(sk&&sk!=='budget'?`<div class="small muted">The explanation describes the 2027 budget; the table and the charts show ${esc(SL.toLowerCase())}.</div>`:'');
+    };
+    sel.addEventListener('change',drawCats);
+    setTimeout(drawCats,0);
   }
 
   // 2. the moves, market by market: each cell is a budget line with the estimate chosen above, coloured by
@@ -1431,6 +1620,7 @@ function renderBudget(s){
   const lines=(B.by_line||[]); const rows=(B.by_country||[]);
   const byKey={}; B.cells.forEach(c=>byKey[c.code+'|'+c.line]=c);
   const boardBlock=k=>{ const b=bdK[k]; const c=byKey[k]; const m=mdK[k]; if(!b&&!m) return '';
+    if(!b&&onlyT) return '';
     if(!b) return `<div class="bg-sec"><div class="k">2027 (model)</div><div class="small">Base ${bgM(m.base.target)} (${pc(m.base.growth_pct)}) · stretch ${bgM(m.stretch.target)} (${pc(m.stretch.growth_pct)}).</div></div>`;
     const x=b.board; const capv=x.capacity?`${esc(x.capacity.verdict==='yes'?'delivery confirmed':x.capacity.verdict==='yes-with-hire'?'delivery confirmed with hires':x.capacity.verdict==='no'?'delivery not confirmed':x.capacity.verdict)}${x.capacity.reason?': '+esc(x.capacity.reason):''}`:'';
     const fmtD=d=>{ const mm=String(d||'').match(/^(\d{4})-(\d{2})-(\d{2})$/); if(!mm) return esc(d||''); const MO=['January','February','March','April','May','June','July','August','September','October','November','December']; return `${parseInt(mm[3])} ${MO[parseInt(mm[2])-1]} ${mm[1]}`; };
@@ -1438,15 +1628,17 @@ function renderBudget(s){
     return `<div class="bg-sec bg-boardsec"><div class="k">The 2027 number</div>
       <div class="bg-nums">
         <div><span class="k">2026 budget</span><b>${bgM(c.target)}</b></div>
-        <div><span class="k">Lowest acceptable</span><b>${bgM(x.floor)}</b>${x.floor_growth_pct!=null?` <span class="muted small">${pc(x.floor_growth_pct)}</span>`:''}</div>
+        ${single?'':`<div><span class="k">Lowest acceptable</span><b>${bgM(x.floor)}</b>${x.floor_growth_pct!=null?` <span class="muted small">${pc(x.floor_growth_pct)}</span>`:''}</div>`}
         <div><span class="k">2027 budget</span><b>${bgM(x.target)}</b>${x.growth_pct!=null?` <span class="muted small">${pc(x.growth_pct)}</span>`:''}</div>
-        <div><span class="k">Maximum on the table</span><b>${bgM(x.upside)}</b></div>
-        ${x.today?`<div><span class="k">What the evidence supports today</span><b>${bgM(x.today.floor)} / ${bgM(x.today.target)} / ${bgM(x.today.upside)}</b> <span class="muted small">floor / budget / highest, before the plan</span></div>`:''}
-        ${m?`<div><span class="k">Model base / stretch</span><b>${bgM(m.base.target)} / ${bgM(m.stretch.target)}</b></div>`:''}
+        ${single?'':`<div><span class="k">Maximum on the table</span><b>${bgM(x.upside)}</b></div>`}
+        ${hasStretch&&stK[k]&&stK[k].extra>0?`<div><span class="k">Stretch to €200m</span><b>${bgM(stK[k].stretch)}</b> <span class="muted small">+${bgM(stK[k].extra)} from the payments industry</span></div>`:''}
+        ${x.today&&!onlyT?`<div><span class="k">What the evidence supports today</span><b>${bgM(x.today.floor)} / ${bgM(x.today.target)} / ${bgM(x.today.upside)}</b> <span class="muted small">floor / budget / highest, before the plan</span></div>`:''}
+        ${m&&!onlyT?`<div><span class="k">Model base / stretch</span><b>${bgM(m.base.target)} / ${bgM(m.stretch.target)}</b></div>`:''}
       </div>
+      ${(x.staffing||[]).length?`<div class="small"><b>Delivery:</b> ${bgM(x.staffing.reduce((s,a)=>s+(a.eur_budget||0),0))} of this line is delivered by existing Printec staff sharing the work, with no new staff.</div>`:''}
       ${PA.length?`<div class="k" style="margin-top:6px">The plan for this line: ${PA.length} action${PA.length===1?'':'s'}, ${bgM(PA.reduce((s,a)=>s+(a.eur_budget||0),0))} to the budget${x.gap_closer_eur?`, plus ${bgM(x.gap_closer_eur)} on the floor from one of the three closing facts`:''}</div><ul class="bg-dated">${PA.map(a=>`<li>${esc(a.what)} <span class="muted small">\u00b7 ${esc(a.kind)} \u00b7 by ${fmtD(a.by)} \u00b7 ${esc(a.owner)} \u00b7 floor ${bgM(a.eur_floor||0)}, budget ${bgM(a.eur_budget||0)}${a.deal_title?' \u00b7 '+esc(a.deal_title):''}</span></li>`).join('')}</ul>`:''}
       <div class="small"><b>${esc(x.proposer_title)}${x.decided_by_chair?' · settled in the review':''}:</b> ${esc(x.reason)}${x.decided_by_chair&&x.chair_reason?` <b>Settled:</b> ${esc(x.chair_reason)}`:''}</div>
-      ${x.parts?`<div class="small muted">Named deals net of threat ${bgM(x.parts.named_deals_net)} · market outlook ${bgM(x.parts.market_outlook)} · recurring ${bgM(x.parts.recurring)}.</div>`:''}
+      ${x.parts&&!onlyT?`<div class="small muted">Named deals net of threat ${bgM(x.parts.named_deals_net)} · market outlook ${bgM(x.parts.market_outlook)} · recurring ${bgM(x.parts.recurring)}.</div>`:''}
       ${(x.assumptions||[]).length?`<div class="small"><b>Assumptions:</b> ${x.assumptions.map(a=>esc(a.text||'')+(a.conversion_pct!=null?' ('+a.conversion_pct+'%'+(a.date?' by '+esc(a.date):'')+')':'')).join(' ')}</div>`:''}
       ${(x.conditions||[]).length?`<div class="small"><b>Conditions:</b> ${x.conditions.map(esc).join('; ')}</div>`:''}
       ${capv?`<div class="small"><b>Delivery check:</b> ${capv}</div>`:''}
@@ -1465,7 +1657,8 @@ function renderBudget(s){
   // totals: anchor on the file's own totals for the scenario (floor / commit) and add only the difference
   // the visible cells make, so retail, unnamed lines, tiny cells and new business are never double counted
   const anchorKey=sc=>sc==='floor'?'floor':sc==='upside'?'upside':'commit';
-  const anchorCell=(b,sc)=>sc==='floor'?b.board.floor:sc==='upside'?b.board.upside:sc==='today'?((b.board.today&&b.board.today.target!=null)?b.board.today.target:b.board.target):b.board.target;
+  const stC={}, stL={}; if(hasStretch){ (ST.by_country||[]).forEach(c=>stC[c.code]=c.stretch); (ST.by_line||[]).forEach(l=>stL[l.line]=l.stretch); }
+  const anchorCell=(b,sc)=>sc==='floor'?b.board.floor:sc==='upside'?b.board.upside:sc==='today'?((b.board.today&&b.board.today.target!=null)?b.board.today.target:b.board.target):sc==='stretch'?((stK[b.code+'|'+b.line]&&stK[b.code+'|'+b.line].stretch!=null)?stK[b.code+'|'+b.line].stretch:b.board.target):b.board.target;
   const nbDelta=(sc,pred)=>{ if(!Bd) return 0; if(sc==='today') return Bd.new_business.filter(pred).reduce((a,o)=>a+(((o.board.today||{}).target||0)-o.board.target),0); return 0; };
   const drawGrid=()=>{
     grid.querySelector('.bg-scenlabel').textContent=SCEN[scen].label;
@@ -1478,19 +1671,19 @@ function renderBudget(s){
           rowVal+=n.v; lineVal[l.line]=(lineVal[l.line]||0)+n.v; if(b){ const av=anchorCell(b,scen); rowAnchor+=av; lineAnchor[l.line]=(lineAnchor[l.line]||0)+av; }
           return `<td class="bg-cell ${bgCls(c.action)}" data-k="${esc(k)}" role="button" tabindex="0" title="${esc(r.country)} × ${esc(l.line_label)}: ${esc(BG_ACT[c.action])}. 2026 ${bgM(c.target)}${n.g!=null?` → ${bgM(n.v)} (${pc(n.g)})`:''}. ${c.n_opps} open opportunit${c.n_opps===1?'y':'ies'}.">${bgM(n.v)}<div class="bg-act">${esc(BG_ACT[c.action])}${n.g!=null?' · '+pc(n.g):''}</div></td>`; }).join('');
       const rc=bdC[r.code];
-      const total=(scen==='y2026'||!rc)?r.target:(rc[scen==='today'?'commit':anchorKey(scen)]+(rowVal-rowAnchor)+nbDelta(scen,o=>o.code===r.code));
+      const total=(scen==='y2026'||!rc)?r.target:scen==='stretch'&&stC[r.code]!=null?(stC[r.code]+(rowVal-rowAnchor)):(rc[scen==='today'?'commit':anchorKey(scen)]+(rowVal-rowAnchor)+nbDelta(scen,o=>o.code===r.code));
       tr.innerHTML=`<td><b>${esc(r.country)}</b><div class="small muted">2026 ${bgM(r.target)}</div></td>`+cellsHtml+`<td class="small muted" title="${esc(r.country)}: retail ${bgM(r.retail||0)}, other ${bgM(r.other||0)}. ${esc(NC)}">${bgM((r.retail||0)+(r.other||0))}<div class="bg-act">retail ${bgM(r.retail||0)} · other ${bgM(r.other||0)}</div></td><td><b>${bgM(total)}</b>${scen!=='y2026'&&r.target?`<div class="small muted">${pc((total/r.target-1)*100)}</div>`:''}</td>`;
       tb.appendChild(tr);
     });
-    const grand=(scen==='y2026'||!hasBoard)?T.target:scen==='today'?((Bd.totals.today||{}).commit||Bd.totals.commit):Bd.totals[anchorKey(scen)];
-    const tf=el("tr","bg-total"); tf.innerHTML=`<td><b>Group</b></td>${lines.map(l=>{ const lc=bdL[l.line]; const v=(scen==='y2026'||!lc)?l.target:(lc[scen==='today'?'commit':anchorKey(scen)]+((lineVal[l.line]||0)-(lineAnchor[l.line]||0))+nbDelta(scen,o=>o.line===l.line)); return `<td><b>${bgM(v)}</b><div class="small muted">${scen!=='y2026'&&l.target?pc((v/l.target-1)*100):(l.margin_pct+'%')}</div></td>`; }).join('')}<td class="small muted" title="${esc(NC)}">${bgM((U.retail||0)+(U.other||0))}<div class="bg-act">retail ${bgM(U.retail||0)} · other ${bgM(U.other||0)}</div></td><td><b>${bgM(grand)}</b>${scen!=='y2026'&&T.target?`<div class="small muted">${pc((grand/T.target-1)*100)}</div>`:''}</td>`;
+    const grand=(scen==='y2026'||!hasBoard)?T.target:scen==='today'?((Bd.totals.today||{}).commit||Bd.totals.commit):scen==='stretch'&&hasStretch?ST.total:Bd.totals[anchorKey(scen)];
+    const tf=el("tr","bg-total"); tf.innerHTML=`<td><b>Group</b></td>${lines.map(l=>{ const lc=bdL[l.line]; const v=(scen==='y2026'||!lc)?l.target:scen==='stretch'&&stL[l.line]!=null?(stL[l.line]+((lineVal[l.line]||0)-(lineAnchor[l.line]||0))):(lc[scen==='today'?'commit':anchorKey(scen)]+((lineVal[l.line]||0)-(lineAnchor[l.line]||0))+nbDelta(scen,o=>o.line===l.line)); return `<td><b>${bgM(v)}</b><div class="small muted">${scen!=='y2026'&&l.target?pc((v/l.target-1)*100):(l.margin_pct+'%')}</div></td>`; }).join('')}<td class="small muted" title="${esc(NC)}">${bgM((U.retail||0)+(U.other||0))}<div class="bg-act">retail ${bgM(U.retail||0)} · other ${bgM(U.other||0)}</div></td><td><b>${bgM(grand)}</b>${scen!=='y2026'&&T.target?`<div class="small muted">${pc((grand/T.target-1)*100)}</div>`:''}</td>`;
     tb.appendChild(tf); t.appendChild(tb);
     t.querySelectorAll('.bg-cell[data-k]').forEach(td=>{ td.addEventListener('click',()=>showCell(td.dataset.k)); td.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); showCell(td.dataset.k); } }); });
   };
   s.appendChild(grid); drawGrid();
   // clicking an estimate card redraws the grid AND takes the reader down to it, so the change is seen
   // (asked 14/09/2026: without the scroll nobody understood what the click did)
-  const setScen=id=>{ if(!SCEN[id]) return; scen=id; s.querySelectorAll('.bg-estcard').forEach(x=>x.classList.toggle('on',x.dataset.scen===id)); detail.hidden=true; drawGrid();
+  const setScen=id=>{ if(!SCEN[id]) return; scen=id; s.querySelectorAll('.bg-estcard').forEach(x=>x.classList.toggle('on',x.dataset.scen===id)); detail.hidden=true; drawGrid(); drawCats();
     grid.scrollIntoView({behavior:'smooth',block:'start'}); grid.classList.remove('bg-flash'); void grid.offsetWidth; grid.classList.add('bg-flash'); };
   s.querySelectorAll('.bg-estcard').forEach(x=>{ x.addEventListener('click',()=>setScen(x.dataset.scen)); x.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); setScen(x.dataset.scen); } }); });
 
@@ -2800,7 +2993,7 @@ function drawBaselineChart(id, cfs, overlays){
 }
 
 /* ----------------------------------------------------------------- nav + shell */
-const RENDER={budget:renderBudget,overview:renderOverview,country:renderCountry,product:renderProduct,competition:renderCompetition,accounts:renderAccounts,signals:renderSignals,outlook:renderOutlook,baselines:renderBaselines,underlying:renderUnderlying,futures:renderFutures,patterns:renderPatterns};
+const RENDER={budget:s=>renderBudget(s,'base'),budget_stretch:s=>renderBudget(s,'stretch'),overview:renderOverview,country:renderCountry,product:renderProduct,competition:renderCompetition,accounts:renderAccounts,signals:renderSignals,outlook:renderOutlook,baselines:renderBaselines,underlying:renderUnderlying,futures:renderFutures,patterns:renderPatterns};
 function navCount(id){
   const k=DASH.kpis;
   return {budget:((DASH.budget_2027||{}).cells||[]).length,overview:k.n_signals,country:k.n_countries_active,product:DASH.products.filter(p=>p.n_signals>0).length,
@@ -2915,10 +3108,12 @@ function buildShell(){
   // sidebar nav
   const nav=$("#nav"); nav.innerHTML="";
   // the Budget tab and its group exist only when the build carries budget data (14/09/2026)
+  // the base budget ships in plain text and is visible to every viewer (24/09/2026); the stretch stays behind the password
+  if(window.__DASH_BUDGET__&&DASH&&!DASH.budget){ Object.assign(DASH, window.__DASH_BUDGET__); }
   const _hasBudget=!!(DASH&&DASH.budget&&DASH.budget.cells&&DASH.budget.cells.length);
   TAB_GROUPS.filter(g=>g.id!=='budget'||_hasBudget).forEach(g=>{
     nav.appendChild(el("div","side-label",g.label));
-    TABS.filter(t=>t.group===g.id&&(t.id!=='budget'||_hasBudget)).forEach(t=>{
+    TABS.filter(t=>t.group===g.id&&(t.group!=='budget'||_hasBudget)&&(t.id!=='budget_stretch'||(DASH&&DASH.budget_2027_stretch))).forEach(t=>{
       const b=el("button","nav-item"+(t.nested?" nav-nested":"")); b.dataset.id=t.id;
       b.setAttribute("aria-label",t.label);
       b.innerHTML=`<span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24">${t.icon}</svg></span><span class="lab">${t.label}</span>`;
@@ -2932,8 +3127,8 @@ function buildShell(){
   nav.appendChild(out);
   // Admin: a small link at the foot of the sidebar. With a budget block in the build, it asks for
   // the password, decrypts the budget in the browser and adds the Budget tab. Locked again on reload.
-  if(window.__DASH_BUDGET_ENC__ && !(DASH&&DASH.budget)){
-    const adm=el("button","nav-item admin-link"); adm.type='button'; adm.title='Admin: unlock the budget view';
+  if(window.__DASH_BUDGET_ENC__ && !(DASH&&DASH.budget_2027_stretch)){
+    const adm=el("button","nav-item admin-link"); adm.type='button'; adm.title='Admin: unlock the stretched budget';
     adm.innerHTML=`<span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span><span class="lbl">Admin</span>`;
     adm.addEventListener('click',()=>budgetUnlockDialog(nav,adm));
     nav.appendChild(adm);

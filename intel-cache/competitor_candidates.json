@@ -1,0 +1,1973 @@
+{
+ "generated": "2026-09-18",
+ "watchlist_size": 164,
+ "files_scanned": 512,
+ "candidates": [
+  {
+   "name": "Agent-6",
+   "score": 39,
+   "mentions": 10,
+   "files": [
+    "findings/02-tenders/2026-08-27.md",
+    "findings/02-tenders/parts/2026-07-14/croatia-eojn.md",
+    "findings/02-tenders/parts/2026-08-27/romania-seap-sicap.md",
+    "findings/02-tenders/parts/2026-08-27/ted-eu.md",
+    "findings/02-tenders/parts/2026-08-27/western-balkans-portals.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/romania-seap-sicap.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/ted-eu.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/western-balkans-portals.md"
+   ],
+   "cues": [
+    "awarded to",
+    "competitor",
+    "supplier",
+    "winner"
+   ],
+   "examples": [
+    "| Autoritatea Naţională pentru Administrare şi Reglementare în Comunicaţii (ANCOM, National Authority for Management and Regulation in Communications, CIF 14751237) | Romania | STILL OPEN — CLOSES IN 4 DAYS. CN1094796, o",
+    "| Romanian cash-in-transit and cash-logistics market (Brink's Cash Solutions (RO) SRL, NEI Divizia de Securitate SRL, Director Special Troops D.S.T. SRL, Paza si Interventie SRL, NGGS Security) | Romania | COMPETITOR/PAR"
+   ]
+  },
+  {
+   "name": "CLOSED WITH NO",
+   "score": 30,
+   "mentions": 7,
+   "files": [
+    "findings/02-tenders/2026-07-14.md",
+    "findings/02-tenders/2026-08-27.md",
+    "findings/02-tenders/parts/2026-08-27/austria-usp.md",
+    "findings/02-tenders/parts/2026-08-27/bulgaria-eop.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/austria-usp.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/bulgaria-eop.md"
+   ],
+   "cues": [
+    "maintenance",
+    "winner"
+   ],
+   "examples": [
+    "| Financijska agencija (Fina) | Croatia | Fina ran an open tender 'Brojaci kovanica' (coin-counting machines, CPV 30123620), estimated value 400,000 EUR. Award notice 435583-2026 (25/06/2026) records CLOSED WITH NO WINNE",
+    "| 14/09/2026 | Muenze Oesterreich AG (Austrian Mint) | Austria | CARRIED ITEM STATUS = EXTENDED, still OPEN. 'Automatisierte Wiegeanlage fuer Muenzrohlinge (Ronden) - 2. Versuch' (automated weighing line for coin blanks,"
+   ]
+  },
+  {
+   "name": "HICO",
+   "score": 27,
+   "mentions": 7,
+   "files": [
+    "findings/02-tenders/2026-08-27.md",
+    "findings/02-tenders/parts/2026-08-01/slovakia-uvo.md",
+    "findings/02-tenders/parts/2026-08-01_run1-orphaned-backup/slovakia-uvo.md",
+    "findings/02-tenders/parts/2026-08-27/slovakia-uvo.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/slovakia-uvo.md"
+   ],
+   "cues": [
+    "awarded to",
+    "winner"
+   ],
+   "examples": [
+    "| HICO, s.r.o. (winner) / Národná banka Slovenska (NBS, buyer) | Slovakia | AWARD CONFIRMED (winner: HICO, s.r.o., IČO 45599181) AND A MAJOR FORWARD PROGRAMME. 'Stavebnotechnický dozor – trvalé záložné pracovisko NBS Kre",
+    "- **Signal:** NBS's cash-handling estate is at the end of its normal replacement cycle and every element was bought through ÚVO, so the next round will be visible: banknote-processing devices incl. warranty and post-warr"
+   ]
+  },
+  {
+   "name": "Thales",
+   "score": 25,
+   "mentions": 5,
+   "files": [
+    "findings/02-tenders/2026-07-14.md",
+    "findings/02-tenders/2026-08-01.md",
+    "findings/02-tenders/2026-08-27.md",
+    "findings/02-tenders/parts/2026-08-01/croatia-eojn.md",
+    "findings/02-tenders/parts/2026-08-01_run1-orphaned-backup/croatia-eojn.md"
+   ],
+   "cues": [
+    "competitor",
+    "maintenance",
+    "winner"
+   ],
+   "examples": [
+    "| OPSEA / ΟΠΣΕΑ (Greek State security-documents & digital-ID system) | Greece | EUR515.4m competitive-dialogue digital-ID/eID tender: Phase A participation deadline extended one month to 25/07/2026 (NOT 27/07); four cons",
+    "| FINA – Mrežni HSM uređaji za e-servise | Croatia | FINA awarded 'Mrežni HSM uređaji za e-servise' (network hardware security modules for e-services; an HSM is the tamper-resistant appliance that stores and uses cryptog"
+   ]
+  },
+  {
+   "name": "CROZ d.o.o",
+   "score": 25,
+   "mentions": 5,
+   "files": [
+    "findings/02-tenders/2026-08-01.md",
+    "findings/02-tenders/parts/2026-08-01/croatia-eojn.md",
+    "findings/02-tenders/parts/2026-08-01_run1-orphaned-backup/croatia-eojn.md",
+    "findings/06-vendors/2026-08-31.md",
+    "findings/06-vendors/parts/2026-08-31/tail-adriatic-cee.md"
+   ],
+   "cues": [
+    "awarded to",
+    "winner"
+   ],
+   "examples": [
+    "| FINA – Mrežni HSM uređaji za e-servise | Croatia | FINA awarded 'Mrežni HSM uređaji za e-servise' (network hardware security modules for e-services; an HSM is the tamper-resistant appliance that stores and uses cryptog",
+    "FINA awarded 'Mrežni HSM uređaji za e-servise' (network hardware security modules for e-services; an HSM is the tamper-resistant appliance that stores cryptographic keys for payments and e-signature), CPV 'Modules', esti"
+   ]
+  },
+  {
+   "name": "SZRB",
+   "score": 23,
+   "mentions": 9,
+   "files": [
+    "findings/02-tenders/2026-08-27.md",
+    "findings/02-tenders/parts/2026-08-27/slovakia-uvo.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/slovakia-uvo.md"
+   ],
+   "cues": [
+    "winner"
+   ],
+   "examples": [
+    "| Ernst & Young, s. r. o., IČO 35839121 (winner) / SZRB, IČO 00682420 (buyer) | Slovakia | AWARD. Winner: Ernst & Young, s. r. o. (Slovak entity), IČO 35839121. 'Informačný systém pre automatizovanú prípravu a správu leg",
+    "| 8 | Ernst & Young, s. r. o. (winner) / SZRB (buyer) | AWARD (winner: Ernst & Young, s. r. o.). 'Informačný systém pre automatizovanú prípravu a správu legislatívneho reportingu pre potreby SZRB, a. s. (II… | 01/07/2026"
+   ]
+  },
+  {
+   "name": "CENT SI",
+   "score": 21,
+   "mentions": 4,
+   "files": [
+    "findings/02-tenders/2026-08-01.md",
+    "findings/02-tenders/2026-08-27.md",
+    "findings/02-tenders/parts/2026-08-01/slovenia-enarocanje.md",
+    "findings/02-tenders/parts/2026-08-01_run1-orphaned-backup/slovenia-enarocanje.md"
+   ],
+   "cues": [
+    "integrator",
+    "maintenance"
+   ],
+   "examples": [
+    "| Ministrstvo za digitalno preobrazbo (Ministry of Digital Transformation) | Slovenia | AWARD (re-verified): 'Najem mobilnih enot za zbiranje biometričnih podatkov za potrebe upravnih enot' - RENTAL of mobile biometric-e",
+    "| Ministrstvo za digitalno preobrazbo (Ministry of Digital Transformation) | Slovenia | TWO digital-identity / key-security awards by Ministrstvo za digitalno preobrazbo (Ministry of Digital Transformation, reg. 26325860"
+   ]
+  },
+  {
+   "name": "Softwareentwicklung Multi",
+   "score": 21,
+   "mentions": 4,
+   "files": [
+    "findings/02-tenders/2026-08-01.md",
+    "findings/02-tenders/2026-08-27.md",
+    "findings/02-tenders/parts/2026-08-27/austria-usp.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/austria-usp.md"
+   ],
+   "cues": [
+    "competitor",
+    "vendor"
+   ],
+   "examples": [
+    "| GELDSERVICE AUSTRIA (GSA) | Austria | GSA is assembling a multi-vendor cash-and-voucher software stack through small below-threshold direct awards, and a Printec competitor already holds part of it. (a) 'Softwareentwic",
+    "| Geldservice Austria (GSA) / Diebold Nixdorf GmbH Banking Division; Data Engineering GmbH | Austria | COMPETITOR WIN AT THE TARGET BUYER. GSA directly awarded (Direktvergabe) 'Applikationssoftware und Gutscheinverarbeit"
+   ]
+  },
+  {
+   "name": "SIEM",
+   "score": 21,
+   "mentions": 4,
+   "files": [
+    "findings/02-tenders/2026-08-01.md",
+    "findings/02-tenders/2026-08-27.md",
+    "findings/02-tenders/parts/2026-08-01/cyprus-eprocurement.md",
+    "findings/02-tenders/parts/2026-08-01_run1-orphaned-backup/cyprus-eprocurement.md"
+   ],
+   "cues": [
+    "incumbent",
+    "maintenance",
+    "subcontract"
+   ],
+   "examples": [
+    "| Εθνική Αρχή Στοιχημάτων (Cyprus National Betting Authority) / Logicom Solutions Ltd | Cyprus | Award notice Α.Α.98.2026 'SIEM - SOC', published on TED 12/06/2026 (OJ S 112/2026), CPV 72500000. Direct award via negotiat",
+    "| Banka Slovenije (Bank of Slovenia) | Slovenia | TWO OPEN Banka Slovenije tenders, both still OPEN as at 27/08/2026 (dossiers re-checked, no corrigenda, no extension): (1) 'Vzdrzevanje in nadgrajevanje sistema Kadris, p"
+   ]
+  },
+  {
+   "name": "Alanata",
+   "score": 19,
+   "mentions": 5,
+   "files": [
+    "findings/02-tenders/2026-08-27.md",
+    "findings/02-tenders/parts/2026-08-27/slovakia-uvo.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/slovakia-uvo.md"
+   ],
+   "cues": [
+    "winner"
+   ],
+   "examples": [
+    "| Alanata a. s. (winner) / Národná banka Slovenska (NBS — National Bank of Slovakia, buyer) | Slovakia | AWARD CONFIRMED (winner: Alanata a. s., IČO 54629331, Bratislava). 'Agendové systémy dohľadu a regulácie' (ASDR — c",
+    "| 11 | Alanata a. s. (winner) / Národná banka Slovenska (buyer) | AWARD (winner: Alanata a. s.). 'Agendové systémy dohľadu a regulácie' (ASDR — case-management systems for NBS's supervision and regulation functions):… | "
+   ]
+  },
+  {
+   "name": "VNET",
+   "score": 19,
+   "mentions": 5,
+   "files": [
+    "findings/02-tenders/2026-08-27.md",
+    "findings/02-tenders/parts/2026-08-27/slovakia-uvo.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/slovakia-uvo.md"
+   ],
+   "cues": [
+    "winner"
+   ],
+   "examples": [
+    "| VNET a.s. (winner) / Národná banka Slovenska (NBS, buyer) | Slovakia | AWARD CONFIRMED (winner: VNET a.s., IČO 35845007). 'Ochrana pred DDoS útokmi' — set-up, commissioning and provision of a distributed-denial-of-serv",
+    "| 12 | VNET a.s. (winner) / Národná banka Slovenska (buyer) | AWARD (winner: VNET a.s.). 'Ochrana pred DDoS útokmi' — set-up, commissioning and provision of a distributed-denial-of-service protection service for … | 07/0"
+   ]
+  },
+  {
+   "name": "Mincovňa Kremnica",
+   "score": 19,
+   "mentions": 5,
+   "files": [
+    "findings/02-tenders/2026-08-27.md",
+    "findings/02-tenders/parts/2026-08-27/slovakia-uvo.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/slovakia-uvo.md"
+   ],
+   "cues": [
+    "winner"
+   ],
+   "examples": [
+    "| Mincovňa Kremnica, štátny podnik (winner — the Kremnica Mint, a Slovak state enterprise, IČO 00010448) / Národná banka Slovenska (buyer) | Slovakia | AWARD CONFIRMED (winner: Mincovňa Kremnica, štátny podnik, IČO 00010",
+    "| 14 | Mincovňa Kremnica, štátny podnik (winner) / Národná banka Slovenska (buyer) | AWARD (winner: Mincovňa Kremnica, štátny podnik — the Kremnica Mint, a Slovak state enterprise). 'Razba a dodávky zberateľských euromin"
+   ]
+  },
+  {
+   "name": "QWEST CZ",
+   "score": 18,
+   "mentions": 4,
+   "files": [
+    "findings/02-tenders/2026-08-01.md",
+    "findings/02-tenders/parts/2026-08-01/ted-eu.md",
+    "findings/02-tenders/parts/2026-08-01_run1-orphaned-backup/ted-eu.md"
+   ],
+   "cues": [
+    "supplier",
+    "winner"
+   ],
+   "examples": [
+    "| 04/08/2026 | Česká pošta, s.p. (Czech Post) | Czechia | Two Czech Post cash-logistics consumable procurements. (1) TED 455052-2026 (published 02/07/2026): OPEN tender 'Dodávky bezpečnostních obalů' (security packaging)",
+    "| Česká pošta, s.p. (Czech Post) | Czechia | Two Czech Post cash-logistics consumable procurements. (1) TED 455052-2026 (published 02/07/2026): OPEN tender 'Dodávky bezpečnostních obalů' (security packaging), CPV 3512140"
+   ]
+  },
+  {
+   "name": "RENOME-SMART",
+   "score": 18,
+   "mentions": 4,
+   "files": [
+    "findings/02-tenders/2026-08-01.md",
+    "findings/06-vendors/2026-08-31.md",
+    "findings/06-vendors/parts/2026-08-31/tail-ukraine.md"
+   ],
+   "cues": [
+    "contract to",
+    "rival",
+    "supplier"
+   ],
+   "examples": [
+    "| Sense Bank / Printec Ukraine LLC — POS service framework | Ukraine | Sense Bank tender UA-2025-05-12-013452-a (post-warranty POS terminal servicing, CPV 50800000-3, est. UAH 14,251,486.03) was split three ways on 04/06",
+    "| RENOME-SMART LLC (attribution unverified) — PrivatBank ATM/SST fleet condition assessment | Ukraine | LOCAL-PEER tier, not in the roster. CONFIRMED FROM PROZORRO: tender UA-2026-08-03-004344-a, buyer PrivatBank, subjec"
+   ]
+  },
+  {
+   "name": "Data Target d.o.o",
+   "score": 17,
+   "mentions": 3,
+   "files": [
+    "findings/02-tenders/2026-08-01.md",
+    "findings/02-tenders/parts/2026-08-01/croatia-eojn.md",
+    "findings/02-tenders/parts/2026-08-01_run1-orphaned-backup/croatia-eojn.md"
+   ],
+   "cues": [
+    "winner"
+   ],
+   "examples": [
+    "| HNB – V-19/2026 payment-system servers | Croatia | HNB awarded 'Poslužitelji za servise platnoga prometa' (servers for payment-system services), internal ref V-19/2026, open procedure, estimated EUR 1,300,000: winner D",
+    "HNB awarded 'Poslužitelji za servise platnoga prometa' (servers for payment-system services), internal ref V-19/2026, open procedure, estimated EUR 1,300,000: winner Data Target d.o.o. (Croatia), value EUR 1,288,464 excl"
+   ]
+  },
+  {
+   "name": "SHOT D.O.O. ZENICA",
+   "score": 17,
+   "mentions": 3,
+   "files": [
+    "findings/02-tenders/2026-08-01.md",
+    "findings/02-tenders/parts/2026-08-01/western-balkans-portals.md",
+    "findings/02-tenders/parts/2026-08-01_run1-orphaned-backup/western-balkans-portals.md"
+   ],
+   "cues": [
+    "winner"
+   ],
+   "examples": [
+    "| Centralna banka Bosne i Hercegovine (CBBH) | Bosnia & Herzegovina | CBBH procurement is fully retrievable through the e-Nabavke BiH open API even though cbbh.ba/procurement has returned 500/302 in prior runs. Cash-cycl",
+    "- **Signal:** CBBH's procurement is fully retrievable through the e-Nabavke BiH open API even though cbbh.ba/procurement returned 500/302 in prior runs. Cash-cycle awards and live notices found: video-spectral comparator"
+   ]
+  },
+  {
+   "name": "EXTAR D.O.O. SARAJEVO",
+   "score": 17,
+   "mentions": 3,
+   "files": [
+    "findings/02-tenders/2026-08-01.md",
+    "findings/02-tenders/parts/2026-08-01/western-balkans-portals.md",
+    "findings/02-tenders/parts/2026-08-01_run1-orphaned-backup/western-balkans-portals.md"
+   ],
+   "cues": [
+    "winner"
+   ],
+   "examples": [
+    "| Centralna banka Bosne i Hercegovine (CBBH) | Bosnia & Herzegovina | CBBH procurement is fully retrievable through the e-Nabavke BiH open API even though cbbh.ba/procurement has returned 500/302 in prior runs. Cash-cycl",
+    "- **Signal:** CBBH's procurement is fully retrievable through the e-Nabavke BiH open API even though cbbh.ba/procurement returned 500/302 in prior runs. Cash-cycle awards and live notices found: video-spectral comparator"
+   ]
+  },
+  {
+   "name": "AUGUSTINI d.o.o",
+   "score": 17,
+   "mentions": 3,
+   "files": [
+    "findings/02-tenders/2026-08-01.md",
+    "findings/02-tenders/parts/2026-08-01/croatia-eojn.md",
+    "findings/02-tenders/parts/2026-08-01_run1-orphaned-backup/croatia-eojn.md"
+   ],
+   "cues": [
+    "awarded to"
+   ],
+   "examples": [
+    "| Hrvatske autoceste d.o.o. (HAC) — card issuing and closed-loop acceptance | Croatia | Supporting HAC card-estate intelligence. 'Isporuka magnetskih kartica' (magnetic card supply, CPV 30162000) runs off a single EUR 85",
+    "Supporting HAC card-estate intelligence. 'Isporuka magnetskih kartica' (magnetic card supply, CPV 30162000) was awarded twice recently: EUR 62,400 to AUGUSTINI d.o.o. (TED 58431-2026, 27/01/2026) and EUR 225,720 to Nagel"
+   ]
+  },
+  {
+   "name": "Slovenije BPS M7",
+   "score": 17,
+   "mentions": 3,
+   "files": [
+    "findings/02-tenders/2026-08-01.md",
+    "findings/02-tenders/parts/2026-08-01/slovenia-enarocanje.md",
+    "findings/02-tenders/parts/2026-08-01_run1-orphaned-backup/slovenia-enarocanje.md"
+   ],
+   "cues": [
+    "incumbent",
+    "winner"
+   ],
+   "examples": [
+    "| Banka Slovenije (central bank) | Slovenia | AWARD, RE-VERIFIED: 'Nadgradnja obstojece programske opreme na dveh sortirnih sistemih BPS M7' - upgrade of the software on two BPS M7 banknote sorting machines to the new 'M",
+    "- **Follow-up:** Feed 'Giesecke & Devrient GmbH - Banka Slovenije BPS M7 incumbent' to the competitor register and CORRECT the earlier 'M EVO' winner entry."
+   ]
+  },
+  {
+   "name": "IDAS",
+   "score": 17,
+   "mentions": 3,
+   "files": [
+    "findings/02-tenders/2026-08-01.md",
+    "findings/02-tenders/parts/2026-08-01/czechia-nen.md",
+    "findings/02-tenders/parts/2026-08-01_run1-orphaned-backup/czechia-nen.md"
+   ],
+   "cues": [
+    "integrator"
+   ],
+   "examples": [
+    "| SEFIRA spol. s r.o. (IČO 62907760) — Czech HSM/eIDAS integrator | Czechia | SEFIRA is the entrenched supplier of Entrust nShield hardware security modules (HSMs — tamper-resistant boxes that generate and guard cryptogr",
+    "### 6. SEFIRA spol. s r.o. (IČO 62907760) — Czech HSM/eIDAS integrator — Czechia"
+   ]
+  },
+  {
+   "name": "NBS-cleared",
+   "score": 17,
+   "mentions": 3,
+   "files": [
+    "findings/02-tenders/2026-08-27.md",
+    "findings/02-tenders/parts/2026-08-27/ted-eu.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/ted-eu.md"
+   ],
+   "cues": [
+    "maintenance",
+    "winner"
+   ],
+   "examples": [
+    "| Národná banka Slovenska (NBS — National Bank of Slovakia) | Slovakia | EXTENDED, STILL OPEN — TED 581385-2026 (published 24/08/2026) republishes 'Rozšírenie podnikovej LAN pre ACCESS a SERVER siete' (expansion of the c",
+    "- **Follow-up:** Capture the winner as an NBS-cleared integrator; no bid recommended."
+   ]
+  },
+  {
+   "name": "Printec-class",
+   "score": 17,
+   "mentions": 3,
+   "files": [
+    "findings/02-tenders/2026-08-27.md",
+    "findings/02-tenders/parts/2026-08-27/austria-usp.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/austria-usp.md"
+   ],
+   "cues": [
+    "competitor",
+    "incumbent"
+   ],
+   "examples": [
+    "| Geldservice Austria (GSA) / GZT - Geldzaehltechnik Gesellschaft m.b.H. | Austria | COMPETITOR WIN — LOCAL CASH-AUTOMATION SPECIALIST. GSA awarded 'Muenzrollenverpacker fuer die Fertigung von Muenzrollen' (coin-roll pac",
+    "**Implies.** GZT is the Austrian coin- and cash-handling equipment incumbent and a direct Printec-class competitor in this market — it holds BOTH GSA coin machinery and Oesterreichische Post's automatic cash safes. A sin"
+   ]
+  },
+  {
+   "name": "Profile TH.K. Offices Supplies",
+   "score": 17,
+   "mentions": 3,
+   "files": [
+    "findings/02-tenders/2026-08-27.md",
+    "findings/02-tenders/parts/2026-08-27/cyprus-eprocurement.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/cyprus-eprocurement.md"
+   ],
+   "cues": [
+    "install",
+    "winner"
+   ],
+   "examples": [
+    "| Αρχή Ηλεκτρισμού Κύπρου / Electricity Authority of Cyprus (EAC) | Cyprus | [CLOSED — UNDER EVALUATION, bid prices public; re-verified 27/08/2026] EAC tender 202/2025 'Προμήθεια, Εγκατάσταση και Συντήρηση Μηχανών Καταμέ",
+    "- **Follow-up:** Re-poll resourceId 7795018 monthly for the 'Ημερομηνία Ανάθεσης' / winner. Profile TH.K. Offices Supplies LTD, MASTERTYPE C.P.SERVICES LTD and A. Finiris Co Ltd as Cyprus cash-automation resellers for Ag"
+   ]
+  },
+  {
+   "name": "Mile Banktechnika Kft",
+   "score": 17,
+   "mentions": 3,
+   "files": [
+    "findings/02-tenders/2026-08-27.md",
+    "findings/02-tenders/parts/2026-08-27/hungary-ekr.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/hungary-ekr.md"
+   ],
+   "cues": [
+    "competitor",
+    "maintenance"
+   ],
+   "examples": [
+    "| Budapest Gyógyfürdői és Hévizei Zrt. (Budapest Spas and Thermal Baths) | Hungary | AWARDED - contract SIGNED 10/08/2026, result notice published 16/08/2026 (KE 14194/2026, EKR000944212026/H003, national procedure under",
+    "- implies: Names a small, previously unlogged Hungarian cash-automation service competitor (Mile Banktechnika Kft.) holding a recycler/coin-processing maintenance contract — exactly Printec's managed-services and cash-au"
+   ]
+  },
+  {
+   "name": "AWARD OUTCOMES",
+   "score": 17,
+   "mentions": 3,
+   "files": [
+    "findings/02-tenders/2026-08-27.md",
+    "findings/02-tenders/parts/2026-08-27/cyprus-eprocurement.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/cyprus-eprocurement.md"
+   ],
+   "cues": [
+    "winner"
+   ],
+   "examples": [
+    "- **Cyprus — eprocurement.gov.cy:** 1) CBC procurement (Central Bank of Cyprus, 80 Kennedy Avenue, CY-1076 Nicosia, +357 22 71 41 00): request the CBC's published annual tender plan and the AWARD OUTCOMES (winner, value,",
+    "**Operator:** 1) CBC procurement (Central Bank of Cyprus, 80 Kennedy Avenue, CY-1076 Nicosia, +357 22 71 41 00): request the CBC's published annual tender plan and the AWARD OUTCOMES (winner, value, date) of Tender 08/20"
+   ]
+  },
+  {
+   "name": "STILL OPEN",
+   "score": 17,
+   "mentions": 3,
+   "files": [
+    "findings/02-tenders/parts/2026-08-27/serbia-ujn.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/serbia-ujn.md",
+    "findings/03-regulation/2026-08-27.md"
+   ],
+   "cues": [
+    "operated by",
+    "winner"
+   ],
+   "examples": [
+    "Fresh run, no checkpoint existed. Defeated the documented jnportal.ujn.gov.rs API traps by (a) taking a session cookie from the portal root, (b) reading the UserToken GUID out of the hidden input #uiUserToken on the sear",
+    "Fresh run, no checkpoint existed. Defeated the documented jnportal.ujn.gov.rs API traps by (a) taking a session cookie from the portal root, (b) reading the UserToken GUID out of the hidden input #uiUserToken on the sear"
+   ]
+  },
+  {
+   "name": "ATM-parts",
+   "score": 17,
+   "mentions": 3,
+   "files": [
+    "findings/02-tenders/parts/2026-08-27/ukraine-prozorro.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/ukraine-prozorro.md",
+    "findings/06-vendors/2026-07-15.md"
+   ],
+   "cues": [
+    "competitor",
+    "winner"
+   ],
+   "examples": [
+    "- **Follow-up:** Profile Servus Systems Integration (31089403) as a UA ATM-parts competitor.",
+    "- **Follow-up:** Profile Servus Systems Integration (31089403) as a UA ATM-parts competitor."
+   ]
+  },
+  {
+   "name": "EVOLUTION PROJECTS A.E",
+   "score": 15,
+   "mentions": 4,
+   "files": [
+    "findings/02-tenders/2026-07-24.md",
+    "findings/02-tenders/parts/2026-07-24/ted-eu.md"
+   ],
+   "cues": [
+    "winner"
+   ],
+   "examples": [
+    "| Municipality of Almyros (Δήμος Αλμυρού) — winners EVOLUTION PROJECTS A.E. + ΕΓΚΡΙΤΟΣ GROUP – ΣΥΝΕΡΓΑΣΙΑ Α.Ε. | Greece | Contract AWARD for municipal digital transformation. Total awarded EUR 367,344.85 (est. EUR 393,75",
+    "| Municipality of Iasmos (ΔΗΜΟΣ ΙΑΣΜΟΥ) — winners EVOLUTION PROJECTS A.E. + Open Technology Services (ΥΠΗΡΕΣΙΕΣ ΑΝΟΙΚΤΗΣ ΤΕΧΝΟΛΟΓΙΑΣ) | Greece | Contract AWARD for municipal digital transformation. Total awarded EUR 220,"
+   ]
+  },
+  {
+   "name": "PERSONAL-DOCUMENT SCANNERS",
+   "score": 15,
+   "mentions": 6,
+   "files": [
+    "findings/02-tenders/2026-08-27.md",
+    "findings/02-tenders/parts/2026-08-27/ted-eu.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/ted-eu.md"
+   ],
+   "cues": [
+    "maintenance"
+   ],
+   "examples": [
+    "| 11/09/2026 | Ministarstvo unutarnjih poslova (MUP — Croatian Ministry of the Interior) | Croatia | STILL OPEN, AND A SECOND, BIGGER MUP IDENTITY-HARDWARE TENDER FOUND — (1) TED 555035-2026 (published 11/08/2026): 'Održ",
+    "| Ministarstvo unutarnjih poslova (MUP — Croatian Ministry of the Interior) | Croatia | STILL OPEN, AND A SECOND, BIGGER MUP IDENTITY-HARDWARE TENDER FOUND — (1) TED 555035-2026 (published 11/08/2026): 'Održavanje skener"
+   ]
+  },
+  {
+   "name": "Mile Banktechnika",
+   "score": 15,
+   "mentions": 4,
+   "files": [
+    "findings/02-tenders/parts/2026-08-27/hungary-ekr.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/hungary-ekr.md"
+   ],
+   "cues": [
+    "winner"
+   ],
+   "examples": [
+    "Portal: Hungary EKR (ekr.gov.hu). Route used: the SPA at /portal returns index.html for every path, but the public API and assets live at the ROOT host. Working endpoints found by reading the Angular bundle at https://ek",
+    "Portal: Hungary EKR (ekr.gov.hu). Route used: the SPA at /portal returns index.html for every path, but the public API and assets live at the ROOT host. Working endpoints found by reading the Angular bundle at https://ek"
+   ]
+  },
+  {
+   "name": "KOVAL SYSTEMS",
+   "score": 15,
+   "mentions": 4,
+   "files": [
+    "findings/02-tenders/parts/2026-08-27/slovakia-uvo.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/slovakia-uvo.md"
+   ],
+   "cues": [
+    "winner"
+   ],
+   "examples": [
+    "| 5 | KOVAL SYSTEMS, a. s. (winner) / Slovenská pošta, a.s. (buyer) | AWARD (winner: KOVAL SYSTEMS, a. s.). 'Poskytovanie podpornej servisnej služby pre BalíkoBOXy' — field maintenance and support for Slovak Post's out-o",
+    "- **Signal:** AWARD (winner: KOVAL SYSTEMS, a. s.). 'Poskytovanie podpornej servisnej služby pre BalíkoBOXy' — field maintenance and support for Slovak Post's out-of-warranty BalíkoBOX parcel lockers. Winning price EUR 1"
+   ]
+  },
+  {
+   "name": "Ernst",
+   "score": 15,
+   "mentions": 4,
+   "files": [
+    "findings/02-tenders/parts/2026-08-27/slovakia-uvo.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/slovakia-uvo.md"
+   ],
+   "cues": [
+    "winner"
+   ],
+   "examples": [
+    "| 8 | Ernst & Young, s. r. o. (winner) / SZRB (buyer) | AWARD (winner: Ernst & Young, s. r. o.). 'Informačný systém pre automatizovanú prípravu a správu legislatívneho reportingu pre potreby SZRB, a. s. (II… | 01/07/2026",
+    "- **Signal:** AWARD (winner: Ernst & Young, s. r. o.). 'Informačný systém pre automatizovanú prípravu a správu legislatívneho reportingu pre potreby SZRB, a. s. (II.)' — a regulatory/legislative reporting tool for SZRB p"
+   ]
+  },
+  {
+   "name": "ATM-hardware",
+   "score": 15,
+   "mentions": 4,
+   "files": [
+    "findings/06-vendors/2026-06-25.md",
+    "findings/06-vendors/parts/2026-06-25/worldline.md"
+   ],
+   "cues": [
+    "competitor",
+    "rival"
+   ],
+   "examples": [
+    "| Worldline / Cardlink | marketscreener.com returns 403 to WebFetch (carried); its 'Worldline completes ANZ divestment' headline is auto-generated/forward-looking — NOT used as a completion confirmation (contradicted by ",
+    "**Classification:** Worldline/Cardlink = COMPETITOR (acquiring/issuing/POS/SoftPOS rival to Printec's POS terminals + acquiring + TMS line). NOT an ATM-hardware rival."
+   ]
+  },
+  {
+   "name": "ATM-servicing",
+   "score": 14,
+   "mentions": 3,
+   "files": [
+    "findings/02-tenders/2026-07-14.md",
+    "findings/06-vendors/parts/2026-08-31/tail-serbia-wbalkans.md"
+   ],
+   "cues": [
+    "competitor",
+    "vendor",
+    "winner"
+   ],
+   "examples": [
+    "| Banka Poštanska štedionica | Serbia | CIT-escort + ATM-servicing lot (claimed closed 30/04/2026) award still not published; no winner found on posted.co.rs or via Serbian press. The 600+ ATM fleet-refresh thesis (Pošta",
+    "- **Bank-owned procurement pages:** 1) bankofalbania.org procurement/prokurime pages — fetch via real browser (Claude-in-Chrome) to confirm banknote-packaging tender, deadline and value. 2) danas.rs Pošta Srbije/Poštansk"
+   ]
+  },
+  {
+   "name": "Isitec International",
+   "score": 14,
+   "mentions": 3,
+   "files": [
+    "findings/02-tenders/2026-08-27.md",
+    "findings/06-vendors/2026-08-31.md"
+   ],
+   "cues": [
+    "competitor",
+    "winner"
+   ],
+   "examples": [
+    "- **Corrected/contradicted by the adversarial pass (33):** CEC Bank S.A. (state-owned commercial bank, RO361897) — as public-sector card acquirer — Every contract value CONFIRMED, several buyer names CORRECTED. Re-fetche",
+    "- **Corrected/contradicted by the adversarial pass (33):** CEC Bank S.A. (state-owned commercial bank, RO361897) — as public-sector card acquirer — Every contract value CONFIRMED, several buyer names CORRECTED. Re-fetche"
+   ]
+  },
+  {
+   "name": "Low-Medium",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/01-bank-disclosures/2026-06-24.md",
+    "findings/06-vendors/historical-baseline.md"
+   ],
+   "cues": [
+    "displace",
+    "vendor"
+   ],
+   "examples": [
+    "| Eurobank | Greece | 450+ GRGBanking H68V recyclers (TRSYS/Novidea) — competing channel, refresh window 2027-2029 [verified primary, source date CORRECTED] | [TRSYS case study](https://tr-sys.eu/eurobank-leads-the-branc",
+    "| Halcom | SI, RS, AL + region | E-banking/instant-payments vendor (7 markets, 50+ banks, 2 central banks): MultiPay live at Gorenjska banka and Delavska hranilnica (SI); Halcom One cloud certificates launched in Serbia;"
+   ]
+  },
+  {
+   "name": "A2A-native",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/01-bank-disclosures/2026-07-30.md",
+    "findings/01-bank-disclosures/parts/2026-07-30/albania.md"
+   ],
+   "cues": [
+    "competitor"
+   ],
+   "examples": [
+    "| Bank of Albania / Albanian banking sector - instant payments (TIPS Clone) | Albania | Albania's instant-payments go-live is reported for NOVEMBER 2026 on a TIPS Clone platform (a licensed copy of the Eurosystem's TARGE",
+    "**Implies for Printec.** A November-2026 start means bank-side integration must be contracted in Q3-2026 - the window is open right now. Direct pull for Printec transaction processing/switching, ISO 20022 enablement, HSM"
+   ]
+  },
+  {
+   "name": "UA-2025-05-30-001290-a",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/01-bank-disclosures/2026-07-30.md",
+    "findings/06-vendors/2026-07-24.md"
+   ],
+   "cues": [
+    "incumbent",
+    "winner"
+   ],
+   "examples": [
+    "| Ukrgasbank | Ukraine | CORRECTED FRAMING - Printec is already inside Ukrgasbank, not outside it. Ukrgasbank (EDRPOU 23697280) buys ATM estate services in small unbundled single-source lots, and Printec Ukraine LLC (EDR",
+    "| Mellon Group | mellon.hr and mellon.com.pl wp-json endpoints returned non-JSON (WAF/redirect/HTML) even with a desktop UA — logged, not resolved this pass; retry via Chrome MCP next run. mellongroup.com/news index is J"
+   ]
+  },
+  {
+   "name": "Zagreb-based",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/01-bank-disclosures/2026-08-27.md",
+    "findings/01-bank-disclosures/parts/2026-08-27/croatia-cluster.md"
+   ],
+   "cues": [
+    "competitor"
+   ],
+   "examples": [
+    "| ASEE Group / Payten (Printec competitor, Zagreb-based) | Croatia | ASEE Group (WSE: ASEECOSEE, ASE) reported estimated H1-2026 revenue of EUR 203.0m (+3%) and Q2-2026 revenue of EUR 101.4m (+1%). Its Payment Solutions ",
+    "### 6. ASEE Group / Payten (Printec competitor, Zagreb-based) (Croatia) — L / win Medium / Medium · NEW"
+   ]
+  },
+  {
+   "name": "Newland Payment Technology",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/01-bank-disclosures/2026-08-27.md",
+    "findings/06-vendors/2026-08-31.md"
+   ],
+   "cues": [
+    "competitor",
+    "winner"
+   ],
+   "examples": [
+    "| Newland Payment Technology (competitor at PrivatBank) | Ukraine | COMPETITIVE LOSS: Newland Payment Technology (H.K.) Company Limited - a Hong Kong entity (CN-SAIC 69372357), selling direct with no local integrator - w",
+    "| PrivatBank Android POS programme — 20,000 + 65,000 units bought direct (Newland attribution unverified) | Ukraine | GLOBAL/OEM tier; the roster tracks Topwise/Fujian Landi but no Newland. CONFIRMED ACROSS BOTH PORTALS:"
+   ]
+  },
+  {
+   "name": "Salesforce",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/01-bank-disclosures/2026-08-27.md",
+    "findings/01-bank-disclosures/parts/2026-08-27/alpha-cyprus.md"
+   ],
+   "cues": [
+    "incumbent"
+   ],
+   "examples": [
+    "| Alpha Bank Cyprus (ex-AstroBank) | Cyprus | Alpha Bank Cyprus announced (reported 08/07/2026) that it has completed implementation of Salesforce Financial Services Cloud (FSC), which it said has been 'fully operational",
+    "- **Printec implication:** Confirms an active, funded technology-transformation budget and names the CRM incumbent (Salesforce). For Printec this is competitive intelligence rather than an opening: the customer-facing la"
+   ]
+  },
+  {
+   "name": "Safetech SOC",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/01-bank-disclosures/parts/2026-06-29/brd-ro.md",
+    "findings/01-bank-disclosures/parts/2026-07-14/brd-ro.md"
+   ],
+   "cues": [
+    "incumbent"
+   ],
+   "examples": [
+    "4. Safetech SOC incumbent, renewal window ~Sep-2026 — AML/transaction monitoring/HSM adjacency (Safetech competitor on IT-sec) — M/Low",
+    "5. Safetech SOC incumbent — Darktrace/Cynet/Ironscales/Axonius; auto-renew 3yr from Sep-2023 → ~Sep-2026 renewal window imminent. Printec AML/txn-monitoring/HSM adjacency (Safetech = competitor). M / Low."
+   ]
+  },
+  {
+   "name": "NCR APTRA OptiCash",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/01-bank-disclosures/parts/2026-06-29/croatia-cluster.md",
+    "findings/02-tenders/parts/2026-06-24/croatia-eojn.md"
+   ],
+   "cues": [
+    "incumbent"
+   ],
+   "examples": [
+    "- Erste HR: Printec/NCR APTRA OptiCash incumbent, 600+ ATMs, channel partner Printec [M/High/Medium]",
+    "- Erste Bank Croatia — Printec OptiCash incumbent (NCR APTRA OptiCash via NCR+Printec channel; ~740 ATMs). Defend/expand managed-services + x-core multivendor."
+   ]
+  },
+  {
+   "name": "Alpha ATM",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/01-bank-disclosures/parts/2026-07-14/alpha-gr.md",
+    "findings/01-bank-disclosures/parts/2026-07-24/alpha-gr.md"
+   ],
+   "cues": [
+    "incumbent"
+   ],
+   "examples": [
+    "- **Printec = Alpha ATM incumbent**: full ATM programme; voice guidance live on 100+ ATMs (two-vendor NCR fleet, EN/EL, [STANDING — 2021]); instant payments 0.7s; contactless ATMs now live.",
+    "- **Printec = Alpha ATM incumbent** (contactless now live; voice guidance on 100+ ATMs [STANDING 2021])."
+   ]
+  },
+  {
+   "name": "DIRECT Printec",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/01-bank-disclosures/parts/2026-07-14/banca-intesa-rs.md",
+    "findings/06-vendors/2026-07-15.md"
+   ],
+   "cues": [
+    "competitor",
+    "integrator"
+   ],
+   "examples": [
+    "- ATM estate OUTSOURCED to Payten (ASEE / Asseco SEE group) — a DIRECT Printec COMPETITOR. Deal announced 13/12/2023: Payten bought out 122 external-location ATMs and is replacing ~200 ATMs with Diebold Nixdorf Cineo Cas",
+    "| Servus Systems Integration (SSI / ТОВ «Сервус Сістемз Інтегрейшн», EDRPOU 31089403) | Ukraine | Full-stack local integrator and DIRECT Printec rival: on its own site (ssi.com.ua) represents Verifone (POS terminals incl"
+   ]
+  },
+  {
+   "name": "PSA Payment Services Austria",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/02-tenders/2026-06-24.md",
+    "findings/02-tenders/_superseded-2026-06-24-run4-manual.md"
+   ],
+   "cues": [
+    "awarded to",
+    "winner"
+   ],
+   "examples": [
+    "| Oesterreichische Nationalbank (OeNB) | AT | OeNB rural-ATM operation framework with PSA Payment Services Austria GmbH is confirmed CURRENT via the Austrian USP/BMDW eProcurement award record 'Rahmenvereinbarung zum Bet",
+    "| OeNB Austria rural-ATM framework | **Now resolved — awarded to PSA Payment Services Austria (see above).** Second municipality round pending. |"
+   ]
+  },
+  {
+   "name": "GARED s.r.o",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/02-tenders/2026-06-24.md",
+    "findings/02-tenders/parts/2026-06-24/czechia-nen.md"
+   ],
+   "cues": [
+    "supplier",
+    "winner"
+   ],
+   "examples": [
+    "| Ceska narodni banka (CNB) | Czechia | Small-scope tender 'Balisticke panely TBO 5 CZ' (ballistic protection panels) IN EVALUATION (status Hodnoceni). Start 26/05/2026, deadline was 11/06/2026 10:00. No supplier named y",
+    "- \"Balisticke panely TBO 5 CZ\" (ballistic protection panels) — IN EVALUATION (hodnoceni), deadline was 11/06/2026. No winner named yet. (Note: a separate NEN notice N006-25-V00016730 for \"Balisticke panely TBO 5CZ\" is th"
+   ]
+  },
+  {
+   "name": "MEGA SPRINT GUARD ELECTRONIC",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/02-tenders/2026-07-24.md",
+    "findings/02-tenders/parts/2026-07-24/ted-eu.md"
+   ],
+   "cues": [
+    "winner"
+   ],
+   "examples": [
+    "| Hellenic Police — Directorate of NE Attica (Διεύθυνση Αστυνομίας Βορειοανατολικής Αττικής) — winner MEGA SPRINT GUARD ELECTRONIC SYSTEMS Α.Ε. | Greece | Contract AWARD for upgrade & technical support of CCTV and alarm ",
+    "6. **486444-2026 (AWARD) — Police Dir. of NE Attica, CCTV + alarm upgrade & support 2026–2031, awarded €240,000, winner MEGA SPRINT GUARD ELECTRONIC SYSTEMS Α.Ε.** Physical security managed-services pattern."
+   ]
+  },
+  {
+   "name": "EUTRON INVEST ROMANIA",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/02-tenders/2026-08-01.md",
+    "findings/02-tenders/parts/2026-08-01/romania-seap-sicap.md"
+   ],
+   "cues": [
+    "won by"
+   ],
+   "examples": [
+    "| C.N. Posta Romana S.A. (fiscal code RO 427410) | Romania | Posta Romana is a recurring annual buyer of banknote counting/verification equipment. DA40258980 'Masini de numarat si verificat bancnote', closing value RON 2",
+    "- **Signal:** RE-VERIFIED 01/08/2026 and EXTENDED: Posta Romana is a recurring annual buyer of banknote counting/verification equipment. DA40258980 'Masini de numarat si verificat bancnote', closing value RON 267,680, pu"
+   ]
+  },
+  {
+   "name": "Eutron Invest",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/02-tenders/2026-08-01.md",
+    "findings/02-tenders/parts/2026-08-01/romania-seap-sicap.md"
+   ],
+   "cues": [
+    "install",
+    "won by"
+   ],
+   "examples": [
+    "| C.N. Posta Romana S.A. (fiscal code RO 427410) | Romania | Posta Romana is a recurring annual buyer of banknote counting/verification equipment. DA40258980 'Masini de numarat si verificat bancnote', closing value RON 2",
+    "- **Implies:** Posta Romana runs a real cash centre with a 12-sorter installed base and buys counters annually - a natural Printec target for cash recyclers, teller automation and managed service. Both incumbents (Eutron"
+   ]
+  },
+  {
+   "name": "AWARD CONFIRMED",
+   "score": 13,
+   "mentions": 5,
+   "files": [
+    "findings/02-tenders/2026-08-27.md"
+   ],
+   "cues": [
+    "winner"
+   ],
+   "examples": [
+    "| Asseco Central Europe, a. s. (winner, IČO 35760419) / Slovenská záručná a rozvojová banka, a. s. (SZRB — Slovak Guarantee and Development Bank, buyer, IČO 00682420) | Slovakia | [STANDING — dated 2025, re-verified agai",
+    "| Alanata a. s. (winner) / Národná banka Slovenska (NBS — National Bank of Slovakia, buyer) | Slovakia | AWARD CONFIRMED (winner: Alanata a. s., IČO 54629331, Bratislava). 'Agendové systémy dohľadu a regulácie' (ASDR — c"
+   ]
+  },
+  {
+   "name": "CCTV",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/02-tenders/parts/2026-07-14/bulgaria-eop.md",
+    "findings/06-vendors/2026-07-15.md"
+   ],
+   "cues": [
+    "awarded to",
+    "install"
+   ],
+   "examples": [
+    "3. **Bulgarian Post euro video-surveillance — AWARDED to ЕНИГМА ГАРД ЕООД (Enigma Guard EOOD)**. TED 627866-2025 (award 25/09/2025), contract 17/09/2025, value **6,973,143.10 BGN** (est. 6,983,914.00), 3 tenderers. Scope",
+    "| Enigma Guard EOOD (Енигма Гард ЕООД, Sofia) | BG | Won Bulgarian Posts euro-changeover video-surveillance tender, 6,973,143.10 BGN (~€3.56M), 3 bids, contract 17/09/2025: supply+install ~2,230 IP CCTV systems (24/7 hig"
+   ]
+  },
+  {
+   "name": "STORM COMPUTERS",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/02-tenders/parts/2026-08-01/croatia-eojn.md",
+    "findings/02-tenders/parts/2026-08-01_run1-orphaned-backup/croatia-eojn.md"
+   ],
+   "cues": [
+    "integrator"
+   ],
+   "examples": [
+    "- **Likelihood:** Open, closes 01/09/2026; HNB IT infrastructure awards this year have gone to Croatian integrators (STORM COMPUTERS, CompING, Data Target, SELECTIUM, COMBIS) · **Confidence:** Medium · **Deadline:** 01/0",
+    "- **Likelihood:** Open, closes 01/09/2026; HNB IT infrastructure awards this year have gone to Croatian integrators (STORM COMPUTERS, CompING, Data Target, SELECTIUM, COMBIS) · **Confidence:** Medium · **Deadline:** 01/0"
+   ]
+  },
+  {
+   "name": "Dataflex Security",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/02-tenders/parts/2026-08-01/czechia-nen.md",
+    "findings/02-tenders/parts/2026-08-01_run1-orphaned-backup/czechia-nen.md"
+   ],
+   "cues": [
+    "awarded to"
+   ],
+   "examples": [
+    "- **Signal:** The Czech Ministry of the Interior tendered fingerprint-reading equipment (CPV 30233310, the same main CPV as the STC biometric enrolment kiosks) with an estimated value of CZK 3,245,000 and a tender deadli",
+    "- **Signal:** The Czech Ministry of the Interior tendered fingerprint-reading equipment (CPV 30233310, the same main CPV as the STC biometric enrolment kiosks) with an estimated value of CZK 3,245,000 and a tender deadli"
+   ]
+  },
+  {
+   "name": "MASTER TEAM DOO",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/02-tenders/parts/2026-08-01/serbia-ujn.md",
+    "findings/02-tenders/parts/2026-08-01_run1-orphaned-backup/serbia-ujn.md"
+   ],
+   "cues": [
+    "awarded to"
+   ],
+   "examples": [
+    "- **Signal**: Two Treasury cash-machine service contracts awarded in July 2026: (a) ref OP 69/2026 (tender id 374628) 'Redovan servis i popravka masina za brojanje novca i popravka masina za vezivanje novca' awarded to V",
+    "- **Signal**: Two Treasury cash-machine service contracts awarded in July 2026: (a) ref OP 69/2026 (tender id 374628) 'Redovan servis i popravka masina za brojanje novca i popravka masina za vezivanje novca' awarded to V"
+   ]
+  },
+  {
+   "name": "NESS Slovensko",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/02-tenders/parts/2026-08-01/slovakia-uvo.md",
+    "findings/02-tenders/parts/2026-08-01_run1-orphaned-backup/slovakia-uvo.md"
+   ],
+   "cues": [
+    "integrator"
+   ],
+   "examples": [
+    "- **Follow-up:** Only ~3 weeks left. Decide bid-or-partner with a Slovak network integrator (recent NBS IT winners: NESS Slovensko, Alanata a.s., PREFIS a.s., exe a.s.); otherwise track the award notice for the incumbent",
+    "- **Follow-up:** Only ~3 weeks left. Decide bid-or-partner with a Slovak network integrator (recent NBS IT winners: NESS Slovensko, Alanata a.s., PREFIS a.s., exe a.s.); otherwise track the award notice for the incumbent"
+   ]
+  },
+  {
+   "name": "GAP CLOSED",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/02-tenders/parts/2026-08-01/slovenia-enarocanje.md",
+    "findings/02-tenders/parts/2026-08-01_run1-orphaned-backup/slovenia-enarocanje.md"
+   ],
+   "cues": [
+    "winner"
+   ],
+   "examples": [
+    "- **Signal:** AWARD, NEW - GAP CLOSED, WINNER CAPTURED: FURS ref 'JN 25/2025 BAN - nakup naprav za stetje bankovcev in odkrivanje ponarejenih bankovcev' (purchase of banknote-counting and counterfeit-detection devices), ",
+    "- **Signal:** AWARD, NEW - GAP CLOSED, WINNER CAPTURED: FURS ref 'JN 25/2025 BAN - nakup naprav za stetje bankovcev in odkrivanje ponarejenih bankovcev' (purchase of banknote-counting and counterfeit-detection devices), "
+   ]
+  },
+  {
+   "name": "BS PKI",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/02-tenders/parts/2026-08-01/slovenia-enarocanje.md",
+    "findings/02-tenders/parts/2026-08-01_run1-orphaned-backup/slovenia-enarocanje.md"
+   ],
+   "cues": [
+    "integrator"
+   ],
+   "examples": [
+    "- **Follow-up:** Route a Printec-Thales conversation through the existing payShield relationship to see whether Printec can service the Slovenian Thales estate; log CREAplus d.o.o. as the dominant Slovenian security/card",
+    "- **Follow-up:** Route a Printec-Thales conversation through the existing payShield relationship to see whether Printec can service the Slovenian Thales estate; log CREAplus d.o.o. as the dominant Slovenian security/card"
+   ]
+  },
+  {
+   "name": "EURO BANKNOTE AUTHENTICATION",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/02-tenders/parts/2026-08-01/slovenia-enarocanje.md",
+    "findings/02-tenders/parts/2026-08-01_run1-orphaned-backup/slovenia-enarocanje.md"
+   ],
+   "cues": [
+    "competitor"
+   ],
+   "examples": [
+    "- **Signal:** COMPETITOR MAP, NEW - assembled from three separate primary records: BIROFORM DNS d.o.o. (reg. 1782070000, Motnica 11, Trzin) is the recurring Slovenian supplier of cash-handling devices across the public s",
+    "- **Signal:** COMPETITOR MAP, NEW - assembled from three separate primary records: BIROFORM DNS d.o.o. (reg. 1782070000, Motnica 11, Trzin) is the recurring Slovenian supplier of cash-handling devices across the public s"
+   ]
+  },
+  {
+   "name": "WEEKS BEFORE",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/02-tenders/parts/2026-08-01/slovenia-enarocanje.md",
+    "findings/02-tenders/parts/2026-08-01_run1-orphaned-backup/slovenia-enarocanje.md"
+   ],
+   "cues": [
+    "winner"
+   ],
+   "examples": [
+    "Resumed from the 01/08/2026 partial checkpoint (8 signals kept) and closed the gap list; 21 signals added, 29 total. ACCESS ROUTE (new, reusable): enarocanje.si is a Vue single-page app - /pregled-objav/<id> returns HTTP",
+    "Resumed from the 01/08/2026 partial checkpoint (8 signals kept) and closed the gap list; 21 signals added, 29 total. ACCESS ROUTE (new, reusable): enarocanje.si is a Vue single-page app - /pregled-objav/<id> returns HTTP"
+   ]
+  },
+  {
+   "name": "Ponudniki",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/02-tenders/parts/2026-08-01/slovenia-enarocanje.md",
+    "findings/02-tenders/parts/2026-08-01_run1-orphaned-backup/slovenia-enarocanje.md"
+   ],
+   "cues": [
+    "winner"
+   ],
+   "examples": [
+    "Resumed from the 01/08/2026 partial checkpoint (8 signals kept) and closed the gap list; 21 signals added, 29 total. ACCESS ROUTE (new, reusable): enarocanje.si is a Vue single-page app - /pregled-objav/<id> returns HTTP",
+    "Resumed from the 01/08/2026 partial checkpoint (8 signals kept) and closed the gap list; 21 signals added, 29 total. ACCESS ROUTE (new, reusable): enarocanje.si is a Vue single-page app - /pregled-objav/<id> returns HTTP"
+   ]
+  },
+  {
+   "name": "IT-outsourcing",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/02-tenders/parts/2026-08-01/ted-eu.md",
+    "findings/02-tenders/parts/2026-08-01_run1-orphaned-backup/ted-eu.md"
+   ],
+   "cues": [
+    "integrator"
+   ],
+   "examples": [
+    "- **Implies:** COMBIS d.o.o. (a Hrvatski Telekom/A1-orbit systems integrator) is the entrenched IT-outsourcing incumbent at the Croatian central bank, winning uncontested at ~99.8% of the estimate. Any Printec managed-se",
+    "- **Implies:** COMBIS d.o.o. (a Hrvatski Telekom/A1-orbit systems integrator) is the entrenched IT-outsourcing incumbent at the Croatian central bank, winning uncontested at ~99.8% of the estimate. Any Printec managed-se"
+   ]
+  },
+  {
+   "name": "DKU-brokered",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/02-tenders/parts/2026-08-01/ted-eu.md",
+    "findings/02-tenders/parts/2026-08-01_run1-orphaned-backup/ted-eu.md"
+   ],
+   "cues": [
+    "integrator"
+   ],
+   "examples": [
+    "- **Follow-up:** Track the award to identify the Hungarian biometric-kiosk integrator; DKU-brokered procurements recur, so map the DKU framework route for future self-service kiosk lots",
+    "- **Follow-up:** Track the award to identify the Hungarian biometric-kiosk integrator; DKU-brokered procurements recur, so map the DKU framework route for future self-service kiosk lots"
+   ]
+  },
+  {
+   "name": "SECOND CARRIED ITEM RESOLVED",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/02-tenders/parts/2026-08-27/austria-usp.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/austria-usp.md"
+   ],
+   "cues": [
+    "winner"
+   ],
+   "examples": [
+    "Portal: ausschreibungen.usp.gv.at (Austrian Unternehmensserviceportal eProcurement, 170,267 notices indexed). ACCESS METHOD THAT WORKED: the tenderlist UI renders client-side, but GET /at.gv.bmdw.eproc-p/public/api/tende",
+    "Portal: ausschreibungen.usp.gv.at (Austrian Unternehmensserviceportal eProcurement, 170,267 notices indexed). ACCESS METHOD THAT WORKED: the tenderlist UI renders client-side, but GET /at.gv.bmdw.eproc-p/public/api/tende"
+   ]
+  },
+  {
+   "name": "PRODUCT SWEEP",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/02-tenders/parts/2026-08-27/austria-usp.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/austria-usp.md"
+   ],
+   "cues": [
+    "winner"
+   ],
+   "examples": [
+    "Portal: ausschreibungen.usp.gv.at (Austrian Unternehmensserviceportal eProcurement, 170,267 notices indexed). ACCESS METHOD THAT WORKED: the tenderlist UI renders client-side, but GET /at.gv.bmdw.eproc-p/public/api/tende",
+    "Portal: ausschreibungen.usp.gv.at (Austrian Unternehmensserviceportal eProcurement, 170,267 notices indexed). ACCESS METHOD THAT WORKED: the tenderlist UI renders client-side, but GET /at.gv.bmdw.eproc-p/public/api/tende"
+   ]
+  },
+  {
+   "name": "Stammzahl",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/02-tenders/parts/2026-08-27/austria-usp.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/austria-usp.md"
+   ],
+   "cues": [
+    "winner"
+   ],
+   "examples": [
+    "Portal: ausschreibungen.usp.gv.at (Austrian Unternehmensserviceportal eProcurement, 170,267 notices indexed). ACCESS METHOD THAT WORKED: the tenderlist UI renders client-side, but GET /at.gv.bmdw.eproc-p/public/api/tende",
+    "Portal: ausschreibungen.usp.gv.at (Austrian Unternehmensserviceportal eProcurement, 170,267 notices indexed). ACCESS METHOD THAT WORKED: the tenderlist UI renders client-side, but GET /at.gv.bmdw.eproc-p/public/api/tende"
+   ]
+  },
+  {
+   "name": "UA-2025-01-17-010779-a",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/02-tenders/parts/2026-08-27/bank-owned-pages.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/bank-owned-pages.md"
+   ],
+   "cues": [
+    "incumbent"
+   ],
+   "examples": [
+    "- Implies: Stage 2 is the hardware lot behind PrivatBank's stated 2026 plan of ~800 recycler/multifunction ATMs. Printec is the incumbent (UA-2025-01-17-010779-a, UAH 838,639,173.73 incl. VAT, 1,140 NCR units) and sells ",
+    "- Implies: Stage 2 is the hardware lot behind PrivatBank's stated 2026 plan of ~800 recycler/multifunction ATMs. Printec is the incumbent (UA-2025-01-17-010779-a, UAH 838,639,173.73 incl. VAT, 1,140 NCR units) and sells "
+   ]
+  },
+  {
+   "name": "SEPARATE BUYER",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/02-tenders/parts/2026-08-27/bank-owned-pages.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/bank-owned-pages.md"
+   ],
+   "cues": [
+    "winner"
+   ],
+   "examples": [
+    "AWARDED: PB-2026-05-07-3069339 'Модулі безпеки HSM Thales 10000 для ATM/ТСО/POS' (Thales payShield 10000 hardware security modules for ATM / self-service terminals / POS), single lot, UAH 4,477,655.92 incl. VAT, publishe",
+    "AWARDED: PB-2026-05-07-3069339 'Модулі безпеки HSM Thales 10000 для ATM/ТСО/POS' (Thales payShield 10000 hardware security modules for ATM / self-service terminals / POS), single lot, UAH 4,477,655.92 incl. VAT, publishe"
+   ]
+  },
+  {
+   "name": "IBM Safer Payments",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/02-tenders/parts/2026-08-27/bulgaria-eop.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/bulgaria-eop.md"
+   ],
+   "cues": [
+    "winner"
+   ],
+   "examples": [
+    "Portal covered: Bulgaria CAIS EOP (app.eop.bg), 27/08/2026, fresh run (no checkpoint existed). ROUTE: app.eop.bg re-tested and re-confirmed unusable programmatically — /buyer/11700 (BNB), /buyer/14878 (Български пощи), /",
+    "Portal covered: Bulgaria CAIS EOP (app.eop.bg), 27/08/2026, fresh run (no checkpoint existed). ROUTE: app.eop.bg re-tested and re-confirmed unusable programmatically — /buyer/11700 (BNB), /buyer/14878 (Български пощи), /"
+   ]
+  },
+  {
+   "name": "EVRESIS SERVICES LTD",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/02-tenders/parts/2026-08-27/cyprus-eprocurement.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/cyprus-eprocurement.md"
+   ],
+   "cues": [
+    "competitor"
+   ],
+   "examples": [
+    "**Coverage:** FRESH RUN (no checkpoint existed). PORTAL ROUTE THAT WORKED: eprocurement.gov.cy's quick/advanced search and /epps/prepareCurrentOpportunities.do ARE CAPTCHA-gated (captcha.jpg found in the page source) and",
+    "**Coverage:** FRESH RUN (no checkpoint existed). PORTAL ROUTE THAT WORKED: eprocurement.gov.cy's quick/advanced search and /epps/prepareCurrentOpportunities.do ARE CAPTCHA-gated (captcha.jpg found in the page source) and"
+   ]
+  },
+  {
+   "name": "PricewaterhouseCoopers Business Solutions SA",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/02-tenders/parts/2026-08-27/cyprus-eprocurement.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/cyprus-eprocurement.md"
+   ],
+   "cues": [
+    "competitor"
+   ],
+   "examples": [
+    "**Coverage:** FRESH RUN (no checkpoint existed). PORTAL ROUTE THAT WORKED: eprocurement.gov.cy's quick/advanced search and /epps/prepareCurrentOpportunities.do ARE CAPTCHA-gated (captcha.jpg found in the page source) and",
+    "**Coverage:** FRESH RUN (no checkpoint existed). PORTAL ROUTE THAT WORKED: eprocurement.gov.cy's quick/advanced search and /epps/prepareCurrentOpportunities.do ARE CAPTCHA-gated (captcha.jpg found in the page source) and"
+   ]
+  },
+  {
+   "name": "LA MONNAIE DE PARIS",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/02-tenders/parts/2026-08-27/cyprus-eprocurement.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/cyprus-eprocurement.md"
+   ],
+   "cues": [
+    "winner"
+   ],
+   "examples": [
+    "- **Signal:** [STANDING — dated 2025 | AWARD, WINNER NAMED] The PRIOR cycle of the CBC collector-coin contract was awarded to LA MONNAIE DE PARIS (the French state mint) for EUR 1,158,495 — TED contract-award notice 6781",
+    "- **Signal:** [STANDING — dated 2025 | AWARD, WINNER NAMED] The PRIOR cycle of the CBC collector-coin contract was awarded to LA MONNAIE DE PARIS (the French state mint) for EUR 1,158,495 — TED contract-award notice 6781"
+   ]
+  },
+  {
+   "name": "NyertesAjanlattevoNeve",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/02-tenders/parts/2026-08-27/hungary-ekr.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/hungary-ekr.md"
+   ],
+   "cues": [
+    "winner"
+   ],
+   "examples": [
+    "Portal: Hungary EKR (ekr.gov.hu). Route used: the SPA at /portal returns index.html for every path, but the public API and assets live at the ROOT host. Working endpoints found by reading the Angular bundle at https://ek",
+    "Portal: Hungary EKR (ekr.gov.hu). Route used: the SPA at /portal returns index.html for every path, but the public API and assets live at the ROOT host. Working endpoints found by reading the Angular bundle at https://ek"
+   ]
+  },
+  {
+   "name": "Europrotect Safety SRL",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/02-tenders/parts/2026-08-27/romania-seap-sicap.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/romania-seap-sicap.md"
+   ],
+   "cues": [
+    "winner"
+   ],
+   "examples": [
+    "AWARD (cash-centre consumables): CAN1163728 'Saci ambalat' (packing/banknote bags), estimated RON 1,292,285.06, split between two named winners — Europrotect Safety SRL, RO 26194113, contract 26/P/2026 of 24/02/2026, RON",
+    "AWARD (cash-centre consumables): CAN1163728 'Saci ambalat' (packing/banknote bags), estimated RON 1,292,285.06, split between two named winners — Europrotect Safety SRL, RO 26194113, contract 26/P/2026 of 24/02/2026, RON"
+   ]
+  },
+  {
+   "name": "CN1093496 CFR Călători",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/02-tenders/parts/2026-08-27/romania-seap-sicap.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/romania-seap-sicap.md"
+   ],
+   "cues": [
+    "winner"
+   ],
+   "examples": [
+    "CLOSED, AWARD PENDING — LARGE PAYMENT-ACCEPTANCE TENDERS: CN1093434 CNAIR 'Servicii de plata on-line (tip e-commerce) in vederea desfasurarii activitatilor de comert electronic', CPV 66110000, estimated RON 27,966,000, b",
+    "CLOSED, AWARD PENDING — LARGE PAYMENT-ACCEPTANCE TENDERS: CN1093434 CNAIR 'Servicii de plata on-line (tip e-commerce) in vederea desfasurarii activitatilor de comert electronic', CPV 66110000, estimated RON 27,966,000, b"
+   ]
+  },
+  {
+   "name": "MSSP",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/02-tenders/parts/2026-08-27/serbia-ujn.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/serbia-ujn.md"
+   ],
+   "cues": [
+    "incumbent"
+   ],
+   "examples": [
+    "- **Implies:** Maps to Printec's fraud & transaction-monitoring and operational-resilience lines (INETCO transaction monitoring, DORA-driven resilience services). A 90/10 price-dominated model means an incumbent MSSP is ",
+    "- **Implies:** Maps to Printec's fraud & transaction-monitoring and operational-resilience lines (INETCO transaction monitoring, DORA-driven resilience services). A 90/10 price-dominated model means an incumbent MSSP is "
+   ]
+  },
+  {
+   "name": "SECONDARY CASH-AUTOMATION",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/02-tenders/parts/2026-08-27/serbia-ujn.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/serbia-ujn.md"
+   ],
+   "cues": [
+    "winner"
+   ],
+   "examples": [
+    "- **Signal:** [SECONDARY CASH-AUTOMATION WINNER] The UJN contract register records NBS contracting 'Машине за контролно бројање папирних новчаница' (machines for control counting of paper banknotes), CPV 30132200, contra",
+    "- **Signal:** [SECONDARY CASH-AUTOMATION WINNER] The UJN contract register records NBS contracting 'Машине за контролно бројање папирних новчаница' (machines for control counting of paper banknotes), CPV 30132200, contra"
+   ]
+  },
+  {
+   "name": "VAROVANJE GALEKOM d.o.o",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/02-tenders/parts/2026-08-27/slovenia-enarocanje.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/slovenia-enarocanje.md"
+   ],
+   "cues": [
+    "winner"
+   ],
+   "examples": [
+    "- **Signal:** AWARDED 05/05/2026: Okrozno sodisce v Novem mestu awarded physical/technical guarding PLUS cash collection and transport for the Novo mesto, Crnomelj and Trebnje courts and the Ljubljana Labour & Social Cou",
+    "- **Signal:** AWARDED 05/05/2026: Okrozno sodisce v Novem mestu awarded physical/technical guarding PLUS cash collection and transport for the Novo mesto, Crnomelj and Trebnje courts and the Ljubljana Labour & Social Cou"
+   ]
+  },
+  {
+   "name": "UA-2026-07-16-002946-a",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/02-tenders/parts/2026-08-27/ukraine-prozorro.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/ukraine-prozorro.md"
+   ],
+   "cues": [
+    "winner"
+   ],
+   "examples": [
+    "- **Signal:** AWARD: Ukrgasbank 'Модернізація банкоматів шляхом встановлення NFC-модулів' (ATM modernisation by fitting NFC/contactless card-reader modules), 20 units, delivery by 11/11/2026, UA-2026-07-16-002946-a. WINN",
+    "- **Signal:** AWARD: Ukrgasbank 'Модернізація банкоматів шляхом встановлення NFC-модулів' (ATM modernisation by fitting NFC/contactless card-reader modules), 20 units, delivery by 11/11/2026, UA-2026-07-16-002946-a. WINN"
+   ]
+  },
+  {
+   "name": "SOLVED THE",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/02-tenders/parts/2026-08-27/ukraine-prozorro.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/ukraine-prozorro.md"
+   ],
+   "cues": [
+    "winner"
+   ],
+   "examples": [
+    "Fresh run, no prior checkpoint for 27/08/2026. Method: (1) read intel-cache/prozorro_notices.json (364 tenders: PrivatBank 82, Oschadbank 19, 263 other UA buyers) and filtered to 2026 and to material values; (2) SOLVED T",
+    "Fresh run, no prior checkpoint for 27/08/2026. Method: (1) read intel-cache/prozorro_notices.json (364 tenders: PrivatBank 82, Oschadbank 19, 263 other UA buyers) and filtered to 2026 and to material values; (2) SOLVED T"
+   ]
+  },
+  {
+   "name": "SALON BANKARSKE OPREME D.O.O",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/02-tenders/parts/2026-08-27/western-balkans-portals.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/western-balkans-portals.md"
+   ],
+   "cues": [
+    "won by"
+   ],
+   "examples": [
+    "- **BiH: 'bankomat' returns ZERO notices since 2025.** BH Post bought 13 banknote counters — won by **SALON BANKARSKE OPREME D.O.O., BAM 50,310 excl. VAT** (19/06/2026).",
+    "- **BiH: 'bankomat' returns ZERO notices since 2025.** BH Post bought 13 banknote counters — won by **SALON BANKARSKE OPREME D.O.O., BAM 50,310 excl. VAT** (19/06/2026)."
+   ]
+  },
+  {
+   "name": "ATMaaS",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/06-vendors/2026-07-15.md",
+    "findings/06-vendors/2026-08-31.md"
+   ],
+   "cues": [
+    "rival",
+    "vendor"
+   ],
+   "examples": [
+    "| Brink's Company / NCR Atleos | US-listed (17-country footprint impact) | At special meetings on 30/06/2026, Brink's shareholders (>91% of eligible votes represented, overwhelming margin) and NCR Atleos stockholders BOT",
+    "| NCR Atleos (global OEM; Printec's key ATM supply partner) | Group-level (ATMaaS applies across EMEA incl. footprint) | RE-KEYED FROM THE FILING, ALL FIGURES MATCH. Q2 2026 'Other performance metrics': revenue from ATMa"
+   ]
+  },
+  {
+   "name": "INFO-KOD REŠENJA d.o.o",
+   "score": 13,
+   "mentions": 2,
+   "files": [
+    "findings/06-vendors/2026-08-31.md",
+    "findings/06-vendors/parts/2026-08-31/tail-serbia-wbalkans.md"
+   ],
+   "cues": [
+    "competitor",
+    "winner"
+   ],
+   "examples": [
+    "| Info-Kod Rešenja d.o.o. (PIB 106780962) and Payten d.o.o. (PIB 110428879) — terminal supply at the National Bank of Serbia | Serbia | [local-peer / regional — Info-Kod Rešenja is NOT in the roster; Payten is, as a dire",
+    "**Signal.** [local-peer / regional — Info-Kod Rešenja is NOT in the roster; Payten is] The UJN contract register shows CPV 32442000 (terminal equipment) produces only six contracts in the entire register. In 2026 exactly"
+   ]
+  },
+  {
+   "name": "PP GRUPA KOMPANIY TORGSERVIS",
+   "score": 12,
+   "mentions": 3,
+   "files": [
+    "findings/02-tenders/2026-08-01.md",
+    "findings/02-tenders/parts/2026-08-01/bank-owned-pages.md",
+    "findings/02-tenders/parts/2026-08-01_run1-orphaned-backup/bank-owned-pages.md"
+   ],
+   "cues": [
+    "supplier"
+   ],
+   "examples": [
+    "| PrivatBank (АТ КБ ПРИВАТБАНК, EDRPOU 14360570) | Ukraine | PrivatBank's 2026 self-service spend visible on Prozorro is consumables, logistics and spares — NOT new ATM hardware. Confirmed awards, all published as 'repor",
+    "- **Signal:** PrivatBank's 2026 self-service spend to date is consumables, logistics and spares — NOT new ATM hardware. Confirmed awards: 20,000 Newland Android POS terminals with HAL API to NEWLAND PAYMENT TECHNOLOGY (H"
+   ]
+  },
+  {
+   "name": "THALES DIS FRANCE SA",
+   "score": 12,
+   "mentions": 3,
+   "files": [
+    "findings/02-tenders/2026-08-01.md",
+    "findings/02-tenders/parts/2026-08-01/slovenia-enarocanje.md",
+    "findings/02-tenders/parts/2026-08-01_run1-orphaned-backup/slovenia-enarocanje.md"
+   ],
+   "cues": [
+    "supplier"
+   ],
+   "examples": [
+    "| ZZZS (national health insurance fund) / Thales DIS France SA / CREAplus d.o.o. | Slovenia | AWARD + CHANNEL MAP, RE-VERIFIED: ZZZS (reg. 5554195000) contracted 'Storitve tehnicne podpore na podrocju kartic zdravstveneg",
+    "- **Signal:** AWARD, NEW: 'Storitve tehnicne podpore na podrocju kartic zdravstvenega zavarovanja z moznostjo dobave kartic zdravstvenega zavarovanja in profesionalnih kartic' (technical support for the health-insurance "
+   ]
+  },
+  {
+   "name": "PRINTEC S.I. D.O.O. The",
+   "score": 12,
+   "mentions": 3,
+   "files": [
+    "findings/02-tenders/2026-08-01.md",
+    "findings/02-tenders/parts/2026-08-01/slovenia-enarocanje.md",
+    "findings/02-tenders/parts/2026-08-01_run1-orphaned-backup/slovenia-enarocanje.md"
+   ],
+   "cues": [
+    "supplier"
+   ],
+   "examples": [
+    "| Posta Slovenije d.o.o. / PRINTEC S.I. d.o.o. | Slovenia | PRINTEC WIN, RE-VERIFIED VERBATIM AGAINST THE PRIMARY REGISTER: Posta Slovenije's statutory 2025 return of below-threshold orders ('evidencna narocila') to the ",
+    "- **Signal:** PRINTEC WIN, NEW - A SELF-SERVICE PAYMENT KIOSK AT THE POST OFFICE: Posta Slovenije's statutory 2025 report of below-threshold orders ('evidencna narocila') to the Portal javnih narocil records an order for"
+   ]
+  },
+  {
+   "name": "Automatic Teller Machines",
+   "score": 12,
+   "mentions": 3,
+   "files": [
+    "findings/02-tenders/2026-08-01.md",
+    "findings/02-tenders/parts/2026-08-01/greece-diavgeia-kimdis.md",
+    "findings/02-tenders/parts/2026-08-01_run1-orphaned-backup/greece-diavgeia-kimdis.md"
+   ],
+   "cues": [
+    "install"
+   ],
+   "examples": [
+    "| Municipality of Mykonos — independent ATM deployers | Greece | Municipal Council decision 35/2026 of 02/03/2026 (session 4/02-03-2026, item 18), taken UNANIMOUSLY on the agenda item 'uncontrolled installation of Automa",
+    "- **Signal:** Municipal Council decision 35/2026 of 02/03/2026 (session 4/02-03-2026), taken unanimously, on the agenda item 'uncontrolled installation of Automatic Teller Machines (ATMs) in and outside the town-plan are"
+   ]
+  },
+  {
+   "name": "Kadlec",
+   "score": 12,
+   "mentions": 3,
+   "files": [
+    "findings/02-tenders/2026-08-01.md",
+    "findings/02-tenders/parts/2026-08-01/czechia-nen.md",
+    "findings/02-tenders/parts/2026-08-01_run1-orphaned-backup/czechia-nen.md"
+   ],
+   "cues": [
+    "install",
+    "vendor"
+   ],
+   "examples": [
+    "| Statutární město Liberec (City of Liberec) | Czechia | Repeatedly re-published above-threshold tender for automated fee-collection equipment (parking machines), main CPV 30144400 automatic fare collection plus 42933000",
+    "- **Signal:** Repeatedly re-published above-threshold tender for automated fee-collection equipment, CPV 30144400 (automatic fare/fee collection) plus 42933000 (vending machines), 42960000, 38700000, 38731000 and 5121400"
+   ]
+  },
+  {
+   "name": "TENDER ARENA",
+   "score": 12,
+   "mentions": 3,
+   "files": [
+    "findings/02-tenders/2026-08-01.md",
+    "findings/02-tenders/parts/2026-08-01/czechia-nen.md",
+    "findings/02-tenders/parts/2026-08-01_run1-orphaned-backup/czechia-nen.md"
+   ],
+   "cues": [
+    "supplier"
+   ],
+   "examples": [
+    "- **Czechia — NEN (nen.nipez.cz) + ČNB E-ZAK (ezak.cnb.cz):** 1. TENDER ARENA supplier registration for Ceska posta, s.p. — an operator should register Printec as a supplier at https://tenderarena.cz (support@tendersyste",
+    "1. TENDER ARENA supplier registration for Ceska posta, s.p. — an operator should register Printec as a supplier at https://tenderarena.cz (support@tendersystems.cz, +420 226 258 888) so that Czech Post's below-threshold "
+   ]
+  },
+  {
+   "name": "Prague Castle CIT",
+   "score": 12,
+   "mentions": 3,
+   "files": [
+    "findings/02-tenders/2026-08-01.md",
+    "findings/02-tenders/parts/2026-08-01/czechia-nen.md",
+    "findings/02-tenders/parts/2026-08-01_run1-orphaned-backup/czechia-nen.md"
+   ],
+   "cues": [
+    "supplier"
+   ],
+   "examples": [
+    "- **Czechia — NEN (nen.nipez.cz) + ČNB E-ZAK (ezak.cnb.cz):** 1. TENDER ARENA supplier registration for Ceska posta, s.p. — an operator should register Printec as a supplier at https://tenderarena.cz (support@tendersyste",
+    "1. TENDER ARENA supplier registration for Ceska posta, s.p. — an operator should register Printec as a supplier at https://tenderarena.cz (support@tendersystems.cz, +420 226 258 888) so that Czech Post's below-threshold "
+   ]
+  },
+  {
+   "name": "HSMs",
+   "score": 12,
+   "mentions": 3,
+   "files": [
+    "findings/02-tenders/2026-08-27.md",
+    "findings/02-tenders/parts/2026-08-27/slovenia-enarocanje.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/slovenia-enarocanje.md"
+   ],
+   "cues": [
+    "maintenance"
+   ],
+   "examples": [
+    "| Ministrstvo za digitalno preobrazbo (Ministry of Digital Transformation) | Slovenia | TWO digital-identity / key-security awards by Ministrstvo za digitalno preobrazbo (Ministry of Digital Transformation, reg. 26325860",
+    "- **Signal:** TWO digital-identity/key-security awards: (1) [STANDING - dated 2025] 'Nabava in vzdrzevanje streznikov HSM' - purchase and maintenance of HSMs (hardware security modules: the tamper-proof boxes that hold c"
+   ]
+  },
+  {
+   "name": "Wincor-built ATMs",
+   "score": 12,
+   "mentions": 3,
+   "files": [
+    "findings/02-tenders/2026-08-27.md",
+    "findings/02-tenders/parts/2026-08-27/ukraine-prozorro.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/ukraine-prozorro.md"
+   ],
+   "cues": [
+    "maintenance"
+   ],
+   "examples": [
+    "| PAT «AB UKRGASBANK» (Укргазбанк, EDRPOU 23697280) | Ukraine | CONTRACT AMENDED 10/08/2026 — the compliance angle: Ukrgasbank 'Послуги з сервісного обслуговування банкоматів виробництва Wincor' (service maintenance of W",
+    "- **Signal:** AWARD + notable contract term: Ukrgasbank 'Послуги з сервісного обслуговування банкоматів виробництва Wincor' (service maintenance of Wincor-built ATMs), UA-2026-06-09-013744-a, to 30/06/2027. WINNER: TOV «"
+   ]
+  },
+  {
+   "name": "BANKNOTE-COUNTING MACHINES",
+   "score": 12,
+   "mentions": 3,
+   "files": [
+    "findings/02-tenders/2026-08-27.md",
+    "findings/02-tenders/parts/2026-08-27/cyprus-eprocurement.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/cyprus-eprocurement.md"
+   ],
+   "cues": [
+    "install"
+   ],
+   "examples": [
+    "| Αρχή Ηλεκτρισμού Κύπρου / Electricity Authority of Cyprus (EAC) | Cyprus | [CLOSED — UNDER EVALUATION, bid prices public; re-verified 27/08/2026] EAC tender 202/2025 'Προμήθεια, Εγκατάσταση και Συντήρηση Μηχανών Καταμέ",
+    "- **Signal:** [AWAITING AWARD — bid prices now public] EAC tender 202/2025 'Προμήθεια, Εγκατάσταση και Συντήρηση Μηχανών Καταμέτρησης Χαρτονομισμάτων' (supply, installation and maintenance of BANKNOTE-COUNTING MACHINES)."
+   ]
+  },
+  {
+   "name": "PB-2026-05-07-3069339",
+   "score": 12,
+   "mentions": 3,
+   "files": [
+    "findings/02-tenders/2026-08-27.md",
+    "findings/02-tenders/parts/2026-08-27/bank-owned-pages.md",
+    "findings/02-tenders/parts/2026-08-27_run1-orphaned-backup/bank-owned-pages.md"
+   ],
+   "cues": [
+    "supplier"
+   ],
+   "examples": [
+    "- **Bank-owned procurement pages:** 1. tender.privatbank.ua supplier cabinet: register a Printec supplier account (contact Hora Stanislav, stanislav.gora@privatbank.ua) so the bids/awards endpoints become readable. Witho",
+    "1. tender.privatbank.ua supplier cabinet: register a Printec supplier account (contact Hora Stanislav, stanislav.gora@privatbank.ua) so the bids/awards endpoints become readable. Without it the winners of PB-2026-05-07-3"
+   ]
+  },
+  {
+   "name": "Arad",
+   "score": 11,
+   "mentions": 3,
+   "files": [
+    "findings/02-tenders/2026-08-27.md"
+   ],
+   "cues": [
+    "incumbent"
+   ],
+   "examples": [
+    "| 10/09/2026 | Municipiul Arad (City of Arad) | Romania | OPEN TENDER, DEADLINE EXTENDED TWICE — SELF-SERVICE STATIONS: CN1095003 / TED 535898-2026, 'Acord-cadru de servicii de incasari impozite, taxe si alte venituri bu",
+    "| Municipiul Arad (City of Arad) | Romania | OPEN TENDER, DEADLINE EXTENDED TWICE — SELF-SERVICE STATIONS: CN1095003 / TED 535898-2026, 'Acord-cadru de servicii de incasari impozite, taxe si alte venituri bugetare locale"
+   ]
+  },
+  {
+   "name": "ALLIED ENGINEERING GROUP",
+   "score": 11,
+   "mentions": 3,
+   "files": [
+    "findings/02-tenders/2026-08-27.md"
+   ],
+   "cues": [
+    "winner"
+   ],
+   "examples": [
+    "- **Corrected/contradicted by the adversarial pass (33):** CEC Bank S.A. (state-owned commercial bank, RO361897) — as public-sector card acquirer — Every contract value CONFIRMED, several buyer names CORRECTED. Re-fetche",
+    "- **Corrected/contradicted by the adversarial pass (33):** CEC Bank S.A. (state-owned commercial bank, RO361897) — as public-sector card acquirer — Every contract value CONFIRMED, several buyer names CORRECTED. Re-fetche"
+   ]
+  },
+  {
+   "name": "Miodrag Brkić PR",
+   "score": 10,
+   "mentions": 2,
+   "files": [
+    "findings/02-tenders/2026-08-27.md"
+   ],
+   "cues": [
+    "winner"
+   ],
+   "examples": [
+    "| jnportal.ujn.gov.rs (Serbian Public Procurement Portal) | Serbia | [STRUCTURAL FINDING — WHY THERE ARE ALMOST NO ATM TENDERS] A sweep of the UJN notices database (761,626 notices) and the contract register (1,674,409 c",
+    "- **Corrected/contradicted by the adversarial pass (33):** CEC Bank S.A. (state-owned commercial bank, RO361897) — as public-sector card acquirer — Every contract value CONFIRMED, several buyer names CORRECTED. Re-fetche"
+   ]
+  },
+  {
+   "name": "Win Low",
+   "score": 10,
+   "mentions": 2,
+   "files": [
+    "findings/05-jobs/2026-06-17.md"
+   ],
+   "cues": [
+    "incumbent",
+    "vendor"
+   ],
+   "examples": [
+    "| **Komerční banka** | CZ | **\"Nová éra\" branch + self-service program:** ~80 new-design branches (~½ network) by end-2025; new ATMs **accept coin deposits and convert banknotes to coins**; KB+ client migration completed",
+    "| **365.bank + Poštová banka** | SK | **KBC completed acquisition** (~98.45%, ≈€708–761m, closed 15-Jan-2026); legal+operational **merger with ČSOB SK** planned; ex-ČSOB SK CEO **Daniel Kollár** now runs 365.bank. | [new"
+   ]
+  },
+  {
+   "name": "Chip Card",
+   "score": 9,
+   "mentions": 1,
+   "files": [
+    "findings/01-bank-disclosures/2026-06-24.md"
+   ],
+   "cues": [
+    "incumbent"
+   ],
+   "examples": [
+    "| OTP banka Srbija | Serbia | New IT director (July 2024) + post-Star Trek modernisation; Payten/Chip Card incumbent processor [verified primary] | [MINDSPIRE](https://www.mindspire-consulting.com/project-management-news"
+   ]
+  },
+  {
+   "name": "Hypervisor June",
+   "score": 9,
+   "mentions": 1,
+   "files": [
+    "findings/01-bank-disclosures/2026-06-24.md"
+   ],
+   "cues": [
+    "incumbent"
+   ],
+   "examples": [
+    "| Česká spořitelna | Czechia | Multivendor fleet (NCR+OKI), KAL Kalignite incumbent (Hypervisor June 2024); FY2025 net profit CZK 27.8bn [verified primary] | [KAL case study](https://www.kal.com/en/kal-atm-news/innovatio"
+   ]
+  },
+  {
+   "name": "KAL Kalignite",
+   "score": 9,
+   "mentions": 1,
+   "files": [
+    "findings/01-bank-disclosures/2026-06-24.md"
+   ],
+   "cues": [
+    "incumbent"
+   ],
+   "examples": [
+    "| Česká spořitelna | Czechia | Multivendor fleet (NCR+OKI), KAL Kalignite incumbent (Hypervisor June 2024); FY2025 net profit CZK 27.8bn [verified primary] | [KAL case study](https://www.kal.com/en/kal-atm-news/innovatio"
+   ]
+  },
+  {
+   "name": "NCR APTRA OptiSuite",
+   "score": 9,
+   "mentions": 1,
+   "files": [
+    "findings/01-bank-disclosures/2026-06-24.md"
+   ],
+   "cues": [
+    "incumbent"
+   ],
+   "examples": [
+    "4. **BCR Romania** — confirmed NCR APTRA OptiSuite incumbent + branch-modernisation pipeline. Pitch: OptiSuite/OptiCash upgrade + NCR self-service hardware (L, High win)."
+   ]
+  },
+  {
+   "name": "Xchange",
+   "score": 9,
+   "mentions": 1,
+   "files": [
+    "findings/01-bank-disclosures/2026-07-30.md"
+   ],
+   "cues": [
+    "competitor"
+   ],
+   "examples": [
+    "| NCR Atleos / DirectPay / iXchange (competitor context for NBG) | Greece | DirectPay and iXchange, two Greek financial-services companies in the same group, will use NCR Atleos' owned-and-operated Cashzone ATM network i"
+   ]
+  },
+  {
+   "name": "TotalSoft",
+   "score": 9,
+   "mentions": 1,
+   "files": [
+    "findings/01-bank-disclosures/2026-07-30.md"
+   ],
+   "cues": [
+    "integrator"
+   ],
+   "examples": [
+    "| UniCredit Bank Romania | Romania | Alpha Bank Romania IT integration detail: TotalSoft harmonised the two banks' ERP and HR platforms onto Charisma ERP and Charisma HCM over roughly 6 months, covering c.4,800 staff, pl"
+   ]
+  },
+  {
+   "name": "BiH-local",
+   "score": 9,
+   "mentions": 1,
+   "files": [
+    "findings/01-bank-disclosures/2026-07-30.md"
+   ],
+   "cues": [
+    "rival"
+   ],
+   "examples": [
+    "| Raiffeisen Bank International / Addiko Bank AG (incl. Addiko Bank dd Sarajevo and Addiko Bank ad Banja Luka) | Bosnia & Herzegovina | RBI's contested bid for Addiko Bank AG cleared its acceptance threshold. As of 29/07"
+   ]
+  },
+  {
+   "name": "RBI Group",
+   "score": 9,
+   "mentions": 1,
+   "files": [
+    "findings/01-bank-disclosures/2026-07-30.md"
+   ],
+   "cues": [
+    "rival"
+   ],
+   "examples": [
+    "| Raiffeisen Bank International / Addiko Bank AG (incl. Addiko Bank dd Sarajevo and Addiko Bank ad Banja Luka) | Bosnia & Herzegovina | RBI's contested bid for Addiko Bank AG cleared its acceptance threshold. As of 29/07"
+   ]
+  },
+  {
+   "name": "OEM. Then",
+   "score": 9,
+   "mentions": 1,
+   "files": [
+    "findings/01-bank-disclosures/2026-07-30.md"
+   ],
+   "cues": [
+    "incumbent"
+   ],
+   "examples": [
+    "| NLB Banka sh.a. Prishtine / NLB Group | Kosovo | NLB Banka Kosovo's own 'About the Bank' page, sourced to its Annual Report 2025, states: 35 branches across Kosovo, OVER 100 ATMs, 252,713 total active customers, 17.1% "
+   ]
+  },
+  {
+   "name": "UA-2026-06-09-013744-a",
+   "score": 9,
+   "mentions": 1,
+   "files": [
+    "findings/01-bank-disclosures/2026-07-30.md"
+   ],
+   "cues": [
+    "incumbent"
+   ],
+   "examples": [
+    "| Ukrgasbank | Ukraine | CORRECTED FRAMING - Printec is already inside Ukrgasbank, not outside it. Ukrgasbank (EDRPOU 23697280) buys ATM estate services in small unbundled single-source lots, and Printec Ukraine LLC (EDR"
+   ]
+  },
+  {
+   "name": "FINANCES ATM-as-a-service",
+   "score": 9,
+   "mentions": 1,
+   "files": [
+    "findings/01-bank-disclosures/2026-07-30.md"
+   ],
+   "cues": [
+    "incumbent"
+   ],
+   "examples": [
+    "| Asseco SEE / Payten (incumbent) | Serbia | CORRECTED: on the ASEE Q2/H1-2026 earnings call held 27/07/2026, CEO Piotr Jelenski said of the ATM business: 'If we had hardware on our balance sheet, we were financing it wi"
+   ]
+  },
+  {
+   "name": "ProView",
+   "score": 9,
+   "mentions": 1,
+   "files": [
+    "findings/01-bank-disclosures/2026-08-27.md"
+   ],
+   "cues": [
+    "competitor"
+   ],
+   "examples": [
+    "| Diebold Nixdorf Ukraine (competitor at PrivatBank) | Ukraine | Diebold Nixdorf is an entrenched second ATM vendor at PrivatBank, selling direct through TOV 'DIBOLD NIKSDORF' (EDRPOU 36353398). Award UA-2025-12-15-02313"
+   ]
+  },
+  {
+   "name": "CMD-V4",
+   "score": 9,
+   "mentions": 1,
+   "files": [
+    "findings/01-bank-disclosures/2026-08-27.md"
+   ],
+   "cues": [
+    "won by"
+   ],
+   "examples": [
+    "| PrivatBank | Ukraine | Prozorro award UA-2026-06-15-012172-a dated 15/06/2026: 1,500 ATM cash-dispense cassettes explicitly specified 'for ATMs manufactured by Diebold Nixdorf (Wincor Nixdorf)', UAH 7,211,025 incl. VAT"
+   ]
+  },
+  {
+   "name": "UniCredit. The",
+   "score": 9,
+   "mentions": 1,
+   "files": [
+    "findings/01-bank-disclosures/2026-08-27.md"
+   ],
+   "cues": [
+    "competitor"
+   ],
+   "examples": [
+    "| UniCredit Bank S.A. (Romania) / Euronet | Romania | 401 of the 1,207 ATM records in the bank's own feed are titled 'ATM UniCredit Euronet' - about a third of the estate (33%) runs on Euronet's outsourced network. 398 o"
+   ]
+  },
+  {
+   "name": "Groupe Societe Generale",
+   "score": 9,
+   "mentions": 1,
+   "files": [
+    "findings/01-bank-disclosures/2026-08-27.md"
+   ],
+   "cues": [
+    "competitor"
+   ],
+   "examples": [
+    "| BRD - Groupe Societe Generale (competitor) | Romania | On 06/08/2026 BRD extended the RoPay service in its YOU BRD app so that individuals and PFAs can make instant account-to-account payments to merchants and service "
+   ]
+  },
+  {
+   "name": "Darktrace",
+   "score": 9,
+   "mentions": 1,
+   "files": [
+    "findings/01-bank-disclosures/parts/2026-07-14/brd-ro.md"
+   ],
+   "cues": [
+    "incumbent"
+   ],
+   "examples": [
+    "5. Safetech SOC incumbent — Darktrace/Cynet/Ironscales/Axonius; auto-renew 3yr from Sep-2023 → ~Sep-2026 renewal window imminent. Printec AML/txn-monitoring/HSM adjacency (Safetech = competitor). M / Low."
+   ]
+  },
+  {
+   "name": "Win High",
+   "score": 9,
+   "mentions": 1,
+   "files": [
+    "findings/01-bank-disclosures/parts/2026-07-14/kosovo.md"
+   ],
+   "cues": [
+    "incumbent"
+   ],
+   "examples": [
+    "2. BPB — Printec ATM-network renewal incumbency (Printec Group primary post). Upsell to deposit/recycling. Win High (incumbent)."
+   ]
+  },
+  {
+   "name": "Printec-addressable",
+   "score": 9,
+   "mentions": 1,
+   "files": [
+    "findings/01-bank-disclosures/parts/2026-07-14/nbg-gr.md"
+   ],
+   "cues": [
+    "competitor"
+   ],
+   "examples": [
+    "Core ATM hardware/software at NBG is Mellon/Hyosung/KAL (competitor). Printec-addressable angles: off-site ATM managed services / cash logistics (OptiCash) under the fee-cap squeeze; AML/transaction-monitoring around the"
+   ]
+  },
+  {
+   "name": "Kontrax",
+   "score": 9,
+   "mentions": 1,
+   "files": [
+    "findings/01-bank-disclosures/parts/2026-07-30/dsk-bg.md"
+   ],
+   "cues": [
+    "integrator"
+   ],
+   "examples": [
+    "Exhausted this run: BG+EN searches pairing DSK with NCR / NCR Atleos / Diebold Nixdorf / Wincor ProCash / CINEO / SelfServ / Opteva; ATM software brands (Vynamic, APTRA, Kalignite); local integrators (Kontrax, Stemo, Dat"
+   ]
+  },
+  {
+   "name": "Launched RoPay",
+   "score": 9,
+   "mentions": 1,
+   "files": [
+    "findings/01-bank-disclosures/parts/2026-08-27/banca-transilvania-ro.md"
+   ],
+   "cues": [
+    "competitor"
+   ],
+   "examples": [
+    "| 13 | BRD (competitor) | Launched RoPay instant A2A payments to merchants incl. QR scanned off POS terminals, no card | Profit.ro / Bursa.ro | 06/08/2026 | M |"
+   ]
+  },
+  {
+   "name": "ATM-software",
+   "score": 9,
+   "mentions": 1,
+   "files": [
+    "findings/01-bank-disclosures/parts/2026-08-27/czechia-cluster.md"
+   ],
+   "cues": [
+    "incumbent"
+   ],
+   "examples": [
+    "- Implies: KAL is the multivendor ATM-software incumbent at Ceska sporitelna - a Printec ATM/managed-services bid into CS must sit alongside, not replace, Kalignite; conversely KAL-standardised estates are hardware-agnos"
+   ]
+  },
+  {
+   "name": "Info SMS",
+   "score": 9,
+   "mentions": 1,
+   "files": [
+    "findings/02-tenders/2026-06-24.md"
+   ],
+   "cues": [
+    "winner"
+   ],
+   "examples": [
+    "| CEC Bank | Romania | State-owned CEC Bank 'Info SMS' IT-messaging solution procurement (open tender): clarifications to the award documentation published 03/03/2026; offer deadline EXTENDED from 13/03/2026 to 23/04/202"
+   ]
+  }
+ ],
+ "note": "Candidates only. The vendor agent decides: add real Printec competitors with scripts/add_competitor.py, ignore banks, buyers, regulators and partners."
+}
